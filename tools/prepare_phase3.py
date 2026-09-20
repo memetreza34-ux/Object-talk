@@ -54,9 +54,21 @@ def main() -> None:
     phase1_scenes = project / "05_info" / "phase1-scenes.json"
     final_audio = audio_dir / "final-voiceover.wav"
 
-    for required in (script, scene_map, phase1_scenes):
+    for required in (script, phase1_scenes):
         if not required.is_file():
             raise SystemExit(f"PHASE-3 PREP FAIL: notwendige Datei fehlt: {required}")
+
+    # scene-map.json ist eine rein technische Ableitung aus der von ChatGPT
+    # festgelegten Phase-1-Szenenplanung. Keine kreative Neuzuordnung in Phase 3.
+    run(
+        [
+            sys.executable,
+            "tools/generate_scene_map.py",
+            str(phase1_scenes),
+            str(scene_map),
+        ],
+        repo_root,
+    )
 
     if not audio_dir.is_dir():
         raise SystemExit(f"PHASE-3 PREP FAIL: Audioordner fehlt: {audio_dir}")
