@@ -36,7 +36,7 @@ Ein neues Thema darf nur gewählt werden, wenn es:
 
 | Nr. | Status | Hauptbereich | Thema | Kernaussage / Abgrenzung | Überschneidet sich mit |
 |---:|---|---|---|---|---|
-| 001 | IDEE | Verdauung | Was passiert mit Essen im Körper? | komplette Reise von Mund bis Ausscheidung; Überblick statt einzelnes Organ | – |
+| 001 | **IN ARBEIT** | Verdauung | Was passiert mit Essen im Körper? | Pilot-Longform; komplette Reise von Mund bis Ausscheidung; Überblick statt einzelnes Organ | – |
 | 002 | IDEE | Zellbiologie | Was ist eine menschliche Zelle? | Aufbau und wichtigste Zellbestandteile verständlich erklären | – |
 | 003 | IDEE | Gehirn | Wie kommunizieren Nervenzellen? | Neuron, elektrisches Signal, Synapse, Neurotransmitter | – |
 | 004 | IDEE | Ernährung | Was macht Zucker im Körper? | Aufnahme, Blutzucker, Insulin, Energie und Überschuss | – |
@@ -49,13 +49,23 @@ Ein neues Thema darf nur gewählt werden, wenn es:
 
 ## Bereits produzierte Videos
 
-Noch keine eingetragen.
+Noch keine eingetragen. Video 001 befindet sich aktuell in Produktion.
 
 ## Themen, die wir nicht doppelt machen dürfen
 
 Sobald ein Video `FERTIG` ist, werden hier zusätzlich seine wichtigsten behandelten Teilfragen eingetragen. Dadurch erkennen wir auch versteckte Überschneidungen.
 
-Aktuell: keine.
+Aktuell vorgemerkt für Video 001:
+
+- Gesamtweg Mund → Speiseröhre → Magen → Dünndarm → Dickdarm
+- Peristaltik als Transportprinzip
+- Magen als Misch-/Vorbereitungsraum
+- Dünndarm als zentrale Nährstoffaufnahme
+- Bauchspeicheldrüse, Leber und Galle im Überblick
+- Darmzotten und Aufnahme in Blut/Lymphe
+- Dickdarm, Wasseraufnahme und Mikrobiom im Überblick
+
+Diese Punkte dürfen später vertieft werden, aber nicht als nahezu identischer Gesamtüberblick neu produziert werden.
 
 ## Vorgehen bei jedem neuen Video
 
