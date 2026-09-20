@@ -4,95 +4,151 @@ Diese Regeln gelten für **jedes** lange YouTube-Video im Repository.
 
 ## 1. Videolänge
 
-- Mindestlänge final: **5:00 Minuten**.
-- Zielbereich für normale Videos: **5:30–8:00 Minuten**.
-- Ein Thema wird nur länger, wenn der zusätzliche Inhalt echten Mehrwert bietet.
-- Nach Erzeugung des Voiceovers wird die echte Audiodauer geprüft. Ist sie unter 5:00 Minuten, wird das Skript erweitert und das Audio neu erzeugt.
+- harte Mindestlänge final: **5:00 Minuten**
+- normaler Zielbereich: **5:30–8:00 Minuten**
+- länger nur, wenn zusätzliche Tiefe echten Mehrwert bringt
+- kein künstliches Strecken
+- trägt ein Thema keine 5 Minuten sinnvoll, Thema größer formulieren oder verwerfen
 
-## 2. Skript
+Nach der Voice-Erzeugung entscheidet die echte Audiodauer. Unter 300 Sekunden = FAIL.
 
-- `script.txt` enthält ausschließlich den gesprochenen Fließtext.
-- Keine Regieanweisungen, keine Szenennummern, keine Zeitcodes, keine Klammerhinweise.
-- Das Skript muss 1:1 in eine Voice-KI kopierbar sein.
-- Ziel für ein normales 5–7-Minuten-Video: ungefähr **850–1100 deutsche Wörter**, abhängig von Sprechtempo und Thema.
-- Kurze klare Sätze; schwierige Begriffe sofort einfach erklären.
-- Erst erklären, dann vertiefen. Keine unnötigen Fachbegriffe.
+## 2. Script
 
-## 3. Bildrhythmus
+`01_script/script.txt` enthält ausschließlich den **final tatsächlich gesprochenen Text**.
 
-Da die Videos ausschließlich aus Standbildern bestehen, darf ein Bild nicht zu lange stehen.
+Verboten in `script.txt`:
 
-Richtwerte:
+- Szenennummern
+- Zeitcodes
+- Regieanweisungen
+- Klammerbefehle für Editor/Voice
+- alternative Formulierungen
 
-- normale Szene: **6–10 Sekunden**
-- komplexe biologische Erklärung: **4–8 Sekunden**
-- ruhige Übersicht: **8–12 Sekunden**
-- kein Bild länger als **12 Sekunden**, außer es gibt einen begründeten Sonderfall mit deutlicher Kamerabewegung
-- Cover-/Hook-Szene `Bild_01`: etwa **4–7 Sekunden**
+Das Script muss 1:1 in die Voice-KI kopierbar sein.
 
-Grobe Zielmenge:
+Richtwert für 5–7 Minuten: ungefähr 850–1100 deutsche Wörter, abhängig vom tatsächlichen Sprechtempo. Die Wortzahl ist kein Ersatz für die echte Audiodauer.
 
-- 5 Minuten: ca. **35–50 Bilder**
-- 7 Minuten: ca. **45–65 Bilder**
-- 10 Minuten: ca. **65–90 Bilder**
+Sprachstil:
 
-Die tatsächliche Bildanzahl richtet sich nach dem Inhalt, nicht starr nach einer Quote.
+- kurze verständliche Sätze
+- Fachbegriffe direkt erklären
+- konkrete Beispiele
+- keine unnötigen Wiederholungen
+- neugierig und klar, nicht babyhaft
 
-## 4. Bildformat
+## 3. Semantische Szenen statt Satz-für-Satz
 
-- Format: **16:9**
-- Zielauflösung: mindestens **1920 × 1080**
+Die Bildanzahl wird **nicht vorher künstlich festgelegt**.
+
+Ablauf:
+
+```text
+finales script.txt
+→ echte visuelle Sinnwechsel bestimmen
+→ daraus Szenen bilden
+→ erst danach Anzahl der Bilder kennen
+```
+
+Regeln:
+
+- ein Satz darf mehrere Bilder bekommen, wenn die visuelle Aussage wechselt
+- mehrere Sätze dürfen ein Bild teilen, wenn dieselbe visuelle Aussage gilt
+- keine Füllbilder nur um eine Quote zu erfüllen
+- kein Bildwechsel nur weil ein Satzzeichen kommt
+
+## 4. Bildrhythmus als QA
+
+Weil das Video ausschließlich aus Standbildern besteht, muss die visuelle Erzählung lebendig bleiben.
+
+Typische Richtwerte nach der Szenenplanung:
+
+- normale Szene: ca. 6–10 Sekunden
+- komplexe biologische Erklärung: ca. 4–8 Sekunden
+- ruhige Übersicht: ca. 8–12 Sekunden
+- Cover-/Hook-Szene: ca. 4–7 Sekunden
+- über 12 Sekunden nur mit bewusstem Grund
+
+Diese Werte sind **Qualitätsprüfung**, keine starre Formel für die Szenenanzahl.
+
+Wenn ein sinnvoller Abschnitt 13 Sekunden braucht, ist das besser als zwei inhaltsleere Bilder. Wenn innerhalb von 5 Sekunden zwei völlig verschiedene visuelle Aussagen kommen, können zwei Bilder nötig sein.
+
+## 5. Bildformat
+
+- 16:9 horizontal
+- Ziel: mindestens 1920×1080
 - keine vertikalen Reel-Kompositionen
-- zentrale Motive nicht direkt an den Rand setzen
-- genügend Raum für leichte Zooms und Schwenks lassen
+- Hauptmotive und Labels nicht direkt an den Rand
+- genug visueller Rand für dezente Pan-/Zoom-Bewegung
 
-## 5. Szenennummerierung
+## 6. Szenennummerierung
 
-Jede visuelle Szene besitzt exakt eine Nummer und ein zugehöriges Bild:
+Jede visuelle Szene besitzt genau ein Bild:
 
-- Szene 01 = `Bild_01`
-- Szene 02 = `Bild_02`
-- Szene 03 = `Bild_03`
-- usw.
+```text
+Szene 01 = Bild_01
+Szene 02 = Bild_02
+Szene 03 = Bild_03
+...
+```
 
-Keine Nummer darf fehlen oder doppelt vorkommen.
+Keine Lücke, keine doppelte Nummer.
 
-`Bild_01` ist immer die **Cover-/Hook-Szene** und gleichzeitig die visuelle Basis für das YouTube-Cover/Thumbnail.
+`Bild_01` ist immer:
 
-## 6. Visuelle Ebenen
+- erster sichtbarer Shot
+- Cover-/Hook-Szene
+- Grundlage des YouTube-Thumbnails
 
-Jedes Video kann zwischen zwei Ebenen wechseln:
+## 7. Zwei visuelle Ebenen
 
 ### A – Viral Object-Talk
+
 Sprechende Lebensmittel oder passende Objekte mit:
+
 - großen ausdrucksstarken Augen
 - klarer Mimik
 - kleinen Armen/Beinen, wenn sinnvoll
-- starker, einfacher Pose
+- starker Pose
 - semi-realistischen Materialien
 - klar animiertem Look
 
 ### B – Inside-the-Body
+
 Verständliche Darstellungen von:
+
 - Organen
 - Blutgefäßen
 - Zellen
 - Nervenzellen
 - Molekülen
-- Stoffwechselprozessen
+- Stoffwechsel
 - Verdauung
 - Immunsystem
 
-Beide Ebenen müssen wie dieselbe hochwertige 3D-Animationswelt wirken.
+Biologische Strukturen bekommen normalerweise **keine Gesichter**.
 
-## 7. Beschriftungen
+Beide Ebenen müssen wie dieselbe hochwertige 3D-Animationsserie wirken.
 
-- wichtige Lerninhalte werden auf **Deutsch** beschriftet
-- nur Begriffe, die zum Verständnis wirklich helfen
-- klare Pfeile oder Verbindungslinien
-- maximal wenige Labels gleichzeitig
-- keine unnötigen Fließtexte im Bild
-- Rechtschreibung muss korrekt sein
+## 8. Globaler Style Anchor
+
+Nach Nutzerfreigabe wird ein einziges Masterbild verwendet:
+
+```text
+assets/channel/STYLE_REFERENCE.png
+```
+
+Siehe `STYLE-REFERENCE-SYSTEM.md`.
+
+Bei jeder Flow-Generation wird diese Datei als `style-only` verwendet. Wiederkehrende Figuren können zusätzlich Character References besitzen.
+
+## 9. Beschriftungen
+
+- wichtige Lernstrukturen auf Deutsch
+- nur Begriffe, die zum Verständnis helfen
+- kurze, lesbare Labels
+- eindeutige Pfeile/Linien
+- keine unnötigen Fließtexte
+- Rechtschreibung und Zuordnung müssen stimmen
 
 Beispiele:
 
@@ -102,77 +158,94 @@ Beispiele:
 - rote Blutkörperchen
 - Nervenzelle
 
-## 8. Kamerabewegung auf Standbildern
+Falsches Label = Bild neu erzeugen, nicht akzeptieren.
 
-Antigravity darf aus den Standbildern Bewegung erzeugen durch:
+## 10. Bewegung auf Standbildern
 
-- langsamen Push-in
-- langsamen Pull-out
-- leichte horizontale oder vertikale Schwenks
-- Fokuswechsel durch Crop/Zoom
-- sehr dezente Parallax-ähnliche Bewegung, sofern technisch sauber
+Der Renderer darf ausschließlich dezente Bildbewegung verwenden:
 
-Verboten:
+- `static`
+- `slow-push-in`
+- `slow-pull-out`
+- `pan-left`
+- `pan-right`
 
-- hektische Zooms
-- dauerndes Wackeln
-- starke Verzerrung
-- künstliches Bewegen anatomischer Strukturen, wenn nur ein Standbild vorliegt
+Kein hektischer Zoom, kein Wackeln, keine Bildverzerrung.
 
-## 9. Übergänge
+Ein Bild mit wichtigen Labels darf nicht so bewegt werden, dass Labels abgeschnitten werden.
 
-Standard ist ein sauberer harter Schnitt oder ein sehr kurzer weicher Übergang.
+## 11. Übergänge
 
-Keine auffälligen Effekt-Transitions ohne inhaltlichen Grund.
+Standard ist ein sauberer harter Schnitt.
 
-## 10. Synchronisierung
+Keine auffälligen Übergangseffekte ohne inhaltlichen Grund.
 
-Die endgültige Szenenzeit wird **nicht geschätzt**.
+## 12. Audio
 
-Nach Erstellung des Voiceovers wird das Audio mit Whisper/faster-whisper transkribiert. Die Wort-Zeitstempel werden anschließend mit den von ChatGPT definierten Textankern der Szenen verbunden.
+Das Voiceover ist die Master-Timeline.
 
-Dadurch erhält jede Szene echte Start- und Endzeiten in Sekunden.
+Vor Whisper wird es kanonisch als `final-voiceover.wav` vorbereitet.
 
-Siehe `SYNC-WHISPER.md`.
+- Geschwindigkeit 1.0×
+- keine künstliche Verlängerung
+- keine spätere Änderung nach Wort-Timing-Erzeugung
 
-## 11. Audio
+Details: `AUDIO-REGELN.md`.
 
-- Voiceover ist die Hauptzeitbasis des Videos.
-- Audio wird nicht beschleunigt oder verlangsamt, nur damit Bilder passen.
-- Optional sehr leise Hintergrundmusik, wenn sie die Sprache nicht stört.
-- Soundeffekte nur sparsam und passend.
-- Ziel für finalen Export: verständliche Sprache, keine Übersteuerung.
+## 13. Synchronisierung
 
-## 12. Export
+Finale Sekundenwerte werden niemals in Phase 1 geschätzt.
+
+Ablauf:
+
+```text
+final-voiceover.wav
+→ faster-whisper Wortzeiten
+→ strikte vollständige Ausrichtung gegen script.txt
+→ word-timings.json
+→ exakte speech_section-Zuordnung
+→ timeline.json
+```
+
+Details: `SYNC-WHISPER.md`.
+
+## 14. Gesundheit und Biologie
+
+- Kernclaims vor Produktion prüfen
+- Claim-Matrix pro Video führen
+- keine erfundenen Wirkungen von Lebensmitteln
+- keine individuellen Diagnosen oder Behandlungsempfehlungen
+- Korrelation nicht als Kausalität ausgeben
+- biologische Prozesse vereinfachen, aber nicht fachlich verfälschen
+- Recherche in `05_info/`
+
+Details: `FACT-CHECK-STANDARD.md`.
+
+## 15. Export
 
 Standard:
 
 - MP4
-- 1920 × 1080
+- 1920×1080
 - 30 fps
 - H.264
 - AAC-Audio
-- Voiceover vollständig enthalten
-- finaler Dateiname: `final-video.mp4`
+- finaler Dateiname `final-video.mp4`
+- Untertitel zusätzlich als SRT
 
-Zusätzlich kann aus Whisper `subtitles.srt` für YouTube exportiert werden.
+## 16. Qualitätsregel
 
-## 13. Gesundheit und Biologie
+Ein Video ist erst fertig, wenn:
 
-- medizinische/biologische Aussagen müssen vor Produktion geprüft werden
-- keine erfundenen Wirkungen von Lebensmitteln
-- keine Diagnose oder individuelle Behandlungsempfehlung
-- komplexe Prozesse vereinfachen, aber nicht fachlich verfälschen
-- Recherche und Prüfnotizen kommen in `05_info/Recherche.md`
-
-## 14. Qualitätsregel
-
-Ein Video wird erst exportiert, wenn:
-
-- Audio mindestens 5 Minuten lang ist
-- jedes Bild vorhanden ist
-- Bildnummern vollständig sind
-- jede Szene einen Audio-Zeitraum besitzt
-- keine sichtbaren KI-Fehler oder falschen Beschriftungen vorhanden sind
-- keine langen unbeabsichtigten Standphasen bestehen
-- das Thema im Themen-Gehirn korrekt eingetragen ist
+- Phase 1 PASS
+- Phase 2 PASS
+- Phase 3 PASS
+- finales Voiceover mindestens 300 Sekunden
+- jedes Bild vorhanden
+- gesamte Sprache lückenlos einer Szene zugeordnet
+- keine falschen Labels
+- keine groben KI-Fehler
+- Stil konsistent
+- finaler technischer QA-Check PASS
+- finaler visueller Sichtcheck PASS
+- Thema im Themen-Gehirn korrekt aktualisiert
