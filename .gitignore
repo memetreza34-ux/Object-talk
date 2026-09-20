@@ -1,0 +1,45 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node / Remotion
+renderer/node_modules/
+renderer/.cache/
+renderer/out/
+renderer/public/current/
+renderer/runtime-report.json
+
+# Per-video generated / user media
+# Keep folder README files, but do not commit heavy generated media.
+youtube-videos/*/01_script/audio/*.mp3
+youtube-videos/*/01_script/audio/*.wav
+youtube-videos/*/01_script/audio/*.m4a
+youtube-videos/*/01_script/audio/*.aac
+youtube-videos/*/01_script/audio/*.flac
+youtube-videos/*/01_script/audio/*.ogg
+youtube-videos/*/01_script/audio/*.audio-report.json
+
+youtube-videos/*/02_bildprompts/bilder-zip/*.zip
+youtube-videos/*/02_bildprompts/images/*.png
+youtube-videos/*/02_bildprompts/images/*.jpg
+youtube-videos/*/02_bildprompts/images/*.jpeg
+youtube-videos/*/02_bildprompts/images/*.webp
+youtube-videos/*/02_bildprompts/flow-import-report.json
+
+youtube-videos/*/03_pipeline/timing/*.json
+youtube-videos/*/03_pipeline/timing/*.srt
+
+youtube-videos/*/04_export/fertiges-video/*.mp4
+youtube-videos/*/04_export/fertiges-video/*.webm
+youtube-videos/*/04_export/fertiges-video/*.qa.json
+youtube-videos/*/04_export/subtitles/*.srt
+
+# Template placeholders/READMEs remain tracked because the glob above only targets real media extensions.
