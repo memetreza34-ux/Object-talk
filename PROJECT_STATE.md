@@ -6,7 +6,7 @@ Letzte Aktualisierung: 20.09.2026
 
 Die Longform-Grundarchitektur ist vollständig genug für den ersten echten End-to-End-Piloten.
 
-Zusätzlich ist jetzt **Video 001 – „Was passiert mit deinem Essen im Körper?“** in Phase 1 vollständig vorbereitet.
+Zusätzlich ist jetzt **Video 001 – „Was passiert mit deinem Essen im Körper?“** in Phase 1 vollständig vorbereitet und der Flow-Workflow wurde nach dem ersten Praxistest überarbeitet.
 
 Vorhanden:
 
@@ -16,15 +16,14 @@ Vorhanden:
 - `THEMEN-GEHIRN.md` gegen Themenwiederholungen
 - `engine/THEMEN-STRATEGIE.md` für systematische Longform-Themenauswahl
 - `engine/SCRIPT-STANDARD.md` für Hook, Einleitung, Hauptteil, rhetorische Mittel, Schluss und Visual-First-Scriptwriting
+- `engine/FLOW-PRODUCTION-STANDARD.md` für faceless Explainer-Bildwelt, Master Style Frame, 5er-Blöcke und Recovery
 - erste Fach-Bildwelt `bildwelt/gehirn.md`
 - globales Style-Reference-System
-- Ordner für freigegebene Character References
 - YouTube-Projektvorlage
 - 3-Phasen-Workflow mit harten Phase-Gates
 - wissenschaftlicher Fact-Check-Standard + Claim-Matrix
 - semantische Phase-1-Szenen statt automatischem Satz-für-Satz-Schnitt
 - vollständige `speech_section` pro Szene
-- Google-Flow-Agent-Prompt mit Einzelbild-QA
 - sichere ZIP-Übernahme ausschließlich nach Bildnummern
 - technische Bildvalidierung
 - kanonische Audioaufbereitung vor Whisper
@@ -35,6 +34,40 @@ Vorhanden:
 - feste wiederverwendbare Remotion-Runtime
 - ein Befehl für die Phase-3-Vorbereitung
 - finale technische Video-QA + Renderbericht
+
+## Verbindliche visuelle Richtung
+
+Nach dem ersten Flow-Test ist festgelegt:
+
+- **kein Mascot-/Presenter-Kanal**
+- keine dauerhafte Apfel-/Food-Sprecherfigur
+- direkte Erklärbilder sind Standard
+- anatomische Cutaways, transparente Körperansichten, Prozesse, Organe, Gewebe, Zellen und Vergleiche dominieren
+- personifizierte Objekte nur selten und nur mit echtem didaktischem Mehrwert
+- komplexe Vorgänge sollen mit möglichst einer klaren visuellen Hauptaussage pro Bild erklärt werden
+
+`Bild_01` jeder Episode ist ab jetzt:
+
+- Cover-/Hook-Bild
+- erster Shot
+- **Master Style Frame für alle weiteren Bilder der Episode**
+
+## Verbindlicher Flow-Ablauf
+
+```text
+zuerst ausschließlich Bild_01
+→ Bild_01 vollständig prüfen
+→ Bild_01 als Style-/Continuity-Referenz verwenden
+→ Bild_02–06 einzeln produzieren
+→ Block-QA
+→ Bild_07–11 einzeln produzieren
+→ usw.
+→ technische/qualitative Fehlschläge auf Recovery-Liste
+→ nach allen normalen Blöcken Recovery-Pass
+→ erst bei lückenlosem Bild_01...Bild_NN-Satz ZIP erstellen
+```
+
+Ein einzelner Flow-Fehler beendet also nicht mehr den gesamten Produktionslauf.
 
 ## Video 001 – Stand
 
@@ -51,17 +84,29 @@ Phase 1 enthält:
 - finales Voiceover-Skript
 - 36 semantische Bildszenen
 - exakte Sprachabschnitte pro Szene
-- vollständigen Google-Flow-Agent-Prompt für `Bild_01` bis `Bild_36`
+- komplett überarbeiteten Google-Flow-Agent-Prompt für faceless Explainer-Visuals
+- `Bild_01` als Master Style Frame
+- 5er-Block-Workflow
+- Fehlerliste + Recovery-Pass
 - menschenlesbare Bild↔Skript-Pipeline
 - Antigravity-Phase-3-Anweisung
 - YouTube-Titel, Beschreibung und 5 Hashtags
 
-Nächster Schritt des Nutzers:
+Die Nutzerkopie ist synchron:
 
-1. `01_script/script.txt` 1:1 in die eigene Voice-KI geben.
+```text
+02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt
+```
+
+## Nächster Schritt des Nutzers
+
+1. `01_script/VOICEOVER-ZUM-KOPIEREN.txt` 1:1 in die eigene Voice-KI geben.
 2. finale Audio-Datei in `01_script/audio/` legen.
-3. `02_bildprompts/Google-Flow-Agent-Prompt.md` vollständig in Google Flow verwenden.
-4. finale ZIP mit `Bild_01.png` bis `Bild_36.png` in `02_bildprompts/bilder-zip/` legen.
+3. `02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt` vollständig in Google Flow verwenden.
+4. Flow soll **zuerst nur `Bild_01`** erstellen.
+5. Erst nach akzeptiertem `Bild_01` die weiteren Bilder in 5er-Blöcken erzeugen.
+6. Fehlgeschlagene Bildnummern am Ende im Recovery-Pass erneut erzeugen.
+7. finale ZIP mit `Bild_01.png` bis `Bild_36.png` in `02_bildprompts/bilder-zip/` legen.
 
 Danach kann Phase 3 automatisch vorbereitet werden.
 
@@ -95,24 +140,26 @@ python tools/qa_final.py \
 
 ### 1. Finale Voice
 
-Die konkrete Stimme erstellt der Nutzer selbst. Für Video 001 fehlt deshalb aktuell nur das echte Voiceover.
+Die konkrete Stimme erstellt der Nutzer selbst. Für Video 001 fehlt deshalb aktuell das echte Voiceover.
 
 ### 2. Google-Flow-Bilder
 
-Der komplette Prompt ist vorhanden; die 36 finalen Bilder müssen vom Nutzer in Google Flow erzeugt und als ZIP abgelegt werden.
+Der neue komplette Prompt ist vorhanden; die 36 finalen Bilder müssen in Google Flow erzeugt und als ZIP abgelegt werden.
 
-### 3. Physische Style-Reference optional nach Pilot
+### 3. Kanalweite physische Style-Reference optional nach Pilot
 
-Der gewünschte Look ist schriftlich festgelegt. Nach dem Pilot kann das beste akzeptierte Originalbild zusätzlich dauerhaft als:
+Für Video 001 übernimmt `Bild_01` bereits die Rolle der Episode-Referenz.
+
+Nach dem Pilot kann das beste dauerhaft akzeptierte Originalbild zusätzlich als:
 
 ```text
 assets/channel/STYLE_REFERENCE.png
 ```
 
-gespeichert werden, damit Flow bei späteren Videos einen echten visuellen Style-Anchor erhält.
+gespeichert werden. Dann bleibt `Bild_01` weiterhin die konkrete Episode-/Continuity-Referenz.
 
 ## Nächster Produktionsmeilenstein
 
-**Video 001 Phase 2 durchführen und anschließend end-to-end rendern.**
+**Video 001 mit dem neuen Flow-System erneut durch Phase 2 führen und anschließend end-to-end rendern.**
 
-Erst der echte Pilot zeigt, ob Bildrhythmus, Voice, Motion-Stärke und Label-Lesbarkeit in der Praxis optimal sind. Diese Punkte werden danach auf Basis des tatsächlichen Ergebnisses feinjustiert.
+Erst der echte Pilot zeigt, ob Bildrhythmus, Motion-Stärke und Label-Lesbarkeit in der Praxis optimal sind. Diese Punkte werden danach auf Basis des tatsächlichen Ergebnisses feinjustiert.
