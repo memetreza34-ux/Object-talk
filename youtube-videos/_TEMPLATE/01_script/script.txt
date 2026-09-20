@@ -1,0 +1,15 @@
+TITEL DES VIDEOS
+
+[Hier kommt ausschließlich der fertige deutsche Voiceover-Text hinein.]
+
+REGELN:
+- mindestens 5 Minuten Sprechdauer
+- komplett ausformuliert
+- natürlich gesprochenes Deutsch
+- verständlich für Kinder und Jugendliche
+- keine Regieanweisungen
+- keine Szenennummern im gesprochenen Text
+- keine Hinweise wie [Pause], [Bildwechsel] oder [Musik]
+- der Text muss 1:1 in eine Voice-KI kopierbar sein
+- wissenschaftliche Aussagen vorher prüfen
+- schwierige Begriffe direkt einfach erklären
