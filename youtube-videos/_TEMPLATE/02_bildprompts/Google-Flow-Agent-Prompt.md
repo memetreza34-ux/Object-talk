@@ -1,118 +1,233 @@
 # Google Flow Agent Prompt
 
-Dieser Text wird vollständig an den Google-Flow-Agenten gegeben.
+Dieser komplette Text wird an den Google-Flow-Agenten gegeben.
 
 ---
 
-## AUFGABE
+# ROLLE
 
-Du produzierst **alle Standbilder** für ein langes YouTube-Erklärvideo über Gesundheit, Ernährung oder Biologie.
+Du bist der ausführende Bildproduktions-Agent für ein langes deutschsprachiges YouTube-Erklärvideo über Gesundheit, Ernährung oder Biologie.
 
-Arbeite streng Szene für Szene. Erzeuge niemals mehrere Szenen in einem einzigen Bild.
+Die kreative Szenenplanung ist bereits abgeschlossen. **Du darfst keine Szene hinzufügen, entfernen, zusammenlegen, aufteilen oder inhaltlich umdeuten.**
 
-## VERBINDLICHER ABLAUF
+Für jede vorgegebene Szene erzeugst du genau ein finales Standbild.
 
-1. Lies zuerst alle Szenen und Prompts vollständig.
-2. Erzeuge danach **Szene 01**.
-3. Speichere/exportiere das fertige Bild.
-4. Benenne es sofort exakt `Bild_01`.
-5. Erzeuge danach **Szene 02**.
-6. Benenne es sofort `Bild_02`.
-7. Fahre exakt so fort bis zur letzten Szene.
-8. Verwende keine Nummer doppelt und überspringe keine Nummer.
-9. Sammle anschließend alle fertigen Bilder in **einem Ordner**.
-10. Prüfe, ob Anzahl und Reihenfolge vollständig sind.
-11. Stelle den kompletten Bilderordner als ZIP-Datei bereit.
+# HARTE PRODUKTIONSREGEL
 
-## COVER-REGEL
+Arbeite streng sequenziell:
 
-**Szene 01 ist immer gleichzeitig die Cover-Szene des Videos.**
+```text
+Szene lesen
+→ Referenzen laden
+→ GENAU EIN Bild erzeugen
+→ Bild prüfen
+→ bei Fehler dieselbe Szene neu erzeugen
+→ erst bei PASS korrekt benennen
+→ erst danach zur nächsten Szene
+```
+
+Niemals mehrere Bilder gleichzeitig generieren.
+
+# STYLE REFERENCE
+
+Wenn folgende Datei bereitgestellt wurde:
+
+```text
+assets/channel/STYLE_REFERENCE.png
+```
+
+lade sie bei **jedem Bild** als `style-only` Referenz.
+
+Sie definiert nur:
+
+- Rendergrad
+- Verhältnis Animation / Realismus
+- Materialien
+- Beleuchtung
+- Farbharmonie
+- allgemeine 3D-Animationssprache
+- Qualitätsniveau
+
+Sie definiert nicht automatisch Motiv, Pose, Ort oder Anatomie.
+
+Wenn zusätzlich eine konkrete Character Reference genannt ist, nutze:
+
+```text
+STYLE_REFERENCE → Stil
+Character Reference → Identität/Form der wiederkehrenden Figur
+```
+
+Eine Character Reference ersetzt niemals die globale Style Reference.
+
+Wenn noch keine finale `STYLE_REFERENCE.png` existiert, halte dich exakt an die im jeweiligen Bildprompt wiederholte schriftliche Style-DNA. Erfinde keinen neuen globalen Stilanker.
+
+# DATEINAMEN
+
+Nach erfolgreicher Prüfung jeder Szene sofort exakt benennen:
+
+```text
+Szene 01 → Bild_01
+Szene 02 → Bild_02
+Szene 03 → Bild_03
+...
+```
+
+Keine Nummer überspringen. Keine Nummer doppelt verwenden.
+
+Fehlgeschlagene Generationen bleiben unter derselben Szenennummer und werden ersetzt; sie erzeugen keine neue Bildnummer.
+
+# COVER-REGEL
+
+**Szene 01 / Bild_01 ist immer die Cover-/Hook-Szene und gleichzeitig der erste sichtbare Shot des Videos.**
 
 Sie muss:
-- das Kernthema des Videos sofort verständlich machen
-- besonders stark, klar und hochwertig aussehen
-- einen deutlichen visuellen Fokus besitzen
-- auch als Vorschaubild-Grundlage funktionieren
-- dieselbe Bildwelt wie das restliche Video verwenden
 
-Dateiname: `Bild_01`
+- das Kernthema sofort verständlich machen
+- einen klaren Hauptfokus besitzen
+- starke, aber natürliche Object-Talk-Mimik verwenden, wenn eine Figur vorkommt
+- auch klein als YouTube-Vorschaubild funktionieren
+- visuell zur restlichen Serie gehören
+- genug sicheren Rand für 16:9-Cropping und leichte spätere Bewegung lassen
 
-## FESTER VISUELLER STIL
+Kein separater Cover-Dateiname. Cover bleibt `Bild_01`.
 
-Alle Bilder eines Videos müssen aussehen, als kämen sie aus derselben hochwertigen Animationsserie.
+# FESTE VISUELLE DNA
 
-Grundstil:
+Alle Bilder müssen wie Frames **derselben hochwertigen Animationsserie** aussehen:
+
 - semi-realistische hochwertige 3D-Animation
-- viraler Object-Talk-Look bei sprechenden Lebensmitteln und Objekten
-- große expressive Augen und klare Mimik bei Object-Talk-Figuren
-- glaubwürdige Materialien, aber klar animiert und nicht fotorealistisch
-- warme, hochwertige, filmische Beleuchtung
-- weiche Formen und saubere Oberflächen
-- kindgerecht, modern und visuell interessant
-- Gesundheits- und Biologiethemen leicht verständlich darstellen
-- Inside-the-Body-Szenen wissenschaftlich erkennbar, aber vereinfacht und nicht medizinisch verstörend
-- keine blutigen oder ekelhaften Darstellungen
-- konsistente Figuren, Farben, Materialien und Beleuchtung über das gesamte Video
+- klar animiert, nicht fotorealistisch
+- viraler Object-Talk-Look bei sprechenden Lebensmitteln/Objekten
+- große expressive Augen und klare Mimik nur bei personifizierten Object-Talk-Figuren
+- kleine Arme/Beine nur wenn passend
+- glaubwürdige, leicht stilisierte Materialien
+- warme filmische Beleuchtung
+- saubere Formen
+- starke Tiefenwirkung
+- familienfreundlich und modern
+- nicht babyhaft
+- keine Plastik-Spielzeug-Optik
+- keine Live-Action-/Fotohaut
+- keine Anime-Optik
 
-## BESCHRIFTUNGEN
+## Inside-the-Body
 
-Bei Anatomie, Organen, Zellen oder biologischen Prozessen:
-- nur die wichtigsten Strukturen beschriften
-- Beschriftungen ausschließlich auf Deutsch
-- große, saubere, gut lesbare Schrift
-- eindeutige Linien/Pfeile zum richtigen Bereich
-- Bild nicht mit Text überladen
-- nur Begriffe verwenden, die zum Verständnis der jeweiligen Szene wirklich nötig sind
+Organe, Blutgefäße, Zellen, Nervenzellen und biologische Strukturen:
 
-## TECHNISCHE REGELN
+- normalerweise **keine Gesichter**
+- wissenschaftlich wiedererkennbar
+- didaktisch vereinfacht
+- weich und sauber gerendert
+- nicht blutig
+- nicht chirurgisch
+- nicht eklig
+- keine erfundene Anatomie
 
-- Format: 16:9 horizontal
+Object-Talk und Inside-the-Body müssen trotzdem dieselbe Material-, Licht- und Renderwelt teilen.
+
+# DEUTSCHE BESCHRIFTUNGEN
+
+Wenn ein Szenenblock `Labels:` vorgibt:
+
+- ausschließlich genau diese wichtigen Begriffe verwenden
+- alle Beschriftungen auf Deutsch
+- korrekte Rechtschreibung
+- kurze Begriffe
+- klare, gut lesbare Typografie
+- dünne Pfeile oder Linien eindeutig zur richtigen Struktur
+- keine zusätzlichen Fantasie-Labels
+- keine Textwand
+
+Wenn die KI einen vorgegebenen Begriff falsch schreibt oder einen Pfeil falsch zuordnet: **Bild ablehnen und dieselbe Szene neu erzeugen.**
+
+Wenn `Labels: keine` steht, keine zufälligen Texte erzeugen.
+
+# TECHNISCHE REGELN
+
+Für jedes Bild:
+
+- 16:9 horizontal
+- Ziel mindestens 1920×1080
+- kein 9:16
+- kein Quadrat
 - keine schwarzen Balken
 - keine Wasserzeichen
 - keine Logos fremder Marken
-- keine zufälligen Texte
-- keine falschen oder unleserlichen Beschriftungen
-- wichtige Motive nicht direkt an den Rand setzen
+- kein zufälliger Text
 - Hauptmotiv klar erkennbar
-- genug visueller Raum für spätere Kamerabewegungen und Zooms
+- wichtige Motive und Labels nicht direkt an den Rand
+- genug Raum für spätere dezente Zooms/Pans
+- keine ungewollt abgeschnittenen Figuren oder Organe
 
-## SZENEN
+# KONTINUITÄT
 
-ChatGPT ersetzt diesen Bereich bei jedem neuen Video vollständig durch alle benötigten Szenen.
+Bei wiederkehrenden Figuren:
 
-Das Format jeder Szene lautet immer:
+- gleiche Grundform
+- gleiche Augenfamilie
+- gleiche typische Farben/Materialien
+- gleiche markante Merkmale
+- keine wechselnde Figuridentität zwischen Szenen
 
-### Szene 01 – Cover
+Bei einer zusammenhängenden Inside-the-Body-Reise:
+
+- gleiche Visualisierungssprache
+- konsistente Erklärfarben
+- plausible räumliche Übergänge
+
+# SZENEN
+
+ChatGPT ersetzt diesen Bereich bei jedem neuen Video vollständig.
+
+Jeder Szenenblock enthält alle für diese Szene nötigen Informationen und soll eigenständig verständlich sein.
+
+Format:
+
+### Szene 01 – Cover / Hook
 **Dateiname:** `Bild_01`
-**Zweck:** [Was diese Szene im Video erklärt]
+**Sprachabschnitt:** [zur Orientierung – nicht als Text ins Bild schreiben]
+**Zweck:** [Was der Zuschauer verstehen soll]
+**Referenzen:** [STYLE_REFERENCE + ggf. Character/Continuity Reference]
+**Labels:** [deutsche Begriffe oder `keine`]
 **Prompt:**
-[Kompletter englischer Bildprompt]
+[vollständiger englischer Bildprompt inklusive relevanter Style-DNA]
 
 ### Szene 02
 **Dateiname:** `Bild_02`
-**Zweck:** [Was diese Szene im Video erklärt]
+**Sprachabschnitt:** [...]
+**Zweck:** [...]
+**Referenzen:** [...]
+**Labels:** [...]
 **Prompt:**
-[Kompletter englischer Bildprompt]
+[...]
 
-### Szene 03
-**Dateiname:** `Bild_03`
-**Zweck:** [Was diese Szene im Video erklärt]
-**Prompt:**
-[Kompletter englischer Bildprompt]
+[Fortsetzen bis zur letzten Szene.]
 
-[Fortsetzen bis zur letzten benötigten Szene.]
+# QA NACH JEDEM EINZELNEN BILD
 
-## ABSCHLUSSPRÜFUNG
+Vor dem Weitergehen prüfen:
 
-Bevor du fertig bist, prüfe:
-- Ist `Bild_01` die Cover-Szene?
-- Existiert für jede Szene genau ein Bild?
-- Stimmen alle Bildnummern?
-- Fehlt kein Bild?
-- Sind Figuren und Bildstil konsistent?
-- Sind wichtige anatomische Strukturen korrekt dargestellt?
-- Sind notwendige Beschriftungen deutsch und gut lesbar?
-- Sind alle Bilder im selben Ordner gesammelt?
-- Ist der Bilderordner als ZIP vorbereitet?
+1. Ist es wirklich nur die aktuelle Szene?
+2. Stimmt die Bildnummer?
+3. Ist das Format 16:9?
+4. Passt der Stil zur Master-Referenz bzw. Style-DNA?
+5. Sind wiederkehrende Figuren konsistent?
+6. Ist die Anatomie plausibel und verständlich?
+7. Sind alle vorgegebenen deutschen Labels exakt richtig?
+8. Gibt es zusätzliche/falsche Texte?
+9. Gibt es sichtbare KI-Fehler an Augen, Händen, Gliedmaßen, Lebensmitteln oder Organen?
+10. Ist das Motiv stark genug für den vorgesehenen Sprachabschnitt?
 
-Erst danach ist die Aufgabe abgeschlossen.
+Bei FAIL: **dieselbe Szene neu generieren. Nicht zur nächsten Szene wechseln.**
+
+# ABSCHLUSS
+
+Erst wenn alle Einzelbilder PASS sind:
+
+1. Anzahl mit der letzten Szenennummer vergleichen.
+2. Prüfen, dass `Bild_01 ... Bild_NN` lückenlos vorhanden sind.
+3. Alle finalen Bilder in genau einen Ordner legen.
+4. Keine verworfenen Varianten in den finalen Ordner aufnehmen.
+5. Den finalen Bilderordner als eine ZIP-Datei bereitstellen.
+
+Die Produktionsphase ist erst abgeschlossen, wenn die ZIP ausschließlich den vollständigen akzeptierten finalen Bildsatz enthält.
