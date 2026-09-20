@@ -1,0 +1,28 @@
+{
+  "status": "TEMPLATE",
+  "rules": {
+    "source": "01_script/script.txt",
+    "coverage": "complete-no-gaps-no-overlaps",
+    "scene_boundaries": "semantic-visual-beats-not-automatic-sentences"
+  },
+  "scenes": [
+    {
+      "scene": 1,
+      "speech_section": "[Exakter erster gesprochener Abschnitt aus script.txt]",
+      "visual_task": "[Was der Zuschauer in diesem Abschnitt visuell verstehen soll]",
+      "image": "Bild_01",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "notes": "Cover / Hook"
+    },
+    {
+      "scene": 2,
+      "speech_section": "[Exakter naechster gesprochener Abschnitt ohne Luecke]",
+      "visual_task": "[Visuelle Aufgabe]",
+      "image": "Bild_02",
+      "motion": "pan-left",
+      "labels_de": [],
+      "notes": ""
+    }
+  ]
+}
