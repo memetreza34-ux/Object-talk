@@ -1,0 +1,15 @@
+GOOGLE FLOW PROMPT ZUM KOPIEREN
+
+Diese Datei ist die Nutzer-Datei für Google Flow.
+
+Bei jedem neuen Video ersetzt ChatGPT diesen Inhalt vollständig durch den finalen Google-Flow-Agent-Prompt mit allen Szenen und allen Bildprompts.
+
+WICHTIG:
+- Diese .txt-Datei ist zum normalen Öffnen und Kopieren gedacht.
+- Der Inhalt muss vollständig identisch mit dem finalen Google-Flow-Agent-Prompt des Videos sein.
+- Keine Szenen fehlen lassen.
+- Szene 01 = Bild_01 = Cover/Hook.
+- Jedes Bild einzeln erzeugen.
+- Alle finalen Bilder nummeriert als ZIP bereitstellen.
+
+Wenn diese Datei noch diesen Platzhalter enthält, ist Phase 1 noch nicht vollständig.
