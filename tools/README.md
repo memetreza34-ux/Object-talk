@@ -21,7 +21,27 @@ ffmpeg -version
 ffprobe -version
 ```
 
-## 1. Voiceover transkribieren
+## 1. Bilder prüfen
+
+Nach dem Entpacken der Flow-Bilder:
+
+```bash
+python tools/validate_assets.py \
+  youtube-videos/THEMA/03_pipeline/scene-map.json \
+  PFAD/ZUM/ENTPACKTEN/BILDERORDNER
+```
+
+Geprüft werden unter anderem:
+
+- lückenlose Szenennummern
+- `Bild_01`, `Bild_02`, ...
+- fehlende oder doppelte Bilder
+- ungefähr 16:9
+- Mindestauflösung
+
+Bei Fehlern darf nicht gerendert werden.
+
+## 2. Voiceover transkribieren
 
 ```bash
 python tools/transcribe_audio.py \
@@ -42,7 +62,7 @@ Falls ein sauberes deutsches Voiceover nicht zuverlässig erkannt wird:
 python tools/transcribe_audio.py AUDIO OUTPUT --model medium
 ```
 
-## 2. Szenen-Timeline bauen
+## 3. Szenen-Timeline bauen
 
 ```bash
 python tools/build_timeline.py \
@@ -55,4 +75,4 @@ python tools/build_timeline.py \
 
 ## Grundsatz
 
-Bei fehlenden oder unsicher gefundenen Wortankern muss die Pipeline stoppen. Sie darf niemals automatisch erfundene Zeitpunkte einsetzen.
+Bei fehlenden Assets oder unsicher gefundenen Wortankern muss die Pipeline stoppen. Sie darf niemals automatisch erfundene Bilder oder Zeitpunkte einsetzen.
