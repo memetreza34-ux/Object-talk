@@ -1,0 +1,13 @@
+ANTIGRAVITY PROMPT ZUM KOPIEREN
+
+Diese Datei ist die Nutzer-Datei für Phase 3.
+
+Bei jedem neuen Video ersetzt ChatGPT diesen Inhalt vollständig durch den finalen Antigravity-Prompt für genau dieses Video.
+
+WICHTIG:
+- Diese .txt-Datei ist zum normalen Öffnen und Kopieren gedacht.
+- Sie muss Projektpfad, benötigte Assets, Whisper-/Timing-Ablauf, Renderer-Regeln und finalen Export enthalten.
+- Antigravity darf Script, Bildreihenfolge und Szenengrenzen nicht kreativ verändern.
+- Das finale Voiceover bleibt die Master-Timeline.
+
+Wenn diese Datei noch diesen Platzhalter enthält, ist Phase 1 noch nicht vollständig.
