@@ -1,10 +1,10 @@
 # Audio-Regeln
 
-Diese Regeln gelten für jedes Longform-Video.
+Diese Regeln gelten für jedes Object-Talk-Longform-Video.
 
 ## Stimme
 
-Die genaue Voice-KI kann später gewählt oder gewechselt werden. Wichtiger ist, dass die Stimme über den Kanal hinweg möglichst konstant bleibt.
+Die konkrete Voice-KI kann gewechselt werden. Sobald der Nutzer eine Stimme als Kanalstimme freigibt, soll dieselbe Stimme möglichst über alle Longform-Videos beibehalten werden.
 
 Ziel:
 
@@ -12,7 +12,7 @@ Ziel:
 - klar und natürlich
 - freundlich und neugierig
 - verständlich für jüngere Zuschauer, aber nicht babyhaft
-- ruhig genug für Erklärungen
+- ruhig genug für Biologie-Erklärungen
 - lebendig genug für Object-Talk
 - keine übertriebene Werbestimme
 
@@ -20,36 +20,79 @@ Ziel:
 
 Zielbereich ungefähr **135–155 Wörter pro Minute**.
 
-Das endgültige Tempo wird nicht aus dem Text geschätzt. Nach der Voice-Erzeugung wird die echte Audiodauer geprüft.
+Wichtiger als eine starre Zahl ist gute Verständlichkeit. Die echte Videodauer wird immer am finalen Audio geprüft.
 
 ## Aussprache
 
-Bei Fachbegriffen muss vor der Voice-Erzeugung geprüft werden, ob die KI sie korrekt ausspricht. Bei schwierigen Begriffen darf das Skript eine sprechfreundliche Formulierung verwenden, solange die fachliche Aussage korrekt bleibt.
+Fachbegriffe müssen vor der Voice-Erzeugung auf sprechfreundliche Formulierung geprüft werden.
 
-## Pausen
+`script.txt` muss exakt dem gesprochenen Text entsprechen. Keine alternative Audiofassung verwenden, ohne anschließend `script.txt` ebenfalls anzupassen und Phase 1 neu zu validieren.
 
-Natürliche Satzpausen sind erwünscht. Keine künstlich langen Pausen nur um die Mindestlänge zu erreichen.
+## Keine künstliche Longform-Streckung
 
-## Mindestdauer
+- kein Speed-down, um 5 Minuten zu erreichen
+- keine künstlich langen Pausen
+- keine unnötigen Wiederholungen
 
-Das finale Voiceover muss mindestens **300 Sekunden** lang sein. Ziel ist normalerweise etwas Reserve oberhalb von 5 Minuten.
+Wenn das finale Voiceover unter 300 Sekunden liegt:
 
-Wenn es zu kurz ist:
+1. Script sinnvoll erweitern
+2. Szenenplanung aktualisieren
+3. Voice neu erzeugen
+4. erst danach Phase 2 erneut prüfen
 
-1. Skript sinnvoll erweitern.
-2. Audio neu erzeugen.
-3. Erst danach Whisper-Timing erstellen.
+## Rohes Audio und kanonisches Audio
 
-Audio niemals künstlich verlangsamen, um 5 Minuten zu erreichen.
+Die Voice-KI-Datei ist zunächst nur das Rohasset.
+
+Vor Whisper wird daraus immer erzeugt:
+
+```text
+01_script/audio/final-voiceover.wav
+```
+
+mit:
+
+```bash
+python tools/prepare_audio.py RAW_AUDIO 01_script/audio/final-voiceover.wav
+```
+
+## Kanonische Audioeigenschaften
+
+Interner Produktionsstandard:
+
+- WAV
+- 48 kHz
+- PCM 16-bit
+- Geschwindigkeit: exakt `1.0×`
+- keine Kompression interner Sprechpausen
+- Ziel-Lautheit ungefähr `-16 LUFS`
+- Ziel True Peak maximal ungefähr `-1 dB`
+
+Diese Werte sind unser **Pipeline-Standard**, nicht die Behauptung einer zwingenden YouTube-Vorgabe.
+
+`prepare_audio.py` verwendet dafür FFmpeg `loudnorm` und verändert die Sprechgeschwindigkeit nicht.
+
+## Wichtig für Timing
+
+Whisper läuft ausschließlich auf `final-voiceover.wav`.
+
+Nach Erstellung von Wort-Zeitstempeln darf diese Audiodatei nicht mehr verändert werden.
+
+Jede Audioänderung macht folgende Dateien ungültig und sie müssen neu erzeugt werden:
+
+- `whisper-raw.json`
+- `word-timings.json`
+- `timeline.json`
+- `subtitles.srt`
+- Renderer-Runtime
 
 ## Musik und SFX
 
 - Hintergrundmusik optional und sehr leise
-- Voiceover hat immer Vorrang
-- Soundeffekte sparsam
+- Voiceover immer dominant
+- Soundeffekte sparsam und nur mit echtem inhaltlichem Nutzen
 - keine dauernden Cartoon-Sounds
-- SFX nur, wenn sie Erklärung oder Übergang sinnvoll unterstützen
+- keine zweite narrative Stimme
 
-## Synchronisierung
-
-Die fertige Voice-Datei wird nach der Produktion nicht mehr inhaltlich verändert. Sie ist die Zeitbasis für Whisper und die gesamte Bild-Timeline.
+Für den ersten Pilot ist **Voiceover ohne zusätzliche Musik/SFX technisch völlig ausreichend**. Erst nach stabiler Bild-/Timing-Pipeline sollen zusätzliche Audio-Layer optimiert werden.
