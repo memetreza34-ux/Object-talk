@@ -1,0 +1,44 @@
+{
+  "format": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "aspect_ratio": "16:9"
+  },
+  "runtime": {
+    "minimum_seconds": 300,
+    "normal_target_seconds_min": 330,
+    "normal_target_seconds_max": 480
+  },
+  "scenes": {
+    "cover_scene": 1,
+    "normal_seconds_min": 6,
+    "normal_seconds_max": 10,
+    "complex_biology_seconds_min": 4,
+    "complex_biology_seconds_max": 8,
+    "overview_seconds_min": 8,
+    "overview_seconds_max": 12,
+    "soft_max_seconds": 12
+  },
+  "audio": {
+    "sample_rate_hz": 48000,
+    "target_integrated_lufs": -16,
+    "target_true_peak_db": -1,
+    "speed_multiplier": 1.0,
+    "canonical_filename": "final-voiceover.wav"
+  },
+  "whisper": {
+    "implementation": "faster-whisper",
+    "default_model": "small",
+    "language": "de",
+    "word_timestamps": true,
+    "strict_script_alignment": true,
+    "guess_on_mismatch": false
+  },
+  "render": {
+    "container": "mp4",
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "final_filename": "final-video.mp4"
+  }
+}
