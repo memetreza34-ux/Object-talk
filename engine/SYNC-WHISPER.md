@@ -1,89 +1,133 @@
 # Audio-/Bild-Synchronisierung mit Whisper
 
-## Warum Whisper gebraucht wird
+## Grundidee
 
-Die Bildwechsel dürfen nicht anhand einer geschätzten Sprechgeschwindigkeit gesetzt werden. Nach der Voice-KI kann derselbe Text schneller oder langsamer gesprochen werden.
+Bildwechsel werden niemals anhand geschätzter Sprechgeschwindigkeit gesetzt.
 
-Deshalb wird die **fertige Audiodatei** nach ihrer Erstellung automatisch transkribiert. Wir verwenden dafür vorzugsweise `faster-whisper` mit Wort-Zeitstempeln.
+Die kreative Szenenaufteilung entsteht **vorher** in Phase 1. Jede Szene besitzt einen vollständigen, wortwörtlichen `speech_section` aus `script.txt`.
 
-## Ziel
+Nach der Voice-Erzeugung liefert `faster-whisper` nur die echten Wortzeiten des finalen Audios.
 
-Aus:
+## Warum zwei Schritte nötig sind
 
-- `script.txt`
-- fertigem Voiceover
-- `scene-map.json`
-- `Bild_01`, `Bild_02`, ...
+ASR kann einzelne Wörter anders segmentieren als das Script. Deshalb wird nicht direkt auf ungeprüfte Whisper-Phrasen vertraut.
 
-entsteht eine exakte `timeline.json` mit Start- und Endzeiten für jedes Bild.
+Die Pipeline arbeitet so:
 
-Beispiel:
-
-```json
-{
-  "scene": 7,
-  "image": "Bild_07.png",
-  "start": 52.84,
-  "end": 60.31,
-  "start_anchor": "Jetzt gelangen die Nährstoffe ins Blut",
-  "end_anchor": "im ganzen Körper verteilt"
-}
+```text
+script.txt
++ final-voiceover.wav
+↓
+faster-whisper Rohtranskription mit Wortzeiten
+↓
+strikte Script↔ASR-Ausrichtung
+↓
+word-timings.json mit exakt den Script-Wörtern
+↓
+scene-map.json mit vollständigen speech_section-Abschnitten
+↓
+exakte sequenzielle Zuordnung
+↓
+timeline.json
 ```
 
-## Ablauf in Phase 3
+## Schritt 1 – kanonisches Audio
 
-1. Antigravity findet die fertige Voiceover-Datei in `01_script/audio/`.
-2. `tools/transcribe_audio.py` wird ausgeführt.
-3. Whisper erzeugt Wort-Zeitstempel und speichert sie in `03_pipeline/timing/whisper-words.json`.
-4. ChatGPT hat bereits in `scene-map.json` für jede Szene eindeutige Textanker festgelegt.
-5. `tools/build_timeline.py` gleicht diese Textanker mit den Whisper-Wörtern ab.
-6. Daraus wird `03_pipeline/timing/timeline.json` erzeugt.
-7. Antigravity/Renderer benutzt ausschließlich diese echten Zeitwerte für die Bildwechsel.
-8. Optional wird zusätzlich `subtitles.srt` für YouTube erzeugt.
+Whisper läuft ausschließlich auf:
 
-## Scene-Map-Regel
+```text
+01_script/audio/final-voiceover.wav
+```
 
-Jede Szene erhält:
+Diese Datei wird mit `tools/prepare_audio.py` aus der rohen Voice-KI-Datei erzeugt.
+
+Keine spätere Geschwindigkeitsänderung nach Whisper.
+
+## Schritt 2 – Transkription + strikte Ausrichtung
+
+```bash
+python tools/transcribe_audio.py \
+  youtube-videos/THEMA/01_script/audio/final-voiceover.wav \
+  youtube-videos/THEMA/01_script/script.txt \
+  youtube-videos/THEMA/03_pipeline/timing
+```
+
+Erzeugt:
+
+```text
+whisper-raw.json
+word-timings.json
+subtitles.srt
+```
+
+`whisper-raw.json` ist die echte ASR-Ausgabe.
+
+`word-timings.json` enthält dagegen die **exakten Wörter aus `script.txt`**, nachdem sie streng mit dem erkannten Audio ausgerichtet wurden.
+
+Erlaubt sind nur technisch eindeutig normalisierbare Gruppierungen, z. B. wenn Whisper ein zusammengesetztes Wort anders segmentiert. Inhaltliche Abweichungen führen zu FAIL.
+
+## Kein Fuzzy-Fallback
+
+Verboten:
+
+- einen ähnlich klingenden Abschnitt irgendwo im Audio auswählen
+- bei nicht gefundenem Text einen ungefähren Zeitpunkt schätzen
+- Szene anhand der Gesamttextlänge proportional verteilen
+- still über ein ausgelassenes oder zusätzlich gesprochenes Wort hinweggehen
+
+Wenn Script und Audio nicht vollständig zusammenpassen:
+
+1. prüfen, ob wirklich die finale Voice-Datei verwendet wird
+2. prüfen, ob `script.txt` exakt dem gesprochenen Text entspricht
+3. bei korrektem Text mit besserem Whisper-Modell erneut versuchen, z. B. `--model medium`
+4. wenn es weiterhin scheitert: Stelle manuell prüfen und Ursache beheben
+
+## Schritt 3 – Szenen auf echte Wortzeiten mappen
+
+```bash
+python tools/build_timeline.py \
+  youtube-videos/THEMA/03_pipeline/scene-map.json \
+  youtube-videos/THEMA/03_pipeline/timing/word-timings.json \
+  youtube-videos/THEMA/03_pipeline/timing/timeline.json
+```
+
+Jede Szene in `scene-map.json` enthält:
 
 - `scene`
 - `image`
+- `speech_section`
 - `start_anchor`
 - `end_anchor`
-- kurze inhaltliche Beschreibung
+- `visual_task`
+- `motion`
 
-Die Anker müssen **wortwörtlich aus `script.txt` stammen**.
+`build_timeline.py` geht **sequenziell** durch das gesamte Script. Jede `speech_section` muss exakt am nächsten noch nicht verwendeten Scriptwort beginnen.
 
-Sie sollen:
+Dadurch entstehen automatisch:
 
-- eindeutig sein
-- normalerweise 5–12 Wörter enthalten
-- nicht mehrfach im Skript vorkommen
-- keine umformulierten Varianten sein
+- keine Lücken
+- keine Überlappungen
+- keine Mehrdeutigkeiten bei wiederholten Wörtern
+- kein falscher Treffer weiter hinten im Audio
 
-## Wichtig
+## Sichtbare Szenenzeiten
 
-Die Textanker sind die semantische Planung von ChatGPT. Die echten Sekundenwerte entstehen erst **nach dem finalen Voiceover**.
+Szene 01 startet bei `0.0` Sekunden, damit `Bild_01` sofort sichtbar ist.
 
-Dadurch muss der Nutzer keine Zeitcodes von Hand setzen.
+Bei allen weiteren Szenen beginnt das neue Bild beim ersten gesprochenen Wort der zugehörigen `speech_section`.
 
-## Falls Whisper einen Anker nicht sicher findet
+Die vorige Szene bleibt während einer natürlichen Sprechpause sichtbar, bis das nächste gesprochene Segment beginnt.
 
-Reihenfolge der Fehlerbehebung:
+Die letzte Szene bleibt bis zum Ende des finalen Audios sichtbar.
 
-1. mit einem längeren eindeutigen Anker erneut versuchen
-2. Whisper-Modell von `small` auf `medium` erhöhen
-3. bei weiterhin problematischer Stelle Zeitstempel manuell prüfen
+## Toolwahl
 
-Die Pipeline darf bei einem nicht gefundenen Anker nicht stillschweigend raten.
+Standard ist `faster-whisper` mit `word_timestamps=True`. Die Library unterstützt Wort-Zeitstempel direkt. Das ist für diese Pipeline entscheidend.
 
-## Warum `faster-whisper`
+Standardmodell: `small`.
 
-Für diese Pipeline ist `faster-whisper` der Standard, weil wir vor allem brauchen:
+Bei schwierigen Fachbegriffen kann `medium` verwendet werden.
 
-- deutsche Transkription
-- Wort-Zeitstempel
-- lokale Ausführung
-- gute Geschwindigkeit
-- kein zwingendes externes API-Konto
+## Goldene Regel
 
-Das Original-Whisper-Konzept bleibt gleich; `faster-whisper` ist hier nur die praktischere Implementierung.
+**Phase 1 entscheidet WAS zu welcher Sprachpassage gehört. Whisper entscheidet nur WANN diese bereits festgelegte Sprachpassage im echten Audio stattfindet.**
