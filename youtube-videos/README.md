@@ -15,7 +15,8 @@ Dadurch wird `_TEMPLATE` in einen neuen Themenordner kopiert.
 ```text
 youtube-videos/THEMA/
 ├── 01_script/
-│   ├── script.txt
+│   ├── script.txt                            # technische Originalquelle
+│   ├── VOICEOVER-ZUM-KOPIEREN.txt            # identische, leicht nutzbare Kopie für den Nutzer
 │   └── audio/
 │       ├── <rohes Voiceover aus der Voice-KI>
 │       └── final-voiceover.wav              # Phase 3 erzeugt
@@ -61,12 +62,15 @@ Vor jeder Produktion:
 2. Thema recherchieren.
 3. Kernbehauptungen in `claim-matrix.md` prüfen.
 4. finales gesprochenes `script.txt` schreiben.
-5. semantische Bildszenen in `phase1-scenes.json` festlegen.
-6. gesamte Sprache lückenlos auf die Szenen verteilen.
-7. `scene-map.json` mit denselben `speech_section`-Grenzen erstellen.
-8. Google-Flow-Agent-Prompt mit genau einem Bild pro Szene erstellen.
-9. `Bild_01` immer als Cover-/Hook-Szene planen.
-10. YouTube-Titel, Beschreibung und maximal 5 Hashtags vorbereiten.
+5. zusätzlich `VOICEOVER-ZUM-KOPIEREN.txt` mit **exakt demselben Sprechertext** erstellen; diese Datei ist nur die bequeme Nutzerkopie zum Öffnen/Herunterladen/Kopieren.
+6. semantische Bildszenen in `phase1-scenes.json` festlegen.
+7. gesamte Sprache lückenlos auf die Szenen verteilen.
+8. `scene-map.json` mit denselben `speech_section`-Grenzen erstellen.
+9. Google-Flow-Agent-Prompt mit genau einem Bild pro Szene erstellen.
+10. `Bild_01` immer als Cover-/Hook-Szene planen.
+11. YouTube-Titel, Beschreibung und maximal 5 Hashtags vorbereiten.
+
+Wichtig: `script.txt` bleibt die technische Quelle für Validator, Whisper und Timeline. `VOICEOVER-ZUM-KOPIEREN.txt` darf inhaltlich niemals davon abweichen.
 
 Vor Phase 2:
 
@@ -83,7 +87,7 @@ Nur bei `PHASE-1 PASS` weiter.
 
 Der Nutzer:
 
-1. kopiert `script.txt` 1:1 in die Voice-KI
+1. öffnet bzw. lädt `01_script/VOICEOVER-ZUM-KOPIEREN.txt` herunter und kopiert den Inhalt 1:1 in die Voice-KI
 2. legt genau eine rohe Voice-Datei unter `01_script/audio/` ab
 3. gibt `Google-Flow-Agent-Prompt.md` an Google Flow
 4. Flow erzeugt jedes Bild streng einzeln
