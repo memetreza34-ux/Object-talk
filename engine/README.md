@@ -9,6 +9,7 @@ Der Engine sorgt dafür, dass jedes Video gleich aufgebaut wird und Antigravity 
 Er übernimmt bzw. definiert:
 
 - Mindestlänge und Bildrhythmus
+- einheitlichen Voice-/Audio-Stil
 - Audio-Synchronisierung
 - Whisper-Transkription mit Wort-Zeitstempeln
 - Zuordnung von `Bild_XX` zu exakten Audio-Zeiten
@@ -20,6 +21,7 @@ Er übernimmt bzw. definiert:
 ## Wichtige Dateien
 
 - `PRODUKTIONSREGELN.md` – feste Regeln für alle Videos
+- `AUDIO-REGELN.md` – feste Voice-/Audio-Regeln
 - `SYNC-WHISPER.md` – exakte Audio-/Bild-Synchronisierung
 - `VISUAL-QUALITY-GATE.md` – Prüfung vor dem finalen Export
 
