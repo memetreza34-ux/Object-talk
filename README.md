@@ -16,10 +16,10 @@ Jedes Video:
 - mindestens **5:00 Minuten**
 - 16:9 / 1920×1080 / 30 fps
 - narrative Visuals ausschließlich aus generierten Standbildern
-- viraler Object-Talk-Look + verständliche Inside-the-Body-Biologie
-- einheitliche semi-realistische 3D-Animationswelt
-- wichtige biologische Strukturen knapp auf Deutsch beschriftet
-- wissenschaftlich geprüft
+- hochwertige faceless 3D-Explainer-Bildwelt
+- komplexe Vorgänge visuell einfach erklären
+- wichtige biologische Strukturen knapp auf Deutsch beschriften
+- wissenschaftlich prüfen
 - keine unnötige Themenwiederholung
 
 ## Repo-Gehirn
@@ -40,23 +40,62 @@ Vor Arbeit lesen:
 
 ## Visuelles Kernprinzip
 
-### 1. Viral Object-Talk
+Der Kanal ist **kein Mascot-/Presenter-Format**.
 
-Sprechende Lebensmittel/Objekte mit großen Augen, klarer Mimik und starker Persönlichkeit.
+Standard sind echte Erklärbilder:
 
-### 2. Inside-the-Body
+- anatomische Cutaways
+- transparente Körperansichten
+- Prozessdarstellungen
+- Organ-, Gewebe- und Zellvisualisierungen
+- Mikro-/Makro-Zooms
+- Vorher-/Nachher- und Vergleichsbilder
+- Ursache→Prozess→Folge-Darstellungen
 
-Verständliche 3D-Darstellungen von Organen, Blut, Zellen, Nervensystem und biologischen Prozessen.
+Personifizierte Lebensmittel oder Object-Talk-Figuren sind nur optional und dürfen nur eingesetzt werden, wenn sie eine konkrete Erklärung wirklich verbessern.
 
-Beide Ebenen müssen wie dieselbe Animationsserie wirken.
+Alle Bilder müssen wie dieselbe hochwertige semi-realistische 3D-Erklärserie wirken.
 
-Nach finaler Nutzerfreigabe wird ein dauerhafter Style Anchor verwendet:
+## Style-Anker
+
+`Bild_01` jedes Videos ist:
+
+- Cover-/Hook-Frame
+- erster Shot
+- Master Style Frame für diese Episode
+
+Nach erfolgreicher Erstellung wird `Bild_01` bei allen weiteren Flow-Generierungen als Style-/Continuity-Referenz verwendet, soweit technisch möglich.
+
+Zusätzlich kann langfristig eine kanalweite Referenz existieren:
 
 ```text
 assets/channel/STYLE_REFERENCE.png
 ```
 
-Siehe `engine/STYLE-REFERENCE-SYSTEM.md`.
+Dann gilt:
+
+```text
+STYLE_REFERENCE.png = langfristige Kanal-DNA
+Bild_01.png = Episode-/Continuity-Referenz
+```
+
+Siehe `engine/STYLE-REFERENCE-SYSTEM.md` und `engine/FLOW-PRODUCTION-STANDARD.md`.
+
+## Flow-Produktion
+
+Google Flow arbeitet nicht mehr als ein großer Durchlauf.
+
+```text
+zuerst nur Bild_01
+→ Bild_01 prüfen und als Master Style Frame akzeptieren
+→ danach Bilder in 5er-Blöcken
+→ innerhalb jedes Blocks jedes Bild einzeln
+→ Fehlernummern sammeln
+→ am Ende Recovery-Pass
+→ erst bei lückenlosem PASS-Bildsatz ZIP erstellen
+```
+
+Ein einzelner Flow-Generierungsfehler beendet also nicht mehr automatisch die gesamte Bildproduktion.
 
 ## Themen-Gedächtnis
 
@@ -84,11 +123,14 @@ Phase 1 entscheidet **was** zu welchem Sprachabschnitt gehört, aber keine final
 ### Phase 2 – Nutzer + Voice-KI + Google Flow
 
 ```text
-script.txt → Voice-KI → rohe Audiodatei
-Google-Flow-Prompt → Bild_01 → Bild_02 → ... → Bilder-ZIP
+VOICEOVER-ZUM-KOPIEREN.txt → Voice-KI → rohe Audiodatei
+GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt
+→ nur Bild_01
+→ Master Style Frame
+→ 5er-Blöcke
+→ Recovery-Pass
+→ Bilder-ZIP
 ```
-
-`Bild_01` ist immer Cover-/Hook-Szene und erster Shot.
 
 ### Phase 3 – Antigravity + Tools + Remotion
 
@@ -135,6 +177,8 @@ youtube-videos/
 Wichtige globale Regeln:
 
 - `engine/PRODUKTIONSREGELN.md`
+- `engine/FLOW-PRODUCTION-STANDARD.md`
+- `engine/SCRIPT-STANDARD.md`
 - `engine/AUDIO-REGELN.md`
 - `engine/SYNC-WHISPER.md`
 - `engine/STYLE-REFERENCE-SYSTEM.md`
@@ -159,4 +203,6 @@ Unter anderem:
 
 ## Goldene Regel
 
-**Nicht raten.** Wenn Script, Audio, Bildnummer, Szenengrenze oder wissenschaftliche Kernaussage nicht eindeutig ist, stoppt die Pipeline und der konkrete Fehler wird behoben.
+**Nicht raten.** Wenn Script, Audio, Bildnummer, Szenengrenze oder wissenschaftliche Kernaussage nicht eindeutig ist, stoppt die technische Pipeline und der konkrete Fehler wird behoben.
+
+Ein einzelner Flow-Generierungsfehler wird dagegen über Fehlerliste + Recovery-Pass behandelt.
