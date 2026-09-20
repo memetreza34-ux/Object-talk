@@ -9,7 +9,7 @@ Wir produzieren **lange YouTube-Erklärvideos über Ernährung, Gesundheit und B
 Jedes Video muss:
 
 - **mindestens 5 Minuten lang** sein
-- **nur aus generierten Bildern** bestehen
+- visuell **nur aus generierten Standbildern** bestehen
 - ein klar abgegrenztes Thema verständlich erklären
 - fachlich sinnvoll und für Zuschauer leicht nachvollziehbar aufgebaut sein
 - visuell durchgehend in derselben wiedererkennbaren 3D-Bildwelt bleiben
@@ -58,13 +58,52 @@ Ein Video wird grundsätzlich so entwickelt:
 
 1. Themen-Gehirn prüfen
 2. neues, nicht doppelt vorhandenes Thema auswählen
-3. Thema in sinnvolle Kapitel gliedern
-4. Sprechertext für mindestens 5 Minuten entwickeln
-5. für jeden Abschnitt passende Bilder planen
-6. ausschließlich Bilder generieren – keine generierten Videoclips notwendig
-7. wichtige biologische Strukturen direkt im Bild klar auf Deutsch beschriften
-8. Bilder später mit Voiceover, Kamerabewegungen, Zooms, Übergängen und Sounddesign zum fertigen YouTube-Video zusammensetzen
-9. Thema im Themen-Gehirn als produziert markieren
+3. recherchieren und Fakten prüfen
+4. Thema in sinnvolle Kapitel gliedern
+5. Sprechertext für mindestens 5 Minuten entwickeln
+6. alle benötigten Standbilder planen
+7. Google Flow erzeugt jedes Bild einzeln und nummeriert es als `Bild_01`, `Bild_02` usw.
+8. Nutzer erzeugt das finale Voiceover aus `script.txt`
+9. `faster-whisper` analysiert das fertige Voiceover und erstellt Wort-Zeitstempel
+10. die Textanker der Szenen werden automatisch in echte Sekundenwerte umgerechnet
+11. Antigravity/Renderer setzt Bilder und Voiceover exakt synchron zusammen
+12. dezente Zooms, Schwenks und Übergänge erzeugen Bewegung aus den Standbildern
+13. Video, YouTube-Caption und Untertitel werden exportiert
+14. Thema im Themen-Gehirn als produziert markieren
+
+## Repository-Bereiche
+
+- `THEMEN-GEHIRN.md` – verhindert doppelte Themen
+- `bildwelt/` – feste visuelle Welt und Fach-Bildwelten
+- `youtube-videos/` – alle einzelnen Longform-Produktionen
+- `engine/` – globale Produktions-, Timing- und Qualitätsregeln
+- `tools/` – Whisper-/Timeline-Hilfstools für Phase 3
+
+## Technischer Kern
+
+Die Synchronisierung folgt:
+
+```text
+Script
+  -> Voice-KI
+  -> finales Voiceover
+  -> faster-whisper Wort-Zeitstempel
+  -> scene-map.json
+  -> timeline.json
+  -> Antigravity / Renderer
+  -> final-video.mp4
+```
+
+Dadurch werden Bildwechsel nicht anhand geschätzter Zeitpunkte gesetzt, sondern anhand des tatsächlich gesprochenen Audios.
+
+## Wichtige Regeln
+
+Siehe:
+
+- [Produktionsregeln](engine/PRODUKTIONSREGELN.md)
+- [Whisper-Synchronisierung](engine/SYNC-WHISPER.md)
+- [Visual Quality Gate](engine/VISUAL-QUALITY-GATE.md)
+- [YouTube-Video-Struktur](youtube-videos/README.md)
 
 ## Bildwelten
 
