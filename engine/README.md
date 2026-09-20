@@ -1,34 +1,53 @@
 # Engine
 
-Dieser Ordner enthält die **globalen Produktionsregeln und technischen Hilfen** für alle langen Object-Talk-YouTube-Videos.
+Dieser Ordner enthält die globalen Regeln für alle langen Object-Talk-YouTube-Videos.
 
-## Aufgabe des Engines
+## Zweck
 
-Der Engine sorgt dafür, dass jedes Video gleich aufgebaut wird und Antigravity nicht jedes Mal neu raten muss.
+Der Engine sorgt dafür, dass ChatGPT, Google Flow und Antigravity nicht bei jedem Video neue Regeln erfinden.
 
-Er übernimmt bzw. definiert:
+Er definiert:
 
-- Mindestlänge und Bildrhythmus
-- einheitlichen Voice-/Audio-Stil
-- Audio-Synchronisierung
-- Whisper-Transkription mit Wort-Zeitstempeln
-- Zuordnung von `Bild_XX` zu exakten Audio-Zeiten
-- 16:9-Longform-Regeln
-- Kamera-Bewegungen auf Standbildern
-- Exportregeln
-- Qualitätskontrolle
+- Longform-Länge und semantischen Bildrhythmus
+- wissenschaftliche Prüfung
+- kanalweite Style-Konsistenz
+- Voice-/Audio-Standard
+- harte Phase-Gates
+- Whisper-/Script-Synchronisierung
+- Bild-/Audio-Zuordnung
+- Standbild-Motion
+- Export- und Qualitätsregeln
 
-## Wichtige Dateien
+## Dateien
 
-- `PRODUKTIONSREGELN.md` – feste Regeln für alle Videos
-- `AUDIO-REGELN.md` – feste Voice-/Audio-Regeln
-- `SYNC-WHISPER.md` – exakte Audio-/Bild-Synchronisierung
-- `VISUAL-QUALITY-GATE.md` – Prüfung vor dem finalen Export
+- `PRODUKTIONSREGELN.md` – globale Longform-Regeln
+- `AUDIO-REGELN.md` – Voice und kanonische Audioaufbereitung
+- `SYNC-WHISPER.md` – strikte Audio-/Script-/Szenen-Synchronisierung
+- `STYLE-REFERENCE-SYSTEM.md` – dauerhafter visueller Kanalanker
+- `FACT-CHECK-STANDARD.md` – Gesundheit/Biologie/Ernährung prüfen
+- `PHASE-GATES.md` – verbindliche PASS/FAIL-Gates
+- `VISUAL-QUALITY-GATE.md` – visueller und finaler Qualitätscheck
 
-## Grundprinzip
+## Technischer Ablauf
 
-Antigravity ist der ausführende Agent. Die technische Render-Pipeline soll möglichst reproduzierbar sein:
+```text
+finales Script
+→ semantische Phase-1-Szenen
+→ PHASE-1-PASS
+→ Voice + Google-Flow-Bilder
+→ kanonisches Audio + sichere ZIP-Übernahme
+→ PHASE-2-PASS
+→ faster-whisper
+→ strikte vollständige Script↔Audio-Ausrichtung
+→ exakte Szenen-Timeline
+→ feste Remotion-Runtime
+→ Render
+→ technischer + visueller Final-QA
+→ PHASE-3-PASS
+```
 
-`Script -> Voice-Audio -> Whisper-Wortzeiten -> Szenen-Timeline -> nummerierte Bilder -> Render -> Export`
+## Wichtig
 
-Die Bilder selbst werden weiterhin über den Google-Flow-Agenten erzeugt.
+Der Engine ist **fail-closed**: Ein unbekannter oder widersprüchlicher Zustand wird nicht durch Raten repariert.
+
+Die eigentlichen finalen Szenenbilder erstellt weiterhin der Nutzer mit Google Flow.
