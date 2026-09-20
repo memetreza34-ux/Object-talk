@@ -151,12 +151,12 @@ Vor Freigabe:
 - Audio und Video enden korrekt
 - Video abspielbar
 
-Danach ausführen:
+Danach vom Repo-Root ausführen:
 
 ```bash
 python tools/qa_final.py \
-  youtube-videos/001-was-passiert-mit-essen-im-koerper \
-  youtube-videos/001-was-passiert-mit-essen-im-koerper/04_export/fertiges-video/final-video.mp4
+  youtube-videos/001-was-passiert-mit-essen-im-koerper/04_export/fertiges-video/final-video.mp4 \
+  youtube-videos/001-was-passiert-mit-essen-im-koerper/01_script/audio/final-voiceover.wav
 ```
 
 Wenn QA fehlschlägt: nicht als fertig melden. Erst eindeutige technische Fehler beheben und neu rendern.
