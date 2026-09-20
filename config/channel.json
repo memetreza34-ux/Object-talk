@@ -1,0 +1,35 @@
+{
+  "channel": "Object-Talk",
+  "language": "de",
+  "content_pillars": [
+    "Ernaehrung",
+    "Gesundheit",
+    "menschlicher Koerper",
+    "Biologie",
+    "Zellen",
+    "Gehirn und Nervensystem",
+    "Verdauung",
+    "Blut und Kreislauf",
+    "Immunsystem",
+    "Stoffwechsel",
+    "Schlaf",
+    "Hormone",
+    "Vitamine und Mineralstoffe"
+  ],
+  "audience": "familienfreundlich, leicht verstaendlich, besonders fuer juengere Zuschauer geeignet, aber nicht babyhaft",
+  "visual_identity": {
+    "primary_mode": "semi-realistic 3D animated viral object-talk",
+    "secondary_mode": "semi-realistic 3D educational inside-the-body",
+    "photorealistic": false,
+    "gore": false,
+    "style_reference": "assets/channel/STYLE_REFERENCE.png",
+    "style_reference_required_after_lock": true,
+    "character_reference_dir": "assets/channel/characters"
+  },
+  "labels": {
+    "language": "de",
+    "only_key_structures": true,
+    "avoid_overload": true
+  },
+  "topic_memory": "THEMEN-GEHIRN.md"
+}
