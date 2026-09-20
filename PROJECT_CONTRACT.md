@@ -18,6 +18,23 @@ Harte Grundregeln:
 - wichtige Strukturen knapp und auf Deutsch beschriften
 - keine unnötigen Wiederholungen bereits produzierter Themen
 
+## Nutzer-Dateien
+
+Alle Inhalte, die der Nutzer selbst öffnen und in ein externes Tool kopieren soll, müssen zusätzlich als normale `.txt`-Datei vorliegen.
+
+Pflicht pro Video:
+
+```text
+01_script/VOICEOVER-ZUM-KOPIEREN.txt
+02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt
+03_pipeline/ANTIGRAVITY-PROMPT-ZUM-KOPIEREN.txt
+04_export/YOUTUBE-TITEL-BESCHREIBUNG-ZUM-KOPIEREN.txt
+```
+
+Diese Dateien dürfen inhaltlich nicht von den zugehörigen kanonischen Projektdateien abweichen. Interne technische Dateien dürfen weiterhin `.md`, `.json`, `.py` usw. verwenden.
+
+Details: `engine/USER-FILES-STANDARD.md`.
+
 ## Drei Phasen
 
 ### Phase 1 – ChatGPT / Creative Director
@@ -27,30 +44,39 @@ ChatGPT erstellt vor jeder Medienproduktion vollständig:
 1. Themenprüfung gegen `THEMEN-GEHIRN.md`
 2. Recherche und Claim-Check
 3. finales gesprochenes `script.txt`
-4. semantischen Szenenplan aus exakt dem finalen Skript
-5. vollständigen Google-Flow-Agent-Prompt
-6. `scene-map.json` mit lückenloser Sprachabdeckung
-7. Antigravity-/Editor-Anweisung
-8. YouTube-Titel, Beschreibung und maximal 5 Hashtags
+4. identisches `VOICEOVER-ZUM-KOPIEREN.txt`
+5. semantischen Szenenplan aus exakt dem finalen Skript
+6. vollständigen Google-Flow-Agent-Prompt
+7. identisches `GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt`
+8. `scene-map.json` mit lückenloser Sprachabdeckung
+9. Antigravity-/Editor-Anweisung
+10. `ANTIGRAVITY-PROMPT-ZUM-KOPIEREN.txt`
+11. YouTube-Titel, Beschreibung und maximal 5 Hashtags
+12. `YOUTUBE-TITEL-BESCHREIBUNG-ZUM-KOPIEREN.txt`
 
 Phase 1 erzeugt keine finalen Flow-Bilder und keine geschätzten Zeitcodes.
+
+Phase 1 ist erst vollständig, wenn alle vier Nutzer-`.txt`-Dateien aktuell vorhanden sind.
 
 ### Phase 2 – Nutzer + Voice-KI + Google Flow
 
 Der Nutzer:
 
-1. kopiert `script.txt` 1:1 in die gewählte Voice-KI
+1. kopiert `VOICEOVER-ZUM-KOPIEREN.txt` 1:1 in die gewählte Voice-KI
 2. legt das rohe Voiceover in `01_script/audio/`
-3. erzeugt mit dem Google-Flow-Agenten jedes Bild einzeln
-4. Szene 01 = Bild_01 = Cover-/Hook-Szene
-5. Bilder streng numerisch erzeugen und prüfen
-6. alle finalen Bilder als ZIP in `02_bildprompts/bilder-zip/` ablegen
+3. kopiert `GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt` vollständig in Google Flow
+4. erzeugt mit dem Google-Flow-Agenten jedes Bild einzeln
+5. Szene 01 = Bild_01 = Cover-/Hook-Szene
+6. Bilder streng numerisch erzeugen und prüfen
+7. alle finalen Bilder als ZIP in `02_bildprompts/bilder-zip/` ablegen
 
 Google Flow darf keine Szenengrenzen neu erfinden.
 
 ### Phase 3 – Antigravity + Tools + Remotion
 
-Phase 3 ist technisch, nicht kreativ:
+Phase 3 ist technisch, nicht kreativ. Wenn der Nutzer Antigravity manuell beauftragt, wird `ANTIGRAVITY-PROMPT-ZUM-KOPIEREN.txt` verwendet.
+
+Phase 3:
 
 1. Audio kanonisch vorbereiten
 2. Flow-ZIP sicher importieren
@@ -66,6 +92,8 @@ Phase 3 ist technisch, nicht kreativ:
 12. finales Video + Untertitel + Renderbericht exportieren
 
 Phase 3 darf Skript, wissenschaftliche Aussage, Bildreihenfolge oder Szenengrenzen nicht still verändern.
+
+Nach erfolgreichem Export nutzt der Nutzer `YOUTUBE-TITEL-BESCHREIBUNG-ZUM-KOPIEREN.txt` für YouTube Studio.
 
 ## Autoritative Reihenfolge
 
