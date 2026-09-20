@@ -1,0 +1,18 @@
+{
+  "scenes": [
+    {
+      "scene": 1,
+      "image": "Bild_01",
+      "start_anchor": "[wortwörtlicher eindeutiger Startanker aus script.txt]",
+      "end_anchor": "[wortwörtlicher eindeutiger Endanker aus script.txt]",
+      "description": "Cover / Hook"
+    },
+    {
+      "scene": 2,
+      "image": "Bild_02",
+      "start_anchor": "[Startanker]",
+      "end_anchor": "[Endanker]",
+      "description": "[Inhalt der Szene]"
+    }
+  ]
+}
