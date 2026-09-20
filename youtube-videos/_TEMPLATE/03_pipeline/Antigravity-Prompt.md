@@ -1,180 +1,200 @@
 # Antigravity-Prompt
 
-Diesen Prompt verwendet Antigravity in Phase 3 für den finalen Zusammenbau.
+Du bist in **Phase 3**. Deine Aufgabe ist ausschließlich der technische Zusammenbau des bereits geplanten Object-Talk-YouTube-Videos.
 
----
+## Vor dem Start lesen
 
-Du setzt ein vollständiges YouTube-Erklärvideo aus **einer fertigen Voiceover-Audiodatei und nummerierten Standbildern** zusammen.
+Vom Repository-Root zuerst:
+
+1. `PROJECT_CONTRACT.md`
+2. `PROJECT_STATE.md`
+3. `AGENTS.md`
+4. `config/video.json`
+5. `engine/PHASE-GATES.md`
+6. `engine/SYNC-WHISPER.md`
+7. `engine/VISUAL-QUALITY-GATE.md`
+8. Dateien des aktuellen Videoordners
+
+## Harte Regel
+
+Phase 3 ist **nicht kreativ**.
+
+Du darfst nicht:
+
+- das Script umschreiben
+- Szenen neu einteilen
+- Bildideen austauschen
+- fehlende Bilder erfinden
+- die Bildreihenfolge ändern
+- Wortzeiten schätzen
+- Voiceover beschleunigen oder verlangsamen
+- wissenschaftliche Texte oder Labels neu erfinden
+
+Bei einem Fehler: STOP statt raten.
 
 ## Eingaben
 
-Verwende:
-
-- finales Voiceover aus `01_script/audio/`
-- Bilder aus der ZIP-Datei in `02_bildprompts/bilder-zip/`
-- Szenenplanung aus `03_pipeline/pipeline.md`
-- maschinenlesbare Anker aus `03_pipeline/scene-map.json`
-- globale Regeln aus `engine/PRODUKTIONSREGELN.md`
-- Qualitätsprüfung aus `engine/VISUAL-QUALITY-GATE.md`
-
-## Wichtigste Regel
-
-Die fertige Audiodatei ist die **verbindliche Zeitbasis**.
-
-Voiceover niemals kürzen, beschleunigen, verlangsamen oder inhaltlich verändern, damit Bilder besser passen.
-
-## Schritt 1 – Assets vorbereiten
-
-1. Finde die finale Voiceover-Datei.
-2. Entpacke die Bilder-ZIP.
-3. Prüfe, dass `Bild_01` bis zum letzten geplanten Bild lückenlos vorhanden sind.
-4. Prüfe 16:9 und ausreichende Bildauflösung.
-5. Stoppe bei fehlenden Bildern oder falscher Nummerierung und melde den Fehler, statt zu raten.
-
-## Schritt 2 – Audio exakt analysieren
-
-Installiere bei Bedarf die Abhängigkeiten aus:
+Im aktuellen Projekt werden erwartet:
 
 ```text
-tools/requirements.txt
+01_script/script.txt
+01_script/audio/<eine rohe Voice-Datei>
+02_bildprompts/bilder-zip/<eine Google-Flow-ZIP>
+03_pipeline/scene-map.json
+05_info/phase1-scenes.json
 ```
 
-Führe dann `tools/transcribe_audio.py` auf dem finalen Voiceover aus.
+## Ein Befehl für die komplette Vorbereitung
 
-Zielordner:
+Vom Repository-Root:
+
+```bash
+python -m pip install -r tools/requirements.txt
+python tools/prepare_phase3.py youtube-videos/THEMA
+```
+
+Falls das kleine Whisper-Modell bei einem Fachbegriff keine strikte Ausrichtung erreicht:
+
+```bash
+python tools/prepare_phase3.py youtube-videos/THEMA --model medium
+```
+
+Dieser Vorbereitungsschritt muss in genau dieser Reihenfolge erledigen:
+
+1. `validate_phase1.py` – Script und semantische Szenen lückenlos prüfen
+2. `prepare_audio.py` – rohe Voice in `final-voiceover.wav` kanonisieren
+3. `import_flow_zip.py` – Flow-ZIP sicher nach expliziten Bildnummern importieren
+4. `validate_assets.py` – Bildnummern, Auflösung und Format prüfen
+5. `transcribe_audio.py` – faster-whisper + Wort-Zeitstempel
+6. **gesamtes Audio streng gegen `script.txt` ausrichten**
+7. `build_timeline.py` – exakte `speech_section` jeder Szene auf echte Wortzeiten mappen
+8. `build_renderer_runtime.py` – feste Remotion-Runtime mit diesen Zeiten vorbereiten
+9. `subtitles.srt` nach `04_export/subtitles/` kopieren
+
+Ergebnis der Timing-Stufe:
 
 ```text
 03_pipeline/timing/
+├── whisper-raw.json
+├── word-timings.json
+├── timeline.json
+└── subtitles.srt
 ```
 
-Erwartete Ergebnisse:
+`timeline.json` ist die verbindliche technische Quelle für alle Bildwechsel.
+
+## Wichtig zu Whisper
+
+Whisper allein entscheidet **nicht** über Szenen.
+
+Phase 1 hat die Szenengrenzen bereits über komplette `speech_section`-Abschnitte festgelegt. Whisper liefert nur die echten Zeiten des finalen Audios.
+
+Wenn erkannter Text und `script.txt` nicht streng zusammenpassen, muss die Pipeline fehlschlagen. Keine Fuzzy-Zuordnung und keine geratenen Sekunden verwenden.
+
+## Bilder
+
+Nach dem sicheren ZIP-Import liegen die technischen Bilder hier:
 
 ```text
-whisper-words.json
-subtitles.srt
+02_bildprompts/images/
+├── Bild_01.png
+├── Bild_02.png
+├── Bild_03.png
+└── ...
 ```
 
-Whisper/faster-whisper muss mit **Wort-Zeitstempeln** arbeiten.
+Die ZIP-Reihenfolge ist bedeutungslos. Nur die explizite Bildnummer zählt.
 
-Wenn die erkannte Audiodauer unter 300 Sekunden liegt, nicht final rendern. Das Video erfüllt dann die Mindestlänge nicht.
+## Fester Renderer
 
-## Schritt 3 – Exakte Szenenzeiten erzeugen
-
-Führe `tools/build_timeline.py` mit folgenden Dateien aus:
+Verwende den vorhandenen Renderer unter:
 
 ```text
-03_pipeline/scene-map.json
-03_pipeline/timing/whisper-words.json
+renderer/
 ```
 
-Erzeuge:
+Erfinde pro Video keinen neuen Editor.
 
-```text
-03_pipeline/timing/timeline.json
+Einmalig bzw. nach Dependency-Änderung:
+
+```bash
+cd renderer
+npm install
 ```
 
-Wenn ein Textanker nicht sicher gefunden wird, **nicht schätzen**. Stoppe und melde exakt, welche Szene bzw. welcher Anker problematisch ist.
+Preview:
 
-`timeline.json` ist danach die verbindliche technische Quelle für sämtliche Bildwechsel.
+```bash
+npm run studio
+```
 
-## Schritt 4 – Video bauen
+Render:
 
-Baue das Video anhand der exakten Start-/Endzeiten aus `timeline.json`.
+```bash
+npm run render -- ../youtube-videos/THEMA/04_export/fertiges-video/final-video.mp4
+```
 
-Regeln:
+Der Renderer verwendet:
 
-- Szene 01 / `Bild_01` startet exakt bei 0 Sekunden.
-- Jedes weitere Bild startet bei seinem Timeline-Zeitpunkt.
-- Keine Lücken zwischen den Bildern.
-- Keine Überlappungen.
-- Das letzte Bild endet exakt mit dem Voiceover.
-- Bildreihenfolge niemals verändern.
+- 1920×1080
+- 30 fps
+- das vollständige `final-voiceover.wav`
+- die exakte Timeline
+- ausschließlich die erlaubten dezenten Bildbewegungen
 
-## Standbild-Bewegung
+## Erlaubte Standbild-Bewegungen
 
-Da ausschließlich Standbilder verwendet werden, erzeuge dezente Bewegung:
+- `static`
+- `slow-push-in`
+- `slow-pull-out`
+- `pan-left`
+- `pan-right`
 
-- langsamer Push-in
-- langsamer Pull-out
-- sanfter horizontaler oder vertikaler Pan
-- leichter Crop-/Fokuswechsel
-- sehr subtile Parallax-Wirkung nur wenn technisch sauber
-
-Nicht verwenden:
-
-- hektische Zooms
-- starkes Wackeln
-- zufällige Effektbewegungen
-- Bildverzerrungen
-- künstliche Animation biologischer Inhalte, die im Originalbild nicht vorgesehen ist
+Kein hektisches Wackeln, keine aggressiven Zooms und keine Bewegung, die wissenschaftliche Inhalte verfälscht.
 
 ## Übergänge
 
-Standard:
-
-- sauberer harter Schnitt
-- oder sehr kurzer weicher Übergang
-
-Keine auffälligen Effekt-Transitions ohne inhaltlichen Grund.
+Standard ist ein sauberer harter Schnitt. Keine Effekt-Transition nur um Aktivität vorzutäuschen.
 
 ## Beschriftungen
 
-Vorhandene deutsche Beschriftungen im Bild:
+Vorhandene deutsche Beschriftungen:
 
-- niemals verdecken
-- niemals abschneiden
-- genügend groß lassen
-- keine neuen wissenschaftlichen Texte erfinden
+- nicht verdecken
+- nicht abschneiden
+- ausreichend lange lesbar halten
 
-## Audio
+Keine neuen biologischen Behauptungen im Schnitt ergänzen.
 
-- Voiceover vollständig erhalten
-- keine Wörter hinzufügen oder entfernen
-- keine zeitliche Verschiebung
-- Musik nur verwenden, wenn ausdrücklich freigegeben oder als Asset vorhanden
-- Sprache muss jederzeit klar verständlich bleiben
+## Finale QA
 
-## Technische Umsetzung
+Nach Render:
 
-Bevorzugt einen reproduzierbaren Renderer verwenden, z. B. **Remotion** für Timeline, Kamerabewegungen und Render. **FFmpeg/ffprobe** darf für Audio-/Videoanalyse, Encoding und technische Prüfungen verwendet werden.
+```bash
+python tools/qa_final.py \
+  youtube-videos/THEMA/04_export/fertiges-video/final-video.mp4 \
+  youtube-videos/THEMA/01_script/audio/final-voiceover.wav
+```
 
-Entscheidend ist nicht das Tool, sondern dass `timeline.json` exakt eingehalten wird.
+Danach `04_export/render-report.md` ausfüllen und zusätzlich einen visuellen Sichtcheck machen.
 
-## Export
+## Fertig nur bei PASS
+
+Ein Video ist erst fertig, wenn:
+
+- mindestens 5:00 Minuten
+- 1920×1080 / 30 fps
+- Audio vollständig
+- alle geplanten Bilder verwendet
+- Bildwechsel zur Sprache passen
+- keine Szenenlücke oder Überschneidung
+- Labels lesbar
+- kein grober KI-Fehler sichtbar
+- technischer QA-Check PASS
+- visueller Sichtcheck PASS
 
 Finale Datei:
 
 ```text
 04_export/fertiges-video/final-video.mp4
 ```
-
-Standard:
-
-- 1920×1080
-- 16:9
-- 30 fps
-- H.264
-- AAC
-
-Kopiere zusätzlich die erzeugte Untertiteldatei nach:
-
-```text
-04_export/subtitles/subtitles.srt
-```
-
-## Abschlusskontrolle
-
-Vor finaler Freigabe die komplette Prüfung aus `engine/VISUAL-QUALITY-GATE.md` durchführen.
-
-Besonders prüfen:
-
-- Video mindestens 5:00 Minuten
-- beginnt mit `Bild_01`
-- alle Bilder verwendet
-- keine Nummer fehlt
-- Reihenfolge korrekt
-- Bildwechsel stimmen mit `timeline.json` überein
-- keine schwarzen Frames
-- keine abgeschnittenen Labels
-- Voiceover vollständig
-- Export vollständig und abspielbar
