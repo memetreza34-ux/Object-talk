@@ -4,176 +4,222 @@
 
 **Thema:** Was passiert mit deinem Essen im Körper?
 
-Du produzierst **genau 36 finale Standbilder** für ein deutschsprachiges YouTube-Erklärvideo über Verdauung.
+Du produzierst **genau 36 finale 16:9-Standbilder** für ein deutschsprachiges faceless YouTube-Erklärvideo über Verdauung.
 
-Das Video besteht visuell ausschließlich aus diesen Standbildern. Deshalb muss jedes Bild eine klare neue visuelle Aussage tragen und den gesprochenen Text exakt unterstützen.
-
----
-
-# PHASE 2 – VERBINDLICHER ABLAUF
-
-Arbeite streng sequenziell:
-
-1. Lies zuerst diese gesamte Datei.
-2. Erzeuge danach **nur IMAGE 01**.
-3. Prüfe IMAGE 01 vollständig.
-4. Wenn es korrekt ist, exportiere/speichere es und benenne es exakt `Bild_01.png`.
-5. Erzeuge erst danach IMAGE 02.
-6. Prüfe es und benenne es exakt `Bild_02.png`.
-7. Fahre genauso fort bis `Bild_36.png`.
-8. Erzeuge niemals mehrere Szenen gleichzeitig.
-9. Wenn ein Bild fehlerhaft ist, regeneriere **dieselbe IMAGE-Nummer**, statt weiterzugehen.
-10. Am Ende muss ein einziger Ordner exakt `Bild_01.png` bis `Bild_36.png` enthalten.
-11. Keine Nummer darf fehlen oder doppelt vorkommen.
-12. Stelle den vollständigen Bilderordner als ZIP bereit.
-
-Temporäre Dateinamen von Flow sind irrelevant. Entscheidend ist der finale Dateiname nach erfolgreicher Prüfung.
+Die Bilder müssen den Sprechertext sichtbar erklären. Dieses Video ist **keine Mascot-Show** und besitzt keine dauerhafte Apfel-/Food-Sprecherfigur.
 
 ---
 
-# IMAGE 01 = COVER + ERSTER SHOT
+# WICHTIGSTE REGEL
 
-`Bild_01.png` ist gleichzeitig:
-
-- erster sichtbarer Shot des Videos
-- Hook-Bild
-- Grundlage für das YouTube-Cover/Thumbnail
-
-Es muss das Thema ohne Erklärung erkennbar machen und besonders stark aussehen.
-
----
-
-# FESTE BILDWELT
-
-Jedes Bild muss aussehen, als käme es aus **derselben hochwertigen animierten Gesundheitsserie**.
-
-Verbindlicher Stil:
+Die visuelle Priorität lautet:
 
 ```text
-high-quality semi-realistic 3D educational animation, viral object-talk visual language, polished premium family-friendly animated-film aesthetic, clearly animated and stylized rather than photorealistic, believable materials, soft rounded forms, expressive character acting, warm cinematic lighting, strong depth and dimensionality, clean composition, vibrant but natural colors, scientifically recognizable but simplified human biology, modern educational visual storytelling, accessible to children, teenagers and adults without looking preschoolish, no gore, no disturbing medical realism
+Verständlichkeit
+→ fachlich plausible Darstellung
+→ klare Blickführung
+→ einheitlicher Stil
+→ erst danach dekorative Elemente
 ```
 
-## Object-Talk-Regeln
+Bevorzuge:
 
-Sprechende Lebensmittel dürfen:
+- anatomische Cutaways
+- transparente Körperansichten
+- Prozessbilder
+- Organ-/Gewebe-/Zellvisualisierungen
+- Makro-/Mikro-Zooms
+- klare Vergleichs- und Transformationsbilder
 
-- große expressive Augen
-- weiche Augenbrauen
-- klar lesbare Mimik
-- kleine Arme und Beine
-- deutliche Gesten
-- sympathische, virale Object-Talk-Persönlichkeit
+Keine zufälligen niedlichen Food-Figuren als Presenter ergänzen.
 
-haben.
+---
 
-### Wiederkehrender Guide
+# PHASE A – ZUERST AUSSCHLIESSLICH BILD_01
 
-Wenn ein Guide in einer Szene gebraucht wird, verwende immer denselben Charakter:
+1. Lies diese gesamte Datei.
+2. Erzeuge danach **nur `Bild_01`**.
+3. Erzeuge noch kein anderes Bild.
+4. Prüfe `Bild_01` vollständig.
+5. Bei FAIL nur `Bild_01` neu erzeugen.
+6. Erst bei PASS als `Bild_01.png` speichern.
 
-**Red Apple Guide**
+`Bild_01` ist gleichzeitig:
+
+- Cover-/Hook-Frame
+- erster Shot
+- **Master Style Frame für die komplette Episode**
+
+---
+
+# BILD_01 ALS VORLAGE FÜR ALLE WEITEREN BILDER
+
+Ab `Bild_02` muss `Bild_01.png`, soweit Flow dies technisch unterstützt, bei jeder Generation als Style-/Continuity-Referenz verwendet werden.
+
+Von `Bild_01` übernehmen:
+
+- Rendergrad
+- Verhältnis Animation/Realismus
+- Lichtcharakter
+- Farbtemperatur und Farbharmonie
+- Materialien
+- Kontrast
+- Tiefenwirkung
+- allgemeine Explainer-Bildsprache
+
+Nicht übernehmen:
+
+- konkrete Anatomie
+- Motiv
+- Pose
+- Ort
+- Labels
+
+Jedes Bild muss seinen eigenen fachlich korrekten Inhalt zeigen, aber sichtbar aus derselben visuellen Welt stammen.
+
+---
+
+# PHASE B – DANACH NUR IN 5ER-BLÖCKEN
+
+Nach `Bild_01`:
 
 ```text
-A cute semi-realistic animated red apple character with the same consistent design in every appearance: rich natural red apple skin with subtle realistic texture, one small green leaf and short brown stem, two large warm brown expressive eyes, soft dark eyebrows, a small flexible animated mouth, thin short dark arms with simple rounded hands, thin short dark legs with small rounded feet, friendly curious personality, premium 3D animated-film character design, not plastic, not photorealistic, not childish baby proportions.
+Block 1: Bild_02–Bild_06
+Block 2: Bild_07–Bild_11
+Block 3: Bild_12–Bild_16
+Block 4: Bild_17–Bild_21
+Block 5: Bild_22–Bild_26
+Block 6: Bild_27–Bild_31
+Block 7: Bild_32–Bild_36
 ```
 
-Der Apfel ist Guide/Erklärfigur. Seine Form, Augen, Blatt, Arme und Beine dürfen sich zwischen Szenen nicht verändern.
+Innerhalb eines Blocks **jedes Bild trotzdem einzeln** erzeugen.
 
-## Biologie-Regeln
+Ablauf pro Bild:
 
-Organe, Zellen, Blutgefäße, Darmzotten, Bakterien und andere biologische Strukturen bekommen **keine menschlichen Gesichter**.
+```text
+Szene lesen
+→ Bild_01 als Stilreferenz verwenden
+→ genau EIN Bild erzeugen
+→ prüfen
+→ bei PASS korrekt benennen
+→ bei FAIL Fehlerliste ergänzen
+→ nächste Szene
+```
 
-Sie bleiben wissenschaftlich erkennbar, aber:
+Nach jedem Block zusätzlich prüfen, ob Licht, Renderstil, Farben und Explainer-Sprache noch zu `Bild_01` passen.
 
-- sauber
-- vereinfacht
-- nicht blutig
-- nicht chirurgisch
-- nicht ekelig
-- nicht fotorealistisch
+---
 
-Biologische Prozesse müssen visuell richtig herum und kausal verständlich dargestellt sein.
+# PHASE C – FEHLER NICHT DEN GANZEN LAUF ABBRECHEN LASSEN
+
+Wenn Flow bei einer Bildnummer technisch fehlschlägt, die Antwort abbricht oder ein Bild qualitativ unbrauchbar ist:
+
+- Bildnummer exakt als `FEHLERHAFT` oder `FEHLT` notieren
+- keine Ersatznummer vergeben
+- mit der nächsten regulären Szene fortfahren
+
+Beispiel:
+
+```text
+Bild_07 PASS
+Bild_08 FEHLT
+Bild_09 PASS
+
+Recovery-Liste:
+- Bild_08
+```
+
+---
+
+# PHASE D – RECOVERY AM ENDE
+
+Nach allen normalen Blöcken:
+
+1. Recovery-Liste öffnen.
+2. Nur die fehlenden/fehlerhaften Bilder erneut erzeugen.
+3. Weiterhin `Bild_01` als Style-Referenz verwenden.
+4. Jedes Recovery-Bild einzeln prüfen.
+5. Wiederholen, bis alle 36 Bilder PASS sind.
+
+---
+
+# FESTE STYLE-DNA
+
+```text
+high-quality semi-realistic 3D educational explainer style, faceless YouTube explainer visual language, premium animated educational series look, consistent cinematic lighting, clean composition, scientifically recognizable but simplified anatomy and biology, strong visual clarity, process-focused explainer imagery, transparent body cutaways, cross-sections, macro-to-micro transitions, elegant German educational labels, family-friendly but not childish, clearly animated but not photorealistic, no mascot-heavy composition, no random cartoon focus, no clutter, no gore, no disturbing medical realism
+```
+
+Für alle Bilder vermeiden:
+
+```text
+do not make mascot-heavy scenes, do not add cute food presenters unless explicitly requested, do not turn the scene into a character standing next to anatomy, no random cartoon figures, no cluttered composition, no photorealistic medical photography, no live action, no surgery, no blood splatter, no horror anatomy, no wet fleshy realism, no English labels, no unreadable typography, no random text, no watermark, no brand logos
+```
 
 ---
 
 # BESCHRIFTUNGEN
 
-Wenn bei einer Szene unter **German labels** Begriffe angegeben sind, müssen **nur diese wirklich wichtigen Begriffe** sichtbar beschriftet werden.
+Wenn `German labels` angegeben sind:
 
-Regeln:
-
+- exakt nur diese wichtigen Begriffe
 - ausschließlich Deutsch
-- exakt die vorgegebene Schreibweise
-- kurze, gut lesbare Sans-Serif-Schrift
-- klare dünne Pointer-Linie oder Pfeil zur richtigen Struktur
+- saubere gut lesbare Sans-Serif-Schrift
+- dünne klare Pointer-Linie/Pfeil
+- richtige anatomische Zuordnung
 - keine zusätzlichen Fantasiebegriffe
-- keine englischen Labels
-- kein KI-Gekritzel
-- keine langen Textblöcke
-- Labels so platzieren, dass sie nicht am Bildrand liegen
 
-Wenn Flow einen Begriff falsch schreibt oder auf die falsche Struktur zeigt: **Bild nicht akzeptieren, dieselbe IMAGE-Nummer neu erzeugen.**
+Falsche Schreibweise oder falscher Pointer = Bild FAIL → Recovery-Liste.
 
-Bei Szenen ohne `German labels` darf kein erklärender Text im Bild erscheinen.
+Wenn `German labels: none`, kein erklärender Text im Bild.
 
 ---
 
 # TECHNISCH
 
-Für jedes Bild:
+Jedes finale Bild:
 
 - 16:9 landscape
-- Ziel 1920×1080 oder höher bei 16:9
+- mindestens 1920×1080 oder höher im gleichen Seitenverhältnis
 - keine schwarzen Balken
-- keine Wasserzeichen
-- keine fremden Markenlogos
-- keine zufälligen Texte
-- Hauptmotiv mit sicherem Rand für langsame Zooms/Pans
-- keine abgeschnittenen Körperteile oder Labels
-- klare Blickführung
-- nur Standbild, keine Videoausgabe
-
----
-
-# NEGATIVE STYLE LOCK
-
-Für **jedes** Bild vermeiden:
-
-```text
-photorealistic medical photography, live action, gore, surgery, blood splatter, horror anatomy, wet fleshy realism, uncanny faces, deformed hands, duplicated limbs, extra eyes, random text, English labels, unreadable typography, childish preschool illustration, flat 2D vector art, anime, comic-book line art, hyperreal human skin, cyberpunk, sci-fi interface overload, excessive neon, cluttered composition, random laboratory props unrelated to the explanation
-```
+- kein 9:16
+- kein Quadrat
+- Standbild, keine Videoausgabe
+- Hauptmotiv mit sicherem Rand für späteren Zoom/Pan
+- wichtige Labels nicht direkt am Rand
 
 ---
 
 # IMAGE PROMPTS
 
-## IMAGE 01 – COVER / HOOK
+## IMAGE 01 – COVER / HOOK / MASTER STYLE FRAME
 
 **Final filename:** `Bild_01.png`
 
-**Purpose:** Ein Bissen startet eine überraschende Reise durch den Körper.
+**Purpose:** Ein einfacher Bissen startet eine komplexe Reise durch den Körper und definiert gleichzeitig die gesamte Bildwelt.
 
 **German labels:** none
 
 **Prompt:**
 
 ```text
-Create a powerful 16:9 cinematic cover frame for an educational YouTube video about what happens to food inside the human body. In the foreground place the recurring Red Apple Guide, large and expressive, looking toward the viewer with fascinated surprise and gesturing toward the journey behind him. Beside him show a clean bite-sized piece of everyday food moving into a stylized semi-transparent human upper body. Inside the torso reveal a glowing but scientifically recognizable digestive pathway from mouth to esophagus, stomach, small intestine and large intestine, arranged naturally rather than as a diagram pasted onto the body. Make the stomach visible but visually emphasize the long folded small intestine as an important destination, creating curiosity that the stomach is not the whole story. Strong depth, warm cinematic key light, premium semi-realistic 3D animated educational world, clear focal hierarchy, viral Object-Talk appeal, no text, no labels, no gore, not photorealistic.
+Create a powerful 16:9 cinematic master frame for a faceless educational YouTube explainer about what happens to food inside the human body. Show a bite of ordinary food entering a clean semi-transparent human upper body. Inside the body reveal a scientifically recognizable but simplified continuous digestive pathway from mouth to esophagus, stomach, small intestine and large intestine. The composition must immediately communicate that one simple bite begins a complex internal journey. Make the stomach visible but visually emphasize the long folded small intestine as an important later destination. No mascot, no presenter character, no cartoon food face. Establish the exact visual language for all later scenes: premium semi-realistic 3D educational explainer, clearly animated not photorealistic, elegant warm cinematic lighting, natural muted health-education colors, clean smooth biological materials, strong depth, uncluttered composition, readable visual hierarchy, family-friendly but not childish, no text, no labels, no gore.
 ```
 
 ---
 
-## IMAGE 02 – DIE VERDAUUNGSREISE
+## IMAGE 02 – DIE GESAMTE VERDAUUNGSREISE
 
 **Final filename:** `Bild_02.png`
 
-**Purpose:** Verdauung zerlegt, sortiert und schleust Bausteine in den Körper ein; der Magen ist nicht die Haupt-Aufnahmestation.
+**Purpose:** Nahrung wird zerlegt, transportiert und vor allem im Dünndarm aufgenommen.
 
 **German labels:** none
 
 **Prompt:**
 
 ```text
-Create a 16:9 premium educational 3D animation frame showing the recurring Red Apple Guide at the left side presenting a visual journey through the digestive system. Show a clean semi-transparent human torso with a continuous path from mouth through esophagus and stomach into a large detailed small intestine. Visualize food changing from recognizable pieces into progressively smaller nutrient particles as it travels. Show many tiny nutrient particles leaving the small intestine toward nearby vessels, while the stomach is shown mainly mixing food rather than absorbing most nutrients. The visual story must make the contrast immediately understandable without written text. Same semi-realistic animated-film look, warm cinematic lighting, scientifically recognizable simplified anatomy, family-friendly, clean, no gore, no labels.
+Using Bild_01 as the exact style and continuity reference, create a 16:9 faceless educational explainer image showing the digestive journey through a semi-transparent human torso. Show food transforming from recognizable pieces into progressively smaller nutrient particles as it moves from mouth through esophagus and stomach into the small intestine. Show many small nutrient particles leaving the small intestine toward nearby vessels while the stomach is shown mainly mixing food. Make the contrast visually clear without text: the stomach prepares, the small intestine is the major absorption area. Same lighting, render quality, material language and color world as Bild_01. No mascot, no presenter, no labels, no gore.
 ```
 
 ---
@@ -189,7 +235,7 @@ Create a 16:9 premium educational 3D animation frame showing the recurring Red A
 **Prompt:**
 
 ```text
-Create a clear 16:9 educational 3D animated cross-section of a human mouth during chewing. Show normal teeth mechanically breaking a small piece of food into smaller pieces. Keep anatomy simplified, clean and friendly, with the jaw, tongue and oral cavity recognizable. Use a close educational camera angle that makes the crushing action obvious. Add only the German labels “Mund” and “Zähne” with clean pointer lines to the correct structures. Premium semi-realistic animated health-series aesthetic, warm soft lighting, no gore, no extra text.
+Using Bild_01 as style reference, create a clean 16:9 educational 3D cross-section of a human mouth during chewing. Show normal teeth mechanically breaking a small piece of food into smaller pieces. Keep jaw, tongue and oral cavity recognizable but simplified. Use a close explanatory camera angle that makes the crushing action obvious. Add only the German labels “Mund” and “Zähne” with precise clean pointer lines. Same premium semi-realistic explainer rendering and cinematic light as Bild_01, no gore, no extra text.
 ```
 
 ---
@@ -198,14 +244,12 @@ Create a clear 16:9 educational 3D animated cross-section of a human mouth durin
 
 **Final filename:** `Bild_04.png`
 
-**Purpose:** Speichel befeuchtet und formt den Nahrungsbissen.
-
 **German labels:** `Speichel`
 
 **Prompt:**
 
 ```text
-Create a 16:9 educational semi-realistic 3D animated close-up inside the mouth. Show chewed food being mixed with visible clean droplets of saliva and forming into one smooth moist food bolus on the tongue, ready to swallow. Keep the scene non-gross and visually elegant. The saliva should clearly surround and moisten the food rather than look like random liquid. Add one clean German label “Speichel” pointing to the saliva. Warm cinematic macro lighting, family-friendly biology visualization, no other text.
+Using Bild_01 as style reference, create a 16:9 educational close-up inside the mouth. Show chewed food being mixed with clean visible saliva and forming into one soft moist food bolus on the tongue, ready to swallow. The visual must explain lubrication and bolus formation without looking gross. Add one German label “Speichel” pointing to the saliva. Same materials, light and render world as Bild_01, no extra text.
 ```
 
 ---
@@ -214,14 +258,12 @@ Create a 16:9 educational semi-realistic 3D animated close-up inside the mouth. 
 
 **Final filename:** `Bild_05.png`
 
-**Purpose:** Ein Speichelenzym beginnt Stärke zu zerlegen.
-
 **German labels:** `Stärke`, `Enzym`
 
 **Prompt:**
 
 ```text
-Create a 16:9 microscopic educational 3D animation frame illustrating the first chemical digestion of starch in saliva. Show one long stylized carbohydrate chain representing starch and several small enzyme molecules interacting with it so the long chain begins breaking into shorter pieces. Keep the molecular visualization simplified and conceptual, not an inaccurate atom-by-atom chemical model. Add only two German labels: “Stärke” pointing to the long carbohydrate chain and “Enzym” pointing to the enzyme. Use the same premium animated health-series rendering, clean depth, warm-to-neutral microscopic lighting, no extra text.
+Using Bild_01 as style reference, create a 16:9 microscopic educational 3D visualization showing a long simplified starch carbohydrate chain being acted on by several enzyme molecules so the long structure begins breaking into shorter pieces. Keep it conceptual rather than pretending to show an exact molecular formula. Add only “Stärke” and “Enzym” in German with correct pointers. Same clean premium educational render language as Bild_01, no extra text.
 ```
 
 ---
@@ -230,14 +272,12 @@ Create a 16:9 microscopic educational 3D animation frame illustrating the first 
 
 **Final filename:** `Bild_06.png`
 
-**Purpose:** Der Kehldeckel schützt die Atemwege beim Schlucken.
-
 **German labels:** `Kehldeckel`, `Luftröhre`, `Speiseröhre`
 
 **Prompt:**
 
 ```text
-Create a clean 16:9 sagittal cross-section of a human head and neck during swallowing in premium semi-realistic 3D educational animation. Show a food bolus moving from the back of the mouth into the esophagus. Clearly show the epiglottis positioned to cover the entrance toward the trachea so the food enters the esophagus instead of the airway. Simplify anatomy enough for immediate understanding while keeping the relationships correct. Add exactly the German labels “Kehldeckel”, “Luftröhre”, and “Speiseröhre” with precise pointer lines. No gore, no surgical realism, no extra text.
+Using Bild_01 as style reference, create a clean 16:9 sagittal cutaway of a human head and neck during swallowing. Show a food bolus moving into the esophagus while the epiglottis closes the entrance toward the trachea. Keep the anatomy scientifically recognizable and immediately understandable. Add exactly “Kehldeckel”, “Luftröhre” and “Speiseröhre” in German with precise pointer lines. No gore, no surgical realism, same style as Bild_01.
 ```
 
 ---
@@ -246,14 +286,12 @@ Create a clean 16:9 sagittal cross-section of a human head and neck during swall
 
 **Final filename:** `Bild_07.png`
 
-**Purpose:** Essen gelangt durch Muskelbewegung zum Magen, nicht nur durch Schwerkraft.
-
 **German labels:** `Speiseröhre`, `Peristaltik`
 
 **Prompt:**
 
 ```text
-Create a 16:9 educational 3D animated cutaway of the human upper torso focused on the esophagus. Show a food bolus traveling downward through the esophagus and a clearly visible ring-like wave of muscular contraction following behind it, while the tube ahead is relaxed. Use directional visual flow to make active transport obvious, without implying simple gravity. Add exactly the German labels “Speiseröhre” and “Peristaltik”, with “Peristaltik” pointing to the contraction wave. Premium semi-realistic animated biology look, clean anatomy, no gore, no extra text.
+Using Bild_01 as style reference, create a 16:9 upper-body cutaway focused on the esophagus. Show a food bolus inside and a visible ring-like muscular contraction wave following behind it while the tube ahead is relaxed. The image must clearly explain active transport rather than simple gravity. Add exactly “Speiseröhre” and “Peristaltik”. Same premium faceless 3D explainer look as Bild_01.
 ```
 
 ---
@@ -262,14 +300,12 @@ Create a 16:9 educational 3D animated cutaway of the human upper torso focused o
 
 **Final filename:** `Bild_08.png`
 
-**Purpose:** Hinter dem Bissen kontrahiert die Muskulatur; davor entspannt sie sich.
-
 **German labels:** `Muskelwelle`
 
 **Prompt:**
 
 ```text
-Create a detailed 16:9 close-up cross-section of a segment of the esophagus in semi-realistic 3D educational animation. Place a food bolus in the center. Show the esophageal wall tightly contracted immediately behind the bolus and relaxed/open immediately in front of it, making the forward pushing mechanism visually unmistakable. Add one German label “Muskelwelle” pointing to the contracted ring behind the bolus. Soft scientific lighting, clean biological surfaces, no gore, no extra text.
+Using Bild_01 as style reference, create a detailed 16:9 close-up cross-section of one esophagus segment. Put a food bolus in the center, show the wall contracted tightly immediately behind it and relaxed/open in front. Make the forward-pushing mechanism unmistakable. Add one German label “Muskelwelle” pointing to the contracted ring. Clean scientific presentation, same style as Bild_01.
 ```
 
 ---
@@ -278,14 +314,12 @@ Create a detailed 16:9 close-up cross-section of a segment of the esophagus in s
 
 **Final filename:** `Bild_09.png`
 
-**Purpose:** Der ringförmige Muskel am Ende der Speiseröhre lässt Nahrung in den Magen.
-
 **German labels:** `Speiseröhre`, `Magen`
 
 **Prompt:**
 
 ```text
-Create a 16:9 educational 3D cutaway of the lower esophagus connecting to the stomach. Show the food bolus arriving at the junction and the ring-like lower esophageal sphincter relaxed/open so the bolus can enter the stomach. Keep the anatomy recognizable and simplified. Add only the German labels “Speiseröhre” and “Magen” with clear pointer lines. Same premium semi-realistic animated health-series style, warm internal lighting, no gore, no extra text.
+Using Bild_01 as style reference, create a 16:9 cutaway of the lower esophagus connecting to the stomach. Show the bolus arriving at the junction and the ring-like lower esophageal sphincter relaxed/open so food can enter the stomach. Add only “Speiseröhre” and “Magen”. Clean recognizable simplified anatomy, same light/material language as Bild_01.
 ```
 
 ---
@@ -294,14 +328,12 @@ Create a 16:9 educational 3D cutaway of the lower esophagus connecting to the st
 
 **Final filename:** `Bild_10.png`
 
-**Purpose:** Der Magen mischt Nahrung mit Säure und Enzymen; Proteinverdauung läuft an.
-
 **German labels:** `Magen`, `Magensäure`, `Enzyme`
 
 **Prompt:**
 
 ```text
-Create a clean 16:9 cross-section of the stomach in high-quality semi-realistic 3D educational animation. Show stomach muscle walls visibly churning a semi-liquid food mixture. Show stomach acid as a controlled liquid environment and simplified enzyme particles interacting especially with protein-rich food fragments. Do not create a gross or wet horror look. Add exactly the German labels “Magen”, “Magensäure”, and “Enzyme”, each pointing to the correct visual element. Warm cinematic biological lighting, no extra text.
+Using Bild_01 as style reference, create a clean 16:9 stomach cross-section. Show muscular stomach walls churning semi-liquid food, controlled stomach acid around it and simplified digestive enzyme particles acting on food fragments. Make mixing and chemical digestion visually clear without gross realism. Add exactly “Magen”, “Magensäure” and “Enzyme”. Same premium explainer style as Bild_01.
 ```
 
 ---
@@ -310,14 +342,12 @@ Create a clean 16:9 cross-section of the stomach in high-quality semi-realistic 
 
 **Final filename:** `Bild_11.png`
 
-**Purpose:** Der Magen bereitet vor und gibt Chymus portionsweise an den Dünndarm weiter.
-
 **German labels:** `Magen`, `Chymus`, `Dünndarm`
 
 **Prompt:**
 
 ```text
-Create a 16:9 semi-realistic 3D educational cutaway showing the stomach connected to the beginning of the small intestine. Inside the stomach show semi-liquid partially digested food. At the stomach exit show a small controlled portion moving into the first loop of the small intestine, visually communicating gradual emptying rather than everything moving at once. Add exactly the German labels “Magen”, “Chymus”, and “Dünndarm”. Premium animated-film biology style, clear composition, no gore, no extra text.
+Using Bild_01 as style reference, create a 16:9 cutaway showing stomach connected to the beginning of the small intestine. Show semi-liquid partially digested food inside the stomach and only a small controlled portion passing through the outlet into the small intestine. Add exactly “Magen”, “Chymus” and “Dünndarm”. Same clean semi-realistic 3D explainer world as Bild_01.
 ```
 
 ---
@@ -326,30 +356,26 @@ Create a 16:9 semi-realistic 3D educational cutaway showing the stomach connecte
 
 **Final filename:** `Bild_12.png`
 
-**Purpose:** Der entscheidende nächste Schritt beginnt im Zwölffingerdarm mit saurem Chymus aus dem Magen.
-
 **German labels:** `Magen`, `Zwölffingerdarm`
 
 **Prompt:**
 
 ```text
-Create a strong 16:9 educational 3D frame focusing on the stomach and the C-shaped first section of the small intestine. Visually highlight the duodenum as the important next stage while acidic chyme enters from the stomach. Use a subtle warm-orange acidic visual cue only inside the incoming chyme, not as a dangerous chemical effect. Add exactly the German labels “Magen” and “Zwölffingerdarm”. Same premium semi-realistic health animation, scientifically recognizable simplified anatomy, no extra text.
+Using Bild_01 as style reference, create a strong 16:9 educational frame focusing on the stomach and the C-shaped first section of the small intestine. Show acidic chyme entering the duodenum with a subtle warm-orange cue only within the chyme. Add exactly “Magen” and “Zwölffingerdarm”. Same premium explainer rendering as Bild_01.
 ```
 
 ---
 
-## IMAGE 13 – BICARBONAT AUS DER BAUCHSPEICHELDRÜSE
+## IMAGE 13 – BICARBONAT
 
 **Final filename:** `Bild_13.png`
-
-**Purpose:** Bicarbonat hilft, die Säure des Chymus zu neutralisieren.
 
 **German labels:** `Bauchspeicheldrüse`, `Bicarbonat`
 
 **Prompt:**
 
 ```text
-Create a 16:9 educational 3D animation frame showing the pancreas next to the duodenum. Show a pancreatic duct delivering a clean stream containing simplified bicarbonate particles into the acidic chyme in the duodenum. Visually show the intense acidic color becoming calmer and more neutral after mixing, without using a numeric pH claim. Add exactly the German labels “Bauchspeicheldrüse” and “Bicarbonat”. Premium semi-realistic animated biology style, clear causality, no gore, no extra text.
+Using Bild_01 as style reference, create a 16:9 3D educational view of the pancreas beside the duodenum. Show a pancreatic duct delivering a clean stream containing simplified bicarbonate particles into acidic chyme. Visually show the harsh acidic cue becoming calmer after mixing, without numerical pH values. Add exactly “Bauchspeicheldrüse” and “Bicarbonat”. Same style as Bild_01.
 ```
 
 ---
@@ -358,30 +384,26 @@ Create a 16:9 educational 3D animation frame showing the pancreas next to the du
 
 **Final filename:** `Bild_14.png`
 
-**Purpose:** Pankreasenzyme zerlegen Kohlenhydrate, Fette und Proteine weiter.
-
 **German labels:** `Bauchspeicheldrüse`, `Verdauungsenzyme`
 
 **Prompt:**
 
 ```text
-Create a 16:9 educational 3D animation frame of the pancreas delivering digestive enzymes through its duct into the small intestine. In the intestinal lumen show three visually distinct but simplified food-component groups representing carbohydrates, fats and proteins being acted on by enzyme particles. Do not imply that one single enzyme breaks down all nutrients; show a diverse group of enzyme particles conceptually. Add exactly the German labels “Bauchspeicheldrüse” and “Verdauungsenzyme”. Clean premium animated health-series aesthetic, no extra text.
+Using Bild_01 as style reference, create a 16:9 3D educational scene showing the pancreas delivering digestive enzymes through its duct into the small intestine. Inside the intestine show visually distinct simplified groups representing carbohydrates, fats and proteins being processed by different enzyme particles. Add exactly “Bauchspeicheldrüse” and “Verdauungsenzyme”. No implication that one enzyme digests everything. Same style as Bild_01.
 ```
 
 ---
 
-## IMAGE 15 – LEBER, GALLENBLASE UND GALLE
+## IMAGE 15 – LEBER, GALLENBLASE UND DÜNNDARM
 
 **Final filename:** `Bild_15.png`
-
-**Purpose:** Die Leber produziert Galle, die Gallenblase speichert und gibt sie in den Dünndarm ab.
 
 **German labels:** `Leber`, `Gallenblase`, `Dünndarm`
 
 **Prompt:**
 
 ```text
-Create a clear 16:9 semi-realistic 3D educational anatomy frame showing the liver, gallbladder and nearby duodenum. Show the bile pathway from liver toward the small green gallbladder and from the gallbladder through a bile duct into the small intestine. Keep organs clean, simplified and correctly positioned. Add exactly the German labels “Leber”, “Gallenblase”, and “Dünndarm”. Premium family-friendly animated-film biology look, no gore, no extra text.
+Using Bild_01 as style reference, create a clear 16:9 anatomy frame showing liver, gallbladder and nearby duodenum. Show the bile pathway from liver to gallbladder and from the gallbladder through the bile duct into the small intestine. Add exactly “Leber”, “Gallenblase” and “Dünndarm”. Keep organ positions plausible and clean, same style as Bild_01.
 ```
 
 ---
@@ -390,46 +412,40 @@ Create a clear 16:9 semi-realistic 3D educational anatomy frame showing the live
 
 **Final filename:** `Bild_16.png`
 
-**Purpose:** Galle verteilt große Fettansammlungen in kleinere Tröpfchen.
-
 **German labels:** `Galle`, `Fetttröpfchen`
 
 **Prompt:**
 
 ```text
-Create a 16:9 microscopic educational 3D animation frame inside the small intestine. On one side show one large cluster of dietary fat; in the center show bile interacting with it; on the other side show many much smaller fat droplets with a larger combined accessible surface. The image should communicate emulsification visually without pretending that bile itself chemically digests the fat. Add exactly the German labels “Galle” and “Fetttröpfchen”. Premium clean biological visualization, no extra text.
+Using Bild_01 as style reference, create a 16:9 microscopic explainer inside the small intestine. Show one large dietary-fat cluster on one side, bile interacting with it in the center, and many smaller fat droplets on the other side. Make emulsification clear without implying that bile chemically digests fat. Add exactly “Galle” and “Fetttröpfchen”. Same visual world as Bild_01.
 ```
 
 ---
 
-## IMAGE 17 – GROSSE NÄHRSTOFFE WERDEN KLEINER
+## IMAGE 17 – NÄHRSTOFFE WERDEN KLEINER
 
 **Final filename:** `Bild_17.png`
-
-**Purpose:** Kohlenhydrate, Proteine und Fette werden in kleinere aufnehmbare Bausteine zerlegt.
 
 **German labels:** `Kohlenhydrate`, `Einfachzucker`, `Proteine`, `Aminosäuren`, `Fette`
 
 **Prompt:**
 
 ```text
-Create a clean 16:9 educational 3D comparison graphic within the same animated health world. Divide the composition into three clear horizontal transformation paths without using boxes or infographic clutter. Path one: a long carbohydrate structure breaks into small simple-sugar particles. Path two: a folded protein structure breaks into many small amino-acid units. Path three: a large fat droplet is processed into smaller fat-digestion components, without drawing an inaccurate molecular formula. Add exactly the German labels “Kohlenhydrate”, “Einfachzucker”, “Proteine”, “Aminosäuren”, and “Fette” placed next to their correct visual groups. No other text, premium semi-realistic 3D educational style.
+Using Bild_01 as style reference, create a clean 16:9 transformation explainer with three clearly separated visual pathways: long carbohydrate structure becoming small simple-sugar particles; folded protein becoming many amino-acid units; large dietary-fat structures becoming smaller digestion products. Avoid fake chemical formulas. Add exactly the German labels “Kohlenhydrate”, “Einfachzucker”, “Proteine”, “Aminosäuren” and “Fette”. Same premium render language as Bild_01.
 ```
 
 ---
 
-## IMAGE 18 – ZERLEGE- UND SORTIERANLAGE
+## IMAGE 18 – ZERLEGE- UND SORTIERPRINZIP
 
 **Final filename:** `Bild_18.png`
-
-**Purpose:** Analogie: Verdauung zerlegt große Strukturen in transportierbare Bausteine.
 
 **German labels:** none
 
 **Prompt:**
 
 ```text
-Create a playful but scientifically respectful 16:9 3D animated analogy scene in the same Object-Talk universe. The recurring Red Apple Guide stands beside a clean stylized sorting facility inspired by the digestive process. Large food structures enter one side, pass through several visually clear breakdown stages, and emerge as many small organized nutrient particles that can pass through a narrow gate into transport channels. The machinery is an analogy only, not literal anatomy. Keep the apple expressive and educational, not comedic chaos. Warm cinematic lighting, premium semi-realistic animation, no text, no labels.
+Using Bild_01 as style reference, create a 16:9 faceless educational analogy visualizing digestion as a breakdown-and-sorting process. Show large food structures entering a clean abstract processing pathway, passing through several simple breakdown stages and emerging as small organized nutrient building blocks that can pass through a selective barrier into transport channels. The analogy must clarify transformation and sorting without becoming a literal factory scene. No mascot, no presenter character, no text, no labels. Same cinematic materials, lighting and explanatory clarity as Bild_01.
 ```
 
 ---
@@ -438,30 +454,26 @@ Create a playful but scientifically respectful 16:9 3D animated analogy scene in
 
 **Final filename:** `Bild_19.png`
 
-**Purpose:** Die Dünndarmwand besitzt Falten und Darmzotten.
-
 **German labels:** `Dünndarm`, `Darmzotten`
 
 **Prompt:**
 
 ```text
-Create a beautiful 16:9 semi-realistic 3D educational cutaway moving from a section of the small intestine into a magnified view of its inner wall. Show large folds and many finger-like villi covering the surface, clearly communicating that the wall is not smooth. Add exactly the German labels “Dünndarm” and “Darmzotten”, with “Darmzotten” pointing to the finger-like structures. Clean biological materials, premium animated-film lighting, no gore, no extra text.
+Using Bild_01 as style reference, create a 16:9 educational cutaway transitioning from a section of small intestine into a magnified view of its inner wall. Show folds and many finger-like villi covering the surface, clearly proving the wall is not smooth. Add exactly “Dünndarm” and “Darmzotten”. Same premium clean biology style as Bild_01.
 ```
 
 ---
 
-## IMAGE 20 – RIESIGE OBERFLÄCHE
+## IMAGE 20 – GROSSE OBERFLÄCHE
 
 **Final filename:** `Bild_20.png`
-
-**Purpose:** Falten und Zotten schaffen viel Oberfläche für die Aufnahme.
 
 **German labels:** `Darmzotten`
 
 **Prompt:**
 
 ```text
-Create a 16:9 macro educational 3D visualization of the inner small-intestine surface densely covered with many healthy finger-like villi. Show tiny nutrient particles surrounding the villi and moving toward the surface, visually emphasizing how the many projections create far more contact area than a flat tube would have. Add one clean German label “Darmzotten”. Keep the scene elegant, simplified and scientifically recognizable, premium semi-realistic animated biology style, no extra text.
+Using Bild_01 as style reference, create a 16:9 macro view of the small-intestine surface densely covered with villi. Show many nutrient particles approaching the expanded surface so the benefit of the projections becomes visually obvious compared with a flat wall. Add one label “Darmzotten”. Same clean semi-realistic explainer style as Bild_01.
 ```
 
 ---
@@ -470,30 +482,26 @@ Create a 16:9 macro educational 3D visualization of the inner small-intestine su
 
 **Final filename:** `Bild_21.png`
 
-**Purpose:** Viele einfache Zucker und Aminosäuren gelangen über die Darmwand in kleine Blutgefäße.
-
 **German labels:** `Darmzotte`, `Blutgefäß`
 
 **Prompt:**
 
 ```text
-Create a detailed 16:9 cross-section of a single intestinal villus in semi-realistic 3D educational animation. Show the villus surface on the outside and a network of tiny blood capillaries inside. Visualize small nutrient particles crossing from the intestinal side through the surface into the capillary network. The direction of movement must be unmistakable. Add exactly the German labels “Darmzotte” and “Blutgefäß”. No faces, no gore, premium clean microscopic biology visualization, no extra text.
+Using Bild_01 as style reference, create a detailed 16:9 cross-section of one intestinal villus. Show its outer surface and a network of tiny blood capillaries inside. Show small nutrient particles crossing from the intestinal side through the surface into the blood capillary network with an unmistakable direction of movement. Add exactly “Darmzotte” and “Blutgefäß”. No faces, no gore, same style as Bild_01.
 ```
 
 ---
 
-## IMAGE 22 – BLUT TRANSPORTIERT NÄHRSTOFFE ZUR LEBER
+## IMAGE 22 – BLUT TRANSPORTIERT ZUR LEBER
 
 **Final filename:** `Bild_22.png`
-
-**Purpose:** Aufgenommene Nährstoffe gelangen über Blut zur Leber.
 
 **German labels:** `Blut`, `Leber`
 
 **Prompt:**
 
 ```text
-Create a 16:9 educational 3D animated body cutaway linking the small intestine to the liver through blood transport. Show nutrient particles entering blood vessels near the intestine and traveling with the bloodstream toward a clearly visible liver. Use flowing red blood cells and small nutrient particles to make transport obvious while keeping the scene clean. Add exactly the German labels “Blut” and “Leber”. Premium semi-realistic animated anatomy, no gore, no extra text.
+Using Bild_01 as style reference, create a 16:9 body cutaway linking small intestine to liver through blood transport. Show nutrient particles entering vessels near the intestine and traveling with flowing red blood cells toward the liver. Add exactly “Blut” and “Leber”. Keep flow direction clear and the scene uncluttered, same style as Bild_01.
 ```
 
 ---
@@ -502,30 +510,26 @@ Create a 16:9 educational 3D animated body cutaway linking the small intestine t
 
 **Final filename:** `Bild_23.png`
 
-**Purpose:** Ein Teil der Fettbestandteile gelangt zunächst über das Lymphsystem in den Kreislauf.
-
 **German labels:** `Lymphgefäß`
 
 **Prompt:**
 
 ```text
-Create a 16:9 microscopic educational 3D cross-section of an intestinal villus emphasizing the central lymphatic vessel. Show fat-derived particles entering the lymphatic vessel inside the villus, visually distinct from the nearby blood capillary network. Use a clear different transport path without suggesting all fats travel identically. Add exactly one German label “Lymphgefäß” pointing to the central lymphatic channel. Premium clean animated biology style, no gore, no extra text.
+Using Bild_01 as style reference, create a 16:9 microscopic cross-section of an intestinal villus emphasizing its central lymphatic vessel. Show fat-derived particles entering that lymphatic vessel and visually distinguish it from nearby blood capillaries. Add exactly “Lymphgefäß”. Same premium clean educational biology style as Bild_01.
 ```
 
 ---
 
-## IMAGE 24 – AUS ESSEN WERDEN NUTZBARE BAUSTEINE
+## IMAGE 24 – AUS ESSEN WERDEN BAUSTEINE
 
 **Final filename:** `Bild_24.png`
-
-**Purpose:** Der Körper nimmt kleine Moleküle auf und nutzt sie als Baustoffe und Energiequellen.
 
 **German labels:** none
 
 **Prompt:**
 
 ```text
-Create a cinematic 16:9 educational 3D concept scene showing the transformation from food into usable body resources. On the left show recognizable food entering a simplified digestive pathway. In the center show many small nutrient particles crossing the intestinal barrier into circulation. On the right show those particles reaching stylized muscle cells and other body cells, with a subtle warm energy glow and cell-repair/building symbolism. Keep the sequence physically connected and visually clear, not a fantasy transformation. Same premium semi-realistic animated health-world aesthetic, no text, no labels.
+Using Bild_01 as style reference, create a cinematic 16:9 concept scene showing the transformation from food into usable body resources: food enters a simplified digestive pathway, small nutrient particles cross the intestinal barrier into circulation, then reach healthy body cells and muscle tissue. Use subtle visual cues for energy and repair without fantasy effects. No mascot, no presenter, no text. Same style as Bild_01.
 ```
 
 ---
@@ -534,14 +538,12 @@ Create a cinematic 16:9 educational 3D concept scene showing the transformation 
 
 **Final filename:** `Bild_25.png`
 
-**Purpose:** Nicht aufgenommene Reste gelangen in den Dickdarm; dort wird Wasser zurückgewonnen.
-
 **German labels:** `Dünndarm`, `Dickdarm`
 
 **Prompt:**
 
 ```text
-Create a 16:9 educational 3D anatomical frame showing the end of the small intestine connecting into the large intestine. Show remaining intestinal contents moving into the colon. Visualize water molecules moving from the colon contents across the wall toward nearby circulation in a clean simplified manner. Add exactly the German labels “Dünndarm” and “Dickdarm”. Premium family-friendly semi-realistic animation, clean anatomy, no gore, no extra text.
+Using Bild_01 as style reference, create a 16:9 anatomy frame showing the end of the small intestine connecting into the large intestine. Show remaining contents moving into the colon and clean simplified water molecules moving from colon contents across the wall toward nearby circulation. Add exactly “Dünndarm” and “Dickdarm”. Same clean style as Bild_01.
 ```
 
 ---
@@ -550,14 +552,12 @@ Create a 16:9 educational 3D anatomical frame showing the end of the small intes
 
 **Final filename:** `Bild_26.png`
 
-**Purpose:** Im Dickdarm lebt eine vielfältige Gemeinschaft aus Mikroorganismen.
-
 **German labels:** `Darmmikrobiom`
 
 **Prompt:**
 
 ```text
-Create a fascinating 16:9 microscopic 3D educational world representing the colon microbiome. Show many varied simplified bacterial forms living near the intestinal environment, with diverse shapes and sizes but no human faces, no monsters and no scary features. The scene should feel alive and complex but scientifically respectful rather than like random colorful aliens. Add exactly one German label “Darmmikrobiom” pointing to the microbial community. Premium semi-realistic animated microscopy, clean and family-friendly, no extra text.
+Using Bild_01 as style reference, create a fascinating 16:9 microscopic 3D educational scene representing the colon microbiome. Show varied simplified bacterial forms living near the intestinal environment with diverse shapes and sizes but no human faces or monster features. Add exactly “Darmmikrobiom”. Keep it scientifically respectful and visually clean, same render world as Bild_01.
 ```
 
 ---
@@ -566,30 +566,26 @@ Create a fascinating 16:9 microscopic 3D educational world representing the colo
 
 **Final filename:** `Bild_27.png`
 
-**Purpose:** Einige Darmbakterien können bestimmte unverdauliche Kohlenhydrate und Ballaststoffe verwerten.
-
 **German labels:** `Ballaststoffe`, `Bakterien`
 
 **Prompt:**
 
 ```text
-Create a 16:9 microscopic educational 3D animation frame inside the colon. Show several realistic-but-stylized bacterial forms interacting with larger plant-fiber particles that remain after human digestion. Make it visually clear that the bacteria are processing parts of the fiber rather than attacking body tissue. Add exactly the German labels “Ballaststoffe” and “Bakterien”. No faces on microbes, no horror, premium clean semi-realistic biology visualization, no extra text.
+Using Bild_01 as style reference, create a 16:9 microscopic colon scene showing stylized bacteria processing larger plant-fiber particles that remain after human digestion. Make it clear the bacteria are processing fiber, not attacking body tissue. Add exactly “Ballaststoffe” and “Bakterien”. Same style as Bild_01.
 ```
 
 ---
 
-## IMAGE 28 – STOFFWECHSELPRODUKTE DES MIKROBIOMS
+## IMAGE 28 – STOFFWECHSELPRODUKTE
 
 **Final filename:** `Bild_28.png`
-
-**Purpose:** Mikroorganismen erzeugen Stoffwechselprodukte, die mit der Darmumgebung wechselwirken.
 
 **German labels:** `Stoffwechselprodukte`
 
 **Prompt:**
 
 ```text
-Create a 16:9 microscopic educational 3D visualization near the colon wall. Show gut bacteria processing fiber particles and releasing small distinct metabolite particles that move toward nearby intestinal cells. Do not depict a universal health benefit or exaggerated magical glow. Add exactly one German label “Stoffwechselprodukte” pointing to the released particles. Same premium animated health-series style, scientifically restrained, clean, no extra text.
+Using Bild_01 as style reference, create a 16:9 microscopic visualization near the colon wall. Show gut bacteria processing fiber and releasing small distinct metabolite particles that move toward nearby intestinal cells. Do not imply a universal health benefit or magical effect. Add exactly “Stoffwechselprodukte”. Same clean scientific style as Bild_01.
 ```
 
 ---
@@ -598,30 +594,26 @@ Create a 16:9 microscopic educational 3D visualization near the colon wall. Show
 
 **Final filename:** `Bild_29.png`
 
-**Purpose:** Bestimmte unverdauliche Kohlenhydrate werden mikrobiell fermentiert; entstehende Stoffe können von Darmzellen genutzt werden.
-
 **German labels:** `Fermentation`
 
 **Prompt:**
 
 ```text
-Create a 16:9 semi-realistic 3D educational microscopic scene showing a clear three-step process: fiber-like carbohydrate material near gut bacteria, bacterial processing of that material, and small resulting metabolite particles moving toward colon epithelial cells. Keep the chemistry conceptual and avoid unsupported molecular formulas. Add exactly one German label “Fermentation” positioned over the bacterial processing step with a clean pointer. No extra text, no faces, premium scientific animation.
+Using Bild_01 as style reference, create a 16:9 three-step microscopic process: fiber-like carbohydrate material near gut bacteria, bacterial processing, then small resulting metabolite particles moving toward colon epithelial cells. Keep chemistry conceptual and do not invent molecular formulas. Add exactly “Fermentation” over the bacterial processing step with a clear pointer. Same style as Bild_01.
 ```
 
 ---
 
-## IMAGE 30 – JEDES MIKROBIOM IST ANDERS
+## IMAGE 30 – MIKROBIOME SIND UNTERSCHIEDLICH
 
 **Final filename:** `Bild_30.png`
-
-**Purpose:** Das Mikrobiom unterscheidet sich zwischen Menschen und ist komplex.
 
 **German labels:** none
 
 **Prompt:**
 
 ```text
-Create a 16:9 educational 3D comparison scene with two simplified human silhouettes side by side, each connected to a magnified microscopic window of their colon microbiome. Show clearly different mixtures and relative abundances of bacterial shapes in the two windows, communicating individual variation without implying one is good and the other bad. Keep both sides equally healthy-looking and neutral. Premium semi-realistic animated science style, clean composition, no text, no labels.
+Using Bild_01 as style reference, create a 16:9 comparison image with two neutral simplified human silhouettes, each connected to a magnified view of their colon microbiome. Show clearly different mixtures and relative abundances of bacterial shapes without implying that one microbiome is good and the other bad. No text or labels. Same premium explainer style as Bild_01.
 ```
 
 ---
@@ -630,14 +622,12 @@ Create a 16:9 educational 3D comparison scene with two simplified human silhouet
 
 **Final filename:** `Bild_31.png`
 
-**Purpose:** Im Dickdarm wird Inhalt fester; Stuhl wird im Enddarm gespeichert.
-
 **German labels:** `Dickdarm`, `Enddarm`
 
 **Prompt:**
 
 ```text
-Create a clean 16:9 educational 3D cutaway of the large intestine and rectum. Show intestinal content gradually becoming more solid as water is removed along the colon, then show the remaining stool stored in the rectum in a highly simplified non-gross educational manner. No fecal close-up and no disturbing realism. Add exactly the German labels “Dickdarm” and “Enddarm”. Premium family-friendly semi-realistic animated anatomy, no extra text.
+Using Bild_01 as style reference, create a clean 16:9 cutaway of large intestine and rectum. Show intestinal content gradually becoming more solid as water is removed along the colon and remaining stool stored in the rectum in a highly simplified non-gross way. Add exactly “Dickdarm” and “Enddarm”. Same educational style as Bild_01.
 ```
 
 ---
@@ -646,14 +636,12 @@ Create a clean 16:9 educational 3D cutaway of the large intestine and rectum. Sh
 
 **Final filename:** `Bild_32.png`
 
-**Purpose:** Nerven und Hormone beeinflussen Bewegung, Sekretion und Transport im Verdauungssystem.
-
 **German labels:** `Nerven`, `Hormone`
 
 **Prompt:**
 
 ```text
-Create a 16:9 semi-realistic 3D educational human torso showing the digestive tract together with a simplified network of nerves and subtle signaling particles representing hormones. Show nerve pathways communicating with digestive organs and hormone signals traveling through circulation toward digestive targets. The scene should communicate regulation rather than magical control. Add exactly the German labels “Nerven” and “Hormone” pointing to the correct signal systems. Premium animated health-series aesthetic, no extra text.
+Using Bild_01 as style reference, create a 16:9 semi-transparent torso showing the digestive tract together with a simplified nerve network and subtle signaling particles representing hormones. Show nerves communicating with digestive organs and hormone signals traveling through circulation toward digestive targets. Add exactly “Nerven” and “Hormone”. Same style as Bild_01, no magical control effects.
 ```
 
 ---
@@ -662,46 +650,40 @@ Create a 16:9 semi-realistic 3D educational human torso showing the digestive tr
 
 **Final filename:** `Bild_33.png`
 
-**Purpose:** Der Anblick oder Geruch von Essen kann den Körper auf Verdauung vorbereiten.
-
 **German labels:** `Speicheldrüsen`
 
 **Prompt:**
 
 ```text
-Create a 16:9 premium animated educational scene showing a person noticing and smelling an appetizing normal meal before taking a bite. Use a semi-transparent side cutaway of the head to show the salivary glands becoming active and releasing a small amount of saliva into the mouth. Keep the effect subtle and physiological, not exaggerated drooling. Add exactly one German label “Speicheldrüsen” pointing to the correct gland region. Same semi-realistic 3D health-series style, warm kitchen lighting, no extra text.
+Using Bild_01 as style reference, create a 16:9 educational scene showing a normal person noticing and smelling an appetizing meal before taking a bite. Use a clean semi-transparent side cutaway of the head to show the salivary glands becoming active and releasing a small amount of saliva. Keep the person secondary to the physiological explanation and avoid exaggerated drooling. Add exactly “Speicheldrüsen”. Same style as Bild_01.
 ```
 
 ---
 
-## IMAGE 34 – RECAP: MUND, SPEISERÖHRE, MAGEN
+## IMAGE 34 – RECAP MUND, SPEISERÖHRE, MAGEN
 
 **Final filename:** `Bild_34.png`
-
-**Purpose:** Erster Teil der gesamten Reise zusammenfassen.
 
 **German labels:** `Mund`, `Speiseröhre`, `Magen`
 
 **Prompt:**
 
 ```text
-Create a 16:9 educational 3D recap composition showing one continuous human upper-body cutaway with three sequential digestive stages clearly connected: food being chewed in the mouth, the food bolus moving down the esophagus through a contraction wave, and the stomach mixing its contents. Use one coherent body rather than three unrelated panels. Add exactly the German labels “Mund”, “Speiseröhre”, and “Magen”. Premium semi-realistic animated biology style, clear visual flow, no extra text.
+Using Bild_01 as style reference, create a 16:9 recap using one coherent human upper-body cutaway with three connected stages: food being chewed in the mouth, the bolus moving down the esophagus through a contraction wave, and the stomach mixing its contents. Add exactly “Mund”, “Speiseröhre” and “Magen”. Clear continuous visual flow, same style as Bild_01.
 ```
 
 ---
 
-## IMAGE 35 – RECAP: DÜNNDARM, BLUT, LYMPHE, DICKDARM
+## IMAGE 35 – RECAP DÜNNDARM, BLUT, LYMPHE, DICKDARM
 
 **Final filename:** `Bild_35.png`
-
-**Purpose:** Zweiten Teil der Reise zusammenfassen.
 
 **German labels:** `Dünndarm`, `Blut`, `Lymphe`, `Dickdarm`
 
 **Prompt:**
 
 ```text
-Create a 16:9 educational 3D recap composition centered on the intestines. Show the small intestine breaking down and absorbing nutrient particles, some particles entering blood vessels, fat-derived particles entering a lymphatic route, and remaining material continuing into the large intestine where water is recovered. Keep all pathways visually connected and directionally clear. Add exactly the German labels “Dünndarm”, “Blut”, “Lymphe”, and “Dickdarm”. Premium clean semi-realistic animated health-series look, no extra text.
+Using Bild_01 as style reference, create a 16:9 recap centered on the intestines. Show small intestine breaking down and absorbing nutrient particles, some entering blood, fat-derived particles entering a lymphatic route, and remaining material continuing into the large intestine where water is recovered. Keep all pathways visually connected and directionally clear. Add exactly “Dünndarm”, “Blut”, “Lymphe” and “Dickdarm”. Same style as Bild_01.
 ```
 
 ---
@@ -710,36 +692,33 @@ Create a 16:9 educational 3D recap composition centered on the intestines. Show 
 
 **Final filename:** `Bild_36.png`
 
-**Purpose:** Aus einem Bissen werden durch Bewegung, Chemie und Transport nutzbare Bausteine für den Körper.
-
 **German labels:** none
 
 **Prompt:**
 
 ```text
-Create a cinematic 16:9 final hero frame for the educational digestion story. Show the recurring Red Apple Guide in the foreground with a satisfied, intelligent expression. Behind him create one coherent visual arc: a bite of food entering the digestive system, being broken into small nutrient particles, those particles entering circulation, and finally reaching healthy body cells and muscle tissue associated with energy, growth and repair. The composition should feel like the completed journey from food to usable body material. Warm uplifting cinematic lighting, premium semi-realistic 3D animated-film quality, scientifically respectful, no text, no labels, no gore.
+Using Bild_01 as the exact style reference, create a cinematic 16:9 final educational hero frame showing the complete journey from food to usable body material. Show one bite entering the digestive system, being broken down into smaller nutrient particles, those particles entering circulation, and finally reaching healthy body cells and muscle tissue associated with energy, growth and repair. The composition should visually close the journey in one coherent arc. No mascot, no presenter character, no text, no labels. Match Bild_01 in rendering, lighting, color harmony, material language and overall faceless explainer quality.
 ```
 
 ---
 
 # FINALER QUALITY CHECK
 
-Bevor du die ZIP bereitstellst, prüfe **jedes Bild einzeln**:
+Vor der ZIP-Ausgabe prüfe jedes finale Bild:
 
-1. Ist es 16:9 horizontal?
-2. Ist die Szene inhaltlich exakt die richtige IMAGE-Nummer?
-3. Passt sie sichtbar zum gesprochenen Vorgang?
-4. Ist die Anatomie plausibel?
-5. Gibt es keine eklige/fotorealistische medizinische Darstellung?
-6. Ist der Object-Talk-Look bei Food-Figuren konsistent?
-7. Bleiben Organe/Zellen/Mikroben gesichtslos?
-8. Stimmen alle vorgegebenen deutschen Labels exakt?
-9. Zeigt jeder Pointer auf die richtige Struktur?
-10. Gibt es keine zusätzlichen Fantasietexte?
-11. Gibt es keine deformierten Hände/Arme/Augen?
-12. Ist genug Bildrand für dezente Kamerabewegung vorhanden?
-13. Existieren final exakt `Bild_01.png` bis `Bild_36.png`?
+1. richtige Bildnummer?
+2. 16:9 horizontal?
+3. passt exakt zum vorgesehenen Inhalt?
+4. erklärt es wirklich etwas oder ist es nur Dekoration?
+5. gleiche visuelle Welt wie `Bild_01`?
+6. Anatomie plausibel?
+7. kein unnötiger Mascot-/Presenter-Fokus?
+8. deutsche Labels exakt richtig?
+9. Pointer richtig zugeordnet?
+10. keine zufälligen Texte?
+11. keine groben KI-Artefakte?
+12. genug Rand für Zoom/Pan?
 
-Wenn eine Prüfung fehlschlägt: nur die betroffene IMAGE-Nummer neu erzeugen.
+Danach Recovery-Liste vollständig abarbeiten.
 
-Erst wenn alle 36 Bilder bestanden haben, den Bilderordner als ZIP bereitstellen.
+Erst fertig, wenn exakt `Bild_01.png` bis `Bild_36.png` lückenlos als akzeptierte Bilder vorliegen. Danach ausschließlich diese finalen Bilder als ZIP bereitstellen.
