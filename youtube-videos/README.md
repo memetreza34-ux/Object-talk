@@ -10,19 +10,37 @@ python tools/create_video.py "THEMA"
 
 Dadurch wird `_TEMPLATE` in einen neuen Themenordner kopiert.
 
+# Wichtige Nutzer-Regel
+
+Alles, was der Nutzer **selbst öffnen und in ein anderes Tool kopieren** soll, wird zusätzlich als normale `.txt`-Datei bereitgestellt.
+
+Der Nutzer soll dafür nicht auf `.md`, `.json` oder interne Agentendateien angewiesen sein.
+
+Pflicht pro Video:
+
+```text
+01_script/VOICEOVER-ZUM-KOPIEREN.txt
+02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt
+03_pipeline/ANTIGRAVITY-PROMPT-ZUM-KOPIEREN.txt
+04_export/YOUTUBE-TITEL-BESCHREIBUNG-ZUM-KOPIEREN.txt
+```
+
+Details: `../engine/USER-FILES-STANDARD.md`
+
 ## Feste Projektstruktur
 
 ```text
 youtube-videos/THEMA/
 ├── 01_script/
 │   ├── script.txt                            # technische Originalquelle
-│   ├── VOICEOVER-ZUM-KOPIEREN.txt            # identische, leicht nutzbare Kopie für den Nutzer
+│   ├── VOICEOVER-ZUM-KOPIEREN.txt           # Nutzerdatei für die Voice-KI
 │   └── audio/
 │       ├── <rohes Voiceover aus der Voice-KI>
 │       └── final-voiceover.wav              # Phase 3 erzeugt
 │
 ├── 02_bildprompts/
-│   ├── Google-Flow-Agent-Prompt.md
+│   ├── Google-Flow-Agent-Prompt.md           # interne/kanonische Promptdatei
+│   ├── GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt  # Nutzerdatei für Google Flow
 │   ├── bilder-zip/
 │   │   └── bilder.zip                       # Nutzer legt Flow-ZIP hier ab
 │   └── images/
@@ -33,7 +51,8 @@ youtube-videos/THEMA/
 ├── 03_pipeline/
 │   ├── pipeline.md
 │   ├── scene-map.json
-│   ├── Antigravity-Prompt.md
+│   ├── Antigravity-Prompt.md                 # interne/kanonische Agentdatei
+│   ├── ANTIGRAVITY-PROMPT-ZUM-KOPIEREN.txt  # Nutzerdatei für Antigravity
 │   └── timing/
 │       ├── whisper-raw.json
 │       ├── word-timings.json
@@ -41,7 +60,8 @@ youtube-videos/THEMA/
 │       └── subtitles.srt
 │
 ├── 04_export/
-│   ├── YouTube-Caption.md
+│   ├── YouTube-Caption.md                    # interne/kanonische Metadaten
+│   ├── YOUTUBE-TITEL-BESCHREIBUNG-ZUM-KOPIEREN.txt
 │   ├── render-report.md
 │   ├── fertiges-video/
 │   │   └── final-video.mp4
@@ -62,15 +82,23 @@ Vor jeder Produktion:
 2. Thema recherchieren.
 3. Kernbehauptungen in `claim-matrix.md` prüfen.
 4. finales gesprochenes `script.txt` schreiben.
-5. zusätzlich `VOICEOVER-ZUM-KOPIEREN.txt` mit **exakt demselben Sprechertext** erstellen; diese Datei ist nur die bequeme Nutzerkopie zum Öffnen/Herunterladen/Kopieren.
+5. `VOICEOVER-ZUM-KOPIEREN.txt` mit exakt demselben Sprechertext erstellen.
 6. semantische Bildszenen in `phase1-scenes.json` festlegen.
 7. gesamte Sprache lückenlos auf die Szenen verteilen.
 8. `scene-map.json` mit denselben `speech_section`-Grenzen erstellen.
-9. Google-Flow-Agent-Prompt mit genau einem Bild pro Szene erstellen.
-10. `Bild_01` immer als Cover-/Hook-Szene planen.
-11. YouTube-Titel, Beschreibung und maximal 5 Hashtags vorbereiten.
+9. vollständigen `Google-Flow-Agent-Prompt.md` mit genau einem Bild pro Szene erstellen.
+10. denselben vollständigen Inhalt zusätzlich als `GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt` bereitstellen.
+11. `Bild_01` immer als Cover-/Hook-Szene planen.
+12. vollständigen `Antigravity-Prompt.md` vorbereiten.
+13. denselben Nutzerauftrag zusätzlich als `ANTIGRAVITY-PROMPT-ZUM-KOPIEREN.txt` bereitstellen.
+14. YouTube-Titel, Beschreibung und maximal 5 Hashtags vorbereiten.
+15. diese zusätzlich als `YOUTUBE-TITEL-BESCHREIBUNG-ZUM-KOPIEREN.txt` bereitstellen.
 
-Wichtig: `script.txt` bleibt die technische Quelle für Validator, Whisper und Timeline. `VOICEOVER-ZUM-KOPIEREN.txt` darf inhaltlich niemals davon abweichen.
+Wichtig:
+
+- `script.txt` bleibt die technische Quelle für Validator, Whisper und Timeline.
+- Alle Nutzer-`.txt`-Dateien müssen inhaltlich mit ihren kanonischen Dateien übereinstimmen.
+- Phase 1 ist erst vollständig, wenn alle vier Nutzer-`.txt`-Dateien vorhanden sind.
 
 Vor Phase 2:
 
@@ -87,9 +115,9 @@ Nur bei `PHASE-1 PASS` weiter.
 
 Der Nutzer:
 
-1. öffnet bzw. lädt `01_script/VOICEOVER-ZUM-KOPIEREN.txt` herunter und kopiert den Inhalt 1:1 in die Voice-KI
+1. öffnet `01_script/VOICEOVER-ZUM-KOPIEREN.txt` und kopiert den Inhalt 1:1 in die Voice-KI
 2. legt genau eine rohe Voice-Datei unter `01_script/audio/` ab
-3. gibt `Google-Flow-Agent-Prompt.md` an Google Flow
+3. öffnet `02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt` und kopiert den vollständigen Inhalt in Google Flow
 4. Flow erzeugt jedes Bild streng einzeln
 5. Szene 01 = `Bild_01` = Cover/Hook
 6. nach jedem Bild Einzel-QA
@@ -98,6 +126,12 @@ Der Nutzer:
 Die kreative Szeneinteilung darf in Phase 2 nicht verändert werden.
 
 # Phase 3 – Antigravity + Tools + Remotion
+
+Wenn der Nutzer Antigravity manuell beauftragt, verwendet er:
+
+```text
+03_pipeline/ANTIGRAVITY-PROMPT-ZUM-KOPIEREN.txt
+```
 
 Empfohlener Vorbereitungsschritt vom Repository-Root:
 
@@ -139,6 +173,12 @@ python tools/qa_final.py \
 
 Danach `04_export/render-report.md` ausfüllen und den finalen Sichtcheck durchführen.
 
+Für YouTube verwendet der Nutzer anschließend:
+
+```text
+04_export/YOUTUBE-TITEL-BESCHREIBUNG-ZUM-KOPIEREN.txt
+```
+
 # Warum Whisper?
 
 ChatGPT entscheidet in Phase 1 **welche Sprachpassage zu welchem Bild gehört**.
@@ -154,6 +194,7 @@ Siehe:
 - `../PROJECT_CONTRACT.md`
 - `../PROJECT_STATE.md`
 - `../AGENTS.md`
+- `../engine/USER-FILES-STANDARD.md`
 - `../engine/PHASE-GATES.md`
 - `../engine/PRODUKTIONSREGELN.md`
 - `../engine/AUDIO-REGELN.md`
