@@ -98,48 +98,52 @@ Keine Lücke, keine doppelte Nummer.
 - erster sichtbarer Shot
 - Cover-/Hook-Szene
 - Grundlage des YouTube-Thumbnails
+- Master Style Frame für die konkrete Episode
 
-## 7. Zwei visuelle Ebenen
+## 7. Faceless Explainer als visuelle Hauptsprache
 
-### A – Viral Object-Talk
+Der Kanal ist kein Mascot-/Presenter-Format.
 
-Sprechende Lebensmittel oder passende Objekte mit:
+Die Bilder sollen den gesprochenen Mechanismus direkt sichtbar machen.
 
-- großen ausdrucksstarken Augen
-- klarer Mimik
-- kleinen Armen/Beinen, wenn sinnvoll
-- starker Pose
-- semi-realistischen Materialien
-- klar animiertem Look
+Bevorzugte Bildtypen:
 
-### B – Inside-the-Body
+- anatomische Cutaways
+- transparente Körperansichten
+- Prozessdarstellungen
+- Organ-, Gewebe- und Zellvisualisierungen
+- Mikro-/Makro-Übergänge
+- Vergleiche und Transformationen
+- Ursache→Prozess→Folge-Kompositionen
 
-Verständliche Darstellungen von:
+Personifizierte Lebensmittel oder andere Object-Talk-Figuren sind nur erlaubt, wenn sie einen echten didaktischen Mehrwert haben. Sie dürfen nicht automatisch als dauerhafte Sprecherfigur vor den biologischen Inhalt gesetzt werden.
 
-- Organen
-- Blutgefäßen
-- Zellen
-- Nervenzellen
-- Molekülen
-- Stoffwechsel
-- Verdauung
-- Immunsystem
+Richtwert:
 
-Biologische Strukturen bekommen normalerweise **keine Gesichter**.
+- etwa 70 % direkte Erklärbilder
+- etwa 20 % Prozess-/Vergleichsbilder
+- maximal etwa 10 % optionale Character-/Guide-Momente
 
-Beide Ebenen müssen wie dieselbe hochwertige 3D-Animationsserie wirken.
+Die Werte sind keine starre Quote. Verständlichkeit geht vor.
 
-## 8. Globaler Style Anchor
+Biologische Strukturen bekommen normalerweise keine Gesichter.
 
-Nach Nutzerfreigabe wird ein einziges Masterbild verwendet:
+## 8. Style Anchor und Flow-Produktion
+
+Es gibt zwei mögliche Stilanker:
 
 ```text
-assets/channel/STYLE_REFERENCE.png
+assets/channel/STYLE_REFERENCE.png = langfristige Kanal-DNA, falls freigegeben
+Bild_01.png = Master Style Frame der aktuellen Episode
 ```
 
-Siehe `STYLE-REFERENCE-SYSTEM.md`.
+Für jede weitere Bildgeneration wird `Bild_01` als Style-/Continuity-Referenz verwendet, soweit Google Flow dies technisch unterstützt.
 
-Bei jeder Flow-Generation wird diese Datei als `style-only` verwendet. Wiederkehrende Figuren können zusätzlich Character References besitzen.
+Die restlichen Bilder werden in 5er-Blöcken produziert, aber weiterhin einzeln generiert und geprüft.
+
+Fehlgeschlagene Flow-Generationen werden nicht zum globalen Blocker. Sie kommen auf eine Recovery-Liste und werden nach dem regulären Durchlauf gezielt erneut erzeugt.
+
+Details: `FLOW-PRODUCTION-STANDARD.md` und `STYLE-REFERENCE-SYSTEM.md`.
 
 ## 9. Beschriftungen
 
@@ -158,7 +162,7 @@ Beispiele:
 - rote Blutkörperchen
 - Nervenzelle
 
-Falsches Label = Bild neu erzeugen, nicht akzeptieren.
+Falsches Label = Bild FAIL; im Flow-Hauptdurchlauf auf Recovery-Liste setzen und später neu erzeugen.
 
 ## 10. Bewegung auf Standbildern
 
@@ -246,6 +250,7 @@ Ein Video ist erst fertig, wenn:
 - keine falschen Labels
 - keine groben KI-Fehler
 - Stil konsistent
+- kein unbeabsichtigter Mascot-/Presenter-Schwerpunkt
 - finaler technischer QA-Check PASS
 - finaler visueller Sichtcheck PASS
 - Thema im Themen-Gehirn korrekt aktualisiert
