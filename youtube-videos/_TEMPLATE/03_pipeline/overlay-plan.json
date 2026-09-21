@@ -1,0 +1,13 @@
+{
+  "status": "TEMPLATE",
+  "version": 1,
+  "purpose": "Optional selective Remotion headings/keywords. Keep scenes empty if no overlays are needed.",
+  "rules": {
+    "full_frame_remains_default": true,
+    "language": "de",
+    "max_words_per_heading": 6,
+    "no_full_voiceover_sentences": true,
+    "no_anime_or_meme_text_effects": true
+  },
+  "scenes": []
+}
