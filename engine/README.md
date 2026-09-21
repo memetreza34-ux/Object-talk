@@ -1,6 +1,6 @@
 # Engine
 
-Dieser Ordner enthält die globalen Regeln für alle langen Object-Talk-YouTube-Videos.
+Dieser Ordner enthält die globalen Regeln für Object-Talk-YouTube-Videos.
 
 ## Zweck
 
@@ -12,7 +12,8 @@ Er definiert:
 - Hook, Einleitung, Hauptteil, rhetorische Mittel und Schluss
 - Visual-First-Scriptwriting
 - Mechanism Map und Satz-Visual-Planung
-- Longform-Länge und semantischen Bildrhythmus
+- Longform-Länge und ausdrücklich markierte interne Testausnahmen
+- semantischen Bildrhythmus
 - faceless Explainer-Bildsprache
 - Google-Flow-Masterframe, 5er-Blöcke und Recovery
 - wissenschaftliche Prüfung
@@ -28,16 +29,16 @@ Er definiert:
 ## Dateien
 
 - `SCRIPT-STANDARD.md` – Visual-First-Scriptwriting, Hook, Einleitung, Hauptteil, rhetorische Mittel, Schluss und Script-QA
-- `THEMEN-STRATEGIE.md` – welche Gesundheits-/Biologie-/Ernährungsthemen besonders gut funktionieren und wie Themen bewertet werden
-- `PRODUKTIONSREGELN.md` – globale Longform-Regeln
-- `PLANNING-V2.md` – Mechanism Map, Satz-Visual-Plan, stabile Bild-IDs, Label-Plan und Einzelbildreview für neue Projekte
-- `VISUAL-EXPLANATION-SYSTEM.md` – Beobachtung/Auslöser/Weg/Vergleich/Schwelle/Wirkung und Maßstabskette für echte Erklärbilder
+- `THEMEN-STRATEGIE.md` – Themenauswahl und Bewertung
+- `PRODUKTIONSREGELN.md` – globale Produktionsregeln
+- `PLANNING-V2.md` – Mechanism Map, Satz-Visual-Plan, stabile Bild-IDs, Label-Plan und Einzelbildreview
+- `VISUAL-EXPLANATION-SYSTEM.md` – Beobachtung/Auslöser/Weg/Vergleich/Schwelle/Wirkung und Maßstabskette
 - `FLOW-PRODUCTION-STANDARD.md` – faceless Explainer-Bildwelt, Bild_01 als Master Style Frame, 5er-Blöcke, Fehlerliste und Recovery
 - `AUDIO-REGELN.md` – Voice und kanonische Audioaufbereitung
 - `SYNC-WHISPER.md` – strikte Audio-/Script-/Szenen-Synchronisierung
-- `STYLE-REFERENCE-SYSTEM.md` – dauerhafter visueller Kanalanker
+- `STYLE-REFERENCE-SYSTEM.md` – visueller Kanalanker
 - `FACT-CHECK-STANDARD.md` – Gesundheit/Biologie/Ernährung prüfen
-- `PHASE-GATES.md` – verbindliche PASS/FAIL-Gates
+- `PHASE-GATES.md` – verbindliche PASS/FAIL-Gates inklusive dokumentierter Testmodus-Regel
 - `VISUAL-QUALITY-GATE.md` – visueller und finaler Qualitätscheck
 - `QUALITY-SCORECARD.md` – gewichtete Freigabe mit hartem Wissenschaftsblocker
 - `POSTMORTEM-STANDARD.md` – Lernschleife nach jedem echten Finalrender
@@ -73,18 +74,26 @@ Themen-Gehirn + Themen-Score
 → Postmortem + dauerhafte Lehren
 ```
 
-## V2-Kompatibilität
+## Aktueller Testpilot
 
-Video 001 und andere bereits bestehende Projekte bleiben kompatibel. Die neuen V2-Planungsdateien werden nicht rückwirkend erzwungen.
+```text
+youtube-videos/000-pilot-zucker-im-blut/
+```
 
-Neue Projekte, die aus `youtube-videos/_TEMPLATE` erstellt werden, erhalten die V2-Dateien automatisch und können geprüft werden mit:
+Dieser Pilot ist mit `05_info/test-mode.json` ausdrücklich als interner ca. 2-Minuten-Test markiert.
+
+Nur seine Laufzeitregel weicht ab. Alle anderen V2-, Wissenschafts-, Visual-, Sync- und QA-Regeln bleiben vollständig aktiv.
+
+Normale Kanalvideos bleiben mindestens 300 Sekunden lang.
+
+## V2-Prüfung
 
 ```bash
 python tools/validate_planning_v2.py youtube-videos/MEIN-VIDEO
 python tools/validate_planning_v2.py youtube-videos/MEIN-VIDEO --phase2
 ```
 
-Der V2-Validator verändert keine Dateien und ist bewusst nicht in die bestehende Phase-3-Pipeline eingehängt.
+Der V2-Validator verändert keine Dateien und ist bewusst separat von der Phase-3-Pipeline.
 
 ## Wichtig
 
