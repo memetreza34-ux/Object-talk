@@ -18,8 +18,12 @@
   ],
   "audience": "familienfreundlich, leicht verstaendlich, besonders fuer juengere Zuschauer geeignet, aber nicht babyhaft",
   "visual_identity": {
-    "primary_mode": "semi-realistic 3D animated viral object-talk",
+    "primary_mode": "semi-realistic 3D faceless educational explainer",
     "secondary_mode": "semi-realistic 3D educational inside-the-body",
+    "optional_character_mode": "semi-realistic 3D animated object-talk",
+    "characters_are_presenters": false,
+    "characters_only_when_didactically_useful": true,
+    "character_share_guideline_max": 0.1,
     "photorealistic": false,
     "gore": false,
     "style_reference": "assets/channel/STYLE_REFERENCE.png",
@@ -29,7 +33,9 @@
   "labels": {
     "language": "de",
     "only_key_structures": true,
-    "avoid_overload": true
+    "max_per_image_guideline": 3,
+    "avoid_overload": true,
+    "fallback_to_editor_overlay_if_ai_text_wrong": true
   },
   "topic_memory": "THEMEN-GEHIRN.md"
 }
