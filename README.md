@@ -4,12 +4,7 @@ Produktionssystem für den YouTube-Kanal **Object-Talk / FoodSpricht**.
 
 ## Ziel
 
-Normale Kanalvideos sind lange deutschsprachige YouTube-Erklärvideos über:
-
-- Ernährung
-- Gesundheit
-- menschlichen Körper
-- Biologie
+Normale Kanalvideos sind lange deutschsprachige YouTube-Erklärvideos über Ernährung, Gesundheit, menschlichen Körper und Biologie.
 
 Normaler Produktionsstandard:
 
@@ -18,7 +13,7 @@ Normaler Produktionsstandard:
 - narrative Visuals aus generierten Standbildern
 - hochwertige faceless 3D-Explainer-Bildwelt
 - komplexe Vorgänge visuell einfach erklären
-- wichtige biologische Strukturen knapp auf Deutsch beschriften
+- wichtige biologische Strukturen verständlich darstellen
 - wissenschaftlich prüfen
 - keine unnötige Themenwiederholung
 
@@ -27,18 +22,39 @@ Normaler Produktionsstandard:
 Aktiv ist derzeit:
 
 ```text
-youtube-videos/000-pilot-zucker-im-blut/
+youtube-videos/001-pilot-sauerstoff-im-blut/
 ```
 
 Thema:
 
-**Was passiert mit Zucker nach einem süßen Snack?**
+**Wie kommt Sauerstoff von der Lunge bis in deine Zellen?**
 
-Dieser Pilot ist absichtlich nur ungefähr **2 Minuten** lang und testet die neue V2-Pipeline. Er ist über `05_info/test-mode.json` ausdrücklich als interner Test markiert und ändert die 5-Minuten-Regel für normale Kanalvideos nicht.
+Dieser zweite Pilot ist absichtlich nur ungefähr **2–2,5 Minuten** lang. Er testet die Verbesserungen aus dem ersten Zucker-Pilot und ändert die 5-Minuten-Regel für normale Kanalvideos nicht.
 
-Der Pilot nutzt jetzt **26 echte Erklärbilder**. Das entspricht ungefähr 4–5 Sekunden pro Bild im Mittel. Die Bildzahl ist kein Selbstzweck: Ein neues Bild kommt dann, wenn sich Ort, Maßstab, Zustand, Prozess oder zentrale visuelle Aussage ändert.
+Pilot 001 nutzt **28 echte Erklärbilder**. Ein neues Bild kommt nur, wenn sich Ort, Maßstab, Zustand, Prozess oder zentrale visuelle Aussage ändert.
 
-Der frühere Verdauungs-Pilot wurde auf Nutzerwunsch gelöscht.
+## Was Pilot 001 zusätzlich testet
+
+- Flow-Bilder möglichst **textfrei**
+- Überschriften und Keywords kontrolliert in **Remotion** statt KI-Text im Bild
+- feste visuelle Identität für **O₂, CO₂, rote Blutkörperchen und Hämoglobin**
+- starke Maßstabswechsel von Mensch → Lunge → Alveole → Blut → Hämoglobin → Herz → Gewebe → Zelle → Mitochondrium
+- Vollbild bleibt Hauptdarsteller; Text-Overlays nur gezielt
+- keine Mascot-/Presenter-Figur
+
+Selektive Overlays werden über:
+
+```text
+03_pipeline/overlay-plan.json
+```
+
+definiert.
+
+Globale Overlay-Regeln:
+
+```text
+engine/PRESENTATION-OVERLAY-SYSTEM.md
+```
 
 ## Repo-Gehirn
 
@@ -46,9 +62,9 @@ Neue Chats/Agenten sollen nicht von alter Chat-Erinnerung abhängig sein.
 
 Vor Arbeit lesen:
 
-1. `PROJECT_CONTRACT.md` – oberste dauerhafte Projektregeln
-2. `PROJECT_STATE.md` – aktueller Arbeitsstand
-3. `AGENTS.md` – Aufgaben und Phasengrenzen für Agenten
+1. `PROJECT_CONTRACT.md`
+2. `PROJECT_STATE.md`
+3. `AGENTS.md`
 4. `config/channel.json`
 5. `config/video.json`
 6. `THEMEN-GEHIRN.md`
@@ -66,17 +82,13 @@ Standard sind echte Erklärbilder:
 - transparente Körperansichten
 - Prozessdarstellungen
 - Organ-, Gewebe- und Zellvisualisierungen
-- Mikro-/Makro-Zooms
+- Mikro-/Makro-Übergänge
 - Vorher-/Nachher- und Vergleichsbilder
 - Ursache→Prozess→Folge-Darstellungen
 
-Personifizierte Lebensmittel oder Object-Talk-Figuren sind nur optional und dürfen nur eingesetzt werden, wenn sie eine konkrete Erklärung wirklich verbessern.
-
-Im aktuellen Zucker-Pilot wird bewusst **gar keine anthropomorphe Food-Sprecherfigur benötigt**.
+Personifizierte Objekte sind nur erlaubt, wenn sie eine konkrete Erklärung wirklich verbessern.
 
 ## Bildrhythmus
-
-Da das Format aus Standbildern besteht, ist visuelle Entwicklung wichtig.
 
 Richtwerte:
 
@@ -88,11 +100,21 @@ Richtwerte:
 
 Keine Füllbilder. Lange Standzeiten dürfen nicht nur mit Zoom/Pan kaschiert werden.
 
-Details: `engine/PRODUKTIONSREGELN.md`.
+## Präsentation / Text
+
+Die 3D-Welt bleibt bestehen; sie wird **nicht** in Anime-, Comic- oder Cartoon-Stil umgebaut.
+
+Richtwert:
+
+- ca. 65–75 % reine Vollbilder
+- ca. 20–30 % kurze Überschrift/Keyword
+- zusätzliche grafische Hilfen nur bei echtem Erklärwert
+
+Wichtige Texte werden bevorzugt im Editor erzeugt, damit Rechtschreibung, Stil und Timing kontrollierbar bleiben.
 
 ## V2-Planung
 
-Neue Projekte aus `_TEMPLATE` erhalten:
+Neue Projekte erhalten:
 
 ```text
 05_info/mechanism-map.md
@@ -111,10 +133,10 @@ Recherche + Claims
 → Visual-First-Skript
 → Satz-Visual-Plan
 → semantische Szenen
-→ Label-Plan
 → Flow-Bilder
 → Einzelbild-Review ≥ 8/10
-→ echtes Audio + Worttimings
+→ Voice + Worttimings
+→ Remotion + selektive Overlays
 → Render
 → Qualitäts-Scorecard
 → Postmortem
@@ -122,20 +144,13 @@ Recherche + Claims
 
 Wissenschaftliche Sicherheit unter **8/10** ist ein harter Blocker.
 
-Prüfen:
-
-```bash
-python tools/validate_planning_v2.py youtube-videos/THEMA
-python tools/validate_planning_v2.py youtube-videos/THEMA --phase2
-```
-
 ## Style-Anker
 
 `Bild_01` jedes Videos ist:
 
 - Cover-/Hook-Frame
 - erster Shot
-- Master Style Frame für diese Episode
+- Master Style Frame der Episode
 
 Flow erzeugt zuerst nur `Bild_01`. Erst nach akzeptiertem Bild_01 folgen die nächsten Bilder in 5er-Blöcken. Fehlerhafte Generationen werden gesammelt und am Ende im Recovery-Pass erneut erzeugt.
 
@@ -150,10 +165,10 @@ Thema
 → Mechanism Map
 → finales script.txt
 → Satz-Visual-Plan
-→ semantischer Szenenplan
-→ Label-Plan
-→ Google-Flow-Prompt
+→ Szenenplan
+→ Flow-Prompt
 → scene-map.json
+→ overlay-plan.json
 → Metadaten
 ```
 
@@ -178,9 +193,9 @@ rohes Audio
 → Flow-ZIP importieren
 → Assets validieren
 → faster-whisper
-→ strikte Script↔Audio-Ausrichtung
-→ word-timings.json
+→ Script↔Audio-Ausrichtung
 → timeline.json
+→ overlay-plan.json einlesen
 → Remotion
 → Render
 → Final-QA
@@ -190,22 +205,22 @@ rohes Audio
 
 ## Aktueller Pilot – nächster Schritt
 
-1. `youtube-videos/000-pilot-zucker-im-blut/01_script/VOICEOVER-ZUM-KOPIEREN.txt` für die Voice verwenden.
-2. `youtube-videos/000-pilot-zucker-im-blut/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt` in Flow geben.
+1. `youtube-videos/001-pilot-sauerstoff-im-blut/01_script/VOICEOVER-ZUM-KOPIEREN.txt` für die Voice verwenden.
+2. `youtube-videos/001-pilot-sauerstoff-im-blut/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt` in Flow geben.
 3. Flow muss **zuerst nur `Bild_01`** erzeugen und danach stoppen.
-4. Nach Stilfreigabe folgen `Bild_02` bis `Bild_26` in 5er-Blöcken.
+4. Nach Stilfreigabe folgen `Bild_02` bis `Bild_28` in den festgelegten Blöcken.
 
 ## Test-QA
 
 Normale Final-QA bleibt bei 300 Sekunden.
 
-Nur beim dokumentierten 2-Minuten-Pilot:
+Nur beim dokumentierten Pilot 001:
 
 ```bash
 python tools/qa_final.py \
-  youtube-videos/000-pilot-zucker-im-blut/04_export/fertiges-video/final-video.mp4 \
-  youtube-videos/000-pilot-zucker-im-blut/01_script/audio/final-voiceover.wav \
-  --min-seconds 105
+  youtube-videos/001-pilot-sauerstoff-im-blut/04_export/fertiges-video/final-video.mp4 \
+  youtube-videos/001-pilot-sauerstoff-im-blut/01_script/audio/final-voiceover.wav \
+  --min-seconds 115
 ```
 
 ## Goldene Regel
