@@ -1,0 +1,28 @@
+{
+  "status": "READY",
+  "video_id": "000-pilot-zucker-im-blut",
+  "title": "Was passiert mit Zucker nach einem süßen Snack?",
+  "test_mode": true,
+  "rules": {
+    "source": "01_script/script.txt",
+    "coverage": "complete-no-gaps-no-overlaps",
+    "scene_boundaries": "semantic-visual-beats-not-automatic-sentences"
+  },
+  "scenes": [
+    {"scene":1,"image":"Bild_01","speech_section":"Du isst einen süßen Snack – zum Beispiel einen Keks oder ein Stück Schokolade. Wenige Minuten später verändert sich bereits, was in deinem Blut passiert. Aber wie kommt Zucker überhaupt dorthin?","visual_task":"Hook: süßer Snack als Ausgangspunkt und gleichzeitig klarer Überblick Snack → Dünndarm → Blut → Körperzelle; keine Sprecherfigur, kein Mascot.","motion":"slow-push-in","labels":[]},
+    {"scene":2,"image":"Bild_02","speech_section":"Im Mund wird der Snack zerkleinert und mit Speichel vermischt.","visual_task":"Makro-Erklärbild vom Mund: Snack wird mechanisch zerkleinert und mit Speichel vermischt.","motion":"slow-push-in","labels":[]},
+    {"scene":3,"image":"Bild_03","speech_section":"Danach gelangt er über die Speiseröhre in den Magen und von dort weiter in den Dünndarm.","visual_task":"Anatomischer Weg als sauberer Cutaway: Speiseröhre → Magen → Dünndarm; Fokus auf Transport, nicht auf eine Figur.","motion":"pan-right","labels":["Speiseröhre","Magen","Dünndarm"]},
+    {"scene":4,"image":"Bild_04","speech_section":"Dort passiert der entscheidende Schritt. Viele Kohlenhydrate werden in kleinere Zuckerbausteine zerlegt. Einer davon ist Glukose.","visual_task":"Im Dünndarm werden größere Kohlenhydrat-Strukturen sichtbar in kleinere Zuckerbausteine zerlegt; Glukose als einer der entstehenden Einfachzucker.","motion":"slow-push-in","labels":["Glukose"]},
+    {"scene":5,"image":"Bild_05","speech_section":"Die Glukose kann durch die Darmwand in kleine Blutgefäße aufgenommen werden.","visual_task":"Querschnitt durch Darmwand/Darmzotte: Glukose passiert die Darmwand und gelangt in ein kleines Blutgefäß.","motion":"slow-push-in","labels":["Darmwand","Blutgefäß"]},
+    {"scene":6,"image":"Bild_06","speech_section":"Jetzt steigt die Glukosemenge im Blut. Genau das ist gemeint, wenn man sagt: Der Blutzucker steigt.","visual_task":"Vergleich im Blutgefäß: nach Aufnahme sind sichtbar mehr Glukosemoleküle im Blut; verständlicher visueller Anstieg ohne Zahlenkurve.","motion":"slow-push-in","labels":[]},
+    {"scene":7,"image":"Bild_07","speech_section":"Darauf reagieren Betazellen in der Bauchspeicheldrüse. Sie geben das Hormon Insulin ins Blut ab.","visual_task":"Torso-Cutaway mit hervorgehobener Bauchspeicheldrüse plus vergrößerter Inselzell-/Betazell-Ebene: Insulin wird ins Blut abgegeben.","motion":"slow-push-in","labels":["Bauchspeicheldrüse","Insulin"]},
+    {"scene":8,"image":"Bild_08","speech_section":"Insulin ist dabei kein Zuckerfresser, sondern ein Signalstoff. Das Signal hilft vielen Körperzellen dabei, Glukose aus dem Blut aufzunehmen und zu verwenden.","visual_task":"Zellmembran-Nahaufnahme: Insulin als Signal an der Zelloberfläche; anschließend kann Glukose in die Zelle aufgenommen werden. Kein 'Insulin frisst Zucker'.","motion":"slow-push-in","labels":["Insulin","Glukose"]},
+    {"scene":9,"image":"Bild_09","speech_section":"Muskelzellen können daraus zum Beispiel Energie gewinnen.","visual_task":"Muskelgewebe als Ziel: Glukose gelangt in Muskelzellen und wird als nutzbarer Energieträger dargestellt.","motion":"slow-push-in","labels":[]},
+    {"scene":10,"image":"Bild_10","speech_section":"Ein Teil der Glukose kann außerdem in Leber und Muskeln als Glykogen gespeichert werden.","visual_task":"Saubere Zweiteilung: Leber und Skelettmuskel speichern einen Teil der Glukose in Form von Glykogen.","motion":"pan-right","labels":["Leber","Muskel","Glykogen"]},
+    {"scene":11,"image":"Bild_11","speech_section":"Dadurch bleibt nicht die gesamte Glukose dauerhaft im Blut. Nach und nach bewegt sich der Blutzucker wieder in Richtung seines Ausgangsbereichs.","visual_task":"Blutgefäß-Zeitvergleich: hohe Glukosekonzentration nach Aufnahme → später wieder näher am Ausgangsbereich; keine feste Zeitangabe.","motion":"slow-pull-out","labels":[]},
+    {"scene":12,"image":"Bild_12","speech_section":"Die ganze Kette sieht also so aus: Ein süßer Snack wird verdaut. Kohlenhydrate werden in kleine Zucker zerlegt. Glukose gelangt aus dem Dünndarm ins Blut.","visual_task":"Linearer Recap als echtes Erklärbild: Snack → Verdauung/Dünndarm → Glukose → Blut.","motion":"pan-right","labels":[]},
+    {"scene":13,"image":"Bild_13","speech_section":"Die Bauchspeicheldrüse reagiert mit Insulin. Zellen nutzen einen Teil der Glukose, und ein Teil wird gespeichert.","visual_task":"Zweiter Recap-Schritt: Bauchspeicheldrüse → Insulin → Zellen / Speicherung.","motion":"slow-push-in","labels":[]},
+    {"scene":14,"image":"Bild_14","speech_section":"Wie schnell und wie stark sich der Blutzucker verändert, hängt unter anderem von der Zusammensetzung der Mahlzeit und von individuellen Faktoren ab.","visual_task":"Variabilitätsbild: unterschiedliche Mahlzeitenzusammensetzung und unterschiedliche Menschen führen zu unterschiedlich starker/schneller Blutzuckerreaktion; keine Bewertung als gut/schlecht.","motion":"static","labels":[]},
+    {"scene":15,"image":"Bild_15","speech_section":"Entscheidend ist also der Weg vom Essen über den Darm und das Blut bis zu den Zellen.","visual_task":"Finales Hero-Erklärbild der ganzen Reise: Essen → Dünndarm → Blut → Zelle. Klarer Abschluss ohne Mascot oder Presenter.","motion":"slow-pull-out","labels":[]}
+  ]
+}

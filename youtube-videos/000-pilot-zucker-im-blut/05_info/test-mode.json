@@ -1,0 +1,10 @@
+{
+  "test_mode": true,
+  "purpose": "internal-pipeline-and-visual-style-test",
+  "target_seconds": 120,
+  "acceptable_seconds_min": 105,
+  "acceptable_seconds_max": 150,
+  "counts_as_published_topic": false,
+  "production_longform_minimum_override": true,
+  "notes": "Nur dieser interne Pilot darf unter 300 Sekunden liegen. Normale Kanalvideos bleiben mindestens 5 Minuten lang."
+}

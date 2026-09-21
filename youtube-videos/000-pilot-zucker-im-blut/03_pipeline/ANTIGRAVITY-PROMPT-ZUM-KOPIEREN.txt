@@ -1,0 +1,21 @@
+Bearbeite ausschließlich das Projekt youtube-videos/000-pilot-zucker-im-blut als internen ca. 2-Minuten-Test. Script, Szenen, Bildreihenfolge und wissenschaftliche Aussagen dürfen nicht kreativ verändert werden. Erwartet werden exakt Bild_01.png bis Bild_15.png.
+
+Vom Repo-Root zuerst:
+python -m pip install -r tools/requirements.txt
+python tools/validate_planning_v2.py youtube-videos/000-pilot-zucker-im-blut --phase2
+python tools/prepare_phase3.py youtube-videos/000-pilot-zucker-im-blut
+
+Bei FAIL stoppen und den konkreten Fehler beheben.
+
+Dann:
+cd renderer
+npm install
+npm run studio
+
+Nach Sichtprüfung rendern:
+npm run render -- ../youtube-videos/000-pilot-zucker-im-blut/04_export/fertiges-video/final-video.mp4
+
+Finale Test-QA vom Repo-Root:
+python tools/qa_final.py youtube-videos/000-pilot-zucker-im-blut/04_export/fertiges-video/final-video.mp4 youtube-videos/000-pilot-zucker-im-blut/01_script/audio/final-voiceover.wav --min-seconds 105
+
+Wichtig: Dieser 105-Sekunden-Override gilt nur für den Testpilot. Keine Mascot-/Presenter-Elemente hinzufügen. Die Bilder müssen als echte Erklärbilder funktionieren. Danach quality-scorecard.md und postmortem.md anhand des echten Renders ausfüllen.

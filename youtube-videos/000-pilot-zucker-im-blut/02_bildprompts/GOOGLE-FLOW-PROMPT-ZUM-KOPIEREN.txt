@@ -1,0 +1,87 @@
+# GOOGLE FLOW – PILOT „ZUCKER IM BLUT“
+
+## AUFGABE
+
+Erzeuge genau **15 einzelne 16:9-Standbilder** für einen kurzen deutschen faceless YouTube-Erklärfilm.
+
+Thema:
+**Was passiert mit Zucker nach einem süßen Snack?**
+
+Dieses Video ist ein Test der neuen Object-Talk-Bildwelt. Der Kanal ist **kein Mascot-/Presenter-Kanal**.
+
+### Harte Regel
+
+- Keine dauerhafte Apfel-, Keks-, Food- oder sonstige Cartoon-Sprecherfigur.
+- Kein Bild darf nur aus „eine süße Figur steht irgendwo“ bestehen.
+- In diesem Pilot braucht **keine einzige Szene eine anthropomorphe Food-Figur**.
+- Die Bilder müssen den biologischen Prozess selbst erklären.
+
+## VISUELLE DNA
+
+Für ALLE Bilder gilt:
+
+high-quality semi-realistic 3D educational explainer style, faceless YouTube explainer visual language, premium animated educational series look, approximately 65–70 percent stylized animation and 30–35 percent believable realism, scientifically recognizable but simplified human anatomy and biology, warm cinematic lighting, clean composition, strong depth, believable materials, soft rounded forms, modern educational visual storytelling, family-friendly but not childish, clear process visualization, transparent body cutaways, organ cross-sections, macro-to-micro biology views, no gore, no disturbing medical realism, not photorealistic, not flat vector, not anime
+
+Vermeide:
+
+mascot-heavy composition, random cute food character, presenter standing next to anatomy, plastic toy look, photorealistic surgery, gore, blood splatter, wet fleshy medical realism, horror anatomy, random laboratory props, cyberpunk, excessive neon, flat infographic dashboard, clutter, random English text, gibberish labels, unnecessary UI panels, deformed anatomy, duplicated organs, extra limbs, malformed hands, watermarks, logos
+
+## TECHNIK
+
+- 16:9 landscape
+- mindestens 1920×1080
+- jedes Bild einzeln
+- Finalnamen exakt Bild_01.png bis Bild_15.png
+- genügend Rand für sanfte Push-ins/Pans in Remotion
+- keine eingebrannten Untertitel
+
+## LABEL-REGEL
+
+Nur Labels verwenden, die bei der jeweiligen Szene ausdrücklich genannt sind. Maximal 3 kurze deutsche Labels. Keine zusätzlichen Begriffe erfinden. Bei falsch geschriebenem Text: Bild als FEHLERHAFT markieren und neu erzeugen. Wenn derselbe Textfehler wiederholt auftritt: saubere textfreie Version mit Platz für späteres Remotion-Overlay erzeugen und Bildnummer als LABEL_OVERLAY_NÖTIG notieren.
+
+## PRODUKTIONSABLAUF
+
+PHASE A: Lies zuerst die gesamte Datei. Erzeuge danach ausschließlich Bild_01. Noch kein Bild_02. Prüfe Bild_01 vollständig. Bei FAIL nur Bild_01 neu erzeugen. Bei PASS als Bild_01.png speichern. STOPPE danach und warte auf die Bestätigung des Nutzers.
+
+Bild_01 ist danach der Master Style Frame. Verwende Bild_01.png bei jeder folgenden Generation als Style-/Continuity-Referenz, soweit Flow dies technisch unterstützt.
+
+Danach:
+Block 1: Bild_02–Bild_06
+Block 2: Bild_07–Bild_11
+Block 3: Bild_12–Bild_15
+
+Innerhalb jedes Blocks jedes Bild einzeln erzeugen und prüfen.
+
+Fehlerhafte/fehlende Bilder exakt notieren, normal weiterarbeiten und nach allen Blöcken in einem Recovery-Pass gezielt neu erzeugen. Erst bei lückenlosem Bild_01...Bild_15-Satz ZIP erstellen.
+
+SZENE 01 / Bild_01: Cinematic 16:9 hero frame. Anonymous stylized human in three-quarter profile holding a cookie or small piece of chocolate near the mouth. Partially transparent torso with clearly visible small intestine, nearby magnified blood vessel with simplified glucose particles and visual connection toward a healthy body cell. One journey: sweet snack → intestine → bloodstream → cell. No mascot, talking food, speech bubble, presenter, text or labels. This image defines lighting, materials, rendering quality, contrast and overall visual world.
+
+SZENE 02 / Bild_02: Macro educational mouth cutaway during chewing. Small sweet food piece mechanically broken by teeth and mixed with clean subtle saliva. Explain breakdown and mixing. No gross saliva, no mascot, no text.
+
+SZENE 03 / Bild_03: Transparent torso cutaway tracing esophagus → stomach → small intestine. Small food bolus along route. Small intestine emphasized as next stage. Labels only: Speiseröhre, Magen, Dünndarm.
+
+SZENE 04 / Bild_04: Inside small intestine. Larger carbohydrate structures become smaller sugar building blocks. Glucose is one resulting simple sugar, without implying every carbohydrate becomes only glucose. Label only: Glukose.
+
+SZENE 05 / Bild_05: Small-intestinal villus / intestinal-wall macro cutaway. Glucose moves from intestinal lumen across epithelial barrier into capillary. Direction intestine → blood unmistakable. Labels only: Darmwand, Blutgefäß.
+
+SZENE 06 / Bild_06: One continuous blood-vessel comparison. Left: baseline amount of glucose particles. Right: visibly more glucose particles after absorption. No numbers, charts, thresholds or labels.
+
+SZENE 07 / Bild_07: Torso cutaway with pancreas correctly highlighted plus tasteful magnified beta-cell/islet inset releasing insulin toward blood. Labels only: Bauchspeicheldrüse, Insulin. No face on organ.
+
+SZENE 08 / Bild_08: Cell-membrane macro beside blood vessel. Insulin acts as signal at cell surface while glucose can move from blood into cell through simplified transport pathway. Insulin must not physically eat/grab/carry glucose. Labels only: Insulin, Glukose.
+
+SZENE 09 / Bild_09: Healthy skeletal muscle fibers receiving glucose from capillary. Glucose enters muscle cells and supports simplified cellular energy production with subtle warm energy cue. No labels, no bodybuilder cliché.
+
+SZENE 10 / Bild_10: Integrated two-part composition: liver tissue and skeletal muscle tissue storing some glucose as branched glycogen clusters. Labels only: Leber, Muskel, Glykogen. No dashboard look.
+
+SZENE 11 / Bild_11: Same blood vessel as time progression. Many glucose particles after absorption, later fewer as tissues use/store glucose. No fixed time, values, diagnosis curve or labels.
+
+SZENE 12 / Bild_12: Integrated recap: sweet snack → small-intestine cutaway → glucose particles → blood vessel. Natural left-to-right composition, no UI cards, no labels.
+
+SZENE 13 / Bild_13: Integrated recap: pancreas releases insulin → insulin signal supports glucose movement into a body cell → some glucose represented as stored in liver/muscle. No new process, no labels.
+
+SZENE 14 / Bild_14: Variability scene. Two different meal compositions and two anonymous human silhouettes with subtle schematic response shapes differing in height/timing, no numbers. Show variability only; no good/bad, healthy/unhealthy or diabetes judgment. No labels.
+
+SZENE 15 / Bild_15: Final cinematic macro-to-micro hero journey: sweet food → small intestine → glucose entering blood → insulin signaling → glucose reaching healthy body cell. Biological process is the hero. No mascot, talking food, presenter, text or random labels.
+
+ABSCHLUSSPRÜFUNG: genau 15 akzeptierte Bilder, lückenlos Bild_01.png bis Bild_15.png, 16:9, konsistenter Stil, keine unbeabsichtigte Mascot-/Presenter-Szene, jede Szene erklärt den vorgesehenen biologischen Schritt, Labels korrekt, keine schweren Anatomie-/KI-Fehler. Danach finale ZIP erstellen.
