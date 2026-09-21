@@ -16,6 +16,7 @@ Er definiert:
 - semantischen Bildrhythmus
 - faceless Explainer-Bildsprache
 - Google-Flow-Masterframe, 5er-Blöcke und Recovery
+- Full-Frame-Präsentation plus selektive animierte Überschriften/Schlüsselwörter
 - wissenschaftliche Prüfung
 - kanalweite Style-Konsistenz
 - Voice-/Audio-Standard
@@ -33,13 +34,14 @@ Er definiert:
 - `PRODUKTIONSREGELN.md` – globale Produktionsregeln
 - `PLANNING-V2.md` – Mechanism Map, Satz-Visual-Plan, stabile Bild-IDs, Label-Plan und Einzelbildreview
 - `VISUAL-EXPLANATION-SYSTEM.md` – Beobachtung/Auslöser/Weg/Vergleich/Schwelle/Wirkung und Maßstabskette
+- `PRESENTATION-OVERLAY-SYSTEM.md` – Vollbild bleibt Standard; gezielte Remotion-Überschriften, Schlüsselwörter, Callouts und ruhige Textanimationen
 - `FLOW-PRODUCTION-STANDARD.md` – faceless Explainer-Bildwelt, Bild_01 als Master Style Frame, 5er-Blöcke, Fehlerliste und Recovery
 - `AUDIO-REGELN.md` – Voice und kanonische Audioaufbereitung
 - `SYNC-WHISPER.md` – strikte Audio-/Script-/Szenen-Synchronisierung
 - `STYLE-REFERENCE-SYSTEM.md` – visueller Kanalanker
 - `FACT-CHECK-STANDARD.md` – Gesundheit/Biologie/Ernährung prüfen
 - `PHASE-GATES.md` – verbindliche PASS/FAIL-Gates inklusive dokumentierter Testmodus-Regel
-- `VISUAL-QUALITY-GATE.md` – visueller und finaler Qualitätscheck
+- `VISUAL-QUALITY-GATE.md` – visueller und finaler Qualitätscheck inklusive Overlay-QA
 - `QUALITY-SCORECARD.md` – gewichtete Freigabe mit hartem Wissenschaftsblocker
 - `POSTMORTEM-STANDARD.md` – Lernschleife nach jedem echten Finalrender
 
@@ -53,6 +55,7 @@ Themen-Gehirn + Themen-Score
 → Satz-Visual-Plan
 → semantische Phase-1-Szenen
 → Label-Plan
+→ optionaler Overlay-Plan
 → PHASE-1-PASS
 → Voice
 → Flow zuerst nur Bild_01
@@ -67,6 +70,7 @@ Themen-Gehirn + Themen-Score
 → strikte vollständige Script↔Audio-Ausrichtung
 → exakte Szenen-Timeline
 → feste Remotion-Runtime
+→ Full-Frame-Bilder + selektive Overlay-Ebene
 → Render
 → technischer + visueller Final-QA
 → Qualitäts-Scorecard
@@ -83,6 +87,14 @@ youtube-videos/000-pilot-zucker-im-blut/
 Dieser Pilot ist mit `05_info/test-mode.json` ausdrücklich als interner ca. 2-Minuten-Test markiert.
 
 Nur seine Laufzeitregel weicht ab. Alle anderen V2-, Wissenschafts-, Visual-, Sync- und QA-Regeln bleiben vollständig aktiv.
+
+Der Pilot besitzt zusätzlich:
+
+```text
+03_pipeline/overlay-plan.json
+```
+
+Damit werden nur ausgewählte Szenen mit kurzen animierten Überschriften/Schlüsselwörtern ergänzt. Ohne diese Datei bleibt der Renderer vollständig rückwärtskompatibel und zeigt reine Vollbild-Szenen.
 
 Normale Kanalvideos bleiben mindestens 300 Sekunden lang.
 
