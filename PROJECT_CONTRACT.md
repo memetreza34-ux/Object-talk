@@ -11,7 +11,7 @@ Harte Grundregeln:
 - finales Video mindestens 5:00 Minuten
 - Standardziel 5:30–8:00 Minuten
 - 16:9, 1920×1080, 30 fps
-- narrative Bildwelt ausschließlich aus Standbildern; Bewegung entsteht im Schnitt/Remotion
+- generierte Standbilder bleiben die visuelle Basis; Bewegung, kurze Überschriften, Labels und grafische Führung entstehen kontrolliert in Remotion
 - einheitliche hochwertige semi-realistische 3D-Explainer-Bildwelt
 - komplexe Vorgänge müssen visuell einfach und nachvollziehbar erklärt werden
 - biologische Inhalte vereinfachen, aber nicht fachlich verfälschen
@@ -79,6 +79,33 @@ Sie sind nur erlaubt, wenn eine konkrete Szene dadurch wirklich verständlicher 
 - maximal etwa 10 % optionale Character-/Guide-Momente
 
 Diese Prozentwerte sind Qualitätsrichtwerte, keine starre Quote. Entscheidend ist immer der Erklärwert.
+
+## Präsentations- und Overlay-Regel
+
+Die aktuelle warme semi-realistische 3D-Welt bleibt erhalten. Sie wird **nicht** in Anime-, Comic- oder Cartoon-Stil umgestellt.
+
+Das Video soll aber nicht wie eine reine Diashow wirken.
+
+Darum gilt:
+
+- generierte Erklärbilder bleiben grundsätzlich **Vollbild**
+- keine dauerhaften Rahmen, Kartenlayouts oder PowerPoint-Flächen
+- ausgewählte Szenen dürfen kurze animierte Überschriften, Schlüsselwörter, Labels, Callouts oder Vergleichsmarker bekommen
+- Überschriften werden bevorzugt in Remotion erzeugt, nicht in Google Flow eingebrannt
+- komplette Voice-over-Sätze werden nicht als Text über das Bild gelegt
+- ein Overlay muss einen echten Orientierungs- oder Erklärwert haben
+- Textanimationen bleiben ruhig und hochwertig: Fade, leichter Slide, dezente Scale-in-Bewegung, Unterstreichung, Callout-Linie
+- keine Meme-, Bounce-, Shake-, Anime- oder hektischen Popup-Effekte
+
+Richtwert:
+
+- ca. 65–75 % der Szenen bleiben reines Vollbild
+- ca. 20–30 % erhalten eine kurze Überschrift oder ein Schlüsselwort
+- ca. 10–15 % dürfen zusätzliche grafische Erklärhilfen bekommen
+
+Diese Werte sind nicht additiv als Pflichtquote zu verstehen und dürfen sich überschneiden. Das Bild bleibt immer Hauptdarsteller.
+
+Details: `engine/PRESENTATION-OVERLAY-SYSTEM.md`.
 
 ## Verbindlicher Google-Flow-Ablauf
 
@@ -163,10 +190,11 @@ ChatGPT erstellt vor jeder Medienproduktion vollständig:
 6. vollständigen Google-Flow-Agent-Prompt nach dem faceless Explainer-Standard
 7. identisches `GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt`
 8. `scene-map.json` mit lückenloser Sprachabdeckung
-9. Antigravity-/Editor-Anweisung
-10. `ANTIGRAVITY-PROMPT-ZUM-KOPIEREN.txt`
-11. YouTube-Titel, Beschreibung und maximal 5 Hashtags
-12. `YOUTUBE-TITEL-BESCHREIBUNG-ZUM-KOPIEREN.txt`
+9. bei Bedarf `overlay-plan.json` für ausgewählte Remotion-Überschriften/Schlüsselwörter
+10. Antigravity-/Editor-Anweisung
+11. `ANTIGRAVITY-PROMPT-ZUM-KOPIEREN.txt`
+12. YouTube-Titel, Beschreibung und maximal 5 Hashtags
+13. `YOUTUBE-TITEL-BESCHREIBUNG-ZUM-KOPIEREN.txt`
 
 Phase 1 erzeugt keine finalen Flow-Bilder und keine geschätzten Zeitcodes.
 
@@ -202,9 +230,10 @@ Phase 3:
 7. `timeline.json` erzeugen
 8. Runtime für Remotion bauen
 9. Standbilder mit dezenten Push-ins, Pull-outs und Pans inszenieren
-10. rendern
-11. technische QA durchführen
-12. finales Video + Untertitel + Renderbericht exportieren
+10. optionalen `overlay-plan.json` als kontrollierte Überschriften-/Text-/Callout-Ebene anwenden
+11. rendern
+12. technische QA durchführen
+13. finales Video + Untertitel + Renderbericht exportieren
 
 Phase 3 darf Skript, wissenschaftliche Aussage, Bildreihenfolge oder Szenengrenzen nicht still verändern.
 
