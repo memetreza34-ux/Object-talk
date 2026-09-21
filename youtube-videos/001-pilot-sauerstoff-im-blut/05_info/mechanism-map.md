@@ -1,37 +1,37 @@
-# Mechanism Map – Pilot „Zucker im Blut“
+# Mechanism Map – Pilot 001 „Sauerstoff von der Lunge bis zur Zelle“
 
 ## Zentrale Leitfrage
 
-Wie gelangt Glukose nach einem süßen Snack vom Essen ins Blut und weiter in den Körper?
+Wie gelangt Sauerstoff aus der eingeatmeten Luft bis in eine Körperzelle?
 
 ## Kernmechanismus
 
-`Snack → Verdauung → Einfachzucker/Glukose → Aufnahme im Dünndarm → Blutglukose steigt → Betazellen reagieren → Insulin-Signal → Nutzung/Speicherung → Blutglukose bewegt sich wieder Richtung Ausgangsbereich`
+`Einatmen → Luftröhre/Bronchien → Alveole → Diffusion ins Blut → rotes Blutkörperchen/Hämoglobin → linkes Herz → Arterien/Kapillaren → Sauerstofffreisetzung → Zelle/Mitochondrium → ATP-Bildung → CO₂ zurück zur Lunge`
 
 ## Mechanismusschritte
 
 | Schritt | Funktion | Fachliche Kernaussage | Claim-ID(s) | Maßstab | Sichtbares Lernziel | Fehlinterpretation vermeiden |
 |---:|---|---|---|---|---|---|
-| 1 | Beobachtung | Süßer Snack startet eine Verdauungs- und Stoffwechselkette. | C1–C4 | Mensch | Gesamtweg andeuten | kein direkter Sprung Snack→Blut |
-| 2 | Weg | Mund, Speiseröhre, Magen und Dünndarm bilden den sichtbaren Verdauungsweg. | C1 | Organ | Ort der Verarbeitung verstehen | Magen nicht als Hauptaufnahmeort |
-| 3 | Verarbeitung | Kohlenhydrate werden zu kleineren Zuckerbausteinen; Glukose ist einer davon. | C2 | Organ/Mikro | Zerlegung sichtbar machen | nicht alle Kohlenhydrate nur zu Glukose |
-| 4 | Weg | Glukose passiert die Darmwand in Richtung Blutgefäß. | C2 | Gewebe | Aufnahmeweg verstehen | Pfeilrichtung nicht umdrehen |
-| 5 | Wirkung | Mehr Glukose im Blut bedeutet steigende Blutglukose. | C3 | Blut | „Blutzucker steigt“ sichtbar verstehen | keine Diagnosewerte |
-| 6 | Auslöser | Betazellen reagieren und geben Insulin ab. | C4 | Organ/Zelle | Reaktion der Bauchspeicheldrüse verstehen | kein personifiziertes Organ |
-| 7 | Weg/Wirkung | Insulin wirkt als Signal; viele Zielgewebe können Glukose aufnehmen/nutzen. | C5 | Zelle | Signal statt „Zuckerfresser“ | nicht jede Zellart insulinabhängig |
-| 8 | Ergebnis | Ein Teil der Glukose wird genutzt, ein Teil als Glykogen gespeichert. | C5, C6 | Gewebe/Organ | Energie und Speicherung unterscheiden | Leber/Muskel nicht gleichsetzen |
-| 9 | Ergebnis | Die Blutglukose bewegt sich wieder Richtung Ausgangsbereich; der Verlauf ist individuell. | C3, C7 | Blut/Mensch | Regelkreis als Ergebnis verstehen | keine feste Zeit oder identischer Verlauf |
+| 1 | Beobachtung | Sauerstoff beginnt als Bestandteil der eingeatmeten Luft. | C1 | Mensch | Startpunkt verstehen | keine direkte Lunge→Zelle-Abkürzung |
+| 2 | Weg | Luft gelangt über Luftröhre/Bronchien zu Alveolen. | C1 | Organ | Atemweg sehen | Bronchien nicht mit Blutgefäßen verwechseln |
+| 3 | Weg | O₂ diffundiert über die dünne Alveolar-Kapillar-Barriere. | C2 | Gewebe | Lunge→Blut verstehen | kein aktiver Pumpmechanismus |
+| 4 | Transport | Vor allem Hämoglobin in roten Blutkörperchen bindet O₂. | C3 | Blut/Zelle | Haupttransportform verstehen | Plasma nicht als Hauptträger |
+| 5 | Weg | Sauerstoffreiches Blut kehrt zum linken Herzen zurück und wird verteilt. | C4 | Organ/Kreislauf | Herz als Verteiler verstehen | keine falsche Herzseite |
+| 6 | Weg | Kapillaren bringen Blut nah an Gewebezellen. | C4, C5 | Gewebe | kurze Diffusionsdistanz erkennen | Arterie nicht direkt in Zelle zeichnen |
+| 7 | Wirkung | Hämoglobin gibt O₂ ab; O₂ diffundiert ins Gewebe. | C5 | Blut/Gewebe | Freisetzung verstehen | Hämoglobin verlässt RBC nicht |
+| 8 | Ergebnis | O₂ erreicht Mitochondrien und unterstützt aerobe ATP-Bildung. | C6 | Zelle/Organell | Zellnutzen verstehen | O₂ wird nicht „zu ATP“ |
+| 9 | Rückweg | CO₂ entsteht und gelangt über Blut zurück zur Lunge. | C7 | Zelle→Organ | Kreislauf schließen | keine vereinfachte Behauptung über einzige CO₂-Transportform |
 
 ## Maßstabskette
 
-`Snack → Mensch → Verdauungsorgane → Darmwand → Blut → Bauchspeicheldrüse/Betazelle → Zellmembran → Muskel/Leber`
+`Mensch → Atemwege → Alveole → Kapillare → rotes Blutkörperchen → Hämoglobin → Herz → Gefäß → Gewebe → Zelle → Mitochondrium → zurück zur Lunge`
 
 ## Bewusst nicht erklärt
 
-- Diabetes
-- Glukagon
-- GLUT-Transporter im Detail
-- Fruktosestoffwechsel
-- Insulinresistenz
-- Fettneubildung
-- konkrete Ernährungsempfehlungen
+- Sauerstoffsättigung in Prozent
+- Oxyhämoglobin-Dissoziationskurve
+- Bohr-Effekt
+- 2,3-BPG
+- Bicarbonat-Transport von CO₂ im Detail
+- Myoglobin
+- Erkrankungen wie Anämie, COPD oder Hypoxie
