@@ -35,6 +35,20 @@ Negative Leitplanken:
 do not make mascot-heavy scenes, do not overuse cute object-talk presenters, do not place a character as the main focus unless explicitly required, do not turn every scene into a presenter shot, do not use random decorative food mascots, do not reduce complex explanations to a character standing next to anatomy, do not create cluttered compositions with too many ideas at once, no photorealistic medical photography, no live action, no surgery, no gore, no horror anatomy, no unreadable text, no English labels when German labels are required
 ```
 
+## Textregel: Flow-Bild möglichst textfrei
+
+Kurze Kapitelüberschriften, Schlagwörter und wiederkehrende Begriffe werden bevorzugt **nicht** von Google Flow in das Bild gerendert. Sie kommen später sauber über Remotion gemäß `engine/PRESENTATION-OVERLAY-SYSTEM.md`.
+
+Für jede Szene gilt:
+
+- Wenn `Labels: keine` angegeben ist, darf im finalen Flow-Bild **gar kein lesbarer Text** vorkommen.
+- Kein englischer Text, keine Diagrammüberschrift, keine Achsenbeschriftung, keine zufällige UI-Schrift.
+- Wenn Flow trotz textfreier Vorgabe Text erzeugt, ist das Bild `FEHLERHAFT` und wird neu erzeugt.
+- Bei ausdrücklich verlangten Fachlabels sind nur diese 0–3 deutschen Labels erlaubt.
+- Wiederholt fehlerhafte KI-Schrift → textfreie Version erzeugen und Begriff später in Remotion als Overlay setzen.
+
+Damit bleibt die Bildwelt sauber und die Typografie kanalweit einheitlich.
+
 ## Phase A – Master Style Frame
 
 1. Lies zuerst den kompletten Video-Prompt.
@@ -154,6 +168,7 @@ Vor ZIP-Ausgabe:
 - keine fehlgeschlagenen Platzhalter
 - alle Bilder 16:9
 - alle Pflichtlabels korrekt
+- bei `Labels: keine` kein unbeabsichtigter lesbarer Text
 - keine offensichtlichen Anatomiefehler
 - keine starken Stilbrüche
 - keine unbeabsichtigte Mascot-/Presenter-Dominanz
@@ -190,3 +205,4 @@ Flow produziert die Bilder. Flow darf niemals:
 - Bildnummern neu interpretieren
 - fehlgeschlagene Bilder vergessen
 - aus einem faceless Erklärbild ohne Anweisung eine Mascot-Szene machen
+- eigenständig Überschriften, Diagrammtexte oder englische UI-Beschriftungen erfinden
