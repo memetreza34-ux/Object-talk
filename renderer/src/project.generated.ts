@@ -5,12 +5,26 @@ export type MotionType =
   | 'pan-left'
   | 'pan-right';
 
+export type OverlayKind = 'heading' | 'keyword' | 'callout';
+export type OverlayPosition = 'top-left' | 'top-center' | 'bottom-left' | 'center';
+export type OverlayAnimation = 'fade-slide' | 'pop' | 'underline';
+
+export type OverlayRuntime = {
+  kind: OverlayKind;
+  text: string;
+  position: OverlayPosition;
+  animation: OverlayAnimation;
+  startFraction: number;
+  durationFraction: number;
+};
+
 export type SceneRuntime = {
   scene: number;
   file: string;
   startFrame: number;
   durationInFrames: number;
   motion: MotionType;
+  overlays?: OverlayRuntime[];
 };
 
 export type ObjectTalkProject = {
