@@ -1,0 +1,21 @@
+{
+  "status": "TEMPLATE",
+  "minimum_overall_score": 8.0,
+  "hard_fail_on_scientific_error": true,
+  "images": [
+    {
+      "image_asset_id": "Bild_01",
+      "scientific_accuracy": null,
+      "voiceover_match": null,
+      "immediate_clarity": null,
+      "style_continuity": null,
+      "composition": null,
+      "label_accuracy": null,
+      "ai_artifact_check": "PENDING",
+      "scene_difference": "PENDING",
+      "overall_score": null,
+      "decision": "PENDING",
+      "notes": ""
+    }
+  ]
+}
