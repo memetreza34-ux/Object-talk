@@ -2,14 +2,32 @@
 
 Keine spätere Produktionsphase startet, bevor die vorherige Phase bestanden hat.
 
-`PROJECT_CONTRACT.md` bleibt die oberste Regel. Die zusätzlichen V2-Anforderungen gelten für Projekte, die aus dem aktualisierten `_TEMPLATE` angelegt wurden. Bestehende Projekte wie Video 001 werden dadurch nicht rückwirkend blockiert.
+`PROJECT_CONTRACT.md` bleibt die oberste Regel. Die zusätzlichen V2-Anforderungen gelten für Projekte, die aus dem aktualisierten `_TEMPLATE` angelegt wurden.
+
+## Interner Testmodus
+
+Wenn ein Projekt eine gültige Datei
+
+```text
+05_info/test-mode.json
+```
+
+mit `test_mode: true` besitzt, darf die dort dokumentierte Testlaufzeit anstelle der normalen 300-Sekunden-Grenze verwendet werden.
+
+Dabei gilt:
+
+- nur ausdrücklich interne Pipeline-/Stiltests
+- Testprojekt zählt nicht automatisch als veröffentlichtes Kanalvideo
+- alle wissenschaftlichen, visuellen, Asset-, Sync- und Qualitäts-Gates bleiben vollständig aktiv
+- nur die Laufzeitregel darf projektspezifisch abweichen
+- normale Videos bleiben mindestens 300 Sekunden lang
 
 ## PHASE-1-PASS
 
 Erforderlich:
 
 - Thema gegen `THEMEN-GEHIRN.md` geprüft
-- Thema bietet mindestens 5 Minuten echten Inhalt
+- normales Video bietet mindestens 5 Minuten echten Inhalt; dokumentierter Testpilot erfüllt stattdessen seinen Testzweck und Zielbereich
 - Recherche abgeschlossen
 - Kernclaims geprüft
 - `script.txt` ist finaler gesprochener Text
@@ -40,7 +58,8 @@ Erforderlich:
 
 - rohe Voice-Datei vorhanden
 - kanonisches `final-voiceover.wav` erstellt
-- finale Audio-Dauer mindestens 300 Sekunden
+- normales Video: finale Audio-Dauer mindestens 300 Sekunden
+- dokumentierter Testpilot: Audio-Dauer innerhalb des in `05_info/test-mode.json` angegebenen Testbereichs oder begründet nahe am Zielbereich
 - Audio entspricht inhaltlich exakt `script.txt`
 - Bilder-ZIP vorhanden
 - ZIP sicher importiert
@@ -75,12 +94,12 @@ Erforderlich:
 - finaler Render technisch erfolgreich
 - 1920×1080 / 30 fps
 - Audio vorhanden und vollständig
-- finales Video mindestens 300 Sekunden
+- normales Video mindestens 300 Sekunden; dokumentierter Testpilot mindestens seine explizit gesetzte Test-Mindestdauer
 - kein unerwarteter langer schwarzer Abschnitt
 - finaler Sichtcheck bestanden
 - Renderbericht erzeugt
 
-Zusätzlich für neue V2-Projekte vor Veröffentlichung:
+Zusätzlich für neue V2-Projekte vor Veröffentlichung bzw. Abschluss des Tests:
 
 - `04_export/quality-scorecard.md` auf Basis des echten Renders ausgefüllt
 - wissenschaftliche Sicherheit mindestens 8,0/10
