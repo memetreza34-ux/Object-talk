@@ -4,23 +4,39 @@ Produktionssystem für den YouTube-Kanal **Object-Talk / FoodSpricht**.
 
 ## Ziel
 
-Wir produzieren lange deutschsprachige YouTube-Erklärvideos über:
+Normale Kanalvideos sind lange deutschsprachige YouTube-Erklärvideos über:
 
 - Ernährung
 - Gesundheit
 - menschlichen Körper
 - Biologie
 
-Jedes Video:
+Normaler Produktionsstandard:
 
 - mindestens **5:00 Minuten**
 - 16:9 / 1920×1080 / 30 fps
-- narrative Visuals ausschließlich aus generierten Standbildern
+- narrative Visuals aus generierten Standbildern
 - hochwertige faceless 3D-Explainer-Bildwelt
 - komplexe Vorgänge visuell einfach erklären
 - wichtige biologische Strukturen knapp auf Deutsch beschriften
 - wissenschaftlich prüfen
 - keine unnötige Themenwiederholung
+
+## Aktueller interner Pilot
+
+Aktiv ist derzeit:
+
+```text
+youtube-videos/000-pilot-zucker-im-blut/
+```
+
+Thema:
+
+**Was passiert mit Zucker nach einem süßen Snack?**
+
+Dieser Pilot ist absichtlich nur ungefähr **2 Minuten** lang und testet die neue V2-Pipeline. Er ist über `05_info/test-mode.json` ausdrücklich als interner Test markiert und ändert die 5-Minuten-Regel für normale Kanalvideos nicht.
+
+Der frühere Verdauungs-Pilot wurde auf Nutzerwunsch gelöscht.
 
 ## Repo-Gehirn
 
@@ -54,13 +70,11 @@ Standard sind echte Erklärbilder:
 
 Personifizierte Lebensmittel oder Object-Talk-Figuren sind nur optional und dürfen nur eingesetzt werden, wenn sie eine konkrete Erklärung wirklich verbessern.
 
-Alle Bilder müssen wie dieselbe hochwertige semi-realistische 3D-Erklärserie wirken.
+Im aktuellen Zucker-Pilot wird bewusst **gar keine anthropomorphe Food-Sprecherfigur benötigt**.
 
-## V2-Planung für neue Videos
+## V2-Planung
 
-Die starke Produktionslogik des Erklärsystems wurde **additiv** übernommen, ohne Video 001 oder die bestehende Phase-3-Pipeline umzubauen.
-
-Neue Projekte aus `_TEMPLATE` erhalten jetzt zusätzlich:
+Neue Projekte aus `_TEMPLATE` erhalten:
 
 ```text
 05_info/mechanism-map.md
@@ -71,7 +85,7 @@ Neue Projekte aus `_TEMPLATE` erhalten jetzt zusätzlich:
 04_export/postmortem.md
 ```
 
-Damit gilt für neue Produktionen:
+Ablauf:
 
 ```text
 Recherche + Claims
@@ -90,14 +104,12 @@ Recherche + Claims
 
 Wissenschaftliche Sicherheit unter **8/10** ist ein harter Blocker.
 
-Neue V2-Projekte prüfen:
+Prüfen:
 
 ```bash
 python tools/validate_planning_v2.py youtube-videos/THEMA
 python tools/validate_planning_v2.py youtube-videos/THEMA --phase2
 ```
-
-Video 001 bleibt absichtlich kompatibel und muss nicht rückwirkend auf die neue Dateistruktur migriert werden.
 
 ## Style-Anker
 
@@ -107,44 +119,7 @@ Video 001 bleibt absichtlich kompatibel und muss nicht rückwirkend auf die neue
 - erster Shot
 - Master Style Frame für diese Episode
 
-Nach erfolgreicher Erstellung wird `Bild_01` bei allen weiteren Flow-Generierungen als Style-/Continuity-Referenz verwendet, soweit technisch möglich.
-
-Zusätzlich kann langfristig eine kanalweite Referenz existieren:
-
-```text
-assets/channel/STYLE_REFERENCE.png
-```
-
-Dann gilt:
-
-```text
-STYLE_REFERENCE.png = langfristige Kanal-DNA
-Bild_01.png = Episode-/Continuity-Referenz
-```
-
-Siehe `engine/STYLE-REFERENCE-SYSTEM.md` und `engine/FLOW-PRODUCTION-STANDARD.md`.
-
-## Flow-Produktion
-
-Google Flow arbeitet nicht mehr als ein großer Durchlauf.
-
-```text
-zuerst nur Bild_01
-→ Bild_01 prüfen und als Master Style Frame akzeptieren
-→ danach Bilder in 5er-Blöcken
-→ innerhalb jedes Blocks jedes Bild einzeln
-→ Fehlernummern sammeln
-→ am Ende Recovery-Pass
-→ erst bei lückenlosem PASS-Bildsatz ZIP erstellen
-```
-
-Ein einzelner Flow-Generierungsfehler beendet also nicht mehr automatisch die gesamte Bildproduktion.
-
-## Themen-Gedächtnis
-
-Vor jeder Produktion muss `THEMEN-GEHIRN.md` geprüft werden.
-
-Ein neues Video darf keinen bereits behandelten Kernmechanismus nur unter einem anderen Titel wiederholen.
+Flow erzeugt zuerst nur `Bild_01`. Erst nach akzeptiertem Bild_01 folgen die nächsten Bilder in 5er-Blöcken. Fehlerhafte Generationen werden gesammelt und am Ende im Recovery-Pass erneut erzeugt.
 
 ## Drei Phasen
 
@@ -161,18 +136,16 @@ Thema
 → Label-Plan
 → Google-Flow-Prompt
 → scene-map.json
-→ YouTube-Metadaten
+→ Metadaten
 ```
-
-Phase 1 entscheidet **was** zu welchem Sprachabschnitt gehört, aber keine finalen Sekundenwerte.
 
 ### Phase 2 – Nutzer + Voice-KI + Google Flow
 
 ```text
-VOICEOVER-ZUM-KOPIEREN.txt → Voice-KI → rohe Audiodatei
+VOICEOVER-ZUM-KOPIEREN.txt → Voice-KI
 GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt
 → nur Bild_01
-→ Master Style Frame
+→ Style-Freigabe
 → 5er-Blöcke
 → Einzelbild-Review
 → Recovery-Pass
@@ -184,79 +157,39 @@ GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt
 ```text
 rohes Audio
 → final-voiceover.wav
-→ Flow-ZIP sicher importieren
-→ Bilder validieren
+→ Flow-ZIP importieren
+→ Assets validieren
 → faster-whisper
 → strikte Script↔Audio-Ausrichtung
 → word-timings.json
-→ exakte speech_section-Zuordnung
 → timeline.json
-→ feste Remotion-Runtime
+→ Remotion
 → Render
 → Final-QA
-→ Qualitäts-Scorecard
+→ Scorecard
 → Postmortem
 ```
 
-Komplette Vorbereitung:
+## Aktueller Pilot – nächster Schritt
+
+1. `youtube-videos/000-pilot-zucker-im-blut/01_script/VOICEOVER-ZUM-KOPIEREN.txt` für die Voice verwenden.
+2. `youtube-videos/000-pilot-zucker-im-blut/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt` in Flow geben.
+3. Flow muss **zuerst nur `Bild_01`** erzeugen und danach stoppen.
+4. Nach Stilfreigabe folgen `Bild_02` bis `Bild_15`.
+
+## Test-QA
+
+Normale Final-QA bleibt bei 300 Sekunden.
+
+Nur beim dokumentierten 2-Minuten-Pilot:
 
 ```bash
-python -m pip install -r tools/requirements.txt
-python tools/prepare_phase3.py youtube-videos/THEMA
+python tools/qa_final.py \
+  youtube-videos/000-pilot-zucker-im-blut/04_export/fertiges-video/final-video.mp4 \
+  youtube-videos/000-pilot-zucker-im-blut/01_script/audio/final-voiceover.wav \
+  --min-seconds 105
 ```
-
-## Repository-Bereiche
-
-```text
-PROJECT_CONTRACT.md
-PROJECT_STATE.md
-AGENTS.md
-THEMEN-GEHIRN.md
-config/
-assets/channel/
-bildwelt/
-engine/
-tools/
-renderer/
-youtube-videos/
-```
-
-## Engine
-
-Wichtige globale Regeln:
-
-- `engine/PRODUKTIONSREGELN.md`
-- `engine/PLANNING-V2.md`
-- `engine/VISUAL-EXPLANATION-SYSTEM.md`
-- `engine/FLOW-PRODUCTION-STANDARD.md`
-- `engine/SCRIPT-STANDARD.md`
-- `engine/AUDIO-REGELN.md`
-- `engine/SYNC-WHISPER.md`
-- `engine/STYLE-REFERENCE-SYSTEM.md`
-- `engine/FACT-CHECK-STANDARD.md`
-- `engine/PHASE-GATES.md`
-- `engine/VISUAL-QUALITY-GATE.md`
-- `engine/QUALITY-SCORECARD.md`
-- `engine/POSTMORTEM-STANDARD.md`
-
-## Tools
-
-Unter anderem:
-
-- `create_video.py` – neues Projekt aus Template
-- `validate_planning_v2.py` – Mechanism Map, Satz-Visual-Plan, Label-Plan und Bildreview für neue Projekte prüfen
-- `validate_phase1.py` – vollständige semantische Script-Abdeckung prüfen
-- `prepare_audio.py` – kanonisches finales Audio
-- `import_flow_zip.py` – sichere Bildübernahme nach expliziten Nummern
-- `validate_assets.py` – technische Bildprüfung
-- `transcribe_audio.py` – faster-whisper + strikte Script-Ausrichtung
-- `build_timeline.py` – Szenen auf echte Wortzeiten mappen
-- `build_renderer_runtime.py` – feste Remotion-Runtime vorbereiten
-- `prepare_phase3.py` – komplette Phase-3-Vorbereitung
-- `qa_final.py` – finaler technischer Video-Check
 
 ## Goldene Regel
 
 **Nicht raten.** Wenn Script, Audio, Bildnummer, Szenengrenze oder wissenschaftliche Kernaussage nicht eindeutig ist, stoppt die technische Pipeline und der konkrete Fehler wird behoben.
-
-Ein einzelner Flow-Generierungsfehler wird dagegen über Fehlerliste + Recovery-Pass behandelt.
