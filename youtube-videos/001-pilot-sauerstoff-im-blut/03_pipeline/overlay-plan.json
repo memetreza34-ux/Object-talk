@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "purpose": "Selective Remotion overlays; full-frame explainer images remain dominant.",
+  "rules": {
+    "full_frame_remains_default": true,
+    "no_full_voiceover_sentences": true,
+    "max_words_per_heading": 6,
+    "language": "de",
+    "style": "clean-modern-not-anime"
+  },
+  "scenes": [
+    {
+      "scene": 1,
+      "overlays": [
+        {
+          "kind": "heading",
+          "text": "Zucker im Körper",
+          "position": "top-left",
+          "animation": "underline",
+          "start_fraction": 0.08,
+          "duration_fraction": 0.50
+        }
+      ]
+    },
+    {
+      "scene": 7,
+      "overlays": [
+        {
+          "kind": "heading",
+          "text": "Der Dünndarm",
+          "position": "top-left",
+          "animation": "fade-slide",
+          "start_fraction": 0.06,
+          "duration_fraction": 0.58
+        }
+      ]
+    },
+    {
+      "scene": 9,
+      "overlays": [
+        {
+          "kind": "keyword",
+          "text": "Glukose",
+          "position": "bottom-left",
+          "animation": "pop",
+          "start_fraction": 0.08,
+          "duration_fraction": 0.48
+        }
+      ]
+    },
+    {
+      "scene": 12,
+      "overlays": [
+        {
+          "kind": "heading",
+          "text": "Blutzucker steigt",
+          "position": "top-left",
+          "animation": "underline",
+          "start_fraction": 0.14,
+          "duration_fraction": 0.48
+        }
+      ]
+    },
+    {
+      "scene": 13,
+      "overlays": [
+        {
+          "kind": "heading",
+          "text": "Bauchspeicheldrüse reagiert",
+          "position": "top-left",
+          "animation": "fade-slide",
+          "start_fraction": 0.08,
+          "duration_fraction": 0.54
+        }
+      ]
+    },
+    {
+      "scene": 16,
+      "overlays": [
+        {
+          "kind": "heading",
+          "text": "Insulin = Signal",
+          "position": "top-left",
+          "animation": "pop",
+          "start_fraction": 0.10,
+          "duration_fraction": 0.55
+        }
+      ]
+    },
+    {
+      "scene": 18,
+      "overlays": [
+        {
+          "kind": "keyword",
+          "text": "Muskelzellen",
+          "position": "bottom-left",
+          "animation": "fade-slide",
+          "start_fraction": 0.08,
+          "duration_fraction": 0.45
+        }
+      ]
+    },
+    {
+      "scene": 21,
+      "overlays": [
+        {
+          "kind": "heading",
+          "text": "Speicherung als Glykogen",
+          "position": "top-left",
+          "animation": "underline",
+          "start_fraction": 0.08,
+          "duration_fraction": 0.58
+        }
+      ]
+    },
+    {
+      "scene": 24,
+      "overlays": [
+        {
+          "kind": "heading",
+          "text": "Nicht immer gleich",
+          "position": "top-center",
+          "animation": "fade-slide",
+          "start_fraction": 0.08,
+          "duration_fraction": 0.52
+        }
+      ]
+    },
+    {
+      "scene": 26,
+      "overlays": [
+        {
+          "kind": "heading",
+          "text": "Vom Snack bis zur Zelle",
+          "position": "top-left",
+          "animation": "underline",
+          "start_fraction": 0.08,
+          "duration_fraction": 0.42
+        }
+      ]
+    }
+  ]
+}
