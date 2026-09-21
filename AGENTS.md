@@ -18,6 +18,7 @@ Für V2-Projekte zusätzlich zwingend lesen:
 
 - `engine/PLANNING-V2.md`
 - `engine/VISUAL-EXPLANATION-SYSTEM.md`
+- `engine/PRESENTATION-OVERLAY-SYSTEM.md`
 - `engine/QUALITY-SCORECARD.md`
 - `engine/POSTMORTEM-STANDARD.md`
 
@@ -42,12 +43,14 @@ Darf:
 - Szenen festlegen
 - Label-Plan erstellen
 - Flow-Prompts schreiben
+- selektiven `overlay-plan.json` für kurze Remotion-Überschriften/Schlüsselwörter erstellen
 - Metadaten schreiben
 
 Darf nicht:
 - geschätzte finale Sekundenzeiten als Wahrheit setzen
 - Audioänderungen erfinden
 - finale Flow-Bilder vortäuschen
+- jede Szene aus Gewohnheit mit Text versehen
 
 Für V2-Projekte gilt: Erst Mechanismus und Satz-Visual-Plan klären, dann finale Bildprompts schreiben. Kein Bild darf nur dekorativ sein.
 
@@ -59,6 +62,8 @@ Google Flow erzeugt ausschließlich die von Phase 1 vorgegebenen Bilder. Jedes B
 
 Jedes finale V2-Bild wird in `02_bildprompts/image-review.json` einzeln bewertet. Klare Fachfehler, falsche Labels oder ein Score unter 8/10 führen zu Regeneration statt nachträglichem Kaschieren.
 
+Große Überschriften und wiederkehrende Schlüsselbegriffe sollen bevorzugt **nicht** in Flow eingebrannt werden, sondern sauber über Remotion kommen.
+
 ### Phase 3 – Editor / Antigravity
 
 Darf:
@@ -68,6 +73,7 @@ Darf:
 - Timings auflösen
 - Assets validieren
 - Remotion vorbereiten
+- vorhandenen `overlay-plan.json` technisch anwenden
 - rendern und QA durchführen
 
 Darf nicht:
@@ -78,6 +84,7 @@ Darf nicht:
 - fehlende Bilder still ersetzen
 - einen fachlich fehlenden Mechanismus erst im Schnitt erfinden
 - Mascot-/Presenter-Elemente ergänzen, wenn sie in Phase 1 nicht vorgesehen sind
+- spontan neue Überschriften oder Marketingtexte erfinden, die nicht im Overlay-Plan stehen
 
 Nach dem echten Finalrender werden `04_export/quality-scorecard.md` und `04_export/postmortem.md` ausgefüllt. Dauerhafte Lehren werden bevorzugt in bestehende Regeldateien integriert; keine neue Lock-Datei für jede Kleinigkeit.
 
@@ -100,6 +107,18 @@ Wissenschaftliche Sicherheit unter 8/10 ist bei der V2-Scorecard ein harter Bloc
 - sichtbare deutsche Beschriftungen exakt prüfen
 - bei falscher KI-Schrift denselben freigegebenen Begriff später als Editor-Overlay ersetzen
 - echte Erklärbilder vor Mascot-/Presenter-Bildern
+
+## Presentation / Overlays
+
+- Vollbild bleibt der visuelle Standard
+- aktuelle semi-realistische 3D-Welt beibehalten; kein Anime-/Comic-Umbau
+- kurze Überschriften nur an echten Mechanismus-/Kapitelwechseln
+- Schlüsselwörter sparsam
+- keine kompletten Voice-over-Sätze auf dem Bild
+- Overlay-Animationen ruhig: Fade, Slide, leichte Scale-in-Bewegung, Unterstreichung, Callout
+- keine Bounce-/Shake-/Meme-Effekte
+
+Details: `engine/PRESENTATION-OVERLAY-SYSTEM.md`.
 
 ## Timing
 
