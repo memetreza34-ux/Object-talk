@@ -1,0 +1,23 @@
+{
+  "status": "TEMPLATE",
+  "rules": {
+    "language": "de",
+    "max_labels_per_image": 3,
+    "label_only_if_needed_for_understanding": true,
+    "fallback_to_overlay_if_ai_text_wrong": true
+  },
+  "images": [
+    {
+      "image_asset_id": "Bild_01",
+      "mode": "optional",
+      "labels": [
+        {
+          "text": "[Exakter deutscher Begriff]",
+          "target": "[Konkrete sichtbare Struktur]",
+          "reason": "[Warum das Label fuer das Verstaendnis notwendig ist]",
+          "fallback_overlay": true
+        }
+      ]
+    }
+  ]
+}
