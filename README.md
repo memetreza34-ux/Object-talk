@@ -36,6 +36,8 @@ Thema:
 
 Dieser Pilot ist absichtlich nur ungefähr **2 Minuten** lang und testet die neue V2-Pipeline. Er ist über `05_info/test-mode.json` ausdrücklich als interner Test markiert und ändert die 5-Minuten-Regel für normale Kanalvideos nicht.
 
+Der Pilot nutzt jetzt **26 echte Erklärbilder**. Das entspricht ungefähr 4–5 Sekunden pro Bild im Mittel. Die Bildzahl ist kein Selbstzweck: Ein neues Bild kommt dann, wenn sich Ort, Maßstab, Zustand, Prozess oder zentrale visuelle Aussage ändert.
+
 Der frühere Verdauungs-Pilot wurde auf Nutzerwunsch gelöscht.
 
 ## Repo-Gehirn
@@ -71,6 +73,22 @@ Standard sind echte Erklärbilder:
 Personifizierte Lebensmittel oder Object-Talk-Figuren sind nur optional und dürfen nur eingesetzt werden, wenn sie eine konkrete Erklärung wirklich verbessern.
 
 Im aktuellen Zucker-Pilot wird bewusst **gar keine anthropomorphe Food-Sprecherfigur benötigt**.
+
+## Bildrhythmus
+
+Da das Format aus Standbildern besteht, ist visuelle Entwicklung wichtig.
+
+Richtwerte:
+
+- Hook: meist 2–4 Sekunden
+- normale Erklärbilder: meist 4–6 Sekunden
+- komplexe Mikroprozesse: oft 3–5 Sekunden
+- ruhige Übersichten: meist 6–8 Sekunden
+- über 8 Sekunden nur mit bewusstem Grund
+
+Keine Füllbilder. Lange Standzeiten dürfen nicht nur mit Zoom/Pan kaschiert werden.
+
+Details: `engine/PRODUKTIONSREGELN.md`.
 
 ## V2-Planung
 
@@ -175,7 +193,7 @@ rohes Audio
 1. `youtube-videos/000-pilot-zucker-im-blut/01_script/VOICEOVER-ZUM-KOPIEREN.txt` für die Voice verwenden.
 2. `youtube-videos/000-pilot-zucker-im-blut/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt` in Flow geben.
 3. Flow muss **zuerst nur `Bild_01`** erzeugen und danach stoppen.
-4. Nach Stilfreigabe folgen `Bild_02` bis `Bild_15`.
+4. Nach Stilfreigabe folgen `Bild_02` bis `Bild_26` in 5er-Blöcken.
 
 ## Test-QA
 
