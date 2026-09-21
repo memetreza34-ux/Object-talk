@@ -1,32 +1,7 @@
 {
-  "status": "READY",
-  "rules": {"language":"de","max_labels_per_image":3,"label_only_if_needed_for_understanding":true,"fallback_to_overlay_if_ai_text_wrong":true},
-  "images": [
-    {"image_asset_id":"Bild_01","mode":"optional","labels":[]},
-    {"image_asset_id":"Bild_02","mode":"optional","labels":[]},
-    {"image_asset_id":"Bild_03","mode":"optional","labels":[]},
-    {"image_asset_id":"Bild_04","mode":"optional","labels":[]},
-    {"image_asset_id":"Bild_05","mode":"required","labels":[{"text":"Speiseröhre","target":"Speiseröhre","reason":"Transportweg orientieren","fallback_overlay":true}]},
-    {"image_asset_id":"Bild_06","mode":"required","labels":[{"text":"Magen","target":"Magen","reason":"Zwischenstation benennen","fallback_overlay":true}]},
-    {"image_asset_id":"Bild_07","mode":"required","labels":[{"text":"Dünndarm","target":"Dünndarm","reason":"entscheidende Region markieren","fallback_overlay":true}]},
-    {"image_asset_id":"Bild_08","mode":"required","labels":[{"text":"Kohlenhydrate","target":"größere Ausgangsstrukturen","reason":"Ausgangsstoff benennen","fallback_overlay":true}]},
-    {"image_asset_id":"Bild_09","mode":"required","labels":[{"text":"Glukose","target":"hervorgehobener kleiner Zuckerbaustein","reason":"erklärten Zuckerbaustein benennen","fallback_overlay":true}]},
-    {"image_asset_id":"Bild_10","mode":"required","labels":[{"text":"Darmzotten","target":"Darmzotten","reason":"aufnehmende Oberfläche orientieren","fallback_overlay":true}]},
-    {"image_asset_id":"Bild_11","mode":"required","labels":[{"text":"Darmwand","target":"Darmzellschicht","reason":"Aufnahmebarriere markieren","fallback_overlay":true},{"text":"Blutgefäß","target":"Kapillare","reason":"Ziel der Aufnahme markieren","fallback_overlay":true}]},
-    {"image_asset_id":"Bild_12","mode":"optional","labels":[]},
-    {"image_asset_id":"Bild_13","mode":"required","labels":[{"text":"Bauchspeicheldrüse","target":"Pankreas","reason":"Organ orientieren","fallback_overlay":true},{"text":"Betazellen","target":"vergrößerte Betazellgruppe","reason":"reaktierende Zellen benennen","fallback_overlay":true}]},
-    {"image_asset_id":"Bild_14","mode":"required","labels":[{"text":"Insulin","target":"freigesetzte Signalpartikel","reason":"Hormon benennen","fallback_overlay":true}]},
-    {"image_asset_id":"Bild_15","mode":"required","labels":[{"text":"Insulin","target":"Signalpartikel im Blut","reason":"Hormonsignal im Kreislauf benennen","fallback_overlay":true}]},
-    {"image_asset_id":"Bild_16","mode":"required","labels":[{"text":"Insulin","target":"Signal an Zelloberfläche","reason":"Signalrolle benennen","fallback_overlay":true}]},
-    {"image_asset_id":"Bild_17","mode":"required","labels":[{"text":"Glukose","target":"Zuckerpartikel auf dem Weg in die Zelle","reason":"aufgenommenen Stoff benennen","fallback_overlay":true}]},
-    {"image_asset_id":"Bild_18","mode":"required","labels":[{"text":"Muskel","target":"Skelettmuskelgewebe","reason":"Beispiel-Zielgewebe benennen","fallback_overlay":true}]},
-    {"image_asset_id":"Bild_19","mode":"optional","labels":[]},
-    {"image_asset_id":"Bild_20","mode":"optional","labels":[]},
-    {"image_asset_id":"Bild_21","mode":"required","labels":[{"text":"Leber","target":"Lebergewebe","reason":"Speicherorgan markieren","fallback_overlay":true},{"text":"Muskel","target":"Skelettmuskel","reason":"Speichergewebe markieren","fallback_overlay":true},{"text":"Glykogen","target":"verzweigte Speicherstruktur","reason":"Speicherform benennen","fallback_overlay":true}]},
-    {"image_asset_id":"Bild_22","mode":"optional","labels":[]},
-    {"image_asset_id":"Bild_23","mode":"optional","labels":[]},
-    {"image_asset_id":"Bild_24","mode":"optional","labels":[]},
-    {"image_asset_id":"Bild_25","mode":"optional","labels":[]},
-    {"image_asset_id":"Bild_26","mode":"optional","labels":[]}
+  "status":"READY",
+  "rules":{"language":"de","max_labels_per_image":0,"label_only_if_needed_for_understanding":true,"fallback_to_overlay_if_ai_text_wrong":true,"policy":"Pilot 001 nutzt textfreie Flow-Bilder; Überschriften und Keywords werden kontrolliert in Remotion gerendert."},
+  "images":[
+    {"image_asset_id":"Bild_01","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_02","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_03","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_04","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_05","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_06","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_07","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_08","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_09","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_10","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_11","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_12","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_13","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_14","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_15","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_16","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_17","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_18","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_19","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_20","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_21","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_22","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_23","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_24","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_25","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_26","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_27","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_28","mode":"editor-overlay-only","labels":[]}
   ]
 }
