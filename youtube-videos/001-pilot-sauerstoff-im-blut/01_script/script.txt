@@ -1,17 +1,21 @@
-Du isst einen süßen Snack, zum Beispiel einen Keks oder ein Stück Schokolade. Kurz danach beginnt sich zu verändern, was in deinem Blut passiert. Aber wie kommt der Zucker überhaupt vom Essen bis zu deinen Zellen?
+Mit jedem Atemzug holst du Sauerstoff in deine Lunge. Aber wie schafft es dieses Gas von dort bis in eine Muskelzelle im Bein?
 
-Im Mund wird der Snack zuerst zerkleinert und mit Speichel vermischt. Beim Schlucken wandert der Nahrungsbrei durch die Speiseröhre in den Magen. Der Magen ist dabei vor allem eine Zwischenstation und nicht der wichtigste Aufnahmeort für Zucker.
+Beim Einatmen strömt Luft durch Nase oder Mund in die Luftröhre. Von dort verteilt sie sich über immer feinere Bronchien tief in die Lunge.
 
-Entscheidend wird es im Dünndarm. Dort werden viele Kohlenhydrate in kleinere Zuckerbausteine zerlegt. Einer dieser Bausteine ist Glukose. Sie erreicht die Oberfläche der Darmwand mit ihren vielen Falten und Zotten.
+Am Ende dieser Atemwege sitzen Millionen winziger Lungenbläschen, die Alveolen. Ihre Wände sind extrem dünn und direkt von kleinen Blutgefäßen umgeben.
 
-Von dort kann Glukose durch die Darmzellen in kleine Blutgefäße gelangen. Jetzt befindet sich mehr Glukose im Blut als kurz zuvor. Genau das meint man vereinfacht, wenn man sagt: Der Blutzucker steigt.
+Genau hier wechselt der Sauerstoff die Seite. Er diffundiert aus der Luft im Lungenbläschen durch die dünne Barriere in das Blut.
 
-Darauf reagieren Betazellen in der Bauchspeicheldrüse. Sie geben das Hormon Insulin in den Blutkreislauf ab. Insulin verteilt sich mit dem Blut im Körper. Es ist kein Zuckerfresser, sondern ein Signalstoff.
+Ein kleiner Teil bleibt im Blutplasma gelöst. Der größte Teil wird aber von roten Blutkörperchen aufgenommen. In diesen roten Blutkörperchen sitzt Hämoglobin. Dieses Protein kann Sauerstoff binden und macht die roten Blutkörperchen zu den wichtigsten Sauerstofftransportern des Blutes.
 
-An vielen Zellen hilft dieses Signal dabei, die Aufnahme von Glukose zu erhöhen. Besonders gut lässt sich das an Muskelzellen zeigen. Dort kann Glukose in die Zelle gelangen und für die Energiegewinnung genutzt werden.
+Das nun sauerstoffreiche Blut fließt aus der Lunge zurück zur linken Seite des Herzens. Mit jedem Herzschlag wird es von dort in den Körper gepumpt.
 
-Nicht jede Glukose muss sofort verbraucht werden. Ein Teil kann in Leber und Muskeln als Glykogen gespeichert werden. So bleibt nicht die gesamte zusätzlich aufgenommene Glukose dauerhaft im Blut.
+Große Arterien verzweigen sich dabei in immer kleinere Gefäße. Schließlich erreicht das Blut winzige Kapillaren direkt im Gewebe.
 
-Mit der Zeit bewegt sich der Blutzucker deshalb wieder in Richtung seines vorherigen Bereichs. Das passiert nicht bei jeder Mahlzeit gleich schnell oder gleich stark. Zusammensetzung der Mahlzeit, Menge und individuelle Faktoren spielen dabei eine Rolle.
+Dort ist die Situation anders als in der Lunge. Die Zellen im Gewebe verbrauchen ständig Sauerstoff, deshalb kann Sauerstoff aus dem Blut in Richtung der Zellen diffundieren. Hämoglobin gibt einen Teil seines gebundenen Sauerstoffs ab. Der Sauerstoff verlässt das rote Blutkörperchen, passiert die Kapillarwand und gelangt in die umgebenden Zellen.
 
-Die ganze Kette lautet also: Snack, Verdauung, Glukose, Blut, Insulin, Zelle und Speicherung. Entscheidend ist nicht eine einzelne Station, sondern das Zusammenspiel vom Dünndarm bis zu den Körperzellen.
+In der Zelle erreicht Sauerstoff schließlich die Mitochondrien. Dort wird er bei der aeroben Energiegewinnung gebraucht, damit die Zelle effizient ATP herstellen kann. ATP ist eine direkt nutzbare Energieform für viele Zellprozesse. Muskelzellen brauchen davon besonders viel, wenn sie arbeiten.
+
+Bei dieser Energiegewinnung entsteht unter anderem Kohlendioxid. Dieses wandert in die entgegengesetzte Richtung zurück ins Blut. Das Blut transportiert Kohlendioxid wieder zur Lunge. Dort diffundiert es aus den Kapillaren zurück in die Lungenbläschen und wird ausgeatmet.
+
+Der Kreislauf ist damit geschlossen: Einatmen, Lungenbläschen, Blut, Hämoglobin, Herz, Kapillaren, Zelle und wieder zurück zur Lunge. Dein Körper muss Sauerstoff also nicht einfach nur einatmen. Er muss ihn an der richtigen Stelle ins Blut bringen, transportieren, im Gewebe wieder freigeben und bis in die Zellen weiterreichen.
