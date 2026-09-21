@@ -43,7 +43,7 @@ Interne `TEST`-Piloten sind davon ausgenommen, wenn sie ausschließlich Pipeline
 | 002 | IDEE | Zellbiologie | Was ist eine menschliche Zelle? | Aufbau und wichtigste Zellbestandteile verständlich erklären | – |
 | 003 | IDEE | Gehirn | Wie kommunizieren Nervenzellen? | Neuron, elektrisches Signal, Synapse, Neurotransmitter | – |
 | 004 | IDEE | Ernährung | Was macht Zucker im Körper? | spätere Longform: Aufnahme, Blutzucker, Insulin, Energie und Überschuss deutlich tiefer | Testpilot 000 behandelt nur Grundkette |
-| 005 | IDEE | Kreislauf | Wie transportiert Blut Sauerstoff? | rote Blutkörperchen, Lunge, Herz und Gewebe | – |
+| 005 | IDEE | Kreislauf | Wie transportiert Blut Sauerstoff? | spätere Longform: Sauerstofftransport deutlich tiefer, ggf. Sättigung, Belastung, Regulation | Testpilot 001 behandelt nur Grundreise Lunge→Zelle→Lunge |
 | 006 | IDEE | Immunsystem | Wie bekämpft der Körper Bakterien? | angeborene Immunabwehr vereinfacht erklären | – |
 | 007 | IDEE | Ernährung | Was passiert nach einer proteinreichen Mahlzeit? | Verdauung von Protein, Aminosäuren und Nutzung im Körper | – |
 | 008 | IDEE | Schlaf | Was passiert im Körper, während wir schlafen? | Gehirn, Erholung, Gedächtnis, Hormone und Schlafphasen als Überblick | – |
@@ -68,14 +68,40 @@ Zweck:
 - Satz-Visual-Plan testen
 - echte faceless Erklärbilder statt Mascot testen
 - Bild_01 als Style-Anker testen
-- 5er-Blöcke + Recovery testen
+- hohe Bilddichte testen
 - Whisper/Remotion/QA in kurzer Form testen
 
 Inhaltlich behandelt der Test nur diese Grundkette:
 
 `Snack → Dünndarm → Glukose → Blut → Betazellen/Insulin → Zellen/Glykogenspeicher`
 
-**Dieser Test blockiert Thema 004 nicht.** Eine spätere 5–8-Minuten-Longform darf das Thema umfassender, mit zusätzlichen Mechanismen und höherer Erklärtiefe behandeln.
+**Dieser Test blockiert Thema 004 nicht.**
+
+### TEST 001 – Sauerstoff von der Lunge bis zur Zelle
+
+Projekt:
+
+```text
+youtube-videos/001-pilot-sauerstoff-im-blut/
+```
+
+Status: `TEST`
+
+Zweck:
+- ca. 2–2,5 Minuten
+- zweite End-to-End-Runde mit den Verbesserungen aus Test 000
+- **28 Erklärbilder**
+- Flow-Bilder möglichst textfrei
+- Überschriften/Keywords kontrolliert in Remotion
+- feste visuelle Symbolik für O₂, CO₂, rote Blutkörperchen und Hämoglobin
+- starke Maßstabswechsel Mensch → Lunge → Alveole → Blut → Hämoglobin → Herz → Kapillare → Zelle → Mitochondrium
+- prüfen, ob das Format dadurch weniger wie eine Diashow wirkt
+
+Inhaltlich behandelt der Test nur diese Grundkette:
+
+`Einatmen → Alveolen → O₂ ins Blut → Hämoglobin/RBC → linkes Herz → Gewebe/Kapillare → Zelle/Mitochondrium → CO₂ zurück zur Lunge`
+
+**Dieser Test blockiert Thema 005 nicht.** Eine spätere Longform darf Sauerstofftransport deutlich tiefer erklären.
 
 ## Bereits produzierte normale Videos
 
@@ -101,8 +127,6 @@ Interne `TEST`-Videos werden nur als Lern-/Pipelinehistorie geführt und dürfen
 8. Wichtige behandelte Teilfragen ergänzen.
 
 ## Langfristige Themenbereiche
-
-Die Datenbank soll nach und nach diese Bereiche abdecken:
 
 - Ernährung
 - Verdauung
