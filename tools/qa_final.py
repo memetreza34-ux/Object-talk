@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
-"""Technical final-video QA for Object-Talk longform.
+"""Technical final-video QA for Object-Talk.
 
 Usage:
 python tools/qa_final.py FINAL_VIDEO [FINAL_VOICEOVER]
+python tools/qa_final.py FINAL_VIDEO [FINAL_VOICEOVER] --min-seconds 105
+
+Normal channel videos use the default minimum of 300 seconds. A shorter minimum
+must be passed explicitly for a documented internal test pilot.
 
 Requires ffprobe in PATH. If a voiceover is supplied, video/audio duration is
 compared as an additional sanity check.
@@ -17,7 +21,7 @@ import subprocess
 from fractions import Fraction
 from pathlib import Path
 
-MIN_DURATION = 300.0
+DEFAULT_MIN_DURATION = 300.0
 TARGET_WIDTH = 1920
 TARGET_HEIGHT = 1080
 TARGET_FPS = 30.0
@@ -53,7 +57,16 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("video", type=Path)
     parser.add_argument("voiceover", type=Path, nargs="?")
+    parser.add_argument(
+        "--min-seconds",
+        type=float,
+        default=DEFAULT_MIN_DURATION,
+        help="Explizite Mindestdauer. Standard: 300s; nur fuer dokumentierte Tests absenken.",
+    )
     args = parser.parse_args()
+
+    if args.min_seconds <= 0:
+        raise SystemExit("FINAL-QA FAIL: --min-seconds muss groesser als 0 sein.")
 
     if not args.video.is_file():
         raise SystemExit(f"FINAL-QA FAIL: Video fehlt: {args.video}")
@@ -77,8 +90,10 @@ def main() -> None:
         errors.append("Kein Audiostream gefunden.")
 
     duration = float(data.get("format", {}).get("duration") or 0)
-    if duration < MIN_DURATION:
-        errors.append(f"Video ist nur {duration:.2f}s lang; mindestens 300s erforderlich.")
+    if duration < args.min_seconds:
+        errors.append(
+            f"Video ist nur {duration:.2f}s lang; mindestens {args.min_seconds:.2f}s erforderlich."
+        )
 
     if video_streams:
         stream = video_streams[0]
@@ -112,6 +127,7 @@ def main() -> None:
     report = {
         "video": args.video.name,
         "duration_seconds": round(duration, 3),
+        "minimum_required_seconds": round(args.min_seconds, 3),
         "voiceover_duration_seconds": round(voice_duration, 3) if voice_duration is not None else None,
         "errors": errors,
         "warnings": warnings,
@@ -134,6 +150,7 @@ def main() -> None:
 
     print("FINAL-QA PASS")
     print(f"Video: {duration:.2f}s")
+    print(f"Mindestdauer fuer diesen Lauf: {args.min_seconds:.2f}s")
     print(f"Bericht: {report_path}")
 
 
