@@ -1,56 +1,44 @@
-# Recherche – Pilot „Zucker im Blut“
+# Recherche – Pilot 001 „Sauerstoff von der Lunge bis zur Zelle“
 
-## Zweck
+## Leitfrage
 
-Kurzer interner Test für die neue Object-Talk-V2-Pipeline. Inhaltlich soll nur die Grundkette erklärt werden:
+Wie gelangt Sauerstoff aus der eingeatmeten Luft über Lunge, Blut und Herz bis in Körperzellen und wie kommt Kohlendioxid zurück?
 
-`Snack → Verdauung → Glukoseaufnahme im Dünndarm → Blutglukose steigt → Betazellen/Insulin → Nutzung oder Speicherung`
+## Verwendete Fachquellen
 
-Keine Diabetes-Diagnostik, keine Grenzwerte, keine Ernährungsempfehlung und keine Aussage, dass jede Person identisch reagiert.
+1. **NHLBI / NIH – How the Lungs Work: What Breathing Does for the Body**  
+   https://www.nhlbi.nih.gov/health/lungs/breathing-benefits  
+   Relevant für: Alveolen, Diffusion in Kapillaren, rote Blutkörperchen/Hämoglobin, Rückweg zum Herzen, Verteilung in den Körper, Kohlendioxid-Rücktransport.
 
-## Hauptquellen
+2. **NCBI Bookshelf / StatPearls – Physiology, Oxygen Transport**  
+   https://www.ncbi.nlm.nih.gov/books/NBK538336/  
+   Relevant für: Sauerstofftransport, Hämoglobin als Hauptträger, kleiner gelöster Anteil im Plasma, systemische Verteilung, Diffusion ins Gewebe.
 
-### 1. NIDDK / NIH – What Is Diabetes?
-https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes
+3. **NCBI Bookshelf – Regulation of Tissue Oxygenation**  
+   https://www.ncbi.nlm.nih.gov/books/NBK54104/  
+   Relevant für: Gesamtweg Atmosphäre → Alveole → Blut → Kreislauf → Gewebe → Zelle; Diffusion und Freisetzung aus Hämoglobin.
 
-Relevant für:
-- Glukose als wichtige Energiequelle
-- Insulin wird in der Bauchspeicheldrüse gebildet
-- Insulin hilft Glukose, in Körperzellen zu gelangen und dort genutzt zu werden
+4. **NCBI Bookshelf – Oxygen Transport**  
+   https://www.ncbi.nlm.nih.gov/books/NBK54103/  
+   Relevant für: Diffusion über die Alveolar-Kapillar-Grenze und Hämoglobinbindung.
 
-### 2. NIDDK / NIH – How Eating and Fasting Regulate Insulin
-https://www.niddk.nih.gov/news/archive/2023/how-eating-fasting-regulate-insulin
+## Vereinfachungsregeln
 
-Relevant für:
-- insulinbildende Betazellen in den Inseln der Bauchspeicheldrüse
-- mehr Insulinfreisetzung bei Nährstoff-/Glukoseangebot nach dem Essen
+- Keine exakten Partialdruckwerte oder Sättigungswerte im Pilot.
+- Keine Oxyhämoglobin-Kurve.
+- Kein Detail zu 2,3-BPG, pH oder Temperatur.
+- Hämoglobin wird vereinfacht als Sauerstoffträger gezeigt, nicht als chemisch exakte Molekülstruktur.
+- Sauerstoff wird als konsistentes O₂-Symbol visualisiert, ohne zu behaupten, das Größenverhältnis sei maßstabsgetreu.
+- „ATP“ wird als nutzbare Zellenergie erklärt; der vollständige Ablauf der oxidativen Phosphorylierung wird nicht dargestellt.
+- Kohlendioxid-Rücktransport wird nur als Rückweg zur Lunge erklärt; Bicarbonatchemie wird ausgelassen.
 
-### 3. NCBI Bookshelf – Physiology, Small Bowel
-https://www.ncbi.nlm.nih.gov/books/NBK532263/
+## Visueller Testfokus
 
-Relevant für:
-- Kohlenhydrate werden für die Aufnahme zu Monosacchariden zerlegt
-- Glukoseaufnahme im Dünndarm über Darmepithel/Transporter
+Dieser Pilot soll die Verbesserungen aus Pilot 000 testen:
 
-### 4. PubMed – Intestinal absorption in health and disease – sugars
-https://pubmed.ncbi.nlm.nih.gov/14642859/
-
-Relevant für:
-- Glukose, Galaktose und Fruktose als absorbierbare Einfachzucker
-- Transport durch Enterozyten in Richtung Blut
-
-### 5. NCBI Bookshelf – Biochemistry, Glycogen
-https://www.ncbi.nlm.nih.gov/sites/books/NBK539802/
-
-Relevant für:
-- Glykogen als Speicherform von Glukose/Kohlenhydraten
-- Hauptspeicher in Leber und Skelettmuskel
-- Insulin fördert Glykogensynthese
-
-## Vereinfachungen
-
-- Der Pilot erklärt nicht alle Zuckerarten einzeln.
-- „Blutzucker“ wird als Glukose im Blut erklärt.
-- Insulin wird als Signalstoff dargestellt, nicht als physischer Transporter oder „Zuckerfresser“.
-- Bei der Zellaufnahme wird bewusst nicht behauptet, jede Zellart sei insulinabhängig.
-- Der Verlauf nach einer Mahlzeit wird ohne feste Minutenangaben und ohne medizinische Grenzwerte dargestellt.
+- textfreie Google-Flow-Bilder
+- Überschriften/Keywords sauber in Remotion
+- feste visuelle Identität für O₂, CO₂, rote Blutkörperchen und Hämoglobin
+- hohe Bilddichte statt langer Standzeiten
+- echte Maßstabswechsel: Mensch → Lunge → Alveole → Blut → Hämoglobin → Herz → Kapillare → Zelle → Mitochondrium
+- keine Mascot-/Presenter-Figur
