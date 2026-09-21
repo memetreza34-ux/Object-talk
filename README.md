@@ -56,6 +56,49 @@ Personifizierte Lebensmittel oder Object-Talk-Figuren sind nur optional und dür
 
 Alle Bilder müssen wie dieselbe hochwertige semi-realistische 3D-Erklärserie wirken.
 
+## V2-Planung für neue Videos
+
+Die starke Produktionslogik des Erklärsystems wurde **additiv** übernommen, ohne Video 001 oder die bestehende Phase-3-Pipeline umzubauen.
+
+Neue Projekte aus `_TEMPLATE` erhalten jetzt zusätzlich:
+
+```text
+05_info/mechanism-map.md
+05_info/sentence-visual-plan.json
+02_bildprompts/label-plan.json
+02_bildprompts/image-review.json
+04_export/quality-scorecard.md
+04_export/postmortem.md
+```
+
+Damit gilt für neue Produktionen:
+
+```text
+Recherche + Claims
+→ Mechanism Map
+→ Visual-First-Skript
+→ Satz-Visual-Plan
+→ semantische Szenen
+→ Label-Plan
+→ Flow-Bilder
+→ Einzelbild-Review ≥ 8/10
+→ echtes Audio + Worttimings
+→ Render
+→ Qualitäts-Scorecard
+→ Postmortem
+```
+
+Wissenschaftliche Sicherheit unter **8/10** ist ein harter Blocker.
+
+Neue V2-Projekte prüfen:
+
+```bash
+python tools/validate_planning_v2.py youtube-videos/THEMA
+python tools/validate_planning_v2.py youtube-videos/THEMA --phase2
+```
+
+Video 001 bleibt absichtlich kompatibel und muss nicht rückwirkend auf die neue Dateistruktur migriert werden.
+
 ## Style-Anker
 
 `Bild_01` jedes Videos ist:
@@ -111,8 +154,11 @@ Ein neues Video darf keinen bereits behandelten Kernmechanismus nur unter einem 
 Thema
 → Recherche
 → Claim-Check
+→ Mechanism Map
 → finales script.txt
+→ Satz-Visual-Plan
 → semantischer Szenenplan
+→ Label-Plan
 → Google-Flow-Prompt
 → scene-map.json
 → YouTube-Metadaten
@@ -128,6 +174,7 @@ GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt
 → nur Bild_01
 → Master Style Frame
 → 5er-Blöcke
+→ Einzelbild-Review
 → Recovery-Pass
 → Bilder-ZIP
 ```
@@ -147,6 +194,8 @@ rohes Audio
 → feste Remotion-Runtime
 → Render
 → Final-QA
+→ Qualitäts-Scorecard
+→ Postmortem
 ```
 
 Komplette Vorbereitung:
@@ -177,6 +226,8 @@ youtube-videos/
 Wichtige globale Regeln:
 
 - `engine/PRODUKTIONSREGELN.md`
+- `engine/PLANNING-V2.md`
+- `engine/VISUAL-EXPLANATION-SYSTEM.md`
 - `engine/FLOW-PRODUCTION-STANDARD.md`
 - `engine/SCRIPT-STANDARD.md`
 - `engine/AUDIO-REGELN.md`
@@ -185,12 +236,15 @@ Wichtige globale Regeln:
 - `engine/FACT-CHECK-STANDARD.md`
 - `engine/PHASE-GATES.md`
 - `engine/VISUAL-QUALITY-GATE.md`
+- `engine/QUALITY-SCORECARD.md`
+- `engine/POSTMORTEM-STANDARD.md`
 
 ## Tools
 
 Unter anderem:
 
 - `create_video.py` – neues Projekt aus Template
+- `validate_planning_v2.py` – Mechanism Map, Satz-Visual-Plan, Label-Plan und Bildreview für neue Projekte prüfen
 - `validate_phase1.py` – vollständige semantische Script-Abdeckung prüfen
 - `prepare_audio.py` – kanonisches finales Audio
 - `import_flow_zip.py` – sichere Bildübernahme nach expliziten Nummern
