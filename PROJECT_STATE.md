@@ -1,12 +1,14 @@
 # Object-Talk – Project State
 
-Letzte Aktualisierung: 20.09.2026
+Letzte Aktualisierung: 21.09.2026
 
 ## Aktueller Stand
 
 Die Longform-Grundarchitektur ist vollständig genug für den ersten echten End-to-End-Piloten.
 
 Zusätzlich ist jetzt **Video 001 – „Was passiert mit deinem Essen im Körper?“** in Phase 1 vollständig vorbereitet und der Flow-Workflow wurde nach dem ersten Praxistest überarbeitet.
+
+Am 21.09.2026 wurde außerdem eine **nicht rückwirkende V2-Planungs- und QA-Schicht** ergänzt. Sie übernimmt die wichtigsten stabilen Prinzipien aus dem separaten Erklärkanal-System, ohne dessen visuelle Markenwelt, starre Shortform-Regeln oder bestehende Dateien zu kopieren.
 
 Vorhanden:
 
@@ -16,6 +18,12 @@ Vorhanden:
 - `THEMEN-GEHIRN.md` gegen Themenwiederholungen
 - `engine/THEMEN-STRATEGIE.md` für systematische Longform-Themenauswahl
 - `engine/SCRIPT-STANDARD.md` für Hook, Einleitung, Hauptteil, rhetorische Mittel, Schluss und Visual-First-Scriptwriting
+- `engine/PLANNING-V2.md` für Mechanism Map, Satz-Visual-Plan, stabile Bild-IDs, Label-Plan und Bildreview
+- `engine/VISUAL-EXPLANATION-SYSTEM.md` für echte visuelle Erklärfunktionen und Maßstabsketten
+- `engine/QUALITY-SCORECARD.md` für gewichtete Freigabe; Wissenschaft unter 8/10 blockiert
+- `engine/POSTMORTEM-STANDARD.md` für dauerhaftes Lernen aus jedem echten Finalrender
+- `tools/validate_planning_v2.py` als separater, nicht destruktiver V2-Validator
+- V2-Dateien im `_TEMPLATE` für alle neu angelegten Videos
 - `engine/FLOW-PRODUCTION-STANDARD.md` für faceless Explainer-Bildwelt, Master Style Frame, 5er-Blöcke und Recovery
 - erste Fach-Bildwelt `bildwelt/gehirn.md`
 - globales Style-Reference-System
@@ -35,6 +43,30 @@ Vorhanden:
 - ein Befehl für die Phase-3-Vorbereitung
 - finale technische Video-QA + Renderbericht
 
+## V2-Kompatibilitätsregel
+
+Die neue V2-Schicht gilt für **neu aus `_TEMPLATE` angelegte Projekte**.
+
+Sie erzeugt zusätzlich:
+
+```text
+05_info/mechanism-map.md
+05_info/sentence-visual-plan.json
+02_bildprompts/label-plan.json
+02_bildprompts/image-review.json
+04_export/quality-scorecard.md
+04_export/postmortem.md
+```
+
+Prüfung:
+
+```bash
+python tools/validate_planning_v2.py youtube-videos/THEMA
+python tools/validate_planning_v2.py youtube-videos/THEMA --phase2
+```
+
+**Video 001 wird nicht rückwirkend umgebaut oder blockiert.** Seine bestehenden Dateien, Szenen, Flow-Prompts, Nummern und Phase-3-Pipeline bleiben unverändert nutzbar.
+
 ## Verbindliche visuelle Richtung
 
 Nach dem ersten Flow-Test ist festgelegt:
@@ -46,7 +78,9 @@ Nach dem ersten Flow-Test ist festgelegt:
 - personifizierte Objekte nur selten und nur mit echtem didaktischem Mehrwert
 - komplexe Vorgänge sollen mit möglichst einer klaren visuellen Hauptaussage pro Bild erklärt werden
 
-`Bild_01` jeder Episode ist ab jetzt:
+`config/channel.json` wurde an diese Contract-Regel angeglichen, damit Agenten nicht mehr zwischen „Object-Talk als Presenter“ und „Faceless Explainer zuerst“ widersprüchliche Signale erhalten.
+
+`Bild_01` jeder Episode ist:
 
 - Cover-/Hook-Bild
 - erster Shot
