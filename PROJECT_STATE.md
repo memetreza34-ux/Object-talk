@@ -4,15 +4,7 @@ Letzte Aktualisierung: 21.09.2026
 
 ## Aktueller Stand
 
-Das frühere aktive Video
-
-```text
-youtube-videos/001-was-passiert-mit-essen-im-koerper/
-```
-
-wurde auf ausdrücklichen Nutzerwunsch aus dem aktiven Repository entfernt.
-
-Aktiver Test ist jetzt:
+Aktiver Test:
 
 ```text
 youtube-videos/000-pilot-zucker-im-blut/
@@ -22,9 +14,9 @@ Thema:
 
 **Was passiert mit Zucker nach einem süßen Snack?**
 
-Ziel dieses Piloten ist nicht ein veröffentlichungsfertiges Longform-Video, sondern ein kompakter End-to-End-Test der neuen V2-Architektur und der neuen Bildwelt.
+Der Pilot ist ein kompakter End-to-End-Test der neuen V2-Architektur und der faceless 3D-Erklärbildwelt.
 
-## Pilot-Laufzeit
+## Pilot-Laufzeit und Bilddichte
 
 Der Pilot ist ausdrücklich als interner Test markiert:
 
@@ -34,10 +26,12 @@ Der Pilot ist ausdrücklich als interner Test markiert:
 
 Ziel:
 - ungefähr 120 Sekunden
-- akzeptabler interner Testbereich 105–150 Sekunden
+- akzeptabler Testbereich 105–150 Sekunden
+- **26 Erklärbilder**
+- Zielrhythmus im Mittel ungefähr 4–5 Sekunden pro Bild
 - normale Kanalvideos bleiben mindestens 300 Sekunden lang
 
-`tools/qa_final.py` unterstützt dafür jetzt einen expliziten `--min-seconds`-Parameter. Ohne diesen Parameter bleibt die normale 300-Sekunden-Grenze bestehen.
+Die hohe Bilddichte ist jetzt bewusst Teil des Formats: Das Voice-over soll sichtbar mit neuen Zuständen, Maßstäben, Prozessen und Vergleichen mitgehen. Lange Standzeiten dürfen nicht nur durch Zoom/Pan kaschiert werden.
 
 ## Verbindliche visuelle Richtung
 
@@ -45,24 +39,24 @@ Für diesen Pilot besonders streng:
 
 - **kein Mascot-/Presenter-Video**
 - kein Apfel, Keks oder anderes Lebensmittel steht einfach als Sprecher herum
-- keine anthropomorphe Food-Figur ist für irgendeine der 15 Szenen nötig
+- keine anthropomorphe Food-Figur ist für irgendeine der 26 Szenen nötig
 - echte Erklärbilder dominieren vollständig
-- Anatomie, Darmwand, Blut, Bauchspeicheldrüse, Zelle, Muskel und Leber zeigen den Mechanismus
-- Bilder müssen etwas erklären, nicht nur das Thema dekorieren
+- Anatomie, Dünndarm, Darmzotten, Darmwand, Blut, Bauchspeicheldrüse, Betazellen, Insulin, Zellen, Muskel und Leber zeigen den Mechanismus
+- jedes Bild muss eine neue sichtbare Aussage liefern
 - `Bild_01` ist Master Style Frame
 
 ## Pilot-Struktur
 
 Phase 1 ist vorbereitet mit:
 
-- finalem ca. 2-Minuten-Skript
-- 15 semantischen Szenen
+- überarbeitetem ca. 2-Minuten-Skript
+- **26 semantischen Szenen**
 - Recherche und Claim-Matrix
 - `mechanism-map.md`
-- `sentence-visual-plan.json`
-- `label-plan.json`
-- `image-review.json`
-- vollständigem Google-Flow-Prompt
+- vollständigem `sentence-visual-plan.json`
+- vollständigem `label-plan.json`
+- `image-review.json` für 26 Bilder
+- vollständigem Google-Flow-Prompt mit 26 Einzelprompts
 - `scene-map.json`
 - Antigravity-Prompt
 - YouTube-Metadaten
@@ -70,18 +64,18 @@ Phase 1 ist vorbereitet mit:
 
 ## Flow-Ablauf
 
-Der Pilot benutzt den neuen Standard:
-
 ```text
 nur Bild_01
 → Bild_01 vollständig prüfen
 → Nutzer bestätigt Master Style Frame
 → Bild_02–06 einzeln
 → Bild_07–11 einzeln
-→ Bild_12–15 einzeln
+→ Bild_12–16 einzeln
+→ Bild_17–21 einzeln
+→ Bild_22–26 einzeln
 → Fehlerliste
 → Recovery-Pass
-→ lückenlose ZIP Bild_01...Bild_15
+→ lückenlose ZIP Bild_01...Bild_26
 ```
 
 Der komplette Nutzerprompt liegt hier:
@@ -113,7 +107,7 @@ ZIP mit exakt:
 ```text
 Bild_01.png
 ...
-Bild_15.png
+Bild_26.png
 ```
 
 in `02_bildprompts/bilder-zip/` ablegen.
@@ -149,6 +143,6 @@ python tools/qa_final.py \
 
 ## Nächster Meilenstein
 
-**Bild_01 des neuen Piloten erzeugen und prüfen.**
+**Bild_01 des 26-Bilder-Piloten erzeugen und prüfen.**
 
-Erst wenn dieses Bild die gewünschte hochwertige faceless 3D-Erklärwelt trifft, werden die restlichen 14 Bilder produziert.
+Erst wenn dieses Bild die gewünschte hochwertige faceless 3D-Erklärwelt trifft, werden die restlichen 25 Bilder produziert.
