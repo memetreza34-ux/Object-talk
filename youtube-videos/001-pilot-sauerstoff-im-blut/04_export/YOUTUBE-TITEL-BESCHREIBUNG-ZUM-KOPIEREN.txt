@@ -1,15 +1,15 @@
-# YouTube-Metadaten – Testpilot
+# YouTube – Pilot 001
 
 ## Titel
 
-**Was passiert mit Zucker nach einem süßen Snack? | Einfach erklärt**
+**Wie kommt Sauerstoff von der Lunge bis in deine Zellen? | Einfach erklärt**
 
 ## Beschreibung
 
-Was passiert im Körper, nachdem du etwas Süßes isst? In diesem kurzen Erklärvideo verfolgen wir den Weg von Kohlenhydraten über den Dünndarm und das Blut bis zu Insulin, Körperzellen und Glykogenspeichern.
+Mit jedem Atemzug beginnt eine Reise: Sauerstoff gelangt in die Lunge, diffundiert in das Blut, bindet an Hämoglobin und wird vom Herzen bis in die feinsten Kapillaren transportiert.
 
-Der Pilot erklärt den Grundmechanismus bewusst vereinfacht und dient gleichzeitig als Test unserer neuen faceless 3D-Erklärbild-Pipeline. Er enthält keine individuelle medizinische Beratung und keine Diagnosewerte.
+Dieser kurze Erklärfilm zeigt Schritt für Schritt, wie Sauerstoff aus den Lungenbläschen über rote Blutkörperchen bis zu den Mitochondrien deiner Zellen gelangt – und wie Kohlendioxid den Weg zurück zur Lunge nimmt.
 
-## Hashtags
+Der Film dient als allgemeine Bildungsinformation und ersetzt keine medizinische Beratung.
 
-#Blutzucker #Insulin #Ernährung #Biologie #Körper
+#Biologie #Sauerstoff #Blut #Lunge #Körper
