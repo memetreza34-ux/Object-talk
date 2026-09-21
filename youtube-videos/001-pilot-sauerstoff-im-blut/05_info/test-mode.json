@@ -1,12 +1,10 @@
 {
   "test_mode": true,
-  "purpose": "internal-pipeline-and-visual-style-test",
-  "target_seconds": 120,
-  "acceptable_seconds_min": 105,
-  "acceptable_seconds_max": 150,
-  "expected_image_count": 26,
-  "target_average_seconds_per_image": 4.6,
+  "purpose": "second-internal-pipeline-and-presentation-test",
+  "target_seconds": 135,
+  "acceptable_seconds_min": 115,
+  "acceptable_seconds_max": 160,
   "counts_as_published_topic": false,
   "production_longform_minimum_override": true,
-  "notes": "Nur dieser interne Pilot darf unter 300 Sekunden liegen. Die hohe Bilddichte ist Absicht: meist 3–6 Sekunden pro Erklärbild, ohne Füllbilder."
+  "notes": "Zweiter interner Pilot. Testet Overlay-System, textfreie Flow-Bilder, feste Molekül-/Partikelidentität und hohe Bilddichte. Normale Kanalvideos bleiben mindestens 5 Minuten lang."
 }
