@@ -1,403 +1,345 @@
-# GOOGLE FLOW – PILOT „ZUCKER IM BLUT“ – 26-BILDER-VERSION
+# GOOGLE FLOW – PILOT 001 „SAUERSTOFF VON DER LUNGE BIS ZUR ZELLE“
 
 ## AUFGABE
 
-Erzeuge genau **26 einzelne 16:9-Standbilder** für einen kurzen deutschen faceless YouTube-Erklärfilm.
+Erzeuge genau **28 einzelne 16:9-Standbilder** für einen kurzen deutschen faceless YouTube-Erklärfilm.
 
-Thema:
-**Was passiert mit Zucker nach einem süßen Snack?**
+Thema: **Wie kommt Sauerstoff von der Lunge bis in deine Zellen?**
 
-Dieser Pilot testet bewusst eine **hohe visuelle Dichte**. Das Format lebt davon, dass die Erklärung sichtbar mit dem Voice-over fortschreitet. 26 Bilder für ungefähr 2 Minuten sind Absicht. Trotzdem gilt: kein Füllbild und kein Bildwechsel ohne neue sichtbare Aussage.
+Dieser zweite Pilot testet bewusst die Verbesserungen aus Pilot 000:
+
+- hohe visuelle Dichte
+- echte Erklärbilder statt Presenter/Mascot
+- Flow-Bilder möglichst komplett textfrei
+- Überschriften/Keywords später sauber in Remotion
+- feste visuelle Identität für O₂, CO₂, rote Blutkörperchen und Hämoglobin
+- starke Maßstabswechsel Mensch → Organ → Gewebe → Blut → Zelle → Organell
 
 ## HARTE FORMATREGEL
 
 - Kein Mascot-/Presenter-Kanal.
-- Keine dauerhafte Apfel-, Keks-, Food- oder Cartoon-Sprecherfigur.
-- Für diesen Pilot wird **keine anthropomorphe Food-Figur benötigt**.
-- Ein Bild muss einen biologischen Zustand, Weg, Vergleich oder Mechanismus sichtbar erklären.
-- Nicht einfach „ein Keks steht vor einem Körper“ erzeugen.
-- Jede neue Szene muss sich sichtbar vom vorherigen Bild unterscheiden.
-- Die Bilder sollen wie eine zusammenhängende hochwertige Erklärserie wirken.
+- Keine anthropomorphen Lebensmittel, Organe, Blutzellen oder Moleküle.
+- Die Biologie ist der Hauptdarsteller.
+- Jede Szene braucht eine neue sichtbare Aussage.
+- Keine eingebrannten Überschriften, Untertitel, Labels oder zufälligen Texte.
+- Wenn kein Text ausdrücklich verlangt wird: **absolut textfrei** erzeugen.
+- Keine englischen Texte, kein KI-Gibberish.
+- Die 28 Bilder müssen wie eine einzige hochwertige Serie wirken.
 
 ## VISUELLE DNA
 
-Für ALLE Bilder gilt:
-
 ```text
-high-quality semi-realistic 3D educational explainer style, faceless YouTube explainer visual language, premium animated educational series look, approximately 65–70 percent stylized animation and 30–35 percent believable realism, scientifically recognizable but simplified human anatomy and biology, warm cinematic lighting, clean composition, strong depth, believable materials, soft rounded forms, modern educational visual storytelling, family-friendly but not childish, clear process visualization, transparent body cutaways, organ cross-sections, macro-to-micro biology views, no gore, no disturbing medical realism, not photorealistic, not flat vector, not anime
+high-quality semi-realistic 3D educational explainer style, faceless YouTube explainer visual language, premium animated educational series look, approximately 65–70 percent stylized animation and 30–35 percent believable realism, scientifically recognizable but simplified human anatomy and biology, warm cinematic lighting, clean composition, strong depth, believable materials, soft rounded forms, modern educational visual storytelling, family-friendly but not childish, clear process visualization, transparent body cutaways, organ and tissue cross-sections, macro-to-micro biology views, no gore, no disturbing medical realism, not photorealistic, not flat vector, not anime
 ```
 
 Vermeide:
 
 ```text
-mascot-heavy composition, random cute food character, presenter standing next to anatomy, plastic toy look, photorealistic surgery, gore, blood splatter, wet fleshy medical realism, horror anatomy, random laboratory props, cyberpunk, excessive neon, flat infographic dashboard, clutter, random English text, gibberish labels, unnecessary UI panels, deformed anatomy, duplicated organs, extra limbs, malformed hands, watermarks, logos
+mascot-heavy composition, presenter character, cartoon doctor, anime, comic panels, plastic toy look, photorealistic surgery, gore, blood splatter, wet fleshy medical realism, horror anatomy, cyberpunk, excessive neon, dashboard UI, clutter, random English text, gibberish labels, watermarks, logos, deformed anatomy, duplicated organs, random arrows with text
 ```
+
+## FESTER SYMBOL-LOCK
+
+Dieser Lock gilt in **allen 28 Bildern**:
+
+- **Sauerstoff O₂:** immer dieselben kleinen, gepaarten, blass-cyanfarbenen Kugeln mit sehr dezenter kühler Lichtkante. Farbe und Form nie ändern.
+- **Kohlendioxid CO₂:** immer dieselbe lineare Drei-Kugel-Form, dunklere mittlere Kugel + zwei gedeckte silbergraue Außenkugeln. Deutlich anders als O₂.
+- **Rote Blutkörperchen:** immer tiefe warmrote bikonkave Scheiben.
+- **Hämoglobin:** immer dieselbe burgunderrote, vereinfachte vierlappige Proteinstruktur und nur innerhalb roter Blutkörperchen, wenn sichtbar.
+- Keine chemisch exakten Strukturformeln erfinden.
+- Keine Gesichter auf Zellen, Organellen oder Molekülen.
 
 ## TECHNIK
 
 - 16:9 landscape
 - mindestens 1920×1080
 - jedes Bild einzeln
-- Finalnamen exakt `Bild_01.png` bis `Bild_26.png`
-- keine Sammelgenerierung mehrerer finaler Bilder in einer Datei
-- integrierte Vergleichskompositionen sind erlaubt, wenn sie ausdrücklich verlangt werden
-- genug Rand für dezente Push-ins/Pans in Remotion
-- keine eingebrannten Untertitel
+- Finalnamen exakt `Bild_01.png` bis `Bild_28.png`
+- keine Sammeldateien
+- genug Rand für leichte Push-ins/Pans in Remotion
+- keine eingebrannten Untertitel oder Überschriften
 
-## LABEL-REGEL
-
-Nur Labels verwenden, die bei der jeweiligen Szene ausdrücklich genannt sind.
-
-- maximal 3 kurze deutsche Labels
-- keine englischen Labels
-- keine zusätzlichen Begriffe
-- Pointer/Zuordnung muss eindeutig sein
-- falsch geschriebenes Label = Bild FEHLERHAFT
-- wenn derselbe Textfehler wiederholt auftritt: saubere textfreie Version mit Platz für späteres Remotion-Overlay erzeugen und `LABEL_OVERLAY_NÖTIG` notieren
-
-## PRODUKTIONSABLAUF – NICHT ÜBERSPRINGEN
+## PRODUKTIONSABLAUF
 
 ### PHASE A – NUR BILD_01
 
-1. Lies zuerst die gesamte Datei.
-2. Erzeuge danach **ausschließlich `Bild_01`**.
-3. Noch kein `Bild_02`.
-4. Prüfe `Bild_01` vollständig:
-   - hochwertiger faceless Explainer-Look?
-   - biologische Reise klar?
-   - kein Mascot-/Presenter-Fokus?
-   - plausible Anatomie?
-   - sauberer Fokus?
-   - genug Rand für Bewegung?
-5. Bei FAIL: nur `Bild_01` neu erzeugen.
-6. Bei PASS: als `Bild_01.png` speichern.
-7. **STOPPE danach und warte auf die Bestätigung des Nutzers.**
+1. Lies die komplette Datei.
+2. Erzeuge **ausschließlich Bild_01**.
+3. Prüfe Stil, Anatomie, Textfreiheit, Bildfokus und genug Bewegungsrand.
+4. Bei FAIL nur Bild_01 neu erzeugen.
+5. Bei PASS als `Bild_01.png` speichern.
+6. Danach **STOPPEN und auf Nutzerbestätigung warten**.
 
-`Bild_01` ist danach der **Master Style Frame** der Episode.
+`Bild_01` ist danach Master Style Frame.
 
-### PHASE B – NACH BESTÄTIGUNG
+### PHASE B – NACH FREIGABE
 
-Verwende `Bild_01.png` bei jeder folgenden Generation als Style-/Continuity-Referenz, soweit Flow dies technisch unterstützt.
+Verwende `Bild_01.png` bei jeder weiteren Szene als Style-/Continuity-Referenz, soweit technisch möglich.
 
-Von `Bild_01` übernehmen:
-- Rendergrad
-- Animation/Realismus-Verhältnis
-- Licht
-- Materialien
-- Farbtemperatur
-- Kontrast
-- Tiefenwirkung
-- allgemeine Erklärbild-Sprache
+Blöcke:
+- Bild_02–06
+- Bild_07–11
+- Bild_12–16
+- Bild_17–21
+- Bild_22–26
+- Bild_27–28
 
-Nicht blind übernehmen:
-- konkrete Anatomie
-- Motiv
-- Pose
-- Bildaufbau
-- Organe
-- Labels
+Innerhalb jedes Blocks jedes Bild **einzeln** erzeugen, prüfen und korrekt benennen.
 
-Danach in 5er-Blöcken:
+### PHASE C – FEHLERLISTE
 
-```text
-Block 1: Bild_02–Bild_06
-Block 2: Bild_07–Bild_11
-Block 3: Bild_12–Bild_16
-Block 4: Bild_17–Bild_21
-Block 5: Bild_22–Bild_26
-```
+Technisch fehlgeschlagene oder qualitativ schlechte Bilder:
+- Nummer exakt notieren
+- nicht neu nummerieren
+- im regulären Durchlauf weiterarbeiten
+- am Ende Recovery-Pass
 
-Innerhalb jedes Blocks jedes Bild **einzeln** erzeugen und sofort prüfen.
+### PHASE D – RECOVERY
 
-### FEHLERLISTE + RECOVERY
-
-Bei technischem oder qualitativem FAIL:
-
-- exakte Bildnummer notieren
-- Status `FEHLERHAFT`, `FEHLT` oder `LABEL_OVERLAY_NÖTIG`
-- Nummer nicht neu vergeben
-- regulären Durchlauf fortsetzen
-- nach allen normalen Blöcken nur die Fehlerbilder erneut erzeugen
-- weiter `Bild_01` als Style-Referenz nutzen
-- Recovery wiederholen, bis alle 26 Bilder vollständig sind
+Nur fehlende oder fehlerhafte Bildnummern erneut erzeugen, bis `Bild_01` bis `Bild_28` vollständig PASS sind.
 
 ---
 
-# SZENE 01 – BILD_01
+# SZENE 01 – Bild_01
 
-**Voice-over:** Du isst einen süßen Snack, zum Beispiel einen Keks oder ein Stück Schokolade.
+**Voice-over:** Mit jedem Atemzug holst du Sauerstoff in deine Lunge.
 
-**Labels:** keine
-
-**Prompt:**
 ```text
-Create a cinematic 16:9 master style frame for a premium faceless educational explainer. Show a realistic but stylized cookie or small piece of chocolate in the foreground near an anonymous human, while a clean semi-transparent torso reveals the small intestine and a subtle magnified blood vessel. The biological pathway should already be hinted at, but the snack is not a character and does not have a face. The human is context only. Make the biology the visual hero. Warm cinematic lighting, strong depth, clean premium 3D materials, scientifically recognizable simplified anatomy, no text, no labels, no mascot, no presenter pose, no gore. This image defines the exact render quality, color temperature, lighting, material language and overall visual world for all later images.
+Create the master 16:9 hero frame for a faceless educational video about the journey of oxygen through the human body. Show an anonymous person inhaling in a warm, clean environment. Use a tasteful semi-transparent upper-body cutaway so the lungs, heart, major blood route and a hint of muscle tissue are visible as one connected journey. The biological transport path is the hero, not the person. Establish the exact lighting, materials, anatomy simplification, depth, rendering quality and warm cinematic color language for all later images. Include a few consistent pale-cyan paired O2 symbols entering toward the lungs, but no arrows with text. Absolutely no title, no labels, no mascot, no presenter, no English text.
 ```
 
-# SZENE 02 – BILD_02
+# SZENE 02 – Bild_02
 
-**Voice-over:** Kurz danach beginnt sich zu verändern, was in deinem Blut passiert.
-
-**Labels:** keine
+**Voice-over:** Aber wie schafft es dieses Gas von dort bis in eine Muskelzelle im Bein?
 
 ```text
-Using Bild_01 as the style reference, create a macro 16:9 view inside a healthy blood vessel before the main post-meal rise. Show red blood cells and only a modest baseline amount of simplified glucose particles moving in plasma. The image should feel calm and normal, not dangerous or medical-drama-like. No numbers, no charts, no labels, no warning colors, no mascot. This is a teaser that something in the blood is about to change.
+Using Bild_01 as style reference, create a clear macro-to-micro preview of the complete journey: lungs on the left, a blood vessel with consistent red blood cells in the middle, and a skeletal muscle cell on the right. A small number of the locked pale-cyan O2 symbols visually connect the route without text or UI. Do not explain every step yet. No labels, no mascot, no dashboard.
 ```
 
-# SZENE 03 – BILD_03
+# SZENE 03 – Bild_03
 
-**Voice-over:** Aber wie kommt der Zucker überhaupt vom Essen bis zu deinen Zellen?
-
-**Labels:** keine
+**Voice-over:** Beim Einatmen strömt Luft durch Nase oder Mund in die Luftröhre.
 
 ```text
-Using Bild_01 as the style reference, create one elegant macro-to-micro educational composition that visually previews the route from a sweet snack to the digestive tract, then to a blood vessel, then to a healthy body cell. The route should read naturally from left to right and feel like one cinematic 3D scene, not a dashboard. Do not imply direct absorption from the stomach. No labels, no mascot, no presenter, no UI cards.
+Create a clean anatomical side cutaway of an anonymous head and upper chest. Show inhaled air entering through nose or mouth and moving into the trachea. Keep anatomy simplified but recognizable and consistent with Bild_01. No text, no labels, no presenter.
 ```
 
-# SZENE 04 – BILD_04
+# SZENE 04 – Bild_04
 
-**Voice-over:** Im Mund wird der Snack zuerst zerkleinert und mit Speichel vermischt.
-
-**Labels:** keine
+**Voice-over:** Von dort verteilt sie sich über immer feinere Bronchien tief in die Lunge.
 
 ```text
-Using Bild_01 as the style reference, create a 16:9 anatomical mouth cutaway during chewing. Show a small sweet food piece being mechanically broken by the teeth and mixed with a subtle, clean layer of saliva. The visual must explain breakdown and mixing, not merely show someone eating. Simplified recognizable oral anatomy, no gross saliva, no labels, no mascot, no text.
+Create a premium 3D cutaway of both lungs showing the trachea branching into bronchi and progressively finer airway branches. Make the branching structure the visual focus. Do not confuse airways with blood vessels. Text-free, no labels, no mascot.
 ```
 
-# SZENE 05 – BILD_05
+# SZENE 05 – Bild_05
 
-**Voice-over:** Beim Schlucken wandert der Nahrungsbrei durch die Speiseröhre in den Magen.
-
-**Labels:** `Speiseröhre`
+**Voice-over:** Am Ende dieser Atemwege sitzen Millionen winziger Lungenbläschen, die Alveolen.
 
 ```text
-Using Bild_01 as the style reference, create a 16:9 side cutaway of the throat and upper torso showing swallowed food moving through the esophagus toward the stomach. The path must be anatomically clear and directional. Add exactly one concise German label with a clean pointer: “Speiseröhre”. No other text, no mascot, no implication that gravity alone drives transport.
+Create a macro educational view zooming from a tiny airway ending into many grape-like alveoli. Show a large field of small air sacs with clean soft biological materials, scientifically recognizable but not wet or graphic. Text-free, no labels.
 ```
 
-# SZENE 06 – BILD_06
+# SZENE 06 – Bild_06
 
-**Voice-over:** Der Magen ist dabei vor allem eine Zwischenstation und nicht der wichtigste Aufnahmeort für Zucker.
-
-**Labels:** `Magen`
+**Voice-over:** Ihre Wände sind extrem dünn und direkt von kleinen Blutgefäßen umgeben.
 
 ```text
-Using Bild_01 as the style reference, create a clean 16:9 stomach cutaway showing food material inside the stomach and the outlet continuing toward the small intestine. The stomach should read visually as a processing/transit station, not as the main place where glucose enters the bloodstream. Add only the German label “Magen”. No extra labels, no mascot, no wet or disturbing medical realism.
+Create an extreme close cross-section of one alveolus with a very thin alveolar wall and a capillary wrapped immediately beside it. The short physical distance between alveolar air and blood must be visually obvious. Show red blood cells in the capillary. No labels or text.
 ```
 
-# SZENE 07 – BILD_07
+# SZENE 07 – Bild_07
 
-**Voice-over:** Entscheidend wird es im Dünndarm.
-
-**Labels:** `Dünndarm`
+**Voice-over:** Genau hier wechselt der Sauerstoff die Seite.
 
 ```text
-Using Bild_01 as the style reference, create a 16:9 transparent torso cutaway with the small intestine clearly emphasized while the stomach and other organs remain visually secondary. Make it instantly obvious that the explanation is now moving to the small intestine. Add only the German label “Dünndarm”. No mascot, no text blocks, no clutter.
+Create the same alveolar-capillary world one step before gas transfer. Place several locked pale-cyan paired O2 symbols clearly on the alveolar air side close to the thin barrier. Keep the blood side visible but do not yet show most O2 across it. No text.
 ```
 
-# SZENE 08 – BILD_08
+# SZENE 08 – Bild_08
 
-**Voice-over:** Dort werden viele Kohlenhydrate in kleinere Zuckerbausteine zerlegt.
-
-**Labels:** `Kohlenhydrate`
+**Voice-over:** Er diffundiert aus der Luft im Lungenbläschen durch die dünne Barriere in das Blut.
 
 ```text
-Using Bild_01 as the style reference, create a 16:9 educational close view inside the small intestine showing larger carbohydrate structures being broken into visibly smaller sugar building blocks. Use a clean simplified biochemical visual language rather than a textbook formula or factory metaphor. Add only the German label “Kohlenhydrate” pointing to the larger starting structures. No mascot, no machines, no neon sci-fi.
+Create the next step: the same locked O2 symbols move across the thin alveolar-capillary barrier from alveolar air into the blood. Direction lung to blood must be unmistakable through composition and particle placement, without text arrows. Do not depict a pump, gate or machine. No labels.
 ```
 
-# SZENE 09 – BILD_09
+# SZENE 09 – Bild_09
 
-**Voice-over:** Einer dieser Bausteine ist Glukose.
-
-**Labels:** `Glukose`
+**Voice-over:** Ein kleiner Teil bleibt im Blutplasma gelöst.
 
 ```text
-Using Bild_01 as the style reference, create a 16:9 macro educational view of several small absorbable sugar building blocks after carbohydrate digestion, with glucose clearly highlighted as one of them. Do not imply that every carbohydrate becomes only glucose. Add exactly one German label: “Glukose”. No chemical formula required, no extra text, no mascot.
+Create a bloodstream macro immediately after lung gas exchange. Show only a small number of locked O2 symbols freely dissolved in the plasma between red blood cells. The image must not imply plasma is the main oxygen carrier. No text or labels.
 ```
 
-# SZENE 10 – BILD_10
+# SZENE 10 – Bild_10
 
-**Voice-over:** Sie erreicht die Oberfläche der Darmwand mit ihren vielen Falten und Zotten.
-
-**Labels:** `Darmzotten`
+**Voice-over:** Der größte Teil wird aber von roten Blutkörperchen aufgenommen.
 
 ```text
-Using Bild_01 as the style reference, create a 16:9 macro view of the inner surface of the small intestine showing folds and many intestinal villi in a clean premium 3D educational style. The image should communicate a large absorptive surface without looking fleshy or grotesque. Add only the German label “Darmzotten”. No mascot, no random cells floating outside the tissue.
+Create a close bloodstream view where the deep warm-red biconcave red blood cells become the main focus and many locked O2 symbols are visually associated with them. Keep a few O2 symbols in plasma but clearly less important. No labels, no text.
 ```
 
-# SZENE 11 – BILD_11
+# SZENE 11 – Bild_11
 
-**Voice-over:** Von dort kann Glukose durch die Darmzellen in kleine Blutgefäße gelangen.
-
-**Labels:** `Darmwand`, `Blutgefäß`
+**Voice-over:** In diesen roten Blutkörperchen sitzt Hämoglobin.
 
 ```text
-Using Bild_01 as the style reference, create a 16:9 cross-section through an intestinal villus and intestinal wall. Show simplified glucose particles moving from the intestinal side across the epithelial cell layer into a small capillary. The direction intestine → through the wall → blood must be unmistakable. Add exactly two German labels with precise pointers: “Darmwand” and “Blutgefäß”. No mascot, no hole-through-wall shortcut, no gore.
+Create a tasteful cutaway of one red blood cell. Inside it show the locked burgundy simplified four-lobed hemoglobin structures distributed throughout the cell. Hemoglobin must remain inside the red blood cell. No chemical formula, no labels, no UI.
 ```
 
-# SZENE 12 – BILD_12
+# SZENE 12 – Bild_12
 
-**Voice-over:** Jetzt befindet sich mehr Glukose im Blut als kurz zuvor. Genau das meint man vereinfacht, wenn man sagt: Der Blutzucker steigt.
-
-**Labels:** keine
+**Voice-over:** Dieses Protein kann Sauerstoff binden und macht die roten Blutkörperchen zu den wichtigsten Sauerstofftransportern des Blutes.
 
 ```text
-Using Bild_01 as the style reference, create one integrated 16:9 before/after comparison of the same type of blood vessel. On the left show the earlier baseline amount of glucose particles; on the right show visibly more glucose particles after intestinal absorption. Keep red blood cells consistent. No values, no diagnosis curve, no danger colors, no labels, no mascot. The sole message is: more glucose is now present in the blood.
+Create a macro step inside the red blood cell showing locked pale-cyan O2 pairs binding to the same burgundy hemoglobin structures from Bild_11. Show binding visually without magnets, clamps, cargo boxes or cartoon lock-and-key toys. Text-free.
 ```
 
-# SZENE 13 – BILD_13
+# SZENE 13 – Bild_13
 
-**Voice-over:** Darauf reagieren Betazellen in der Bauchspeicheldrüse.
-
-**Labels:** `Bauchspeicheldrüse`, `Betazellen`
+**Voice-over:** Das nun sauerstoffreiche Blut fließt aus der Lunge zurück zur linken Seite des Herzens.
 
 ```text
-Using Bild_01 as the style reference, create a 16:9 transparent torso cutaway with the pancreas correctly located and clearly highlighted. Include a tasteful magnified inset of a pancreatic islet area with beta cells as the responsive cell group. Add exactly two German labels: “Bauchspeicheldrüse” and “Betazellen”. No anthropomorphic organ, no face, no cartoon scientist, no extra text.
+Create a semi-transparent chest cutaway showing oxygen-rich blood leaving the lungs through the pulmonary veins and arriving at the left side of the heart. Keep the route anatomically plausible and easy to read. Use the same O2 and red-blood-cell visual identities. No text.
 ```
 
-# SZENE 14 – BILD_14
+# SZENE 14 – Bild_14
 
-**Voice-over:** Sie geben das Hormon Insulin in den Blutkreislauf ab.
-
-**Labels:** `Insulin`
+**Voice-over:** Mit jedem Herzschlag wird es von dort in den Körper gepumpt.
 
 ```text
-Using Bild_01 as the style reference, create a 16:9 macro educational view of pancreatic beta cells releasing insulin into a nearby small blood vessel. Make the release direction from beta cells → blood visually clear. Add exactly one German label: “Insulin” pointing to the released signal particles. No glucose-eating imagery, no mascot, no extra text.
+Create a clean anatomical heart cutaway focused on the left side pumping oxygen-rich blood into the aorta. Suggest one strong directional flow through the composition, not a cartoon heartbeat effect. No text, no labels, no mascot.
 ```
 
-# SZENE 15 – BILD_15
+# SZENE 15 – Bild_15
 
-**Voice-over:** Insulin verteilt sich mit dem Blut im Körper.
-
-**Labels:** `Insulin`
+**Voice-over:** Große Arterien verzweigen sich dabei in immer kleinere Gefäße.
 
 ```text
-Using Bild_01 as the style reference, create a 16:9 bloodstream macro showing insulin signal particles travelling with the circulation among red blood cells. Insulin should be visually distinct from glucose but not magical or mechanical. Add exactly one German label: “Insulin”. No transport-vehicle metaphor, no mascot, no UI arrows with text.
+Create a 16:9 scale-transition image showing a large artery branching into progressively smaller arteries and arterioles toward skeletal muscle tissue. The branching hierarchy should be immediately understandable. No labels or UI.
 ```
 
-# SZENE 16 – BILD_16
+# SZENE 16 – Bild_16
 
-**Voice-over:** Es ist kein Zuckerfresser, sondern ein Signalstoff.
-
-**Labels:** `Insulin`
+**Voice-over:** Schließlich erreicht das Blut winzige Kapillaren direkt im Gewebe.
 
 ```text
-Using Bild_01 as the style reference, create a 16:9 macro view of a healthy target-cell membrane beside a capillary. Show insulin interacting with a receptor at the cell surface as a signal, while glucose particles are still outside the cell. Add only the German label “Insulin”. No lock-and-key toy aesthetic, no insulin grabbing or carrying glucose, no mascot.
+Create a macro view of skeletal muscle tissue with a fine capillary network running directly between muscle cells. Show consistent red blood cells moving through the tiny vessels. Emphasize how close the capillaries are to the tissue. Text-free.
 ```
 
-# SZENE 17 – BILD_17
+# SZENE 17 – Bild_17
 
-**Voice-over:** An vielen Zellen hilft dieses Signal dabei, die Aufnahme von Glukose zu erhöhen.
-
-**Labels:** `Glukose`
+**Voice-over:** Dort ist die Situation anders als in der Lunge.
 
 ```text
-Using Bild_01 as the style reference, create the next 16:9 step at the cell membrane: after insulin signaling, simplified glucose transporters are available at the membrane and glucose particles move from the blood side into the target cell. Add only the German label “Glukose”. Do not imply every cell in the human body requires insulin for glucose uptake. No mascot, no sci-fi portal.
+Create a comparison-oriented tissue scene: a capillary beside active tissue cells that are using oxygen. Keep the image calm and educational. Do not use warning colors, oxygen meters, diagnosis values or dashboard graphs. No text.
 ```
 
-# SZENE 18 – BILD_18
+# SZENE 18 – Bild_18
 
-**Voice-over:** Besonders gut lässt sich das an Muskelzellen zeigen.
-
-**Labels:** `Muskel`
+**Voice-over:** Die Zellen im Gewebe verbrauchen ständig Sauerstoff, deshalb kann Sauerstoff aus dem Blut in Richtung der Zellen diffundieren.
 
 ```text
-Using Bild_01 as the style reference, create a 16:9 transparent-body or tissue-context view that highlights healthy skeletal muscle as a concrete insulin-responsive target tissue. Show nearby capillaries feeding the muscle tissue. Add only the German label “Muskel”. No bodybuilder pose, no fitness advertisement, no mascot.
+Create the next macro step showing the locked pale-cyan O2 pairs moving from the capillary blood side toward nearby tissue cells. Direction blood to tissue must be unmistakable. Do not depict pumps or mechanical channels. No labels.
 ```
 
-# SZENE 19 – BILD_19
+# SZENE 19 – Bild_19
 
-**Voice-over:** Dort kann Glukose in die Zelle gelangen und für die Energiegewinnung genutzt werden.
-
-**Labels:** keine
+**Voice-over:** Hämoglobin gibt einen Teil seines gebundenen Sauerstoffs ab.
 
 ```text
-Using Bild_01 as the style reference, create a 16:9 macro view inside healthy skeletal muscle tissue. Show glucose entering muscle cells and then participating in a simplified cellular energy-use scene with a subtle warm energy cue. Do not turn energy into lightning bolts or magic. No labels, no mascot, no claim that glucose becomes energy in one single step.
+Create a red-blood-cell cutaway matching Bild_11 and Bild_12. Show the same burgundy hemoglobin structures releasing some of the same pale-cyan O2 pairs. Hemoglobin stays inside the red blood cell. No text.
 ```
 
-# SZENE 20 – BILD_20
+# SZENE 20 – Bild_20
 
-**Voice-over:** Nicht jede Glukose muss sofort verbraucht werden.
-
-**Labels:** keine
+**Voice-over:** Der Sauerstoff verlässt das rote Blutkörperchen, passiert die Kapillarwand und gelangt in die umgebenden Zellen.
 
 ```text
-Using Bild_01 as the style reference, create a 16:9 integrated two-path educational composition showing that absorbed glucose does not all have the same immediate fate: one visual path represents current cellular use, while another path remains available for storage. Make it one coherent cinematic scene rather than a dashboard. No labels, no mascot, no percentages or fixed ratios.
+Create one coherent macro scene with three readable spatial layers: red blood cell inside capillary, plasma/capillary wall, and nearby tissue cell. Show O2 leaving the red blood cell, crossing the capillary wall and moving into tissue. No text arrows, no labels.
 ```
 
-# SZENE 21 – BILD_21
+# SZENE 21 – Bild_21
 
-**Voice-over:** Ein Teil kann in Leber und Muskeln als Glykogen gespeichert werden.
-
-**Labels:** `Leber`, `Muskel`, `Glykogen`
+**Voice-over:** In der Zelle erreicht Sauerstoff schließlich die Mitochondrien.
 
 ```text
-Using Bild_01 as the style reference, create a 16:9 integrated educational composition showing liver tissue and skeletal muscle tissue storing some glucose as compact branched glycogen structures. Add exactly three German labels: “Leber”, “Muskel”, “Glykogen”. Do not imply liver glycogen and muscle glycogen have identical physiological roles; show only the shared concept of storage. No dashboard cards, no mascot.
+Create a clean interior view of a healthy body cell. Show several recognizable mitochondria and locked O2 symbols entering the cell interior toward them. Avoid sci-fi portals or exaggerated organelles. Text-free.
 ```
 
-# SZENE 22 – BILD_22
+# SZENE 22 – Bild_22
 
-**Voice-over:** So bleibt nicht die gesamte zusätzlich aufgenommene Glukose dauerhaft im Blut.
-
-**Labels:** keine
+**Voice-over:** Dort wird er bei der aeroben Energiegewinnung gebraucht, damit die Zelle effizient ATP herstellen kann.
 
 ```text
-Using Bild_01 as the style reference, create a 16:9 blood-vessel macro after tissues have begun using and storing glucose. Compared with the earlier post-absorption image, visibly fewer free glucose particles remain in circulation, while red blood cells and vessel style remain consistent. No labels, no zero-glucose state, no claim that insulin removes all glucose, no mascot.
+Create a premium 3D close-up of a mitochondrion inside the same cell world. Show O2 participating in a simplified aerobic energy-production context with subtle warm energy cues. Do not show O2 turning directly into ATP. No chemical equations, no labels.
 ```
 
-# SZENE 23 – BILD_23
+# SZENE 23 – Bild_23
 
-**Voice-over:** Mit der Zeit bewegt sich der Blutzucker deshalb wieder in Richtung seines vorherigen Bereichs.
-
-**Labels:** keine
+**Voice-over:** ATP ist eine direkt nutzbare Energieform für viele Zellprozesse.
 
 ```text
-Using Bild_01 as the style reference, create a 16:9 time-progression comparison in one continuous blood-vessel composition: a higher amount of glucose after eating transitions toward an amount closer to the earlier baseline. Use no clock, no numbers, no medical thresholds and no guaranteed curve shape. No labels, no warning colors, no mascot.
+Create the next mitochondrion-to-cell step. Show a subtle flow of newly available cellular energy spreading from the mitochondrion toward nearby cell processes. Keep the effect grounded and educational, not magical lightning. No text or symbols spelling ATP inside the Flow image.
 ```
 
-# SZENE 24 – BILD_24
+# SZENE 24 – Bild_24
 
-**Voice-over:** Das passiert nicht bei jeder Mahlzeit gleich schnell oder gleich stark.
-
-**Labels:** keine
+**Voice-over:** Muskelzellen brauchen davon besonders viel, wenn sie arbeiten.
 
 ```text
-Using Bild_01 as the style reference, create a 16:9 variability scene showing two different realistic meal compositions and two subtly different schematic blood-glucose response shapes. The shapes may differ in height and timing but must contain no numbers or diagnostic thresholds. Do not label one meal as good or bad. No mascot, no medical warning symbols.
+Create a coherent skeletal muscle cell scene during contraction/activity. Show mitochondria supporting active muscle fibers with subtle warm energy cues. No bodybuilder pose, no sports advertisement, no lightning, no labels.
 ```
 
-# SZENE 25 – BILD_25
+# SZENE 25 – Bild_25
 
-**Voice-over:** Zusammensetzung der Mahlzeit, Menge und individuelle Faktoren spielen dabei eine Rolle.
-
-**Labels:** keine
+**Voice-over:** Bei dieser Energiegewinnung entsteht unter anderem Kohlendioxid.
 
 ```text
-Using Bild_01 as the style reference, create a second 16:9 variability scene focused on individual factors and amount: show several anonymous stylized people with different portion sizes or meal contexts, accompanied by subtle non-numeric response shapes that differ slightly. The purpose is only to show that amount, meal composition and individual factors can influence the response. No healthy/unhealthy labels, no diabetes judgment, no mascot.
+Create a cellular metabolism aftermath scene where the locked CO2 symbol first appears near the active cell/mitochondrial environment. CO2 must use the consistent linear three-sphere dark-center/silver-outer identity and be clearly different from pale-cyan O2. No text.
 ```
 
-# SZENE 26 – BILD_26
+# SZENE 26 – Bild_26
 
-**Voice-over:** Die ganze Kette lautet also: Snack, Verdauung, Glukose, Blut, Insulin, Zelle und Speicherung. Entscheidend ist nicht eine einzelne Station, sondern das Zusammenspiel vom Dünndarm bis zu den Körperzellen.
-
-**Labels:** keine
+**Voice-over:** Dieses wandert in die entgegengesetzte Richtung zurück ins Blut.
 
 ```text
-Using Bild_01 as the style reference, create a cinematic final 16:9 hero explainer image that unifies the complete mechanism in one readable macro-to-micro journey: sweet snack → small intestine → glucose entering blood → pancreas/beta-cell insulin response → glucose entering a target cell → some glucose stored in liver and muscle. The composition should flow naturally from left to right with depth and scale transitions, not UI cards. The biological process is the hero. No mascot, no presenter, no text, no random labels, no new process that was not explained.
+Create the next tissue step showing consistent CO2 symbols moving from the tissue cell through the surrounding space toward and into a nearby capillary. Direction cell to blood must be unmistakable. No claim about the exact chemical transport form in blood. Text-free.
+```
+
+# SZENE 27 – Bild_27
+
+**Voice-over:** Das Blut transportiert Kohlendioxid wieder zur Lunge. Dort diffundiert es aus den Kapillaren zurück in die Lungenbläschen und wird ausgeatmet.
+
+```text
+Create a return-to-lung composition: blood arrives at pulmonary capillaries around alveoli, consistent CO2 symbols move from blood across the thin barrier into the alveolar air space, and an exhalation path leads outward. Keep this one coherent biological scene, no dashboard, no text.
+```
+
+# SZENE 28 – Bild_28
+
+**Voice-over:** Der Kreislauf ist damit geschlossen: Einatmen, Lungenbläschen, Blut, Hämoglobin, Herz, Kapillaren, Zelle und wieder zurück zur Lunge. Dein Körper muss Sauerstoff also nicht einfach nur einatmen. Er muss ihn an der richtigen Stelle ins Blut bringen, transportieren, im Gewebe wieder freigeben und bis in die Zellen weiterreichen.
+
+```text
+Create a cinematic final 16:9 hero explainer image that unifies the complete journey without UI cards: inhalation → lungs/alveoli → O2 crossing into blood → red blood cell/hemoglobin → left heart → systemic vessels → tissue capillary → body cell/mitochondrion → CO2 return toward the lungs. Use depth and scale transitions so the journey reads naturally across the frame. Keep all locked visual identities consistent. No title, no labels, no text, no mascot, no new process not explained in the video.
 ```
 
 # ABSCHLUSSPRÜFUNG
 
-Vor der ZIP-Ausgabe:
+Vor ZIP-Ausgabe:
 
-- genau 26 akzeptierte Bilder
-- lückenlos `Bild_01.png` bis `Bild_26.png`
+- genau 28 akzeptierte Bilder
+- lückenlos `Bild_01.png` bis `Bild_28.png`
 - jede Nummer genau einmal
 - 16:9
 - keine Temp-/Fehlervarianten
-- Bild_01-Stil über die Episode erkennbar
-- keine unbeabsichtigte Mascot-/Presenter-Szene
+- Bild_01-Stil erkennbar über die Episode
+- O₂, CO₂, rote Blutkörperchen und Hämoglobin visuell konsistent
+- keine eingebrannten Überschriften oder Untertitel
+- keine englischen oder zufälligen Texte
+- keine Mascot-/Presenter-Szene
 - jedes Bild erklärt den vorgesehenen Sprachabschnitt
 - Nachbarbilder unterscheiden sich sichtbar und sinnvoll
-- alle deutschen Labels korrekt
 - keine groben Anatomie- oder KI-Fehler
 
-Erst danach die finale ZIP erstellen.
+Erst danach finale ZIP erstellen.
