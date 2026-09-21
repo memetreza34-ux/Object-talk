@@ -14,14 +14,20 @@ Diese Datei ist der Bootstrap für ChatGPT, Antigravity, Codex und andere Reposi
 8. relevante `bildwelt/*.md`
 9. Dateien des aktuellen YouTube-Projekts
 
-Für **neu angelegte V2-Projekte** zusätzlich zwingend lesen:
+Für V2-Projekte zusätzlich zwingend lesen:
 
 - `engine/PLANNING-V2.md`
 - `engine/VISUAL-EXPLANATION-SYSTEM.md`
 - `engine/QUALITY-SCORECARD.md`
 - `engine/POSTMORTEM-STANDARD.md`
 
-Video 001 und andere bereits bestehende Projekte dürfen nicht allein wegen fehlender V2-Dateien rückwirkend blockiert oder umgebaut werden.
+Aktiver Testpilot:
+
+```text
+youtube-videos/000-pilot-zucker-im-blut/
+```
+
+Wenn ein Projekt `05_info/test-mode.json` mit `test_mode: true` besitzt, gilt die dort dokumentierte kurze Testlaufzeit. Nur die Laufzeitregel darf abweichen; alle anderen wissenschaftlichen, visuellen und technischen Qualitätsregeln bleiben aktiv.
 
 ## Phasen dürfen nicht vermischt werden
 
@@ -43,13 +49,15 @@ Darf nicht:
 - Audioänderungen erfinden
 - finale Flow-Bilder vortäuschen
 
-Für neue V2-Projekte gilt: Erst Mechanismus und Satz-Visual-Plan klären, dann finale Bildprompts schreiben. Kein Bild darf nur dekorativ sein.
+Für V2-Projekte gilt: Erst Mechanismus und Satz-Visual-Plan klären, dann finale Bildprompts schreiben. Kein Bild darf nur dekorativ sein.
 
 ### Phase 2 – Nutzer + Medienerzeugung
 
 Google Flow erzeugt ausschließlich die von Phase 1 vorgegebenen Bilder. Jedes Bild einzeln. Keine neue Szenenlogik.
 
-Jedes finale V2-Bild wird zusätzlich in `02_bildprompts/image-review.json` einzeln bewertet. Klare Fachfehler, falsche Labels oder ein Score unter 8/10 führen zu Regeneration statt nachträglichem Kaschieren.
+`Bild_01` wird zuerst allein erzeugt und als Master Style Frame geprüft. Erst danach folgen 5er-Blöcke. Fehlerhafte Generierungen kommen auf die Recovery-Liste.
+
+Jedes finale V2-Bild wird in `02_bildprompts/image-review.json` einzeln bewertet. Klare Fachfehler, falsche Labels oder ein Score unter 8/10 führen zu Regeneration statt nachträglichem Kaschieren.
 
 ### Phase 3 – Editor / Antigravity
 
@@ -69,6 +77,7 @@ Darf nicht:
 - fehlende wissenschaftliche Fakten erfinden
 - fehlende Bilder still ersetzen
 - einen fachlich fehlenden Mechanismus erst im Schnitt erfinden
+- Mascot-/Presenter-Elemente ergänzen, wenn sie in Phase 1 nicht vorgesehen sind
 
 Nach dem echten Finalrender werden `04_export/quality-scorecard.md` und `04_export/postmortem.md` ausgefüllt. Dauerhafte Lehren werden bevorzugt in bestehende Regeldateien integriert; keine neue Lock-Datei für jede Kleinigkeit.
 
@@ -86,10 +95,11 @@ Wissenschaftliche Sicherheit unter 8/10 ist bei der V2-Scorecard ein harter Bloc
 
 - `STYLE_REFERENCE.png` immer als style-only Anchor laden, sobald vorhanden
 - pro Szene genau ein finales Bild
-- Szene 01 / Bild_01 = Cover-/Hook-Szene
+- Szene 01 / Bild_01 = Cover-/Hook-Szene + Episode-Style-Anchor
 - keine Massenproduktion ohne Einzelprüfung
 - sichtbare deutsche Beschriftungen exakt prüfen
 - bei falscher KI-Schrift denselben freigegebenen Begriff später als Editor-Overlay ersetzen
+- echte Erklärbilder vor Mascot-/Presenter-Bildern
 
 ## Timing
 
@@ -103,16 +113,22 @@ Kein Renderer darf eigene Zeitpunkte aus Textlänge schätzen, solange echte Wor
 
 ## V2-Prüfung
 
-Nur für neue V2-Projekte:
-
 ```bash
 python tools/validate_planning_v2.py youtube-videos/MEIN-VIDEO
 ```
 
-Nach finaler Bildauswahl zusätzlich:
+Nach finaler Bildauswahl:
 
 ```bash
 python tools/validate_planning_v2.py youtube-videos/MEIN-VIDEO --phase2
 ```
 
-Der Validator ist absichtlich separat und verändert die bestehende Video-001-/Phase-3-Pipeline nicht.
+Der Validator ist separat und verändert die technische Phase-3-Pipeline nicht.
+
+Für dokumentierte Kurztests muss die finale QA den Test-Mindestwert ausdrücklich setzen, z. B. beim aktuellen Pilot:
+
+```bash
+python tools/qa_final.py VIDEO VOICEOVER --min-seconds 105
+```
+
+Ohne Override bleibt die Standard-Mindestdauer 300 Sekunden.
