@@ -1,0 +1,35 @@
+{
+  "status": "TEMPLATE",
+  "source_script": "01_script/script.txt",
+  "rules": {
+    "each_spoken_sentence_or_logical_block_has_visual_plan": true,
+    "image_ids_match_phase1_scenes": true,
+    "no_estimated_final_timestamps_in_phase1": true,
+    "allowed_functions": [
+      "observation",
+      "trigger",
+      "path",
+      "comparison",
+      "threshold",
+      "wirkung",
+      "result"
+    ]
+  },
+  "items": [
+    {
+      "id": "SV_001",
+      "voiceover_text": "[Exakter Satz oder logisch untrennbarer Satzblock]",
+      "function": "observation",
+      "learning_goal": "[Was der Zuschauer nach diesem Satz verstanden haben soll]",
+      "claim_ids": [],
+      "scale_level": "[Lebensmittel|Mensch|Organ|Gewebe|Blut|Zelle|Organell|Molekuel]",
+      "new_image_required": true,
+      "image_asset_id": "Bild_01",
+      "visual_type": "single-image",
+      "visible_change": "[Was im Bild konkret sichtbar anders oder wichtig ist]",
+      "scene_difference": "[Wie sich dieses Bild sichtbar vom vorherigen und naechsten Bild unterscheidet]",
+      "labels": [],
+      "misconception_to_avoid": "[Was der Zuschauer nicht falsch verstehen darf]"
+    }
+  ]
+}
