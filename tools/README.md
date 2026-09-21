@@ -36,7 +36,43 @@ python tools/create_video.py "Was passiert mit Zucker im Koerper"
 
 Das kopiert `youtube-videos/_TEMPLATE` in einen neuen Themenordner. Bestehende Projekte werden nicht überschrieben.
 
-## Phase 1 validieren
+Neue Projekte erhalten zusätzlich die V2-Planungsdateien für Mechanism Map, Satz-Visual-Plan, Label-Plan, Bildreview, Scorecard und Postmortem. Bestehende Projekte wie Video 001 bleiben kompatibel.
+
+## V2-Planung validieren
+
+Für neue Projekte vor der Medienproduktion:
+
+```bash
+python tools/validate_planning_v2.py youtube-videos/THEMA
+```
+
+Geprüft werden unter anderem:
+
+- vollständige `mechanism-map.md` ohne Platzhalter
+- vollständiger `sentence-visual-plan.json`
+- stabile `Bild_XX`-IDs
+- Übereinstimmung mit `phase1-scenes.json`
+- vollständiger Label-Plan
+- höchstens drei Labels pro Bild
+- keine offenen Template-/PENDING-Werte
+
+Nach der finalen Bildauswahl:
+
+```bash
+python tools/validate_planning_v2.py youtube-videos/THEMA --phase2
+```
+
+Zusätzlich geprüft:
+
+- jedes erwartete Bild besitzt ein Review
+- `decision` ist `ACCEPT`
+- Gesamtscore mindestens 8,0/10
+- wissenschaftliche Genauigkeit mindestens 8,0/10
+- AI-Artefakt-Check bestanden
+
+Der V2-Validator ist absichtlich separat und verändert weder Video 001 noch die bestehende Phase-3-Pipeline.
+
+## Phase 1 technisch validieren
 
 Nach finalem Script und Szenenplan:
 
@@ -168,7 +204,7 @@ Prüft:
 - Audio vorhanden
 - Video endet nicht vor dem Voiceover
 
-Danach bleibt noch der visuelle menschliche/agentische Sichtcheck nach `engine/VISUAL-QUALITY-GATE.md`.
+Danach bleiben der visuelle Sichtcheck nach `engine/VISUAL-QUALITY-GATE.md`, die V2-Scorecard und nach echtem Finalrender das Postmortem.
 
 ## Goldene Regel
 
