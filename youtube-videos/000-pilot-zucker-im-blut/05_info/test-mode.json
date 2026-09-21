@@ -4,7 +4,9 @@
   "target_seconds": 120,
   "acceptable_seconds_min": 105,
   "acceptable_seconds_max": 150,
+  "expected_image_count": 26,
+  "target_average_seconds_per_image": 4.6,
   "counts_as_published_topic": false,
   "production_longform_minimum_override": true,
-  "notes": "Nur dieser interne Pilot darf unter 300 Sekunden liegen. Normale Kanalvideos bleiben mindestens 5 Minuten lang."
+  "notes": "Nur dieser interne Pilot darf unter 300 Sekunden liegen. Die hohe Bilddichte ist Absicht: meist 3–6 Sekunden pro Erklärbild, ohne Füllbilder."
 }

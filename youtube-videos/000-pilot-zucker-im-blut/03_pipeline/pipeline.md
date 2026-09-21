@@ -1,28 +1,45 @@
-# Pipeline – 2-Minuten-Pilot „Zucker im Blut“
+# Pipeline – Pilot „Zucker im Blut“ – 26 Bilder
 
-Dieser Pilot testet die neue V2-Planung mit 15 echten Erklärbildern. Es gibt **keine dauerhafte Sprecher-/Apfelfigur**.
+Dieser Testpilot nutzt absichtlich eine höhere visuelle Dichte: **26 Bilder für ungefähr 2 Minuten**. Finale Sekunden werden nicht geschätzt. Das Voice-over bleibt die Master-Timeline; Whisper löst die echten Zeiten später auf.
 
-| Bild | Sprachabschnitt | Visuelle Hauptaufgabe |
-|---:|---|---|
-| 01 | Hook: süßer Snack, Blutfrage | Master Style Frame: Snack → Dünndarm → Blut → Zelle |
-| 02 | Mund/Speichel | Kauen + Speichel als Makro-Erklärbild |
-| 03 | Speiseröhre/Magen/Dünndarm | anatomischer Transportweg |
-| 04 | Kohlenhydrate → Glukose | Zerlegung im Dünndarm |
-| 05 | Glukose → Blut | Darmwand/Darmzotte → Kapillare |
-| 06 | Blutzucker steigt | mehr Glukose im Blut sichtbar |
-| 07 | Betazellen/Insulin | Bauchspeicheldrüse + Insulinfreisetzung |
-| 08 | Insulin als Signal | Zellmembran + Glukoseaufnahme |
-| 09 | Muskelzellen | Glukose für Energie |
-| 10 | Leber/Muskel | Speicherung als Glykogen |
-| 11 | Richtung Ausgangsbereich | Blutvergleich später |
-| 12 | Recap 1 | Snack → Darm → Blut |
-| 13 | Recap 2 | Pankreas → Insulin → Zellen/Speicher |
-| 14 | Variabilität | Mahlzeit + individuelle Faktoren |
-| 15 | Finale | Essen → Darm → Blut → Zellen |
+## Rhythmus
 
-Finale Sekunden werden **nicht geschätzt**. Nach der echten Voice bestimmt Whisper die exakten Grenzen.
+- Hook / schneller Einstieg: meist 2–4 s pro Bild
+- normale Erklärschritte: meist 4–6 s
+- komplexe Mikroprozesse: oft 3–5 s
+- ruhige Übersicht: meist 6–8 s
+- kein Füllbild nur für eine Quote
+- neues Bild immer dann, wenn Ort, Maßstab, Zustand, Prozess oder zentrale visuelle Aussage wechselt
 
-Testmodus:
-- Ziel ungefähr 120 Sekunden
-- akzeptabler interner Testbereich 105–150 Sekunden
-- normale veröffentlichte Kanalvideos bleiben mindestens 300 Sekunden lang
+## Szenenfolge
+
+01 Snack / Master Style Frame
+02 Blut-Ausgangszustand
+03 Leitfrage Snack → Zelle
+04 Mund / Speichel
+05 Speiseröhre
+06 Magen als Zwischenstation
+07 Dünndarm-Fokus
+08 Kohlenhydrate werden zerlegt
+09 Glukose als Baustein
+10 Darmzotten
+11 Glukose durch Darmwand ins Blut
+12 Blutzucker steigt
+13 Bauchspeicheldrüse / Betazellen
+14 Insulinfreisetzung
+15 Insulin im Blut
+16 Insulin als Signal
+17 Glukoseaufnahme in Zielzelle
+18 Muskel als Zielgewebe
+19 Glukose für Energie
+20 Nutzung oder Speicherung
+21 Glykogen in Leber/Muskel
+22 weniger zusätzliche Glukose im Blut
+23 Richtung Ausgangsbereich
+24 Mahlzeiten reagieren unterschiedlich
+25 Menge/individuelle Faktoren
+26 finale Gesamtkette
+
+## Technische Regel
+
+`05_info/phase1-scenes.json` ist die kreative Quelle. `03_pipeline/scene-map.json` ist nur die deterministische technische Ableitung. Phase 3 darf die 26 Szenen nicht kreativ zusammenlegen, neu teilen oder umsortieren.

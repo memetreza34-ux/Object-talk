@@ -1,4 +1,4 @@
-# Antigravity – Phase 3 – 2-Minuten-Pilot
+# Antigravity – Phase 3 – 2-Minuten-Pilot / 26 Bilder
 
 Projekt:
 
@@ -6,24 +6,26 @@ Projekt:
 
 ## Zweck
 
-Dies ist ein **interner ca. 2-Minuten-Test** der neuen V2-Pipeline. Keine inhaltlichen oder kreativen Änderungen vornehmen.
+Interner Test der neuen V2-Pipeline mit **hoher visueller Dichte**. Erwartet werden genau 26 finale Bilder. Script, wissenschaftliche Aussagen, Bildreihenfolge und Szenengrenzen dürfen nicht kreativ verändert werden.
 
 Erwartet:
 - exaktes Script in `01_script/script.txt`
-- genau 15 finale Bilder `Bild_01.png` bis `Bild_15.png`
-- Bild_01 ist der Master Style Frame
-- `05_info/test-mode.json` erlaubt für diesen Pilot 105–150 Sekunden statt der normalen 300-Sekunden-Longform-Grenze
+- genau `Bild_01.png` bis `Bild_26.png`
+- `Bild_01` = Master Style Frame
+- `05_info/test-mode.json` erlaubt 105–150 Sekunden
+- echte Wortzeiten bestimmen die finale Dauer jeder Szene
 
 ## Harte Grenzen
 
 Nicht:
 - Script umschreiben
-- Szenen zusammenlegen/teilen
-- neue Bilder erfinden
-- Bildreihenfolge verändern
-- wissenschaftliche Aussagen verstärken
+- Szenen zusammenlegen
+- Szenen teilen
+- Bilder austauschen
+- Reihenfolge ändern
 - fehlende Bilder still ersetzen
 - Mascot-/Presenter-Elemente ergänzen
+- die hohe Bilddichte durch wenige lange Standbilder wieder reduzieren
 
 ## Vorbereitung
 
@@ -35,7 +37,7 @@ python tools/validate_planning_v2.py youtube-videos/000-pilot-zucker-im-blut --p
 python tools/prepare_phase3.py youtube-videos/000-pilot-zucker-im-blut
 ```
 
-Wenn einer dieser Schritte FAIL meldet: stoppen und den konkreten Fehler beheben.
+Bei FAIL stoppen und den konkreten Fehler beheben.
 
 ## Remotion
 
@@ -45,7 +47,7 @@ npm install
 npm run studio
 ```
 
-Nach Sichtprüfung rendern:
+Nach Sichtprüfung:
 
 ```bash
 npm run render -- ../youtube-videos/000-pilot-zucker-im-blut/04_export/fertiges-video/final-video.mp4
@@ -62,17 +64,18 @@ python tools/qa_final.py \
   --min-seconds 105
 ```
 
-Dieser Override gilt nur für diesen Testpilot. Normale Kanalvideos bleiben bei mindestens 300 Sekunden.
-
 ## Sichtprüfung
 
 Zusätzlich prüfen:
-- richtige Erklärbilder statt Presenter/Mascot
-- Bildwechsel passen zur echten Sprache
-- kein Bild unnötig lange statisch
+- alle 26 Bilder vorhanden und korrekt nummeriert
+- Bilder wechseln mit der echten Sprache, nicht nach pauschalem Zeitraster
+- im schnellen Hook keine unnötig langen Holds
+- normale Erklärbilder meist ungefähr 4–6 Sekunden, sofern die echten Wortzeiten dazu passen
+- keine Mascot-/Presenter-Dominanz
 - Labels korrekt
 - Anatomie plausibel
-- Bild_01-Stil bleibt erkennbar
+- Nachbarbilder unterscheiden sich sichtbar
+- Bild_01-Stil bleibt über die Episode erkennbar
 - keine schwarzen Frames
 
-Danach Scorecard und Postmortem auf Basis des echten Renders ausfüllen.
+Danach `quality-scorecard.md` und `postmortem.md` anhand des echten Renders ausfüllen.
