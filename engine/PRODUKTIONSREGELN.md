@@ -58,19 +58,36 @@ Regeln:
 
 ## 4. Bildrhythmus als QA
 
-Weil das Video ausschließlich aus Standbildern besteht, muss die visuelle Erzählung lebendig bleiben.
+Dieses Format lebt von einer **hohen visuellen Dichte**. Standbilder dürfen nicht zu lange dieselbe Aussage halten, während das Voice-over bereits weiter erklärt.
 
 Typische Richtwerte nach der Szenenplanung:
 
-- normale Szene: ca. 6–10 Sekunden
-- komplexe biologische Erklärung: ca. 4–8 Sekunden
-- ruhige Übersicht: ca. 8–12 Sekunden
-- Cover-/Hook-Szene: ca. 4–7 Sekunden
-- über 12 Sekunden nur mit bewusstem Grund
+- Hook / schneller Einstieg: ca. **2–4 Sekunden**
+- normale Erklärszene: ca. **4–6 Sekunden**
+- komplexer biologischer Mikroschritt: ca. **3–5 Sekunden**
+- ruhige Übersicht / Zusammenfassung: ca. **6–8 Sekunden**
+- über **8 Sekunden** nur mit bewusstem Grund
 
 Diese Werte sind **Qualitätsprüfung**, keine starre Formel für die Szenenanzahl.
 
-Wenn ein sinnvoller Abschnitt 13 Sekunden braucht, ist das besser als zwei inhaltsleere Bilder. Wenn innerhalb von 5 Sekunden zwei völlig verschiedene visuelle Aussagen kommen, können zwei Bilder nötig sein.
+Ein neues Bild ist sinnvoll, wenn sich mindestens eines davon ändert:
+
+- Ort
+- Maßstab
+- Organ/Struktur
+- Zustand
+- Prozessschritt
+- Vergleich
+- zentrale visuelle Aussage
+
+Wichtig:
+
+- lieber zwei klar unterschiedliche Erklärbilder als ein überladenes Bild, das 10 Sekunden alles gleichzeitig zeigen soll
+- keine künstlichen Füllbilder
+- nicht jeden Satz automatisch bebildern, wenn die visuelle Aussage identisch bleibt
+- lange Standzeiten dürfen nicht allein durch Zoom/Pan kaschiert werden
+
+Richtwert für die Dichte: Bei einem ca. 2-Minuten-Test können **24–30 echte Erklärbilder** sinnvoll sein. Bei Longform ergibt sich die Bildzahl weiterhin aus dem Script, nicht aus einer festen Quote.
 
 ## 5. Bildformat
 
