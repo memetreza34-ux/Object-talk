@@ -45,6 +45,33 @@ Für diesen Pilot besonders streng:
 - jedes Bild muss eine neue sichtbare Aussage liefern
 - `Bild_01` ist Master Style Frame
 
+## Präsentation / Text / Animation
+
+Nach Auswertung des ersten vollständigen Piloten ist zusätzlich festgelegt:
+
+- die aktuelle warme semi-realistische 3D-Welt bleibt bestehen
+- **kein Anime-/Comic-Umbau**
+- generierte Bilder bleiben grundsätzlich Vollbild
+- das Video soll trotzdem nicht wie eine Diashow wirken
+- ausgewählte Szenen erhalten kurze animierte Überschriften, Schlüsselwörter oder Callouts in Remotion
+- Überschriften werden bevorzugt im Editor erzeugt statt von Flow in das Bild geschrieben
+- komplette Voice-over-Sätze werden nicht auf das Bild gelegt
+- das Bild bleibt immer der Hauptdarsteller
+
+Globale Regel:
+
+```text
+engine/PRESENTATION-OVERLAY-SYSTEM.md
+```
+
+Der Renderer unterstützt jetzt optional:
+
+```text
+03_pipeline/overlay-plan.json
+```
+
+Der aktuelle Pilot besitzt bereits einen selektiven Overlay-Plan mit kurzen Überschriften u. a. bei Dünndarm, Blutzucker, Bauchspeicheldrüse, Insulin, Muskelzellen und Glykogenspeicherung.
+
 ## Pilot-Struktur
 
 Phase 1 ist vorbereitet mit:
@@ -58,6 +85,7 @@ Phase 1 ist vorbereitet mit:
 - `image-review.json` für 26 Bilder
 - vollständigem Google-Flow-Prompt mit 26 Einzelprompts
 - `scene-map.json`
+- `overlay-plan.json`
 - Antigravity-Prompt
 - YouTube-Metadaten
 - Quality-Scorecard und Postmortem-Vorlage
@@ -84,34 +112,6 @@ Der komplette Nutzerprompt liegt hier:
 youtube-videos/000-pilot-zucker-im-blut/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt
 ```
 
-## Was jetzt vom Nutzer benötigt wird
-
-### 1. Voice
-
-```text
-youtube-videos/000-pilot-zucker-im-blut/01_script/VOICEOVER-ZUM-KOPIEREN.txt
-```
-
-1:1 in die eigene Voice-KI geben und die rohe Audiodatei in `01_script/audio/` ablegen.
-
-### 2. Zuerst nur Bild_01
-
-Den Flow-Prompt vollständig verwenden. Flow muss zunächst ausschließlich `Bild_01` erzeugen und danach stoppen.
-
-`Bild_01` gemeinsam prüfen. Erst nach akzeptiertem Stil werden die übrigen Bilder erzeugt.
-
-### 3. Nach allen Bildern
-
-ZIP mit exakt:
-
-```text
-Bild_01.png
-...
-Bild_26.png
-```
-
-in `02_bildprompts/bilder-zip/` ablegen.
-
 ## V2-Checks
 
 Vor Flow/Voice-Freigabe:
@@ -132,6 +132,8 @@ Danach:
 python tools/prepare_phase3.py youtube-videos/000-pilot-zucker-im-blut
 ```
 
+`build_renderer_runtime.py` erkennt `03_pipeline/overlay-plan.json` automatisch. Wenn kein Overlay-Plan vorhanden ist, bleibt das bisherige Full-Image-Verhalten vollständig kompatibel.
+
 Finale technische Test-QA:
 
 ```bash
@@ -143,6 +145,6 @@ python tools/qa_final.py \
 
 ## Nächster Meilenstein
 
-**Bild_01 des 26-Bilder-Piloten erzeugen und prüfen.**
+**Pilot erneut mit der neuen Overlay-/Presentation-Ebene rendern und vergleichen.**
 
-Erst wenn dieses Bild die gewünschte hochwertige faceless 3D-Erklärwelt trifft, werden die restlichen 25 Bilder produziert.
+Ziel ist nicht mehr Animation um ihrer selbst willen, sondern mehr visuelle Führung: Vollbild + hohe Bilddichte + wenige gezielte animierte Überschriften/Schlüsselwörter.
