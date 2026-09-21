@@ -18,6 +18,35 @@ Harte Grundregeln:
 - wichtige Strukturen knapp und auf Deutsch beschriften
 - keine unnötigen Wiederholungen bereits produzierter Themen
 
+## Interner Kurz-Pilot – einzige Laufzeit-Ausnahme
+
+Die 5-Minuten-Regel bleibt für normale veröffentlichte Kanalvideos bestehen.
+
+Ein **ausdrücklich als interner Test markiertes Projekt** darf kürzer sein, wenn im Projekt eine Datei
+
+```text
+05_info/test-mode.json
+```
+
+mit `test_mode: true` vorhanden ist.
+
+Für solche Piloten gilt:
+
+- Zweck ist ausschließlich Pipeline-, Stil-, Flow-, Sync- oder Render-Test
+- Zielbereich muss im Projekt selbst dokumentiert sein
+- der Test zählt nicht automatisch als veröffentlichtes Thema
+- `qa_final.py` darf nur für diesen Test mit einem ausdrücklich angegebenen `--min-seconds` unter 300 ausgeführt werden
+- normale Videos verwenden weiterhin den Standardwert 300 Sekunden
+- ein Testprojekt darf keine globale Longform-Regel still auf kürzere Videos umstellen
+
+Aktueller Pilot:
+
+```text
+youtube-videos/000-pilot-zucker-im-blut/
+```
+
+Ziel ca. 120 Sekunden; akzeptabler interner Testbereich 105–150 Sekunden.
+
 ## Verbindliche Bildwelt – Faceless Explainer zuerst
 
 Der Kanal ist **kein Mascot-/Presenter-Kanal**. Die Bilder sollen in erster Linie erklären.
