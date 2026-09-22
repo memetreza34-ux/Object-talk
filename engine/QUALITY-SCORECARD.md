@@ -46,8 +46,9 @@ Ein Video darf nur als veröffentlichungsbereit gelten, wenn:
 
 ### 5. Bildqualität und Konsistenz – 10 %
 
-- Wirken alle Bilder wie dieselbe hochwertige semi-realistische 3D-Serie?
-- Passen Materialien, Licht, Rendergrad und Bildsprache zusammen?
+- Wirken alle Bilder wie dieselbe hochwertige **stark stilisierte 3D-Animationsfilm-Serie**?
+- Bleibt der Look deutlich animiert und driftet nicht in medizinischen Fotorealismus?
+- Passen Materialien, Licht, Rendergrad und Formensprache zusammen?
 - Bleibt `Bild_01` als Episoden-Style-Anker erkennbar?
 
 ### 6. Bildrhythmus und Abwechslung – 10 %
@@ -58,9 +59,11 @@ Ein Video darf nur als veröffentlichungsbereit gelten, wenn:
 
 ### 7. Labels und Text – 5 %
 
-- Sind nur wichtige Strukturen beschriftet?
-- Sind deutsche Labels korrekt geschrieben und eindeutig zugeordnet?
-- Gibt es keine unnötigen Textblöcke?
+- Sind die wichtigsten sichtbaren Strukturen in jedem Bild knapp beschriftet?
+- Sind normalerweise 1–3 deutsche Labels vorhanden und eindeutig zugeordnet?
+- Gibt es keinen englischen sichtbaren Text?
+- Ist der deutsche Cover-Hook auf Bild_01 korrekt, kurz und klar?
+- Gibt es keine unnötigen Textblöcke oder doppelte Overlays?
 
 ### 8. Audio und Synchronität – 5 %
 
@@ -78,10 +81,11 @@ Ein Video darf nur als veröffentlichungsbereit gelten, wenn:
 
 ### 10. Zuschauerbindung – 5 %
 
-- Ist der Hook sofort verständlich?
+- Funktioniert Bild_01 sofort als Cover/Hook?
+- Ist das Thema in wenigen Sekunden klar?
 - Entwickelt sich die Erklärung sichtbar weiter?
 - Gibt es keine lange Phase ohne neue Erkenntnis?
-- Liefert das Ende eine klare Auflösung statt Wiederholung?
+- Liefert das Ende eine klare Auflösung statt bloßer Wiederholung?
 
 ## Bild-Einzelreview
 
@@ -100,7 +104,7 @@ Overall:                   __ /10
 Decision:                  ACCEPT / REGENERATE
 ```
 
-Mindestziel pro Bild: **8,0/10**. Ein klarer Fachfehler oder falsches Label führt unabhängig vom Durchschnitt zu `REGENERATE`.
+Mindestziel pro Bild: **8,0/10**. Ein klarer Fachfehler, falsches Label, englischer sichtbarer Text oder deutlicher Stilbruch führt unabhängig vom Durchschnitt zu `REGENERATE`.
 
 ## Harte Ausschlusskriterien
 
@@ -110,6 +114,9 @@ Keine Freigabe bei:
 - unbelegter oder widersprüchlicher Kernbehauptung
 - fachlich falscher Anatomie mit Einfluss auf die Erklärung
 - falschem oder missverständlichem Label
+- englischem sichtbarem Text im finalen Bild
+- Bild_01 ohne funktionierenden deutschen Cover-Hook
+- deutlichem Drift in Fotorealismus/medizinische CGI entgegen der Kanalwelt
 - Voice-over und Bild widersprechen sich
 - fehlendem Pflichtbild
 - doppelter oder falscher Bildnummer
