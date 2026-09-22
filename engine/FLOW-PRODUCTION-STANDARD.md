@@ -4,102 +4,144 @@ Diese Datei definiert die verbindliche Produktionslogik für Google Flow.
 
 ## Ziel
 
-Flow soll konsistente, verständliche und robuste Erklärbilder für lange faceless YouTube-Erklärvideos erzeugen.
+Flow erzeugt konsistente, hochwertige Erklärbilder für den deutschen Object-Talk-Kanal. Die Bilder erklären den gesprochenen Inhalt sichtbar und gehören immer zur selben visuellen Welt.
 
-Die Bilder sind keine Dekoration. Sie müssen den gesprochenen Inhalt sichtbar erklären.
+## 1. Verbindliche Bildwelt
 
-## Grundregel: Explainer vor Mascot
+Der Kanal nutzt eine **stark stilisierte hochwertige 3D-Animationsfilm-Welt** mit klar erkennbarem Premium-Familienanimations-Look.
 
-Standard sind echte Erklärbilder:
+Verbindlich:
 
-- anatomische Cutaways
-- transparente Körperansichten
-- Prozessdarstellungen
-- Organ-/Gewebe-/Zellvisualisierungen
-- Mikro-/Makro-Zooms
-- Vergleiche
-- Vorher-/Nachher-Darstellungen
-- klare Ursache→Prozess→Folge-Kompositionen
+- deutlich animiert und stilisiert, nicht fotorealistisch
+- weiche gerundete Formen
+- vereinfachte, aber fachlich erkennbare Anatomie und Biologie
+- warme filmische Beleuchtung
+- klare Tiefenwirkung und hochwertige 3D-Materialien
+- freundlich, modern, familiengeeignet, aber nicht babyhaft
+- echte Erklärbilder vor Mascot-/Presenter-Szenen
+- keine Anime-, Comic-, Live-Action- oder medizinisch-fotorealistische Bildwelt
+- kein Gore, keine Horror-Anatomie, kein Plastikspielzeug-Look
 
-Personifizierte Lebensmittel oder Object-Talk-Figuren dürfen nur selten und gezielt eingesetzt werden, wenn sie das Verständnis verbessern. Sie dürfen nicht als dauerhafte Sprecherfigur vor dem eigentlichen Inhalt stehen.
-
-## Globale Style-DNA
-
-```text
-high-quality semi-realistic 3D educational explainer style, faceless YouTube explainer visual language, premium animated educational series look, consistent cinematic lighting, clean composition, scientifically recognizable but simplified anatomy and biology, strong visual clarity, process-focused explainer imagery, transparent body cutaways, cross-sections, macro-to-micro transitions, elegant German educational labels, family-friendly but not childish, clearly animated but not photorealistic, no mascot-heavy composition, no random cartoon focus, no clutter, no gore, no disturbing medical realism
-```
-
-Negative Leitplanken:
+Globaler Stilanker für Prompts:
 
 ```text
-do not make mascot-heavy scenes, do not overuse cute object-talk presenters, do not place a character as the main focus unless explicitly required, do not turn every scene into a presenter shot, do not use random decorative food mascots, do not reduce complex explanations to a character standing next to anatomy, do not create cluttered compositions with too many ideas at once, no photorealistic medical photography, no live action, no surgery, no gore, no horror anatomy, no unreadable text, no English labels when German labels are required
+premium stylized 3D animated educational film look, strongly animated rather than photorealistic, soft rounded forms, simplified but recognizable biology, warm cinematic lighting, polished materials, strong depth, clear visual storytelling, family-friendly and modern, no anime, no comic, no medical photorealism, no gore
 ```
 
-## Textregel: Flow-Bild möglichst textfrei
+## 2. Prompt-Sprache und sichtbarer Text
 
-Kurze Kapitelüberschriften, Schlagwörter und wiederkehrende Begriffe werden bevorzugt **nicht** von Google Flow in das Bild gerendert. Sie kommen später sauber über Remotion gemäß `engine/PRESENTATION-OVERLAY-SYSTEM.md`.
+- **Prompt-Anweisungen an Google Flow immer auf Englisch.**
+- **Jeder Text, der im fertigen Bild sichtbar ist, ausschließlich auf Deutsch.**
+- Kein englischer sichtbarer Text.
+- Kein KI-Gibberish.
+- Keine langen Textblöcke oder Untertitel im Bild.
 
-Für jede Szene gilt:
+## 3. Beschriftungsregel – wichtige Dinge immer benennen
 
-- Wenn `Labels: keine` angegeben ist, darf im finalen Flow-Bild **gar kein lesbarer Text** vorkommen.
-- Kein englischer Text, keine Diagrammüberschrift, keine Achsenbeschriftung, keine zufällige UI-Schrift.
-- Wenn Flow trotz textfreier Vorgabe Text erzeugt, ist das Bild `FEHLERHAFT` und wird neu erzeugt.
-- Bei ausdrücklich verlangten Fachlabels sind nur diese 0–3 deutschen Labels erlaubt.
-- Wiederholt fehlerhafte KI-Schrift → textfreie Version erzeugen und Begriff später in Remotion als Overlay setzen.
+Jedes Bild muss die wichtigsten sichtbaren Strukturen oder Prozesse knapp beschriften.
 
-Damit bleibt die Bildwelt sauber und die Typografie kanalweit einheitlich.
+Regel:
 
-## Phase A – Master Style Frame
+- normalerweise 1–3 kurze deutsche Labels pro Bild
+- nur die wichtigsten Dinge, nicht alles beschriften
+- Labels müssen eindeutig auf das richtige Objekt zeigen
+- bei Vergleichen sind kurze deutsche Marker wie `vorher`, `danach`, `mehr`, `weniger` erlaubt
+- bei Prozessbildern können kurze Begriffe wie `Aufnahme`, `Transport`, `Speicherung` sinnvoll sein
+- falsches, unlesbares oder englisches Label = Bild `FEHLERHAFT`
+- wenn Flow einen Begriff wiederholt falsch schreibt: Bild sauber ohne den fehlerhaften Text erzeugen und exakt denselben deutschen Begriff später in Remotion als Overlay setzen
 
-1. Lies zuerst den kompletten Video-Prompt.
-2. Erzeuge zunächst **ausschließlich `Bild_01`**.
-3. Erzeuge noch kein weiteres Bild.
-4. Prüfe `Bild_01` vollständig:
-   - Thema sofort verständlich?
-   - 16:9?
-   - hochwertige faceless Explainer-Optik?
-   - keine unnötige Mascot-Inszenierung?
-   - Anatomie plausibel?
-   - keine falschen/zufälligen Texte?
-   - genug Rand für spätere Zooms/Pans?
-5. Bei FAIL wird nur `Bild_01` neu erzeugt.
-6. Erst bei PASS wird es final als `Bild_01.png` gespeichert.
-7. `Bild_01` ist ab dann gleichzeitig:
-   - Cover-/Hook-Frame
-   - erster Shot
-   - visueller Episode-Anchor
-   - Master Style Frame für alle weiteren Bilder
+Das Ziel ist nicht möglichst viel Text, sondern sofortige Orientierung.
 
-## Wie `Bild_01` als Referenz verwendet wird
+## 4. Bild_01 – Cover, Hook und Master Style Frame
 
-Für jede nachfolgende Bildgeneration soll `Bild_01.png`, soweit Flow dies technisch unterstützt, als Style-/Continuity-Referenz mitgegeben werden.
+`Bild_01` ist bei **jedem Video oder Reel gleichzeitig**:
 
-Von `Bild_01` übernehmen:
+1. Cover-/Hook-Bild
+2. erster sichtbarer Shot
+3. visuelle Referenz für die Episode
+4. Master Style Frame für alle weiteren Bilder
 
-- Rendergrad
-- Verhältnis Animation/Realismus
-- Beleuchtung
-- Farbtemperatur und Farbharmonie
+Darum wird `Bild_01` ausführlicher beschrieben als alle anderen Szenen.
+
+`Bild_01` muss:
+
+- das Thema auf einen Blick vermitteln
+- die bestmögliche Version der gewünschten 3D-Animationswelt festlegen
+- Hauptmotive, Licht, Materialien, Farbstimmung, Tiefenwirkung und Anatomie-Vereinfachung klar definieren
+- eine **kurze starke deutsche Hook-Zeile** enthalten, die das Thema des Videos/Reels verständlich macht
+- Hook-Text meist 3–7 Wörter, maximal zwei kurze Zeilen
+- keine Clickbait-Aussage enthalten, die das Video fachlich nicht einlöst
+- zusätzlich nur die wirklich wichtigsten deutschen Labels tragen
+
+Beispiele für Cover-Hooks:
+
+- `So reist Sauerstoff durch deinen Körper`
+- `Was Zucker in deinem Blut macht`
+- `So arbeitet dein Dünndarm`
+
+## 5. Phase A – zuerst nur Bild_01
+
+1. Flow liest den kompletten Auftrag.
+2. Flow erzeugt **ausschließlich `Bild_01`**.
+3. Noch kein `Bild_02`.
+4. Bild_01 wird geprüft auf:
+   - Thema und Hook sofort verständlich
+   - gewünschter stark stilisierter 3D-Animationsfilm-Look
+   - keine zu realistische Darstellung
+   - plausible Anatomie
+   - korrekte deutsche Schrift
+   - saubere Komposition und Bewegungsrand
+5. Bei FAIL wird nur Bild_01 neu erzeugt.
+6. Bei PASS als `Bild_01.png` speichern.
+7. Danach STOPP und auf Nutzerfreigabe warten.
+
+## 6. Bild_01 als Vorlage für alle weiteren Bilder
+
+Nach Freigabe muss Flow `Bild_01.png` bei jeder weiteren Generation als Style-/Continuity-Referenz verwenden, soweit technisch möglich.
+
+Von Bild_01 übernehmen:
+
+- Renderstil
+- Grad der Stilisierung
+- Licht und Farbtemperatur
 - Materialgefühl
-- Tiefenwirkung
-- Kontrast
-- visuelle Sauberkeit
-- allgemeine Explainer-Sprache
+- Kontrast und Tiefenwirkung
+- Formensprache
+- Anatomie-Vereinfachung
+- Typografie-/Label-Gefühl
+- wiederkehrende visuelle Symbole
 
 Nicht blind übernehmen:
 
-- konkrete Anatomie
-- Pose
+- konkrete Pose
 - Motiv
 - Bildaufbau
-- Organe
-- Texte/Labels
+- fachlich falsche Anatomie
 
-Jede neue Szene muss weiterhin ihren eigenen fachlich richtigen Inhalt zeigen.
+Wiederkehrende Dinge müssen gleich aussehen, z. B. Sauerstoff, Glukose, Insulin, rote Blutkörperchen, Hämoglobin oder Mitochondrien.
 
-## Phase B – Produktion in 5er-Blöcken
+## 7. Szenenprompts – kurz, aber vollständig
 
-Nach `Bild_01` erfolgt die weitere Produktion in 5er-Blöcken:
+Nach Bild_01 sollen die einzelnen Szenenprompts **so kurz wie möglich und so genau wie nötig** sein.
+
+Normaler Szenenprompt:
+
+- etwa 2–5 Sätze
+- konkrete Szene
+- sichtbarer Prozess
+- wichtigste Komposition/Perspektive
+- benötigte deutsche Labels
+- keine Wiederholung des kompletten globalen Stilblocks
+
+Beispiel:
+
+```text
+Using Bild_01 as the exact style reference, create a 16:9 close-up of an alveolus beside a small capillary. Show pale-cyan oxygen particles crossing the thin barrier into the blood where red blood cells are visible. Keep the transfer direction immediately clear. Add only the German labels “Lungenbläschen”, “Sauerstoff” and “Blutgefäß”.
+```
+
+## 8. Produktion in 5er-Blöcken
+
+Nach Freigabe von Bild_01:
 
 ```text
 Block 1: Bild_02–Bild_06
@@ -108,101 +150,52 @@ Block 3: Bild_12–Bild_16
 Block 4: Bild_17–Bild_21
 Block 5: Bild_22–Bild_26
 Block 6: Bild_27–Bild_31
-Block 7: Bild_32–Bild_36
+...
 ```
-
-Bei Videos mit anderer Szenenzahl wird das Muster entsprechend fortgeführt.
 
 Wichtig:
 
-- Ein Block bedeutet **nicht**, fünf Bilder in einer einzigen Generierung zu erzeugen.
-- Innerhalb des Blocks wird jedes Bild einzeln generiert.
-- Nach jedem Bild sofort Einzel-QA.
-- Nach jedem 5er-Block kurzer Block-QA: Stil driftet nicht, Nummerierung stimmt, keine unnötige Mascot-Zunahme.
-- Erst danach nächster Block.
+- jedes Bild innerhalb des Blocks einzeln erzeugen
+- nach jedem Bild Einzel-QA
+- nach jedem 5er-Block kurzer Stil-/Nummerierungscheck
+- erst danach nächster Block
+- niemals fünf finale Szenen als ein Sammelbild erzeugen
 
-## Phase C – Fehlerliste statt Abbruch
+## 9. Fehlerliste und Recovery
 
-Wenn Flow meldet, dass ein Bild nicht erstellt werden konnte, die Antwort abbricht oder ein Bild qualitativ durchfällt:
+Bei technischem oder qualitativem FAIL:
 
-1. betroffene Bildnummer exakt notieren
-2. Status `FEHLERHAFT` oder `FEHLT` setzen
-3. keine Ersatznummer vergeben
-4. nicht denselben Gesamtauftrag abbrechen
-5. mit der nächsten regulären Bildnummer im aktuellen Durchlauf fortfahren
+1. Bildnummer notieren
+2. Status `FEHLERHAFT` oder `FEHLT`
+3. Nummer nicht neu vergeben
+4. regulären Durchlauf fortsetzen
+5. nach allen Blöcken Recovery-Pass
 
-Beispiel:
+Recovery wird wiederholt, bis alle Bildnummern lückenlos PASS sind.
 
-```text
-Bild_07 PASS
-Bild_08 FEHLERHAFT
-Bild_09 PASS
-Bild_10 PASS
-Bild_11 PASS
+## 10. Finale Prüfung vor ZIP
 
-Recovery-Liste:
-- Bild_08
-```
-
-## Phase D – Recovery-Pass
-
-Nach Abschluss aller normalen Blöcke:
-
-1. Recovery-Liste lesen.
-2. Nur die dort aufgeführten Bildnummern erneut erzeugen.
-3. Dabei weiterhin `Bild_01` als Style-Referenz verwenden.
-4. Jedes Recovery-Bild einzeln prüfen.
-5. Bei erneutem FAIL bleibt dieselbe Nummer auf der Recovery-Liste.
-6. Recovery wiederholen, bis alle Bilder PASS sind.
-
-Eine technisch fehlgeschlagene Flow-Generation darf niemals still als erledigte Szene gelten.
-
-## Phase E – Finale Vollständigkeitsprüfung
-
-Vor ZIP-Ausgabe:
-
-- `Bild_01.png` bis `Bild_NN.png` lückenlos vorhanden
+- `Bild_01.png` bis `Bild_NN.png` lückenlos
 - jede Nummer genau einmal
+- 16:9
 - keine verworfenen Varianten
-- keine Temp-Dateien
-- keine fehlgeschlagenen Platzhalter
-- alle Bilder 16:9
-- alle Pflichtlabels korrekt
-- bei `Labels: keine` kein unbeabsichtigter lesbarer Text
-- keine offensichtlichen Anatomiefehler
+- Bild_01-Stil über die gesamte Episode klar erkennbar
+- alle wichtigen Strukturen sinnvoll beschriftet
+- alle sichtbaren Texte deutsch und korrekt
+- keine zufälligen englischen Texte
 - keine starken Stilbrüche
+- keine offensichtlichen Anatomie-/KI-Fehler
 - keine unbeabsichtigte Mascot-/Presenter-Dominanz
 
-Erst dann ZIP erstellen.
-
-## Regel für Prompts
-
-Ein Bildprompt soll möglichst **eine primäre visuelle Aussage** besitzen.
-
-Vermeiden:
-
-- zu viele verschiedene Vorgänge in einem einzelnen Shot
-- Character + komplette Anatomie + mehrere Prozesse + viele Labels gleichzeitig, wenn es sich aufteilen lässt
-- dekorative Requisiten ohne Erklärfunktion
-
-Bevorzugen:
-
-```text
-Was wird erklärt?
-→ Welcher einzelne sichtbare Mechanismus zeigt das am besten?
-→ Welche 0–3 Labels sind wirklich nötig?
-→ Welche Kameraperspektive macht es sofort verständlich?
-```
+Erst danach finale ZIP erstellen.
 
 ## Harte Abschlussregel
 
-Flow produziert die Bilder. Flow darf niemals:
+Flow darf niemals:
 
-- das Script ändern
-- neue Szenen erfinden
-- Szenen zusammenlegen
-- Szenen entfernen
+- Script ändern
+- Szenen erfinden, entfernen oder zusammenlegen
 - Bildnummern neu interpretieren
+- aus der festgelegten 3D-Animationswelt in Realismus, Anime oder Comic driften
+- englische sichtbare Texte erzeugen
 - fehlgeschlagene Bilder vergessen
-- aus einem faceless Erklärbild ohne Anweisung eine Mascot-Szene machen
-- eigenständig Überschriften, Diagrammtexte oder englische UI-Beschriftungen erfinden
