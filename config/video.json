@@ -12,13 +12,16 @@
   },
   "scenes": {
     "cover_scene": 1,
-    "normal_seconds_min": 6,
-    "normal_seconds_max": 10,
-    "complex_biology_seconds_min": 4,
-    "complex_biology_seconds_max": 8,
-    "overview_seconds_min": 8,
-    "overview_seconds_max": 12,
-    "soft_max_seconds": 12
+    "cover_seconds_min": 2,
+    "cover_seconds_max": 4,
+    "normal_seconds_min": 4,
+    "normal_seconds_max": 6,
+    "complex_biology_seconds_min": 3,
+    "complex_biology_seconds_max": 5,
+    "overview_seconds_min": 6,
+    "overview_seconds_max": 8,
+    "soft_max_seconds": 8,
+    "new_image_when_location_scale_state_process_or_core_visual_changes": true
   },
   "audio": {
     "sample_rate_hz": 48000,
