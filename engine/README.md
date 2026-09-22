@@ -9,41 +9,40 @@ Der Engine sorgt dafür, dass ChatGPT, Google Flow und Antigravity nicht bei jed
 Er definiert:
 
 - Themenauswahl und Abgrenzung
-- Hook, Einleitung, Hauptteil, rhetorische Mittel und Schluss
 - Visual-First-Scriptwriting
 - Mechanism Map und Satz-Visual-Planung
-- Longform-Länge und ausdrücklich markierte interne Testausnahmen
+- Longform-Länge und interne Testausnahmen
 - semantischen Bildrhythmus
-- faceless Explainer-Bildsprache
-- Google-Flow-Masterframe, 5er-Blöcke und Recovery
-- Full-Frame-Präsentation plus selektive animierte Überschriften/Schlüsselwörter
+- stark stilisierte 3D-Animationsfilm-Bildsprache
+- deutsche Schlüsselbeschriftungen in jedem Bild
+- Bild_01 als Cover + Hook + Master Style Frame
+- englische Flow-Prompts bei ausschließlich deutschem sichtbaren Text
+- Google-Flow-5er-Blöcke und Recovery
+- selektive Remotion-Überschriften/Callouts
 - wissenschaftliche Prüfung
 - kanalweite Style-Konsistenz
 - Voice-/Audio-Standard
-- harte Phase-Gates
+- Phase-Gates
 - Whisper-/Script-Synchronisierung
-- Bild-/Audio-Zuordnung
-- Standbild-Motion
 - Einzelbild-Review, Gesamt-Scorecard und Postmortem
-- Export- und Qualitätsregeln
 
 ## Dateien
 
-- `SCRIPT-STANDARD.md` – Visual-First-Scriptwriting, Hook, Einleitung, Hauptteil, rhetorische Mittel, Schluss und Script-QA
+- `SCRIPT-STANDARD.md` – Visual-First-Scriptwriting
 - `THEMEN-STRATEGIE.md` – Themenauswahl und Bewertung
 - `PRODUKTIONSREGELN.md` – globale Produktionsregeln
 - `PLANNING-V2.md` – Mechanism Map, Satz-Visual-Plan, stabile Bild-IDs, Label-Plan und Einzelbildreview
-- `VISUAL-EXPLANATION-SYSTEM.md` – Beobachtung/Auslöser/Weg/Vergleich/Schwelle/Wirkung und Maßstabskette
-- `PRESENTATION-OVERLAY-SYSTEM.md` – Vollbild bleibt Standard; gezielte Remotion-Überschriften, Schlüsselwörter, Callouts und ruhige Textanimationen
-- `FLOW-PRODUCTION-STANDARD.md` – faceless Explainer-Bildwelt, Bild_01 als Master Style Frame, 5er-Blöcke, Fehlerliste und Recovery
-- `AUDIO-REGELN.md` – Voice und kanonische Audioaufbereitung
-- `SYNC-WHISPER.md` – strikte Audio-/Script-/Szenen-Synchronisierung
-- `STYLE-REFERENCE-SYSTEM.md` – visueller Kanalanker
+- `VISUAL-EXPLANATION-SYSTEM.md` – visuelle Erklärfunktionen und Maßstabskette
+- `PRESENTATION-OVERLAY-SYSTEM.md` – deutsche Labels plus gezielte Remotion-Überschriften/Callouts
+- `FLOW-PRODUCTION-STANDARD.md` – Bildwelt, Bild_01, Prompt-Sprache, Labels, 5er-Blöcke, Fehlerliste und Recovery
+- `AUDIO-REGELN.md` – Voice und Audioaufbereitung
+- `SYNC-WHISPER.md` – Script-/Audio-/Szenen-Synchronisierung
+- `STYLE-REFERENCE-SYSTEM.md` – langfristige Kanal-DNA + Episode-Style-Anker
 - `FACT-CHECK-STANDARD.md` – Gesundheit/Biologie/Ernährung prüfen
-- `PHASE-GATES.md` – verbindliche PASS/FAIL-Gates inklusive dokumentierter Testmodus-Regel
-- `VISUAL-QUALITY-GATE.md` – visueller und finaler Qualitätscheck inklusive Overlay-QA
-- `QUALITY-SCORECARD.md` – gewichtete Freigabe mit hartem Wissenschaftsblocker
-- `POSTMORTEM-STANDARD.md` – Lernschleife nach jedem echten Finalrender
+- `PHASE-GATES.md` – verbindliche PASS/FAIL-Gates
+- `VISUAL-QUALITY-GATE.md` – visueller und finaler Qualitätscheck
+- `QUALITY-SCORECARD.md` – gewichtete Freigabe
+- `POSTMORTEM-STANDARD.md` – Lernschleife nach Finalrender
 
 ## Produktionsablauf
 
@@ -53,50 +52,47 @@ Themen-Gehirn + Themen-Score
 → Mechanism Map
 → Visual-First-Script
 → Satz-Visual-Plan
-→ semantische Phase-1-Szenen
+→ semantische Szenen
 → Label-Plan
-→ optionaler Overlay-Plan
+→ Flow-Prompt: Bild_01 besonders ausführlich
 → PHASE-1-PASS
 → Voice
-→ Flow zuerst nur Bild_01
-→ Bild_01 als Master Style Frame
-→ restliche Bilder in 5er-Blöcken, einzeln generiert
+→ Flow erzeugt nur Bild_01
+→ Bild_01 = Cover + deutscher Hook + Master Style Frame
+→ Nutzerfreigabe
+→ restliche Bilder in 5er-Blöcken
+→ jedes Bild einzeln mit wichtigen deutschen Labels
 → Einzelbild-Review
-→ Flow-Fehlerliste + Recovery-Pass
+→ Fehlerliste + Recovery
 → vollständige Bilder-ZIP
-→ kanonisches Audio + sichere ZIP-Übernahme
-→ PHASE-2-PASS
-→ faster-whisper
-→ strikte vollständige Script↔Audio-Ausrichtung
+→ Audio + Whisper
+→ Script↔Audio-Ausrichtung
 → exakte Szenen-Timeline
-→ feste Remotion-Runtime
-→ Full-Frame-Bilder + selektive Overlay-Ebene
+→ Remotion + selektive Overlay-Ebene
 → Render
 → technischer + visueller Final-QA
 → Qualitäts-Scorecard
-→ PHASE-3-PASS
-→ Postmortem + dauerhafte Lehren
+→ Postmortem
 ```
 
 ## Aktueller Testpilot
 
 ```text
-youtube-videos/000-pilot-zucker-im-blut/
+youtube-videos/001-pilot-sauerstoff-im-blut/
 ```
 
-Dieser Pilot ist mit `05_info/test-mode.json` ausdrücklich als interner ca. 2-Minuten-Test markiert.
+Der Pilot ist mit `05_info/test-mode.json` als interner ca. 2–2,5-Minuten-Test markiert. Nur seine Laufzeitregel weicht ab.
 
-Nur seine Laufzeitregel weicht ab. Alle anderen V2-, Wissenschafts-, Visual-, Sync- und QA-Regeln bleiben vollständig aktiv.
+Er testet aktuell besonders:
 
-Der Pilot besitzt zusätzlich:
-
-```text
-03_pipeline/overlay-plan.json
-```
-
-Damit werden nur ausgewählte Szenen mit kurzen animierten Überschriften/Schlüsselwörtern ergänzt. Ohne diese Datei bleibt der Renderer vollständig rückwärtskompatibel und zeigt reine Vollbild-Szenen.
-
-Normale Kanalvideos bleiben mindestens 300 Sekunden lang.
+- neue stark stilisierte 3D-Animationsfilm-Welt
+- Cover-Hook direkt in Bild_01
+- wichtige deutsche Labels in jedem Bild
+- englische Flow-Prompts
+- Bild_01 als konkrete Vorlage für alle restlichen Bilder
+- kurze Folgeprompts
+- 5er-Block-Produktion
+- feste O₂-/CO₂-/RBC-/Hämoglobin-Symbolik
 
 ## V2-Prüfung
 
@@ -105,12 +101,6 @@ python tools/validate_planning_v2.py youtube-videos/MEIN-VIDEO
 python tools/validate_planning_v2.py youtube-videos/MEIN-VIDEO --phase2
 ```
 
-Der V2-Validator verändert keine Dateien und ist bewusst separat von der Phase-3-Pipeline.
-
 ## Wichtig
 
-Die technische Pipeline ist **fail-closed**: Ein unbekannter oder widersprüchlicher Zustand wird nicht durch Raten repariert.
-
-Eine einzelne technisch fehlgeschlagene Google-Flow-Generation ist dagegen kein globaler Blocker. Sie wird in Phase 2 auf die Recovery-Liste gesetzt und am Ende gezielt erneut erzeugt.
-
-Die finalen Szenenbilder erzeugt weiterhin der Nutzer mit Google Flow.
+Die technische Pipeline ist fail-closed: Bei echtem Widerspruch nicht raten. Einzelne Flow-Generierungsfehler werden dagegen über Fehlerliste + Recovery behandelt.
