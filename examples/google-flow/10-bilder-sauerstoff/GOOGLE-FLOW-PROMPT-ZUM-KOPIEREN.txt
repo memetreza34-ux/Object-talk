@@ -1,0 +1,86 @@
+Create exactly 10 individual 16:9 images for a German educational explainer channel.
+
+TOPIC:
+How oxygen travels through the human body.
+
+GLOBAL VISUAL WORLD:
+Premium stylized 3D animated educational film look, strongly animated rather than photorealistic, soft rounded forms, simplified but recognizable human biology, warm cinematic lighting, polished materials, strong depth, colorful but controlled, family-friendly and modern. No anime, no comic, no live action, no medical photorealism, no gore, no mascot presenter.
+
+TEXT RULE:
+- All prompt instructions are in English.
+- Every visible word inside the generated images must be German.
+- Label the most important structures in every image, usually 1–3 short German labels.
+- No English text, no gibberish, no long paragraphs.
+- If a label is misspelled or unreadable, the image fails and must be regenerated.
+
+CONSISTENCY LOCK:
+- O2: always the same small paired pale-cyan particles.
+- Red blood cells: always the same deep warm-red biconcave discs.
+- CO2: always clearly different from O2, using the same three-part symbol when it appears.
+- Keep lighting, materials, anatomy simplification, color language and render quality consistent across all images.
+
+PRODUCTION WORKFLOW:
+1. Read the full prompt first.
+2. Generate ONLY Bild_01.
+3. Bild_01 is the cover, first visible frame and master style reference.
+4. Inspect Bild_01 for style, readability, anatomy, German text and composition.
+5. If it fails, regenerate only Bild_01.
+6. When Bild_01 passes, save it as Bild_01.png and STOP. Wait for user approval.
+7. After approval, use Bild_01.png as the exact style/continuity reference for every later image.
+8. Then generate images individually in these blocks:
+   - Block 1: Bild_02 to Bild_06
+   - Block 2: Bild_07 to Bild_10
+9. Check every image immediately after generation.
+10. If an image fails, keep its number on a recovery list and continue.
+11. After the normal pass, regenerate only failed/missing image numbers.
+12. Final result must contain exactly Bild_01.png to Bild_10.png with no gaps and no rejected variants.
+
+-----------------------------------
+BILD_01 — COVER + MASTER STYLE FRAME
+-----------------------------------
+Create the master 16:9 cover frame for a German educational explainer about how oxygen travels through the body. Show an anonymous young person inhaling, with a softly transparent upper torso revealing stylized lungs, heart, major blood vessels and a hint of a body cell. Pale-cyan O2 particles enter the lungs and visually suggest the route from lungs to blood to cells. Make this the strongest, clearest and most polished image of the set and use it to define the exact 3D animation style, lighting, materials, color palette, anatomy simplification and depth for all later images. Add the large German hook text “So reist Sauerstoff durch deinen Körper” and the smaller German labels “Lunge” and “Herz”. No English text, no photorealism, no mascot, no gore.
+
+-----------------------------------
+BILD_02 — ROUTE OVERVIEW
+-----------------------------------
+Using Bild_01 as the exact style reference, show the full route in one simple composition: lungs on the left, a blood vessel with red blood cells in the center and a body cell on the right, connected by the same pale-cyan O2 particles. Keep the journey visually obvious and cinematic, not like a dashboard. Add only the German labels “Lunge”, “Blut” and “Zelle”.
+
+-----------------------------------
+BILD_03 — AIRWAYS
+-----------------------------------
+Using Bild_01 as the exact style reference, create a stylized upper-body cutaway showing the trachea branching into bronchi inside both lungs. Pale-cyan O2 particles move downward through the airways. Add only the German labels “Luftröhre” and “Bronchien”.
+
+-----------------------------------
+BILD_04 — ALVEOLI
+-----------------------------------
+Using Bild_01 as the exact style reference, create a macro view of many soft rounded alveoli at the ends of tiny airways. Pale-cyan O2 particles arrive inside the alveoli while small capillaries wrap around them. Add only the German labels “Lungenbläschen” and “Kapillaren”.
+
+-----------------------------------
+BILD_05 — OXYGEN ENTERS THE BLOOD
+-----------------------------------
+Using Bild_01 as the exact style reference, create a close-up of one alveolus beside a tiny capillary. Show pale-cyan O2 particles crossing the thin barrier from the alveolus into the blood where red blood cells are visible. Make the transfer instantly understandable. Add only the German labels “Lungenbläschen”, “Kapillare” and “Sauerstoff”.
+
+-----------------------------------
+BILD_06 — RED BLOOD CELLS TRANSPORT OXYGEN
+-----------------------------------
+Using Bild_01 as the exact style reference, create a dynamic inside-blood-vessel scene with several deep red blood cells carrying pale-cyan O2 particles through the bloodstream. Use strong depth and a clear flow direction. Add only the German labels “Rote Blutkörperchen” and “Sauerstoff”.
+
+-----------------------------------
+BILD_07 — HEART PUMPS OXYGEN-RICH BLOOD
+-----------------------------------
+Using Bild_01 as the exact style reference, create a stylized chest cutaway with lungs, heart and major blood vessels. Show oxygen-rich blood leaving the heart toward the body. Add only the German labels “Herz”, “Blutgefäße” and “Sauerstoff”.
+
+-----------------------------------
+BILD_08 — OXYGEN REACHES MUSCLE TISSUE
+-----------------------------------
+Using Bild_01 as the exact style reference, create a macro scene of a tiny capillary directly beside stylized muscle tissue. Show pale-cyan O2 particles leaving the blood and moving toward muscle cells. Add only the German labels “Kapillare”, “Muskelzelle” and “Sauerstoff”.
+
+-----------------------------------
+BILD_09 — OXYGEN INSIDE THE CELL
+-----------------------------------
+Using Bild_01 as the exact style reference, create a stylized cross-section of a muscle cell. Show pale-cyan O2 particles entering the cell and moving toward clearly visible mitochondria. Add only the German labels “Muskelzelle” and “Mitochondrium”.
+
+-----------------------------------
+BILD_10 — FINAL SUMMARY
+-----------------------------------
+Using Bild_01 as the exact style reference, create a final hero image summarizing the complete oxygen journey in one connected composition: inhalation → lungs → alveoli → red blood cells → heart → capillary → muscle cell → mitochondrion. Use the same pale-cyan O2 particles as the visual thread through the entire image. Add the German closing heading “Von der Lunge bis zur Zelle” and the German labels “Lunge”, “Blut” and “Zelle”. Keep the composition clean, cinematic and immediately readable.
