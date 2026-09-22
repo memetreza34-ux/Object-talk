@@ -2,19 +2,36 @@
   "status": "TEMPLATE",
   "rules": {
     "language": "de",
+    "prompt_language": "en",
+    "min_labels_per_image": 1,
     "max_labels_per_image": 3,
-    "label_only_if_needed_for_understanding": true,
-    "fallback_to_overlay_if_ai_text_wrong": true
+    "label_most_important_visible_things": true,
+    "fallback_to_overlay_if_ai_text_wrong": true,
+    "cover_requires_german_hook": true,
+    "cover_hook_words": "3-7"
   },
   "images": [
     {
       "image_asset_id": "Bild_01",
-      "mode": "optional",
+      "mode": "cover-hook-and-key-labels",
+      "hook_text": "[Kurzer deutscher Hook zum Thema]",
       "labels": [
         {
-          "text": "[Exakter deutscher Begriff]",
+          "text": "[Wichtigster deutscher Begriff]",
           "target": "[Konkrete sichtbare Struktur]",
-          "reason": "[Warum das Label fuer das Verstaendnis notwendig ist]",
+          "reason": "[Warum dieses Label die Orientierung verbessert]",
+          "fallback_overlay": true
+        }
+      ]
+    },
+    {
+      "image_asset_id": "Bild_02",
+      "mode": "key-labels",
+      "labels": [
+        {
+          "text": "[Wichtigster deutscher Begriff]",
+          "target": "[Konkrete sichtbare Struktur]",
+          "reason": "[Warum dieses Label die Orientierung verbessert]",
           "fallback_overlay": true
         }
       ]
