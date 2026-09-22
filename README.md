@@ -1,25 +1,25 @@
 # Object-Talk
 
-Produktionssystem für den YouTube-Kanal **Object-Talk / FoodSpricht**.
+Produktionssystem für den deutschen YouTube-Kanal **Object-Talk / FoodSpricht**.
 
 ## Ziel
 
-Normale Kanalvideos sind lange deutschsprachige YouTube-Erklärvideos über Ernährung, Gesundheit, menschlichen Körper und Biologie.
+Normale Kanalvideos sind lange deutschsprachige Erklärvideos über Ernährung, Gesundheit, menschlichen Körper und Biologie.
 
-Normaler Produktionsstandard:
+Standard:
 
-- mindestens **5:00 Minuten**
+- mindestens 5:00 Minuten
 - 16:9 / 1920×1080 / 30 fps
-- narrative Visuals aus generierten Standbildern
-- hochwertige faceless 3D-Explainer-Bildwelt
-- komplexe Vorgänge visuell einfach erklären
-- wichtige biologische Strukturen verständlich darstellen
+- hohe visuelle Dichte aus generierten Standbildern
+- stark stilisierte hochwertige 3D-Animationsfilm-Welt
+- deutlich animiert statt fotorealistisch
+- wichtige sichtbare Strukturen knapp auf Deutsch beschriften
+- Flow-Prompt-Anweisungen auf Englisch
+- sichtbarer Text im Bild ausschließlich Deutsch
 - wissenschaftlich prüfen
 - keine unnötige Themenwiederholung
 
 ## Aktueller interner Pilot
-
-Aktiv ist derzeit:
 
 ```text
 youtube-videos/001-pilot-sauerstoff-im-blut/
@@ -29,36 +29,85 @@ Thema:
 
 **Wie kommt Sauerstoff von der Lunge bis in deine Zellen?**
 
-Dieser zweite Pilot ist absichtlich nur ungefähr **2–2,5 Minuten** lang. Er testet die Verbesserungen aus dem ersten Zucker-Pilot und ändert die 5-Minuten-Regel für normale Kanalvideos nicht.
+Pilot 001 ist absichtlich nur ungefähr 2–2,5 Minuten lang und nutzt 28 Erklärbilder. Er testet die neue visuelle Welt und ändert die 5-Minuten-Regel für normale Videos nicht.
 
-Pilot 001 nutzt **28 echte Erklärbilder**. Ein neues Bild kommt nur, wenn sich Ort, Maßstab, Zustand, Prozess oder zentrale visuelle Aussage ändert.
+## Verbindliche Bildwelt
 
-## Was Pilot 001 zusätzlich testet
+- premium stilisierte 3D-Animationsfilm-Optik
+- weiche gerundete Formen
+- vereinfachte, aber erkennbare Anatomie
+- warme filmische Beleuchtung
+- hochwertige Materialien und starke Tiefenwirkung
+- freundlich, modern, familiengeeignet
+- kein medizinischer Fotorealismus
+- kein Anime, Comic, Gore oder Horror-Look
+- kein dauerhafter Mascot-/Presenter-Fokus
 
-- Flow-Bilder möglichst **textfrei**
-- Überschriften und Keywords kontrolliert in **Remotion** statt KI-Text im Bild
-- feste visuelle Identität für **O₂, CO₂, rote Blutkörperchen und Hämoglobin**
-- starke Maßstabswechsel von Mensch → Lunge → Alveole → Blut → Hämoglobin → Herz → Gewebe → Zelle → Mitochondrium
-- Vollbild bleibt Hauptdarsteller; Text-Overlays nur gezielt
-- keine Mascot-/Presenter-Figur
+Der Kanal lebt von echten Erklärbildern: Cutaways, transparente Körperansichten, Organ-/Gewebe-/Zellansichten, Prozessbilder, Vergleiche und Mikro-/Makro-Wechsel.
 
-Selektive Overlays werden über:
+## Beschriftung
+
+Jedes Bild soll die wichtigsten sichtbaren Dinge benennen.
+
+Richtwert:
+
+- 1–3 kurze deutsche Labels
+- nur Schlüsselstrukturen oder Schlüsselprozesse
+- eindeutige Zuordnung
+- keine Textwände
+- kein englischer sichtbarer Text
+- fehlerhafte KI-Schrift = Regeneration oder exakt geplanter Remotion-Fallback
+
+## Bild_01 – Cover + Hook + Master Style Frame
+
+`Bild_01` ist bei jedem Video oder Reel:
+
+- Cover
+- erster Shot
+- Master Style Frame
+- Stilvorlage für alle weiteren Bilder
+
+Darum wird Bild_01 besonders ausführlich beschrieben. Es enthält eine kurze starke deutsche Hook-Zeile zum Thema, normalerweise 3–7 Wörter.
+
+Flow erzeugt zuerst ausschließlich Bild_01. Nach Nutzerfreigabe wird Bild_01 als Style-/Continuity-Referenz für alle restlichen Bilder verwendet.
+
+## Flow-Prompts
+
+- Prompt-Anweisungen immer Englisch
+- sichtbare Hook-/Label-Texte immer Deutsch
+- Bild_01 ausführlich
+- Folgeprompts so kurz wie möglich, so genau wie nötig
+- meist 2–5 Sätze pro Folgebild
+- Szene + sichtbarer Prozess + Komposition + deutsche Labels
+- globalen Stilblock nicht in jedem Prompt wiederholen
+
+Details: `engine/FLOW-PRODUCTION-STANDARD.md`.
+
+## 5er-Blöcke
+
+Nach freigegebenem Bild_01:
 
 ```text
-03_pipeline/overlay-plan.json
+Bild_02–06
+Bild_07–11
+Bild_12–16
+Bild_17–21
+Bild_22–26
+Bild_27–31
+...
 ```
 
-definiert.
+Jedes Bild innerhalb eines Blocks wird einzeln erzeugt und geprüft. Nach jedem Block folgt ein kurzer Stil-/Nummerierungscheck. Fehler kommen auf die Recovery-Liste.
 
-Globale Overlay-Regeln:
+## Präsentation / Remotion
 
-```text
-engine/PRESENTATION-OVERLAY-SYSTEM.md
-```
+Vollbild bleibt Standard. Zusätzlich sind kurze deutsche Überschriften, Keywords, Callouts und Vergleichsmarker erlaubt, wenn sie echten Erklärwert haben.
+
+Keine doppelten Texte: Wenn Flow ein korrektes Label bereits im Bild trägt, soll Remotion denselben Begriff nicht unnötig erneut darüberlegen.
+
+Details: `engine/PRESENTATION-OVERLAY-SYSTEM.md`.
 
 ## Repo-Gehirn
-
-Neue Chats/Agenten sollen nicht von alter Chat-Erinnerung abhängig sein.
 
 Vor Arbeit lesen:
 
@@ -72,25 +121,7 @@ Vor Arbeit lesen:
 8. relevante `bildwelt/*.md`
 9. aktuelles Video-Projekt
 
-## Visuelles Kernprinzip
-
-Der Kanal ist **kein Mascot-/Presenter-Format**.
-
-Standard sind echte Erklärbilder:
-
-- anatomische Cutaways
-- transparente Körperansichten
-- Prozessdarstellungen
-- Organ-, Gewebe- und Zellvisualisierungen
-- Mikro-/Makro-Übergänge
-- Vorher-/Nachher- und Vergleichsbilder
-- Ursache→Prozess→Folge-Darstellungen
-
-Personifizierte Objekte sind nur erlaubt, wenn sie eine konkrete Erklärung wirklich verbessern.
-
 ## Bildrhythmus
-
-Richtwerte:
 
 - Hook: meist 2–4 Sekunden
 - normale Erklärbilder: meist 4–6 Sekunden
@@ -99,18 +130,6 @@ Richtwerte:
 - über 8 Sekunden nur mit bewusstem Grund
 
 Keine Füllbilder. Lange Standzeiten dürfen nicht nur mit Zoom/Pan kaschiert werden.
-
-## Präsentation / Text
-
-Die 3D-Welt bleibt bestehen; sie wird **nicht** in Anime-, Comic- oder Cartoon-Stil umgebaut.
-
-Richtwert:
-
-- ca. 65–75 % reine Vollbilder
-- ca. 20–30 % kurze Überschrift/Keyword
-- zusätzliche grafische Hilfen nur bei echtem Erklärwert
-
-Wichtige Texte werden bevorzugt im Editor erzeugt, damit Rechtschreibung, Stil und Timing kontrollierbar bleiben.
 
 ## V2-Planung
 
@@ -133,26 +152,20 @@ Recherche + Claims
 → Visual-First-Skript
 → Satz-Visual-Plan
 → semantische Szenen
-→ Flow-Bilder
+→ Label-Plan
+→ Flow: nur Bild_01
+→ Nutzerfreigabe
+→ 5er-Blöcke
 → Einzelbild-Review ≥ 8/10
+→ Recovery
 → Voice + Worttimings
-→ Remotion + selektive Overlays
+→ Remotion
 → Render
 → Qualitäts-Scorecard
 → Postmortem
 ```
 
-Wissenschaftliche Sicherheit unter **8/10** ist ein harter Blocker.
-
-## Style-Anker
-
-`Bild_01` jedes Videos ist:
-
-- Cover-/Hook-Frame
-- erster Shot
-- Master Style Frame der Episode
-
-Flow erzeugt zuerst nur `Bild_01`. Erst nach akzeptiertem Bild_01 folgen die nächsten Bilder in 5er-Blöcken. Fehlerhafte Generationen werden gesammelt und am Ende im Recovery-Pass erneut erzeugt.
+Wissenschaftliche Sicherheit unter 8/10 ist harter Blocker.
 
 ## Drei Phasen
 
@@ -166,6 +179,7 @@ Thema
 → finales script.txt
 → Satz-Visual-Plan
 → Szenenplan
+→ Label-Plan
 → Flow-Prompt
 → scene-map.json
 → overlay-plan.json
@@ -178,7 +192,7 @@ Thema
 VOICEOVER-ZUM-KOPIEREN.txt → Voice-KI
 GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt
 → nur Bild_01
-→ Style-Freigabe
+→ Style-/Cover-Freigabe
 → 5er-Blöcke
 → Einzelbild-Review
 → Recovery-Pass
@@ -188,14 +202,13 @@ GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt
 ### Phase 3 – Antigravity + Tools + Remotion
 
 ```text
-rohes Audio
-→ final-voiceover.wav
+Audio vorbereiten
 → Flow-ZIP importieren
 → Assets validieren
 → faster-whisper
 → Script↔Audio-Ausrichtung
 → timeline.json
-→ overlay-plan.json einlesen
+→ overlay-plan.json
 → Remotion
 → Render
 → Final-QA
@@ -206,22 +219,9 @@ rohes Audio
 ## Aktueller Pilot – nächster Schritt
 
 1. `youtube-videos/001-pilot-sauerstoff-im-blut/01_script/VOICEOVER-ZUM-KOPIEREN.txt` für die Voice verwenden.
-2. `youtube-videos/001-pilot-sauerstoff-im-blut/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt` in Flow geben.
-3. Flow muss **zuerst nur `Bild_01`** erzeugen und danach stoppen.
-4. Nach Stilfreigabe folgen `Bild_02` bis `Bild_28` in den festgelegten Blöcken.
-
-## Test-QA
-
-Normale Final-QA bleibt bei 300 Sekunden.
-
-Nur beim dokumentierten Pilot 001:
-
-```bash
-python tools/qa_final.py \
-  youtube-videos/001-pilot-sauerstoff-im-blut/04_export/fertiges-video/final-video.mp4 \
-  youtube-videos/001-pilot-sauerstoff-im-blut/01_script/audio/final-voiceover.wav \
-  --min-seconds 115
-```
+2. `youtube-videos/001-pilot-sauerstoff-im-blut/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt` vollständig in Flow geben.
+3. Flow erzeugt **zuerst nur `Bild_01`** und stoppt.
+4. Erst nach Freigabe folgen Bild_02 bis Bild_28 in den festgelegten Blöcken.
 
 ## Goldene Regel
 
