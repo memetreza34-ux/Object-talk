@@ -1,6 +1,6 @@
 # Object-Talk – Project State
 
-Letzte Aktualisierung: 21.09.2026
+Letzte Aktualisierung: 22.09.2026
 
 ## Aktueller Stand
 
@@ -14,118 +14,119 @@ Thema:
 
 **Wie kommt Sauerstoff von der Lunge bis in deine Zellen?**
 
-Der frühere Zucker-Pilot bleibt als TEST 000 im Repository und dient als Vergleichsbasis. Der neue Pilot 001 testet dieselbe Pipeline mit den nach dem ersten Finalrender eingeführten Verbesserungen.
+Pilot 001 testet die verbesserte visuelle Welt und den neuen Flow-Standard.
 
 ## Pilot-Laufzeit und Bilddichte
 
-Pilot 001 ist ausdrücklich als interner Test markiert:
-
-```text
-youtube-videos/001-pilot-sauerstoff-im-blut/05_info/test-mode.json
-```
-
-Ziel:
 - ungefähr 135 Sekunden
 - akzeptabler Testbereich 115–160 Sekunden
 - **28 Erklärbilder**
 - überwiegend 3–6 Sekunden pro Bild
 - normale Kanalvideos bleiben mindestens 300 Sekunden lang
 
-## Was gegenüber Pilot 000 verbessert wurde
+## Verbindliche neue Bildwelt
 
-### 1. Flow-Bilder möglichst textfrei
+Die frühere zu realistische/semi-realistische Richtung ist verworfen.
 
-Der erste Pilot zeigte, dass KI-generierter Text schnell englisch, inkonsistent oder unleserlich werden kann.
+Ab jetzt:
 
-Darum gilt bei Pilot 001:
+- **stark stilisierte hochwertige 3D-Animationsfilm-Welt**
+- deutlich animiert statt fotorealistisch
+- weiche gerundete Formen
+- vereinfachte, erkennbare Anatomie
+- warme filmische Beleuchtung
+- hochwertige Materialien und starke Tiefenwirkung
+- freundlich und familiengeeignet, nicht babyhaft
+- kein Anime, kein Comic, keine medizinische Foto-/CGI-Realistik
+- kein Gore
 
-- Flow erzeugt die Bildwelt möglichst ohne Text
-- keine eingebrannten Überschriften
-- keine englischen Labels
-- wichtige Wörter kommen kontrolliert aus Remotion
+## Text- und Prompt-Regel
 
-### 2. Selektive Überschriften und Keywords
+- Flow-Prompt-Anweisungen: **Englisch**
+- jeder sichtbare Text im Bild: **Deutsch**
+- jedes Bild: normalerweise 1–3 wichtige deutsche Labels
+- keine englischen sichtbaren Wörter
+- keine langen Textblöcke
+- falsches Flow-Label = Regeneration oder exakt geplanter Remotion-Fallback
 
-`03_pipeline/overlay-plan.json` enthält nur ausgewählte Texte:
+## Bild_01 – neue Pflicht
 
-- `Sauerstoff auf Reisen`
-- `Die Lungenbläschen`
-- `Lunge → Blut`
-- `Hämoglobin`
-- `Zurück zum Herzen`
-- `Sauerstoff wird frei`
-- `Mitochondrien`
-- `Kohlendioxid`
-- `Von der Lunge bis zur Zelle`
+`Bild_01` ist immer:
 
-Vollbild bleibt der Standard. Overlays dienen nur der Orientierung.
+- Cover
+- erster Shot
+- Master Style Frame
+- Vorlage für alle restlichen Bilder
 
-### 3. Feste visuelle Identität
+Bild_01 wird besonders ausführlich beschrieben und enthält eine kurze starke deutsche Hook-Zeile zum Thema.
 
-Damit Moleküle/Strukturen nicht von Szene zu Szene ihr Aussehen wechseln:
-
-- O₂ = immer dieselben blass-cyanfarbenen gepaarten Kugeln
-- CO₂ = immer dieselbe lineare Drei-Kugel-Form mit dunkler Mitte
-- rote Blutkörperchen = warmrote bikonkave Scheiben
-- Hämoglobin = burgunderrote vereinfachte vierlappige Struktur innerhalb der roten Blutkörperchen
-
-### 4. Mehr echte Maßstabswechsel
-
-Der Pilot wechselt bewusst:
+Für Pilot 001:
 
 ```text
-Mensch
-→ Atemwege
-→ Alveole
-→ Kapillare
-→ rotes Blutkörperchen
-→ Hämoglobin
-→ Herz
-→ Gefäß
-→ Gewebe
-→ Zelle
-→ Mitochondrium
-→ zurück zur Lunge
+So reist Sauerstoff durch deinen Körper
 ```
 
-Dadurch soll das Video wie eine geführte Reise wirken und nicht wie eine reine Diashow.
+Bild_01 wird zuerst allein erzeugt. Erst nach Nutzerfreigabe geht es weiter.
 
-## Pilot-Struktur
+## Folgeprompts
 
-Phase 1 ist vorbereitet mit:
+Nach Bild_01 gilt:
 
-- finalem ca. 2–2,5-Minuten-Skript
-- **28 semantischen Szenen**
-- Recherche und Claim-Matrix
-- `mechanism-map.md`
-- vollständigem `sentence-visual-plan.json`
-- textfreiem `label-plan.json`
-- `image-review.json` für 28 Bilder
-- vollständigem Google-Flow-Prompt mit 28 Einzelprompts
-- `scene-map.json`
-- `overlay-plan.json`
-- Antigravity-Prompt
-- YouTube-Metadaten
-- Quality-Scorecard und Postmortem-Vorlage
+- Prompt so kurz wie möglich, so genau wie nötig
+- normalerweise 2–5 englische Sätze
+- Szene + sichtbarer Prozess + Komposition + deutsche Labels
+- globalen Stilblock nicht ständig wiederholen
+- `Bild_01.png` immer als Style-/Continuity-Referenz verwenden
+
+## Feste visuelle Identität
+
+- O₂ = blass-cyanfarbene gepaarte Kugeln
+- CO₂ = klar unterscheidbare lineare Drei-Kugel-Form
+- rote Blutkörperchen = warmrote bikonkave Scheiben
+- Hämoglobin = burgunderrote vereinfachte vierlappige Struktur innerhalb roter Blutkörperchen
 
 ## Flow-Ablauf
 
 ```text
 nur Bild_01
-→ Bild_01 vollständig prüfen
-→ Nutzer bestätigt Master Style Frame
+→ Bild_01 prüfen
+→ Nutzerfreigabe
 → Bild_02–06 einzeln
+→ Block-QA
 → Bild_07–11 einzeln
+→ Block-QA
 → Bild_12–16 einzeln
+→ Block-QA
 → Bild_17–21 einzeln
+→ Block-QA
 → Bild_22–26 einzeln
+→ Block-QA
 → Bild_27–28 einzeln
 → Fehlerliste
 → Recovery-Pass
 → lückenlose ZIP Bild_01...Bild_28
 ```
 
-Nutzerprompt:
+## Pilot-Struktur
+
+Phase 1 enthält:
+
+- finales Skript
+- 28 semantische Szenen
+- Recherche und Claim-Matrix
+- Mechanism Map
+- Satz-Visual-Plan
+- Label-Plan mit deutschen Schlüsselbegriffen pro Bild
+- Google-Flow-Prompt mit ausführlichem Bild_01 und kompakten Folgeprompts
+- Scene Map
+- reduzierten Overlay-Plan ohne doppelten Cover-Hook
+- Antigravity-Prompt
+- YouTube-Metadaten
+- Quality-Scorecard und Postmortem
+
+## Nutzerdateien
+
+Flow:
 
 ```text
 youtube-videos/001-pilot-sauerstoff-im-blut/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt
@@ -139,21 +140,9 @@ youtube-videos/001-pilot-sauerstoff-im-blut/01_script/VOICEOVER-ZUM-KOPIEREN.txt
 
 ## V2-Checks
 
-Vor Flow/Voice-Freigabe:
-
 ```bash
 python tools/validate_planning_v2.py youtube-videos/001-pilot-sauerstoff-im-blut
-```
-
-Nach finaler Bildauswahl:
-
-```bash
 python tools/validate_planning_v2.py youtube-videos/001-pilot-sauerstoff-im-blut --phase2
-```
-
-Danach:
-
-```bash
 python tools/prepare_phase3.py youtube-videos/001-pilot-sauerstoff-im-blut
 ```
 
@@ -168,6 +157,6 @@ python tools/qa_final.py \
 
 ## Nächster Meilenstein
 
-**Pilot 001 in Google Flow starten und zunächst ausschließlich `Bild_01` erzeugen.**
+**Google Flow bekommt den aktualisierten Prompt und erzeugt zuerst ausschließlich Bild_01.**
 
-Wenn `Bild_01` die gewünschte 3D-Erklärwelt trifft, werden die restlichen 27 Bilder mit genau diesem Stil produziert.
+Nur wenn Bild_01 die gewünschte stark stilisierte 3D-Animationswelt, den deutschen Cover-Hook und die wichtigsten Labels sauber trifft, werden die restlichen 27 Bilder erzeugt.
