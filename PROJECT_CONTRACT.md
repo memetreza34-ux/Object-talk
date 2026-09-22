@@ -4,164 +4,154 @@ Diese Datei ist die dauerhafte oberste Produktionsregel des Repositories. Bei Wi
 
 ## Ziel
 
-Object-Talk produziert ausschließlich lange deutschsprachige YouTube-Erklärvideos zu Ernährung, Gesundheit und Biologie.
+Object-Talk produziert deutschsprachige YouTube-Erklärvideos zu Ernährung, Gesundheit und Biologie.
 
 Harte Grundregeln:
 
-- finales Video mindestens 5:00 Minuten
+- normale Kanalvideos mindestens 5:00 Minuten
 - Standardziel 5:30–8:00 Minuten
 - 16:9, 1920×1080, 30 fps
-- generierte Standbilder bleiben die visuelle Basis; Bewegung, kurze Überschriften, Labels und grafische Führung entstehen kontrolliert in Remotion
-- einheitliche hochwertige semi-realistische 3D-Explainer-Bildwelt
-- komplexe Vorgänge müssen visuell einfach und nachvollziehbar erklärt werden
-- biologische Inhalte vereinfachen, aber nicht fachlich verfälschen
-- wichtige Strukturen knapp und auf Deutsch beschriften
-- keine unnötigen Wiederholungen bereits produzierter Themen
+- generierte Standbilder bleiben die visuelle Basis
+- hohe visuelle Dichte statt langer statischer Bildhaltezeiten
+- stark stilisierte hochwertige 3D-Animationsfilm-Welt, deutlich animiert statt fotorealistisch
+- komplexe Vorgänge visuell einfach und fachlich plausibel erklären
+- wichtige sichtbare Strukturen in jedem Bild knapp beschriften
+- sichtbarer Text immer Deutsch
+- Flow-Prompt-Anweisungen immer Englisch
+- keine unnötige Themenwiederholung
 
-## Interner Kurz-Pilot – einzige Laufzeit-Ausnahme
+## Interner Kurz-Pilot
 
-Die 5-Minuten-Regel bleibt für normale veröffentlichte Kanalvideos bestehen.
+Normale veröffentlichte Videos bleiben mindestens 5:00 Minuten lang.
 
-Ein **ausdrücklich als interner Test markiertes Projekt** darf kürzer sein, wenn im Projekt eine Datei
-
-```text
-05_info/test-mode.json
-```
-
-mit `test_mode: true` vorhanden ist.
-
-Für solche Piloten gilt:
-
-- Zweck ist ausschließlich Pipeline-, Stil-, Flow-, Sync- oder Render-Test
-- Zielbereich muss im Projekt selbst dokumentiert sein
-- der Test zählt nicht automatisch als veröffentlichtes Thema
-- `qa_final.py` darf nur für diesen Test mit einem ausdrücklich angegebenen `--min-seconds` unter 300 ausgeführt werden
-- normale Videos verwenden weiterhin den Standardwert 300 Sekunden
-- ein Testprojekt darf keine globale Longform-Regel still auf kürzere Videos umstellen
+Ein ausdrücklich markierter interner Test darf kürzer sein, wenn `05_info/test-mode.json` mit `test_mode: true` vorhanden ist. Nur die Laufzeitregel darf abweichen; Wissenschafts-, Visual-, Sync- und QA-Regeln bleiben aktiv.
 
 Aktueller Pilot:
 
 ```text
-youtube-videos/000-pilot-zucker-im-blut/
+youtube-videos/001-pilot-sauerstoff-im-blut/
 ```
 
-Ziel ca. 120 Sekunden; akzeptabler interner Testbereich 105–150 Sekunden.
+## Verbindliche Bildwelt
 
-## Verbindliche Bildwelt – Faceless Explainer zuerst
+Der Kanal ist kein Mascot-/Presenter-Kanal. Die Biologie und der erklärte Prozess sind der Hauptdarsteller.
 
-Der Kanal ist **kein Mascot-/Presenter-Kanal**. Die Bilder sollen in erster Linie erklären.
+Die verbindliche Welt ist:
 
-Priorität jedes Bildes:
+- hochwertiger stilisierter 3D-Animationsfilm-Look
+- weich, rund und klar animiert
+- deutlich weniger realistisch als medizinische CGI
+- vereinfachte, aber erkennbare Anatomie
+- warme filmische Beleuchtung
+- hochwertige Materialien, starke Tiefenwirkung
+- freundlich und familiengeeignet, aber nicht babyhaft
+- keine Anime-, Comic-, Live-Action- oder fotorealistische Medizinoptik
+- kein Gore und keine Horror-Anatomie
 
-1. Verständnis des gesprochenen Inhalts
-2. fachlich plausible Darstellung
-3. klare visuelle Führung
-4. konsistenter Kanalstil
-5. erst danach dekorative oder emotionale Elemente
-
-Standard-Bildtypen sind:
+Standard-Bildtypen:
 
 - anatomische Cutaways
 - transparente Körperansichten
 - Prozessdarstellungen
-- Organ-, Gewebe- und Zellvisualisierungen
-- Mikro-/Makro-Zooms
+- Organ-, Gewebe-, Zell- und Organellvisualisierungen
+- Mikro-/Makro-Wechsel
 - Vorher-/Nachher- und Vergleichsbilder
-- klare Ursache→Prozess→Folge-Darstellungen
-- didaktische 3D-Explainer-Kompositionen
+- Ursache → Prozess → Folge
 
-Personifizierte Lebensmittel oder Object-Talk-Figuren sind **nicht** der Standard und dürfen nicht als dauerhafte Sprecherfigur vor dem eigentlichen Erklärbild stehen.
+Personifizierte Lebensmittel oder Figuren sind nur erlaubt, wenn sie eine Szene wirklich verständlicher machen. Sie sind nie der dauerhafte Standard.
 
-Sie sind nur erlaubt, wenn eine konkrete Szene dadurch wirklich verständlicher wird. Richtwert pro Video:
+## Beschriftung und sichtbarer Text
 
-- etwa 70 % direkte Erklärbilder
-- etwa 20 % Prozess-/Vergleichsbilder
-- maximal etwa 10 % optionale Character-/Guide-Momente
+**Jedes Bild benennt die wichtigsten sichtbaren Dinge.**
 
-Diese Prozentwerte sind Qualitätsrichtwerte, keine starre Quote. Entscheidend ist immer der Erklärwert.
+Regeln:
 
-## Präsentations- und Overlay-Regel
+- normalerweise 1–3 kurze deutsche Labels
+- nur Schlüsselstrukturen oder Schlüsselprozesse beschriften
+- Labels eindeutig zuordnen
+- keine Textwände
+- keine englischen sichtbaren Wörter
+- kein KI-Gibberish
+- fehlerhaftes Label = Bild regenerieren
+- wenn Flow einen Begriff wiederholt falsch schreibt, textfreie Variante erzeugen und exakt denselben deutschen Begriff später in Remotion ergänzen
 
-Die aktuelle warme semi-realistische 3D-Welt bleibt erhalten. Sie wird **nicht** in Anime-, Comic- oder Cartoon-Stil umgestellt.
+Zusätzliche Überschriften/Keywords dürfen in Remotion animiert werden. Details: `engine/PRESENTATION-OVERLAY-SYSTEM.md`.
 
-Das Video soll aber nicht wie eine reine Diashow wirken.
+## Bild_01 – Cover + Hook + Master Style Frame
 
-Darum gilt:
+`Bild_01` ist bei jedem Video oder Reel gleichzeitig:
 
-- generierte Erklärbilder bleiben grundsätzlich **Vollbild**
-- keine dauerhaften Rahmen, Kartenlayouts oder PowerPoint-Flächen
-- ausgewählte Szenen dürfen kurze animierte Überschriften, Schlüsselwörter, Labels, Callouts oder Vergleichsmarker bekommen
-- Überschriften werden bevorzugt in Remotion erzeugt, nicht in Google Flow eingebrannt
-- komplette Voice-over-Sätze werden nicht als Text über das Bild gelegt
-- ein Overlay muss einen echten Orientierungs- oder Erklärwert haben
-- Textanimationen bleiben ruhig und hochwertig: Fade, leichter Slide, dezente Scale-in-Bewegung, Unterstreichung, Callout-Linie
-- keine Meme-, Bounce-, Shake-, Anime- oder hektischen Popup-Effekte
+1. Cover-/Hook-Bild
+2. erster Shot
+3. Master Style Frame
+4. Stilreferenz für alle weiteren Bilder
 
-Richtwert:
+Darum gilt für Bild_01 eine Sonderregel:
 
-- ca. 65–75 % der Szenen bleiben reines Vollbild
-- ca. 20–30 % erhalten eine kurze Überschrift oder ein Schlüsselwort
-- ca. 10–15 % dürfen zusätzliche grafische Erklärhilfen bekommen
+- der Prompt für Bild_01 ist ausführlicher und präziser als die restlichen Bildprompts
+- Thema und visuelle Reise müssen auf einen Blick verständlich sein
+- Bild_01 definiert Rendergrad, Stilisierung, Licht, Materialien, Farbwelt, Tiefenwirkung und Anatomie-Vereinfachung
+- Bild_01 enthält eine **kurze starke deutsche Hook-Zeile**, die sagt, worum es im Video/Reel geht
+- Hook normalerweise 3–7 Wörter und höchstens zwei kurze Zeilen
+- keine irreführende Clickbait-Aussage
+- zusätzlich nur die wichtigsten Labels
 
-Diese Werte sind nicht additiv als Pflichtquote zu verstehen und dürfen sich überschneiden. Das Bild bleibt immer Hauptdarsteller.
+Nach Freigabe muss Google Flow Bild_01 als Style-/Continuity-Referenz für alle weiteren Bilder verwenden, soweit technisch möglich.
 
-Details: `engine/PRESENTATION-OVERLAY-SYSTEM.md`.
+## Google-Flow-Prompt-Sprache
+
+- Anweisungen/Prompts an Flow: **Englisch**
+- sichtbare Texte, Hook, Labels, Callouts: **Deutsch**
+
+Szenenprompts nach Bild_01 sind bewusst kompakt:
+
+- so kurz wie möglich, so genau wie nötig
+- meistens 2–5 Sätze
+- Szene + sichtbarer Prozess + Komposition + deutsche Labels
+- globalen Stilblock nicht in jedem Einzelprompt vollständig wiederholen
+
+Details: `engine/FLOW-PRODUCTION-STANDARD.md`.
 
 ## Verbindlicher Google-Flow-Ablauf
 
-Google Flow arbeitet fail-tolerant und blockweise.
+### A – zuerst nur Bild_01
 
-### A – Master Style Frame
-
-1. Zuerst wird ausschließlich `Bild_01` erzeugt.
-2. `Bild_01` wird vollständig geprüft.
-3. Erst nach PASS wird es als `Bild_01.png` akzeptiert.
-4. `Bild_01` ist gleichzeitig Cover, erster Shot und **Master Style Frame**.
-5. Für jede spätere Szene muss `Bild_01` als Style-/Continuity-Referenz verwendet werden, soweit Google Flow dies technisch zulässt.
-6. Die Referenz überträgt Stil, Rendergrad, Licht, Materialien, Farbharmonie und Bildsprache – nicht automatisch Motiv oder Anatomie.
+1. kompletten Auftrag lesen
+2. ausschließlich `Bild_01` erzeugen
+3. Bild_01 auf Stil, Hook, Anatomie, deutsche Schrift und Komposition prüfen
+4. bei FAIL nur Bild_01 regenerieren
+5. bei PASS als `Bild_01.png` speichern
+6. STOPP und Nutzerfreigabe abwarten
 
 ### B – Produktion in 5er-Blöcken
 
-Nach `Bild_01` werden die restlichen Bilder in 5er-Blöcken bearbeitet:
+Nach Freigabe:
 
 ```text
 Bild_02–Bild_06
 Bild_07–Bild_11
 Bild_12–Bild_16
+Bild_17–Bild_21
+Bild_22–Bild_26
+Bild_27–Bild_31
 ...
 ```
 
-Innerhalb jedes Blocks wird trotzdem jedes Bild einzeln erzeugt, geprüft und benannt. Es wird niemals ein Sammelbild mit mehreren Szenen erzeugt.
+Jedes Bild trotzdem einzeln erzeugen, prüfen und benennen. Nach jedem Block Stil-/Nummerierungscheck.
 
-### C – Fehlerliste statt Produktionsabbruch
+### C – Fehlerliste
 
-Wenn eine Generation technisch fehlschlägt oder das Bild qualitativ durchfällt:
+Fehlerhafte oder fehlende Bilder behalten ihre Nummer und kommen auf die Recovery-Liste. Der reguläre Durchlauf wird nicht wegen eines einzelnen Flow-Fehlers abgebrochen.
 
-- Bildnummer auf eine Fehlerliste setzen
-- Nummer nicht verlieren oder neu vergeben
-- mit dem restlichen regulären Durchlauf fortfahren
-- den gesamten Job nicht wegen einer einzelnen fehlgeschlagenen Generation abbrechen
+### D – Recovery
 
-### D – Recovery-Pass
+Nach dem Hauptdurchlauf nur fehlende/fehlerhafte Bildnummern erneut erzeugen, bis alles lückenlos PASS ist.
 
-Nach dem regulären Durchlauf werden alle fehlenden oder fehlerhaften Bildnummern gezielt erneut erzeugt.
+### E – finale ZIP
 
-Recovery wird wiederholt, bis `Bild_01.png` bis `Bild_NN.png` lückenlos in akzeptierter Qualität vorhanden sind.
-
-### E – Finale ZIP
-
-Die finale ZIP darf ausschließlich die akzeptierten finalen Bilder enthalten:
-
-- lückenlose Nummerierung
-- keine Duplikate
-- keine verworfenen Varianten
-- keine temporären Dateien
-
-Details: `engine/FLOW-PRODUCTION-STANDARD.md`.
+Nur akzeptierte finale Bilder, lückenlose Nummerierung, keine Varianten oder Temp-Dateien.
 
 ## Nutzer-Dateien
-
-Alle Inhalte, die der Nutzer selbst öffnen und in ein externes Tool kopieren soll, müssen zusätzlich als normale `.txt`-Datei vorliegen.
 
 Pflicht pro Video:
 
@@ -172,78 +162,66 @@ Pflicht pro Video:
 04_export/YOUTUBE-TITEL-BESCHREIBUNG-ZUM-KOPIEREN.txt
 ```
 
-Diese Dateien dürfen inhaltlich nicht von den zugehörigen kanonischen Projektdateien abweichen. Interne technische Dateien dürfen weiterhin `.md`, `.json`, `.py` usw. verwenden.
-
-Details: `engine/USER-FILES-STANDARD.md`.
+Kopierdateien müssen inhaltlich mit ihren kanonischen Projektdateien übereinstimmen.
 
 ## Drei Phasen
 
 ### Phase 1 – ChatGPT / Creative Director
 
-ChatGPT erstellt vor jeder Medienproduktion vollständig:
+Erstellt:
 
-1. Themenprüfung gegen `THEMEN-GEHIRN.md`
+1. Themenprüfung
 2. Recherche und Claim-Check
-3. finales gesprochenes `script.txt`
-4. identisches `VOICEOVER-ZUM-KOPIEREN.txt`
-5. semantischen Szenenplan aus exakt dem finalen Skript
-6. vollständigen Google-Flow-Agent-Prompt nach dem faceless Explainer-Standard
-7. identisches `GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt`
-8. `scene-map.json` mit lückenloser Sprachabdeckung
-9. bei Bedarf `overlay-plan.json` für ausgewählte Remotion-Überschriften/Schlüsselwörter
-10. Antigravity-/Editor-Anweisung
-11. `ANTIGRAVITY-PROMPT-ZUM-KOPIEREN.txt`
-12. YouTube-Titel, Beschreibung und maximal 5 Hashtags
-13. `YOUTUBE-TITEL-BESCHREIBUNG-ZUM-KOPIEREN.txt`
+3. Mechanism Map
+4. finales `script.txt`
+5. identisches Voiceover zum Kopieren
+6. Satz-Visual-Plan
+7. semantischen Szenenplan
+8. Label-Plan für jedes Bild
+9. Google-Flow-Prompt mit ausführlichem Bild_01 und kompakten Folgeprompts
+10. `scene-map.json`
+11. optionalen `overlay-plan.json`
+12. Antigravity-Anweisung
+13. YouTube-Titel/Beschreibung
 
-Phase 1 erzeugt keine finalen Flow-Bilder und keine geschätzten Zeitcodes.
-
-Phase 1 ist erst vollständig, wenn alle vier Nutzer-`.txt`-Dateien aktuell vorhanden sind.
+Keine geschätzten finalen Zeitcodes als Wahrheit.
 
 ### Phase 2 – Nutzer + Voice-KI + Google Flow
 
-Der Nutzer:
+1. Voiceover 1:1 erzeugen
+2. Audio ablegen
+3. kompletten Flow-Prompt verwenden
+4. zuerst nur Bild_01
+5. Bild_01 freigeben
+6. restliche Bilder in 5er-Blöcken
+7. Einzelbild-QA
+8. Recovery
+9. finale ZIP
 
-1. kopiert `VOICEOVER-ZUM-KOPIEREN.txt` 1:1 in die gewählte Voice-KI
-2. legt das rohe Voiceover in `01_script/audio/`
-3. kopiert `GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt` vollständig in Google Flow
-4. lässt zuerst nur `Bild_01` als Master Style Frame erzeugen
-5. danach werden die restlichen Bilder blockweise nach `engine/FLOW-PRODUCTION-STANDARD.md` produziert
-6. fehlgeschlagene Generationen kommen auf die Recovery-Liste
-7. am Ende werden alle fehlenden/fehlerhaften Bilder gezielt neu erzeugt
-8. alle finalen Bilder werden als ZIP in `02_bildprompts/bilder-zip/` abgelegt
-
-Google Flow darf keine Szenengrenzen neu erfinden.
+Flow darf keine Szenengrenzen neu erfinden.
 
 ### Phase 3 – Antigravity + Tools + Remotion
 
-Phase 3 ist technisch, nicht kreativ. Wenn der Nutzer Antigravity manuell beauftragt, wird `ANTIGRAVITY-PROMPT-ZUM-KOPIEREN.txt` verwendet.
-
-Phase 3:
-
 1. Audio kanonisch vorbereiten
-2. Flow-ZIP sicher importieren
+2. Bilder sicher importieren
 3. Assets validieren
-4. finales Audio mit Whisper transkribieren
-5. Whisper-Ausgabe streng gegen `script.txt` ausrichten
-6. `scene-map.json` exakt auf Wort-Zeitstempel abbilden
-7. `timeline.json` erzeugen
-8. Runtime für Remotion bauen
-9. Standbilder mit dezenten Push-ins, Pull-outs und Pans inszenieren
-10. optionalen `overlay-plan.json` als kontrollierte Überschriften-/Text-/Callout-Ebene anwenden
-11. rendern
-12. technische QA durchführen
-13. finales Video + Untertitel + Renderbericht exportieren
+4. Voice mit Whisper transkribieren
+5. Script ↔ Audio streng ausrichten
+6. Timeline erzeugen
+7. Remotion-Runtime bauen
+8. Bilder dezent bewegen
+9. geplante deutsche Overlays/Callouts anwenden
+10. rendern
+11. technische und visuelle QA
+12. Scorecard + Postmortem
 
-Phase 3 darf Skript, wissenschaftliche Aussage, Bildreihenfolge oder Szenengrenzen nicht still verändern.
-
-Nach erfolgreichem Export nutzt der Nutzer `YOUTUBE-TITEL-BESCHREIBUNG-ZUM-KOPIEREN.txt` für YouTube Studio.
+Phase 3 darf Script, wissenschaftliche Aussagen, Bildreihenfolge oder Szenengrenzen nicht still verändern.
 
 ## Autoritative Reihenfolge
 
 1. aktuelle ausdrückliche Nutzeranweisung
 2. `PROJECT_CONTRACT.md`
-3. `PROJECT_STATE.md` für aktuellen Arbeitsstand
+3. `PROJECT_STATE.md`
 4. `config/*.json`
 5. `engine/*.md`
 6. `bildwelt/*.md`
@@ -252,33 +230,29 @@ Nach erfolgreichem Export nutzt der Nutzer `YOUTUBE-TITEL-BESCHREIBUNG-ZUM-KOPIE
 
 ## Fail-closed
 
-Die technische Pipeline soll bei nicht eindeutig auflösbaren Widersprüchen stoppen statt raten.
+Bei echten Widersprüchen nicht raten. Stoppen bei:
 
-Insbesondere kein automatisches Weiterarbeiten bei:
-
-- Script und gesprochenes Audio stimmen nicht überein
-- fehlenden oder doppelten Bildnummern im finalen Asset-Satz
+- Script/Audio stimmen nicht überein
+- fehlenden oder doppelten finalen Bildnummern
 - falschem Seitenverhältnis
 - unklarer Szenenzuordnung
 - nicht gefundenen Wortankern
 - wissenschaftlich ungeklärten Kernbehauptungen
 - sichtbar falschen biologischen Beschriftungen
 
-Ein einzelner **Google-Flow-Generierungsfehler während Phase 2 ist dagegen kein globaler Blocker**. Er wird über Fehlerliste + Recovery-Pass behandelt.
+Ein einzelner Flow-Generierungsfehler ist kein globaler Blocker; dafür gibt es Fehlerliste + Recovery.
 
 ## Visuelle Konstanz
 
-`Bild_01` jedes Videos ist zunächst der projektinterne Master Style Frame für dieses Video.
-
-Sobald zusätzlich eine finale kanalweite Referenz ausdrücklich akzeptiert und als `assets/channel/STYLE_REFERENCE.png` gespeichert wurde, gilt:
+`Bild_01` ist immer Episode-Style-Anchor. Sobald eine kanalweite Referenz ausdrücklich akzeptiert und als `assets/channel/STYLE_REFERENCE.png` gespeichert wurde, gilt:
 
 ```text
-kanalweite STYLE_REFERENCE = langfristige Kanal-DNA
-Bild_01 des aktuellen Videos = konkrete Episode-/Continuity-Referenz
+STYLE_REFERENCE = langfristige Kanal-DNA
+Bild_01 = konkrete Episode-/Continuity-Referenz
 ```
 
-Beide Referenzen dürfen Stil und Kontinuität sichern, aber niemals falsche Anatomie aus einer Referenz ungeprüft übernehmen.
+Stilreferenzen dürfen nie fachlich falsche Anatomie erzwingen.
 
 ## Themen-Gedächtnis
 
-Vor jeder neuen Produktion wird `THEMEN-GEHIRN.md` geprüft und aktualisiert. Ein bereits behandelter Kernmechanismus darf nicht nur unter neuem Titel erneut produziert werden.
+Vor jeder neuen Produktion `THEMEN-GEHIRN.md` prüfen und aktualisieren. Bereits behandelte Kernmechanismen nicht nur unter neuem Titel wiederholen.
