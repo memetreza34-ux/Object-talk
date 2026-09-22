@@ -1,7 +1,43 @@
 {
-  "status":"READY",
-  "rules":{"language":"de","max_labels_per_image":0,"label_only_if_needed_for_understanding":true,"fallback_to_overlay_if_ai_text_wrong":true,"policy":"Pilot 001 nutzt textfreie Flow-Bilder; Überschriften und Keywords werden kontrolliert in Remotion gerendert."},
-  "images":[
-    {"image_asset_id":"Bild_01","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_02","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_03","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_04","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_05","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_06","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_07","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_08","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_09","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_10","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_11","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_12","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_13","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_14","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_15","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_16","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_17","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_18","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_19","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_20","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_21","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_22","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_23","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_24","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_25","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_26","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_27","mode":"editor-overlay-only","labels":[]},{"image_asset_id":"Bild_28","mode":"editor-overlay-only","labels":[]}
+  "status": "READY",
+  "rules": {
+    "language": "de",
+    "prompt_language": "en",
+    "min_labels_per_image": 1,
+    "max_labels_per_image": 3,
+    "label_most_important_visible_things": true,
+    "fallback_to_overlay_if_ai_text_wrong": true,
+    "cover_requires_german_hook": true,
+    "cover_hook_words": "3-7"
+  },
+  "images": [
+    {"image_asset_id":"Bild_01","mode":"cover-hook-and-key-labels","hook_text":"So reist Sauerstoff durch deinen Körper","labels":["Lunge","Herz"]},
+    {"image_asset_id":"Bild_02","mode":"key-labels","labels":["Lunge","Blut","Muskelzelle"]},
+    {"image_asset_id":"Bild_03","mode":"key-labels","labels":["Luftröhre"]},
+    {"image_asset_id":"Bild_04","mode":"key-labels","labels":["Bronchien"]},
+    {"image_asset_id":"Bild_05","mode":"key-labels","labels":["Lungenbläschen"]},
+    {"image_asset_id":"Bild_06","mode":"key-labels","labels":["Lungenbläschen","Kapillare"]},
+    {"image_asset_id":"Bild_07","mode":"key-labels","labels":["Sauerstoff","Lungenbläschen"]},
+    {"image_asset_id":"Bild_08","mode":"key-labels","labels":["Sauerstoff","Blut"]},
+    {"image_asset_id":"Bild_09","mode":"key-labels","labels":["Blutplasma"]},
+    {"image_asset_id":"Bild_10","mode":"key-labels","labels":["Rote Blutkörperchen"]},
+    {"image_asset_id":"Bild_11","mode":"key-labels","labels":["Hämoglobin"]},
+    {"image_asset_id":"Bild_12","mode":"key-labels","labels":["Sauerstoff","Hämoglobin"]},
+    {"image_asset_id":"Bild_13","mode":"key-labels","labels":["Lunge","Herz"]},
+    {"image_asset_id":"Bild_14","mode":"key-labels","labels":["Herz","Hauptschlagader"]},
+    {"image_asset_id":"Bild_15","mode":"key-labels","labels":["Arterie"]},
+    {"image_asset_id":"Bild_16","mode":"key-labels","labels":["Kapillaren","Muskelgewebe"]},
+    {"image_asset_id":"Bild_17","mode":"key-labels","labels":["Kapillare","Gewebe"]},
+    {"image_asset_id":"Bild_18","mode":"key-labels","labels":["Sauerstoff","Muskelzelle"]},
+    {"image_asset_id":"Bild_19","mode":"key-labels","labels":["Hämoglobin","Sauerstoff"]},
+    {"image_asset_id":"Bild_20","mode":"key-labels","labels":["Rotes Blutkörperchen","Kapillarwand","Muskelzelle"]},
+    {"image_asset_id":"Bild_21","mode":"key-labels","labels":["Muskelzelle","Mitochondrien"]},
+    {"image_asset_id":"Bild_22","mode":"key-labels","labels":["Mitochondrium","Sauerstoff"]},
+    {"image_asset_id":"Bild_23","mode":"key-labels","labels":["ATP","Mitochondrium"]},
+    {"image_asset_id":"Bild_24","mode":"key-labels","labels":["Muskelzelle","ATP"]},
+    {"image_asset_id":"Bild_25","mode":"key-labels","labels":["Kohlendioxid"]},
+    {"image_asset_id":"Bild_26","mode":"key-labels","labels":["Kohlendioxid","Blutgefäß"]},
+    {"image_asset_id":"Bild_27","mode":"key-labels","labels":["Lunge","Kohlendioxid"]},
+    {"image_asset_id":"Bild_28","mode":"key-labels","labels":["Lunge","Herz","Zelle"]}
   ]
 }
