@@ -13,9 +13,12 @@ youtube-videos/001-pilot-sauerstoff-im-blut/
 - interner ca. 2–2,5-Minuten-Test
 - 28 Bilder
 - hohe visuelle Dichte
-- Vollbild-3D-Erklärbilder bleiben dominant
-- selektive Remotion-Überschriften/Keywords aus `03_pipeline/overlay-plan.json`
-- keine Anime-/Comic-Effekte
+- stark stilisierte 3D-Animationsfilm-Welt
+- Vollbild-Erklärbilder bleiben dominant
+- sichtbarer Text ausschließlich Deutsch
+- wichtige Flow-Labels erhalten; nicht unnötig doppeln
+- selektive zusätzliche Remotion-Overlays aus `03_pipeline/overlay-plan.json`
+- keine Anime-/Comic-/Meme-Effekte
 - keine dauerhaften Untertitelblöcke
 - keine kreative Neuzuordnung von Szenen
 
@@ -41,15 +44,14 @@ python tools/prepare_phase3.py youtube-videos/001-pilot-sauerstoff-im-blut
 8. exakte Timeline bauen
 9. Renderer-Runtime inklusive `overlay-plan.json` vorbereiten
 
-## Overlay-Regel
+## Text-/Overlay-Regel
 
-`03_pipeline/overlay-plan.json` ist autoritativ.
-
-- nur dort definierte Overlays
-- Text exakt übernehmen
-- deutsche Rechtschreibung nicht verändern
-- Overlays erscheinen erst passend zum gesprochenen Begriff
-- keine zusätzlichen Sätze oder Captions erfinden
+- Bild_01 enthält bereits den deutschen Cover-Hook; keinen zweiten Cover-Hook darüberlegen
+- vorhandene korrekte deutsche Flow-Labels nicht unnötig wiederholen
+- wenn ein Flow-Label sichtbar falsch/unlesbar ist, denselben im Label-Plan festgelegten Begriff sauber in Remotion ersetzen
+- `03_pipeline/overlay-plan.json` ist für zusätzliche Overlays autoritativ
+- Overlay-Text exakt übernehmen
+- keine zusätzlichen Captions oder Marketingtexte erfinden
 - Vollbild bleibt Hauptdarsteller
 
 ## Render
@@ -76,11 +78,13 @@ Danach visuellen QA nach `engine/VISUAL-QUALITY-GATE.md` durchführen.
 
 Besonders prüfen:
 
-- O₂ bleibt visuell über alle Szenen identisch
-- CO₂ bleibt visuell identisch und klar von O₂ unterscheidbar
-- rote Blutkörperchen und Hämoglobin bleiben konsistent
-- keine englischen oder zufälligen Texte in Flow-Bildern
-- Overlay-Texte liegen nicht über zentraler Anatomie
+- Bild_01 funktioniert als Cover, Hook und Style-Anker
+- Bildwelt bleibt stark stilisiert und driftet nicht in Fotorealismus
+- O₂, CO₂, rote Blutkörperchen und Hämoglobin bleiben konsistent
+- wichtigste sichtbare Strukturen sind sinnvoll auf Deutsch beschriftet
+- keine englischen oder zufälligen Texte
+- keine falschen/doppelten Labels
+- Remotion-Overlays liegen nicht über zentraler Anatomie
 - kein Bild steht unnötig lange nur mit Zoom
 - letzte Szene endet exakt mit dem Voice-over
 
