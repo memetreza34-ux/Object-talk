@@ -1,16 +1,21 @@
 {
-  "version":1,
-  "purpose":"Second pilot validates selective Remotion headings and keywords over text-free full-frame 3D explainer images.",
-  "rules":{"full_frame_remains_default":true,"no_full_voiceover_sentences":true,"max_words_per_heading":6,"language":"de","style":"clean-modern-not-anime","flow_images_should_be_text_free":true},
-  "scenes":[
-    {"scene":1,"overlays":[{"kind":"heading","text":"Sauerstoff auf Reisen","position":"top-left","animation":"underline","start_fraction":0.06,"duration_fraction":0.46}]},
+  "version": 2,
+  "purpose": "Selective Remotion emphasis over already labeled stylized 3D Flow images. Bild_01 already contains the German cover hook.",
+  "rules": {
+    "full_frame_remains_default": true,
+    "no_full_voiceover_sentences": true,
+    "max_words_per_heading": 6,
+    "language": "de",
+    "style": "clean-modern-stylized-3d",
+    "flow_images_include_key_german_labels": true,
+    "do_not_duplicate_flow_labels": true,
+    "do_not_add_second_cover_hook": true
+  },
+  "scenes": [
     {"scene":5,"overlays":[{"kind":"heading","text":"Die Lungenbläschen","position":"top-left","animation":"fade-slide","start_fraction":0.08,"duration_fraction":0.55}]},
     {"scene":8,"overlays":[{"kind":"keyword","text":"Lunge → Blut","position":"bottom-left","animation":"pop","start_fraction":0.10,"duration_fraction":0.42}]},
-    {"scene":11,"overlays":[{"kind":"keyword","text":"Hämoglobin","position":"bottom-left","animation":"fade-slide","start_fraction":0.08,"duration_fraction":0.45}]},
     {"scene":13,"overlays":[{"kind":"heading","text":"Zurück zum Herzen","position":"top-left","animation":"underline","start_fraction":0.08,"duration_fraction":0.50}]},
     {"scene":19,"overlays":[{"kind":"heading","text":"Sauerstoff wird frei","position":"top-left","animation":"fade-slide","start_fraction":0.08,"duration_fraction":0.48}]},
-    {"scene":22,"overlays":[{"kind":"keyword","text":"Mitochondrien","position":"bottom-left","animation":"pop","start_fraction":0.08,"duration_fraction":0.45}]},
-    {"scene":25,"overlays":[{"kind":"keyword","text":"Kohlendioxid","position":"bottom-left","animation":"fade-slide","start_fraction":0.08,"duration_fraction":0.44}]},
-    {"scene":28,"overlays":[{"kind":"heading","text":"Von der Lunge bis zur Zelle","position":"top-left","animation":"underline","start_fraction":0.06,"duration_fraction":0.45}]}
+    {"scene":28,"overlays":[{"kind":"heading","text":"Der Kreislauf schließt sich","position":"top-left","animation":"underline","start_fraction":0.06,"duration_fraction":0.45}]}
   ]
 }
