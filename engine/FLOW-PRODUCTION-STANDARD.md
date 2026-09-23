@@ -2,253 +2,167 @@
 
 Diese Datei definiert die verbindliche Produktionslogik für Google Flow.
 
-## Ziel
+## 1. Oberste Stilreferenz
 
-Flow erzeugt konsistente, hochwertige Erklärbilder für den deutschen Object-Talk-Kanal. Die Bilder erklären den gesprochenen Inhalt sichtbar und gehören immer zur selben visuellen Welt.
+Für **jedes** Video gilt zuerst:
 
-Die freigegebene Kanalwelt ist zusätzlich beschrieben in:
+```text
+bildwelt/OBJECT-TALK-CHANNEL-DNA.md
+```
+
+Danach:
 
 ```text
 bildwelt/APPROVED-VISUAL-WORLD.md
 ```
 
-## 1. Verbindliche Bildwelt
+Grundsatz:
 
-Der Kanal nutzt eine **stark stilisierte Premium-3D-Animationsfilm-Welt**.
+**Welt zuerst, Thema danach.**
 
-### Stilgewichtung
+Gesundheit, Ernährung, Biologie und Alltag werden immer innerhalb derselben viralen Object-Talk-3D-Animationswelt dargestellt.
 
-- 85–90 % Animation/Stilisierung
-- 10–15 % Realismus nur zur fachlichen Erkennbarkeit
+## 2. Fester DNA-Block in jedem Masterprompt
 
-Verbindlich:
-
-- eindeutig animierter Feature-Film-Look
-- nicht fotorealistisch
-- weiche, gerundete, skulptierte Formen
-- vereinfachte, aber erkennbare Anatomie
-- glatte Premium-Materialien
-- keine realistische Haut oder Poren
-- keine nassen, faserigen oder fleischigen Gewebetexturen
-- klare Farbfelder statt medizinischer Mikrotextur
-- filmische Lichtführung mit Rim-Light und atmosphärischer Tiefe
-- starke räumliche Staffelung
-- bewusstes Production Design
-- modernes hochwertiges Color Grading
-- nicht babyhaft, nicht spielzeughaft, nicht Corporate-Stock-3D
-- echte Erklärbilder vor Mascot-/Presenter-Szenen
-
-### Inside-the-Body-Welt
-
-Körper-, Blut-, Organ-, Gewebe- und Zellbilder müssen **zuerst wie Animation und erst danach wie Anatomie** aussehen.
-
-Bevorzugt:
-
-- Coral, Apricot, Amber, Rot/Burgunder
-- tiefe Navy-/Pflaumen-/Anthrazit-Hintergründe
-- blass Cyan/Türkis für O₂
-- neutral-violett/grau für CO₂
-- glatte, weich modellierte Oberflächen
-- klare, große Formen
-- saubere animierte Tunnel-/Cutaway-Welten
-
-Verboten:
-
-- realistisch transparenter menschlicher Torso
-- realistische Haut, Adern oder Organgewebe
-- medizinische CGI-Software-Optik
-- Fleisch-/Geweberealismus
-- matschige Braunwelt
-
-Globaler Stilanker für Prompts:
+Jeder Google-Flow-Masterprompt muss sinngemäß diesen Block enthalten:
 
 ```text
-premium highly stylized 3D feature-animation educational film, 85-90 percent stylized and only minimally realistic for recognizability, clearly animated and non-photorealistic, soft rounded sculpted forms, smooth clean materials, simplified anatomy, bold readable shapes, controlled cinematic lighting, soft rim light, atmospheric depth, sophisticated color grading, warm coral-apricot-burgundy palette with deep navy or plum contrast, pale-cyan oxygen accents, designed animated world, no realistic skin, no realistic tissue, no medical CGI, no wet flesh texture, no corporate stock 3D, no toy look, no anime, no comic, no gore
+Use the fixed channel DNA: premium viral object-talk 3D animated world, high-end stylized feature-animation look, soft rounded sculpted forms, expressive character design when faces are used, clean matte premium materials, warm cinematic lighting, soft rim light, strong depth, rich controlled colors, clear visual hierarchy, friendly modern animated-film quality, clearly non-photorealistic. Keep the same eye design, face language, materials, lighting logic and overall world across every image. No medical realism, no realistic skin, no wet tissue, no anatomy-software CGI, no corporate stock 3D, no cheap toy render, no anime, no comic, no gore, no style drift.
 ```
 
-## 2. Prompt-Sprache und sichtbarer Text
+Bei jedem Folgebild zusätzlich:
 
-- Prompt-Anweisungen an Google Flow immer auf Englisch.
-- Jeder sichtbare Text im fertigen Bild ausschließlich auf Deutsch.
-- Kein englischer sichtbarer Text.
-- Kein KI-Gibberish.
-- Keine langen Textblöcke oder Untertitel im Bild.
+```text
+Using Bild_01 as the exact style reference, keep the exact same object-talk 3D animated world, eye design, character language, materials, lighting, color feeling and feature-animation quality.
+```
 
-## 3. Beschriftungsregel
+## 3. Character- und Objekt-Sprache
 
-Normale Erklärszenen:
+Wenn Objekte, Lebensmittel, Organe oder Zellen personifiziert werden:
 
-- normalerweise 1–3 kurze deutsche Labels
-- nur die wichtigsten Dinge beschriften
-- Labels eindeutig zuordnen
-- helle/weiße saubere Sans-Serif-Schrift
-- dünne Führungslinien
-- falsches, unlesbares oder englisches Label = Bild FEHLERHAFT
-- wenn Flow Schrift wiederholt falsch rendert: textfreie Version + identischer Begriff später in Remotion
+- gleicher Augenstil
+- gleicher Mimikstil
+- gleiche Materialwelt
+- gleiche Formensprache
+- keine zufälligen neuen Character-Designs
 
-### Ausnahme Bild_01 / Cover
+Nicht jede Szene braucht ein Gesicht. Mechanismus-Szenen dürfen gesichtslos sein, müssen aber dieselbe animierte 3D-Welt behalten.
 
-Bild_01 braucht standardmäßig **keine kleinen Anatomie-Labels**, wenn das Motiv visuell eindeutig ist. Ein gutes Cover soll nicht wie eine Infografik aussehen.
+## 4. Biologie-Regel
 
-## 4. Bild_01 – Cover, Hook und Master Style Frame
+Biologie darf **niemals** in medizinischen Realismus kippen.
 
-`Bild_01` ist:
+Organe, Zellen, Gefäße, Alveolen usw.:
 
-1. Cover-/Hook-Bild
-2. erster sichtbarer Shot
-3. visuelle Referenz der Episode
-4. Master Style Frame für alle weiteren Bilder
+- stark stilisiert
+- weich und sauber
+- fachlich erkennbar
+- keine realistische Haut
+- keine Poren
+- keine nassen Gewebetexturen
+- kein Anatomiesoftware-/Medical-CGI-Look
 
-Bild_01 muss die **beste visuelle Qualität der Episode** zeigen.
+Die Szene muss zuerst wie Animationsfilm und erst danach wie Anatomie aussehen.
 
-Pflicht:
+## 5. Prompt- und Textregel
 
-- Thema sofort verständlich
-- deutlich animierter Film-Look
-- kein realistischer Mensch
-- Hauptmotiv groß und präsent
-- bevorzugt faceless/stilisierte Figur oder stilisierter Torso/Cutaway
-- keine realistisch transparente Haut
-- filmischer Hintergrund mit Tiefe
-- klare Lichtführung
-- Hook maximal zwei kurze Zeilen
-- Hook niemals über Hauptmotiv
-- standardmäßig keine kleinen Labels auf dem Cover
-- auch ohne Text starkes Key Visual
+- Flow-Anweisungen: Englisch
+- sichtbarer Text: ausschließlich Deutsch
+- normale Szenen: 1–3 wichtige kurze Labels
+- Cover: Hook, keine unnötigen kleinen Labels
+- keine langen Textblöcke
+- keine englischen sichtbaren Wörter
 
-Harte FAIL-Kriterien:
+## 6. Bild_01
 
-- medizinischer CGI-Look
-- realistischer menschlicher Torso
-- realistische Haut oder Gewebetextur
-- Corporate-3D-Stock-Look
-- billiger Toy-Look
-- blasser Beige-Hintergrund
-- Figur zu klein
-- Schulbuch-/PowerPoint-Wirkung
-- Titel kollidiert mit Motiv
-- flache Beleuchtung
+`Bild_01` ist immer:
 
-## 5. EINZIGER FREIGABEPUNKT: Bild_01
+1. Cover / Hook
+2. erster Shot
+3. Master Style Frame
+4. Referenz für alle weiteren Bilder
 
-1. Flow liest den kompletten Auftrag.
-2. Flow erzeugt ausschließlich `Bild_01`.
-3. Noch kein `Bild_02`.
-4. Bild_01 intern prüfen.
-5. Bei FAIL Bild_01 selbstständig neu erzeugen.
-6. Bei PASS als `Bild_01.png` speichern.
-7. **Genau hier einmal den Nutzer um Freigabe bitten.**
+Ablauf:
 
-Wichtig:
+1. kompletten Auftrag lesen
+2. ausschließlich `Bild_01` erzeugen
+3. intern prüfen
+4. bei FAIL selbst neu erzeugen
+5. bei PASS als `Bild_01.png` speichern
+6. **genau einmal** Nutzerfreigabe einholen
 
-> Nach der Freigabe von `Bild_01` darf Flow den Nutzer **nicht mehr fragen**, ob es mit dem nächsten Block weitermachen soll.
+FAIL, wenn Bild_01 wie medizinisches CGI, Anatomiesoftware, Corporate-Stock-3D, billige Kinderanimation oder Fotorealismus aussieht.
 
-Die Bild_01-Freigabe ist die einzige normale Rückfrage im gesamten Bilderlauf.
+## 7. Nach Freigabe von Bild_01: keine weiteren Rückfragen
 
-## 6. Nach Bild_01: vollautomatisch bis zum Ende
+Nach der einzigen Freigabe von Bild_01:
 
-Sobald der Nutzer Bild_01 freigibt:
-
-- ohne weitere Rückfragen fortfahren
-- Bild_02 bis Bild_NN vollständig erzeugen
+- automatisch bis zum letzten Bild weiterarbeiten
+- nicht nach jedem Block fragen
+- nicht „Soll ich weitermachen?“ fragen
+- 5er-Blöcke nur intern für QA verwenden
 - jedes Bild einzeln generieren
-- Bild_01 bei jeder Generation als Style-/Continuity-Referenz verwenden
-- 5er-Blöcke nur als **interne QA-Struktur** verwenden
-- nach einem Block NICHT stoppen
-- nicht fragen: „Soll ich weitermachen?“
-- nicht auf Freigaben zwischen Blöcken warten
+- Fehlernummern sammeln
+- Recovery automatisch ausführen
+- nur bei echtem technischen Blocker nach mehreren Versuchen stoppen
 
-Nur bei einem echten technischen Blocker, der nach mehreren automatischen Versuchen nicht lösbar ist, darf Flow stoppen und berichten.
+## 8. 5er-Blöcke
 
-## 7. Bild_01 als Vorlage für alle weiteren Bilder
+Beispiel:
 
-Von Bild_01 übernehmen:
+```text
+Bild_02–06
+Bild_07–11
+Bild_12–16
+Bild_17–21
+...
+```
 
-- Renderstil
-- Stilisierungsgrad
-- Lichtlogik
-- Color Grading
-- Materialqualität
-- Formensprache
-- Anatomie-Vereinfachung
-- wiederkehrende Symbole
+Nach jedem Block intern prüfen:
 
-Folgeframes müssen aussehen, als kämen sie aus demselben Animationsfilm und Renderprozess.
+- gleicher Object-Talk-Look
+- gleicher Augen-/Gesichtsstil, falls Figuren vorkommen
+- gleiche Materialwelt
+- gleiche Lichtlogik
+- gleiche Farbwelt
+- kein Realismus-Drift
+- kein Stock-3D-Drift
 
-Stilabweichung = automatische Regeneration.
+Danach **automatisch** mit dem nächsten Block fortfahren.
 
-## 8. Szenenprompts – kurz, aber vollständig
+## 9. Szenenprompts
 
 Nach Bild_01:
 
-- etwa 2–5 Sätze
-- konkrete Szene
+- so kurz wie möglich, so genau wie nötig
+- normalerweise 2–5 Sätze
+- Szene
 - sichtbarer Prozess
-- wichtigste Perspektive
+- Perspektive/Komposition
 - deutsche Labels
-- nicht den kompletten Stilblock wiederholen
+- DNA-Kurzanker + Bild_01-Referenz
 
-Jeder Folgeprompt beginnt sinngemäß mit:
+Nicht jedes Mal einen langen Stilroman wiederholen.
 
-```text
-Using Bild_01 as the exact style reference, keep the same highly stylized premium 3D feature-animation world, the same smooth materials, color grading, lighting logic and anatomy simplification. Keep it clearly animated, never medical-realistic.
-```
+## 10. Recovery
 
-## 9. Produktion in 5er-Blöcken – nur intern
-
-Nach Freigabe von Bild_01:
-
-```text
-Block 1: Bild_02–Bild_06
-Block 2: Bild_07–Bild_11
-Block 3: Bild_12–Bild_16
-Block 4: Bild_17–Bild_21
-Block 5: Bild_22–Bild_26
-Block 6: Bild_27–...
-```
-
-Wichtig:
-
-- jedes Bild einzeln generieren
-- nach jedem Bild Einzel-QA
-- nach jedem Block Stil-/Nummerierungscheck
-- **danach automatisch sofort mit dem nächsten Block fortfahren**
-- niemals fünf finale Szenen als Sammelbild erzeugen
-
-Block-QA prüft:
-
-- deutlich animierte Welt
-- gleiche Lichtlogik
-- gleiche Materialqualität
-- gleiche Farbdramaturgie
-- O₂-Cyan stabil
-- keine Medical-CGI-/Stock-3D-/Toy-Drift
-- keine realistische Haut/Gewebetextur
-- keine zu leeren Hintergründe
-
-## 10. Fehlerliste und Recovery
-
-Bei technischem oder qualitativem FAIL:
+Bei FAIL:
 
 1. Bildnummer notieren
-2. Status `FEHLERHAFT` oder `FEHLT`
-3. Nummer nicht neu vergeben
-4. regulären Durchlauf fortsetzen
-5. nach allen Blöcken Recovery-Pass
-6. fehlerhafte Szene automatisch neu erzeugen
-7. bis zu 3 automatische Versuche pro fehlender/fehlerhafter Szene
+2. regulären Lauf fortsetzen
+3. am Ende Recovery-Pass
+4. bis zu 3 automatische Neuversuche pro fehlerhafter Szene
+5. keine Ersatznummern erfinden
 
-Erst wenn ein technischer Blocker auch danach nicht lösbar ist, darf Flow den Nutzer informieren.
+## 11. Finaler Bilderordner
 
-## 11. Verbindliche Endausgabe
-
-Am Ende muss Flow **einen fertigen Bilderordner** erstellen:
+Am Ende genau einen finalen Ordner erstellen:
 
 ```text
 <video-id>_bilder/
 ```
 
-Darin ausschließlich die final akzeptierten Dateien:
+Darin ausschließlich:
 
 ```text
 Bild_01.png
@@ -259,48 +173,24 @@ Bild_NN.png
 
 Regeln:
 
-- korrekte zweistellige Nummerierung
 - keine Lücken
-- keine doppelten Nummern
-- keine Varianten wie `final2`, `neu`, `copy`, `v3`
-- keine verworfenen Bilder im finalen Ordner
-- Dateiformat PNG
+- jede Nummer genau einmal
+- keine Namen wie `final2`, `neu`, `copy`, `v3`
+- nur akzeptierte Varianten
 - 16:9
 
-Zusätzlich eine ZIP-Datei erstellen:
+Zusätzlich eine ZIP desselben Ordners erstellen.
 
-```text
-<video-id>_bilder.zip
-```
-
-Die ZIP enthält exakt denselben finalen Bilderordner.
-
-## 12. Finale Prüfung
-
-Vor Abschluss:
-
-- alle Bilder lückenlos vorhanden
-- jede Nummer genau einmal
-- Animationsfilm-Look durchgehend stabil
-- keine medizinisch-realistische Szene
-- keine realistische Haut/Gewebetextur
-- normale Szenen sinnvoll beschriftet
-- alle sichtbaren Texte deutsch und korrekt
-- keine offensichtlichen Anatomie-/KI-Fehler
-- keine Mascot-/Presenter-Dominanz
-- finaler Ordner und ZIP vorhanden
-
-Danach erst meldet Flow: **fertig**.
-
-## Harte Abschlussregel
+## 12. Harte Verbote
 
 Flow darf niemals:
 
-- Script ändern
-- Szenen erfinden, entfernen oder zusammenlegen
-- Bildnummern neu interpretieren
-- nach Bild_01 weitere normale Freigaben verlangen
-- nach jedem 5er-Block fragen, ob es weitermachen soll
-- aus der Animationswelt in Realismus, medizinische CGI, Anime, Comic oder Stock-3D driften
+- die Kanal-DNA ignorieren
+- einen neuen Stil pro Szene erfinden
+- in Fotorealismus oder Medical-CGI driften
+- realistische Haut/Gewebe erzeugen
+- zufällige Augen-/Gesichtsdesigns erzeugen
+- nach Bild_01 weitere Freigaben verlangen
+- Szenen erfinden, löschen oder zusammenlegen
 - englische sichtbare Texte erzeugen
 - fehlgeschlagene Bilder vergessen
