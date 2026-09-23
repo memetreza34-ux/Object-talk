@@ -4,6 +4,12 @@ Status: **KANONISCH / VERBINDLICH**
 
 Diese Datei ist die oberste Stilreferenz für **alle** Google-Flow-Bildprompts des Kanals.
 
+Konkretes Golden-Reference-Beispiel:
+
+```text
+bildwelt/OBJECT-TALK-STYLE-EXAMPLE.md
+```
+
 ## Grundsatz: Welt zuerst, Thema danach
 
 Jedes Bild muss zuerst wie ein Frame aus **derselben hochwertigen viralen Object-Talk-3D-Animationswelt** aussehen. Das jeweilige Thema – Gesundheit, Ernährung, Biologie oder Alltag – wird nur innerhalb dieser Welt dargestellt.
@@ -39,7 +45,21 @@ Wenn Lebensmittel, Gegenstände, Organe, Zellen oder andere Elemente personifizi
 - keine zufälligen neuen Character-Designs
 - keine grotesken oder übertrieben kindlichen Gesichter
 
-Object-Talk bedeutet nicht, dass in jeder Szene zwingend ein Gesicht vorhanden sein muss. Mechanismus-Szenen dürfen textfrei/gesichtslos sein, müssen aber **dieselbe animierte 3D-Formensprache** behalten.
+Object-Talk bedeutet nicht, dass in jeder Szene zwingend ein Gesicht vorhanden sein muss. Mechanismus-Szenen dürfen gesichtslos sein, müssen aber **dieselbe animierte 3D-Formensprache** behalten.
+
+### Feste Augen-/Gesichts-DNA
+
+Wenn Gesichter vorkommen:
+
+- große dunkle ovale Augen
+- kleine klare weiße Catchlights
+- keine realistische Iris-/Augenanatomie
+- dezente Augenbrauen
+- kleiner einfacher Mund
+- klare sympathische Mimik
+- kein zufälliger Wechsel zu anderen Augenformen
+
+Das konkrete Beispiel steht in `bildwelt/OBJECT-TALK-STYLE-EXAMPLE.md`.
 
 ## Biologie-/Gesundheitsregel
 
@@ -111,8 +131,9 @@ Nach Freigabe von Bild_01 müssen alle restlichen Bilder automatisch in derselbe
 Bei Stilkonflikten gilt diese Reihenfolge:
 
 1. `bildwelt/OBJECT-TALK-CHANNEL-DNA.md`
-2. `Bild_01.png` der jeweiligen Episode
-3. `bildwelt/APPROVED-VISUAL-WORLD.md`
-4. Szenenprompt
+2. `bildwelt/OBJECT-TALK-STYLE-EXAMPLE.md`
+3. `Bild_01.png` der jeweiligen Episode
+4. `bildwelt/APPROVED-VISUAL-WORLD.md`
+5. Szenenprompt
 
 Inhaltliche/fachliche Korrektheit darf durch die Stilreferenz nie verschlechtert werden.
