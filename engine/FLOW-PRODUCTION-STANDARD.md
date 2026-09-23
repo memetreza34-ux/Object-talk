@@ -6,6 +6,12 @@ Diese Datei definiert die verbindliche Produktionslogik für Google Flow.
 
 Flow erzeugt konsistente, hochwertige Erklärbilder für den deutschen Object-Talk-Kanal. Die Bilder erklären den gesprochenen Inhalt sichtbar und gehören immer zur selben visuellen Welt.
 
+Die freigegebene Kanalwelt ist zusätzlich beschrieben in:
+
+```text
+bildwelt/APPROVED-VISUAL-WORLD.md
+```
+
 ## 1. Verbindliche Bildwelt
 
 Der Kanal nutzt eine **stark stilisierte hochwertige 3D-Animationsfilm-Welt** mit klar erkennbarem Premium-Familienanimations-Look.
@@ -16,16 +22,31 @@ Verbindlich:
 - weiche gerundete Formen
 - vereinfachte, aber fachlich erkennbare Anatomie und Biologie
 - warme filmische Beleuchtung
-- klare Tiefenwirkung und hochwertige 3D-Materialien
+- klare Tiefenwirkung und hochwertige glatte 3D-Materialien
 - freundlich, modern, familiengeeignet, aber nicht babyhaft
 - echte Erklärbilder vor Mascot-/Presenter-Szenen
 - keine Anime-, Comic-, Live-Action- oder medizinisch-fotorealistische Bildwelt
 - kein Gore, keine Horror-Anatomie, kein Plastikspielzeug-Look
+- keine nassen oder fleischig-realistischen Gewebetexturen
+
+### Freigegebene Inside-the-Body-Welt
+
+Für Körper-, Blut-, Organ-, Gewebe- und Zellbilder ist die freigegebene Grundsprache:
+
+- Creme, Apricot, Amber und Orange als warme Basis
+- tiefes Rot/Burgunder für Blut, Gefäße und rote Blutkörperchen
+- weiche goldene Highlights
+- dunklere warme Randbereiche für Tiefe
+- blass Cyan/Türkis als klarer Sauerstoff-Kontrast
+- glatte, hochwertige, leicht weiche Materialien statt medizinischer Oberflächentexturen
+- Makro-/Mikro-Bilder mit deutlicher räumlicher Tiefe
+
+Die genaue Fachfarbe eines Objekts darf angepasst werden. Renderstil, Licht, Materialgefühl und Stilisierungsgrad bleiben konstant.
 
 Globaler Stilanker für Prompts:
 
 ```text
-premium stylized 3D animated educational film look, strongly animated rather than photorealistic, soft rounded forms, simplified but recognizable biology, warm cinematic lighting, polished materials, strong depth, clear visual storytelling, family-friendly and modern, no anime, no comic, no medical photorealism, no gore
+premium strongly stylized 3D animated educational film look, clearly animated and non-photorealistic, soft rounded forms, simplified but recognizable biology, warm amber-orange cinematic lighting, cream and burgundy material world, polished smooth surfaces, strong depth, clean visual storytelling, pale-cyan scientific accent particles, family-friendly and modern, no anime, no comic, no medical photorealism, no wet realistic tissue, no gore
 ```
 
 ## 2. Prompt-Sprache und sichtbarer Text
@@ -45,6 +66,9 @@ Regel:
 - normalerweise 1–3 kurze deutsche Labels pro Bild
 - nur die wichtigsten Dinge, nicht alles beschriften
 - Labels müssen eindeutig auf das richtige Objekt zeigen
+- bevorzugt helle/weiße saubere Sans-Serif-Schrift
+- kurze Szenen-/Prozessüberschrift kann oben im Bild stehen
+- dünne Führungslinien für Labels bevorzugen
 - bei Vergleichen sind kurze deutsche Marker wie `vorher`, `danach`, `mehr`, `weniger` erlaubt
 - bei Prozessbildern können kurze Begriffe wie `Aufnahme`, `Transport`, `Speicherung` sinnvoll sein
 - falsches, unlesbares oder englisches Label = Bild `FEHLERHAFT`
@@ -68,6 +92,7 @@ Darum wird `Bild_01` ausführlicher beschrieben als alle anderen Szenen.
 - das Thema auf einen Blick vermitteln
 - die bestmögliche Version der gewünschten 3D-Animationswelt festlegen
 - Hauptmotive, Licht, Materialien, Farbstimmung, Tiefenwirkung und Anatomie-Vereinfachung klar definieren
+- die kanaltypische warme 3D-Welt sichtbar etablieren
 - eine **kurze starke deutsche Hook-Zeile** enthalten, die das Thema des Videos/Reels verständlich macht
 - Hook-Text meist 3–7 Wörter, maximal zwei kurze Zeilen
 - keine Clickbait-Aussage enthalten, die das Video fachlich nicht einlöst
@@ -87,6 +112,7 @@ Beispiele für Cover-Hooks:
 4. Bild_01 wird geprüft auf:
    - Thema und Hook sofort verständlich
    - gewünschter stark stilisierter 3D-Animationsfilm-Look
+   - warme freigegebene Kanalwelt getroffen
    - keine zu realistische Darstellung
    - plausible Anatomie
    - korrekte deutsche Schrift
@@ -119,6 +145,8 @@ Nicht blind übernehmen:
 - fachlich falsche Anatomie
 
 Wiederkehrende Dinge müssen gleich aussehen, z. B. Sauerstoff, Glukose, Insulin, rote Blutkörperchen, Hämoglobin oder Mitochondrien.
+
+**Harte Konsistenzregel:** Folgeframes müssen aussehen, als kämen sie aus demselben Film, demselben Renderprozess und derselben Beleuchtung. Stilabweichung = Regeneration.
 
 ## 7. Szenenprompts – kurz, aber vollständig
 
@@ -161,6 +189,15 @@ Wichtig:
 - erst danach nächster Block
 - niemals fünf finale Szenen als ein Sammelbild erzeugen
 
+Block-QA prüft zusätzlich:
+
+- warme Lichtwelt stabil
+- Materialglanz/Weichheit stabil
+- Rot-/Burgunder-Grundwelt stabil, sofern fachlich passend
+- O₂-Cyan stabil
+- gleiche Typografie-/Label-Sprache
+- kein Drift in Realismus oder billigen Cartoon-Look
+
 ## 9. Fehlerliste und Recovery
 
 Bei technischem oder qualitativem FAIL:
@@ -186,6 +223,7 @@ Recovery wird wiederholt, bis alle Bildnummern lückenlos PASS sind.
 - keine starken Stilbrüche
 - keine offensichtlichen Anatomie-/KI-Fehler
 - keine unbeabsichtigte Mascot-/Presenter-Dominanz
+- keine Szene wirkt plötzlich fotorealistischer als der Rest
 
 Erst danach finale ZIP erstellen.
 
