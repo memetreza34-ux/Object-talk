@@ -16,59 +16,51 @@ Pilot 001 ist der erste echte 2–3-Minuten-Pilotfilm.
 
 ## Aktueller Schwerpunkt
 
-Die Bildpipeline ist **Reference-First**, aber sichtbarer deutscher Text bleibt Teil der Bilder.
+Die Bildpipeline ist **Reference-First** und die Bildwelt wurde nach dem letzten Test erneut geschaerft.
 
-Das bedeutet:
+Der letzte Flow-Test war weiterhin falsch, weil Flow aus „3D-Animation + Anatomie“ laechelnde Menschen, Torso-Cutaways und schulbuchartige Anatomieposter gebaut hat.
 
-- echte visuelle Referenzen sind autoritativ
-- `Bild_01` muss nach Freigabe als echte visuelle Referenz fuer jedes Folgebild angehaengt werden
-- `STYLE_REFERENCE.png` wird kanalweit genutzt, sobald eine saubere Referenz freigegeben wurde
-- die Bildwelt ist hell, freundlich und hochwertige 3D-Animation statt kosmisch/dunkel/medizinisch
-- `Bild_01` enthaelt die deutsche Cover-Hook direkt im Bild
-- normale Bilder enthalten normalerweise 1–3 kurze deutsche Labels
-- Remotion ist nur Text-Fallback, wenn Flow einen Begriff wiederholt falsch schreibt
+Ab jetzt gilt deshalb zusaetzlich verbindlich:
 
-Dauerhafte Flow-Agent-Instructions:
-
-```text
-engine/FLOW-AGENT-INSTRUCTIONS.md
-```
-
-Produktionsstandard:
-
-```text
-engine/FLOW-PRODUCTION-STANDARD.md
-```
+- **kein Mensch als Standard-Hauptmotiv**
+- **kein sichtbares Gesicht als Cover-Hero**
+- **kein Kind/Erwachsener als Presenter**
+- **kein Torso-Mannequin / Anatomie-Schulmodell**
+- **keine flache Anatomieposter-/Lehrtafel-Komposition**
+- biologische Prozesse und Organe sind die Hauptdarsteller
+- menschlicher Kontext nur wenn fachlich noetig, dann gesichtslos und klar sekundär
+- echter 3D-Animationsfilm-Frame mit Perspektive, Tiefe und filmischer Inszenierung
 
 ## Verbindliche Kanal-DNA
 
-Oberste schriftliche Stilreferenz:
+Oberste Stilreferenz:
 
 ```text
 bildwelt/OBJECT-TALK-CHANNEL-DNA.md
 ```
 
-Die Kanalidee besteht aus zwei Ebenen derselben hochwertigen 3D-Animationsserie:
+Dauerhafte Flow-Regeln:
 
-1. **Viral Object-Talk** – passende Lebensmittel/Gegenstaende duerfen sprechende 3D-Figuren mit klarer Mimik sein.
-2. **Inside-the-Body** – Organe, Blut, Zellen und biologische Prozesse bleiben normalerweise gesichtslos.
+```text
+engine/FLOW-AGENT-INSTRUCTIONS.md
+```
 
-Verbindlich:
+Verbindlicher Look:
 
-- hochwertige stilisierte 3D-Feature-Animation
-- hell, freundlich, sauber und leicht verstaendlich
+- premium theatrale 3D-Feature-Animation
+- hell, freundlich, sauber und modern
+- nicht babyhaft
 - weiche gerundete Formen
 - matte/satinierte Premium-Materialien
-- warmes Hauptlicht + weiches Fill-Light + dezentes Rim-Light
-- klare Tiefe und frische kontrollierte Farben
+- warmes Key-Light + weiches Fill-Light + dezentes Rim-Light
+- klare Vordergrund-/Mittelgrund-/Hintergrundstaffelung
+- frische Farben: Creme, Apricot, Coral, warmes Rot, Himmelblau, Teal
 - kein kosmischer / Weltraum-artiger Look
-- keine dunkle violette Sci-Fi-Mikrowelt als Standard
+- keine dunkle violette Sci-Fi-Mikrowelt
 - kein Medical-CGI
-- keine realistische Haut/Poren
-- keine nassen Gewebetexturen
+- kein Anatomiesoftware-/Schulbuch-Look
 - kein Corporate-Stock-3D
 - kein billiger Toy-Look
-- keine erfundenen Maskottchen nur um Object-Talk zu erzwingen
 
 ## Pilot 001 – feste Objektregeln
 
@@ -80,7 +72,20 @@ Der Sauerstoff-Pilot nutzt **keinen O2-Guide und kein Dauermaskottchen**.
 - Haemoglobin = burgunderrote vereinfachte Struktur
 - Organe/Zellen = stark stilisiert, weich, rund und gesichtslos
 
-## Referenzstatus
+## Bild_01 – neue harte Regel
+
+`Bild_01` darf nur PASS sein, wenn:
+
+- **kein Mensch** vorkommt
+- **kein sichtbares Gesicht** vorkommt
+- **kein Torso / Mannequin / Koerper-Cutaway** das Cover dominiert
+- Lunge + Herz + Sauerstoffweg als eigenstaendige filmische 3D-Objekte inszeniert sind
+- die Szene wie ein echter hochwertiger Animationsfilm-Frame aussieht
+- die Hook **„So reist Sauerstoff durch deinen Körper“** sichtbar und korrekt ist
+- die Labels **„Lunge“** und **„Herz“** korrekt sind
+- kein Poster-/Schulbuch-/Medical-/Kosmos-Look entsteht
+
+## Reference-First
 
 Geplante kanalweite Referenz:
 
@@ -90,97 +95,36 @@ assets/channel/STYLE_REFERENCE.png
 
 Status: **noch nicht vorhanden**.
 
-Bis zur ausdruecklichen Freigabe gilt Bootstrap-Modus:
+Bis zur Freigabe:
 
 ```text
-Bild_01 aus der kanonischen hellen Kanal-DNA erzeugen
-→ deutsche Cover-Hook muss sichtbar sein
-→ visuell pruefen
+neues Bild_01 aus der korrigierten Kanal-DNA erzeugen
+→ alle Menschen-/Torso-/Poster-Varianten automatisch verwerfen
+→ beste filmische Organ-Komposition zeigen
 → Nutzerfreigabe
-→ Bild_01.png als echtes Flow-Reference/Ingredient verwenden
-→ erst danach Bild_02–28
+→ Bild_01.png als echtes Flow Reference/Ingredient verwenden
+→ erst dann Bild_02–28
 ```
 
-Ein textlicher Satz wie `Using Bild_01 as the exact style reference` zaehlt nicht als visuelles Anhaengen der Referenz.
-
-## Flow-Regel – genau eine Freigabe
-
-Flow stoppt nur nach `Bild_01`:
-
-```text
-Bild_01 erzeugen
-→ intern auf Stil, deutsche Hook, Anatomie und Artefakte pruefen
-→ bei Fehlern regenerieren
-→ Bild_01 zeigen
-→ einmalige Nutzerfreigabe
-```
-
-Danach automatisch:
-
-```text
-Bild_02–06
-→ interne visuelle QA
-→ Bild_07–11
-→ interne visuelle QA
-→ Bild_12–16
-→ interne visuelle QA
-→ Bild_17–21
-→ interne visuelle QA
-→ Bild_22–26
-→ interne visuelle QA
-→ Bild_27–28
-→ Recovery
-→ finaler Ordner
-→ ZIP
-```
-
-Keine weiteren Fragen wie „Soll ich weitermachen?“.
+Ein textlicher Satz wie `Using Bild_01 as reference` zaehlt nicht als tatsaechliche Referenz.
 
 ## Textregel
 
-Sichtbarer Text ist verbindlicher Teil der Erklaerung.
+Sichtbarer Text bleibt Teil der Bilder:
 
-- Cover-Hook fuer Pilot 001: **„So reist Sauerstoff durch deinen Körper“**
-- normale Bilder: normalerweise 1–3 kurze deutsche Labels
-- Begriffe kommen aus `02_bildprompts/label-plan.json`
-- sichtbarer Text ausschliesslich Deutsch
-- falsche Flow-Schreibweise = Regeneration
-- Remotion nur als exakter Fallback fuer Begriffe, die Flow wiederholt nicht korrekt schreibt
-- finales Video darf die geplanten Labels nicht verlieren
-
-## Aktuelle Nutzerdateien
-
-Flow-Szenenauftrag:
-
-```text
-youtube-videos/001-pilot-sauerstoff-im-blut/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt
-```
-
-Dauerhafte Agent-Regeln:
-
-```text
-engine/FLOW-AGENT-INSTRUCTIONS.md
-```
-
-Voice:
-
-```text
-youtube-videos/001-pilot-sauerstoff-im-blut/01_script/VOICEOVER-ZUM-KOPIEREN.txt
-```
-
-Antigravity/Remotion:
-
-```text
-youtube-videos/001-pilot-sauerstoff-im-blut/03_pipeline/ANTIGRAVITY-PROMPT-ZUM-KOPIEREN.txt
-```
+- Cover-Hook direkt im Cover
+- normale Bilder normalerweise 1–3 kurze deutsche Labels
+- Begriffe aus `02_bildprompts/label-plan.json`
+- ausschliesslich Deutsch
+- falsche Schreibweise = Regeneration
+- Remotion nur als exakter Fallback bei wiederholtem KI-Textfehler
 
 ## Naechster Produktionsschritt
 
-1. Dauerhafte Flow-Agent-Instructions aus `engine/FLOW-AGENT-INSTRUCTIONS.md` setzen.
-2. Pilot-Flow-Prompt verwenden.
-3. Zuerst nur `Bild_01` erzeugen.
-4. Pruefen: heller Premium-3D-Animationsfilm-Look, keine kosmische Welt, deutsche Hook sichtbar und korrekt.
-5. `Bild_01` freigeben.
-6. Danach `Bild_01.png` bei jeder Folgegeneration als echtes visuelles Reference/Ingredient anhaengen.
-7. Alle Folgeframes mit den vorgegebenen kurzen deutschen Labels erzeugen.
-8. Alte kosmische/dunkle Pilotbilder nicht weiterverwenden.
+1. Alten Flow-Lauf und seine drei Covervarianten **nicht** als Referenz verwenden.
+2. Aktualisierte `engine/FLOW-AGENT-INSTRUCTIONS.md` setzen.
+3. Aktualisierten Pilot-Prompt verwenden.
+4. Nur `Bild_01` neu erzeugen.
+5. Alle Varianten mit Mensch, Gesicht, Torso oder Poster-Look automatisch FAIL setzen.
+6. Erst ein akzeptiertes organ-zentriertes Filmframe als `Bild_01.png` freigeben.
+7. Danach Bild_02–28 mit diesem Bild als echter visueller Referenz erzeugen.
