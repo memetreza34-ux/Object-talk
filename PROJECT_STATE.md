@@ -2,194 +2,111 @@
 
 Letzte Aktualisierung: 23.09.2026
 
-## Aktueller Stand
+## Aktiver Kurztest
 
-Aktiver Test:
+Aktiv ist jetzt:
 
 ```text
-youtube-videos/001-pilot-sauerstoff-im-blut/
+youtube-videos/002-mini-test-sauerstoff/
 ```
 
-Thema:
+Zweck: ein sehr kleiner kompletter Testfilm, bevor ein längeres Video gebaut wird.
 
-**Wie kommt Sauerstoff von der Lunge bis in deine Zellen?**
+Eckdaten:
+- ca. 50 Sekunden Ziel
+- akzeptabler Bereich 40–70 Sekunden
+- genau 10 Bilder
+- Test zählt nicht als veröffentlichtes Kanalthema
+- Bild_01 = Cover + erster Shot + Master Style Frame
+- Produktion danach in 5er-Blöcken: Bild_02–06, dann Bild_07–10
 
-Pilot 001 ist der aktuelle kleine Testfilm für die freigegebene Bildwelt und den Flow-/Remotion-Workflow.
+Der frühere `001-pilot-sauerstoff-im-blut` bleibt vollständig im Repo und dient als längerer 28-Bilder-Pilot.
 
-## Status der Bildwelt
+## Freigegebene Bildwelt
 
-**FREIGEGEBEN.**
-
-Nach dem aktuellen Google-Flow-Test wurde die neue Bildwelt vom Nutzer akzeptiert und im Repository verankert:
+Verbindlich ist:
 
 ```text
 bildwelt/APPROVED-VISUAL-WORLD.md
 ```
 
-Die frühere zu realistische/semi-realistische Richtung ist verworfen.
-
-Ab jetzt:
-
+Kanal-DNA:
 - stark stilisierte hochwertige 3D-Animationsfilm-Welt
 - klar animiert statt fotorealistisch
 - weiche gerundete Formen
 - warme Creme-/Apricot-/Amber-/Orange-Grundwelt
 - tiefe Rot-/Burgundertöne für Blut und Gefäße
-- blass Cyan/Türkis als Sauerstoff-Kontrast
-- glatte hochwertige Materialien, keine nassen realistischen Gewebetexturen
+- blass Cyan/Türkis als O2-Kontrast
+- glatte hochwertige Materialien
 - starke filmische Tiefenwirkung
 - vereinfachte, erkennbare Anatomie
-- kein Anime, kein Comic, keine medizinische Foto-/CGI-Realistik
-- kein Gore
+- kein Anime, kein Comic, kein medizinischer Fotorealismus, kein Gore
 
-Ein sauber exportiertes Einzelbild als kanalweite `assets/channel/STYLE_REFERENCE.png` fehlt noch. Ein Browser-Screenshot oder eine Collage wird dafür ausdrücklich nicht verwendet. Bis dahin sind die schriftliche Bildwelt + `Bild_01` jeder Episode autoritativ.
+Ein sauber exportiertes kanalweites `assets/channel/STYLE_REFERENCE.png` fehlt noch. Bis dahin gelten die schriftliche Bildwelt und Bild_01 der jeweiligen Episode als Referenz.
 
-## Pilot-Laufzeit und Bilddichte
+## Prompt- und Textregel
 
-- ungefähr 135 Sekunden
-- akzeptabler Testbereich 115–160 Sekunden
-- 28 Erklärbilder
-- überwiegend 3–6 Sekunden pro Bild
-- normale Kanalvideos bleiben mindestens 300 Sekunden lang
-
-## Text- und Prompt-Regel
-
-- Flow-Prompt-Anweisungen: Englisch
-- jeder sichtbare Text im Bild: Deutsch
-- jedes Bild: normalerweise 1–3 wichtige deutsche Labels
-- kurze helle/weiße Sans-Serif-Überschriften und dünne Führungslinien bevorzugt
-- keine englischen sichtbaren Wörter
+- Flow-Anweisungen: Englisch
+- sichtbarer Text im Bild: nur Deutsch
+- wichtige Dinge kurz beschriften
+- normalerweise 1–3 Labels pro Bild
 - keine langen Textblöcke
-- falsches Flow-Label = Regeneration oder exakt geplanter Remotion-Fallback
+- falsches oder englisches Label = Regeneration oder sauberer Remotion-Fallback
 
-## Bild_01 – Pflicht
-
-`Bild_01` ist immer:
-
-- Cover
-- erster Shot
-- Master Style Frame
-- Vorlage für alle restlichen Bilder
-
-Bild_01 wird besonders ausführlich beschrieben und enthält eine kurze starke deutsche Hook-Zeile zum Thema.
-
-Für Pilot 001:
-
-```text
-So reist Sauerstoff durch deinen Körper
-```
-
-Bild_01 wird zuerst allein erzeugt. Erst nach Nutzerfreigabe geht es weiter.
-
-## Folgeprompts
-
-Nach Bild_01 gilt:
-
-- Prompt so kurz wie möglich, so genau wie nötig
-- normalerweise 2–5 englische Sätze
-- Szene + sichtbarer Prozess + Komposition + deutsche Labels
-- globalen Stilblock nicht ständig wiederholen
-- `Bild_01.png` immer als Style-/Continuity-Referenz verwenden
-- jedes Folgeframe muss sichtbar wie derselbe Film wirken
-
-## Feste visuelle Identität
-
-- O₂ = blass-cyanfarbene gepaarte Kugeln/Partikel
-- CO₂ = klar unterscheidbare konsistente Darstellung
-- rote Blutkörperchen = warmrote bikonkave Scheiben
-- Hämoglobin = burgunderrote vereinfachte Struktur innerhalb roter Blutkörperchen
-
-## Flow-Ablauf
-
-```text
-nur Bild_01
-→ Bild_01 prüfen
-→ Nutzerfreigabe
-→ Bild_02–06 einzeln
-→ Block-QA
-→ Bild_07–11 einzeln
-→ Block-QA
-→ Bild_12–16 einzeln
-→ Block-QA
-→ Bild_17–21 einzeln
-→ Block-QA
-→ Bild_22–26 einzeln
-→ Block-QA
-→ Bild_27–28 einzeln
-→ Fehlerliste
-→ Recovery-Pass
-→ lückenlose ZIP Bild_01...Bild_28
-```
-
-## Ist der kleine Pilot produktionsbereit?
-
-**Ja – Phase 1 ist produktionsbereit.**
-
-Vorhanden:
-
-- finales Skript
-- Voiceover-Kopierdatei
-- 28 semantische Szenen
-- Recherche und Claim-Matrix
-- Mechanism Map
-- Satz-Visual-Plan
-- Label-Plan
-- Google-Flow-Prompt
-- Scene Map
-- Overlay-Plan
-- Antigravity-Prompt
-- YouTube-Metadaten
-- Quality-Scorecard und Postmortem
-
-Noch nicht vorhanden und deshalb noch kein fertiger Render möglich:
-
-1. finales Voice-Audio in `01_script/audio/`
-2. akzeptierte final exportierte Flow-Bilder `Bild_01.png` bis `Bild_28.png`
-3. ausgefüllte Einzelbild-Reviews nach echter Bildauswahl
-
-Damit ist der nächste reale Produktionsschritt **nicht weitere Planung**, sondern Medienproduktion.
-
-## Nutzerdateien
-
-Flow:
-
-```text
-youtube-videos/001-pilot-sauerstoff-im-blut/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt
-```
+## 002 – vorhandene Dateien
 
 Voice:
+```text
+youtube-videos/002-mini-test-sauerstoff/01_script/VOICEOVER-ZUM-KOPIEREN.txt
+```
+
+Flow:
+```text
+youtube-videos/002-mini-test-sauerstoff/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt
+```
+
+Antigravity:
+```text
+youtube-videos/002-mini-test-sauerstoff/03_pipeline/ANTIGRAVITY-PROMPT-ZUM-KOPIEREN.txt
+```
+
+YouTube-Metadaten:
+```text
+youtube-videos/002-mini-test-sauerstoff/04_export/YOUTUBE-TITEL-BESCHREIBUNG-ZUM-KOPIEREN.txt
+```
+
+Szenenplan:
+```text
+youtube-videos/002-mini-test-sauerstoff/05_info/phase1-scenes.json
+```
+
+## Produktionsablauf 002
 
 ```text
-youtube-videos/001-pilot-sauerstoff-im-blut/01_script/VOICEOVER-ZUM-KOPIEREN.txt
+Voice erzeugen
+→ Flow nur Bild_01
+→ Bild_01 prüfen und freigeben
+→ Bild_02–06 einzeln
+→ Block-QA
+→ Bild_07–10 einzeln
+→ Fehlerliste + Recovery
+→ Audio + Bilder ins Projekt
+→ Whisper / Timeline
+→ Remotion
+→ final-video.mp4
+→ Test-QA
 ```
 
-## V2-Checks
+## Was noch fehlt
 
-Vor Medienproduktion:
+Der Test ist geplant und produktionsbereit, aber noch nicht gerendert.
 
-```bash
-python tools/validate_planning_v2.py youtube-videos/001-pilot-sauerstoff-im-blut
-```
+Es fehlen nur die echten Medien:
+1. finales Voice-Audio
+2. akzeptierte Flow-Bilder `Bild_01.png` bis `Bild_10.png`
 
-Nach finaler Bildauswahl:
+Danach kann Phase 3 direkt starten.
 
-```bash
-python tools/validate_planning_v2.py youtube-videos/001-pilot-sauerstoff-im-blut --phase2
-python tools/prepare_phase3.py youtube-videos/001-pilot-sauerstoff-im-blut
-```
+## Nächster Schritt
 
-Finale technische Test-QA:
-
-```bash
-python tools/qa_final.py \
-  youtube-videos/001-pilot-sauerstoff-im-blut/04_export/fertiges-video/final-video.mp4 \
-  youtube-videos/001-pilot-sauerstoff-im-blut/01_script/audio/final-voiceover.wav \
-  --min-seconds 115
-```
-
-## Nächster Meilenstein
-
-1. `Bild_01` im freigegebenen Look final erzeugen und akzeptieren.
-2. Danach restliche Flow-Bilder blockweise mit Bild_01 als exakter Stilreferenz erzeugen.
-3. Voice-Audio erzeugen und ablegen.
-4. Danach Phase 3 / Remotion starten.
+`GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt` in Flow verwenden und zuerst ausschließlich `Bild_01` erzeugen. Nach Freigabe folgen die restlichen 9 Bilder.
