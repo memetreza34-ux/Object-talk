@@ -6,48 +6,28 @@ Erwartet werden exakt:
 
 ```text
 Bild_01.png
-Bild_02.png
 ...
 Bild_28.png
 ```
 
-## Benennung
+Nicht manuell nach ZIP-Reihenfolge umbenennen. Entscheidend ist die explizite Bildnummer.
 
-- zweistellige Nummern
-- keine Lücken
-- keine doppelten Nummern
-- keine Varianten wie `neu`, `final2`, `copy`, `v3`
-- nur final akzeptierte Bilder
+## Verbindliche Bildwelt
 
-## Bildwelt
-
-Alle Bilder müssen zur freigegebenen stark animierten 3D-Animationsfilm-Welt gehören:
-
-- klar stilisiert und nicht fotorealistisch
-- keine realistische Haut
-- keine realistischen Gewebetexturen
-- keine medizinische CGI
-- glatte, saubere, animierte 3D-Formen
-- Bild_01 als Style-/Continuity-Referenz
-
-## Text
-
-- sichtbarer Text ausschließlich Deutsch
-- normale Szenen dürfen 1–3 wichtige Labels enthalten
-- Bild_01/Cover standardmäßig nur mit Hook
-
-## Externe Flow-Endausgabe
-
-Flow soll am Ende einen Ordner erzeugen:
+Alle Bilder müssen die Kanal-DNA aus
 
 ```text
-001-pilot-sauerstoff-im-blut_bilder/
+bildwelt/OBJECT-TALK-CHANNEL-DNA.md
 ```
 
-und zusätzlich:
+einhalten.
 
-```text
-001-pilot-sauerstoff-im-blut_bilder.zip
-```
+Für diesen Pilot gilt zusätzlich:
 
-Die ZIP wird anschließend unter `02_bildprompts/bilder-zip/` abgelegt/importiert.
+- `Bild_01` = Cover + Hook + Master Style Frame
+- danach exakt dieselbe Object-Talk-3D-Welt
+- gleicher O₂-Guide, gleicher Augenstil, gleiche Materialwelt
+- normale Szenen dürfen 1–3 kurze deutsche Labels enthalten
+- kein Medical-CGI-/Anatomiesoftware-Look
+- kein Realismus-Drift
+- keine zufälligen Character-Designs
