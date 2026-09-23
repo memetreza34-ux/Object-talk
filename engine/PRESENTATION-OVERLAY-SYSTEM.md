@@ -2,7 +2,7 @@
 
 ## Ziel
 
-Die Bildwelt bleibt eine hochwertige, stark stilisierte 3D-Animationsfilm-Welt. Das Video soll klar, lebendig und verständlich wirken, ohne wie eine reine Diashow oder PowerPoint auszusehen.
+Die Bildwelt bleibt eine hochwertige, stark stilisierte 3D-Animationsfilm-Welt. Das Video soll klar, lebendig und filmisch wirken, ohne wie eine reine Diashow, PowerPoint oder App-Oberfläche auszusehen.
 
 ## Grundprinzip
 
@@ -11,6 +11,7 @@ Die Bildwelt bleibt eine hochwertige, stark stilisierte 3D-Animationsfilm-Welt. 
 - Wichtige sichtbare Strukturen werden in jedem Bild knapp auf Deutsch beschriftet.
 - Zusätzliche Überschriften, Schlüsselwörter, Callouts und Vergleichsmarker dürfen in Remotion sauber animiert werden.
 - Keine Anime-, Comic-, Meme- oder hektische Popup-Sprache.
+- Overlays dürfen niemals wie UI-Karten oder Dashboard-Boxen aussehen.
 
 ## 1. Labels im Bild
 
@@ -39,6 +40,8 @@ Regeln:
 - sofort verständlich
 - keine irreführende Clickbait-Aussage
 - nicht die ganze Voice-over-Zeile abschreiben
+- Cover-Text bekommt eigenen Negativraum und überlappt keine Anatomie
+- kein zweiter Remotion-Hook über Bild_01 legen
 
 ## 3. Zusätzliche Overlay-Typen
 
@@ -74,6 +77,8 @@ Zum Beispiel:
 - komplette Voice-over-Sätze als Dauertext
 - englischer sichtbarer Text
 - große Dashboard-/PowerPoint-Flächen
+- Glas-/UI-Karten als Standardstil
+- dicke schwarze Textboxen über dem Bild
 - Text in jeder Ecke nur damit mehr passiert
 - Anime-/Comic-Schrift
 - Bounce, Shake, Meme-Popups oder aggressive Effekte
@@ -89,7 +94,21 @@ Bevorzugt:
 - animierte Pointer-/Callout-Linie
 - kurzer Highlight-Pulse
 
-## 6. Timing
+Text soll möglichst direkt auf dem Bild schweben: helle klare Typografie, dezenter Schatten, kleine Unterstreichung. Keine dominante Kartenfläche hinter dem Text.
+
+## 6. Kamerabewegung auf Standbildern
+
+Die Bewegung soll hochwertig und ruhig wirken, nicht wie ein Standard-Ken-Burns-Effekt.
+
+- Push/Pull nur ca. 3–4 %
+- Pan nur ca. 20–30 px bei 1080p
+- weiche Ease-in/Ease-out-Bewegung
+- Bewegungsrichtung folgt möglichst dem gezeigten Prozess
+- bei wichtigen Labels oder ruhigen Vergleichsbildern lieber `static`
+- nicht jedes Bild automatisch bewegen
+- kein hektischer Zoom
+
+## 7. Timing
 
 - Kapitelüberschrift: ca. 1,8–3,5 Sekunden
 - Schlüsselwort: ca. 1–2,5 Sekunden
@@ -97,15 +116,16 @@ Bevorzugt:
 
 Overlay-Timing folgt der echten Audio-Timeline und erscheint nicht deutlich vor dem gesprochenen Begriff.
 
-## 7. Bild bleibt Hauptdarsteller
+## 8. Bild bleibt Hauptdarsteller
 
 Das Bild muss den Mechanismus auch ohne große Überschrift erklären. Text hilft nur bei Orientierung und Benennung.
 
-## 8. Priorität
+## 9. Priorität
 
 1. gute Bildidee
 2. klare biologische Darstellung
 3. wichtige deutsche Labels
-4. zusätzliche Remotion-Overlays nur bei echtem Mehrwert
+4. ruhige hochwertige Kamerabewegung
+5. zusätzliche Remotion-Overlays nur bei echtem Mehrwert
 
 Ein Overlay darf niemals eine schwache Bildidee retten.
