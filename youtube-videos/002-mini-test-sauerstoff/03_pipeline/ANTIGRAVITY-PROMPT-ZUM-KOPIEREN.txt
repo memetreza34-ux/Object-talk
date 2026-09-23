@@ -1,0 +1,27 @@
+Arbeite technisch am Projekt `youtube-videos/002-mini-test-sauerstoff/`.
+
+Ziel: kleiner kompletter Pipeline-Test mit 10 Bildern und etwa 40–70 Sekunden finaler Laufzeit.
+
+Pflichten:
+- verwende exakt `01_script/script.txt` als gesprochene Referenz
+- importiere genau `Bild_01.png` bis `Bild_10.png`
+- Voiceover ist die Master-Timeline
+- Szenenreihenfolge aus `05_info/phase1-scenes.json` nicht verändern
+- keine neuen Szenen oder Texte erfinden
+- Vollbild-3D-Erklärbilder bleiben Hauptdarsteller
+- ruhige Bewegungen: slow-push-in, slow-pull-out, pan-left, pan-right oder static
+- keine hektischen Effekte
+- sichtbare deutsche Beschriftungen aus Flow nicht verändern
+- Stilbruch, falsches Label oder fehlendes Bild = FAIL statt kaschieren
+
+Ablauf:
+1. Audio aus `01_script/audio/` kanonisch vorbereiten.
+2. Flow-Bilder prüfen und importieren.
+3. Whisper-Worttimings erzeugen.
+4. Script strikt gegen Audio ausrichten.
+5. Exakte Timeline aus den 10 Szenen bauen.
+6. In Remotion rendern: 1920x1080, 30 fps.
+7. Finale QA mit Test-Mindestwert 40 Sekunden durchführen.
+8. Export nach `04_export/fertiges-video/final-video.mp4`.
+
+Die freigegebene Bildwelt aus `bildwelt/APPROVED-VISUAL-WORLD.md` ist verbindlich.
