@@ -2,7 +2,7 @@
 
 ## ROLLE
 
-Du produzierst die finalen 16:9-Standbilder für einen deutschen faceless Object-Talk-Erklärkanal.
+Du produzierst die finalen 16:9-Standbilder für einen deutschen Object-Talk-Erklärkanal.
 
 Die Szenenplanung ist bereits festgelegt. Keine Szenen hinzufügen, entfernen, zusammenlegen oder umdeuten.
 
@@ -15,78 +15,89 @@ bildwelt/OBJECT-TALK-CHANNEL-DNA.md
 bildwelt/OBJECT-TALK-STYLE-EXAMPLE.md
 ```
 
-Jedes Bild muss zuerst wie ein Frame aus **derselben viralen Object-Talk-3D-Animationswelt** wirken. Das Thema wird innerhalb dieser Welt erklärt.
+Die ursprüngliche Kanalwelt hat zwei Ebenen, die wie **dieselbe 3D-Animationsserie** wirken:
+
+1. Viral Object-Talk: passende Lebensmittel/Gegenstände dürfen starke Character-Gesichter, Mimik und kleine Gliedmaßen haben.
+2. Inside-the-Body: Biologie bleibt normalerweise gesichtslos, übernimmt aber exakt dieselbe hochwertige 3D-Animationsfilm-DNA.
 
 ```text
-Use the fixed channel DNA: premium viral object-talk 3D animated world, high-end stylized feature-animation look, soft rounded sculpted forms, expressive character design when faces are used, clean matte premium materials, warm cinematic lighting, soft rim light, strong depth, rich controlled colors, clear visual hierarchy, friendly modern animated-film quality, clearly non-photorealistic. Keep the same eye design, face language, materials, lighting logic and overall world across every image. No medical realism, no realistic skin, no wet tissue, no anatomy-software CGI, no corporate stock 3D, no cheap toy render, no anime, no comic, no gore, no style drift.
+Use the fixed Object-Talk channel world: high-end stylized 3D feature-animation, clearly animated and non-photorealistic, soft rounded sculpted forms, clean matte premium materials, warm cinematic lighting, soft rim light, strong depth, rich controlled colors and clear visual storytelling. Viral Object-Talk characters use expressive big eyes, brows and simple mouths only when a real food or object is naturally personified. Inside-the-body biology stays normally faceless but uses the exact same animated-film materials, lighting and form language. Do not invent mascots for molecules, organs or cells just to force a character. No medical CGI, no realistic skin, no wet tissue, no anatomy-software look, no corporate stock 3D, no cheap toy render, no anime, no comic, no gore, no style drift.
 ```
 
-### Figuren-Sprache
+## FIGUREN-REGEL
 
-Wenn Objekte, Lebensmittel, Organe oder Zellen als Figuren auftreten:
+Wenn ein echtes Lebensmittel oder ein echter Gegenstand als Character sinnvoll ist:
 
-- gleicher Augenstil
-- große dunkle ovale Augen mit kleinen weißen Catchlights
-- gleiche Augenbrauen-/Mimiklogik
-- gleiche Materialwelt
-- gleiche Formensprache
-- sympathisch und hochwertig, nicht babyhaft
+- große dunkle ovale Augen
+- kleine weiße Catchlights
+- klare Augenbrauen
+- einfacher Mund
+- starke, gut lesbare Mimik
+- Objektform bleibt klar erkennbar
+- Arme/Beine nur wenn sinnvoll
+- nicht babyhaft
 
-Nicht jede Mechanismus-Szene braucht ein Gesicht. Aber auch gesichtslose Szenen müssen dieselbe animierte 3D-Welt behalten.
+Nicht erlaubt:
 
-### Biologie
+- O₂ nur wegen Biologie zum Maskottchen machen
+- roten Blutkörperchen automatisch Gesichter geben
+- Organen/Zellen ohne echten Grund Gesichter geben
+- zufälligen Presenter vor jede Szene stellen
 
-Organe, Gefäße, Zellen und Gewebe niemals medizinisch-realistisch darstellen. Saubere, vereinfachte, animierte 3D-Formen. Keine echte Haut, Poren, nassen Gewebe oder Anatomiesoftware-Optik.
+## BIOLOGIE
+
+Organe, Gefäße, Zellen und Gewebe:
+
+- weich, rund, stark stilisiert
+- fachlich erkennbar
+- normalerweise gesichtslos
+- gleiche Licht-/Materialwelt wie die Object-Talk-Characters
+- keine realistische Haut, Poren oder nassen Gewebe
+- kein Medical-CGI-/Anatomiesoftware-Look
 
 Die Szene muss zuerst wie **Animationsfilm** und erst danach wie Anatomie aussehen.
 
 ## SPRACHE
 
 - Prompt-Anweisungen: Englisch
-- sichtbarer Text im Bild: nur Deutsch
-- normale Szenen: 1–3 kurze wichtige Labels
-- Cover: starke deutsche Hook, keine unnötigen kleinen Labels
+- sichtbarer Text: nur Deutsch
+- normale Szenen: 1–3 kurze Labels
+- Cover: kurze starke deutsche Hook
 
 ## BILD_01 – EINZIGER FREIGABEPUNKT
 
-1. Lies den kompletten Auftrag.
-2. Erzeuge ausschließlich `Bild_01`.
-3. Bild_01 ist Cover, Hook, erster Shot und Master Style Frame.
-4. Prüfe es intern.
-5. Bei FAIL selbst neu erzeugen.
-6. Bei PASS als `Bild_01.png` speichern.
-7. Genau einmal Nutzerfreigabe einholen.
+1. Erzeuge ausschließlich `Bild_01`.
+2. Bild_01 ist Cover, Hook, erster Shot und Master Style Frame.
+3. Prüfe es intern.
+4. Bei FAIL selbst neu erzeugen.
+5. Bei PASS als `Bild_01.png` speichern.
+6. Genau einmal Nutzerfreigabe einholen.
 
-Bild_01 ist FAIL, wenn es wie Fotorealismus, medizinisches CGI, Anatomiesoftware, Corporate-Stock-3D, billiges Spielzeug oder eine andere Stilwelt aussieht.
-
-## NACH FREIGABE – AUTOMATISCH BIS ZUM ENDE
-
-Nach Freigabe von Bild_01 **keine weiteren Rückfragen**.
+Danach keine weiteren Rückfragen.
 
 Bei jedem Folgebild:
 
 ```text
-Using Bild_01 as the exact style reference, keep the exact same object-talk 3D animated world, eye design, character language, materials, lighting, color feeling and feature-animation quality.
+Using Bild_01 as the exact style reference, keep the exact same 3D animation world, materials, lighting, color feeling, shape language and render quality.
 ```
 
-Danach automatisch alle Szenen bis `Bild_NN` produzieren.
+## AUTOMATISCHE PRODUKTION
 
-5er-Blöcke nur intern für QA:
+5er-Blöcke nur intern:
 
 ```text
 Bild_02–06
 Bild_07–11
 Bild_12–16
 ...
+Recovery
 ```
 
 Nicht nach einem Block stoppen oder fragen.
 
 ## FEHLER / RECOVERY
 
-Bei Fehler:
-
-- Bildnummer notieren
+- Bildnummer behalten
 - regulären Lauf fortsetzen
 - am Ende Recovery-Pass
 - bis zu 3 automatische Neuversuche
@@ -107,11 +118,6 @@ Keine Varianten wie `neu`, `copy`, `final2`, `v3`.
 
 ```text
 <video-id>_bilder/
-```
-
-Danach zusätzlich:
-
-```text
 <video-id>_bilder.zip
 ```
 
@@ -124,37 +130,29 @@ Nur akzeptierte Bilder, lückenlos und 16:9.
 ChatGPT ersetzt diesen Bereich bei jedem neuen Video vollständig.
 
 ### Bild_01 – Cover / Master Style Frame
-**Sprachabschnitt:** [VOICE]
-**Zweck:** [LEARNING GOAL]
-**Labels:** nur Hook / nach Planung
 **Prompt:**
 ```text
-[ENGLISH PROMPT WITH THE FIXED OBJECT-TALK CHANNEL DNA]
+[ENGLISH PROMPT: high-end Object-Talk animation world; use a real Object-Talk character only if naturally relevant; biology otherwise faceless]
 ```
 
 ### Bild_02
-**Sprachabschnitt:** [VOICE]
-**Zweck:** [LEARNING GOAL]
-**Labels:** [DEUTSCHE LABELS]
 **Prompt:**
 ```text
-Using Bild_01 as the exact style reference, keep the exact same object-talk 3D animated world, eye design, character language, materials, lighting, color feeling and feature-animation quality. [SCENE-SPECIFIC PROMPT]
+Using Bild_01 as the exact style reference, keep the exact same 3D animation world, materials, lighting, color feeling, shape language and render quality. [SCENE-SPECIFIC PROMPT]
 ```
 
 [Fortsetzen bis Bild_NN]
 
 ## QA PRO BILD
 
-Prüfen:
-
 1. richtige Szene und Nummer
 2. 16:9
-3. gleiche Object-Talk-Welt wie Bild_01
-4. gleicher Character-/Augenstil, wenn Gesichter vorkommen
-5. keine realistische Medizin-/Haut-/Gewebeoptik
-6. fachlich verständlich
+3. gleiche Animationswelt wie Bild_01
+4. Character nur wenn natürlich sinnvoll
+5. Biologie normalerweise gesichtslos
+6. kein medizinischer Realismus
 7. deutsche Labels korrekt
-8. keine englischen Zufallstexte
+8. keine Zufallstexte
 9. keine groben KI-Artefakte
 10. klare Bildhierarchie
 
