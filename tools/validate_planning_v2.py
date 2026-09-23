@@ -5,8 +5,9 @@ Usage:
   python tools/validate_planning_v2.py youtube-videos/MEIN-VIDEO
   python tools/validate_planning_v2.py youtube-videos/MEIN-VIDEO --phase2
 
-Phase 2 intentionally fails closed: accepted review JSON is not enough if the
-corresponding final image asset is missing or review fields are incomplete.
+Phase 2 fails closed: accepted review JSON is not enough if the corresponding
+final image asset is missing, required German text was not reviewed, or review
+fields are incomplete.
 """
 
 from __future__ import annotations
@@ -113,6 +114,7 @@ def validate_phase1(project: Path) -> set[str]:
     images = label_plan.get("images")
     if not isinstance(images, list):
         fail("label-plan.json: images muss eine Liste sein")
+
     for entry in images:
         if not isinstance(entry, dict):
             fail("label-plan.json enthaelt einen ungueltigen Eintrag")
@@ -120,8 +122,8 @@ def validate_phase1(project: Path) -> set[str]:
         if image_id not in scene_image_ids:
             fail(f"Label-Plan referenziert unbekanntes Bild: {image_id}")
         labels = entry.get("labels", [])
-        if not isinstance(labels, list) or len(labels) > 3:
-            fail(f"{image_id}: maximal 3 Labels erlaubt")
+        if not isinstance(labels, list) or not 1 <= len(labels) <= 3:
+            fail(f"{image_id}: 1 bis 3 wichtige deutsche Labels sind erforderlich")
         for label in labels:
             if not isinstance(label, dict):
                 fail(f"{image_id}: Label-Eintrag ist ungueltig")
@@ -130,10 +132,19 @@ def validate_phase1(project: Path) -> set[str]:
                     fail(f"{image_id}: Label-Feld fehlt: {key}")
             if has_placeholder(label):
                 fail(f"{image_id}: Label enthaelt Platzhalter")
+            text = label.get("text")
+            if not isinstance(text, str) or not text.strip():
+                fail(f"{image_id}: Labeltext fehlt")
+
+        if image_id == "Bild_01":
+            hook = entry.get("hook_text")
+            if not isinstance(hook, str) or not hook.strip():
+                fail("Bild_01: deutsche Cover-Hook fehlt im label-plan.json")
 
     print(f"V2-PHASE-1-PASS: {project}")
     print(f"  Satz-/Visual-Items: {len(items)}")
     print(f"  referenzierte Bilder: {len(sentence_image_ids)}")
+    print("  deutsche Labels pro Bild geplant: 1–3")
     return scene_image_ids
 
 
@@ -144,13 +155,20 @@ def validate_reference_policy(project: Path) -> None:
     config = load_json(channel_config_path)
     visual = config.get("visual_identity", {})
     flow = config.get("flow_prompting", {})
+    labels = config.get("labels", {})
 
     if flow.get("textual_reference_mentions_do_not_count_as_attachment") is not True:
         fail("config/channel.json muss textliche Referenz-Erwaehnungen als unzureichend markieren")
     if flow.get("attach_bild_01_on_every_followup") is not True:
         fail("config/channel.json muss Bild_01 als echte Referenz fuer Folgebilder verlangen")
-    if config.get("labels", {}).get("render_in_flow") is not False:
-        fail("Flow-Labels muessen deaktiviert sein; Labels werden in Remotion gerendert")
+    if flow.get("visible_text_in_generated_images") is not True:
+        fail("sichtbarer deutscher Text muss fuer Flow-Bilder aktiviert sein")
+    if flow.get("cover_hook_generated_by_flow") is not True:
+        fail("Bild_01 muss die deutsche Cover-Hook bereits in Flow erhalten")
+    if labels.get("render_in_flow") is not True:
+        fail("wichtige deutsche Labels muessen standardmaessig direkt in Flow erzeugt werden")
+    if labels.get("final_video_must_contain_required_labels") is not True:
+        fail("finales Video muss alle geplanten deutschen Labels enthalten")
 
     style_rel = visual.get("style_reference")
     if visual.get("clean_style_reference_asset_present") is True:
@@ -188,6 +206,7 @@ def validate_phase2(project: Path, expected_image_ids: set[str]) -> None:
         "immediate_clarity",
         "style_continuity",
         "composition",
+        "label_accuracy",
         "overall_score",
     )
 
@@ -232,7 +251,7 @@ def validate_phase2(project: Path, expected_image_ids: set[str]) -> None:
 
     print(f"V2-PHASE-2-REVIEW-PASS: {project}")
     print(f"  akzeptierte Bildreviews: {len(reviewed)}")
-    print("  finale PNG-Dateien vorhanden und Review-Felder >= 8/10")
+    print("  finale PNG-Dateien vorhanden; zentrale Bild- und Label-Scores >= 8/10")
 
 
 def main() -> None:

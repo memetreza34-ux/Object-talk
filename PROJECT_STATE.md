@@ -16,16 +16,17 @@ Pilot 001 ist der erste echte 2–3-Minuten-Pilotfilm.
 
 ## Aktueller Schwerpunkt
 
-Die Bildpipeline wurde auf **Reference-First** umgestellt.
+Die Bildpipeline ist **Reference-First**, aber sichtbarer deutscher Text bleibt Teil der Bilder.
 
 Das bedeutet:
 
-- Stil wird nicht mehr nur durch lange Textprompts beschrieben
 - echte visuelle Referenzen sind autoritativ
-- `Bild_01` muss nach Freigabe als tatsaechliche visuelle Referenz fuer jedes Folgebild angehaengt werden
-- `STYLE_REFERENCE.png` wird kanalweit genutzt, sobald eine saubere Referenz vom Nutzer freigegeben wurde
-- Flow erzeugt standardmaessig keine Labels oder Hook-Texte mehr
-- Text/Labels werden spaeter kontrolliert in Remotion gerendert
+- `Bild_01` muss nach Freigabe als echte visuelle Referenz fuer jedes Folgebild angehaengt werden
+- `STYLE_REFERENCE.png` wird kanalweit genutzt, sobald eine saubere Referenz freigegeben wurde
+- die Bildwelt ist hell, freundlich und hochwertige 3D-Animation statt kosmisch/dunkel/medizinisch
+- `Bild_01` enthaelt die deutsche Cover-Hook direkt im Bild
+- normale Bilder enthalten normalerweise 1–3 kurze deutsche Labels
+- Remotion ist nur Text-Fallback, wenn Flow einen Begriff wiederholt falsch schreibt
 
 Dauerhafte Flow-Agent-Instructions:
 
@@ -55,10 +56,13 @@ Die Kanalidee besteht aus zwei Ebenen derselben hochwertigen 3D-Animationsserie:
 Verbindlich:
 
 - hochwertige stilisierte 3D-Feature-Animation
+- hell, freundlich, sauber und leicht verstaendlich
 - weiche gerundete Formen
 - matte/satinierte Premium-Materialien
-- warme filmische Beleuchtung + Rim-Light
-- starke Tiefe und kontrollierte kraeftige Farben
+- warmes Hauptlicht + weiches Fill-Light + dezentes Rim-Light
+- klare Tiefe und frische kontrollierte Farben
+- kein kosmischer / Weltraum-artiger Look
+- keine dunkle violette Sci-Fi-Mikrowelt als Standard
 - kein Medical-CGI
 - keine realistische Haut/Poren
 - keine nassen Gewebetexturen
@@ -89,7 +93,8 @@ Status: **noch nicht vorhanden**.
 Bis zur ausdruecklichen Freigabe gilt Bootstrap-Modus:
 
 ```text
-Bild_01 ohne kanalweite Bildreferenz erzeugen
+Bild_01 aus der kanonischen hellen Kanal-DNA erzeugen
+→ deutsche Cover-Hook muss sichtbar sein
 → visuell pruefen
 → Nutzerfreigabe
 → Bild_01.png als echtes Flow-Reference/Ingredient verwenden
@@ -104,7 +109,8 @@ Flow stoppt nur nach `Bild_01`:
 
 ```text
 Bild_01 erzeugen
-→ intern pruefen/regenerieren
+→ intern auf Stil, deutsche Hook, Anatomie und Artefakte pruefen
+→ bei Fehlern regenerieren
 → Bild_01 zeigen
 → einmalige Nutzerfreigabe
 ```
@@ -132,11 +138,15 @@ Keine weiteren Fragen wie „Soll ich weitermachen?“.
 
 ## Textregel
 
-Flow-Bilder bleiben standardmaessig textfrei.
+Sichtbarer Text ist verbindlicher Teil der Erklaerung.
 
-- Cover-Hook -> Remotion
-- deutsche Labels -> `02_bildprompts/label-plan.json` -> Remotion
-- keine KI-Schrift direkt im Bild
+- Cover-Hook fuer Pilot 001: **„So reist Sauerstoff durch deinen Körper“**
+- normale Bilder: normalerweise 1–3 kurze deutsche Labels
+- Begriffe kommen aus `02_bildprompts/label-plan.json`
+- sichtbarer Text ausschliesslich Deutsch
+- falsche Flow-Schreibweise = Regeneration
+- Remotion nur als exakter Fallback fuer Begriffe, die Flow wiederholt nicht korrekt schreibt
+- finales Video darf die geplanten Labels nicht verlieren
 
 ## Aktuelle Nutzerdateien
 
@@ -168,7 +178,9 @@ youtube-videos/001-pilot-sauerstoff-im-blut/03_pipeline/ANTIGRAVITY-PROMPT-ZUM-K
 
 1. Dauerhafte Flow-Agent-Instructions aus `engine/FLOW-AGENT-INSTRUCTIONS.md` setzen.
 2. Pilot-Flow-Prompt verwenden.
-3. Zuerst nur textfreies `Bild_01` erzeugen.
-4. `Bild_01` visuell freigeben.
-5. Danach `Bild_01.png` bei jeder Folgegeneration als echtes visuelles Reference/Ingredient anhaengen.
-6. Alte O2-Maskottchen-Bilder nicht weiterverwenden.
+3. Zuerst nur `Bild_01` erzeugen.
+4. Pruefen: heller Premium-3D-Animationsfilm-Look, keine kosmische Welt, deutsche Hook sichtbar und korrekt.
+5. `Bild_01` freigeben.
+6. Danach `Bild_01.png` bei jeder Folgegeneration als echtes visuelles Reference/Ingredient anhaengen.
+7. Alle Folgeframes mit den vorgegebenen kurzen deutschen Labels erzeugen.
+8. Alte kosmische/dunkle Pilotbilder nicht weiterverwenden.

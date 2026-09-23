@@ -4,88 +4,95 @@ Diese Datei definiert die verbindliche Produktionslogik fuer Google Flow.
 
 ## 1. Grundprinzip: Referenz zuerst
 
-Object-Talk darf den visuellen Stil nicht nur durch Text beschreiben und hoffen, dass Flow ihn reproduziert.
+Object-Talk darf Stiltreue nicht nur durch Text behaupten.
 
-Verbindliche Referenzreihenfolge:
+Referenzreihenfolge:
 
 1. `assets/channel/STYLE_REFERENCE.png` – kanalweite Style-Referenz, sobald freigegeben
 2. `Bild_01.png` – Episode-Style- und Continuity-Referenz
 3. optionale Objekt-/Character-Referenzen unter `assets/channel/references/` bzw. `assets/channel/characters/`
-4. erst danach der konkrete Szenenprompt
+4. konkreter Szenenprompt
 
-Ein Satz wie `Using Bild_01 as the exact style reference` ersetzt **niemals** das tatsaechliche Anhaengen von `Bild_01` als visueller Referenz in Flow.
+Ein Satz wie `Using Bild_01 as the exact style reference` ersetzt niemals das tatsaechliche Anhaengen von `Bild_01.png` als visueller Referenz in Flow.
 
-Solange `STYLE_REFERENCE.png` noch fehlt, gilt Bootstrap-Modus:
+Solange `STYLE_REFERENCE.png` fehlt:
 
 - nur `Bild_01` darf ohne kanalweite Bildreferenz erzeugt werden
 - `Bild_01` wird besonders streng geprueft
-- nach Freigabe muss `Bild_01` als echtes Bild-Ingredient/Referenz an jede Folgegeneration angehaengt werden
-- keine Massenproduktion von Folgeframes nur auf Basis textlicher Stilregeln
+- nach Freigabe muss `Bild_01.png` als echtes Ingredient/Reference an jede Folgegeneration angehaengt werden
 
 ## 2. Dauerhafte Flow-Agent-Instructions
 
-Die dauerhafte Verhaltenslogik liegt in:
+Dauerhafte Regeln stehen in:
 
 ```text
 engine/FLOW-AGENT-INSTRUCTIONS.md
 ```
 
-Sie enthaelt Kanal-DNA, Verbote, Referenzregeln, QA und Produktionsablauf.
+Der Video-Prompt beschreibt vor allem den konkreten Bildinhalt, die exakten deutschen Texte und die Komposition.
 
-Der jeweilige Video-Prompt soll diese Regeln nicht als langen Stilroman wiederholen. Er beschreibt primaer den konkreten Bildinhalt.
+## 3. Verbindliche Bildwelt
 
-## 3. Kanal-DNA
-
-Oberste schriftliche Stilreferenz:
-
-```text
-bildwelt/OBJECT-TALK-CHANNEL-DNA.md
-```
+Die Kanalwelt ist eine **helle, freundliche, hochwertige 3D-Animationsfilm-Welt**.
 
 Verbindlich:
 
-- hochwertige stilisierte 3D-Feature-Animation
-- deutlich animiert und nicht fotorealistisch
+- premium stilisierte 3D-Feature-Animation
+- deutlich animiert, nicht fotorealistisch
+- hell und freundlich als Standard
 - weiche gerundete skulptierte Formen
 - matte/satinierte Premium-Materialien
-- warme filmische Beleuchtung
-- weiches Rim-Light
-- starke Tiefenwirkung
-- kontrollierte kraeftige Farben
+- warmes Hauptlicht, weiches Fill-Light, dezentes Rim-Light
+- klare Tiefenwirkung und klare Silhouetten
+- frische kontrollierte Farben: Creme, Apricot, Coral, warmes Rot, Himmelblau, Teal
 - Biologie fachlich erkennbar, aber klar vereinfacht
 - keine erzwungenen Gesichter auf Molekuelen, Organen oder Zellen
 
 Harte Verbote:
 
-- Medical-CGI
-- Anatomiesoftware-Look
+- kosmische / Weltraum-artige Optik
+- Galaxie-, Nebel- oder Sternenhintergruende
+- dunkle violette Mikrowelt als Default
+- Sci-Fi-Tunnel / Neon-Labor
+- Medical-CGI / Anatomiesoftware
 - realistische Haut/Poren
 - nasse Gewebetexturen
 - Corporate-Stock-3D
 - billiger Toy-Look
-- Anime
-- Comic
-- Gore/Horror
-- Stilwechsel zwischen Szenen
+- Anime / Comic
+- Gore / Horror
 
-## 4. Flow erzeugt Visuals, Remotion erzeugt Text
+## 4. Sichtbarer Text ist Teil der Erklaerung
 
-Flow-Bilder sind standardmaessig **textfrei**.
-
-Flow darf nicht mehr fuer jede Szene deutsche Labels, Pfeile oder Erklaertexte rendern. Dadurch werden Rechtschreibfehler, KI-Gibberish, falsche Pointer und unnoetige Regenerationen vermieden.
+Flow-Bilder sind **nicht mehr standardmaessig textfrei**.
 
 Verbindlich:
 
-- Hook von `Bild_01` wird in Remotion gesetzt
-- Labels kommen aus `02_bildprompts/label-plan.json`
-- Flow-Prompt enthaelt normalerweise `No text, no labels, no typography, no arrows.`
-- nur wenn eine aktuelle ausdrueckliche Nutzeranweisung Text direkt im Bild verlangt, darf davon abgewichen werden
+- sichtbarer Text ausschliesslich Deutsch
+- `Bild_01` muss eine kurze starke deutsche Hook enthalten
+- normale Szenen erhalten normalerweise 1–3 kurze deutsche Labels
+- Labelbegriffe kommen aus `02_bildprompts/label-plan.json`
+- nur die wichtigsten Strukturen/Prozesse beschriften
+- gut lesbare Sans-Serif-Typografie
+- keine Textwaende
+- keine englischen sichtbaren Woerter
+
+### Text-Recovery
+
+Wenn Flow einen Begriff falsch schreibt:
+
+1. gleiche Szene mit exakt hervorgehobenem Begriff regenerieren
+2. maximal einen weiteren Text-Versuch
+3. bei wiederholtem Fehler sauberes Bild mit freier Labelzone erzeugen
+4. exakt denselben deutschen Begriff spaeter in Remotion setzen
+
+Der Remotion-Fallback ist eine Fehlerbehandlung, nicht der Standard. Das finale Video darf nie die geplanten deutschen Labels verlieren.
 
 ## 5. Bild_01
 
 `Bild_01` ist immer:
 
-1. Cover-Grundbild
+1. Cover
 2. erster Shot
 3. Episode-Master-Style-Frame
 4. Referenz fuer alle weiteren Bilder
@@ -93,58 +100,62 @@ Verbindlich:
 Ablauf:
 
 1. kompletten Auftrag lesen
-2. vorhandene `STYLE_REFERENCE.png` tatsaechlich als visuelle Referenz anhaengen, falls vorhanden
+2. vorhandene `STYLE_REFERENCE.png` tatsaechlich anhaengen, falls vorhanden
 3. ausschliesslich `Bild_01` erzeugen
-4. 2–4 Varianten erzeugen, wenn technisch moeglich
+4. 2–4 Varianten erzeugen, wenn moeglich
 5. beste Variante visuell pruefen
 6. bei FAIL regenerieren
 7. bei PASS als `Bild_01.png` speichern
 8. genau einmal Nutzerfreigabe einholen
 
-FAIL, wenn Bild_01 wie Medical-CGI, Anatomiesoftware, Corporate-Stock-3D, billige Kinderanimation, Fotorealismus oder ein anderer Kanalstil aussieht.
+`Bild_01` ist FAIL, wenn:
+
+- die deutsche Hook fehlt oder falsch geschrieben ist
+- es kosmisch, duester oder Sci-Fi-artig wirkt
+- es wie Medical-CGI, Anatomiesoftware oder Stock-3D aussieht
+- es babyhaft oder billig wirkt
+- das Thema nicht sofort erkennbar ist
 
 ## 6. Folgegenerationen
 
-Nach Freigabe von `Bild_01` gilt fuer **jedes** weitere Bild:
+Nach Freigabe von `Bild_01` gilt fuer jedes weitere Bild:
 
 - `STYLE_REFERENCE.png` anhaengen, wenn vorhanden
 - `Bild_01.png` immer anhaengen
-- relevante wiederkehrende Objekt-/Character-Referenzen anhaengen, falls vorhanden
-- dann erst den konkreten Szenenprompt ausfuehren
-
-Flow darf niemals behaupten, eine Referenz zu verwenden, die technisch nicht angehaengt wurde.
+- relevante Objekt-/Character-Referenzen anhaengen
+- Szene einzeln erzeugen
+- exakte deutsche Labels aus dem Szenenprompt verwenden
 
 ## 7. Szenenprompt-Schema
 
-Jeder Folgeprompt folgt dieser Reihenfolge:
+Jeder Prompt folgt dieser Reihenfolge:
 
 ```text
 1. SUBJECT
 2. VISIBLE PROCESS / CHANGE
 3. SPATIAL LAYOUT
 4. CAMERA / SCALE
-5. CONTINUITY REQUIREMENTS
-6. FORBIDDEN ELEMENTS
+5. STYLE CONTINUITY
+6. REQUIRED GERMAN TEXT
+7. FORBIDDEN ELEMENTS
 ```
 
 Beispiel:
 
 ```text
-16:9 macro cross-section. One large rounded alveolus fills the left side and one narrow capillary fills the right side. Show exactly four pale-cyan paired O2 molecules crossing the thin central barrier from alveolus to blood; keep deep-red biconcave red blood cells only inside the capillary. Camera: close 3/4 macro cutaway with the barrier in sharp focus. Match the attached references for materials, lighting, palette and shape language. No faces, no mascot, no wet tissue, no medical CGI, no text, no labels, no arrows.
+Create a bright 16:9 premium 3D animated-film macro cross-section. One large rounded alveolus fills the left side and one narrow capillary fills the right side. Show four pale-cyan paired O2 molecules crossing the thin central barrier from alveolus to blood; keep deep-red biconcave red blood cells only inside the capillary. Camera: close 3/4 macro cutaway with the barrier in sharp focus. Match the attached references for rounded materials and warm friendly lighting. Add the exact German labels “Sauerstoff” and “Blut” in clean readable sans-serif type with minimal leader lines. No cosmic background, no sci-fi glow, no medical CGI, no faces, no English text.
 ```
 
 Vermeiden:
 
-- `beautiful world`
-- `premium hero composition` ohne konkrete Komposition
+- `beautiful world` ohne konkrete Komposition
 - `cinematic` als Ersatz fuer Kamerabeschreibung
-- unklare Begriffe ohne raeumliche Anweisung
+- dunkle Plum-/Navy-Welten als automatischer Hintergrund
+- abstrakte Mikro-Welten, die wie Weltraum aussehen
 
 ## 8. Wiederkehrende visuelle Elemente
 
-Wiederkehrende Elemente muessen stabil aussehen.
-
-Fuer Pilot 001 insbesondere:
+Fuer Pilot 001:
 
 - O2 = zwei verbundene blass-cyanfarbene Kugeln, gesichtslos
 - CO2 = neutral-violett/graue Drei-Kugel-Form, gesichtslos
@@ -152,7 +163,7 @@ Fuer Pilot 001 insbesondere:
 - Haemoglobin = burgunderrote vereinfachte Struktur
 - Mitochondrien = wiedererkennbarer konsistenter Organell-Look
 
-Wenn fuer ein wiederkehrendes Element eine akzeptierte Referenz vorliegt, wird sie unter `assets/channel/references/` gespeichert und fuer relevante Szenen angehaengt.
+Akzeptierte Referenzen werden unter `assets/channel/references/` gespeichert und bei relevanten Szenen angehaengt.
 
 ## 9. Produktion in 5er-Bloecken
 
@@ -166,27 +177,22 @@ Bild_17–21
 ...
 ```
 
-Innerhalb jedes Blocks wird jedes Bild **einzeln** erzeugt und bewertet.
+Jedes Bild wird einzeln erzeugt und bewertet.
 
 Nach jedem Block intern pruefen:
 
 - Referenzen tatsaechlich verwendet
-- gleicher Object-Talk-Look
-- gleiche Materialwelt
-- gleiche Lichtlogik
-- gleiche Farbwelt
+- heller Premium-Animationslook erhalten
+- kein kosmischer/dunkler Drift
+- gleiche Material-/Licht-/Farbwelt
 - wiederkehrende Objekte konsistent
 - fachlich plausibel
-- kein Realismus- oder Stock-3D-Drift
-- keine ungewollte Schrift im Bild
-
-Danach automatisch mit dem naechsten Block fortfahren.
+- geforderte deutsche Labels vorhanden und korrekt
+- kein englischer sichtbarer Text
 
 ## 10. Visuelle QA ist echt, nicht nur JSON
 
-`image-review.json` darf erst nach Sichtpruefung des tatsaechlichen generierten Bildes aktualisiert werden.
-
-Ein Zahlenwert oder `decision: ACCEPT` ohne Bildsichtung ist ungueltig.
+`image-review.json` darf erst nach Sichtpruefung des tatsaechlichen Bildes aktualisiert werden.
 
 Pflichtkriterien:
 
@@ -195,23 +201,22 @@ Pflichtkriterien:
 - immediate_clarity
 - style_continuity
 - composition
+- label_accuracy
 - ai_artifact_check
 - scene_difference
 - overall_score
 
-Score unter 8/10 oder klarer Fach-/Stilfehler = Regeneration.
+Score unter 8/10, fehlender Text, falsches Deutsch oder klarer Fach-/Stilfehler = Regeneration.
 
 ## 11. Recovery
 
 Bei FAIL:
 
-1. Bildnummer notieren
-2. Fehlergrund konkret notieren
-3. regulären Lauf fortsetzen, wenn sinnvoll
-4. am Ende Recovery-Pass
-5. Prompt nur am konkreten Fehler nachschaerfen
-6. bis zu 3 automatische Neuversuche pro fehlerhafter Szene
-7. keine Ersatznummern erfinden
+1. Bildnummer behalten
+2. konkreten Fehlergrund notieren
+3. Prompt nur am Fehler nachschaerfen
+4. bis zu 3 automatische Neuversuche
+5. keine Ersatznummern erfinden
 
 ## 12. Finaler Bilderordner
 
@@ -234,25 +239,23 @@ Regeln:
 
 - keine Luecken
 - jede Nummer genau einmal
-- keine Namen wie `final2`, `neu`, `copy`, `v3`
 - nur akzeptierte Varianten
 - 16:9
-- keine eingebrannten Flow-Labels, sofern nicht ausdruecklich angeordnet
-
-Zusaetzlich eine ZIP desselben Ordners erstellen.
+- die geplanten deutschen Texte sind entweder korrekt im Flow-Bild oder exakt als dokumentierter Remotion-Fallback vorgesehen
 
 ## 13. Harte Verbote
 
 Flow darf niemals:
 
-- eine nur erwaehnte Referenz als tatsaechlich angehaengte Referenz behandeln
+- eine nur erwaehnte Referenz als angehaengte Referenz behandeln
 - die Kanal-DNA ignorieren
 - einen neuen Stil pro Szene erfinden
+- kosmische, duestere oder Sci-Fi-Mikrowelten als Standard erzeugen
 - in Fotorealismus oder Medical-CGI driften
-- realistische Haut/Gewebe erzeugen
-- zufaellige Character-Designs erzeugen
-- Molekuele/Organe/Zellen ohne konkreten Grund personifizieren
-- Labels oder Text standardmaessig direkt in Bilder schreiben
+- Molekuele/Organe/Zellen ohne Grund personifizieren
+- die deutsche Cover-Hook weglassen
+- wichtige geplante deutsche Labels grundlos weglassen
+- englische sichtbare Texte erzeugen
 - nach Bild_01 weitere Freigaben verlangen
 - Szenen erfinden, loeschen oder zusammenlegen
 - fehlgeschlagene Bilder vergessen

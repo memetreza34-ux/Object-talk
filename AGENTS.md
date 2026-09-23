@@ -29,11 +29,10 @@ Aktiver Testpilot:
 youtube-videos/001-pilot-sauerstoff-im-blut/
 ```
 
-## Phasen duerfen nicht vermischt werden
-
-### Phase 1 – Creative Director
+## Phase 1 – Creative Director
 
 Darf:
+
 - recherchieren und Fakten pruefen
 - Mechanism Map erstellen
 - Skript schreiben
@@ -44,22 +43,26 @@ Darf:
 - Metadaten schreiben
 
 Muss:
+
 - jede Szene als echtes Erklaerbild planen
-- pro Bild die wichtigsten deutschen Labels im `label-plan.json` planen
-- Bild_01 als Cover-Grundbild + erster Shot + Master Style Frame besonders detailliert planen
+- pro Bild 1–3 wichtige deutsche Labels im `label-plan.json` planen
+- fuer Bild_01 eine kurze deutsche Cover-Hook planen
+- Bild_01 als Cover + erster Shot + Master Style Frame besonders detailliert planen
 - Flow-Anweisungen auf Englisch schreiben
-- Szenenprompt mit Subject, Process, Spatial Layout, Camera/Scale, Continuity und Forbidden Elements planen
+- sichtbaren Text ausschliesslich auf Deutsch planen
+- Szenenprompt mit Subject, Process, Spatial Layout, Camera/Scale, Continuity, Required German Text und Forbidden Elements planen
 - echte visuelle Referenzen vor Textbeschreibungen priorisieren
+- die helle Premium-3D-Animationsfilm-Welt erhalten
 
 Darf nicht:
-- Flow-Labels standardmaessig einplanen
-- Textprompts als Ersatz fuer tatsaechlich angehaengte Bildreferenzen behandeln
-- geschätzte finale Sekundenzeiten als Wahrheit setzen
-- Audioaenderungen erfinden
-- finale Flow-Bilder vortaeuschen
-- die Bildwelt spontan in Realismus, Anime oder Comic verschieben
 
-### Phase 2 – Nutzer + Medienerzeugung
+- wichtige deutsche Labels grundlos weglassen
+- Cover ohne Hook planen
+- Textprompts als Ersatz fuer angehaengte Bildreferenzen behandeln
+- die Bildwelt in kosmische, dunkle, Sci-Fi-, Medical-, Anime- oder Comic-Optik verschieben
+- finale Flow-Bilder vortaeuschen
+
+## Phase 2 – Nutzer + Medienerzeugung
 
 Google Flow erzeugt ausschliesslich die von Phase 1 vorgegebenen Bilder.
 
@@ -71,15 +74,19 @@ Verbindlich:
 - nach Freigabe `Bild_01.png` bei jeder Folgegeneration wirklich als visuelle Referenz/Ingredient anhaengen
 - ein Satz wie `Using Bild_01 as reference` reicht nicht
 - jedes Bild einzeln erzeugen und visuell pruefen
-- Flow-Bilder standardmaessig textfrei
-- deutsche Hook/Labels spaeter ueber Remotion
+- Bild_01 enthaelt die deutsche Cover-Hook direkt im Bild
+- normale Bilder enthalten 1–3 kurze deutsche Labels aus `label-plan.json`
+- sichtbarer Text ausschliesslich Deutsch
+- falsche Flow-Schreibweise zuerst regenerieren
+- Remotion nur als exakter Text-Fallback bei wiederholtem KI-Schriftfehler
 - Fehlerliste + Recovery statt Nummern zu verlieren
 
-Jedes finale V2-Bild wird in `02_bildprompts/image-review.json` nach Sichtpruefung des echten Bildes bewertet. Klare Fachfehler, falscher Stil, Artefakte oder ein zentraler Score unter 8/10 fuehren zu Regeneration.
+Jedes finale V2-Bild wird in `02_bildprompts/image-review.json` nach Sichtpruefung bewertet. Fachfehler, kosmischer/dunkler Stil, falsche Labels, Artefakte oder ein zentraler Score unter 8/10 fuehren zu Regeneration.
 
-### Phase 3 – Editor / Antigravity
+## Phase 3 – Editor / Antigravity
 
 Darf:
+
 - Nutzerassets importieren
 - Audio normalisieren
 - Whisper ausfuehren
@@ -87,16 +94,17 @@ Darf:
 - Assets validieren
 - Remotion vorbereiten
 - `label-plan.json` und `overlay-plan.json` technisch anwenden
-- Cover-Hook und deutsche Labels sauber rendern
+- nur fehlerhafte oder fehlende Flow-Schrift exakt ersetzen
 - rendern und QA durchfuehren
 
 Darf nicht:
+
 - Script umschreiben
 - Bildideen austauschen
 - Szenengrenzen kreativ neu waehlen
 - fehlende Fakten erfinden
 - fehlende Bilder still ersetzen
-- spontane Marketingtexte erfinden
+- geplante deutsche Labels entfernen
 
 Nach dem Finalrender: `quality-scorecard.md` und `postmortem.md` ausfuellen.
 
@@ -109,7 +117,9 @@ Ebenfalls FAIL:
 - Folgegeneration behauptet Referenznutzung, ohne dass die Referenz wirklich angehaengt wurde
 - `image-review.json` ist ACCEPT, aber finale `Bild_XX.png` fehlt
 - Review enthaelt PENDING/TODO/TBD
-- Flow hat ungewollte Schrift oder KI-Gibberish ins Bild gesetzt
+- Cover-Hook fehlt oder ist falsch geschrieben
+- wichtige deutsche Labels fehlen, sind falsch oder Englisch
+- Bild driftet in kosmische, dunkle, Sci-Fi-, Medical- oder Stock-Optik
 
 ## Gesundheit/Biologie
 
@@ -117,11 +127,14 @@ Kernbehauptungen in `05_info/claim-matrix.md` dokumentieren. Vereinfachung ist e
 
 ## Verbindliche visuelle Welt
 
-- premium stark stilisierte 3D-Animationsfilm-Welt
-- weich, rund, warm, filmisch
+- helle Premium-3D-Animationsfilm-Welt
+- weich, rund, freundlich und hochwertig
 - deutlich animiert statt fotorealistisch
 - vereinfachte, erkennbare Anatomie
+- warmes Licht + weiches Fill-Light
 - familienfreundlich, nicht babyhaft
+- keine kosmische / Weltraum-artige Optik
+- keine dunkle violette Sci-Fi-Mikrowelt als Standard
 - keine medizinische Foto-/CGI-Realistik
 - kein Anime, Comic, Gore oder Horror-Look
 - echte Erklaerbilder vor Mascot-/Presenter-Szenen
@@ -130,11 +143,12 @@ Kernbehauptungen in `05_info/claim-matrix.md` dokumentieren. Vereinfachung ist e
 ## Google Flow
 
 - Prompt-Anweisungen: Englisch
-- Bilder: standardmaessig ohne Text
+- sichtbarer Text: Deutsch
 - pro Szene genau ein finales Bild
-- Bild_01 = Cover-Grundbild + Episode-Style-Anchor
+- Bild_01 = Cover + deutscher Hook + Episode-Style-Anchor
 - Bild_01 nach Freigabe als echtes visuelles Ingredient fuer jedes Folgebild
 - `STYLE_REFERENCE.png` zusaetzlich als style-only Anchor laden, sobald vorhanden
+- normale Bilder: 1–3 kurze deutsche Labels
 - keine Massenproduktion ohne Einzelpruefung
 - 5er-Bloecke + Recovery
 
@@ -144,7 +158,7 @@ Details: `engine/FLOW-PRODUCTION-STANDARD.md`.
 
 - Vollbild bleibt Standard
 - wichtige deutsche Labels kommen aus `02_bildprompts/label-plan.json`
-- Hook/Labels/Callouts werden in Remotion sauber gesetzt
+- Remotion ersetzt Flow-Schrift nur, wenn sie falsch/fehlend ist
 - keine Bounce-/Shake-/Meme-Effekte
 
 ## Timing
@@ -153,8 +167,6 @@ Finale Zeitbasis ist ausschliesslich das kanonisch vorbereitete Voiceover:
 
 `raw Voice → prepare_audio.py → final-voiceover.wav → transcribe_audio.py → word-timings.json → build_timeline.py → timeline.json`
 
-Kein Renderer schaetzt Zeitpunkte aus Textlaenge, wenn echte Wortzeiten verfuegbar sind.
-
 ## V2-Pruefung
 
 ```bash
@@ -162,4 +174,4 @@ python tools/validate_planning_v2.py youtube-videos/MEIN-VIDEO
 python tools/validate_planning_v2.py youtube-videos/MEIN-VIDEO --phase2
 ```
 
-`--phase2` verlangt echte finale PNG-Dateien und vollstaendige Review-Werte.
+`--phase2` verlangt echte finale PNG-Dateien, vollstaendige Review-Werte und `label_accuracy >= 8/10`.
