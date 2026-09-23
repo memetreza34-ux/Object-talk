@@ -10,50 +10,94 @@ youtube-videos/001-pilot-sauerstoff-im-blut/
 
 ## Ziel
 
-- erster echter kleiner Pilot mit ca. 2–2,5 Minuten
-- 28 Bilder
-- hohe visuelle Dichte
-- stark stilisierte hochwertige 3D-Animationsfilm-Welt
-- Vollbild-Erklärbilder bleiben dominant
-- sichtbarer Text ausschließlich Deutsch
-- wichtige Flow-Labels erhalten; nicht unnötig doppeln
-- selektive zusätzliche Remotion-Overlays aus `03_pipeline/overlay-plan.json`
-- keine Anime-/Comic-/Meme-Effekte
-- keine dauerhaften Untertitelblöcke
-- keine kreative Neuzuordnung von Szenen
-- das Ergebnis soll wie ein bewusst geschnittener Erklärfilm wirken, nicht wie eine Diashow
+Erzeuge aus Voice + 28 finalen Flow-Bildern einen hochwertigen ca. 2–2,5-minütigen Object-Talk-Erklärfilm.
+
+Der Film soll **wie ein zusammenhängender kurzer 3D-Animationsfilm** wirken und ausdrücklich **nicht wie eine Bildershow**.
+
+## Verbindliche Kanal-DNA
+
+Autoritativ:
+
+```text
+bildwelt/OBJECT-TALK-CHANNEL-DNA.md
+bildwelt/OBJECT-TALK-STYLE-EXAMPLE.md
+youtube-videos/001-pilot-sauerstoff-im-blut/02_bildprompts/STYLE-LOCK-BEISPIEL.md
+```
+
+Die neue Object-Talk-Welt hat Vorrang vor älteren allgemeineren Stilbeschreibungen.
+
+Der wiederkehrende **O₂-Guide** ist der visuelle rote Faden des Films. Wenn er in aufeinanderfolgenden Bildern sichtbar ist, muss der Schnitt seine Reise klar fortsetzen.
 
 ## Video-Look
 
-Die freigegebene Bildwelt ist verbindlich:
+- Premium-3D-Feature-Animation, klar stilisiert und nicht fotorealistisch
+- Object-Talk-Charaktersprache sichtbar beibehalten
+- O₂-Guide, Augenstil, Blutkörperchen, Materialien und Farbwelt niemals neu interpretieren
+- keine zusätzlichen Realismusfilter
+- keine Medical-CGI-Anmutung
+- keine anatomische Dokumentations-/Softwareoptik
+- keine Stock-3D-/Toy-Optik
+- keine Anime-/Comic-/Meme-Effekte
+- Vollbild-Erklärbilder bleiben dominant
+- sichtbarer Text ausschließlich Deutsch
+
+## Schnittprinzip – Reise statt Diashow
+
+Die Reihenfolge der Bilder folgt der echten Sauerstoffreise.
+
+Behandle die 28 Bilder als **eine durchgehende Bewegung durch dieselbe Welt**:
 
 ```text
-bildwelt/APPROVED-VISUAL-WORLD.md
+Einatmen
+→ Atemwege
+→ Lunge
+→ Alveole
+→ Blut
+→ rotes Blutkörperchen / Hämoglobin
+→ Herz
+→ Arterien
+→ Kapillare
+→ Muskelzelle
+→ Mitochondrium
+→ CO₂ zurück zur Lunge
 ```
 
-Die Bilder müssen im finalen Video ihre hochwertige 3D-Wirkung behalten. Keine zusätzlichen Filter, die Farben oder Materialien verfälschen.
+Wichtig:
 
-Kamerabewegung:
+- Bewegungsrichtung zwischen aufeinanderfolgenden Szenen möglichst erhalten
+- wenn der O₂-Guide rechts aus einer Szene reist, soll die nächste Szene seine Reise logisch fortsetzen
+- Makro→Mikro-Wechsel klar und filmisch wirken lassen
+- keine zufälligen Richtungswechsel
+- keine unnötigen Übergangseffekte
+- harte saubere Schnitte sind Standard
+- sehr kurze weiche Überblendung nur dann, wenn sie einen echten Maßstabs-/Ortswechsel verständlicher macht
+- niemals Übergänge nur als Dekoration einsetzen
 
-- ruhig und hochwertig
-- Push/Pull nur etwa 3–4 %
-- Pan nur etwa 20–30 px bei 1080p
+## Kamerabewegung
+
+Kamerabewegung soll die Object-Talk-Welt lebendig machen, ohne die Standbilder künstlich wirken zu lassen.
+
+- Push/Pull nur ca. 3–4 %
+- Pan ca. 20–30 px bei 1080p
 - weiche Ease-in/Ease-out-Bewegung
-- Bewegungsrichtung folgt dem erklärten Prozess, wenn sinnvoll
-- nicht jede Szene automatisch bewegen
-- wichtige Label-/Vergleichsszenen dürfen bewusst statisch bleiben
+- bei sichtbarem O₂-Guide Bewegung bevorzugt in seine Reiserichtung
+- Character-Hero-Shots: sehr dezenter Push-in
+- große Mechanismusbilder: leichter Pan entlang des Prozesses
+- Label-/Vergleichsszenen: bei Bedarf statisch
+- wenn ein Bild schon sehr dynamisch komponiert ist: keine zusätzliche starke Bewegung
 - keine aggressiven Ken-Burns-Zooms
-- keine Wackler, Shake- oder Meme-Bewegungen
+- kein Shake, Bounce oder Meme-Motion
 
-## Cover / Bild_01
+## Bild_01 / Cover
 
-Bild_01 ist bereits Cover, erster Shot und Master Style Frame.
+`Bild_01` ist Cover, erster Shot und Master Style Frame.
 
-- keinen zweiten Titel oder Hook darüberlegen
-- Cover  sauber und ruhig starten lassen
-- nur sehr dezenter Push-in, falls die Bildkomposition dadurch nicht beschädigt wird
-- Titelbereich und Hauptmotiv vollständig sichtbar lassen
-- kein zusätzlicher Text auf Gesicht, Anatomie oder Titelzone
+- keinen zweiten Titel darüberlegen
+- Hook vollständig sichtbar lassen
+- O₂-Guide und Covermotiv nicht anschneiden
+- ruhiger, hochwertiger Start
+- nur sehr dezenter Push-in, wenn die Komposition dadurch nicht beschädigt wird
+- keine zusätzlichen Anatomie-Labels auf dem Cover
 
 ## Vorbereitung
 
@@ -77,45 +121,55 @@ python tools/prepare_phase3.py youtube-videos/001-pilot-sauerstoff-im-blut
 8. exakte Timeline bauen
 9. Renderer-Runtime inklusive `overlay-plan.json` vorbereiten
 
-## Schnitt und Rhythmus
+## Rhythmus
 
 Die echte Voice-Timeline ist autoritativ.
 
-- Hook schnell und klar
-- normale Erklärung überwiegend 3–6 Sekunden pro Bild
+- Hook sofort verständlich
+- normale Erklärung überwiegend ca. 3–6 Sekunden pro Bild
 - keine unnötig langen Standbilder
 - Bildwechsel nur bei echtem visuellen Sinnwechsel
-- harte saubere Schnitte sind Standard
-- keine auffälligen Übergänge ohne inhaltlichen Grund
-- wenn ein Bild schon viel interne Bewegung zeigt, Remotion-Bewegung reduzieren
-- wenn ein Label am Rand liegt, keine Bewegung verwenden, die es anschneidet
+- keine Szene künstlich verlängern, nur damit ein Zoom fertig wird
+- wichtige Übergänge der Reise dürfen etwas mehr Ruhe bekommen
+- letzte Szene endet exakt mit dem Voice-over
+
+## O₂-Guide-Kontinuität
+
+Wenn der O₂-Guide sichtbar ist:
+
+- gleiche Form und Größe relativ zur Szene
+- gleiche Cyan-Farbe
+- gleiche Augenform / Catchlights / Mimik-Sprache
+- keine zufälligen Arme/Beine ergänzen
+- keine neue Charakterversion erzeugen
+- nicht spiegeln, wenn dadurch die Bewegungsrichtung unlogisch wird
+
+Der Guide ist **visueller Begleiter**, nicht Sprecher vor einer Tafel.
 
 ## Text-/Overlay-Regel
 
-- Bild_01 enthält bereits den deutschen Cover-Hook; keinen zweiten Cover-Hook darüberlegen
 - vorhandene korrekte deutsche Flow-Labels nicht unnötig wiederholen
-- wenn ein Flow-Label sichtbar falsch/unlesbar ist, denselben im Label-Plan festgelegten Begriff sauber in Remotion ersetzen
+- falsches/unlesbares Flow-Label nach `label-plan.json` sauber in Remotion ersetzen
 - `03_pipeline/overlay-plan.json` ist für zusätzliche Overlays autoritativ
-- Overlay-Text exakt übernehmen
-- keine zusätzlichen Captions oder Marketingtexte erfinden
-- Vollbild bleibt Hauptdarsteller
-- Overlays als klare schwebende Typografie, nicht als UI-/Dashboard-Karten
+- keine Captions oder kompletten Voice-over-Sätze einblenden
+- keine Marketingtexte erfinden
+- keine UI-/Dashboard-Karten
 - keine großen Glasboxen oder schwarzen Textflächen
-- helle Typografie mit dezentem Schatten und kleiner Unterstreichung bevorzugen
-- Anatomie und Prozess dürfen niemals von Overlays verdeckt werden
+- helle schwebende Typografie mit dezentem Schatten / kleiner Unterstreichung
+- Anatomie, Character-Gesichter und O₂-Guide niemals mit Overlay verdecken
 
 ## Story-Beats
 
-Die wenigen zusätzlichen Overlays markieren nur große Übergänge:
+Zusätzliche Overlays nur an großen Übergängen:
 
 - Lunge → Blut
-- weiter zum Herzen
+- Weiter zum Herzen
 - Blut → Muskelzelle
-- in die Zelle
+- In die Zelle
 - CO₂ entsteht
-- zurück zur Lunge
+- Zurück zur Lunge
 
-Keine zusätzlichen Kapitel erfinden.
+Nicht mehr Kapitel erfinden.
 
 ## Render
 
@@ -126,7 +180,7 @@ npm run studio
 npm run render -- ../youtube-videos/001-pilot-sauerstoff-im-blut/04_export/fertiges-video/final-video.mp4
 ```
 
-## QA
+## Finale QA
 
 Vom Repo-Root:
 
@@ -139,18 +193,17 @@ python tools/qa_final.py \
 
 Danach visuellen QA nach `engine/VISUAL-QUALITY-GATE.md` durchführen.
 
-Besonders prüfen:
+PASS nur wenn:
 
-- Bild_01 funktioniert als Cover, Hook und Style-Anker
-- Bildwelt bleibt stark stilisiert und driftet nicht in Fotorealismus
+- Film wirkt wie **eine durchgehende Object-Talk-3D-Reise**
+- Bild_01 setzt sichtbar die Welt für alle Folgeframes
+- O₂-Guide bleibt konsistent
+- keine Szene driftet in Medical-CGI, Realismus, Stock-3D oder Toy-Look
 - O₂, CO₂, rote Blutkörperchen und Hämoglobin bleiben konsistent
-- wichtigste sichtbare Strukturen sind sinnvoll auf Deutsch beschriftet
-- keine englischen oder zufälligen Texte
-- keine falschen/doppelten Labels
-- Remotion-Overlays liegen nicht über zentraler Anatomie
-- Overlays wirken nicht wie UI-Karten
-- Kamerabewegung wirkt ruhig und absichtlich
-- kein Bild steht unnötig lange nur mit Zoom
-- letzte Szene endet exakt mit dem Voice-over
+- deutsche Labels korrekt und lesbar
+- Overlays verdecken keine wichtigen Motive
+- Bewegungen sind ruhig, absichtlich und folgen der Reise
+- keine Szene wirkt wie ein zufälliges Einzelbild aus einer anderen Serie
+- letzte Szene endet exakt mit der Voice
 
 Bei Konflikt: FAIL statt raten.
