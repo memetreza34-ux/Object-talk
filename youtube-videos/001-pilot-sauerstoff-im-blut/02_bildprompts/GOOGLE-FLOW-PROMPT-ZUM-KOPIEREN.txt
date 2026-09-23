@@ -6,83 +6,83 @@ Erzeuge genau **28 einzelne 16:9-Standbilder** für den deutschen faceless Erkl�
 
 Thema: **Wie kommt Sauerstoff von der Lunge bis in deine Zellen?**
 
-## VERBINDLICHE PREMIUM-BILDWELT
+## VERBINDLICHE BILDWELT – STARK ANIMIERT
 
-Alle Bilder müssen wie Frames aus **demselben hochwertigen 3D-Animationsfilm** wirken.
+Die bisher zu medizinisch/realistisch wirkende Richtung ist VERWORFEN.
+
+Alle Bilder müssen aussehen wie Frames aus **demselben hochwertigen 3D-Animationsfilm**.
+
+Stilgewichtung:
+- 85–90 % stilisierte Animation
+- nur 10–15 % Realismus für fachliche Erkennbarkeit
 
 ```text
-premium cinematic stylized 3D animated educational film, clearly non-photorealistic, sculpted soft forms, simplified but recognizable human biology, polished premium materials, controlled dramatic cinematic lighting, subtle rim light, volumetric depth, sophisticated color grading, strong visual hierarchy, designed environment, warm amber-cream-burgundy palette with pale-cyan oxygen accents, modern high-end educational animation, no corporate stock 3D, no toy look, no cute mascot proportions, no flat beige background, no medical realism, no wet tissue, no anime, no comic, no gore
+premium highly stylized 3D feature-animation educational film, clearly animated and non-photorealistic, soft rounded sculpted forms, smooth clean premium materials, simplified anatomy, bold readable shapes, slightly exaggerated but elegant proportions, controlled cinematic lighting, soft rim light, atmospheric depth, rich color grading, warm coral-apricot-burgundy palette with deep navy/plum contrast, pale-cyan oxygen accents, designed animated world, no realistic skin, no pores, no realistic transparent body, no realistic tissue texture, no wet flesh, no medical CGI, no anatomy-software look, no corporate stock 3D, no toy look, no anime, no comic, no gore
 ```
 
-Wiederkehrende Elemente immer identisch darstellen:
+WICHTIG:
+- Menschen/Figuren immer klar stilisiert und faceless oder mit stark vereinfachten Gesichtszügen.
+- Keine realistische Haut.
+- Keine realistischen Organe oder Gewebetexturen.
+- Organe, Gefäße, Zellen und Mitochondrien als saubere animierte 3D-Formen darstellen.
+- Die Szene muss zuerst wie **Animationsfilm** und erst danach wie Anatomie aussehen.
+- Keine matschige Braun-/Fleischwelt.
 
-- O₂: kleine gepaarte blass-cyanfarbene Kugeln/Partikel
-- CO₂: lineare Drei-Kugel-Form, klar anders als O₂
-- rote Blutkörperchen: tiefe warmrote bikonkave Scheiben
+## FESTE VISUELLE IDENTITÄT
+
+- O₂: kleine gepaarte blass-cyanfarbene, leicht leuchtende Kugeln
+- CO₂: neutral-violett/graue lineare Drei-Kugel-Form
+- rote Blutkörperchen: tiefe warmrote, weiche bikonkave Scheiben
 - Hämoglobin: burgunderrote vereinfachte Struktur innerhalb roter Blutkörperchen
+
+Diese Elemente niemals zwischen Bildern umgestalten.
 
 ## TEXTREGEL
 
-- Prompt-Anweisungen sind Englisch.
-- Sichtbarer Text im Bild ausschließlich Deutsch.
-- Normale Erklärbilder erhalten 1–3 wichtige deutsche Labels.
-- `Bild_01` ist die Cover-Ausnahme: **nur Überschrift, keine kleinen Anatomie-Labels**.
+- Prompt-Anweisungen: Englisch.
+- Sichtbarer Text im Bild: ausschließlich Deutsch.
+- Normale Bilder: 1–3 wichtige kurze deutsche Labels.
+- Bild_01/Cover: nur Hook, keine kleinen Anatomie-Labels.
 - Keine englischen Wörter, kein KI-Gibberish, keine langen Textblöcke.
-- Falsche Schrift = Bild fehlerhaft.
 
-## QUALITÄTSREGEL
-
-Jedes Bild muss mehr sein als nur technisch korrekt.
-
-Nicht akzeptieren:
-
-- generischer Corporate-3D-Stock-Look
-- winzige Figur in riesiger leerer Fläche
-- blasser Beige-/Weiß-Hintergrund ohne Tiefe
-- spielzeughafte oder übermäßig niedliche Charaktere
-- einfache Schulbuch-/PowerPoint-Optik
-- flache gleichmäßige Beleuchtung
-- schwache Bildhierarchie
-
-Bevorzugen:
-
-- großes dominantes Hauptmotiv
-- filmische Perspektive
-- klare Lichtkante / Rim-Light
-- Vordergrund, Mittelgrund und Hintergrund
-- hochwertige atmosphärische Tiefe
-- starke, kontrollierte Farbkontraste
-- bewusstes Production Design
-
-## COVER-REGEL FÜR BILD_01
-
-`Bild_01` ist Cover, erster Shot und Master Style Frame.
-
-Cover-Aufbau:
-
-- Hauptmotiv groß und hochwertig, nicht klein
-- Anatomie rechts bzw. mittig-rechts
-- links ein dunklerer, ruhiger, filmisch gestalteter Negativraum für die Überschrift
-- **kein weißer oder beiger Bannerstreifen**
-- Überschrift maximal zwei Zeilen, groß, klar und kontrastreich
-- Überschrift niemals über Gesicht, Lunge, Herz oder Sauerstoffpartikel
-- keine kleinen Labels auf dem Cover
-- keine Führungslinien auf dem Cover
-- das Bild muss auch ohne Text als starkes Key Visual funktionieren
-
-Wenn Cover wie Stock-3D, Kinderanimation, Schulbuchgrafik oder Präsentationsfolie aussieht: FEHLERHAFT und neu erzeugen.
-
-## PRODUKTION
+## EINZIGER FREIGABEPUNKT
 
 1. Lies den kompletten Auftrag.
-2. Erzeuge zuerst **ausschließlich Bild_01**.
-3. Prüfe Bild_01 auf Premium-Qualität, Cover-Komposition, deutsche Schrift und Stil.
-4. Bei FAIL nur Bild_01 neu erzeugen.
-5. Bei PASS als `Bild_01.png` speichern und STOPPEN.
-6. Erst nach Nutzerfreigabe weiterarbeiten.
-7. Danach `Bild_01.png` bei jeder weiteren Generation als exakte Style-/Continuity-Referenz verwenden.
+2. Erzeuge zuerst ausschließlich `Bild_01`.
+3. Prüfe Bild_01 selbst auf Stil, Coverqualität, Text und Komposition.
+4. Bei FAIL: Bild_01 selbstständig neu erzeugen.
+5. Bei PASS: als `Bild_01.png` speichern und **genau einmal** um Nutzerfreigabe bitten.
 
-5er-Blöcke:
+### Nach Freigabe von Bild_01
+
+Danach gibt es **keine weiteren Rückfragen**.
+
+- Nicht nach jedem Block fragen.
+- Nicht „Soll ich weitermachen?“ fragen.
+- Nicht auf weitere Freigaben warten.
+- Automatisch Bild_02 bis Bild_28 fertigstellen.
+- Jedes Bild einzeln erzeugen und prüfen.
+- 5er-Blöcke nur intern für QA verwenden.
+- Fehlerhafte Bilder auf Recovery-Liste setzen und am Ende automatisch neu erzeugen.
+- Bis zu 3 automatische Versuche pro fehlerhafter Szene.
+- Nur bei einem echten technischen Blocker nach mehreren Versuchen stoppen.
+
+## BILD_01 ALS STILREFERENZ
+
+Nach der Freigabe bei **jedem** weiteren Bild `Bild_01.png` als exakte Style-/Continuity-Referenz verwenden.
+
+Übernehmen:
+- Stilisierungsgrad
+- glatte Materialien
+- Farbwelt
+- Lichtlogik
+- Tiefenwirkung
+- Anatomie-Vereinfachung
+- O₂/CO₂/RBC/Hämoglobin-Design
+
+Jedes Folgeframe muss aussehen wie derselbe Animationsfilm.
+
+## PRODUKTIONSBLÖCKE – OHNE STOPP
 
 - Bild_02–06
 - Bild_07–11
@@ -90,255 +90,232 @@ Wenn Cover wie Stock-3D, Kinderanimation, Schulbuchgrafik oder Präsentationsfol
 - Bild_17–21
 - Bild_22–26
 - Bild_27–28
+- Recovery-Pass
 
-Jedes Bild einzeln erzeugen und prüfen. Fehlernummern sammeln und später im Recovery-Pass neu erzeugen.
+Nach jedem Block nur intern prüfen und **sofort automatisch mit dem nächsten Block fortfahren**.
 
 ---
 
-# SZENE 01 – BILD_01
+# BILD_01 – COVER + MASTER STYLE FRAME
 
 **Voice-over:** Mit jedem Atemzug holst du Sauerstoff in deine Lunge.
 
 ```text
-Create a premium cinematic 16:9 cover frame for a German educational explainer about the journey of oxygen through the human body. This must feel like a high-end animated documentary key visual, not a stock 3D character poster.
+Create a premium 16:9 cover frame for a German educational explainer about oxygen traveling through the body. This image defines the exact visual world for every later image.
 
-COMPOSITION: place a large stylized faceless human upper torso on the RIGHT half of the frame, shown from chest to head in a sophisticated three-quarter view. Do not use a cute child-like face; keep facial detail minimal and neutral. Reveal simplified stylized lungs and heart inside the semi-transparent torso with polished sculpted materials. Let pale-cyan paired O2 particles travel from the LEFT side toward the lungs, creating a clear visual path.
+STYLE: highly stylized 3D feature-animation, clearly animated and non-photorealistic. Use smooth sculpted forms, simplified elegant anatomy, rich coral and burgundy colors, deep navy/plum cinematic background, soft rim light, polished materials and strong depth. No realistic skin, no realistic transparent body, no medical CGI.
 
-LIGHTING AND WORLD: dramatic warm amber and burgundy cinematic lighting, soft rim light around the torso, subtle volumetric atmosphere, deep warm background with real depth, elegant gradients, premium material reflections, strong foreground-background separation. No plain beige wall, no white banner, no empty stock background.
+COMPOSITION: place one large faceless stylized upper-body figure on the RIGHT side. The figure should look like a designed animated-film character, not a real human and not a toy. Show a clean stylized chest cutaway with simplified lungs and heart as smooth animated 3D forms. Pale-cyan O2 particles travel from the left toward the lungs.
 
-TITLE AREA: keep the LEFT third of the image intentionally darker and visually calm, with enough negative space for the title. Add the German headline exactly: “So reist Sauerstoff durch deinen Körper”. Use a clean bold premium sans-serif, maximum two lines, left-aligned, high contrast, fully readable. The title must stay completely separate from the torso, lungs, heart and O2 particles.
+Keep the LEFT side darker and visually calm for the title. Add exactly the German hook: “So reist Sauerstoff durch deinen Körper”. Maximum two lines, clean bold sans-serif, fully separated from the figure and anatomy. No small labels on the cover.
 
-NO SMALL LABELS on this cover. No leader lines. The visual itself must explain the topic. Strong thumbnail hierarchy, premium streaming-documentary feel, elegant and cinematic. No English text, no photorealism, no corporate stock 3D, no toy look, no mascot, no gore.
+The image must look like a premium animated film key visual, not an anatomy illustration, not a medical poster, not stock 3D.
 ```
 
-# SZENE 02 – BILD_02
-
-**Voice-over:** Aber wie schafft es dieses Gas von dort bis in eine Muskelzelle im Bein?
+# BILD_02 – REISE-ÜBERSICHT
 
 ```text
-Using Bild_01 as the exact style reference, keep the same premium cinematic 3D world, lighting, materials and color grading. Show a clean macro-to-micro journey preview: stylized lungs on the left, a flowing blood vessel with red blood cells in the center, and a muscle cell on the right, visually connected by the same pale-cyan O2 particles. Strong depth, no dashboard look. Add only the German labels “Lunge”, “Blut” and “Muskelzelle”.
+Using Bild_01 as the exact style reference, keep the same highly stylized 3D feature-animation world. Show a clean journey preview: stylized lungs on the left, a smooth animated blood vessel with red blood cells in the center, and a stylized muscle cell on the right, connected by the same pale-cyan O2 particles. Add only the German labels “Lunge”, “Blut” and “Muskelzelle”.
 ```
 
-# SZENE 03 – BILD_03
-
-**Voice-over:** Beim Einatmen strömt Luft durch Nase oder Mund in die Luftröhre.
+# BILD_03 – ATEMWEG
 
 ```text
-Using Bild_01 as the exact style reference, show a cinematic side cutaway of the head and upper chest with simplified airways. Pale-cyan O2 particles move through nose or mouth into the trachea with a clear downward path. Keep the subject large, sculpted and premium, with a deep warm background. Add only the German label “Luftröhre”.
+Using Bild_01 as the exact style reference, show a clearly animated side cutaway of a stylized faceless head and chest. O2 particles move through nose or mouth into the smooth simplified trachea. No realistic skin or medical textures. Add only the German label “Luftröhre”.
 ```
 
-# SZENE 04 – BILD_04
-
-**Voice-over:** Von dort verteilt sie sich über immer feinere Bronchien tief in die Lunge.
+# BILD_04 – BRONCHIEN
 
 ```text
-Using Bild_01 as the exact style reference, show the trachea branching into progressively smaller bronchi inside both lungs. Pale-cyan O2 particles follow the branching path deep into the lungs. Use dramatic depth and elegant warm lighting. Add only the German label “Bronchien”.
+Using Bild_01 as the exact style reference, show the trachea branching into smooth rounded bronchi inside simplified stylized lungs. Pale-cyan O2 particles follow the branching path. Keep the forms clean and animated, not anatomically realistic. Add only “Bronchien”.
 ```
 
-# SZENE 05 – BILD_05
-
-**Voice-over:** Am Ende dieser Atemwege sitzen Millionen winziger Lungenbläschen, die Alveolen.
+# BILD_05 – LUNGENBLÄSCHEN
 
 ```text
-Using Bild_01 as the exact style reference, create a beautiful cinematic macro view of many soft rounded alveoli at the ends of tiny airways, surrounded by delicate capillaries. Keep the biology simplified, sculpted and clearly animated, never wet or realistic. Add only the German label “Lungenbläschen”.
+Using Bild_01 as the exact style reference, create a colorful animated macro world of soft rounded alveoli clustered at the ends of tiny airways. Use clean sculpted forms, not real tissue. Add only the German label “Lungenbläschen”.
 ```
 
-# SZENE 06 – BILD_06
-
-**Voice-over:** Ihre Wände sind extrem dünn und direkt von kleinen Blutgefäßen umgeben.
+# BILD_06 – DÜNNE WAND
 
 ```text
-Using Bild_01 as the exact style reference, show one large alveolus in close-up with an extremely thin wall and a capillary closely wrapping around it. Make the tiny distance between air and blood instantly readable through clean composition and depth. Add only the German labels “Lungenbläschen” and “Kapillare”.
+Using Bild_01 as the exact style reference, show one large stylized alveolus beside a smooth capillary wrapping closely around it. Make the thin separation instantly understandable through clean shapes and spacing. No wet or fibrous tissue. Add “Lungenbläschen” and “Kapillare”.
 ```
 
-# SZENE 07 – BILD_07
-
-**Voice-over:** Genau hier wechselt der Sauerstoff die Seite.
+# BILD_07 – ÜBERGANGSPUNKT
 
 ```text
-Using Bild_01 as the exact style reference, focus tightly on the boundary between alveolus and blood. Pale-cyan O2 particles wait directly beside the thin barrier, moments before crossing. Make the transition point the single visual focus. Add only the German labels “Sauerstoff” and “Lungenbläschen”.
+Using Bild_01 as the exact style reference, focus on the clean animated boundary between alveolus and capillary. Pale-cyan O2 particles wait directly beside the barrier before crossing. Add only “Sauerstoff” and “Lungenbläschen”.
 ```
 
-# SZENE 08 – BILD_08
-
-**Voice-over:** Er diffundiert aus der Luft im Lungenbläschen durch die dünne Barriere in das Blut.
+# BILD_08 – SAUERSTOFF INS BLUT
 
 ```text
-Using Bild_01 as the exact style reference, show pale-cyan O2 particles crossing the thin alveolar barrier into a nearby capillary with deep red blood cells. The route Lunge → Blut must be visually obvious without clutter. Add only the German labels “Sauerstoff” and “Blut”.
+Using Bild_01 as the exact style reference, show pale-cyan O2 particles crossing the smooth thin barrier into a stylized capillary with deep-red animated blood cells. Make Lunge → Blut obvious. Add only “Sauerstoff” and “Blut”.
 ```
 
-# SZENE 09 – BILD_09
-
-**Voice-over:** Ein kleiner Teil bleibt im Blutplasma gelöst.
+# BILD_09 – BLUTPLASMA
 
 ```text
-Using Bild_01 as the exact style reference, create a premium close-up inside the capillary showing only a small number of pale-cyan O2 particles freely dissolved in the plasma around red blood cells. Make this visually a minor portion. Add only the German label “Blutplasma”.
+Using Bild_01 as the exact style reference, show a clean animated capillary interior with red blood cells and only a few O2 particles freely floating in the surrounding plasma. Make it clearly the smaller portion. Add only “Blutplasma”.
 ```
 
-# SZENE 10 – BILD_10
-
-**Voice-over:** Der größte Teil wird aber von roten Blutkörperchen aufgenommen.
+# BILD_10 – ROTE BLUTKÖRPERCHEN
 
 ```text
-Using Bild_01 as the exact style reference, make several deep red blood cells the dominant foreground subject while many pale-cyan O2 particles move toward them inside a lung capillary. Use strong cinematic depth and controlled highlights. Add only the German label “Rote Blutkörperchen”.
+Using Bild_01 as the exact style reference, make several soft deep-red stylized blood cells the dominant foreground forms while many pale-cyan O2 particles move toward them. Strong animated depth, no realistic blood texture. Add only “Rote Blutkörperchen”.
 ```
 
-# SZENE 11 – BILD_11
-
-**Voice-over:** In diesen roten Blutkörperchen sitzt Hämoglobin.
+# BILD_11 – HÄMOGLOBIN
 
 ```text
-Using Bild_01 as the exact style reference, create a stylized cutaway of one large red blood cell and reveal consistent burgundy hemoglobin structures inside it. Keep the forms elegant, sculpted and clearly animated. Add only the German label “Hämoglobin”.
+Using Bild_01 as the exact style reference, create a smooth stylized cutaway of one red blood cell and reveal the consistent burgundy hemoglobin structures inside. Keep everything clearly animated and simplified. Add only “Hämoglobin”.
 ```
 
-# SZENE 12 – BILD_12
-
-**Voice-over:** Dieses Protein kann Sauerstoff binden und macht die roten Blutkörperchen zu den wichtigsten Sauerstofftransportern des Blutes.
+# BILD_12 – O₂ BINDET
 
 ```text
-Using Bild_01 as the exact style reference, show pale-cyan O2 particles binding to the burgundy hemoglobin structures inside one red blood cell. Make the binding relationship instantly understandable without toy metaphors. Add only the German labels “Sauerstoff” and “Hämoglobin”.
+Using Bild_01 as the exact style reference, show pale-cyan O2 particles attaching to the same burgundy hemoglobin structures inside the red blood cell. Make the relationship visually clear without toy metaphors. Add “Sauerstoff” and “Hämoglobin”.
 ```
 
-# SZENE 13 – BILD_13
-
-**Voice-over:** Das nun sauerstoffreiche Blut fließt aus der Lunge zurück zur linken Seite des Herzens.
+# BILD_13 – ZUM HERZEN
 
 ```text
-Using Bild_01 as the exact style reference, show a cinematic transparent chest view where oxygen-rich blood travels from the lungs toward the left side of the heart. Use the same red blood cells and O2 symbols with a clear directional flow. Add only the German labels “Lunge” and “Herz”.
+Using Bild_01 as the exact style reference, show a stylized faceless chest cutaway with lungs and heart as smooth animated forms. Oxygen-rich blood flows from the lungs toward the left side of the heart. No realistic torso texture. Add “Lunge” and “Herz”.
 ```
 
-# SZENE 14 – BILD_14
-
-**Voice-over:** Mit jedem Herzschlag wird es von dort in den Körper gepumpt.
+# BILD_14 – HERZ PUMPT
 
 ```text
-Using Bild_01 as the exact style reference, show the left side of the stylized heart as a strong hero subject pumping oxygen-rich blood into the main artery. Use a clear outward flow, strong depth and premium cinematic lighting. Add only the German labels “Herz” and “Hauptschlagader”.
+Using Bild_01 as the exact style reference, make the stylized heart a large animated hero object pumping oxygen-rich blood into the main artery. Strong clean outward flow, premium film lighting. Add “Herz” and “Hauptschlagader”.
 ```
 
-# SZENE 15 – BILD_15
-
-**Voice-over:** Große Arterien verzweigen sich dabei in immer kleinere Gefäße.
+# BILD_15 – ARTERIEN VERZWEIGEN SICH
 
 ```text
-Using Bild_01 as the exact style reference, show one large artery branching into progressively smaller vessels toward leg muscle tissue. Make the branching hierarchy visually obvious with a clean cinematic composition. Add only the German label “Arterie”.
+Using Bild_01 as the exact style reference, show one smooth stylized artery branching into progressively smaller animated vessels toward leg muscle tissue. Clear hierarchy, clean forms, no medical realism. Add only “Arterie”.
 ```
 
-# SZENE 16 – BILD_16
-
-**Voice-over:** Schließlich erreicht das Blut winzige Kapillaren direkt im Gewebe.
+# BILD_16 – KAPILLARNETZ
 
 ```text
-Using Bild_01 as the exact style reference, show oxygen-rich blood entering a dense network of tiny capillaries running directly through stylized skeletal muscle tissue. Emphasize how close the vessels are to the cells. Add only the German labels “Kapillaren” and “Muskelgewebe”.
+Using Bild_01 as the exact style reference, show oxygen-rich blood entering a beautiful stylized network of tiny capillaries woven through simplified muscle tissue. Add “Kapillaren” and “Muskelgewebe”.
 ```
 
-# SZENE 17 – BILD_17
-
-**Voice-over:** Dort ist die Situation anders als in der Lunge.
+# BILD_17 – GEWEBEUMGEBUNG
 
 ```text
-Using Bild_01 as the exact style reference, show a capillary beside active tissue cells in a distinctly different environment from the lungs, with lower visible O2 availability in the surrounding tissue. Keep it cinematic, not chart-like. Add only the German labels “Kapillare” and “Gewebe”.
+Using Bild_01 as the exact style reference, show a stylized capillary beside active muscle cells in a clearly different animated environment from the lung. Keep the tissue smooth and designed, not fibrous or realistic. Add “Kapillare” and “Gewebe”.
 ```
 
-# SZENE 18 – BILD_18
-
-**Voice-over:** Die Zellen im Gewebe verbrauchen ständig Sauerstoff, deshalb kann Sauerstoff aus dem Blut in Richtung der Zellen diffundieren.
+# BILD_18 – O₂ ZUR MUSKELZELLE
 
 ```text
-Using Bild_01 as the exact style reference, show pale-cyan O2 particles leaving the capillary and moving through the short tissue space toward nearby muscle cells. The route Blut → Gewebe → Zelle must be unmistakable. Add only the German labels “Sauerstoff” and “Muskelzelle”.
+Using Bild_01 as the exact style reference, show pale-cyan O2 particles leaving the capillary and crossing a short clean tissue space toward nearby stylized muscle cells. Make Blut → Zelle unmistakable. Add “Sauerstoff” and “Muskelzelle”.
 ```
 
-# SZENE 19 – BILD_19
-
-**Voice-over:** Hämoglobin gibt einen Teil seines gebundenen Sauerstoffs ab.
+# BILD_19 – HÄMOGLOBIN GIBT O₂ AB
 
 ```text
-Using Bild_01 as the exact style reference, show a large red blood cell cutaway where the same burgundy hemoglobin structures release some of their pale-cyan O2 particles. Keep hemoglobin identical to Bild_11 and Bild_12. Add only the German labels “Hämoglobin” and “Sauerstoff”.
+Using Bild_01 as the exact style reference, show the same stylized red blood cell cutaway where burgundy hemoglobin releases some pale-cyan O2 particles. Keep the design identical to Bild_11 and Bild_12. Add “Hämoglobin” and “Sauerstoff”.
 ```
 
-# SZENE 20 – BILD_20
-
-**Voice-over:** Der Sauerstoff verlässt das rote Blutkörperchen, passiert die Kapillarwand und gelangt in die umgebenden Zellen.
+# BILD_20 – DURCH DIE KAPILLARWAND
 
 ```text
-Using Bild_01 as the exact style reference, create one clean continuous close-up route: O2 leaves a red blood cell, crosses the capillary wall and reaches a nearby muscle cell. Make all three stages readable in one premium cinematic composition. Add only the German labels “Rotes Blutkörperchen”, “Kapillarwand” and “Muskelzelle”.
+Using Bild_01 as the exact style reference, create one clean animated route: O2 leaves a red blood cell, crosses the smooth capillary wall and reaches a stylized muscle cell. Add “Rotes Blutkörperchen”, “Kapillarwand” and “Muskelzelle”.
 ```
 
-# SZENE 21 – BILD_21
-
-**Voice-over:** In der Zelle erreicht Sauerstoff schließlich die Mitochondrien.
+# BILD_21 – IN DIE ZELLE
 
 ```text
-Using Bild_01 as the exact style reference, enter a stylized muscle cell with rich depth and show pale-cyan O2 particles moving through the cell interior toward several sculpted mitochondria. Add only the German labels “Muskelzelle” and “Mitochondrien”.
+Using Bild_01 as the exact style reference, enter a colorful stylized muscle-cell world with strong depth. Pale-cyan O2 particles travel through the cell toward several smooth sculpted mitochondria. Add “Muskelzelle” and “Mitochondrien”.
 ```
 
-# SZENE 22 – BILD_22
-
-**Voice-over:** Dort wird er bei der aeroben Energiegewinnung gebraucht, damit die Zelle effizient ATP herstellen kann.
+# BILD_22 – MITOCHONDRIUM
 
 ```text
-Using Bild_01 as the exact style reference, create a macro hero view of one mitochondrion receiving pale-cyan O2 particles. Use a subtle warm internal glow to suggest aerobic energy production, elegant and scientific rather than sci-fi. Add only the German labels “Mitochondrium” and “Sauerstoff”.
+Using Bild_01 as the exact style reference, create a large animated hero view of one stylized mitochondrion receiving pale-cyan O2 particles. Use a subtle warm internal glow, clean sculpted membranes and no microscopic realism. Add “Mitochondrium” and “Sauerstoff”.
 ```
 
-# SZENE 23 – BILD_23
-
-**Voice-over:** ATP ist eine direkt nutzbare Energieform für viele Zellprozesse.
+# BILD_23 – ATP
 
 ```text
-Using Bild_01 as the exact style reference, show ATP production as a controlled warm energy output from the mitochondrion that flows toward nearby cellular processes. Avoid lightning, magic or superhero effects. Add only the German labels “ATP” and “Mitochondrium”.
+Using Bild_01 as the exact style reference, show the stylized mitochondrion producing a controlled warm energy output representing ATP, flowing toward nearby cell processes. No lightning or magic. Add “ATP” and “Mitochondrium”.
 ```
 
-# SZENE 24 – BILD_24
-
-**Voice-over:** Muskelzellen brauchen davon besonders viel, wenn sie arbeiten.
+# BILD_24 – MUSKELZELLE ARBEITET
 
 ```text
-Using Bild_01 as the exact style reference, show an active stylized muscle cell contracting while several mitochondria supply a subtle warm ATP flow. Keep the image premium, cinematic and scientifically readable. Add only the German labels “Muskelzelle” and “ATP”.
+Using Bild_01 as the exact style reference, show a stylized muscle cell actively using ATP for contraction while mitochondria supply a subtle warm energy flow. Keep it elegant and animated, not superhero-like. Add “Muskelzelle” and “ATP”.
 ```
 
-# SZENE 25 – BILD_25
-
-**Voice-over:** Bei dieser Energiegewinnung entsteht unter anderem Kohlendioxid.
+# BILD_25 – CO₂ ENTSTEHT
 
 ```text
-Using Bild_01 as the exact style reference, show the active cell and mitochondrion producing the locked CO2 symbol as a metabolic product, clearly different from pale-cyan O2. Keep the composition simple and premium. Add only the German label “Kohlendioxid”.
+Using Bild_01 as the exact style reference, show the active stylized cell and mitochondrion producing the locked neutral-violet/grey CO2 symbol as a metabolic product. Keep CO2 clearly different from cyan O2. Add only “Kohlendioxid”.
 ```
 
-# SZENE 26 – BILD_26
-
-**Voice-over:** Dieses wandert in die entgegengesetzte Richtung zurück ins Blut.
+# BILD_26 – CO₂ ZURÜCK INS BLUT
 
 ```text
-Using Bild_01 as the exact style reference, show CO2 moving from the muscle cell through the tissue back into a nearby capillary, opposite to the earlier O2 route. Make Zelle → Blut immediately clear. Add only the German labels “Kohlendioxid” and “Blutgefäß”.
+Using Bild_01 as the exact style reference, show CO2 moving from the stylized muscle cell through the clean tissue space back into a nearby capillary, opposite to the earlier O2 route. Add “Kohlendioxid” and “Blutgefäß”.
 ```
 
-# SZENE 27 – BILD_27
-
-**Voice-over:** Das Blut transportiert Kohlendioxid wieder zur Lunge. Dort diffundiert es aus den Kapillaren zurück in die Lungenbläschen und wird ausgeatmet.
+# BILD_27 – ZURÜCK ZUR LUNGE
 
 ```text
-Using Bild_01 as the exact style reference, show the return journey to the lungs in one cinematic route: CO2 arrives in lung capillaries, crosses into an alveolus and then moves outward with exhaled air. Do not use separate UI panels. Add only the German labels “Lunge” and “Kohlendioxid”.
+Using Bild_01 as the exact style reference, show the animated return journey in one cinematic route: CO2 arrives in stylized lung capillaries, crosses into an alveolus and moves outward with exhaled air. Add “Lunge” and “Kohlendioxid”.
 ```
 
-# SZENE 28 – BILD_28
-
-**Voice-over:** Der Kreislauf ist damit geschlossen: Einatmen, Lungenbläschen, Blut, Hämoglobin, Herz, Kapillaren, Zelle und wieder zurück zur Lunge. Dein Körper muss Sauerstoff also nicht einfach nur einatmen. Er muss ihn an der richtigen Stelle ins Blut bringen, transportieren, im Gewebe wieder freigeben und bis in die Zellen weiterreichen.
+# BILD_28 – FINALE REISE
 
 ```text
-Using Bild_01 as the exact style reference, create a final premium cinematic hero composition showing the complete cycle as one readable connected journey: lungs and alveoli → red blood cell with hemoglobin → heart → tissue capillary → muscle cell and mitochondrion → CO2 returning to the lungs. Use the locked O2, CO2, red blood cell and hemoglobin designs consistently. Add only the German labels “Lunge”, “Herz” and “Zelle”.
+Using Bild_01 as the exact style reference, create a final premium animated hero composition connecting the whole journey: stylized lungs/alveoli → red blood cell with hemoglobin → heart → tissue capillary → muscle cell/mitochondrion → CO2 back to the lungs. Use the locked O2, CO2, red blood cell and hemoglobin designs. Add only “Lunge”, “Herz” and “Zelle”.
 ```
 
-## ABSCHLUSSPRÜFUNG
+## AUTOMATISCHE ABSCHLUSSPRÜFUNG
 
-Vor der ZIP-Ausgabe:
+Nach Bild_28 automatisch:
 
-- genau 28 akzeptierte Bilder
-- lückenlos `Bild_01.png` bis `Bild_28.png`
-- Bild_01 ist freigegebener Master Style Frame
-- Premium-3D-Animationsfilm-Welt bleibt durchgehend gleich
-- keine Corporate-Stock-3D-/Toy-Anmutung
-- keine blassen leeren Standardhintergründe
-- normale Szenen sinnvoll beschriftet
-- sichtbarer Text ausschließlich korrektes Deutsch
-- keine zufälligen englischen Wörter
-- keine groben Anatomie-/KI-Fehler
-- jede Szene erklärt exakt ihren Voice-over-Abschnitt
+1. Recovery-Liste abarbeiten.
+2. Alle fehlerhaften/fehlenden Bilder erneut erzeugen.
+3. Prüfen, dass exakt 28 PASS-Bilder vorliegen.
+4. Prüfen, dass kein Bild in medizinischen Realismus driftet.
+5. Prüfen, dass alle sichtbaren Texte korrekt Deutsch sind.
+6. Nur finale akzeptierte Bilder behalten.
+
+## VERBINDLICHER FINALER ORDNER
+
+Erstelle am Ende den Ordner:
+
+```text
+001-pilot-sauerstoff-im-blut_bilder/
+```
+
+Darin exakt:
+
+```text
+Bild_01.png
+Bild_02.png
+Bild_03.png
+...
+Bild_28.png
+```
+
+Regeln:
+- keine Lücken
+- keine falschen Nummern
+- keine Namen wie `neu`, `final2`, `copy`, `v3`
+- keine verworfenen Varianten
+- alle Dateien PNG und 16:9
+
+Danach zusätzlich erstellen:
+
+```text
+001-pilot-sauerstoff-im-blut_bilder.zip
+```
+
+Die ZIP enthält exakt denselben finalen Ordner.
+
+Erst wenn Ordner + ZIP vollständig sind, melde **fertig**. Nach Bild_01 niemals erneut fragen, ob weitergemacht werden soll.
