@@ -1,10 +1,10 @@
 {
   "test_mode": true,
-  "purpose": "second-internal-pipeline-and-presentation-test",
+  "purpose": "first-real-small-production-pilot",
   "target_seconds": 135,
   "acceptable_seconds_min": 115,
   "acceptable_seconds_max": 160,
   "counts_as_published_topic": false,
   "production_longform_minimum_override": true,
-  "notes": "Zweiter interner Pilot. Testet die freigegebene stark stilisierte 3D-Animationsfilm-Welt, konsistente Bild_01-Referenz, deutsche Schlüsselbeschriftungen, feste Molekül-/Partikelidentität und hohe Bilddichte. Normale Kanalvideos bleiben mindestens 5 Minuten lang."
+  "notes": "Erster echter kleiner 2–2,5-Minuten-Produktionspilot. Testet die freigegebene stark stilisierte 3D-Animationsfilm-Welt, Bild_01 als Master Style Frame, deutsche Labels, hohe Bilddichte, Flow-Konsistenz und die vollständige Remotion-Pipeline. Der 10-Bilder-Mini-Test 002 wird vorerst übersprungen. Normale Kanalvideos bleiben später mindestens 5 Minuten lang."
 }
