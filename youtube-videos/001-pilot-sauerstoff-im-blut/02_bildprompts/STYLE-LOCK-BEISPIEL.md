@@ -1,31 +1,30 @@
-# Style-Lock-Beispiel – Pilot 001 Sauerstoff
+# Style-Lock – Pilot 001 Sauerstoff
 
-Diese Datei konkretisiert die globale Object-Talk-DNA für genau dieses Video.
+Diese Datei konkretisiert die echte Object-Talk-Kanalwelt für dieses Biologie-Video.
 
-## Wiederkehrende Hauptfigur
+## Grundregel
 
-**O₂-Guide**
+Dieses Video nutzt **keinen erfundenen O₂-Guide und kein Dauermaskottchen**.
 
-- zwei verbundene blass-cyanfarbene Kugeln
-- große dunkle ovale Augen
-- zwei kleine weiße Catchlights
-- dezente Augenbrauen
-- kleiner einfacher Mund
-- glatte matte/satinierte Oberfläche
-- freundlich-neugierige Grundmimik
-- keine Arme/Beine außer wenn wirklich nötig
+Die Inside-the-Body-Bilder müssen trotzdem sichtbar aus derselben hochwertigen 3D-Animationsserie stammen wie die viralen Object-Talk-Figuren des Kanals.
 
-Diese Figur darf zwischen Szenen **nicht neu designt** werden.
+## Feste visuelle Elemente
+
+- O₂: zwei verbundene blass-cyanfarbene Kugeln, ohne Gesicht
+- CO₂: neutral-violett/graue Drei-Kugel-Form, ohne Gesicht
+- rote Blutkörperchen: tiefe warmrote bikonkave Scheiben, ohne Gesicht
+- Hämoglobin: burgunderrote vereinfachte Struktur
+- Organe/Zellen: weich gerundet, glatt, stark stilisiert und gesichtslos
 
 ## Farbwelt
 
 - Hintergrund: tiefe Pflaume / Navy / dunkles Violett
 - Hauptlicht: warmes Amber/Gold
-- Anatomie: Coral / Apricot / Burgunder, stark stilisiert
+- Anatomie: Coral / Apricot / Burgunder
 - Sauerstoff: blass Cyan/Türkis
 - Blutkörperchen: tiefes warmes Rot
 
-Keine braune Fleischwelt, kein realistisches Gewebe.
+Keine braune Fleischwelt und kein realistisches Gewebe.
 
 ## Materialwelt
 
@@ -33,27 +32,27 @@ Keine braune Fleischwelt, kein realistisches Gewebe.
 - matte/satinierte Premium-Oberflächen
 - kein nasses Glänzen
 - keine Hautporen
-- keine Adern-/Fleischtexturen
+- keine Fleischtexturen
 - keine Anatomiesoftware-Optik
 
 ## Referenz Bild_01
 
 ```text
-Create a premium 16:9 cover frame in the fixed viral object-talk 3D animated channel world. Show the recurring O2 guide large in the foreground: two connected pale-cyan spheres with the locked big dark oval eyes, two small clean white catchlights, subtle brows and a small friendly mouth. Behind the guide, build a beautiful simplified animated body-world with rounded stylized lungs, a heart and a glowing route toward a cell. Use soft sculpted forms, clean matte materials, warm cinematic light, soft rim light, deep plum/navy background and strong foreground-to-background depth. Reserve a calm dark area for the German hook “So reist Sauerstoff durch deinen Körper”. No anatomy labels on the cover. No realistic human, no medical CGI, no stock 3D, no toy look.
+Create a premium 16:9 cover frame in the exact same high-end 3D animation world as the channel’s viral Object-Talk characters, but keep the biology faceless. Show large stylized lungs and a heart built from soft rounded premium 3D forms, with pale-cyan paired O2 particles entering the lungs and continuing toward the bloodstream. Use clean matte materials, warm cinematic light, soft rim light, deep plum/navy background and strong depth. Reserve a calm dark area for the German hook “So reist Sauerstoff durch deinen Körper”. No anatomy labels on the cover. No human mascot, no O2 character, no medical CGI, no stock 3D, no toy look.
 ```
 
 ## Referenz Bild_02
 
 ```text
-Using Bild_01 as the exact style reference, keep the exact same object-talk 3D animated world, O2 guide, eye design, materials, lighting and color feeling. Show the O2 guide beginning a clear journey from rounded stylized lungs toward a smooth blood vessel and finally a soft rounded muscle cell. Keep all objects inside one connected animated-film environment with real depth, not as a flat medical diagram. Add only the German labels “Lunge”, “Blut” and “Muskelzelle”.
+Using Bild_01 as the exact style reference, keep the exact same 3D animation world, materials, lighting, color feeling and shape language. Show one connected journey from rounded stylized lungs toward a smooth blood vessel and finally a soft rounded muscle cell, linked by pale-cyan faceless O2 particles. Add only “Lunge”, “Blut” and “Muskelzelle”.
 ```
 
 ## Referenz Bild_03
 
 ```text
-Using Bild_01 as the exact style reference, keep the exact same O2 guide and channel world. Show the O2 guide travelling through a simplified animated nose/mouth passage into a smooth rounded trachea. Use the same deep plum/navy background, warm cinematic light, matte materials and soft sculpted forms. Add only the German label “Luftröhre”.
+Using Bild_01 as the exact style reference, create a stylized side cutaway of a simplified faceless head and upper chest. Show pale-cyan O2 particles moving through nose or mouth into a smooth rounded trachea. Use the same premium materials, warm cinematic light and strong depth as Bild_01. Add only “Luftröhre”.
 ```
 
 ## PASS-Regel
 
-Nur weiterverwenden, wenn Bild_01 sichtbar diese Welt trifft. Wenn Bild_01 medizinisch, realistisch, stockartig, toy-like oder stilistisch beliebig aussieht: regenerieren.
+Bild_01 ist nur PASS, wenn es sichtbar wie derselbe hochwertige 3D-Animationsfilm wirkt wie die Object-Talk-Welt, ohne medizinischen Realismus und ohne erzwungenes Maskottchen.
