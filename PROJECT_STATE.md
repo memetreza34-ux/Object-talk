@@ -22,44 +22,36 @@ Oberste Stilreferenz:
 bildwelt/OBJECT-TALK-CHANNEL-DNA.md
 ```
 
-Kurzfassung:
+Die ursprüngliche Kanalidee ist wiederhergestellt:
 
-```text
-bildwelt/APPROVED-VISUAL-WORLD.md
-```
+1. **Viral Object-Talk** – passende Lebensmittel/Gegenstände können sprechende 3D-Figuren mit großen Augen, klarer Mimik und starker Persönlichkeit sein.
+2. **Inside-the-Body** – Organe, Blut, Zellen und biologische Prozesse bleiben normalerweise gesichtslos, sehen aber aus wie dieselbe hochwertige 3D-Animationsserie.
 
-Ab jetzt gilt kanalweit:
+Ab jetzt gilt:
 
-- virale Object-Talk-3D-Animationswelt
-- hochwertiger stilisierter Feature-Animation-Look
+- hochwertige stilisierte 3D-Feature-Animation
 - weiche gerundete Formen
-- ausdrucksstarker konsistenter Augen-/Gesichtsstil bei Figuren
 - matte/satinierte Premium-Materialien
-- warme filmische Beleuchtung + weiches Rim-Light
+- warme filmische Beleuchtung + Rim-Light
 - starke Tiefe und kontrollierte kräftige Farben
-- keine medizinisch-realistische Parallelwelt
+- kein Medical-CGI
 - keine realistische Haut/Poren
 - keine nassen Gewebetexturen
-- kein Anatomiesoftware-/Medical-CGI-Look
 - kein Corporate-Stock-3D
 - kein billiger Toy-Look
+- **keine erfundenen Maskottchen nur um Object-Talk zu erzwingen**
 
-Grundsatz: **Welt zuerst, Thema danach.**
+## Pilot 001 – konkrete Regel
 
-## Pilot 001 – konkrete Character-DNA
+Der Sauerstoff-Pilot nutzt **keinen O₂-Guide und kein Dauermaskottchen**.
 
-Der aktuelle Sauerstoff-Pilot nutzt jetzt zusätzlich:
+- O₂ = blass-cyanfarbene Doppelkugeln ohne Gesicht
+- CO₂ = neutral-violett/graue Drei-Kugel-Form ohne Gesicht
+- rote Blutkörperchen = tiefe warmrote bikonkave Scheiben ohne Gesicht
+- Hämoglobin = burgunderrote vereinfachte Struktur
+- Organe/Zellen = stark stilisiert, weich, rund und gesichtslos
 
-- einen wiederkehrenden O₂-Guide als visuelle Hauptfigur
-- zwei verbundene blass-cyanfarbene Kugeln
-- große dunkle ovale Augen + kleine weiße Highlights
-- dezente Augenbrauen + kleiner Mund
-- gleicher Look in allen Szenen
-- weitere O₂-Partikel bleiben gesichtslos
-- ein Vordergrund-Blutkörperchen darf in Character-Momenten denselben Augenstil tragen
-- Organe/Zellen bleiben stark stilisiert und müssen nicht überall Gesichter tragen
-
-Der aktuelle Flow-Prompt wurde vollständig auf diese DNA umgestellt.
+Die Bildwelt soll trotzdem exakt dieselbe Material-, Licht-, Farb- und Formensprache wie die viralen Object-Talk-Figuren des Kanals besitzen.
 
 ## Flow-Regel – genau eine Freigabe
 
@@ -107,6 +99,12 @@ Spiegeldatei:
 youtube-videos/001-pilot-sauerstoff-im-blut/02_bildprompts/Google-Flow-Agent-Prompt.md
 ```
 
+Style-Lock:
+
+```text
+youtube-videos/001-pilot-sauerstoff-im-blut/02_bildprompts/STYLE-LOCK-BEISPIEL.md
+```
+
 Voice:
 
 ```text
@@ -119,26 +117,6 @@ Antigravity/Remotion:
 youtube-videos/001-pilot-sauerstoff-im-blut/03_pipeline/ANTIGRAVITY-PROMPT-ZUM-KOPIEREN.txt
 ```
 
-## Finaler Flow-Ordner
-
-```text
-001-pilot-sauerstoff-im-blut_bilder/
-```
-
-mit:
-
-```text
-Bild_01.png
-...
-Bild_28.png
-```
-
-plus:
-
-```text
-001-pilot-sauerstoff-im-blut_bilder.zip
-```
-
 ## Nächster Schritt
 
-Den aktualisierten Flow-Prompt verwenden und `Bild_01` **komplett neu** erzeugen. Alte medizinisch/realistisch wirkende Bildserien nicht als Stilreferenz weiterverwenden.
+Neuen Flow-Lauf mit dem aktualisierten Prompt starten und `Bild_01` neu erzeugen. Alte O₂-Maskottchen-Bilder nicht weiterverwenden.
