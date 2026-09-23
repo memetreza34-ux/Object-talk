@@ -8,12 +8,12 @@ Deutschsprachige Erklaervideos ueber Ernaehrung, Gesundheit, menschlichen Koerpe
 
 Standard:
 
-- mindestens 5:00 Minuten fuer normale Kanalvideos
+- normale Kanalvideos mindestens 5:00 Minuten
 - 16:9 / 1920×1080 / 30 fps
 - hohe visuelle Dichte aus generierten Standbildern
-- stark stilisierte hochwertige 3D-Animationsfilm-Welt
+- helle hochwertige 3D-Animationsfilm-Welt
 - wissenschaftlich plausibel und leicht verstaendlich
-- keine unnoetige Themenwiederholung
+- wichtige sichtbare Dinge knapp auf Deutsch beschriften
 
 ## Aktueller Pilot
 
@@ -29,27 +29,39 @@ Pilot 001 ist ein interner 2–3-Minuten-Test fuer die visuelle Pipeline.
 
 ## Verbindliche Bildwelt
 
-- premium stilisierte 3D-Feature-Animation
+Die Zielrichtung ist eine **helle, freundliche Premium-3D-Animationsfilm-Welt**.
+
+Verbindlich:
+
+- stark stilisierte hochwertige 3D-Feature-Animation
+- klar animiert, nicht fotorealistisch
+- helle, freundliche Grundstimmung
 - weiche gerundete Formen
 - matte/satinierte Premium-Materialien
-- warme filmische Beleuchtung
-- starke Tiefenwirkung
-- freundlich, modern, familiengeeignet
-- kein medizinischer Fotorealismus
-- kein Anatomiesoftware-Look
-- kein Corporate-Stock-3D
-- kein billiger Toy-Look
-- kein Anime, Comic, Gore oder Horror
+- warmes Hauptlicht + weiches Fill-Light + dezentes Rim-Light
+- klare Tiefenwirkung
+- frische kontrollierte Farben: Creme, Apricot, Coral, warmes Rot, Himmelblau, Teal
+- familiengeeignet, aber nicht babyhaft
+- vereinfachte, erkennbare Biologie
 
-Die Kanal-DNA steht in:
+Nicht verwenden:
+
+- kosmische / Weltraum-artige Bildwelten
+- Galaxie-, Nebel- oder Sternenhintergruende
+- dunkle violette Sci-Fi-Mikrowelt als Standard
+- Medical-CGI / Anatomiesoftware
+- nasse realistische Gewebeoptik
+- Corporate-Stock-3D
+- billiger Toy-Look
+- Anime, Comic, Gore oder Horror
+
+Kanal-DNA:
 
 ```text
 bildwelt/OBJECT-TALK-CHANNEL-DNA.md
 ```
 
 ## Reference-First Bildpipeline
-
-Die Bildproduktion arbeitet nicht mehr nach dem Prinzip „lange Stilbeschreibung und hoffen“.
 
 Prioritaet:
 
@@ -58,9 +70,7 @@ Prioritaet:
 3. wiederkehrende Objekt-/Character-Referenzen
 4. konkreter Szenenprompt
 
-Wichtig:
-
-**Eine Textzeile wie `Using Bild_01 as the exact style reference` ersetzt nicht das tatsaechliche Anhaengen von Bild_01 als visueller Referenz/Ingredient in Flow.**
+Eine Textzeile wie `Using Bild_01 as the exact style reference` ersetzt **nicht** das tatsaechliche Anhaengen von Bild_01 als visueller Referenz/Ingredient in Flow.
 
 Solange noch keine kanalweite `STYLE_REFERENCE.png` existiert, darf nur `Bild_01` im Bootstrap-Modus aus den schriftlichen Stilregeln erzeugt werden. Nach Freigabe muss `Bild_01.png` an jede Folgegeneration angehaengt werden.
 
@@ -78,34 +88,37 @@ Produktionslogik:
 engine/FLOW-PRODUCTION-STANDARD.md
 ```
 
-Die Agent Instructions enthalten Kanal-DNA, Verbote, Referenzregeln, Textregeln, QA und Recovery. Der konkrete Video-Prompt bleibt dadurch auf die jeweilige Szene fokussiert.
+## Sichtbarer deutscher Text ist Pflicht
 
-## Flow erzeugt Visuals – Remotion erzeugt Text
+Flow-Bilder sind **nicht textfrei**.
 
-Flow-Bilder sind standardmaessig textfrei.
+### Bild_01 / Cover
 
-Das bedeutet:
+- kurze starke deutsche Hook direkt im Bild
+- normalerweise 3–7 Woerter
+- darf nicht ohne Text akzeptiert werden
 
-- keine KI-Labels
-- keine KI-Pfeile
-- keine KI-Typografie
-- Cover-Hook nicht direkt in Flow
+### Normale Bilder
 
-Deutsche Labels bleiben Teil der Erklaerung, werden aber spaeter kontrolliert in Remotion gesetzt.
+- normalerweise 1–3 kurze deutsche Labels
+- nur die wichtigsten sichtbaren Strukturen/Prozesse
+- saubere Sans-Serif-Typografie
+- keine Textwaende
+- kein englischer sichtbarer Text
 
-Quelle:
+Quelle der Labels:
 
 ```text
 02_bildprompts/label-plan.json
 ```
 
-Dadurch werden Rechtschreibfehler, falsche Pointer und unnoetige Bildregenerationen vermieden.
+Wenn Flow einen Begriff falsch schreibt, wird zuerst regeneriert. Remotion ist nur der exakte Text-Fallback bei wiederholtem KI-Schriftfehler.
 
 ## Bild_01
 
 `Bild_01` ist immer:
 
-- Cover-Grundbild
+- Cover
 - erster Shot
 - Master Style Frame
 - Episode-Referenz fuer alle Folgebilder
@@ -115,8 +128,8 @@ Ablauf:
 ```text
 STYLE_REFERENCE anhaengen, falls vorhanden
 → nur Bild_01 erzeugen
-→ wenn moeglich mehrere Varianten
-→ echtes Bild visuell pruefen
+→ mehrere Varianten, wenn moeglich
+→ hellen 3D-Stil + deutsche Hook + Anatomie pruefen
 → beste PASS-Variante speichern
 → einmalige Nutzerfreigabe
 → Bild_01 als echte visuelle Referenz an alle Folgebilder anhaengen
@@ -132,10 +145,9 @@ SUBJECT
 → SPATIAL LAYOUT
 → CAMERA / SCALE
 → CONTINUITY REFERENCES
+→ REQUIRED GERMAN TEXT
 → FORBIDDEN ELEMENTS
 ```
-
-Ziel: wenig Interpretationsspielraum bei Raumaufteilung, biologischer Richtung, Massstab und Wiedererkennung.
 
 ## Produktion in 5er-Bloecken
 
@@ -151,7 +163,7 @@ Bild_27–31
 ...
 ```
 
-Jedes Bild innerhalb eines Blocks wird einzeln erzeugt und visuell geprueft. Die 5er-Bloecke dienen nur der Organisation und QA.
+Jedes Bild wird einzeln erzeugt und visuell geprueft. Die Bloecke dienen nur der Organisation.
 
 ## Echte Bild-QA
 
@@ -173,9 +185,9 @@ Er verlangt unter anderem:
 - sofortige Verstaendlichkeit >= 8/10
 - Stilkontinuitaet >= 8/10
 - Komposition >= 8/10
+- Label-Genauigkeit >= 8/10
 - AI-Artefakt-Check PASS
 - Gesamtscore >= 8/10
-- keine offenen PENDING/TODO/TBD-Werte
 
 ## Drei Phasen
 
@@ -200,10 +212,10 @@ Thema
 ```text
 Voice erzeugen
 → Flow Agent Instructions setzen
-→ nur Bild_01
+→ nur Bild_01 mit deutscher Hook
 → Nutzerfreigabe
 → Bild_01 als echte visuelle Referenz anhaengen
-→ Folgeframes einzeln erzeugen
+→ Folgeframes einzeln mit deutschen Labels erzeugen
 → echte Bild-QA
 → Recovery
 → finale ZIP
@@ -218,7 +230,7 @@ Audio vorbereiten
 → faster-whisper
 → Script↔Audio-Ausrichtung
 → timeline.json
-→ Hook/Labels/Overlays aus Plaenen
+→ nur fehlerhafte/missing Flow-Texte per Remotion ersetzen
 → Remotion
 → Render
 → Final-QA
@@ -230,10 +242,11 @@ Audio vorbereiten
 
 1. `engine/FLOW-AGENT-INSTRUCTIONS.md` als dauerhafte Flow-Agent-Regeln setzen.
 2. `youtube-videos/001-pilot-sauerstoff-im-blut/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt` verwenden.
-3. Zuerst ausschliesslich textfreies `Bild_01` erzeugen.
-4. Bild_01 freigeben.
-5. Danach `Bild_01.png` bei jeder Folgegeneration als echtes Visual Reference/Ingredient anhaengen.
+3. Zuerst ausschliesslich `Bild_01` erzeugen.
+4. Pruefen: **heller Premium-3D-Animationsfilm-Look, keine kosmische Welt, deutsche Hook korrekt sichtbar.**
+5. Bild_01 freigeben.
+6. Danach `Bild_01.png` bei jeder Folgegeneration als echtes Visual Reference/Ingredient anhaengen.
 
 ## Goldene Regel
 
-**Nicht raten. Nicht nur beschreiben – referenzieren.**
+**Hell, klar, 3D-animiert, deutsch beschriftet und wirklich referenziert.**
