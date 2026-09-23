@@ -18,8 +18,8 @@
   ],
   "audience": "familienfreundlich, leicht verstaendlich, besonders fuer juengere Zuschauer geeignet, aber nicht babyhaft",
   "visual_identity": {
-    "status": "approved_text_lock_2026-09-23",
-    "specification": "bildwelt/APPROVED-VISUAL-WORLD.md",
+    "status": "reference_first_pipeline_2026-09-23",
+    "specification": "bildwelt/OBJECT-TALK-CHANNEL-DNA.md",
     "primary_mode": "premium strongly stylized 3D animated educational film",
     "secondary_mode": "stylized 3D animated inside-the-body explainer",
     "optional_character_mode": "stylized 3D animated object-talk",
@@ -48,33 +48,37 @@
     "style_reference": "assets/channel/STYLE_REFERENCE.png",
     "style_reference_required_after_lock": true,
     "clean_style_reference_asset_present": false,
+    "bootstrap_without_channel_reference_allowed": true,
+    "bootstrap_rule": "Until STYLE_REFERENCE.png is explicitly approved, only Bild_01 may bootstrap an episode. Do not mass-produce follow-up images without attaching the approved Bild_01 as an actual visual reference.",
     "episode_master_frame": "Bild_01",
-    "character_reference_dir": "assets/channel/characters"
+    "character_reference_dir": "assets/channel/characters",
+    "reference_asset_dir": "assets/channel/references"
   },
   "flow_prompting": {
     "instruction_language": "en",
-    "visible_text_language": "de",
+    "visible_text_in_generated_images": false,
+    "agent_instructions_file": "engine/FLOW-AGENT-INSTRUCTIONS.md",
     "cover_scene_is_master_frame": true,
-    "cover_requires_hook_text": true,
-    "cover_hook_words_min": 3,
-    "cover_hook_words_max": 7,
-    "followup_prompt_style": "as short as possible, as precise as necessary",
-    "followup_prompt_sentences_guideline_min": 2,
-    "followup_prompt_sentences_guideline_max": 5,
+    "cover_hook_generated_by_flow": false,
+    "cover_hook_rendered_by_remotion": true,
+    "followup_prompt_style": "reference-first scene spec",
     "production_block_size": 5,
-    "reuse_bild_01_as_exact_style_reference": true
+    "attach_style_reference_when_present": true,
+    "attach_bild_01_on_every_followup": true,
+    "textual_reference_mentions_do_not_count_as_attachment": true,
+    "generate_each_image_individually": true,
+    "variant_count_for_important_frames": 3
   },
   "labels": {
     "language": "de",
-    "required_on_every_image": true,
-    "label_most_important_visible_things": true,
-    "min_per_image_guideline": 1,
+    "source": "02_bildprompts/label-plan.json",
+    "render_in_flow": false,
+    "render_in_remotion": true,
     "max_per_image_guideline": 3,
     "preferred_heading_position": "top",
     "preferred_type_style": "clean-light-sans-serif",
     "prefer_thin_leader_lines": true,
-    "avoid_overload": true,
-    "fallback_to_editor_overlay_if_ai_text_wrong": true
+    "avoid_overload": true
   },
   "topic_memory": "THEMEN-GEHIRN.md"
 }
