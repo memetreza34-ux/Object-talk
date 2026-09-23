@@ -1,0 +1,11 @@
+{
+  "test_mode": true,
+  "purpose": "kleiner kompletter Pipeline-Test mit 10 Bildern",
+  "target_seconds": 50,
+  "acceptable_seconds_min": 40,
+  "acceptable_seconds_max": 70,
+  "expected_image_count": 10,
+  "counts_as_published_topic": false,
+  "production_longform_minimum_override": true,
+  "notes": "Testet die freigegebene 3D-Bildwelt, Bild_01 als Masterframe, 5er-Bloecke, deutsche Labels, Voice-Sync und Remotion-Schnitt."
+}
