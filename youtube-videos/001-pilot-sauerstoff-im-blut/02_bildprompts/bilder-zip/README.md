@@ -1,8 +1,18 @@
 # Bilder-ZIP – Pilot 001
 
-Lege hier nach Flow genau **eine ZIP-Datei** ab.
+Lege hier nach Flow genau **eine finale ZIP-Datei** ab:
 
-Sie muss die 28 final akzeptierten Bilder enthalten:
+```text
+001-pilot-sauerstoff-im-blut_bilder.zip
+```
+
+Die ZIP enthält den Ordner:
+
+```text
+001-pilot-sauerstoff-im-blut_bilder/
+```
+
+Darin exakt 28 final akzeptierte Bilder:
 
 ```text
 Bild_01.png
@@ -15,8 +25,12 @@ Regeln:
 - keine Lücken
 - jede Nummer genau einmal
 - keine Temp-/Fehlervarianten
+- keine Dateinamen wie `neu`, `final2`, `copy`, `v3`
+- PNG
 - 16:9
-- möglichst textfreie Flow-Bilder
-- Überschriften/Keywords werden später nach `03_pipeline/overlay-plan.json` in Remotion erzeugt
+- alle Bilder in derselben stark stilisierten 3D-Animationsfilm-Welt
+- normale Szenen dürfen die geplanten kurzen deutschen Labels enthalten
+- Bild_01/Cover standardmäßig nur mit Hook
+- kein englischer sichtbarer Text
 
 Die ZIP-Reihenfolge ist egal. Die Pipeline ordnet ausschließlich nach der expliziten `Bild_XX`-Nummer zu.
