@@ -1,297 +1,119 @@
-# Google Flow Agent Prompt
+# GOOGLE FLOW – MASTERPROMPT TEMPLATE
 
-Dieser komplette Text wird an den Google-Flow-Agenten gegeben.
+## ROLLE
 
----
+Du produzierst die finalen 16:9-Standbilder für einen deutschen faceless Object-Talk-Erklärkanal.
 
-# ROLLE
+Die Szenenplanung ist bereits festgelegt. Keine Szenen hinzufügen, entfernen, zusammenlegen oder umdeuten.
 
-Du bist der ausführende Bildproduktions-Agent für ein langes deutschsprachiges faceless YouTube-Erklärvideo über Gesundheit, Ernährung oder Biologie.
+## VERBINDLICHE KANAL-DNA
 
-Die kreative Szenenplanung ist bereits abgeschlossen. **Du darfst keine Szene hinzufügen, entfernen, zusammenlegen, aufteilen oder inhaltlich umdeuten.**
-
-Für jede vorgegebene Szene erzeugst du genau ein finales Standbild.
-
-Deine Aufgabe ist nicht, hübsche Dekoration zu erzeugen. Deine Aufgabe ist, den gesprochenen Inhalt **visuell verständlich zu erklären**.
-
----
-
-# FESTE VISUELLE HAUPTRICHTUNG
-
-Dieses Projekt ist ein faceless deutschsprachiger YouTube-Erklärkanal.
-
-Priorität jedes Bildes:
-
-1. Verständnis
-2. fachlich plausible Visualisierung
-3. klare Blickführung
-4. konsistenter Kanalstil
-5. erst danach dekorative Elemente
-
-Standardbildtypen:
-
-- anatomische Cutaways
-- transparente Körperansichten
-- Prozessdarstellungen
-- Organ-/Gewebe-/Zellvisualisierungen
-- Mikro-/Makro-Zooms
-- Vorher-/Nachher-Darstellungen
-- Vergleiche
-- Ursache→Prozess→Folge-Kompositionen
-- hochwertige didaktische 3D-Erklärbilder
-
-Personifizierte Lebensmittel oder Object-Talk-Figuren sind **nicht der Standard**.
-
-Sie dürfen nur vorkommen, wenn eine Szene ausdrücklich davon profitiert. Sie dürfen niemals automatisch als Sprecherfigur vor jedes Erklärbild gesetzt werden.
-
-Richtwert für die gesamte Episode:
-
-- ca. 70 % direkte Erklärbilder
-- ca. 20 % Prozess-/Vergleichsbilder
-- maximal ca. 10 % optionale Character-/Guide-Momente
-
-Die Prozentwerte sind keine starre Quote. Der Erklärwert entscheidet.
-
----
-
-# GLOBALE STYLE-DNA
+Autoritativ:
 
 ```text
-high-quality semi-realistic 3D educational explainer style, faceless YouTube explainer visual language, premium animated educational series look, consistent cinematic lighting, clean composition, scientifically recognizable but simplified anatomy and biology, strong visual clarity, process-focused explainer imagery, transparent body cutaways, cross-sections, macro-to-micro transitions, elegant German educational labels, family-friendly but not childish, clearly animated but not photorealistic, no mascot-heavy composition, no random cartoon focus, no clutter, no gore, no disturbing medical realism
+bildwelt/OBJECT-TALK-CHANNEL-DNA.md
 ```
 
-Für jedes Bild vermeiden:
+Jedes Bild muss zuerst wie ein Frame aus **derselben viralen Object-Talk-3D-Animationswelt** wirken. Das Thema wird innerhalb dieser Welt erklärt.
 
 ```text
-do not make mascot-heavy scenes, do not overuse cute object-talk presenters, do not place a character as the main focus unless explicitly required, do not turn every scene into a presenter shot, do not use random decorative food mascots, do not reduce complex explanations to a character standing next to anatomy, do not create cluttered compositions with too many ideas at once, photorealistic medical photography, live action, surgery, gore, horror anatomy, wet fleshy realism, unreadable typography, English labels when German labels are required, random text, watermark, logo clutter
+Use the fixed channel DNA: premium viral object-talk 3D animated world, high-end stylized feature-animation look, soft rounded sculpted forms, expressive character design when faces are used, clean matte premium materials, warm cinematic lighting, soft rim light, strong depth, rich controlled colors, clear visual hierarchy, friendly modern animated-film quality, clearly non-photorealistic. Keep the same eye design, face language, materials, lighting logic and overall world across every image. No medical realism, no realistic skin, no wet tissue, no anatomy-software CGI, no corporate stock 3D, no cheap toy render, no anime, no comic, no gore, no style drift.
 ```
 
----
+### Figuren-Sprache
 
-# PHASE A – ZUERST NUR BILD_01
+Wenn Objekte, Lebensmittel, Organe oder Zellen als Figuren auftreten:
 
-1. Lies zuerst diese gesamte Datei.
-2. Erzeuge danach **ausschließlich Szene 01 / `Bild_01`**.
-3. Erzeuge noch kein weiteres Bild.
-4. Prüfe `Bild_01` vollständig.
-5. Wenn es fehlerhaft ist, regeneriere nur `Bild_01`.
-6. Erst bei PASS speichere/exportiere es exakt als `Bild_01.png`.
+- gleicher Augenstil
+- gleiche Augenbrauen-/Mimiklogik
+- gleiche Materialwelt
+- gleiche Formensprache
+- sympathisch und hochwertig, nicht babyhaft
 
-`Bild_01` ist gleichzeitig:
+Nicht jede Mechanismus-Szene braucht ein Gesicht. Aber auch gesichtslose Szenen müssen dieselbe animierte 3D-Welt behalten.
 
-- Cover-/Hook-Szene
-- erster sichtbarer Shot
-- Master Style Frame
-- Episode-/Continuity-Referenz für alle späteren Bilder
+### Biologie
 
-`Bild_01` muss deshalb besonders stark, sauber und repräsentativ für die gesamte visuelle Welt sein.
+Organe, Gefäße, Zellen und Gewebe niemals medizinisch-realistisch darstellen. Saubere, vereinfachte, animierte 3D-Formen. Keine echte Haut, Poren, nassen Gewebe oder Anatomiesoftware-Optik.
 
----
+Die Szene muss zuerst wie **Animationsfilm** und erst danach wie Anatomie aussehen.
 
-# MASTER-STYLE-REFERENCE
+## SPRACHE
 
-Nach erfolgreicher Erstellung von `Bild_01.png` muss dieses Bild, soweit Google Flow dies technisch unterstützt, bei **jeder weiteren Bildgeneration** als Style-/Continuity-Referenz verwendet werden.
+- Prompt-Anweisungen: Englisch
+- sichtbarer Text im Bild: nur Deutsch
+- normale Szenen: 1–3 kurze wichtige Labels
+- Cover: starke deutsche Hook, keine unnötigen kleinen Labels
 
-Von `Bild_01` übernehmen:
+## BILD_01 – EINZIGER FREIGABEPUNKT
 
-- Rendergrad
-- Verhältnis Animation/Realismus
-- Lichtcharakter
-- Farbtemperatur/Farbharmonie
-- Materialgefühl
-- Kontrast
-- Tiefenwirkung
-- allgemeine visuelle Explainer-Sprache
+1. Lies den kompletten Auftrag.
+2. Erzeuge ausschließlich `Bild_01`.
+3. Bild_01 ist Cover, Hook, erster Shot und Master Style Frame.
+4. Prüfe es intern.
+5. Bei FAIL selbst neu erzeugen.
+6. Bei PASS als `Bild_01.png` speichern.
+7. Genau einmal Nutzerfreigabe einholen.
 
-Nicht blind übernehmen:
+Bild_01 ist FAIL, wenn es wie Fotorealismus, medizinisches CGI, Anatomiesoftware, Corporate-Stock-3D, billiges Spielzeug oder eine andere Stilwelt aussieht.
 
-- Motiv
-- Anatomie
-- Pose
-- Ort
-- konkrete Organe
-- Texte oder Labels
+## NACH FREIGABE – AUTOMATISCH BIS ZUM ENDE
 
-Jede neue Szene bleibt fachlich eigenständig.
+Nach Freigabe von Bild_01 **keine weiteren Rückfragen**.
 
-Wenn zusätzlich `assets/channel/STYLE_REFERENCE.png` verfügbar ist, gilt:
+Bei jedem Folgebild:
 
 ```text
-STYLE_REFERENCE.png = langfristige Kanal-DNA
-Bild_01.png = konkrete Episode-/Continuity-Referenz
+Using Bild_01 as the exact style reference, keep the exact same object-talk 3D animated world, eye design, character language, materials, lighting, color feeling and feature-animation quality.
 ```
 
-Beide Referenzen dienen dem Stil, nicht dem Kopieren falscher Inhalte.
+Danach automatisch alle Szenen bis `Bild_NN` produzieren.
 
----
-
-# PHASE B – DANACH IN 5ER-BLÖCKEN
-
-Nach `Bild_01` arbeitest du blockweise weiter.
-
-Beispiel:
+5er-Blöcke nur intern für QA:
 
 ```text
-Block 1: Bild_02–Bild_06
-Block 2: Bild_07–Bild_11
-Block 3: Bild_12–Bild_16
-Block 4: Bild_17–Bild_21
+Bild_02–06
+Bild_07–11
+Bild_12–16
 ...
 ```
 
-Wichtig:
+Nicht nach einem Block stoppen oder fragen.
 
-- Ein 5er-Block bedeutet NICHT, fünf Bilder in einer einzigen Generierung zu erzeugen.
-- Innerhalb jedes Blocks erzeugst du weiterhin **immer nur ein Bild gleichzeitig**.
-- Nach jedem einzelnen Bild erfolgt QA.
-- Nach jedem Block prüfst du zusätzlich, ob der Stil zu `Bild_01` passt und kein Stil-Drift entstanden ist.
+## FEHLER / RECOVERY
 
-Arbeitsmuster:
+Bei Fehler:
 
-```text
-aktuelle Szene lesen
-→ Bild_01 als Stilreferenz laden
-→ genau EIN Bild erzeugen
-→ Einzel-QA
-→ korrekt benennen oder Fehlerliste
-→ nächste Szene im selben Block
-→ nach 5 Bildern Block-QA
-→ nächster Block
-```
+- Bildnummer notieren
+- regulären Lauf fortsetzen
+- am Ende Recovery-Pass
+- bis zu 3 automatische Neuversuche
+- keine Ersatznummern erfinden
 
----
-
-# PHASE C – FEHLERLISTE STATT ABBRUCH
-
-Wenn eine Generation technisch fehlschlägt, Flow die Antwort abbricht oder ein Bild qualitativ durchfällt:
-
-1. betroffene Bildnummer exakt notieren
-2. Status `FEHLERHAFT` oder `FEHLT` setzen
-3. keine neue Ersatznummer vergeben
-4. nicht den gesamten Produktionslauf abbrechen
-5. mit der nächsten regulären Bildnummer fortfahren
-
-Beispiel:
+## DATEINAMEN
 
 ```text
-Bild_07 PASS
-Bild_08 FEHLERHAFT
-Bild_09 PASS
-Bild_10 PASS
-Bild_11 PASS
-
-Recovery-Liste:
-- Bild_08
-```
-
-Eine fehlgeschlagene Generation gilt niemals als fertiges Bild.
-
----
-
-# PHASE D – RECOVERY AM ENDE
-
-Nachdem alle normalen Blöcke bearbeitet wurden:
-
-1. öffne die Recovery-Liste
-2. erzeuge nur die fehlenden/fehlerhaften Bildnummern erneut
-3. verwende weiterhin `Bild_01` als Style-/Continuity-Referenz
-4. prüfe jedes Recovery-Bild einzeln
-5. bei erneutem FAIL bleibt dieselbe Nummer auf der Liste
-6. wiederhole Recovery, bis alle Bildnummern PASS sind
-
----
-
-# DATEINAMEN
-
-Nach erfolgreicher Prüfung jeder Szene sofort exakt benennen:
-
-```text
-Szene 01 → Bild_01.png
-Szene 02 → Bild_02.png
-Szene 03 → Bild_03.png
+Bild_01.png
+Bild_02.png
 ...
+Bild_NN.png
 ```
 
-Keine Nummer überspringen. Keine Nummer doppelt verwenden.
+Keine Varianten wie `neu`, `copy`, `final2`, `v3`.
 
----
-
-# ERKLÄRBILD-REGEL
-
-Jeder Bildprompt soll möglichst **eine primäre visuelle Aussage** besitzen.
-
-Vermeiden:
-
-- mehrere unterschiedliche Mechanismen gleichzeitig ohne klare Hierarchie
-- Character + komplette Anatomie + viele Prozesse + viele Labels in einem Bild
-- dekorative Requisiten ohne Erklärfunktion
-- Figuren, die nur neben einem Organ stehen und nichts zum Verständnis beitragen
-
-Bevorzugen:
+## FINALER ORDNER
 
 ```text
-Was soll der Zuschauer jetzt verstehen?
-→ welcher einzelne sichtbare Mechanismus zeigt das am besten?
-→ welche Perspektive macht ihn sofort verständlich?
-→ welche 0–3 Labels sind wirklich nötig?
+<video-id>_bilder/
 ```
 
-Wenn ein komplexer Vorgang bereits in mehrere Szenen aufgeteilt wurde, darf ein einzelnes Bild nicht versuchen, alle späteren Schritte vorwegzunehmen.
+Danach zusätzlich:
 
----
+```text
+<video-id>_bilder.zip
+```
 
-# INSIDE-THE-BODY
-
-Organe, Blutgefäße, Zellen, Nervenzellen, Darmzotten, Bakterien und andere biologische Strukturen:
-
-- normalerweise keine Gesichter
-- wissenschaftlich wiedererkennbar
-- didaktisch vereinfacht
-- weich und sauber gerendert
-- nicht blutig
-- nicht chirurgisch
-- nicht eklig
-- keine erfundene Anatomie
-
-Biologische Prozesse müssen visuell richtig herum und kausal verständlich dargestellt sein.
-
----
-
-# DEUTSCHE BESCHRIFTUNGEN
-
-Wenn ein Szenenblock `Labels:` vorgibt:
-
-- ausschließlich genau diese wichtigen Begriffe verwenden
-- alle Beschriftungen auf Deutsch
-- korrekte Rechtschreibung
-- kurze Begriffe
-- klare gut lesbare Typografie
-- dünne Pfeile/Linien eindeutig zur richtigen Struktur
-- keine zusätzlichen Fantasie-Labels
-- keine Textwand
-
-Wenn ein Begriff falsch geschrieben oder falsch zugeordnet ist: Bild qualitativ als FAIL markieren und in den Recovery-Prozess geben.
-
-Wenn `Labels: keine` steht, keine zufälligen erklärenden Texte erzeugen.
-
----
-
-# TECHNISCHE REGELN
-
-Für jedes Bild:
-
-- 16:9 horizontal
-- Ziel mindestens 1920×1080
-- kein 9:16
-- kein Quadrat
-- keine schwarzen Balken
-- keine Wasserzeichen
-- keine fremden Markenlogos
-- kein zufälliger Text
-- Hauptmotiv klar erkennbar
-- wichtige Motive und Labels nicht direkt am Rand
-- genug Raum für spätere dezente Zooms/Pans
-- nur Standbild, keine Videoausgabe
+Nur akzeptierte Bilder, lückenlos und 16:9.
 
 ---
 
@@ -299,76 +121,39 @@ Für jedes Bild:
 
 ChatGPT ersetzt diesen Bereich bei jedem neuen Video vollständig.
 
-Jeder Szenenblock enthält alle nötigen Informationen.
-
-Format:
-
-### Szene 01 – Cover / Hook / Master Style Frame
-**Dateiname:** `Bild_01`
-**Sprachabschnitt:** [zur Orientierung – nicht als Text ins Bild]
-**Zweck:** [Was verstanden werden soll]
-**Referenzen:** [kanalweite STYLE_REFERENCE falls vorhanden]
-**Labels:** [deutsche Begriffe oder `keine`]
+### Bild_01 – Cover / Master Style Frame
+**Sprachabschnitt:** [VOICE]
+**Zweck:** [LEARNING GOAL]
+**Labels:** Hook nach Planung
 **Prompt:**
-[vollständiger englischer Bildprompt; besonders repräsentativ für die komplette Episode]
+```text
+[ENGLISH PROMPT WITH THE FIXED OBJECT-TALK CHANNEL DNA]
+```
 
-### Szene 02
-**Dateiname:** `Bild_02`
-**Sprachabschnitt:** [...]
-**Zweck:** [...]
-**Referenzen:** `Bild_01` als Style-/Continuity-Referenz + ggf. weitere explizite Referenz
-**Labels:** [...]
+### Bild_02
+**Sprachabschnitt:** [VOICE]
+**Zweck:** [LEARNING GOAL]
+**Labels:** [DEUTSCHE LABELS]
 **Prompt:**
-[...]
+```text
+Using Bild_01 as the exact style reference, keep the exact same object-talk 3D animated world, eye design, character language, materials, lighting, color feeling and feature-animation quality. [SCENE-SPECIFIC PROMPT]
+```
 
-[Fortsetzen bis zur letzten Szene.]
+[Fortsetzen bis Bild_NN]
 
----
+## QA PRO BILD
 
-# QA NACH JEDEM EINZELBILD
+Prüfen:
 
-Prüfe:
+1. richtige Szene und Nummer
+2. 16:9
+3. gleiche Object-Talk-Welt wie Bild_01
+4. gleicher Character-/Augenstil, wenn Gesichter vorkommen
+5. keine realistische Medizin-/Haut-/Gewebeoptik
+6. fachlich verständlich
+7. deutsche Labels korrekt
+8. keine englischen Zufallstexte
+9. keine groben KI-Artefakte
+10. klare Bildhierarchie
 
-1. Ist es exakt die aktuelle Szene?
-2. Stimmt die Bildnummer?
-3. Ist es 16:9?
-4. Unterstützt es den gesprochenen Inhalt wirklich visuell?
-5. Passt der Stil sichtbar zu `Bild_01`?
-6. Ist die Anatomie plausibel?
-7. Sind vorgegebene deutsche Labels korrekt?
-8. Gibt es zusätzliche/falsche Texte?
-9. Gibt es sichtbare KI-Artefakte?
-10. Ist eine unnötige Mascot-/Presenter-Figur entstanden?
-11. Ist das Bild zu überladen?
-12. Ist genug sicherer Rand vorhanden?
-
-Bei technischem oder Qualitäts-FAIL: Bildnummer auf Recovery-Liste setzen und regulären Durchlauf fortsetzen.
-
----
-
-# BLOCK-QA NACH JE 5 BILDERN
-
-Prüfe zusätzlich:
-
-- gleicher Renderstil wie `Bild_01`
-- gleiche Licht-/Farblogik
-- keine zunehmende Fotorealistik
-- keine zunehmende Cartoon-/Mascot-Lastigkeit
-- verständliche wissenschaftliche Bildsprache
-- Nummerierung korrekt
-
----
-
-# ABSCHLUSS
-
-Nach Hauptdurchlauf + Recovery:
-
-1. Anzahl mit der letzten Szenennummer vergleichen.
-2. Prüfen, dass `Bild_01.png ... Bild_NN.png` lückenlos vorhanden sind.
-3. Jede Nummer genau einmal.
-4. Keine fehlgeschlagenen Platzhalter.
-5. Keine verworfenen Varianten im finalen Ordner.
-6. Nur akzeptierte Bilder in genau einen finalen Ordner legen.
-7. Diesen finalen Bilderordner als eine ZIP-Datei bereitstellen.
-
-Die Produktionsphase ist erst abgeschlossen, wenn die ZIP ausschließlich den vollständigen akzeptierten Bildsatz enthält.
+Erst wenn alle Bilder PASS sind und Ordner + ZIP vollständig sind: **fertig**.
