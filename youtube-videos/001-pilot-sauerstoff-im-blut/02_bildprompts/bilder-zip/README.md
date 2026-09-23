@@ -6,13 +6,13 @@ Lege hier nach Flow genau **eine finale ZIP-Datei** ab:
 001-pilot-sauerstoff-im-blut_bilder.zip
 ```
 
-Die ZIP enthält den Ordner:
+Sie enthält genau einen Ordner:
 
 ```text
 001-pilot-sauerstoff-im-blut_bilder/
 ```
 
-Darin exakt 28 final akzeptierte Bilder:
+Darin exakt:
 
 ```text
 Bild_01.png
@@ -21,16 +21,17 @@ Bild_02.png
 Bild_28.png
 ```
 
-Regeln:
+## Regeln
+
 - keine Lücken
 - jede Nummer genau einmal
 - keine Temp-/Fehlervarianten
-- keine Dateinamen wie `neu`, `final2`, `copy`, `v3`
-- PNG
+- keine Namen wie `neu`, `copy`, `final2`, `v3`
 - 16:9
-- alle Bilder in derselben stark stilisierten 3D-Animationsfilm-Welt
-- normale Szenen dürfen die geplanten kurzen deutschen Labels enthalten
-- Bild_01/Cover standardmäßig nur mit Hook
-- kein englischer sichtbarer Text
+- nur akzeptierte Bilder
+- gleiche Object-Talk-3D-Welt in allen 28 Bildern
+- gleicher O₂-Guide und gleicher Augen-/Character-Stil
+- sichtbarer Text nur Deutsch
+- kein Medical-CGI-/Realismus-Drift
 
-Die ZIP-Reihenfolge ist egal. Die Pipeline ordnet ausschließlich nach der expliziten `Bild_XX`-Nummer zu.
+Die Pipeline ordnet ausschließlich nach der expliziten `Bild_XX`-Nummer zu.
