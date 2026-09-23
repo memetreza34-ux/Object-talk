@@ -3,20 +3,30 @@ Create exactly 10 individual 16:9 images for a German educational explainer chan
 TOPIC:
 How oxygen travels through the human body.
 
-GLOBAL VISUAL WORLD:
-Premium stylized 3D animated educational film look, strongly animated rather than photorealistic, soft rounded forms, simplified but recognizable human biology, warm cinematic lighting, polished materials, strong depth, colorful but controlled, family-friendly and modern. No anime, no comic, no live action, no medical photorealism, no gore, no mascot presenter.
+APPROVED GLOBAL VISUAL WORLD:
+All images must look like frames from the exact same premium strongly stylized 3D animated educational film. Clearly animated and non-photorealistic. Use soft rounded forms, simplified but recognizable biology, warm cream/apricot/amber/orange lighting, deep red and burgundy blood structures, polished smooth materials, strong cinematic depth and pale-cyan scientific accent particles. The look must stay elegant, clean, family-friendly and modern. No anime, no comic, no live action, no medical photorealism, no wet realistic tissue, no gore, no mascot presenter, no cheap plastic-toy look.
+
+STYLE CONSISTENCY IS THE HIGHEST PRIORITY:
+- Same lighting direction and warmth in every image.
+- Same material softness and gloss in every image.
+- Same anatomy simplification in every image.
+- Same camera depth and render quality in every image.
+- Same typography feeling in every image.
+- Same recurring symbols and object colors in every image.
+- Never reinvent the style from scene to scene.
 
 TEXT RULE:
 - All prompt instructions are in English.
 - Every visible word inside the generated images must be German.
 - Label the most important structures in every image, usually 1–3 short German labels.
+- Prefer short clean white/light sans-serif headings at the top and thin leader lines for labels.
 - No English text, no gibberish, no long paragraphs.
 - If a label is misspelled or unreadable, the image fails and must be regenerated.
 
 CONSISTENCY LOCK:
 - O2: always the same small paired pale-cyan particles.
 - Red blood cells: always the same deep warm-red biconcave discs.
-- CO2: always clearly different from O2, using the same three-part symbol when it appears.
+- CO2: always clearly different from O2, preferably neutral-violet/grey and consistent when it appears.
 - Keep lighting, materials, anatomy simplification, color language and render quality consistent across all images.
 
 PRODUCTION WORKFLOW:
@@ -38,7 +48,7 @@ PRODUCTION WORKFLOW:
 -----------------------------------
 BILD_01 — COVER + MASTER STYLE FRAME
 -----------------------------------
-Create the master 16:9 cover frame for a German educational explainer about how oxygen travels through the body. Show an anonymous young person inhaling, with a softly transparent upper torso revealing stylized lungs, heart, major blood vessels and a hint of a body cell. Pale-cyan O2 particles enter the lungs and visually suggest the route from lungs to blood to cells. Make this the strongest, clearest and most polished image of the set and use it to define the exact 3D animation style, lighting, materials, color palette, anatomy simplification and depth for all later images. Add the large German hook text “So reist Sauerstoff durch deinen Körper” and the smaller German labels “Lunge” and “Herz”. No English text, no photorealism, no mascot, no gore.
+Create the master 16:9 cover frame for a German educational explainer about how oxygen travels through the body. Show an anonymous young person inhaling, with a softly transparent upper torso revealing stylized lungs, heart, major blood vessels and a hint of a body cell. Use the approved warm cream/apricot/amber/orange 3D world with deep burgundy-red blood structures, polished smooth surfaces, soft rounded anatomy, strong cinematic depth and pale-cyan O2 particles. Make this the strongest, clearest and most polished image of the set and use it to define the exact lighting, materials, color balance, anatomy simplification, typography and render quality for all later images. Add the large German hook text “So reist Sauerstoff durch deinen Körper” and the smaller German labels “Lunge” and “Herz”. No English text, no photorealism, no mascot, no gore.
 
 -----------------------------------
 BILD_02 — ROUTE OVERVIEW
