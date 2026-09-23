@@ -12,6 +12,7 @@ Autoritativ:
 
 ```text
 bildwelt/OBJECT-TALK-CHANNEL-DNA.md
+bildwelt/OBJECT-TALK-STYLE-EXAMPLE.md
 ```
 
 Jedes Bild muss zuerst wie ein Frame aus **derselben viralen Object-Talk-3D-Animationswelt** wirken. Das Thema wird innerhalb dieser Welt erklärt.
@@ -25,6 +26,7 @@ Use the fixed channel DNA: premium viral object-talk 3D animated world, high-end
 Wenn Objekte, Lebensmittel, Organe oder Zellen als Figuren auftreten:
 
 - gleicher Augenstil
+- große dunkle ovale Augen mit kleinen weißen Catchlights
 - gleiche Augenbrauen-/Mimiklogik
 - gleiche Materialwelt
 - gleiche Formensprache
@@ -124,7 +126,7 @@ ChatGPT ersetzt diesen Bereich bei jedem neuen Video vollständig.
 ### Bild_01 – Cover / Master Style Frame
 **Sprachabschnitt:** [VOICE]
 **Zweck:** [LEARNING GOAL]
-**Labels:** Hook nach Planung
+**Labels:** nur Hook / nach Planung
 **Prompt:**
 ```text
 [ENGLISH PROMPT WITH THE FIXED OBJECT-TALK CHANNEL DNA]
