@@ -2,25 +2,30 @@
 
 Letzte Aktualisierung: 23.09.2026
 
-## Aktiver Kurztest
+## Aktiver Produktionspilot
 
-Aktiv ist jetzt:
+Aktiv ist jetzt wieder:
 
 ```text
-youtube-videos/002-mini-test-sauerstoff/
+youtube-videos/001-pilot-sauerstoff-im-blut/
 ```
 
-Zweck: ein sehr kleiner kompletter Testfilm, bevor ein längeres Video gebaut wird.
+Thema:
 
-Eckdaten:
-- ca. 50 Sekunden Ziel
-- akzeptabler Bereich 40–70 Sekunden
-- genau 10 Bilder
-- Test zählt nicht als veröffentlichtes Kanalthema
-- Bild_01 = Cover + erster Shot + Master Style Frame
-- Produktion danach in 5er-Blöcken: Bild_02–06, dann Bild_07–10
+**Wie kommt Sauerstoff von der Lunge bis in deine Zellen?**
 
-Der frühere `001-pilot-sauerstoff-im-blut` bleibt vollständig im Repo und dient als längerer 28-Bilder-Pilot.
+Der 10-Bilder-Mini-Test `002-mini-test-sauerstoff` wird vorerst übersprungen. Die freigegebene Bildwelt ist inzwischen stabil genug, deshalb gehen wir direkt auf einen echten kleinen 2–3-Minuten-Pilotfilm.
+
+## Ziel des ersten echten Kleinpiloten
+
+- ungefähr 2–2,5 Minuten
+- akzeptabler Testbereich 115–160 Sekunden
+- 28 Erklärbilder
+- hohe visuelle Dichte
+- stark stilisierte hochwertige 3D-Animationsfilm-Welt
+- kein medizinischer Fotorealismus
+- Bild_01 = Cover + Hook + Master Style Frame
+- Folgeproduktion in 5er-Blöcken
 
 ## Freigegebene Bildwelt
 
@@ -53,34 +58,7 @@ Ein sauber exportiertes kanalweites `assets/channel/STYLE_REFERENCE.png` fehlt n
 - keine langen Textblöcke
 - falsches oder englisches Label = Regeneration oder sauberer Remotion-Fallback
 
-## 002 – vorhandene Dateien
-
-Voice:
-```text
-youtube-videos/002-mini-test-sauerstoff/01_script/VOICEOVER-ZUM-KOPIEREN.txt
-```
-
-Flow:
-```text
-youtube-videos/002-mini-test-sauerstoff/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt
-```
-
-Antigravity:
-```text
-youtube-videos/002-mini-test-sauerstoff/03_pipeline/ANTIGRAVITY-PROMPT-ZUM-KOPIEREN.txt
-```
-
-YouTube-Metadaten:
-```text
-youtube-videos/002-mini-test-sauerstoff/04_export/YOUTUBE-TITEL-BESCHREIBUNG-ZUM-KOPIEREN.txt
-```
-
-Szenenplan:
-```text
-youtube-videos/002-mini-test-sauerstoff/05_info/phase1-scenes.json
-```
-
-## Produktionsablauf 002
+## Produktionsablauf 001
 
 ```text
 Voice erzeugen
@@ -88,7 +66,15 @@ Voice erzeugen
 → Bild_01 prüfen und freigeben
 → Bild_02–06 einzeln
 → Block-QA
-→ Bild_07–10 einzeln
+→ Bild_07–11 einzeln
+→ Block-QA
+→ Bild_12–16 einzeln
+→ Block-QA
+→ Bild_17–21 einzeln
+→ Block-QA
+→ Bild_22–26 einzeln
+→ Block-QA
+→ Bild_27–28 einzeln
 → Fehlerliste + Recovery
 → Audio + Bilder ins Projekt
 → Whisper / Timeline
@@ -97,16 +83,40 @@ Voice erzeugen
 → Test-QA
 ```
 
+## Nutzerdateien
+
+Voice:
+```text
+youtube-videos/001-pilot-sauerstoff-im-blut/01_script/VOICEOVER-ZUM-KOPIEREN.txt
+```
+
+Flow:
+```text
+youtube-videos/001-pilot-sauerstoff-im-blut/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt
+```
+
+Antigravity:
+```text
+youtube-videos/001-pilot-sauerstoff-im-blut/03_pipeline/ANTIGRAVITY-PROMPT-ZUM-KOPIEREN.txt
+```
+
+Kurzplan:
+```text
+youtube-videos/001-pilot-sauerstoff-im-blut/PRODUKTIONSPLAN-KURZ.md
+```
+
 ## Was noch fehlt
 
-Der Test ist geplant und produktionsbereit, aber noch nicht gerendert.
+Phase 1 ist vorbereitet. Für den echten Render fehlen nur die Medien:
 
-Es fehlen nur die echten Medien:
 1. finales Voice-Audio
-2. akzeptierte Flow-Bilder `Bild_01.png` bis `Bild_10.png`
-
-Danach kann Phase 3 direkt starten.
+2. akzeptierte Flow-Bilder `Bild_01.png` bis `Bild_28.png`
+3. ausgefüllte Einzelbild-Reviews nach echter Bildauswahl
 
 ## Nächster Schritt
 
-`GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt` in Flow verwenden und zuerst ausschließlich `Bild_01` erzeugen. Nach Freigabe folgen die restlichen 9 Bilder.
+1. Voiceover erzeugen.
+2. Flow-Prompt öffnen.
+3. Zuerst ausschließlich `Bild_01` erzeugen.
+4. Bild_01 als Master Style Frame freigeben.
+5. Danach direkt mit den 5er-Blöcken weitermachen.
