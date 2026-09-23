@@ -11,9 +11,13 @@ Use the permanent rules from `engine/FLOW-AGENT-INSTRUCTIONS.md`.
 
 GLOBAL VISUAL DIRECTION
 
-Use a bright, friendly, original high-end family 3D animated feature-film aesthetic. The result should feel like a polished frame from a premium theatrical 3D animation: soft rounded sculpted forms, clean matte/satin materials, warm key light, soft fill light, gentle rim light, clear depth, readable silhouettes and fresh colors. Prefer cream, apricot, coral, warm red, soft sky blue and teal accents.
+Use a bright, friendly, original premium theatrical 3D animated-feature aesthetic. Every result must feel like a real frame from a high-end animated movie, with soft rounded sculpted forms, polished matte/satin materials, warm key light, soft fill light, gentle rim light, strong depth, foreground overlap and fresh controlled colors.
 
-Do NOT create a cosmic, galaxy, outer-space, dark purple microscopic fantasy, sci-fi tunnel, neon laboratory, medical CGI or anatomy-software look. Do not use dark plum/navy as the dominant default background. Keep every frame bright, friendly and immediately understandable.
+The biological process is the hero. Do NOT use a child, adult, presenter, visible human face, torso mannequin, anatomy-class model or frontal cutaway body as the main composition. Do NOT make flat anatomy posters, schoolbook diagrams, medical charts or specimen boards.
+
+When human context is scientifically necessary, use only a minimal faceless silhouette or partial body shell as secondary context. The organ/process must remain dominant.
+
+Do NOT create a cosmic, galaxy, outer-space, dark-purple microscopic fantasy, sci-fi tunnel, neon laboratory, medical CGI or anatomy-software look.
 
 REFERENCE RULE
 
@@ -38,10 +42,9 @@ Visible text is part of the educational image.
 
 - All visible text must be German.
 - Bild_01 MUST contain the exact cover hook given below.
-- Normal images should contain the exact 1–3 German labels listed in each scene.
+- Normal images contain the exact 1–3 German labels listed in each scene.
 - Use clean readable sans-serif typography.
-- Keep text away from the main anatomy.
-- Use minimal thin leader lines only when needed.
+- Keep text away from the central biological process.
 - Never add English visible text.
 - If Flow misspells a required German word, regenerate the same scene. Only after repeated failure may the exact label be added later in Remotion.
 
@@ -49,124 +52,125 @@ EINZIGER FREIGABEPUNKT
 
 1. Erzeuge zuerst nur `Bild_01`.
 2. Erzeuge wenn moeglich 3 Varianten.
-3. Pruefe Stil, Anatomie, Komposition und deutsche Schrift.
-4. Speichere die beste PASS-Variante als `Bild_01.png`.
-5. Hole genau einmal Nutzerfreigabe ein.
-6. Nach Freigabe automatisch Bild_02 bis Bild_28 einzeln erzeugen, jeweils mit angehaengtem `Bild_01.png`.
+3. Verwirf jede Variante mit Mensch/Kind/Gesicht, Torso-Mannequin, Anatomieposter, kosmischem Look oder Medical-CGI.
+4. Pruefe Stil, Anatomie, Komposition und deutsche Schrift.
+5. Speichere die beste PASS-Variante als `Bild_01.png`.
+6. Hole genau einmal Nutzerfreigabe ein.
+7. Nach Freigabe automatisch Bild_02 bis Bild_28 einzeln erzeugen, jeweils mit angehaengtem `Bild_01.png`.
 
 ---
 
 BILD_01 – COVER + MASTER STYLE FRAME
 
-Create a bright premium 16:9 animated-film cover. Show a clean stylized upper-body cutaway with two large soft-rounded lungs and a clearly visible heart, using friendly warm 3D materials and a light cream-to-soft-sky-blue environment. A stream of paired pale-cyan O2 molecules enters the lungs and continues toward a warm-red blood vessel leading to the heart. Keep the composition simple, colorful and immediately readable, not medical and not cosmic. Add the exact large German cover hook: “So reist Sauerstoff durch deinen Körper”. Add two small clean German labels: “Lunge” and “Herz”. No English text, no galaxy background, no dark purple space look, no sci-fi, no medical CGI.
+Create a premium bright 16:9 animated-feature cover with NO human, NO visible face, NO torso, NO mannequin and NO anatomy-poster layout. Make the biological journey itself the hero: one large pair of soft-rounded stylized lungs occupies the left-center foreground, a stylized heart sits slightly lower and to the right, and a curved warm-red blood vessel creates a strong cinematic path between them. A stream of paired pale-cyan O2 molecules enters the lungs from the upper-left, crosses toward the blood vessel and visually continues toward the heart. Use a warm cream-to-soft-sky-blue environment with coral/apricot organ colors, real foreground/midground/background depth, soft cinematic shadows and polished animated-film materials. The scene must look like a movie frame, not a health poster. Add the exact large German hook: “So reist Sauerstoff durch deinen Körper”. Add only the small German labels “Lunge” and “Herz”. No person, no body cutaway, no medical poster, no galaxy, no dark purple void, no sci-fi, no medical CGI.
 
 BILD_02 – REISE-UEBERSICHT
 
-Create one bright connected left-to-right journey: stylized lungs on the left, a smooth blood vessel with red blood cells in the center, and one large rounded muscle cell on the right. A small chain of paired pale-cyan O2 molecules connects all three stages. Medium-wide 3/4 composition with clear depth. Add the exact German labels “Lunge”, “Blut” and “Muskelzelle”.
+Create one cinematic left-to-right 3D journey with no human body: stylized lungs on the left foreground, a smooth blood vessel with red blood cells curving through the center, and one large rounded muscle cell on the right background. Paired pale-cyan O2 molecules connect all three stages. Use depth and camera perspective, not a flat diagram. Add “Lunge”, “Blut” and “Muskelzelle”.
 
 BILD_03 – ATEMWEG
 
-Create a bright stylized side cutaway of a simplified faceless head and upper chest. Show nose/mouth leading into one smooth rounded trachea while pale-cyan O2 molecules move downward through it. Keep the airway large and easy to understand. Add the exact German label “Luftröhre”.
+Create a cinematic side-view airway scene. Use only a very simple translucent faceless side-profile shell as secondary context, cropped tightly and pushed into the background; the nose/mouth opening, trachea and moving O2 are the dominant 3D subjects. No character face, no eyes, no human presenter, no mannequin. Add “Luftröhre”.
 
 BILD_04 – BRONCHIEN
 
-Create a bright frontal 3/4 chest cutaway focused on the trachea splitting into two main bronchi and progressively finer rounded branches inside both lungs. Pale-cyan O2 molecules travel from the central trachea outward. Add the exact German label “Bronchien”.
+Create an isolated cinematic 3D lung-and-airway scene with no torso. One central trachea enters from above and splits into two main bronchi that branch progressively inside the two soft-rounded lungs. O2 molecules travel into the branches. Use a 3/4 camera angle and real depth. Add “Bronchien”.
 
 BILD_05 – LUNGENBLAESCHEN
 
-Create a bright clean macro animated-film view at the end of one tiny airway. Several clusters of soft rounded alveoli fill most of the frame, with one terminal airway entering from the upper-left. Keep the alveoli dry, matte and clearly stylized. Add the exact German label “Lungenbläschen”.
+Create a bright clean macro animated-film view at the end of one tiny airway. Several clusters of soft rounded alveoli fill most of the frame, with one terminal airway entering from the upper-left. Keep the alveoli dry, matte and clearly stylized. Add “Lungenbläschen”.
 
 BILD_06 – DUENNE WAND
 
-Create an extreme macro cutaway with one large alveolus on the left and one narrow capillary wrapping closely along the right. The spaces are separated by one very thin clean barrier; red blood cells remain only inside the capillary. Use a bright readable background, not a dark microscopic void. Add the exact German labels “Lungenbläschen” and “Kapillare”.
+Create an extreme macro 3D cutaway with one large alveolus on the left and one narrow capillary wrapping closely along the right. The spaces are separated by one very thin clean barrier; red blood cells remain only inside the capillary. Use bright readable depth, not a dark microscopic void. Add “Lungenbläschen” and “Kapillare”.
 
 BILD_07 – UEBERGANGSPUNKT
 
-Use the same bright alveolus-capillary orientation as Bild_06. Place exactly four paired pale-cyan O2 molecules inside the alveolar air space directly beside the thin barrier, not yet across it. Add the exact German labels “Sauerstoff” and “Lungenbläschen”.
+Use the same bright alveolus-capillary orientation as Bild_06. Place exactly four paired pale-cyan O2 molecules inside the alveolar air space directly beside the thin barrier, not yet across it. Add “Sauerstoff” and “Lungenbläschen”.
 
 BILD_08 – SAUERSTOFF INS BLUT
 
-Use the same orientation as Bild_07. Show four paired pale-cyan O2 molecules at successive positions crossing the thin alveolar-capillary barrier from the air side into the blood plasma; deep-red biconcave red blood cells stay inside the capillary. Add the exact German labels “Sauerstoff” and “Blut”.
+Use the same orientation as Bild_07. Show four paired pale-cyan O2 molecules at successive positions crossing the thin alveolar-capillary barrier from the air side into the blood plasma; deep-red biconcave red blood cells stay inside the capillary. Add “Sauerstoff” and “Blut”.
 
 BILD_09 – BLUTPLASMA
 
-Create a bright clean macro interior of a capillary. Several deep-red biconcave red blood cells dominate the frame while only two or three paired pale-cyan O2 molecules remain freely suspended in the surrounding plasma. Add the exact German label “Blutplasma”.
+Create a bright clean macro interior of a capillary. Several deep-red biconcave red blood cells dominate the frame while only two or three paired pale-cyan O2 molecules remain freely suspended in the surrounding plasma. Add “Blutplasma”.
 
 BILD_10 – ROTE BLUTKOERPERCHEN
 
-Create a bright close macro view of several deep warm-red biconcave red blood cells moving through a capillary, with many paired pale-cyan O2 molecules converging toward them. One red blood cell dominates the foreground. Add the exact German label “Rote Blutkörperchen”.
+Create a bright cinematic macro view of several deep warm-red biconcave red blood cells moving through a capillary, with many paired pale-cyan O2 molecules converging toward them. One red blood cell dominates the foreground. Add “Rote Blutkörperchen”.
 
 BILD_11 – HAEMOGLOBIN
 
-Create a smooth bright stylized cutaway of one red blood cell filling most of the frame. Reveal multiple consistent simplified burgundy hemoglobin structures inside while preserving the outer biconcave form. Add the exact German label “Hämoglobin”.
+Create a smooth stylized cutaway of one red blood cell filling most of the frame. Reveal multiple consistent simplified burgundy hemoglobin structures inside while preserving the outer biconcave form. Add “Hämoglobin”.
 
 BILD_12 – O2 BINDET
 
-Use the same red-blood-cell cutaway and hemoglobin design as Bild_11. Show several paired pale-cyan O2 molecules visibly attached to specific burgundy hemoglobin structures, while a few unbound O2 molecules approach. Add the exact German labels “Sauerstoff” and “Hämoglobin”.
+Use the same red-blood-cell cutaway and hemoglobin design as Bild_11. Show several paired pale-cyan O2 molecules visibly attached to specific burgundy hemoglobin structures, while a few unbound O2 molecules approach. Add “Sauerstoff” and “Hämoglobin”.
 
 BILD_13 – ZUM HERZEN
 
-Create a bright stylized chest cutaway with lungs on both sides and the heart centered lower between them. Show oxygen-rich warm-red blood leaving the lungs through vessels toward the left side of the heart. Add the exact German labels “Lunge” and “Herz”.
+Create a cinematic organ-only composition with no torso and no human body. Two stylized lungs sit in the left and right midground while the heart sits lower-center foreground; warm-red vessels visibly connect lungs to the left side of the heart. Show oxygen-rich blood flowing along the vessels. Add “Lunge” and “Herz”.
 
 BILD_14 – HERZ PUMPT
 
-Create a large stylized heart cutaway as the dominant center-left subject. Show oxygen-rich blood leaving the left side of the heart into one large main artery extending toward the right. Keep it friendly and animated-film-like, not a medical render. Add the exact German labels “Herz” and “Hauptschlagader”.
+Create a large stylized heart as the dominant center-left subject in a cinematic 3D environment. Show oxygen-rich blood leaving the left side of the heart into one large main artery extending toward the right. No torso, no human body. Add “Herz” and “Hauptschlagader”.
 
 BILD_15 – ARTERIEN
 
-Create a bright medium-wide anatomical journey toward leg muscle tissue. One large smooth artery enters from the left and branches into progressively smaller vessels toward rounded muscle tissue on the right. Add the exact German label “Arterie”.
+Create a bright medium-wide 3D journey with one large artery entering from the left and branching into progressively smaller vessels toward stylized muscle tissue on the right. Avoid showing a whole leg or person; the vessels and tissue are the subjects. Add “Arterie”.
 
 BILD_16 – KAPILLARNETZ
 
-Create a bright macro view inside stylized muscle tissue. A small arteriole enters from upper-left and divides into a readable network of thin capillaries around rounded muscle fibers/cells. Red blood cells remain correctly inside the vessels. Add the exact German labels “Kapillaren” and “Muskelgewebe”.
+Create a bright macro view inside stylized muscle tissue. A small arteriole enters from upper-left and divides into a readable network of thin capillaries around rounded muscle fibers/cells. Red blood cells remain correctly inside the vessels. Add “Kapillaren” and “Muskelgewebe”.
 
 BILD_17 – GEWEBE
 
-Create a clean bright tissue environment clearly different from the lungs: one thin capillary runs along the left and several active rounded muscle cells occupy the right. Keep the blood-to-tissue interface visible. Add the exact German labels “Kapillare” and “Gewebe”.
+Create a clean bright tissue environment clearly different from the lungs: one thin capillary runs along the left and several active rounded muscle cells occupy the right. Keep the blood-to-tissue interface visible. Add “Kapillare” and “Gewebe”.
 
 BILD_18 – O2 ZUR MUSKELZELLE
 
-Use a capillary on the left and one large muscle cell on the right, separated by a short clean tissue space. Show several paired pale-cyan O2 molecules leaving the capillary and moving toward the muscle cell. Add the exact German labels “Sauerstoff” and “Muskelzelle”.
+Use a capillary on the left and one large muscle cell on the right, separated by a short clean tissue space. Show several paired pale-cyan O2 molecules leaving the capillary and moving toward the muscle cell. Add “Sauerstoff” and “Muskelzelle”.
 
 BILD_19 – HAEMOGLOBIN GIBT O2 AB
 
-Return to the same red-blood-cell cutaway and identical burgundy hemoglobin design from Bild_11/12. Show several O2 molecules detached from hemoglobin and moving toward the outside of the red blood cell while some remain bound. Add the exact German labels “Hämoglobin” and “Sauerstoff”.
+Return to the same red-blood-cell cutaway and identical burgundy hemoglobin design from Bild_11/12. Show several O2 molecules detached from hemoglobin and moving toward the outside of the red blood cell while some remain bound. Add “Hämoglobin” and “Sauerstoff”.
 
 BILD_20 – DURCH DIE KAPILLARWAND
 
-Create one bright continuous left-to-right macro route with three readable zones: red blood cell inside the capillary on the left, plasma and thin capillary wall in the center, rounded muscle cell on the right. Show pale-cyan O2 moving across all three. Add the exact German labels “Rotes Blutkörperchen”, “Kapillarwand” and “Muskelzelle”.
+Create one bright continuous left-to-right macro route with three readable zones: red blood cell inside the capillary on the left, plasma and thin capillary wall in the center, rounded muscle cell on the right. Show pale-cyan O2 moving across all three. Add “Rotes Blutkörperchen”, “Kapillarwand” and “Muskelzelle”.
 
 BILD_21 – IN DIE ZELLE
 
-Create a bright interior view of one large stylized muscle cell. Pale-cyan O2 molecules enter from the left edge and travel through the cell toward several consistent mitochondria on the right. Keep other structures subdued. Add the exact German labels “Muskelzelle” and “Mitochondrien”.
+Create a bright interior view of one large stylized muscle cell. Pale-cyan O2 molecules enter from the left edge and travel through the cell toward several consistent mitochondria on the right. Keep other structures subdued. Add “Muskelzelle” and “Mitochondrien”.
 
 BILD_22 – MITOCHONDRIUM
 
-Create a bright close 3/4 macro view of one large stylized mitochondrion with smooth outer membrane and simplified internal folds. Several paired pale-cyan O2 molecules arrive from the left. Use warm internal light but no sci-fi glow. Add the exact German labels “Mitochondrium” and “Sauerstoff”.
+Create a bright close 3/4 macro view of one large stylized mitochondrion with smooth outer membrane and simplified internal folds. Several paired pale-cyan O2 molecules arrive from the left. Use warm internal light but no sci-fi glow. Add “Mitochondrium” and “Sauerstoff”.
 
 BILD_23 – ATP
 
-Use the same mitochondrion design as Bild_22. Show a controlled warm golden output representing ATP availability for nearby cell processes, without magical sparks. Add the exact German labels “ATP” and “Mitochondrium”.
+Use the same mitochondrion design as Bild_22. Show a controlled warm golden output representing ATP availability for nearby cell processes, without magical sparks. Add “ATP” and “Mitochondrium”.
 
 BILD_24 – MUSKELZELLE ARBEITET
 
-Create a wider bright cell/tissue view with one stylized muscle cell visibly contracting through shortened, denser internal fiber organization. Several mitochondria remain visible and small warm golden ATP indicators are used near the contracting machinery. Add the exact German labels “Muskelzelle” and “ATP”.
+Create a wider bright cell/tissue view with one stylized muscle cell visibly contracting through shortened, denser internal fiber organization. Several mitochondria remain visible and small warm golden ATP indicators are used near the contracting machinery. Add “Muskelzelle” and “ATP”.
 
 BILD_25 – CO2 ENTSTEHT
 
-Create a bright close mitochondrion scene matching Bild_22/23. Introduce several neutral violet-grey three-sphere CO2 molecules appearing in the nearby cell environment, clearly different from the pale-cyan paired O2 design. Add the exact German label “Kohlendioxid”.
+Create a bright close mitochondrion scene matching Bild_22/23. Introduce several neutral violet-grey three-sphere CO2 molecules appearing in the nearby cell environment, clearly different from the pale-cyan paired O2 design. Add “Kohlendioxid”.
 
 BILD_26 – CO2 ZURUECK INS BLUT
 
-Create the reverse tissue route: one large muscle cell on the left, short clean tissue space in the center and capillary on the right. Several neutral violet-grey CO2 molecules move from the cell toward and into the capillary. Add the exact German labels “Kohlendioxid” and “Blutgefäß”.
+Create the reverse tissue route: one large muscle cell on the left, short clean tissue space in the center and capillary on the right. Several neutral violet-grey CO2 molecules move from the cell toward and into the capillary. Add “Kohlendioxid” and “Blutgefäß”.
 
 BILD_27 – ZURUECK ZUR LUNGE
 
-Create a bright connected lung-return scene. A capillary containing red blood cells approaches one large alveolus; neutral violet-grey CO2 molecules cross from blood through the thin barrier into the alveolar air space and continue toward an airway. Add the exact German labels “Lunge” and “Kohlendioxid”.
+Create a bright connected lung-return scene. A capillary containing red blood cells approaches one large alveolus; neutral violet-grey CO2 molecules cross from blood through the thin barrier into the alveolar air space and continue toward an airway. Add “Lunge” and “Kohlendioxid”.
 
 BILD_28 – FINALE REISE
 
-Create one bright premium wide hero composition summarizing the cycle without becoming a dashboard: lungs/alveolus on the left, red blood cell/hemoglobin and heart through the center-left, capillary and muscle cell/mitochondrion on the center-right, then a returning CO2 path curving back toward the lungs. Keep all recurring designs identical. Add only the exact German labels “Lunge”, “Herz” and “Zelle”.
+Create one bright premium wide cinematic composition summarizing the cycle without becoming a dashboard and without any human body: lungs/alveolus on the left, red blood cell/hemoglobin and heart through the center-left, capillary and muscle cell/mitochondrion on the center-right, then a returning CO2 path curving back toward the lungs. Use real 3D depth and visual flow. Add only “Lunge”, “Herz” and “Zelle”.
 
 AUTOMATISCHE QA
 
@@ -175,13 +179,14 @@ Nach jedem echten Bildresultat pruefen:
 - Szene entspricht dem Voice-over-Ziel
 - biologischer Weg/Richtung stimmt
 - Hauptmotiv ist sofort lesbar
-- heller freundlicher Premium-3D-Animationsfilm-Look
+- sieht wie hochwertiger 3D-Animationsfilm aus, nicht wie Poster/Schulbuch
+- kein Kind, Erwachsener, Presenter oder sichtbares Gesicht als Hauptmotiv
+- kein Torso-Mannequin / Anatomie-Modell
 - kein kosmischer, dunkler, Sci-Fi- oder Medical-CGI-Drift
 - Stil stimmt mit den tatsaechlich angehaengten Referenzen ueberein
 - wiederkehrende Objekte behalten ihr Design
 - keine ungewollten Gesichter/Maskottchen
-- geforderte deutsche Hook/Labels vorhanden
-- deutsche Begriffe korrekt geschrieben
+- geforderte deutsche Hook/Labels vorhanden und korrekt
 - kein englischer sichtbarer Text
 - keine schweren Artefakte
 
