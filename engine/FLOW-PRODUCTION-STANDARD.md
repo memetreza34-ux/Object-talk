@@ -14,39 +14,56 @@ bildwelt/APPROVED-VISUAL-WORLD.md
 
 ## 1. Verbindliche Bildwelt
 
-Der Kanal nutzt eine **stark stilisierte, filmische Premium-3D-Animationswelt**.
+Der Kanal nutzt eine **stark stilisierte Premium-3D-Animationsfilm-Welt**.
+
+### Stilgewichtung
+
+- 85–90 % Animation/Stilisierung
+- 10–15 % Realismus nur zur fachlichen Erkennbarkeit
 
 Verbindlich:
 
-- klar animiert, nicht fotorealistisch
-- weiche, skulptierte Formen
-- vereinfachte, aber fachlich erkennbare Anatomie und Biologie
-- hochwertige glatte Materialien
-- kontrollierte filmische Beleuchtung mit klarer Lichtführung
-- starke Tiefenwirkung und räumliche Staffelung
-- bewusstes Production Design statt leerer Standardhintergründe
+- eindeutig animierter Feature-Film-Look
+- nicht fotorealistisch
+- weiche, gerundete, skulptierte Formen
+- vereinfachte, aber erkennbare Anatomie
+- glatte Premium-Materialien
+- keine realistische Haut oder Poren
+- keine nassen, faserigen oder fleischigen Gewebetexturen
+- klare Farbfelder statt medizinischer Mikrotextur
+- filmische Lichtführung mit Rim-Light und atmosphärischer Tiefe
+- starke räumliche Staffelung
+- bewusstes Production Design
 - modernes hochwertiges Color Grading
 - nicht babyhaft, nicht spielzeughaft, nicht Corporate-Stock-3D
 - echte Erklärbilder vor Mascot-/Presenter-Szenen
-- keine Anime-, Comic-, Live-Action- oder medizinisch-fotorealistische Bildwelt
-- kein Gore, keine Horror-Anatomie, keine nassen realistischen Gewebetexturen
 
-### Freigegebene Inside-the-Body-Welt
+### Inside-the-Body-Welt
 
-Für Körper-, Blut-, Organ-, Gewebe- und Zellbilder:
+Körper-, Blut-, Organ-, Gewebe- und Zellbilder müssen **zuerst wie Animation und erst danach wie Anatomie** aussehen.
 
-- Creme, Apricot, Amber und Orange als warme Basis
-- tiefes Rot/Burgunder für Blut, Gefäße und rote Blutkörperchen
-- goldene Highlights
-- dunklere warme Randbereiche für Tiefe
-- blass Cyan/Türkis als klarer Sauerstoff-Kontrast
-- glatte, hochwertige Materialien statt medizinischer Oberflächen
-- Makro-/Mikro-Bilder mit deutlicher räumlicher Tiefe
+Bevorzugt:
+
+- Coral, Apricot, Amber, Rot/Burgunder
+- tiefe Navy-/Pflaumen-/Anthrazit-Hintergründe
+- blass Cyan/Türkis für O₂
+- neutral-violett/grau für CO₂
+- glatte, weich modellierte Oberflächen
+- klare, große Formen
+- saubere animierte Tunnel-/Cutaway-Welten
+
+Verboten:
+
+- realistisch transparenter menschlicher Torso
+- realistische Haut, Adern oder Organgewebe
+- medizinische CGI-Software-Optik
+- Fleisch-/Geweberealismus
+- matschige Braunwelt
 
 Globaler Stilanker für Prompts:
 
 ```text
-premium cinematic stylized 3D animated educational film, clearly non-photorealistic, sculpted soft forms, simplified but recognizable biology, polished premium materials, controlled dramatic cinematic lighting, subtle rim light, volumetric depth, sophisticated color grading, strong visual hierarchy, designed environment, warm amber-cream-burgundy palette with pale-cyan oxygen accents, modern high-end educational animation, no corporate stock 3D, no toy look, no medical realism, no wet tissue, no anime, no comic, no gore
+premium highly stylized 3D feature-animation educational film, 85-90 percent stylized and only minimally realistic for recognizability, clearly animated and non-photorealistic, soft rounded sculpted forms, smooth clean materials, simplified anatomy, bold readable shapes, controlled cinematic lighting, soft rim light, atmospheric depth, sophisticated color grading, warm coral-apricot-burgundy palette with deep navy or plum contrast, pale-cyan oxygen accents, designed animated world, no realistic skin, no realistic tissue, no medical CGI, no wet flesh texture, no corporate stock 3D, no toy look, no anime, no comic, no gore
 ```
 
 ## 2. Prompt-Sprache und sichtbarer Text
@@ -79,97 +96,105 @@ Bild_01 braucht standardmäßig **keine kleinen Anatomie-Labels**, wenn das Moti
 
 1. Cover-/Hook-Bild
 2. erster sichtbarer Shot
-3. visuelle Referenz für die Episode
+3. visuelle Referenz der Episode
 4. Master Style Frame für alle weiteren Bilder
 
 Bild_01 muss die **beste visuelle Qualität der Episode** zeigen.
 
 Pflicht:
 
-- Thema auf einen Blick verständlich
-- Hauptmotiv groß und präsent, ungefähr 50–65 % der Bildhöhe
-- keine winzige Figur in viel leerer Fläche
-- kein weißer/beiger Präsentationsbanner
-- filmischer Hintergrund mit Tiefe und Licht, aber nicht überladen
-- klare Lichtführung und hochwertiges Color Grading
-- Überschrift maximal zwei kurze Zeilen
-- Überschrift in ruhigem, bewusst gestaltetem Bereich mit gutem Kontrast
-- Überschrift niemals über Gesicht, Organ oder Hauptprozess
+- Thema sofort verständlich
+- deutlich animierter Film-Look
+- kein realistischer Mensch
+- Hauptmotiv groß und präsent
+- bevorzugt faceless/stilisierte Figur oder stilisierter Torso/Cutaway
+- keine realistisch transparente Haut
+- filmischer Hintergrund mit Tiefe
+- klare Lichtführung
+- Hook maximal zwei kurze Zeilen
+- Hook niemals über Hauptmotiv
 - standardmäßig keine kleinen Labels auf dem Cover
-- das Bild muss auch ohne Text als starkes Key Visual funktionieren
+- auch ohne Text starkes Key Visual
 
-Harte FAIL-Kriterien für Bild_01:
+Harte FAIL-Kriterien:
 
-- generischer Corporate-3D-Stock-Look
-- spielzeughafte/niedliche Standardfigur
-- blasser beiger Hintergrund ohne Tiefe
+- medizinischer CGI-Look
+- realistischer menschlicher Torso
+- realistische Haut oder Gewebetextur
+- Corporate-3D-Stock-Look
+- billiger Toy-Look
+- blasser Beige-Hintergrund
 - Figur zu klein
-- Bild wirkt wie Schulbuch/PowerPoint
-- Titel wirkt wie separat aufgeklebter Banner
-- Titel kollidiert mit Hauptmotiv
-- schwacher Kontrast oder gleichmäßige flache Beleuchtung
+- Schulbuch-/PowerPoint-Wirkung
+- Titel kollidiert mit Motiv
+- flache Beleuchtung
 
-## 5. Phase A – zuerst nur Bild_01
+## 5. EINZIGER FREIGABEPUNKT: Bild_01
 
 1. Flow liest den kompletten Auftrag.
 2. Flow erzeugt ausschließlich `Bild_01`.
 3. Noch kein `Bild_02`.
-4. Prüfen:
-   - starkes Key Visual?
-   - Premium-3D statt Stock-3D?
-   - Hauptmotiv groß genug?
-   - filmische Tiefe/Licht?
-   - Cover-Layout sauber?
-   - Hook korrektes Deutsch?
-   - keine Textkollision?
-   - keine zu realistische Darstellung?
-5. Bei FAIL nur Bild_01 regenerieren.
+4. Bild_01 intern prüfen.
+5. Bei FAIL Bild_01 selbstständig neu erzeugen.
 6. Bei PASS als `Bild_01.png` speichern.
-7. STOPP und auf Nutzerfreigabe warten.
+7. **Genau hier einmal den Nutzer um Freigabe bitten.**
 
-## 6. Bild_01 als Vorlage für alle weiteren Bilder
+Wichtig:
 
-Nach Freigabe muss Flow `Bild_01.png` bei jeder weiteren Generation als Style-/Continuity-Referenz verwenden, soweit technisch möglich.
+> Nach der Freigabe von `Bild_01` darf Flow den Nutzer **nicht mehr fragen**, ob es mit dem nächsten Block weitermachen soll.
+
+Die Bild_01-Freigabe ist die einzige normale Rückfrage im gesamten Bilderlauf.
+
+## 6. Nach Bild_01: vollautomatisch bis zum Ende
+
+Sobald der Nutzer Bild_01 freigibt:
+
+- ohne weitere Rückfragen fortfahren
+- Bild_02 bis Bild_NN vollständig erzeugen
+- jedes Bild einzeln generieren
+- Bild_01 bei jeder Generation als Style-/Continuity-Referenz verwenden
+- 5er-Blöcke nur als **interne QA-Struktur** verwenden
+- nach einem Block NICHT stoppen
+- nicht fragen: „Soll ich weitermachen?“
+- nicht auf Freigaben zwischen Blöcken warten
+
+Nur bei einem echten technischen Blocker, der nach mehreren automatischen Versuchen nicht lösbar ist, darf Flow stoppen und berichten.
+
+## 7. Bild_01 als Vorlage für alle weiteren Bilder
 
 Von Bild_01 übernehmen:
 
 - Renderstil
-- Grad der Stilisierung
+- Stilisierungsgrad
 - Lichtlogik
 - Color Grading
 - Materialqualität
-- Kontrast und Tiefenwirkung
 - Formensprache
 - Anatomie-Vereinfachung
-- wiederkehrende visuelle Symbole
+- wiederkehrende Symbole
 
-Nicht blind übernehmen:
+Folgeframes müssen aussehen, als kämen sie aus demselben Animationsfilm und Renderprozess.
 
-- konkrete Pose
-- Motiv
-- Bildaufbau
-- fachlich falsche Anatomie
+Stilabweichung = automatische Regeneration.
 
-Folgeframes müssen aussehen, als kämen sie aus demselben Film, Renderprozess und Lichtsetup. Stilabweichung = Regeneration.
-
-## 7. Szenenprompts – kurz, aber vollständig
+## 8. Szenenprompts – kurz, aber vollständig
 
 Nach Bild_01:
 
 - etwa 2–5 Sätze
 - konkrete Szene
 - sichtbarer Prozess
-- wichtigste Komposition/Perspektive
-- benötigte deutsche Labels
+- wichtigste Perspektive
+- deutsche Labels
 - nicht den kompletten Stilblock wiederholen
 
 Jeder Folgeprompt beginnt sinngemäß mit:
 
 ```text
-Using Bild_01 as the exact style reference, keep the same premium cinematic stylized 3D world, the same lighting logic, material quality, color grading and anatomy simplification.
+Using Bild_01 as the exact style reference, keep the same highly stylized premium 3D feature-animation world, the same smooth materials, color grading, lighting logic and anatomy simplification. Keep it clearly animated, never medical-realistic.
 ```
 
-## 8. Produktion in 5er-Blöcken
+## 9. Produktion in 5er-Blöcken – nur intern
 
 Nach Freigabe von Bild_01:
 
@@ -179,28 +204,29 @@ Block 2: Bild_07–Bild_11
 Block 3: Bild_12–Bild_16
 Block 4: Bild_17–Bild_21
 Block 5: Bild_22–Bild_26
-Block 6: Bild_27–Bild_31
-...
+Block 6: Bild_27–...
 ```
 
 Wichtig:
 
 - jedes Bild einzeln generieren
 - nach jedem Bild Einzel-QA
-- nach jedem 5er-Block Stil-/Nummerierungscheck
-- nie fünf finale Szenen als Sammelbild erzeugen
+- nach jedem Block Stil-/Nummerierungscheck
+- **danach automatisch sofort mit dem nächsten Block fortfahren**
+- niemals fünf finale Szenen als Sammelbild erzeugen
 
 Block-QA prüft:
 
+- deutlich animierte Welt
 - gleiche Lichtlogik
 - gleiche Materialqualität
-- gleiche Color-Grading-Anmutung
+- gleiche Farbdramaturgie
 - O₂-Cyan stabil
-- keine Stock-3D-/Toy-Drift
+- keine Medical-CGI-/Stock-3D-/Toy-Drift
+- keine realistische Haut/Gewebetextur
 - keine zu leeren Hintergründe
-- kein Drift in Fotorealismus
 
-## 9. Fehlerliste und Recovery
+## 10. Fehlerliste und Recovery
 
 Bei technischem oder qualitativem FAIL:
 
@@ -209,25 +235,62 @@ Bei technischem oder qualitativem FAIL:
 3. Nummer nicht neu vergeben
 4. regulären Durchlauf fortsetzen
 5. nach allen Blöcken Recovery-Pass
+6. fehlerhafte Szene automatisch neu erzeugen
+7. bis zu 3 automatische Versuche pro fehlender/fehlerhafter Szene
 
-Recovery wird wiederholt, bis alle Bildnummern lückenlos PASS sind.
+Erst wenn ein technischer Blocker auch danach nicht lösbar ist, darf Flow den Nutzer informieren.
 
-## 10. Finale Prüfung vor ZIP
+## 11. Verbindliche Endausgabe
 
-- `Bild_01.png` bis `Bild_NN.png` lückenlos
-- jede Nummer genau einmal
+Am Ende muss Flow **einen fertigen Bilderordner** erstellen:
+
+```text
+<video-id>_bilder/
+```
+
+Darin ausschließlich die final akzeptierten Dateien:
+
+```text
+Bild_01.png
+Bild_02.png
+...
+Bild_NN.png
+```
+
+Regeln:
+
+- korrekte zweistellige Nummerierung
+- keine Lücken
+- keine doppelten Nummern
+- keine Varianten wie `final2`, `neu`, `copy`, `v3`
+- keine verworfenen Bilder im finalen Ordner
+- Dateiformat PNG
 - 16:9
-- keine verworfenen Varianten
-- Bild_01-Stil über die gesamte Episode klar erkennbar
+
+Zusätzlich eine ZIP-Datei erstellen:
+
+```text
+<video-id>_bilder.zip
+```
+
+Die ZIP enthält exakt denselben finalen Bilderordner.
+
+## 12. Finale Prüfung
+
+Vor Abschluss:
+
+- alle Bilder lückenlos vorhanden
+- jede Nummer genau einmal
+- Animationsfilm-Look durchgehend stabil
+- keine medizinisch-realistische Szene
+- keine realistische Haut/Gewebetextur
 - normale Szenen sinnvoll beschriftet
 - alle sichtbaren Texte deutsch und korrekt
-- keine zufälligen englischen Texte
-- keine starken Stilbrüche
 - keine offensichtlichen Anatomie-/KI-Fehler
 - keine Mascot-/Presenter-Dominanz
-- keine Szene wirkt wie Corporate-Stock-3D oder billiges Spielzeug-Rendering
+- finaler Ordner und ZIP vorhanden
 
-Erst danach finale ZIP erstellen.
+Danach erst meldet Flow: **fertig**.
 
 ## Harte Abschlussregel
 
@@ -236,6 +299,8 @@ Flow darf niemals:
 - Script ändern
 - Szenen erfinden, entfernen oder zusammenlegen
 - Bildnummern neu interpretieren
-- aus der festgelegten 3D-Animationswelt in Realismus, Anime, Comic oder Stock-3D driften
+- nach Bild_01 weitere normale Freigaben verlangen
+- nach jedem 5er-Block fragen, ob es weitermachen soll
+- aus der Animationswelt in Realismus, medizinische CGI, Anime, Comic oder Stock-3D driften
 - englische sichtbare Texte erzeugen
 - fehlgeschlagene Bilder vergessen
