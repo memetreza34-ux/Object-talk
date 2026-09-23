@@ -1,25 +1,21 @@
 # Object-Talk
 
-Produktionssystem für den deutschen YouTube-Kanal **Object-Talk / FoodSpricht**.
+Produktionssystem fuer den deutschen YouTube-Kanal **Object-Talk / FoodSpricht**.
 
 ## Ziel
 
-Normale Kanalvideos sind lange deutschsprachige Erklärvideos über Ernährung, Gesundheit, menschlichen Körper und Biologie.
+Deutschsprachige Erklaervideos ueber Ernaehrung, Gesundheit, menschlichen Koerper und Biologie.
 
 Standard:
 
-- mindestens 5:00 Minuten
+- mindestens 5:00 Minuten fuer normale Kanalvideos
 - 16:9 / 1920×1080 / 30 fps
 - hohe visuelle Dichte aus generierten Standbildern
 - stark stilisierte hochwertige 3D-Animationsfilm-Welt
-- deutlich animiert statt fotorealistisch
-- wichtige sichtbare Strukturen knapp auf Deutsch beschriften
-- Flow-Prompt-Anweisungen auf Englisch
-- sichtbarer Text im Bild ausschließlich Deutsch
-- wissenschaftlich prüfen
-- keine unnötige Themenwiederholung
+- wissenschaftlich plausibel und leicht verstaendlich
+- keine unnoetige Themenwiederholung
 
-## Aktueller interner Pilot
+## Aktueller Pilot
 
 ```text
 youtube-videos/001-pilot-sauerstoff-im-blut/
@@ -29,61 +25,119 @@ Thema:
 
 **Wie kommt Sauerstoff von der Lunge bis in deine Zellen?**
 
-Pilot 001 ist absichtlich nur ungefähr 2–2,5 Minuten lang und nutzt 28 Erklärbilder. Er testet die neue visuelle Welt und ändert die 5-Minuten-Regel für normale Videos nicht.
+Pilot 001 ist ein interner 2–3-Minuten-Test fuer die visuelle Pipeline.
 
 ## Verbindliche Bildwelt
 
-- premium stilisierte 3D-Animationsfilm-Optik
+- premium stilisierte 3D-Feature-Animation
 - weiche gerundete Formen
-- vereinfachte, aber erkennbare Anatomie
+- matte/satinierte Premium-Materialien
 - warme filmische Beleuchtung
-- hochwertige Materialien und starke Tiefenwirkung
+- starke Tiefenwirkung
 - freundlich, modern, familiengeeignet
 - kein medizinischer Fotorealismus
-- kein Anime, Comic, Gore oder Horror-Look
-- kein dauerhafter Mascot-/Presenter-Fokus
+- kein Anatomiesoftware-Look
+- kein Corporate-Stock-3D
+- kein billiger Toy-Look
+- kein Anime, Comic, Gore oder Horror
 
-Der Kanal lebt von echten Erklärbildern: Cutaways, transparente Körperansichten, Organ-/Gewebe-/Zellansichten, Prozessbilder, Vergleiche und Mikro-/Makro-Wechsel.
+Die Kanal-DNA steht in:
 
-## Beschriftung
+```text
+bildwelt/OBJECT-TALK-CHANNEL-DNA.md
+```
 
-Jedes Bild soll die wichtigsten sichtbaren Dinge benennen.
+## Reference-First Bildpipeline
 
-Richtwert:
+Die Bildproduktion arbeitet nicht mehr nach dem Prinzip „lange Stilbeschreibung und hoffen“.
 
-- 1–3 kurze deutsche Labels
-- nur Schlüsselstrukturen oder Schlüsselprozesse
-- eindeutige Zuordnung
-- keine Textwände
-- kein englischer sichtbarer Text
-- fehlerhafte KI-Schrift = Regeneration oder exakt geplanter Remotion-Fallback
+Prioritaet:
 
-## Bild_01 – Cover + Hook + Master Style Frame
+1. `assets/channel/STYLE_REFERENCE.png` – sobald vom Nutzer freigegeben
+2. `Bild_01.png` – Episode-Style- und Continuity-Referenz
+3. wiederkehrende Objekt-/Character-Referenzen
+4. konkreter Szenenprompt
 
-`Bild_01` ist bei jedem Video oder Reel:
+Wichtig:
 
-- Cover
+**Eine Textzeile wie `Using Bild_01 as the exact style reference` ersetzt nicht das tatsaechliche Anhaengen von Bild_01 als visueller Referenz/Ingredient in Flow.**
+
+Solange noch keine kanalweite `STYLE_REFERENCE.png` existiert, darf nur `Bild_01` im Bootstrap-Modus aus den schriftlichen Stilregeln erzeugt werden. Nach Freigabe muss `Bild_01.png` an jede Folgegeneration angehaengt werden.
+
+## Flow Agent Instructions
+
+Dauerhafte Flow-Regeln:
+
+```text
+engine/FLOW-AGENT-INSTRUCTIONS.md
+```
+
+Produktionslogik:
+
+```text
+engine/FLOW-PRODUCTION-STANDARD.md
+```
+
+Die Agent Instructions enthalten Kanal-DNA, Verbote, Referenzregeln, Textregeln, QA und Recovery. Der konkrete Video-Prompt bleibt dadurch auf die jeweilige Szene fokussiert.
+
+## Flow erzeugt Visuals – Remotion erzeugt Text
+
+Flow-Bilder sind standardmaessig textfrei.
+
+Das bedeutet:
+
+- keine KI-Labels
+- keine KI-Pfeile
+- keine KI-Typografie
+- Cover-Hook nicht direkt in Flow
+
+Deutsche Labels bleiben Teil der Erklaerung, werden aber spaeter kontrolliert in Remotion gesetzt.
+
+Quelle:
+
+```text
+02_bildprompts/label-plan.json
+```
+
+Dadurch werden Rechtschreibfehler, falsche Pointer und unnoetige Bildregenerationen vermieden.
+
+## Bild_01
+
+`Bild_01` ist immer:
+
+- Cover-Grundbild
 - erster Shot
 - Master Style Frame
-- Stilvorlage für alle weiteren Bilder
+- Episode-Referenz fuer alle Folgebilder
 
-Darum wird Bild_01 besonders ausführlich beschrieben. Es enthält eine kurze starke deutsche Hook-Zeile zum Thema, normalerweise 3–7 Wörter.
+Ablauf:
 
-Flow erzeugt zuerst ausschließlich Bild_01. Nach Nutzerfreigabe wird Bild_01 als Style-/Continuity-Referenz für alle restlichen Bilder verwendet.
+```text
+STYLE_REFERENCE anhaengen, falls vorhanden
+→ nur Bild_01 erzeugen
+→ wenn moeglich mehrere Varianten
+→ echtes Bild visuell pruefen
+→ beste PASS-Variante speichern
+→ einmalige Nutzerfreigabe
+→ Bild_01 als echte visuelle Referenz an alle Folgebilder anhaengen
+```
 
-## Flow-Prompts
+## Folgeprompts
 
-- Prompt-Anweisungen immer Englisch
-- sichtbare Hook-/Label-Texte immer Deutsch
-- Bild_01 ausführlich
-- Folgeprompts so kurz wie möglich, so genau wie nötig
-- meist 2–5 Sätze pro Folgebild
-- Szene + sichtbarer Prozess + Komposition + deutsche Labels
-- globalen Stilblock nicht in jedem Prompt wiederholen
+Nach Bild_01 folgt jeder Szenenprompt diesem Schema:
 
-Details: `engine/FLOW-PRODUCTION-STANDARD.md`.
+```text
+SUBJECT
+→ VISIBLE PROCESS
+→ SPATIAL LAYOUT
+→ CAMERA / SCALE
+→ CONTINUITY REFERENCES
+→ FORBIDDEN ELEMENTS
+```
 
-## 5er-Blöcke
+Ziel: wenig Interpretationsspielraum bei Raumaufteilung, biologischer Richtung, Massstab und Wiedererkennung.
+
+## Produktion in 5er-Bloecken
 
 Nach freigegebenem Bild_01:
 
@@ -97,106 +151,62 @@ Bild_27–31
 ...
 ```
 
-Jedes Bild innerhalb eines Blocks wird einzeln erzeugt und geprüft. Nach jedem Block folgt ein kurzer Stil-/Nummerierungscheck. Fehler kommen auf die Recovery-Liste.
+Jedes Bild innerhalb eines Blocks wird einzeln erzeugt und visuell geprueft. Die 5er-Bloecke dienen nur der Organisation und QA.
 
-## Präsentation / Remotion
+## Echte Bild-QA
 
-Vollbild bleibt Standard. Zusätzlich sind kurze deutsche Überschriften, Keywords, Callouts und Vergleichsmarker erlaubt, wenn sie echten Erklärwert haben.
+Ein `ACCEPT` in JSON reicht nicht.
 
-Keine doppelten Texte: Wenn Flow ein korrektes Label bereits im Bild trägt, soll Remotion denselben Begriff nicht unnötig erneut darüberlegen.
+Vor Akzeptanz muss die tatsaechliche finale `Bild_XX.png` existieren und visuell geprueft worden sein.
 
-Details: `engine/PRESENTATION-OVERLAY-SYSTEM.md`.
+Phase-2-Validator:
 
-## Repo-Gehirn
-
-Vor Arbeit lesen:
-
-1. `PROJECT_CONTRACT.md`
-2. `PROJECT_STATE.md`
-3. `AGENTS.md`
-4. `config/channel.json`
-5. `config/video.json`
-6. `THEMEN-GEHIRN.md`
-7. relevante `engine/*.md`
-8. relevante `bildwelt/*.md`
-9. aktuelles Video-Projekt
-
-## Bildrhythmus
-
-- Hook: meist 2–4 Sekunden
-- normale Erklärbilder: meist 4–6 Sekunden
-- komplexe Mikroprozesse: oft 3–5 Sekunden
-- ruhige Übersichten: meist 6–8 Sekunden
-- über 8 Sekunden nur mit bewusstem Grund
-
-Keine Füllbilder. Lange Standzeiten dürfen nicht nur mit Zoom/Pan kaschiert werden.
-
-## V2-Planung
-
-Neue Projekte erhalten:
-
-```text
-05_info/mechanism-map.md
-05_info/sentence-visual-plan.json
-02_bildprompts/label-plan.json
-02_bildprompts/image-review.json
-04_export/quality-scorecard.md
-04_export/postmortem.md
+```bash
+python tools/validate_planning_v2.py youtube-videos/MEIN-VIDEO --phase2
 ```
 
-Ablauf:
+Er verlangt unter anderem:
 
-```text
-Recherche + Claims
-→ Mechanism Map
-→ Visual-First-Skript
-→ Satz-Visual-Plan
-→ semantische Szenen
-→ Label-Plan
-→ Flow: nur Bild_01
-→ Nutzerfreigabe
-→ 5er-Blöcke
-→ Einzelbild-Review ≥ 8/10
-→ Recovery
-→ Voice + Worttimings
-→ Remotion
-→ Render
-→ Qualitäts-Scorecard
-→ Postmortem
-```
-
-Wissenschaftliche Sicherheit unter 8/10 ist harter Blocker.
+- finale PNG-Datei vorhanden
+- wissenschaftliche Genauigkeit >= 8/10
+- Voice-over-Match >= 8/10
+- sofortige Verstaendlichkeit >= 8/10
+- Stilkontinuitaet >= 8/10
+- Komposition >= 8/10
+- AI-Artefakt-Check PASS
+- Gesamtscore >= 8/10
+- keine offenen PENDING/TODO/TBD-Werte
 
 ## Drei Phasen
 
-### Phase 1 – ChatGPT
+### Phase 1 – Creative Director
 
 ```text
 Thema
 → Recherche
 → Claim-Check
 → Mechanism Map
-→ finales script.txt
+→ finales Script
 → Satz-Visual-Plan
 → Szenenplan
 → Label-Plan
-→ Flow-Prompt
+→ praezise Flow-Szenenprompts
 → scene-map.json
 → overlay-plan.json
-→ Metadaten
 ```
 
 ### Phase 2 – Nutzer + Voice-KI + Google Flow
 
 ```text
-VOICEOVER-ZUM-KOPIEREN.txt → Voice-KI
-GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt
+Voice erzeugen
+→ Flow Agent Instructions setzen
 → nur Bild_01
-→ Style-/Cover-Freigabe
-→ 5er-Blöcke
-→ Einzelbild-Review
-→ Recovery-Pass
-→ Bilder-ZIP
+→ Nutzerfreigabe
+→ Bild_01 als echte visuelle Referenz anhaengen
+→ Folgeframes einzeln erzeugen
+→ echte Bild-QA
+→ Recovery
+→ finale ZIP
 ```
 
 ### Phase 3 – Antigravity + Tools + Remotion
@@ -208,7 +218,7 @@ Audio vorbereiten
 → faster-whisper
 → Script↔Audio-Ausrichtung
 → timeline.json
-→ overlay-plan.json
+→ Hook/Labels/Overlays aus Plaenen
 → Remotion
 → Render
 → Final-QA
@@ -216,13 +226,14 @@ Audio vorbereiten
 → Postmortem
 ```
 
-## Aktueller Pilot – nächster Schritt
+## Aktueller Pilot – naechster Schritt
 
-1. `youtube-videos/001-pilot-sauerstoff-im-blut/01_script/VOICEOVER-ZUM-KOPIEREN.txt` für die Voice verwenden.
-2. `youtube-videos/001-pilot-sauerstoff-im-blut/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt` vollständig in Flow geben.
-3. Flow erzeugt **zuerst nur `Bild_01`** und stoppt.
-4. Erst nach Freigabe folgen Bild_02 bis Bild_28 in den festgelegten Blöcken.
+1. `engine/FLOW-AGENT-INSTRUCTIONS.md` als dauerhafte Flow-Agent-Regeln setzen.
+2. `youtube-videos/001-pilot-sauerstoff-im-blut/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt` verwenden.
+3. Zuerst ausschliesslich textfreies `Bild_01` erzeugen.
+4. Bild_01 freigeben.
+5. Danach `Bild_01.png` bei jeder Folgegeneration als echtes Visual Reference/Ingredient anhaengen.
 
 ## Goldene Regel
 
-**Nicht raten.** Wenn Script, Audio, Bildnummer, Szenengrenze oder wissenschaftliche Kernaussage nicht eindeutig ist, stoppt die technische Pipeline und der konkrete Fehler wird behoben.
+**Nicht raten. Nicht nur beschreiben – referenzieren.**
