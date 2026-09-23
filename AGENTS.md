@@ -1,6 +1,6 @@
 # AGENTS.md – Object-Talk Repository
 
-Diese Datei ist der Bootstrap für ChatGPT, Antigravity, Codex und andere Repository-Agenten.
+Diese Datei ist der Bootstrap fuer ChatGPT, Antigravity, Codex und andere Repository-Agenten.
 
 ## Vor jeder Arbeit lesen
 
@@ -10,11 +10,12 @@ Diese Datei ist der Bootstrap für ChatGPT, Antigravity, Codex und andere Reposi
 4. `config/video.json`
 5. `THEMEN-GEHIRN.md`
 6. `engine/README.md`
-7. relevante `engine/*.md`
-8. relevante `bildwelt/*.md`
-9. Dateien des aktuellen YouTube-Projekts
+7. `engine/FLOW-AGENT-INSTRUCTIONS.md` bei Flow-/Bildarbeit
+8. relevante `engine/*.md`
+9. relevante `bildwelt/*.md`
+10. Dateien des aktuellen YouTube-Projekts
 
-Für V2-Projekte zusätzlich zwingend:
+Fuer V2-Projekte zusaetzlich:
 
 - `engine/PLANNING-V2.md`
 - `engine/VISUAL-EXPLANATION-SYSTEM.md`
@@ -28,83 +29,91 @@ Aktiver Testpilot:
 youtube-videos/001-pilot-sauerstoff-im-blut/
 ```
 
-## Phasen dürfen nicht vermischt werden
+## Phasen duerfen nicht vermischt werden
 
 ### Phase 1 – Creative Director
 
 Darf:
-- recherchieren und Fakten prüfen
+- recherchieren und Fakten pruefen
 - Mechanism Map erstellen
 - Skript schreiben
 - Satz-Visual-Plan und Szenen festlegen
 - Label-Plan erstellen
-- Flow-Prompts schreiben
+- Flow-Szenenprompts schreiben
 - `overlay-plan.json` erstellen
 - Metadaten schreiben
 
 Muss:
-- jede Szene als echtes Erklärbild planen
-- pro Bild die wichtigsten 1–3 deutschen Labels festlegen
-- Bild_01 als Cover + Hook + Master Style Frame besonders detailliert planen
+- jede Szene als echtes Erklaerbild planen
+- pro Bild die wichtigsten deutschen Labels im `label-plan.json` planen
+- Bild_01 als Cover-Grundbild + erster Shot + Master Style Frame besonders detailliert planen
 - Flow-Anweisungen auf Englisch schreiben
-- sichtbare Hook-/Label-Texte ausschließlich auf Deutsch planen
-- Folgeprompts nach Bild_01 kompakt halten: so kurz wie möglich, so genau wie nötig
+- Szenenprompt mit Subject, Process, Spatial Layout, Camera/Scale, Continuity und Forbidden Elements planen
+- echte visuelle Referenzen vor Textbeschreibungen priorisieren
 
 Darf nicht:
+- Flow-Labels standardmaessig einplanen
+- Textprompts als Ersatz fuer tatsaechlich angehaengte Bildreferenzen behandeln
 - geschätzte finale Sekundenzeiten als Wahrheit setzen
-- Audioänderungen erfinden
-- finale Flow-Bilder vortäuschen
+- Audioaenderungen erfinden
+- finale Flow-Bilder vortaeuschen
 - die Bildwelt spontan in Realismus, Anime oder Comic verschieben
 
 ### Phase 2 – Nutzer + Medienerzeugung
 
-Google Flow erzeugt ausschließlich die von Phase 1 vorgegebenen Bilder.
+Google Flow erzeugt ausschliesslich die von Phase 1 vorgegebenen Bilder.
 
 Verbindlich:
 
+- dauerhafte Regeln aus `engine/FLOW-AGENT-INSTRUCTIONS.md` verwenden
 - `Bild_01` zuerst allein erzeugen
-- Bild_01 ist Cover-/Hook-Bild und Master Style Frame
-- Bild_01 enthält eine kurze starke deutsche Hook-Zeile zum Thema
-- Bild_01 nach Nutzerfreigabe als Style-/Continuity-Referenz für alle weiteren Bilder verwenden
-- danach Produktion in 5er-Blöcken
-- innerhalb jedes Blocks jedes Bild einzeln erzeugen und prüfen
-- alle wichtigen sichtbaren Strukturen knapp auf Deutsch beschriften
-- kein englischer sichtbarer Text
-- fehlerhafte Schrift oder Anatomie = Regeneration bzw. sauberer Remotion-Fallback
+- `STYLE_REFERENCE.png` als echte Bildreferenz anhaengen, sobald vorhanden
+- nach Freigabe `Bild_01.png` bei jeder Folgegeneration wirklich als visuelle Referenz/Ingredient anhaengen
+- ein Satz wie `Using Bild_01 as reference` reicht nicht
+- jedes Bild einzeln erzeugen und visuell pruefen
+- Flow-Bilder standardmaessig textfrei
+- deutsche Hook/Labels spaeter ueber Remotion
 - Fehlerliste + Recovery statt Nummern zu verlieren
 
-Jedes finale V2-Bild wird in `02_bildprompts/image-review.json` einzeln bewertet. Klare Fachfehler, falsche Labels oder Score unter 8/10 führen zu Regeneration.
+Jedes finale V2-Bild wird in `02_bildprompts/image-review.json` nach Sichtpruefung des echten Bildes bewertet. Klare Fachfehler, falscher Stil, Artefakte oder ein zentraler Score unter 8/10 fuehren zu Regeneration.
 
 ### Phase 3 – Editor / Antigravity
 
 Darf:
 - Nutzerassets importieren
 - Audio normalisieren
-- Whisper ausführen
-- Timings auflösen
+- Whisper ausfuehren
+- Timings aufloesen
 - Assets validieren
 - Remotion vorbereiten
-- vorhandenen `overlay-plan.json` technisch anwenden
-- fehlerhafte Flow-Schrift durch exakt geplante deutsche Labels ersetzen
-- rendern und QA durchführen
+- `label-plan.json` und `overlay-plan.json` technisch anwenden
+- Cover-Hook und deutsche Labels sauber rendern
+- rendern und QA durchfuehren
 
 Darf nicht:
 - Script umschreiben
 - Bildideen austauschen
-- Szenengrenzen kreativ neu wählen
+- Szenengrenzen kreativ neu waehlen
 - fehlende Fakten erfinden
 - fehlende Bilder still ersetzen
 - spontane Marketingtexte erfinden
 
-Nach dem Finalrender: `quality-scorecard.md` und `postmortem.md` ausfüllen.
+Nach dem Finalrender: `quality-scorecard.md` und `postmortem.md` ausfuellen.
 
 ## Fail-closed
 
 Wenn Script, Audio, Szene oder Bildzuordnung nicht eindeutig zusammenpassen: STOP und Fehler melden. Nicht raten.
 
+Ebenfalls FAIL:
+
+- Folgegeneration behauptet Referenznutzung, ohne dass die Referenz wirklich angehaengt wurde
+- `image-review.json` ist ACCEPT, aber finale `Bild_XX.png` fehlt
+- Review enthaelt PENDING/TODO/TBD
+- Flow hat ungewollte Schrift oder KI-Gibberish ins Bild gesetzt
+
 ## Gesundheit/Biologie
 
-Kernbehauptungen in `05_info/claim-matrix.md` dokumentieren. Vereinfachung ist erlaubt, fachliche Verfälschung nicht. Wissenschaftliche Sicherheit unter 8/10 ist harter Blocker.
+Kernbehauptungen in `05_info/claim-matrix.md` dokumentieren. Vereinfachung ist erlaubt, fachliche Verfaelschung nicht. Wissenschaftliche Sicherheit unter 8/10 ist harter Blocker.
 
 ## Verbindliche visuelle Welt
 
@@ -115,46 +124,42 @@ Kernbehauptungen in `05_info/claim-matrix.md` dokumentieren. Vereinfachung ist e
 - familienfreundlich, nicht babyhaft
 - keine medizinische Foto-/CGI-Realistik
 - kein Anime, Comic, Gore oder Horror-Look
-- echte Erklärbilder vor Mascot-/Presenter-Szenen
+- echte Erklaerbilder vor Mascot-/Presenter-Szenen
+- Molekuele/Organe/Zellen normalerweise gesichtslos
 
 ## Google Flow
 
 - Prompt-Anweisungen: Englisch
-- sichtbarer Text: Deutsch
+- Bilder: standardmaessig ohne Text
 - pro Szene genau ein finales Bild
-- Bild_01 = Cover + deutscher Hook + Episode-Style-Anchor
-- Bild_01 möglichst ausführlich beschreiben
-- Folgeprompts kompakt: meist 2–5 Sätze
-- wichtige Dinge in jedem Bild beschriften
-- `STYLE_REFERENCE.png` zusätzlich als style-only Anchor laden, sobald vorhanden
-- keine Massenproduktion ohne Einzelprüfung
-- 5er-Blöcke + Recovery
+- Bild_01 = Cover-Grundbild + Episode-Style-Anchor
+- Bild_01 nach Freigabe als echtes visuelles Ingredient fuer jedes Folgebild
+- `STYLE_REFERENCE.png` zusaetzlich als style-only Anchor laden, sobald vorhanden
+- keine Massenproduktion ohne Einzelpruefung
+- 5er-Bloecke + Recovery
 
 Details: `engine/FLOW-PRODUCTION-STANDARD.md`.
 
 ## Presentation / Overlays
 
 - Vollbild bleibt Standard
-- wichtige deutsche Labels gehören zur Erklärsprache
-- zusätzliche Überschriften/Keywords nur mit echtem Mehrwert
-- ruhige Animationen: Fade, Slide, leichte Scale-in-Bewegung, Unterstreichung, Callout
+- wichtige deutsche Labels kommen aus `02_bildprompts/label-plan.json`
+- Hook/Labels/Callouts werden in Remotion sauber gesetzt
 - keine Bounce-/Shake-/Meme-Effekte
-
-Details: `engine/PRESENTATION-OVERLAY-SYSTEM.md`.
 
 ## Timing
 
-Finale Zeitbasis ist ausschließlich das kanonisch vorbereitete Voiceover:
+Finale Zeitbasis ist ausschliesslich das kanonisch vorbereitete Voiceover:
 
 `raw Voice → prepare_audio.py → final-voiceover.wav → transcribe_audio.py → word-timings.json → build_timeline.py → timeline.json`
 
-Kein Renderer schätzt Zeitpunkte aus Textlänge, wenn echte Wortzeiten verfügbar sind.
+Kein Renderer schaetzt Zeitpunkte aus Textlaenge, wenn echte Wortzeiten verfuegbar sind.
 
-## V2-Prüfung
+## V2-Pruefung
 
 ```bash
 python tools/validate_planning_v2.py youtube-videos/MEIN-VIDEO
 python tools/validate_planning_v2.py youtube-videos/MEIN-VIDEO --phase2
 ```
 
-Für dokumentierte Kurztests QA-Mindestdauer ausdrücklich setzen. Ohne Override bleibt 300 Sekunden Standard.
+`--phase2` verlangt echte finale PNG-Dateien und vollstaendige Review-Werte.

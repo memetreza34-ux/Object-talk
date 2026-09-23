@@ -1,10 +1,10 @@
 # Object-Talk – Project Contract
 
-Diese Datei ist die dauerhafte oberste Produktionsregel des Repositories. Bei Widersprüchen gilt zuerst eine ausdrückliche aktuelle Nutzeranweisung, danach dieser Contract.
+Diese Datei ist die dauerhafte oberste Produktionsregel des Repositories. Bei Widerspruechen gilt zuerst eine ausdrueckliche aktuelle Nutzeranweisung, danach dieser Contract.
 
 ## Ziel
 
-Object-Talk produziert deutschsprachige YouTube-Erklärvideos zu Ernährung, Gesundheit und Biologie.
+Object-Talk produziert deutschsprachige YouTube-Erklaervideos zu Ernaehrung, Gesundheit und Biologie.
 
 Harte Grundregeln:
 
@@ -14,17 +14,13 @@ Harte Grundregeln:
 - generierte Standbilder bleiben die visuelle Basis
 - hohe visuelle Dichte statt langer statischer Bildhaltezeiten
 - stark stilisierte hochwertige 3D-Animationsfilm-Welt, deutlich animiert statt fotorealistisch
-- komplexe Vorgänge visuell einfach und fachlich plausibel erklären
-- wichtige sichtbare Strukturen in jedem Bild knapp beschriften
-- sichtbarer Text immer Deutsch
-- Flow-Prompt-Anweisungen immer Englisch
-- keine unnötige Themenwiederholung
+- komplexe Vorgaenge visuell einfach und fachlich plausibel erklaeren
+- wissenschaftlich relevante Aussagen pruefen
+- keine unnoetige Themenwiederholung
 
 ## Interner Kurz-Pilot
 
-Normale veröffentlichte Videos bleiben mindestens 5:00 Minuten lang.
-
-Ein ausdrücklich markierter interner Test darf kürzer sein, wenn `05_info/test-mode.json` mit `test_mode: true` vorhanden ist. Nur die Laufzeitregel darf abweichen; Wissenschafts-, Visual-, Sync- und QA-Regeln bleiben aktiv.
+Ein ausdruecklich markierter interner Test darf kuerzer sein, wenn `05_info/test-mode.json` mit `test_mode: true` vorhanden ist. Nur die Laufzeitregel darf abweichen; Wissenschafts-, Visual-, Sync- und QA-Regeln bleiben aktiv.
 
 Aktueller Pilot:
 
@@ -34,96 +30,119 @@ youtube-videos/001-pilot-sauerstoff-im-blut/
 
 ## Verbindliche Bildwelt
 
-Der Kanal ist kein Mascot-/Presenter-Kanal. Die Biologie und der erklärte Prozess sind der Hauptdarsteller.
+Der Kanal ist kein dauerhafter Mascot-/Presenter-Kanal. Die Biologie und der erklaerte Prozess sind der Hauptdarsteller.
 
-Die verbindliche Welt ist:
+Verbindlich:
 
 - hochwertiger stilisierter 3D-Animationsfilm-Look
 - weich, rund und klar animiert
 - deutlich weniger realistisch als medizinische CGI
 - vereinfachte, aber erkennbare Anatomie
 - warme filmische Beleuchtung
-- hochwertige Materialien, starke Tiefenwirkung
-- freundlich und familiengeeignet, aber nicht babyhaft
+- hochwertige matte/satinierte Materialien
+- starke Tiefenwirkung
+- familiengeeignet, aber nicht babyhaft
 - keine Anime-, Comic-, Live-Action- oder fotorealistische Medizinoptik
 - kein Gore und keine Horror-Anatomie
 
-Standard-Bildtypen:
+Personifizierte Lebensmittel oder Gegenstaende sind nur erlaubt, wenn sie die Szene wirklich verstaendlicher machen. Molekuele, Organe und Zellen werden nicht automatisch personifiziert.
 
-- anatomische Cutaways
-- transparente Körperansichten
-- Prozessdarstellungen
-- Organ-, Gewebe-, Zell- und Organellvisualisierungen
-- Mikro-/Makro-Wechsel
-- Vorher-/Nachher- und Vergleichsbilder
-- Ursache → Prozess → Folge
+## Reference-First ist Pflicht
 
-Personifizierte Lebensmittel oder Figuren sind nur erlaubt, wenn sie eine Szene wirklich verständlicher machen. Sie sind nie der dauerhafte Standard.
+Stiltreue wird nicht mehr nur durch Textprompts erzwungen.
 
-## Beschriftung und sichtbarer Text
+Referenzreihenfolge:
 
-**Jedes Bild benennt die wichtigsten sichtbaren Dinge.**
+1. `assets/channel/STYLE_REFERENCE.png` – kanalweite visuelle Referenz, sobald freigegeben
+2. `Bild_01.png` – konkrete Episode-/Continuity-Referenz
+3. wiederkehrende Objekt-/Character-Referenzen
+4. konkreter Szenenprompt
 
-Regeln:
+Ein Textsatz wie `Using Bild_01 as the exact style reference` zaehlt nicht als tatsaechliche visuelle Referenz. Wenn Flow Referenzbilder/Ingredients unterstuetzt, muessen die benoetigten Referenzen wirklich angehaengt werden.
 
-- normalerweise 1–3 kurze deutsche Labels
-- nur Schlüsselstrukturen oder Schlüsselprozesse beschriften
-- Labels eindeutig zuordnen
-- keine Textwände
-- keine englischen sichtbaren Wörter
-- kein KI-Gibberish
-- fehlerhaftes Label = Bild regenerieren
-- wenn Flow einen Begriff wiederholt falsch schreibt, textfreie Variante erzeugen und exakt denselben deutschen Begriff später in Remotion ergänzen
+Solange `STYLE_REFERENCE.png` noch nicht existiert, darf `Bild_01` im dokumentierten Bootstrap-Modus aus der schriftlichen Kanal-DNA erzeugt werden. Nach Freigabe muss `Bild_01.png` als echte visuelle Referenz an alle Folgebilder angehaengt werden.
 
-Zusätzliche Überschriften/Keywords dürfen in Remotion animiert werden. Details: `engine/PRESENTATION-OVERLAY-SYSTEM.md`.
+Details:
 
-## Bild_01 – Cover + Hook + Master Style Frame
+```text
+engine/FLOW-PRODUCTION-STANDARD.md
+engine/FLOW-AGENT-INSTRUCTIONS.md
+engine/STYLE-REFERENCE-SYSTEM.md
+```
 
-`Bild_01` ist bei jedem Video oder Reel gleichzeitig:
+## Flow erzeugt Bilder, Remotion erzeugt Schrift
 
-1. Cover-/Hook-Bild
+Standardmaessig sind Flow-Bilder textfrei.
+
+- keine eingebrannten Labels
+- keine KI-Pfeile
+- keine KI-Typografie
+- kein Cover-Hook direkt aus Flow
+
+Deutsche Beschriftungen bleiben wichtiger Teil der Erklaerung, werden aber deterministisch spaeter gerendert.
+
+Quelle pro Video:
+
+```text
+02_bildprompts/label-plan.json
+```
+
+Cover-Hook und zusaetzliche Overlays werden im Remotion-/Overlay-System gesetzt.
+
+Nur eine aktuelle ausdrueckliche Nutzeranweisung darf Text direkt in Flow-Bilder zurueckbringen.
+
+## Bild_01 – Cover-Grundbild + erster Shot + Master Style Frame
+
+`Bild_01` ist gleichzeitig:
+
+1. Cover-Grundbild
 2. erster Shot
 3. Master Style Frame
-4. Stilreferenz für alle weiteren Bilder
+4. Referenz fuer alle weiteren Bilder
 
-Darum gilt für Bild_01 eine Sonderregel:
+Darum gilt:
 
-- der Prompt für Bild_01 ist ausführlicher und präziser als die restlichen Bildprompts
-- Thema und visuelle Reise müssen auf einen Blick verständlich sein
-- Bild_01 definiert Rendergrad, Stilisierung, Licht, Materialien, Farbwelt, Tiefenwirkung und Anatomie-Vereinfachung
-- Bild_01 enthält eine **kurze starke deutsche Hook-Zeile**, die sagt, worum es im Video/Reel geht
-- Hook normalerweise 3–7 Wörter und höchstens zwei kurze Zeilen
-- keine irreführende Clickbait-Aussage
-- zusätzlich nur die wichtigsten Labels
+- Bild_01 besonders praezise planen
+- Thema und visuelle Reise auf einen Blick verstaendlich
+- Rendergrad, Licht, Materialien, Farbwelt, Tiefenwirkung und Anatomie-Vereinfachung definieren
+- ruhige Negativflaeche fuer spaeteren Hook vorsehen, wenn sinnvoll
+- Bild selbst textfrei halten
+- wenn moeglich 2–4 Varianten erzeugen und die beste visuell pruefen
 
-Nach Freigabe muss Google Flow Bild_01 als Style-/Continuity-Referenz für alle weiteren Bilder verwenden, soweit technisch möglich.
+Nach Freigabe wird Bild_01 bei jeder Folgegeneration als echte visuelle Referenz genutzt.
 
 ## Google-Flow-Prompt-Sprache
 
-- Anweisungen/Prompts an Flow: **Englisch**
-- sichtbare Texte, Hook, Labels, Callouts: **Deutsch**
+- Flow-Anweisungen: Englisch
+- sichtbarer Text im finalen Video: Deutsch
+- Flow-Bilder selbst: standardmaessig textfrei
 
-Szenenprompts nach Bild_01 sind bewusst kompakt:
+Szenenprompts nach Bild_01 folgen:
 
-- so kurz wie möglich, so genau wie nötig
-- meistens 2–5 Sätze
-- Szene + sichtbarer Prozess + Komposition + deutsche Labels
-- globalen Stilblock nicht in jedem Einzelprompt vollständig wiederholen
+```text
+SUBJECT
+→ VISIBLE PROCESS
+→ SPATIAL LAYOUT
+→ CAMERA / SCALE
+→ CONTINUITY REFERENCES
+→ FORBIDDEN ELEMENTS
+```
 
-Details: `engine/FLOW-PRODUCTION-STANDARD.md`.
+Keine langen Stilromane als Ersatz fuer echte Referenzen.
 
 ## Verbindlicher Google-Flow-Ablauf
 
 ### A – zuerst nur Bild_01
 
-1. kompletten Auftrag lesen
-2. ausschließlich `Bild_01` erzeugen
-3. Bild_01 auf Stil, Hook, Anatomie, deutsche Schrift und Komposition prüfen
-4. bei FAIL nur Bild_01 regenerieren
-5. bei PASS als `Bild_01.png` speichern
-6. STOPP und Nutzerfreigabe abwarten
+1. dauerhafte Agent Instructions laden
+2. `STYLE_REFERENCE.png` anhaengen, falls vorhanden
+3. ausschliesslich `Bild_01` erzeugen
+4. echte Resultate visuell pruefen
+5. bei FAIL regenerieren
+6. beste PASS-Variante als `Bild_01.png` speichern
+7. genau einmal Nutzerfreigabe abwarten
 
-### B – Produktion in 5er-Blöcken
+### B – Produktion in 5er-Bloecken
 
 Nach Freigabe:
 
@@ -133,70 +152,69 @@ Bild_07–Bild_11
 Bild_12–Bild_16
 Bild_17–Bild_21
 Bild_22–Bild_26
-Bild_27–Bild_31
 ...
 ```
 
-Jedes Bild trotzdem einzeln erzeugen, prüfen und benennen. Nach jedem Block Stil-/Nummerierungscheck.
+Jedes Bild trotzdem einzeln erzeugen, pruefen und benennen. Bei jeder Generation `Bild_01.png` wirklich anhaengen; `STYLE_REFERENCE.png` zusaetzlich, sobald vorhanden.
 
 ### C – Fehlerliste
 
-Fehlerhafte oder fehlende Bilder behalten ihre Nummer und kommen auf die Recovery-Liste. Der reguläre Durchlauf wird nicht wegen eines einzelnen Flow-Fehlers abgebrochen.
+Fehlerhafte oder fehlende Bilder behalten ihre Nummer und kommen auf die Recovery-Liste.
 
 ### D – Recovery
 
-Nach dem Hauptdurchlauf nur fehlende/fehlerhafte Bildnummern erneut erzeugen, bis alles lückenlos PASS ist.
+Nach dem Hauptdurchlauf nur fehlende/fehlerhafte Bildnummern erneut erzeugen. Promptkorrektur muss den konkreten Fehler adressieren.
 
 ### E – finale ZIP
 
-Nur akzeptierte finale Bilder, lückenlose Nummerierung, keine Varianten oder Temp-Dateien.
+Nur akzeptierte finale Bilder, lueckenlose Nummerierung, keine Varianten oder Temp-Dateien.
 
-## Nutzer-Dateien
+## Echte Bild-QA
 
-Pflicht pro Video:
+`image-review.json` ist kein Selbstzweck.
 
-```text
-01_script/VOICEOVER-ZUM-KOPIEREN.txt
-02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt
-03_pipeline/ANTIGRAVITY-PROMPT-ZUM-KOPIEREN.txt
-04_export/YOUTUBE-TITEL-BESCHREIBUNG-ZUM-KOPIEREN.txt
-```
+Es darf erst nach Sichtpruefung des tatsaechlichen Bildes aktualisiert werden. Eine manuell oder automatisch eingetragene Zahl ohne Bildsichtung ist keine gueltige QA.
 
-Kopierdateien müssen inhaltlich mit ihren kanonischen Projektdateien übereinstimmen.
+Pflicht:
+
+- scientific_accuracy >= 8/10
+- voiceover_match >= 8/10
+- immediate_clarity >= 8/10
+- style_continuity >= 8/10
+- composition >= 8/10
+- ai_artifact_check = PASS
+- scene_difference bestanden
+- overall_score >= 8/10
+- entsprechende finale `Bild_XX.png` existiert
 
 ## Drei Phasen
 
-### Phase 1 – ChatGPT / Creative Director
+### Phase 1 – Creative Director
 
 Erstellt:
 
-1. Themenprüfung
+1. Themenpruefung
 2. Recherche und Claim-Check
 3. Mechanism Map
-4. finales `script.txt`
-5. identisches Voiceover zum Kopieren
-6. Satz-Visual-Plan
-7. semantischen Szenenplan
-8. Label-Plan für jedes Bild
-9. Google-Flow-Prompt mit ausführlichem Bild_01 und kompakten Folgeprompts
-10. `scene-map.json`
-11. optionalen `overlay-plan.json`
-12. Antigravity-Anweisung
-13. YouTube-Titel/Beschreibung
-
-Keine geschätzten finalen Zeitcodes als Wahrheit.
+4. finales Script
+5. Satz-Visual-Plan
+6. semantischen Szenenplan
+7. Label-Plan
+8. praezise Flow-Szenenprompts
+9. scene-map.json
+10. overlay-plan.json
+11. Metadaten
 
 ### Phase 2 – Nutzer + Voice-KI + Google Flow
 
 1. Voiceover 1:1 erzeugen
-2. Audio ablegen
-3. kompletten Flow-Prompt verwenden
-4. zuerst nur Bild_01
-5. Bild_01 freigeben
-6. restliche Bilder in 5er-Blöcken
-7. Einzelbild-QA
-8. Recovery
-9. finale ZIP
+2. Flow Agent Instructions setzen
+3. Bild_01 erzeugen und freigeben
+4. Bild_01 als echte visuelle Referenz nutzen
+5. restliche Bilder einzeln in 5er-Bloecken erzeugen
+6. echte Einzelbild-QA
+7. Recovery
+8. finale ZIP
 
 Flow darf keine Szenengrenzen neu erfinden.
 
@@ -208,18 +226,18 @@ Flow darf keine Szenengrenzen neu erfinden.
 4. Voice mit Whisper transkribieren
 5. Script ↔ Audio streng ausrichten
 6. Timeline erzeugen
-7. Remotion-Runtime bauen
-8. Bilder dezent bewegen
-9. geplante deutsche Overlays/Callouts anwenden
+7. deutsche Labels/Hook/Overlays aus den Plaenen rendern
+8. Remotion-Runtime bauen
+9. Bilder dezent bewegen
 10. rendern
 11. technische und visuelle QA
 12. Scorecard + Postmortem
 
-Phase 3 darf Script, wissenschaftliche Aussagen, Bildreihenfolge oder Szenengrenzen nicht still verändern.
+Phase 3 darf Script, wissenschaftliche Aussagen, Bildreihenfolge oder Szenengrenzen nicht still veraendern.
 
 ## Autoritative Reihenfolge
 
-1. aktuelle ausdrückliche Nutzeranweisung
+1. aktuelle ausdrueckliche Nutzeranweisung
 2. `PROJECT_CONTRACT.md`
 3. `PROJECT_STATE.md`
 4. `config/*.json`
@@ -230,29 +248,15 @@ Phase 3 darf Script, wissenschaftliche Aussagen, Bildreihenfolge oder Szenengren
 
 ## Fail-closed
 
-Bei echten Widersprüchen nicht raten. Stoppen bei:
+Bei echten Widerspruechen nicht raten. Stoppen bei:
 
-- Script/Audio stimmen nicht überein
+- Script/Audio stimmen nicht ueberein
 - fehlenden oder doppelten finalen Bildnummern
-- falschem Seitenverhältnis
+- falschem Seitenverhaeltnis
 - unklarer Szenenzuordnung
-- nicht gefundenen Wortankern
 - wissenschaftlich ungeklärten Kernbehauptungen
-- sichtbar falschen biologischen Beschriftungen
+- sichtbar falscher biologischer Darstellung
+- behaupteter Referenznutzung ohne tatsaechlich angehaengte Referenz
+- Phase-2-Review ohne vorhandene finale Bilddatei
 
-Ein einzelner Flow-Generierungsfehler ist kein globaler Blocker; dafür gibt es Fehlerliste + Recovery.
-
-## Visuelle Konstanz
-
-`Bild_01` ist immer Episode-Style-Anchor. Sobald eine kanalweite Referenz ausdrücklich akzeptiert und als `assets/channel/STYLE_REFERENCE.png` gespeichert wurde, gilt:
-
-```text
-STYLE_REFERENCE = langfristige Kanal-DNA
-Bild_01 = konkrete Episode-/Continuity-Referenz
-```
-
-Stilreferenzen dürfen nie fachlich falsche Anatomie erzwingen.
-
-## Themen-Gedächtnis
-
-Vor jeder neuen Produktion `THEMEN-GEHIRN.md` prüfen und aktualisieren. Bereits behandelte Kernmechanismen nicht nur unter neuem Titel wiederholen.
+Ein einzelner Flow-Generierungsfehler ist kein globaler Blocker; dafuer gibt es Fehlerliste + Recovery.
