@@ -2,56 +2,69 @@
 
 Status: **FREIGEGEBEN / VERBINDLICH**
 
-Die visuelle Kanalwelt wird ab jetzt primär durch folgende Datei definiert:
+Die visuelle Kanalwelt wird primaer definiert durch:
 
 ```text
 bildwelt/OBJECT-TALK-CHANNEL-DNA.md
 ```
 
-Diese Datei ist die Kurzfassung für Produktion und QA.
+Diese Datei ist die Kurzfassung fuer Produktion und QA.
 
 ## Kernlook
 
-Der Kanal nutzt eine **einheitliche virale Object-Talk-3D-Animationswelt** im hochwertigen Feature-Animation-Look.
+Der Kanal nutzt eine **helle, freundliche, einheitliche Object-Talk-3D-Animationswelt** im hochwertigen Feature-Animation-Look.
 
 Verbindlich:
 
 - klar stilisiert und animiert, niemals fotorealistisch
+- hell und freundlich als Standard
 - weiche, gerundete, skulptierte 3D-Formen
 - hochwertige matte/satinierte Materialien
-- warme filmische Beleuchtung, weiches Rim-Light, starke Tiefe
-- kräftige kontrollierte Farben und bewusstes Production Design
+- warmes Hauptlicht, weiches Fill-Light, dezentes Rim-Light
+- starke, klar lesbare Tiefenwirkung
+- frische kontrollierte Farben
+- bevorzugt Creme, Apricot, Coral, warmes Rot, Himmelblau und Teal
 - moderne sympathische Object-Talk-Figurensprache
 - bei Figuren: konsistenter Augen-, Gesichts- und Mimikstil
 - familienfreundlich und hochwertig, aber nicht babyhaft
 - kein medizinischer Render-Look
 - kein Corporate-/Stock-3D
 
+## Nicht zur Kanalwelt gehoerig
+
+- kosmische / Weltraum-artige Bildwelten
+- Galaxie-, Nebel- oder Sternenhintergruende
+- dunkle violette Mikrowelten als Standard
+- Sci-Fi-Tunnel / Neon-Labor
+- duestere abstrakte Zellwelten
+
+Dunkle Hintergruende sind nur erlaubt, wenn die Szene fachlich davon profitiert und trotzdem hell, freundlich und eindeutig lesbar bleibt.
+
 ## Welt zuerst, Thema danach
 
-Gesundheit, Ernährung, Biologie und Alltag werden **innerhalb derselben Object-Talk-Welt** erklärt.
+Gesundheit, Ernaehrung, Biologie und Alltag werden innerhalb derselben hellen Object-Talk-Welt erklaert.
 
 Auch Anatomie bleibt stark stilisiert:
 
-- Organe, Gefäße und Zellen als saubere animierte 3D-Formen
+- Organe, Gefaesse und Zellen als saubere animierte 3D-Formen
 - fachlich erkennbar, aber klar vereinfacht
 - keine realistische Haut
 - keine nassen Gewebetexturen
 - keine Anatomiesoftware-Optik
 
-Die Szene muss zuerst wie **Animationsfilm** und erst danach wie Anatomie wirken.
+Die Szene muss zuerst wie **hochwertiger 3D-Animationsfilm** und erst danach wie Anatomie wirken.
 
 ## Character-Regel
 
-Wenn Lebensmittel, Gegenstände, Organe oder Zellen als Figuren auftreten:
+Wenn Lebensmittel oder Gegenstaende als Figuren auftreten:
 
 - gleicher Augenstil
 - gleiche Mimiklogik
 - gleiche Materialwelt
 - gleiche Formensprache
-- keine zufälligen Character-Designs zwischen Szenen
+- keine zufaelligen Character-Designs zwischen Szenen
 
-Nicht jede Mechanismus-Szene braucht ein Gesicht. Aber auch gesichtslose Erklärbilder müssen exakt dieselbe 3D-Welt behalten.
+Biologische Strukturen bleiben normalerweise gesichtslos.
 
 ## Bild_01
 
@@ -60,36 +73,34 @@ Nicht jede Mechanismus-Szene braucht ein Gesicht. Aber auch gesichtslose Erklär
 - Cover / Hook
 - erster Shot
 - Master Style Frame
-- Referenz für alle Folgebilder
+- Referenz fuer alle Folgebilder
 
-Nach Freigabe wird `Bild_01.png` bei jeder weiteren Generation als exakte Style-/Continuity-Referenz verwendet.
+Nach Freigabe wird `Bild_01.png` bei jeder weiteren Generation als echte Style-/Continuity-Referenz angehaengt.
 
-Folgebilder müssen aussehen, als kämen sie aus **demselben Film, demselben Renderprozess und derselben Welt**.
+Folgebilder muessen aussehen, als kaemen sie aus demselben Film, demselben Renderprozess und derselben Welt.
 
 ## Prompt-Regel
-
-Jeder Google-Flow-Masterprompt enthält die feste Kanal-DNA aus:
-
-```text
-bildwelt/OBJECT-TALK-CHANNEL-DNA.md
-```
 
 Kurzanker:
 
 ```text
-Use the fixed channel DNA: premium viral object-talk 3D animated world, high-end stylized feature-animation look, soft rounded sculpted forms, expressive character design when faces are used, clean matte premium materials, warm cinematic lighting, soft rim light, strong depth, rich controlled colors, clearly non-photorealistic, no medical realism, no stock 3D, no toy look, no style drift.
+Use the fixed channel DNA: original high-end family 3D animated feature-film look, bright and friendly, soft rounded sculpted forms, clean matte/satin premium materials, warm key light, soft fill light, gentle rim light, strong readable depth, fresh controlled colors and clear visual storytelling. Keep biology simplified and recognizable. No cosmic or outer-space look, no dark purple microscopic fantasy world, no sci-fi tunnel, no medical CGI, no anatomy-software look, no stock 3D, no toy look, no style drift.
 ```
 
 ## Text
 
 - Flow-Anweisungen: Englisch
-- sichtbarer Text: ausschließlich Deutsch
-- normale Szenen: nur wichtige kurze Labels
-- Cover: starke Hook, keine unnötigen kleinen Labels
+- sichtbarer Text: ausschliesslich Deutsch
+- Cover: kurze starke deutsche Hook direkt im Bild
+- normale Szenen: normalerweise 1–3 kurze wichtige deutsche Labels
+- keine Textwaende
+- kein englischer sichtbarer Text
+- falsche KI-Schrift = Regeneration; Remotion nur als exakter Fallback
 
 ## Harte Verbote
 
 - Fotorealismus
+- kosmische / Weltraum-artige Standardoptik
 - medizinischer CGI-Realismus
 - realistische Haut/Poren
 - nasses/fleischiges Gewebe
@@ -102,11 +113,12 @@ Use the fixed channel DNA: premium viral object-talk 3D animated world, high-end
 - Stilwechsel zwischen Bildern
 - inkonsistente Augen-/Gesichtsdesigns
 
-## Priorität
+## Prioritaet
 
 Bei Konflikten gilt:
 
 1. `OBJECT-TALK-CHANNEL-DNA.md`
-2. `Bild_01.png`
-3. diese Datei
-4. Szenenprompt
+2. tatsaechlich angehaengte `STYLE_REFERENCE.png`, sobald vorhanden
+3. tatsaechlich angehaengte `Bild_01.png`
+4. diese Datei
+5. Szenenprompt
