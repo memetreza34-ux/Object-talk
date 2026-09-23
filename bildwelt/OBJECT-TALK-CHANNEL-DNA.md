@@ -2,19 +2,26 @@
 
 Status: **KANONISCH / VERBINDLICH**
 
-Diese Datei ist die oberste Stilreferenz für **alle** Google-Flow-Bildprompts des Kanals.
+Diese Datei ist die oberste Stilreferenz für alle Google-Flow-Bildprompts des Kanals.
 
-Konkretes Golden-Reference-Beispiel:
+## Ursprung / echte Kanalidee
 
-```text
-bildwelt/OBJECT-TALK-STYLE-EXAMPLE.md
-```
+Die ursprüngliche Object-Talk-Welt besteht aus **zwei visuellen Ebenen**, die wie dieselbe hochwertige 3D-Animationsserie aussehen:
 
-## Grundsatz: Welt zuerst, Thema danach
+1. **Viral Object-Talk** – sprechende Lebensmittel und Gegenstände mit großen Augen, klarer Mimik, starker Persönlichkeit und kleinen Armen/Beinen, wenn es zur Szene passt.
+2. **Inside-the-Body** – verständliche, stark stilisierte 3D-Darstellungen von Organen, Blut, Zellen und biologischen Prozessen **ohne erzwungene Gesichter**.
 
-Jedes Bild muss zuerst wie ein Frame aus **derselben hochwertigen viralen Object-Talk-3D-Animationswelt** aussehen. Das jeweilige Thema – Gesundheit, Ernährung, Biologie oder Alltag – wird nur innerhalb dieser Welt dargestellt.
+Beide Ebenen müssen sichtbar aus demselben Animationsfilm stammen.
 
-Die Bildwelt darf sich nicht pro Video neu erfinden.
+## Wichtigste Regel
+
+**Keine erfundenen Maskottchen nur damit eine Biologie-Szene „Object-Talk“ aussieht.**
+
+- O₂ bekommt nicht automatisch Augen oder einen Mund.
+- rote Blutkörperchen bekommen nicht automatisch Gesichter.
+- Organe, Alveolen, Zellen und Mitochondrien bleiben normalerweise gesichtslos.
+- Wenn ein natürlich passendes Lebensmittel oder Objekt als Figur vorkommt, darf es den viralen Object-Talk-Character-Look tragen.
+- Wenn kein Character sinnvoll ist, bleibt die Szene eine reine Mechanismus-/Erklärszene – aber in exakt derselben 3D-Animationsfilm-Welt.
 
 ## Kanal-Look
 
@@ -23,117 +30,101 @@ Verbindlich:
 - hochwertige stilisierte 3D-Feature-Animation
 - klar animiert, niemals fotorealistisch
 - weiche, gerundete, skulptierte Formen
-- saubere, hochwertige matte/satinierte Materialien
-- ausdrucksstarke große Augen, klare Augenbrauen und einfache gut lesbare Mimik, **wenn ein Objekt als Figur eingesetzt wird**
-- sympathische, moderne Object-Talk-Figuren; nicht babyhaft
-- warme, filmische Beleuchtung mit weichem Rim-Light
-- starke Tiefenwirkung und echtes Production Design
-- klare Vordergrund-/Mittelgrund-/Hintergrund-Staffelung
-- kräftige, kontrollierte Farben statt matschiger Medizin-/Fleischtöne
-- moderner hochwertiger Familienanimations-Look
+- saubere matte/satinierte Premium-Materialien
+- warme filmische Beleuchtung und weiches Rim-Light
+- starke Tiefenwirkung
+- kräftige, kontrollierte Farben
+- klare visuelle Hierarchie
+- modernes, hochwertiges Familienanimations-Niveau, aber nicht babyhaft
 - jede Szene wirkt wie derselbe Film und derselbe Renderprozess
 
-## Figuren-Sprache
+## Character-DNA – nur wenn eine echte Object-Talk-Figur sinnvoll ist
 
-Wenn Lebensmittel, Gegenstände, Organe, Zellen oder andere Elemente personifiziert werden:
-
-- immer derselbe Augenstil
-- immer derselbe Mimikstil
-- dieselbe Materialwelt
-- dieselbe Beleuchtungslogik
-- dieselbe Formensprache
-- keine zufälligen neuen Character-Designs
-- keine grotesken oder übertrieben kindlichen Gesichter
-
-Object-Talk bedeutet nicht, dass in jeder Szene zwingend ein Gesicht vorhanden sein muss. Mechanismus-Szenen dürfen gesichtslos sein, müssen aber **dieselbe animierte 3D-Formensprache** behalten.
-
-### Feste Augen-/Gesichts-DNA
-
-Wenn Gesichter vorkommen:
+Für Lebensmittel und Gegenstände:
 
 - große dunkle ovale Augen
-- kleine klare weiße Catchlights
-- keine realistische Iris-/Augenanatomie
-- dezente Augenbrauen
-- kleiner einfacher Mund
-- klare sympathische Mimik
-- kein zufälliger Wechsel zu anderen Augenformen
+- kleine weiße Catchlights
+- klare Augenbrauen
+- einfacher gut lesbarer Mund
+- starke Mimik
+- kleine stilisierte Arme/Beine nur wenn hilfreich
+- Objektform bleibt klar erkennbar
+- keine menschliche Haut
+- keine übertrieben niedlichen Babyproportionen
+- keine zufälligen Character-Designs zwischen Szenen
 
-Das konkrete Beispiel steht in `bildwelt/OBJECT-TALK-STYLE-EXAMPLE.md`.
+## Inside-the-Body-DNA
 
-## Biologie-/Gesundheitsregel
+Biologische Strukturen bleiben normalerweise **gesichtslos**.
 
-Biologische Themen dürfen niemals in eine medizinisch-realistische Parallelwelt wechseln.
+Sie werden dargestellt als:
 
-Organe, Gefäße, Zellen, Alveolen, Mitochondrien usw. werden dargestellt als:
+- weiche, stark stilisierte 3D-Formen
+- klar vereinfacht, aber fachlich erkennbar
+- glatt und sauber gerendert
+- dieselbe Material-, Licht- und Farbwelt wie die Object-Talk-Szenen
+- keine nassen Gewebe
+- keine realistische Haut/Poren
+- keine Anatomiesoftware
+- kein medizinisches CGI
+- kein Gore
 
-- vereinfachte animierte 3D-Formen
-- glatt, sauber, farblich klar
-- fachlich erkennbar, aber stark stilisiert
-- niemals nass, fleischig oder chirurgisch
-- niemals wie Anatomiesoftware oder medizinisches CGI
+Die Szene muss zuerst wie **Animationsfilm** und erst danach wie Anatomie aussehen.
 
-Die Szene muss **zuerst wie Animationsfilm** und erst danach wie Anatomie aussehen.
-
-## Feste Stil-DNA für jeden Google-Flow-Prompt
-
-Dieser Block gehört sinngemäß in **jeden** Google-Flow-Masterprompt:
+## Fester Stilblock für jeden Flow-Masterprompt
 
 ```text
-Use the fixed channel DNA: premium viral object-talk 3D animated world, high-end stylized feature-animation look, soft rounded sculpted forms, expressive character design when faces are used, clean matte premium materials, warm cinematic lighting, soft rim light, strong depth, rich controlled colors, clear visual hierarchy, friendly modern animated-film quality, clearly non-photorealistic. Keep the same eye design, face language, materials, lighting logic and overall world across every image. No medical realism, no realistic skin, no wet tissue, no anatomy-software CGI, no corporate stock 3D, no cheap toy render, no anime, no comic, no gore, no style drift.
+Use the fixed Object-Talk channel world: high-end stylized 3D feature-animation, clearly animated and non-photorealistic, soft rounded sculpted forms, clean matte premium materials, warm cinematic lighting, soft rim light, strong depth, rich controlled colors and clear visual storytelling. Viral Object-Talk characters use expressive big eyes, brows and simple mouths only when a real food or object is naturally personified. Inside-the-body biology stays normally faceless but uses the exact same animated-film materials, lighting and form language. Do not invent mascots for molecules, organs or cells just to force a character. No medical CGI, no realistic skin, no wet tissue, no anatomy-software look, no corporate stock 3D, no cheap toy render, no anime, no comic, no gore, no style drift.
 ```
 
 Bei Folgebildern zusätzlich:
 
 ```text
-Using Bild_01 as the exact style reference, keep the exact same object-talk 3D animated world, eye design, character language, materials, lighting, color feeling and feature-animation quality.
+Using Bild_01 as the exact style reference, keep the exact same 3D animation world, materials, lighting, color feeling, shape language and render quality.
 ```
 
 ## Bild_01
 
-`Bild_01` ist immer:
+`Bild_01` ist immer Cover, Hook, erster Shot und Master Style Frame.
 
-- Cover / Hook
-- erster sichtbarer Shot
-- Master Style Frame
-- visuelle Referenz für alle Folgebilder
-
-`Bild_01` muss die Kanal-DNA besonders deutlich zeigen. Wenn Bild_01 wie medizinisches CGI, Stock-3D, Anatomiesoftware, ein realistischer Mensch oder billige Kinderanimation aussieht, ist es **FAIL**.
-
-Nach Freigabe von Bild_01 müssen alle restlichen Bilder automatisch in derselben Welt erzeugt werden.
+- Es muss die echte Kanalwelt sichtbar definieren.
+- Es darf ein starker Object-Talk-Character vorkommen, **wenn das Thema natürlich einen passenden Gegenstand/Lebensmittel-Character hat**.
+- Bei reinen Biologie-Themen darf Bild_01 komplett gesichtslos sein.
+- Kein Character darf nur erfunden werden, um zwanghaft Object-Talk zu simulieren.
+- Cover muss wie ein hochwertiger 3D-Animationsfilm-Key-Visual wirken, nicht wie Medizinposter oder Schulbuchgrafik.
 
 ## Prompt- und Textregel
 
 - Flow-Prompt-Anweisungen: **Englisch**
-- sichtbarer Text im fertigen Bild: **nur Deutsch**
-- deutsche Labels kurz und korrekt
-- keine englischen sichtbaren Begriffe
-- keine langen Textblöcke
+- sichtbarer Text: **nur Deutsch**
+- normale Szenen: 1–3 kurze wichtige Labels
+- Cover: kurze starke deutsche Hook
+- keine Textwände
+- kein KI-Gibberish
 
 ## Harte Verbote
 
 - Fotorealismus
 - medizinischer CGI-Realismus
 - realistische Haut/Poren
-- reale nasse Gewebe-/Fleischtexturen
+- nasse Fleisch-/Gewebetexturen
 - Anatomiesoftware-Look
 - Corporate-Stock-3D
 - billiger Plastik-/Spielzeuglook
 - Anime
 - Comic
 - Gore/Horror
+- erzwungene Gesichter auf biologischen Strukturen
+- erfundene Dauermaskottchen ohne natürlichen Grund
 - Stilwechsel zwischen Szenen
-- zufällige Augen-/Gesichtsdesigns
-- zufällige Farbwelt pro Bild
 
 ## Autorität
 
-Bei Stilkonflikten gilt diese Reihenfolge:
+Bei Stilkonflikten gilt:
 
 1. `bildwelt/OBJECT-TALK-CHANNEL-DNA.md`
-2. `bildwelt/OBJECT-TALK-STYLE-EXAMPLE.md`
-3. `Bild_01.png` der jeweiligen Episode
-4. `bildwelt/APPROVED-VISUAL-WORLD.md`
-5. Szenenprompt
+2. `Bild_01.png` der Episode
+3. `bildwelt/gehirn.md` bzw. themenspezifische Bildwelt
+4. Szenenprompt
 
-Inhaltliche/fachliche Korrektheit darf durch die Stilreferenz nie verschlechtert werden.
+Die ursprüngliche Kanalidee „Viral Object-Talk + Inside-the-Body als dieselbe Animationsserie“ ist verbindlich.
