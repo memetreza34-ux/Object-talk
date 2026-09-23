@@ -1,21 +1,25 @@
 {
-  "version": 2,
-  "purpose": "Selective Remotion emphasis over already labeled stylized 3D Flow images. Bild_01 already contains the German cover hook.",
+  "version": 3,
+  "purpose": "Sparse premium story-beat overlays for the Sauerstoff pilot. The Flow images stay dominant; overlays only reinforce major mechanism transitions.",
   "rules": {
     "full_frame_remains_default": true,
     "no_full_voiceover_sentences": true,
-    "max_words_per_heading": 6,
+    "max_words_per_heading": 5,
     "language": "de",
-    "style": "clean-modern-stylized-3d",
+    "style": "clean-cinematic-text-only",
     "flow_images_include_key_german_labels": true,
     "do_not_duplicate_flow_labels": true,
-    "do_not_add_second_cover_hook": true
+    "do_not_add_second_cover_hook": true,
+    "no_glass_cards": true,
+    "no_dashboard_boxes": true,
+    "keep_anatomy_clear": true
   },
   "scenes": [
-    {"scene":5,"overlays":[{"kind":"heading","text":"Die Lungenbläschen","position":"top-left","animation":"fade-slide","start_fraction":0.08,"duration_fraction":0.55}]},
-    {"scene":8,"overlays":[{"kind":"keyword","text":"Lunge → Blut","position":"bottom-left","animation":"pop","start_fraction":0.10,"duration_fraction":0.42}]},
-    {"scene":13,"overlays":[{"kind":"heading","text":"Zurück zum Herzen","position":"top-left","animation":"underline","start_fraction":0.08,"duration_fraction":0.50}]},
-    {"scene":19,"overlays":[{"kind":"heading","text":"Sauerstoff wird frei","position":"top-left","animation":"fade-slide","start_fraction":0.08,"duration_fraction":0.48}]},
-    {"scene":28,"overlays":[{"kind":"heading","text":"Der Kreislauf schließt sich","position":"top-left","animation":"underline","start_fraction":0.06,"duration_fraction":0.45}]}
+    {"scene":8,"overlays":[{"kind":"keyword","text":"Lunge → Blut","position":"bottom-left","animation":"fade-slide","start_fraction":0.10,"duration_fraction":0.40}]},
+    {"scene":13,"overlays":[{"kind":"heading","text":"Weiter zum Herzen","position":"top-left","animation":"underline","start_fraction":0.08,"duration_fraction":0.46}]},
+    {"scene":18,"overlays":[{"kind":"keyword","text":"Blut → Muskelzelle","position":"bottom-left","animation":"fade-slide","start_fraction":0.10,"duration_fraction":0.38}]},
+    {"scene":21,"overlays":[{"kind":"heading","text":"In die Zelle","position":"top-left","animation":"underline","start_fraction":0.08,"duration_fraction":0.44}]},
+    {"scene":25,"overlays":[{"kind":"keyword","text":"CO₂ entsteht","position":"bottom-left","animation":"fade-slide","start_fraction":0.10,"duration_fraction":0.36}]},
+    {"scene":27,"overlays":[{"kind":"heading","text":"Zurück zur Lunge","position":"top-left","animation":"underline","start_fraction":0.08,"duration_fraction":0.44}]}
   ]
 }
