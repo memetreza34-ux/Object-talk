@@ -3,6 +3,7 @@ import {Audio} from '@remotion/media';
 import {
   AbsoluteFill,
   CanvasImage,
+  Easing,
   Sequence,
   interpolate,
   staticFile,
@@ -15,6 +16,8 @@ import {
   type SceneRuntime,
 } from './project.generated';
 
+const smoothEase = Easing.inOut(Easing.ease);
+
 const SceneImage: React.FC<{scene: SceneRuntime}> = ({scene}) => {
   const frame = useCurrentFrame();
   const duration = Math.max(1, scene.durationInFrames - 1);
@@ -25,26 +28,30 @@ const SceneImage: React.FC<{scene: SceneRuntime}> = ({scene}) => {
   const motion: MotionType = scene.motion ?? 'slow-push-in';
 
   if (motion === 'slow-push-in') {
-    scale = interpolate(frame, [0, duration], [1, 1.055], {
+    scale = interpolate(frame, [0, duration], [1, 1.038], {
       extrapolateLeft: 'clamp',
       extrapolateRight: 'clamp',
+      easing: smoothEase,
     });
   } else if (motion === 'slow-pull-out') {
-    scale = interpolate(frame, [0, duration], [1.055, 1], {
+    scale = interpolate(frame, [0, duration], [1.038, 1], {
       extrapolateLeft: 'clamp',
       extrapolateRight: 'clamp',
+      easing: smoothEase,
     });
   } else if (motion === 'pan-left') {
-    scale = 1.045;
-    translate = interpolate(frame, [0, duration], ['35px 0px', '-35px 0px'], {
+    scale = 1.03;
+    translate = interpolate(frame, [0, duration], ['24px 0px', '-24px 0px'], {
       extrapolateLeft: 'clamp',
       extrapolateRight: 'clamp',
+      easing: smoothEase,
     });
   } else if (motion === 'pan-right') {
-    scale = 1.045;
-    translate = interpolate(frame, [0, duration], ['-35px 0px', '35px 0px'], {
+    scale = 1.03;
+    translate = interpolate(frame, [0, duration], ['-24px 0px', '24px 0px'], {
       extrapolateLeft: 'clamp',
       extrapolateRight: 'clamp',
+      easing: smoothEase,
     });
   }
 
@@ -66,15 +73,15 @@ const SceneImage: React.FC<{scene: SceneRuntime}> = ({scene}) => {
 
 const positionStyle = (position: OverlayRuntime['position']): React.CSSProperties => {
   if (position === 'top-center') {
-    return {top: 74, left: '50%', transform: 'translateX(-50%)', alignItems: 'center'};
+    return {top: 72, left: '50%', transform: 'translateX(-50%)', alignItems: 'center'};
   }
   if (position === 'bottom-left') {
-    return {bottom: 84, left: 86, alignItems: 'flex-start'};
+    return {bottom: 76, left: 82, alignItems: 'flex-start'};
   }
   if (position === 'center') {
     return {top: '50%', left: '50%', transform: 'translate(-50%, -50%)', alignItems: 'center'};
   }
-  return {top: 78, left: 86, alignItems: 'flex-start'};
+  return {top: 76, left: 82, alignItems: 'flex-start'};
 };
 
 const OverlayItem: React.FC<{overlay: OverlayRuntime; scene: SceneRuntime}> = ({
@@ -91,10 +98,12 @@ const OverlayItem: React.FC<{overlay: OverlayRuntime; scene: SceneRuntime}> = ({
   const opacityIn = interpolate(frame, [start, start + fadeFrames], [0, 1], {
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
+    easing: smoothEase,
   });
   const opacityOut = interpolate(frame, [Math.max(start, end - fadeFrames), end], [1, 0], {
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
+    easing: smoothEase,
   });
   const opacity = Math.min(opacityIn, opacityOut);
 
@@ -103,13 +112,14 @@ const OverlayItem: React.FC<{overlay: OverlayRuntime; scene: SceneRuntime}> = ({
   const enter = interpolate(frame, [start, start + fadeFrames], [0, 1], {
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
+    easing: smoothEase,
   });
 
-  const translateY = overlay.animation === 'fade-slide' ? interpolate(enter, [0, 1], [18, 0]) : 0;
-  const scale = overlay.animation === 'pop' ? interpolate(enter, [0, 1], [0.94, 1]) : 1;
-  const accentWidth = overlay.animation === 'underline' ? `${Math.round(enter * 100)}%` : '28%';
+  const translateY = overlay.animation === 'fade-slide' ? interpolate(enter, [0, 1], [14, 0]) : 0;
+  const scale = overlay.animation === 'pop' ? interpolate(enter, [0, 1], [0.97, 1]) : 1;
+  const accentWidth = overlay.animation === 'underline' ? `${Math.round(enter * 100)}%` : '24%';
 
-  const fontSize = overlay.kind === 'heading' ? 58 : overlay.kind === 'keyword' ? 46 : 40;
+  const fontSize = overlay.kind === 'heading' ? 60 : overlay.kind === 'keyword' ? 46 : 40;
   const fontWeight = overlay.kind === 'heading' ? 800 : 700;
 
   return (
@@ -132,26 +142,22 @@ const OverlayItem: React.FC<{overlay: OverlayRuntime; scene: SceneRuntime}> = ({
           fontFamily: 'Inter, Arial, Helvetica, sans-serif',
           fontSize,
           fontWeight,
-          lineHeight: 1.05,
-          letterSpacing: '-0.02em',
-          textShadow: '0 3px 16px rgba(0,0,0,0.5)',
-          background: 'rgba(12, 14, 16, 0.46)',
-          border: '1px solid rgba(255,255,255,0.16)',
-          borderRadius: 18,
-          padding: overlay.kind === 'heading' ? '18px 24px 16px' : '14px 20px 13px',
+          lineHeight: 1.02,
+          letterSpacing: '-0.025em',
+          textShadow: '0 3px 18px rgba(0,0,0,0.72), 0 1px 3px rgba(0,0,0,0.85)',
           maxWidth: 760,
-          backdropFilter: 'blur(8px)',
         }}
       >
         {overlay.text}
         <div
           style={{
             marginTop: 10,
-            height: 4,
+            height: 3,
             width: accentWidth,
             maxWidth: '100%',
             borderRadius: 999,
-            background: 'rgba(255,255,255,0.82)',
+            background: 'rgba(255,255,255,0.9)',
+            boxShadow: '0 2px 8px rgba(0,0,0,0.4)',
           }}
         />
       </div>
