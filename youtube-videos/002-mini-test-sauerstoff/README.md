@@ -1,6 +1,18 @@
 # 002 – Mini-Test Sauerstoff
 
-Zweck: sehr kleiner kompletter Produktions- und Stiltest vor einem längeren Video.
+Zweck: kleines internes Beispiel für einen sehr kurzen Produktions- und Stiltest.
+
+## Status
+
+**Der Mini-Test wird aktuell übersprungen.**
+
+Der aktive echte Kleinpilot ist stattdessen:
+
+```text
+youtube-videos/001-pilot-sauerstoff-im-blut/
+```
+
+Dieser Ordner bleibt nur als internes Beispiel/Template im Repo bestehen und ist aktuell nicht der nächste Produktionsschritt.
 
 ## Eckdaten
 - 10 Bilder
@@ -20,7 +32,7 @@ Zweck: sehr kleiner kompletter Produktions- und Stiltest vor einem längeren Vid
 - `05_info/phase1-scenes.json`
 - `05_info/test-mode.json`
 
-## Ablauf
+## Ablauf, falls später genutzt
 1. Voiceover erzeugen.
 2. In Flow zuerst nur Bild_01 erzeugen und freigeben.
 3. Bild_02–06 einzeln mit Bild_01 als Referenz erzeugen.
