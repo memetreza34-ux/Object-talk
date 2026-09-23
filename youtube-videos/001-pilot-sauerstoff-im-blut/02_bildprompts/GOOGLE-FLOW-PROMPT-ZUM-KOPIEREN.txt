@@ -29,6 +29,18 @@ Wiederkehrende Elemente immer identisch darstellen:
 - Keine englischen Wörter, kein KI-Gibberish, keine langen Textblöcke.
 - Falsche Schrift = Bild fehlerhaft.
 
+## COVER-REGEL FÜR BILD_01
+
+Bild_01 muss wie ein echtes professionelles Cover aufgebaut sein, nicht wie ein normales Szenenbild mit Text darüber.
+
+- Überschrift bekommt einen eigenen freien Bereich.
+- Die Überschrift darf **niemals** Gesicht, Körper, Organe, Sauerstoffpartikel oder Labels überdecken.
+- Hauptmotiv und Anatomie werden bewusst tiefer bzw. seitlich positioniert, damit oben genug ruhiger Negativraum bleibt.
+- Labels bleiben klein, sauber verteilt und räumlich getrennt von der Überschrift.
+- Keine Textkollisionen, keine überlappenden Führungslinien, keine gequetschte Typografie.
+- Cover-Hierarchie: 1) Überschrift, 2) Hauptmotiv, 3) wenige Labels.
+- Wenn diese Hierarchie nicht klar ist, gilt Bild_01 als FEHLERHAFT.
+
 ## PRODUKTION
 
 ### Zuerst nur Bild_01
@@ -61,7 +73,17 @@ Jedes Bild einzeln erzeugen und prüfen. Fehlernummern sammeln und am Ende im Re
 **Voice-over:** Mit jedem Atemzug holst du Sauerstoff in deine Lunge.
 
 ```text
-Create the master 16:9 cover frame for a German educational video about the journey of oxygen through the body. Show an anonymous young person inhaling, with a softly transparent upper torso revealing stylized lungs, heart, major blood vessels and a hint of a muscle cell, all in a premium strongly stylized 3D animated feature-film world with soft rounded anatomy, warm cinematic light, polished materials and strong depth. Pale-cyan paired O2 particles enter toward the lungs and visually hint at the journey from lungs to blood to cells. Make the biology immediately readable and define the exact style for every later image. Add the large German cover hook “So reist Sauerstoff durch deinen Körper” and the smaller German labels “Lunge” and “Herz”. No English text, no photorealism, no mascot, no gore.
+Create a professional 16:9 cover frame for a German educational explainer about how oxygen travels through the human body. This image is the master style frame for the entire episode.
+
+Use the same premium strongly stylized 3D animated explainer world: clearly animated, not photorealistic, soft rounded anatomy, smooth premium materials, warm controlled cinematic lighting, strong depth and a clean calm composition.
+
+COVER LAYOUT IS CRITICAL: reserve a large clean headline zone across the upper part of the frame. This area must stay visually calm and free of the face, lungs, heart, oxygen particles, labels and leader lines. Place the anonymous young person clearly lower in the frame, from chest/waist up, so the head and transparent torso remain fully visible below the headline zone. Show simplified stylized lungs and heart inside the softly transparent torso, with pale-cyan paired O2 particles entering toward the lungs.
+
+Add the German headline exactly: “So reist Sauerstoff durch deinen Körper”. Set it as a clean, professional cover headline inside the reserved top area only, centered and fully readable, with generous spacing around it. The headline must not overlap any person, anatomy, particle or label.
+
+Add only the small German labels “Lunge” and “Herz” beside the correct anatomy, with thin clean leader lines. Keep both labels completely outside the headline zone and make sure the label lines do not cross each other or the title.
+
+The final composition must have a clear hierarchy: headline first, main character/anatomy second, labels third. No text over the face. No text over the organs. No text collisions. No crowded layout. No English text, no photorealism, no mascot, no gore.
 ```
 
 # SZENE 02 – BILD_02
