@@ -24,10 +24,12 @@ einhalten.
 
 Fuer diesen Pilot gilt zusaetzlich:
 
-- `Bild_01` = Cover-Grundbild + erster Shot + Episode-Master-Style-Frame
-- `Bild_01` ist textfrei; Hook wird spaeter in Remotion gesetzt
+- `Bild_01` = Cover + erster Shot + Episode-Master-Style-Frame
+- `Bild_01` MUSS die deutsche Hook „So reist Sauerstoff durch deinen Körper“ enthalten
 - nach Freigabe muss `Bild_01.png` bei jeder Folgegeneration als echtes visuelles Reference/Ingredient angehaengt werden
 - `STYLE_REFERENCE.png` wird zusaetzlich angehaengt, sobald sie kanalweit freigegeben vorliegt
+- heller, freundlicher Premium-3D-Animationsfilm-Look
+- keine kosmische / Weltraum-artige / dunkle Sci-Fi-Mikrowelt
 - **kein O2-Guide und kein O2-Maskottchen**
 - O2 = zwei blass-cyanfarbene verbundene Kugeln ohne Gesicht
 - CO2 = neutral-violett/graue Drei-Kugel-Form ohne Gesicht
@@ -36,12 +38,10 @@ Fuer diesen Pilot gilt zusaetzlich:
 - Organe/Zellen = stark stilisiert, weich, gerundet und gesichtslos
 - kein Medical-CGI-/Anatomiesoftware-Look
 - kein Realismus-Drift
-- keine zufaelligen Character-Designs
-- keine eingebrannten Labels, Pfeile oder KI-Typografie
 
-## Labels
+## Deutsche Labels
 
-Die deutschen Labels werden nicht von Flow erzeugt.
+Die wichtigsten sichtbaren Dinge werden direkt in Flow knapp auf Deutsch beschriftet.
 
 Quelle:
 
@@ -49,8 +49,23 @@ Quelle:
 ../label-plan.json
 ```
 
-Ausgabe erfolgt spaeter deterministisch ueber Remotion/Overlay-Plan.
+Regeln:
+
+- normale Bilder: 1–3 kurze deutsche Labels
+- Cover: deutsche Hook plus nur wenige wichtige Labels
+- klare Sans-Serif-Schrift
+- keine Textwaende
+- kein englischer sichtbarer Text
+- falsche Schreibweise = Regeneration
+- nur wenn Flow einen Begriff wiederholt nicht korrekt schreiben kann, wird exakt dieser Begriff spaeter in Remotion gesetzt
 
 ## QA
 
 Ein Bild darf erst in diesem finalen Ordner liegen, wenn das tatsaechliche Bild visuell geprueft und in `../image-review.json` mit mindestens 8/10 akzeptiert wurde.
+
+Zusaetzlich gilt:
+
+- geforderte deutsche Labels vorhanden
+- Schreibweise korrekt
+- kein kosmischer/dunkler Stil-Drift
+- keine schweren KI-Artefakte
