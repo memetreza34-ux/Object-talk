@@ -4,29 +4,27 @@ Ziel: erster echter kleiner Object-Talk-Pilot mit ungefähr 2–2,5 Minuten Lauf
 
 ## 1. Voice erzeugen
 
-Datei öffnen:
+Datei:
 
 ```text
 01_script/VOICEOVER-ZUM-KOPIEREN.txt
 ```
 
-Den Text 1:1 in die Voice-KI übernehmen. Das finale Audio danach in:
+Text 1:1 in die Voice-KI übernehmen. Finales Audio in:
 
 ```text
 01_script/audio/
 ```
 
-ablegen.
-
 ## 2. Google Flow starten
 
-Datei öffnen:
+Datei:
 
 ```text
 02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt
 ```
 
-Den kompletten Prompt in Flow verwenden.
+Den kompletten Prompt verwenden.
 
 Zuerst ausschließlich:
 
@@ -34,19 +32,26 @@ Zuerst ausschließlich:
 Bild_01
 ```
 
-erzeugen.
-
 Bild_01 ist:
 - Cover
 - Hook
 - erster Shot
 - Master Style Frame
 
-Nur wenn Bild_01 die freigegebene stark stilisierte 3D-Animationsfilm-Welt sauber trifft, weiterarbeiten.
+Bild_01 muss klar wie ein hochwertiger **stilisierter 3D-Animationsfilm** aussehen. Kein medizinischer CGI-Look, keine realistische Haut, keine realistischen Gewebetexturen.
 
-## 3. Restliche Bilder produzieren
+## 3. Genau eine Freigabe
 
-Bild_01 bei jeder weiteren Generation als exakte Style-/Continuity-Referenz verwenden.
+Flow darf nur nach `Bild_01` auf die Nutzerfreigabe warten.
+
+Nach Freigabe von Bild_01 arbeitet Flow **ohne weitere Rückfragen** bis zum Ende.
+
+Nicht erlaubt:
+- nach einem 5er-Block fragen, ob weitergemacht werden soll
+- zwischen Bildern zusätzliche Freigaben verlangen
+- den Lauf freiwillig pausieren
+
+## 4. Restliche Bilder automatisch produzieren
 
 Reihenfolge:
 
@@ -57,38 +62,54 @@ Bild_12–16
 Bild_17–21
 Bild_22–26
 Bild_27–28
+Recovery-Pass
 ```
 
-Jedes Bild einzeln erzeugen und direkt prüfen.
+Die Blöcke sind nur interne QA-Schritte. Nach jedem Block automatisch weiter.
 
-Prüfen:
-- gleicher Stil wie Bild_01
-- kein Drift in Fotorealismus
-- wichtige Labels nur Deutsch
-- Anatomie/Prozess verständlich
-- keine groben KI-Artefakte
+Jedes Bild:
+- einzeln generieren
+- `Bild_01` als Style-/Continuity-Referenz verwenden
+- auf Animationsstil prüfen
+- auf korrekte deutsche Labels prüfen
+- bei Fehler auf Recovery-Liste setzen
 
-Fehlerhafte Nummern auf Recovery-Liste setzen und später gezielt neu erzeugen.
+Fehlerhafte Bilder automatisch bis zu 3-mal neu versuchen.
 
-## 4. Bilder exportieren
+## 5. Finale Bildausgabe
 
-Final akzeptierte Bilder lückenlos als:
+Am Ende einen finalen Ordner erstellen:
+
+```text
+001-pilot-sauerstoff-im-blut_bilder/
+```
+
+Darin exakt:
 
 ```text
 Bild_01.png
+Bild_02.png
 ...
 Bild_28.png
 ```
 
-bereitstellen und als ZIP in:
+Keine Varianten, keine Lücken, keine Zusätze wie `neu`, `final2`, `v3` oder `copy`.
+
+Zusätzlich:
 
 ```text
-02_bildprompts/bilder-zip/
+001-pilot-sauerstoff-im-blut_bilder.zip
 ```
 
-ablegen.
+Die ZIP enthält exakt denselben finalen Ordner.
 
-## 5. Phase 3 starten
+Repo-Ziel für die ZIP:
+
+```text
+02_bildprompts/bilder-zip/001-pilot-sauerstoff-im-blut_bilder.zip
+```
+
+## 6. Phase 3 starten
 
 Sobald Voice + alle 28 Bilder vorhanden sind:
 
@@ -97,28 +118,26 @@ python tools/validate_planning_v2.py youtube-videos/001-pilot-sauerstoff-im-blut
 python tools/prepare_phase3.py youtube-videos/001-pilot-sauerstoff-im-blut
 ```
 
-Danach den technischen Prompt verwenden:
+Dann:
 
 ```text
 03_pipeline/ANTIGRAVITY-PROMPT-ZUM-KOPIEREN.txt
 ```
 
-Antigravity/Remotion übernimmt dann:
+Antigravity/Remotion übernimmt:
 - Audioaufbereitung
 - Whisper-Worttimings
 - exakte Szenen-Timeline
 - Bildimport
-- dezente Bewegung
-- geplante Overlays
+- dezente Kamerabewegung
+- Overlays
 - Render
 - QA
 
-## 6. Ergebnis
-
-Zieldatei:
+## 7. Ergebnis
 
 ```text
 04_export/fertiges-video/final-video.mp4
 ```
 
-Der 10-Bilder-Mini-Test 002 wird vorerst übersprungen.
+Der 10-Bilder-Mini-Test 002 wird übersprungen.
