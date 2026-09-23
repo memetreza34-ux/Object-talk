@@ -13,14 +13,14 @@ Harte Grundregeln:
 - 16:9, 1920×1080, 30 fps
 - generierte Standbilder bleiben die visuelle Basis
 - hohe visuelle Dichte statt langer statischer Bildhaltezeiten
-- stark stilisierte hochwertige 3D-Animationsfilm-Welt, deutlich animiert statt fotorealistisch
+- **helle, freundliche, hochwertige 3D-Animationsfilm-Welt**
 - komplexe Vorgaenge visuell einfach und fachlich plausibel erklaeren
+- wichtige sichtbare Dinge knapp auf Deutsch beschriften
 - wissenschaftlich relevante Aussagen pruefen
-- keine unnoetige Themenwiederholung
 
 ## Interner Kurz-Pilot
 
-Ein ausdruecklich markierter interner Test darf kuerzer sein, wenn `05_info/test-mode.json` mit `test_mode: true` vorhanden ist. Nur die Laufzeitregel darf abweichen; Wissenschafts-, Visual-, Sync- und QA-Regeln bleiben aktiv.
+Ein ausdruecklich markierter interner Test darf kuerzer sein, wenn `05_info/test-mode.json` mit `test_mode: true` vorhanden ist. Nur die Laufzeitregel darf abweichen.
 
 Aktueller Pilot:
 
@@ -34,22 +34,33 @@ Der Kanal ist kein dauerhafter Mascot-/Presenter-Kanal. Die Biologie und der erk
 
 Verbindlich:
 
-- hochwertiger stilisierter 3D-Animationsfilm-Look
-- weich, rund und klar animiert
-- deutlich weniger realistisch als medizinische CGI
+- hochwertige stilisierte 3D-Feature-Animation
+- klar animiert, nicht fotorealistisch
+- hell, freundlich und leicht lesbar als Standard
+- weiche, gerundete Formen
+- matte/satinierte Premium-Materialien
+- warmes Hauptlicht + weiches Fill-Light + dezentes Rim-Light
+- klare Tiefenwirkung
+- frische kontrollierte Farben wie Creme, Apricot, Coral, warmes Rot, Himmelblau und Teal
 - vereinfachte, aber erkennbare Anatomie
-- warme filmische Beleuchtung
-- hochwertige matte/satinierte Materialien
-- starke Tiefenwirkung
 - familiengeeignet, aber nicht babyhaft
-- keine Anime-, Comic-, Live-Action- oder fotorealistische Medizinoptik
-- kein Gore und keine Horror-Anatomie
+
+Harte Stilverbote:
+
+- kosmische / Weltraum-artige Bildwelten
+- Galaxie-, Nebel- oder Sternenhintergruende
+- dunkle violette Sci-Fi-Mikrowelt als Default
+- Neon-Labor / Sci-Fi-Tunnel
+- Medical-CGI / Anatomiesoftware
+- nasse realistische Gewebeoptik
+- Corporate-Stock-3D
+- billiger Toy-Look
+- Anime / Comic
+- Gore / Horror
 
 Personifizierte Lebensmittel oder Gegenstaende sind nur erlaubt, wenn sie die Szene wirklich verstaendlicher machen. Molekuele, Organe und Zellen werden nicht automatisch personifiziert.
 
 ## Reference-First ist Pflicht
-
-Stiltreue wird nicht mehr nur durch Textprompts erzwungen.
 
 Referenzreihenfolge:
 
@@ -58,7 +69,7 @@ Referenzreihenfolge:
 3. wiederkehrende Objekt-/Character-Referenzen
 4. konkreter Szenenprompt
 
-Ein Textsatz wie `Using Bild_01 as the exact style reference` zaehlt nicht als tatsaechliche visuelle Referenz. Wenn Flow Referenzbilder/Ingredients unterstuetzt, muessen die benoetigten Referenzen wirklich angehaengt werden.
+Ein Textsatz wie `Using Bild_01 as the exact style reference` zaehlt nicht als tatsaechliche visuelle Referenz. Benoetigte Referenzen muessen wirklich angehaengt werden.
 
 Solange `STYLE_REFERENCE.png` noch nicht existiert, darf `Bild_01` im dokumentierten Bootstrap-Modus aus der schriftlichen Kanal-DNA erzeugt werden. Nach Freigabe muss `Bild_01.png` als echte visuelle Referenz an alle Folgebilder angehaengt werden.
 
@@ -70,43 +81,42 @@ engine/FLOW-AGENT-INSTRUCTIONS.md
 engine/STYLE-REFERENCE-SYSTEM.md
 ```
 
-## Flow erzeugt Bilder, Remotion erzeugt Schrift
+## Sichtbarer Text ist Pflicht
 
-Standardmaessig sind Flow-Bilder textfrei.
+Flow-Bilder sind **nicht standardmaessig textfrei**.
 
-- keine eingebrannten Labels
-- keine KI-Pfeile
-- keine KI-Typografie
-- kein Cover-Hook direkt aus Flow
+### Bild_01 / Cover
 
-Deutsche Beschriftungen bleiben wichtiger Teil der Erklaerung, werden aber deterministisch spaeter gerendert.
+- kurze starke deutsche Hook direkt im Bild
+- normalerweise 3–7 Woerter
+- Cover ohne Text = FAIL
 
-Quelle pro Video:
+### Normale Bilder
 
-```text
-02_bildprompts/label-plan.json
-```
+- normalerweise 1–3 kurze deutsche Labels
+- Begriffe aus `02_bildprompts/label-plan.json`
+- nur wichtige Strukturen/Prozesse beschriften
+- klare Sans-Serif-Typografie
+- keine Textwaende
+- kein englischer sichtbarer Text
 
-Cover-Hook und zusaetzliche Overlays werden im Remotion-/Overlay-System gesetzt.
+Wenn Flow einen deutschen Begriff falsch schreibt, wird zuerst regeneriert. Nur bei wiederholtem Fehler wird exakt dieser Begriff spaeter in Remotion ersetzt. Das finale Video darf die geplanten Labels niemals verlieren.
 
-Nur eine aktuelle ausdrueckliche Nutzeranweisung darf Text direkt in Flow-Bilder zurueckbringen.
-
-## Bild_01 – Cover-Grundbild + erster Shot + Master Style Frame
+## Bild_01 – Cover + erster Shot + Master Style Frame
 
 `Bild_01` ist gleichzeitig:
 
-1. Cover-Grundbild
+1. Cover
 2. erster Shot
 3. Master Style Frame
 4. Referenz fuer alle weiteren Bilder
 
 Darum gilt:
 
-- Bild_01 besonders praezise planen
 - Thema und visuelle Reise auf einen Blick verstaendlich
-- Rendergrad, Licht, Materialien, Farbwelt, Tiefenwirkung und Anatomie-Vereinfachung definieren
-- ruhige Negativflaeche fuer spaeteren Hook vorsehen, wenn sinnvoll
-- Bild selbst textfrei halten
+- heller Premium-3D-Animationsfilm-Look
+- deutsche Hook direkt sichtbar
+- keine kosmische / dunkle / medizinische Optik
 - wenn moeglich 2–4 Varianten erzeugen und die beste visuell pruefen
 
 Nach Freigabe wird Bild_01 bei jeder Folgegeneration als echte visuelle Referenz genutzt.
@@ -114,8 +124,7 @@ Nach Freigabe wird Bild_01 bei jeder Folgegeneration als echte visuelle Referenz
 ## Google-Flow-Prompt-Sprache
 
 - Flow-Anweisungen: Englisch
-- sichtbarer Text im finalen Video: Deutsch
-- Flow-Bilder selbst: standardmaessig textfrei
+- sichtbarer Text: Deutsch
 
 Szenenprompts nach Bild_01 folgen:
 
@@ -125,10 +134,9 @@ SUBJECT
 → SPATIAL LAYOUT
 → CAMERA / SCALE
 → CONTINUITY REFERENCES
+→ REQUIRED GERMAN TEXT
 → FORBIDDEN ELEMENTS
 ```
-
-Keine langen Stilromane als Ersatz fuer echte Referenzen.
 
 ## Verbindlicher Google-Flow-Ablauf
 
@@ -137,7 +145,7 @@ Keine langen Stilromane als Ersatz fuer echte Referenzen.
 1. dauerhafte Agent Instructions laden
 2. `STYLE_REFERENCE.png` anhaengen, falls vorhanden
 3. ausschliesslich `Bild_01` erzeugen
-4. echte Resultate visuell pruefen
+4. echte Resultate auf Stil, Anatomie und deutsche Hook pruefen
 5. bei FAIL regenerieren
 6. beste PASS-Variante als `Bild_01.png` speichern
 7. genau einmal Nutzerfreigabe abwarten
@@ -155,25 +163,19 @@ Bild_22–Bild_26
 ...
 ```
 
-Jedes Bild trotzdem einzeln erzeugen, pruefen und benennen. Bei jeder Generation `Bild_01.png` wirklich anhaengen; `STYLE_REFERENCE.png` zusaetzlich, sobald vorhanden.
+Jedes Bild einzeln erzeugen, pruefen und benennen. Bei jeder Generation `Bild_01.png` wirklich anhaengen. Die vorgesehenen deutschen Labels muessen im Bild vorhanden sein oder als dokumentierter Text-Fallback markiert werden.
 
-### C – Fehlerliste
+### C – Fehlerliste und Recovery
 
-Fehlerhafte oder fehlende Bilder behalten ihre Nummer und kommen auf die Recovery-Liste.
+Fehlerhafte oder fehlende Bilder behalten ihre Nummer. Nach dem Hauptdurchlauf werden nur diese Bilder erneut erzeugt. Promptkorrektur muss den konkreten Fehler adressieren.
 
-### D – Recovery
-
-Nach dem Hauptdurchlauf nur fehlende/fehlerhafte Bildnummern erneut erzeugen. Promptkorrektur muss den konkreten Fehler adressieren.
-
-### E – finale ZIP
+### D – finale ZIP
 
 Nur akzeptierte finale Bilder, lueckenlose Nummerierung, keine Varianten oder Temp-Dateien.
 
 ## Echte Bild-QA
 
-`image-review.json` ist kein Selbstzweck.
-
-Es darf erst nach Sichtpruefung des tatsaechlichen Bildes aktualisiert werden. Eine manuell oder automatisch eingetragene Zahl ohne Bildsichtung ist keine gueltige QA.
+`image-review.json` darf erst nach Sichtpruefung des tatsaechlichen Bildes aktualisiert werden.
 
 Pflicht:
 
@@ -182,58 +184,40 @@ Pflicht:
 - immediate_clarity >= 8/10
 - style_continuity >= 8/10
 - composition >= 8/10
+- label_accuracy >= 8/10
 - ai_artifact_check = PASS
 - scene_difference bestanden
 - overall_score >= 8/10
-- entsprechende finale `Bild_XX.png` existiert
+- finale `Bild_XX.png` existiert
+
+Kosmischer/dunkler Stil-Drift, fehlende deutsche Labels oder falsche Schreibweise = FAIL.
 
 ## Drei Phasen
 
 ### Phase 1 – Creative Director
 
-Erstellt:
-
-1. Themenpruefung
-2. Recherche und Claim-Check
-3. Mechanism Map
-4. finales Script
-5. Satz-Visual-Plan
-6. semantischen Szenenplan
-7. Label-Plan
-8. praezise Flow-Szenenprompts
-9. scene-map.json
-10. overlay-plan.json
-11. Metadaten
+Erstellt Recherche, Claim-Check, Mechanism Map, Script, Satz-Visual-Plan, Szenenplan, Label-Plan, Flow-Szenenprompts, scene-map.json, overlay-plan.json und Metadaten.
 
 ### Phase 2 – Nutzer + Voice-KI + Google Flow
 
 1. Voiceover 1:1 erzeugen
 2. Flow Agent Instructions setzen
-3. Bild_01 erzeugen und freigeben
+3. Bild_01 mit deutscher Hook erzeugen und freigeben
 4. Bild_01 als echte visuelle Referenz nutzen
-5. restliche Bilder einzeln in 5er-Bloecken erzeugen
+5. restliche Bilder einzeln mit deutschen Labels erzeugen
 6. echte Einzelbild-QA
 7. Recovery
 8. finale ZIP
 
-Flow darf keine Szenengrenzen neu erfinden.
-
 ### Phase 3 – Antigravity + Tools + Remotion
 
-1. Audio kanonisch vorbereiten
-2. Bilder sicher importieren
-3. Assets validieren
-4. Voice mit Whisper transkribieren
-5. Script ↔ Audio streng ausrichten
-6. Timeline erzeugen
-7. deutsche Labels/Hook/Overlays aus den Plaenen rendern
-8. Remotion-Runtime bauen
-9. Bilder dezent bewegen
-10. rendern
-11. technische und visuelle QA
-12. Scorecard + Postmortem
-
-Phase 3 darf Script, wissenschaftliche Aussagen, Bildreihenfolge oder Szenengrenzen nicht still veraendern.
+1. Audio vorbereiten
+2. Bilder importieren und validieren
+3. Whisper + Script-Ausrichtung
+4. Timeline erzeugen
+5. nur fehlerhafte/fehlende KI-Texte exakt aus Label-/Overlay-Plan ersetzen
+6. Remotion bauen und rendern
+7. Final-QA, Scorecard und Postmortem
 
 ## Autoritative Reihenfolge
 
@@ -248,7 +232,7 @@ Phase 3 darf Script, wissenschaftliche Aussagen, Bildreihenfolge oder Szenengren
 
 ## Fail-closed
 
-Bei echten Widerspruechen nicht raten. Stoppen bei:
+Stoppen bei:
 
 - Script/Audio stimmen nicht ueberein
 - fehlenden oder doppelten finalen Bildnummern
@@ -256,7 +240,10 @@ Bei echten Widerspruechen nicht raten. Stoppen bei:
 - unklarer Szenenzuordnung
 - wissenschaftlich ungeklärten Kernbehauptungen
 - sichtbar falscher biologischer Darstellung
-- behaupteter Referenznutzung ohne tatsaechlich angehaengte Referenz
+- behaupteter Referenznutzung ohne angehaengte Referenz
+- Cover ohne deutsche Hook
+- wichtige Labels fehlen oder sind falsch geschrieben
+- kosmischer/dunkler/medizinischer Stil-Drift
 - Phase-2-Review ohne vorhandene finale Bilddatei
 
 Ein einzelner Flow-Generierungsfehler ist kein globaler Blocker; dafuer gibt es Fehlerliste + Recovery.
