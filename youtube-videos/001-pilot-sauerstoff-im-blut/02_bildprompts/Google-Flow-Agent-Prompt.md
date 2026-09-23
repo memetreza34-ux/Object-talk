@@ -2,102 +2,48 @@
 
 ## AUFGABE
 
-Erzeuge genau **28 einzelne 16:9-Standbilder** für den deutschen faceless Object-Talk-Erklärkanal.
+Erzeuge genau **28 einzelne 16:9-Standbilder** für den deutschen Object-Talk-Erklärkanal.
 
 Thema: **Wie kommt Sauerstoff von der Lunge bis in deine Zellen?**
 
-## VERBINDLICHE KANAL-DNA
+## VERBINDLICHE KANALWELT
 
-Autoritativ:
+Die ursprüngliche Kanalidee ist verbindlich:
+
+- virale Object-Talk-Figuren bei passenden Lebensmitteln/Gegenständen
+- Inside-the-Body-Szenen in **derselben hochwertigen 3D-Animationsfilm-Welt**
+- Biologie normalerweise **ohne Gesichter**
+- keine erfundenen Maskottchen für O₂, Blutkörperchen, Organe oder Zellen
 
 ```text
-bildwelt/OBJECT-TALK-CHANNEL-DNA.md
+Use the fixed Object-Talk channel world: high-end stylized 3D feature-animation, clearly animated and non-photorealistic, soft rounded sculpted forms, clean matte premium materials, warm cinematic lighting, soft rim light, strong depth, rich controlled colors and clear visual storytelling. Inside-the-body biology stays faceless but must use the exact same animated-film materials, lighting, color quality and shape language as the viral Object-Talk character scenes. Do not invent mascots for molecules, organs or cells. No medical CGI, no realistic skin, no wet tissue, no anatomy-software look, no corporate stock 3D, no cheap toy render, no anime, no comic, no gore, no style drift.
 ```
 
-Jedes Bild muss zuerst wie ein Frame aus **derselben viralen Object-Talk-3D-Animationswelt** wirken. Die Biologie ist der Inhalt, aber **nicht** die Stilwelt.
+## FESTE VISUELLE IDENTITÄT
 
-```text
-Use the fixed channel DNA: premium viral object-talk 3D animated world, high-end stylized feature-animation look, soft rounded sculpted forms, expressive character design when faces are used, clean matte premium materials, warm cinematic lighting, soft rim light, strong depth, rich controlled colors, clear visual hierarchy, friendly modern animated-film quality, clearly non-photorealistic. Keep the same eye design, face language, materials, lighting logic and overall world across every image. No medical realism, no realistic skin, no wet tissue, no anatomy-software CGI, no corporate stock 3D, no cheap toy render, no anime, no comic, no gore, no style drift.
-```
+- O₂: kleine gepaarte blass-cyanfarbene Kugeln, **ohne Gesicht**
+- CO₂: neutral-violett/graue lineare Drei-Kugel-Form, **ohne Gesicht**
+- rote Blutkörperchen: tiefe warmrote bikonkave Scheiben, **ohne Gesicht**
+- Hämoglobin: burgunderrote vereinfachte Struktur im roten Blutkörperchen
+- Organe/Zellen: weich, gerundet, stark animiert, aber fachlich erkennbar
 
-## FESTE FIGUREN-DNA DIESES VIDEOS
-
-### O₂-GUIDE
-
-Eine wiederkehrende kleine Sauerstofffigur führt visuell durch die Reise:
-
-- zwei verbundene blass-cyanfarbene Kugeln
-- große dunkle ovale Augen mit kleinen weißen Highlights
-- weiche dezente Augenbrauen
-- kleiner einfacher Mund
-- freundliche neugierige Mimik
-- glatte matte/satinierte Oberfläche
-- keine Arme/Beine außer wenn eine Szene sie wirklich braucht
-- exakt derselbe Augen-, Gesichts-, Material- und Farblook in jedem Bild
-
-Nur **ein** O₂-Guide ist personifiziert. Weitere Sauerstoffteilchen bleiben einfache cyanfarbene Doppelkugeln ohne Gesicht.
-
-### ROTE BLUTKÖRPERCHEN
-
-- warme tiefrote bikonkave Scheiben
-- ein Vordergrund-Blutkörperchen darf bei Character-Momenten denselben Augenstil wie der O₂-Guide tragen
-- Hintergrund-Blutkörperchen bleiben ohne Gesicht
-- kein realistisches Blut
-
-### BIOLOGIE
-
-Organe, Gefäße, Alveolen, Muskelzellen und Mitochondrien:
-
-- stark stilisierte, saubere animierte 3D-Formen
-- weich, rund, klar lesbar
-- keine realistische Haut
-- keine Poren
-- kein nasses/fleischiges Gewebe
-- kein Medical-CGI-/Anatomiesoftware-Look
-
-Die Szene muss zuerst wie **Animationsfilm** und erst danach wie Anatomie aussehen.
-
-## TEXTREGEL
+## SPRACHE
 
 - Prompt-Anweisungen: Englisch
 - sichtbarer Text: ausschließlich Deutsch
 - normale Szenen: 1–3 kurze wichtige Labels
 - Bild_01: nur Hook, keine kleinen Anatomie-Labels
-- kein KI-Gibberish, keine englischen sichtbaren Wörter
 
 ## EINZIGER FREIGABEPUNKT
 
-1. Lies den kompletten Auftrag.
-2. Erzeuge zuerst ausschließlich `Bild_01`.
-3. Prüfe Bild_01 intern auf Kanal-DNA, Coverqualität, Text und Komposition.
-4. Bei FAIL Bild_01 selbstständig neu erzeugen.
-5. Bei PASS als `Bild_01.png` speichern.
-6. **Genau einmal** Nutzerfreigabe einholen.
+1. Erzeuge zuerst ausschließlich `Bild_01`.
+2. Prüfe Bild_01 intern auf Stil, Coverqualität, Text und Komposition.
+3. Bei FAIL selbstständig neu erzeugen.
+4. Bei PASS als `Bild_01.png` speichern.
+5. **Genau einmal** Nutzerfreigabe einholen.
+6. Nach Freigabe ohne weitere Rückfragen automatisch bis Bild_28 weiterarbeiten.
 
-### Nach Freigabe von Bild_01
-
-Danach **keine weiteren Rückfragen**.
-
-- nicht nach jedem Block fragen
-- nicht „Soll ich weitermachen?“ fragen
-- automatisch Bild_02 bis Bild_28 fertigstellen
-- jedes Bild einzeln erzeugen und prüfen
-- 5er-Blöcke nur intern für QA
-- Fehler auf Recovery-Liste setzen
-- am Ende automatisch neu erzeugen
-- bis zu 3 automatische Versuche pro fehlerhafter Szene
-
-## BILD_01 ALS EXAKTE STILREFERENZ
-
-Bei jedem Folgebild:
-
-```text
-Using Bild_01 as the exact style reference, keep the exact same object-talk 3D animated world, eye design, character language, materials, lighting, color feeling and feature-animation quality.
-```
-
-O₂-Guide, Blutkörperchen, Augenstil und Materialwelt niemals neu erfinden.
-
-## PRODUKTIONSBLÖCKE – OHNE STOPP
+5er-Blöcke sind nur interne QA:
 
 ```text
 Bild_02–06
@@ -109,176 +55,153 @@ Bild_27–28
 Recovery
 ```
 
-Nach jedem Block nur intern prüfen und sofort weiterarbeiten.
+Bei jedem Folgebild gilt:
+
+```text
+Using Bild_01 as the exact style reference, keep the exact same 3D animation world, materials, lighting, color feeling, shape language and render quality.
+```
 
 ---
 
 # BILD_01 – COVER + MASTER STYLE FRAME
 
 ```text
-Create a premium 16:9 cover frame in the fixed viral object-talk 3D animated channel world. Show the recurring O2 guide character large in the foreground: two connected pale-cyan spheres, big dark expressive oval eyes with clean white highlights, subtle eyebrows and a small friendly mouth. Behind the O2 guide, show a beautiful simplified animated journey world with stylized lungs, a heart and a glowing route toward a cell, all built from soft rounded premium 3D forms, not medical anatomy. Warm cinematic lighting, deep plum/navy background, soft coral and burgundy anatomy colors, gentle rim light and strong depth. Reserve a clean dark area for the German hook “So reist Sauerstoff durch deinen Körper”, maximum two lines, no overlap with the character or anatomy. No small labels. No realistic human, no medical CGI, no stock 3D, no toy look.
+Create a premium 16:9 cover frame for a German educational explainer in the exact same high-end 3D animation world as the channel’s viral Object-Talk characters, but keep the biology itself faceless. Show large stylized lungs and a heart as beautiful soft rounded animated 3D forms, with a stream of pale-cyan paired O2 particles entering the lungs and visually continuing toward the bloodstream. Use clean matte materials, warm cinematic light, soft rim light, deep plum/navy background, coral and burgundy anatomy colors and strong foreground-to-background depth. Reserve a clean dark area for the German hook “So reist Sauerstoff durch deinen Körper”, maximum two lines, with no overlap. No human mascot, no O2 character, no anatomy labels, no medical CGI, no stock 3D, no toy look.
 ```
 
 # BILD_02 – REISE-ÜBERSICHT
-
 ```text
-Using Bild_01 as the exact style reference, keep the exact same object-talk 3D animated world, eye design, character language, materials, lighting, color feeling and feature-animation quality. Show the O2 guide starting a clear journey from stylized lungs toward a smooth blood vessel and finally a rounded muscle cell. The path should feel like one connected animated world, not a medical diagram. Add only “Lunge”, “Blut” and “Muskelzelle”.
+Using Bild_01 as the exact style reference, show one connected animated journey from stylized lungs to a smooth blood vessel and finally to a rounded muscle cell, linked by faceless pale-cyan O2 particles. Keep it cinematic, not diagram-like. Add “Lunge”, “Blut” and “Muskelzelle”.
 ```
 
 # BILD_03 – ATEMWEG
-
 ```text
-Using Bild_01 as the exact style reference, show the O2 guide traveling through a simplified animated nose/mouth passage into a smooth rounded trachea inside the same feature-animation world. Keep all anatomy clean, soft and stylized. Add only “Luftröhre”.
+Using Bild_01 as the exact style reference, create a stylized side cutaway of a simplified faceless head and upper chest. Show pale-cyan O2 particles moving through nose or mouth into a smooth rounded trachea. Add only “Luftröhre”.
 ```
 
 # BILD_04 – BRONCHIEN
-
 ```text
-Using Bild_01 as the exact style reference, show the O2 guide moving through a beautifully stylized bronchial tree with soft rounded branches inside animated lungs. Several faceless O2 particles follow behind. Add only “Bronchien”.
+Using Bild_01 as the exact style reference, show the trachea branching into soft rounded bronchi inside stylized lungs while O2 particles travel deeper through the branches. Add only “Bronchien”.
 ```
 
 # BILD_05 – LUNGENBLÄSCHEN
-
 ```text
-Using Bild_01 as the exact style reference, create a colorful animated macro world of soft rounded alveoli, like elegant clustered air bubbles in the same object-talk universe. The O2 guide arrives at the alveoli. No realistic tissue texture. Add only “Lungenbläschen”.
+Using Bild_01 as the exact style reference, create a colorful macro world of soft rounded alveoli clustered at the ends of tiny airways. Keep them clean and animated, never realistic tissue. Add only “Lungenbläschen”.
 ```
 
 # BILD_06 – DÜNNE WAND
-
 ```text
-Using Bild_01 as the exact style reference, show one large soft stylized alveolus beside a smooth capillary wrapping closely around it. The O2 guide stands directly at the thin separation, making the short distance clear. Add “Lungenbläschen” and “Kapillare”.
+Using Bild_01 as the exact style reference, show one large stylized alveolus beside a smooth capillary wrapping closely around it. Make the tiny distance between air and blood immediately understandable. Add “Lungenbläschen” and “Kapillare”.
 ```
 
 # BILD_07 – ÜBERGANGSPUNKT
-
 ```text
-Using Bild_01 as the exact style reference, focus on the O2 guide at the clean animated boundary between alveolus and capillary, about to cross. Keep the moment simple, expressive and easy to understand. Add only “Sauerstoff” and “Lungenbläschen”.
+Using Bild_01 as the exact style reference, focus on pale-cyan O2 particles directly beside the thin animated boundary between alveolus and capillary, moments before crossing. Add “Sauerstoff” and “Lungenbläschen”.
 ```
 
 # BILD_08 – SAUERSTOFF INS BLUT
-
 ```text
-Using Bild_01 as the exact style reference, show the O2 guide and several faceless O2 particles crossing the smooth thin barrier into a stylized capillary filled with deep-red animated blood cells. Make Lunge → Blut obvious. Add “Sauerstoff” and “Blut”.
+Using Bild_01 as the exact style reference, show faceless pale-cyan O2 particles crossing the smooth thin barrier into a stylized capillary filled with deep-red red blood cells. Make Lunge → Blut unmistakable. Add “Sauerstoff” and “Blut”.
 ```
 
 # BILD_09 – BLUTPLASMA
-
 ```text
-Using Bild_01 as the exact style reference, show a clean animated capillary interior. Only a few faceless O2 particles float freely in the plasma while the O2 guide looks toward the nearby red blood cells, visually showing that free plasma transport is the smaller portion. Add only “Blutplasma”.
+Using Bild_01 as the exact style reference, show a clean animated capillary interior with red blood cells and only a few O2 particles freely floating in the surrounding plasma. Make this visibly the smaller portion. Add only “Blutplasma”.
 ```
 
 # BILD_10 – ROTE BLUTKÖRPERCHEN
-
 ```text
-Using Bild_01 as the exact style reference, introduce one foreground red blood cell character with the same eye language as the O2 guide, surrounded by faceless red blood cells. The O2 guide approaches the foreground cell. Keep everything soft, rounded and feature-animated. Add only “Rote Blutkörperchen”.
+Using Bild_01 as the exact style reference, make several soft deep-red biconcave red blood cells the dominant foreground forms while many O2 particles move toward them. No faces, no realistic blood texture. Add only “Rote Blutkörperchen”.
 ```
 
 # BILD_11 – HÄMOGLOBIN
-
 ```text
-Using Bild_01 as the exact style reference, create a stylized cutaway inside the foreground red blood cell character. Reveal simple burgundy hemoglobin structures as clean rounded animated shapes. The O2 guide looks toward them. Add only “Hämoglobin”.
+Using Bild_01 as the exact style reference, create a smooth stylized cutaway of one red blood cell and reveal simple burgundy hemoglobin structures inside it. Keep everything faceless and clearly animated. Add only “Hämoglobin”.
 ```
 
 # BILD_12 – O₂ BINDET
-
 ```text
-Using Bild_01 as the exact style reference, show the O2 guide and faceless O2 particles attaching to the same burgundy hemoglobin structures inside the red blood cell. Make the binding relationship obvious without magnets or toy props. Add “Sauerstoff” and “Hämoglobin”.
+Using Bild_01 as the exact style reference, show pale-cyan O2 particles attaching to the same burgundy hemoglobin structures inside the red blood cell. Make the binding relationship visually clear without toy metaphors. Add “Sauerstoff” and “Hämoglobin”.
 ```
 
 # BILD_13 – ZUM HERZEN
-
 ```text
-Using Bild_01 as the exact style reference, show a beautiful animated chest-world cutaway with simplified lungs and heart, no realistic human skin. The foreground red blood cell carries the O2 guide through a smooth vessel from the lungs toward the heart. Add “Lunge” and “Herz”.
+Using Bild_01 as the exact style reference, show a stylized faceless chest cutaway with simplified lungs and heart as soft animated forms. Oxygen-rich blood flows from the lungs toward the left side of the heart. Add “Lunge” and “Herz”.
 ```
 
 # BILD_14 – HERZ PUMPT
-
 ```text
-Using Bild_01 as the exact style reference, make the stylized heart a large elegant animated hero object pumping the red blood cell carrying the O2 guide into the main artery. Strong forward motion, soft cinematic lighting. Add “Herz” and “Hauptschlagader”.
+Using Bild_01 as the exact style reference, make the stylized heart a large faceless animated hero object pumping oxygen-rich blood into the main artery. Strong clean outward flow and premium cinematic lighting. Add “Herz” and “Hauptschlagader”.
 ```
 
-# BILD_15 – ARTERIEN VERZWEIGEN SICH
-
+# BILD_15 – ARTERIEN
 ```text
-Using Bild_01 as the exact style reference, show the red blood cell carrying the O2 guide traveling through one large smooth artery that branches into smaller rounded vessels toward the leg. Keep the world playful but premium, not like a medical diagram. Add only “Arterie”.
+Using Bild_01 as the exact style reference, show one smooth stylized artery branching into progressively smaller vessels toward leg muscle tissue. Keep the hierarchy clear and cinematic. Add only “Arterie”.
 ```
 
 # BILD_16 – KAPILLARNETZ
-
 ```text
-Using Bild_01 as the exact style reference, show the red blood cell and O2 guide entering a beautiful stylized capillary network woven through simplified rounded muscle tissue. Keep colors clean and rich. Add “Kapillaren” and “Muskelgewebe”.
+Using Bild_01 as the exact style reference, show oxygen-rich blood entering a beautiful stylized network of tiny capillaries woven through simplified rounded muscle tissue. Add “Kapillaren” and “Muskelgewebe”.
 ```
 
-# BILD_17 – GEWEBEUMGEBUNG
-
+# BILD_17 – GEWEBE
 ```text
-Using Bild_01 as the exact style reference, show the O2 guide inside a capillary beside large rounded animated muscle cells. The environment should clearly feel different from the lungs while staying in the exact same object-talk world. Add “Kapillare” and “Gewebe”.
+Using Bild_01 as the exact style reference, show a stylized capillary beside active rounded muscle cells in a clearly different environment from the lungs while staying in the same animated world. Add “Kapillare” and “Gewebe”.
 ```
 
 # BILD_18 – O₂ ZUR MUSKELZELLE
-
 ```text
-Using Bild_01 as the exact style reference, show the O2 guide leaving the capillary and crossing a short clean animated tissue space toward one large stylized muscle cell. Make Blut → Zelle immediately clear. Add “Sauerstoff” and “Muskelzelle”.
+Using Bild_01 as the exact style reference, show pale-cyan O2 particles leaving the capillary and crossing a short clean tissue space toward one large stylized muscle cell. Make Blut → Zelle obvious. Add “Sauerstoff” and “Muskelzelle”.
 ```
 
 # BILD_19 – HÄMOGLOBIN GIBT O₂ AB
-
 ```text
-Using Bild_01 as the exact style reference, return to the same foreground red blood cell cutaway. Show the same burgundy hemoglobin releasing the O2 guide and some faceless O2 particles. Keep character and hemoglobin designs identical to earlier scenes. Add “Hämoglobin” and “Sauerstoff”.
+Using Bild_01 as the exact style reference, show the same red blood cell cutaway where burgundy hemoglobin releases some pale-cyan O2 particles. Keep the design identical to Bild_11 and Bild_12. Add “Hämoglobin” and “Sauerstoff”.
 ```
 
 # BILD_20 – DURCH DIE KAPILLARWAND
-
 ```text
-Using Bild_01 as the exact style reference, create one continuous animated route: the O2 guide leaves the red blood cell, crosses the smooth capillary wall and reaches a rounded muscle cell. Keep the route clean and visually obvious. Add “Rotes Blutkörperchen”, “Kapillarwand” and “Muskelzelle”.
+Using Bild_01 as the exact style reference, create one continuous animated route: O2 leaves a red blood cell, crosses the smooth capillary wall and reaches a rounded muscle cell. Add “Rotes Blutkörperchen”, “Kapillarwand” and “Muskelzelle”.
 ```
 
 # BILD_21 – IN DIE ZELLE
-
 ```text
-Using Bild_01 as the exact style reference, enter a rich colorful animated muscle-cell world. The O2 guide travels through the cell toward several smooth sculpted mitochondria that belong to the same feature-animation universe. Add “Muskelzelle” and “Mitochondrien”.
+Using Bild_01 as the exact style reference, enter a rich colorful animated muscle-cell world. Pale-cyan O2 particles travel through the cell toward several smooth sculpted mitochondria. Add “Muskelzelle” and “Mitochondrien”.
 ```
 
 # BILD_22 – MITOCHONDRIUM
-
 ```text
-Using Bild_01 as the exact style reference, create a large stylized mitochondrion as a beautiful animated destination. The O2 guide arrives at it. Use soft internal warm light and rounded layered forms, never microscopic realism. Add “Mitochondrium” and “Sauerstoff”.
+Using Bild_01 as the exact style reference, create a large faceless stylized mitochondrion as a beautiful animated destination while pale-cyan O2 particles arrive. Use soft internal warm light and rounded layered forms. Add “Mitochondrium” and “Sauerstoff”.
 ```
 
 # BILD_23 – ATP
-
 ```text
-Using Bild_01 as the exact style reference, show the mitochondrion producing small warm golden ATP energy tokens or glowing rounded symbols that move toward nearby cell processes. Keep the visual elegant and educational, not magical. Add “ATP” and “Mitochondrium”.
+Using Bild_01 as the exact style reference, show the mitochondrion producing a controlled warm golden visual output representing ATP for nearby cell processes. Keep it elegant and educational, not magical. Add “ATP” and “Mitochondrium”.
 ```
 
 # BILD_24 – MUSKELZELLE ARBEITET
-
 ```text
-Using Bild_01 as the exact style reference, show the stylized muscle cell actively contracting while warm ATP symbols from the mitochondria are being used. The O2 guide remains nearby as the visual journey protagonist. Add “Muskelzelle” and “ATP”.
+Using Bild_01 as the exact style reference, show a stylized muscle cell actively contracting while warm ATP indicators from the mitochondria are being used. No superhero effects. Add “Muskelzelle” and “ATP”.
 ```
 
 # BILD_25 – CO₂ ENTSTEHT
-
 ```text
-Using Bild_01 as the exact style reference, introduce the fixed CO2 visual: neutral-violet/grey three-sphere molecules produced near the active mitochondrion. Keep them clearly different from the cyan O2 guide. Add only “Kohlendioxid”.
+Using Bild_01 as the exact style reference, show neutral-violet/grey faceless CO2 molecules appearing near the active mitochondrion as a metabolic product, clearly different from cyan O2. Add only “Kohlendioxid”.
 ```
 
 # BILD_26 – CO₂ ZURÜCK INS BLUT
-
 ```text
-Using Bild_01 as the exact style reference, show the neutral-violet CO2 particles leaving the stylized muscle cell and moving through the clean animated tissue space back into a capillary, opposite to the earlier O2 route. Add “Kohlendioxid” and “Blutgefäß”.
+Using Bild_01 as the exact style reference, show CO2 moving from the stylized muscle cell through the clean tissue space back into a nearby capillary, opposite to the earlier O2 route. Add “Kohlendioxid” and “Blutgefäß”.
 ```
 
 # BILD_27 – ZURÜCK ZUR LUNGE
-
 ```text
-Using Bild_01 as the exact style reference, show the return route in the same animated world: CO2 travels through blood to the stylized lungs, crosses from a capillary into a soft rounded alveolus and moves outward with exhaled air. Add “Lunge” and “Kohlendioxid”.
+Using Bild_01 as the exact style reference, show CO2 traveling through blood to the stylized lungs, crossing from a capillary into a soft rounded alveolus and moving outward with exhaled air. Add “Lunge” and “Kohlendioxid”.
 ```
 
 # BILD_28 – FINALE REISE
-
 ```text
-Using Bild_01 as the exact style reference, create a final premium object-talk hero composition connecting the whole journey in one readable animated world: O2 guide → lungs/alveoli → red blood cell/hemoglobin → heart → capillary → muscle cell/mitochondrion → CO2 back to the lungs. Keep all characters, eyes, materials and colors exactly consistent. Add only “Lunge”, “Herz” and “Zelle”.
+Using Bild_01 as the exact style reference, create a final premium hero composition connecting the whole faceless animated journey: lungs/alveoli → red blood cell/hemoglobin → heart → capillary → muscle cell/mitochondrion → CO2 back to the lungs. Keep all materials, colors and biological designs consistent. Add only “Lunge”, “Herz” and “Zelle”.
 ```
 
 ## AUTOMATISCHE ABSCHLUSSPRÜFUNG
@@ -286,11 +209,12 @@ Using Bild_01 as the exact style reference, create a final premium object-talk h
 Nach Bild_28 automatisch:
 
 1. Recovery-Liste abarbeiten.
-2. Alle fehlerhaften/fehlenden Bilder neu erzeugen.
+2. Fehlende/fehlerhafte Bilder neu erzeugen.
 3. Exakt 28 PASS-Bilder sicherstellen.
-4. Prüfen: dieselbe Object-Talk-Welt, derselbe O2-Guide, derselbe Augenstil.
-5. Prüfen: kein Medical-/Realismus-Drift.
-6. Prüfen: sichtbarer Text ausschließlich korrektes Deutsch.
+4. Prüfen: dieselbe Animationsfilm-Welt wie Bild_01.
+5. Prüfen: keine erzwungenen Gesichter/Maskottchen.
+6. Prüfen: kein Medical-/Realismus-Drift.
+7. Prüfen: sichtbarer Text ausschließlich korrektes Deutsch.
 
 ## FINALER ORDNER
 
@@ -298,16 +222,7 @@ Nach Bild_28 automatisch:
 001-pilot-sauerstoff-im-blut_bilder/
 ```
 
-Darin exakt:
-
-```text
-Bild_01.png
-Bild_02.png
-...
-Bild_28.png
-```
-
-Keine Varianten wie `neu`, `copy`, `final2`, `v3`.
+Darin exakt `Bild_01.png` bis `Bild_28.png`.
 
 Zusätzlich:
 
@@ -315,4 +230,4 @@ Zusätzlich:
 001-pilot-sauerstoff-im-blut_bilder.zip
 ```
 
-Erst wenn Ordner + ZIP vollständig sind, melde **fertig**. Nach Bild_01 niemals erneut fragen, ob weitergemacht werden soll.
+Nach Bild_01 niemals erneut fragen, ob weitergemacht werden soll. Erst wenn Ordner + ZIP vollständig sind, melde **fertig**.
