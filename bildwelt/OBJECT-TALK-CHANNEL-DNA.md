@@ -1,136 +1,160 @@
-# Object-Talk Channel DNA – verbindliche 3D-Welt
+# Object-Talk Channel DNA – verbindliche Bildwelt
 
 Status: **KANONISCH / VERBINDLICH**
 
-Diese Datei ist die oberste Stilreferenz fuer alle Google-Flow-Bildprompts des Kanals.
+Diese Datei definiert die kanalweite visuelle Identitaet.
 
-## Die eigentliche Kanalidee
+## Zwei Modi derselben Marke
 
-Object-Talk ist eine hochwertige 3D-Animationsserie mit zwei Ebenen:
+Object-Talk nutzt zwei klar getrennte, aber verwandte Bildmodi:
 
-1. **Object-Talk** – Lebensmittel und Alltagsgegenstaende koennen als klar erkennbare, ausdrucksstarke 3D-Figuren auftreten, wenn das Thema sie natuerlich hergibt.
-2. **Inside-the-Body** – Organe, Blut, Zellen und Prozesse werden als hochwertige, stark stilisierte 3D-Animationsfilm-Szenen gezeigt, normalerweise ohne Gesichter.
+### 1. Object-Talk Character Mode
 
-Beide Ebenen muessen sichtbar aus demselben Film stammen.
+Fuer Lebensmittel und Alltagsgegenstaende, die sprechen oder als Figur auftreten.
 
-## Oberste visuelle Regel
+Merkmale:
+- hochwertiger stilisierter 3D-Character-Look
+- Objektform bleibt sofort erkennbar
+- grosse ausdrucksstarke Augen, Brauen und Mund
+- kleine Arme/Beine nur wenn sinnvoll
+- weiche gerundete Formen
+- saubere matte/satinierte Materialien
+- freundliche moderne Reel-Aesthetik
+- klar animiert, nicht fotorealistisch
 
-**Kein Mensch als Standard-Hauptfigur. Keine Anatomiepuppe. Kein Schulbuchposter.**
+### 2. Educational Explainer Mode
 
-Der Kanal soll nicht aussehen wie Kinder-Gesundheitswerbung, Krankenhaus-Infografik oder Anatomieunterricht.
+Fuer Biologie, Koerper, Organe, Zellen, Stoffwechsel und Prozesse.
 
-Bei Biologie ist der Prozess selbst der Hauptdarsteller: Organ, Gefaess, Zelle, Molekuel, Lebensmittel oder Objekt.
+Verbindlicher Stil:
 
-Wenn menschlicher Kontext wirklich gebraucht wird, nur als vereinfachte gesichtslose Silhouette oder partieller Cutaway im Hintergrund/als Kontext. Kein sichtbares Gesicht, kein laechelnder Junge/Maedchen-Presenter, kein frontal aufgeschnittener Torso als Hero-Motiv.
+**moderne stilisierte 2.5D / Soft-3D Educational Illustration**
 
-## Kernlook
+Leitidee:
+
+**80 % animierte Illustration + 20 % Soft-3D-Tiefe + 0 % Medical-CGI.**
+
+Details stehen in:
+
+```text
+bildwelt/EXPLAINER-STYLE-LOCK.md
+```
+
+## Gemeinsame Kanal-DNA
+
+Beide Modi teilen:
+
+- helle, freundliche Farbwelt
+- weiche gerundete Formen
+- klare visuelle Hierarchie
+- moderne polierte Gestaltung
+- keine Fotorealistik
+- keine Ekel-/Horroroptik
+- leicht verstaendliche Bildsprache
+- familiengeeignet, aber nicht babyhaft
+
+## Educational Explainer Mode – Kernlook
 
 Verbindlich:
 
-- hochwertige theatrale 3D-Feature-Animation
-- klar animiert, niemals fotorealistisch
-- hell, freundlich, modern und filmisch
-- weiche gerundete skulptierte Formen
-- saubere matte/satinierte Premium-Materialien
-- warmes Key-Light, weiches Fill-Light, dezentes Rim-Light
-- echte Tiefenstaffelung: Vordergrund, Mittelgrund, Hintergrund
-- gezielte Kameraperspektive statt flacher Diagramm-Ansicht
-- frische kontrollierte Farben: Creme, Apricot, Coral, warmes Rot, helles Himmelblau, Teal
-- familienfreundlich, aber nicht babyhaft
-- jede Szene wirkt wie ein Filmframe, nicht wie eine Illustration auf einer Seite
+- sichtbar animiert / illustriert
+- stark vereinfachte, erkennbare Anatomie
+- matte bis leicht satinierte Oberflaechen
+- weiche Farbverlaeufe
+- subtile Soft-3D-Schatten
+- leichte Tiefenstaffelung statt echter 3D-Kinowelt
+- pro Bild eine klare Hauptaussage
+- wenige Objekte
+- ruhige Hintergruende
+- Klarheit wichtiger als Detailreichtum
 
-## Was NICHT passieren darf
+## Semantische Farben
 
-### Kein Human-Presenter-Look
+- O2 / Sauerstoff: Cyan / Tuerkis
+- rote Blutkoerperchen: tiefes warmes Rot
+- Blutgefaesse: Coral / Rot
+- Organe: Peach / Coral
+- Muskelzellen: Orange / Apricot
+- CO2: weiches Violett
+- ATP / Energie: warmes Gelb / Gold
+- Hintergrund: Creme / helles Blau / weiches Beige
 
-Verboten als Standard:
-- Kind oder Erwachsener neben Organen
-- sichtbares Gesicht als Blickfang
-- transparenter menschlicher Oberkoerper als Cover-Hauptmotiv
-- Anatomie-Torso / Mannequin / Schulmodell
-- medizinisches Poster mit Organen im Koerper
+## Menschen-Regel
 
-### Kein Poster-/Schulbuch-Look
+Menschen sind nicht die Standard-Bildsprache.
 
-Verboten:
-- frontal zentrierter Torso mit Labels ringsum
-- isolierte Organstuecke wie auf einer Lehrtafel
-- flache Infografik
-- Dashboard-/Kartenlayout
-- sterile weisse Medizinillustration
+Nicht als Standard:
+- Presenter
+- sichtbare Gesichter
+- Anatomie-Torso / Mannequin
+- Mensch neben isolierten Organen
 
-### Kein kosmischer Look
+Wenn menschlicher Kontext fachlich noetig ist, nur stark vereinfacht, gesichtslos und klar sekundaer.
 
-Verboten:
+## Hard FAIL – Explainer
+
+- photorealistische Anatomie
+- Medical-CGI
+- realistisches nasses Gewebe
+- Mikroskop-Fotorealismus
+- dunkle violette Mikro-/Sci-Fi-Welt
 - Weltraum / Galaxy / Nebula
-- dunkle violette Mikro-Fantasywelt
-- Sci-Fi-Tunnel
-- Neon-Labor
-- alienartige leuchtende Biologie
-- abstrakte magische Partikelwelt
+- flache Schulbuchtafel mit uebermaessig vielen Labels
+- zu viele Inhalte gleichzeitig
+- unklare Prozessrichtung
+- spielzeugartiger Plastiklook
 
-## Character-DNA – nur fuer passende Lebensmittel/Gegenstaende
+## Character-DNA
 
-Wenn eine echte Object-Talk-Figur sinnvoll ist:
+Wenn Lebensmittel oder Alltagsobjekte als Object-Talk-Figur auftreten:
 
-- Objektform bleibt sofort erkennbar
-- grosse dunkle ovale Augen mit kleinen Catchlights
-- klare Augenbrauen
+- Originalobjekt bleibt klar erkennbar
+- grosse dunkle ovale Augen mit Catchlights
+- klare Brauen
 - einfacher lesbarer Mund
-- starke Mimik
-- kleine stilisierte Arme/Beine nur wenn hilfreich
+- ausdrucksstarke Mimik
+- kleine stilisierte Gliedmassen nur wenn hilfreich
 - keine menschliche Haut
 - keine Babyproportionen
-- hochwertiges 3D-Animationsfilm-Material und Licht
-
-## Inside-the-Body-DNA
+- keine zufaelligen Stilwechsel zwischen Szenen
 
 Biologische Strukturen bleiben normalerweise gesichtslos.
 
-Darstellung:
-- klar stilisierte, vereinfachte 3D-Formen
-- fachlich erkennbar
-- clean und trocken statt nass/fleischig
-- dieselbe Material-, Licht- und Farbwelt wie Object-Talk
-- starke raeumliche Inszenierung
-- Prozesse ueber Position, Staffelung und Bewegung erklaeren
-
-Keine Gesichter auf O2, CO2, roten Blutkoerperchen, Organen, Alveolen, Zellen oder Mitochondrien, ausser eine aktuelle ausdrueckliche Nutzeranweisung verlangt es.
-
-## Fester Stilblock fuer Flow
+## Flow-Stilblock – Explainer
 
 ```text
-Use the fixed Object-Talk channel world: premium theatrical 3D animated-feature quality, bright friendly cinematic staging, soft rounded sculpted forms, polished matte/satin materials, warm key light, soft fill light, gentle rim light, clean depth and fresh controlled colors. The result must look like a real frame from a high-end 3D animated film, not an anatomy poster or school illustration. Human presenters, visible faces, torso mannequins and anatomy-chart compositions are not part of the channel identity. Inside-body biology stays normally faceless and is staged as cinematic 3D scenes with clear foreground, midground and background. No cosmic galaxy look, no dark-purple microscopic fantasy, no sci-fi tunnel, no medical CGI, no anatomy-software look, no corporate stock 3D, no cheap toy render, no anime, no comic, no gore.
+Use the fixed Object-Talk educational explainer world: modern stylized 2.5D / soft-3D educational illustration, clearly animated and illustrated rather than realistic. Use rounded simplified shapes, matte surfaces, soft gradients, subtle shadows, gentle depth and a clean readable composition. Show one clear visual idea per frame. Keep biology simplified but recognizable. Use consistent semantic colors: oxygen cyan/turquoise, blood cells deep warm red, vessels coral-red, organs peach/coral, muscle cells apricot-orange, CO2 soft violet, ATP warm yellow-gold, background light cream or soft blue. Prioritize visual clarity over detail. No photorealism, no medical CGI, no wet tissue, no realistic microscopic texture, no dark sci-fi world, no cosmic background, no human presenter, no anatomy mannequin, no cluttered infographic.
 ```
 
-## Bild_01
+## Cover-Regel
 
-`Bild_01` ist immer Cover, erster Shot und Episode-Master-Style-Frame.
+`Bild_01` ist Cover, erster Shot und Episode-Master-Frame.
 
-Bild_01 muss:
-- das Thema sofort erklaeren
-- wie ein hochwertiger 3D-Animationsfilm-Key-Visual wirken
-- den biologischen Prozess selbst zum Hero machen
-- den deutschen Hook sauber lesbar tragen
-- nur wenige wichtige deutsche Labels enthalten
-- ohne Menschen-Presenter funktionieren
-
-Hard FAIL:
-- laechelnder Mensch / Kind
-- sichtbares Gesicht
-- Anatomie-Torso / Mannequin
-- Poster-/Schulbuchkomposition
-- kosmische oder medizinische Bildwelt
+Cover:
+- nur ein klares Hauptmotiv / eine klare visuelle Reise
+- starke lesbare deutsche Hook
+- keine zusaetzlichen Anatomie-Labels
+- darf etwas kraeftiger und kontrastreicher sein als normale Szenen
+- bleibt trotzdem im gleichen 2.5D / Soft-3D Explainer-Look
 
 ## Textregel
 
 - Prompt-Anweisungen: Englisch
-- sichtbarer Text: nur Deutsch
-- Cover: kurze starke deutsche Hook + nur geplante Kernlabels
-- normale Szenen: normalerweise 1–3 kurze deutsche Labels
+- sichtbarer Text: Deutsch
+- Cover: nur Hook / Titel
+- normale Szenen: 0–2 kurze Labels bevorzugt
+- maximal 3 nur wenn wirklich noetig
+- keine Textwaende
 - kein englischer sichtbarer Text
-- kein KI-Gibberish
-- falsche Schreibweise = Regeneration, Remotion nur als exakter Fallback
+
+## Referenzen
+
+Visuelle Referenzen bleiben wichtiger als Textbeschreibung:
+
+1. freigegebene `STYLE_REFERENCE.png`
+2. freigegebenes `Bild_01.png`
+3. wiederkehrende Objekt-/Character-Referenzen
+4. Szenenprompt
 
 ## Autoritaet
 
@@ -138,6 +162,6 @@ Bei Konflikten gilt:
 1. aktuelle ausdrueckliche Nutzeranweisung
 2. `PROJECT_CONTRACT.md`
 3. diese Datei
-4. echte freigegebene `STYLE_REFERENCE.png`
-5. freigegebenes `Bild_01.png`
+4. `bildwelt/EXPLAINER-STYLE-LOCK.md`
+5. echte visuelle Referenzen
 6. Szenenprompt
