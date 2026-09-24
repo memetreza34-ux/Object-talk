@@ -2,203 +2,166 @@
 
 Diese Datei definiert die verbindliche Produktionslogik fuer Google Flow.
 
-## 1. Grundprinzip: Referenz zuerst
+## 1. Referenz zuerst
 
 Referenzreihenfolge:
 
-1. `assets/channel/STYLE_REFERENCE.png` – kanalweite Style-Referenz, sobald freigegeben
-2. `Bild_01.png` – Episode-Style- und Continuity-Referenz
-3. optionale Objekt-/Character-Referenzen
+1. `assets/channel/STYLE_REFERENCE.png`
+2. `Bild_01.png`
+3. Objekt-/Character-Referenzen
 4. konkreter Szenenprompt
 
-Ein Satz wie `Using Bild_01 as the exact style reference` ersetzt niemals das tatsaechliche Anhaengen von `Bild_01.png` in Flow.
+Ein Satz wie `Using Bild_01 as reference` ersetzt niemals das echte Anhaengen von `Bild_01.png`.
 
 Solange `STYLE_REFERENCE.png` fehlt:
-- nur `Bild_01` darf ohne kanalweite Bildreferenz erzeugt werden
+- nur `Bild_01` darf ohne kanalweite Bildreferenz entstehen
 - Bild_01 wird besonders streng geprueft
-- nach Freigabe muss Bild_01 bei jeder Folgegeneration wirklich angehaengt werden
+- danach muss Bild_01 bei jeder Folgegeneration wirklich angehaengt werden
 
-## 2. Dauerhafte Flow-Agent-Instructions
-
-Dauerhafte Regeln stehen in:
+## 2. Dauerhafte Flow-Regeln
 
 ```text
 engine/FLOW-AGENT-INSTRUCTIONS.md
+bildwelt/OBJECT-TALK-CHANNEL-DNA.md
+bildwelt/EXPLAINER-STYLE-LOCK.md
 ```
 
-Der Video-Prompt beschreibt den konkreten Bildinhalt, exakten deutschen Text und die Komposition.
+## 3. Verbindliche Explainer-Bildwelt
 
-## 3. Verbindliche Bildwelt
+Fuer Biologie-/Erklaerszenen gilt:
 
-Die Kanalwelt ist eine **helle, freundliche, hochwertige theatrale 3D-Animationsfilm-Welt**.
+**moderne stilisierte 2.5D / Soft-3D Educational Illustration**
+
+Leitidee:
+
+**80 % animierte Illustration + 20 % Soft-3D-Tiefe + 0 % Medical-CGI.**
 
 Verbindlich:
-- premium 3D-Feature-Animation
-- deutlich animiert, nicht fotorealistisch
-- weich gerundete skulptierte Formen
-- matte/satinierte Premium-Materialien
-- warmes Hauptlicht, weiches Fill-Light, dezentes Rim-Light
-- klare Vordergrund-/Mittelgrund-/Hintergrundstaffelung
-- gezielte Kamera statt flacher Diagramm-Ansicht
-- frische Farben: Creme, Apricot, Coral, warmes Rot, Himmelblau, Teal
-- Biologie fachlich erkennbar, aber vereinfacht
-- biologische Strukturen normalerweise gesichtslos
+- klar animiert / illustriert
+- nicht fotorealistisch
+- weich gerundete vereinfachte Formen
+- matte bis leicht satinierte Oberflaechen
+- weiche Farbverlaeufe
+- subtile Schatten
+- leichte Tiefenstaffelung
+- ruhige helle Hintergruende
+- eine Hauptaussage pro Bild
+- wenige Objekte
+- Klarheit wichtiger als Detailreichtum
 
-### Menschen-Regel
+Semantische Farben:
+- O2 = Cyan / Tuerkis
+- rote Blutkoerperchen = tiefes warmes Rot
+- Blutgefaesse = Coral / Rot
+- Organe = Peach / Coral
+- Muskelzellen = Orange / Apricot
+- CO2 = weiches Violett
+- ATP = warmes Gelb / Gold
+- Hintergrund = Creme / helles Blau / weiches Beige
 
-Menschen sind **nicht** die Standard-Bildsprache.
-
-Flow darf nicht automatisch erzeugen:
-- Kind oder Erwachsener als Presenter
-- sichtbares Gesicht als Hauptmotiv
-- Mensch neben isolierten Organen
-- transparenter Oberkoerper als Cover-Hero
-- Anatomie-Torso / Mannequin / Schulmodell
-- frontal aufgeschnittenen Koerper als Lehrtafel
-
-Wenn menschlicher Kontext wissenschaftlich noetig ist, nur als vereinfachte gesichtslose Silhouette oder partielle Huelle im Hintergrund. Organ/Prozess bleibt Hauptmotiv.
-
-### Poster-Regel
-
-Harter FAIL:
-- Anatomieposter
-- Schulbuchgrafik
-- medizinische Lehrtafel
-- flache Infografik
-- isolierte Organstuecke auf neutralem Hintergrund
-- Dashboard-/Kartenlayout
-
-Jedes Bild soll wie ein Filmframe inszeniert sein: Perspektive, Tiefenstaffelung, Licht, Vordergrundueberlagerung und klare Blickfuehrung.
-
-### Weitere harte Verbote
-
-- kosmische / Weltraum-artige Optik
-- Galaxie-/Nebelhintergruende
-- dunkle violette Mikrowelt als Default
-- Sci-Fi-Tunnel / Neon-Labor
+Harte Stilverbote:
+- Photorealismus
 - Medical-CGI / Anatomiesoftware
-- realistische Haut/Poren
-- nasse Gewebetexturen
-- Corporate-Stock-3D
+- nasses Fleisch / Gewebe
+- Mikroskop-Fotorealismus
+- dunkle violette Sci-Fi-Mikrowelt
+- Weltraum / Galaxy
+- Human-Presenter
+- Torso-Mannequin
+- ueberladene Infografik
 - billiger Toy-Look
-- Anime / Comic
-- Gore / Horror
 
-## 4. Sichtbarer Text
+## 4. Object-Talk Character Mode
 
-Flow-Bilder enthalten den geplanten deutschen Text.
+Fuer sprechende Lebensmittel / Alltagsobjekte bleibt der hochwertige stilisierte 3D-Character-Look erlaubt.
 
-Verbindlich:
-- sichtbarer Text ausschliesslich Deutsch
-- `Bild_01` mit kurzer starker Hook
-- normale Szenen normalerweise 1–3 kurze Labels
-- Begriffe aus `02_bildprompts/label-plan.json`
-- saubere Sans-Serif-Typografie
+Dieser Modus darf nicht automatisch auf Organe, Molekuele und Zellen uebertragen werden.
+
+## 5. Sichtbarer Text
+
+Cover:
+- nur die festgelegte deutsche Hook
+- keine Anatomie-Labels
+
+Normale Szenen:
+- 0–2 kurze deutsche Labels bevorzugt
+- maximal 3 bei echtem Bedarf
 - keine Textwaende
 - kein englischer sichtbarer Text
 
-### Text-Recovery
-
-Bei falscher Schreibweise:
-1. gleiche Szene mit exakt hervorgehobenem Begriff regenerieren
+Bei falscher Flow-Schreibweise:
+1. regenerieren
 2. maximal einen weiteren Text-Versuch
-3. dann sauberes Bild mit freier Labelzone erzeugen
-4. denselben deutschen Begriff spaeter exakt in Remotion setzen
+3. danach exakter Remotion-Fallback
 
-## 5. Bild_01
+## 6. Bild_01
 
-`Bild_01` ist Cover, erster Shot, Episode-Master-Style-Frame und Referenz fuer alle Folgebilder.
+`Bild_01` ist Cover, erster Shot, Episode-Master-Frame und Referenz fuer Folgebilder.
 
 Ablauf:
 1. Agent Instructions laden
 2. STYLE_REFERENCE anhaengen, falls vorhanden
 3. nur Bild_01 erzeugen
-4. 3 Varianten erzeugen, wenn moeglich
-5. automatisch alle ungeeigneten Varianten verwerfen
+4. 3 Varianten, wenn moeglich
+5. ungeeignete Varianten automatisch verwerfen
 6. beste PASS-Variante zeigen
-7. genau einmal Nutzerfreigabe einholen
+7. genau einmal Nutzerfreigabe
 
-### Bild_01 Hard FAIL
-
-- deutsche Hook fehlt/falsch
-- Kind/Erwachsener/Presenter sichtbar
-- sichtbares Gesicht als Hero
-- Torso-Mannequin / transparenter Oberkoerper dominiert
-- Anatomieposter-/Schulbuchkomposition
-- kosmisch / dunkel / Sci-Fi
-- Medical-CGI / Anatomiesoftware / Stock-3D
-- babyhaft / billig
+Bild_01 Hard FAIL:
+- Hook fehlt / falsch
+- Zusatzlabels auf Cover
+- photorealistisch / medizinisch
+- Mensch / Presenter / Torso-Mannequin
+- kosmisch / Sci-Fi
+- ueberladen
 - Thema nicht sofort erkennbar
 
-Bei Biologie-Covern ist der biologische Prozess selbst der Hero.
+## 7. Folgegenerationen
 
-## 6. Folgegenerationen
-
-Nach Freigabe von Bild_01:
+Nach Freigabe:
 - STYLE_REFERENCE anhaengen, wenn vorhanden
 - Bild_01 immer anhaengen
 - relevante Objekt-/Character-Referenzen anhaengen
 - jede Szene einzeln erzeugen
-- exakte deutsche Labels verwenden
-- Filmframe-Komposition und Kameratiefe beibehalten
+- pro Szene genau eine Hauptaussage
+- semantische Farben stabil halten
+- nur notwendige Labels verwenden
 
-## 7. Szenenprompt-Schema
+## 8. Szenenprompt-Schema
 
 ```text
-1. SUBJECT
-2. VISIBLE PROCESS / CHANGE
-3. SPATIAL LAYOUT
-4. CAMERA / SCALE
-5. STYLE CONTINUITY
-6. REQUIRED GERMAN TEXT
-7. FORBIDDEN ELEMENTS
+1. ONE TEACHING IDEA
+2. MAIN SUBJECT
+3. START / END
+4. MOVEMENT / CHANGE
+5. SIMPLE SPATIAL LAYOUT
+6. SOFT-3D STYLE CONTINUITY
+7. REQUIRED GERMAN TEXT
+8. FORBIDDEN ELEMENTS
 ```
 
 Beispiel:
 
 ```text
-Create a bright 16:9 premium animated-feature macro scene. One large rounded alveolus fills the left foreground and one narrow capillary curves through the right midground. Show four paired pale-cyan O2 molecules crossing the thin barrier from alveolus to blood; keep deep-red biconcave red blood cells only inside the capillary. Camera: close 3/4 macro with clear foreground and background depth. Match the attached reference for materials, lighting and palette. Add the exact German labels “Sauerstoff” and “Blut”. No human presenter, no anatomy poster, no cosmic background, no medical CGI, no English text.
+Create a modern stylized 2.5D / soft-3D educational illustration. One large simplified rounded alveolus fills the left side and one smooth coral-red capillary runs along the right side. Show five cyan oxygen particles crossing the thin barrier from the alveolus into the blood. Keep deep-red blood cells only inside the vessel. Use matte surfaces, soft gradients, subtle shadows and a light cream / soft-blue background. Add only the German labels “Sauerstoff” and “Blut”. No photorealism, no medical CGI, no wet tissue, no human presenter, no cosmic background.
 ```
 
-## 8. Wiederkehrende Elemente Pilot 001
+## 9. Wiederkehrende Elemente Pilot 001
 
-- O2 = zwei verbundene blass-cyanfarbene Kugeln, gesichtslos
-- CO2 = neutral-violett/graue Drei-Kugel-Form, gesichtslos
-- rote Blutkoerperchen = tiefe warmrote bikonkave Scheiben, gesichtslos
-- Haemoglobin = burgunderrote vereinfachte Struktur
-- Mitochondrien = konsistenter Organell-Look
+- O2 = Cyan / Tuerkis
+- CO2 = weiches Violett
+- rote Blutkoerperchen = tiefes warmes Rot
+- Haemoglobin = Burgunder
+- Gefaesse = Coral / Rot
+- Organe = Peach / Coral
+- Muskelzellen = Apricot / Orange
+- ATP = Gelb / Gold
 
 Akzeptierte Referenzen unter `assets/channel/references/` speichern und bei relevanten Szenen anhaengen.
 
-## 9. Produktion in 5er-Bloecken
+## 10. QA
 
-Nach Bild_01:
-
-```text
-Bild_02–06
-Bild_07–11
-Bild_12–16
-Bild_17–21
-...
-```
-
-Jedes Bild einzeln erzeugen und bewerten.
-
-Interne Block-QA:
-- Referenzen wirklich verwendet
-- Filmframe statt Poster
-- keine Menschen-Presenter / Torso-Mannequins
-- heller Premium-Animationslook
-- kein kosmischer/dunkler Drift
-- gleiche Material-/Licht-/Farbwelt
-- wiederkehrende Objekte konsistent
-- fachlich plausibel
-- deutsche Labels korrekt
-- kein englischer sichtbarer Text
-
-## 10. Echte visuelle QA
-
-`image-review.json` erst nach Sichtpruefung des tatsaechlichen Bildes aktualisieren.
+`image-review.json` erst nach Sichtpruefung des echten Bildes aktualisieren.
 
 Pflichtkriterien:
 - scientific_accuracy
@@ -206,21 +169,22 @@ Pflichtkriterien:
 - immediate_clarity
 - style_continuity
 - composition
-- label_accuracy
+- label_accuracy, wenn Labels vorgesehen
 - ai_artifact_check
 - scene_difference
 - overall_score
 
-Jeder zentrale Score mindestens 8/10. Mensch-/Torso-/Poster-Hard-Fails koennen nicht durch einen Durchschnittsscore ausgeglichen werden.
+Jeder zentrale Score mindestens 8/10.
+
+Hard FAIL kann nicht durch Durchschnittsscore ausgeglichen werden.
 
 ## 11. Recovery
 
 Bei FAIL:
-1. Bildnummer behalten
+1. gleiche Bildnummer behalten
 2. konkreten Fehler notieren
-3. Prompt nur am Fehler nachschaerfen
-4. bis zu 3 automatische Neuversuche
-5. keine Ersatznummern erfinden
+3. nur diesen Fehler im Prompt korrigieren
+4. bis zu 3 Neuversuche
 
 ## 12. Finaler Bilderordner
 
@@ -228,19 +192,14 @@ Bei FAIL:
 <video-id>_bilder/
 ```
 
-Darin nur `Bild_01.png` bis `Bild_NN.png`, lueckenlos, 16:9 und nur akzeptierte Varianten.
+Nur akzeptierte `Bild_01.png` bis `Bild_NN.png`, lueckenlos und 16:9.
 
 ## 13. Harte Verbote
 
 Flow darf niemals:
-- eine nur erwaehnte Referenz als angehaengte Referenz behandeln
-- Human-Presenter / Kind / sichtbares Gesicht zum Standard machen
-- Torso-Mannequins oder Anatomieposter als Kanalstil akzeptieren
-- einen neuen Stil pro Szene erfinden
-- kosmische oder Sci-Fi-Mikrowelten als Standard erzeugen
-- in Fotorealismus oder Medical-CGI driften
-- Molekuele/Organe/Zellen ohne Grund personifizieren
-- die deutsche Cover-Hook weglassen
-- wichtige Labels grundlos weglassen
-- englischen sichtbaren Text erzeugen
+- nur erwaehnte Referenzen als angehaengt behandeln
+- Explainer-Szenen in Medical-CGI oder Photorealismus driften lassen
+- mehrere Lehrziele unnoetig in ein Bild packen
+- semantische Farben grundlos aendern
+- Cover-Zusatzlabels erzeugen
 - nach Bild_01 weitere Freigaben verlangen
