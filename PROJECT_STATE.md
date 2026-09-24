@@ -12,13 +12,33 @@ Thema:
 
 **Wie kommt Sauerstoff von der Lunge bis in deine Zellen?**
 
-Pilot 001 ist der erste echte 2–3-Minuten-Pilotfilm.
+Pilot 001 ist jetzt als **exakter 2:30-Minuten-Produktionspilot** festgelegt.
+
+Ziel:
+
+- 150 Sekunden
+- 28 Szenen
+- 343 Voiceover-Woerter
+- ca. 137 Woerter/Minute
+- 16:9 / 1920×1080 / 30 fps
+
+Autoritative Timing-Datei:
+
+```text
+youtube-videos/001-pilot-sauerstoff-im-blut/05_info/timeline-2m30.json
+```
+
+Produktionsplan:
+
+```text
+youtube-videos/001-pilot-sauerstoff-im-blut/03_pipeline/VIDEO-2M30-PRODUCTION.md
+```
 
 ## Aktueller Bildwelt-Status
 
 Die Explainer-Bildwelt wurde am 24.09.2026 nach mehreren Flow-Tests **inhaltlich freigegeben und im Repo verankert**.
 
-Neue verbindliche Richtung:
+Verbindliche Richtung:
 
 **moderne stilisierte 2.5D / Soft-3D Educational Illustration**
 
@@ -123,11 +143,23 @@ Bild_01 aus der kanonischen Soft-3D-Bildwelt erzeugen
 → Folgeframes mit identischer Stil-/Farblogik erzeugen
 ```
 
-## Naechster Produktionsschritt
+## Produktionsstatus
 
-1. neuen Soft-3D-Stil in Flow Agent Instructions verwenden.
-2. Bild_01 neu erzeugen.
-3. Bild_01 freigeben.
-4. Bild_01 als echte visuelle Referenz an Folgeszenen anhaengen.
-5. Pilot 001 komplett mit der neuen Bildwelt bauen.
-6. erst nach dem fertigen Pilotvideo noch Feintuning vornehmen, nicht die Bildwelt wieder komplett wechseln.
+Bereit:
+
+- Voiceover-Inhalt
+- 2:30-Timing
+- 28 Szenen
+- Szenenbewegungen
+- Bildwelt
+- Label-Logik
+- Flow-Prompt
+- Remotion-Produktionsplan
+
+Noch benoetigt fuer den finalen MP4-Render:
+
+1. freigegebenes `Bild_01`
+2. finale `Bild_02`–`Bild_28`
+3. finales Voice-Audio
+
+Danach kann der Pilot gemaess `VIDEO-2M30-PRODUCTION.md` zusammengesetzt und gerendert werden.
