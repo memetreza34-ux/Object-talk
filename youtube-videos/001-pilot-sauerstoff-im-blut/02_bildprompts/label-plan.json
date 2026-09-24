@@ -8,10 +8,12 @@
     "label_most_important_visible_things": true,
     "fallback_to_overlay_if_ai_text_wrong": true,
     "cover_requires_german_hook": true,
-    "cover_hook_words": "3-7"
+    "cover_hook_words": "3-7",
+    "cover_labels_required": false,
+    "cover_title_only": true
   },
   "images": [
-    {"image_asset_id":"Bild_01","mode":"cover-hook-and-key-labels","hook_text":"So reist Sauerstoff durch deinen Körper","labels":[{"text":"Lunge","target":"sichtbare Lungen im transparenten Oberkörper","reason":"zentrale Startstation der Sauerstoffreise","fallback_overlay":true},{"text":"Herz","target":"sichtbares Herz im Brustkorb","reason":"zentrale Transportstation","fallback_overlay":true}]},
+    {"image_asset_id":"Bild_01","mode":"cover-hook-only","hook_text":"So reist Sauerstoff durch deinen Körper","labels":[]},
     {"image_asset_id":"Bild_02","mode":"key-labels","labels":[{"text":"Lunge","target":"Lunge links","reason":"Startpunkt der Vorschau","fallback_overlay":true},{"text":"Blut","target":"Blutgefäß in der Mitte","reason":"Transportweg","fallback_overlay":true},{"text":"Muskelzelle","target":"Zelle rechts","reason":"Zielpunkt der Vorschau","fallback_overlay":true}]},
     {"image_asset_id":"Bild_03","mode":"key-labels","labels":[{"text":"Luftröhre","target":"zentrale Atemröhre","reason":"wichtiger Atemweg","fallback_overlay":true}]},
     {"image_asset_id":"Bild_04","mode":"key-labels","labels":[{"text":"Bronchien","target":"verzweigte Atemwege in der Lunge","reason":"Hauptstruktur der Szene","fallback_overlay":true}]},
