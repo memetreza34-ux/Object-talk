@@ -1,10 +1,12 @@
 {
   "test_mode": true,
   "purpose": "first-real-small-production-pilot",
-  "target_seconds": 135,
-  "acceptable_seconds_min": 115,
-  "acceptable_seconds_max": 160,
+  "target_seconds": 150,
+  "acceptable_seconds_min": 145,
+  "acceptable_seconds_max": 155,
+  "target_voice_wpm": 137,
+  "scene_count": 28,
   "counts_as_published_topic": false,
   "production_longform_minimum_override": true,
-  "notes": "Erster echter kleiner 2–2,5-Minuten-Produktionspilot. Testet die freigegebene stark stilisierte 3D-Animationsfilm-Welt, Bild_01 als Master Style Frame, deutsche Labels, hohe Bilddichte, Flow-Konsistenz und die vollständige Remotion-Pipeline. Der 10-Bilder-Mini-Test 002 wird vorerst übersprungen. Normale Kanalvideos bleiben später mindestens 5 Minuten lang."
+  "notes": "Pilot 001 ist jetzt als echter 2:30-Minuten-Test festgelegt. Das vorhandene Voiceover hat 343 Woerter und passt bei ca. 137 Woertern pro Minute auf etwa 150 Sekunden. Getestet werden die neue 2.5D/Soft-3D-Erklaerbildwelt, Bild_01 als Cover/Master-Referenz, 0-2 kurze deutsche Labels pro normaler Szene, hohe visuelle Dichte und die komplette Flow-zu-Remotion-Pipeline. Normale Kanalvideos bleiben spaeter mindestens 5 Minuten lang."
 }
