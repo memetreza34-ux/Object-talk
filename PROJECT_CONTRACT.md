@@ -13,52 +13,90 @@ Harte Grundregeln:
 - 16:9, 1920×1080, 30 fps
 - generierte Standbilder bleiben die visuelle Basis
 - hohe visuelle Dichte statt langer statischer Bildhaltezeiten
-- **helle, freundliche, hochwertige 3D-Animationsfilm-Welt**
 - komplexe Vorgaenge visuell einfach und fachlich plausibel erklaeren
 - wichtige sichtbare Dinge knapp auf Deutsch beschriften
 - wissenschaftlich relevante Aussagen pruefen
 
-## Interner Kurz-Pilot
+## Zwei verbindliche Bildmodi
 
-Ein ausdruecklich markierter interner Test darf kuerzer sein, wenn `05_info/test-mode.json` mit `test_mode: true` vorhanden ist. Nur die Laufzeitregel darf abweichen.
+### A. Object-Talk Character Mode
 
-Aktueller Pilot:
+Fuer sprechende Lebensmittel und Alltagsgegenstaende:
+
+- hochwertiger stilisierter 3D-Character-Look
+- klare Objektform
+- expressive Augen / Brauen / Mund
+- freundlich, modern, animiert
+- nicht fotorealistisch
+
+### B. Educational Explainer Mode
+
+Fuer Biologie, Koerper, Organe, Zellen und Prozesse:
+
+**moderne stilisierte 2.5D / Soft-3D Educational Illustration**
+
+Leitidee:
+
+**80 % animierte Illustration + 20 % Soft-3D-Tiefe + 0 % Medical-CGI.**
+
+Autoritative Details:
 
 ```text
-youtube-videos/001-pilot-sauerstoff-im-blut/
+bildwelt/OBJECT-TALK-CHANNEL-DNA.md
+bildwelt/EXPLAINER-STYLE-LOCK.md
 ```
 
-## Verbindliche Bildwelt
-
-Der Kanal ist kein dauerhafter Mascot-/Presenter-Kanal. Die Biologie und der erklaerte Prozess sind der Hauptdarsteller.
+## Educational Explainer – harte Stilregeln
 
 Verbindlich:
 
-- hochwertige stilisierte 3D-Feature-Animation
-- klar animiert, nicht fotorealistisch
-- hell, freundlich und leicht lesbar als Standard
-- weiche, gerundete Formen
-- matte/satinierte Premium-Materialien
-- warmes Hauptlicht + weiches Fill-Light + dezentes Rim-Light
-- klare Tiefenwirkung
-- frische kontrollierte Farben wie Creme, Apricot, Coral, warmes Rot, Himmelblau und Teal
+- klar animiert / illustriert, nicht realistisch
+- weiche gerundete vereinfachte Formen
+- matte bis leicht satinierte Oberflaechen
+- weiche Farbverlaeufe
+- subtile Schatten und leichte Tiefenstaffelung
+- ruhige helle Hintergruende
+- eine Hauptaussage pro Bild
+- wenige Objekte
+- visuelle Klarheit vor Detailgrad
 - vereinfachte, aber erkennbare Anatomie
-- familiengeeignet, aber nicht babyhaft
+
+Semantische Farben:
+
+- O2 / Sauerstoff = Cyan / Tuerkis
+- rote Blutkoerperchen = tiefes warmes Rot
+- Blutgefaesse = Coral / Rot
+- Organe = Peach / Coral
+- Muskelzellen = Orange / Apricot
+- CO2 = weiches Violett
+- ATP / Energie = warmes Gelb / Gold
+- Hintergrund = Creme / helles Blau / weiches Beige
 
 Harte Stilverbote:
 
-- kosmische / Weltraum-artige Bildwelten
-- Galaxie-, Nebel- oder Sternenhintergruende
-- dunkle violette Sci-Fi-Mikrowelt als Default
-- Neon-Labor / Sci-Fi-Tunnel
+- Photorealismus
 - Medical-CGI / Anatomiesoftware
-- nasse realistische Gewebeoptik
+- nasses realistisches Gewebe
+- Mikroskop-Fotorealismus
+- kosmische / Weltraum-artige Welten
+- Sci-Fi-Tunnel / Neon-Labor
+- dunkle violette Mikrowelt als Standard
+- Anatomie-Mannequins / Torso-Modelle
 - Corporate-Stock-3D
 - billiger Toy-Look
-- Anime / Comic
 - Gore / Horror
+- ueberladene Infografik
 
-Personifizierte Lebensmittel oder Gegenstaende sind nur erlaubt, wenn sie die Szene wirklich verstaendlicher machen. Molekuele, Organe und Zellen werden nicht automatisch personifiziert.
+## Menschen-Regel
+
+Der Kanal ist kein Presenter-Kanal.
+
+Menschen nur, wenn fachlich noetig, dann:
+- stark vereinfacht
+- gesichtslos
+- sekundaer
+
+Biologische Strukturen werden nicht automatisch personifiziert.
 
 ## Reference-First ist Pflicht
 
@@ -69,38 +107,28 @@ Referenzreihenfolge:
 3. wiederkehrende Objekt-/Character-Referenzen
 4. konkreter Szenenprompt
 
-Ein Textsatz wie `Using Bild_01 as the exact style reference` zaehlt nicht als tatsaechliche visuelle Referenz. Benoetigte Referenzen muessen wirklich angehaengt werden.
+Ein Textsatz wie `Using Bild_01 as the exact style reference` zaehlt nicht als echte Referenz. Benoetigte Referenzen muessen wirklich angehaengt werden.
 
-Solange `STYLE_REFERENCE.png` noch nicht existiert, darf `Bild_01` im dokumentierten Bootstrap-Modus aus der schriftlichen Kanal-DNA erzeugt werden. Nach Freigabe muss `Bild_01.png` als echte visuelle Referenz an alle Folgebilder angehaengt werden.
+Solange `STYLE_REFERENCE.png` fehlt, darf `Bild_01` im dokumentierten Bootstrap-Modus aus der schriftlichen Kanal-DNA erzeugt werden. Nach Freigabe muss `Bild_01.png` als echte visuelle Referenz an alle Folgebilder angehaengt werden.
 
-Details:
+## Sichtbarer Text
 
-```text
-engine/FLOW-PRODUCTION-STANDARD.md
-engine/FLOW-AGENT-INSTRUCTIONS.md
-engine/STYLE-REFERENCE-SYSTEM.md
-```
-
-## Sichtbarer Text ist Pflicht
-
-Flow-Bilder sind **nicht standardmaessig textfrei**.
-
-### Bild_01 / Cover
+### Cover / Bild_01
 
 - kurze starke deutsche Hook direkt im Bild
 - normalerweise 3–7 Woerter
+- **keine zusaetzlichen Anatomie-Labels**
 - Cover ohne Text = FAIL
 
 ### Normale Bilder
 
-- normalerweise 1–3 kurze deutsche Labels
+- 0–2 kurze deutsche Labels bevorzugt
+- maximal 3 nur wenn fachlich wirklich noetig
 - Begriffe aus `02_bildprompts/label-plan.json`
-- nur wichtige Strukturen/Prozesse beschriften
-- klare Sans-Serif-Typografie
 - keine Textwaende
 - kein englischer sichtbarer Text
 
-Wenn Flow einen deutschen Begriff falsch schreibt, wird zuerst regeneriert. Nur bei wiederholtem Fehler wird exakt dieser Begriff spaeter in Remotion ersetzt. Das finale Video darf die geplanten Labels niemals verlieren.
+Wenn Flow einen deutschen Begriff falsch schreibt, wird zuerst regeneriert. Nur bei wiederholtem Fehler wird exakt dieser Begriff spaeter in Remotion ersetzt.
 
 ## Bild_01 – Cover + erster Shot + Master Style Frame
 
@@ -114,12 +142,11 @@ Wenn Flow einen deutschen Begriff falsch schreibt, wird zuerst regeneriert. Nur 
 Darum gilt:
 
 - Thema und visuelle Reise auf einen Blick verstaendlich
-- heller Premium-3D-Animationsfilm-Look
+- gleicher Soft-3D-Explainer-Stil wie normale Szenen
+- darf kraeftiger / kontrastreicher komponiert sein
 - deutsche Hook direkt sichtbar
-- keine kosmische / dunkle / medizinische Optik
-- wenn moeglich 2–4 Varianten erzeugen und die beste visuell pruefen
-
-Nach Freigabe wird Bild_01 bei jeder Folgegeneration als echte visuelle Referenz genutzt.
+- keine zusaetzlichen Labels
+- keine medizinische / kosmische / realistische Optik
 
 ## Google-Flow-Prompt-Sprache
 
@@ -132,46 +159,37 @@ Szenenprompts nach Bild_01 folgen:
 SUBJECT
 → VISIBLE PROCESS
 → SPATIAL LAYOUT
-→ CAMERA / SCALE
+→ SCALE / DEPTH
 → CONTINUITY REFERENCES
 → REQUIRED GERMAN TEXT
 → FORBIDDEN ELEMENTS
 ```
 
-## Verbindlicher Google-Flow-Ablauf
+## Google-Flow-Ablauf
 
 ### A – zuerst nur Bild_01
 
 1. dauerhafte Agent Instructions laden
 2. `STYLE_REFERENCE.png` anhaengen, falls vorhanden
 3. ausschliesslich `Bild_01` erzeugen
-4. echte Resultate auf Stil, Anatomie und deutsche Hook pruefen
+4. echte Resultate auf Stil, Klarheit, Anatomie und deutsche Hook pruefen
 5. bei FAIL regenerieren
 6. beste PASS-Variante als `Bild_01.png` speichern
 7. genau einmal Nutzerfreigabe abwarten
 
-### B – Produktion in 5er-Bloecken
+### B – Produktion
 
 Nach Freigabe:
 
-```text
-Bild_02–Bild_06
-Bild_07–Bild_11
-Bild_12–Bild_16
-Bild_17–Bild_21
-Bild_22–Bild_26
-...
-```
+- jede Szene einzeln erzeugen
+- `Bild_01.png` bei jeder Generation wirklich anhaengen
+- pro Bild eine Hauptaussage
+- semantische Farben stabil halten
+- nur notwendige Labels verwenden
 
-Jedes Bild einzeln erzeugen, pruefen und benennen. Bei jeder Generation `Bild_01.png` wirklich anhaengen. Die vorgesehenen deutschen Labels muessen im Bild vorhanden sein oder als dokumentierter Text-Fallback markiert werden.
+### C – Recovery
 
-### C – Fehlerliste und Recovery
-
-Fehlerhafte oder fehlende Bilder behalten ihre Nummer. Nach dem Hauptdurchlauf werden nur diese Bilder erneut erzeugt. Promptkorrektur muss den konkreten Fehler adressieren.
-
-### D – finale ZIP
-
-Nur akzeptierte finale Bilder, lueckenlose Nummerierung, keine Varianten oder Temp-Dateien.
+Fehlerhafte oder fehlende Bilder behalten ihre Nummer. Nach dem Hauptdurchlauf werden nur diese Bilder erneut erzeugt.
 
 ## Echte Bild-QA
 
@@ -184,19 +202,26 @@ Pflicht:
 - immediate_clarity >= 8/10
 - style_continuity >= 8/10
 - composition >= 8/10
-- label_accuracy >= 8/10
+- label_accuracy >= 8/10, falls Labels vorgesehen sind
 - ai_artifact_check = PASS
 - scene_difference bestanden
 - overall_score >= 8/10
 - finale `Bild_XX.png` existiert
 
-Kosmischer/dunkler Stil-Drift, fehlende deutsche Labels oder falsche Schreibweise = FAIL.
+Hard FAIL:
+
+- photorealistischer / medizinischer Drift
+- zu viele Inhalte gleichzeitig
+- unklare Prozessrichtung
+- fehlende / falsche notwendige Labels
+- kosmischer / Sci-Fi-Stil
+- behauptete Referenznutzung ohne echte Referenz
 
 ## Drei Phasen
 
 ### Phase 1 – Creative Director
 
-Erstellt Recherche, Claim-Check, Mechanism Map, Script, Satz-Visual-Plan, Szenenplan, Label-Plan, Flow-Szenenprompts, scene-map.json, overlay-plan.json und Metadaten.
+Erstellt Recherche, Claim-Check, Script, Szenenplan, Label-Plan, Flow-Szenenprompts, scene-map.json, overlay-plan.json und Metadaten.
 
 ### Phase 2 – Nutzer + Voice-KI + Google Flow
 
@@ -204,7 +229,7 @@ Erstellt Recherche, Claim-Check, Mechanism Map, Script, Satz-Visual-Plan, Szenen
 2. Flow Agent Instructions setzen
 3. Bild_01 mit deutscher Hook erzeugen und freigeben
 4. Bild_01 als echte visuelle Referenz nutzen
-5. restliche Bilder einzeln mit deutschen Labels erzeugen
+5. restliche Bilder einzeln erzeugen
 6. echte Einzelbild-QA
 7. Recovery
 8. finale ZIP
@@ -242,8 +267,5 @@ Stoppen bei:
 - sichtbar falscher biologischer Darstellung
 - behaupteter Referenznutzung ohne angehaengte Referenz
 - Cover ohne deutsche Hook
-- wichtige Labels fehlen oder sind falsch geschrieben
-- kosmischer/dunkler/medizinischer Stil-Drift
+- photorealistischem / Medical-CGI-Stil-Drift
 - Phase-2-Review ohne vorhandene finale Bilddatei
-
-Ein einzelner Flow-Generierungsfehler ist kein globaler Blocker; dafuer gibt es Fehlerliste + Recovery.
