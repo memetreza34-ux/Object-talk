@@ -1,0 +1,23 @@
+PILOT 001 – VOICEOVER-ZIEL 2:30
+
+Verwende den Text aus `VOICEOVER-ZUM-KOPIEREN.txt` unveraendert.
+
+Ziel:
+- Gesamtlaenge: ca. 150 Sekunden
+- Wortzahl: 343 Woerter
+- Zieltempo: ca. 137 Woerter pro Minute
+- ruhige, klare deutsche Erklaerstimme
+- keine langen Kunstpausen
+- Satzenden kurz atmen lassen
+- Hook direkt beginnen
+- sachlich, modern, nicht uebertrieben werblich
+- wichtige Begriffe leicht betonen: Sauerstoff, Lungenblaeschen, Haemoglobin, Herz, Kapillaren, Mitochondrien, ATP, Kohlendioxid
+
+Akzeptabler Audio-Bereich fuer den Pilot:
+145–155 Sekunden.
+
+Wenn das Voice-Audio kuerzer als 145 Sekunden ist:
+Tempo leicht reduzieren, NICHT den Text erweitern.
+
+Wenn das Voice-Audio laenger als 155 Sekunden ist:
+Pausen kuerzen bzw. Tempo leicht erhoehen, NICHT den Text kuerzen.
