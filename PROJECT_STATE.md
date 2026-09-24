@@ -1,6 +1,6 @@
 # Object-Talk – Project State
 
-Letzte Aktualisierung: 23.09.2026
+Letzte Aktualisierung: 24.09.2026
 
 ## Aktiver Produktionspilot
 
@@ -16,19 +16,17 @@ Pilot 001 ist der erste echte 2–3-Minuten-Pilotfilm.
 
 ## Aktueller Schwerpunkt
 
-Die Bildpipeline ist **Reference-First** und die Bildwelt wurde nach dem letzten Test erneut geschaerft.
+Die Bildpipeline ist **Reference-First** und die aktuelle Bildwelt ist bereit fuer einen echten Pilot-Test.
 
-Der letzte Flow-Test war weiterhin falsch, weil Flow aus „3D-Animation + Anatomie“ laechelnde Menschen, Torso-Cutaways und schulbuchartige Anatomieposter gebaut hat.
+Verbindlich:
 
-Ab jetzt gilt deshalb zusaetzlich verbindlich:
-
-- **kein Mensch als Standard-Hauptmotiv**
-- **kein sichtbares Gesicht als Cover-Hero**
-- **kein Kind/Erwachsener als Presenter**
-- **kein Torso-Mannequin / Anatomie-Schulmodell**
-- **keine flache Anatomieposter-/Lehrtafel-Komposition**
+- kein Mensch als Standard-Hauptmotiv
+- kein sichtbares Gesicht als Cover-Hero
+- kein Kind/Erwachsener als Presenter
+- kein Torso-Mannequin / Anatomie-Schulmodell
+- keine flache Anatomieposter-/Lehrtafel-Komposition
 - biologische Prozesse und Organe sind die Hauptdarsteller
-- menschlicher Kontext nur wenn fachlich noetig, dann gesichtslos und klar sekundär
+- menschlicher Kontext nur wenn fachlich noetig, dann gesichtslos und klar sekundaer
 - echter 3D-Animationsfilm-Frame mit Perspektive, Tiefe und filmischer Inszenierung
 
 ## Verbindliche Kanal-DNA
@@ -72,17 +70,17 @@ Der Sauerstoff-Pilot nutzt **keinen O2-Guide und kein Dauermaskottchen**.
 - Haemoglobin = burgunderrote vereinfachte Struktur
 - Organe/Zellen = stark stilisiert, weich, rund und gesichtslos
 
-## Bild_01 – neue harte Regel
+## Bild_01 – harte Cover-Regel
 
 `Bild_01` darf nur PASS sein, wenn:
 
-- **kein Mensch** vorkommt
-- **kein sichtbares Gesicht** vorkommt
-- **kein Torso / Mannequin / Koerper-Cutaway** das Cover dominiert
+- kein Mensch vorkommt
+- kein sichtbares Gesicht vorkommt
+- kein Torso / Mannequin / Koerper-Cutaway das Cover dominiert
 - Lunge + Herz + Sauerstoffweg als eigenstaendige filmische 3D-Objekte inszeniert sind
 - die Szene wie ein echter hochwertiger Animationsfilm-Frame aussieht
 - die Hook **„So reist Sauerstoff durch deinen Körper“** sichtbar und korrekt ist
-- die Labels **„Lunge“** und **„Herz“** korrekt sind
+- **keine zusaetzlichen Anatomie-Labels auf dem Cover stehen**
 - kein Poster-/Schulbuch-/Medical-/Kosmos-Look entsteht
 
 ## Reference-First
@@ -93,7 +91,7 @@ Geplante kanalweite Referenz:
 assets/channel/STYLE_REFERENCE.png
 ```
 
-Status: **noch nicht vorhanden**.
+Status: noch nicht vorhanden.
 
 Bis zur Freigabe:
 
@@ -112,19 +110,32 @@ Ein textlicher Satz wie `Using Bild_01 as reference` zaehlt nicht als tatsaechli
 
 Sichtbarer Text bleibt Teil der Bilder:
 
-- Cover-Hook direkt im Cover
-- normale Bilder normalerweise 1–3 kurze deutsche Labels
+- Cover: **nur die Hook „So reist Sauerstoff durch deinen Körper“**
+- Cover: keine Labels wie „Lunge“ oder „Herz“
+- Bild_02–28: normalerweise 1–3 kurze deutsche Labels
 - Begriffe aus `02_bildprompts/label-plan.json`
 - ausschliesslich Deutsch
 - falsche Schreibweise = Regeneration
 - Remotion nur als exakter Fallback bei wiederholtem KI-Textfehler
 
+## Teststatus
+
+Die Bildwelt wird jetzt **nicht weiter theoretisch optimiert**, sondern im echten Pilot getestet.
+
+Ziel des Tests:
+
+1. Bild_01 erzeugen und freigeben.
+2. Bild_01 als echte visuelle Referenz fuer alle Folgeframes verwenden.
+3. Bild_02–28 erzeugen.
+4. fertiges Pilotvideo bauen.
+5. erst anhand des fertigen Videos entscheiden, ob die Bildwelt dauerhaft kanalweit gelockt wird.
+
 ## Naechster Produktionsschritt
 
-1. Alten Flow-Lauf und seine drei Covervarianten **nicht** als Referenz verwenden.
-2. Aktualisierte `engine/FLOW-AGENT-INSTRUCTIONS.md` setzen.
-3. Aktualisierten Pilot-Prompt verwenden.
-4. Nur `Bild_01` neu erzeugen.
-5. Alle Varianten mit Mensch, Gesicht, Torso oder Poster-Look automatisch FAIL setzen.
-6. Erst ein akzeptiertes organ-zentriertes Filmframe als `Bild_01.png` freigeben.
-7. Danach Bild_02–28 mit diesem Bild als echter visueller Referenz erzeugen.
+1. Aktualisierte `engine/FLOW-AGENT-INSTRUCTIONS.md` setzen.
+2. Aktualisierten Pilot-Prompt verwenden.
+3. Nur `Bild_01` erzeugen.
+4. Cover nur mit Titel akzeptieren.
+5. Nach Freigabe `Bild_01.png` als echtes Reference/Ingredient an jede Folgegeneration anhaengen.
+6. Bild_02–28 mit den geplanten deutschen Labels erzeugen.
+7. Danach Pilotvideo komplett bauen und Bildwelt im fertigen Video bewerten.
