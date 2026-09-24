@@ -1,86 +1,81 @@
 # Style-Lock – Pilot 001 Sauerstoff
 
-Diese Datei konkretisiert die Object-Talk-Kanalwelt fuer dieses Biologie-Video.
+Diese Datei konkretisiert die neue Object-Talk-Explainer-Bildwelt fuer Pilot 001.
 
 ## Grundregel
 
-Dieses Video nutzt **keinen erfundenen O2-Guide und kein Dauermaskottchen**.
+Pilot 001 nutzt **Educational Explainer Mode**:
 
-Noch wichtiger: Es nutzt **keinen Menschen-Presenter und keine Anatomiepuppe als Bildsprache**.
+**moderne stilisierte 2.5D / Soft-3D Educational Illustration**
 
-Der Sauerstoff-Weg selbst ist der visuelle Hauptdarsteller.
+Leitidee:
+
+**80 % animierte Illustration + 20 % Soft-3D-Tiefe + 0 % Medical-CGI.**
+
+Kein O2-Maskottchen, kein Menschen-Presenter, keine Anatomiepuppe.
 
 ## Feste visuelle Elemente
 
-- O2: zwei verbundene blass-cyanfarbene Kugeln, ohne Gesicht
-- CO2: neutral-violett/graue Drei-Kugel-Form, ohne Gesicht
-- rote Blutkoerperchen: tiefe warmrote bikonkave Scheiben, ohne Gesicht
-- Haemoglobin: burgunderrote vereinfachte Struktur
-- Organe/Zellen: weich gerundet, glatt, stark stilisiert und gesichtslos
+- O2: Cyan / Tuerkis, ohne Gesicht
+- CO2: weiches Violett, ohne Gesicht
+- rote Blutkoerperchen: tiefes warmes Rot
+- Haemoglobin: Burgunder
+- Blutgefaesse: Coral / Rot
+- Organe: Peach / Coral
+- Muskelzellen: Apricot / Orange
+- ATP / Energie: Gelb / Gold
+- Hintergrund: Creme / helles Blau / weiches Beige
 
-## Human-/Poster-Verbot
-
-Nicht akzeptieren:
-
-- laechelndes Kind oder Erwachsener
-- sichtbares Gesicht als Blickfang
-- Mensch neben Lunge/Herz
-- transparenter Oberkoerper als Cover-Hero
-- Anatomie-Torso / Mannequin / Schulmodell
-- frontal aufgeschnittener Koerper mit Labels
-- medizinisches Poster / Lehrtafel / Infografik
-
-Wenn fuer eine spaetere Szene menschlicher Kontext fachlich notwendig ist, nur als vereinfachte gesichtslose Silhouette oder partielle Huelle im Hintergrund. Der biologische Prozess bleibt dominant.
-
-## Bildwelt
+## Stil
 
 Bevorzugt:
-
-- premium theatrale 3D-Animationsfilm-Optik
-- helles Creme, warmes Beige, weiches Himmelblau, sanftes Teal
-- warmes Amber/Gold als Hauptlicht
-- weiches Fill-Light und dezentes Rim-Light
-- Coral / Apricot / warmes Rot / Burgunder fuer Organe
-- blass Cyan/Tuerkis fuer Sauerstoff
-- klare Vordergrund-/Mittelgrund-/Hintergrundstaffelung
-- echte Kamera-Perspektive statt flacher Posteransicht
+- klar animiert / illustriert
+- weich gerundete vereinfachte Formen
+- matte Oberflaechen
+- weiche Farbverlaeufe
+- subtile Schatten
+- leichte 2.5D-Tiefe
+- helle ruhige Hintergruende
+- eine Hauptaussage pro Bild
+- wenige Objekte
 
 Nicht verwenden:
+- Photorealismus
+- Medical-CGI
+- nasses Gewebe / Fleisch
+- Mikroskop-Fotorealismus
+- kosmische / Sci-Fi-Welten
+- dunkle violette Mikrowelten
+- ueberladene Anatomieposter
+- Human-Presenter / Torso-Mannequin
 
-- tiefes Pflaume/Navy/dunkles Violett als dominante Welt
-- Weltraum-/Galaxie-/Nebeloptik
-- dunkle kosmische Mikrowelten
-- Sci-Fi-Neonlook
-- braune Fleischwelt
-- realistisches oder nasses Gewebe
-- sterile medizinische Lehrgrafik
-
-## Referenz Bild_01
+## Referenz Bild_01 – Cover
 
 ```text
-Create a premium bright 16:9 animated-feature cover with NO human, NO visible face, NO torso, NO mannequin and NO anatomy-poster layout. Make the biological journey itself the hero: one large pair of soft-rounded stylized lungs occupies the left-center foreground, a stylized heart sits slightly lower and to the right, and a curved warm-red blood vessel creates a cinematic path between them. A stream of paired pale-cyan O2 molecules enters the lungs and continues toward the heart. Use a warm cream-to-soft-sky-blue environment, coral/apricot organ colors, real foreground/midground/background depth and polished animated-film materials. Add the exact German hook “So reist Sauerstoff durch deinen Körper”. Add only the small German labels “Lunge” and “Herz”. No person, no body cutaway, no medical poster, no galaxy, no dark purple void, no sci-fi, no medical CGI.
+Create a modern stylized 2.5D / soft-3D educational illustration for a 16:9 YouTube cover. Show one large simplified peach-coral pair of lungs as the main visual object. A smooth coral-red blood vessel curves away from the lungs and several bright cyan oxygen particles travel through it toward a simplified warm-red heart placed as a secondary object. Use rounded forms, matte surfaces, soft gradients, subtle shadows and a light cream / soft-blue background. Keep the composition bold, simple and easy to understand at thumbnail size. Add ONLY the exact German title “So reist Sauerstoff durch deinen Körper”. No additional labels. No photorealism, no medical CGI, no wet tissue, no humans, no torso mannequin, no cosmic background.
 ```
 
-## Referenz Bild_02
+## Referenz Bild_02 – Lungenblaeschen -> Blut
 
 ```text
-Use the attached approved Bild_01 as the actual visual style reference. Create one cinematic left-to-right 3D journey with no human body: stylized lungs on the left foreground, a smooth blood vessel with red blood cells curving through the center, and one large rounded muscle cell on the right background. Use depth and camera perspective, not a flat diagram. Add only “Lunge”, “Blut” and “Muskelzelle”.
+Use the attached approved Bild_01 as the actual visual style reference. Create a modern stylized 2.5D / soft-3D educational illustration. Show one large simplified rounded alveolus on the left and one smooth coral-red capillary on the right. Keep several deep-red blood cells inside the vessel and show five cyan oxygen particles crossing through the thin barrier into the blood. Use soft gradients, subtle shadows and a calm light background. Add only the German labels “Sauerstoff” and “Blut”. Keep one teaching idea only. No photorealism, no medical CGI, no wet tissue.
 ```
 
-## Referenz Bild_03
+## Referenz Bild_03 – Blut -> Muskelzelle
 
 ```text
-Use the attached approved Bild_01 as the actual visual style reference. Create a cinematic side-view airway scene. Use only a minimal translucent faceless side-profile shell as secondary context; the airway and moving O2 must dominate. No character face, no human presenter, no mannequin. Add only “Luftröhre”.
+Use the attached approved Bild_01 as the actual visual style reference. Create a modern stylized 2.5D / soft-3D educational illustration. Show one coral-red capillary on the left with simplified deep-red blood cells and one large rounded apricot-orange muscle cell on the right. Show several cyan oxygen particles moving clearly from the vessel toward and into the muscle cell. Use a simple left-to-right visual flow, matte forms, soft gradients and subtle shadows. Add only the German labels “Sauerstoff” and “Muskelzelle”. No photorealism, no medical CGI, no clutter.
 ```
 
 ## PASS-Regel Bild_01
 
 Bild_01 ist nur PASS, wenn:
 
-- es wie ein echter hochwertiger 3D-Animationsfilm-Frame wirkt
-- kein Mensch / Gesicht / Presenter vorkommt
-- kein Torso-Mannequin oder Anatomieposter entsteht
-- Lunge, Herz und Sauerstoffreise als filmische Objekte inszeniert sind
-- die deutsche Hook sichtbar und korrekt geschrieben ist
-- die Szene hell, freundlich und nicht babyhaft ist
-- sie nicht kosmisch, Sci-Fi-artig oder medizinisch wirkt
+- es klar animiert / illustriert aussieht
+- es nicht medizinisch oder realistisch wirkt
+- der 2.5D / Soft-3D-Look sichtbar ist
+- das Thema sofort erkennbar ist
+- nur die deutsche Hook sichtbar ist
+- keine zusaetzlichen Anatomie-Labels vorkommen
+- keine Menschen / Presenter / Torso-Mannequins vorkommen
+- der Hintergrund hell und ruhig bleibt
