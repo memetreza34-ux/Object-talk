@@ -41,8 +41,8 @@ GERMAN TEXT RULE
 Visible text is part of the educational image.
 
 - All visible text must be German.
-- Bild_01 MUST contain the exact cover hook given below.
-- Normal images contain the exact 1–3 German labels listed in each scene.
+- Bild_01 is a special cover exception: it contains ONLY the exact German title/hook below and NO anatomy labels.
+- Normal images Bild_02–Bild_28 contain the exact 1–3 German labels listed in each scene.
 - Use clean readable sans-serif typography.
 - Keep text away from the central biological process.
 - Never add English visible text.
@@ -53,16 +53,17 @@ EINZIGER FREIGABEPUNKT
 1. Erzeuge zuerst nur `Bild_01`.
 2. Erzeuge wenn moeglich 3 Varianten.
 3. Verwirf jede Variante mit Mensch/Kind/Gesicht, Torso-Mannequin, Anatomieposter, kosmischem Look oder Medical-CGI.
-4. Pruefe Stil, Anatomie, Komposition und deutsche Schrift.
-5. Speichere die beste PASS-Variante als `Bild_01.png`.
-6. Hole genau einmal Nutzerfreigabe ein.
-7. Nach Freigabe automatisch Bild_02 bis Bild_28 einzeln erzeugen, jeweils mit angehaengtem `Bild_01.png`.
+4. Verwirf jede Cover-Variante mit zusaetzlichen Labels neben dem Titel.
+5. Pruefe Stil, Anatomie, Komposition und deutsche Schrift.
+6. Speichere die beste PASS-Variante als `Bild_01.png`.
+7. Hole genau einmal Nutzerfreigabe ein.
+8. Nach Freigabe automatisch Bild_02 bis Bild_28 einzeln erzeugen, jeweils mit angehaengtem `Bild_01.png`.
 
 ---
 
 BILD_01 – COVER + MASTER STYLE FRAME
 
-Create a premium bright 16:9 animated-feature cover with NO human, NO visible face, NO torso, NO mannequin and NO anatomy-poster layout. Make the biological journey itself the hero: one large pair of soft-rounded stylized lungs occupies the left-center foreground, a stylized heart sits slightly lower and to the right, and a curved warm-red blood vessel creates a strong cinematic path between them. A stream of paired pale-cyan O2 molecules enters the lungs from the upper-left, crosses toward the blood vessel and visually continues toward the heart. Use a warm cream-to-soft-sky-blue environment with coral/apricot organ colors, real foreground/midground/background depth, soft cinematic shadows and polished animated-film materials. The scene must look like a movie frame, not a health poster. Add the exact large German hook: “So reist Sauerstoff durch deinen Körper”. Add only the small German labels “Lunge” and “Herz”. No person, no body cutaway, no medical poster, no galaxy, no dark purple void, no sci-fi, no medical CGI.
+Create a premium bright 16:9 animated-feature cover with NO human, NO visible face, NO torso, NO mannequin and NO anatomy-poster layout. Make the biological journey itself the hero: one large pair of soft-rounded stylized lungs occupies the left-center foreground, a stylized heart sits slightly lower and to the right, and a curved warm-red blood vessel creates a strong cinematic path between them. A stream of paired pale-cyan O2 molecules enters the lungs from the upper-left, crosses toward the blood vessel and visually continues toward the heart. Use a warm cream-to-soft-sky-blue environment with coral/apricot organ colors, real foreground/midground/background depth, soft cinematic shadows and polished animated-film materials. The scene must look like a movie frame, not a health poster. Add ONLY the exact large German cover title: “So reist Sauerstoff durch deinen Körper”. Do NOT add “Lunge”, “Herz” or any other anatomy labels to the cover. No extra text, no person, no body cutaway, no medical poster, no galaxy, no dark purple void, no sci-fi, no medical CGI.
 
 BILD_02 – REISE-UEBERSICHT
 
@@ -186,7 +187,8 @@ Nach jedem echten Bildresultat pruefen:
 - Stil stimmt mit den tatsaechlich angehaengten Referenzen ueberein
 - wiederkehrende Objekte behalten ihr Design
 - keine ungewollten Gesichter/Maskottchen
-- geforderte deutsche Hook/Labels vorhanden und korrekt
+- Bild_01: nur die deutsche Hook, keine Anatomie-Labels
+- Bild_02–28: geforderte deutsche Labels vorhanden und korrekt
 - kein englischer sichtbarer Text
 - keine schweren Artefakte
 
