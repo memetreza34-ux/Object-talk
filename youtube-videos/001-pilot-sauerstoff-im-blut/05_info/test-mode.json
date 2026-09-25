@@ -1,12 +1,14 @@
 {
   "test_mode": true,
   "purpose": "first-real-small-production-pilot",
-  "target_seconds": 150,
-  "acceptable_seconds_min": 145,
-  "acceptable_seconds_max": 155,
-  "target_voice_wpm": 137,
-  "scene_count": 28,
+  "target_seconds": 130,
+  "acceptable_seconds_min": 120,
+  "acceptable_seconds_max": 140,
+  "voice_speed_multiplier": 1.10,
+  "max_voice_pause_seconds": 0.50,
+  "max_scene_seconds": 7.0,
+  "scene_count": 35,
   "counts_as_published_topic": false,
   "production_longform_minimum_override": true,
-  "notes": "Pilot 001 ist jetzt als echter 2:30-Minuten-Test festgelegt. Das vorhandene Voiceover hat 343 Woerter und passt bei ca. 137 Woertern pro Minute auf etwa 150 Sekunden. Getestet werden die neue 2.5D/Soft-3D-Erklaerbildwelt, Bild_01 als Cover/Master-Referenz, 0-2 kurze deutsche Labels pro normaler Szene, hohe visuelle Dichte und die komplette Flow-zu-Remotion-Pipeline. Normale Kanalvideos bleiben spaeter mindestens 5 Minuten lang."
+  "notes": "Pilot 001 priorisiert jetzt Tempo und visuelle Dichte statt eine kuenstlich feste 2:30-Laufzeit. Das rohe Voiceover wird zuerst auf 1.10x beschleunigt und lange TTS-Pausen werden komprimiert; erst danach entstehen Whisper-Timings und Timeline. Lange Speech-Beats wurden auf 35 eindeutige Bilder verteilt, damit kein Standbild ueber 7 Sekunden gehalten werden muss. Normale Kanalvideos bleiben spaeter mindestens 5 Minuten lang."
 }
