@@ -1,0 +1,85 @@
+ANTIGRAVITY – PILOT 002 „WAS PASSIERT MIT ZUCKER IN DEINEM KÖRPER?“
+
+Arbeite ausschließlich nach dem Repository.
+
+Projekt:
+`youtube-videos/002-zucker-im-koerper/`
+
+ZIEL
+Erzeuge aus Voice + 35 finalen Flow-Bildern einen schnellen, klaren animierten Erklärfilm. Kein Diashow-Gefühl.
+
+AUDIO ZUERST
+- Roh-TTS niemals direkt rendern.
+- `tools/prepare_audio.py` mit `--speed 1.10` verwenden.
+- lange TTS-Pausen vor Whisper/Timeline komprimieren.
+- `final-voiceover.wav` ist die einzige Timing-Quelle.
+- niemals eine 1.00x-Timeline bauen und später nur Audio beschleunigen.
+
+BILDREGELN
+- exakt 35 eindeutige finale Bilder: Bild_01 bis Bild_35.
+- dasselbe Bild nie zweimal in der Timeline verwenden.
+- kein Bild länger als 7 Sekunden stehen lassen.
+- normale Bilder: genau ein retained asset pro Nummer.
+- nur Cover darf vor Auswahl bis zu 3 Varianten haben; danach nur eine behalten.
+- Finale Bild_35 ist eine neue Zusammenfassung, nicht das Cover wiederverwenden.
+
+SICHTBARER TEXT
+- strikt nach `02_bildprompts/label-plan.json`.
+- interne Nummern/Dateinamen/Prompttitel nie sichtbar.
+- Hard FAIL bei `Bild_19`, `BILD_19`, `Scene 19`, Dateiname oder erfundenem Szenentitel.
+- keine Captions oder langen Voiceover-Sätze als Overlay.
+
+BILDWELT
+- moderne stilisierte 2.5D / Soft-3D Educational Illustration.
+- ca. 80% animierte Illustration / 20% Soft-3D-Tiefe.
+- kein Photorealismus / Medical-CGI.
+- hell, freundlich, klare Formen.
+
+SEMANTISCHE FARBEN
+- Glukose = Türkis/Cyan + warmer Goldakzent
+- Insulin = Blau
+- Glukagon = Violett
+- Gefäße = Coral-Rot
+- Glykogen = Amber/Gold
+- ATP = Gelb/Gold
+
+SCHNITT
+- harte saubere Schnitte Standard.
+- weiche Überblendung nur bei echtem Maßstabs-/Ortswechsel.
+- Push/Pull 2–4%, Pan 20–30 px.
+- keine aggressiven Ken-Burns, kein Shake, Bounce, Meme-Transition.
+- Bewegungsrichtung unterstützt den Prozess.
+
+STORY-REISE
+Nahrung → Mund/Magen → Dünndarm → Glukose → Blut/Pfortader → Leber → Bauchspeicheldrüse/Insulin → Zellaufnahme → ATP → Glykogen → langfristiger Energieüberschuss/Fett → Glukagon → Leber gibt Glukose frei → Zusammenfassung.
+
+INFORMATIONSDICHTE
+- ein dominanter Lehrpunkt pro Frame.
+- bei etwa 20–30% wichtiger Mechanismusbilder darf ein sinnvoller Zusatzdetailpunkt vorkommen.
+- lieber neues Bild als Textwand.
+
+VORBEREITUNG
+```bash
+python -m pip install -r tools/requirements.txt
+python tools/validate_planning_v2.py youtube-videos/002-zucker-im-koerper
+python tools/prepare_phase3.py youtube-videos/002-zucker-im-koerper
+```
+
+RENDER
+```bash
+cd renderer
+npm install
+npm run render -- ../youtube-videos/002-zucker-im-koerper/04_export/fertiges-video/final-video.mp4
+```
+
+FINAL-QA
+```bash
+python tools/qa_final.py \
+  youtube-videos/002-zucker-im-koerper/04_export/fertiges-video/final-video.mp4 \
+  youtube-videos/002-zucker-im-koerper/01_script/audio/final-voiceover.wav \
+  --min-seconds 100 \
+  --expected-speed 1.10 \
+  --max-voice-pause 0.50
+```
+
+Bei Konflikt oder fehlenden Assets: FAIL statt raten.

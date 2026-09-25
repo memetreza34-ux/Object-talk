@@ -1,0 +1,140 @@
+GOOGLE FLOW – PILOT 002 „WAS PASSIERT MIT ZUCKER IN DEINEM KÖRPER?“
+
+Create the complete image set for a German educational explainer video.
+
+GLOBAL HARD LOCK
+- 16:9 landscape.
+- Modern stylized 2.5D / soft-3D educational illustration.
+- Clearly animated and illustrated, not photorealistic.
+- About 80% illustration / 20% soft-3D depth / 0% medical CGI.
+- Soft rounded recognizable anatomy, matte/satin surfaces, light cream/soft-blue backgrounds, subtle shadows and clean depth.
+- One dominant teaching idea per image.
+- Important mechanism/summary frames may contain ONE additional useful detail if clarity remains high.
+- No wet tissue, medical CGI, anatomy software, dark sci-fi, cosmic world, human presenter, torso mannequin, gore or text wall.
+- Visible text must be German and is STRICTLY WHITELISTED below.
+- NEVER render image numbers, scene numbers, filenames, prompt headings or asset IDs. Terms such as Bild_12, BILD 12, IMAGE 12, Scene 12 are metadata only and must never appear inside artwork.
+- Every normal scene has exactly ONE retained final image. If a retry is needed, replace the failed version instead of keeping variants.
+- ONLY Bild_01 may have up to 3 cover variants. After the user chooses one, discard/delete all other cover variants before continuing.
+- Do not reuse the same final artwork for two different image numbers.
+
+SEMANTIC COLORS
+- glucose: bright turquoise/cyan with a warm-gold core/accent
+- insulin: clean blue signal particles
+- glucagon: soft violet signal particles
+- blood vessels: coral red
+- red blood cells: deep warm red
+- liver/pancreas/intestine: peach/coral/orange family
+- glycogen: warm amber/gold clustered chains
+- ATP: warm yellow-gold
+- fat cell: soft apricot/yellow
+
+REFERENCE RULE
+Generate Bild_01 first. After user selection, use the ONE approved Bild_01.png as an actual visual reference/ingredient for every follow-up image. Do not merely mention it in text.
+
+BILD_01 – COVER ONLY
+Create up to 3 clearly different YouTube-cover candidates in the same visual world. Show a simple visual journey from sweet food / glucose toward intestine, blood and one body cell. Strong hero composition, clean thumbnail readability. Visible text ONLY: “So verarbeitet dein Körper Zucker”. No anatomy labels. No asset number.
+
+BILD_02
+Simplified mouth chewing sweet food, mixed with saliva. Visible text ONLY: “Mund”.
+
+BILD_03
+Show starch-rich carbohydrate particles beginning to break into smaller units in the mouth. Visible text ONLY: “Kohlenhydrate”.
+
+BILD_04
+Faceless simplified side-profile context with food bolus moving down the esophagus toward the stomach. Visible text ONLY: “Speiseröhre”.
+
+BILD_05
+Large simplified stomach mixing food; show only very little direct sugar absorption. Visible text ONLY: “Magen”.
+
+BILD_06
+Small intestine becomes the hero and clear main absorption location. Visible text ONLY: “Dünndarm”.
+
+BILD_07
+Inside small intestine: enzyme cue breaks larger carbohydrate chains into small sugar units. Visible text ONLY: “Enzyme”, “Zuckerbausteine”.
+
+BILD_08
+One large clean glucose symbol as hero, simple educational form, not chemistry-heavy. Visible text ONLY: “Glukose”.
+
+BILD_09
+Macro view of soft stylized intestinal villi emphasizing large surface area. Visible text ONLY: “Darmzotten”.
+
+BILD_10
+Glucose crosses intestinal lining into a coral blood vessel, left-to-right. Visible text ONLY: “Glukose”, “Blut”.
+
+BILD_11
+Intestine connected to liver through portal vein; glucose-rich blood travels to liver. Visible text ONLY: “Pfortader”, “Leber”.
+
+BILD_12
+Large liver as hero with incoming glucose; subtle split toward immediate use and storage. Visible text ONLY: “Leber”.
+
+BILD_13
+Blood vessel with more glucose particles beside the pancreas. Visible text ONLY: “Bauchspeicheldrüse”, “Glukose”.
+
+BILD_14
+Pancreas releases blue insulin signal particles into nearby blood. Visible text ONLY: “Insulin”.
+
+BILD_15
+One insulin signal particle as hero. Make clear it is a signal and is NOT physically carrying glucose. Visible text ONLY: “Insulin”.
+
+BILD_16
+Insulin binds to a receptor on a stylized cell membrane. Visible text ONLY: “Insulin”, “Rezeptor”.
+
+BILD_17
+Blood vessel left, muscle cell and secondary fat cell right; more glucose enters after insulin signal. Visible text ONLY: “Glukose”, “Muskelzelle”.
+
+BILD_18
+Close membrane view: glucose passes through a transport protein into the cell. Visible text ONLY: “Glukose”, “Transportprotein”.
+
+BILD_19
+Inside a simplified cell, glucose arrives in the cytoplasm and the energy pathway begins. Visible text ONLY: “Zelle”.
+
+BILD_20
+Simple stepwise breakdown of glucose into smaller intermediate molecules. No dense chemistry formulas. Visible text ONLY: “Glukose”.
+
+BILD_21
+Intermediate fuel molecules move toward a mitochondrion. Visible text ONLY: “Mitochondrium”.
+
+BILD_22
+Large mitochondrion as hero: oxygen plus fuel enter, warm-gold ATP appears as output. Visible text ONLY: “Mitochondrium”, “ATP”.
+
+BILD_23
+ATP leaves the mitochondrion toward several simple cell tasks. Visible text ONLY: “ATP”.
+
+BILD_24
+Simplified muscle cell contraction supported by ATP. Visible text ONLY: “Muskelzelle”, “ATP”.
+
+BILD_25
+Clear two-path visual: glucose can be used now or sent toward storage. Visible text ONLY: “Glukose”.
+
+BILD_26
+Muscle and liver store part of the glucose as glycogen. Visible text ONLY: “Glykogen”, “Leber”.
+
+BILD_27
+Close-up of a compact glycogen store made from many linked glucose units. Visible text ONLY: “Glykogen”.
+
+BILD_28
+Stylized liver/muscle storage shown nearly full; extra incoming energy continues onward. Visible text ONLY: “Speicher”.
+
+BILD_29
+One stylized fat cell stores energy over longer-term surplus. Do NOT imply one snack instantly becomes body fat. Visible text ONLY: “Fettzelle”.
+
+BILD_30
+Between-meal scene with fewer glucose particles in blood and calmer insulin signaling. Visible text ONLY: “Blutzucker”.
+
+BILD_31
+Pancreas releases soft-violet glucagon signal particles. Visible text ONLY: “Glukagon”.
+
+BILD_32
+Glucagon signal reaches liver; glycogen is broken down and glucose returns to blood. Visible text ONLY: “Glukagon”, “Leber”.
+
+BILD_33
+Simple visual of blood glucose returning toward a middle stable range. No medical numbers. Visible text ONLY: “Blutzucker”.
+
+BILD_34
+Visual myth correction without a text wall: sugar is not only instantly burned and not instantly converted straight to fat. Visible text: NONE.
+
+BILD_35
+Final clean journey map: food → intestine → blood → insulin signal → cell/ATP → glycogen storage → glucagon/liver return. This must be a NEW final summary composition, not the cover reused. Visible text ONLY: “Darm”, “Blut”, “Zelle”.
+
+FINAL ASSET RULE
+Final folder must contain exactly one file for every number Bild_01.png through Bild_35.png. No alternates, no rejected attempts, no v2/final2/copy/_A/_B/_C files. Cover alternatives must be deleted after selection. Any visible internal asset name or prompt heading is an automatic FAIL.
