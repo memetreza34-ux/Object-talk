@@ -43,7 +43,8 @@ Verbindlich:
 - subtile Schatten
 - leichte Tiefenstaffelung
 - ruhige helle Hintergruende
-- eine Hauptaussage pro Bild
+- eine DOMINANTE Hauptaussage pro Bild
+- gelegentlich ein sinnvoller Zusatzdetailpunkt
 - wenige Objekte
 - Klarheit wichtiger als Detailreichtum
 
@@ -69,46 +70,61 @@ Harte Stilverbote:
 - ueberladene Infografik
 - billiger Toy-Look
 
-## 4. Asset-IDs sind nur Metadaten
+## 4. Visuelle Dichte
+
+Der Kanal soll nicht wie eine Diashow wirken.
+
+Darum gilt:
+- normale Bildhaltezeit im fertigen Schnitt meistens 3–6 Sekunden
+- harte Obergrenze fuer ein einzelnes Standbild: 7 Sekunden
+- ist ein Sprachabschnitt laenger oder enthaelt zwei echte Lehrbeats, wird er in mehrere NEUE Szenen mit NEUEN Bildnummern geteilt
+- dasselbe Bild darf niemals als Loesung fuer einen langen Abschnitt zweimal verwendet werden
+- lieber 1–3 zusaetzliche eindeutige Bilder als ein Bild 10–20 Sekunden stehen lassen
+
+Etwa 20–30 % der Szenen duerfen etwas informativer sein, wenn der Hauptpunkt klar bleibt. Erlaubt ist genau ein sinnvoller Zusatzdetailpunkt, z. B. ein Zielobjekt, ein Vorher/Nachher-Hinweis oder ein kleines Detailfenster. Keine Dashboard- oder Posteroptik.
+
+## 5. Asset-IDs sind nur Metadaten
 
 `Bild_01`, `Bild_19`, `Scene 19`, `IMAGE 19`, Dateinamen und Produktionsnummern duerfen niemals als sichtbarer Bildtext interpretiert werden.
-
-Sie dienen nur dazu, Assets extern zu benennen und zuzuordnen.
-
-Sichtbarer Text darf nur aus der expliziten Hook oder den explizit geplanten deutschen Labels stammen.
 
 Hard FAIL:
 - `Bild 19` sichtbar im Bild
 - `Bild_19` sichtbar im Bild
+- `BILD_12 – O2 BINDET` sichtbar im Bild
 - `Scene 19` / `IMAGE 19` sichtbar im Bild
-- Dateiname sichtbar im Bild
-- sonstige interne Produktionskennung sichtbar im Bild
+- Dateiname oder sonstige interne Produktionskennung sichtbar im Bild
 
-## 5. Object-Talk Character Mode
+## 6. Sichtbarer Text ist Whitelist-basiert
 
-Fuer sprechende Lebensmittel / Alltagsobjekte bleibt der hochwertige stilisierte 3D-Character-Look erlaubt.
-Dieser Modus darf nicht automatisch auf Organe, Molekuele und Zellen uebertragen werden.
-
-## 6. Sichtbarer Text
+Vor jeder Generation muss eine `ALLOWED_VISIBLE_TEXT`-Liste feststehen.
 
 Cover:
-- nur die festgelegte deutsche Hook
-- keine Anatomie-Labels
-- keine Bildnummer / Szenennummer / Dateinamen
+- Whitelist = nur die exakte deutsche Hook
 
-Normale Szenen:
-- 0–2 kurze deutsche Labels bevorzugt
-- maximal 3 bei echtem Bedarf
-- keine Textwaende
-- kein englischer sichtbarer Text
-- keine Bildnummer / Szenennummer / Dateinamen
+Normale Szene:
+- Whitelist = exakt die fuer diese Szene geplanten Labels
+- bei 0 Labels darf kein Wort sichtbar sein
+
+Nicht auf der Whitelist = FAIL. Dazu gehoeren insbesondere:
+- Bild-/Szenennummern
+- Prompt-Ueberschriften
+- Szenentitel
+- erfundene Erklaertexte
+- englische Woerter
+- zusaetzliche Anatomie-Labels
+- KI-Gibberish
 
 Bei falscher Flow-Schreibweise:
 1. regenerieren
 2. maximal einen weiteren Text-Versuch
 3. danach exakter Remotion-Fallback
 
-## 7. Bild_01 – einzige Varianten-Ausnahme
+## 7. Object-Talk Character Mode
+
+Fuer sprechende Lebensmittel / Alltagsobjekte bleibt der hochwertige stilisierte 3D-Character-Look erlaubt.
+Dieser Modus darf nicht automatisch auf Organe, Molekuele und Zellen uebertragen werden.
+
+## 8. Bild_01 – einzige Varianten-Ausnahme
 
 `Bild_01` ist Cover, erster Shot, Episode-Master-Frame und Referenz fuer Folgebilder.
 
@@ -131,14 +147,14 @@ Im finalen Set darf genau EIN `Bild_01.png` existieren.
 Bild_01 Hard FAIL:
 - Hook fehlt / falsch
 - Zusatzlabels auf Cover
-- sichtbare Bild-/Szenennummer
+- sichtbare Bild-/Szenennummer oder Prompt-Ueberschrift
 - photorealistisch / medizinisch
 - Mensch / Presenter / Torso-Mannequin
 - kosmisch / Sci-Fi
 - ueberladen
 - Thema nicht sofort erkennbar
 
-## 8. Folgegenerationen – genau ein Output pro Bildnummer
+## 9. Folgegenerationen – genau ein Output pro Bildnummer
 
 Fuer `Bild_02` bis `Bild_NN` gilt strikt:
 - jede Szene einzeln bearbeiten
@@ -160,30 +176,23 @@ Wenn Flow technisch mehrere Outputs fuer einen Request liefert:
 - alle anderen sofort verwerfen
 - erst danach zur naechsten Bildnummer wechseln
 
-Nach Akzeptanz muss fuer jede normale Szene exakt ein retained asset existieren.
-
-## 9. Szenenprompt-Schema
+## 10. Szenenprompt-Schema
 
 ```text
-1. ONE TEACHING IDEA
-2. MAIN SUBJECT
-3. START / END
-4. MOVEMENT / CHANGE
-5. SIMPLE SPATIAL LAYOUT
-6. SOFT-3D STYLE CONTINUITY
-7. REQUIRED GERMAN TEXT
-8. FORBIDDEN ELEMENTS
+1. DOMINANT TEACHING IDEA
+2. OPTIONAL SUPPORTING DETAIL
+3. MAIN SUBJECT
+4. START / END
+5. MOVEMENT / CHANGE
+6. SIMPLE SPATIAL LAYOUT
+7. SOFT-3D STYLE CONTINUITY
+8. ALLOWED_VISIBLE_TEXT
+9. FORBIDDEN ELEMENTS
 ```
 
-Wichtig: Eine Ueberschrift wie `BILD_19 – HAEMOGLOBIN GIBT O2 AB` ist reine Prompt-Struktur. `BILD_19` darf nicht gerendert werden.
+Eine Ueberschrift wie `BILD_19 – HAEMOGLOBIN GIBT O2 AB` ist reine Prompt-Struktur und darf nie gerendert werden.
 
-Beispiel:
-
-```text
-Create a modern stylized 2.5D / soft-3D educational illustration. One large simplified rounded alveolus fills the left side and one smooth coral-red capillary runs along the right side. Show five cyan oxygen particles crossing the thin barrier from the alveolus into the blood. Keep deep-red blood cells only inside the vessel. Use matte surfaces, soft gradients, subtle shadows and a light cream / soft-blue background. Add only the German labels “Sauerstoff” and “Blut”. Do not render any scene number, image number, asset ID or file name. No photorealism, no medical CGI, no wet tissue, no human presenter, no cosmic background.
-```
-
-## 10. Wiederkehrende Elemente Pilot 001
+## 11. Wiederkehrende Elemente Pilot 001
 
 - O2 = Cyan / Tuerkis
 - CO2 = weiches Violett
@@ -194,9 +203,7 @@ Create a modern stylized 2.5D / soft-3D educational illustration. One large simp
 - Muskelzellen = Apricot / Orange
 - ATP = Gelb / Gold
 
-Akzeptierte Referenzen unter `assets/channel/references/` speichern und bei relevanten Szenen anhaengen.
-
-## 11. QA
+## 12. QA
 
 `image-review.json` erst nach Sichtpruefung des echten Bildes aktualisieren.
 
@@ -207,6 +214,7 @@ Pflichtkriterien:
 - style_continuity
 - composition
 - label_accuracy, wenn Labels vorgesehen
+- visible_text_whitelist = PASS
 - no_visible_asset_id = PASS
 - single_retained_asset_for_scene = PASS
 - ai_artifact_check
@@ -216,7 +224,7 @@ Pflichtkriterien:
 Jeder zentrale Score mindestens 8/10.
 Hard FAIL kann nicht durch Durchschnittsscore ausgeglichen werden.
 
-## 12. Recovery
+## 13. Recovery
 
 Bei FAIL:
 1. gleiche Bildnummer behalten
@@ -227,7 +235,7 @@ Bei FAIL:
 
 Recovery bedeutet ERSETZEN, nicht ZUSAETZLICH SAMMELN.
 
-## 13. Finaler Bilderordner
+## 14. Finaler Bilderordner
 
 ```text
 <video-id>_bilder/
@@ -251,15 +259,18 @@ Vor ZIP/Export:
 6. Temp-/FAIL-Dateien loeschen
 7. erst danach ZIP erzeugen
 
-## 14. Harte Verbote
+## 15. Harte Verbote
 
 Flow darf niemals:
 - Asset-/Bild-/Szenennummern sichtbar rendern
+- Prompt-Ueberschriften sichtbar rendern
+- Text ausserhalb der Whitelist erzeugen
 - nur erwaehnte Referenzen als angehaengt behandeln
 - mehrere retained Varianten einer normalen Szene behalten
 - unselektierte Covervarianten im finalen Set behalten
+- dasselbe Bild zweimal fuer verschiedene Zeitabschnitte benutzen
+- ein Standbild laenger als 7 Sekunden einplanen
 - Explainer-Szenen in Medical-CGI oder Photorealismus driften lassen
-- mehrere Lehrziele unnoetig in ein Bild packen
 - semantische Farben grundlos aendern
 - Cover-Zusatzlabels erzeugen
 - nach Bild_01 weitere Freigaben verlangen
