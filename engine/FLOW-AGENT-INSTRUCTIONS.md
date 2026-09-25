@@ -36,12 +36,34 @@ Style:
 - subtle shadows
 - gentle depth, not full cinematic 3D realism
 - calm bright background
-- one clear visual idea per frame
+- one DOMINANT teaching idea per frame
 - few objects
 - visual clarity over detail
 
 Target ratio:
 **80% animated illustration / 20% soft-3D depth / 0% medical realism.**
+
+## VISUAL DENSITY — CLEAR, BUT NOT EMPTY
+
+Do not make every explainer frame equally minimal.
+
+Default:
+- one dominant teaching idea
+- 1–2 main visual objects
+- only the labels needed to understand the frame
+
+For roughly 20–30% of scenes, especially major mechanism or summary beats, one supporting detail is encouraged when it genuinely teaches something useful. Examples:
+- a small secondary destination object
+- a simple before/after relation
+- one additional process cue
+- one compact inset/detail area if the main scene remains immediately readable
+
+Never turn this into a crowded infographic.
+
+If a spoken section contains two real teaching beats or would need more than about 7 seconds on one image, DO NOT overload one frame. The planning pipeline must create an additional UNIQUE image/scene with a new consecutive image number.
+
+More useful unique images are preferred over holding one image too long.
+Never solve visual-density problems by duplicating the same image.
 
 ## EXPLAINER COLOR SYSTEM
 
@@ -67,7 +89,8 @@ Reject if the image becomes:
 - human-presenter driven
 - torso mannequin / anatomy-class model
 - cluttered infographic
-- overloaded with several teaching goals at once
+- overloaded with competing teaching goals
+- visually empty when a useful supporting detail was explicitly planned
 - unclear in movement direction
 
 ## HUMAN RULE
@@ -96,16 +119,39 @@ They must NEVER appear inside the generated artwork.
 Examples of forbidden visible text:
 - `Bild 19`
 - `Bild_19`
+- `BILD_12 – O2 BINDET`
 - `IMAGE 19`
 - `Scene 19`
 - `Szenenbild 19`
 - file names such as `Bild_19.png`
 
-When a prompt section is headed `BILD_19 – ...`, interpret `BILD_19` only as the external asset ID. It is NOT a title, caption, label or design element.
+When a prompt section is headed `BILD_19 – ...`, interpret the entire heading as production structure, not artwork text, unless a specific phrase is separately listed in REQUIRED VISIBLE TEXT.
 
-Visible text is allowed ONLY when explicitly listed under the scene's required German text / labels.
+If an asset ID, scene title, prompt heading or scene number appears visibly in the image, the image is an automatic FAIL and must not be kept.
 
-If an asset ID or scene number appears visibly in the image, the image is an automatic FAIL and must not be kept.
+## CRITICAL: VISIBLE-TEXT WHITELIST
+
+Visible text is whitelist-based, not suggestion-based.
+
+For every image determine `ALLOWED_VISIBLE_TEXT` before generation.
+
+Cover:
+- allowed text = the exact approved cover hook ONLY
+
+Normal scene:
+- allowed text = exactly the labels explicitly listed for that scene
+- 0 labels means the image must contain NO visible words
+
+Anything else is forbidden, including:
+- scene titles such as `O2 BINDET`
+- explanatory headings invented by Flow
+- image numbers
+- file names
+- English words
+- decorative pseudo-text
+- extra anatomy labels not requested
+
+Before accepting an image, visually read all visible words. If ANY word is not in the whitelist, reject and regenerate.
 
 ## CRITICAL: EXACTLY ONE RETAINED IMAGE PER NORMAL SCENE
 
@@ -139,12 +185,11 @@ Workflow:
 6. Continue with `Bild_02` only after cover cleanup is complete.
 
 The final production set must therefore contain exactly ONE `Bild_01.png`, not three covers.
-
 Cover candidate names such as A/B/C are internal metadata only and must never be visible inside the artwork.
 
 ## TEXT POLICY
 
-Visible text must be German.
+Visible text must be German and must obey the whitelist above.
 
 Cover:
 - exact German hook/title from the project prompt
@@ -158,6 +203,7 @@ Normal explainer scenes:
 - no English visible text
 - no invented wording
 - no asset number / scene number / file name
+- no scene heading or prompt heading
 
 If Flow misspells a required German word, regenerate. Remotion is the exact fallback after repeated text failure.
 
@@ -178,15 +224,16 @@ No O2 mascot. No talking blood cell. No smiling organ.
 ## SCENE INTERPRETATION
 
 For every explainer image identify:
-1. ONE teaching idea
-2. main subject
-3. start point
-4. end point
-5. movement direction
-6. minimal supporting objects
-7. semantic colors
-8. required German text
-9. forbidden elements
+1. ONE dominant teaching idea
+2. optional supporting detail, only if explicitly useful
+3. main subject
+4. start point
+5. end point
+6. movement direction
+7. minimal supporting objects
+8. semantic colors
+9. ALLOWED_VISIBLE_TEXT whitelist
+10. forbidden elements
 
 The scene should still communicate the process if labels are temporarily hidden.
 
@@ -215,13 +262,15 @@ After approval and cleanup of Bild_01:
 - generate each image separately
 - exactly one retained output per scene
 - preserve semantic colors and simplification level
-- one teaching idea per image
+- dominant teaching idea must be obvious
+- supporting detail only when planned
 - do not ask for block-by-block approval
 
 ## QA
 
 Reject and regenerate if any of these occur:
-- asset ID / image number / scene number appears visibly
+- ANY visible word is outside the scene's visible-text whitelist
+- asset ID / image number / scene number / scene heading appears visibly
 - duplicate retained output exists for a normal scene
 - wrong biological direction or relationship
 - scene does not match the voice-over
