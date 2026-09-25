@@ -10,29 +10,53 @@ Verwende zuerst die dauerhaften Agent Instructions aus:
 
 ```text
 engine/FLOW-AGENT-INSTRUCTIONS.md
+engine/FLOW-PRODUCTION-STANDARD.md
 ```
 
 Danach gilt fuer diesen Pilot:
 
 - zuerst nur `Bild_01`
+- nur `Bild_01` darf bis zu 3 Cover-Varianten haben
+- Nutzer waehlt genau 1 Cover; alle anderen Cover-Kandidaten danach loeschen/verwerfen
 - wenn vorhanden `STYLE_REFERENCE.png` als echte visuelle Referenz anhaengen
-- nach Freigabe `Bild_01.png` bei jeder Generation von `Bild_02` bis `Bild_28` als echtes Reference/Ingredient anhaengen
+- nach Freigabe das eine `Bild_01.png` bei jeder Generation von `Bild_02` bis `Bild_35` als echtes Reference/Ingredient anhaengen
+- fuer normale Szenen genau einen Kandidaten pro Versuch und genau ein retained asset pro Bildnummer
+- FAIL-Version derselben Nummer ersetzen, nicht zusaetzlich sammeln
+- dasselbe Bild niemals fuer zwei Szenen verwenden
 - keine textlichen Referenzsaetze als Ersatz fuer echte Attachments behandeln
-- **helle, freundliche Premium-3D-Animationsfilm-Welt**
-- **keine kosmische, dunkle, Sci-Fi- oder medizinische Bildwelt**
-- `Bild_01` MUSS die deutsche Hook „So reist Sauerstoff durch deinen Körper“ enthalten
-- normale Bilder enthalten die im kanonischen Szenenprompt festgelegten 1–3 deutschen Labels
-- sichtbarer Text ausschliesslich Deutsch
-- Flow-Textfehler zuerst regenerieren; Remotion nur als exakter Fallback
-- kein O2-Guide und kein O2-Maskottchen
-- O2 = zwei blass-cyanfarbene verbundene Kugeln ohne Gesicht
-- CO2 = neutral-violett/graue Drei-Kugel-Form ohne Gesicht
-- rote Blutkoerperchen = tiefe warmrote bikonkave Scheiben ohne Gesicht
-- Haemoglobin = burgunderrote vereinfachte Struktur
-- keine medizinische CGI-/Anatomiesoftware-Optik
-- kein Stock-3D, Toy-Look oder Stil-Drift
+- moderne stilisierte 2.5D / Soft-3D Educational Illustration
+- 80 % animierte Illustration / 20 % Soft-3D-Tiefe / 0 % Medical-CGI
+- keine kosmische, dunkle, Sci-Fi- oder medizinisch-realistische Bildwelt
+- pro Bild ein dominanter Lehrpunkt; wichtige Mechanismus-/Zusammenfassungsbilder duerfen einen sinnvollen Zusatzdetailpunkt haben
 
-Die vollstaendigen 28 Szenenprompts mit den exakten deutschen Texten stehen kanonisch in:
+## Sichtbarer Text – strikte Whitelist
+
+- `Bild_01` darf sichtbar NUR die Hook „So reist Sauerstoff durch deinen Körper“ enthalten
+- normale Bilder duerfen sichtbar NUR die im kanonischen Szenenprompt aufgelisteten Labels enthalten
+- kein erfundener Titel / kein Extra-Erklaertext
+- kein englischer sichtbarer Text
+- interne Produktionsnamen sind niemals Bildtext
+
+Hard FAIL wenn sichtbar:
+- `Bild 19`
+- `Bild_19`
+- `BILD_12 – O2 BINDET`
+- `Scene 19`
+- `IMAGE 19`
+- Dateiname / Asset-ID / Prompt-Ueberschrift
+
+Flow-Textfehler zuerst regenerieren; Remotion nur als exakter Fallback.
+
+## Objekt-Lock
+
+- kein O2-Guide und kein O2-Maskottchen
+- O2 = Cyan/Tuerkis, gesichtslos
+- CO2 = weiches Violett, gesichtslos
+- rote Blutkoerperchen = tiefes warmes Rot
+- Haemoglobin = Burgunder
+- Organe/Zellen stark stilisiert und gesichtslos
+
+Die vollstaendigen **35 eindeutigen Szenenprompts** und die ALLOWED_VISIBLE_TEXT-Whitelist stehen kanonisch in:
 
 ```text
 youtube-videos/001-pilot-sauerstoff-im-blut/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt
