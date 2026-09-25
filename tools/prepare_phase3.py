@@ -4,18 +4,24 @@
 Usage:
 python tools/prepare_phase3.py youtube-videos/THEMA [--model small]
 
-This command performs all non-render Phase-3 preparation in the required order:
-raw voice -> canonical voice -> safe Flow ZIP import -> asset validation ->
-strict Whisper/script alignment -> exact scene timeline -> Remotion runtime.
+Required order:
+raw voice -> canonical 1.10x pause-compressed voice -> safe Flow ZIP import ->
+asset validation -> strict Whisper/script alignment -> exact scene timeline ->
+Remotion runtime.
+
+The raw TTS file is never a valid timing source.
 """
 
 from __future__ import annotations
 
 import argparse
+import json
 import shutil
 import subprocess
 import sys
 from pathlib import Path
+
+EXPECTED_SPEED = 1.10
 
 
 def run(command: list[str], cwd: Path) -> None:
@@ -30,6 +36,34 @@ def exactly_one(paths: list[Path], label: str) -> Path:
         listing = ", ".join(path.name for path in paths) or "<keine>"
         raise SystemExit(f"PHASE-3 PREP FAIL: erwartet genau eine {label}; gefunden: {listing}")
     return paths[0]
+
+
+def validate_existing_final_audio(final_audio: Path) -> None:
+    report_path = final_audio.with_suffix(".audio-report.json")
+    if not report_path.is_file():
+        raise SystemExit(
+            "PHASE-3 PREP FAIL: final-voiceover.wav existiert, aber der Audio-Report fehlt. "
+            "Audio erneut mit tools/prepare_audio.py erzeugen."
+        )
+    try:
+        report = json.loads(report_path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        raise SystemExit(f"PHASE-3 PREP FAIL: Audio-Report unlesbar: {exc}") from exc
+
+    speed = float(report.get("speed_multiplier") or 0)
+    if abs(speed - EXPECTED_SPEED) > 0.005:
+        raise SystemExit(
+            f"PHASE-3 PREP FAIL: bestehendes finales Audio ist {speed:.3f}x; "
+            f"erwartet {EXPECTED_SPEED:.2f}x. Audio neu vorbereiten."
+        )
+    if report.get("internal_silence_compression") is not True:
+        raise SystemExit(
+            "PHASE-3 PREP FAIL: bestehendes finales Audio hat keine bestaetigte Pausenkompression."
+        )
+    if report.get("timing_source_policy") != "processed-audio-is-authoritative":
+        raise SystemExit(
+            "PHASE-3 PREP FAIL: Audio-Report markiert das verarbeitete Audio nicht als Timing-Quelle."
+        )
 
 
 def main() -> None:
@@ -58,8 +92,6 @@ def main() -> None:
         if not required.is_file():
             raise SystemExit(f"PHASE-3 PREP FAIL: notwendige Datei fehlt: {required}")
 
-    # scene-map.json ist eine rein technische Ableitung aus der von ChatGPT
-    # festgelegten Phase-1-Szenenplanung. Keine kreative Neuzuordnung in Phase 3.
     run(
         [
             sys.executable,
@@ -94,13 +126,25 @@ def main() -> None:
         and path.name != "final-voiceover.wav"
     ]
 
-    if final_audio.is_file() and not raw_audio_candidates:
-        print(f"\nKanonisches Audio bereits vorhanden: {final_audio}")
-    else:
+    if raw_audio_candidates:
         raw_audio = exactly_one(raw_audio_candidates, "rohe Voice-Datei")
         run(
-            [sys.executable, "tools/prepare_audio.py", str(raw_audio), str(final_audio)],
+            [
+                sys.executable,
+                "tools/prepare_audio.py",
+                str(raw_audio),
+                str(final_audio),
+                "--speed",
+                f"{EXPECTED_SPEED:.2f}",
+            ],
             repo_root,
+        )
+    elif final_audio.is_file():
+        validate_existing_final_audio(final_audio)
+        print(f"\nKanonisches Audio validiert: {final_audio}")
+    else:
+        raise SystemExit(
+            "PHASE-3 PREP FAIL: weder rohe Voice-Datei noch gueltiges final-voiceover.wav gefunden."
         )
 
     zip_file = exactly_one(sorted(zip_dir.glob("*.zip")), "Google-Flow-ZIP")
@@ -165,6 +209,7 @@ def main() -> None:
         shutil.copy2(source_srt, subtitle_dir / "subtitles.srt")
 
     print("\nPHASE-3 PREP PASS")
+    print(f"Voice-Speed: {EXPECTED_SPEED:.2f}x, Pausenkompression validiert.")
     print("Renderer-Runtime ist vorbereitet. Jetzt Preview/Render in renderer/ ausfuehren.")
 
 

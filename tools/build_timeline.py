@@ -9,7 +9,13 @@ python tools/build_timeline.py \
 
 Every scene must contain the exact spoken `speech_section` from script.txt.
 The program maps those sections sequentially to the aligned script words and FAILS
-on any gap, overlap, mismatch, or ambiguous creative fallback.
+on any gap, overlap, mismatch, ambiguous creative fallback, or scene that is too
+long for the channel's visual-density standard.
+
+Default pacing rule:
+- no normal scene may remain on one image for more than 7.0 seconds
+- if a spoken section is longer, split it into additional UNIQUE scenes/images
+- never solve a long section by duplicating the same image asset
 """
 
 from __future__ import annotations
@@ -18,6 +24,8 @@ import argparse
 import json
 import unicodedata
 from pathlib import Path
+
+DEFAULT_MAX_SCENE_SECONDS = 7.0
 
 
 def normalize_token(value: str) -> str:
@@ -46,8 +54,19 @@ def main() -> None:
     parser.add_argument("scene_map", type=Path)
     parser.add_argument("word_timings", type=Path)
     parser.add_argument("output", type=Path)
+    parser.add_argument(
+        "--max-scene-seconds",
+        type=float,
+        default=DEFAULT_MAX_SCENE_SECONDS,
+        help=(
+            "Maximale Dauer eines einzelnen Bildes. Standard: 7.0s. "
+            "Laengere Sprachabschnitte muessen in neue eindeutige Bilder geteilt werden."
+        ),
+    )
     args = parser.parse_args()
 
+    if args.max_scene_seconds <= 0:
+        raise SystemExit("--max-scene-seconds muss groesser als 0 sein.")
     if not args.scene_map.is_file():
         raise SystemExit(f"scene-map.json fehlt: {args.scene_map}")
     if not args.word_timings.is_file():
@@ -153,6 +172,7 @@ def main() -> None:
             f"Erstes nicht zugeordnetes Material: {remaining!r}"
         )
 
+    overlong: list[dict] = []
     for index, scene in enumerate(resolved):
         if index + 1 < len(resolved):
             scene["end"] = resolved[index + 1]["start"]
@@ -164,6 +184,22 @@ def main() -> None:
             raise SystemExit(
                 f"Szene {scene['scene']}: ungueltige Dauer {scene['duration']} Sekunden."
             )
+        if scene["duration"] > args.max_scene_seconds:
+            overlong.append(scene)
+
+    if overlong:
+        details = "\n".join(
+            f"- Szene {scene['scene']} / {scene['image']}: {scene['duration']:.2f}s"
+            for scene in overlong
+        )
+        raise SystemExit(
+            "TIMELINE FAIL: Einzelne Bilder stehen zu lange. Das erzeugt Diashow-Gefuehl.\n"
+            f"Maximal erlaubt: {args.max_scene_seconds:.2f}s pro Bild.\n"
+            f"{details}\n"
+            "Loesung: den jeweiligen speech_section semantisch teilen und fuer jeden Teil ein "
+            "NEUES eindeutiges Bild mit neuer fortlaufender Bildnummer planen. Nie dasselbe Bild "
+            "duplizieren oder zweimal verwenden."
+        )
 
     result = {
         "source_scene_map": args.scene_map.name,
@@ -173,6 +209,8 @@ def main() -> None:
         "fps": 30,
         "scene_count": len(resolved),
         "mapping": "strict-sequential-speech-section",
+        "max_scene_seconds": args.max_scene_seconds,
+        "visual_density_policy": "split-long-sections-into-unique-images",
         "scenes": resolved,
     }
 
@@ -182,12 +220,7 @@ def main() -> None:
     print(f"OK: {args.output}")
     print(f"Szenen: {len(resolved)}")
     print(f"Audio: {audio_duration:.2f} Sekunden")
-
-    long_scenes = [scene for scene in resolved if scene["duration"] > 12]
-    if long_scenes:
-        print("WARNUNG: Szenen ueber 12 Sekunden:")
-        for scene in long_scenes:
-            print(f"- Szene {scene['scene']}: {scene['duration']:.2f}s")
+    print(f"Maximale Bilddauer: {args.max_scene_seconds:.2f}s")
 
 
 if __name__ == "__main__":

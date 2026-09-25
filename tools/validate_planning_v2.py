@@ -6,8 +6,8 @@ Usage:
   python tools/validate_planning_v2.py youtube-videos/MEIN-VIDEO --phase2
 
 Phase 2 fails closed: accepted review JSON is not enough if the corresponding
-final image asset is missing, required German text was not reviewed, or review
-fields are incomplete.
+final image asset is missing, visible text was not whitelist-checked, internal
+asset IDs appeared, or multiple retained variants exist for one normal scene.
 """
 
 from __future__ import annotations
@@ -98,12 +98,27 @@ def validate_phase1(project: Path) -> set[str]:
             fail(f"ungueltige image_asset_id in Item {index}: {image_id!r}")
         sentence_image_ids.add(image_id)
 
-    scenes = load_json(scenes_path).get("scenes")
+    scene_payload = load_json(scenes_path)
+    scenes = scene_payload.get("scenes")
     if not isinstance(scenes, list) or not scenes:
         fail("phase1-scenes.json enthaelt keine Szenen")
-    scene_image_ids = {
-        scene.get("image") for scene in scenes if isinstance(scene, dict) and isinstance(scene.get("image"), str)
-    }
+
+    scene_image_ids_list = [
+        scene.get("image")
+        for scene in scenes
+        if isinstance(scene, dict) and isinstance(scene.get("image"), str)
+    ]
+    scene_image_ids = set(scene_image_ids_list)
+    if len(scene_image_ids) != len(scene_image_ids_list):
+        fail("phase1-scenes.json enthaelt doppelte image-IDs")
+
+    expected_ids = {f"Bild_{index:02d}" for index in range(1, len(scenes) + 1)}
+    if scene_image_ids != expected_ids:
+        fail(
+            "phase1-scenes.json muss lueckenlose eindeutige Bildnummern enthalten: "
+            f"erwartet {sorted(expected_ids)}, gefunden {sorted(scene_image_ids)}"
+        )
+
     missing_in_scenes = sentence_image_ids - scene_image_ids
     if missing_in_scenes:
         fail(f"Sentence-Visual-Bilder fehlen in phase1-scenes.json: {sorted(missing_in_scenes)}")
@@ -115,36 +130,53 @@ def validate_phase1(project: Path) -> set[str]:
     if not isinstance(images, list):
         fail("label-plan.json: images muss eine Liste sein")
 
+    planned_ids: set[str] = set()
     for entry in images:
         if not isinstance(entry, dict):
             fail("label-plan.json enthaelt einen ungueltigen Eintrag")
         image_id = entry.get("image_asset_id")
         if image_id not in scene_image_ids:
             fail(f"Label-Plan referenziert unbekanntes Bild: {image_id}")
+        if image_id in planned_ids:
+            fail(f"Label-Plan enthaelt doppelten Eintrag fuer {image_id}")
+        planned_ids.add(image_id)
+
         labels = entry.get("labels", [])
-        if not isinstance(labels, list) or not 1 <= len(labels) <= 3:
-            fail(f"{image_id}: 1 bis 3 wichtige deutsche Labels sind erforderlich")
+        if not isinstance(labels, list) or len(labels) > 3:
+            fail(f"{image_id}: 0 bis 3 kurze deutsche Labels sind erlaubt")
+
+        if image_id == "Bild_01":
+            hook = entry.get("hook_text")
+            if not isinstance(hook, str) or not hook.strip():
+                fail("Bild_01: deutsche Cover-Hook fehlt im label-plan.json")
+            if labels:
+                fail("Bild_01: Cover darf keine zusaetzlichen Anatomie-Labels enthalten")
+        elif len(labels) > 2:
+            print(f"WARNUNG: {image_id} nutzt 3 Labels; 0–2 sind bevorzugt.")
+
         for label in labels:
             if not isinstance(label, dict):
                 fail(f"{image_id}: Label-Eintrag ist ungueltig")
-            for key in ("text", "target", "reason", "fallback_overlay"):
-                if key not in label:
-                    fail(f"{image_id}: Label-Feld fehlt: {key}")
+            if "text" not in label or "fallback_overlay" not in label:
+                fail(f"{image_id}: Label braucht mindestens text und fallback_overlay")
             if has_placeholder(label):
                 fail(f"{image_id}: Label enthaelt Platzhalter")
             text = label.get("text")
             if not isinstance(text, str) or not text.strip():
                 fail(f"{image_id}: Labeltext fehlt")
 
-        if image_id == "Bild_01":
-            hook = entry.get("hook_text")
-            if not isinstance(hook, str) or not hook.strip():
-                fail("Bild_01: deutsche Cover-Hook fehlt im label-plan.json")
+    if planned_ids != scene_image_ids:
+        missing_labels = scene_image_ids - planned_ids
+        extra_labels = planned_ids - scene_image_ids
+        fail(
+            f"Label-Plan muss exakt alle Szenen abdecken. Fehlend={sorted(missing_labels)}, "
+            f"extra={sorted(extra_labels)}"
+        )
 
     print(f"V2-PHASE-1-PASS: {project}")
     print(f"  Satz-/Visual-Items: {len(items)}")
-    print(f"  referenzierte Bilder: {len(sentence_image_ids)}")
-    print("  deutsche Labels pro Bild geplant: 1–3")
+    print(f"  geplante Szenen/Bilder: {len(scene_image_ids)}")
+    print("  sichtbarer Text ist whitelist-basiert; normale Bilder 0–2 Labels bevorzugt")
     return scene_image_ids
 
 
@@ -216,6 +248,8 @@ def validate_phase2(project: Path, expected_image_ids: set[str]) -> None:
         image_id = entry.get("image_asset_id")
         if image_id not in expected_image_ids:
             fail(f"Bildreview referenziert unbekanntes Bild: {image_id}")
+        if image_id in reviewed:
+            fail(f"image-review.json enthaelt mehrfachen retained Review fuer {image_id}")
         reviewed.add(image_id)
 
         image_path = images_dir / f"{image_id}.png"
@@ -225,6 +259,12 @@ def validate_phase2(project: Path, expected_image_ids: set[str]) -> None:
             fail(f"{image_id}: Bild ist nicht ACCEPT")
         if entry.get("ai_artifact_check") != "PASS":
             fail(f"{image_id}: AI-Artefakt-Check nicht bestanden")
+        if entry.get("visible_text_whitelist") != "PASS":
+            fail(f"{image_id}: sichtbarer Text wurde nicht gegen Whitelist bestanden")
+        if entry.get("no_visible_asset_id") != "PASS":
+            fail(f"{image_id}: Asset-/Bild-/Szenennummer ist sichtbar oder ungeprueft")
+        if entry.get("single_retained_asset_for_scene") != "PASS":
+            fail(f"{image_id}: mehrere retained Varianten vorhanden oder ungeprueft")
 
         for key in numeric_min_8:
             value = entry.get(key)
@@ -245,13 +285,22 @@ def validate_phase2(project: Path, expected_image_ids: set[str]) -> None:
     if missing:
         fail(f"Bildreviews fehlen fuer: {sorted(missing)}")
 
-    extra_pngs = {path.stem for path in images_dir.glob("Bild_*.png")} - expected_image_ids
+    final_pngs = list(images_dir.glob("Bild_*.png"))
+    stems = [path.stem for path in final_pngs]
+    if len(stems) != len(set(stems)):
+        fail("finaler Bilderordner enthaelt doppelte Bildstems")
+
+    actual_png_ids = set(stems)
+    extra_pngs = actual_png_ids - expected_image_ids
+    missing_pngs = expected_image_ids - actual_png_ids
     if extra_pngs:
         fail(f"unerwartete finale Bilddateien: {sorted(extra_pngs)}")
+    if missing_pngs:
+        fail(f"fehlende finale Bilddateien: {sorted(missing_pngs)}")
 
     print(f"V2-PHASE-2-REVIEW-PASS: {project}")
-    print(f"  akzeptierte Bildreviews: {len(reviewed)}")
-    print("  finale PNG-Dateien vorhanden; zentrale Bild- und Label-Scores >= 8/10")
+    print(f"  akzeptierte eindeutige Bildreviews: {len(reviewed)}")
+    print("  Whitelist, keine sichtbaren Asset-IDs und genau ein retained Asset pro Szene bestaetigt")
 
 
 def main() -> None:

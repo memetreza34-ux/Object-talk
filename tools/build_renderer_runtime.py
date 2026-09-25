@@ -10,9 +10,10 @@ python tools/build_renderer_runtime.py \
 The fixed renderer lives in renderer/. This tool never invents scene timing;
 it only converts the already resolved timeline from seconds to frames.
 
-If `03_pipeline/overlay-plan.json` exists next to the project, short editorial
-headlines/keywords are attached to the corresponding scenes. Missing overlay
-plans are allowed and keep the legacy full-image-only behavior.
+Defense-in-depth rules:
+- no individual image may be held longer than 7 seconds
+- no image file may be reused by another scene
+- overlay scene references must exist
 """
 
 from __future__ import annotations
@@ -25,6 +26,7 @@ from pathlib import Path
 FPS = 30
 WIDTH = 1920
 HEIGHT = 1080
+MAX_SCENE_SECONDS = 7.0
 ALLOWED_MOTIONS = {
     "static",
     "slow-push-in",
@@ -139,18 +141,35 @@ def main() -> None:
     audio_target_dir.mkdir(parents=True, exist_ok=True)
 
     runtime_scenes: list[dict] = []
+    used_source_names: set[str] = set()
 
     for scene in scenes:
         scene_number = int(scene["scene"])
         source = args.images_dir / f"Bild_{scene_number:02d}.png"
         if not source.is_file():
             raise SystemExit(f"FEHLER: Renderer-Asset fehlt: {source}")
+        if source.name in used_source_names:
+            raise SystemExit(
+                f"FEHLER: Bildasset wird mehrfach in der Timeline verwendet: {source.name}. "
+                "Jede Szene braucht ein eindeutiges Bild."
+            )
+        used_source_names.add(source.name)
+
+        start_seconds = float(scene["start"])
+        end_seconds = float(scene["end"])
+        scene_seconds = end_seconds - start_seconds
+        if scene_seconds <= 0:
+            raise SystemExit(f"FEHLER: Szene {scene_number} hat ungueltige Dauer {scene_seconds:.3f}s.")
+        if scene_seconds > MAX_SCENE_SECONDS + 0.01:
+            raise SystemExit(
+                f"FEHLER: Szene {scene_number} / {source.name} steht {scene_seconds:.2f}s. "
+                f"Maximal erlaubt sind {MAX_SCENE_SECONDS:.2f}s. Speech-Beat in neue eindeutige "
+                "Szenen/Bilder teilen; Bild nicht duplizieren."
+            )
 
         target = images_target / source.name
         shutil.copy2(source, target)
 
-        start_seconds = float(scene["start"])
-        end_seconds = float(scene["end"])
         start_frame = round(start_seconds * FPS)
         end_frame = round(end_seconds * FPS)
         duration_frames = max(1, end_frame - start_frame)
@@ -185,6 +204,7 @@ def main() -> None:
         "width": WIDTH,
         "height": HEIGHT,
         "durationSeconds": round(audio_duration, 3),
+        "maxSceneSeconds": MAX_SCENE_SECONDS,
         "audioFile": "current/audio/final-voiceover.wav",
         "scenes": runtime_scenes,
     }
@@ -218,6 +238,7 @@ def main() -> None:
         "  width: number;\n"
         "  height: number;\n"
         "  durationSeconds: number;\n"
+        "  maxSceneSeconds: number;\n"
         "  audioFile: string;\n"
         "  scenes: SceneRuntime[];\n"
         "};\n\n"
@@ -233,6 +254,7 @@ def main() -> None:
     print(f"Szenen: {len(runtime_scenes)}")
     print(f"Overlays: {overlay_count}")
     print(f"Dauer: {audio_duration:.2f}s")
+    print(f"Maximale Bilddauer: {MAX_SCENE_SECONDS:.2f}s")
     print("Naechster Schritt: cd renderer && npm install && npm run render -- ../PFAD/final-video.mp4")
 
 

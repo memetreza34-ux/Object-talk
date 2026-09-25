@@ -1,20 +1,18 @@
 GOOGLE FLOW – PILOT 001 „SAUERSTOFF VON DER LUNGE BIS ZUR ZELLE“
 
 AUFGABE
-
-Erzeuge 28 einzelne 16:9-Standbilder fuer das deutsche Object-Talk-Erklaervideo:
+Erzeuge 35 einzelne 16:9-Standbilder fuer das deutsche Object-Talk-Erklaervideo:
 „Wie kommt Sauerstoff von der Lunge bis in deine Zellen?“
 
 WICHTIG
-
 Use the permanent rules from:
 - `engine/FLOW-AGENT-INSTRUCTIONS.md`
+- `engine/FLOW-PRODUCTION-STANDARD.md`
 - `bildwelt/OBJECT-TALK-CHANNEL-DNA.md`
 - `bildwelt/EXPLAINER-STYLE-LOCK.md`
 
 GLOBAL VISUAL DIRECTION
-
-Use a modern stylized 2.5D / soft-3D educational illustration style. The images must look clearly animated and illustrated, not realistic. Use rounded simplified shapes, matte surfaces, soft gradients, subtle shadows, gentle depth and calm bright backgrounds. One teaching idea per frame. Keep biology simplified but recognizable.
+Use a modern stylized 2.5D / soft-3D educational illustration style. Clearly animated and illustrated, not realistic. Rounded simplified shapes, matte surfaces, soft gradients, subtle shadows, gentle depth, calm bright backgrounds.
 
 Target look:
 80% animated illustration / 20% soft-3D depth / 0% medical realism.
@@ -32,163 +30,160 @@ Semantic colors:
 DO NOT USE:
 photorealism, medical CGI, wet tissue, realistic microscopic texture, anatomy-software look, dark sci-fi worlds, cosmic backgrounds, human presenters, torso mannequins, crowded infographic layouts.
 
+CRITICAL METADATA RULE
+Headings such as `BILD_19 – ...`, image numbers, scene numbers, file names and asset IDs are production metadata only. NEVER render them inside the artwork.
+
+CRITICAL VISIBLE-TEXT WHITELIST
+For each image, visible text may contain ONLY the exact title/labels explicitly listed in that image prompt.
+Any other word = FAIL.
+Never invent a scene title, heading, caption or extra anatomy label.
+Never render `Bild 19`, `Bild_19`, `BILD_12 – O2 BINDET`, `Scene 19`, `IMAGE 19` or a file name.
+
+ASSET RULE
+- Bild_01 is the only image allowed to have up to 3 creative variants before user selection.
+- After selection, keep exactly one `Bild_01.png` and discard all other cover candidates.
+- For Bild_02–Bild_35 generate one candidate at a time.
+- If a normal scene fails, replace that same image number; do not keep the failed version.
+- Never keep two versions of the same image number.
+- Never reuse the same image for a second scene.
+
 REFERENCE RULE
-
-- If `assets/channel/STYLE_REFERENCE.png` exists and is approved, attach it as a real visual reference.
+- If `assets/channel/STYLE_REFERENCE.png` exists and is approved, attach it.
 - Generate only Bild_01 first.
-- After approval, attach the approved `Bild_01.png` as a real Reference/Ingredient for every Bild_02–Bild_28 generation.
-- A textual mention of Bild_01 never replaces the actual attachment.
+- After approval and cleanup, attach the single approved `Bild_01.png` as a real Reference/Ingredient for every Bild_02–Bild_35 generation.
 
-TEXT RULE
-
-- All visible text must be German.
-- Bild_01 contains ONLY the exact cover title below.
-- Normal scenes use 0–2 short labels preferred.
-- Maximum 3 labels only where truly necessary.
-- No English visible text.
+INFORMATION DENSITY
+Most frames have one dominant teaching idea. Selected mechanism/summary frames may contain one useful supporting detail. If more information is needed, use a new unique image rather than overloading one frame.
 
 EINZIGER FREIGABEPUNKT
-
 1. Generate only Bild_01 first.
-2. Create 3 variants when possible.
-3. Reject photorealistic, medical, cosmic, human-presenter, torso-mannequin or cluttered variants.
-4. Reject any cover with extra anatomy labels.
-5. Save the best PASS variant as Bild_01.png.
-6. Ask for exactly one user approval.
-7. Then generate Bild_02–Bild_28 automatically with Bild_01 attached.
+2. Create up to 3 clearly different cover variants.
+3. User selects exactly one.
+4. Discard/delete all unselected covers.
+5. Continue automatically with Bild_02–Bild_35, one retained image per number.
 
 ---
 
-BILD_01 – COVER + MASTER FRAME
-
-Create a modern stylized 2.5D / soft-3D 16:9 educational YouTube cover. Show one large simplified peach-coral pair of lungs as the main visual object. A smooth coral-red blood vessel curves away from the lungs and several bright cyan oxygen particles travel through it toward a simplified warm-red heart as a secondary object. Use rounded forms, matte surfaces, soft gradients, subtle shadows and a light cream / soft-blue background. Keep the composition bold, simple and easy to read at thumbnail size. Add ONLY the exact German title: “So reist Sauerstoff durch deinen Körper”. No additional labels.
+BILD_01 – COVER
+Create a clean 16:9 YouTube cover. Large simplified peach-coral lungs as hero, curved coral vessel with cyan O2 path, small secondary warm-red heart. Light cream/soft-blue background. ALLOWED_VISIBLE_TEXT ONLY: “So reist Sauerstoff durch deinen Körper”. No other words.
 
 BILD_02 – REISE-UEBERSICHT
-
-Create one clean left-to-right explainer scene: simplified peach-coral lungs on the left, one coral-red vessel through the center and one apricot-orange muscle cell on the right. Bright cyan oxygen particles connect the path. Keep the background simple and light. Add only “Lunge” and “Muskelzelle”.
+Lungs left, one coral-red vessel through center, large apricot-orange muscle cell right. Cyan O2 connects the route. Slightly richer overview but one dominant journey. ALLOWED_VISIBLE_TEXT ONLY: “Lunge”, “Muskelzelle”.
 
 BILD_03 – ATEMWEG
-
-Show one simplified side-view airway path with a minimal faceless head silhouette only as secondary context. Bright cyan oxygen particles move from nose/mouth into one clear trachea. Keep everything flat-clean with slight soft-3D depth. Add only “Luftröhre”.
+Simplified faceless side-profile only as secondary context. Airway is hero; cyan airflow enters nose/mouth and moves into trachea. ALLOWED_VISIBLE_TEXT ONLY: “Luftröhre”.
 
 BILD_04 – BRONCHIEN
-
-Show one simplified trachea splitting into two main bronchi inside two peach-coral lungs. Cyan oxygen particles move downward and outward through the branches. Keep only the important branches visible. Add only “Bronchien”.
+Simplified lungs with clean branching bronchial tree; cyan airflow moves deeper through smaller branches. ALLOWED_VISIBLE_TEXT ONLY: “Bronchien”.
 
 BILD_05 – LUNGENBLAESCHEN
-
-Show one large cluster of simplified rounded alveoli at the end of a tiny airway. Use soft cream / peach forms and a clean light background. Keep one cluster dominant. Add only “Lungenbläschen”.
+One dominant rounded alveolus cluster at the end of a tiny airway. ALLOWED_VISIBLE_TEXT ONLY: “Lungenbläschen”.
 
 BILD_06 – DUENNE WAND
-
-Show one large simplified alveolus on the left and one smooth coral-red capillary on the right, separated by one very thin clean barrier. Deep-red blood cells remain inside the vessel. Add only “Lungenbläschen” and “Kapillare”.
+One alveolus beside one curved capillary; very thin barrier visible; capillary hugs alveolus. ALLOWED_VISIBLE_TEXT ONLY: “Kapillare”.
 
 BILD_07 – UEBERGANGSPUNKT
-
-Use the same alveolus-capillary orientation as Bild_06. Place four cyan oxygen particles directly beside the thin barrier on the alveolus side, not yet across it. Add only “Sauerstoff”.
+Cyan O2 particles on alveolus side directly beside barrier, not yet across. ALLOWED_VISIBLE_TEXT ONLY: “Sauerstoff”.
 
 BILD_08 – SAUERSTOFF INS BLUT
-
-Use the same orientation. Show four cyan oxygen particles at successive positions crossing the thin barrier from alveolus into blood. Keep deep-red blood cells inside the capillary. Add only “Sauerstoff” and “Blut”.
+Five cyan O2 particles cross the thin barrier into blood; deep-red blood cells stay inside vessel. ALLOWED_VISIBLE_TEXT ONLY: “Sauerstoff”, “Blut”.
 
 BILD_09 – BLUTPLASMA
-
-Show a simplified capillary interior with several deep-red blood cells and only a few cyan oxygen particles freely present in the surrounding plasma. Add only “Blutplasma”.
+Simplified capillary interior with red blood cells and only a few free cyan O2 particles in plasma. ALLOWED_VISIBLE_TEXT ONLY: “Blutplasma”.
 
 BILD_10 – ROTE BLUTKOERPERCHEN
-
-Show several simplified deep-red blood cells inside one coral-red capillary, with cyan oxygen particles moving toward them. One blood cell is the clear main subject. Add only “Rote Blutkörperchen”.
+One large deep-red blood cell as hero; cyan O2 moves toward it. ALLOWED_VISIBLE_TEXT ONLY: “Rote Blutkörperchen”.
 
 BILD_11 – HAEMOGLOBIN
-
-Show one large simplified red blood cell cutaway with a few burgundy hemoglobin structures inside. Keep the design clean and schematic, not realistic. Add only “Hämoglobin”.
+Simple cutaway of one red blood cell with a few burgundy hemoglobin structures inside. ALLOWED_VISIBLE_TEXT ONLY: “Hämoglobin”.
 
 BILD_12 – O2 BINDET
+Close cutaway: cyan O2 visibly attaches to burgundy hemoglobin. ALLOWED_VISIBLE_TEXT ONLY: “Sauerstoff”, “Hämoglobin”.
 
-Use the same red-blood-cell cutaway. Show several cyan oxygen particles attached to burgundy hemoglobin structures while a few approach. Add only “Sauerstoff” and “Hämoglobin”.
+BILD_13 – TRANSPORT DURCH ROTE BLUTKOERPERCHEN
+One dominant red blood cell travels through a vessel carrying bound cyan O2; two smaller RBCs behind may support transport. ALLOWED_VISIBLE_TEXT ONLY: “Rotes Blutkörperchen”.
 
-BILD_13 – ZUM HERZEN
+BILD_14 – ZUM HERZEN
+Simplified lungs and heart connected by one clear coral vessel; oxygen-rich blood moves lungs → heart. ALLOWED_VISIBLE_TEXT ONLY: “Lunge”, “Herz”.
 
-Show simplified peach-coral lungs on the left and a warm-red heart on the right connected by one clear coral-red vessel path. Cyan oxygen particles move with the blood toward the heart. Add only “Lunge” and “Herz”.
+BILD_15 – HERZ PUMPT
+Large simplified heart as hero; one main artery leaves it with oxygen-rich blood. ALLOWED_VISIBLE_TEXT ONLY: “Herz”, “Hauptschlagader”.
 
-BILD_14 – HERZ PUMPT
+BILD_16 – ARTERIEN
+One coral artery branches into smaller vessels left → right. ALLOWED_VISIBLE_TEXT ONLY: “Arterie”.
 
-Show one large simplified warm-red heart as the main subject. One coral-red main artery leaves the heart and continues to the right, carrying oxygen-rich blood. Add only “Herz” and “Hauptschlagader”.
+BILD_17 – KAPILLARNETZ
+Small arteriole becomes a fine capillary network beside simplified muscle tissue. ALLOWED_VISIBLE_TEXT ONLY: “Kapillaren”, “Muskelgewebe”.
 
-BILD_15 – ARTERIEN
+BILD_18 – GEWEBE
+Capillary left, working tissue cells right; clearly different environment from lung. ALLOWED_VISIBLE_TEXT ONLY: “Gewebe”.
 
-Show one large coral-red artery entering from the left and splitting into smaller branches toward simplified apricot-orange muscle tissue on the right. Keep the branching easy to follow. Add only “Arterie”.
+BILD_19 – ZELLEN VERBRAUCHEN O2
+One large muscle cell actively uses cyan O2; visually communicate demand without numbers. ALLOWED_VISIBLE_TEXT ONLY: “Muskelzelle”, “Sauerstoff”.
 
-BILD_16 – KAPILLARNETZ
+BILD_20 – O2 ZUR MUSKELZELLE
+Cyan O2 moves from capillary left toward one large muscle cell right. ALLOWED_VISIBLE_TEXT ONLY: “Sauerstoff”, “Muskelzelle”.
 
-Show one small arteriole entering from the left and dividing into a clean simplified network of thin capillaries around a few rounded muscle cells. Add only “Kapillaren” and “Muskelgewebe”.
+BILD_21 – HAEMOGLOBIN GIBT O2 AB
+Inside one red blood cell, cyan O2 separates from burgundy hemoglobin. ALLOWED_VISIBLE_TEXT ONLY: “Hämoglobin”, “Sauerstoff”.
 
-BILD_17 – GEWEBE
+BILD_22 – DURCH DIE KAPILLARWAND
+Three clean zones: red blood cell in vessel, thin capillary wall, large tissue cell; cyan O2 crosses all three. Richer mechanism frame. ALLOWED_VISIBLE_TEXT ONLY: “Kapillarwand”, “Muskelzelle”.
 
-Show one thin coral-red capillary on the left and a few rounded apricot-orange tissue cells on the right. Keep the blood-to-tissue boundary clear. Add only “Kapillare” and “Gewebe”.
+BILD_23 – IN DIE ZELLE
+Inside one muscle cell, cyan O2 heads toward warm-orange mitochondria. ALLOWED_VISIBLE_TEXT ONLY: “Mitochondrien”.
 
-BILD_18 – O2 ZUR MUSKELZELLE
+BILD_24 – MITOCHONDRIUM / ATP
+One large simplified mitochondrion; cyan O2 arrives and subtle warm-gold ATP output appears. ALLOWED_VISIBLE_TEXT ONLY: “Sauerstoff”, “ATP”.
 
-Show one capillary on the left with deep-red blood cells and one large apricot-orange muscle cell on the right. Cyan oxygen particles move clearly across the short gap into the muscle cell. Add only “Sauerstoff” and “Muskelzelle”.
+BILD_25 – ATP
+Warm-gold ATP symbols move from mitochondrion toward simple nearby cell processes. ALLOWED_VISIBLE_TEXT ONLY: “ATP”.
 
-BILD_19 – HAEMOGLOBIN GIBT O2 AB
+BILD_26 – MUSKELZELLE ARBEITET
+One simplified muscle cell shows gentle contraction; warm-gold ATP markers support action. ALLOWED_VISIBLE_TEXT ONLY: “Muskelzelle”, “ATP”.
 
-Return to the same simplified red-blood-cell cutaway. Show cyan oxygen particles detaching from burgundy hemoglobin and moving outward. Add only “Hämoglobin” and “Sauerstoff”.
+BILD_27 – CO2 ENTSTEHT
+Near one mitochondrion, a few violet CO2 particles appear. ALLOWED_VISIBLE_TEXT ONLY: “Kohlendioxid”.
 
-BILD_20 – DURCH DIE KAPILLARWAND
+BILD_28 – CO2 ZURUECK INS BLUT
+Violet CO2 moves from tissue cell back toward capillary, right → left. ALLOWED_VISIBLE_TEXT ONLY: “Kohlendioxid”, “Blutgefäß”.
 
-Create one simple left-to-right route: red blood cell inside the capillary on the left, thin capillary wall in the center and one muscle cell on the right. Cyan oxygen particles cross all three zones. Add only “Kapillarwand” and “Muskelzelle”.
+BILD_29 – CO2 ZUR LUNGE
+Clean vessel journey carrying violet CO2 toward a simplified lung destination. ALLOWED_VISIBLE_TEXT ONLY: “Kohlendioxid”, “Lunge”.
 
-BILD_21 – IN DIE ZELLE
+BILD_30 – CO2 INS LUNGENBLAESCHEN
+Violet CO2 crosses from blood into alveolus and continues toward airway; simple exhale cue. ALLOWED_VISIBLE_TEXT ONLY: “Kohlendioxid”, “Lungenbläschen”.
 
-Show one large apricot-orange muscle cell. Cyan oxygen particles enter from the left and move toward a few simplified orange/gold mitochondria on the right. Add only “Muskelzelle” and “Mitochondrien”.
+BILD_31 – FINALE REISE TEIL 1
+Summary chain lungs/alveolus → red blood cell/hemoglobin → heart, with cyan O2 path. ALLOWED_VISIBLE_TEXT ONLY: “Lunge”, “Herz”.
 
-BILD_22 – MITOCHONDRIUM
+BILD_32 – FINALE REISE TEIL 2
+Summary chain capillary → muscle cell → violet CO2 return toward lung. ALLOWED_VISIBLE_TEXT ONLY: “Kapillare”, “Zelle”.
 
-Show one large simplified mitochondrion with rounded orange form and simple inner folds. Cyan oxygen particles approach from the left. Add only “Mitochondrium” and “Sauerstoff”.
+BILD_33 – EINATMEN REICHT NICHT
+Lungs with inhaled cyan O2 left and distant muscle cell right; imply the long transport route between them. ALLOWED_VISIBLE_TEXT ONLY: “Sauerstoff”.
 
-BILD_23 – ATP
+BILD_34 – INS BLUT UND TRANSPORTIEREN
+Three-step chain: alveolus transfer → red blood cell transport → heart/vessel movement. Richer summary frame with one transport theme. ALLOWED_VISIBLE_TEXT ONLY: “Blut”, “Transport”.
 
-Use the same mitochondrion design. Show a few warm yellow-gold ATP indicators emerging as a simple clean output. No magical sparks. Add only “ATP” and “Mitochondrium”.
+BILD_35 – BIS IN DIE ZELLE
+Final destination: cyan O2 leaves capillary, enters one muscle cell and reaches one warm-orange mitochondrion. End on destination, not another cover repeat. ALLOWED_VISIBLE_TEXT ONLY: “Muskelzelle”, “Mitochondrium”.
 
-BILD_24 – MUSKELZELLE ARBEITET
+AUTOMATISCHE QA NACH JEDEM BILD
+- read every visible word
+- every visible word must be in that image's ALLOWED_VISIBLE_TEXT whitelist
+- no image/scene number, file name, prompt heading or asset ID visible
+- one dominant teaching idea immediately readable
+- biological direction correct
+- approved 2.5D / Soft-3D style retained
+- no medical / photorealistic drift
+- semantic colors consistent
+- no duplicate retained output for normal scene
+- no serious artifact
 
-Show one simplified muscle cell with slightly shortened internal fibers indicating contraction. A few warm yellow-gold ATP markers support the action. Add only “Muskelzelle” and “ATP”.
-
-BILD_25 – CO2 ENTSTEHT
-
-Show one simplified mitochondrion and several soft-violet CO2 particles appearing nearby. Keep cyan oxygen visually distinct from violet CO2. Add only “Kohlendioxid”.
-
-BILD_26 – CO2 ZURUECK INS BLUT
-
-Show one apricot-orange muscle cell on the left and one coral-red capillary on the right. Soft-violet CO2 particles move from the cell into the blood vessel. Add only “Kohlendioxid” and “Blutgefäß”.
-
-BILD_27 – ZURUECK ZUR LUNGE
-
-Show one simplified capillary beside one large alveolus. Soft-violet CO2 particles move from blood across the thin barrier into the alveolus. Add only “Kohlendioxid” and “Lunge”.
-
-BILD_28 – FINALE REISE
-
-Create one simplified wide summary path with only four clear stations: lungs -> heart -> muscle cell -> lungs return. Use cyan oxygen on the outward path and soft-violet CO2 on the return path. Keep it clean and not dashboard-like. Add only “Lunge”, “Herz” and “Zelle”.
-
-AUTOMATISCHE QA
-
-Nach jedem Bild pruefen:
-- eine Hauptaussage sofort erkennbar
-- biologischer Weg / Richtung stimmt
-- 2.5D / Soft-3D Explainer-Look erhalten
-- keine medizinische oder fotorealistische Optik
-- keine nassen / fleischigen Texturen
-- semantische Farben konsistent
-- Hintergrund hell und ruhig
-- notwendige deutsche Labels korrekt
-- keine englischen Woerter
-- keine schweren Artefakte
-
-Nur Bilder mit mindestens 8/10 akzeptieren.
+Only accept >=8/10. If FAIL, replace the same image number and discard the failed candidate.
 
 FINALER ORDNER
-
 `001-pilot-sauerstoff-im-blut_bilder/`
 
-Darin exakt `Bild_01.png` bis `Bild_28.png` sowie eine ZIP desselben finalen Ordners.
+Exactly `Bild_01.png` through `Bild_35.png`, each exactly once. No alternatives, no duplicates, no rejected candidates, no temp files.

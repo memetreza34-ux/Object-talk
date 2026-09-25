@@ -10,45 +10,110 @@ youtube-videos/001-pilot-sauerstoff-im-blut/
 
 ## Ziel
 
-Erzeuge aus Voice + 28 finalen Flow-Bildern einen hochwertigen ca. 2–2,5-minütigen Object-Talk-Erklärfilm.
+Erzeuge aus Voice + finalen Flow-Bildern einen schnellen, klaren Object-Talk-Erklärfilm.
 
-Der Film soll **wie ein zusammenhängender kurzer 3D-Animationsfilm** wirken und nicht wie eine Diashow.
+Der Film soll wie eine moderne animierte Erklärserie wirken und NICHT wie eine Diashow.
 
-## Verbindliche Kanal-DNA
+## Verbindliche Bildwelt
 
 Autoritativ:
 
 ```text
 bildwelt/OBJECT-TALK-CHANNEL-DNA.md
-bildwelt/OBJECT-TALK-STYLE-EXAMPLE.md
-youtube-videos/001-pilot-sauerstoff-im-blut/02_bildprompts/STYLE-LOCK-BEISPIEL.md
+bildwelt/EXPLAINER-STYLE-LOCK.md
+engine/FLOW-PRODUCTION-STANDARD.md
 ```
 
-Die ursprüngliche Kanalidee ist verbindlich:
+Explainer-Szenen:
+- moderne stilisierte 2.5D / Soft-3D Educational Illustration
+- ca. 80 % animierte Illustration / 20 % Soft-3D-Tiefe
+- hell, klar, anschaulich
+- kein Medical-CGI / Photorealismus
+- biologische Strukturen normalerweise gesichtslos
+- semantische Farben aus dem Repo beibehalten
 
-- virale Object-Talk-Character-Szenen nur bei natürlich passenden Lebensmitteln/Gegenständen
-- Inside-the-Body-Szenen normalerweise gesichtslos
-- beide Ebenen sehen wie dieselbe hochwertige 3D-Animationsserie aus
-- **kein erfundenes O₂-Maskottchen**
+## AUDIO IST ZUERST ZU KORRIGIEREN
 
-## Video-Look
+Das rohe TTS-Audio darf NICHT direkt in die Timeline oder in den Render.
 
-- hochwertige stilisierte 3D-Feature-Animation
-- klar animiert, nicht fotorealistisch
-- weiche gerundete Formen
-- matte/satinierte Premium-Materialien
-- warme filmische Beleuchtung
-- starke Tiefe
-- keine Medical-CGI-Anmutung
-- keine Anatomiesoftware
-- keine Stock-3D-/Toy-Optik
-- keine Anime-/Comic-/Meme-Effekte
-- Vollbild-Erklärbilder bleiben dominant
-- sichtbarer Text ausschließlich Deutsch
+Zuerst zwingend:
 
-## Schnittprinzip – Reise statt Diashow
+```bash
+python tools/prepare_audio.py \
+  youtube-videos/001-pilot-sauerstoff-im-blut/01_script/audio/RAW_AUDIO \
+  youtube-videos/001-pilot-sauerstoff-im-blut/01_script/audio/final-voiceover.wav \
+  --speed 1.10
+```
 
-Die 28 Bilder bilden eine durchgehende Reise:
+Verbindlich:
+- Voice-Geschwindigkeit = 1.10x
+- lange interne TTS-Pausen werden komprimiert
+- kurze natürliche Mikro-Pausen bleiben erhalten
+- `final-voiceover.wav` ist danach die EINZIGE Timing-Quelle
+- Whisper wird auf `final-voiceover.wav` ausgeführt, nicht auf dem Roh-Audio
+- Timeline wird NACH der Audioaufbereitung neu gebaut
+- niemals eine 1.00x-Timeline bauen und später nur das Audio beschleunigen
+
+## RHYTHMUS / KEINE LANGEN PAUSEN
+
+- Voice steht fast durchgehend im Fluss
+- kein künstliches Warten zwischen Sätzen
+- keine leeren Standbild-Holds zur Laufzeitverlängerung
+- ein normales Standbild meistens 3–6 Sekunden
+- harte Obergrenze pro Bild: 7 Sekunden
+- wenn ein Speech-Abschnitt länger ist, muss er in mehrere EINDEUTIGE Szenen/Bilder geteilt werden
+- dasselbe Bild darf nicht zweimal als Ersatz für fehlende visuelle Dichte verwendet werden
+- letzter Shot endet eng am Voiceover, kein langer Outro-Hold
+
+## BILDER / ASSET-HYGIENE
+
+Jede finale Bildnummer existiert genau einmal.
+
+Verboten:
+- dasselbe Bild zweimal in der Timeline verwenden
+- `Bild_12` an zwei verschiedenen Stellen wiederholen
+- alternative Normal-Szenen im finalen Ordner behalten
+- `v2`, `final2`, `copy`, `_A`, `_B` im finalen Set
+
+Cover-Ausnahme:
+- nur `Bild_01` darf vor Auswahl bis zu 3 Varianten haben
+- nach Nutzerwahl genau 1 Cover behalten
+- alle anderen Cover-Kandidaten löschen/verwerfen
+
+## SICHTBARER TEXT
+
+Interne Produktionsnamen dürfen nie sichtbar sein.
+
+Hard FAIL im Bild:
+- `Bild 19`
+- `Bild_19`
+- `BILD_12 – O2 BINDET`
+- `Scene 19`
+- `IMAGE 19`
+- Dateinamen / Asset-IDs / Prompt-Ueberschriften
+
+Sichtbarer Text ist Whitelist-basiert:
+- Cover: nur exakte Hook
+- normale Szene: nur exakt geplante Labels
+- wenn Szene 0 Labels hat, darf kein Wort sichtbar sein
+- keine erfundenen Titel oder Extra-Erklärsätze
+
+## INFORMATIONS-DICHTE
+
+Nicht jedes Bild muss extrem leer sein.
+
+Standard:
+- ein dominanter Lehrpunkt
+- 1–2 Hauptobjekte
+- wenige Labels
+
+Bei ca. 20–30 % der wichtigen Mechanismus-/Zusammenfassungsbilder darf EIN zusätzlicher sinnvoller Detailpunkt vorkommen, z. B. Zielobjekt, Vorher/Nachher-Cue oder kleines Detailfenster.
+
+Wenn mehr Information nötig ist, bevorzuge ein zusätzliches eindeutiges Bild statt Textwand oder überladener Szene.
+
+## SCHNITTPRINZIP
+
+Die Reise bleibt logisch:
 
 ```text
 Einatmen
@@ -66,48 +131,38 @@ Einatmen
 ```
 
 Kontinuität entsteht über:
-
-- gleiche O₂-Farbe/Form
+- gleiche O₂-/CO₂-Farben
 - gleiche Blutkörperchen
-- gleiche Anatomie-Stilisierung
-- gleiche Licht-/Materialwelt
+- gleiche Stil- und Formlogik
 - sinnvolle Bewegungsrichtung
 - klare Makro→Mikro-Übergänge
 
-Nicht über einen Character-Guide.
-
-Wichtig:
-
-- Bewegungsrichtung zwischen Szenen möglichst erhalten
-- bei O₂-Transport die visuelle Flussrichtung logisch fortsetzen
-- keine zufälligen Richtungswechsel
+Übergänge:
 - harte saubere Schnitte sind Standard
 - kurze weiche Überblendung nur bei echtem Maßstabs-/Ortswechsel
-- keine dekorativen Übergangseffekte
+- keine dekorativen Meme-/Glitch-Transitions
 
-## Kamerabewegung
+## KAMERABEWEGUNG
 
-- Push/Pull nur ca. 3–4 %
+- Push/Pull ca. 2–4 %
 - Pan ca. 20–30 px bei 1080p
 - weiche Ease-in/Ease-out-Bewegung
-- Bewegung bevorzugt entlang des erklärten Prozesses
-- Mechanismusbilder: leichter Pan entlang des Weges
-- Label-/Vergleichsszenen: bei Bedarf statisch
+- Bewegung entlang des erklärten Prozesses
 - keine aggressiven Ken-Burns-Zooms
-- kein Shake, Bounce oder Meme-Motion
+- kein Shake / Bounce
 
-## Bild_01 / Cover
+## COVER
 
-`Bild_01` ist Cover, erster Shot und Master Style Frame.
+`Bild_01` ist Cover + erster Shot + Style-Anker.
 
 - keinen zweiten Titel darüberlegen
 - Hook vollständig sichtbar lassen
 - Covermotiv nicht anschneiden
-- ruhiger hochwertiger Start
-- nur sehr dezenter Push-in, wenn die Komposition nicht beschädigt wird
-- keine zusätzlichen Anatomie-Labels auf dem Cover
+- nur dezenter Start-Push
+- keine Zusatzlabels
+- keine interne Bildnummer
 
-## Vorbereitung
+## VORBEREITUNG
 
 Vom Repo-Root:
 
@@ -118,77 +173,55 @@ python tools/prepare_phase3.py youtube-videos/001-pilot-sauerstoff-im-blut
 ```
 
 `prepare_phase3.py` muss:
+1. finale eindeutige Bilder importieren
+2. `final-voiceover.wav` als kanonisches Audio verwenden
+3. Whisper-Worttimings aus dem verarbeiteten Audio erzeugen
+4. Script strikt gegen Audio ausrichten
+5. Timeline neu aus echten Worttimings bauen
+6. bei einer Szene >7s FAIL melden statt sie lang stehen zu lassen
+7. Renderer-Runtime inkl. Overlays vorbereiten
 
-1. `scene-map.json` deterministisch aus `phase1-scenes.json` erzeugen
-2. Script/Scene-Map validieren
-3. Voice kanonisieren
-4. ZIP `Bild_01.png` bis `Bild_28.png` importieren
-5. Bilder technisch validieren
-6. Whisper-Worttimings erzeugen
-7. Script strikt gegen Audio ausrichten
-8. exakte Timeline bauen
-9. Renderer-Runtime inklusive `overlay-plan.json` vorbereiten
+## OVERLAYS
 
-## Rhythmus
+- vorhandene korrekte Flow-Labels nicht unnötig doppeln
+- falsches/unlesbares Flow-Label exakt in Remotion ersetzen
+- zusätzliche Overlays nur an echten Story-Beats
+- keine Captions / kompletten Voiceover-Sätze
+- keine großen UI-Karten
+- Anatomie/Hauptprozess nicht verdecken
+- lieber kurze Schlagwörter als Erklärabsätze
 
-- echte Voice-Timeline ist autoritativ
-- Hook sofort verständlich
-- normale Erklärung überwiegend 3–6 Sekunden pro Bild
-- keine unnötig langen Standbilder
-- Bildwechsel nur bei echtem visuellen Sinnwechsel
-- letzte Szene endet exakt mit dem Voice-over
-
-## Text-/Overlay-Regel
-
-- vorhandene korrekte deutsche Flow-Labels nicht unnötig wiederholen
-- falsches/unlesbares Flow-Label nach `label-plan.json` sauber in Remotion ersetzen
-- `03_pipeline/overlay-plan.json` ist für zusätzliche Overlays autoritativ
-- keine Captions oder kompletten Voice-over-Sätze
-- keine Marketingtexte
-- keine UI-/Dashboard-Karten
-- keine großen Glasboxen oder schwarzen Textflächen
-- helle schwebende Typografie mit dezentem Schatten / kleiner Unterstreichung
-- Anatomie und Hauptprozess niemals verdecken
-
-## Story-Beats
-
-Zusätzliche Overlays nur an großen Übergängen:
-
-- Lunge → Blut
-- Weiter zum Herzen
-- Blut → Muskelzelle
-- In die Zelle
-- CO₂ entsteht
-- Zurück zur Lunge
-
-## Render
+## RENDER
 
 ```bash
 cd renderer
 npm install
-npm run studio
 npm run render -- ../youtube-videos/001-pilot-sauerstoff-im-blut/04_export/fertiges-video/final-video.mp4
 ```
 
-## QA
+## FINAL-QA
 
 ```bash
 python tools/qa_final.py \
   youtube-videos/001-pilot-sauerstoff-im-blut/04_export/fertiges-video/final-video.mp4 \
   youtube-videos/001-pilot-sauerstoff-im-blut/01_script/audio/final-voiceover.wav \
-  --min-seconds 115
+  --min-seconds 100 \
+  --expected-speed 1.10 \
+  --max-voice-pause 0.50
 ```
 
 Besonders prüfen:
-
-- Bild_01 funktioniert als Cover und Style-Anker
-- alle Szenen wirken wie dieselbe hochwertige 3D-Animationsserie
-- O₂/CO₂/RBC/Hämoglobin bleiben konsistent
-- keine erzwungenen Character-/Mascot-Elemente
-- kein Medical-/Realismus-Drift
-- deutsche Labels korrekt
-- Overlays verdecken nichts Wichtiges
-- Kamerabewegung wirkt ruhig und absichtlich
-- letzte Szene endet exakt mit dem Voice-over
+- Voice-Speed wirklich 1.10x
+- keine lange stille Voice-Pause >=0.50s
+- kein einzelnes Bild >7s
+- kein Bildasset doppelt in der Timeline
+- finale Bilddateien jede Nummer exakt einmal
+- keine sichtbaren Asset-/Szenennummern oder Prompt-Titel
+- sichtbarer Text nur aus der Whitelist
+- Cover nur einmal und nur mit Titel
+- alle Szenen in derselben 2.5D/Soft-3D-Welt
+- O₂/CO₂/RBC/Hämoglobin konsistent
+- keine medizinische/fotorealistische Drift
+- letzte Szene endet eng mit dem Voiceover
 
 Bei Konflikt: FAIL statt raten.

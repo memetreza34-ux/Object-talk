@@ -1,6 +1,6 @@
 # Produktionsplan – Pilot 001 Sauerstoff
 
-Ziel: erster echter kleiner Object-Talk-Pilot mit ungefähr 2–2,5 Minuten Laufzeit und 28 Bildern.
+Ziel: schneller, klarer Object-Talk-Erklaerpilot mit hoher visueller Dichte.
 
 ## 1. Verbindliche Stilbasis
 
@@ -8,31 +8,41 @@ Vor Produktion gelten immer:
 
 ```text
 bildwelt/OBJECT-TALK-CHANNEL-DNA.md
-bildwelt/OBJECT-TALK-STYLE-EXAMPLE.md
-02_bildprompts/STYLE-LOCK-BEISPIEL.md
+bildwelt/EXPLAINER-STYLE-LOCK.md
+engine/FLOW-AGENT-INSTRUCTIONS.md
+engine/FLOW-PRODUCTION-STANDARD.md
 ```
 
 Grundregel:
 
-**Object-Talk-Welt zuerst, Thema danach.**
+**Anschaulich erklaeren, nicht medizinisch-realistisch darstellen.**
 
-Der O₂-Guide, Augenstil, Materialien, Farbwelt und Lichtlogik bleiben im ganzen Video identisch.
+## 2. Voice erzeugen und VOR Timeline korrigieren
 
-## 2. Voice erzeugen
-
-Datei:
+Script:
 
 ```text
 01_script/VOICEOVER-ZUM-KOPIEREN.txt
 ```
 
-Text 1:1 in die Voice-KI übernehmen. Finales Audio in:
+Rohes TTS-Audio niemals direkt verwenden.
 
-```text
-01_script/audio/
+Zwingend:
+
+```bash
+python tools/prepare_audio.py RAW_AUDIO \
+  youtube-videos/001-pilot-sauerstoff-im-blut/01_script/audio/final-voiceover.wav \
+  --speed 1.10
 ```
 
-## 3. Google Flow starten
+Verbindlich:
+- Voice-Speed 1.10x
+- lange TTS-Pausen komprimieren
+- kurze natuerliche Mikro-Pausen behalten
+- `final-voiceover.wav` ist einzige Timing-Quelle
+- Whisper + Timeline erst NACH dieser Verarbeitung
+
+## 3. Google Flow
 
 Datei:
 
@@ -40,63 +50,67 @@ Datei:
 02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt
 ```
 
-Den kompletten Prompt verwenden.
+Der aktuelle Pilot plant **35 eindeutige Bilder**.
 
-Zuerst ausschließlich:
-
-```text
-Bild_01
-```
+Zuerst ausschließlich `Bild_01`.
 
 Bild_01 ist:
 - Cover
 - Hook
 - erster Shot
 - Master Style Frame
-- verbindliche Referenz für alle 27 Folgeframes
 
-Bild_01 muss klar wie die festgelegte virale Object-Talk-3D-Animationswelt aussehen. Kein medizinischer CGI-Look, keine realistische Haut, keine realistischen Gewebetexturen, kein Stock-3D, kein Toy-Look.
+Nur Bild_01 darf bis zu 3 Varianten haben.
+Nach Nutzerwahl:
+- genau eine Coverdatei behalten
+- alle anderen Cover-Kandidaten loeschen/verwerfen
+- erst dann Bild_02 starten
 
-## 4. Genau eine Freigabe
+## 4. Normale Bilder genau einmal behalten
 
-Flow darf nur nach `Bild_01` auf die Nutzerfreigabe warten.
+Fuer Bild_02–Bild_35:
+- jeweils nur einen Kandidaten pro Versuch
+- genau ein retained asset pro Bildnummer
+- FAIL-Version ersetzen, nicht sammeln
+- keine `v2`, `A`, `B`, `final2`, `copy`
+- kein Bild fuer eine andere Szene wiederverwenden
 
-Nach Freigabe von Bild_01 arbeitet Flow **ohne weitere Rückfragen** bis zum Ende.
+## 5. Sichtbarer Text
 
-Nicht erlaubt:
-- nach einem 5er-Block fragen, ob weitergemacht werden soll
-- zwischen Bildern zusätzliche Freigaben verlangen
-- den Lauf freiwillig pausieren
+Whitelist-Regel:
+- Cover: nur die exakte Hook
+- normale Bilder: nur die explizit geplanten Labels
+- kein anderes Wort erlaubt
 
-## 5. Restliche Bilder automatisch produzieren
+Immer verboten:
+- `Bild 19`
+- `Bild_19`
+- `BILD_12 – O2 BINDET`
+- `Scene 19`
+- `IMAGE 19`
+- Dateinamen
+- Prompt-Ueberschriften
+- erfundene Szenentitel
 
-Reihenfolge:
+## 6. Informationsdichte
 
-```text
-Bild_02–06
-Bild_07–11
-Bild_12–16
-Bild_17–21
-Bild_22–26
-Bild_27–28
-Recovery-Pass
-```
+Nicht jedes Bild muss leer sein.
 
-Die Blöcke sind nur interne QA-Schritte. Nach jedem Block automatisch weiter.
+Standard:
+- ein dominanter Lehrpunkt
+- wenige Objekte
+- 0–2 Labels
 
-Jedes Bild:
-- einzeln generieren
-- `Bild_01` als exakte Style-/Continuity-Referenz verwenden
-- denselben O₂-Guide und dieselbe Character-DNA beibehalten
-- auf Object-Talk-Animationsstil prüfen
-- auf korrekte deutsche Labels prüfen
-- bei Fehler auf Recovery-Liste setzen
+Bei wichtigen Mechanismus-/Zusammenfassungsbildern darf EIN zusaetzlicher sinnvoller Detailpunkt vorkommen.
 
-Fehlerhafte Bilder automatisch bis zu 3-mal neu versuchen.
+Wenn ein Speech-Beat mehr als ca. 7 Sekunden Bildzeit braucht oder zwei echte Lehrbeats enthaelt:
+- in zwei eindeutige Szenen teilen
+- neue fortlaufende Bildnummern verwenden
+- nie dasselbe Bild doppeln
 
-## 6. Finale Bildausgabe
+## 7. Finale Bildausgabe
 
-Am Ende einen finalen Ordner erstellen:
+Finaler Ordner:
 
 ```text
 001-pilot-sauerstoff-im-blut_bilder/
@@ -108,58 +122,59 @@ Darin exakt:
 Bild_01.png
 Bild_02.png
 ...
-Bild_28.png
+Bild_35.png
 ```
 
-Keine Varianten, keine Lücken, keine Zusätze wie `neu`, `final2`, `v3` oder `copy`.
+Jede Nummer exakt einmal.
+Keine Varianten, keine Luecken, keine Alternativcover, keine FAIL-Dateien.
 
-Zusätzlich:
+## 8. Phase 3 / Video
 
-```text
-001-pilot-sauerstoff-im-blut_bilder.zip
-```
-
-Die ZIP enthält exakt denselben finalen Ordner.
-
-Repo-Ziel für die ZIP:
-
-```text
-02_bildprompts/bilder-zip/001-pilot-sauerstoff-im-blut_bilder.zip
-```
-
-## 7. Phase 3 / Video
-
-Sobald Voice + alle 28 Bilder vorhanden sind:
+Nach finaler Voice + 35 finalen Bildern:
 
 ```bash
 python tools/validate_planning_v2.py youtube-videos/001-pilot-sauerstoff-im-blut --phase2
 python tools/prepare_phase3.py youtube-videos/001-pilot-sauerstoff-im-blut
 ```
 
-Dann verwenden:
+Dann:
 
 ```text
 03_pipeline/ANTIGRAVITY-PROMPT-ZUM-KOPIEREN.txt
 ```
 
-Antigravity/Remotion übernimmt jetzt ausdrücklich:
-- Audioaufbereitung
-- Whisper-Worttimings
-- exakte Szenen-Timeline
-- Bildimport
-- O₂-Guide als visuellen roten Faden
-- Bewegungsrichtung entlang der Sauerstoffreise
-- dezente hochwertige Kamerabewegung
-- sparsame deutsche Overlays
-- Render
-- QA
+Remotion/Antigravity uebernimmt:
+- nur `final-voiceover.wav`
+- Whisper-Worttimings aus verarbeitetem Audio
+- dynamische Timeline
+- maximale Bildhaltezeit 7s
+- dezente Kamerabewegung
+- sparsame Overlays
+- Render + QA
 
-Ziel: **ein zusammenhängender Object-Talk-Animationsfilm statt einer Diashow.**
+## 9. Final-QA
 
-## 8. Ergebnis
+```bash
+python tools/qa_final.py \
+  youtube-videos/001-pilot-sauerstoff-im-blut/04_export/fertiges-video/final-video.mp4 \
+  youtube-videos/001-pilot-sauerstoff-im-blut/01_script/audio/final-voiceover.wav \
+  --min-seconds 100 \
+  --expected-speed 1.10 \
+  --max-voice-pause 0.50
+```
+
+Hard FAIL bei:
+- Voice nicht 1.10x vorbereitet
+- lange stille Voice-Pause >=0.50s
+- Standbild >7s
+- Bildasset doppelt in Timeline
+- Bildnummer fehlt/doppelt
+- sichtbare interne Bild-/Szenennummer
+- Text ausserhalb der Whitelist
+- unselektierte Covervarianten vorhanden
+
+## 10. Ergebnis
 
 ```text
 04_export/fertiges-video/final-video.mp4
 ```
-
-Der 10-Bilder-Mini-Test 002 wird übersprungen.
