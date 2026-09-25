@@ -7,7 +7,6 @@ Diese Datei ist die dauerhafte oberste Produktionsregel des Repositories. Bei Wi
 Object-Talk produziert deutschsprachige YouTube-Erklaervideos zu Ernaehrung, Gesundheit und Biologie.
 
 Harte Grundregeln:
-
 - normale Kanalvideos mindestens 5:00 Minuten
 - Standardziel 5:30–8:00 Minuten
 - 16:9, 1920×1080, 30 fps
@@ -17,12 +16,47 @@ Harte Grundregeln:
 - wichtige sichtbare Dinge knapp auf Deutsch beschriften
 - wissenschaftlich relevante Aussagen pruefen
 
+## Audio-/Pacing-Standard
+
+Sofern der Nutzer fuer ein Video nichts anderes vorgibt:
+- finales Voiceover wird mit **1.10x** verarbeitet
+- lange TTS-Pausen werden vor Whisper/Timeline komprimiert
+- kurze natuerliche Mikro-Pausen bleiben erhalten
+- das VERARBEITETE `final-voiceover.wav` ist die einzige Timing-Quelle
+- Whisper und Timeline duerfen niemals auf dem Roh-TTS basieren, wenn spaeter ein anderes Tempo gerendert wird
+- stille Voice-Pausen >=0.50s sind im finalen Explainer-Output nicht akzeptiert
+- Video wird nicht kuenstlich durch Pausen oder lange Standbild-Holds auf eine Zielzeit gestreckt
+
+Autoritativ:
+
+```text
+tools/prepare_audio.py
+tools/build_timeline.py
+tools/qa_final.py
+```
+
+## Visuelle Dichte / Bildwechsel
+
+Der Kanal darf nicht wie eine Diashow wirken.
+
+Verbindlich:
+- ein Standbild normalerweise etwa 3–6 Sekunden
+- harte Standardobergrenze: **7.0 Sekunden pro Bild**
+- wenn ein Sprachabschnitt laenger ist oder zwei echte Lehrbeats enthaelt, wird er in mehrere NEUE eindeutige Szenen geteilt
+- jede neue Szene erhaelt eine neue fortlaufende Bildnummer
+- dasselbe Bild darf nicht zweimal verwendet werden, um Zeit zu fuellen
+- lieber mehr eindeutige Bilder als ein Bild 10–20 Sekunden stehen lassen
+
+Informationsdichte:
+- ein DOMINANTER Lehrpunkt pro Bild
+- ca. 20–30 % wichtiger Mechanismus-/Zusammenfassungsbilder duerfen EINEN zusaetzlichen sinnvollen Detailpunkt enthalten
+- wenn mehr Information noetig ist: neues Bild statt Textwand oder ueberladener Infografik
+
 ## Zwei verbindliche Bildmodi
 
 ### A. Object-Talk Character Mode
 
 Fuer sprechende Lebensmittel und Alltagsgegenstaende:
-
 - hochwertiger stilisierter 3D-Character-Look
 - klare Objektform
 - expressive Augen / Brauen / Mund
@@ -36,7 +70,6 @@ Fuer Biologie, Koerper, Organe, Zellen und Prozesse:
 **moderne stilisierte 2.5D / Soft-3D Educational Illustration**
 
 Leitidee:
-
 **80 % animierte Illustration + 20 % Soft-3D-Tiefe + 0 % Medical-CGI.**
 
 Autoritative Details:
@@ -49,20 +82,18 @@ bildwelt/EXPLAINER-STYLE-LOCK.md
 ## Educational Explainer – harte Stilregeln
 
 Verbindlich:
-
 - klar animiert / illustriert, nicht realistisch
 - weiche gerundete vereinfachte Formen
 - matte bis leicht satinierte Oberflaechen
 - weiche Farbverlaeufe
 - subtile Schatten und leichte Tiefenstaffelung
 - ruhige helle Hintergruende
-- eine Hauptaussage pro Bild
+- dominanter Lehrpunkt sofort lesbar
 - wenige Objekte
 - visuelle Klarheit vor Detailgrad
 - vereinfachte, aber erkennbare Anatomie
 
 Semantische Farben:
-
 - O2 / Sauerstoff = Cyan / Tuerkis
 - rote Blutkoerperchen = tiefes warmes Rot
 - Blutgefaesse = Coral / Rot
@@ -73,7 +104,6 @@ Semantische Farben:
 - Hintergrund = Creme / helles Blau / weiches Beige
 
 Harte Stilverbote:
-
 - Photorealismus
 - Medical-CGI / Anatomiesoftware
 - nasses realistisches Gewebe
@@ -90,159 +120,139 @@ Harte Stilverbote:
 ## Menschen-Regel
 
 Der Kanal ist kein Presenter-Kanal.
-
-Menschen nur, wenn fachlich noetig, dann:
-- stark vereinfacht
-- gesichtslos
-- sekundaer
-
+Menschen nur, wenn fachlich noetig, dann stark vereinfacht, gesichtslos und sekundaer.
 Biologische Strukturen werden nicht automatisch personifiziert.
 
 ## Reference-First ist Pflicht
 
 Referenzreihenfolge:
-
-1. `assets/channel/STYLE_REFERENCE.png` – kanalweite visuelle Referenz, sobald freigegeben
-2. `Bild_01.png` – konkrete Episode-/Continuity-Referenz
+1. `assets/channel/STYLE_REFERENCE.png`
+2. `Bild_01.png`
 3. wiederkehrende Objekt-/Character-Referenzen
 4. konkreter Szenenprompt
 
 Ein Textsatz wie `Using Bild_01 as the exact style reference` zaehlt nicht als echte Referenz. Benoetigte Referenzen muessen wirklich angehaengt werden.
 
-Solange `STYLE_REFERENCE.png` fehlt, darf `Bild_01` im dokumentierten Bootstrap-Modus aus der schriftlichen Kanal-DNA erzeugt werden. Nach Freigabe muss `Bild_01.png` als echte visuelle Referenz an alle Folgebilder angehaengt werden.
+## Asset-Hygiene / keine doppelten Bilder
 
-## Sichtbarer Text
+Finale Bildsets sind kanonisch und eindeutig.
+
+Cover-Ausnahme:
+- nur `Bild_01` darf vor Nutzerwahl bis zu 3 Varianten haben
+- Nutzer waehlt genau 1
+- alle nicht gewaehlten Covervarianten werden geloescht/verworfen
+- im finalen Set existiert genau ein `Bild_01.png`
+
+Normale Szenen:
+- pro Bildnummer genau ein retained asset
+- ein FAIL wird durch eine neue Version derselben Nummer ERSETZT
+- FAIL-Version nicht zusaetzlich sammeln
+- keine `_A`, `_B`, `v2`, `final2`, `copy`, `new`
+- dasselbe Bildasset darf nicht fuer zwei Szenen benutzt werden
+
+Finaler Ordner:
+- jede erwartete `Bild_XX.png` exakt einmal
+- keine Luecken
+- keine Duplikate
+- keine Temp-/FAIL-Dateien
+
+## Sichtbarer Text ist Whitelist-basiert
 
 ### Cover / Bild_01
-
-- kurze starke deutsche Hook direkt im Bild
-- normalerweise 3–7 Woerter
-- **keine zusaetzlichen Anatomie-Labels**
-- Cover ohne Text = FAIL
+- sichtbar ist nur die exakte geplante deutsche Hook
+- keine Anatomie-Zusatzlabels
+- Cover ohne Hook = FAIL
 
 ### Normale Bilder
+- sichtbar sind nur die exakt fuer diese Szene in `label-plan.json` geplanten Labels
+- 0 Labels bedeutet: kein sichtbares Wort
+- 0–2 Labels bevorzugt, maximal 3 bei echtem Bedarf
 
-- 0–2 kurze deutsche Labels bevorzugt
-- maximal 3 nur wenn fachlich wirklich noetig
-- Begriffe aus `02_bildprompts/label-plan.json`
-- keine Textwaende
-- kein englischer sichtbarer Text
+Immer verboten:
+- `Bild_19`, `Bild 19`, `IMAGE 19`, `Scene 19`
+- Dateinamen / Asset-IDs
+- Prompt-Ueberschriften wie `BILD_12 – O2 BINDET`
+- erfundene Szenentitel
+- englischer sichtbarer Text
+- KI-Gibberish
+- zusaetzliche nicht geplante Anatomie-Labels
 
-Wenn Flow einen deutschen Begriff falsch schreibt, wird zuerst regeneriert. Nur bei wiederholtem Fehler wird exakt dieser Begriff spaeter in Remotion ersetzt.
+JEDES sichtbare Wort ausserhalb der Whitelist = Hard FAIL.
+
+Wenn Flow einen geplanten Begriff falsch schreibt, zuerst regenerieren. Nur nach wiederholtem Fehler exakt diesen Begriff in Remotion ersetzen.
 
 ## Bild_01 – Cover + erster Shot + Master Style Frame
 
-`Bild_01` ist gleichzeitig:
-
-1. Cover
-2. erster Shot
-3. Master Style Frame
-4. Referenz fuer alle weiteren Bilder
+`Bild_01` ist gleichzeitig Cover, erster Shot, Master Style Frame und Referenz fuer alle weiteren Bilder.
 
 Darum gilt:
-
-- Thema und visuelle Reise auf einen Blick verstaendlich
+- Thema auf einen Blick verstaendlich
 - gleicher Soft-3D-Explainer-Stil wie normale Szenen
 - darf kraeftiger / kontrastreicher komponiert sein
 - deutsche Hook direkt sichtbar
-- keine zusaetzlichen Labels
+- keine Zusatzlabels
 - keine medizinische / kosmische / realistische Optik
-
-## Google-Flow-Prompt-Sprache
-
-- Flow-Anweisungen: Englisch
-- sichtbarer Text: Deutsch
-
-Szenenprompts nach Bild_01 folgen:
-
-```text
-SUBJECT
-→ VISIBLE PROCESS
-→ SPATIAL LAYOUT
-→ SCALE / DEPTH
-→ CONTINUITY REFERENCES
-→ REQUIRED GERMAN TEXT
-→ FORBIDDEN ELEMENTS
-```
 
 ## Google-Flow-Ablauf
 
 ### A – zuerst nur Bild_01
-
-1. dauerhafte Agent Instructions laden
+1. Agent Instructions laden
 2. `STYLE_REFERENCE.png` anhaengen, falls vorhanden
 3. ausschliesslich `Bild_01` erzeugen
-4. echte Resultate auf Stil, Klarheit, Anatomie und deutsche Hook pruefen
-5. bei FAIL regenerieren
-6. beste PASS-Variante als `Bild_01.png` speichern
-7. genau einmal Nutzerfreigabe abwarten
+4. bis zu 3 Cover-Richtungen erlaubt
+5. Nutzer waehlt eine
+6. unselektierte Covervarianten entfernen
+7. genau ein `Bild_01.png` behalten
 
 ### B – Produktion
-
 Nach Freigabe:
-
 - jede Szene einzeln erzeugen
 - `Bild_01.png` bei jeder Generation wirklich anhaengen
-- pro Bild eine Hauptaussage
+- genau ein retained asset pro normale Bildnummer
 - semantische Farben stabil halten
-- nur notwendige Labels verwenden
+- sichtbaren Text gegen Whitelist pruefen
+- bei langem Speech-Beat neue Bildnummer planen statt Bild zu wiederholen
 
 ### C – Recovery
-
-Fehlerhafte oder fehlende Bilder behalten ihre Nummer. Nach dem Hauptdurchlauf werden nur diese Bilder erneut erzeugt.
+Fehlerhafte Bilder behalten ihre Nummer. Recovery bedeutet Ersetzen, nicht Sammeln.
 
 ## Echte Bild-QA
 
 `image-review.json` darf erst nach Sichtpruefung des tatsaechlichen Bildes aktualisiert werden.
 
 Pflicht:
-
 - scientific_accuracy >= 8/10
 - voiceover_match >= 8/10
 - immediate_clarity >= 8/10
 - style_continuity >= 8/10
 - composition >= 8/10
-- label_accuracy >= 8/10, falls Labels vorgesehen sind
+- visible_text_whitelist = PASS
+- no_visible_asset_id = PASS
+- single_retained_asset_for_scene = PASS
 - ai_artifact_check = PASS
 - scene_difference bestanden
 - overall_score >= 8/10
-- finale `Bild_XX.png` existiert
-
-Hard FAIL:
-
-- photorealistischer / medizinischer Drift
-- zu viele Inhalte gleichzeitig
-- unklare Prozessrichtung
-- fehlende / falsche notwendige Labels
-- kosmischer / Sci-Fi-Stil
-- behauptete Referenznutzung ohne echte Referenz
 
 ## Drei Phasen
 
 ### Phase 1 – Creative Director
-
-Erstellt Recherche, Claim-Check, Script, Szenenplan, Label-Plan, Flow-Szenenprompts, scene-map.json, overlay-plan.json und Metadaten.
+Erstellt Recherche, Claim-Check, Script, Szenenplan, Label-Plan, Flow-Prompts und Metadaten. Lange Speech-Beats muessen schon hier in genuegend eindeutige Bilder geteilt werden.
 
 ### Phase 2 – Nutzer + Voice-KI + Google Flow
-
-1. Voiceover 1:1 erzeugen
-2. Flow Agent Instructions setzen
-3. Bild_01 mit deutscher Hook erzeugen und freigeben
-4. Bild_01 als echte visuelle Referenz nutzen
-5. restliche Bilder einzeln erzeugen
-6. echte Einzelbild-QA
-7. Recovery
-8. finale ZIP
+1. rohes Voiceover erzeugen
+2. Bild_01 erzeugen / eine Variante auswaehlen / Alternativen loeschen
+3. restliche Bilder einzeln erzeugen
+4. echte Einzelbild-QA
+5. finale ZIP mit eindeutigen Bildnummern
 
 ### Phase 3 – Antigravity + Tools + Remotion
-
-1. Audio vorbereiten
+1. Voice auf 1.10x + Pausenkompression kanonisieren
 2. Bilder importieren und validieren
-3. Whisper + Script-Ausrichtung
-4. Timeline erzeugen
-5. nur fehlerhafte/fehlende KI-Texte exakt aus Label-/Overlay-Plan ersetzen
-6. Remotion bauen und rendern
-7. Final-QA, Scorecard und Postmortem
+3. Whisper auf finalem verarbeiteten Audio
+4. Timeline aus echten Worttimings erzeugen
+5. FAIL wenn ein Bild >7s stehen muesste
+6. Remotion bauen / rendern
+7. Final-QA inkl. Voice-Speed und Pausen-Audit
 
 ## Autoritative Reihenfolge
 
@@ -258,14 +268,18 @@ Erstellt Recherche, Claim-Check, Script, Szenenplan, Label-Plan, Flow-Szenenprom
 ## Fail-closed
 
 Stoppen bei:
-
 - Script/Audio stimmen nicht ueberein
+- Voice nicht mit kanonischem Tempo/Pausenprozess vorbereitet
+- stille Voice-Pause >=0.50s im finalen verarbeiteten Voiceover
+- einzelnes Standbild >7s
+- dasselbe Bildasset mehrfach in der Timeline
 - fehlenden oder doppelten finalen Bildnummern
+- sichtbarem Asset-/Szenennamen oder Prompt-Titel
+- sichtbarem Text ausserhalb der Whitelist
+- unselektierten Covervarianten im finalen Set
 - falschem Seitenverhaeltnis
 - unklarer Szenenzuordnung
-- wissenschaftlich ungeklärten Kernbehauptungen
+- wissenschaftlich ungeklaerten Kernbehauptungen
 - sichtbar falscher biologischer Darstellung
 - behaupteter Referenznutzung ohne angehaengte Referenz
-- Cover ohne deutsche Hook
-- photorealistischem / Medical-CGI-Stil-Drift
-- Phase-2-Review ohne vorhandene finale Bilddatei
+- Photorealismus / Medical-CGI-Stil-Drift
