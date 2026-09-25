@@ -4,6 +4,10 @@
 Images are assigned ONLY by their explicit scene/image number in the filename,
 never by ZIP order.
 
+Final Flow ZIPs are strict: every image file must map to exactly one expected
+Bild_XX number. Extra cover variants, rejected attempts, v2/copy files or
+unnumbered image files make the import FAIL instead of being silently ignored.
+
 Usage:
 python tools/import_flow_zip.py SCENE_MAP FLOW_ZIP OUTPUT_IMAGES_DIR
 """
@@ -62,7 +66,8 @@ def main() -> None:
         raise SystemExit("FEHLER: scene-map besitzt keine lueckenlosen Szenennummern.")
 
     found: dict[int, tuple[str, bytes]] = {}
-    ignored: list[str] = []
+    ignored_non_images: list[str] = []
+    unexpected_images: list[str] = []
 
     with zipfile.ZipFile(args.zip_file, "r") as archive:
         for member in archive.infolist():
@@ -73,26 +78,39 @@ def main() -> None:
 
             suffix = Path(member.filename).suffix.lower()
             if suffix not in IMAGE_EXTENSIONS:
-                ignored.append(member.filename)
+                ignored_non_images.append(member.filename)
                 continue
 
             number = detect_number(Path(member.filename).name)
             if number is None or number not in expected:
-                ignored.append(member.filename)
+                unexpected_images.append(member.filename)
                 continue
 
             if number in found:
                 raise SystemExit(
-                    f"FEHLER: mehrere ZIP-Dateien behaupten Bild_{number:02d} zu sein: "
-                    f"{found[number][0]!r} und {member.filename!r}"
+                    f"PHASE-2 FAIL: mehrere ZIP-Dateien behaupten Bild_{number:02d} zu sein: "
+                    f"{found[number][0]!r} und {member.filename!r}. "
+                    "Nur eine finale Version pro Bildnummer ist erlaubt; Cover-Alternativen und FAIL-Versionen vor ZIP loeschen."
                 )
 
             found[number] = (member.filename, archive.read(member))
+
+    if unexpected_images:
+        listing = "\n- ".join(unexpected_images)
+        raise SystemExit(
+            "PHASE-2 FAIL: ZIP enthaelt zusaetzliche/unnumerierte Bilddateien. "
+            "Finale ZIP darf nur die erwarteten Bild_XX-Dateien enthalten.\n- " + listing
+        )
 
     missing = sorted(expected - set(found))
     if missing:
         formatted = ", ".join(f"Bild_{number:02d}" for number in missing)
         raise SystemExit(f"PHASE-2 FAIL: folgende Bilder fehlen in der ZIP: {formatted}")
+
+    if len(found) != len(expected):
+        raise SystemExit(
+            f"PHASE-2 FAIL: erwartet {len(expected)} eindeutige Bilder, gefunden {len(found)}."
+        )
 
     if args.output_dir.exists():
         shutil.rmtree(args.output_dir)
@@ -125,13 +143,15 @@ def main() -> None:
         "expected_count": len(expected),
         "imported_count": len(imported),
         "images": imported,
-        "ignored_files": ignored,
+        "ignored_non_image_files": ignored_non_images,
+        "unexpected_image_files": unexpected_images,
         "assignment_rule": "explicit-number-only-never-zip-order",
+        "final_zip_policy": "exactly-one-image-per-expected-number-no-extra-images",
     }
     report_path = args.output_dir.parent / "flow-import-report.json"
     report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    print(f"OK: {len(imported)} Bilder nach {args.output_dir} importiert.")
+    print(f"OK: {len(imported)} eindeutige Bilder nach {args.output_dir} importiert.")
     print(f"OK: {report_path}")
 
 
