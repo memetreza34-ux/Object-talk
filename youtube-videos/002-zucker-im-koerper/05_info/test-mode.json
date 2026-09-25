@@ -1,0 +1,12 @@
+{
+  "test_mode": true,
+  "purpose": "second-real-pipeline-test-after-pilot-001-postmortem",
+  "target_voice_speed": 1.10,
+  "expected_final_seconds_min": 125,
+  "expected_final_seconds_max": 145,
+  "voiceover_words": 352,
+  "scene_count": 35,
+  "max_scene_hold_seconds": 7.0,
+  "counts_as_published_topic": false,
+  "notes": "Pilot 002 tests the fixed 1.10x voice pipeline, pause compression, 35 unique visuals, strict visible-text whitelist, one retained asset per normal scene, cover cleanup, and higher visual density without text overload."
+}
