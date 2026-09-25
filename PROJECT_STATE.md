@@ -1,6 +1,6 @@
 # Object-Talk – Project State
 
-Letzte Aktualisierung: 24.09.2026
+Letzte Aktualisierung: 25.09.2026
 
 ## Aktiver Produktionspilot
 
@@ -12,31 +12,30 @@ Thema:
 
 **Wie kommt Sauerstoff von der Lunge bis in deine Zellen?**
 
-Pilot 001 ist jetzt als **exakter 2:30-Minuten-Produktionspilot** festgelegt.
+## Neuer Status nach Review des ersten Render-Tests
 
-Ziel:
+Der erste Render-Test wurde visuell und technisch geprueft. Dabei wurden mehrere konkrete Produktionsfehler erkannt und jetzt im Repo als Hard Rules behoben.
 
-- 150 Sekunden
-- 28 Szenen
-- 343 Voiceover-Woerter
-- ca. 137 Woerter/Minute
-- 16:9 / 1920×1080 / 30 fps
+Wichtigste Korrekturen:
 
-Autoritative Timing-Datei:
+- Voice standardmaessig **1.10x**
+- lange TTS-Pausen vor Whisper/Timeline komprimieren
+- keine kuenstliche Streckung auf exakt 150 Sekunden
+- verarbeitetes `final-voiceover.wav` ist einzige Timing-Quelle
+- maximale stille Voice-Pause im finalen verarbeiteten Audio: **<0.50s**
+- maximale Standbilddauer: **7.0s**
+- lange Speech-Beats in neue eindeutige Bilder splitten
+- Pilot jetzt **35 eindeutige Szenen/Bilder** statt 28 mit langen Holds
+- kein Bildasset zweimal in der Timeline
+- sichtbare Bildnummern / Szenennummern / Prompt-Titel sind Hard FAIL
+- sichtbarer Text ist Whitelist-basiert
+- nur beim Cover sind vor Auswahl mehrere Varianten erlaubt
 
-```text
-youtube-videos/001-pilot-sauerstoff-im-blut/05_info/timeline-2m30.json
-```
+Erwartete Pilotlaufzeit nach 1.10x + Pausenkompression:
 
-Produktionsplan:
+**ca. 120–140 Sekunden**, ohne kuenstliche Leerzeit.
 
-```text
-youtube-videos/001-pilot-sauerstoff-im-blut/03_pipeline/VIDEO-2M30-PRODUCTION.md
-```
-
-## Aktueller Bildwelt-Status
-
-Die Explainer-Bildwelt wurde am 24.09.2026 nach mehreren Flow-Tests **inhaltlich freigegeben und im Repo verankert**.
+## Aktuelle Bildwelt
 
 Verbindliche Richtung:
 
@@ -47,39 +46,39 @@ Leitidee:
 **80 % animierte Illustration + 20 % Soft-3D-Tiefe + 0 % Medical-CGI.**
 
 Die Richtung ist bewusst:
-
 - klar animiert / illustriert
 - nicht fotorealistisch
 - nicht medizinisch
 - nicht uebertrieben kindlich
-- etwas Volumen und Tiefe, aber keine realistische 3D-Anatomiewelt
+- etwas Volumen und Tiefe
 - einfach, anschaulich und schnell verstaendlich
 
 ## Zwei Kanalmodi
 
 ### Object-Talk Character Mode
-
 Fuer sprechende Lebensmittel / Alltagsobjekte:
 - hochwertiger stilisierter 3D-Character-Look
 - Augen, Mimik, ggf. kleine Gliedmassen
 - bekannte Object-Talk-Reel-Aesthetik
 
 ### Educational Explainer Mode
-
 Fuer Biologie / Organe / Zellen / Prozesse:
 - 2.5D / Soft-3D Illustration
 - gesichtslos
 - stark vereinfacht
-- ein Erklaerziel pro Bild
-- wenige Objekte
+- ein dominanter Lehrpunkt pro Bild
+- ca. 20–30 % der wichtigen Frames duerfen einen sinnvollen Zusatzdetailpunkt haben
 - semantische Farben
 
-## Autoritative Stil-Dateien
+## Autoritative Dateien
 
 ```text
+PROJECT_CONTRACT.md
+engine/FLOW-AGENT-INSTRUCTIONS.md
+engine/FLOW-PRODUCTION-STANDARD.md
 bildwelt/OBJECT-TALK-CHANNEL-DNA.md
 bildwelt/EXPLAINER-STYLE-LOCK.md
-engine/FLOW-AGENT-INSTRUCTIONS.md
+youtube-videos/001-pilot-sauerstoff-im-blut/03_pipeline/ANTIGRAVITY-PROMPT-ZUM-KOPIEREN.txt
 ```
 
 ## Semantische Farben
@@ -93,73 +92,90 @@ engine/FLOW-AGENT-INSTRUCTIONS.md
 - ATP / Energie = warmes Gelb / Gold
 - Hintergrund = Creme / helles Blau / weiches Beige
 
-## Pilot 001 – feste Objektregeln
-
-- O2 = kleine cyanfarbene / tuerkise Partikel oder verbundene Kugeln, ohne Gesicht
-- CO2 = weiche violette Drei-Komponenten-Form, ohne Gesicht
-- rote Blutkoerperchen = vereinfachte tiefrote Scheiben
-- Haemoglobin = vereinfachte burgunderrote Struktur
-- Organe/Zellen = stark stilisiert, weich, rund und gesichtslos
-
-## Bild_01 – Cover-Regel
+## Cover-Regel
 
 `Bild_01` ist Cover, erster Shot und Episode-Master-Frame.
 
-PASS nur wenn:
+Nur beim Cover:
+- bis zu 3 unterschiedliche Varianten erlaubt
+- Nutzer waehlt genau 1
+- alle anderen Covervarianten danach loeschen/verwerfen
+- final existiert genau ein `Bild_01.png`
 
-- Soft-3D / 2.5D Explainer-Look eingehalten
-- kein Photorealismus / Medical-CGI
-- keine Menschen / Presenter / Torso-Mannequins
-- Thema sofort lesbar
-- Hook **„So reist Sauerstoff durch deinen Körper“** sichtbar und korrekt
-- keine zusaetzlichen Anatomie-Labels
-- Cover darf etwas kontrastreicher sein als normale Szenen, bleibt aber dieselbe Bildwelt
+Cover sichtbarer Text:
+- nur **„So reist Sauerstoff durch deinen Körper“**
+- keine Zusatzlabels
+- keine interne Bildnummer
 
-## Normale Szenen
+## Normale Bild-Regel
 
-- pro Bild genau eine Hauptaussage
-- 0–2 kurze deutsche Labels bevorzugt
-- maximal 3 nur bei echtem Bedarf
-- keine Textwaende
-- keine ueberladenen Hintergruende
-- Richtung / Start / Ziel muessen ohne Voiceover grob erkennbar sein
+Bild_02–Bild_35:
+- pro Bildnummer genau ein retained asset
+- FAIL ersetzt dieselbe Nummer
+- keine Alternativversionen sammeln
+- kein Asset doppelt fuer eine zweite Szene verwenden
+- jede Szene hat eine neue eindeutige Bildnummer
 
-## Reference-First
+## Sichtbarer Text
 
-Geplante kanalweite Referenz:
+Whitelist-Prinzip:
+- Cover: nur exakte Hook
+- normale Szene: nur exakt geplante Labels aus `label-plan.json`
+- wenn 0 Labels geplant sind, kein sichtbarer Text
 
-```text
-assets/channel/STYLE_REFERENCE.png
+Hard FAIL:
+- `Bild 19`
+- `Bild_19`
+- `BILD_12 – O2 BINDET`
+- `Scene 19`
+- `IMAGE 19`
+- Dateiname / Asset-ID
+- Prompt-Ueberschrift
+- erfundener Szenentitel
+- englischer Zusatztext
+
+## Audio / Timing
+
+Zwingend vor Whisper/Timeline:
+
+```bash
+python tools/prepare_audio.py RAW_AUDIO \
+  youtube-videos/001-pilot-sauerstoff-im-blut/01_script/audio/final-voiceover.wav \
+  --speed 1.10
 ```
 
-Status: **noch keine echte Bilddatei im Repo**.
+Danach:
+- Whisper auf `final-voiceover.wav`
+- Timeline aus den echten Worttimings
+- kein fixes 150s-Raster
+- `tools/build_timeline.py` FAIL bei >7s pro Bild
+- `tools/qa_final.py` prueft Speed und lange Pausen
 
-Bis dahin:
+## Pilot 001 – aktueller Szenenplan
 
-```text
-Bild_01 aus der kanonischen Soft-3D-Bildwelt erzeugen
-→ Nutzerfreigabe
-→ Bild_01.png als echtes Flow Reference/Ingredient verwenden
-→ Folgeframes mit identischer Stil-/Farblogik erzeugen
-```
+Aktuell:
+- **35 eindeutige Bilder**
+- lange alte Szenen 12/18/27/28 wurden sinnvoll aufgeteilt
+- Finale wurde in mehrere eigene Visuals geteilt statt ein einziges Bild ca. 20s zu halten
+- Ende zeigt neue Ziel-/Zusammenfassungsbilder statt wiederholt dasselbe Covermotiv
 
 ## Produktionsstatus
 
 Bereit:
+- Script
+- neue 35-Szenen-Planung
+- 1.10x Audio-Pipeline
+- Pausenkompression
+- 7s-Visual-Density-Guard
+- Text-Whitelist
+- Duplicate-Asset-Guard
+- Flow-Prompt fuer 35 Bilder
+- Remotion-/Antigravity-Regeln
+- Final-QA fuer Voice-Speed und Pausen
 
-- Voiceover-Inhalt
-- 2:30-Timing
-- 28 Szenen
-- Szenenbewegungen
-- Bildwelt
-- Label-Logik
-- Flow-Prompt
-- Remotion-Produktionsplan
-
-Noch benoetigt fuer den finalen MP4-Render:
-
-1. freigegebenes `Bild_01`
-2. finale `Bild_02`–`Bild_28`
-3. finales Voice-Audio
-
-Danach kann der Pilot gemaess `VIDEO-2M30-PRODUCTION.md` zusammengesetzt und gerendert werden.
+Naechster echter Test:
+1. Voice mit `prepare_audio.py` neu erzeugen.
+2. Covervarianten erzeugen, eine waehlen, Alternativen entfernen.
+3. Bild_02–Bild_35 jeweils genau einmal finalisieren.
+4. Phase 3 neu ausfuehren.
+5. finalen Render gegen die neuen QA-Regeln pruefen.
