@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "purpose": "Sparse unique chapter cues for Pilot 002. They add orientation and information without repeating the cover hook or duplicating Flow labels.",
+  "rules": {
+    "language": "de",
+    "cover_hook_may_only_appear_on_scene_1": true,
+    "never_repeat_cover_hook": true,
+    "no_full_voiceover_sentences": true,
+    "max_words_per_heading": 4,
+    "do_not_duplicate_flow_labels": true,
+    "one_overlay_at_a_time": true,
+    "style": "clean-cinematic-text-only"
+  },
+  "scenes": [
+    {
+      "scene": 6,
+      "overlays": [
+        {
+          "kind": "heading",
+          "text": "Aufnahme im Dünndarm",
+          "position": "top-left",
+          "animation": "underline",
+          "start_fraction": 0.08,
+          "duration_fraction": 0.46
+        }
+      ]
+    },
+    {
+      "scene": 13,
+      "overlays": [
+        {
+          "kind": "heading",
+          "text": "Jetzt kommt Insulin",
+          "position": "top-left",
+          "animation": "underline",
+          "start_fraction": 0.08,
+          "duration_fraction": 0.46
+        }
+      ]
+    },
+    {
+      "scene": 19,
+      "overlays": [
+        {
+          "kind": "heading",
+          "text": "Glukose wird Energie",
+          "position": "top-left",
+          "animation": "underline",
+          "start_fraction": 0.08,
+          "duration_fraction": 0.46
+        }
+      ]
+    },
+    {
+      "scene": 25,
+      "overlays": [
+        {
+          "kind": "heading",
+          "text": "Nutzen oder speichern",
+          "position": "top-left",
+          "animation": "underline",
+          "start_fraction": 0.08,
+          "duration_fraction": 0.46
+        }
+      ]
+    },
+    {
+      "scene": 30,
+      "overlays": [
+        {
+          "kind": "heading",
+          "text": "Zwischen den Mahlzeiten",
+          "position": "top-left",
+          "animation": "underline",
+          "start_fraction": 0.08,
+          "duration_fraction": 0.46
+        }
+      ]
+    }
+  ]
+}
