@@ -16,6 +16,44 @@ Harte Grundregeln:
 - wichtige sichtbare Dinge knapp auf Deutsch beschriften
 - wissenschaftlich relevante Aussagen pruefen
 
+## Script-Standard – Neugier zuerst
+
+Der Einstieg darf nicht wie ein Schulbuch beginnen.
+
+Die ersten 5–10 Sekunden muessen sofort Neugier erzeugen. Bevorzugte Hook-Muster:
+- direkte Frage an den Zuschauer, bevorzugt im Stil `Hast du dich schon mal gefragt, warum ...?`
+- ueberraschende Aussage
+- Mythos / verbreitete Fehlannahme
+- Alltagsraetsel
+- klarer Kontrast wie `Du denkst X – tatsaechlich passiert Y.`
+
+Verbindlicher Opening-Aufbau:
+1. **Hook** – Frage, ueberraschende Aussage, Mythos oder Kontrast
+2. **unerwartete Antwort / Wendung** – direkt danach, ohne lange Einleitung
+3. **Payoff-Versprechen** – der Zuschauer versteht innerhalb der ersten ca. 15 Sekunden, was er gleich lernen wird
+
+Verbotene / schwache Einstiege:
+- `In diesem Video ...`
+- `Heute erklaeren wir ...`
+- `X ist ein komplexer Prozess ...`
+- reine Definition ohne Neugier
+- lange Kontextpassage vor der eigentlichen Frage
+
+Schreibstil:
+- gesprochen statt geschrieben
+- kurze aktive Saetze
+- konkrete Bilder und Verben
+- keine unnötige Fachsprache
+- keine leeren Fuellsaetze
+- wichtige Abschnitte duerfen mit einer kurzen Frage, einem Kontrast, einer Konsequenz oder einem Mythos neu Interesse erzeugen
+- der Hook wird nicht wortwoertlich in jedem Kapitel wiederholt
+
+Autoritativ:
+
+```text
+engine/SCRIPT-STANDARD.md
+```
+
 ## Audio-/Pacing-Standard
 
 Sofern der Nutzer fuer ein Video nichts anderes vorgibt:
@@ -51,8 +89,10 @@ Informationsdichte:
 - ein DOMINANTER Lehrpunkt pro Bild
 - ca. **20–35 %** wichtiger Mechanismus-/Zusammenfassungsbilder duerfen EINEN zusaetzlichen sinnvollen Detailpunkt enthalten
 - wenn mehr Information noetig ist: neues Bild statt Textwand oder ueberladener Infografik
+- mindestens etwa **60 %** der normalen Explainerbilder sollen einen Prozess, eine Beziehung, Ursache/Wirkung, Vorher/Nachher, Weg, Vergleich oder Kontext sichtbar machen
 - maximal zwei isolierte Einzelobjekt-Portraits direkt hintereinander; danach bevorzugt ein Prozess-, Weg-, Ursache/Wirkung-, Vergleichs- oder Kontextbild
 - gleiche Uebersichtskomposition spaeter nicht einfach wiederholen; wiederkehrende Konzepte brauchen neuen Massstab, Zustand, Richtung oder visuellen Zweck
+- zwei benachbarte Szenen muessen sich in mindestens zwei Punkten unterscheiden: Kameramassstab, Layout, Hauptmotiv, Prozessrichtung, Kontext oder Visual-Typ
 
 ## Zwei verbindliche Bildmodi
 
@@ -123,7 +163,7 @@ Fuer normale Szenen gilt diese Referenzreihenfolge:
 3. wiederkehrende Objekt-/Character-Referenzen
 4. konkreter Szenenprompt
 
-`Bild_01.png` ist ein Cover mit Hook und darf **nicht** als Stilreferenz fuer `Bild_02+` angehaengt werden. Genau diese Kopplung kann Titel/Hook ungewollt in normale Bilder uebertragen.
+`Bild_01.png` ist ein Cover mit Hook und darf **nicht** als Stilreferenz fuer `Bild_02+` angehaengt werden.
 
 Wenn keine kanalweite STYLE_REFERENCE vorhanden ist, wird vor dem Cover eine textfreie Episode-Style-Referenz erzeugt. Sie ist kein finales nummeriertes Szenenbild.
 
@@ -140,7 +180,29 @@ Fuer `Bild_02` bis `Bild_NN` ist die Cover-Hook immer verboten, auch:
 - als nahezu identische Kurzfassung
 - wenn Flow sie aus einer Referenz kopiert
 
-Kapitelueberschriften duerfen nur verwendet werden, wenn sie explizit geplant und klar anders als die Cover-Hook sind.
+Kapiteltexte oder kurze Labels duerfen nur verwendet werden, wenn sie explizit im Flow-Textplan stehen und klar anders als die Cover-Hook sind.
+
+## Sichtbarer Text kommt aus Google Flow – nicht aus Remotion
+
+Ab sofort gilt fuer diesen Kanal hart:
+- sichtbarer Text wird in Google Flow erzeugt und gegen `label-plan.json` geprueft
+- Cover-Titel kommt aus Google Flow
+- normale Labels kommen aus Google Flow
+- Kapiteltexte, falls geplant, kommen ebenfalls aus Google Flow
+- **Remotion darf keinen sichtbaren Text erzeugen**
+- keine Remotion-Kapitelueberschriften
+- keine Remotion-Keywords
+- keine Remotion-Callouts
+- keine Remotion-Label-Fallbacks
+
+Wenn Flow einen Text falsch schreibt:
+1. Bild in Flow neu erzeugen oder dort korrigieren
+2. erst akzeptieren, wenn Text stimmt
+3. nicht mit Remotion nachtraeglich reparieren
+
+Remotion ist nur fuer Timing, leichte Kamerabewegung, Schnitt, Audio und nicht-textliche Uebergaenge zustaendig.
+
+`overlay-plan.json` muss fuer neue Projekte leer sein bzw. keine Text-Overlays enthalten.
 
 ## Asset-Hygiene / keine doppelten Bilder
 
@@ -174,7 +236,7 @@ Finaler Ordner:
 - Cover ohne Hook = FAIL
 
 ### Normale Bilder
-- sichtbar sind nur die exakt fuer diese Szene in `label-plan.json` geplanten Labels oder explizit geplante einzigartige Kapitelueberschrift
+- sichtbar sind nur die exakt fuer diese Szene in `label-plan.json` geplanten Labels oder explizit geplante einzigartige Flow-Kapitelueberschrift
 - 0 Eintraege bedeutet: kein sichtbares Wort
 - 0–2 Labels bevorzugt, maximal 3 bei echtem Bedarf
 - die Cover-Hook darf niemals in der normalen Whitelist stehen
@@ -190,8 +252,6 @@ Immer verboten:
 - zusaetzliche nicht geplante Anatomie-Labels
 
 JEDES sichtbare Wort ausserhalb der Whitelist = Hard FAIL.
-
-Wenn Flow einen geplanten Begriff falsch schreibt, zuerst regenerieren. Nur nach wiederholtem Fehler exakt diesen Begriff in Remotion ersetzen.
 
 ## Google-Flow-Ablauf
 
@@ -218,6 +278,7 @@ Nach Freigabe:
 - Cover-Hook nach Bild_01 explizit pruefen und verbieten
 - bei langem Speech-Beat neue Bildnummer planen statt Bild zu wiederholen
 - bei zu vielen aehnlichen Einzelobjektbildern neue Prozess-/Beziehungsdarstellung planen
+- vor jedem Bild pruefen, wie es sich sichtbar vom vorherigen UND naechsten Bild unterscheidet
 
 ### D – Recovery
 Fehlerhafte Bilder behalten ihre Nummer. Recovery bedeutet Ersetzen, nicht Sammeln.
@@ -245,14 +306,23 @@ Pflicht:
 ## Drei Phasen
 
 ### Phase 1 – Creative Director
-Erstellt Recherche, Claim-Check, Script, Szenenplan, Label-Plan, Flow-Prompts und Metadaten. Lange oder inhaltlich mehrteilige Speech-Beats muessen schon hier in genuegend eindeutige Bilder geteilt werden. Sequenzen aus drei oder mehr isolierten Einzelobjektbildern sind zu vermeiden.
+Erstellt Recherche, Claim-Check, Script, Szenenplan, Label-Plan, Flow-Prompts und Metadaten.
+
+Muss zusaetzlich:
+- neugiergetriebenen Hook nach `engine/SCRIPT-STANDARD.md` schreiben
+- Opening auf Hook → Wendung → Payoff aufbauen
+- lange oder mehrteilige Speech-Beats in genuegend eindeutige Bilder teilen
+- Sequenzen aus drei oder mehr isolierten Einzelobjektbildern vermeiden
+- fuer jede Szene einen sichtbaren Erklaerwert definieren
+- alle sichtbaren Texte bereits fuer Google Flow planen
+- keine spaeteren Remotion-Texte einplanen
 
 ### Phase 2 – Nutzer + Voice-KI + Google Flow
 1. rohes Voiceover erzeugen
 2. textfreie Style-Referenz bereitstellen
 3. Bild_01 erzeugen / eine Variante auswaehlen / Alternativen loeschen
 4. restliche Bilder einzeln auf Basis der textfreien Referenz erzeugen
-5. echte Einzelbild-QA inkl. Hook-Leak-, Novelty- und Information-Value-Check
+5. echte Einzelbild-QA inkl. Hook-Leak-, Novelty-, Information-Value- und Text-Check
 6. finale ZIP mit eindeutigen Bildnummern
 
 ### Phase 3 – Antigravity + Tools + Remotion
@@ -261,8 +331,9 @@ Erstellt Recherche, Claim-Check, Script, Szenenplan, Label-Plan, Flow-Prompts un
 3. Whisper auf finalem verarbeiteten Audio
 4. Timeline aus echten Worttimings erzeugen
 5. FAIL wenn ein Bild >7s stehen muesste
-6. Remotion bauen / rendern
-7. Final-QA inkl. Voice-Speed, Pausen-Audit und sichtbarem Hook-Audit
+6. Remotion nur fuer Timing, Zoom/Pan, Schnitt, Audio und nicht-textliche Uebergaenge verwenden
+7. FAIL wenn ein Remotion-Textoverlay geplant oder gerendert wird
+8. Final-QA inkl. Voice-Speed, Pausen-Audit und sichtbarem Hook-Audit
 
 ## Autoritative Reihenfolge
 
@@ -278,6 +349,7 @@ Erstellt Recherche, Claim-Check, Script, Szenenplan, Label-Plan, Flow-Prompts un
 ## Fail-closed
 
 Stoppen bei:
+- Script startet ohne starken Neugier-Hook
 - Script/Audio stimmen nicht ueberein
 - Voice nicht mit kanonischem Tempo/Pausenprozess vorbereitet
 - stille Voice-Pause >=0.50s im finalen verarbeiteten Voiceover
@@ -288,8 +360,10 @@ Stoppen bei:
 - texttragendem Cover als Folge-Szenenreferenz
 - sichtbarem Asset-/Szenennamen oder Prompt-Titel
 - sichtbarem Text ausserhalb der Whitelist
+- **jedem Remotion-Textoverlay**
 - unselektierten Covervarianten im finalen Set
 - zu vielen nahezu identischen Szenen ohne neuen Lehrzweck
+- mehr als zwei isolierten Einzelobjektbildern hintereinander
 - falschem Seitenverhaeltnis
 - unklarer Szenenzuordnung
 - wissenschaftlich ungeklaerten Kernbehauptungen
