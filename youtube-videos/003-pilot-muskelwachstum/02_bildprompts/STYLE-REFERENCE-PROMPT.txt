@@ -1,0 +1,48 @@
+Create ONE text-free 16:9 style-reference image for the educational video “Wie wächst ein Muskel?”.
+
+This image is NOT a cover and NOT a final numbered scene.
+It exists only to lock the visual DNA for Bild_02–Bild_35.
+
+STYLE
+- modern stylized 2.5D / soft-3D educational illustration
+- clearly animated and illustrated, not photorealistic
+- about 80% illustration / 20% soft-3D depth
+- rounded simplified anatomy
+- matte / slightly satin surfaces
+- clean cream, soft beige and light-blue background
+- warm coral / salmon / red-orange muscle tissue
+- cyan / blue signaling accents
+- turquoise amino-acid accents
+- warm-gold protein-building accents
+- subtle shadows and gentle depth
+- visually clear, modern and trustworthy
+- not childish, not medical CGI
+
+COMPOSITION
+Show a harmonious mini-world containing:
+- one stylized muscle-fiber bundle
+- one enlarged muscle-fiber cross section
+- a few turquoise amino-acid building blocks
+- one small cyan signal path
+- one warm-gold rebuilding/protein cue
+- a simple before/after thickness relation
+
+Keep the muscle fiber as the dominant visual subject.
+The image must establish materials, lighting, colors and simplification level only.
+
+ABSOLUTELY NO VISIBLE TEXT.
+No title.
+No labels.
+No numbers.
+No asset IDs.
+No arrows containing text.
+No pseudo-text.
+No logos.
+No human face.
+No torso mannequin.
+No wet tissue.
+No photorealism.
+No medical software look.
+No dark sci-fi / cosmic background.
+
+After approval, save/use this as EPISODE_STYLE_REFERENCE.png and attach it to every normal scene generation from Bild_02 onward. Never use the text-bearing cover as the follow-up style reference.
