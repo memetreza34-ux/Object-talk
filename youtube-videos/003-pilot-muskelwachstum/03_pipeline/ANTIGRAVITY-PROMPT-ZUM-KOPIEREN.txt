@@ -25,14 +25,29 @@ BILDREGELN
 
 COVER-HOOK
 - „So wächst dein Muskel“ darf im gesamten Video nur in Szene/Bild_01 vorkommen.
-- dieselbe Hook darf niemals als späteres Overlay, Kapitelheading oder Bildtext auftauchen.
+- dieselbe Hook darf niemals späteres Bildtext-Element sein.
 - bei wiederholter Hook: FAIL.
 
-SICHTBARER TEXT
+SICHTBARER TEXT – NUR GOOGLE FLOW
+- final sichtbarer Text kommt ausschließlich aus den akzeptierten Google-Flow-Bildern.
 - strikt nach `02_bildprompts/label-plan.json`.
 - interne Nummern/Dateinamen/Prompttitel nie sichtbar.
-- keine Captions oder langen Voiceover-Sätze als Overlay.
-- kurze Kapitelhinweise nur aus `03_pipeline/overlay-plan.json` und jede Formulierung maximal einmal.
+- keine Remotion-Kapitelüberschriften.
+- keine Remotion-Keywords.
+- keine Remotion-Callouts.
+- keine Remotion-Label-Fallbacks.
+- keine Captions oder Voiceover-Sätze als Textoverlay.
+- wenn Flow einen Begriff falsch schreibt: Bild in Flow korrigieren/regenerieren, nicht in Remotion reparieren.
+- `03_pipeline/overlay-plan.json` muss leer/deaktiviert sein.
+
+REMOTION DARF NUR
+- Timing
+- Audio
+- sanfte Push/Pull-Bewegungen
+- leichte Pans
+- Schnitte
+- dezente nicht-textliche Übergänge
+- Rendering
 
 BILDWELT
 - moderne stilisierte 2.5D / Soft-3D Educational Illustration.
@@ -42,10 +57,13 @@ BILDWELT
 - normale Szenen müssen auf einer TEXTFREIEN Style-Referenz basieren, niemals auf dem texttragenden Cover.
 
 VISUELLE VIELFALT
+- mindestens etwa 60% der normalen Bilder zeigen Prozess, Beziehung, Ursache/Wirkung, Weg, Vorher/Nachher, Vergleich oder Kontext.
 - maximal zwei isolierte Einzelobjekt-Portraits direkt hintereinander.
 - danach Prozess, Weg, Ursache/Wirkung, Vorher/Nachher oder Kontext zeigen.
-- ähnliche Nachbarszenen müssen in Perspektive, Maßstab oder Informationsfunktion klar verschieden sein.
+- benachbarte Szenen müssen sich in mindestens zwei Punkten unterscheiden: Perspektive/Maßstab, Layout, Hauptmotiv, Prozessrichtung, Kontext oder Visual-Typ.
+- gleiche Muskelquerschnitt-/Zell-/Myofibrillen-Komposition nicht mehrfach nahezu identisch verwenden.
 - 20–35% wichtiger Mechanismusbilder dürfen genau einen sinnvollen Zusatzdetailpunkt enthalten.
+- ein schwaches oder leeres Bild niemals mit Remotion-Text retten; stattdessen besseres Flow-Bild verwenden.
 
 STORY-REISE
 Widerstand → mechanische Spannung → Zell-Signal → Proteinsynthese → Aminosäuren → Myofibrillen → Faserquerschnitt/Hypertrophie → Satellitenzellen → Ernährung/Erholung/Schlaf → Muskelkater-Mythos → Anpassung → Progression → Zusammenfassung.
@@ -83,8 +101,9 @@ python tools/qa_final.py \
 
 Besonders prüfen:
 - Hook ausschließlich am Anfang
+- Remotion-Textoverlays = 0
 - keine doppelten Bilder
-- keine ähnlichen Cover-artigen Zwischenbilder
+- keine fast identischen Muskelquerschnitt-/Zellbilder hintereinander
 - Bild_02+ aus textfreier Style-Referenz
 - keine Szene >7s
 - keine sichtbaren Bildnummern
