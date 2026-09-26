@@ -1,0 +1,94 @@
+ANTIGRAVITY – PILOT 003 „WIE WÄCHST EIN MUSKEL?“
+
+Arbeite ausschließlich nach dem Repository.
+
+Projekt:
+`youtube-videos/003-pilot-muskelwachstum/`
+
+ZIEL
+Erzeuge aus Voice + 35 finalen Flow-Bildern einen schnellen, klaren animierten Erklärfilm. Kein Diashow-Gefühl.
+
+AUDIO ZUERST
+- Roh-TTS niemals direkt rendern.
+- `tools/prepare_audio.py` mit `--speed 1.10` verwenden.
+- lange TTS-Pausen vor Whisper/Timeline komprimieren.
+- `final-voiceover.wav` ist die einzige Timing-Quelle.
+- niemals eine 1.00x-Timeline bauen und später nur Audio beschleunigen.
+
+BILDREGELN
+- exakt 35 eindeutige finale Bilder: Bild_01 bis Bild_35.
+- dasselbe Bild nie zweimal in der Timeline verwenden.
+- kein Bild länger als 7 Sekunden stehen lassen.
+- normale Bilder: genau ein retained asset pro Nummer.
+- nur Cover darf vor Auswahl bis zu 3 Varianten haben; danach nur eine behalten.
+- Finale Bild_35 ist eine neue Zusammenfassung, nicht das Cover wiederverwenden.
+
+COVER-HOOK
+- „So wächst dein Muskel“ darf im gesamten Video nur in Szene/Bild_01 vorkommen.
+- dieselbe Hook darf niemals als späteres Overlay, Kapitelheading oder Bildtext auftauchen.
+- bei wiederholter Hook: FAIL.
+
+SICHTBARER TEXT
+- strikt nach `02_bildprompts/label-plan.json`.
+- interne Nummern/Dateinamen/Prompttitel nie sichtbar.
+- keine Captions oder langen Voiceover-Sätze als Overlay.
+- kurze Kapitelhinweise nur aus `03_pipeline/overlay-plan.json` und jede Formulierung maximal einmal.
+
+BILDWELT
+- moderne stilisierte 2.5D / Soft-3D Educational Illustration.
+- ca. 80% animierte Illustration / 20% Soft-3D-Tiefe.
+- kein Photorealismus / Medical-CGI.
+- hell, freundlich, klare Formen.
+- normale Szenen müssen auf einer TEXTFREIEN Style-Referenz basieren, niemals auf dem texttragenden Cover.
+
+VISUELLE VIELFALT
+- maximal zwei isolierte Einzelobjekt-Portraits direkt hintereinander.
+- danach Prozess, Weg, Ursache/Wirkung, Vorher/Nachher oder Kontext zeigen.
+- ähnliche Nachbarszenen müssen in Perspektive, Maßstab oder Informationsfunktion klar verschieden sein.
+- 20–35% wichtiger Mechanismusbilder dürfen genau einen sinnvollen Zusatzdetailpunkt enthalten.
+
+STORY-REISE
+Widerstand → mechanische Spannung → Zell-Signal → Proteinsynthese → Aminosäuren → Myofibrillen → Faserquerschnitt/Hypertrophie → Satellitenzellen → Ernährung/Erholung/Schlaf → Muskelkater-Mythos → Anpassung → Progression → Zusammenfassung.
+
+SCHNITT
+- harte saubere Schnitte Standard.
+- weiche Überblendung nur bei echtem Maßstabs-/Ortswechsel.
+- Push/Pull 2–4%, Pan 20–30 px.
+- keine aggressiven Ken-Burns, kein Shake, Bounce oder Meme-Transition.
+- Bewegungsrichtung unterstützt den erklärten Prozess.
+
+VORBEREITUNG
+```bash
+python -m pip install -r tools/requirements.txt
+python tools/validate_planning_v2.py youtube-videos/003-pilot-muskelwachstum
+python tools/prepare_phase3.py youtube-videos/003-pilot-muskelwachstum
+```
+
+RENDER
+```bash
+cd renderer
+npm install
+npm run render -- ../youtube-videos/003-pilot-muskelwachstum/04_export/fertiges-video/final-video.mp4
+```
+
+FINAL-QA
+```bash
+python tools/qa_final.py \
+  youtube-videos/003-pilot-muskelwachstum/04_export/fertiges-video/final-video.mp4 \
+  youtube-videos/003-pilot-muskelwachstum/01_script/audio/final-voiceover.wav \
+  --min-seconds 100 \
+  --expected-speed 1.10 \
+  --max-voice-pause 0.50
+```
+
+Besonders prüfen:
+- Hook ausschließlich am Anfang
+- keine doppelten Bilder
+- keine ähnlichen Cover-artigen Zwischenbilder
+- Bild_02+ aus textfreier Style-Referenz
+- keine Szene >7s
+- keine sichtbaren Bildnummern
+- wichtige Mechanismen nicht zu leer
+- Muskelkater/Schaden nicht fälschlich als Wachstumsursache darstellen
+
+Bei Konflikt oder fehlenden Assets: FAIL statt raten.
