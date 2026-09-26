@@ -16,26 +16,102 @@ Cover-Hook:
 
 **„So wächst dein Muskel“**
 
-## Zweck von Pilot 003
+## Review des echten Pilot-003-Renders
 
-Pilot 003 ist der nächste End-to-End-Test nach dem echten Review von Pilot 002.
+Der Render wurde vollständig angesehen.
 
-Er prüft insbesondere die neuen Schutzregeln gegen:
-- wiederholte Cover-Hooks in normalen Szenen
-- texttragende Cover als Style-Referenz
-- zu ähnliche Bildfolgen
-- zu leere Mechanismusbilder
-- doppelte/coverartige Übersichtsframes
+Was funktioniert:
+- 2.5D / Soft-3D-Bildwelt bleibt bestehen
+- Tempo mit 1.10x ist deutlich besser
+- Cover-Hook-Leak wurde weitgehend verbessert
+- Muskelthema ist grundsätzlich verständlich visualisiert
 
-## Produktionsziel
+Neue Hauptprobleme aus dem echten Render:
+1. Script-Einstieg war noch zu sachlich/flach.
+2. Mehrere Muskelquerschnitt-/Zell-/Myofibrillenbilder wirkten zu ähnlich.
+3. Einige Mechanismusbilder waren zu leer bzw. hätten mehr inhaltliche Erklärung im Bild gebraucht.
+4. Remotion-Text wirkte optisch fremd zur Flow-Bildwelt.
+5. Sichtbarer Text soll künftig ausschließlich aus Google Flow kommen.
+
+Diese Punkte sind jetzt als globale Repo-Regeln gehärtet.
+
+## Neuer Script-Hard-Lock
+
+Neue Videos starten nicht mehr mit einer sachlichen Definition oder einer flachen Fachfrage.
+
+Pflicht:
+- Satz 1 erzeugt sofort Neugier
+- bevorzugt direkte Zuschauerfrage wie `Hast du dich schon mal gefragt, warum ...?`
+- alternativ überraschende Aussage, Mythos, Alltagsraetsel oder Kontrast
+- innerhalb von 1–2 Saetzen folgt eine Wendung / unerwartete Antwort
+- innerhalb von ca. 15 Sekunden ist der Payoff klar
+
+Autoritativ:
+
+```text
+engine/SCRIPT-STANDARD.md
+```
+
+Pilot 003 wurde entsprechend umgeschrieben. Neuer Einstieg:
+
+`Hast du dich schon mal gefragt, warum deine Muskeln durch Training überhaupt größer werden?`
+
+Danach direkt:
+
+`Das Überraschende: Sie wachsen nicht während der Wiederholung selbst – das Training setzt zuerst nur einen Reiz.`
+
+## Sichtbarer Text – nur Google Flow
+
+Neue harte Regel:
+- Cover-Titel kommt aus Google Flow
+- normale Labels kommen aus Google Flow
+- eventuell geplante Kapitelbegriffe kommen aus Google Flow
+- Remotion erzeugt **keinen** sichtbaren Text
+- keine Remotion-Kapitelüberschriften
+- keine Remotion-Keywords
+- keine Remotion-Callouts
+- keine Remotion-Label-Fallbacks
+
+Wenn Flow Text falsch schreibt:
+- Bild in Flow regenerieren/korrigieren
+- nicht in Remotion reparieren
+
+`tools/build_renderer_runtime.py` bricht jetzt hart ab, wenn `overlay-plan.json` nicht-leere Textoverlays enthält.
+
+Pilot 003:
+
+```text
+youtube-videos/003-pilot-muskelwachstum/03_pipeline/overlay-plan.json
+```
+
+ist jetzt deaktiviert/leer.
+
+## Visuelle Vielfalt / Informationswert
+
+Neue harte Regeln:
+- mindestens etwa 60 % der normalen Explainerbilder zeigen Prozess, Beziehung, Ursache/Wirkung, Weg, Vergleich, Vorher/Nachher oder Kontext
+- maximal zwei isolierte Einzelobjekt-Portraits hintereinander
+- benachbarte Szenen unterscheiden sich in mindestens zwei Dimensionen: Kameramassstab, Layout, Hauptmotiv, Prozessrichtung, Kontext oder Visual-Typ
+- gleiche Muskelquerschnitt-/Zell-/Myofibrillen-Komposition nicht mehrfach nahezu identisch verwenden
+- ca. 20–35 % wichtiger Mechanismusbilder duerfen einen sinnvollen Zusatzdetailpunkt enthalten
+- ein schwaches Bild wird nicht durch Editor-Text gerettet; es wird in Flow besser erzeugt
+
+Der Pilot-003-Flow-Prompt wurde besonders bei den aehnlichen Szenen geschaerft:
+- Membran-Sensorik vs. intrazellulaere Signalkette
+- Aminosaeure-Einbau vs. Myofibrillen-Mechanik
+- Myofibrillen-Anpassung vs. Faserquerschnitt vs. Hypertrophie
+- Gewoehnung vs. gleicher Reiz mit kleinerer Herausforderung
+- Zusammenfassungsbilder in unterschiedlichen Massstaeben
+
+## Produktionsziel Pilot 003
 
 - 35 eindeutige Bilder
-- ca. 329 Wörter Voiceover
 - Voice 1.10x
 - lange TTS-Pausen vor Whisper/Timeline komprimieren
-- erwartete Endlänge ca. 2:05–2:30
 - kein Bild länger als 7 Sekunden
 - kein Bildasset doppelt
+- alle sichtbaren Texte direkt in Flow
+- Remotion nur Timing / Audio / Zoom-Pan / Schnitt / nicht-textliche Uebergaenge
 
 ## Inhaltliche Reise
 
@@ -58,84 +134,46 @@ Leitidee:
 
 **80 % animierte Illustration + 20 % Soft-3D-Tiefe + 0 % Medical-CGI.**
 
-Pilot-003-Farben:
-- Muskel/Muskelfaser = Coral / Salmon / Rot-Orange
-- Spannung = warmes Orange-Rot
-- Zell-Signale = Cyan / Blau
-- Aminosäuren = Türkis / Cyan
-- Proteinaufbau = warmes Gold
-- Myofibrillen = tieferes Rot / Burgunder
-- Erholung = Soft-Blau / Teal
-- Progression = Gold / Orange
-- Hintergrund = Creme / Beige / helles Blau
-
 ## Cover-Hook-Hard-Lock
 
 Die Hook **„So wächst dein Muskel“** darf exakt nur auf `Bild_01` erscheinen.
 
-Für Bild_02–Bild_35 ist sie Hard FAIL:
-- kein Titel mit derselben Hook
-- keine Kapitelüberschrift mit derselben Hook
-- keine dekorative Hintergrundschrift
-- keine nahezu identische Kurzfassung
+Für Bild_02–Bild_35 ist sie Hard FAIL.
 
 ## Referenzlogik
 
-1. Bild_01 als Cover erzeugen, bis zu 3 Varianten.
-2. Nutzer wählt exakt 1 Cover; Rest löschen/verwerfen.
-3. Danach eine **textfreie** `EPISODE_STYLE_REFERENCE.png` mit `STYLE-REFERENCE-PROMPT.txt` erzeugen.
-4. Bild_02–Bild_35 nur mit dieser textfreien Referenz erzeugen.
-5. Das texttragende Cover niemals als Follow-up-Style-Referenz verwenden.
-
-## Visuelle Dichte / Abwechslung
-
-- ein dominanter Lehrpunkt pro Bild
-- ca. 20–35 % wichtiger Mechanismusbilder dürfen einen sinnvollen Zusatzdetailpunkt enthalten
-- maximal zwei isolierte Einzelobjekt-Portraits direkt hintereinander
-- danach Prozess / Weg / Ursache-Wirkung / Vorher-Nachher / Kontext
-- gleiche Übersichtskomposition nicht wiederholen
-- Nachbarszenen müssen Perspektive, Maßstab oder Informationsfunktion klar ändern
-
-Bild-QA prüft:
-- `visual_novelty >= 8/10`
-- `information_value >= 8/10`
-- `cover_hook_isolated = PASS`
-- für Bild_02+ `text_free_reference_used = PASS`
-- Text-Whitelist / keine Asset-IDs / genau ein retained Asset
-
-## Kapiteloverlays
-
-Sparsam und jeweils nur einmal:
-- Im Muskel beginnt die Anpassung
-- Jetzt beginnt der Aufbau
-- Training allein reicht nicht
-- Muskelkater ist kein Wachstums-Messer
-- Der Reiz muss mitwachsen
-
-Keine dieser Formulierungen darf die Cover-Hook wiederholen.
+1. textfreie `EPISODE_STYLE_REFERENCE.png` erzeugen bzw. kanalweite textfreie Style-Reference verwenden
+2. Bild_01 als Cover erzeugen, bis zu 3 Varianten
+3. Nutzer wählt exakt 1 Cover; Rest löschen/verwerfen
+4. Bild_02–Bild_35 nur mit textfreier Referenz erzeugen
+5. texttragendes Cover niemals als Follow-up-Style-Referenz verwenden
 
 ## Wichtige Dateien
 
 ```text
+PROJECT_CONTRACT.md
+AGENTS.md
+config/channel.json
+engine/SCRIPT-STANDARD.md
+engine/FLOW-AGENT-INSTRUCTIONS.md
+engine/PLANNING-V2.md
+engine/PRESENTATION-OVERLAY-SYSTEM.md
+tools/build_renderer_runtime.py
 youtube-videos/003-pilot-muskelwachstum/01_script/VOICEOVER-ZUM-KOPIEREN.txt
-youtube-videos/003-pilot-muskelwachstum/05_info/mechanism-map.md
 youtube-videos/003-pilot-muskelwachstum/05_info/phase1-scenes.json
 youtube-videos/003-pilot-muskelwachstum/05_info/sentence-visual-plan.json
-youtube-videos/003-pilot-muskelwachstum/02_bildprompts/STYLE-REFERENCE-PROMPT.txt
 youtube-videos/003-pilot-muskelwachstum/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt
 youtube-videos/003-pilot-muskelwachstum/02_bildprompts/label-plan.json
-youtube-videos/003-pilot-muskelwachstum/02_bildprompts/image-review.json
 youtube-videos/003-pilot-muskelwachstum/03_pipeline/overlay-plan.json
 youtube-videos/003-pilot-muskelwachstum/03_pipeline/ANTIGRAVITY-PROMPT-ZUM-KOPIEREN.txt
 ```
 
-## Nächster Testablauf
+## Nächster echter Test
 
-1. Voice aus `VOICEOVER-ZUM-KOPIEREN.txt` erzeugen.
-2. Bild_01: bis zu 3 Coverrichtungen, genau 1 auswählen.
-3. ungewählte Cover löschen.
-4. textfreie Episode-Style-Referenz erzeugen.
-5. Bild_02–Bild_35 jeweils einzeln produzieren.
-6. jedes Bild gegen Hook-Leak, Whitelist, Novelty und Informationswert prüfen.
-7. Phase 3 mit 1.10x-Audio und Overlay-Plan rendern.
-8. finalen Render erneut vollständig prüfen.
+Beim naechsten Render insbesondere pruefen:
+1. Hook klingt wie ein echter neugieriger Einstieg.
+2. Remotion-Textoverlays = 0.
+3. Flow-Texte sind korrekt und stilistisch einheitlich.
+4. keine Sequenz aus fast identischen Muskelquerschnitten.
+5. wichtige Mechanismen zeigen Ursache und Folge sichtbar.
+6. Tempo bleibt schnell und ohne lange Pausen.
