@@ -18,7 +18,7 @@
   ],
   "audience": "familienfreundlich, leicht verstaendlich, besonders fuer juengere Zuschauer geeignet, aber nicht babyhaft",
   "visual_identity": {
-    "status": "soft_3d_explainer_locked_2026-09-25",
+    "status": "soft_3d_explainer_locked_2026-09-26",
     "specification": "bildwelt/OBJECT-TALK-CHANNEL-DNA.md",
     "explainer_style_lock": "bildwelt/EXPLAINER-STYLE-LOCK.md",
     "primary_mode": "modern stylized 2.5D soft-3D educational illustration",
@@ -36,7 +36,7 @@
     "subtle_shadows": true,
     "gentle_depth": true,
     "one_dominant_teaching_idea_per_frame": true,
-    "supporting_detail_scene_share_guideline": "20-30%",
+    "supporting_detail_scene_share_guideline": "20-35%",
     "few_objects_per_frame": true,
     "simplified_recognizable_biology": true,
     "human_presenter_default": false,
@@ -58,10 +58,11 @@
       "background": "light-cream-soft-blue-beige"
     },
     "style_reference": "assets/channel/STYLE_REFERENCE.png",
+    "episode_style_reference_name": "EPISODE_STYLE_REFERENCE.png",
     "style_reference_required_after_lock": true,
     "clean_style_reference_asset_present": false,
     "bootstrap_without_channel_reference_allowed": true,
-    "bootstrap_rule": "Until STYLE_REFERENCE.png is explicitly approved, only Bild_01 may bootstrap an episode from the canonical soft-3D explainer DNA. Follow-up images require the approved Bild_01 as an actual visual reference.",
+    "bootstrap_rule": "If the channel STYLE_REFERENCE.png is missing, create one text-free episode style reference before the cover. Never use the text-bearing cover itself as the normal-scene style reference.",
     "episode_master_frame": "Bild_01",
     "character_reference_dir": "assets/channel/characters",
     "reference_asset_dir": "assets/channel/references"
@@ -77,6 +78,8 @@
     "cover_scene_is_master_frame": true,
     "cover_hook_generated_by_flow": true,
     "cover_hook_required": true,
+    "cover_hook_unique_to_bild_01": true,
+    "cover_hook_forbidden_after_bild_01": true,
     "cover_extra_labels_allowed": false,
     "cover_must_work_without_human_presenter": true,
     "cover_variants_max": 3,
@@ -85,9 +88,12 @@
     "discard_unselected_cover_variants_after_selection": true,
     "replace_failed_candidate_instead_of_accumulating": true,
     "duplicate_image_reuse_allowed": false,
-    "followup_prompt_style": "reference-first soft-3D explainer scene spec with one dominant teaching idea and optional supporting detail",
+    "followup_prompt_style": "text-free-reference-first soft-3D explainer scene spec with one dominant teaching idea and optional supporting detail",
     "attach_style_reference_when_present": true,
-    "attach_bild_01_on_every_followup": true,
+    "attach_bild_01_on_every_followup": false,
+    "never_use_text_bearing_cover_as_followup_reference": true,
+    "require_text_free_reference_for_followups": true,
+    "reference_is_style_only_not_composition_or_text": true,
     "textual_reference_mentions_do_not_count_as_attachment": true,
     "generate_each_image_individually": true
   },
@@ -99,6 +105,7 @@
     "max_per_image_guideline": 3,
     "render_in_flow": true,
     "visible_text_is_whitelist_only": true,
+    "cover_hook_must_never_repeat_as_normal_scene_text": true,
     "remotion_is_fallback_for_failed_ai_text": true,
     "final_video_must_contain_required_labels": true,
     "preferred_type_style": "clean-readable-sans-serif",
@@ -117,7 +124,11 @@
     "max_image_hold_seconds": 7.0,
     "split_long_speech_beats_into_unique_images": true,
     "do_not_stretch_to_exact_runtime": true,
-    "duplicate_image_reuse_allowed": false
+    "duplicate_image_reuse_allowed": false,
+    "max_consecutive_isolated_object_frames": 2,
+    "require_process_or_relationship_frame_after_isolated_run": true,
+    "important_mechanism_frames_may_add_one_supporting_detail": true,
+    "avoid_reusing_same_overview_composition": true
   },
   "topic_memory": "THEMEN-GEHIRN.md"
 }
