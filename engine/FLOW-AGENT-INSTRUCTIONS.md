@@ -42,43 +42,50 @@ Style:
 Target ratio:
 **80% animated illustration / 20% soft-3D depth / 0% medical realism.**
 
-## VISUAL DENSITY — CLEAR, BUT NOT EMPTY
+## VISUAL STORYTELLING — PROCESS BEFORE PORTRAIT
 
-Do not make every explainer frame equally minimal.
+The channel must not look like a sequence of similar anatomy portraits.
+
+Global target:
+- at least about 60% of normal explainer frames should visibly show a process, relationship, route, cause/effect, comparison, before/after or context
+- isolated object portraits are allowed only when they introduce a genuinely new structure
+- maximum two isolated single-object portraits in a row
+- after that, switch to a process, relationship, route, cause/effect, before/after, comparison or context frame
+
+Each adjacent scene must differ in at least TWO of these dimensions:
+- camera scale
+- spatial layout
+- main subject
+- process direction
+- background context
+- visual type
+
+If two planned scenes would look too similar, change the second composition before generation.
+
+Do not reuse the same generic muscle cross-section, cell cutaway, blood-vessel layout or overview composition later unless the later scene has a clearly different teaching purpose and visual state.
+
+## VISUAL DENSITY — CLEAR, BUT NOT EMPTY
 
 Default:
 - one dominant teaching idea
 - 1–2 main visual objects
 - only the labels needed to understand the frame
 
-For roughly 20–35% of scenes, especially major mechanism, cause/effect or summary beats, one supporting detail is encouraged when it genuinely teaches something useful. Examples:
-- a small secondary destination object
-- a simple before/after relation
-- one additional process cue
-- one compact inset/detail area if the main scene remains immediately readable
+For roughly 20–35% of important mechanism, cause/effect or summary scenes, include ONE useful supporting detail when it genuinely teaches something.
 
-Never turn this into a crowded infographic.
+Good supporting details:
+- a second destination object
+- before/after cue
+- one extra process arrow/path
+- one compact inset/detail area
+- cause on one side, consequence on the other
 
-If a spoken section contains two real teaching beats or would need more than about 7 seconds on one image, DO NOT overload one frame. The planning pipeline must create an additional UNIQUE image/scene with a new consecutive image number.
+Never turn the image into a crowded infographic.
 
-Do not allow long runs of isolated object portraits. After at most two consecutive isolated-object frames, the next frame should normally show a process, relationship, route, cause/effect, comparison or context change.
-
-Do not reuse the same generic overview composition later in the video. A repeated concept must be shown from a clearly different visual purpose or scale.
+If the spoken section contains two real teaching beats or would need more than about 7 seconds on one image, create another UNIQUE image with a new image number.
 
 More useful unique images are preferred over holding one image too long.
 Never solve visual-density problems by duplicating the same image.
-
-## EXPLAINER COLOR SYSTEM
-
-Keep semantic colors consistent:
-- oxygen / O2: cyan / turquoise
-- red blood cells: deep warm red
-- blood vessels: coral red
-- organs: peach / coral
-- muscle cells: apricot / orange
-- CO2: soft violet
-- ATP / energy: warm yellow-gold
-- background: light cream / soft blue / soft beige
 
 ## EXPLAINER HARD FAILS
 
@@ -96,6 +103,7 @@ Reject if the image becomes:
 - visually empty when a useful supporting detail was explicitly planned
 - unclear in movement direction
 - a near-duplicate of a recent scene without a new teaching purpose
+- another isolated portrait when the previous two scenes were already isolated portraits
 
 ## HUMAN RULE
 
@@ -104,8 +112,6 @@ If human context is scientifically necessary, keep it highly simplified, faceles
 
 ## REFERENCE-FIRST RULE — TEXT-FREE ONLY FOR NORMAL SCENES
 
-Visual references are authoritative, but typography must never leak from a cover into normal scenes.
-
 Priority for NORMAL scenes:
 1. attached text-free `STYLE_REFERENCE.png`
 2. attached text-free `EPISODE_STYLE_REFERENCE.png`
@@ -113,30 +119,48 @@ Priority for NORMAL scenes:
 4. current scene prompt
 
 IMPORTANT:
-- `Bild_01.png` is a text-bearing cover and must NOT be attached as the normal-scene reference.
+- `Bild_01.png` is a text-bearing cover and must NOT be attached as the normal-scene reference
 - never use a reference image containing the episode hook/title for `Bild_02` onward
-- reference images supply STYLE, COLOR, MATERIAL and SHAPE LANGUAGE only; they do NOT authorize copying text, title placement or cover composition
+- references supply STYLE, COLOR, MATERIAL and SHAPE LANGUAGE only
+- references do NOT authorize copying text, title placement or cover composition
 - never claim to use a reference that is not actually attached
 
-If the channel `STYLE_REFERENCE.png` does not yet exist, create one text-free `EPISODE_STYLE_REFERENCE.png` before normal-scene production. It is a production reference only, not a numbered final video image.
+If the channel `STYLE_REFERENCE.png` does not exist, create one text-free `EPISODE_STYLE_REFERENCE.png` before normal-scene production.
 
 ## CRITICAL: COVER HOOK IS UNIQUE TO BILD_01
 
 The exact episode cover hook/title may appear ONLY on `Bild_01`.
 
 For `Bild_02` onward:
-- the cover hook is explicitly FORBIDDEN visible text
-- do not repeat the cover title as a headline, chapter title, decorative phrase or background typography
-- this remains forbidden even if the title is visible in any accidental attached reference
+- the cover hook is FORBIDDEN visible text
+- do not repeat it as a headline, chapter title, decorative phrase or background typography
 - if the cover hook appears anywhere after `Bild_01`, the image is an automatic FAIL
 
-Chapter headings are allowed only if they are explicitly planned in the scene whitelist and are NOT identical or substantially equivalent to the cover hook.
+## CRITICAL: ALL FINAL VISIBLE TEXT COMES FROM GOOGLE FLOW
+
+Google Flow is the final source of visible text for this channel.
+
+Cover:
+- exact German cover hook only
+
+Normal scenes:
+- only the exact German labels or explicitly planned Flow chapter text from `label-plan.json`
+
+Do NOT plan on fixing text later in Remotion.
+Remotion text overlays are forbidden by the production pipeline.
+
+If Flow misspells a required German word:
+1. reject the image
+2. regenerate or correct it in Flow
+3. accept only when the visible text is correct
+
+Never rely on a later editor to repair the wording.
 
 ## CRITICAL: ASSET IDS ARE NEVER VISIBLE TEXT
 
 `Bild_01`, `Bild_19`, `IMAGE 19`, `Scene 19`, scene numbers, asset numbers, file names and internal production names are metadata ONLY.
 
-They must NEVER appear inside the generated artwork.
+They must NEVER appear inside the artwork.
 
 Examples of forbidden visible text:
 - `Bild 19`
@@ -145,164 +169,116 @@ Examples of forbidden visible text:
 - `IMAGE 19`
 - `Scene 19`
 - `Szenenbild 19`
-- file names such as `Bild_19.png`
+- `Bild_19.png`
 
-When a prompt section is headed `BILD_19 – ...`, interpret the entire heading as production structure, not artwork text, unless a specific phrase is separately listed in REQUIRED VISIBLE TEXT.
-
-If an asset ID, scene title, prompt heading or scene number appears visibly in the image, the image is an automatic FAIL and must not be kept.
+A prompt heading such as `BILD_19 – ...` is production structure only.
 
 ## CRITICAL: VISIBLE-TEXT WHITELIST
 
-Visible text is whitelist-based, not suggestion-based.
-
-For every image determine `ALLOWED_VISIBLE_TEXT` before generation.
+Before each generation determine `ALLOWED_VISIBLE_TEXT`.
 
 Cover:
-- allowed text = the exact approved cover hook ONLY
+- exactly the approved cover hook
 
 Normal scene:
-- allowed text = exactly the labels or explicitly planned unique chapter heading listed for that scene
-- 0 labels/headings means the image must contain NO visible words
+- exactly the labels/text explicitly listed for that scene
+- 0 entries means NO visible words
 - the cover hook is never part of a normal-scene whitelist
 
 Anything else is forbidden, including:
-- the cover hook/title after Bild_01
-- scene titles invented by Flow
-- explanatory headings invented by Flow
+- cover hook after Bild_01
+- invented scene titles
+- invented explanatory headings
 - image numbers
 - file names
 - English words
 - decorative pseudo-text
-- extra anatomy labels not requested
+- extra anatomy labels
 
 Before accepting an image, visually read all visible words. If ANY word is not in the whitelist, reject and regenerate.
 
 ## CRITICAL: EXACTLY ONE RETAINED IMAGE PER NORMAL SCENE
 
 For `Bild_02` onward:
-- request/generate exactly ONE candidate for the current image number at a time
+- request exactly ONE candidate at a time
 - never intentionally create several alternatives for a normal scene
 - never keep two versions of the same image number
 - do not create `Bild_12_A`, `Bild_12_B`, `Bild_12_v2`, `Bild_12_final2`, etc.
-- do not move to the next image while multiple candidates for the current image are being retained
 
 If a normal scene fails QA:
-1. mark the failed candidate REJECTED
+1. reject the failed candidate
 2. regenerate the SAME image number
-3. the accepted replacement becomes the only retained version
-4. discard/delete the rejected candidate from the working selection
+3. accept one replacement
+4. discard the failed candidate
 
-At every point after acceptance there must be exactly one retained asset for that normal scene.
-
-If Flow itself automatically returns multiple outputs from one generation, choose the single best PASS output and discard the others before continuing.
+If Flow returns multiple outputs automatically, keep only the single best PASS output and discard the others before continuing.
 
 ## COVER EXCEPTION — MULTIPLE VARIANTS ONLY FOR BILD_01
 
 `Bild_01` is the ONLY numbered image allowed to have multiple creative variants.
 
 Workflow:
-1. Attach the text-free channel/episode style reference.
+1. Attach the text-free style reference.
 2. Generate up to 3 clearly different cover candidates.
-3. Show the candidates to the user for one selection.
-4. After the user chooses one, that chosen candidate becomes exactly `Bild_01.png`.
-5. Delete/discard all unselected cover candidates.
-6. Do not use the selected text-bearing cover as the normal-scene style reference.
-7. Continue with `Bild_02` using the text-free style reference.
-
-The final production set must contain exactly ONE `Bild_01.png`.
-Cover candidate names such as A/B/C are internal metadata only and must never be visible inside the artwork.
-
-## TEXT POLICY
-
-Visible text must be German and must obey the whitelist above.
-
-Cover:
-- exact German hook/title from the project prompt
-- no extra anatomy labels
-- no asset number / scene number / file name
-
-Normal explainer scenes:
-- 0–2 short labels preferred
-- max 3 only when genuinely necessary
-- no paragraphs
-- no English visible text
-- no invented wording
-- no asset number / scene number / file name
-- no scene heading or prompt heading unless explicitly whitelisted
-- NEVER repeat the cover hook
-
-If Flow misspells a required German word, regenerate. Remotion is the exact fallback after repeated text failure.
+3. User selects one.
+4. Chosen candidate becomes `Bild_01.png`.
+5. Delete/discard all unselected candidates.
+6. Do not use the selected text-bearing cover as normal-scene style reference.
+7. Continue with `Bild_02` using the text-free reference.
 
 ## SCENE INTERPRETATION
 
 For every explainer image identify:
 1. ONE dominant teaching idea
-2. optional supporting detail, only if explicitly useful
+2. optional supporting detail, only if genuinely useful
 3. main subject
 4. start point
 5. end point
-6. movement direction
+6. movement/change direction
 7. minimal supporting objects
-8. semantic colors
-9. ALLOWED_VISIBLE_TEXT whitelist
-10. composition novelty versus the previous 1–2 scenes
+8. ALLOWED_VISIBLE_TEXT
+9. composition novelty versus previous AND next scene
+10. at least two dimensions that differ from the adjacent scene
 11. forbidden elements
 
-The scene should still communicate the process if labels are temporarily hidden.
-
-## IMAGE_01
-
-Generate only `Bild_01` after a text-free style reference exists or has been created.
-For Bild_01:
-- create up to 3 variants
-- use the same 2.5D / soft-3D explainer language
-- cover may be bolder and more contrast-rich than normal scenes
-- one clear hero composition
-- exact German title only
-- no anatomy labels
-- no visible asset/scene numbering
-- no human presenter
-- no medical realism
-- no clutter
-- request exactly one user selection
-- after selection, delete/discard all unselected variants
+The scene should still communicate the mechanism if labels are temporarily hidden.
 
 ## FOLLOW-UP IMAGES
 
 After approval and cleanup of Bild_01:
 - attach the text-free `STYLE_REFERENCE.png` or `EPISODE_STYLE_REFERENCE.png`
-- DO NOT attach the text-bearing cover as style reference
+- DO NOT attach the cover
 - generate each image separately
 - exactly one retained output per scene
 - preserve semantic colors and simplification level
 - dominant teaching idea must be obvious
-- supporting detail only when planned
-- vary composition/scale when nearby scenes would otherwise look repetitive
-- do not ask for block-by-block approval
+- supporting detail only when useful
+- vary composition, scale, direction and context when nearby scenes would otherwise look repetitive
+- prefer process images over repeated cutaway portraits
 
 ## QA
 
 Reject and regenerate if any of these occur:
-- cover hook/title appears after Bild_01
-- ANY visible word is outside the scene's visible-text whitelist
-- asset ID / image number / scene number / scene heading appears visibly
-- duplicate retained output exists for a normal scene
+- cover hook appears after Bild_01
+- ANY visible word is outside the whitelist
+- asset ID / image number / scene number / prompt heading appears visibly
+- duplicate retained output exists
 - image is visually too similar to a recent scene without a new teaching purpose
+- fewer than two meaningful visual differences from an adjacent scene when compositions are otherwise similar
+- third isolated object portrait in a row
 - wrong biological direction or relationship
 - scene does not match the voice-over
 - dominant subject is unclear
-- several teaching ideas compete in one frame
-- important mechanism frame is too empty to explain the spoken relation
+- important mechanism frame is too empty
 - photorealistic or medical drift
 - unnecessary tissue detail
 - style continuity breaks
-- required semantic color changes without reason
 - unwanted face or mascot appears
-- German hook or required labels are missing / misspelled
+- required German text is missing / misspelled
 - English or gibberish text appears
 - severe AI artifact
 
-Accept only when overall quality, scientific accuracy, style continuity, immediate clarity, composition, visual novelty and information value are each at least 8/10.
+Accept only when scientific accuracy, voiceover match, immediate clarity, style continuity, composition, visual novelty, information value and overall quality are each at least 8/10.
 
 ## OUTPUT / ASSET HYGIENE
 
