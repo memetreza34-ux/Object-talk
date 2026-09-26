@@ -6,8 +6,9 @@ Usage:
   python tools/validate_planning_v2.py youtube-videos/MEIN-VIDEO --phase2
 
 Phase 2 fails closed: accepted review JSON is not enough if the corresponding
-final image asset is missing, visible text was not whitelist-checked, internal
-asset IDs appeared, or multiple retained variants exist for one normal scene.
+final image asset is missing, visible text was not whitelist-checked, the cover
+hook leaked into normal scenes, internal asset IDs appeared, scene novelty is
+weak, or multiple retained variants exist for one normal scene.
 """
 
 from __future__ import annotations
@@ -15,6 +16,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import unicodedata
 from pathlib import Path
 
 IMAGE_ID_RE = re.compile(r"^Bild_\d{2,}$")
@@ -47,6 +49,11 @@ def has_placeholder(value: object) -> bool:
     if isinstance(value, dict):
         return any(has_placeholder(item) for item in value.values())
     return False
+
+
+def normalize_visible_text(value: str) -> str:
+    value = unicodedata.normalize("NFKC", str(value)).casefold().replace("ß", "ss")
+    return " ".join("".join(ch if ch.isalnum() else " " for ch in value).split())
 
 
 def validate_phase1(project: Path) -> set[str]:
@@ -130,7 +137,20 @@ def validate_phase1(project: Path) -> set[str]:
     if not isinstance(images, list):
         fail("label-plan.json: images muss eine Liste sein")
 
+    cover_entry = next(
+        (entry for entry in images if isinstance(entry, dict) and entry.get("image_asset_id") == "Bild_01"),
+        None,
+    )
+    if not isinstance(cover_entry, dict):
+        fail("label-plan.json: Bild_01/Cover-Eintrag fehlt")
+    cover_hook = cover_entry.get("hook_text")
+    if not isinstance(cover_hook, str) or not cover_hook.strip():
+        fail("Bild_01: deutsche Cover-Hook fehlt im label-plan.json")
+    normalized_cover_hook = normalize_visible_text(cover_hook)
+
     planned_ids: set[str] = set()
+    hook_whitelist_occurrences = 0
+
     for entry in images:
         if not isinstance(entry, dict):
             fail("label-plan.json enthaelt einen ungueltigen Eintrag")
@@ -145,14 +165,42 @@ def validate_phase1(project: Path) -> set[str]:
         if not isinstance(labels, list) or len(labels) > 3:
             fail(f"{image_id}: 0 bis 3 kurze deutsche Labels sind erlaubt")
 
+        allowed_visible_text = entry.get("allowed_visible_text")
+        if not isinstance(allowed_visible_text, list):
+            fail(f"{image_id}: allowed_visible_text muss als explizite Whitelist vorhanden sein")
+        if any(not isinstance(text, str) or not text.strip() for text in allowed_visible_text):
+            fail(f"{image_id}: allowed_visible_text enthaelt leeren/ungueltigen Text")
+
+        normalized_allowed = [normalize_visible_text(text) for text in allowed_visible_text]
+        hook_whitelist_occurrences += sum(text == normalized_cover_hook for text in normalized_allowed)
+
         if image_id == "Bild_01":
-            hook = entry.get("hook_text")
-            if not isinstance(hook, str) or not hook.strip():
-                fail("Bild_01: deutsche Cover-Hook fehlt im label-plan.json")
             if labels:
                 fail("Bild_01: Cover darf keine zusaetzlichen Anatomie-Labels enthalten")
-        elif len(labels) > 2:
-            print(f"WARNUNG: {image_id} nutzt 3 Labels; 0–2 sind bevorzugt.")
+            if normalized_allowed != [normalized_cover_hook]:
+                fail("Bild_01: Whitelist muss exakt nur die Cover-Hook enthalten")
+        else:
+            if "hook_text" in entry:
+                fail(f"{image_id}: normale Szene darf kein hook_text-Feld besitzen")
+            if normalized_cover_hook in normalized_allowed:
+                fail(f"{image_id}: Cover-Hook darf nach Bild_01 niemals in der Text-Whitelist stehen")
+            if any(
+                normalized_cover_hook and (
+                    text.startswith(normalized_cover_hook)
+                    or normalized_cover_hook.startswith(text)
+                )
+                and len(text.split()) >= 3
+                for text in normalized_allowed
+            ):
+                fail(f"{image_id}: normale Szene enthaelt eine nahezu identische Cover-Hook")
+            if len(labels) > 2:
+                print(f"WARNUNG: {image_id} nutzt 3 Labels; 0–2 sind bevorzugt.")
+
+        label_texts = [label.get("text") for label in labels if isinstance(label, dict)]
+        if sorted(normalize_visible_text(text) for text in label_texts if isinstance(text, str)) != sorted(
+            normalize_visible_text(text) for text in allowed_visible_text
+        ) and image_id != "Bild_01":
+            fail(f"{image_id}: allowed_visible_text muss exakt den geplanten Labels entsprechen")
 
         for label in labels:
             if not isinstance(label, dict):
@@ -165,6 +213,12 @@ def validate_phase1(project: Path) -> set[str]:
             if not isinstance(text, str) or not text.strip():
                 fail(f"{image_id}: Labeltext fehlt")
 
+    if hook_whitelist_occurrences != 1:
+        fail(
+            "Cover-Hook muss im gesamten label-plan exakt einmal als erlaubter sichtbarer Text vorkommen "
+            f"(gefunden: {hook_whitelist_occurrences})"
+        )
+
     if planned_ids != scene_image_ids:
         missing_labels = scene_image_ids - planned_ids
         extra_labels = planned_ids - scene_image_ids
@@ -176,7 +230,7 @@ def validate_phase1(project: Path) -> set[str]:
     print(f"V2-PHASE-1-PASS: {project}")
     print(f"  Satz-/Visual-Items: {len(items)}")
     print(f"  geplante Szenen/Bilder: {len(scene_image_ids)}")
-    print("  sichtbarer Text ist whitelist-basiert; normale Bilder 0–2 Labels bevorzugt")
+    print("  Cover-Hook ist exklusiv auf Bild_01; normale Bilder nutzen eine strikte Text-Whitelist")
     return scene_image_ids
 
 
@@ -191,8 +245,16 @@ def validate_reference_policy(project: Path) -> None:
 
     if flow.get("textual_reference_mentions_do_not_count_as_attachment") is not True:
         fail("config/channel.json muss textliche Referenz-Erwaehnungen als unzureichend markieren")
-    if flow.get("attach_bild_01_on_every_followup") is not True:
-        fail("config/channel.json muss Bild_01 als echte Referenz fuer Folgebilder verlangen")
+    if flow.get("attach_bild_01_on_every_followup") is not False:
+        fail("config/channel.json muss das texttragende Bild_01 als Folge-Szenenreferenz deaktivieren")
+    if flow.get("never_use_text_bearing_cover_as_followup_reference") is not True:
+        fail("config/channel.json muss texttragende Cover als Follow-up-Referenz verbieten")
+    if flow.get("require_text_free_reference_for_followups") is not True:
+        fail("config/channel.json muss eine textfreie Referenz fuer Follow-up-Szenen verlangen")
+    if flow.get("cover_hook_unique_to_bild_01") is not True:
+        fail("config/channel.json muss die Cover-Hook exklusiv auf Bild_01 beschraenken")
+    if flow.get("cover_hook_forbidden_after_bild_01") is not True:
+        fail("config/channel.json muss Cover-Hook nach Bild_01 verbieten")
     if flow.get("visible_text_in_generated_images") is not True:
         fail("sichtbarer deutscher Text muss fuer Flow-Bilder aktiviert sein")
     if flow.get("cover_hook_generated_by_flow") is not True:
@@ -201,6 +263,8 @@ def validate_reference_policy(project: Path) -> None:
         fail("wichtige deutsche Labels muessen standardmaessig direkt in Flow erzeugt werden")
     if labels.get("final_video_must_contain_required_labels") is not True:
         fail("finales Video muss alle geplanten deutschen Labels enthalten")
+    if labels.get("cover_hook_must_never_repeat_as_normal_scene_text") is not True:
+        fail("Label-Konfiguration muss Cover-Hook-Wiederholung in Normalbildern verbieten")
 
     style_rel = visual.get("style_reference")
     if visual.get("clean_style_reference_asset_present") is True:
@@ -238,6 +302,8 @@ def validate_phase2(project: Path, expected_image_ids: set[str]) -> None:
         "immediate_clarity",
         "style_continuity",
         "composition",
+        "visual_novelty",
+        "information_value",
         "label_accuracy",
         "overall_score",
     )
@@ -261,10 +327,14 @@ def validate_phase2(project: Path, expected_image_ids: set[str]) -> None:
             fail(f"{image_id}: AI-Artefakt-Check nicht bestanden")
         if entry.get("visible_text_whitelist") != "PASS":
             fail(f"{image_id}: sichtbarer Text wurde nicht gegen Whitelist bestanden")
+        if entry.get("cover_hook_isolated") != "PASS":
+            fail(f"{image_id}: Cover-Hook-Isolation nicht bestanden")
         if entry.get("no_visible_asset_id") != "PASS":
             fail(f"{image_id}: Asset-/Bild-/Szenennummer ist sichtbar oder ungeprueft")
         if entry.get("single_retained_asset_for_scene") != "PASS":
             fail(f"{image_id}: mehrere retained Varianten vorhanden oder ungeprueft")
+        if image_id != "Bild_01" and entry.get("text_free_reference_used") != "PASS":
+            fail(f"{image_id}: textfreie Style-Referenz fuer Follow-up-Szene nicht bestaetigt")
 
         for key in numeric_min_8:
             value = entry.get(key)
@@ -300,7 +370,7 @@ def validate_phase2(project: Path, expected_image_ids: set[str]) -> None:
 
     print(f"V2-PHASE-2-REVIEW-PASS: {project}")
     print(f"  akzeptierte eindeutige Bildreviews: {len(reviewed)}")
-    print("  Whitelist, keine sichtbaren Asset-IDs und genau ein retained Asset pro Szene bestaetigt")
+    print("  Hook-Isolation, Text-Whitelist, textfreie Referenzen, visuelle Neuheit und Informationswert bestaetigt")
 
 
 def main() -> None:

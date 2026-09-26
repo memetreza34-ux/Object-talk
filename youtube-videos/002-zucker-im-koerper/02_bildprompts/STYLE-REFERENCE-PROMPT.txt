@@ -1,0 +1,39 @@
+Create ONE text-free 16:9 visual style reference for the German educational series Object-Talk.
+
+This is NOT a video scene, NOT a cover and NOT a thumbnail.
+It is a neutral STYLE REFERENCE only.
+
+Use the locked visual world:
+- modern stylized 2.5D / soft-3D educational illustration
+- about 80% animated illustration / 20% soft-3D depth
+- clearly animated, never photorealistic
+- soft rounded recognizable biology
+- matte/satin materials
+- soft gradients and subtle shadows
+- bright cream / soft-blue background
+- clean depth and friendly modern explainer aesthetic
+
+Show a neutral small sample of the episode's visual language without telling a specific story:
+- one stylized small-intestine form
+- one coral-red blood vessel
+- a few turquoise/cyan glucose particles with warm-gold accents
+- one simplified peach/orange body cell
+- one small blue insulin signal cue
+
+Arrange these elements as a balanced neutral style sample, NOT as a cover composition and NOT as a final educational scene.
+
+CRITICAL:
+- NO visible text
+- NO title
+- NO hook
+- NO labels
+- NO logo
+- NO numbers
+- NO image IDs
+- NO captions
+- NO typography of any kind
+
+Do not make it photorealistic, medical, wet, fleshy, cosmic, sci-fi, childish or toy-like.
+
+The sole purpose of this image is to lock colors, materials, shape language, lighting and illustration depth for all later images.
+Save/retain it outside the numbered final image set as EPISODE_STYLE_REFERENCE.png.

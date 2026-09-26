@@ -22,12 +22,30 @@ BILDREGELN
 - normale Bilder: genau ein retained asset pro Nummer.
 - nur Cover darf vor Auswahl bis zu 3 Varianten haben; danach nur eine behalten.
 - Finale Bild_35 ist eine neue Zusammenfassung, nicht das Cover wiederverwenden.
+- nicht mehr als zwei isolierte Einzelobjektbilder direkt hintereinander; danach bevorzugt Prozess/Weg/Ursache-Wirkung/Kontext.
+- ähnliche Übersichtsbilder müssen einen neuen visuellen Zweck oder deutlich andere Komposition haben.
+
+COVER-HOOK – NUR EINMAL
+Die exakte Hook `So verarbeitet dein Körper Zucker` darf im gesamten Video nur auf Bild_01 sichtbar sein.
+
+Für Bild_02–Bild_35:
+- Hook nie wieder anzeigen
+- weder als große Überschrift noch als Kapiteltrenner
+- keine verkürzte nahezu identische Wiederholung
+- wenn sie in einem Flow-Bild sichtbar ist: Bild ist FAIL und muss ersetzt werden
 
 SICHTBARER TEXT
 - strikt nach `02_bildprompts/label-plan.json`.
 - interne Nummern/Dateinamen/Prompttitel nie sichtbar.
 - Hard FAIL bei `Bild_19`, `BILD_19`, `Scene 19`, Dateiname oder erfundenem Szenentitel.
 - keine Captions oder langen Voiceover-Sätze als Overlay.
+- zusätzliche Kapitelhinweise ausschließlich aus `03_pipeline/overlay-plan.json`.
+- Overlay-Texte nie durch die Cover-Hook ersetzen oder mit ihr ergänzen.
+
+REFERENZREGEL
+- normale Szenen sollen auf einer TEXTFREIEN Style-Referenz basieren.
+- texttragendes Bild_01 nicht als Referenz für Bild_02+ verwenden.
+- Style-Referenz liefert Stil/Farben/Formensprache, nicht Typografie oder Cover-Komposition.
 
 BILDWELT
 - moderne stilisierte 2.5D / Soft-3D Educational Illustration.
@@ -55,8 +73,9 @@ Nahrung → Mund/Magen → Dünndarm → Glukose → Blut/Pfortader → Leber �
 
 INFORMATIONSDICHTE
 - ein dominanter Lehrpunkt pro Frame.
-- bei etwa 20–30% wichtiger Mechanismusbilder darf ein sinnvoller Zusatzdetailpunkt vorkommen.
-- lieber neues Bild als Textwand.
+- bei etwa 20–35% wichtiger Mechanismusbilder darf ein sinnvoller Zusatzdetailpunkt vorkommen.
+- wenn ein Mechanismus zwei echte Schritte enthält, lieber zusätzliches eindeutiges Bild als Textwand.
+- wichtige Story-Beats dürfen die kurzen einzigartigen Kapitel-Overlays aus `overlay-plan.json` nutzen.
 
 VORBEREITUNG
 ```bash
@@ -81,5 +100,12 @@ python tools/qa_final.py \
   --expected-speed 1.10 \
   --max-voice-pause 0.50
 ```
+
+Manuell zusätzlich prüfen:
+- Cover-Hook nur auf Bild_01
+- keine Hook-Wiederholung in normalen Bildern oder Overlays
+- keine drei nahezu identischen Einzelobjekt-Portraits am Stück
+- Bild_30 und Bild_33 klar unterschiedlich komponiert
+- finale Zusammenfassung Bild_35 ist neu und nicht coverartig kopiert
 
 Bei Konflikt oder fehlenden Assets: FAIL statt raten.

@@ -14,6 +14,8 @@ Defense-in-depth rules:
 - no individual image may be held longer than 7 seconds
 - no image file may be reused by another scene
 - overlay scene references must exist
+- cover hook may not be reused as an overlay after Bild_01
+- exact overlay headings/keywords may not repeat across scenes
 """
 
 from __future__ import annotations
@@ -21,12 +23,14 @@ from __future__ import annotations
 import argparse
 import json
 import shutil
+import unicodedata
 from pathlib import Path
 
 FPS = 30
 WIDTH = 1920
 HEIGHT = 1080
 MAX_SCENE_SECONDS = 7.0
+MAX_OVERLAY_WORDS = 5
 ALLOWED_MOTIONS = {
     "static",
     "slow-push-in",
@@ -39,11 +43,35 @@ ALLOWED_OVERLAY_POSITIONS = {"top-left", "top-center", "bottom-left", "center"}
 ALLOWED_OVERLAY_ANIMATIONS = {"fade-slide", "pop", "underline"}
 
 
+def normalize_visible_text(value: str) -> str:
+    value = unicodedata.normalize("NFKC", str(value)).casefold().replace("ß", "ss")
+    return " ".join("".join(ch if ch.isalnum() else " " for ch in value).split())
+
+
+def load_cover_hook(project_dir: Path) -> str:
+    label_path = project_dir / "02_bildprompts" / "label-plan.json"
+    if not label_path.is_file():
+        return ""
+    try:
+        payload = json.loads(label_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        raise SystemExit(f"FEHLER: ungueltiges label-plan.json: {exc}")
+
+    for entry in payload.get("images", []):
+        if isinstance(entry, dict) and entry.get("image_asset_id") == "Bild_01":
+            hook = str(entry.get("hook_text", "")).strip()
+            return hook
+    return ""
+
+
 def load_overlay_plan(timeline_path: Path) -> dict[int, list[dict]]:
     project_dir = timeline_path.resolve().parents[2]
     overlay_path = project_dir / "03_pipeline" / "overlay-plan.json"
     if not overlay_path.is_file():
         return {}
+
+    cover_hook = load_cover_hook(project_dir)
+    normalized_cover_hook = normalize_visible_text(cover_hook) if cover_hook else ""
 
     try:
         payload = json.loads(overlay_path.read_text(encoding="utf-8"))
@@ -55,6 +83,8 @@ def load_overlay_plan(timeline_path: Path) -> dict[int, list[dict]]:
         raise SystemExit("FEHLER: overlay-plan.json: scenes muss eine Liste sein.")
 
     result: dict[int, list[dict]] = {}
+    seen_overlay_texts: set[str] = set()
+
     for scene_entry in scene_entries:
         if not isinstance(scene_entry, dict):
             raise SystemExit("FEHLER: overlay-plan.json enthaelt ungueltigen Szeneneintrag.")
@@ -62,6 +92,8 @@ def load_overlay_plan(timeline_path: Path) -> dict[int, list[dict]]:
         overlays = scene_entry.get("overlays", [])
         if scene_number <= 0 or not isinstance(overlays, list):
             raise SystemExit("FEHLER: overlay-plan.json enthaelt ungueltige scene/overlays-Werte.")
+        if scene_number == 1 and overlays:
+            raise SystemExit("FEHLER: Szene 1/Cover darf keinen zusaetzlichen Overlay-Titel erhalten.")
 
         clean: list[dict] = []
         for overlay in overlays:
@@ -83,10 +115,31 @@ def load_overlay_plan(timeline_path: Path) -> dict[int, list[dict]]:
                 raise SystemExit(f"FEHLER: Szene {scene_number}: unbekannte Overlay-Animation {animation!r}.")
             if not text or len(text) > 60:
                 raise SystemExit(f"FEHLER: Szene {scene_number}: Overlay-Text fehlt oder ist zu lang.")
+            if len(text.split()) > MAX_OVERLAY_WORDS:
+                raise SystemExit(
+                    f"FEHLER: Szene {scene_number}: Overlay {text!r} hat mehr als {MAX_OVERLAY_WORDS} Woerter."
+                )
             if not 0 <= start_fraction < 1:
                 raise SystemExit(f"FEHLER: Szene {scene_number}: start_fraction muss zwischen 0 und 1 liegen.")
             if not 0 < duration_fraction <= 1:
                 raise SystemExit(f"FEHLER: Szene {scene_number}: duration_fraction muss >0 und <=1 sein.")
+
+            normalized_text = normalize_visible_text(text)
+            if normalized_cover_hook and (
+                normalized_text == normalized_cover_hook
+                or (len(normalized_text.split()) >= 3 and (
+                    normalized_text.startswith(normalized_cover_hook)
+                    or normalized_cover_hook.startswith(normalized_text)
+                ))
+            ):
+                raise SystemExit(
+                    f"FEHLER: Szene {scene_number}: Overlay wiederholt/naehrt sich der Cover-Hook: {text!r}."
+                )
+            if normalized_text in seen_overlay_texts:
+                raise SystemExit(
+                    f"FEHLER: Overlay-Text {text!r} wird mehrfach verwendet. Kapitelhinweise muessen eindeutig sein."
+                )
+            seen_overlay_texts.add(normalized_text)
 
             clean.append(
                 {

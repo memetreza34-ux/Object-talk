@@ -10,12 +10,30 @@ GLOBAL HARD LOCK
 - Soft rounded recognizable anatomy, matte/satin surfaces, light cream/soft-blue backgrounds, subtle shadows and clean depth.
 - One dominant teaching idea per image.
 - Important mechanism/summary frames may contain ONE additional useful detail if clarity remains high.
+- About 20–35% of key mechanism frames should use one useful supporting detail so the video does not feel visually empty.
+- Do not create more than two isolated single-object portraits in a row; after that prefer a process, route, relationship, cause/effect or context frame.
+- Do not repeat the same generic overview composition later in the video. Repeated concepts must use a different scale, state, direction or teaching purpose.
 - No wet tissue, medical CGI, anatomy software, dark sci-fi, cosmic world, human presenter, torso mannequin, gore or text wall.
 - Visible text must be German and is STRICTLY WHITELISTED below.
 - NEVER render image numbers, scene numbers, filenames, prompt headings or asset IDs. Terms such as Bild_12, BILD 12, IMAGE 12, Scene 12 are metadata only and must never appear inside artwork.
 - Every normal scene has exactly ONE retained final image. If a retry is needed, replace the failed version instead of keeping variants.
 - ONLY Bild_01 may have up to 3 cover variants. After the user chooses one, discard/delete all other cover variants before continuing.
 - Do not reuse the same final artwork for two different image numbers.
+
+CRITICAL COVER-HOOK ISOLATION
+The exact cover title “So verarbeitet dein Körper Zucker” is allowed ONLY on Bild_01.
+For Bild_02 through Bild_35 it is FORBIDDEN visible text.
+Do NOT repeat it as a headline, chapter title, decorative phrase, background typography or shortened near-copy.
+If it appears after Bild_01, reject that image and regenerate it.
+
+REFERENCE RULE — TEXT-FREE
+Use a TEXT-FREE style reference for all generation.
+Priority:
+1. channel STYLE_REFERENCE.png if available
+2. otherwise a text-free EPISODE_STYLE_REFERENCE.png created before the cover
+
+The text-bearing selected cover Bild_01.png must NOT be used as the style reference for Bild_02–Bild_35.
+The reference supplies style, colors, materials and shape language only. Do not copy its typography or composition.
 
 SEMANTIC COLORS
 - glucose: bright turquoise/cyan with a warm-gold core/accent
@@ -28,9 +46,6 @@ SEMANTIC COLORS
 - ATP: warm yellow-gold
 - fat cell: soft apricot/yellow
 
-REFERENCE RULE
-Generate Bild_01 first. After user selection, use the ONE approved Bild_01.png as an actual visual reference/ingredient for every follow-up image. Do not merely mention it in text.
-
 BILD_01 – COVER ONLY
 Create up to 3 clearly different YouTube-cover candidates in the same visual world. Show a simple visual journey from sweet food / glucose toward intestine, blood and one body cell. Strong hero composition, clean thumbnail readability. Visible text ONLY: “So verarbeitet dein Körper Zucker”. No anatomy labels. No asset number.
 
@@ -38,103 +53,103 @@ BILD_02
 Simplified mouth chewing sweet food, mixed with saliva. Visible text ONLY: “Mund”.
 
 BILD_03
-Show starch-rich carbohydrate particles beginning to break into smaller units in the mouth. Visible text ONLY: “Kohlenhydrate”.
+Show starch-rich carbohydrate particles beginning to break into smaller units in the mouth. Make it a process frame, not another mouth portrait. Visible text ONLY: “Kohlenhydrate”.
 
 BILD_04
 Faceless simplified side-profile context with food bolus moving down the esophagus toward the stomach. Visible text ONLY: “Speiseröhre”.
 
 BILD_05
-Large simplified stomach mixing food; show only very little direct sugar absorption. Visible text ONLY: “Magen”.
+Large simplified stomach mixing food; show only very little direct sugar absorption. Do NOT use any title or cover-like layout. Visible text ONLY: “Magen”.
 
 BILD_06
-Small intestine becomes the hero and clear main absorption location. Visible text ONLY: “Dünndarm”.
+Small intestine becomes the hero and clear main absorption location. Change scale and composition from the stomach scene. Visible text ONLY: “Dünndarm”.
 
 BILD_07
-Inside small intestine: enzyme cue breaks larger carbohydrate chains into small sugar units. Visible text ONLY: “Enzyme”, “Zuckerbausteine”.
+Inside small intestine: enzyme cue breaks larger carbohydrate chains into small sugar units. Use a clear before→after relation. Visible text ONLY: “Enzyme”, “Zuckerbausteine”.
 
 BILD_08
-One large clean glucose symbol as hero, simple educational form, not chemistry-heavy. Visible text ONLY: “Glukose”.
+One large clean glucose symbol as hero, simple educational form, not chemistry-heavy. This is intentionally a short identification frame. Visible text ONLY: “Glukose”.
 
 BILD_09
 Macro view of soft stylized intestinal villi emphasizing large surface area. Visible text ONLY: “Darmzotten”.
 
 BILD_10
-Glucose crosses intestinal lining into a coral blood vessel, left-to-right. Visible text ONLY: “Glukose”, “Blut”.
+Glucose crosses intestinal lining into a coral blood vessel, left-to-right. Strong process frame. Visible text ONLY: “Glukose”, “Blut”.
 
 BILD_11
-Intestine connected to liver through portal vein; glucose-rich blood travels to liver. Visible text ONLY: “Pfortader”, “Leber”.
+Intestine connected to liver through portal vein; glucose-rich blood travels to liver. Show route and destination. Visible text ONLY: “Pfortader”, “Leber”.
 
 BILD_12
-Large liver as hero with incoming glucose; subtle split toward immediate use and storage. Visible text ONLY: “Leber”.
+Large liver as hero with incoming glucose; subtle split toward immediate use and storage. Add this second path only as a supporting detail. Visible text ONLY: “Leber”.
 
 BILD_13
-Blood vessel with more glucose particles beside the pancreas. Visible text ONLY: “Bauchspeicheldrüse”, “Glukose”.
+Blood vessel with a visibly increased number of glucose particles beside the pancreas. Make the causal relation clear: higher blood glucose is the trigger the pancreas responds to. Visible text ONLY: “Bauchspeicheldrüse”, “Glukose”.
 
 BILD_14
-Pancreas releases blue insulin signal particles into nearby blood. Visible text ONLY: “Insulin”.
+Pancreas releases blue insulin signal particles into nearby blood. Show response to the previous trigger. Visible text ONLY: “Insulin”.
 
 BILD_15
-One insulin signal particle as hero. Make clear it is a signal and is NOT physically carrying glucose. Visible text ONLY: “Insulin”.
+One insulin signal particle as hero, but include a subtle receptor destination in the background so the frame is informative rather than empty. Make clear insulin is a signal and is NOT physically carrying glucose. Visible text ONLY: “Insulin”.
 
 BILD_16
 Insulin binds to a receptor on a stylized cell membrane. Visible text ONLY: “Insulin”, “Rezeptor”.
 
 BILD_17
-Blood vessel left, muscle cell and secondary fat cell right; more glucose enters after insulin signal. Visible text ONLY: “Glukose”, “Muskelzelle”.
+Blood vessel left, muscle cell and secondary fat cell right; more glucose enters after insulin signal. Main focus = muscle uptake, fat cell only supporting context. Visible text ONLY: “Glukose”, “Muskelzelle”.
 
 BILD_18
-Close membrane view: glucose passes through a transport protein into the cell. Visible text ONLY: “Glukose”, “Transportprotein”.
+Close membrane view: glucose passes through a transport protein into the cell. Different scale from Bild_17. Visible text ONLY: “Glukose”, “Transportprotein”.
 
 BILD_19
-Inside a simplified cell, glucose arrives in the cytoplasm and the energy pathway begins. Visible text ONLY: “Zelle”.
+Inside a simplified cell, glucose arrives in the cytoplasm and the energy pathway begins. No cover title. Visible text ONLY: “Zelle”.
 
 BILD_20
-Simple stepwise breakdown of glucose into smaller intermediate molecules. No dense chemistry formulas. Visible text ONLY: “Glukose”.
+Simple stepwise breakdown of glucose into smaller intermediate molecules. No dense chemistry formulas. Make it visually sequential. Visible text ONLY: “Glukose”.
 
 BILD_21
-Intermediate fuel molecules move toward a mitochondrion. Visible text ONLY: “Mitochondrium”.
+Intermediate fuel molecules move toward a mitochondrion. Show clear route and destination rather than an isolated organelle portrait. Visible text ONLY: “Mitochondrium”.
 
 BILD_22
-Large mitochondrion as hero: oxygen plus fuel enter, warm-gold ATP appears as output. Visible text ONLY: “Mitochondrium”, “ATP”.
+Large mitochondrion as hero: oxygen plus fuel enter, warm-gold ATP appears as output. Use one supporting input/output cue. Visible text ONLY: “Mitochondrium”, “ATP”.
 
 BILD_23
-ATP leaves the mitochondrion toward several simple cell tasks. Visible text ONLY: “ATP”.
+ATP leaves the mitochondrion toward several simple cell tasks. Use a distribution/process composition. Visible text ONLY: “ATP”.
 
 BILD_24
-Simplified muscle cell contraction supported by ATP. Visible text ONLY: “Muskelzelle”, “ATP”.
+Simplified muscle cell contraction supported by ATP. Make muscle contraction the visible result; do NOT use a cover-like headline or cover composition. Visible text ONLY: “Muskelzelle”, “ATP”.
 
 BILD_25
-Clear two-path visual: glucose can be used now or sent toward storage. Visible text ONLY: “Glukose”.
+Clear two-path visual: glucose can be used now or sent toward storage. This is a mechanism overview, not a cover. Visible text ONLY: “Glukose”.
 
 BILD_26
-Muscle and liver store part of the glucose as glycogen. Visible text ONLY: “Glykogen”, “Leber”.
+Muscle and liver store part of the glucose as glycogen. Show both destinations in one clear relation. Visible text ONLY: “Glykogen”, “Leber”.
 
 BILD_27
-Close-up of a compact glycogen store made from many linked glucose units. Visible text ONLY: “Glykogen”.
+Close-up of a compact glycogen store made from many linked glucose units. Use a clearly different macro scale from Bild_26. Visible text ONLY: “Glykogen”.
 
 BILD_28
-Stylized liver/muscle storage shown nearly full; extra incoming energy continues onward. Visible text ONLY: “Speicher”.
+Stylized liver/muscle storage shown nearly full; extra incoming energy continues onward. Make the full-storage state obvious. Visible text ONLY: “Speicher”.
 
 BILD_29
-One stylized fat cell stores energy over longer-term surplus. Do NOT imply one snack instantly becomes body fat. Visible text ONLY: “Fettzelle”.
+One stylized fat cell stores energy over longer-term surplus. Add a subtle long-term surplus flow cue, but do NOT imply one snack instantly becomes body fat. Visible text ONLY: “Fettzelle”.
 
 BILD_30
-Between-meal scene with fewer glucose particles in blood and calmer insulin signaling. Visible text ONLY: “Blutzucker”.
+Between-meal scene: show a coral blood vessel with clearly fewer glucose particles than earlier and a downward-state cue. Keep composition focused on the LOW-GLUCOSE STATE. Do NOT reuse the final stable-range composition. Visible text ONLY: “Blutzucker”.
 
 BILD_31
-Pancreas releases soft-violet glucagon signal particles. Visible text ONLY: “Glukagon”.
+Pancreas releases soft-violet glucagon signal particles. Use a different composition from the insulin release scene so the two hormone scenes are not visual duplicates. Visible text ONLY: “Glukagon”.
 
 BILD_32
-Glucagon signal reaches liver; glycogen is broken down and glucose returns to blood. Visible text ONLY: “Glukagon”, “Leber”.
+Glucagon signal reaches liver; glycogen is broken down and glucose returns to blood. Show cause → storage breakdown → release in one readable mechanism frame. Visible text ONLY: “Glukagon”, “Leber”.
 
 BILD_33
-Simple visual of blood glucose returning toward a middle stable range. No medical numbers. Visible text ONLY: “Blutzucker”.
+Show the RESULT after Bild_32: glucose particles in blood have returned toward a balanced middle state. Use a clearly different composition from Bild_30, for example a wider equilibrium view with liver as a small secondary context object. No medical numbers. Visible text ONLY: “Blutzucker”.
 
 BILD_34
-Visual myth correction without a text wall: sugar is not only instantly burned and not instantly converted straight to fat. Visible text: NONE.
+Visual myth correction without a text wall: sugar is not only instantly burned and not instantly converted straight to fat. Use two simple crossed-out misconceptions and one central neutral glucose path. Visible text: NONE.
 
 BILD_35
-Final clean journey map: food → intestine → blood → insulin signal → cell/ATP → glycogen storage → glucagon/liver return. This must be a NEW final summary composition, not the cover reused. Visible text ONLY: “Darm”, “Blut”, “Zelle”.
+Final clean journey map: food → intestine → blood → insulin signal → cell/ATP → glycogen storage → glucagon/liver return. This must be a NEW final summary composition, not the cover reused and not a copy of any earlier overview. Visible text ONLY: “Darm”, “Blut”, “Zelle”.
 
 FINAL ASSET RULE
-Final folder must contain exactly one file for every number Bild_01.png through Bild_35.png. No alternates, no rejected attempts, no v2/final2/copy/_A/_B/_C files. Cover alternatives must be deleted after selection. Any visible internal asset name or prompt heading is an automatic FAIL.
+Final folder must contain exactly one file for every number Bild_01.png through Bild_35.png. No alternates, no rejected attempts, no v2/final2/copy/_A/_B/_C files. Cover alternatives must be deleted after selection. Any visible internal asset name, prompt heading or repeated cover title after Bild_01 is an automatic FAIL.

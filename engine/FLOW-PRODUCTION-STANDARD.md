@@ -2,20 +2,25 @@
 
 Diese Datei definiert die verbindliche Produktionslogik fuer Google Flow.
 
-## 1. Referenz zuerst
+## 1. Referenz zuerst – aber textfrei
 
-Referenzreihenfolge:
-1. `assets/channel/STYLE_REFERENCE.png`
-2. `Bild_01.png`
-3. Objekt-/Character-Referenzen
+Normale Szenen duerfen keine Typografie vom Cover erben.
+
+Referenzreihenfolge fuer `Bild_02` bis `Bild_NN`:
+1. `assets/channel/STYLE_REFERENCE.png` – textfrei
+2. projektspezifisches `EPISODE_STYLE_REFERENCE.png` – textfrei
+3. Objekt-/Character-Referenzen – textfrei, sofern moeglich
 4. konkreter Szenenprompt
 
-Ein Satz wie `Using Bild_01 as reference` ersetzt niemals das echte Anhaengen von `Bild_01.png`.
+`Bild_01.png` ist ein texttragendes Cover und wird NICHT als normale Szenenreferenz angehaengt.
 
-Solange `STYLE_REFERENCE.png` fehlt:
-- nur `Bild_01` darf ohne kanalweite Bildreferenz entstehen
-- Bild_01 wird besonders streng geprueft
-- danach muss das eine ausgewaehlte Bild_01 bei jeder Folgegeneration wirklich angehaengt werden
+Wenn `STYLE_REFERENCE.png` fehlt:
+- vor dem Cover eine separate textfreie `EPISODE_STYLE_REFERENCE.png` erzeugen
+- diese Datei ist nur Produktionsreferenz und keine nummerierte Videoszene
+- Cover und alle normalen Szenen orientieren sich an dieser textfreien Referenz
+
+Eine textliche Erwaehnung einer Referenz ersetzt niemals das echte Attachment.
+Eine Referenz liefert Stil, Farben, Material- und Formensprache – nicht automatisch Text oder Komposition.
 
 ## 2. Dauerhafte Flow-Regeln
 
@@ -48,42 +53,44 @@ Verbindlich:
 - wenige Objekte
 - Klarheit wichtiger als Detailreichtum
 
-Semantische Farben:
-- O2 = Cyan / Tuerkis
-- rote Blutkoerperchen = tiefes warmes Rot
-- Blutgefaesse = Coral / Rot
-- Organe = Peach / Coral
-- Muskelzellen = Orange / Apricot
-- CO2 = weiches Violett
-- ATP = warmes Gelb / Gold
-- Hintergrund = Creme / helles Blau / weiches Beige
+## 4. Visuelle Dichte und Abwechslung
 
-Harte Stilverbote:
-- Photorealismus
-- Medical-CGI / Anatomiesoftware
-- nasses Fleisch / Gewebe
-- Mikroskop-Fotorealismus
-- dunkle violette Sci-Fi-Mikrowelt
-- Weltraum / Galaxy
-- Human-Presenter
-- Torso-Mannequin
-- ueberladene Infografik
-- billiger Toy-Look
-
-## 4. Visuelle Dichte
-
-Der Kanal soll nicht wie eine Diashow wirken.
+Der Kanal soll nicht wie eine Diashow wirken und nicht aus einer Reihe fast identischer Einzelobjekt-Portraits bestehen.
 
 Darum gilt:
-- normale Bildhaltezeit im fertigen Schnitt meistens 3–6 Sekunden
+- normale Bildhaltezeit meistens 3–6 Sekunden
 - harte Obergrenze fuer ein einzelnes Standbild: 7 Sekunden
 - ist ein Sprachabschnitt laenger oder enthaelt zwei echte Lehrbeats, wird er in mehrere NEUE Szenen mit NEUEN Bildnummern geteilt
 - dasselbe Bild darf niemals als Loesung fuer einen langen Abschnitt zweimal verwendet werden
 - lieber 1–3 zusaetzliche eindeutige Bilder als ein Bild 10–20 Sekunden stehen lassen
 
-Etwa 20–30 % der Szenen duerfen etwas informativer sein, wenn der Hauptpunkt klar bleibt. Erlaubt ist genau ein sinnvoller Zusatzdetailpunkt, z. B. ein Zielobjekt, ein Vorher/Nachher-Hinweis oder ein kleines Detailfenster. Keine Dashboard- oder Posteroptik.
+Informationsdichte:
+- ein DOMINANTER Lehrpunkt pro Bild
+- ca. 20–35 % wichtiger Mechanismus-/Zusammenfassungsbilder duerfen EINEN zusaetzlichen sinnvollen Detailpunkt enthalten
+- wenn mehr Information noetig ist: neues Bild statt Textwand oder ueberladener Infografik
 
-## 5. Asset-IDs sind nur Metadaten
+Abwechslung:
+- maximal zwei isolierte Einzelobjekt-Szenen direkt hintereinander
+- danach bevorzugt Prozess-, Ursache/Wirkung-, Weg-, Vergleichs- oder Kontextbild
+- gleiche Uebersichtskomposition spaeter im Video nicht einfach wiederholen
+- wiederkehrendes Thema muss einen neuen visuellen Zweck haben: anderer Massstab, andere Richtung, anderer Zustand oder andere Beziehung
+- `scene_difference` ist eine echte QA-Anforderung, keine Formalitaet
+
+## 5. Cover-Hook ist einmalig
+
+Die exakte Cover-Hook darf ausschliesslich auf `Bild_01` erscheinen.
+
+Fuer `Bild_02` bis `Bild_NN` ist sie ein Hard FAIL – auch dann, wenn Flow sie aus einer Referenz kopiert.
+
+Verboten nach Bild_01:
+- Cover-Hook als erneute Ueberschrift
+- Cover-Hook als Kapiteltrenner
+- Cover-Hook als dekorativer Hintergrundtext
+- gekuerzte oder nahezu identische Wiederholung des Cover-Titels
+
+Kapitelueberschriften duerfen nur erscheinen, wenn sie explizit im Szenen-Whitelist-Plan stehen und klar anders als die Cover-Hook sind.
+
+## 6. Asset-IDs sind nur Metadaten
 
 `Bild_01`, `Bild_19`, `Scene 19`, `IMAGE 19`, Dateinamen und Produktionsnummern duerfen niemals als sichtbarer Bildtext interpretiert werden.
 
@@ -94,7 +101,7 @@ Hard FAIL:
 - `Scene 19` / `IMAGE 19` sichtbar im Bild
 - Dateiname oder sonstige interne Produktionskennung sichtbar im Bild
 
-## 6. Sichtbarer Text ist Whitelist-basiert
+## 7. Sichtbarer Text ist Whitelist-basiert
 
 Vor jeder Generation muss eine `ALLOWED_VISIBLE_TEXT`-Liste feststehen.
 
@@ -102,13 +109,15 @@ Cover:
 - Whitelist = nur die exakte deutsche Hook
 
 Normale Szene:
-- Whitelist = exakt die fuer diese Szene geplanten Labels
-- bei 0 Labels darf kein Wort sichtbar sein
+- Whitelist = exakt die fuer diese Szene geplanten Labels oder explizit geplante einzigartige Kapitelueberschrift
+- bei 0 Eintraegen darf kein Wort sichtbar sein
+- Cover-Hook darf niemals in einer normalen Szenen-Whitelist stehen
 
 Nicht auf der Whitelist = FAIL. Dazu gehoeren insbesondere:
+- Cover-Hook nach Bild_01
 - Bild-/Szenennummern
 - Prompt-Ueberschriften
-- Szenentitel
+- erfundene Szenentitel
 - erfundene Erklaertexte
 - englische Woerter
 - zusaetzliche Anatomie-Labels
@@ -119,28 +128,25 @@ Bei falscher Flow-Schreibweise:
 2. maximal einen weiteren Text-Versuch
 3. danach exakter Remotion-Fallback
 
-## 7. Object-Talk Character Mode
+## 8. Object-Talk Character Mode
 
 Fuer sprechende Lebensmittel / Alltagsobjekte bleibt der hochwertige stilisierte 3D-Character-Look erlaubt.
 Dieser Modus darf nicht automatisch auf Organe, Molekuele und Zellen uebertragen werden.
 
-## 8. Bild_01 – einzige Varianten-Ausnahme
+## 9. Bild_01 – einzige nummerierte Varianten-Ausnahme
 
-`Bild_01` ist Cover, erster Shot, Episode-Master-Frame und Referenz fuer Folgebilder.
+`Bild_01` ist Cover und erster Shot.
 
 Nur fuer Bild_01 sind mehrere kreative Varianten erlaubt.
 
 Ablauf:
-1. Agent Instructions laden
-2. STYLE_REFERENCE anhaengen, falls vorhanden
-3. nur Bild_01 bearbeiten
-4. bis zu 3 klar unterschiedliche Cover-Kandidaten erzeugen
-5. ungeeignete Varianten automatisch verwerfen
-6. verbleibende gute Kandidaten dem Nutzer zeigen
-7. Nutzer waehlt genau einen Cover-Kandidaten
-8. dieser Kandidat wird `Bild_01.png`
-9. alle nicht gewaehlten Cover-Kandidaten werden geloescht/verworfen
-10. erst danach mit Bild_02 fortfahren
+1. textfreie Style-Referenz bereitstellen
+2. bis zu 3 klar unterschiedliche Cover-Kandidaten erzeugen
+3. Nutzer waehlt genau einen Cover-Kandidaten
+4. dieser Kandidat wird `Bild_01.png`
+5. alle nicht gewaehlten Cover-Kandidaten loeschen/verwerfen
+6. Cover NICHT als normale Szenenreferenz verwenden
+7. mit `Bild_02` auf Basis der textfreien Style-Referenz fortfahren
 
 Im finalen Set darf genau EIN `Bild_01.png` existieren.
 
@@ -154,9 +160,11 @@ Bild_01 Hard FAIL:
 - ueberladen
 - Thema nicht sofort erkennbar
 
-## 9. Folgegenerationen – genau ein Output pro Bildnummer
+## 10. Folgegenerationen – genau ein Output pro Bildnummer
 
 Fuer `Bild_02` bis `Bild_NN` gilt strikt:
+- textfreie Style-Referenz wirklich anhaengen
+- texttragendes Cover nicht anhaengen
 - jede Szene einzeln bearbeiten
 - genau EINEN Kandidaten pro Generierungsversuch anfordern
 - keine kreativen Mehrfachvarianten anlegen
@@ -171,12 +179,12 @@ Wenn ein Bild FAIL ist:
 5. alte FAIL-Version verwerfen
 6. nur die akzeptierte Version behalten
 
-Wenn Flow technisch mehrere Outputs fuer einen Request liefert:
+Wenn Flow technisch mehrere Outputs liefert:
 - nur den besten PASS-Kandidaten behalten
 - alle anderen sofort verwerfen
 - erst danach zur naechsten Bildnummer wechseln
 
-## 10. Szenenprompt-Schema
+## 11. Szenenprompt-Schema
 
 ```text
 1. DOMINANT TEACHING IDEA
@@ -185,23 +193,14 @@ Wenn Flow technisch mehrere Outputs fuer einen Request liefert:
 4. START / END
 5. MOVEMENT / CHANGE
 6. SIMPLE SPATIAL LAYOUT
-7. SOFT-3D STYLE CONTINUITY
-8. ALLOWED_VISIBLE_TEXT
-9. FORBIDDEN ELEMENTS
+7. COMPOSITION DIFFERENCE VS PREVIOUS SCENES
+8. SOFT-3D STYLE CONTINUITY
+9. ALLOWED_VISIBLE_TEXT
+10. FORBIDDEN ELEMENTS
+11. COVER_HOOK_FORBIDDEN = true for Bild_02+
 ```
 
 Eine Ueberschrift wie `BILD_19 – HAEMOGLOBIN GIBT O2 AB` ist reine Prompt-Struktur und darf nie gerendert werden.
-
-## 11. Wiederkehrende Elemente Pilot 001
-
-- O2 = Cyan / Tuerkis
-- CO2 = weiches Violett
-- rote Blutkoerperchen = tiefes warmes Rot
-- Haemoglobin = Burgunder
-- Gefaesse = Coral / Rot
-- Organe = Peach / Coral
-- Muskelzellen = Apricot / Orange
-- ATP = Gelb / Gold
 
 ## 12. QA
 
@@ -213,8 +212,11 @@ Pflichtkriterien:
 - immediate_clarity
 - style_continuity
 - composition
+- visual_novelty
+- information_value
 - label_accuracy, wenn Labels vorgesehen
 - visible_text_whitelist = PASS
+- cover_hook_isolated = PASS
 - no_visible_asset_id = PASS
 - single_retained_asset_for_scene = PASS
 - ai_artifact_check
@@ -223,6 +225,8 @@ Pflichtkriterien:
 
 Jeder zentrale Score mindestens 8/10.
 Hard FAIL kann nicht durch Durchschnittsscore ausgeglichen werden.
+
+Fuer `Bild_02+` bedeutet `cover_hook_isolated = PASS`: Die Cover-Hook ist nirgendwo sichtbar.
 
 ## 13. Recovery
 
@@ -250,6 +254,8 @@ Finaler Ordner muss exakt enthalten:
 - keine FAIL-Versionen
 - keine Temp-Dateien
 
+Textfreie Referenzen liegen ausserhalb dieses finalen nummerierten Sets.
+
 Vor ZIP/Export:
 1. erwartete Bildanzahl bestimmen
 2. Dateien zaehlen
@@ -262,6 +268,8 @@ Vor ZIP/Export:
 ## 15. Harte Verbote
 
 Flow darf niemals:
+- Cover-Hook nach Bild_01 wiederholen
+- texttragendes Cover als normale Szenenreferenz verwenden
 - Asset-/Bild-/Szenennummern sichtbar rendern
 - Prompt-Ueberschriften sichtbar rendern
 - Text ausserhalb der Whitelist erzeugen
@@ -270,6 +278,7 @@ Flow darf niemals:
 - unselektierte Covervarianten im finalen Set behalten
 - dasselbe Bild zweimal fuer verschiedene Zeitabschnitte benutzen
 - ein Standbild laenger als 7 Sekunden einplanen
+- drei oder mehr isolierte Einzelobjekt-Portraits am Stueck produzieren, wenn ein Prozess-/Beziehungsbild moeglich ist
 - Explainer-Szenen in Medical-CGI oder Photorealismus driften lassen
 - semantische Farben grundlos aendern
 - Cover-Zusatzlabels erzeugen
