@@ -1,6 +1,6 @@
 # Object-Talk – Project State
 
-Letzte Aktualisierung: 25.09.2026
+Letzte Aktualisierung: 26.09.2026
 
 ## Aktiver Produktionspilot
 
@@ -16,35 +16,88 @@ Cover-Hook:
 
 **„So verarbeitet dein Körper Zucker“**
 
-## Zweck von Pilot 002
+## Review des ersten Pilot-002-Renders
 
-Pilot 002 ist der erste neue Test nach dem echten Render-Review von Pilot 001.
+Der echte Render wurde geprüft. Die Bildwelt selbst ist brauchbar und bleibt bestehen. Die wichtigsten neuen Fehler waren:
+- Cover-Hook tauchte in mehreren normalen Szenen erneut als große Überschrift auf
+- Ursache: texttragendes Cover wurde als Style-Referenz weitergereicht und Flow übernahm Typografie/Komposition
+- einige Bildfolgen wirkten zu ähnlich oder zu leer
+- an wichtigen Mechanismusstellen fehlte gelegentlich ein zusätzlicher visueller Hinweis / Kapitelcue
+- wiederkehrende Zustände wie Blutzucker wurden zu ähnlich komponiert
 
-Er soll prüfen, ob die korrigierte Pipeline allgemein funktioniert:
-- Voice standardmäßig 1.10x
-- lange TTS-Pausen vor Whisper/Timeline komprimieren
-- keine künstliche Streckung auf feste Laufzeit
-- maximal 7 Sekunden pro Standbild
+Diese Fehler sind jetzt als Pipeline-Regeln gehärtet.
+
+## Neue Referenzlogik
+
+Ab sofort:
+1. textfreie kanalweite `STYLE_REFERENCE.png` verwenden, wenn vorhanden
+2. sonst vor dem Cover eine textfreie `EPISODE_STYLE_REFERENCE.png` erzeugen
+3. Cover `Bild_01` darf den Titel tragen
+4. **Bild_01 wird NICHT mehr als Style-Referenz für Bild_02+ verwendet**
+5. normale Szenen erhalten nur die textfreie Style-Referenz
+
+Pilot-002-Prompt dafür:
+
+```text
+youtube-videos/002-zucker-im-koerper/02_bildprompts/STYLE-REFERENCE-PROMPT.txt
+```
+
+Ablage der Episode-Referenz:
+
+```text
+youtube-videos/002-zucker-im-koerper/02_bildprompts/references/EPISODE_STYLE_REFERENCE.png
+```
+
+## Cover-Hook-Hard-Lock
+
+Die Hook **„So verarbeitet dein Körper Zucker“** darf exakt nur auf `Bild_01` erscheinen.
+
+Für Bild_02–Bild_35 ist sie Hard FAIL:
+- keine Wiederholung als Titel
+- keine Kapitelüberschrift mit derselben Hook
+- keine dekorative Hintergrundschrift
+- keine nahezu identische Kurzfassung
+
+`tools/validate_planning_v2.py` prüft jetzt bereits in Phase 1, dass die Cover-Hook nur einmal in der sichtbaren Text-Whitelist vorkommt.
+
+## Visuelle Dichte / Abwechslung
+
+Weiterhin:
 - 35 eindeutige Bilder
-- kein Bildasset zweimal in der Timeline
-- sichtbarer Text strikt Whitelist-basiert
-- keine internen Bild-/Szenennummern im Artwork
-- nur Cover darf vor Auswahl mehrere Varianten haben
-- nach Coverwahl alle ungewählten Varianten löschen/verwerfen
-- normale Szenen jeweils genau ein retained asset
-- Finale ist neue Zusammenfassung statt Cover-Wiederholung
+- kein Bildasset doppelt in der Timeline
+- max. 7 Sekunden pro Bild
+- Voice 1.10x + Pausenkompression
 
-## Pilot 002 – Inhalt
+Neu verschärft:
+- ein dominanter Lehrpunkt pro Bild
+- ca. 20–35 % wichtiger Mechanismusbilder dürfen EINEN sinnvollen Zusatzdetailpunkt haben
+- maximal zwei isolierte Einzelobjekt-Portraits direkt hintereinander
+- danach Prozess / Weg / Ursache-Wirkung / Vergleich / Kontext bevorzugen
+- gleiche Übersichtskomposition später nicht wiederholen
+- wiederkehrende Themen müssen neuen Maßstab, Zustand, Richtung oder visuellen Zweck zeigen
 
-Reise:
+Bild-QA verlangt künftig zusätzlich:
+- `visual_novelty >= 8/10`
+- `information_value >= 8/10`
+- `cover_hook_isolated = PASS`
+- für Bild_02+ `text_free_reference_used = PASS`
 
-`Nahrung → Mund/Magen → Dünndarm → Glukose → Blut → Pfortader/Leber → Bauchspeicheldrüse/Insulin → Zellaufnahme → ATP → Glykogen → längerfristiger Energieüberschuss/Fett → Glukagon → Leber gibt Glukose frei`
+## Zusätzliche Information im Schnitt
 
-Voiceover:
-- 352 Wörter
-- 35 Sprach-/Visual-Beats
-- Zielverarbeitung 1.10x
-- erwartete finale Laufzeit ungefähr 125–145 Sekunden, abhängig vom Roh-TTS und der Pausenkompression
+Pilot 002 besitzt jetzt einen sparsamen Kapitel-Overlay-Plan:
+
+```text
+youtube-videos/002-zucker-im-koerper/03_pipeline/overlay-plan.json
+```
+
+Einmalige Story-Beats:
+- Aufnahme im Dünndarm
+- Jetzt kommt Insulin
+- Glukose wird Energie
+- Nutzen oder speichern
+- Zwischen den Mahlzeiten
+
+Diese Overlays sind absichtlich kurz, wiederholen die Cover-Hook nicht und sollen keine Textwände erzeugen.
 
 ## Aktuelle Bildwelt
 
@@ -56,15 +109,7 @@ Leitidee:
 
 **80 % animierte Illustration + 20 % Soft-3D-Tiefe + 0 % Medical-CGI.**
 
-Eigenschaften:
-- klar animiert / illustriert
-- nicht fotorealistisch
-- hell und freundlich
-- weich gerundete vereinfachte Formen
-- matte bis leicht satinierte Oberflächen
-- wenige klare Objekte
-- ein dominanter Lehrpunkt pro Bild
-- etwa 20–30 % wichtiger Mechanismus-/Summary-Frames dürfen einen zusätzlichen sinnvollen Detailpunkt enthalten
+Die Bildwelt wird nicht erneut grundsätzlich geändert.
 
 ## Semantische Farben Pilot 002
 
@@ -78,70 +123,43 @@ Eigenschaften:
 - Fettzelle = Apricot/Gelb
 - Hintergrund = Creme / helles Blau / weiches Beige
 
-## Cover-Regel
+## Asset-Regeln
 
-`Bild_01` ist Cover, erster Shot und Episode-Master-Frame.
-
-Nur bei Bild_01:
-- bis zu 3 unterschiedliche Covervarianten erlaubt
+Cover:
+- bis zu 3 Varianten vor Auswahl
 - Nutzer wählt genau 1
-- alle anderen Covervarianten danach löschen/verwerfen
-- final existiert genau ein `Bild_01.png`
+- alle anderen Covervarianten danach löschen
+- final genau ein `Bild_01.png`
 
-Cover sichtbarer Text:
-- nur **„So verarbeitet dein Körper Zucker“**
-- keine Anatomie-Labels
-- keine interne Bildnummer
-
-## Normale Bilder
-
-Bild_02–Bild_35:
-- jedes Bild genau einmal final behalten
+Normale Bilder:
+- genau ein retained asset pro Bildnummer
 - FAIL ersetzt dieselbe Nummer
-- keine Alternativversionen sammeln
-- kein Asset doppelt verwenden
-- sichtbarer Text nur aus `02_bildprompts/label-plan.json`
+- keine v2/final2/copy/A/B/C-Versionen
+- keine doppelten Bildassets
+- sichtbarer Text nur nach `label-plan.json`
+- interne Nummern/Dateinamen/Prompttitel nie sichtbar
 
-Hard FAIL sichtbarer Text:
-- `Bild 19`
-- `Bild_19`
-- `BILD_12 – ...`
-- `Scene 19`
-- `IMAGE 19`
-- Dateiname / Asset-ID
-- Promptüberschrift
-- erfundener Szenentitel
-
-## Autoritative Dateien Pilot 002
+## Pilot 002 – wichtige Dateien
 
 ```text
-youtube-videos/002-zucker-im-koerper/01_script/script.txt
-youtube-videos/002-zucker-im-koerper/01_script/VOICEOVER-ZUM-KOPIEREN.txt
-youtube-videos/002-zucker-im-koerper/05_info/mechanism-map.md
-youtube-videos/002-zucker-im-koerper/05_info/phase1-scenes.json
-youtube-videos/002-zucker-im-koerper/02_bildprompts/label-plan.json
+PROJECT_CONTRACT.md
+engine/FLOW-AGENT-INSTRUCTIONS.md
+engine/FLOW-PRODUCTION-STANDARD.md
+config/channel.json
+tools/validate_planning_v2.py
+youtube-videos/002-zucker-im-koerper/02_bildprompts/STYLE-REFERENCE-PROMPT.txt
 youtube-videos/002-zucker-im-koerper/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt
+youtube-videos/002-zucker-im-koerper/02_bildprompts/label-plan.json
+youtube-videos/002-zucker-im-koerper/02_bildprompts/image-review.json
+youtube-videos/002-zucker-im-koerper/03_pipeline/overlay-plan.json
 youtube-videos/002-zucker-im-koerper/03_pipeline/ANTIGRAVITY-PROMPT-ZUM-KOPIEREN.txt
-youtube-videos/002-zucker-im-koerper/PRODUKTIONSPLAN-KURZ.md
 ```
 
-## Produktionsstatus
+## Nächster echter Test
 
-Bereit:
-- Thema
-- Voiceover
-- Mechanism Map
-- 35-Szenen-Plan
-- Cover-Hook
-- Text-Whitelist
-- Google-Flow-Masterprompt
-- 1.10x-/Pausenregeln
-- Antigravity-/Remotion-Anweisung
-
-Nächster Schritt:
-1. Voice aus `VOICEOVER-ZUM-KOPIEREN.txt` erzeugen.
-2. Google Flow mit dem Masterprompt starten.
-3. drei Coverrichtungen erzeugen.
-4. genau ein Cover auswählen und Alternativen entfernen.
-5. Bild_02–Bild_35 jeweils einzeln produzieren.
-6. erst danach Phase 3 ausführen.
+1. textfreie Episode-Style-Referenz erzeugen
+2. Covervarianten daraus erzeugen, genau 1 behalten
+3. Bild_02–Bild_35 nur mit textfreier Referenz erzeugen
+4. bei jedem Bild Hook-Leak + Text-Whitelist + Novelty prüfen
+5. Phase 3 mit dem neuen Overlay-Plan rendern
+6. finalen Render erneut ansehen und vergleichen
