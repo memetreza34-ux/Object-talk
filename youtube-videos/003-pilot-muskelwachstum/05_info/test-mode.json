@@ -1,0 +1,16 @@
+{
+  "status": "TEST",
+  "video_id": "003-pilot-muskelwachstum",
+  "purpose": "Dritter End-to-End-Test nach Hook-Leak- und Visual-Variety-Fixes",
+  "topic_does_not_reserve_longform": true,
+  "target_runtime": "ca. 2:05-2:30 nach 1.10x und Pausenkompression",
+  "scene_count": 35,
+  "special_tests": [
+    "Cover-Hook nur auf Bild_01",
+    "textfreie Episode-Style-Referenz fuer Bild_02+",
+    "keine wiederholten Cover-artigen Zwischenbilder",
+    "hoehere Informationsdichte bei Mechanismusbildern",
+    "maximal zwei Einzelobjekt-Portraits in Folge",
+    "einzigartige Kapiteloverlays"
+  ]
+}
