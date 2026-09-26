@@ -25,7 +25,6 @@ Style:
 ## MODE B — EDUCATIONAL EXPLAINER
 
 Use this for biology, anatomy, organs, cells, molecules and processes.
-This is the DEFAULT mode for Pilot 001.
 
 Style:
 - modern stylized 2.5D / soft-3D educational illustration
@@ -52,7 +51,7 @@ Default:
 - 1–2 main visual objects
 - only the labels needed to understand the frame
 
-For roughly 20–30% of scenes, especially major mechanism or summary beats, one supporting detail is encouraged when it genuinely teaches something useful. Examples:
+For roughly 20–35% of scenes, especially major mechanism, cause/effect or summary beats, one supporting detail is encouraged when it genuinely teaches something useful. Examples:
 - a small secondary destination object
 - a simple before/after relation
 - one additional process cue
@@ -61,6 +60,10 @@ For roughly 20–30% of scenes, especially major mechanism or summary beats, one
 Never turn this into a crowded infographic.
 
 If a spoken section contains two real teaching beats or would need more than about 7 seconds on one image, DO NOT overload one frame. The planning pipeline must create an additional UNIQUE image/scene with a new consecutive image number.
+
+Do not allow long runs of isolated object portraits. After at most two consecutive isolated-object frames, the next frame should normally show a process, relationship, route, cause/effect, comparison or context change.
+
+Do not reuse the same generic overview composition later in the video. A repeated concept must be shown from a clearly different visual purpose or scale.
 
 More useful unique images are preferred over holding one image too long.
 Never solve visual-density problems by duplicating the same image.
@@ -92,23 +95,42 @@ Reject if the image becomes:
 - overloaded with competing teaching goals
 - visually empty when a useful supporting detail was explicitly planned
 - unclear in movement direction
+- a near-duplicate of a recent scene without a new teaching purpose
 
 ## HUMAN RULE
 
 Humans are not the default visual identity.
 If human context is scientifically necessary, keep it highly simplified, faceless and secondary.
 
-## REFERENCE-FIRST RULE
+## REFERENCE-FIRST RULE — TEXT-FREE ONLY FOR NORMAL SCENES
 
-Visual references are authoritative.
-Priority:
-1. attached `STYLE_REFERENCE.png`
-2. attached approved `Bild_01.png`
+Visual references are authoritative, but typography must never leak from a cover into normal scenes.
+
+Priority for NORMAL scenes:
+1. attached text-free `STYLE_REFERENCE.png`
+2. attached text-free `EPISODE_STYLE_REFERENCE.png`
 3. attached recurring-object / character references
 4. current scene prompt
 
-Never claim to use a reference that is not actually attached.
-If `STYLE_REFERENCE.png` does not yet exist, only `Bild_01` may bootstrap from the written channel DNA. After approval, attach `Bild_01.png` to every follow-up generation.
+IMPORTANT:
+- `Bild_01.png` is a text-bearing cover and must NOT be attached as the normal-scene reference.
+- never use a reference image containing the episode hook/title for `Bild_02` onward
+- reference images supply STYLE, COLOR, MATERIAL and SHAPE LANGUAGE only; they do NOT authorize copying text, title placement or cover composition
+- never claim to use a reference that is not actually attached
+
+If the channel `STYLE_REFERENCE.png` does not yet exist, create one text-free `EPISODE_STYLE_REFERENCE.png` before normal-scene production. It is a production reference only, not a numbered final video image.
+
+## CRITICAL: COVER HOOK IS UNIQUE TO BILD_01
+
+The exact episode cover hook/title may appear ONLY on `Bild_01`.
+
+For `Bild_02` onward:
+- the cover hook is explicitly FORBIDDEN visible text
+- do not repeat the cover title as a headline, chapter title, decorative phrase or background typography
+- this remains forbidden even if the title is visible in any accidental attached reference
+- if the cover hook appears anywhere after `Bild_01`, the image is an automatic FAIL
+
+Chapter headings are allowed only if they are explicitly planned in the scene whitelist and are NOT identical or substantially equivalent to the cover hook.
 
 ## CRITICAL: ASSET IDS ARE NEVER VISIBLE TEXT
 
@@ -139,11 +161,13 @@ Cover:
 - allowed text = the exact approved cover hook ONLY
 
 Normal scene:
-- allowed text = exactly the labels explicitly listed for that scene
-- 0 labels means the image must contain NO visible words
+- allowed text = exactly the labels or explicitly planned unique chapter heading listed for that scene
+- 0 labels/headings means the image must contain NO visible words
+- the cover hook is never part of a normal-scene whitelist
 
 Anything else is forbidden, including:
-- scene titles such as `O2 BINDET`
+- the cover hook/title after Bild_01
+- scene titles invented by Flow
 - explanatory headings invented by Flow
 - image numbers
 - file names
@@ -174,17 +198,18 @@ If Flow itself automatically returns multiple outputs from one generation, choos
 
 ## COVER EXCEPTION — MULTIPLE VARIANTS ONLY FOR BILD_01
 
-`Bild_01` is the ONLY image allowed to have multiple creative variants.
+`Bild_01` is the ONLY numbered image allowed to have multiple creative variants.
 
 Workflow:
-1. Generate up to 3 clearly different cover candidates.
-2. Show the candidates to the user for one selection.
-3. After the user chooses one, that chosen candidate becomes exactly `Bild_01.png`.
-4. Delete/discard the two unselected cover candidates.
-5. Do not keep alternate covers in the final image set.
-6. Continue with `Bild_02` only after cover cleanup is complete.
+1. Attach the text-free channel/episode style reference.
+2. Generate up to 3 clearly different cover candidates.
+3. Show the candidates to the user for one selection.
+4. After the user chooses one, that chosen candidate becomes exactly `Bild_01.png`.
+5. Delete/discard all unselected cover candidates.
+6. Do not use the selected text-bearing cover as the normal-scene style reference.
+7. Continue with `Bild_02` using the text-free style reference.
 
-The final production set must therefore contain exactly ONE `Bild_01.png`, not three covers.
+The final production set must contain exactly ONE `Bild_01.png`.
 Cover candidate names such as A/B/C are internal metadata only and must never be visible inside the artwork.
 
 ## TEXT POLICY
@@ -203,23 +228,10 @@ Normal explainer scenes:
 - no English visible text
 - no invented wording
 - no asset number / scene number / file name
-- no scene heading or prompt heading
+- no scene heading or prompt heading unless explicitly whitelisted
+- NEVER repeat the cover hook
 
 If Flow misspells a required German word, regenerate. Remotion is the exact fallback after repeated text failure.
-
-## PILOT 001 OBJECT LOCKS
-
-For the Sauerstoff pilot:
-- O2: small cyan/turquoise particles or paired spheres, faceless
-- CO2: soft-violet three-part form, faceless
-- red blood cells: deep warm-red simplified discs
-- hemoglobin: burgundy simplified structure
-- lungs: peach/coral simplified form
-- vessels: coral-red smooth forms
-- muscle cell: apricot/orange rounded form
-- mitochondria: simplified warm orange/gold organelles
-
-No O2 mascot. No talking blood cell. No smiling organ.
 
 ## SCENE INTERPRETATION
 
@@ -233,13 +245,14 @@ For every explainer image identify:
 7. minimal supporting objects
 8. semantic colors
 9. ALLOWED_VISIBLE_TEXT whitelist
-10. forbidden elements
+10. composition novelty versus the previous 1–2 scenes
+11. forbidden elements
 
 The scene should still communicate the process if labels are temporarily hidden.
 
 ## IMAGE_01
 
-Generate only `Bild_01` first.
+Generate only `Bild_01` after a text-free style reference exists or has been created.
 For Bild_01:
 - create up to 3 variants
 - use the same 2.5D / soft-3D explainer language
@@ -257,25 +270,29 @@ For Bild_01:
 ## FOLLOW-UP IMAGES
 
 After approval and cleanup of Bild_01:
-- attach `STYLE_REFERENCE.png` if available
-- attach the single approved `Bild_01.png` to every follow-up generation
+- attach the text-free `STYLE_REFERENCE.png` or `EPISODE_STYLE_REFERENCE.png`
+- DO NOT attach the text-bearing cover as style reference
 - generate each image separately
 - exactly one retained output per scene
 - preserve semantic colors and simplification level
 - dominant teaching idea must be obvious
 - supporting detail only when planned
+- vary composition/scale when nearby scenes would otherwise look repetitive
 - do not ask for block-by-block approval
 
 ## QA
 
 Reject and regenerate if any of these occur:
+- cover hook/title appears after Bild_01
 - ANY visible word is outside the scene's visible-text whitelist
 - asset ID / image number / scene number / scene heading appears visibly
 - duplicate retained output exists for a normal scene
+- image is visually too similar to a recent scene without a new teaching purpose
 - wrong biological direction or relationship
 - scene does not match the voice-over
 - dominant subject is unclear
 - several teaching ideas compete in one frame
+- important mechanism frame is too empty to explain the spoken relation
 - photorealistic or medical drift
 - unnecessary tissue detail
 - style continuity breaks
@@ -285,7 +302,7 @@ Reject and regenerate if any of these occur:
 - English or gibberish text appears
 - severe AI artifact
 
-Accept only when overall quality, scientific accuracy, style continuity, immediate clarity and composition are each at least 8/10.
+Accept only when overall quality, scientific accuracy, style continuity, immediate clarity, composition, visual novelty and information value are each at least 8/10.
 
 ## OUTPUT / ASSET HYGIENE
 
@@ -299,5 +316,6 @@ Final folder invariant:
 - no rejected attempts
 - no temp variants
 - no `final2`, `new`, `copy`, `v2`, `v3`, `_A`, `_B`, `_C`
+- text-free style references live outside the final numbered image set
 
 Before export/ZIP, count the files and verify that every expected number occurs exactly once.
