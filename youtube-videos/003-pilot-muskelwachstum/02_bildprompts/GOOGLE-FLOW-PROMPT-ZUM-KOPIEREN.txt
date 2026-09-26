@@ -1,0 +1,152 @@
+GOOGLE FLOW – PILOT 003 „WIE WÄCHST EIN MUSKEL?“
+
+Create the complete image set for a German educational explainer video.
+
+GLOBAL HARD LOCK
+- 16:9 landscape.
+- Modern stylized 2.5D / soft-3D educational illustration.
+- Clearly animated and illustrated, not photorealistic.
+- About 80% illustration / 20% soft-3D depth / 0% medical CGI.
+- Soft rounded recognizable anatomy, matte/satin surfaces, bright clean backgrounds, subtle shadows and gentle depth.
+- One dominant teaching idea per image.
+- Around 20–35% of important mechanism/summary frames may include ONE extra useful detail if clarity remains high.
+- Maximum two isolated single-object portraits in a row; then use a process, route, before/after, cause/effect or context composition.
+- No wet tissue, gore, medical CGI, anatomy software, dark sci-fi, cosmic world, human presenter, torso mannequin or crowded infographic.
+- Visible text must be German and STRICTLY WHITELISTED below.
+- NEVER render image numbers, scene numbers, filenames, prompt headings or asset IDs.
+- Every normal scene has exactly ONE retained final image.
+- ONLY Bild_01 may have up to 3 cover variants. After user selection, discard all unselected covers.
+- Do not reuse the same final artwork for two different image numbers.
+
+CRITICAL COVER-HOOK ISOLATION
+The phrase “So wächst dein Muskel” is allowed ONLY on Bild_01.
+For Bild_02–Bild_35 it is FORBIDDEN visible text and must not appear anywhere.
+Do NOT use the text-bearing cover as a follow-up reference.
+
+REFERENCE WORKFLOW
+1. Generate Bild_01 cover candidates.
+2. User selects one; discard all others.
+3. Generate one text-free EPISODE_STYLE_REFERENCE.png using STYLE-REFERENCE-PROMPT.txt.
+4. For Bild_02–Bild_35, attach EPISODE_STYLE_REFERENCE.png as the actual visual reference.
+5. Never attach the text-bearing cover to normal-scene generations.
+
+SEMANTIC COLORS
+- muscle fibers / muscle tissue: warm coral / salmon / red-orange
+- tension / force cues: warm orange-red
+- cell signals: cyan / blue
+- amino acids: turquoise / cyan with small warm-gold accents
+- protein synthesis / building: warm gold
+- myofibrils: deeper red / burgundy with warm highlights
+- recovery: soft blue / teal
+- sleep: calm dark-blue accent but still bright overall
+- soreness warning: muted red/orange
+- progression: warm gold/orange
+- background: cream / soft beige / light blue
+
+BILD_01 – COVER ONLY
+Create up to 3 clearly different YouTube-cover candidates. Show a strong simplified muscle-growth concept: stylized upper-arm muscle or muscle-fiber cross-section with a clear small-to-larger adaptation cue and one training resistance object. Strong thumbnail readability. Visible text ONLY: “So wächst dein Muskel”. No anatomy labels. No asset number.
+
+BILD_02
+Macro-to-micro transition from whole muscle into bundled muscle fibers. Visible text ONLY: “Muskelfaser”.
+
+BILD_03
+Faceless simplified arm working against resistance; highlighted muscle fibers producing force. Visible text ONLY: “Widerstand”.
+
+BILD_04
+Close-up of contractile fibers under mechanical tension with clear opposing force direction. Visible text ONLY: “Spannung”.
+
+BILD_05
+Muscle-fiber membrane sensing load through simple sensor-like structures. Visible text ONLY: “Muskelzelle”.
+
+BILD_06
+Signal path from membrane toward the inside/nucleus of the muscle cell. Visible text ONLY: “Signal”.
+
+BILD_07
+Myth-correction visual: cracked/destroyed muscle idea crossed out; intact adapting fiber shown as the better explanation. Visible text: NONE.
+
+BILD_08
+One muscle fiber with only minor repair marks but dominant signaling/rebuilding cues. Visible text ONLY: “Anpassung”.
+
+BILD_09
+Protein-building activity inside muscle fiber increases after training. Visible text ONLY: “Proteinsynthese”.
+
+BILD_10
+Amino-acid building blocks assemble into new muscle-protein strands. Visible text ONLY: “Aminosäuren”, “Muskelprotein”.
+
+BILD_11
+Protein-rich foods as source of protein building blocks, clean and simple, no brands. Visible text ONLY: “Protein”.
+
+BILD_12
+Compact directional process: intestine → amino acids → blood. Visible text ONLY: “Dünndarm”, “Aminosäuren”.
+
+BILD_13
+Amino acids enter muscle fiber and are incorporated into myofibril structures. Visible text ONLY: “Myofibrillen”.
+
+BILD_14
+Macro close-up of organized myofibrils producing force; clearly different composition from Bild_13. Visible text ONLY: “Myofibrillen”.
+
+BILD_15
+Before/after myofibril bundle after repeated training/recovery cycles: thinner versus thicker. Visible text ONLY: “Anpassung”.
+
+BILD_16
+Clean cross-section comparison showing one muscle fiber increasing diameter. Visible text ONLY: “Querschnitt”.
+
+BILD_17
+Simple educational comparison of smaller and larger fiber to define hypertrophy. Visible text ONLY: “Hypertrophie”.
+
+BILD_18
+Satellite cell next to a muscle fiber becomes active after stronger training signal. Visible text ONLY: “Satellitenzelle”.
+
+BILD_19
+Satellite-cell support/remodeling scene, not another portrait: show support of muscle-fiber adaptation. Visible text ONLY: “Umbau”.
+
+BILD_20
+Three-factor balance scene showing training, nutrition and recovery; training alone visibly incomplete. Visible text ONLY: “Training”, “Erholung”.
+
+BILD_21
+Energy/protein/recovery resources converge on a muscle fiber. Visible text ONLY: “Protein”, “Erholung”.
+
+BILD_22
+Timeline after workout: rebuilding continues during recovery between sessions. Visible text ONLY: “Regeneration”.
+
+BILD_23
+Night/recovery scene with sleep as supporting context and muscle rebuilding as hero. Visible text ONLY: “Schlaf”.
+
+BILD_24
+Cycle visualization: train → recover → adapt → repeat, each cycle slightly increasing fiber size. Visible text ONLY: “Training”, “Erholung”.
+
+BILD_25
+Myth correction: soreness does not equal muscle growth. Visible text ONLY: “Muskelkater”. Do not show the cover hook.
+
+BILD_26
+Unusual-load soreness cue and a separate training-quality cue; make clear soreness is not a reliable quality meter. Visible text ONLY: “Muskelkater”, “Trainingsreiz”.
+
+BILD_27
+Adapted muscle responding more efficiently to a familiar exercise. Visible text ONLY: “Anpassung”.
+
+BILD_28
+Same exact training stimulus shown twice; second exposure creates a smaller challenge signal. Visible text ONLY: “Reiz”.
+
+BILD_29
+Progressive-training staircase integrated into a workout scene. Visible text ONLY: “Progression”.
+
+BILD_30
+Three different progression methods in one clean visual: heavier weight, more repetitions, harder variation. Visible text ONLY: “Gewicht”, “Wiederholungen”.
+
+BILD_31
+Summary chain part 1: resistance → mechanical tension. Visible text ONLY: “Belastung”, “Spannung”.
+
+BILD_32
+Summary chain part 2: cell signal → protein building / remodeling. Visible text ONLY: “Signal”, “Aufbau”.
+
+BILD_33
+Summary chain part 3: amino-acid building materials + recovery time converge on muscle adaptation. Visible text ONLY: “Baustoffe”, “Erholung”.
+
+BILD_34
+One workout produces only a very small visible fiber change. Visible text ONLY: “1 Training”.
+
+BILD_35
+FINAL NEW SUMMARY, not the cover composition. Show several calendar weeks with repeated train/recover cycles leading to a thicker muscle fiber. Visible text ONLY: “Wochen”, “Anpassung”.
+
+FINAL ASSET RULE
+Final folder must contain exactly one file for every number Bild_01.png through Bild_35.png. No alternates, rejected attempts, v2/final2/copy/_A/_B/_C files. Any visible cover hook outside Bild_01, internal asset name, scene number or prompt heading is an automatic FAIL.
