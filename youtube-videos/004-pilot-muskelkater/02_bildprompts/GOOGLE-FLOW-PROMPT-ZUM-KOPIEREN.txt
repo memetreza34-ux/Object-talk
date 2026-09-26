@@ -1,0 +1,153 @@
+GOOGLE FLOW – PILOT 004 „WARUM KOMMT MUSKELKATER SO SPÄT?“
+
+Create the complete image set for a German educational explainer video.
+
+GLOBAL HARD LOCK
+- 16:9 landscape, 1920x1080 target.
+- Modern stylized 2.5D / soft-3D educational illustration.
+- Clearly animated and illustrated, not photorealistic.
+- About 80% illustration / 20% soft-3D depth / 0% medical CGI.
+- Bright clean backgrounds, soft rounded anatomy, matte/satin surfaces, subtle shadows.
+- One dominant teaching idea per image.
+- At least ~60% of normal frames should show a process, relationship, route, cause/effect, comparison, before/after or context change.
+- Adjacent scenes must differ in at least TWO of: composition, scale, subject, direction, state, or visual type.
+- Maximum two isolated object portraits in a row.
+- Around 20–35% of important mechanism frames may include ONE extra useful detail.
+- No Remotion text later: ALL visible text must be generated correctly in Flow now.
+- Visible text must be German and STRICTLY WHITELISTED per scene below.
+- NEVER render image numbers, scene numbers, filenames, prompt headings or asset IDs.
+- Every normal scene has exactly ONE retained final image.
+- ONLY Bild_01 may have up to 3 cover variants. After user selection, discard all unselected covers.
+- Do not reuse the same final artwork for two different image numbers.
+
+CRITICAL COVER-HOOK ISOLATION
+The phrase “Warum kommt Muskelkater so spät?” is allowed ONLY on Bild_01.
+For Bild_02–Bild_35 it is FORBIDDEN visible text and must not appear anywhere.
+Do NOT use the text-bearing cover as a follow-up reference.
+
+REFERENCE WORKFLOW
+1. Generate one text-free EPISODE_STYLE_REFERENCE.png using STYLE-REFERENCE-PROMPT.txt.
+2. Generate Bild_01 cover candidates using that text-free reference.
+3. User selects one cover; discard all others.
+4. For Bild_02–Bild_35, attach ONLY the text-free EPISODE_STYLE_REFERENCE.png as the visual style reference.
+5. Never attach the text-bearing cover to normal-scene generations.
+
+SEMANTIC COLORS
+- muscle / muscle fiber: warm coral / salmon / red-orange
+- structural stress: warm orange-red
+- messenger molecules / nerve signals: cyan / blue
+- nerve endings: soft yellow-gold / warm neutral
+- recovery: teal / soft blue
+- warning: muted orange-red
+- background: cream / beige / light blue
+
+HARD FAILS
+photorealism, medical CGI, wet flesh, gore, torn-apart anatomy, dark sci-fi, cosmic world, torso mannequin, visible human face, human presenter, crowded infographic, English text, gibberish, asset IDs, repeated cover hook, duplicated scene composition.
+
+BILD_01 – COVER ONLY
+Up to 3 clearly different YouTube-cover candidates. Show a faceless person on stairs after training holding a sore thigh, with a small training cue and a subtle delayed-time concept. Strong thumbnail readability. Visible text ONLY: “Warum kommt Muskelkater so spät?”. No anatomy labels.
+
+BILD_02
+Split-concept opener: faded lactate/milk-acid myth cue crossed out on one side; delayed muscle-response timeline on the other. Visible text: NONE.
+
+BILD_03
+Workout now → many hours later → soreness appears later. Visible text ONLY: “verzögert”.
+
+BILD_04
+Familiar easy movement versus new/intense unfamiliar movement; highlight unfamiliar load. Visible text ONLY: “ungewohnte Belastung”.
+
+BILD_05
+Faceless simplified limb muscle produces force while fibers visibly lengthen under load. Visible text ONLY: “Kraft”, “Verlängerung”.
+
+BILD_06
+Compare shortening versus lengthening muscle fibers; highlight the lengthening condition. Visible text ONLY: “exzentrisch”.
+
+BILD_07
+Macro muscle-fiber view with a few tiny localized structural disturbances, subtle and non-gory. Visible text ONLY: “Muskelfaser”.
+
+BILD_08
+Myth correction: exaggerated torn-apart muscle concept crossed out; mostly intact fiber with only small local disturbances beside it. Visible text: NONE.
+
+BILD_09
+Stressed muscle region transitions into repair/inflammatory activity with simple support-cell cues. Visible text ONLY: “Reparatur”.
+
+BILD_10
+Local messenger molecules leave stressed tissue and travel toward a nearby nerve ending. Visible text ONLY: “Botenstoffe”.
+
+BILD_11
+Sensory nerve ending becomes more responsive as signal molecules accumulate. Visible text ONLY: “Schmerzrezeptor”.
+
+BILD_12
+Clean three-part visual: movement, pressure and stretching act on a sensitized muscle area. Visible text ONLY: “Bewegung”, “Dehnung”.
+
+BILD_13
+Horizontal time sequence: training at hour 0, little discomfort early, rising discomfort later. Visible text ONLY: “Stunden später”.
+
+BILD_14
+Simple broad 1–3 day timeline showing soreness often strongest in that window, without claiming an exact universal peak. Visible text ONLY: “1–3 Tage”.
+
+BILD_15
+Recovery timeline after the peak with soreness clearly fading. Visible text ONLY: “Abklingen”.
+
+BILD_16
+Visual comparison: late-rising soreness versus an early lactate-related signal that disappears much sooner. Visible text: NONE.
+
+BILD_17
+Muscle/blood energy scene showing lactate being rapidly cleared/reused after exercise. Visible text ONLY: “Laktat”.
+
+BILD_18
+Text-free myth correction: the old “lactate causes soreness” concept is visually rejected and replaced by the delayed tissue-response chain. Visible text: NONE.
+
+BILD_19
+Two workouts: useful training stimulus with mild soreness versus stronger soreness; clearly show soreness is not a quality meter. Visible text ONLY: “Muskelkater ≠ Qualität”.
+
+BILD_20
+Productive training stimulus with only a small soreness cue the next day. Visible text ONLY: “Trainingsreiz”.
+
+BILD_21
+Large soreness cue on one side and muscle-growth/adaptation cue on the other; make them visibly separate metrics. Visible text ONLY: “Muskelwachstum”.
+
+BILD_22
+Same exercise repeated in two sessions; the second session produces a smaller soreness signal. Visible text ONLY: “gleicher Reiz”.
+
+BILD_23
+Before/after adaptation: first exposure versus later exposure, tissue looks more stable/prepared. Visible text ONLY: “Anpassung”.
+
+BILD_24
+Known movement passing through adapted muscle with reduced disturbance and smaller warning signal. Visible text ONLY: “bekannte Bewegung”.
+
+BILD_25
+A new unfamiliar exercise angle creates a larger challenge signal again. Visible text ONLY: “neuer Reiz”.
+
+BILD_26
+Recovery clock/timeline after training, muscle as hero while time passes through repair phases. Visible text ONLY: “Erholung”.
+
+BILD_27
+Night recovery scene; sleeping faceless silhouette secondary, muscle repair/adaptation primary. Visible text ONLY: “Schlaf”.
+
+BILD_28
+Balanced food, water and recovery context around the recovering muscle. Visible text ONLY: “Ernährung”, “Flüssigkeit”.
+
+BILD_29
+Gentle walking/cycling with stiff muscle feeling slightly looser; temporary comfort only. Visible text ONLY: “leichte Bewegung”.
+
+BILD_30
+Before/after within the same day: light movement reduces stiffness a little, but repair remains active. Visible text: NONE.
+
+BILD_31
+Fresh versus sore muscle performance comparison; sore state produces somewhat less force/output. Visible text ONLY: “Leistung”.
+
+BILD_32
+Warning comparison: typical diffuse soreness versus sharp focal pain/swelling/joint pain as a clearly different pattern. No diagnosis. Visible text ONLY: “Warnzeichen”.
+
+BILD_33
+Wide summary chain: unfamiliar load → small structural disturbance → repair response → sensitized nerve ending → delayed soreness. Visible text ONLY: “Belastung”, “Reparatur”.
+
+BILD_34
+Soreness shown as response to unfamiliar load, with a separate crossed-out growth-meter concept. Visible text ONLY: “kein Wachstums-Messer”.
+
+BILD_35
+Closing callback to stairs two days later; same faceless person understands the delayed timeline. This must be a NEW final composition, not the cover. Visible text ONLY: “2 Tage später”.
+
+FINAL ASSET RULE
+Final folder must contain exactly one file for every number Bild_01.png through Bild_35.png. No alternates, rejected attempts, v2/final2/copy/_A/_B/_C files. Any visible cover hook outside Bild_01, internal asset name, scene number or prompt heading is an automatic FAIL.
