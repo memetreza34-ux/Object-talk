@@ -5,103 +5,52 @@ Letzte Aktualisierung: 26.09.2026
 ## Aktiver Produktionspilot
 
 ```text
-youtube-videos/002-zucker-im-koerper/
+youtube-videos/003-pilot-muskelwachstum/
 ```
 
 Thema:
 
-**Was passiert mit Zucker in deinem Körper?**
+**Wie wächst ein Muskel?**
 
 Cover-Hook:
 
-**„So verarbeitet dein Körper Zucker“**
+**„So wächst dein Muskel“**
 
-## Review des ersten Pilot-002-Renders
+## Zweck von Pilot 003
 
-Der echte Render wurde geprüft. Die Bildwelt selbst ist brauchbar und bleibt bestehen. Die wichtigsten neuen Fehler waren:
-- Cover-Hook tauchte in mehreren normalen Szenen erneut als große Überschrift auf
-- Ursache: texttragendes Cover wurde als Style-Referenz weitergereicht und Flow übernahm Typografie/Komposition
-- einige Bildfolgen wirkten zu ähnlich oder zu leer
-- an wichtigen Mechanismusstellen fehlte gelegentlich ein zusätzlicher visueller Hinweis / Kapitelcue
-- wiederkehrende Zustände wie Blutzucker wurden zu ähnlich komponiert
+Pilot 003 ist der nächste End-to-End-Test nach dem echten Review von Pilot 002.
 
-Diese Fehler sind jetzt als Pipeline-Regeln gehärtet.
+Er prüft insbesondere die neuen Schutzregeln gegen:
+- wiederholte Cover-Hooks in normalen Szenen
+- texttragende Cover als Style-Referenz
+- zu ähnliche Bildfolgen
+- zu leere Mechanismusbilder
+- doppelte/coverartige Übersichtsframes
 
-## Neue Referenzlogik
+## Produktionsziel
 
-Ab sofort:
-1. textfreie kanalweite `STYLE_REFERENCE.png` verwenden, wenn vorhanden
-2. sonst vor dem Cover eine textfreie `EPISODE_STYLE_REFERENCE.png` erzeugen
-3. Cover `Bild_01` darf den Titel tragen
-4. **Bild_01 wird NICHT mehr als Style-Referenz für Bild_02+ verwendet**
-5. normale Szenen erhalten nur die textfreie Style-Referenz
-
-Pilot-002-Prompt dafür:
-
-```text
-youtube-videos/002-zucker-im-koerper/02_bildprompts/STYLE-REFERENCE-PROMPT.txt
-```
-
-Ablage der Episode-Referenz:
-
-```text
-youtube-videos/002-zucker-im-koerper/02_bildprompts/references/EPISODE_STYLE_REFERENCE.png
-```
-
-## Cover-Hook-Hard-Lock
-
-Die Hook **„So verarbeitet dein Körper Zucker“** darf exakt nur auf `Bild_01` erscheinen.
-
-Für Bild_02–Bild_35 ist sie Hard FAIL:
-- keine Wiederholung als Titel
-- keine Kapitelüberschrift mit derselben Hook
-- keine dekorative Hintergrundschrift
-- keine nahezu identische Kurzfassung
-
-`tools/validate_planning_v2.py` prüft jetzt bereits in Phase 1, dass die Cover-Hook nur einmal in der sichtbaren Text-Whitelist vorkommt.
-
-## Visuelle Dichte / Abwechslung
-
-Weiterhin:
 - 35 eindeutige Bilder
-- kein Bildasset doppelt in der Timeline
-- max. 7 Sekunden pro Bild
-- Voice 1.10x + Pausenkompression
+- ca. 329 Wörter Voiceover
+- Voice 1.10x
+- lange TTS-Pausen vor Whisper/Timeline komprimieren
+- erwartete Endlänge ca. 2:05–2:30
+- kein Bild länger als 7 Sekunden
+- kein Bildasset doppelt
 
-Neu verschärft:
-- ein dominanter Lehrpunkt pro Bild
-- ca. 20–35 % wichtiger Mechanismusbilder dürfen EINEN sinnvollen Zusatzdetailpunkt haben
-- maximal zwei isolierte Einzelobjekt-Portraits direkt hintereinander
-- danach Prozess / Weg / Ursache-Wirkung / Vergleich / Kontext bevorzugen
-- gleiche Übersichtskomposition später nicht wiederholen
-- wiederkehrende Themen müssen neuen Maßstab, Zustand, Richtung oder visuellen Zweck zeigen
+## Inhaltliche Reise
 
-Bild-QA verlangt künftig zusätzlich:
-- `visual_novelty >= 8/10`
-- `information_value >= 8/10`
-- `cover_hook_isolated = PASS`
-- für Bild_02+ `text_free_reference_used = PASS`
+`Widerstand → mechanische Spannung → Zell-Signal → Proteinsynthese → Aminosäuren → Myofibrillen → Querschnitt/Hypertrophie → Satellitenzellen → Ernährung/Erholung/Schlaf → Muskelkater-Mythos → Anpassung → Progression → Zusammenfassung`
 
-## Zusätzliche Information im Schnitt
+## Fachliche Leitplanken
 
-Pilot 002 besitzt jetzt einen sparsamen Kapitel-Overlay-Plan:
+- Muskelwachstum NICHT als simples „Mikrorisse entstehen und werden größer repariert“-Modell erklären.
+- Muskelkater ist kein zuverlässiges Maß für Muskelwachstum.
+- Protein ist Baustoff, aber nicht alleinige Ursache von Muskelwachstum.
+- keine individuellen Mengen-, Supplement-, Therapie- oder Trainingsplan-Empfehlungen.
 
-```text
-youtube-videos/002-zucker-im-koerper/03_pipeline/overlay-plan.json
-```
+## Bildwelt
 
-Einmalige Story-Beats:
-- Aufnahme im Dünndarm
-- Jetzt kommt Insulin
-- Glukose wird Energie
-- Nutzen oder speichern
-- Zwischen den Mahlzeiten
-
-Diese Overlays sind absichtlich kurz, wiederholen die Cover-Hook nicht und sollen keine Textwände erzeugen.
-
-## Aktuelle Bildwelt
-
-Verbindliche Richtung:
+Verbindlich bleibt:
 
 **moderne stilisierte 2.5D / Soft-3D Educational Illustration**
 
@@ -109,57 +58,84 @@ Leitidee:
 
 **80 % animierte Illustration + 20 % Soft-3D-Tiefe + 0 % Medical-CGI.**
 
-Die Bildwelt wird nicht erneut grundsätzlich geändert.
+Pilot-003-Farben:
+- Muskel/Muskelfaser = Coral / Salmon / Rot-Orange
+- Spannung = warmes Orange-Rot
+- Zell-Signale = Cyan / Blau
+- Aminosäuren = Türkis / Cyan
+- Proteinaufbau = warmes Gold
+- Myofibrillen = tieferes Rot / Burgunder
+- Erholung = Soft-Blau / Teal
+- Progression = Gold / Orange
+- Hintergrund = Creme / Beige / helles Blau
 
-## Semantische Farben Pilot 002
+## Cover-Hook-Hard-Lock
 
-- Glukose = Türkis/Cyan mit warm-goldenem Akzent
-- Insulin = Blau
-- Glukagon = Violett
-- Blutgefäße = Coral-Rot
-- Organe = Peach/Coral/Orange
-- Glykogen = Amber/Gold
-- ATP = warmes Gelb/Gold
-- Fettzelle = Apricot/Gelb
-- Hintergrund = Creme / helles Blau / weiches Beige
+Die Hook **„So wächst dein Muskel“** darf exakt nur auf `Bild_01` erscheinen.
 
-## Asset-Regeln
+Für Bild_02–Bild_35 ist sie Hard FAIL:
+- kein Titel mit derselben Hook
+- keine Kapitelüberschrift mit derselben Hook
+- keine dekorative Hintergrundschrift
+- keine nahezu identische Kurzfassung
 
-Cover:
-- bis zu 3 Varianten vor Auswahl
-- Nutzer wählt genau 1
-- alle anderen Covervarianten danach löschen
-- final genau ein `Bild_01.png`
+## Referenzlogik
 
-Normale Bilder:
-- genau ein retained asset pro Bildnummer
-- FAIL ersetzt dieselbe Nummer
-- keine v2/final2/copy/A/B/C-Versionen
-- keine doppelten Bildassets
-- sichtbarer Text nur nach `label-plan.json`
-- interne Nummern/Dateinamen/Prompttitel nie sichtbar
+1. Bild_01 als Cover erzeugen, bis zu 3 Varianten.
+2. Nutzer wählt exakt 1 Cover; Rest löschen/verwerfen.
+3. Danach eine **textfreie** `EPISODE_STYLE_REFERENCE.png` mit `STYLE-REFERENCE-PROMPT.txt` erzeugen.
+4. Bild_02–Bild_35 nur mit dieser textfreien Referenz erzeugen.
+5. Das texttragende Cover niemals als Follow-up-Style-Referenz verwenden.
 
-## Pilot 002 – wichtige Dateien
+## Visuelle Dichte / Abwechslung
+
+- ein dominanter Lehrpunkt pro Bild
+- ca. 20–35 % wichtiger Mechanismusbilder dürfen einen sinnvollen Zusatzdetailpunkt enthalten
+- maximal zwei isolierte Einzelobjekt-Portraits direkt hintereinander
+- danach Prozess / Weg / Ursache-Wirkung / Vorher-Nachher / Kontext
+- gleiche Übersichtskomposition nicht wiederholen
+- Nachbarszenen müssen Perspektive, Maßstab oder Informationsfunktion klar ändern
+
+Bild-QA prüft:
+- `visual_novelty >= 8/10`
+- `information_value >= 8/10`
+- `cover_hook_isolated = PASS`
+- für Bild_02+ `text_free_reference_used = PASS`
+- Text-Whitelist / keine Asset-IDs / genau ein retained Asset
+
+## Kapiteloverlays
+
+Sparsam und jeweils nur einmal:
+- Im Muskel beginnt die Anpassung
+- Jetzt beginnt der Aufbau
+- Training allein reicht nicht
+- Muskelkater ist kein Wachstums-Messer
+- Der Reiz muss mitwachsen
+
+Keine dieser Formulierungen darf die Cover-Hook wiederholen.
+
+## Wichtige Dateien
 
 ```text
-PROJECT_CONTRACT.md
-engine/FLOW-AGENT-INSTRUCTIONS.md
-engine/FLOW-PRODUCTION-STANDARD.md
-config/channel.json
-tools/validate_planning_v2.py
-youtube-videos/002-zucker-im-koerper/02_bildprompts/STYLE-REFERENCE-PROMPT.txt
-youtube-videos/002-zucker-im-koerper/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt
-youtube-videos/002-zucker-im-koerper/02_bildprompts/label-plan.json
-youtube-videos/002-zucker-im-koerper/02_bildprompts/image-review.json
-youtube-videos/002-zucker-im-koerper/03_pipeline/overlay-plan.json
-youtube-videos/002-zucker-im-koerper/03_pipeline/ANTIGRAVITY-PROMPT-ZUM-KOPIEREN.txt
+youtube-videos/003-pilot-muskelwachstum/01_script/VOICEOVER-ZUM-KOPIEREN.txt
+youtube-videos/003-pilot-muskelwachstum/05_info/mechanism-map.md
+youtube-videos/003-pilot-muskelwachstum/05_info/phase1-scenes.json
+youtube-videos/003-pilot-muskelwachstum/05_info/sentence-visual-plan.json
+youtube-videos/003-pilot-muskelwachstum/02_bildprompts/STYLE-REFERENCE-PROMPT.txt
+youtube-videos/003-pilot-muskelwachstum/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt
+youtube-videos/003-pilot-muskelwachstum/02_bildprompts/label-plan.json
+youtube-videos/003-pilot-muskelwachstum/02_bildprompts/image-review.json
+youtube-videos/003-pilot-muskelwachstum/03_pipeline/overlay-plan.json
+youtube-videos/003-pilot-muskelwachstum/03_pipeline/ANTIGRAVITY-PROMPT-ZUM-KOPIEREN.txt
 ```
 
-## Nächster echter Test
+## Nächster Testablauf
 
-1. textfreie Episode-Style-Referenz erzeugen
-2. Covervarianten daraus erzeugen, genau 1 behalten
-3. Bild_02–Bild_35 nur mit textfreier Referenz erzeugen
-4. bei jedem Bild Hook-Leak + Text-Whitelist + Novelty prüfen
-5. Phase 3 mit dem neuen Overlay-Plan rendern
-6. finalen Render erneut ansehen und vergleichen
+1. Voice aus `VOICEOVER-ZUM-KOPIEREN.txt` erzeugen.
+2. Bild_01: bis zu 3 Coverrichtungen, genau 1 auswählen.
+3. ungewählte Cover löschen.
+4. textfreie Episode-Style-Referenz erzeugen.
+5. Bild_02–Bild_35 jeweils einzeln produzieren.
+6. jedes Bild gegen Hook-Leak, Whitelist, Novelty und Informationswert prüfen.
+7. Phase 3 mit 1.10x-Audio und Overlay-Plan rendern.
+8. finalen Render erneut vollständig prüfen.
