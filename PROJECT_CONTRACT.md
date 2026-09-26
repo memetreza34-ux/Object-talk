@@ -7,7 +7,7 @@ Diese Datei ist die dauerhafte oberste Produktionsregel des Repositories. Bei Wi
 Object-Talk produziert deutschsprachige YouTube-Erklaervideos zu Ernaehrung, Gesundheit und Biologie.
 
 Harte Grundregeln:
-- normale Kanalvideos mindestens 5:00 Minuten
+- normale Kanalvideos mindestens 5:00 Minuten, sofern der Nutzer nicht bewusst einen kuerzeren Testpilot bestellt
 - Standardziel 5:30–8:00 Minuten
 - 16:9, 1920×1080, 30 fps
 - generierte Standbilder bleiben die visuelle Basis
@@ -49,8 +49,10 @@ Verbindlich:
 
 Informationsdichte:
 - ein DOMINANTER Lehrpunkt pro Bild
-- ca. 20–30 % wichtiger Mechanismus-/Zusammenfassungsbilder duerfen EINEN zusaetzlichen sinnvollen Detailpunkt enthalten
+- ca. **20–35 %** wichtiger Mechanismus-/Zusammenfassungsbilder duerfen EINEN zusaetzlichen sinnvollen Detailpunkt enthalten
 - wenn mehr Information noetig ist: neues Bild statt Textwand oder ueberladener Infografik
+- maximal zwei isolierte Einzelobjekt-Portraits direkt hintereinander; danach bevorzugt ein Prozess-, Weg-, Ursache/Wirkung-, Vergleichs- oder Kontextbild
+- gleiche Uebersichtskomposition spaeter nicht einfach wiederholen; wiederkehrende Konzepte brauchen neuen Massstab, Zustand, Richtung oder visuellen Zweck
 
 ## Zwei verbindliche Bildmodi
 
@@ -93,16 +95,6 @@ Verbindlich:
 - visuelle Klarheit vor Detailgrad
 - vereinfachte, aber erkennbare Anatomie
 
-Semantische Farben:
-- O2 / Sauerstoff = Cyan / Tuerkis
-- rote Blutkoerperchen = tiefes warmes Rot
-- Blutgefaesse = Coral / Rot
-- Organe = Peach / Coral
-- Muskelzellen = Orange / Apricot
-- CO2 = weiches Violett
-- ATP / Energie = warmes Gelb / Gold
-- Hintergrund = Creme / helles Blau / weiches Beige
-
 Harte Stilverbote:
 - Photorealismus
 - Medical-CGI / Anatomiesoftware
@@ -123,15 +115,32 @@ Der Kanal ist kein Presenter-Kanal.
 Menschen nur, wenn fachlich noetig, dann stark vereinfacht, gesichtslos und sekundaer.
 Biologische Strukturen werden nicht automatisch personifiziert.
 
-## Reference-First ist Pflicht
+## Reference-First ist Pflicht – normale Szenen nur mit textfreier Referenz
 
-Referenzreihenfolge:
-1. `assets/channel/STYLE_REFERENCE.png`
-2. `Bild_01.png`
+Fuer normale Szenen gilt diese Referenzreihenfolge:
+1. `assets/channel/STYLE_REFERENCE.png` – textfrei
+2. projektspezifische `EPISODE_STYLE_REFERENCE.png` – textfrei
 3. wiederkehrende Objekt-/Character-Referenzen
 4. konkreter Szenenprompt
 
-Ein Textsatz wie `Using Bild_01 as the exact style reference` zaehlt nicht als echte Referenz. Benoetigte Referenzen muessen wirklich angehaengt werden.
+`Bild_01.png` ist ein Cover mit Hook und darf **nicht** als Stilreferenz fuer `Bild_02+` angehaengt werden. Genau diese Kopplung kann Titel/Hook ungewollt in normale Bilder uebertragen.
+
+Wenn keine kanalweite STYLE_REFERENCE vorhanden ist, wird vor dem Cover eine textfreie Episode-Style-Referenz erzeugt. Sie ist kein finales nummeriertes Szenenbild.
+
+Referenzen liefern Stil, Farben, Material- und Formensprache – nicht Text oder Cover-Komposition.
+
+## Cover-Hook ist exklusiv
+
+Die exakte Cover-Hook darf nur auf `Bild_01` sichtbar sein.
+
+Fuer `Bild_02` bis `Bild_NN` ist die Cover-Hook immer verboten, auch:
+- als erneute grosse Ueberschrift
+- als Kapiteltrenner
+- als dekorativer Hintergrundtext
+- als nahezu identische Kurzfassung
+- wenn Flow sie aus einer Referenz kopiert
+
+Kapitelueberschriften duerfen nur verwendet werden, wenn sie explizit geplant und klar anders als die Cover-Hook sind.
 
 ## Asset-Hygiene / keine doppelten Bilder
 
@@ -155,6 +164,7 @@ Finaler Ordner:
 - keine Luecken
 - keine Duplikate
 - keine Temp-/FAIL-Dateien
+- Style-Referenzen liegen ausserhalb des finalen nummerierten Sets
 
 ## Sichtbarer Text ist Whitelist-basiert
 
@@ -164,11 +174,13 @@ Finaler Ordner:
 - Cover ohne Hook = FAIL
 
 ### Normale Bilder
-- sichtbar sind nur die exakt fuer diese Szene in `label-plan.json` geplanten Labels
-- 0 Labels bedeutet: kein sichtbares Wort
+- sichtbar sind nur die exakt fuer diese Szene in `label-plan.json` geplanten Labels oder explizit geplante einzigartige Kapitelueberschrift
+- 0 Eintraege bedeutet: kein sichtbares Wort
 - 0–2 Labels bevorzugt, maximal 3 bei echtem Bedarf
+- die Cover-Hook darf niemals in der normalen Whitelist stehen
 
 Immer verboten:
+- Cover-Hook nach Bild_01
 - `Bild_19`, `Bild 19`, `IMAGE 19`, `Scene 19`
 - Dateinamen / Asset-IDs
 - Prompt-Ueberschriften wie `BILD_12 – O2 BINDET`
@@ -181,39 +193,33 @@ JEDES sichtbare Wort ausserhalb der Whitelist = Hard FAIL.
 
 Wenn Flow einen geplanten Begriff falsch schreibt, zuerst regenerieren. Nur nach wiederholtem Fehler exakt diesen Begriff in Remotion ersetzen.
 
-## Bild_01 – Cover + erster Shot + Master Style Frame
-
-`Bild_01` ist gleichzeitig Cover, erster Shot, Master Style Frame und Referenz fuer alle weiteren Bilder.
-
-Darum gilt:
-- Thema auf einen Blick verstaendlich
-- gleicher Soft-3D-Explainer-Stil wie normale Szenen
-- darf kraeftiger / kontrastreicher komponiert sein
-- deutsche Hook direkt sichtbar
-- keine Zusatzlabels
-- keine medizinische / kosmische / realistische Optik
-
 ## Google-Flow-Ablauf
 
-### A – zuerst nur Bild_01
-1. Agent Instructions laden
-2. `STYLE_REFERENCE.png` anhaengen, falls vorhanden
-3. ausschliesslich `Bild_01` erzeugen
-4. bis zu 3 Cover-Richtungen erlaubt
-5. Nutzer waehlt eine
-6. unselektierte Covervarianten entfernen
-7. genau ein `Bild_01.png` behalten
+### A – Style-Referenz
+1. `STYLE_REFERENCE.png` anhaengen, falls vorhanden
+2. falls nicht vorhanden: textfreie `EPISODE_STYLE_REFERENCE.png` erzeugen
+3. Referenz auf Stil/Klarheit pruefen
 
-### B – Produktion
+### B – Cover
+1. ausschliesslich `Bild_01` erzeugen
+2. bis zu 3 Cover-Richtungen erlaubt
+3. Nutzer waehlt eine
+4. unselektierte Covervarianten entfernen
+5. genau ein `Bild_01.png` behalten
+6. Cover danach NICHT als normale Szenenreferenz verwenden
+
+### C – Produktion
 Nach Freigabe:
 - jede Szene einzeln erzeugen
-- `Bild_01.png` bei jeder Generation wirklich anhaengen
+- textfreie Style-Referenz wirklich anhaengen
 - genau ein retained asset pro normale Bildnummer
 - semantische Farben stabil halten
 - sichtbaren Text gegen Whitelist pruefen
+- Cover-Hook nach Bild_01 explizit pruefen und verbieten
 - bei langem Speech-Beat neue Bildnummer planen statt Bild zu wiederholen
+- bei zu vielen aehnlichen Einzelobjektbildern neue Prozess-/Beziehungsdarstellung planen
 
-### C – Recovery
+### D – Recovery
 Fehlerhafte Bilder behalten ihre Nummer. Recovery bedeutet Ersetzen, nicht Sammeln.
 
 ## Echte Bild-QA
@@ -226,7 +232,10 @@ Pflicht:
 - immediate_clarity >= 8/10
 - style_continuity >= 8/10
 - composition >= 8/10
+- visual_novelty >= 8/10
+- information_value >= 8/10
 - visible_text_whitelist = PASS
+- cover_hook_isolated = PASS
 - no_visible_asset_id = PASS
 - single_retained_asset_for_scene = PASS
 - ai_artifact_check = PASS
@@ -236,14 +245,15 @@ Pflicht:
 ## Drei Phasen
 
 ### Phase 1 – Creative Director
-Erstellt Recherche, Claim-Check, Script, Szenenplan, Label-Plan, Flow-Prompts und Metadaten. Lange Speech-Beats muessen schon hier in genuegend eindeutige Bilder geteilt werden.
+Erstellt Recherche, Claim-Check, Script, Szenenplan, Label-Plan, Flow-Prompts und Metadaten. Lange oder inhaltlich mehrteilige Speech-Beats muessen schon hier in genuegend eindeutige Bilder geteilt werden. Sequenzen aus drei oder mehr isolierten Einzelobjektbildern sind zu vermeiden.
 
 ### Phase 2 – Nutzer + Voice-KI + Google Flow
 1. rohes Voiceover erzeugen
-2. Bild_01 erzeugen / eine Variante auswaehlen / Alternativen loeschen
-3. restliche Bilder einzeln erzeugen
-4. echte Einzelbild-QA
-5. finale ZIP mit eindeutigen Bildnummern
+2. textfreie Style-Referenz bereitstellen
+3. Bild_01 erzeugen / eine Variante auswaehlen / Alternativen loeschen
+4. restliche Bilder einzeln auf Basis der textfreien Referenz erzeugen
+5. echte Einzelbild-QA inkl. Hook-Leak-, Novelty- und Information-Value-Check
+6. finale ZIP mit eindeutigen Bildnummern
 
 ### Phase 3 – Antigravity + Tools + Remotion
 1. Voice auf 1.10x + Pausenkompression kanonisieren
@@ -252,7 +262,7 @@ Erstellt Recherche, Claim-Check, Script, Szenenplan, Label-Plan, Flow-Prompts un
 4. Timeline aus echten Worttimings erzeugen
 5. FAIL wenn ein Bild >7s stehen muesste
 6. Remotion bauen / rendern
-7. Final-QA inkl. Voice-Speed und Pausen-Audit
+7. Final-QA inkl. Voice-Speed, Pausen-Audit und sichtbarem Hook-Audit
 
 ## Autoritative Reihenfolge
 
@@ -274,9 +284,12 @@ Stoppen bei:
 - einzelnes Standbild >7s
 - dasselbe Bildasset mehrfach in der Timeline
 - fehlenden oder doppelten finalen Bildnummern
+- Cover-Hook sichtbar nach Bild_01
+- texttragendem Cover als Folge-Szenenreferenz
 - sichtbarem Asset-/Szenennamen oder Prompt-Titel
 - sichtbarem Text ausserhalb der Whitelist
 - unselektierten Covervarianten im finalen Set
+- zu vielen nahezu identischen Szenen ohne neuen Lehrzweck
 - falschem Seitenverhaeltnis
 - unklarer Szenenzuordnung
 - wissenschaftlich ungeklaerten Kernbehauptungen
