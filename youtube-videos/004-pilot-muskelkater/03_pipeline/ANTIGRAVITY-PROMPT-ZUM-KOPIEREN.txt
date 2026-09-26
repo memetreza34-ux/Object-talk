@@ -1,0 +1,110 @@
+ANTIGRAVITY – PILOT 004 „WARUM KOMMT MUSKELKATER SO SPÄT?“
+
+Arbeite ausschließlich nach dem Repository.
+
+Projekt:
+`youtube-videos/004-pilot-muskelkater/`
+
+ZIEL
+Erzeuge aus Voice + 35 finalen Google-Flow-Bildern einen schnellen, klaren animierten Erklärfilm. Kein Diashow-Gefühl.
+
+AUDIO ZUERST
+- Roh-TTS niemals direkt rendern.
+- `tools/prepare_audio.py` mit `--speed 1.10` verwenden.
+- lange TTS-Pausen vor Whisper/Timeline komprimieren.
+- `final-voiceover.wav` ist die einzige Timing-Quelle.
+- niemals eine 1.00x-Timeline bauen und später nur Audio beschleunigen.
+
+BILDREGELN
+- exakt 35 eindeutige finale Bilder: Bild_01 bis Bild_35.
+- dasselbe Bild nie zweimal in der Timeline verwenden.
+- kein Bild länger als 7 Sekunden stehen lassen.
+- normale Bilder: genau ein retained asset pro Nummer.
+- nur Cover darf vor Auswahl bis zu 3 Varianten haben; danach nur eine behalten.
+- Bild_35 ist eine neue Abschlusskomposition, nicht das Cover wiederverwenden.
+
+SICHTBARER TEXT – ABSOLUTER HARD LOCK
+- ALLE sichtbaren Texte kommen bereits aus Google Flow.
+- Remotion darf KEINE Überschrift, KEIN Label, KEIN Keyword, KEIN Callout, KEINE Caption und KEINen Text-Fallback erzeugen.
+- `overlay-plan.json` ist DISABLED und muss leer bleiben.
+- wenn Flow-Text falsch ist: Bild in Flow regenerieren/korrigieren, NICHT in Remotion ersetzen.
+- die Cover-Hook „Warum kommt Muskelkater so spät?“ darf im gesamten Video nur auf Bild_01 sichtbar sein.
+- interne Nummern/Dateinamen/Prompttitel nie sichtbar.
+
+BILDWELT
+- moderne stilisierte 2.5D / Soft-3D Educational Illustration.
+- ca. 80% animierte Illustration / 20% Soft-3D-Tiefe.
+- kein Photorealismus / Medical-CGI.
+- hell, freundlich, klare Formen.
+- Bild_02+ basieren auf einer TEXTFREIEN Style-Referenz, niemals auf dem texttragenden Cover.
+
+VISUELLE VIELFALT
+- mindestens ca. 60% der normalen Szenen zeigen Prozess, Beziehung, Weg, Ursache/Wirkung, Vergleich, Vorher/Nachher oder Kontextänderung.
+- maximal zwei isolierte Einzelobjekt-Portraits hintereinander.
+- benachbarte Szenen unterscheiden sich in mindestens zwei visuellen Dimensionen: Komposition, Maßstab, Subjekt, Richtung, Zustand oder Visual-Typ.
+- wichtige Mechanismusbilder dürfen einen sinnvollen Zusatzdetailpunkt enthalten.
+- ähnliche Muskelquerschnitte oder identische Kameraansichten nicht hintereinander verwenden.
+
+STORY-REISE
+Alltags-Hook Treppe → verzögerter Schmerz → ungewohnte Belastung → exzentrische Muskelarbeit → kleine strukturelle Störungen → Reparaturreaktion → Botenstoffe → Schmerzrezeptoren → Zeitverlauf → Laktat-Mythos → Muskelkater ist kein Qualitäts-/Wachstums-Messer → Anpassung bei Wiederholung → Erholung/Schlaf/Ernährung → leichte Bewegung → Warnabgrenzung → Zusammenfassung.
+
+REMOTION
+Remotion macht NUR:
+- Timing
+- Bildwechsel
+- dezente Push/Pull/Pan-Bewegung
+- Audio
+- saubere Schnitte/Überblendungen
+
+Remotion macht NICHT:
+- Text
+- Kapitelüberschriften
+- Labels
+- Untertitel
+- UI-Karten
+- Infografik-Overlays
+
+SCHNITT
+- harte saubere Schnitte Standard.
+- weiche Überblendung nur bei echtem Maßstabs-/Ortswechsel.
+- Push/Pull ca. 2–4%, Pan ca. 20–30 px.
+- keine aggressiven Ken-Burns, kein Shake, Bounce oder Meme-Transition.
+- Bewegungsrichtung unterstützt den erklärten Prozess.
+
+VORBEREITUNG
+```bash
+python -m pip install -r tools/requirements.txt
+python tools/validate_planning_v2.py youtube-videos/004-pilot-muskelkater
+python tools/prepare_phase3.py youtube-videos/004-pilot-muskelkater
+```
+
+RENDER
+```bash
+cd renderer
+npm install
+npm run render -- ../youtube-videos/004-pilot-muskelkater/04_export/fertiges-video/final-video.mp4
+```
+
+FINAL-QA
+```bash
+python tools/qa_final.py \
+  youtube-videos/004-pilot-muskelkater/04_export/fertiges-video/final-video.mp4 \
+  youtube-videos/004-pilot-muskelkater/01_script/audio/final-voiceover.wav \
+  --min-seconds 100 \
+  --expected-speed 1.10 \
+  --max-voice-pause 0.50
+```
+
+Besonders prüfen:
+- starke Frage-Hook direkt am Anfang
+- Cover-Hook ausschließlich auf Bild_01
+- Remotion erzeugt exakt 0 sichtbare Textelemente
+- keine doppelten Bilder
+- keine nahezu identischen Muskel-/Zellbilder hintereinander
+- keine Szene >7s
+- keine sichtbaren Bildnummern
+- Flow-Labels korrekt geschrieben
+- Laktat nicht als Ursache von Muskelkater darstellen
+- Muskelkater nicht als Wachstums- oder Trainingsqualitätsmesser darstellen
+
+Bei Konflikt oder fehlenden Assets: FAIL statt raten.
