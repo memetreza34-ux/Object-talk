@@ -1,131 +1,83 @@
-# Presentation-Overlay-System – Object-Talk
+# Presentation / Remotion System – Object-Talk
 
 ## Ziel
 
-Die Bildwelt bleibt eine hochwertige, stark stilisierte 3D-Animationsfilm-Welt. Das Video soll klar, lebendig und filmisch wirken, ohne wie eine reine Diashow, PowerPoint oder App-Oberfläche auszusehen.
+Remotion ist Editor und Timing-Engine, nicht Text-Designer.
 
-## Grundprinzip
+Die sichtbaren Texte eines Videos kommen aus Google Flow und sind bereits Bestandteil der final akzeptierten Bilder.
 
-- Vollbild-Erklärbild bleibt der Standard.
-- Die Bilder selbst sind deutlich animiert/stilisiert und nicht medizinisch-fotorealistisch.
-- Wichtige sichtbare Strukturen werden in jedem Bild knapp auf Deutsch beschriftet.
-- Zusätzliche Überschriften, Schlüsselwörter, Callouts und Vergleichsmarker dürfen in Remotion sauber animiert werden.
-- Keine Anime-, Comic-, Meme- oder hektische Popup-Sprache.
-- Overlays dürfen niemals wie UI-Karten oder Dashboard-Boxen aussehen.
+## Harte Regel: kein Remotion-Text
 
-## 1. Labels im Bild
+Remotion darf fuer neue Object-Talk-Videos **keinen sichtbaren Text erzeugen**.
 
-Jedes Bild soll die wichtigsten sichtbaren Dinge benennen.
+Verboten:
+- Kapitelueberschriften
+- Keywords
+- Callout-Texte
+- Label-Fallbacks
+- Untertitel / Captions als Standard
+- Cover-Hook
+- nachtraegliche Korrektur von Flow-Schrift
+- ganze Voice-over-Saetze
 
-Richtwert:
+Wenn Flow einen Begriff falsch schreibt, wird das Bild in Flow regeneriert oder dort korrigiert. Ein falsches Bild wird nicht durch Remotion repariert.
 
-- 1–3 kurze deutsche Labels pro Bild
-- eindeutige Zuordnung zum sichtbaren Objekt
-- keine ganzen Erklärungssätze
-- keine englischen Begriffe
+`overlay-plan.json` muss daher fuer neue Projekte leer sein:
 
-Wenn Google Flow die Schrift korrekt erzeugt, darf das Label bereits im Bild sein. Wenn die Schrift falsch oder unlesbar ist, wird derselbe Begriff später in Remotion ergänzt.
+```json
+{
+  "status": "DISABLED",
+  "reason": "All visible text is generated in Google Flow",
+  "scenes": []
+}
+```
 
-## 2. Bild_01 / Cover-Hook
+Ein nicht-leeres Text-Overlay ist ein Hard FAIL.
 
-`Bild_01` ist immer Cover, erster Shot und Master Style Frame.
+## Was Remotion weiterhin darf
 
-Es erhält zusätzlich eine kurze starke deutsche Hook-Zeile zum Thema des Videos/Reels.
+- finales Audio einbinden
+- Szenen nach echter Voice-Timeline schneiden
+- sanfte Push-/Pull-Bewegungen
+- leichte Pans
+- statische Frames
+- harte saubere Schnitte
+- sehr dezente nicht-textliche Uebergaenge
+- Rendering
 
-Regeln:
-
-- ca. 3–7 Wörter
-- höchstens zwei kurze Zeilen
-- groß genug für Cover-Nutzung
-- sofort verständlich
-- keine irreführende Clickbait-Aussage
-- nicht die ganze Voice-over-Zeile abschreiben
-- Cover-Text bekommt eigenen Negativraum und überlappt keine Anatomie
-- kein zweiter Remotion-Hook über Bild_01 legen
-
-## 3. Zusätzliche Overlay-Typen
-
-### A – Kapitel-/Mechanismus-Überschrift
-
-2–5 Wörter, z. B.:
-
-- `Der Dünndarm`
-- `Blutzucker steigt`
-- `Insulin ist ein Signal`
-- `Sauerstoff ins Blut`
-
-### B – Schlüsselwort
-
-1–3 Wörter, passend zum gesprochenen Begriff.
-
-### C – Callout / Pointer
-
-Für Strukturen oder Prozesse, die Flow nicht sauber beschriften konnte.
-
-### D – Vergleichs- oder Prozessmarker
-
-Zum Beispiel:
-
-- `vorher` / `danach`
-- `mehr` / `weniger`
-- `Aufnahme`
-- `Transport`
-- `Speicherung`
-
-## 4. Was nicht erlaubt ist
-
-- komplette Voice-over-Sätze als Dauertext
-- englischer sichtbarer Text
-- große Dashboard-/PowerPoint-Flächen
-- Glas-/UI-Karten als Standardstil
-- dicke schwarze Textboxen über dem Bild
-- Text in jeder Ecke nur damit mehr passiert
-- Anime-/Comic-Schrift
-- Bounce, Shake, Meme-Popups oder aggressive Effekte
-
-## 5. Animationssprache
+## Kamerabewegung auf Standbildern
 
 Bevorzugt:
-
-- Fade-in
-- sanfter Slide-in
-- leichte Scale-in-Bewegung
-- dezente Unterstreichung
-- animierte Pointer-/Callout-Linie
-- kurzer Highlight-Pulse
-
-Text soll möglichst direkt auf dem Bild schweben: helle klare Typografie, dezenter Schatten, kleine Unterstreichung. Keine dominante Kartenfläche hinter dem Text.
-
-## 6. Kamerabewegung auf Standbildern
-
-Die Bewegung soll hochwertig und ruhig wirken, nicht wie ein Standard-Ken-Burns-Effekt.
-
-- Push/Pull nur ca. 3–4 %
-- Pan nur ca. 20–30 px bei 1080p
+- Push/Pull ca. 2–4 %
+- Pan ca. 20–30 px bei 1080p
 - weiche Ease-in/Ease-out-Bewegung
-- Bewegungsrichtung folgt möglichst dem gezeigten Prozess
-- bei wichtigen Labels oder ruhigen Vergleichsbildern lieber `static`
-- nicht jedes Bild automatisch bewegen
+- Bewegungsrichtung folgt dem gezeigten Prozess
+- bei bereits informationsreichen Bildern lieber `static`
 - kein hektischer Zoom
+- kein Shake
+- kein Bounce
+- keine Meme-Transition
 
-## 7. Timing
+## Text-Verantwortung liegt bei Flow
 
-- Kapitelüberschrift: ca. 1,8–3,5 Sekunden
-- Schlüsselwort: ca. 1–2,5 Sekunden
-- Label/Callout: so lange wie für die Orientierung nötig
+Google Flow erzeugt:
+- Cover-Titel
+- kurze deutsche Labels
+- seltene Kapitel-/Vergleichsbegriffe, wenn explizit geplant
 
-Overlay-Timing folgt der echten Audio-Timeline und erscheint nicht deutlich vor dem gesprochenen Begriff.
+Alle Texte sind bereits vor der Generation in `label-plan.json` whitelisted.
 
-## 8. Bild bleibt Hauptdarsteller
+Das Bild wird nur akzeptiert, wenn die sichtbare Schrift korrekt ist.
 
-Das Bild muss den Mechanismus auch ohne große Überschrift erklären. Text hilft nur bei Orientierung und Benennung.
+## Bild bleibt Hauptdarsteller
 
-## 9. Priorität
+Ein Bild muss den Mechanismus auch ohne zusaetzliche Editor-Overlays verstaendlich machen.
 
-1. gute Bildidee
-2. klare biologische Darstellung
-3. wichtige deutsche Labels
-4. ruhige hochwertige Kamerabewegung
-5. zusätzliche Remotion-Overlays nur bei echtem Mehrwert
+Prioritaet:
+1. starke Bildidee
+2. klare Prozessdarstellung
+3. richtige Flow-Beschriftung
+4. sinnvolle Bildabwechslung
+5. ruhige Kamerabewegung
 
-Ein Overlay darf niemals eine schwache Bildidee retten.
+Remotion darf niemals eine schwache Bildidee mit Text retten.
