@@ -1,0 +1,23 @@
+Create ONE text-free 16:9 episode style reference for a German educational explainer about delayed-onset muscle soreness.
+
+STYLE
+- modern stylized 2.5D / soft-3D educational illustration
+- clearly animated and illustrated, not photorealistic
+- about 80% illustration / 20% soft-3D depth / 0% medical CGI
+- warm cream / beige / light-blue background
+- muscle tissue in coral / salmon / red-orange
+- nerve signals and messenger molecules in cyan / blue
+- recovery cues in teal / soft blue
+- warning cues in muted orange-red
+- smooth rounded simplified anatomy, matte/satin surfaces, soft gradients and shadows
+- clean readable spatial relationships
+- friendly and modern, not childish
+
+REFERENCE CONTENT
+Show a harmonious text-free mini-world containing: a simplified muscle fiber, a nearby sensory nerve ending, a few cyan messenger/signal particles, a subtle recovery/time cue, and a small faceless exercise-context silhouette in the distant background. The muscle fiber is the main visual anchor.
+
+IMPORTANT
+This is a STYLE REFERENCE only, not a final scene and not a cover. No title, no labels, no words, no numbers, no asset IDs, no arrows with text, no UI, no infographic cards.
+
+FORBIDDEN
+photorealism, wet flesh, gore, medical CGI, anatomy software, dark sci-fi, cosmic backgrounds, torso mannequin, human presenter, visible face, mascot organs, toy-plastic look.
