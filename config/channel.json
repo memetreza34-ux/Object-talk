@@ -17,6 +17,30 @@
     "Vitamine und Mineralstoffe"
   ],
   "audience": "familienfreundlich, leicht verstaendlich, besonders fuer juengere Zuschauer geeignet, aber nicht babyhaft",
+  "script": {
+    "opening_style": "curiosity-first",
+    "opening_seconds_target": "0-10",
+    "preferred_hook_patterns": [
+      "direct-question",
+      "surprising-statement",
+      "myth-correction",
+      "everyday-mystery",
+      "contrast"
+    ],
+    "preferred_direct_question_pattern": "Hast du dich schon mal gefragt, warum ...?",
+    "require_hook_in_first_sentence": true,
+    "require_surprising_answer_or_contrast_immediately_after_hook": true,
+    "require_clear_viewer_payoff_within_first_15_seconds": true,
+    "avoid_schoolbook_openings": true,
+    "forbidden_opening_patterns": [
+      "In diesem Video ...",
+      "X ist ein komplexer Prozess ...",
+      "Heute erklaeren wir ...",
+      "Definition-first without curiosity"
+    ],
+    "major_section_reengagement": "Each major section should reopen curiosity with a short question, contrast, myth, consequence, or surprising bridge when useful.",
+    "style": "spoken, active, concise, concrete, curiosity-driven, no textbook prose"
+  },
   "visual_identity": {
     "status": "soft_3d_explainer_locked_2026-09-26",
     "specification": "bildwelt/OBJECT-TALK-CHANNEL-DNA.md",
@@ -95,7 +119,9 @@
     "require_text_free_reference_for_followups": true,
     "reference_is_style_only_not_composition_or_text": true,
     "textual_reference_mentions_do_not_count_as_attachment": true,
-    "generate_each_image_individually": true
+    "generate_each_image_individually": true,
+    "scene_difference_minimum_dimensions_changed": 2,
+    "prefer_process_relationship_before_after_context_over_repeated_portraits": true
   },
   "labels": {
     "language": "de",
@@ -106,7 +132,10 @@
     "render_in_flow": true,
     "visible_text_is_whitelist_only": true,
     "cover_hook_must_never_repeat_as_normal_scene_text": true,
-    "remotion_is_fallback_for_failed_ai_text": true,
+    "remotion_text_overlays_allowed": false,
+    "remotion_is_fallback_for_failed_ai_text": false,
+    "flow_text_is_final_visual_text_source": true,
+    "if_flow_text_is_wrong": "regenerate_or_correct_in_flow_never_remotion",
     "final_video_must_contain_required_labels": true,
     "preferred_type_style": "clean-readable-sans-serif",
     "avoid_overload": true
@@ -128,7 +157,24 @@
     "max_consecutive_isolated_object_frames": 2,
     "require_process_or_relationship_frame_after_isolated_run": true,
     "important_mechanism_frames_may_add_one_supporting_detail": true,
-    "avoid_reusing_same_overview_composition": true
+    "avoid_reusing_same_overview_composition": true,
+    "minimum_process_relationship_context_frame_share": 0.6,
+    "adjacent_scene_visual_difference_rule": "change at least two of camera scale, spatial layout, main subject, process direction, background context, or visual type"
+  },
+  "remotion": {
+    "purpose": "timing-motion-audio-transitions-only",
+    "text_generation_allowed": false,
+    "text_overlay_allowed": false,
+    "chapter_heading_overlay_allowed": false,
+    "keyword_overlay_allowed": false,
+    "callout_text_overlay_allowed": false,
+    "allowed_visual_motion": [
+      "static",
+      "slow-push-in",
+      "slow-pull-out",
+      "pan-left",
+      "pan-right"
+    ]
   },
   "topic_memory": "THEMEN-GEHIRN.md"
 }

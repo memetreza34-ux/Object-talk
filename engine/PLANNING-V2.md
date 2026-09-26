@@ -1,14 +1,26 @@
 # Object-Talk – Planning V2
 
-Diese Datei ergänzt die bestehende Longform-Pipeline, ohne Video 001 oder bestehende Projekte rückwirkend zu brechen. Sie gilt verbindlich für **neu angelegte Projekte ab V2**. `PROJECT_CONTRACT.md` bleibt die oberste Regel.
+Diese Datei gilt verbindlich fuer neue Projekte. `PROJECT_CONTRACT.md` bleibt die oberste Regel.
 
 ## Ziel
 
-Recherche, Skript und Bilder werden nicht getrennt geplant. Jeder wichtige Satz muss bereits vor Google Flow eine eindeutige visuelle Funktion, ein Lernziel und eine fachlich passende Bildidee besitzen.
+Recherche, Skript und Bilder werden gemeinsam geplant. Jeder wichtige Speech-Beat braucht bereits vor Google Flow eine eindeutige visuelle Funktion, ein Lernziel und eine fachlich passende Bildidee.
 
-## 1. Mechanism Map
+## 1. Script zuerst richtig aufbauen
 
-Jedes neue Video erhält:
+Vor dem finalen Szenenplan muss das Skript `engine/SCRIPT-STANDARD.md` bestehen.
+
+Pflicht fuer den Einstieg:
+- Satz 1 ist ein starker Hook
+- bevorzugt direkte Frage, ueberraschende Aussage, Mythos, Alltagsraetsel oder Kontrast
+- besonders geeignet: `Hast du dich schon mal gefragt, warum ...?`
+- innerhalb von 1–2 Saetzen folgt eine Wendung / unerwartete Antwort
+- innerhalb der ersten ca. 15 Sekunden ist der Payoff klar
+- keine Schulbuch-Einleitung
+
+## 2. Mechanism Map
+
+Jedes neue Video erhaelt:
 
 ```text
 05_info/mechanism-map.md
@@ -17,29 +29,25 @@ Jedes neue Video erhält:
 Darin wird der zentrale Mechanismus vor dem finalen Skript in 3–12 klaren Schritten beschrieben:
 
 ```text
-Ausgangszustand → Auslöser → Weg/Verarbeitung → Wirkung → Ergebnis
+Ausgangszustand → Ausloeser → Weg/Verarbeitung → Wirkung → Ergebnis
 ```
 
-Für jeden Schritt werden festgehalten:
-
+Fuer jeden Schritt werden festgehalten:
 - fachliche Kernaussage
-- zugehörige Claim-ID(s)
+- Claim-ID(s), falls vorhanden
 - was der Zuschauer sichtbar verstehen soll
-- geeignete Maßstabsebene: Lebensmittel / Mensch / Organ / Gewebe / Blut / Zelle / Organell / Molekül
-- mögliche Fehlinterpretation, die vermieden werden muss
+- Massstabsebene
+- moegliche Fehlinterpretation
 
-Ein Video darf mehrere Untermechanismen besitzen, aber es braucht eine klar erkennbare Hauptkette.
+## 3. Satz-Visual-Plan
 
-## 2. Satz-Visual-Plan
-
-Jedes neue Projekt erhält:
+Jedes neue Projekt erhaelt:
 
 ```text
 05_info/sentence-visual-plan.json
 ```
 
-Jeder gesprochene Satz oder logisch untrennbare Satzblock besitzt mindestens:
-
+Jeder Speech-Beat besitzt mindestens:
 - `id`
 - `voiceover_text`
 - `function`
@@ -54,51 +62,37 @@ Jeder gesprochene Satz oder logisch untrennbare Satzblock besitzt mindestens:
 - `labels`
 - `misconception_to_avoid`
 
-Erlaubte `function`-Werte:
+Der erste Eintrag muss `function: hook` besitzen.
 
-```text
-observation
-trigger
-path
-comparison
-threshold
-wirkung
-result
-```
+## 4. Kein Bild nur als Dekoration
 
-Erlaubte `visual_type`-Werte:
-
-```text
-single-image
-cutaway
-transparent-body
-macro-detail
-comparison
-two-in-one
-three-in-one
-four-in-one
-before-after
-scale-transition-frame
-```
-
-## 3. Kein Bild nur als Dekoration
-
-Vor jedem Bildprompt muss beantwortet sein:
-
-1. Was sagt das Voice-over konkret?
-2. Welches Objekt oder welche Struktur trägt die Aussage?
-3. Was verändert sich sichtbar?
-4. Wo beginnt der Prozess?
-5. Wo endet er?
+Vor jedem Bildprompt beantworten:
+1. Was sagt das Voiceover konkret?
+2. Was muss sichtbar passieren?
+3. Was ist Ursache und was Folge?
+4. Wo beginnt und endet der Prozess?
+5. Welcher Massstab ist am klarsten?
 6. Was darf der Zuschauer nicht falsch verstehen?
 7. Warum ist genau diese Perspektive geeignet?
-8. Wie unterscheidet sich das Bild sichtbar vom vorherigen und nächsten Bild?
+8. Wie unterscheidet sich das Bild sichtbar vom vorherigen UND naechsten Bild?
 
-Ein schönes Themenbild ohne klaren Erklärwert wird nicht produziert.
+Ein schoenes Themenbild ohne klaren Erklaerwert wird nicht produziert.
 
-## 4. Bild-IDs und Szenenkontinuität
+## 5. Visual-Storytelling-Mix
 
-Jedes geplante Bild erhält genau eine stabile ID:
+Der Kanal darf nicht aus aehnlichen Objektportraits bestehen.
+
+Verbindlich:
+- mindestens etwa 60 % der normalen Explainerframes zeigen Prozess, Beziehung, Weg, Ursache/Wirkung, Vergleich, Vorher/Nachher oder Kontext
+- maximal zwei isolierte Einzelobjekt-Portraits hintereinander
+- danach muss ein Prozess-/Beziehungs-/Kontextbild folgen
+- benachbarte Szenen unterscheiden sich in mindestens zwei Dimensionen: Kameramassstab, Layout, Hauptmotiv, Richtung, Kontext oder Visual-Typ
+- gleiche Uebersichtskomposition nicht spaeter erneut verwenden, ausser ein echter Vorher/Nachher-Vergleich verlangt es
+- ca. 20–35 % wichtiger Mechanismusframes duerfen genau einen sinnvollen Zusatzdetailpunkt tragen
+
+## 6. Bild-IDs und Szenenkontinuitaet
+
+Jedes geplante Bild erhaelt genau eine stabile ID:
 
 ```text
 Bild_01
@@ -107,68 +101,114 @@ Bild_03
 ...
 ```
 
-Diese ID bleibt in allen Projektdateien identisch: Satz-Visual-Plan, `phase1-scenes.json`, Flow-Prompt, `scene-map.json`, Label-Plan und Bildreview.
+Die ID bleibt in allen Projektdateien identisch.
 
-Bestehende Nummerierungs- und Recovery-Regeln bleiben unverändert.
+Die ID ist reine Produktionsmetadaten und darf nie sichtbar im Bild erscheinen.
 
-## 5. Label-Plan
+## 7. Label-Plan – Flow ist die einzige Textquelle
 
-Jedes neue Projekt erhält:
+Jedes neue Projekt erhaelt:
 
 ```text
 02_bildprompts/label-plan.json
 ```
 
-Pro Bild werden nur die wirklich nötigen deutschen Labels festgelegt. Richtwert:
+Pro Bild werden nur wirklich noetige deutsche Texte freigegeben.
 
-- 0–3 Labels pro Bild
-- kurze Fachbegriffe statt ganzer Sätze
-- offensichtliche Objekte nicht unnötig beschriften
-- exakte Schreibweise vor der Generierung festlegen
-- bei falscher KI-Schrift muss exakt derselbe Begriff später als Overlay ersetzt werden
+Richtwert:
+- Cover: exakte Hook und sonst nichts
+- normale Bilder: 0–2 kurze Labels bevorzugt
+- maximal 3 nur bei echtem Bedarf
+- keine ganzen Voiceover-Saetze
+- keine internen Nummern / Dateinamen / Prompttitel
+- Cover-Hook nach Bild_01 verboten
 
-Jeder Eintrag enthält:
+Wichtig:
+- Google Flow erzeugt den final sichtbaren Text
+- falsche Flow-Schrift wird in Flow regeneriert oder korrigiert
+- `fallback_overlay` darf fuer neue Projekte nicht auf Remotion verweisen
+- Remotion-Text ist verboten
 
-- `image_asset_id`
-- `mode`: `required` oder `optional`
-- `labels`
-- `target`
-- `reason`
-- `fallback_overlay`
+## 8. Overlay-Plan
 
-## 6. Bildreview
+Neue Projekte verwenden keine Remotion-Textoverlays.
 
-Jedes neue Projekt erhält:
+`03_pipeline/overlay-plan.json` muss so aussehen:
+
+```json
+{
+  "status": "DISABLED",
+  "reason": "All visible text is generated in Google Flow",
+  "scenes": []
+}
+```
+
+Nicht-leere Overlays sind ein Hard FAIL.
+
+## 9. Bildreview
+
+Jedes neue Projekt erhaelt:
 
 ```text
 02_bildprompts/image-review.json
 ```
 
-Jedes akzeptierte Bild wird einzeln geprüft. Mindestziel: **8/10**.
-
-Pflichtkriterien:
-
-- fachlich korrekt oder plausibel vereinfacht
-- exakte Voice-over-Aussage sichtbar
-- Hauptmotiv sofort verständlich
-- Stil-/Episode-Kontinuität vorhanden
-- richtige Maßstabsebene
-- Labels korrekt
-- keine störenden KI-Artefakte
-- keine unnötige Textlast
-- Szene unterscheidet sich sinnvoll von Nachbarbildern
+Pflichtkriterien pro akzeptiertem Bild:
+- scientific_accuracy >= 8/10
+- voiceover_match >= 8/10
+- immediate_clarity >= 8/10
+- style_continuity >= 8/10
+- composition >= 8/10
+- visual_novelty >= 8/10
+- information_value >= 8/10
+- visible_text_whitelist = PASS
+- cover_hook_isolated = PASS
+- no_visible_asset_id = PASS
+- single_retained_asset_for_scene = PASS
+- ai_artifact_check = PASS
+- scene_difference bestanden
+- overall_score >= 8/10
 
 Ein starkes Nachbarbild gleicht kein schwaches Einzelbild aus.
 
-## 7. Character-Regel
+## 10. Reference-First
 
-Der bestehende Contract bleibt unverändert: Object-Talk ist kein dauerhafter Mascot-/Presenter-Kanal.
+Normale Szenen nutzen nur textfreie Stilreferenzen:
+1. `STYLE_REFERENCE.png`
+2. `EPISODE_STYLE_REFERENCE.png`
+3. Objekt-/Character-Referenzen
+4. Szenenprompt
 
-Personifizierte Lebensmittel sind nur dann erlaubt, wenn sie den Lerninhalt verbessern. Der Mechanismus muss immer auch ohne eine Sprecherfigur verständlich bleiben.
+Das texttragende `Bild_01` wird nicht als Follow-up-Style-Referenz verwendet.
 
-## 8. Kompatibilität
+## 11. Schreib- und Produktionsprozess
 
-- Video 001 bleibt unverändert und darf mit seinem bestehenden Phase-1-Stand weiterlaufen.
-- Neue V2-Dateien werden automatisch von `_TEMPLATE` in zukünftige Projekte kopiert.
-- Bestehende Phase-3-Tools werden nicht verändert.
-- Keine V2-Datei darf bestehende Script-, Audio-, Bildnummern- oder Timeline-Daten still überschreiben.
+```text
+1. Thema und Zuschauerfrage definieren
+2. Quellen/Kernclaims pruefen
+3. Mechanism Map bauen
+4. mindestens 3 Hook-Varianten schreiben
+5. staerkste Hook waehlen
+6. Hook → Wendung → Payoff schreiben
+7. komplettes Script glätten
+8. Script auf Visualisierbarkeit pruefen
+9. Satz-Visual-Plan erstellen
+10. Visual-Mix und Nachbarschaftsunterschiede pruefen
+11. Label-Plan fuer Flow schreiben
+12. Flow-Prompts erstellen
+13. overlay-plan.json leer lassen
+14. erst danach Phase 2 starten
+```
+
+## 12. Hard FAIL
+
+Planung stoppen bei:
+- schwachem / schulbuchartigem Einstieg
+- erstem Beat ohne Hook-Funktion
+- Scriptbeat ohne klaren visuellen Zweck
+- drei oder mehr isolierten Objektportraits hintereinander
+- zu vielen fast gleichen Kompositionen
+- geplantem Remotion-Text
+- Flow-Text ausserhalb der Whitelist
+- Cover-Hook nach Bild_01
+- texttragendem Cover als Follow-up-Referenz

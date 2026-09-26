@@ -10,162 +10,136 @@ Diese Datei ist der Bootstrap fuer ChatGPT, Antigravity, Codex und andere Reposi
 4. `config/video.json`
 5. `THEMEN-GEHIRN.md`
 6. `engine/README.md`
-7. `engine/FLOW-AGENT-INSTRUCTIONS.md` bei Flow-/Bildarbeit
-8. relevante `engine/*.md`
-9. relevante `bildwelt/*.md`
-10. Dateien des aktuellen YouTube-Projekts
+7. `engine/SCRIPT-STANDARD.md`
+8. `engine/FLOW-AGENT-INSTRUCTIONS.md` bei Flow-/Bildarbeit
+9. `engine/FLOW-PRODUCTION-STANDARD.md`
+10. `engine/PLANNING-V2.md`
+11. relevante `bildwelt/*.md`
+12. Dateien des aktuellen YouTube-Projekts
 
-Fuer V2-Projekte zusaetzlich:
-
-- `engine/PLANNING-V2.md`
-- `engine/VISUAL-EXPLANATION-SYSTEM.md`
-- `engine/PRESENTATION-OVERLAY-SYSTEM.md`
-- `engine/QUALITY-SCORECARD.md`
-- `engine/POSTMORTEM-STANDARD.md`
-
-Aktiver Testpilot:
-
-```text
-youtube-videos/001-pilot-sauerstoff-im-blut/
-```
+Aktiver Testpilot steht in `PROJECT_STATE.md`.
 
 ## Phase 1 – Creative Director
 
 Darf:
-
 - recherchieren und Fakten pruefen
 - Mechanism Map erstellen
 - Skript schreiben
 - Satz-Visual-Plan und Szenen festlegen
 - Label-Plan erstellen
 - Flow-Szenenprompts schreiben
-- `overlay-plan.json` erstellen
 - Metadaten schreiben
 
 Muss:
-
-- jede Szene als echtes Erklaerbild planen
-- pro Bild 1–3 wichtige deutsche Labels im `label-plan.json` planen
-- fuer Bild_01 eine kurze deutsche Cover-Hook planen
-- Bild_01 als Cover + erster Shot + Master Style Frame besonders detailliert planen
+- `engine/SCRIPT-STANDARD.md` einhalten
+- Satz 1 als starken Neugier-Hook schreiben
+- Hook bevorzugt als direkte Zuschauerfrage, ueberraschende Aussage, Mythos, Alltagsraetsel oder Kontrast bauen
+- innerhalb der ersten ca. 15 Sekunden Hook → Wendung → Payoff liefern
+- jeden Speech-Beat als echtes Erklaerbild planen
+- mindestens etwa 60 % der normalen Explainerframes als Prozess, Beziehung, Ursache/Wirkung, Weg, Vergleich, Vorher/Nachher oder Kontext planen
+- maximal zwei isolierte Einzelobjekt-Portraits hintereinander zulassen
+- fuer jedes Bild sichtbaren Erklaerwert und Unterschied zu Nachbarbildern definieren
 - Flow-Anweisungen auf Englisch schreiben
 - sichtbaren Text ausschliesslich auf Deutsch planen
-- Szenenprompt mit Subject, Process, Spatial Layout, Camera/Scale, Continuity, Required German Text und Forbidden Elements planen
-- echte visuelle Referenzen vor Textbeschreibungen priorisieren
-- die helle Premium-3D-Animationsfilm-Welt erhalten
+- alle final sichtbaren Texte direkt fuer Google Flow planen
+- textfreie Style-Referenzen vor texttragenden Referenzen priorisieren
 
 Darf nicht:
-
-- wichtige deutsche Labels grundlos weglassen
-- Cover ohne Hook planen
-- Textprompts als Ersatz fuer angehaengte Bildreferenzen behandeln
-- die Bildwelt in kosmische, dunkle, Sci-Fi-, Medical-, Anime- oder Comic-Optik verschieben
+- Schulbuch-Einstiege schreiben
+- `In diesem Video ...` / `Heute erklaeren wir ...` als Standardopening nutzen
+- sichtbare Texte fuer Remotion einplanen
+- drei oder mehr aehnliche Objektportraits hintereinander planen
+- ein schwaches Bild mit spaeterem Overlay retten
 - finale Flow-Bilder vortaeuschen
 
 ## Phase 2 – Nutzer + Medienerzeugung
 
-Google Flow erzeugt ausschliesslich die von Phase 1 vorgegebenen Bilder.
+Google Flow erzeugt die von Phase 1 vorgegebenen Bilder.
 
 Verbindlich:
-
 - dauerhafte Regeln aus `engine/FLOW-AGENT-INSTRUCTIONS.md` verwenden
-- `Bild_01` zuerst allein erzeugen
-- `STYLE_REFERENCE.png` als echte Bildreferenz anhaengen, sobald vorhanden
-- nach Freigabe `Bild_01.png` bei jeder Folgegeneration wirklich als visuelle Referenz/Ingredient anhaengen
-- ein Satz wie `Using Bild_01 as reference` reicht nicht
-- jedes Bild einzeln erzeugen und visuell pruefen
-- Bild_01 enthaelt die deutsche Cover-Hook direkt im Bild
-- normale Bilder enthalten 1–3 kurze deutsche Labels aus `label-plan.json`
-- sichtbarer Text ausschliesslich Deutsch
-- falsche Flow-Schreibweise zuerst regenerieren
-- Remotion nur als exakter Text-Fallback bei wiederholtem KI-Schriftfehler
-- Fehlerliste + Recovery statt Nummern zu verlieren
+- textfreie `STYLE_REFERENCE.png` oder `EPISODE_STYLE_REFERENCE.png` als echte Referenz anhaengen
+- `Bild_01` ist Cover und darf Text tragen, wird aber NICHT als Follow-up-Style-Referenz benutzt
+- nur `Bild_01` darf bis zu 3 Covervarianten haben
+- nach Nutzerwahl unselektierte Covervarianten verwerfen
+- jedes normale Bild einzeln erzeugen und genau eine finale Version behalten
+- alle sichtbaren Texte kommen aus Google Flow
+- normale Bilder enthalten nur die in `label-plan.json` freigegebenen deutschen Begriffe
+- Cover-Hook darf nach `Bild_01` nie wieder sichtbar sein
+- falsche Flow-Schrift in Flow regenerieren/korrigieren, nicht spaeter in Remotion ersetzen
+- jede Szene auf Novelty, Information Value und Nachbarschaftsunterschied pruefen
 
-Jedes finale V2-Bild wird in `02_bildprompts/image-review.json` nach Sichtpruefung bewertet. Fachfehler, kosmischer/dunkler Stil, falsche Labels, Artefakte oder ein zentraler Score unter 8/10 fuehren zu Regeneration.
+## Phase 3 – Editor / Antigravity / Remotion
 
-## Phase 3 – Editor / Antigravity
+Remotion ist nur fuer:
+- Audio
+- Timing
+- leichte Zoom-/Pan-Bewegungen
+- Schnitte
+- nicht-textliche Uebergaenge
+- Rendering
 
-Darf:
-
-- Nutzerassets importieren
-- Audio normalisieren
-- Whisper ausfuehren
-- Timings aufloesen
-- Assets validieren
-- Remotion vorbereiten
-- `label-plan.json` und `overlay-plan.json` technisch anwenden
-- nur fehlerhafte oder fehlende Flow-Schrift exakt ersetzen
-- rendern und QA durchfuehren
-
-Darf nicht:
-
+Remotion darf NICHT:
+- sichtbaren Text erzeugen
+- Kapitelueberschriften einblenden
+- Keywords einblenden
+- Callouts/Labels einblenden
+- Flow-Schrift ersetzen
 - Script umschreiben
 - Bildideen austauschen
-- Szenengrenzen kreativ neu waehlen
-- fehlende Fakten erfinden
-- fehlende Bilder still ersetzen
-- geplante deutsche Labels entfernen
 
-Nach dem Finalrender: `quality-scorecard.md` und `postmortem.md` ausfuellen.
+Jedes nicht-leere Text-Overlay ist ein Hard FAIL.
 
-## Fail-closed
+## Bildwelt
 
-Wenn Script, Audio, Szene oder Bildzuordnung nicht eindeutig zusammenpassen: STOP und Fehler melden. Nicht raten.
+Educational Explainer:
+- moderne stilisierte 2.5D / Soft-3D Educational Illustration
+- ca. 80 % animierte Illustration / 20 % Soft-3D-Tiefe
+- klar animiert, nicht fotorealistisch
+- helle ruhige Hintergruende
+- weiche gerundete Formen
+- wenige klare Objekte
+- ein dominanter Lehrpunkt pro Bild
+- ca. 20–35 % wichtiger Mechanismusbilder duerfen einen sinnvollen Zusatzdetailpunkt tragen
 
-Ebenfalls FAIL:
+Nicht erlaubt:
+- Medical-CGI
+- nasses realistisches Gewebe
+- kosmische / Sci-Fi-Mikrowelt
+- Anatomie-Mannequins
+- ueberladene Infografik
+- billiger Toy-Look
 
-- Folgegeneration behauptet Referenznutzung, ohne dass die Referenz wirklich angehaengt wurde
-- `image-review.json` ist ACCEPT, aber finale `Bild_XX.png` fehlt
-- Review enthaelt PENDING/TODO/TBD
-- Cover-Hook fehlt oder ist falsch geschrieben
-- wichtige deutsche Labels fehlen, sind falsch oder Englisch
-- Bild driftet in kosmische, dunkle, Sci-Fi-, Medical- oder Stock-Optik
+## Text
 
-## Gesundheit/Biologie
+Google Flow ist die einzige Quelle fuer sichtbaren Text.
 
-Kernbehauptungen in `05_info/claim-matrix.md` dokumentieren. Vereinfachung ist erlaubt, fachliche Verfaelschung nicht. Wissenschaftliche Sicherheit unter 8/10 ist harter Blocker.
+Cover:
+- nur exakte deutsche Hook
 
-## Verbindliche visuelle Welt
+Normale Szenen:
+- 0–2 kurze deutsche Labels bevorzugt
+- max. 3 bei echtem Bedarf
+- exakt nach `label-plan.json`
 
-- helle Premium-3D-Animationsfilm-Welt
-- weich, rund, freundlich und hochwertig
-- deutlich animiert statt fotorealistisch
-- vereinfachte, erkennbare Anatomie
-- warmes Licht + weiches Fill-Light
-- familienfreundlich, nicht babyhaft
-- keine kosmische / Weltraum-artige Optik
-- keine dunkle violette Sci-Fi-Mikrowelt als Standard
-- keine medizinische Foto-/CGI-Realistik
-- kein Anime, Comic, Gore oder Horror-Look
-- echte Erklaerbilder vor Mascot-/Presenter-Szenen
-- Molekuele/Organe/Zellen normalerweise gesichtslos
-
-## Google Flow
-
-- Prompt-Anweisungen: Englisch
-- sichtbarer Text: Deutsch
-- pro Szene genau ein finales Bild
-- Bild_01 = Cover + deutscher Hook + Episode-Style-Anchor
-- Bild_01 nach Freigabe als echtes visuelles Ingredient fuer jedes Folgebild
-- `STYLE_REFERENCE.png` zusaetzlich als style-only Anchor laden, sobald vorhanden
-- normale Bilder: 1–3 kurze deutsche Labels
-- keine Massenproduktion ohne Einzelpruefung
-- 5er-Bloecke + Recovery
-
-Details: `engine/FLOW-PRODUCTION-STANDARD.md`.
-
-## Presentation / Overlays
-
-- Vollbild bleibt Standard
-- wichtige deutsche Labels kommen aus `02_bildprompts/label-plan.json`
-- Remotion ersetzt Flow-Schrift nur, wenn sie falsch/fehlend ist
-- keine Bounce-/Shake-/Meme-Effekte
+Immer verboten:
+- `Bild_XX`, `Scene XX`, Dateinamen, Prompttitel
+- Cover-Hook nach Bild_01
+- englischer sichtbarer Text
+- KI-Gibberish
+- Remotion-Text
 
 ## Timing
 
-Finale Zeitbasis ist ausschliesslich das kanonisch vorbereitete Voiceover:
+Finale Zeitbasis:
 
 `raw Voice → prepare_audio.py → final-voiceover.wav → transcribe_audio.py → word-timings.json → build_timeline.py → timeline.json`
+
+Standard:
+- Voice 1.10x
+- lange Pausen komprimieren
+- kein Standbild ueber 7 Sekunden
+- kein Bildasset doppelt verwenden
 
 ## V2-Pruefung
 
@@ -174,4 +148,17 @@ python tools/validate_planning_v2.py youtube-videos/MEIN-VIDEO
 python tools/validate_planning_v2.py youtube-videos/MEIN-VIDEO --phase2
 ```
 
-`--phase2` verlangt echte finale PNG-Dateien, vollstaendige Review-Werte und `label_accuracy >= 8/10`.
+## Fail-closed
+
+STOP bei:
+- schwachem Script-Hook
+- Script/Audio-Mismatch
+- sichtbarem Text ausserhalb der Flow-Whitelist
+- Remotion-Textoverlay
+- Cover-Hook nach Bild_01
+- texttragendem Cover als Follow-up-Referenz
+- fehlenden/doppelten Bildern
+- zu aehnlichen Szenen ohne neuen Lehrzweck
+- drei oder mehr isolierten Objektportraits hintereinander
+- wissenschaftlich falscher Kernaussage
+- Photorealismus / Medical-CGI-Stildrift

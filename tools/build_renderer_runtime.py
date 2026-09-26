@@ -13,9 +13,8 @@ it only converts the already resolved timeline from seconds to frames.
 Defense-in-depth rules:
 - no individual image may be held longer than 7 seconds
 - no image file may be reused by another scene
-- overlay scene references must exist
-- cover hook may not be reused as an overlay after Bild_01
-- exact overlay headings/keywords may not repeat across scenes
+- Remotion visible text overlays are forbidden
+- all final visible text must already be present in accepted Google-Flow images
 """
 
 from __future__ import annotations
@@ -23,14 +22,12 @@ from __future__ import annotations
 import argparse
 import json
 import shutil
-import unicodedata
 from pathlib import Path
 
 FPS = 30
 WIDTH = 1920
 HEIGHT = 1080
 MAX_SCENE_SECONDS = 7.0
-MAX_OVERLAY_WORDS = 5
 ALLOWED_MOTIONS = {
     "static",
     "slow-push-in",
@@ -38,40 +35,13 @@ ALLOWED_MOTIONS = {
     "pan-left",
     "pan-right",
 }
-ALLOWED_OVERLAY_KINDS = {"heading", "keyword", "callout"}
-ALLOWED_OVERLAY_POSITIONS = {"top-left", "top-center", "bottom-left", "center"}
-ALLOWED_OVERLAY_ANIMATIONS = {"fade-slide", "pop", "underline"}
 
 
-def normalize_visible_text(value: str) -> str:
-    value = unicodedata.normalize("NFKC", str(value)).casefold().replace("ß", "ss")
-    return " ".join("".join(ch if ch.isalnum() else " " for ch in value).split())
-
-
-def load_cover_hook(project_dir: Path) -> str:
-    label_path = project_dir / "02_bildprompts" / "label-plan.json"
-    if not label_path.is_file():
-        return ""
-    try:
-        payload = json.loads(label_path.read_text(encoding="utf-8"))
-    except json.JSONDecodeError as exc:
-        raise SystemExit(f"FEHLER: ungueltiges label-plan.json: {exc}")
-
-    for entry in payload.get("images", []):
-        if isinstance(entry, dict) and entry.get("image_asset_id") == "Bild_01":
-            hook = str(entry.get("hook_text", "")).strip()
-            return hook
-    return ""
-
-
-def load_overlay_plan(timeline_path: Path) -> dict[int, list[dict]]:
+def enforce_no_text_overlays(timeline_path: Path) -> None:
     project_dir = timeline_path.resolve().parents[2]
     overlay_path = project_dir / "03_pipeline" / "overlay-plan.json"
     if not overlay_path.is_file():
-        return {}
-
-    cover_hook = load_cover_hook(project_dir)
-    normalized_cover_hook = normalize_visible_text(cover_hook) if cover_hook else ""
+        return
 
     try:
         payload = json.loads(overlay_path.read_text(encoding="utf-8"))
@@ -82,78 +52,22 @@ def load_overlay_plan(timeline_path: Path) -> dict[int, list[dict]]:
     if not isinstance(scene_entries, list):
         raise SystemExit("FEHLER: overlay-plan.json: scenes muss eine Liste sein.")
 
-    result: dict[int, list[dict]] = {}
-    seen_overlay_texts: set[str] = set()
-
+    non_empty: list[int] = []
     for scene_entry in scene_entries:
         if not isinstance(scene_entry, dict):
             raise SystemExit("FEHLER: overlay-plan.json enthaelt ungueltigen Szeneneintrag.")
-        scene_number = int(scene_entry.get("scene", 0))
         overlays = scene_entry.get("overlays", [])
-        if scene_number <= 0 or not isinstance(overlays, list):
-            raise SystemExit("FEHLER: overlay-plan.json enthaelt ungueltige scene/overlays-Werte.")
-        if scene_number == 1 and overlays:
-            raise SystemExit("FEHLER: Szene 1/Cover darf keinen zusaetzlichen Overlay-Titel erhalten.")
+        if not isinstance(overlays, list):
+            raise SystemExit("FEHLER: overlay-plan.json: overlays muss eine Liste sein.")
+        if overlays:
+            non_empty.append(int(scene_entry.get("scene", 0)))
 
-        clean: list[dict] = []
-        for overlay in overlays:
-            if not isinstance(overlay, dict):
-                raise SystemExit(f"FEHLER: Szene {scene_number}: Overlay muss ein Objekt sein.")
-
-            kind = str(overlay.get("kind", "heading"))
-            text = str(overlay.get("text", "")).strip()
-            position = str(overlay.get("position", "top-left"))
-            animation = str(overlay.get("animation", "fade-slide"))
-            start_fraction = float(overlay.get("start_fraction", 0.05))
-            duration_fraction = float(overlay.get("duration_fraction", 0.55))
-
-            if kind not in ALLOWED_OVERLAY_KINDS:
-                raise SystemExit(f"FEHLER: Szene {scene_number}: unbekannter Overlay-Typ {kind!r}.")
-            if position not in ALLOWED_OVERLAY_POSITIONS:
-                raise SystemExit(f"FEHLER: Szene {scene_number}: unbekannte Overlay-Position {position!r}.")
-            if animation not in ALLOWED_OVERLAY_ANIMATIONS:
-                raise SystemExit(f"FEHLER: Szene {scene_number}: unbekannte Overlay-Animation {animation!r}.")
-            if not text or len(text) > 60:
-                raise SystemExit(f"FEHLER: Szene {scene_number}: Overlay-Text fehlt oder ist zu lang.")
-            if len(text.split()) > MAX_OVERLAY_WORDS:
-                raise SystemExit(
-                    f"FEHLER: Szene {scene_number}: Overlay {text!r} hat mehr als {MAX_OVERLAY_WORDS} Woerter."
-                )
-            if not 0 <= start_fraction < 1:
-                raise SystemExit(f"FEHLER: Szene {scene_number}: start_fraction muss zwischen 0 und 1 liegen.")
-            if not 0 < duration_fraction <= 1:
-                raise SystemExit(f"FEHLER: Szene {scene_number}: duration_fraction muss >0 und <=1 sein.")
-
-            normalized_text = normalize_visible_text(text)
-            if normalized_cover_hook and (
-                normalized_text == normalized_cover_hook
-                or (len(normalized_text.split()) >= 3 and (
-                    normalized_text.startswith(normalized_cover_hook)
-                    or normalized_cover_hook.startswith(normalized_text)
-                ))
-            ):
-                raise SystemExit(
-                    f"FEHLER: Szene {scene_number}: Overlay wiederholt/naehrt sich der Cover-Hook: {text!r}."
-                )
-            if normalized_text in seen_overlay_texts:
-                raise SystemExit(
-                    f"FEHLER: Overlay-Text {text!r} wird mehrfach verwendet. Kapitelhinweise muessen eindeutig sein."
-                )
-            seen_overlay_texts.add(normalized_text)
-
-            clean.append(
-                {
-                    "kind": kind,
-                    "text": text,
-                    "position": position,
-                    "animation": animation,
-                    "startFraction": start_fraction,
-                    "durationFraction": duration_fraction,
-                }
-            )
-        result[scene_number] = clean
-
-    return result
+    if non_empty:
+        raise SystemExit(
+            "REMOTION-TEXT FAIL: sichtbare Text-Overlays sind hart deaktiviert. "
+            "Alle Titel, Labels und Kapiteltexte muessen bereits korrekt aus Google Flow kommen. "
+            f"Nicht-leere Overlay-Szenen: {non_empty}. Bilder in Flow korrigieren und overlay-plan.json leeren."
+        )
 
 
 def main() -> None:
@@ -175,13 +89,13 @@ def main() -> None:
     if not args.audio.is_file():
         raise SystemExit(f"FEHLER: finales Audio fehlt: {args.audio}")
 
+    enforce_no_text_overlays(args.timeline)
+
     timeline = json.loads(args.timeline.read_text(encoding="utf-8"))
     scenes = timeline.get("scenes", [])
     audio_duration = float(timeline.get("audio_duration", 0))
     if not scenes or audio_duration <= 0:
         raise SystemExit("FEHLER: ungueltige timeline.json.")
-
-    overlay_plan = load_overlay_plan(args.timeline)
 
     renderer_dir = args.renderer_dir.resolve()
     public_current = renderer_dir / "public" / "current"
@@ -239,14 +153,8 @@ def main() -> None:
                 "startFrame": start_frame,
                 "durationInFrames": duration_frames,
                 "motion": motion,
-                "overlays": overlay_plan.get(scene_number, []),
+                "overlays": [],
             }
-        )
-
-    unknown_overlay_scenes = set(overlay_plan) - {int(scene["scene"]) for scene in scenes}
-    if unknown_overlay_scenes:
-        raise SystemExit(
-            f"FEHLER: overlay-plan.json referenziert unbekannte Szenen: {sorted(unknown_overlay_scenes)}"
         )
 
     audio_target = audio_target_dir / "final-voiceover.wav"
@@ -302,10 +210,9 @@ def main() -> None:
     runtime_report = renderer_dir / "runtime-report.json"
     runtime_report.write_text(json.dumps(runtime, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    overlay_count = sum(len(scene.get("overlays", [])) for scene in runtime_scenes)
     print(f"OK: Renderer-Runtime gebaut: {generated_path}")
     print(f"Szenen: {len(runtime_scenes)}")
-    print(f"Overlays: {overlay_count}")
+    print("Remotion-Textoverlays: 0 (hart deaktiviert)")
     print(f"Dauer: {audio_duration:.2f}s")
     print(f"Maximale Bilddauer: {MAX_SCENE_SECONDS:.2f}s")
     print("Naechster Schritt: cd renderer && npm install && npm run render -- ../PFAD/final-video.mp4")

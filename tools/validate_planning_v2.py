@@ -5,7 +5,10 @@ Usage:
   python tools/validate_planning_v2.py youtube-videos/MEIN-VIDEO
   python tools/validate_planning_v2.py youtube-videos/MEIN-VIDEO --phase2
 
-Phase 2 fails closed: accepted review JSON is not enough if the corresponding
+Phase 1 fails closed when the script has no explicit hook beat, visible text is
+not Flow-only, or Remotion text overlays are planned.
+
+Phase 2 fails closed when accepted review JSON is not enough if the corresponding
 final image asset is missing, visible text was not whitelist-checked, the cover
 hook leaked into normal scenes, internal asset IDs appeared, scene novelty is
 weak, or multiple retained variants exist for one normal scene.
@@ -21,6 +24,12 @@ from pathlib import Path
 
 IMAGE_ID_RE = re.compile(r"^Bild_\d{2,}$")
 PLACEHOLDER_RE = re.compile(r"\[[^\]]+\]|\b(?:TODO|TBD|PENDING)\b", re.IGNORECASE)
+WEAK_OPENING_PREFIXES = (
+    "in diesem video",
+    "heute erklaeren wir",
+    "heute erklären wir",
+    "willkommen",
+)
 
 
 def load_json(path: Path) -> dict:
@@ -56,6 +65,33 @@ def normalize_visible_text(value: str) -> str:
     return " ".join("".join(ch if ch.isalnum() else " " for ch in value).split())
 
 
+def validate_no_remotion_text(project: Path) -> None:
+    overlay_path = project / "03_pipeline" / "overlay-plan.json"
+    if not overlay_path.is_file():
+        return
+
+    payload = load_json(overlay_path)
+    scenes = payload.get("scenes", [])
+    if not isinstance(scenes, list):
+        fail("overlay-plan.json: scenes muss eine Liste sein")
+
+    non_empty: list[int] = []
+    for entry in scenes:
+        if not isinstance(entry, dict):
+            fail("overlay-plan.json enthaelt ungueltigen Szeneneintrag")
+        overlays = entry.get("overlays", [])
+        if not isinstance(overlays, list):
+            fail("overlay-plan.json: overlays muss eine Liste sein")
+        if overlays:
+            non_empty.append(int(entry.get("scene", 0)))
+
+    if non_empty:
+        fail(
+            "Remotion-Textoverlays sind deaktiviert. Alle sichtbaren Texte muessen aus Google Flow kommen. "
+            f"Nicht-leere Overlay-Szenen: {non_empty}"
+        )
+
+
 def validate_phase1(project: Path) -> set[str]:
     mechanism = project / "05_info" / "mechanism-map.md"
     sentence_plan_path = project / "05_info" / "sentence-visual-plan.json"
@@ -64,6 +100,8 @@ def validate_phase1(project: Path) -> set[str]:
 
     for path in (mechanism, sentence_plan_path, label_plan_path, scenes_path):
         require_file(path)
+
+    validate_no_remotion_text(project)
 
     mechanism_text = mechanism.read_text(encoding="utf-8")
     if PLACEHOLDER_RE.search(mechanism_text):
@@ -75,6 +113,16 @@ def validate_phase1(project: Path) -> set[str]:
     items = sentence_plan.get("items")
     if not isinstance(items, list) or not items:
         fail("sentence-visual-plan.json enthaelt keine Items")
+
+    first_item = items[0]
+    if not isinstance(first_item, dict) or str(first_item.get("function", "")).lower() != "hook":
+        fail("Der erste Sentence-Visual-Beat muss function='hook' besitzen")
+    first_text = str(first_item.get("voiceover_text", "")).strip()
+    if not first_text:
+        fail("Der Hook-Text fehlt")
+    normalized_first = normalize_visible_text(first_text)
+    if any(normalized_first.startswith(normalize_visible_text(prefix)) for prefix in WEAK_OPENING_PREFIXES):
+        fail("Script startet mit einem schwachen Schulbuch-/Intro-Opening statt einem Neugier-Hook")
 
     required_item_keys = {
         "id",
@@ -110,6 +158,10 @@ def validate_phase1(project: Path) -> set[str]:
     if not isinstance(scenes, list) or not scenes:
         fail("phase1-scenes.json enthaelt keine Szenen")
 
+    scene_rules = scene_payload.get("rules", {})
+    if isinstance(scene_rules, dict) and scene_rules.get("remotion_text_overlays_allowed") is not False:
+        fail("phase1-scenes.json muss remotion_text_overlays_allowed=false setzen")
+
     scene_image_ids_list = [
         scene.get("image")
         for scene in scenes
@@ -136,6 +188,16 @@ def validate_phase1(project: Path) -> set[str]:
     images = label_plan.get("images")
     if not isinstance(images, list):
         fail("label-plan.json: images muss eine Liste sein")
+
+    rules = label_plan.get("rules", {})
+    if not isinstance(rules, dict):
+        fail("label-plan.json: rules muss ein Objekt sein")
+    if rules.get("fallback_to_overlay_if_ai_text_wrong") is not False:
+        fail("label-plan.json darf keinen Remotion-Text-Fallback erlauben")
+    if rules.get("remotion_text_overlays_allowed") is not False:
+        fail("label-plan.json muss remotion_text_overlays_allowed=false setzen")
+    if rules.get("flow_is_final_visible_text_source") is not True:
+        fail("label-plan.json muss Google Flow als finale sichtbare Textquelle festlegen")
 
     cover_entry = next(
         (entry for entry in images if isinstance(entry, dict) and entry.get("image_asset_id") == "Bild_01"),
@@ -207,6 +269,8 @@ def validate_phase1(project: Path) -> set[str]:
                 fail(f"{image_id}: Label-Eintrag ist ungueltig")
             if "text" not in label or "fallback_overlay" not in label:
                 fail(f"{image_id}: Label braucht mindestens text und fallback_overlay")
+            if label.get("fallback_overlay") is not False:
+                fail(f"{image_id}: fallback_overlay muss false sein; Remotion-Text ist verboten")
             if has_placeholder(label):
                 fail(f"{image_id}: Label enthaelt Platzhalter")
             text = label.get("text")
@@ -228,9 +292,10 @@ def validate_phase1(project: Path) -> set[str]:
         )
 
     print(f"V2-PHASE-1-PASS: {project}")
+    print(f"  Hook-Beat: {first_text}")
     print(f"  Satz-/Visual-Items: {len(items)}")
     print(f"  geplante Szenen/Bilder: {len(scene_image_ids)}")
-    print("  Cover-Hook ist exklusiv auf Bild_01; normale Bilder nutzen eine strikte Text-Whitelist")
+    print("  Flow ist einzige sichtbare Textquelle; Remotion-Textoverlays sind deaktiviert")
     return scene_image_ids
 
 
@@ -242,6 +307,7 @@ def validate_reference_policy(project: Path) -> None:
     visual = config.get("visual_identity", {})
     flow = config.get("flow_prompting", {})
     labels = config.get("labels", {})
+    remotion = config.get("remotion", {})
 
     if flow.get("textual_reference_mentions_do_not_count_as_attachment") is not True:
         fail("config/channel.json muss textliche Referenz-Erwaehnungen als unzureichend markieren")
@@ -260,11 +326,19 @@ def validate_reference_policy(project: Path) -> None:
     if flow.get("cover_hook_generated_by_flow") is not True:
         fail("Bild_01 muss die deutsche Cover-Hook bereits in Flow erhalten")
     if labels.get("render_in_flow") is not True:
-        fail("wichtige deutsche Labels muessen standardmaessig direkt in Flow erzeugt werden")
+        fail("wichtige deutsche Labels muessen direkt in Flow erzeugt werden")
+    if labels.get("remotion_text_overlays_allowed") is not False:
+        fail("config/channel.json muss Remotion-Textoverlays deaktivieren")
+    if labels.get("remotion_is_fallback_for_failed_ai_text") is not False:
+        fail("Remotion darf kein Text-Fallback fuer Flow sein")
+    if labels.get("flow_text_is_final_visual_text_source") is not True:
+        fail("Google Flow muss finale sichtbare Textquelle sein")
     if labels.get("final_video_must_contain_required_labels") is not True:
         fail("finales Video muss alle geplanten deutschen Labels enthalten")
     if labels.get("cover_hook_must_never_repeat_as_normal_scene_text") is not True:
         fail("Label-Konfiguration muss Cover-Hook-Wiederholung in Normalbildern verbieten")
+    if remotion.get("text_generation_allowed") is not False or remotion.get("text_overlay_allowed") is not False:
+        fail("config/channel.json muss Remotion-Textgenerierung und Textoverlays hart deaktivieren")
 
     style_rel = visual.get("style_reference")
     if visual.get("clean_style_reference_asset_present") is True:
@@ -370,7 +444,7 @@ def validate_phase2(project: Path, expected_image_ids: set[str]) -> None:
 
     print(f"V2-PHASE-2-REVIEW-PASS: {project}")
     print(f"  akzeptierte eindeutige Bildreviews: {len(reviewed)}")
-    print("  Hook-Isolation, Text-Whitelist, textfreie Referenzen, visuelle Neuheit und Informationswert bestaetigt")
+    print("  Hook-Isolation, Flow-Text, textfreie Referenzen, visuelle Neuheit und Informationswert bestaetigt")
 
 
 def main() -> None:
