@@ -42,12 +42,12 @@ Interne `TEST`-Piloten sind davon ausgenommen, wenn sie ausschließlich Pipeline
 | 001 | IDEE | Verdauung | Was passiert mit Essen im Körper? | mögliche spätere Longform; kompletter Weg Mund bis Ausscheidung | – |
 | 002 | IDEE | Zellbiologie | Was ist eine menschliche Zelle? | Aufbau und wichtigste Zellbestandteile verständlich erklären | – |
 | 003 | IDEE | Gehirn | Wie kommunizieren Nervenzellen? | Neuron, elektrisches Signal, Synapse, Neurotransmitter | – |
-| 004 | IDEE | Ernährung | Was macht Zucker im Körper? | spätere Longform: Aufnahme, Blutzucker, Insulin, Energie und Überschuss deutlich tiefer | Testpilot 000 behandelt nur Grundkette |
+| 004 | IDEE | Ernährung | Was macht Zucker im Körper? | spätere Longform: Aufnahme, Blutzucker, Insulin, Energie und Überschuss deutlich tiefer | Testpiloten 000/002 behandeln nur die Grundkette |
 | 005 | IDEE | Kreislauf | Wie transportiert Blut Sauerstoff? | spätere Longform: Sauerstofftransport deutlich tiefer, ggf. Sättigung, Belastung, Regulation | Testpilot 001 behandelt nur Grundreise Lunge→Zelle→Lunge |
 | 006 | IDEE | Immunsystem | Wie bekämpft der Körper Bakterien? | angeborene Immunabwehr vereinfacht erklären | – |
-| 007 | IDEE | Ernährung | Was passiert nach einer proteinreichen Mahlzeit? | Verdauung von Protein, Aminosäuren und Nutzung im Körper | – |
+| 007 | IDEE | Ernährung | Was passiert nach einer proteinreichen Mahlzeit? | Verdauung von Protein, Aminosäuren und Nutzung im Körper | Testpilot 003 berührt Protein nur als Baustoff für Muskelanpassung |
 | 008 | IDEE | Schlaf | Was passiert im Körper, während wir schlafen? | Gehirn, Erholung, Gedächtnis, Hormone und Schlafphasen als Überblick | – |
-| 009 | IDEE | Muskeln | Wie wächst ein Muskel? | Belastung, Reparatur, Proteinbiosynthese stark vereinfacht | – |
+| 009 | IDEE | Muskeln | Wie wächst ein Muskel? | spätere Longform: Training, Hypertrophie, Proteinsynthese, Ernährung, Regeneration und Progression deutlich tiefer | Testpilot 003 behandelt nur vereinfachte Grundkette |
 | 010 | IDEE | Gehirn | Wie entsteht eine Erinnerung? | Verarbeitung, Synapsen und Gedächtnisbildung vereinfacht | 003 teilweise |
 
 ## Interne Tests
@@ -89,19 +89,64 @@ Status: `TEST`
 
 Zweck:
 - ca. 2–2,5 Minuten
-- zweite End-to-End-Runde mit den Verbesserungen aus Test 000
-- **28 Erklärbilder**
-- Flow-Bilder möglichst textfrei
-- Überschriften/Keywords kontrolliert in Remotion
-- feste visuelle Symbolik für O₂, CO₂, rote Blutkörperchen und Hämoglobin
-- starke Maßstabswechsel Mensch → Lunge → Alveole → Blut → Hämoglobin → Herz → Kapillare → Zelle → Mitochondrium
-- prüfen, ob das Format dadurch weniger wie eine Diashow wirkt
+- zweite End-to-End-Runde
+- Sauerstoffreise als komplexere Maßstabskette
+- Bilddichte, Flow, Whisper, Remotion und QA testen
 
 Inhaltlich behandelt der Test nur diese Grundkette:
 
 `Einatmen → Alveolen → O₂ ins Blut → Hämoglobin/RBC → linkes Herz → Gewebe/Kapillare → Zelle/Mitochondrium → CO₂ zurück zur Lunge`
 
-**Dieser Test blockiert Thema 005 nicht.** Eine spätere Longform darf Sauerstofftransport deutlich tiefer erklären.
+**Dieser Test blockiert Thema 005 nicht.**
+
+### TEST 002 – Zucker im Körper
+
+Projekt:
+
+```text
+youtube-videos/002-zucker-im-koerper/
+```
+
+Status: `TEST`
+
+Zweck:
+- ca. 2–2,5 Minuten
+- 35 eindeutige Visual-Beats
+- 1.10x-Voice und Pausenkompression testen
+- Text-Whitelist und eindeutige Bildnummern testen
+- 2.5D/Soft-3D-Bildwelt stabilisieren
+- Cover-Hook-Leak und visuelle Wiederholungen im echten Render erkennen
+
+Inhaltlich behandelt der Test vereinfacht:
+
+`Nahrung → Dünndarm → Glukose → Blut/Leber → Insulin → Zellaufnahme/ATP → Glykogen/Fett → Glukagon`
+
+**Dieser Test blockiert Thema 004 nicht.**
+
+### TEST 003 – Muskelwachstum
+
+Projekt:
+
+```text
+youtube-videos/003-pilot-muskelwachstum/
+```
+
+Status: `TEST`
+
+Zweck:
+- ca. 2:05–2:30 Minuten
+- 35 eindeutige Visual-Beats
+- neue Hook-Isolation aus Pilot 002 testen
+- textfreie Episode-Style-Referenz statt texttragendem Cover testen
+- stärkere visuelle Abwechslung testen
+- informationsreichere Mechanismusbilder ohne Textwand testen
+- Muskelkater-/Mikroriss-Mythos fachlich sauber vermeiden
+
+Inhaltlich behandelt der Test vereinfacht:
+
+`Widerstand → mechanische Spannung → Zell-Signal → Proteinsynthese → Aminosäuren → Myofibrillen → Hypertrophie → Erholung → Progression`
+
+**Dieser Test blockiert Thema 009 nicht.** Eine spätere Longform darf Muskelwachstum deutlich tiefer erklären.
 
 ## Bereits produzierte normale Videos
 
