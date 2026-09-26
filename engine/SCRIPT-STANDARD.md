@@ -1,278 +1,208 @@
-# Script-Standard – Object-Talk Longform
+# Script-Standard – Object-Talk
 
-Diese Datei definiert, wie jedes lange YouTube-Skript für Object-Talk geschrieben wird.
+Diese Datei definiert verbindlich, wie neue Object-Talk-Erklaerskripte geschrieben werden.
 
 ## Ziel
 
-Das Skript wird nicht zuerst als Text und danach mit beliebigen Bildern dekoriert. **Sprechertext und Bildidee werden gemeinsam gedacht.**
+Das Skript soll nicht wie Unterrichtsmaterial beginnen oder klingen. Es soll sofort Neugier erzeugen, dann eine klare Ursache-Wirkungs-Geschichte erzaehlen und automatisch starke Bilder provozieren.
 
-Jeder inhaltliche Abschnitt muss zwei Fragen beantworten:
+Sprechertext und Bildidee werden gemeinsam gedacht.
 
-1. Was soll der Zuschauer jetzt verstehen?
-2. Was muss er genau in diesem Moment sehen, damit die Aussage leichter verständlich wird?
+## 1. Fester Einstieg: Hook → Wendung → Payoff
 
-Die Bilder ergänzen die Stimme. Sie sollen nicht bloß denselben Satz als Text wiederholen.
+Die ersten ca. 15 Sekunden muessen drei Dinge leisten:
 
-## Forschungsbasis
+### A. Hook – sofort in Satz 1
 
-Der Standard orientiert sich an:
+Bevorzugte Muster:
+- direkte Zuschauerfrage, besonders: `Hast du dich schon mal gefragt, warum ...?`
+- ueberraschende Aussage
+- Mythos / Fehlannahme
+- Alltagsraetsel
+- klarer Kontrast
 
-- YouTube Audience Retention: Besonders die ersten 30 Sekunden müssen die Erwartung aus Titel/Thumbnail erfüllen und Interesse halten. Starke spätere Momente sollen möglichst früher gebracht werden.
-  - https://support.google.com/youtube/answer/9314415
-- Columbia University CTL: Storyboard und Script gemeinsam planen; unnötiges Material entfernen; zusammengehörige Bilder und Erklärungen gleichzeitig zeigen; Aufmerksamkeit mit visuellen Signalen lenken.
-  - https://ctl.columbia.edu/resources-and-technology/teaching-with-technology/diy-video/effective-videos/
-- Multimedia-Learning-Forschung nach Mayer/Fiorella: Coherence, Signaling, Segmenting und Temporal Contiguity. Relevante Visuals + Narration unterstützen Lernen besser als unnötige oder redundante Elemente.
-  - https://www.cambridge.org/core/books/cambridge-handbook-of-multimedia-learning/
-- UIC Micro-Lesson Guide: informelle, verständliche Sprache; Intro–Hauptteil–Schluss; Visuals gezielt zur Erklärung einsetzen; On-Screen-Text begrenzen.
-  - https://teaching.uic.edu/cate-teaching-guides/digital-learning/micro-lecture-videos/
+Beispiele:
+- `Hast du dich schon mal gefragt, warum deine Muskeln durch Training ueberhaupt groesser werden?`
+- `Dein Muskel waechst nicht waehrend der Wiederholung selbst.`
+- `Viele denken, Muskelkater bedeutet Muskelwachstum. Ganz so einfach ist es nicht.`
 
-## Die feste Dramaturgie
+### B. Wendung – direkt danach
 
-### 1. Hook – ungefähr erste 10–20 Sekunden
+Innerhalb der naechsten 1–2 Saetze kommt eine unerwartete Antwort, ein Kontrast oder eine Korrektur.
 
-Die Hook muss sofort das Thema erfüllen.
+Beispiel:
 
-Sie enthält möglichst drei Elemente:
+`Das Ueberraschende: Das Training setzt zuerst nur einen Reiz. Der eigentliche Aufbau passiert spaeter.`
 
-- **konkretes Alltagsbild oder Handlung**
-- **Überraschung / Gegensatz / offene Frage**
-- **Versprechen, was der Zuschauer gleich versteht**
+### C. Payoff – bis ca. Sekunde 15
 
-Beispielprinzip:
+Der Zuschauer muss verstehen, welche Reise oder welchen Mechanismus er gleich sieht.
 
-> Du schluckst einen Bissen in wenigen Sekunden. Aber für deinen Körper beginnt jetzt eine Reise durch mehrere Organe – und der wichtigste Teil passiert nicht einmal im Magen.
+Kein generisches `In diesem Video zeige ich dir ...`.
 
-Nicht erlaubt:
+## 2. Schwache Einstiege – Hard FAIL
 
-- „Hallo und willkommen …“
-- lange Kanalvorstellung
-- Definitionen ohne Spannung
-- Bitte um Like/Abo vor dem ersten Mehrwert
-- künstliches Drama, das das Video später nicht einlöst
+Nicht verwenden:
+- `Hallo und willkommen ...`
+- `In diesem Video ...`
+- `Heute erklaeren wir ...`
+- `X ist ein komplexer Prozess ...`
+- reine Definition als erster Satz
+- lange Kontextpassage vor der eigentlichen Frage
+- generische Schulbuchsaetze wie `Beim Muskeltraining passiert Folgendes ...`
+- eine flache Warum-Frage ohne direkte Zuschaueransprache oder anschliessende Wendung
 
-### 2. Orientierung / Einleitung – ungefähr 20–45 Sekunden
+Wenn Satz 1 keine echte Neugier erzeugt, ist das Script nicht freigegeben.
 
-Nach der Hook erhält der Zuschauer eine sehr kurze mentale Karte:
+## 3. Hauptteil – kausale Story statt Lexikon
 
-- Was verfolgen wir?
-- Wo beginnt die Reise?
-- Welche zentrale Frage beantworten wir?
-
-Keine Inhaltsliste vorlesen. Die Einleitung soll direkt in die Story übergehen.
-
-### 3. Hauptteil – kausale Kapitel
-
-Der Hauptteil folgt einer **Kette aus Ursache → Prozess → Folge**.
-
-Für Object-Talk verwenden wir bevorzugt:
+Der Hauptteil folgt bevorzugt:
 
 ```text
-Frage
+Frage / offene Konsequenz
 → sichtbarer Mechanismus
-→ einfache Erklärung
-→ Bedeutung für den Körper
-→ Brücke zur nächsten Frage
+→ einfache Erklaerung
+→ Bedeutung
+→ Bruecke zum naechsten Schritt
 ```
 
-Beispiel:
+Kapitel sollen logisch ineinandergreifen und nicht wie getrennte Lexikonabschnitte wirken.
 
-```text
-Wie gelangt Essen zum Magen?
-→ Speiseröhre + Muskelwelle zeigen
-→ Peristaltik erklären
-→ Essen wird aktiv transportiert
-→ Was passiert danach im Magen?
-```
+## 4. Re-Engagement im Mittelteil
 
-Kapitel dürfen nicht wie voneinander getrennte Lexikonabsätze wirken. Jedes Kapitel soll das nächste logisch auslösen.
+Bei echten Themenwechseln darf der Text die Aufmerksamkeit kurz neu oeffnen.
 
-### 4. Payoff / große Antwort
+Geeignete Bridges:
+- `Aber was passiert danach?`
+- `Und genau hier wird es interessant.`
+- `Der Punkt, den viele unterschaetzen: ...`
+- `Doch das ist nur die halbe Geschichte.`
+- `Und Muskelkater? Der bedeutet nicht automatisch ...`
 
-Die wichtigste oder überraschendste Erkenntnis darf nicht erst ganz am Schluss versteckt werden. Wenn möglich wird sie früh angekündigt und im Hauptteil eingelöst.
+Nicht mechanisch in jedem Absatz einsetzen. Nur wenn ein neuer Abschnitt beginnt oder eine Fehlannahme korrigiert wird.
 
-Beispiel:
+## 5. Sprache
 
-> Der Magen ist wichtig – aber die große Aufnahmestation ist der Dünndarm.
-
-### 5. Schluss – ungefähr letzte 20–40 Sekunden
-
-Der Schluss soll:
-
-- die Reise oder Kernfrage schließen
-- die wichtigsten Schritte in neuer, kurzer Form verbinden
-- dem Zuschauer ein klares Gesamtbild hinterlassen
-
-Kein neues großes Unterthema im Schluss.
-
-Optional eine einzige natürliche Anschlussfrage oder CTA **nach** dem fachlichen Abschluss.
-
-## Rhetorische Mittel
-
-Rhetorische Mittel werden sparsam und funktional eingesetzt.
-
-### Rhetorische Fragen
-
-Gut für Übergänge:
-
-- „Aber wie kommt der Bissen überhaupt zum Magen?“
-- „Warum ist der Dünndarm dafür so gut gebaut?“
-
-Nicht nach jedem zweiten Satz eine Frage stellen.
-
-### Gegensatz
-
-Sehr nützlich für Hooks und Korrektur von Fehlvorstellungen:
-
-- „Nicht die Schwerkraft bewegt den Bissen – sondern Muskelwellen.“
-- „Der Magen mischt. Der größte Teil der Nährstoffaufnahme passiert aber im Dünndarm.“
-
-### Analogie
-
-Nur verwenden, wenn sie den echten Mechanismus klarer macht.
-
-Beispiel:
-
-> Verdauung funktioniert eher wie eine Zerlege- und Sortieranlage als wie ein einfacher Mixer.
-
-Direkt danach wieder den echten biologischen Prozess nennen.
-
-### Dreierstruktur
-
-Für einprägsame Zusammenfassungen:
-
-> zerkleinern, zerlegen, aufnehmen
-
-### Open Loop
-
-Eine interessante Frage darf kurz offen bleiben, muss aber zuverlässig beantwortet werden.
-
-Keine künstlichen Cliffhanger über mehrere Minuten.
-
-## Sprachregeln
-
-- Deutsch
 - direkt und sprechbar
-- meistens kurze bis mittlere Sätze
-- pro Satz möglichst eine zentrale neue Aussage
-- aktive Verben statt unnötig abstrakter Substantive
-- Fachbegriff erst nennen, dann sofort verständlich machen
-- keine unnötigen Fremdwörter
-- Zahlen nur, wenn sie einen echten Erkenntniswert haben
-- keine Gesundheitsversprechen
-- keine Diagnose- oder Therapieempfehlungen
-- keine Übertreibungen wie „entgiftet deinen Körper“, „heilt“, „verbrennt sofort Fett“ ohne belastbare Evidenz
+- kurze bis mittlere Saetze
+- aktive Verben
+- pro Satz moeglichst eine neue Hauptaussage
+- konkrete Begriffe statt abstrakter Substantivketten
+- Fachbegriff erst nennen, dann sofort verstaendlich machen
+- keine Fuellsaetze
+- keine unnötigen Wiederholungen
+- keine kuenstliche Dramatisierung
+- keine Gesundheitsversprechen oder ungesicherten Aussagen
 
-## Visual-First-Regel
+## 6. Visual-First-Regel
 
-Nach jedem Absatz muss klar sein, welches Bild oder welche Bildfolge ihn trägt.
+Nach jedem Speech-Beat muss klar sein, welches Bild ihn traegt.
 
-Ein Abschnitt ist schlecht für diesen Kanal, wenn er nur mit einem beliebigen Charakter erklärt werden könnte, der still in die Kamera schaut.
+Vor Freigabe jedes Beats beantworten:
+1. Was soll der Zuschauer jetzt verstehen?
+2. Was veraendert sich sichtbar?
+3. Ist es Prozess, Ursache/Wirkung, Weg, Vergleich, Vorher/Nachher oder Kontext?
+4. Welcher Massstab ist dafuer am besten?
+5. Wie unterscheidet sich das Bild sichtbar vom vorherigen und naechsten Bild?
 
-Bevorzugte visuelle Verben im Skript:
+Ein Satz ist fuer diesen Kanal schwach, wenn er nur mit einem beliebigen statischen Objektportrait illustriert werden kann.
 
+Bevorzugte visuelle Verben:
 - zerlegen
-- drücken
+- druecken
 - transportieren
 - aufnehmen
-- fließen
-- filtern
+- fliessen
 - speichern
-- ausschütten
+- ausschuetten
 - verbinden
 - blockieren
-- öffnen
-- schließen
-- vergrößern
+- oeffnen
+- schliessen
+- vergroessern
 - vergleichen
+- umbauen
+- weitergeben
 
-Diese Wörter erzeugen darstellbare Vorgänge.
+## 7. Eine Hauptaussage pro Speech-Beat
 
-## Was Bild und Stimme jeweils tun
+Wenn ein Satz zwei eigenstaendige Lehrpunkte enthaelt:
+- aufteilen
+- neuen Visual-Beat planen
+- neues Bild verwenden
 
-### Stimme
+Nicht zwei Prozesse in ein ueberladenes Bild pressen.
 
-Erklärt:
+## 8. Bild und Stimme ergaenzen sich
 
+### Stimme erklaert
 - Ursache
 - Bedeutung
 - Zusammenhang
-- Einschränkung
+- Einschraenkung
 - Schlussfolgerung
 
-### Bild
-
-Zeigt:
-
+### Bild zeigt
 - Ort
 - Struktur
 - Bewegung
 - Vergleich
 - Reihenfolge
-- räumlichen Zusammenhang
-- relevante Beschriftung
+- raeumlichen Zusammenhang
+- kurze geplante deutsche Beschriftungen
 
-### Nicht doppeln
+Das Bild soll nicht den kompletten gesprochenen Satz als Text wiederholen.
 
-Wenn die Stimme sagt:
-
-> Nährstoffe gelangen durch die Darmwand in kleine Blutgefäße.
-
-soll das Bild **diesen Übergang zeigen** und höchstens die entscheidenden Strukturen beschriften. Es soll nicht den ganzen gesprochenen Satz zusätzlich als Text anzeigen.
-
-## Szenen werden nach Visual Beats geschnitten
-
-Nicht nach Satzzeichen schneiden.
+## 9. Visual Beats statt Satzzeichen
 
 Ein neuer Shot ist sinnvoll, wenn mindestens eines davon wechselt:
-
 - Ort
-- biologischer Maßstab
+- biologischer Massstab
 - handelndes Organ/Objekt
 - Mechanismus
 - Vergleich
 - wichtige neue Struktur
-- emotionale Funktion im Object-Talk
+- Zustand / Richtung
 
-## Bildtempo
+## 10. Schluss
 
-Keine starre Sekundenquote.
+Der Schluss soll:
+- die Anfangsfrage beantworten
+- die wichtigste Ursache-Wirkungs-Kette knapp verbinden
+- einen klaren letzten Gedanken setzen
 
-Richtwerte:
+Nicht:
+- Hook wortwoertlich wiederholen
+- neues grosses Unterthema aufmachen
+- generisches `Danke fuers Zuschauen`
 
-- Hook / Reaktion: ungefähr 3–6 s
-- einfacher Mechanismus: ungefähr 5–8 s
-- komplexe beschriftete Anatomie: ungefähr 7–12 s
-- Übersicht / Zusammenfassung: ungefähr 6–10 s
-
-Wenn sich die visuelle Aussage nach 4 Sekunden ändert, kommt ein neues Bild. Wenn eine beschriftete Darstellung 10 Sekunden zum Verständnis braucht, darf sie stehen bleiben.
-
-## Schreibprozess für jedes Video
+## 11. Schreibprozess
 
 ```text
-1. Thema und eine zentrale Zuschauerfrage definieren
-2. Quellen und Kernclaims prüfen
-3. fachliche Kausalkette aufschreiben
-4. Hook formulieren
-5. Hauptteil als Frage→Mechanismus→Folge bauen
-6. Payoff und Schluss formulieren
-7. komplettes gesprochenes Script glätten
-8. jeden Absatz auf Visualisierbarkeit prüfen
-9. erst danach semantische Visual Beats/Szenen bilden
-10. Szene für Szene Flow-Prompts schreiben
+1. zentrale Zuschauerfrage definieren
+2. Quellen und Kernclaims pruefen
+3. fachliche Kausalkette bauen
+4. mindestens 3 Hook-Varianten schreiben
+5. staerkste Hook waehlen
+6. Hook → Wendung → Payoff fuer erste 15 Sekunden ausarbeiten
+7. Hauptteil als Frage/Mechanismus/Folge bauen
+8. Script auf gesprochene Sprache glätten
+9. jeden Absatz auf Visualisierbarkeit pruefen
+10. erst danach Visual Beats und Flow-Prompts finalisieren
 ```
 
-## Script-QA
+## 12. Script-QA – Hard Gate
 
-Vor `PHASE-1-PASS` prüfen:
+Vor `PHASE-1-PASS` muessen alle Punkte bestehen:
+- Satz 1 erzeugt sofort Neugier
+- direkte Zuschauerfrage, ueberraschende Aussage, Mythos, Alltagsraetsel oder Kontrast ist vorhanden
+- innerhalb von 1–2 Saetzen folgt eine Wendung / unerwartete Antwort
+- innerhalb von ca. 15 Sekunden ist der Payoff klar
+- keine Schulbuch-Einleitung
+- jeder Abschnitt hat einen klaren visuellen Zweck
+- Hauptteil folgt einer logischen Kausalkette
+- Fachbegriffe werden sofort erklaert
+- keine unnötigen Wiederholungen
+- Script ist 1:1 in die Voice-KI kopierbar
 
-- Erfüllen die ersten 30 Sekunden Titel/Thumbnail-Versprechen?
-- Beginnt das Video sofort mit dem Thema?
-- Gibt es innerhalb der ersten 20 Sekunden eine offene Frage oder überraschende Aussage?
-- Hat jeder Absatz einen klaren visuellen Zweck?
-- Folgt der Hauptteil einer logischen Kausalkette?
-- Werden Fachbegriffe sofort erklärt?
-- Gibt es unnötige Wiederholungen?
-- Gibt es Behauptungen ohne belastbare Quelle?
-- Zeigen die Visuals den gesprochenen Mechanismus zum passenden Zeitpunkt?
-- Schließt der Schluss die Kernfrage?
-- Ist das Script 1:1 in die Voice-KI kopierbar?
+Wenn einer dieser Punkte scheitert: Script ueberarbeiten, nicht produzieren.
