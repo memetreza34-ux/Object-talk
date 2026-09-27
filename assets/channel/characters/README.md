@@ -1,21 +1,14 @@
 # Character References
 
-Dieser Ordner ist für freigegebene wiederkehrende Object-Talk-Figuren.
+Dieser Ordner ist fuer spaetere freigegebene wiederkehrende Figuren oder Objekte vorgesehen.
 
-Vorgesehene Dateinamen, sobald echte Referenzbilder vom Nutzer akzeptiert wurden:
+## Aktueller Status
 
-```text
-apple.png
-yogurt.png
-egg.png
-potato.png
-broccoli.png
-```
+Es gibt aktuell keine freigegebene Character-Bildwelt und keinen verbindlichen Style Anchor.
 
-Regeln:
+Bis die neue Kanalbildwelt festgelegt ist:
+- keine historischen Character-Designs als Standard verwenden
+- keine Figurenliste als verpflichtenden Kanalstil behandeln
+- keine alte STYLE_REFERENCE voraussetzen
 
-- nur echte freigegebene Referenzbilder ablegen
-- dieselbe Figur in späteren Videos mit dieser Referenz fortführen
-- Character Reference kontrolliert Identität/Form, nicht den gesamten Kanalstil
-- `assets/channel/STYLE_REFERENCE.png` bleibt zusätzlich immer der Style Anchor
-- neue Figuren dürfen ergänzt werden, wenn sie wiederkehrend werden
+Nach Freigabe der neuen Bildwelt wird entschieden, ob wiederkehrende Character-Referenzen ueberhaupt sinnvoll sind und wie sie gespeichert werden.
