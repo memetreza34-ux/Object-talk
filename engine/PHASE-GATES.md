@@ -21,15 +21,15 @@ Erforderlich:
 - Satz-Visual-Plan vollständig
 - Szenengrenzen und Bild-IDs konsistent
 - jede Szene besitzt genau ein geplantes `Bild_XX`
+- `Bild_XX`/Szenennummern sind reine Produktionsmetadaten und niemals als sichtbarer Bildtext geplant
 - Szene 01 ist Cover-/Hook-Szene
 - Label-Plan vollständig
 - kein Bild nur dekorativ geplant
 - Bildkomplexität niedrig geplant: bevorzugt 2–5 zentrale Elemente, 1 Hauptprozess, 1–3 Labels
 - Flow-Prompts nutzen die kanonische Bildwelt `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
-- `03_pipeline/overlay-plan.json` existiert oder wird bewusst leer gelassen
-- geplante Remotion-Texte sind nur Zwischenueberschrift, Key-Fact oder Summary
-- keine anatomischen Labels werden fuer Remotion statt Flow geplant
-- keine dauerhafte Seiten-/Rahmen-/PowerPoint-Praesentation geplant
+- Flow-Prompts verbieten sichtbar gerenderte Asset-/Bild-/Szenennummern
+- `03_pipeline/overlay-plan.json` ist `DISABLED` und `scenes` ist leer
+- keinerlei Remotion-Text geplant
 - `python tools/validate_planning_v2.py VIDEOORDNER` besteht
 
 Bei FAIL: keine Voice- oder Bildproduktion starten.
@@ -41,7 +41,7 @@ Erforderlich:
 - kanonisches `final-voiceover.wav` erstellt
 - Audio entspricht inhaltlich exakt `script.txt`
 - Bilder-ZIP vorhanden und sicher importiert
-- exakt die erwarteten Bildnummern vorhanden
+- exakt die erwarteten Bilddateien vorhanden
 - keine Duplikate
 - Bilder ungefähr 16:9
 - technische Mindestauflösung bestanden
@@ -52,6 +52,8 @@ Erforderlich:
 - Labels kurz, korrekt, deutsch und eindeutig zugeordnet
 - kein Medical-CGI, kein glossy 3D, kein alter 2.5D-/Premium-3D-Look
 - keine sichtbaren schweren KI-Fehler
+- keine sichtbare Bild-/Szenennummer
+- kein sichtbarer Dateiname, Asset-ID oder Prompttitel
 - `image-review.json` enthält jedes finale Pflichtbild
 - jedes akzeptierte Bild erreicht mindestens 8,0/10
 - `python tools/validate_planning_v2.py VIDEOORDNER --phase2` besteht
@@ -71,11 +73,10 @@ Erforderlich:
 - 1920×1080 / 30 fps
 - Audio vorhanden und vollständig
 - kein unerwarteter langer schwarzer Abschnitt
-- Vollbild-Illustration bleibt klarer Hauptdarsteller
-- selektive Remotion-Praesentation belegt hoechstens ca. 15 % der Laufzeit
-- Remotion-Overlay maximal 6 Woerter und pro Szene maximal eins
-- keine ganzen Voice-over-Saetze als Remotion-Text
-- keine biologischen Flow-Labels durch Remotion ersetzt
+- 100 % Vollbild-Illustration
+- Remotion erzeugt exakt 0 sichtbare Textelemente
+- `overlay-plan.json` bleibt deaktiviert und leer
+- keine sichtbaren Bild-/Szenennummern, Dateinamen oder Asset-IDs
 - keine permanenten Rahmen, Seitenleisten oder Dashboard-/PowerPoint-Aufteilung
 - finaler Sichtcheck bestanden
 - Renderbericht erzeugt
