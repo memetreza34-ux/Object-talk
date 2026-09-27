@@ -26,6 +26,10 @@ Erforderlich:
 - kein Bild nur dekorativ geplant
 - Bildkomplexität niedrig geplant: bevorzugt 2–5 zentrale Elemente, 1 Hauptprozess, 1–3 Labels
 - Flow-Prompts nutzen die kanonische Bildwelt `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
+- `03_pipeline/overlay-plan.json` existiert oder wird bewusst leer gelassen
+- geplante Remotion-Texte sind nur Zwischenueberschrift, Key-Fact oder Summary
+- keine anatomischen Labels werden fuer Remotion statt Flow geplant
+- keine dauerhafte Seiten-/Rahmen-/PowerPoint-Praesentation geplant
 - `python tools/validate_planning_v2.py VIDEOORDNER` besteht
 
 Bei FAIL: keine Voice- oder Bildproduktion starten.
@@ -67,6 +71,12 @@ Erforderlich:
 - 1920×1080 / 30 fps
 - Audio vorhanden und vollständig
 - kein unerwarteter langer schwarzer Abschnitt
+- Vollbild-Illustration bleibt klarer Hauptdarsteller
+- selektive Remotion-Praesentation belegt hoechstens ca. 15 % der Laufzeit
+- Remotion-Overlay maximal 6 Woerter und pro Szene maximal eins
+- keine ganzen Voice-over-Saetze als Remotion-Text
+- keine biologischen Flow-Labels durch Remotion ersetzt
+- keine permanenten Rahmen, Seitenleisten oder Dashboard-/PowerPoint-Aufteilung
 - finaler Sichtcheck bestanden
 - Renderbericht erzeugt
 - `04_export/quality-scorecard.md` ausgefüllt
