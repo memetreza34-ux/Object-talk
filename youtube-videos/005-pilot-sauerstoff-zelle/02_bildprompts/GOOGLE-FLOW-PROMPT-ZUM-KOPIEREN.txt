@@ -1,0 +1,70 @@
+GOOGLE FLOW – PILOT 005
+
+Ziel: Erzeuge 22 einzelne 16:9-Bilder für das Video „Wie kommt Sauerstoff in deine Zelle?“.
+
+VERBINDLICHE BILDWELT
+Create a clean 16:9 animated biology illustration with simplified but recognizable anatomy, smooth organic shapes, clean outlines, soft gradients, subtle depth, bright calm background and clear biological colors. Keep the composition simple, visually attractive and immediately understandable. Use only 1–3 short German labels with clean pointer lines when labels are needed. No realistic tissue, no medical CGI, no glossy 3D, no clutter, no unnecessary text.
+
+REGELN
+- generate every image individually
+- one dominant teaching idea per image
+- normally 2–5 important visual elements
+- use only the exact German text listed
+- no asset IDs or scene numbers inside the artwork
+- vary overview, cutaway, close-up, cross-section, transport route and cell interior
+- simplified but recognizable anatomy
+- same illustration language across all images
+
+Bild_01: Show a simple journey from a lung on the left, through one red blood cell and a heart, to one body cell on the right. Keep only four main elements and connect them with a clear visual path. Visible text only: „Wie kommt Sauerstoff in deine Zelle?“
+
+Bild_02: Show a simplified upper body cutaway with air moving through the trachea and bronchi into both lungs. Label only: „Atemwege“.
+
+Bild_03: Zoom into the end of a small airway and show a small cluster of round alveoli. Label only: „Lungenbläschen“.
+
+Bild_04: Show one large alveolus with a very thin wall and one small blood capillary closely wrapping beside it. Labels only: „Lungenbläschen“, „Kapillare“.
+
+Bild_05: Show a few small oxygen particles moving from the alveolus toward the neighboring blood capillary. Label only: „Sauerstoff“.
+
+Bild_06: Show many oxygen particles inside the alveolus and clearly fewer in the incoming blood beside it. No visible text.
+
+Bild_07: Close-up of oxygen particles crossing the thin alveolar-capillary barrier into the blood. Labels only: „Sauerstoff“, „Blutkapillare“.
+
+Bild_08: Show the inside of a blood vessel with red blood cells and only a few oxygen particles freely present in the surrounding plasma. Label only: „Blutplasma“.
+
+Bild_09: Show one enlarged red blood cell with simplified hemoglobin structures inside and oxygen attaching to them. Labels only: „Hämoglobin“, „Rotes Blutkörperchen“.
+
+Bild_10: Show a simple route from the lung to the left side of the heart with oxygen-rich red blood cells moving along the vessel. Labels only: „Lunge“, „Herz“.
+
+Bild_11: Show the left side of the heart pumping oxygen-rich blood into one large artery. Labels only: „Herz“, „Arterie“.
+
+Bild_12: Show one large artery dividing step by step into several smaller vessels from left to right. No visible text.
+
+Bild_13: Show one thin capillary passing directly beside a few large simplified body cells. Labels only: „Kapillare“, „Körperzelle“.
+
+Bild_14: Show many oxygen particles inside the capillary and only a few in the neighboring tissue, creating an obvious visual difference. No visible text.
+
+Bild_15: Show one red blood cell releasing oxygen; the oxygen crosses the vessel wall and enters a nearby body cell. Labels only: „Hämoglobin“, „Gefäßwand“, „Körperzelle“.
+
+Bild_16: Zoom through the cell membrane into a simple cell interior. A few oxygen particles continue deeper into the cell. No visible text.
+
+Bild_17: Show a clean cell interior with one prominent mitochondrion and oxygen particles moving toward it. Label only: „Mitochondrium“.
+
+Bild_18: Show one large mitochondrion with oxygen entering it and a simple internal reaction area. Label only: „Zellatmung“.
+
+Bild_19: Show the mitochondrion receiving oxygen and simplified nutrient-derived particles, with small ATP symbols appearing as the output. Labels only: „Sauerstoff“, „ATP“. Do not show oxygen literally turning into ATP.
+
+Bild_20: Create a clean four-part horizontal overview: lung → blood → heart → body cell. Labels only: „Lunge“, „Blut“, „Herz“.
+
+Bild_21: Create a simple horizontal process illustration showing: breathing in → oxygen enters blood → blood transports it → oxygen leaves blood → mitochondrion uses it. Visible text only: „Aufnahme“, „Transport“, „Abgabe“.
+
+Bild_22: Show one active body cell with a mitochondrion and a small continuous stream of oxygen entering the cell. Label only: „Sauerstoffversorgung“.
+
+QA
+- immediately understandable
+- scientifically plausible
+- simple rather than overloaded
+- same animated biology illustration world
+- correct German labels
+- no extra text
+
+Final set: Bild_01.png through Bild_22.png, exactly once each.
