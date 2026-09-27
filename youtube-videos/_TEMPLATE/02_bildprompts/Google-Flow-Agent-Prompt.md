@@ -23,6 +23,25 @@ Never revive historical 2.5D, Soft-3D, premium-3D or feature-animation styles.
 Create a clean 16:9 animated biology illustration with simplified but recognizable anatomy, smooth organic shapes, clean outlines, soft gradients, subtle depth, bright calm background and clear biological colors. Keep the composition simple, visually attractive and immediately understandable. Use only 1–3 short German labels with clean pointer lines when labels are needed. No realistic tissue, no medical CGI, no glossy 3D, no clutter, no unnecessary text.
 ```
 
+## HARD RULE – PRODUCTION IDS ARE NEVER VISIBLE
+
+The strings used to organize production are metadata only.
+
+Never draw or print inside an image:
+- `Bild_01`, `Bild_02`, `Bild 01`
+- `BILD 01`, `IMAGE 01`
+- `Szene 01`, `Scene 01`
+- file names
+- asset IDs
+- prompt headings
+- internal production notes
+
+`Bild_XX` is only the filename/asset identifier used after generation. It must never become viewer-facing text.
+
+The ONLY visible text allowed is the exact German title/labels explicitly requested for that scene.
+
+If a generated image contains an internal ID, scene number, filename or prompt heading: REJECT AND REGENERATE.
+
 ## IMAGE DESIGN
 
 Each frame should normally contain:
@@ -59,7 +78,7 @@ Labels:
 - no paragraphs
 - no internal production names
 
-Wrong spelling or wrong connection = regenerate/correct.
+Wrong spelling, wrong connection or visible production metadata = regenerate/correct.
 
 ## GENERATION
 
@@ -72,6 +91,8 @@ Bild_02.png
 ...
 Bild_NN.png
 ```
+
+These names are for SAVING FILES ONLY and must never be visible inside the artwork.
 
 Keep exactly one accepted final asset per image number.
 Do not accumulate `v2`, `copy`, `final2`, `_A`, `_B` variants.
@@ -87,13 +108,14 @@ Regenerate if:
 - main process is unclear
 - image is too complex
 - labels are wrong/unreadable
+- any image/scene number or asset ID is visible
+- a filename or prompt heading is visible
 - photoreal medical look appears
 - medical CGI appears
 - glossy 3D appears
 - feature-animation / toy / kids-book look appears
 - corporate infographic look appears
 - random icons appear
-- internal asset names appear
 - severe AI artifacts appear
 
 ---
@@ -102,14 +124,14 @@ Regenerate if:
 
 ChatGPT replaces this section for each video.
 
-### Bild_01 – Cover / Hook
+### INTERNAL ASSET: Bild_01 – Cover / Hook
 ```text
-[SHORT ENGLISH SCENE PROMPT USING THE CANONICAL STYLE BLOCK]
+[SHORT ENGLISH SCENE PROMPT USING THE CANONICAL STYLE BLOCK. Explicitly state the exact allowed visible text. Never show the asset ID.]
 ```
 
-### Bild_02
+### INTERNAL ASSET: Bild_02
 ```text
-[SHORT ENGLISH SCENE PROMPT USING THE CANONICAL STYLE BLOCK]
+[SHORT ENGLISH SCENE PROMPT USING THE CANONICAL STYLE BLOCK. Never show the asset ID.]
 ```
 
 [Continue to Bild_NN]
@@ -123,8 +145,9 @@ ChatGPT replaces this section for each video.
 5. low complexity
 6. correct German labels
 7. no random text
-8. no major AI artifact
-9. scientifically plausible
-10. visibly different from neighboring scenes when required
+8. no visible production IDs/numbers/file names
+9. no major AI artifact
+10. scientifically plausible
+11. visibly different from neighboring scenes when required
 
 Only when every required image passes QA and the final folder is complete: finished.
