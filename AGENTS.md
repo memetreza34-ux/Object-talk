@@ -5,57 +5,81 @@ Diese Datei ist der Bootstrap fuer ChatGPT, Antigravity, Codex und andere Reposi
 ## Vor jeder Arbeit lesen
 
 1. `PROJECT_CONTRACT.md`
-2. `PROJECT_STATE.md`
-3. `config/channel.json`
-4. `config/video.json`
-5. `THEMEN-GEHIRN.md`
-6. `engine/README.md`
-7. `engine/SCRIPT-STANDARD.md`
-8. `engine/PLANNING-V2.md`
-9. relevante Dateien des aktuellen YouTube-Projekts
+2. `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
+3. `PROJECT_STATE.md`
+4. `config/channel.json`
+5. `config/video.json`
+6. `THEMEN-GEHIRN.md`
+7. `engine/README.md`
+8. `engine/SCRIPT-STANDARD.md`
+9. `engine/PLANNING-V2.md`
+10. relevante Dateien des aktuellen YouTube-Projekts
 
 Aktiver Testpilot steht in `PROJECT_STATE.md`.
 
-## KRITISCH: VISUELLE BILDWELT IST NOCH NICHT FESTGELEGT
+## VERBINDLICHE BILDWELT
 
-Alle frueheren kanalweiten Bildwelten wurden am 27.09.2026 bewusst entfernt.
+Kanalweit gilt:
 
-Bis der Nutzer eine neue Bildwelt ausdruecklich auswaehlt und freigibt:
-- keine alte 2.5D-/Soft-3D-Regel verwenden
-- keine alte Premium-3D-/Feature-Animation-Regel verwenden
-- keine alte semantische Farbpalette als Kanalstandard verwenden
-- keine historische Pilot-Bildwelt kopieren
-- keine historische Style-Reference als neue Kanalreferenz behandeln
-- keine finale Flow-Bildproduktion starten
+**Clean Animated Biology Illustration**
 
-Historische Pilotdateien duerfen zur Analyse der damaligen Fehler gelesen werden, aber nicht als Stilautoritaet.
+Autoritativ:
+- `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
+- `bildwelt/FLOW-STYLE-BLOCK.txt`
+
+Nicht reaktivieren:
+- alte 2.5D-/Soft-3D-Regeln
+- alte Premium-3D-/Feature-Animation-Regeln
+- historische Pilot-Stile als Kanalstandard
+- alte Style-Reference-Systeme
+
+## Bildprinzip
+
+Jedes normale Biologie-/Gesundheitsbild soll:
+- wie ein sauberer Frame aus einer animierten Biologie-Erklaerserie wirken
+- vereinfachte, fachlich erkennbare Anatomie zeigen
+- weiche organische Formen, klare Konturen, weiche Verlaeufe und leichte Tiefe verwenden
+- hell und uebersichtlich bleiben
+- wenige wichtige Elemente zeigen
+- einen klaren Prozess/Zusammenhang sichtbar machen
+- normalerweise 1–3 kurze deutsche Labels enthalten
+
+Komplexitaet klein halten. Wenn ein Bild zu viel erklaeren muesste, neue Szene planen.
+
+## Prompting
+
+Flow-Anweisungen auf Englisch.
+Viewer-facing Text nur Deutsch.
+
+Prompts kurz halten:
+1. kanonischer Styleblock
+2. konkrete Szene
+3. Prozess
+4. 1–3 Labels
+5. kurze Negativregel
+
+Keine langen Style-Romane in jedem Szenenprompt.
 
 ## Phase 1 – Creative Director
 
-Darf:
-- recherchieren und Fakten pruefen
-- Mechanism Map erstellen
-- Skript schreiben
-- Satz-Visual-Plan und Szenen festlegen
-- Label-Plan erstellen
-- Metadaten schreiben
-
 Muss:
-- `engine/SCRIPT-STANDARD.md` einhalten
-- Satz 1 als starken Neugier-Hook schreiben
-- innerhalb der ersten ca. 15 Sekunden Hook → Wendung → Payoff liefern
+- Fakten pruefen
+- Mechanism Map erstellen
+- starken Neugier-Hook schreiben
 - jeden Speech-Beat als echtes Erklaerbild planen
-- Prozesse, Beziehungen, Ursache/Wirkung, Wege, Vergleiche und Kontext bevorzugen
-- maximal zwei isolierte Einzelobjekt-Portraits hintereinander zulassen
-- fuer jedes Bild sichtbaren Erklaerwert und Unterschied zu Nachbarbildern definieren
-- Flow-Anweisungen spaeter auf Englisch schreiben
-- sichtbaren Text ausschliesslich auf Deutsch planen
+- Prozesse, Beziehungen, Wege, Ursache/Wirkung, Vergleiche und Massstabwechsel bevorzugen
+- maximal zwei isolierte Einzelobjektbilder hintereinander zulassen
+- sichtbaren Erklaerwert und Unterschied zu Nachbarbildern definieren
+- Labels auf 1–3 kurze wichtige Begriffe begrenzen
 
-## Phase 2 – Nutzer + Medienerzeugung
+## Phase 2 – Google Flow
 
-Aktuell PAUSIERT, bis die neue Bildwelt freigegeben ist.
-
-Nach Freigabe wird ein neues Referenz- und Produktionssystem definiert. Alte Style-Regeln duerfen nicht automatisch wieder aktiviert werden.
+- jedes Bild einzeln erzeugen
+- kanonischen Styleblock verwenden
+- Labels direkt im Bild erzeugen
+- falsche Labels/Schreibweise korrigieren oder regenerieren
+- pro finaler Bildnummer genau ein akzeptiertes Asset behalten
+- keine alte Pilot-Bildwelt als Referenz verwenden
 
 ## Phase 3 – Editor / Antigravity / Remotion
 
@@ -67,11 +91,10 @@ Remotion ist fuer:
 - nicht-textliche Uebergaenge
 - Rendering
 
-Die genaue Text-/Overlay-Strategie wird zusammen mit der neuen Bildwelt erneut festgelegt. Historische Textregeln sind nicht automatisch Stilstandard.
+Standard: kein sichtbarer Remotion-Text; Labels kommen aus Flow.
 
 ## Timing
 
-Finale Zeitbasis:
 `raw Voice → prepare_audio.py → final-voiceover.wav → transcribe_audio.py → word-timings.json → build_timeline.py → timeline.json`
 
 Standard:
@@ -80,20 +103,14 @@ Standard:
 - kein Standbild ueber 7 Sekunden
 - kein Bildasset doppelt verwenden
 
-## V2-Pruefung
-
-```bash
-python tools/validate_planning_v2.py youtube-videos/MEIN-VIDEO
-python tools/validate_planning_v2.py youtube-videos/MEIN-VIDEO --phase2
-```
-
 ## Fail-closed
 
 STOP bei:
 - schwachem Script-Hook
 - Script/Audio-Mismatch
 - fehlenden/doppelten Bildern
-- zu aehnlichen Szenen ohne neuen Lehrzweck
-- drei oder mehr isolierten Objektportraits hintereinander
 - wissenschaftlich falscher Kernaussage
-- Versuch, vor der neuen Style-Freigabe eine alte Bildwelt zum Kanalstandard zu machen
+- ueberladenem Bild
+- unleserlichen/falschen Labels
+- altem 2.5D-/3D-Look statt der freigegebenen Illustrationswelt
+- drei oder mehr isolierten Objektportraits hintereinander
