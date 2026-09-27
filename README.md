@@ -20,13 +20,9 @@ Seit 27.09.2026 gilt:
 
 **Clean Animated Biology Illustration**
 
-Die kanonische Spezifikation liegt hier:
-
-`bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
-
-Der kurze Flow-Styleblock liegt hier:
-
-`bildwelt/FLOW-STYLE-BLOCK.txt`
+Autoritativ:
+- `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
+- `bildwelt/FLOW-STYLE-BLOCK.txt`
 
 Kernidee:
 - moderne animierte Biologie-Illustrationen
@@ -41,19 +37,8 @@ Kernidee:
 - sichtbare Prozesse statt dekorativer Objektportraits
 - normalerweise 1–3 kurze deutsche Labels
 
-Diese Bildwelt muss Muskel, Blut, Zellen, Nerven, Organe, Gewebe, Molekuele, Verdauung, Kreislauf, Immunsystem und weitere Biologie-Themen tragen koennen.
-
-## Was nicht mehr gilt
-
-Nicht reaktivieren:
-- fruehere 2.5D-/Soft-3D-Regeln
-- fruehere Premium-3D-/Feature-Animation-Regeln
-- historische Pilot-Bildwelten als Kanalstandard
-- alte Style-Reference-Logiken
-
 ## Visual Storytelling
 
-Unabhaengig vom konkreten Motiv:
 - ein dominanter Lehrpunkt pro Bild
 - Prozesse, Ursache/Wirkung, Wege, Vergleiche und Massstabwechsel bevorzugen
 - maximal zwei isolierte Einzelobjektbilder hintereinander
@@ -62,39 +47,51 @@ Unabhaengig vom konkreten Motiv:
 - ein Standbild normalerweise 3–6 Sekunden
 - harte Obergrenze 7 Sekunden
 
-## Text im Bild
+## Sichtbarer Text
 
-Biologische Beschriftungen kommen aus Google Flow:
-- viewer-facing Text nur Deutsch
-- normalerweise 1–3 kurze Labels
-- saubere Hinweislinien/Pfeile
-- keine Textwaende
-- keine internen Assetnamen/Szenennummern
+Viewer-facing Text kommt ausschliesslich aus den final akzeptierten Google-Flow-Bildern.
+
+Erlaubt:
+- kurze deutsche biologische Labels
+- Hinweislinien/Pfeile
+- geplanter Cover-Titel
+
+Niemals sichtbar:
+- `Bild_01`, `Bild 01`, `IMAGE 01`
+- `Szene 01`, `Scene 01`
+- Dateinamen
+- Asset-IDs
+- Prompttitel
+- Produktionshinweise
+
+Bild-/Szenennummern bleiben reine Produktionsmetadaten.
 
 ## Praesentationssystem
 
-Die Illustrationen bleiben fast immer vollformatig.
+**100 % Vollbild-Illustration. Remotion erzeugt keinen sichtbaren Text.**
 
-Kanalstandard:
-- ca. **85–90 % reine Vollbild-Illustration**
-- maximal ca. **10–15 % selektive Remotion-Praesentation**
+Remotion darf nur:
+- Audio
+- Timing
+- leichte Push-/Pull-/Pan-Bewegungen
+- statische Frames
+- Schnitte
+- dezente nicht-textliche Uebergaenge
+- Rendering
 
-Remotion darf sparsam ergaenzen:
-- Zwischenueberschriften bei echten Abschnittswechseln
-- kurze Key-Facts
-- eine Summary-/Prozesszeile
+Nicht erlaubt:
+- Zwischenueberschriften
+- Key-Facts
+- Summary-Zeilen
+- Kapiteltexte
+- Callouts
+- Untertitel/Captions als Standard
+- Textkarten
+- sichtbare Bild-/Szenennummern
 
-Dabei gilt:
-- normalerweise 2–6 Woerter
-- keine ganzen Voice-over-Saetze
-- keine anatomischen Labels ersetzen
-- keine dauerhaften Rahmen, Seitenleisten oder PowerPoint-/Dashboard-Layouts
-- Zwischenueberschriften bevorzugt kurz ueber der bereits sichtbaren naechsten Illustration
+`03_pipeline/overlay-plan.json` muss deaktiviert und leer bleiben.
 
-Fuer ein ca. 2-Minuten-Video normalerweise 2–3 Zwischenueberschriften plus optional 1 Key-Fact/Summary.
-
-Details:
-`engine/PRESENTATION-OVERLAY-SYSTEM.md`
+Details: `engine/PRESENTATION-OVERLAY-SYSTEM.md`.
 
 ## Aktueller Pilot
 
@@ -106,20 +103,21 @@ Testvorgaben:
 - maximal 2:00 Minuten final
 - ca. 213 Woerter Script
 - 22 eindeutige Bilder
-- testet Haut, Blutgefaesse, Blutplaettchen, Fibrin, Immunzellen, Kollagen und Gewebeumbau
-- testet gleichzeitig das neue selektive Remotion-Praesentationssystem
+- Haut, Blutgefaesse, Blutplaettchen, Fibrin, Immunzellen, Kollagen und Gewebeumbau
+- 100 % Vollbild-Illustration
+- 0 sichtbare Remotion-Textelemente
 
 ## Drei Phasen
 
 ### Phase 1 – Creative Director
-Thema → Recherche → Claim-Check → Mechanism Map → Script → Satz-Visual-Plan → Szenenplan → Label-Plan → kurze Flow-Prompts → selektive Praesentationspunkte planen.
+Thema → Recherche → Claim-Check → Mechanism Map → Script → Satz-Visual-Plan → Szenenplan → Label-Plan → kurze Flow-Prompts.
 
 ### Phase 2 – Google Flow
-Jedes Bild einzeln erzeugen → Beschriftung pruefen → Bild-QA → finale Assets.
+Jedes Bild einzeln erzeugen → Beschriftung pruefen → interne Nummern im Bild ausschliessen → Bild-QA → finale Assets.
 
 ### Phase 3 – Antigravity + Tools + Remotion
-Audio vorbereiten → Whisper → Timeline → Vollbild-Illustrationen + leichte Bildbewegung/Schnitt + wenige Zwischenueberschriften/Key-Facts/Summary → Render → Final-QA.
+Audio vorbereiten → Whisper → Timeline → Vollbild-Illustrationen + leichte Bildbewegung/Schnitt → Render → Final-QA.
 
 ## Goldene Regel
 
-**Vollbild-Illustration ist Standard. Remotion ergaenzt selten und gezielt.**
+**Bilder + Voice + dezente Bewegung. Remotion macht keinen sichtbaren Text. Interne Nummern bleiben unsichtbar.**
