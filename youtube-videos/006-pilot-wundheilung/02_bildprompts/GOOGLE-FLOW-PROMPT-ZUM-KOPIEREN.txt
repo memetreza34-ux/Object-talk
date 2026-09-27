@@ -1,0 +1,105 @@
+GOOGLE FLOW – PILOT 006 WUNDHEILUNG
+
+Create all images individually in 16:9.
+Use the channel style from `bildwelt/FLOW-STYLE-BLOCK.txt` for every image:
+clean animated biology illustration, simplified recognizable anatomy, smooth organic forms, clean outlines, soft gradients, subtle depth, bright calm background, clear biological colors, simple composition.
+
+Keep every frame easy to understand. Prefer 2–5 important visible elements and one main process. Visible text only in German and only when explicitly listed. No realistic tissue, no medical CGI, no glossy 3D, no clutter, no random icons, no extra text.
+
+BILD 01 – COVER
+Prompt:
+Show a clean cutaway of human skin with a small fresh cut and a tiny damaged blood vessel underneath. Make the cut the clear focus. Add only the German title: „Wie heilt eine Wunde?“
+
+BILD 02
+Prompt:
+Show the small skin wound as the starting point of a simple biological repair journey, with four subtle visual stages leading forward. Add only: „Reparatur startet“.
+
+BILD 03
+Prompt:
+Show a simple skin cross-section with one small damaged blood vessel directly below the cut. Label only: „Blutgefäß“.
+
+BILD 04
+Prompt:
+Show a clear before-and-after comparison of the same small blood vessel becoming narrower after injury. Label only: „Verengung“.
+
+BILD 05
+Prompt:
+Macro view inside the injured vessel. A few platelets attach to the damaged vessel wall and more platelets gather around them. Labels: „Blutplättchen“, „verletzte Stelle“.
+
+BILD 06
+Prompt:
+Show thin fibrin strands beginning to appear between the gathered platelets. Label only: „Fibrin“.
+
+BILD 07
+Prompt:
+Show the fibrin strands forming a clear mesh across the damaged area. Label only: „Fibrinnetz“.
+
+BILD 08
+Prompt:
+Show a few platelets and red blood cells caught inside the fibrin mesh. Keep the scene simple. Labels: „Blutplättchen“, „Fibrinnetz“.
+
+BILD 09
+Prompt:
+Show a clear vessel cutaway where the clot now seals the damaged opening and stops the bleeding. Label only: „Gerinnsel“.
+
+BILD 10
+Prompt:
+Show the clot above the wound while a few immune cells begin arriving in the tissue below. No visible text.
+
+BILD 11
+Prompt:
+Show a few immune cells moving along a clear path toward the injured tissue. Label only: „Immunzellen“.
+
+BILD 12
+Prompt:
+Show one immune cell removing a few bacteria and damaged cell fragments near the wound. Labels: „Bakterien“, „Zellreste“. Do not make the wound look severely infected.
+
+BILD 13
+Prompt:
+Show a simple before-and-after skin cross-section: normal tissue versus mildly red and slightly swollen tissue around a fresh wound. Labels: „Rötung“, „Schwellung“.
+
+BILD 14
+Prompt:
+Show the cleaned wound space beginning to fill with simple new repair tissue. Label only: „Wiederaufbau“.
+
+BILD 15
+Prompt:
+Show one fibroblast laying down a few clear collagen fibers inside the repair tissue. Labels: „Fibroblast“, „Kollagen“.
+
+BILD 16
+Prompt:
+Show a small new capillary growing into the repair tissue to supply it. Label only: „neue Blutgefäße“.
+
+BILD 17
+Prompt:
+Show skin cells moving from both wound edges across the new surface toward the center. Labels: „Hautzellen“, „Wundrand“.
+
+BILD 18
+Prompt:
+Show the skin surface nearly closed again with only a very small remaining gap. Label only: „neue Haut“.
+
+BILD 19
+Prompt:
+Show the repaired tissue changing over time as its internal fibers gradually become more organized. Label only: „Umbau“.
+
+BILD 20
+Prompt:
+Show a simple before-and-after comparison of disorganized collagen fibers becoming more organized and stronger. Labels: „Kollagenfasern“, „stabiler“.
+
+BILD 21
+Prompt:
+Show two simple healed skin cross-sections: a very shallow injury with almost no visible trace and a deeper injury with a small scar. Label only the deeper result: „Narbe“.
+
+BILD 22 – SUMMARY
+Prompt:
+Create a clean four-step biological summary using four small connected illustrations: clot stops bleeding → immune cell cleans the wound → new tissue grows → healed stable skin. No visible text; Remotion will add the short summary line.
+
+FINAL CHECK
+- exactly Bild_01 to Bild_22
+- all 16:9
+- same Clean Animated Biology Illustration world
+- German text only
+- no extra labels
+- low complexity
+- no image duplicates
+- no old 2.5D / glossy 3D / medical CGI look
