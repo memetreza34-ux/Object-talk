@@ -8,6 +8,7 @@ Deutschsprachige Erklaervideos ueber Ernaehrung, Gesundheit, menschlichen Koerpe
 
 Standard:
 - normale Kanalvideos mindestens 5:00 Minuten
+- dokumentierte Testpiloten duerfen kuerzer sein
 - 16:9 / 1920×1080 / 30 fps
 - hohe visuelle Dichte aus generierten Standbildern
 - wissenschaftlich plausibel und leicht verstaendlich
@@ -72,9 +73,15 @@ Unabhaengig vom konkreten Motiv:
 
 ## Aktueller Pilot
 
-`youtube-videos/004-pilot-muskelkater/`
+`youtube-videos/005-pilot-sauerstoff-zelle/`
 
-Die Bildprompts dieses Piloten werden auf die neue Bildwelt umgestellt.
+Thema: **Wie kommt Sauerstoff von der Lunge bis in eine einzelne Koerperzelle?**
+
+Testvorgaben:
+- maximal 2:00 Minuten final
+- 250 Woerter Script
+- 22 eindeutige Bilder
+- testet Lunge, Blut, Herz, Zelle und Mitochondrium in derselben neuen Bildwelt
 
 ## Drei Phasen
 
