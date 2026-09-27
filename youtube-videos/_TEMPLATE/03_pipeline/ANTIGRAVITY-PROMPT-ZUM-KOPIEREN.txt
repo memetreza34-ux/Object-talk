@@ -1,21 +1,22 @@
 ANTIGRAVITY PROMPT ZUM KOPIEREN
 
-Diese Datei ist die Nutzer-Datei für Phase 3.
+Diese Datei ist die Nutzer-Datei fuer Phase 3.
 
-Bei jedem neuen Video ersetzt ChatGPT diesen Inhalt vollständig durch den finalen Antigravity-Prompt für genau dieses Video.
+Bei jedem neuen Video ersetzt ChatGPT diesen Inhalt vollstaendig durch den finalen Antigravity-Prompt fuer genau dieses Video.
 
 WICHTIG:
-- Diese .txt-Datei ist zum normalen Öffnen und Kopieren gedacht.
-- Sie muss Projektpfad, benötigte Assets, Whisper-/Timing-Ablauf, Renderer-Regeln und finalen Export enthalten.
-- Antigravity darf Script, Bildreihenfolge und Szenengrenzen nicht kreativ verändern.
+- Diese .txt-Datei ist zum normalen Oeffnen und Kopieren gedacht.
+- Sie muss Projektpfad, benoetigte Assets, Whisper-/Timing-Ablauf, Renderer-Regeln und finalen Export enthalten.
+- Antigravity darf Script, Bildreihenfolge und Szenengrenzen nicht kreativ veraendern.
 - Das finale Voiceover bleibt die Master-Timeline.
-- Die Illustration bleibt standardmaessig vollformatig.
-- Remotion-Praesentation ist selektiv: Zwischenueberschriften, wenige Key-Facts und optional eine Summary.
-- Ziel: etwa 85–90 % reine Vollbild-Illustration; hoechstens etwa 10–15 % Overlay-Laufzeit.
-- Remotion-Texte nur Deutsch, maximal 6 Woerter, pro Szene maximal ein Overlay.
+- Die Illustration bleibt zu 100 % vollformatig.
+- Remotion erzeugt KEINEN sichtbaren Text.
+- Keine Zwischenueberschriften, Key-Facts, Summary-Zeilen, Kapiteltexte, Callouts oder Untertitel.
 - Anatomische/biologische Labels bleiben Teil der Google-Flow-Bilder und werden nicht durch Remotion ersetzt.
-- Keine dauerhaften Rahmen, Seitenleisten oder PowerPoint-/Dashboard-Layouts.
-- `03_pipeline/overlay-plan.json` ist verbindlich zu beachten.
+- Bildnummern, Szenennummern, Dateinamen und Asset-IDs sind reine Produktionsmetadaten und duerfen niemals sichtbar werden.
+- `03_pipeline/overlay-plan.json` muss `status: DISABLED` und `scenes: []` enthalten.
+- Ein nicht-leerer Overlay-Plan ist ein HARD FAIL.
+- Remotion darf nur Audio, Timing, statische Bilder, dezente Push/Pull/Pan-Bewegungen, Schnitte, nicht-textliche Uebergaenge und Rendering ausfuehren.
 - `engine/PRESENTATION-OVERLAY-SYSTEM.md` ist die globale Praesentationsregel.
 
-Wenn diese Datei noch diesen Platzhalter enthält, ist Phase 1 noch nicht vollständig.
+Wenn diese Datei noch diesen Platzhalter enthaelt, ist Phase 1 noch nicht vollstaendig.
