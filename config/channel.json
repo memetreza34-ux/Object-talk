@@ -78,7 +78,7 @@
     "preferred_per_image": "1-3",
     "max_per_image_guideline": 3,
     "avoid_overload": true,
-    "final_rendering_strategy": "GOOGLE_FLOW_DIRECT"
+    "final_rendering_strategy": "GOOGLE_FLOW_DIRECT_FOR_BIOLOGY_LABELS"
   },
   "audio_pacing": {
     "default_voice_speed_multiplier": 1.10,
@@ -101,9 +101,29 @@
     "minimum_process_relationship_context_frame_share": 0.6,
     "adjacent_scene_visual_difference_rule": "change at least two of camera scale, spatial layout, main subject, process direction, background context, or visual type"
   },
+  "presentation": {
+    "full_frame_illustration_share_target": "85-90%",
+    "selective_remotion_presentation_share_max": "10-15%",
+    "keep_illustration_full_frame_by_default": true,
+    "avoid_persistent_frames_or_side_panels": true,
+    "avoid_powerpoint_dashboard_presenter_layout": true,
+    "remotion_text_types": [
+      "heading",
+      "keyword",
+      "callout"
+    ],
+    "preferred_overlay_words": "2-6",
+    "two_minute_video_guideline": "2-3 chapter headings plus optional 1 key fact or summary",
+    "chapter_heading_duration_seconds": "0.8-1.5",
+    "chapter_heading_over_next_illustration_preferred": true,
+    "biology_labels_remain_in_flow": true
+  },
   "remotion": {
-    "purpose": "timing-motion-audio-transitions",
-    "text_strategy": "NO_VISIBLE_TEXT_BY_DEFAULT",
+    "purpose": "timing-motion-audio-transitions-selective-presentation",
+    "text_strategy": "SELECTIVE_HEADINGS_KEYFACTS_SUMMARY_ONLY",
+    "overlay_plan": "03_pipeline/overlay-plan.json",
+    "max_words_per_overlay": 6,
+    "full_voiceover_sentences_forbidden": true,
     "allowed_visual_motion": [
       "static",
       "slow-push-in",
