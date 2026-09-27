@@ -4,6 +4,6 @@
   "target_max_seconds": 120,
   "preferred_range_seconds": [80, 115],
   "hard_fail_over_seconds": 120,
-  "expected_images": 20,
+  "expected_images": 22,
   "voice_speed_multiplier": 1.10
 }
