@@ -4,14 +4,14 @@ Letzte Aktualisierung: 27.09.2026
 
 ## Aktiver Produktionspilot
 
-`youtube-videos/004-pilot-muskelkater/`
+`youtube-videos/005-pilot-sauerstoff-zelle/`
 
 Thema:
-**Warum kommt Muskelkater so spaet?**
+**Wie kommt Sauerstoff von der Lunge bis in eine einzelne Koerperzelle?**
 
-## AKTUELLER HAUPTSTATUS: NEUE BILDWELT FREIGEGEBEN
+## STATUS
 
-Die alte Bildwelt wurde verworfen und durch eine neue kanalweite Bildwelt ersetzt:
+Die neue kanalweite Bildwelt ist freigegeben:
 
 **Clean Animated Biology Illustration**
 
@@ -19,40 +19,65 @@ Autoritativ:
 - `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
 - `bildwelt/FLOW-STYLE-BLOCK.txt`
 
-## Neue Bildwelt – Kurzfassung
+## Pilot 005 – Zweck
 
-- animierte Biologie-Illustration
-- vereinfachte, erkennbare Anatomie
+Pilot 005 ist ein kurzer End-to-End-Test der neuen Bildwelt über mehrere biologische Maßstaebe:
+- Lunge
+- Lungenblaeschen
+- Blutkapillare
+- rotes Blutkoerperchen / Haemoglobin
+- Herz / Kreislauf
+- Koerperzelle
+- Mitochondrium
+
+## Harte Testvorgaben
+
+- final maximal 2:00 Minuten
+- Script: 250 Woerter
+- erwartete finale Laufzeit ca. 1:25–1:50 bei Standard-Voice-Verarbeitung
+- 22 eindeutige Bilder
+- 16:9 / 1920×1080 / 30 fps
+- Voice standardmaessig 1.10x
+- kein Bild laenger als 7 Sekunden
+- kein Bild doppelt verwenden
+
+## Phase 1 Status
+
+Vorbereitet:
+- finales Script
+- Voiceover-Zum-Kopieren
+- Claim-Matrix
+- Mechanism Map
+- 22 semantische Szenen
+- Sentence-Visual-Plan
+- Label-Plan
+- Google-Flow-Masterprompt
+- Bild-QA-Template
+- Testmodus mit harter 120-Sekunden-Obergrenze
+
+## Bildwelt-Regeln fuer Pilot 005
+
+- klare animierte Biologie-Illustration
+- vereinfachte erkennbare Anatomie
 - weiche organische Formen
 - saubere Konturen
-- weiche Verlaeufe und subtile Schatten
-- leichte Tiefe ohne 3D-CGI-Look
+- weiche Farbverlaeufe und subtile Tiefe
 - helle ruhige Hintergruende
 - klare biologische Farben
-- wenige wichtige Elemente
-- normalerweise 1–3 kurze deutsche Labels
-- Bilder sollen sofort verstaendlich und nicht komplex wirken
+- wenige wichtige Elemente pro Bild
+- ein dominanter Lehrpunkt pro Bild
+- normalerweise 0–3 kurze deutsche Labels
+- unterschiedliche Kompositionen und Massstaebe
+- keine alte 2.5D-/Soft-3D-/Premium-3D-Bildwelt
 
-Alte 2.5D-/Soft-3D- und Premium-3D-Regeln sind NICHT MEHR AUTORITATIV.
-Historische Pilotdateien dienen nur als Produktionshistorie und Fehleranalyse.
+## Naechster Produktionsschritt
+
+Phase 2:
+1. Voice aus `01_script/VOICEOVER-ZUM-KOPIEREN.txt` erzeugen.
+2. `Bild_01` bis `Bild_22` mit dem fertigen Flow-Prompt einzeln erzeugen.
+3. Bilder gegen `image-review.json` und `label-plan.json` pruefen.
+4. Danach Audio + Bilder in Phase 3 synchronisieren und final rendern.
 
 ## Pilot 004
 
-Inhaltlich bleiben Script, Mechanism Map, Claim-Logik, Szenenreise und Label-Plan erhalten.
-
-Neu fuer Pilot 004:
-- Produktionsplan auf neue Bildwelt umstellen
-- Flow-Prompts neu aus der kanonischen Bildwelt erzeugen
-- kurze Prompts statt langer Style-Bloecke verwenden
-- wichtige biologische Strukturen direkt und knapp auf Deutsch beschriften
-- keine alte Style-Referenz verwenden
-
-## Referenzstatus
-
-Es gibt noch keine einzelne freigegebene `assets/channel/STYLE_REFERENCE.png`.
-
-Bis ein sauberes einzelnes Referenzbild akzeptiert wird, ist die schriftliche Spezifikation in `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md` die oberste Stilautoritaet.
-
-## Naechster Schritt
-
-Pilot 004 mit der neuen Bildwelt neu prompten und einige repräsentative Bilder erzeugen: Muskel, Blut/Transport, Nerv/Signal und Zell-/Gewebeebene. Danach Konsistenz pruefen und bei Erfolg normal weiterproduzieren.
+`youtube-videos/004-pilot-muskelkater/` bleibt als vorheriger Test erhalten, ist aber nicht mehr der aktive Produktionspilot.
