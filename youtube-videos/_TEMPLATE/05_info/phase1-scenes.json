@@ -3,7 +3,9 @@
   "rules": {
     "source": "01_script/script.txt",
     "coverage": "complete-no-gaps-no-overlaps",
-    "scene_boundaries": "semantic-visual-beats-not-automatic-sentences"
+    "scene_boundaries": "semantic-visual-beats-not-automatic-sentences",
+    "remotion_text_overlays_allowed": false,
+    "production_ids_visible_in_images": false
   },
   "scenes": [
     {
@@ -13,7 +15,7 @@
       "image": "Bild_01",
       "motion": "slow-push-in",
       "labels_de": [],
-      "notes": "Cover / Hook"
+      "notes": "Cover / Hook; Bildnummer nur intern, niemals sichtbar"
     },
     {
       "scene": 2,
@@ -22,7 +24,7 @@
       "image": "Bild_02",
       "motion": "pan-left",
       "labels_de": [],
-      "notes": ""
+      "notes": "Kein Remotion-Text; Bildnummer nur intern"
     }
   ]
 }
