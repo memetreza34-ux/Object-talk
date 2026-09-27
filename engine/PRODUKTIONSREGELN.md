@@ -14,7 +14,7 @@ Sprachstil:
 - kurze verstaendliche Saetze
 - Fachbegriffe direkt erklaeren
 - konkrete Beispiele
-- keine unnötigen Wiederholungen
+- keine unnoetigen Wiederholungen
 - neugierig und klar, nicht babyhaft
 
 ## 3. Semantische Szenen
@@ -42,59 +42,108 @@ Die Bildanzahl wird nicht kuenstlich vorher festgelegt.
 `Szene 01 = Bild_01`, `Szene 02 = Bild_02`, usw.
 Keine Luecke, keine doppelte Nummer.
 
-## 7. VISUELLE HAUPTSPRACHE: NOCH NICHT FESTGELEGT
+## 7. Verbindliche visuelle Hauptsprache
 
-Die bisherigen Bildwelt-Regeln wurden am 27.09.2026 bewusst entfernt.
+**Clean Animated Biology Illustration**
 
-Aktuell gibt es keine verbindliche Vorgabe fuer:
-- Renderstil
-- 2D/2.5D/3D-Verhaeltnis
-- Character-Design
-- Anatomie-Stilisierung
-- Farben
-- Materialien
-- Licht
-- Kameraaesthetik
-- Style-Referenzen
+Autoritativ:
+- `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
+- `bildwelt/FLOW-STYLE-BLOCK.txt`
 
-Alte Pilotprompts duerfen nicht als neue visuelle Hauptsprache verwendet werden.
+Pflicht:
+- animierte Illustration statt Render-Look
+- vereinfachte, erkennbare Anatomie
+- weiche organische Formen und saubere Konturen
+- weiche Verlaeufe und subtile Schatten
+- leichte Tiefe ohne CGI-Wirkung
+- helle ruhige Hintergruende
+- klare biologische Farben
+- wenige wichtige Elemente
+- ein dominanter Prozess/Zusammenhang
+- normalerweise 1–3 kurze deutsche Labels
 
-Finale Bildproduktion startet erst wieder nach ausdruecklicher Freigabe einer neu getesteten Bildwelt.
-
-## 8. Style-unabhaengiges Visual Storytelling
+## 8. Visuelle Vielfalt
 
 Bevorzugt:
-- Prozesse
+- Cutaway
+- Querschnitt
+- Makro-Nahaufnahme
+- Zell-Innenansicht
+- Prozess
+- Transportweg
 - Ursache → Wirkung
-- Wege / Transport
 - Vorher / Nachher
-- Vergleiche
-- Massstabwechsel
-- Kontextbilder
+- Vergleich
+- Massstabswechsel
+- Alltagsszene mit biologischem Fokus
 
 Regeln:
-- ein dominanter Lehrpunkt pro Bild
 - maximal zwei isolierte Objektportraits hintereinander
 - benachbarte Szenen in mindestens zwei Dimensionen sichtbar unterscheiden
 - keine Bildduplikate zum Zeitfuellen
+- nicht immer dieselbe zentrierte Objektkomposition verwenden
 
-## 9. Prompt-Sprache
+## 9. Komplexitaet
+
+Ein Bild soll schnell verstanden werden koennen.
+
+Richtwert:
+- 2–5 zentrale sichtbare Elemente
+- 1 Hauptprozess
+- 1–3 Labels
+
+Mehr Inhalt = neues Bild, nicht mehr Kleinteile.
+
+## 10. Prompt-Sprache
+
 - Generierungsanweisungen auf Englisch
 - viewer-facing Text nur Deutsch
+- Prompts kurz halten
+- kanonischen Styleblock verwenden
 - interne Bildnummern, Dateinamen und Prompttitel niemals sichtbar
 
-Die genaue Text-/Label-Produktionsstrategie wird mit der neuen Bildwelt neu festgelegt.
+## 11. Labels
 
-## 10. Style- und Referenzsystem
-Noch offen. Kein altes STYLE_REFERENCE-/Bild_01-System automatisch wiederverwenden.
+Labels werden standardmaessig direkt in Google Flow erzeugt.
 
-## 11. QA
-Unabhaengig vom Stil:
+- 1–3 kurze deutsche Begriffe
+- klare Sans-Serif-Schrift
+- duenne Hinweislinien/Pfeile
+- eindeutige Zuordnung
+- falsche Schreibweise oder falsche Zuordnung = regenerieren/korrigieren
+- keine Textwaende
+
+Remotion erzeugt standardmaessig keinen sichtbaren Text.
+
+## 12. Referenzsystem
+
+Die schriftliche Bildwelt ist die oberste Stilautoritaet.
+
+Eine spaetere `assets/channel/STYLE_REFERENCE.png` ist optional und nur zusaetzlicher visueller Anker nach ausdruecklicher Nutzerfreigabe.
+
+`Bild_01` ist nicht automatisch der Master-Stilanker fuer alle Folgeframes.
+
+## 13. Harte Stil-Fails
+
+- fotorealistischer Medizin-Look
+- Medical-CGI / Anatomiesoftware
+- glossy Plastik-3D
+- Feature-Animation/Pixar-Look als Standard
+- Spielzeug-/Kinderbuch-Look
+- Corporate-Stock-Grafik
+- ueberladene Infografik
+- zu viele Labels/Pfeile
+- random Icons ohne Lehrfunktion
+- Gore / nasses Gewebe
+
+## 14. QA
+
 - wissenschaftlich plausibel
 - passend zum Voiceover
 - Hauptaussage sofort erkennbar
+- Komplexitaet niedrig
+- Labels korrekt und lesbar
+- Stilkontinuitaet zur kanonischen Bildwelt
 - kein schwerer KI-Artefakt
 - keine unnoetige Wiederholung
 - korrekte Assetnummerierung
-
-Style-spezifische QA wird erst nach Auswahl der neuen Bildwelt definiert.
