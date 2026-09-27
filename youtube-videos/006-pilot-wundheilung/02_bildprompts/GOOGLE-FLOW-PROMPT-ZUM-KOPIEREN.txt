@@ -6,9 +6,12 @@ clean animated biology illustration, simplified recognizable anatomy, smooth org
 
 Keep every frame easy to understand. Prefer 2–5 important visible elements and one main process. Visible text only in German and only when explicitly listed. No realistic tissue, no medical CGI, no glossy 3D, no clutter, no random icons, no extra text.
 
+CRITICAL PRODUCTION-ID RULE:
+The section names `BILD 01`, `BILD 02`, `Bild_01`, scene numbers, file names and all asset IDs below are INTERNAL PRODUCTION METADATA ONLY. NEVER draw, print, label or show them anywhere inside the generated image. They are used only to name the saved file. The ONLY visible text allowed is the exact German title/labels explicitly requested inside each scene prompt. If an image contains an asset number, scene number, file name or prompt heading, reject it and regenerate it.
+
 BILD 01 – COVER
 Prompt:
-Show a clean cutaway of human skin with a small fresh cut and a tiny damaged blood vessel underneath. Make the cut the clear focus. Add only the German title: „Wie heilt eine Wunde?“
+Show a clean cutaway of human skin with a small fresh cut and a tiny damaged blood vessel underneath. Make the cut the clear focus. Add only the German title: „Wie heilt eine Wunde?“ Do not show any image number or production text.
 
 BILD 02
 Prompt:
@@ -92,13 +95,15 @@ Show two simple healed skin cross-sections: a very shallow injury with almost no
 
 BILD 22 – SUMMARY
 Prompt:
-Create a clean four-step biological summary using four small connected illustrations: clot stops bleeding → immune cell cleans the wound → new tissue grows → healed stable skin. No visible text; Remotion will add the short summary line.
+Create a clean four-step biological summary using four small connected illustrations: clot stops bleeding → immune cell cleans the wound → new tissue grows → healed stable skin. No visible text at all.
 
 FINAL CHECK
-- exactly Bild_01 to Bild_22
+- save exactly as Bild_01.png to Bild_22.png, but NEVER show these names inside the images
 - all 16:9
 - same Clean Animated Biology Illustration world
-- German text only
+- German viewer-facing text only
+- only the exact requested labels/title may be visible
+- no asset IDs, image numbers, scene numbers, file names or prompt headings visible
 - no extra labels
 - low complexity
 - no image duplicates
