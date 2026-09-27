@@ -4,7 +4,7 @@ Diese Datei gilt verbindlich fuer neue Projekte. `PROJECT_CONTRACT.md` bleibt di
 
 ## Ziel
 
-Recherche, Skript und Bilder werden gemeinsam geplant. Jeder wichtige Speech-Beat braucht bereits vor Google Flow eine eindeutige visuelle Funktion, ein Lernziel und eine fachlich passende Bildidee.
+Recherche, Skript und Bilder werden gemeinsam geplant. Jeder wichtige Speech-Beat braucht bereits vor der Medienproduktion eine eindeutige visuelle Funktion, ein Lernziel und eine fachlich passende Bildidee.
 
 ## 1. Script zuerst richtig aufbauen
 
@@ -13,39 +13,27 @@ Vor dem finalen Szenenplan muss das Skript `engine/SCRIPT-STANDARD.md` bestehen.
 Pflicht fuer den Einstieg:
 - Satz 1 ist ein starker Hook
 - bevorzugt direkte Frage, ueberraschende Aussage, Mythos, Alltagsraetsel oder Kontrast
-- besonders geeignet: `Hast du dich schon mal gefragt, warum ...?`
 - innerhalb von 1–2 Saetzen folgt eine Wendung / unerwartete Antwort
 - innerhalb der ersten ca. 15 Sekunden ist der Payoff klar
 - keine Schulbuch-Einleitung
 
 ## 2. Mechanism Map
 
-Jedes neue Video erhaelt:
+Jedes neue Video erhaelt `05_info/mechanism-map.md`.
 
-```text
-05_info/mechanism-map.md
-```
+Der zentrale Mechanismus wird in klaren Schritten beschrieben:
+`Ausgangszustand → Ausloeser → Weg/Verarbeitung → Wirkung → Ergebnis`
 
-Darin wird der zentrale Mechanismus vor dem finalen Skript in 3–12 klaren Schritten beschrieben:
-
-```text
-Ausgangszustand → Ausloeser → Weg/Verarbeitung → Wirkung → Ergebnis
-```
-
-Fuer jeden Schritt werden festgehalten:
+Fuer jeden Schritt:
 - fachliche Kernaussage
 - Claim-ID(s), falls vorhanden
-- was der Zuschauer sichtbar verstehen soll
+- sichtbares Lernziel
 - Massstabsebene
 - moegliche Fehlinterpretation
 
 ## 3. Satz-Visual-Plan
 
-Jedes neue Projekt erhaelt:
-
-```text
-05_info/sentence-visual-plan.json
-```
+Jedes neue Projekt erhaelt `05_info/sentence-visual-plan.json`.
 
 Jeder Speech-Beat besitzt mindestens:
 - `id`
@@ -80,125 +68,75 @@ Ein schoenes Themenbild ohne klaren Erklaerwert wird nicht produziert.
 
 ## 5. Visual-Storytelling-Mix
 
-Der Kanal darf nicht aus aehnlichen Objektportraits bestehen.
-
-Verbindlich:
 - mindestens etwa 60 % der normalen Explainerframes zeigen Prozess, Beziehung, Weg, Ursache/Wirkung, Vergleich, Vorher/Nachher oder Kontext
 - maximal zwei isolierte Einzelobjekt-Portraits hintereinander
-- danach muss ein Prozess-/Beziehungs-/Kontextbild folgen
-- benachbarte Szenen unterscheiden sich in mindestens zwei Dimensionen: Kameramassstab, Layout, Hauptmotiv, Richtung, Kontext oder Visual-Typ
-- gleiche Uebersichtskomposition nicht spaeter erneut verwenden, ausser ein echter Vorher/Nachher-Vergleich verlangt es
-- ca. 20–35 % wichtiger Mechanismusframes duerfen genau einen sinnvollen Zusatzdetailpunkt tragen
+- danach Prozess-/Beziehungs-/Kontextbild
+- benachbarte Szenen unterscheiden sich in mindestens zwei Dimensionen
+- gleiche Uebersichtskomposition nicht ohne echten neuen Zweck wiederholen
+- ca. 20–35 % wichtiger Mechanismusframes duerfen einen sinnvollen Zusatzdetailpunkt tragen
 
-## 6. Bild-IDs und Szenenkontinuitaet
+## 6. Bild-IDs
 
 Jedes geplante Bild erhaelt genau eine stabile ID:
+`Bild_01`, `Bild_02`, `Bild_03`, ...
 
-```text
-Bild_01
-Bild_02
-Bild_03
-...
-```
+Die ID ist Produktionsmetadaten und darf nie sichtbar im Bild erscheinen.
 
-Die ID bleibt in allen Projektdateien identisch.
+## 7. Text-/Label-Plan
 
-Die ID ist reine Produktionsmetadaten und darf nie sichtbar im Bild erscheinen.
+Jedes neue Projekt darf einen `02_bildprompts/label-plan.json` erhalten.
 
-## 7. Label-Plan – Flow ist die einzige Textquelle
+Inhaltlich planen:
+- welche Begriffe wirklich sichtbar sein muessen
+- viewer-facing Text nur Deutsch
+- keine internen Nummern, Dateinamen oder Prompttitel
+- keine Textwaende
 
-Jedes neue Projekt erhaelt:
-
-```text
-02_bildprompts/label-plan.json
-```
-
-Pro Bild werden nur wirklich noetige deutsche Texte freigegeben.
-
-Richtwert:
-- Cover: exakte Hook und sonst nichts
-- normale Bilder: 0–2 kurze Labels bevorzugt
-- maximal 3 nur bei echtem Bedarf
-- keine ganzen Voiceover-Saetze
-- keine internen Nummern / Dateinamen / Prompttitel
-- Cover-Hook nach Bild_01 verboten
-
-Wichtig:
-- Google Flow erzeugt den final sichtbaren Text
-- falsche Flow-Schrift wird in Flow regeneriert oder korrigiert
-- `fallback_overlay` darf fuer neue Projekte nicht auf Remotion verweisen
-- Remotion-Text ist verboten
+WICHTIG: Ob finaler Text im Bildgenerator oder spaeter im Editor erzeugt wird, ist aktuell noch NICHT festgelegt und wird zusammen mit der neuen Bildwelt entschieden.
 
 ## 8. Overlay-Plan
 
-Neue Projekte verwenden keine Remotion-Textoverlays.
-
-`03_pipeline/overlay-plan.json` muss so aussehen:
-
-```json
-{
-  "status": "DISABLED",
-  "reason": "All visible text is generated in Google Flow",
-  "scenes": []
-}
-```
-
-Nicht-leere Overlays sind ein Hard FAIL.
+Keine dauerhafte globale Regel, solange die neue Bildwelt nicht festgelegt ist. Text-Overlays duerfen weder automatisch erzwungen noch automatisch verboten werden. Die Entscheidung faellt mit dem neuen visuellen System.
 
 ## 9. Bildreview
 
-Jedes neue Projekt erhaelt:
-
-```text
-02_bildprompts/image-review.json
-```
-
-Pflichtkriterien pro akzeptiertem Bild:
+Unabhaengige Pflichtkriterien:
 - scientific_accuracy >= 8/10
 - voiceover_match >= 8/10
 - immediate_clarity >= 8/10
-- style_continuity >= 8/10
 - composition >= 8/10
 - visual_novelty >= 8/10
 - information_value >= 8/10
-- visible_text_whitelist = PASS
-- cover_hook_isolated = PASS
 - no_visible_asset_id = PASS
 - single_retained_asset_for_scene = PASS
 - ai_artifact_check = PASS
 - scene_difference bestanden
 - overall_score >= 8/10
 
-Ein starkes Nachbarbild gleicht kein schwaches Einzelbild aus.
+Style-spezifische Kriterien wie `style_continuity` werden nach Auswahl der neuen Bildwelt konkretisiert.
 
-## 10. Reference-First
+## 10. Referenzsystem
 
-Normale Szenen nutzen nur textfreie Stilreferenzen:
-1. `STYLE_REFERENCE.png`
-2. `EPISODE_STYLE_REFERENCE.png`
-3. Objekt-/Character-Referenzen
-4. Szenenprompt
+Aktuell OFFEN.
 
-Das texttragende `Bild_01` wird nicht als Follow-up-Style-Referenz verwendet.
+Keine alte Regel fuer `STYLE_REFERENCE.png`, `EPISODE_STYLE_REFERENCE.png` oder `Bild_01` als Stilanker automatisch uebernehmen.
+Das neue Referenzsystem wird erst nach Auswahl und Test der neuen Bildwelt definiert.
 
 ## 11. Schreib- und Produktionsprozess
 
-```text
 1. Thema und Zuschauerfrage definieren
 2. Quellen/Kernclaims pruefen
 3. Mechanism Map bauen
 4. mindestens 3 Hook-Varianten schreiben
 5. staerkste Hook waehlen
 6. Hook → Wendung → Payoff schreiben
-7. komplettes Script glätten
+7. komplettes Script glaetten
 8. Script auf Visualisierbarkeit pruefen
 9. Satz-Visual-Plan erstellen
 10. Visual-Mix und Nachbarschaftsunterschiede pruefen
-11. Label-Plan fuer Flow schreiben
-12. Flow-Prompts erstellen
-13. overlay-plan.json leer lassen
-14. erst danach Phase 2 starten
-```
+11. Label-/Textbedarf planen
+12. STYLE GATE pruefen
+13. erst nach Style-Freigabe Generierungs-Prompts finalisieren
 
 ## 12. Hard FAIL
 
@@ -208,7 +146,5 @@ Planung stoppen bei:
 - Scriptbeat ohne klaren visuellen Zweck
 - drei oder mehr isolierten Objektportraits hintereinander
 - zu vielen fast gleichen Kompositionen
-- geplantem Remotion-Text
-- Flow-Text ausserhalb der Whitelist
-- Cover-Hook nach Bild_01
-- texttragendem Cover als Follow-up-Referenz
+- internen Assetnamen als sichtbarem Text
+- Versuch, eine historische Bildwelt vor neuer Nutzerfreigabe wieder als Kanalstandard einzusetzen
