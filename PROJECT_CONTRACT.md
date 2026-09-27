@@ -89,8 +89,9 @@ Bevorzugt:
 
 Wenn mehr Inhalt noetig ist, wird ein neues Bild geplant statt das vorhandene zu ueberladen.
 
-## Beschriftungen
+## Beschriftungen in Flow
 
+Biologische Beschriftungen gehoeren weiterhin direkt ins Bild:
 - sichtbarer Text nur Deutsch
 - normalerweise 1–3 kurze Labels
 - Labels nur fuer wichtige Strukturen oder Prozesse
@@ -101,7 +102,35 @@ Wenn mehr Inhalt noetig ist, wird ein neues Bild geplant statt das vorhandene zu
 
 Die Labels werden fuer diese Bildwelt direkt in Google Flow erzeugt. Falsche Schrift oder falsche Zuordnung = Bild neu erzeugen/korrigieren.
 
-Remotion erzeugt fuer neue Videos keinen sichtbaren Text, sofern der Nutzer nichts anderes anordnet.
+## Verbindliches Praesentationssystem: Vollbild + selektives Remotion
+
+Die Illustration bleibt der Hauptdarsteller.
+
+Standard fuer kuenftige Videos:
+- ca. **85–90 %** des Videos wirken als reine Vollbild-Illustration ohne zusaetzliche Editor-Textflaeche
+- ca. **10–15 % maximal** duerfen durch selektive Remotion-Praesentation ergaenzt werden
+- Remotion verkleinert die Illustration normalerweise NICHT dauerhaft und baut keinen permanenten Seiten-/Rahmenlayout
+- keine PowerPoint-, Presenter- oder Dashboard-Optik
+
+Remotion darf gezielt erzeugen:
+1. **Zwischenueberschriften** bei echten grossen Themen-/Mechanismuswechseln
+2. **kurze Key-Facts** fuer besonders wichtige Merksaetze
+3. **eine visuelle Abschluss-/Zusammenfassungszeile**, wenn sie den Prozess klarer macht
+
+Regeln fuer Remotion-Text:
+- nur Deutsch
+- kurz und praegnant
+- normalerweise maximal 2–6 Woerter
+- keine ganzen Voice-over-Saetze
+- keine anatomischen Standardlabels ersetzen; diese bleiben Flow-Aufgabe
+- keine Korrektur falscher Flow-Schrift per Remotion
+- nicht auf jedem Bild
+- fuer einen ca. 2-Minuten-Test normalerweise nur 2–3 Zwischenueberschriften plus optional 1 Key-Fact/Summary
+- Zwischenueberschrift bevorzugt **ueber der bereits sichtbaren naechsten Illustration**, nicht als eigener leerer Textbildschirm
+- typische Einblendung kurz, etwa 0.8–1.5 Sekunden, danach Bild wieder frei
+
+Autoritativ fuer die genaue Umsetzung:
+`engine/PRESENTATION-OVERLAY-SYSTEM.md`
 
 ## Harte Stilverbote
 
@@ -164,13 +193,13 @@ Das Cover `Bild_01` wird nicht automatisch als Stilanker fuer alle Folgebilder v
 ## Drei Phasen
 
 ### Phase 1 – Creative Director
-Recherche → Claim-Check → Script → Mechanism Map → Satz-Visual-Plan → Szenenplan → Label-Plan → kurze Flow-Prompts.
+Recherche → Claim-Check → Script → Mechanism Map → Satz-Visual-Plan → Szenenplan → Label-Plan → kurze Flow-Prompts → wenige gezielte Remotion-Praesentationspunkte planen.
 
 ### Phase 2 – Google Flow
 Bild fuer Bild erzeugen → Labels pruefen → wissenschaftliche/visuelle QA → finale eindeutige Assets.
 
 ### Phase 3 – Antigravity + Tools + Remotion
-Audio kanonisieren → Whisper → Timeline → leichte Bildbewegung/Schnitt → Render → Final-QA.
+Audio kanonisieren → Whisper → Timeline → Vollbild-Illustrationen + leichte Bildbewegung/Schnitt + selektive Zwischenueberschriften/Key-Facts/Summary → Render → Final-QA.
 
 ## Autoritative Reihenfolge
 
@@ -185,4 +214,4 @@ Audio kanonisieren → Whisper → Timeline → leichte Bildbewegung/Schnitt →
 
 ## Goldene Regel
 
-**Schoene animierte Illustration + sofort verstaendliche Biologie + wenig Komplexitaet + klare deutsche Beschriftung + sichtbarer Prozess.**
+**Vollbild-Illustration ist Standard. Remotion ergaenzt nur selten und gezielt: schoene animierte Biologie, sofort verstaendlich, wenig Komplexitaet, klare Labels und wenige starke Zwischenueberschriften.**
