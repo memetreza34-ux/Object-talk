@@ -35,18 +35,29 @@
     "style": "spoken, active, concise, concrete, curiosity-driven, no textbook prose"
   },
   "visual_identity": {
-    "status": "UNDECIDED_STYLE_RESET_2026-09-27",
-    "approved_channel_style": null,
-    "approved_explainer_style": null,
-    "approved_character_style": null,
-    "approved_color_system": null,
-    "approved_material_system": null,
-    "approved_lighting_system": null,
-    "approved_reference_system": null,
-    "channel_style_reference": null,
-    "final_image_generation_allowed": false,
+    "status": "APPROVED_2026-09-27",
+    "approved_channel_style": "Clean Animated Biology Illustration",
+    "canonical_spec": "bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md",
+    "flow_style_block": "bildwelt/FLOW-STYLE-BLOCK.txt",
+    "approved_explainer_style": "clean animated biology illustration",
+    "anatomy": "simplified but recognizable",
+    "shape_language": "smooth organic illustrated forms with clean outlines",
+    "depth": "soft gradients, subtle shadows, light dimensional depth, never CGI-like",
+    "backgrounds": "bright calm pale backgrounds, not empty white studio space",
+    "color_system": "clear biological colors chosen for readability; flexible by topic",
+    "labels": "1-3 short German labels with clean pointer lines when useful",
+    "complexity": "low; 2-5 central visible elements and one dominant process per frame",
+    "style_reference_image": null,
+    "written_spec_is_authoritative": true,
+    "final_image_generation_allowed": true,
     "historical_pilot_styles_are_authoritative": false,
-    "rule": "Do not reuse any previous 2.5D, soft-3D, premium-3D or other historical visual-world rule as channel standard. A new visual world must be researched, tested and explicitly approved by the user first."
+    "forbidden_historical_styles": [
+      "2.5D Soft-3D",
+      "premium feature-animation 3D",
+      "medical CGI",
+      "glossy plastic 3D",
+      "historical pilot visual worlds"
+    ]
   },
   "flow_prompting": {
     "instruction_language": "en",
@@ -55,15 +66,19 @@
     "duplicate_image_reuse_allowed": false,
     "scene_difference_minimum_dimensions_changed": 2,
     "prefer_process_relationship_before_after_context_over_repeated_portraits": true,
-    "visual_style_generation_blocked_until_approval": true
+    "prompt_style": "short stable style block plus scene plus process plus labels plus short negative rule",
+    "style_block_path": "bildwelt/FLOW-STYLE-BLOCK.txt",
+    "labels_generated_in_flow": true,
+    "preferred_labels_per_image": "1-3",
+    "avoid_overcomplicated_prompts": true
   },
   "labels": {
     "language": "de",
     "source": "02_bildprompts/label-plan.json",
-    "preferred_per_image": "0-2",
+    "preferred_per_image": "1-3",
     "max_per_image_guideline": 3,
     "avoid_overload": true,
-    "final_rendering_strategy": "TO_BE_REDECIDED_WITH_NEW_VISUAL_WORLD"
+    "final_rendering_strategy": "GOOGLE_FLOW_DIRECT"
   },
   "audio_pacing": {
     "default_voice_speed_multiplier": 1.10,
@@ -88,7 +103,7 @@
   },
   "remotion": {
     "purpose": "timing-motion-audio-transitions",
-    "text_strategy": "TO_BE_REDECIDED_WITH_NEW_VISUAL_WORLD",
+    "text_strategy": "NO_VISIBLE_TEXT_BY_DEFAULT",
     "allowed_visual_motion": [
       "static",
       "slow-push-in",
