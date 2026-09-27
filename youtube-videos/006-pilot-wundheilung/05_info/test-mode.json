@@ -1,0 +1,9 @@
+{
+  "test_mode": true,
+  "purpose": "2-minute visual-world and presentation-system pilot",
+  "target_max_seconds": 120,
+  "preferred_range_seconds": [80, 115],
+  "hard_fail_over_seconds": 120,
+  "expected_images": 20,
+  "voice_speed_multiplier": 1.10
+}
