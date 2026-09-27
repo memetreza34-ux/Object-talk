@@ -1,0 +1,17 @@
+{
+  "status": "PENDING_IMAGES",
+  "video_id": "005-pilot-sauerstoff-zelle",
+  "rules": {
+    "minimum_score": 8.0,
+    "scientific_accuracy_minimum": 8.0,
+    "immediate_clarity_minimum": 8.0,
+    "style_continuity_minimum": 8.0,
+    "label_accuracy_required": true,
+    "same_biology_illustration_world_required": true,
+    "simple_not_overloaded_required": true,
+    "single_retained_asset_per_scene": true,
+    "extra_text_forbidden": true
+  },
+  "expected_images": 22,
+  "images": []
+}
