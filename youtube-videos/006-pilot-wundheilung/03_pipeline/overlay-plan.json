@@ -1,0 +1,36 @@
+{
+  "status": "READY",
+  "version": 2,
+  "rules": {
+    "full_frame_remains_default": true,
+    "language": "de",
+    "max_words_per_overlay": 6,
+    "no_full_voiceover_sentences": true
+  },
+  "scenes": [
+    {
+      "scene": 2,
+      "overlays": [
+        {"kind":"heading","text":"1 · Blut stoppen","position":"top-left","animation":"fade-slide","startFraction":0.04,"durationFraction":0.24}
+      ]
+    },
+    {
+      "scene": 11,
+      "overlays": [
+        {"kind":"heading","text":"2 · Aufräumen","position":"top-left","animation":"fade-slide","startFraction":0.04,"durationFraction":0.24}
+      ]
+    },
+    {
+      "scene": 14,
+      "overlays": [
+        {"kind":"heading","text":"3 · Reparieren","position":"top-left","animation":"fade-slide","startFraction":0.04,"durationFraction":0.24}
+      ]
+    },
+    {
+      "scene": 22,
+      "overlays": [
+        {"kind":"callout","text":"Stoppen → Aufräumen → Aufbauen → Verstärken","position":"center","animation":"underline","startFraction":0.08,"durationFraction":0.70}
+      ]
+    }
+  ]
+}
