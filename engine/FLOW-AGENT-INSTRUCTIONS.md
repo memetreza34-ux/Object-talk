@@ -6,75 +6,128 @@ Diese Datei enthaelt dauerhafte Google-Flow-Agent-Regeln.
 
 You are the image-production agent for the German educational channel Object-Talk.
 
-## CRITICAL CURRENT STATUS — VISUAL STYLE UNDECIDED
+## CANONICAL VISUAL WORLD
 
-The previous channel visual worlds were deliberately removed on 2026-09-27.
+Use the approved channel style:
 
-There is currently NO approved:
-- channel visual style
-- explainer style
-- character style
-- color palette
-- material language
-- lighting language
-- style-reference system
+**Clean Animated Biology Illustration**
 
-Do NOT reuse, infer or revive any historical 2.5D, soft-3D, premium-3D, feature-animation or other previous visual-world rule from old pilot files.
+Authoritative files:
+- `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
+- `bildwelt/FLOW-STYLE-BLOCK.txt`
 
-Historical pilot prompts may be read only as production history and error analysis. They are never style authority.
+Do not revive historical 2.5D, soft-3D, premium-3D, feature-animation or other old pilot styles.
 
-## GENERATION LOCK
+## STYLE RULES
 
-Until the user explicitly approves a new visual world:
-- do not generate final production images
-- do not create a permanent STYLE_REFERENCE
-- do not assume a render style from prior episodes
-- do not convert old pilot imagery into a new channel standard
+Every biology/health frame should use:
+- clean animated illustration
+- simplified but recognizable anatomy
+- smooth organic shapes
+- clean outlines
+- soft gradients and subtle shadows
+- light dimensional depth without CGI appearance
+- bright calm backgrounds
+- strong clear biological colors
+- low visual complexity
+- one dominant biological idea/process
 
-Style exploration/test images are allowed only when they are explicitly part of the new visual-world selection process.
+The image should be understandable almost immediately.
 
-## STYLE-INDEPENDENT VISUAL STORYTELLING RULES
+## PROMPT LENGTH
 
-These remain valid regardless of the future style:
-- one dominant teaching idea per frame
-- prefer visible process, relationship, route, cause/effect, comparison, before/after or context over repeated object portraits
-- maximum two isolated single-object portraits in a row
-- adjacent scenes should differ in at least two meaningful dimensions such as scale, layout, subject, direction, context or visual type
-- do not duplicate the same artwork to fill time
-- biology/process direction must remain scientifically plausible
-- the scene should communicate the mechanism visually, not rely only on text
+Keep prompts short.
 
-## TEXT
+Use this order:
+1. short canonical style block
+2. concrete scene
+3. visible process/action
+4. 1–3 German labels
+5. short negative rule
 
-Prompt instructions are written in English.
-Visible viewer-facing text, when used, must be German.
+Do not repeat long style essays in every prompt.
 
-The exact future workflow for whether labels are generated in Flow or added later in the editor will be decided together with the new visual world. Do not treat historical Flow-only or Remotion-only text rules as permanent visual-style law.
+## TEXT / LABELS
 
-Internal production names must never appear as viewer-facing artwork:
+Prompt instructions are English.
+Visible viewer-facing text is German.
+
+Default:
+- 1–3 short labels when useful
+- clean sans-serif text
+- thin clean leader lines or arrows
+- labels point unambiguously to the correct structure
+- no paragraphs
+- no English visible text
+- no internal production names
+
+Never show:
 - Bild_01 / Bild_19
-- IMAGE 19
-- Scene 19
+- IMAGE 19 / Scene 19
 - file names
 - asset IDs
 - prompt headings
 
+If Flow misspells a label or connects it to the wrong structure, regenerate/correct the image.
+
+## VISUAL STORYTELLING
+
+Prefer:
+- process
+- route/transport
+- cause → effect
+- before/after
+- comparison
+- cutaway
+- cross-section
+- macro view
+- scale changes
+
+Maximum two isolated single-object portraits in a row.
+Adjacent scenes should differ in at least two meaningful dimensions such as scale, layout, subject, direction, context or visual type.
+
+Do not make every frame an object centered on a pale background with three labels.
+
+## COMPLEXITY
+
+Prefer:
+- 2–5 central visible elements
+- 1 main process
+- 1–3 labels
+
+If more information is required, split it into another frame instead of adding more tiny details.
+
+## HARD STYLE FAILS
+
+Reject and regenerate if the image becomes:
+- photoreal medical imagery
+- medical CGI / anatomy software
+- glossy plastic 3D
+- feature-animation character style
+- toy/kids-book style
+- corporate stock infographic
+- cluttered diagram
+- empty white studio frame
+- random icon collage
+- gore/wet tissue
+- overloaded with tiny anatomy or labels
+
 ## ASSET HYGIENE
 
-Final accepted assets use sequential names such as:
-`Bild_01.png`, `Bild_02.png`, ...
+Final accepted assets use sequential names such as `Bild_01.png`, `Bild_02.png`, ...
 
-Do not use the same final artwork for multiple scene numbers.
-Failed candidates are replaced, not accumulated as `v2`, `final2`, `copy`, `_A`, `_B` unless temporary comparison files are explicitly part of a style test.
+Generate each image individually.
+Do not reuse the same final artwork for multiple scene numbers.
+Failed candidates are replaced, not accumulated.
 
 ## QA
 
-Regardless of style, reject final production imagery if:
+Reject final production imagery if:
 - scientific relationship is wrong
 - scene does not match the voice-over
-- main subject/action is unclear
+- main process is unclear
+- image is too complex
+- labels are wrong or unreadable
+- visual style does not match the canonical illustration world
 - image is a near-duplicate without a new teaching purpose
 - severe AI artifacts are present
-- unwanted internal text/asset IDs appear
-
-Additional style-specific QA will be added only after the new visual world is selected and approved.
