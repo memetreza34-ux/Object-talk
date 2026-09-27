@@ -64,12 +64,37 @@ Unabhaengig vom konkreten Motiv:
 
 ## Text im Bild
 
+Biologische Beschriftungen kommen aus Google Flow:
 - viewer-facing Text nur Deutsch
 - normalerweise 1–3 kurze Labels
 - saubere Hinweislinien/Pfeile
 - keine Textwaende
 - keine internen Assetnamen/Szenennummern
-- Labels werden standardmaessig direkt in Google Flow erzeugt
+
+## Praesentationssystem
+
+Die Illustrationen bleiben fast immer vollformatig.
+
+Kanalstandard:
+- ca. **85–90 % reine Vollbild-Illustration**
+- maximal ca. **10–15 % selektive Remotion-Praesentation**
+
+Remotion darf sparsam ergaenzen:
+- Zwischenueberschriften bei echten Abschnittswechseln
+- kurze Key-Facts
+- eine Summary-/Prozesszeile
+
+Dabei gilt:
+- normalerweise 2–6 Woerter
+- keine ganzen Voice-over-Saetze
+- keine anatomischen Labels ersetzen
+- keine dauerhaften Rahmen, Seitenleisten oder PowerPoint-/Dashboard-Layouts
+- Zwischenueberschriften bevorzugt kurz ueber der bereits sichtbaren naechsten Illustration
+
+Fuer ein ca. 2-Minuten-Video normalerweise 2–3 Zwischenueberschriften plus optional 1 Key-Fact/Summary.
+
+Details:
+`engine/PRESENTATION-OVERLAY-SYSTEM.md`
 
 ## Aktueller Pilot
 
@@ -86,14 +111,14 @@ Testvorgaben:
 ## Drei Phasen
 
 ### Phase 1 – Creative Director
-Thema → Recherche → Claim-Check → Mechanism Map → Script → Satz-Visual-Plan → Szenenplan → Label-Plan → kurze Flow-Prompts.
+Thema → Recherche → Claim-Check → Mechanism Map → Script → Satz-Visual-Plan → Szenenplan → Label-Plan → kurze Flow-Prompts → selektive Praesentationspunkte planen.
 
 ### Phase 2 – Google Flow
 Jedes Bild einzeln erzeugen → Beschriftung pruefen → Bild-QA → finale Assets.
 
 ### Phase 3 – Antigravity + Tools + Remotion
-Audio vorbereiten → Whisper → Timeline → leichte Bildbewegung/Schnitt → Render → Final-QA.
+Audio vorbereiten → Whisper → Timeline → Vollbild-Illustrationen + leichte Bildbewegung/Schnitt + wenige Zwischenueberschriften/Key-Facts/Summary → Render → Final-QA.
 
 ## Goldene Regel
 
-**Schoene Illustration + sofort verstaendliche Biologie + wenig Komplexitaet + klare Beschriftung.**
+**Vollbild-Illustration ist Standard. Remotion ergaenzt selten und gezielt.**
