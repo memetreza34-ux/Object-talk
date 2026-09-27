@@ -4,7 +4,7 @@
 **Was passiert in deinem Körper, wenn du dich schneidest?**
 
 ## Ziel
-Zweiter End-to-End-Test der neuen **Clean Animated Biology Illustration** plus selektiver Remotion-Präsentation.
+End-to-End-Test der **Clean Animated Biology Illustration** mit rein bildbasierter Remotion-Phase.
 
 ## Umfang
 - maximal 2:00 Minuten final
@@ -35,21 +35,37 @@ Pflicht:
 ## Google Flow
 - `02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt` verwenden
 - jedes Bild einzeln erzeugen
-- exakt `Bild_01` bis `Bild_22`
+- intern exakt `Bild_01.png` bis `Bild_22.png` speichern
+- **Bildnummern sind nur Dateinamen und dürfen niemals im Bild sichtbar sein**
 - sichtbare biologische Labels nur aus `label-plan.json`
-- falsche Schrift/Zuordnung = regenerieren
+- keine sichtbaren Szenennummern, Dateinamen, Asset-IDs oder Prompttitel
+- falsche Schrift/Zuordnung/interne Nummer im Bild = regenerieren
 - keine Bildduplikate
 
-## Remotion-Präsentation
-Vollbild-Illustration bleibt Standard.
+## Remotion – nur Bilder, kein Text
 
-Geplant sind nur:
-- Szene 2: `1 · Blut stoppen`
-- Szene 11: `2 · Aufräumen`
-- Szene 14: `3 · Reparieren`
-- Szene 22: `Stoppen → Aufräumen → Aufbauen → Verstärken`
+Remotion erzeugt keinerlei sichtbaren Text.
 
-Keine anatomischen Labels mit Remotion ergänzen. Keine dauerhaften Textleisten oder Rahmen.
+Verboten:
+- Zwischenüberschriften
+- Key-Facts
+- Summary-Zeilen
+- Kapiteltexte
+- Callouts
+- Untertitel
+- anatomische Labels
+- sichtbare Bild-/Szenennummern
+
+Remotion darf nur:
+- Vollbild-Illustrationen anzeigen
+- Audio einbinden
+- Timing anwenden
+- leichte Push/Pull/Pan-Bewegung
+- schneiden
+- dezente nicht-textliche Übergänge
+- rendern
+
+`03_pipeline/overlay-plan.json` bleibt deaktiviert und leer.
 
 ## Audio / Timing
 1. Voice aus `VOICEOVER-ZUM-KOPIEREN.txt` erzeugen.
@@ -65,6 +81,6 @@ Keine anatomischen Labels mit Remotion ergänzen. Keine dauerhaften Textleisten 
 - 22 unterschiedliche Illustrationen
 - Bildwelt bleibt über Blut, Zellen, Haut und Gewebe konsistent
 - keine überladenen Bilder
-- Remotion-Text bleibt deutlich untergeordnet
-- Kapitelüberschriften helfen der Orientierung
-- finaler Summary-Frame funktioniert als klarer Abschluss
+- 0 sichtbare Remotion-Textelemente
+- 0 sichtbare Produktionsnummern/-IDs
+- finaler Summary-Frame funktioniert rein visuell als klarer Abschluss
