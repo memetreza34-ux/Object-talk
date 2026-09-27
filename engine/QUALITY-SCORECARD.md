@@ -50,15 +50,15 @@ Alle Bilder muessen zur **Clean Animated Biology Illustration** passen:
 - Wiederholen sich Nachbarbilder nicht ohne neue Aussage?
 - Werden Cutaway, Querschnitt, Makro, Prozess, Vergleich und Maßstabswechsel sinnvoll gemischt?
 
-### 7. Labels und Praesentation – 5 %
+### 7. Labels und sichtbarer Text – 5 %
 - Sind normalerweise nur 1–3 wichtige deutsche Flow-Labels vorhanden?
 - Sind Labels korrekt geschrieben und eindeutig zugeordnet?
 - Sind Hinweislinien/Pfeile sauber?
 - Gibt es keinen englischen sichtbaren Text?
-- Bleibt die Illustration klarer Hauptdarsteller?
-- Werden Remotion-Zwischenueberschriften/Key-Facts nur selten und sinnvoll eingesetzt?
-- Sind Remotion-Overlays kurz, normalerweise maximal 2–6 Woerter?
-- Gibt es keine dauerhaften Rahmen, Seitenleisten oder PowerPoint-/Dashboard-Aufteilung?
+- Gibt es keine sichtbare Bild-/Szenennummer?
+- Gibt es keinen sichtbaren Dateinamen, Asset-ID oder Prompttitel?
+- Stammt jeder sichtbare Text bereits aus einem freigegebenen Flow-Bild?
+- Erzeugt Remotion exakt 0 sichtbare Textelemente?
 
 ### 8. Audio und Synchronität – 5 %
 - Ist das Voice-over vollständig, verständlich und technisch sauber?
@@ -68,48 +68,54 @@ Alle Bilder muessen zur **Clean Animated Biology Illustration** passen:
 - 1920×1080, 30 fps
 - Audio vollständig
 - keine schwarzen Frames
-- keine fehlenden oder doppelten Bildnummern
+- keine fehlenden oder doppelten Bilddateien
 - finaler Renderbericht vorhanden
-- Overlay-Laufzeitanteil technisch innerhalb der erlaubten Grenze
+- `overlay-plan.json` deaktiviert und leer
+- Renderer-Runtime meldet `visibleRemotionText: false` und `textOverlayCount: 0`
 
 ### 10. Zuschauerbindung – 5 %
 - Funktioniert Bild_01 sofort als Hook/Cover?
 - Entwickelt sich die Erklärung sichtbar weiter?
-- Helfen seltene Zwischenueberschriften bei echten Themenwechseln statt den Fluss zu unterbrechen?
-- Liefert das Ende eine klare Auflösung statt bloßer Wiederholung?
+- Entstehen Abschnittswechsel durch Bildidee, Maßstab, Schnitt und Voice statt durch Texttafeln?
+- Liefert das Ende eine klare visuelle Auflösung statt bloßer Wiederholung?
 
 ## Bild-Einzelreview
 
 Jedes finale Bild erhält mindestens:
 
 ```text
-Scientific accuracy:      __ /10
-Voice-over match:         __ /10
-Immediate clarity:        __ /10
-Style continuity:         __ /10
-Composition:              __ /10
-Complexity control:       __ /10
-Label accuracy:           __ /10
-AI artifact check:        PASS / FAIL
-Scene difference:         PASS / FAIL
-Overall:                   __ /10
-Decision:                  ACCEPT / REGENERATE
+Scientific accuracy:                   __ /10
+Voice-over match:                      __ /10
+Immediate clarity:                     __ /10
+Style continuity:                      __ /10
+Composition:                           __ /10
+Complexity control:                    __ /10
+Label accuracy:                        __ /10
+Visible text whitelist:                PASS / FAIL
+No visible asset/image ID:             PASS / FAIL
+No visible scene number:               PASS / FAIL
+No filename or prompt heading visible: PASS / FAIL
+Single retained asset for scene:       PASS / FAIL
+AI artifact check:                     PASS / FAIL
+Scene difference:                      PASS / FAIL
+Overall:                               __ /10
+Decision:                              ACCEPT / REGENERATE
 ```
 
 Mindestziel pro Bild: 8,0/10.
 
-## Finaler Praesentationscheck
+## Finaler Präsentationscheck
 
-Zusaetzlich am fertigen Render pruefen:
+Am fertigen Render muss gelten:
 
 ```text
-Full-frame illustration clearly dominant: PASS / FAIL
-Remotion overlay share <= 15%:             PASS / FAIL
-Max 1 overlay per scene:                    PASS / FAIL
-Max 6 words per overlay:                    PASS / FAIL
-Biology labels remain Flow responsibility:  PASS / FAIL
-No persistent panels/frames:                PASS / FAIL
-Presentation supports, not replaces image:  PASS / FAIL
+100% full-frame illustration:           PASS / FAIL
+Remotion visible text = 0:              PASS / FAIL
+Overlay plan disabled and empty:        PASS / FAIL
+No visible image/scene numbers:         PASS / FAIL
+No visible filenames/asset IDs:         PASS / FAIL
+Biology labels come only from Flow:     PASS / FAIL
+No persistent panels/frames:            PASS / FAIL
 ```
 
 ## Harte Ausschlusskriterien
@@ -119,18 +125,19 @@ Keine Freigabe bei:
 - fachlich falscher Anatomie mit Einfluss auf die Erklärung
 - falschem oder missverständlichem Label
 - englischem sichtbarem Text
-- sichtbar ueberladenem Bild
+- sichtbar überladenem Bild
 - deutlichem Stilbruch gegen `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
 - Drift in fotorealistischen Medizin-Look, Medical-CGI oder glossy 3D
 - Voice-over und Bild widersprechen sich
 - fehlendem Pflichtbild
-- doppelter/falscher Bildnummer
+- doppelter/falscher interner Bildnummerierung
 - schwerem KI-Artefakt im Hauptmotiv
 - nicht dokumentiertem Review bei einem Pflichtbild
-- Remotion-Praesentation ueber ca. 15 % der Laufzeit
-- ganzen Voice-over-Saetzen als Remotion-Text
-- Remotion als Ersatz fuer biologische Flow-Labels
-- dauerhafter PowerPoint-/Dashboard-/Seitenleisten-Optik
+- sichtbarer `Bild_XX`-/`Scene XX`-/`Szene XX`-Nummer
+- sichtbarem Dateinamen, Asset-ID oder Prompttitel
+- irgendeinem von Remotion erzeugten sichtbaren Text
+- nicht-leerem `overlay-plan.json`
+- Remotion als Ersatz oder Korrektur für biologische Flow-Labels
 
 ## Gesamtwert
 
@@ -141,7 +148,7 @@ VO ↔ Visual:                  __ /10 × 15 %
 Visuelle Erklärtiefe:         __ /10 × 10 %
 Bildqualität/Konsistenz:      __ /10 × 10 %
 Bildrhythmus:                 __ /10 × 10 %
-Labels/Praesentation:         __ /10 ×  5 %
+Labels/sichtbarer Text:       __ /10 ×  5 %
 Audio/Sync:                   __ /10 ×  5 %
 Technik:                      __ /10 ×  5 %
 Zuschauerbindung:             __ /10 ×  5 %
