@@ -43,12 +43,13 @@ Interne `TEST`-Piloten sind davon ausgenommen, wenn sie ausschließlich Pipeline
 | 002 | IDEE | Zellbiologie | Was ist eine menschliche Zelle? | Aufbau und wichtigste Zellbestandteile verständlich erklären | – |
 | 003 | IDEE | Gehirn | Wie kommunizieren Nervenzellen? | Neuron, elektrisches Signal, Synapse, Neurotransmitter | – |
 | 004 | IDEE | Ernährung | Was macht Zucker im Körper? | spätere Longform: Aufnahme, Blutzucker, Insulin, Energie und Überschuss deutlich tiefer | Testpiloten 000/002 behandeln nur die Grundkette |
-| 005 | IDEE | Kreislauf | Wie transportiert Blut Sauerstoff? | spätere Longform: Sauerstofftransport deutlich tiefer, ggf. Sättigung, Belastung, Regulation | Testpilot 001 behandelt nur Grundreise Lunge→Zelle→Lunge |
-| 006 | IDEE | Immunsystem | Wie bekämpft der Körper Bakterien? | angeborene Immunabwehr vereinfacht erklären | – |
+| 005 | IDEE | Kreislauf | Wie transportiert Blut Sauerstoff? | spätere Longform: Sauerstofftransport deutlich tiefer, ggf. Sättigung, Belastung, Regulation | Testpiloten 001/005 behandeln nur die Grundreise |
+| 006 | IDEE | Immunsystem | Wie bekämpft der Körper Bakterien? | angeborene Immunabwehr vereinfacht erklären | Pilot 006 berührt Immunzellen nur im Kontext Wundheilung |
 | 007 | IDEE | Ernährung | Was passiert nach einer proteinreichen Mahlzeit? | Verdauung von Protein, Aminosäuren und Nutzung im Körper | Testpilot 003 berührt Protein nur als Baustoff für Muskelanpassung |
 | 008 | IDEE | Schlaf | Was passiert im Körper, während wir schlafen? | Gehirn, Erholung, Gedächtnis, Hormone und Schlafphasen als Überblick | – |
 | 009 | IDEE | Muskeln | Wie wächst ein Muskel? | spätere Longform: Training, Hypertrophie, Proteinsynthese, Ernährung, Regeneration und Progression deutlich tiefer | Testpilot 003 behandelt nur vereinfachte Grundkette |
 | 010 | IDEE | Gehirn | Wie entsteht eine Erinnerung? | Verarbeitung, Synapsen und Gedächtnisbildung vereinfacht | 003 teilweise |
+| 011 | IDEE | Haut | Wie heilt eine Wunde? | spätere Longform: Hämostase, Entzündung, Proliferation, Remodeling und Narbenbildung deutlich tiefer | Testpilot 006 behandelt nur die vereinfachte Grundkette |
 
 ## Interne Tests
 
@@ -114,7 +115,7 @@ Zweck:
 - 35 eindeutige Visual-Beats
 - 1.10x-Voice und Pausenkompression testen
 - Text-Whitelist und eindeutige Bildnummern testen
-- 2.5D/Soft-3D-Bildwelt stabilisieren
+- damalige 2.5D/Soft-3D-Bildwelt testen
 - Cover-Hook-Leak und visuelle Wiederholungen im echten Render erkennen
 
 Inhaltlich behandelt der Test vereinfacht:
@@ -136,8 +137,8 @@ Status: `TEST`
 Zweck:
 - ca. 2:05–2:30 Minuten
 - 35 eindeutige Visual-Beats
-- neue Hook-Isolation aus Pilot 002 testen
-- textfreie Episode-Style-Referenz statt texttragendem Cover testen
+- Hook-Isolation testen
+- textfreie Episode-Style-Referenz testen
 - stärkere visuelle Abwechslung testen
 - informationsreichere Mechanismusbilder ohne Textwand testen
 - Muskelkater-/Mikroriss-Mythos fachlich sauber vermeiden
@@ -147,6 +148,73 @@ Inhaltlich behandelt der Test vereinfacht:
 `Widerstand → mechanische Spannung → Zell-Signal → Proteinsynthese → Aminosäuren → Myofibrillen → Hypertrophie → Erholung → Progression`
 
 **Dieser Test blockiert Thema 009 nicht.** Eine spätere Longform darf Muskelwachstum deutlich tiefer erklären.
+
+### TEST 004 – Muskelkater
+
+Projekt:
+
+```text
+youtube-videos/004-pilot-muskelkater/
+```
+
+Status: `TEST`
+
+Zweck:
+- verzögerten Muskelkater verständlich erklären
+- stärkeren Frage-Hook testen
+- hohe visuelle Abwechslung über Alltag, Muskel, Nerven und Zeitverlauf testen
+- Laktat-Mythos und Trainingsqualitäts-Mythos sauber vermeiden
+- Übergang von alter Bildwelt zur später neu definierten Kanalwelt dokumentieren
+
+Inhaltlich behandelt der Test vereinfacht:
+
+`ungewohnte/exzentrische Belastung → strukturelle Beanspruchung → Reparatur-/Entzündungsprozesse → sensibilisierte Schmerzrezeptoren → verzögerter Schmerz → Anpassung`
+
+### TEST 005 – Sauerstoff bis zur Zelle
+
+Projekt:
+
+```text
+youtube-videos/005-pilot-sauerstoff-zelle/
+```
+
+Status: `TEST`
+
+Zweck:
+- erster kompletter Test der **Clean Animated Biology Illustration**
+- maximal 2:00 Minuten
+- 22 eindeutige Bilder
+- neue Bildwelt über Lunge, Blut, Herz, Zelle und Mitochondrium testen
+- einfache biologische Beschriftungen direkt in Flow testen
+
+Inhaltlich behandelt der Test vereinfacht:
+
+`Einatmen → Lungenbläschen → Sauerstoff ins Blut → Hämoglobin → Herz/Kreislauf → Kapillare → Zelle → Mitochondrium`
+
+**Dieser Test blockiert Thema 005 nicht.** Eine spätere Longform darf Sauerstofftransport deutlich tiefer behandeln.
+
+### TEST 006 – Wundheilung
+
+Projekt:
+
+```text
+youtube-videos/006-pilot-wundheilung/
+```
+
+Status: `TEST`
+
+Zweck:
+- maximal 2:00 Minuten
+- 22 eindeutige Bilder
+- Clean Animated Biology Illustration über Haut, Blut, Gerinnung, Immunzellen und Gewebereparatur testen
+- neues Präsentationssystem testen: ca. 85–90 % Vollbild-Illustration, nur wenige selektive Remotion-Zwischenüberschriften/Summarys
+- verständliche biologische Prozesskette ohne Detailüberladung testen
+
+Inhaltlich behandelt der Test vereinfacht:
+
+`Schnitt → Gefäßverletzung/Verengung → Blutplättchen → Fibrinnetz/Gerinnsel → Immunzellen/Aufräumen → Fibroblasten/Kollagen → neue Gefäße → Hautschluss → Remodeling/Narbe`
+
+**Dieser Test blockiert Thema 011 nicht.** Eine spätere Longform darf Wundheilung wesentlich tiefer und mit weiteren Einflussfaktoren erklären.
 
 ## Bereits produzierte normale Videos
 
