@@ -31,13 +31,23 @@ Die alte 2.5D-/Soft-3D- und Premium-3D-Logik darf nicht reaktiviert werden.
 - 1–3 kurze deutsche Labels, wenn sinnvoll
 - unterschiedliche Kompositionen statt wiederholter Objektportraits
 
+## Präsentationssystem
+
+- Vollbild-Illustrationen bleiben Standard
+- ca. 85–90 % reine Illustration
+- maximal ca. 10–15 % selektive Remotion-Präsentation
+- nur wenige Zwischenüberschriften, Key-Facts oder Summarys
+- biologische Labels bleiben in Flow
+
+Autoritativ: `PRESENTATION-OVERLAY-SYSTEM.md`
+
 ## Aktiver Testpilot
 
-`youtube-videos/005-pilot-sauerstoff-zelle/`
+`youtube-videos/006-pilot-wundheilung/`
 
-Thema: **Wie kommt Sauerstoff von der Lunge bis in eine einzelne Koerperzelle?**
+Thema: **Was passiert in deinem Koerper, wenn du dich schneidest?**
 
-Pilot 005 ist ein dokumentierter Kurztest mit harter finaler Obergrenze von 2:00 Minuten und testet die neue Bildwelt ueber Lunge, Blut, Herz, Zelle und Mitochondrium.
+Pilot 006 ist ein dokumentierter Kurztest mit harter finaler Obergrenze von 2:00 Minuten. Er testet Haut, Blutgefäße, Blutplättchen, Fibrin, Immunzellen, Kollagen, neue Gefäße und Gewebeumbau in derselben Bildwelt sowie das neue selektive Remotion-Präsentationssystem.
 
 ## Produktionsablauf
 
@@ -71,6 +81,7 @@ Themen-Gehirn + Themen-Score
 - `POSTMORTEM-STANDARD.md`
 - `FLOW-AGENT-INSTRUCTIONS.md`
 - `FLOW-PRODUCTION-STANDARD.md`
+- `PRESENTATION-OVERLAY-SYSTEM.md`
 
 ## V2-Pruefung
 
@@ -81,4 +92,4 @@ python tools/validate_planning_v2.py youtube-videos/MEIN-VIDEO --phase2
 
 ## Goldene Regel
 
-**Schoene Illustration + sofort verstaendliche Biologie + wenig Komplexitaet + klare Beschriftung.**
+**Schoene Illustration + sofort verstaendliche Biologie + wenig Komplexitaet + klare Beschriftung + Remotion nur sparsam.**
