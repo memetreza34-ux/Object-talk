@@ -33,9 +33,11 @@ Die alte 2.5D-/Soft-3D- und Premium-3D-Logik darf nicht reaktiviert werden.
 
 ## Aktiver Testpilot
 
-`youtube-videos/004-pilot-muskelkater/`
+`youtube-videos/005-pilot-sauerstoff-zelle/`
 
-Dieser Pilot wird mit der neuen Bildwelt weitergefuehrt.
+Thema: **Wie kommt Sauerstoff von der Lunge bis in eine einzelne Koerperzelle?**
+
+Pilot 005 ist ein dokumentierter Kurztest mit harter finaler Obergrenze von 2:00 Minuten und testet die neue Bildwelt ueber Lunge, Blut, Herz, Zelle und Mitochondrium.
 
 ## Produktionsablauf
 
