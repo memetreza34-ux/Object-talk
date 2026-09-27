@@ -73,56 +73,81 @@ Ein schoenes Themenbild ohne klaren Erklaerwert wird nicht produziert.
 - danach Prozess-/Beziehungs-/Kontextbild
 - benachbarte Szenen unterscheiden sich in mindestens zwei Dimensionen
 - gleiche Uebersichtskomposition nicht ohne echten neuen Zweck wiederholen
-- ca. 20–35 % wichtiger Mechanismusframes duerfen einen sinnvollen Zusatzdetailpunkt tragen
+- verschiedene Bildtypen nutzen: Cutaway, Querschnitt, Makro, Zell-Innenansicht, Transportweg, Vergleich, Massstabswechsel, Alltagsszene
 
-## 6. Bild-IDs
+## 6. Komplexitaetsplanung
+
+Die freigegebene Bildwelt ist bewusst einfach.
+
+Pro Bild bevorzugt:
+- 2–5 zentrale sichtbare Elemente
+- 1 Hauptprozess
+- 1–3 kurze Labels
+
+Wenn ein Beat mehr verlangt, in mehrere Bilder teilen statt ein Bild zu ueberladen.
+
+## 7. Bild-IDs
 
 Jedes geplante Bild erhaelt genau eine stabile ID:
 `Bild_01`, `Bild_02`, `Bild_03`, ...
 
 Die ID ist Produktionsmetadaten und darf nie sichtbar im Bild erscheinen.
 
-## 7. Text-/Label-Plan
+## 8. Label-Plan
 
-Jedes neue Projekt darf einen `02_bildprompts/label-plan.json` erhalten.
+Jedes Projekt erhaelt `02_bildprompts/label-plan.json`.
 
-Inhaltlich planen:
-- welche Begriffe wirklich sichtbar sein muessen
+Regeln:
 - viewer-facing Text nur Deutsch
+- normalerweise 1–3 kurze Labels
+- nur wichtige Strukturen/Prozesse beschriften
+- keine ganzen Voiceover-Saetze
 - keine internen Nummern, Dateinamen oder Prompttitel
-- keine Textwaende
+- Label muss eindeutig auf die richtige Struktur zeigen
 
-WICHTIG: Ob finaler Text im Bildgenerator oder spaeter im Editor erzeugt wird, ist aktuell noch NICHT festgelegt und wird zusammen mit der neuen Bildwelt entschieden.
+Labels werden standardmaessig in Google Flow direkt im Bild erzeugt.
 
-## 8. Overlay-Plan
+## 9. Prompt-Plan
 
-Keine dauerhafte globale Regel, solange die neue Bildwelt nicht festgelegt ist. Text-Overlays duerfen weder automatisch erzwungen noch automatisch verboten werden. Die Entscheidung faellt mit dem neuen visuellen System.
+Prompts muessen kurz bleiben.
 
-## 9. Bildreview
+Schema:
+1. `bildwelt/FLOW-STYLE-BLOCK.txt`
+2. konkrete Szene
+3. sichtbarer Prozess
+4. exakte deutsche Labels
+5. kurze Negativregel
 
-Unabhaengige Pflichtkriterien:
+Kein langer Style-Roman pro Szene.
+
+## 10. Bildreview
+
+Pflichtkriterien:
 - scientific_accuracy >= 8/10
 - voiceover_match >= 8/10
 - immediate_clarity >= 8/10
+- style_continuity >= 8/10
 - composition >= 8/10
 - visual_novelty >= 8/10
 - information_value >= 8/10
+- complexity_control >= 8/10
+- labels_correct = PASS
 - no_visible_asset_id = PASS
 - single_retained_asset_for_scene = PASS
 - ai_artifact_check = PASS
 - scene_difference bestanden
 - overall_score >= 8/10
 
-Style-spezifische Kriterien wie `style_continuity` werden nach Auswahl der neuen Bildwelt konkretisiert.
+## 11. Referenzsystem
 
-## 10. Referenzsystem
+Die schriftliche Bildwelt ist die oberste Stilautoritaet:
+`bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
 
-Aktuell OFFEN.
+Eine spaetere `assets/channel/STYLE_REFERENCE.png` ist nur zusaetzlicher visueller Anker nach Nutzerfreigabe.
 
-Keine alte Regel fuer `STYLE_REFERENCE.png`, `EPISODE_STYLE_REFERENCE.png` oder `Bild_01` als Stilanker automatisch uebernehmen.
-Das neue Referenzsystem wird erst nach Auswahl und Test der neuen Bildwelt definiert.
+Das Cover `Bild_01` ist nicht automatisch Style-Master fuer alle Folgeframes.
 
-## 11. Schreib- und Produktionsprozess
+## 12. Schreib- und Produktionsprozess
 
 1. Thema und Zuschauerfrage definieren
 2. Quellen/Kernclaims pruefen
@@ -134,17 +159,18 @@ Das neue Referenzsystem wird erst nach Auswahl und Test der neuen Bildwelt defin
 8. Script auf Visualisierbarkeit pruefen
 9. Satz-Visual-Plan erstellen
 10. Visual-Mix und Nachbarschaftsunterschiede pruefen
-11. Label-/Textbedarf planen
-12. STYLE GATE pruefen
-13. erst nach Style-Freigabe Generierungs-Prompts finalisieren
+11. Label-Plan schreiben
+12. kurze Flow-Prompts aus dem kanonischen Styleblock bauen
+13. Bilder einzeln erzeugen und pruefen
 
-## 12. Hard FAIL
+## 13. Hard FAIL
 
-Planung stoppen bei:
+Planung/Produktion stoppen bei:
 - schwachem / schulbuchartigem Einstieg
-- erstem Beat ohne Hook-Funktion
 - Scriptbeat ohne klaren visuellen Zweck
 - drei oder mehr isolierten Objektportraits hintereinander
 - zu vielen fast gleichen Kompositionen
+- ueberladenem Bildplan
+- mehr Labels als fuer das Verstaendnis noetig
 - internen Assetnamen als sichtbarem Text
-- Versuch, eine historische Bildwelt vor neuer Nutzerfreigabe wieder als Kanalstandard einzusetzen
+- alter 2.5D-/Premium-3D-Bildwelt statt der freigegebenen Illustrationswelt
