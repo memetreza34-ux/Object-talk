@@ -2,13 +2,19 @@
 
 Dieser Ordner ist fuer spaetere freigegebene wiederkehrende Figuren oder Objekte vorgesehen.
 
-## Aktueller Status
+## Kanalregel
 
-Es gibt aktuell keine freigegebene Character-Bildwelt und keinen verbindlichen Style Anchor.
+Die freigegebene Kanalbildwelt ist:
+**Clean Animated Biology Illustration**
 
-Bis die neue Kanalbildwelt festgelegt ist:
-- keine historischen Character-Designs als Standard verwenden
-- keine Figurenliste als verpflichtenden Kanalstil behandeln
-- keine alte STYLE_REFERENCE voraussetzen
+Wiederkehrende Figuren sind kein Pflichtbestandteil des Formats.
 
-Nach Freigabe der neuen Bildwelt wird entschieden, ob wiederkehrende Character-Referenzen ueberhaupt sinnvoll sind und wie sie gespeichert werden.
+Wenn spaeter eine Figur oder ein sprechender Gegenstand genutzt wird:
+- gleiche Illustrationssprache wie die Biologie-Bildwelt
+- klare vereinfachte Formen
+- kein Premium-3D-/Pixar-Look
+- kein Spielzeug-/Kinderbuch-Look
+- Figur darf die biologische Erklaerung nicht dominieren
+- Referenz nur speichern, wenn sie wiederkehrend wirklich gebraucht wird
+
+Historische Character-Designs sind nicht automatisch gueltig.
