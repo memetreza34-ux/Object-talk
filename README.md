@@ -98,15 +98,16 @@ Details:
 
 ## Aktueller Pilot
 
-`youtube-videos/005-pilot-sauerstoff-zelle/`
+`youtube-videos/006-pilot-wundheilung/`
 
-Thema: **Wie kommt Sauerstoff von der Lunge bis in eine einzelne Koerperzelle?**
+Thema: **Was passiert in deinem Koerper, wenn du dich schneidest?**
 
 Testvorgaben:
 - maximal 2:00 Minuten final
-- 250 Woerter Script
+- ca. 213 Woerter Script
 - 22 eindeutige Bilder
-- testet Lunge, Blut, Herz, Zelle und Mitochondrium in derselben neuen Bildwelt
+- testet Haut, Blutgefaesse, Blutplaettchen, Fibrin, Immunzellen, Kollagen und Gewebeumbau
+- testet gleichzeitig das neue selektive Remotion-Praesentationssystem
 
 ## Drei Phasen
 
