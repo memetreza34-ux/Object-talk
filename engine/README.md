@@ -4,45 +4,40 @@ Dieser Ordner enthaelt die globalen Produktionsregeln fuer Object-Talk-YouTube-V
 
 ## Zweck
 
-Die Engine sorgt dafuer, dass Recherche, Script, Planung, Audio, Timing und QA nicht bei jedem Video neu erfunden werden.
+Die Engine sorgt dafuer, dass Recherche, Script, Planung, Bildproduktion, Audio, Timing und QA nicht bei jedem Video neu erfunden werden.
 
-Sie definiert weiterhin:
-- Themenauswahl und Abgrenzung
-- neugiergetriebenes Scriptwriting
-- Mechanism Map und Satz-Visual-Planung
-- Longform-Laenge und Testausnahmen
-- semantischen Bildrhythmus
-- wissenschaftliche Pruefung
-- Voice-/Audio-Standard
-- Whisper-/Script-Synchronisierung
-- Asset-Hygiene
-- QA und Postmortem
+## Verbindliche Bildwelt
 
-## WICHTIG: KEINE AKTIVE BILDWELT
+Kanalweit gilt:
 
-Alle bisherigen kanalweiten Bildwelt-Definitionen wurden am 27.09.2026 entfernt.
+**Clean Animated Biology Illustration**
 
-Die Engine legt aktuell NICHT fest:
-- 2D / 2.5D / 3D
-- Renderstil
-- Character-Look
-- Anatomie-Look
-- Farbpalette
-- Materialien
-- Licht
-- Kameraaesthetik
-- Style Reference
-- finale Text-/Overlay-Strategie
+Autoritativ:
+- `../bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
+- `../bildwelt/FLOW-STYLE-BLOCK.txt`
 
-Historische Piloten koennen alte Stilregeln enthalten. Sie sind keine Autoritaet fuer die neue Bildwelt.
+Die alte 2.5D-/Soft-3D- und Premium-3D-Logik darf nicht reaktiviert werden.
+
+## Visuelles Prinzip
+
+- vereinfachte, erkennbare Biologie
+- saubere animierte Illustration
+- weiche organische Formen
+- klare Konturen
+- weiche Verlaeufe und leichte Tiefe
+- helle ruhige Hintergruende
+- wenige wichtige Elemente
+- ein klarer Prozess pro Bild
+- 1–3 kurze deutsche Labels, wenn sinnvoll
+- unterschiedliche Kompositionen statt wiederholter Objektportraits
 
 ## Aktiver Testpilot
 
 `youtube-videos/004-pilot-muskelkater/`
 
-Die inhaltliche Planung bleibt bestehen. Finale Bildproduktion ist pausiert, bis eine neue Bildwelt getestet und vom Nutzer freigegeben wurde.
+Dieser Pilot wird mit der neuen Bildwelt weitergefuehrt.
 
-## Aktueller Produktionsablauf
+## Produktionsablauf
 
 ```text
 Themen-Gehirn + Themen-Score
@@ -51,11 +46,10 @@ Themen-Gehirn + Themen-Score
 → Script
 → Satz-Visual-Plan
 → semantische Szenen
-→ Label-/Textbedarf
-→ PHASE-1-PASS
-→ STYLE GATE
-→ neue Bildwelt testen und freigeben
-→ danach Medienproduktion
+→ Label-Plan
+→ kurze Flow-Prompts
+→ Google Flow Bild fuer Bild
+→ Bild-QA
 → Audio + Whisper
 → exakte Szenen-Timeline
 → Remotion / Render
@@ -73,7 +67,8 @@ Themen-Gehirn + Themen-Score
 - `PHASE-GATES.md`
 - `QUALITY-SCORECARD.md`
 - `POSTMORTEM-STANDARD.md`
-- `FLOW-AGENT-INSTRUCTIONS.md` – aktuell mit Style-Gate statt festem Stil
+- `FLOW-AGENT-INSTRUCTIONS.md`
+- `FLOW-PRODUCTION-STANDARD.md`
 
 ## V2-Pruefung
 
@@ -84,4 +79,4 @@ python tools/validate_planning_v2.py youtube-videos/MEIN-VIDEO --phase2
 
 ## Goldene Regel
 
-**Keine historische Bildwelt als Standard reaktivieren. Neue Bildwelt erst testen und ausdruecklich freigeben.**
+**Schoene Illustration + sofort verstaendliche Biologie + wenig Komplexitaet + klare Beschriftung.**
