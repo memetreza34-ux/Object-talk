@@ -56,10 +56,27 @@ Prompts kurz halten:
 1. kanonischer Styleblock
 2. konkrete Szene
 3. Prozess
-4. 1–3 Labels
+4. 1–3 Labels, nur wenn noetig
 5. kurze Negativregel
 
 Keine langen Style-Romane in jedem Szenenprompt.
+
+## HARTE UNSICHTBARKEITSREGEL FUER PRODUKTIONS-IDs
+
+Interne Nummern duerfen nur in Dateien/Planung existieren.
+
+Niemals sichtbar rendern:
+- `Bild_01`, `Bild_02`, `Bild 01`
+- `IMAGE 01`
+- `Szene 01`, `Scene 01`
+- Dateinamen
+- Asset-IDs
+- Prompttitel
+- Produktionshinweise
+
+Jeder Flow-Prompt muss klarstellen: **Bild-/Szenennummern sind reine Produktionsmetadaten und duerfen nicht Teil des Bildes werden.**
+
+Wenn eine interne Nummer im Bild sichtbar ist: REGENERATE.
 
 ## Phase 1 – Creative Director
 
@@ -72,7 +89,7 @@ Muss:
 - maximal zwei isolierte Einzelobjektbilder hintereinander zulassen
 - sichtbaren Erklaerwert und Unterschied zu Nachbarbildern definieren
 - Labels auf 1–3 kurze wichtige Begriffe begrenzen
-- nach dem Szenenplan wenige sinnvolle Remotion-Praesentationspunkte planen
+- **keine Remotion-Texte oder Text-Overlays planen**
 
 ## Phase 2 – Google Flow
 
@@ -80,39 +97,37 @@ Muss:
 - kanonischen Styleblock verwenden
 - biologische Labels direkt im Bild erzeugen
 - falsche Labels/Schreibweise korrigieren oder regenerieren
+- interne Bild-/Szenennummern niemals sichtbar machen
 - pro finaler Bildnummer genau ein akzeptiertes Asset behalten
 - keine alte Pilot-Bildwelt als Referenz verwenden
 
 ## Phase 3 – Editor / Antigravity / Remotion
 
 Grundsatz:
-**Vollbild-Illustration bleibt Hauptdarsteller. Remotion strukturiert nur selektiv.**
+**100 % Vollbild-Illustration. Remotion erzeugt keinen sichtbaren Text.**
 
-Ziel:
-- ca. 85–90 % reine Vollbild-Illustration
-- maximal ca. 10–15 % selektive Praesentations-Overlays
-
-Remotion ist fuer:
+Remotion ist nur fuer:
 - Audio
 - Timing
 - leichte Zoom-/Pan-Bewegungen
+- statische Frames
 - Schnitte
-- dezente Uebergaenge
-- wenige Zwischenueberschriften
-- wenige Key-Facts
-- optionale Summary-/Prozesszeile
+- dezente nicht-textliche Uebergaenge
 - Rendering
 
-Remotion-Text:
-- nur Deutsch
-- normalerweise 2–6 Woerter
-- pro Szene maximal ein Overlay
-- keine ganzen Voice-over-Saetze
-- keine biologischen Flow-Labels ersetzen
-- keine dauerhaften Rahmen/Seitenleisten/PowerPoint-Layouts
-- Zwischenueberschrift bevorzugt kurz ueber der bereits sichtbaren naechsten Illustration
+Remotion darf NICHT erzeugen:
+- Zwischenueberschriften
+- Key-Facts
+- Summary-Zeilen
+- Kapiteltexte
+- Callouts
+- Untertitel/Captions als Standard
+- anatomische Labels
+- Textkarten
+- sichtbare Bild-/Szenennummern
+- irgendeinen sonstigen viewer-facing Text
 
-Fuer ca. 2 Minuten normalerweise 2–3 Zwischenueberschriften plus optional 1 Key-Fact/Summary.
+`03_pipeline/overlay-plan.json` muss leer/deaktiviert bleiben.
 
 ## Timing
 
@@ -133,7 +148,8 @@ STOP bei:
 - wissenschaftlich falscher Kernaussage
 - ueberladenem Bild
 - unleserlichen/falschen Labels
+- sichtbarer interner Bild-/Szenennummer
 - altem 2.5D-/3D-Look statt der freigegebenen Illustrationswelt
 - drei oder mehr isolierten Objektportraits hintereinander
-- zu vielen Remotion-Texten
-- dauerhafter UI-/PowerPoint-Praesentation statt Vollbild-Illustration
+- nicht-leerem Remotion-Textoverlay
+- irgendeinem von Remotion erzeugten sichtbaren Text
