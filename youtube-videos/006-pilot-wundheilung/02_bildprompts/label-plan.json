@@ -1,0 +1,36 @@
+{
+  "status": "READY",
+  "rules": {
+    "language": "de",
+    "source_of_biological_labels": "Google Flow",
+    "preferred_labels_per_image": "1-3",
+    "max_labels_per_image": 3,
+    "no_asset_ids_visible": true,
+    "no_full_voiceover_sentences": true,
+    "remotion_reserved_for": ["chapter heading", "key fact", "summary"]
+  },
+  "images": [
+    {"image_asset_id":"Bild_01","mode":"cover","allowed_visible_text":["Wie heilt eine Wunde?"],"labels":[]},
+    {"image_asset_id":"Bild_02","allowed_visible_text":["Reparatur startet"],"labels":["Reparatur startet"]},
+    {"image_asset_id":"Bild_03","allowed_visible_text":["Blutgefäß"],"labels":["Blutgefäß"]},
+    {"image_asset_id":"Bild_04","allowed_visible_text":["Verengung"],"labels":["Verengung"]},
+    {"image_asset_id":"Bild_05","allowed_visible_text":["Blutplättchen","verletzte Stelle"],"labels":["Blutplättchen","verletzte Stelle"]},
+    {"image_asset_id":"Bild_06","allowed_visible_text":["Fibrin"],"labels":["Fibrin"]},
+    {"image_asset_id":"Bild_07","allowed_visible_text":["Fibrinnetz"],"labels":["Fibrinnetz"]},
+    {"image_asset_id":"Bild_08","allowed_visible_text":["Blutplättchen","Fibrinnetz"],"labels":["Blutplättchen","Fibrinnetz"]},
+    {"image_asset_id":"Bild_09","allowed_visible_text":["Gerinnsel"],"labels":["Gerinnsel"]},
+    {"image_asset_id":"Bild_10","allowed_visible_text":[],"labels":[]},
+    {"image_asset_id":"Bild_11","allowed_visible_text":["Immunzellen"],"labels":["Immunzellen"]},
+    {"image_asset_id":"Bild_12","allowed_visible_text":["Bakterien","Zellreste"],"labels":["Bakterien","Zellreste"]},
+    {"image_asset_id":"Bild_13","allowed_visible_text":["Rötung","Schwellung"],"labels":["Rötung","Schwellung"]},
+    {"image_asset_id":"Bild_14","allowed_visible_text":["Wiederaufbau"],"labels":["Wiederaufbau"]},
+    {"image_asset_id":"Bild_15","allowed_visible_text":["Fibroblast","Kollagen"],"labels":["Fibroblast","Kollagen"]},
+    {"image_asset_id":"Bild_16","allowed_visible_text":["neue Blutgefäße"],"labels":["neue Blutgefäße"]},
+    {"image_asset_id":"Bild_17","allowed_visible_text":["Hautzellen","Wundrand"],"labels":["Hautzellen","Wundrand"]},
+    {"image_asset_id":"Bild_18","allowed_visible_text":["neue Haut"],"labels":["neue Haut"]},
+    {"image_asset_id":"Bild_19","allowed_visible_text":["Umbau"],"labels":["Umbau"]},
+    {"image_asset_id":"Bild_20","allowed_visible_text":["Kollagenfasern","stabiler"],"labels":["Kollagenfasern","stabiler"]},
+    {"image_asset_id":"Bild_21","allowed_visible_text":["Narbe"],"labels":["Narbe"]},
+    {"image_asset_id":"Bild_22","allowed_visible_text":[],"labels":[]}
+  ]
+}
