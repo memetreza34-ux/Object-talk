@@ -10,18 +10,27 @@
     "fallback_to_overlay_if_ai_text_wrong": false,
     "regenerate_if_label_wrong": true,
     "cover_requires_german_hook": true,
-    "cover_hook_words": "3-7"
+    "cover_hook_words": "3-7",
+    "no_asset_ids_visible": true,
+    "no_scene_numbers_visible": true,
+    "no_file_names_visible": true,
+    "no_prompt_headings_visible": true,
+    "remotion_visible_text_allowed": false,
+    "remotion_text_fallback_allowed": false,
+    "regenerate_if_internal_id_visible": true
   },
   "images": [
     {
       "image_asset_id": "Bild_01",
       "mode": "cover-hook",
       "hook_text": "[Kurzer deutscher Hook zum Thema]",
+      "allowed_visible_text": ["[Kurzer deutscher Hook zum Thema]"],
       "labels": []
     },
     {
       "image_asset_id": "Bild_02",
       "mode": "key-labels",
+      "allowed_visible_text": ["[Wichtigster deutscher Begriff]"],
       "labels": [
         {
           "text": "[Wichtigster deutscher Begriff]",
