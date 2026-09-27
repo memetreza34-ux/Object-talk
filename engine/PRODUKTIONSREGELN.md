@@ -36,7 +36,7 @@ Die Bildanzahl wird nicht kuenstlich vorher festgelegt.
 ## 5. Bildformat
 - 16:9 horizontal
 - 1920×1080 Ziel
-- genug Rand fuer dezente Bewegung
+- genug Rand fuer dezente Bewegung und seltene Remotion-Ueberschriften
 
 ## 6. Nummerierung
 `Szene 01 = Bild_01`, `Szene 02 = Bild_02`, usw.
@@ -102,9 +102,9 @@ Mehr Inhalt = neues Bild, nicht mehr Kleinteile.
 - kanonischen Styleblock verwenden
 - interne Bildnummern, Dateinamen und Prompttitel niemals sichtbar
 
-## 11. Labels
+## 11. Labels in Google Flow
 
-Labels werden standardmaessig direkt in Google Flow erzeugt.
+Biologische Labels werden standardmaessig direkt in Google Flow erzeugt.
 
 - 1–3 kurze deutsche Begriffe
 - klare Sans-Serif-Schrift
@@ -113,9 +113,33 @@ Labels werden standardmaessig direkt in Google Flow erzeugt.
 - falsche Schreibweise oder falsche Zuordnung = regenerieren/korrigieren
 - keine Textwaende
 
-Remotion erzeugt standardmaessig keinen sichtbaren Text.
+Remotion ersetzt diese Labels nicht.
 
-## 12. Referenzsystem
+## 12. Praesentationssystem: Vollbild zuerst
+
+Kanalstandard fuer kuenftige Videos:
+- ca. 85–90 % reine Vollbild-Illustration
+- hoechstens ca. 10–15 % selektive Remotion-Praesentation
+- Illustration bleibt auch bei Remotion-Text normalerweise vollformatig sichtbar
+- keine dauerhaften Seitenleisten, Rahmen, Karten oder Presenter-Layouts
+
+Remotion darf gezielt:
+- Zwischenueberschriften bei echten Abschnittswechseln
+- wenige Key-Facts
+- eine Summary-/Prozesszeile
+
+Remotion-Text:
+- nur Deutsch
+- bevorzugt 2–6 Woerter
+- keine ganzen Voice-over-Saetze
+- nicht auf jedem Bild
+- Zwischenueberschrift bevorzugt kurz ueber der bereits sichtbaren naechsten Illustration
+
+Fuer ca. 2 Minuten: normalerweise 2–3 Zwischenueberschriften plus optional 1 Key-Fact/Summary.
+
+Details: `engine/PRESENTATION-OVERLAY-SYSTEM.md`.
+
+## 13. Referenzsystem
 
 Die schriftliche Bildwelt ist die oberste Stilautoritaet.
 
@@ -123,7 +147,7 @@ Eine spaetere `assets/channel/STYLE_REFERENCE.png` ist optional und nur zusaetzl
 
 `Bild_01` ist nicht automatisch der Master-Stilanker fuer alle Folgeframes.
 
-## 13. Harte Stil-Fails
+## 14. Harte Stil-Fails
 
 - fotorealistischer Medizin-Look
 - Medical-CGI / Anatomiesoftware
@@ -135,8 +159,10 @@ Eine spaetere `assets/channel/STYLE_REFERENCE.png` ist optional und nur zusaetzl
 - zu viele Labels/Pfeile
 - random Icons ohne Lehrfunktion
 - Gore / nasses Gewebe
+- dauerhaftes UI-/PowerPoint-Layout ueber den Illustrationen
+- zu viele Remotion-Texte
 
-## 14. QA
+## 15. QA
 
 - wissenschaftlich plausibel
 - passend zum Voiceover
@@ -144,6 +170,8 @@ Eine spaetere `assets/channel/STYLE_REFERENCE.png` ist optional und nur zusaetzl
 - Komplexitaet niedrig
 - Labels korrekt und lesbar
 - Stilkontinuitaet zur kanonischen Bildwelt
+- Vollbild-Illustration bleibt Hauptdarsteller
+- Remotion-Praesentation ist selten, kurz und sinnvoll
 - kein schwerer KI-Artefakt
 - keine unnoetige Wiederholung
 - korrekte Assetnummerierung
