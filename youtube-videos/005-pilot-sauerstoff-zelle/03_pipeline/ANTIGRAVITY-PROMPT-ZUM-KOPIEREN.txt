@@ -1,0 +1,104 @@
+ANTIGRAVITY – PILOT 005 „WIE KOMMT SAUERSTOFF IN DEINE ZELLE?“
+
+Arbeite ausschließlich nach dem Repository.
+
+Projekt:
+`youtube-videos/005-pilot-sauerstoff-zelle/`
+
+ZIEL
+Erzeuge aus Voice + 22 finalen Google-Flow-Bildern einen kurzen, klaren animierten Biologie-Erklärfilm.
+
+HARTE LAUFZEIT
+- final maximal 120 Sekunden.
+- Zielbereich ca. 85–110 Sekunden.
+- bei >120 Sekunden = FAIL, nicht künstlich beschleunigen oder Szenen löschen.
+
+AUDIO ZUERST
+- Roh-TTS niemals direkt rendern.
+- `tools/prepare_audio.py` mit `--speed 1.10` verwenden.
+- lange TTS-Pausen vor Whisper/Timeline komprimieren.
+- `final-voiceover.wav` ist die einzige Timing-Quelle.
+
+BILDER
+- exakt 22 eindeutige finale Bilder: Bild_01 bis Bild_22.
+- dasselbe Bild nie zweimal verwenden.
+- kein Bild länger als 7 Sekunden.
+- Szenengrenzen aus `05_info/phase1-scenes.json` und echten Whisper-Wortzeiten ableiten.
+
+BILDWELT
+Autoritativ:
+- `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
+- `bildwelt/FLOW-STYLE-BLOCK.txt`
+
+Verbindlich:
+- Clean Animated Biology Illustration
+- vereinfachte erkennbare Anatomie
+- saubere Konturen
+- weiche Verläufe und subtile Tiefe
+- helle ruhige Hintergründe
+- klare biologische Farben
+- wenige wichtige Elemente
+- nicht überladen
+
+SICHTBARER TEXT
+- alle sichtbaren Labels kommen bereits aus Google Flow.
+- Remotion erzeugt keinen zusätzlichen Text.
+- `overlay-plan.json` bleibt DISABLED.
+- interne Bildnummern/Dateinamen nie sichtbar.
+
+STORY-REISE
+Atemzug → Atemwege → Lungenbläschen → Diffusion in die Kapillare → Blutplasma → Hämoglobin → Lunge zum Herz → Arterie → kleinere Gefäße → Gewebekapillare → Sauerstoffabgabe → Körperzelle → Mitochondrium → Zellatmung / ATP → Zusammenfassung.
+
+REMOTION
+Nur:
+- Timing
+- Bildwechsel
+- dezente Push/Pull/Pan-Bewegung
+- Audio
+- saubere Schnitte/leichte Überblendungen
+
+Keine:
+- Textoverlays
+- Kapitelüberschriften
+- Untertitel
+- UI-Karten
+- hektischen Transitions
+
+VORBEREITUNG
+```bash
+python -m pip install -r tools/requirements.txt
+python tools/validate_planning_v2.py youtube-videos/005-pilot-sauerstoff-zelle
+python tools/prepare_phase3.py youtube-videos/005-pilot-sauerstoff-zelle
+```
+
+RENDER
+```bash
+cd renderer
+npm install
+npm run render -- ../youtube-videos/005-pilot-sauerstoff-zelle/04_export/fertiges-video/final-video.mp4
+```
+
+FINAL-QA
+```bash
+python tools/qa_final.py \
+  youtube-videos/005-pilot-sauerstoff-zelle/04_export/fertiges-video/final-video.mp4 \
+  youtube-videos/005-pilot-sauerstoff-zelle/01_script/audio/final-voiceover.wav \
+  --min-seconds 85 \
+  --expected-speed 1.10 \
+  --max-voice-pause 0.50
+```
+
+ZUSÄTZLICHER HARD CHECK
+Prüfe die echte Videodauer nach Render. Wenn Dauer >120.0 Sekunden: FAIL.
+
+Besonders prüfen:
+- Hook sofort verständlich
+- Lunge → Blut → Herz → Zelle → Mitochondrium fachlich korrekt
+- Hämoglobin bleibt in roten Blutkörperchen
+- Sauerstoff wird durch Diffusion dargestellt, nicht aktiv durch Membranen gepumpt
+- keine Szene >7 Sekunden
+- keine doppelten Bilder
+- Flow-Labels korrekt geschrieben
+- alle Bilder wirken wie dieselbe Clean Animated Biology Illustration World
+
+Bei Konflikt oder fehlenden Assets: FAIL statt raten.
