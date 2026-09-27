@@ -1,18 +1,32 @@
 # Object-Talk Reference Assets
 
-Dieser Ordner ist fuer spaetere vom Nutzer akzeptierte saubere Referenzbilder vorgesehen.
+Dieser Ordner ist fuer vom Nutzer akzeptierte saubere Referenzbilder wiederkehrender biologischer Elemente vorgesehen.
 
-## Aktueller Status
+## Verbindliche Bildwelt
 
-Die alte Bildwelt und das alte Referenzsystem wurden am 27.09.2026 verworfen.
+Alle Referenzen muessen zur freigegebenen **Clean Animated Biology Illustration** passen.
 
-Aktuell gibt es keine verbindliche Regel fuer:
-- STYLE_REFERENCE.png
-- Bild_01 als Stilanker
-- Episode-Referenzen
-- Character-Referenzen
-- biologische Objekt-Referenzen
+Autoritativ:
+`bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
 
-Bis die neue Bildwelt festgelegt ist, duerfen historische Referenzregeln nicht wiederverwendet werden.
+## Moegliche Referenzen
 
-Nach Freigabe der neuen Bildwelt wird hier nur dokumentiert, was fuer dieses neue System wirklich benoetigt wird.
+Nur wenn ein Element wiederkehrend und konsistenzkritisch wird, kann spaeter eine saubere Referenz gespeichert werden, z. B.:
+- rote Blutkoerperchen
+- Nervenzelle
+- Muskel-/Muskelfaser-Darstellung
+- Mitochondrium
+- Lungenblaeschen
+
+## Regeln
+
+- nur akzeptierte finale Referenzbilder
+- keine Browser-/Flow-Screenshots
+- keine Collagen mit UI
+- keine zufaellige Zwischenvariante
+- Referenz muss fachlich plausibel sein
+- Referenz steuert Form/Konsistenz, nicht die gesamte Kanalbildwelt
+- die schriftliche Bildwelt bleibt uebergeordnet
+- `Bild_01` ist nicht automatisch Referenz fuer alle Folgeframes
+
+Historische 2.5D-/Soft-3D-/Premium-3D-Referenzen nicht wiederverwenden.
