@@ -4,54 +4,55 @@ Letzte Aktualisierung: 27.09.2026
 
 ## Aktiver Produktionspilot
 
-```text
-youtube-videos/004-pilot-muskelkater/
-```
+`youtube-videos/004-pilot-muskelkater/`
 
 Thema:
-**Warum kommt Muskelkater so spät?**
+**Warum kommt Muskelkater so spaet?**
 
-Die inhaltliche Planung des Piloten bleibt erhalten.
+## AKTUELLER HAUPTSTATUS: NEUE BILDWELT FREIGEGEBEN
 
-## AKTUELLER HAUPTSTATUS: STYLE RESET
+Die alte Bildwelt wurde verworfen und durch eine neue kanalweite Bildwelt ersetzt:
 
-Die bisherige kanalweite Bildwelt wurde auf ausdruecklichen Nutzerwunsch vollstaendig verworfen.
+**Clean Animated Biology Illustration**
 
-Aktuell gilt:
-- keine freigegebene Kanal-Bildwelt
-- keine freigegebene Explainer-Bildwelt
-- keine freigegebene Character-Bildwelt
-- keine kanalweite STYLE_REFERENCE
-- keine verbindliche Farbpalette
-- keine verbindliche Material-/Licht-/Render-Sprache
-- keine finale Flow-Bildproduktion
+Autoritativ:
+- `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
+- `bildwelt/FLOW-STYLE-BLOCK.txt`
+
+## Neue Bildwelt – Kurzfassung
+
+- animierte Biologie-Illustration
+- vereinfachte, erkennbare Anatomie
+- weiche organische Formen
+- saubere Konturen
+- weiche Verlaeufe und subtile Schatten
+- leichte Tiefe ohne 3D-CGI-Look
+- helle ruhige Hintergruende
+- klare biologische Farben
+- wenige wichtige Elemente
+- normalerweise 1–3 kurze deutsche Labels
+- Bilder sollen sofort verstaendlich und nicht komplex wirken
 
 Alte 2.5D-/Soft-3D- und Premium-3D-Regeln sind NICHT MEHR AUTORITATIV.
-Historische Pilotdateien dienen nur noch als Produktionshistorie und Fehleranalyse.
+Historische Pilotdateien dienen nur als Produktionshistorie und Fehleranalyse.
 
-## Was vom Pilot 004 erhalten bleibt
+## Pilot 004
 
-Inhaltlich weiterhin gueltig:
-- Script und Voiceover-Inhalt
-- Mechanism Map / Claim-Logik
-- Szenenreise
-- Label-Plan als inhaltlicher Entwurf
-- Ziel hoher visueller Abwechslung
-- wissenschaftliche Leitplanken
-- Asset-/Timing-Pipeline
+Inhaltlich bleiben Script, Mechanism Map, Claim-Logik, Szenenreise und Label-Plan erhalten.
 
-## Was fuer Pilot 004 neu erstellt werden muss
+Neu fuer Pilot 004:
+- Produktionsplan auf neue Bildwelt umstellen
+- Flow-Prompts neu aus der kanonischen Bildwelt erzeugen
+- kurze Prompts statt langer Style-Bloecke verwenden
+- wichtige biologische Strukturen direkt und knapp auf Deutsch beschriften
+- keine alte Style-Referenz verwenden
 
-Nach Wahl der neuen Bildwelt:
-1. neue kanalweite Style-Spezifikation
-2. neue Style-Testframes
-3. neue Referenzlogik
-4. neuer Flow-Style-Prompt
-5. aktualisierte Szenenprompts ohne alte Stilreste
-6. erneute visuelle QA-Kriterien passend zur neuen Bildwelt
+## Referenzstatus
+
+Es gibt noch keine einzelne freigegebene `assets/channel/STYLE_REFERENCE.png`.
+
+Bis ein sauberes einzelnes Referenzbild akzeptiert wird, ist die schriftliche Spezifikation in `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md` die oberste Stilautoritaet.
 
 ## Naechster Schritt
 
-Nicht weiter Bilder produzieren.
-
-Zuerst mehrere geeignete Bildwelt-Richtungen fuer den Kanal recherchieren und vergleichen. Danach eine Richtung mit Testframes validieren. Erst nach ausdruecklicher Nutzerfreigabe wird die neue Bildwelt wieder im Repository festgeschrieben.
+Pilot 004 mit der neuen Bildwelt neu prompten und einige repräsentative Bilder erzeugen: Muskel, Blut/Transport, Nerv/Signal und Zell-/Gewebeebene. Danach Konsistenz pruefen und bei Erfolg normal weiterproduzieren.
