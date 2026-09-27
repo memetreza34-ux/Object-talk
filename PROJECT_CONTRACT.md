@@ -89,47 +89,56 @@ Bevorzugt:
 
 Wenn mehr Inhalt noetig ist, wird ein neues Bild geplant statt das vorhandene zu ueberladen.
 
-## Beschriftungen in Flow
+## Sichtbarer Text – einzige erlaubte Quelle
 
-Biologische Beschriftungen gehoeren weiterhin direkt ins Bild:
-- sichtbarer Text nur Deutsch
-- normalerweise 1–3 kurze Labels
-- Labels nur fuer wichtige Strukturen oder Prozesse
-- klare Sans-Serif-Schrift
-- duenne saubere Hinweislinien oder Pfeile
-- keine Textwaende
-- keine internen Assetnamen, Szenennummern, Dateinamen oder Promptueberschriften
+Sichtbarer Text darf nur bereits Bestandteil eines final akzeptierten Google-Flow-Bildes sein.
 
-Die Labels werden fuer diese Bildwelt direkt in Google Flow erzeugt. Falsche Schrift oder falsche Zuordnung = Bild neu erzeugen/korrigieren.
+Erlaubt in Flow-Bildern:
+- kurze deutsche biologische Labels
+- duenne Hinweislinien oder Pfeile
+- ein geplanter Cover-Titel, wenn das Cover ihn wirklich braucht
 
-## Verbindliches Praesentationssystem: Vollbild + selektives Remotion
+Nicht erlaubt als sichtbarer Text:
+- interne Assetnamen
+- `Bild_01`, `Bild_02`, `Bild 01`, `IMAGE 01`
+- `Szene 01`, `Scene 01`
+- Dateinamen
+- Prompttitel
+- Produktionshinweise
+- interne IDs oder Nummerierungen
 
-Die Illustration bleibt der Hauptdarsteller.
+**Harte Regel:** Bildnummern und Szenennummern sind reine Produktionsmetadaten und duerfen niemals in einem finalen Bild oder Video sichtbar sein.
 
-Standard fuer kuenftige Videos:
-- ca. **85–90 %** des Videos wirken als reine Vollbild-Illustration ohne zusaetzliche Editor-Textflaeche
-- ca. **10–15 % maximal** duerfen durch selektive Remotion-Praesentation ergaenzt werden
-- Remotion verkleinert die Illustration normalerweise NICHT dauerhaft und baut keinen permanenten Seiten-/Rahmenlayout
-- keine PowerPoint-, Presenter- oder Dashboard-Optik
+Wenn Flow eine interne Nummer oder einen falschen Text sichtbar rendert, ist das Bild FAIL und wird neu erzeugt.
 
-Remotion darf gezielt erzeugen:
-1. **Zwischenueberschriften** bei echten grossen Themen-/Mechanismuswechseln
-2. **kurze Key-Facts** fuer besonders wichtige Merksaetze
-3. **eine visuelle Abschluss-/Zusammenfassungszeile**, wenn sie den Prozess klarer macht
+## Verbindliches Praesentationssystem: 100 % Vollbild-Illustration
 
-Regeln fuer Remotion-Text:
-- nur Deutsch
-- kurz und praegnant
-- normalerweise maximal 2–6 Woerter
-- keine ganzen Voice-over-Saetze
-- keine anatomischen Standardlabels ersetzen; diese bleiben Flow-Aufgabe
-- keine Korrektur falscher Flow-Schrift per Remotion
-- nicht auf jedem Bild
-- fuer einen ca. 2-Minuten-Test normalerweise nur 2–3 Zwischenueberschriften plus optional 1 Key-Fact/Summary
-- Zwischenueberschrift bevorzugt **ueber der bereits sichtbaren naechsten Illustration**, nicht als eigener leerer Textbildschirm
-- typische Einblendung kurz, etwa 0.8–1.5 Sekunden, danach Bild wieder frei
+Fuer alle neuen Videos gilt:
 
-Autoritativ fuer die genaue Umsetzung:
+- die finalen Illustrationen bleiben vollformatig
+- Remotion erzeugt **keinen sichtbaren Text**
+- keine Zwischenueberschriften
+- keine Key-Facts
+- keine Summary-Zeilen
+- keine Kapiteltexte
+- keine Untertitel/Captions als Standard
+- keine Callouts
+- keine Textkarten
+- keine UI-/Dashboard-/PowerPoint-Elemente
+- keine sichtbaren Bild- oder Szenennummern
+
+Remotion darf ausschliesslich:
+- finales Audio einbinden
+- Bilder nach der Voice-Timeline schneiden
+- statische Frames zeigen
+- leichte Push-/Pull-Bewegungen ausfuehren
+- leichte Pans ausfuehren
+- saubere Schnitte und sehr dezente nicht-textliche Uebergaenge erzeugen
+- das finale Video rendern
+
+`03_pipeline/overlay-plan.json` muss fuer neue Projekte deaktiviert bzw. leer bleiben.
+
+Autoritativ fuer die technische Umsetzung:
 `engine/PRESENTATION-OVERLAY-SYSTEM.md`
 
 ## Harte Stilverbote
@@ -170,10 +179,13 @@ Prompts fuer Flow bleiben kurz:
 1. kanonischer Styleblock
 2. konkrete Szene
 3. sichtbarer Prozess
-4. 1–3 deutsche Labels
+4. 1–3 deutsche Labels, nur wenn noetig
 5. kurze Negativregel
 
 Prompt-Anweisungen auf Englisch, sichtbare Texte Deutsch.
+
+Jeder Flow-Auftrag muss ausdruecklich sagen:
+**Asset-/Bild-/Szenennummern sind nur Dateinamen/Produktionsmetadaten und duerfen NICHT im Bild erscheinen.**
 
 ## Referenzsystem
 
@@ -189,17 +201,20 @@ Das Cover `Bild_01` wird nicht automatisch als Stilanker fuer alle Folgebilder v
 - FAIL wird ersetzt, nicht dauerhaft gesammelt
 - keine Bildduplikate fuer mehrere Szenen
 - keine Luecken im finalen nummerierten Set
+- Assetnummern bleiben ausschliesslich im Dateisystem und in Produktionsdaten
 
 ## Drei Phasen
 
 ### Phase 1 – Creative Director
-Recherche → Claim-Check → Script → Mechanism Map → Satz-Visual-Plan → Szenenplan → Label-Plan → kurze Flow-Prompts → wenige gezielte Remotion-Praesentationspunkte planen.
+Recherche → Claim-Check → Script → Mechanism Map → Satz-Visual-Plan → Szenenplan → Label-Plan → kurze Flow-Prompts.
 
 ### Phase 2 – Google Flow
-Bild fuer Bild erzeugen → Labels pruefen → wissenschaftliche/visuelle QA → finale eindeutige Assets.
+Bild fuer Bild erzeugen → Labels pruefen → sicherstellen, dass keine internen IDs/Nummern sichtbar sind → wissenschaftliche/visuelle QA → finale eindeutige Assets.
 
 ### Phase 3 – Antigravity + Tools + Remotion
-Audio kanonisieren → Whisper → Timeline → Vollbild-Illustrationen + leichte Bildbewegung/Schnitt + selektive Zwischenueberschriften/Key-Facts/Summary → Render → Final-QA.
+Audio kanonisieren → Whisper → Timeline → Vollbild-Illustrationen + leichte Bildbewegung/Schnitt → Render → Final-QA.
+
+**Phase 3 erzeugt keinerlei sichtbaren Text.**
 
 ## Autoritative Reihenfolge
 
@@ -214,4 +229,4 @@ Audio kanonisieren → Whisper → Timeline → Vollbild-Illustrationen + leicht
 
 ## Goldene Regel
 
-**Vollbild-Illustration ist Standard. Remotion ergaenzt nur selten und gezielt: schoene animierte Biologie, sofort verstaendlich, wenig Komplexitaet, klare Labels und wenige starke Zwischenueberschriften.**
+**100 % Vollbild-Illustration. Sichtbarer Text kommt nur aus dem freigegebenen Flow-Bild. Remotion erzeugt niemals Text. Interne Bild-/Szenennummern sind niemals sichtbar.**
