@@ -1,26 +1,13 @@
 {
-  "status": "TEMPLATE",
-  "version": 2,
-  "purpose": "Sparse Remotion presentation only. Full-frame biology illustration remains the default.",
+  "status": "DISABLED",
+  "version": 3,
+  "reason": "Remotion visible text is forbidden. All viewer-facing text must already be part of accepted Google Flow images.",
   "rules": {
-    "full_frame_remains_default": true,
-    "target_full_frame_share": "85-90%",
-    "max_selective_presentation_share": "10-15%",
-    "language": "de",
-    "max_words_per_overlay": 6,
-    "max_overlays_per_scene": 1,
-    "no_full_voiceover_sentences": true,
-    "no_biology_label_replacement": true,
-    "no_flow_text_correction": true,
-    "no_persistent_side_panels_or_frames": true,
-    "prefer_heading_over_next_visible_illustration": true,
-    "typical_heading_duration_seconds": "0.8-1.5",
-    "two_minute_guideline": "2-3 headings plus optional 1 key fact or summary"
+    "full_frame_illustration": true,
+    "visible_remotion_text_allowed": false,
+    "text_overlays_allowed": false,
+    "asset_ids_visible": false,
+    "scene_numbers_visible": false
   },
-  "allowed_kinds": [
-    "heading",
-    "keyword",
-    "callout"
-  ],
   "scenes": []
 }
