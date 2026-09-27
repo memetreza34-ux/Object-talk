@@ -2,145 +2,75 @@
 
 ## Ziel
 
-Remotion ist Editor, Timing-Engine und **selektive Praesentationsschicht**.
+Remotion ist ausschliesslich Editor, Timing-Engine und Renderer.
 
-Die biologischen Illustrationen bleiben der Hauptdarsteller. Remotion darf das Video strukturieren, aber nicht in eine PowerPoint-, Dashboard- oder Presenter-Optik verwandeln.
+**Remotion erzeugt keinen sichtbaren Text.**
 
-## Grundverhaeltnis
+Die final akzeptierten Google-Flow-Bilder bleiben zu 100 % die sichtbare Bildflaeche. Wenn Text fachlich notwendig ist, muss er bereits korrekt im Flow-Bild enthalten sein.
 
-Standard fuer kuenftige Videos:
-- **85–90 % reine Vollbild-Illustration**
-- **10–15 % maximal selektive Remotion-Praesentation**
+## Verbindlicher Kanalstandard
 
-Die Prozentwerte sind eine Gestaltungsleitlinie, kein Zwang zu exakter mathematischer Auslastung. Wenn ein Video ohne Overlay klarer ist, bleiben die Overlays weg.
+Fuer alle neuen Videos gilt:
+- **100 % Vollbild-Illustration**
+- keine Remotion-Textoverlays
+- keine Zwischenueberschriften
+- keine Key-Facts
+- keine Summary-Zeilen
+- keine Kapiteltexte
+- keine Callouts
+- keine Untertitel/Captions als Standard
+- keine Textkarten
+- keine UI-/PowerPoint-/Dashboard-Elemente
 
-## Was Remotion-Text darf
+## Produktionsnummern sind niemals sichtbar
 
-Erlaubte Typen:
+Interne Bezeichnungen duerfen nur in Produktionsdaten und Dateinamen vorkommen.
 
-### 1. Zwischenueberschrift
-Bei einem echten grossen Abschnitts- oder Mechanismuswechsel.
+Niemals sichtbar im finalen Bild oder Video:
+- `Bild_01`, `Bild_02`, `Bild 01`
+- `IMAGE 01`
+- `Szene 01`, `Scene 01`
+- Dateinamen
+- Asset-IDs
+- Prompttitel
+- Produktionshinweise
 
-Beispiele:
-- `1 · Aufnahme`
-- `2 · Transport`
-- `3 · Abgabe`
+Wenn ein Flow-Bild eine solche interne Nummer sichtbar enthaelt, ist das Bild FAIL und muss regeneriert werden.
 
-Regel:
-- bevorzugt ueber der bereits sichtbaren naechsten Illustration
-- kein eigener leerer Titelbildschirm als Standard
-- normalerweise etwa 0.8–1.5 Sekunden sichtbar
+## Sichtbarer Text kommt nur aus Google Flow
 
-### 2. Key-Fact
-Nur fuer eine Aussage, die wirklich haengen bleiben soll.
+Google Flow darf erzeugen:
+- kurze deutsche biologische Labels
+- Hinweislinien/Pfeile
+- einen explizit geplanten Cover-Titel
 
-Beispiele:
-- `Sauerstoff reist nicht allein.`
-- `Hämoglobin übernimmt den Transport.`
+Google Flow darf keine internen Produktionsnummern rendern.
 
-Regel:
-- maximal 2–6 Woerter bevorzugt
-- keine ganzen Voice-over-Saetze
-- sparsam verwenden
-
-### 3. Summary / Prozesszeile
-Am Ende oder bei einem wichtigen Zwischenfazit.
-
-Beispiel:
-`Aufnahme → Transport → Abgabe`
-
-Darf etwas laenger stehen, solange die Illustration sichtbar bleibt und nicht von Text verdraengt wird.
-
-## Was Remotion-Text NICHT darf
-
-- anatomische Standardlabels ersetzen
-- Flow-Schreibfehler reparieren
-- ganze Voice-over-Saetze zeigen
-- dauerhafte Untertitel als Standard
-- nach jedem Bild eine neue Ueberschrift erzeugen
-- permanente obere/untere Balken
-- Bilder dauerhaft verkleinern, um Text daneben zu stellen
-- dauerhafte Rahmen-/Kartenlayouts
-- grosse Textwaende
-- interne Bildnummern, Dateinamen oder Prompttitel zeigen
-
-Biologische Labels wie `Mitochondrium`, `Lungenbläschen`, `Blutkapillare` bleiben Teil der Google-Flow-Illustration.
-
-## Richtwert nach Videolaenge
-
-Fuer einen ca. 2-Minuten-Test:
-- normalerweise 2–3 Zwischenueberschriften
-- optional 1 Key-Fact oder 1 Summary
-
-Fuer 5–8 Minuten:
-- nur an echten Kapitel-/Mechanismuswechseln
-- nicht automatisch in festen Zeitabstaenden
-- lieber weniger starke als viele belanglose Einblendungen
+Wenn Flow einen Begriff falsch schreibt, wird das Bild in Flow korrigiert oder neu erzeugt. Remotion darf falschen Flow-Text niemals reparieren oder ersetzen.
 
 ## Overlay-Plan
 
-Jedes neue Projekt kann `03_pipeline/overlay-plan.json` verwenden.
-
-Ein leeres `scenes`-Array ist vollkommen gueltig.
-
-Schema:
+`03_pipeline/overlay-plan.json` bleibt aus Kompatibilitaetsgruenden bestehen, muss aber fuer neue Videos deaktiviert und leer sein:
 
 ```json
 {
-  "status": "READY",
-  "version": 2,
-  "rules": {
-    "full_frame_remains_default": true,
-    "language": "de",
-    "max_words_per_overlay": 6,
-    "no_full_voiceover_sentences": true
-  },
-  "scenes": [
-    {
-      "scene": 8,
-      "overlays": [
-        {
-          "kind": "heading",
-          "text": "2 · Transport",
-          "position": "top-left",
-          "animation": "fade-slide",
-          "startFraction": 0.04,
-          "durationFraction": 0.28
-        }
-      ]
-    }
-  ]
+  "status": "DISABLED",
+  "reason": "Remotion visible text is forbidden; all viewer-facing text must already be part of accepted Flow images.",
+  "scenes": []
 }
 ```
 
-Erlaubte `kind`:
-- `heading`
-- `keyword`
-- `callout`
+Ein nicht-leeres `scenes`-Array oder ein sichtbares Text-Overlay ist ein Hard FAIL.
 
-Erlaubte `position`:
-- `top-left`
-- `top-center`
-- `bottom-left`
-- `center`
-
-Erlaubte `animation`:
-- `fade-slide`
-- `pop`
-- `underline`
-
-Pro Szene normalerweise maximal **ein** Overlay.
-
-## Was Remotion weiterhin macht
+## Was Remotion darf
 
 - finales Audio einbinden
-- Szenen nach echter Voice-Timeline schneiden
+- Szenen nach der echten Voice-Timeline schneiden
+- statische Bilder anzeigen
 - sanfte Push-/Pull-Bewegungen
 - leichte Pans
-- statische Frames
 - harte saubere Schnitte
-- dezente nicht-textliche Uebergaenge
-- selektive Praesentations-Overlays
+- sehr dezente nicht-textliche Uebergaenge
 - Rendering
 
 ## Kamerabewegung auf Standbildern
@@ -150,28 +80,26 @@ Bevorzugt:
 - Pan ca. 20–30 px bei 1080p
 - weiche Ease-in/Ease-out-Bewegung
 - Bewegungsrichtung folgt dem gezeigten Prozess
-- bei bereits informationsreichen Bildern lieber `static`
+- bei informationsreichen Bildern lieber `static`
 - kein hektischer Zoom
 - kein Shake
 - kein Bounce
 - keine Meme-Transition
 
-## Flow vs. Remotion – klare Arbeitsteilung
+## Was Remotion niemals darf
 
-### Google Flow
-Erzeugt:
-- die eigentliche Biologie-Illustration
-- anatomische/biologische Labels
-- Pfeile/Hinweislinien innerhalb der Illustration
-- Cover-Titel, sofern fuer das Cover geplant
+- Text zeichnen
+- Kapitelnummern zeichnen
+- Bildnummern zeichnen
+- Szenennummern zeichnen
+- biologische Labels zeichnen
+- Titel erzeugen
+- Captions oder Untertitel erzeugen
+- Flow-Schreibfehler korrigieren
+- Bilder verkleinern, um Text daneben zu setzen
+- dauerhafte Rahmen, Karten oder Seitenleisten erzeugen
 
-### Remotion
-Erzeugt nur:
-- Kapitel-/Zwischenueberschriften
-- wenige Key-Facts
-- Summary-/Prozesszeilen
-
-## Bild bleibt Hauptdarsteller
+## Bild bleibt alleiniger sichtbarer Hauptdarsteller
 
 Prioritaet:
 1. starke Vollbild-Illustration
@@ -179,6 +107,15 @@ Prioritaet:
 3. richtige Flow-Beschriftung
 4. sinnvolle Bildabwechslung
 5. ruhige Kamerabewegung
-6. nur wenn es wirklich hilft: kurzes Remotion-Overlay
+6. sauberes Audio und Timing
 
-Remotion darf niemals eine schwache Bildidee mit Text retten.
+## Hard FAIL
+
+Produktion stoppen bei:
+- irgendeinem von Remotion erzeugten sichtbaren Text
+- nicht-leerem Overlay-Plan
+- sichtbarer interner Bild-/Szenennummer
+- sichtbarem Dateinamen oder Asset-ID
+- Text, der nicht bereits Bestandteil eines freigegebenen Flow-Bildes war
+
+**Endregel: Remotion = Bilder + Bewegung + Audio + Schnitt + Render. Kein sichtbarer Text.**
