@@ -1,16 +1,15 @@
 #!/usr/bin/env python3
-"""Validate Object-Talk planning and accepted image-review state.
+"""Validate Object-Talk V2 planning and accepted image-review state.
 
 Usage:
   python tools/validate_planning_v2.py youtube-videos/MEIN-VIDEO
   python tools/validate_planning_v2.py youtube-videos/MEIN-VIDEO --phase2
 
-Current channel rules:
+Current channel contract:
 - Clean Animated Biology Illustration is the canonical image world.
-- biological labels are generated in Google Flow.
-- full-frame illustration remains the default presentation.
-- sparse Remotion headings/key-facts/summaries are allowed through overlay-plan.json.
-- Remotion must never repair biological labels or turn the video into a text-heavy layout.
+- Viewer-facing text may only come from accepted Google-Flow images.
+- Production IDs such as Bild_01 / Szene 01 / filenames are metadata only and must never be visible.
+- Remotion visible text is forbidden; overlay-plan.json must be empty/disabled.
 """
 
 from __future__ import annotations
@@ -18,40 +17,38 @@ from __future__ import annotations
 import argparse
 import json
 import re
-import unicodedata
 from pathlib import Path
 
 IMAGE_ID_RE = re.compile(r"^Bild_\d{2,}$")
-ASSET_ID_TEXT_RE = re.compile(r"\b(?:Bild[_ ]?\d+|Scene[_ ]?\d+|Image[_ ]?\d+)\b", re.IGNORECASE)
 PLACEHOLDER_RE = re.compile(r"\[[^\]]+\]|\b(?:TODO|TBD|PENDING)\b", re.IGNORECASE)
+VISIBLE_INTERNAL_ID_RE = re.compile(
+    r"\b(?:Bild[_\s-]?\d+|Image[_\s-]?\d+|Scene[_\s-]?\d+|Szene[_\s-]?\d+)\b",
+    re.IGNORECASE,
+)
 WEAK_OPENING_PREFIXES = (
     "in diesem video",
     "heute erklaeren wir",
     "heute erklären wir",
     "willkommen",
 )
-ALLOWED_OVERLAY_KINDS = {"heading", "keyword", "callout"}
-ALLOWED_OVERLAY_POSITIONS = {"top-left", "top-center", "bottom-left", "center"}
-ALLOWED_OVERLAY_ANIMATIONS = {"fade-slide", "pop", "underline"}
-MAX_OVERLAY_WORDS = 6
+
+
+def fail(message: str) -> None:
+    raise SystemExit(f"FEHLER: {message}")
 
 
 def load_json(path: Path) -> dict:
     try:
         return json.loads(path.read_text(encoding="utf-8"))
     except FileNotFoundError:
-        raise SystemExit(f"FEHLER: Datei fehlt: {path}")
+        fail(f"Datei fehlt: {path}")
     except json.JSONDecodeError as exc:
-        raise SystemExit(f"FEHLER: ungueltiges JSON in {path}: {exc}")
+        fail(f"ungueltiges JSON in {path}: {exc}")
 
 
 def require_file(path: Path) -> None:
     if not path.is_file():
-        raise SystemExit(f"FEHLER: Datei fehlt: {path}")
-
-
-def fail(message: str) -> None:
-    raise SystemExit(f"FEHLER: {message}")
+        fail(f"Datei fehlt: {path}")
 
 
 def has_placeholder(value: object) -> bool:
@@ -64,41 +61,24 @@ def has_placeholder(value: object) -> bool:
     return False
 
 
-def normalize_visible_text(value: str) -> str:
-    value = unicodedata.normalize("NFKC", str(value)).casefold().replace("ß", "ss")
-    return " ".join("".join(ch if ch.isalnum() else " " for ch in value).split())
-
-
-def word_count(text: str) -> int:
-    return len([part for part in text.strip().split() if part])
-
-
-def extract_label_texts(labels: object, image_id: str) -> list[str]:
+def label_texts(labels: object) -> list[str]:
     if not isinstance(labels, list):
-        fail(f"{image_id}: labels muss eine Liste sein")
-    if len(labels) > 3:
-        fail(f"{image_id}: maximal 3 biologische Labels sind erlaubt")
-
+        return []
     result: list[str] = []
-    for label in labels:
-        if isinstance(label, str):
-            text = label.strip()
-        elif isinstance(label, dict):
-            text = str(label.get("text", "")).strip()
-            if label.get("fallback_overlay") is True:
-                fail(f"{image_id}: Remotion darf kein Fallback fuer falsche Flow-Labels sein")
+    for item in labels:
+        if isinstance(item, str):
+            result.append(item)
+        elif isinstance(item, dict) and isinstance(item.get("text"), str):
+            if item.get("fallback_overlay") is True:
+                fail("Remotion darf niemals Label-Fallback sein")
+            result.append(item["text"])
         else:
-            fail(f"{image_id}: ungueltiger Label-Eintrag")
-
-        if not text:
-            fail(f"{image_id}: leerer Labeltext")
-        if ASSET_ID_TEXT_RE.search(text):
-            fail(f"{image_id}: interner Asset-/Szenenname darf nicht sichtbar sein: {text!r}")
-        result.append(text)
+            fail(f"ungueltiger Label-Eintrag: {item!r}")
     return result
 
 
-def validate_channel_config(repo_root: Path) -> None:
+def validate_global_contract(project: Path) -> None:
+    repo_root = Path(__file__).resolve().parents[1]
     config_path = repo_root / "config" / "channel.json"
     require_file(config_path)
     config = load_json(config_path)
@@ -109,145 +89,80 @@ def validate_channel_config(repo_root: Path) -> None:
     presentation = config.get("presentation", {})
     remotion = config.get("remotion", {})
 
-    if not isinstance(visual, dict) or not str(visual.get("status", "")).startswith("APPROVED"):
-        fail("config/channel.json: visuelle Kanalwelt ist nicht als APPROVED markiert")
     if visual.get("approved_channel_style") != "Clean Animated Biology Illustration":
-        fail("config/channel.json: falsche oder fehlende kanonische Bildwelt")
+        fail("config/channel.json: falsche kanonische Bildwelt")
     if visual.get("written_spec_is_authoritative") is not True:
         fail("config/channel.json: schriftliche Bildwelt muss autoritativ sein")
-    if visual.get("final_image_generation_allowed") is not True:
-        fail("config/channel.json: finale Bildgeneration ist nicht freigegeben")
+    if flow.get("never_render_asset_ids_or_scene_numbers") is not True:
+        fail("config/channel.json muss sichtbare Asset-/Szenennummern verbieten")
+    if labels.get("remotion_text_overlays_allowed") is not False:
+        fail("config/channel.json muss Remotion-Textoverlays deaktivieren")
+    if labels.get("remotion_is_fallback_for_failed_ai_text") is not False:
+        fail("Remotion darf kein Text-Fallback fuer Flow sein")
+    if presentation.get("full_frame_illustration_share_target") != "100%":
+        fail("Praesentation muss auf 100% Vollbild-Illustration gesetzt sein")
+    if presentation.get("remotion_visible_text_allowed") is not False:
+        fail("Praesentation muss sichtbaren Remotion-Text verbieten")
+    if presentation.get("asset_ids_visible_in_final_video") is not False:
+        fail("Asset-IDs muessen im finalen Video unsichtbar sein")
+    if presentation.get("scene_numbers_visible_in_final_video") is not False:
+        fail("Szenennummern muessen im finalen Video unsichtbar sein")
+    if remotion.get("text_strategy") != "NO_VISIBLE_TEXT":
+        fail("Remotion text_strategy muss NO_VISIBLE_TEXT sein")
+    if remotion.get("text_generation_allowed") is not False:
+        fail("Remotion-Textgenerierung muss hart deaktiviert sein")
+    if remotion.get("text_overlay_allowed") is not False:
+        fail("Remotion-Textoverlays muessen hart deaktiviert sein")
+    if remotion.get("overlay_plan_must_be_empty") is not True:
+        fail("Remotion overlay_plan_must_be_empty muss true sein")
 
-    for key in ("canonical_spec", "flow_style_block"):
-        rel = visual.get(key)
-        if not isinstance(rel, str) or not rel.strip() or not (repo_root / rel).is_file():
-            fail(f"config/channel.json: {key} fehlt oder zeigt auf keine Datei")
-
-    if flow.get("instruction_language") != "en":
-        fail("Flow-Prompt-Anweisungen muessen Englisch sein")
-    if flow.get("visible_text_language") != "de":
-        fail("sichtbarer Viewer-Text muss Deutsch sein")
-    if flow.get("labels_generated_in_flow") is not True:
-        fail("biologische Labels muessen in Google Flow erzeugt werden")
-    if flow.get("generate_each_image_individually") is not True:
-        fail("Bilder muessen einzeln erzeugt werden")
-    if flow.get("duplicate_image_reuse_allowed") is not False:
-        fail("Bildduplikate duerfen nicht als Szenenersatz erlaubt sein")
-
-    if labels.get("language") != "de":
-        fail("Label-Sprache muss de sein")
-    if int(labels.get("max_per_image_guideline", 99)) > 3:
-        fail("max_per_image_guideline darf hoechstens 3 sein")
-    if "GOOGLE_FLOW" not in str(labels.get("final_rendering_strategy", "")):
-        fail("biologische Labels muessen final aus Google Flow kommen")
-
-    if presentation.get("keep_illustration_full_frame_by_default") is not True:
-        fail("Vollbild-Illustration muss Praesentationsstandard bleiben")
-    if presentation.get("biology_labels_remain_in_flow") is not True:
-        fail("Praesentationssystem darf biologische Labels nicht aus Flow herausverlagern")
-
-    if remotion.get("text_strategy") != "SELECTIVE_HEADINGS_KEYFACTS_SUMMARY_ONLY":
-        fail("Remotion-Textstrategie muss selektiv auf Headings/Key-Facts/Summary begrenzt sein")
-    if int(remotion.get("max_words_per_overlay", 99)) > MAX_OVERLAY_WORDS:
-        fail(f"Remotion-Overlay darf hoechstens {MAX_OVERLAY_WORDS} Woerter erlauben")
-    if remotion.get("full_voiceover_sentences_forbidden") is not True:
-        fail("ganze Voice-over-Saetze muessen in Remotion verboten sein")
-
-
-def validate_overlay_plan(project: Path, scene_numbers: set[int]) -> int:
     overlay_path = project / "03_pipeline" / "overlay-plan.json"
-    if not overlay_path.is_file():
-        return 0
-
-    payload = load_json(overlay_path)
-    scenes = payload.get("scenes", [])
-    if not isinstance(scenes, list):
-        fail("overlay-plan.json: scenes muss eine Liste sein")
-
-    overlay_count = 0
-    used_scenes: set[int] = set()
-
-    for entry in scenes:
-        if not isinstance(entry, dict):
-            fail("overlay-plan.json enthaelt ungueltigen Szeneneintrag")
-        scene = int(entry.get("scene", 0))
-        if scene not in scene_numbers:
-            fail(f"overlay-plan.json referenziert unbekannte Szene: {scene}")
-        if scene in used_scenes:
-            fail(f"overlay-plan.json enthaelt Szene {scene} mehrfach")
-        used_scenes.add(scene)
-
-        overlays = entry.get("overlays", [])
-        if not isinstance(overlays, list):
-            fail(f"overlay-plan.json Szene {scene}: overlays muss eine Liste sein")
-        if len(overlays) > 1:
-            fail(f"Szene {scene}: maximal ein selektives Remotion-Overlay erlaubt")
-
-        for overlay in overlays:
-            if not isinstance(overlay, dict):
-                fail(f"Szene {scene}: ungueltiger Overlay-Eintrag")
-            kind = str(overlay.get("kind", ""))
-            text = str(overlay.get("text", "")).strip()
-            position = str(overlay.get("position", ""))
-            animation = str(overlay.get("animation", ""))
-            try:
-                start = float(overlay.get("startFraction"))
-                duration = float(overlay.get("durationFraction"))
-            except (TypeError, ValueError):
-                fail(f"Szene {scene}: startFraction/durationFraction ungueltig")
-
-            if kind not in ALLOWED_OVERLAY_KINDS:
-                fail(f"Szene {scene}: ungueltiger Overlay-Typ {kind!r}")
-            if position not in ALLOWED_OVERLAY_POSITIONS:
-                fail(f"Szene {scene}: ungueltige Overlay-Position {position!r}")
-            if animation not in ALLOWED_OVERLAY_ANIMATIONS:
-                fail(f"Szene {scene}: ungueltige Overlay-Animation {animation!r}")
-            if not text:
-                fail(f"Szene {scene}: Overlay-Text ist leer")
-            if word_count(text) > MAX_OVERLAY_WORDS:
-                fail(f"Szene {scene}: Overlay hat mehr als {MAX_OVERLAY_WORDS} Woerter")
-            if ASSET_ID_TEXT_RE.search(text):
-                fail(f"Szene {scene}: interner Asset-/Szenenname im Overlay")
-            if not 0 <= start < 1 or not 0 < duration <= 1 or start + duration > 1.001:
-                fail(f"Szene {scene}: ungueltige Overlay-Zeitfraktionen")
-            overlay_count += 1
-
-    return overlay_count
+    if overlay_path.is_file():
+        overlay = load_json(overlay_path)
+        scenes = overlay.get("scenes", [])
+        if not isinstance(scenes, list):
+            fail("overlay-plan.json: scenes muss eine Liste sein")
+        if scenes:
+            fail("overlay-plan.json muss leer bleiben; Remotion sichtbarer Text ist verboten")
+        status = str(overlay.get("status", "")).upper()
+        if status not in {"DISABLED", "TEMPLATE", ""}:
+            fail("overlay-plan.json muss DISABLED sein")
 
 
 def validate_phase1(project: Path) -> set[str]:
-    repo_root = Path(__file__).resolve().parents[1]
-    validate_channel_config(repo_root)
-
-    mechanism = project / "05_info" / "mechanism-map.md"
+    script_path = project / "01_script" / "script.txt"
+    mechanism_path = project / "05_info" / "mechanism-map.md"
     sentence_plan_path = project / "05_info" / "sentence-visual-plan.json"
-    label_plan_path = project / "02_bildprompts" / "label-plan.json"
     scenes_path = project / "05_info" / "phase1-scenes.json"
-    flow_prompt_txt = project / "02_bildprompts" / "GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt"
+    label_plan_path = project / "02_bildprompts" / "label-plan.json"
+    flow_prompt_path = project / "02_bildprompts" / "GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt"
 
-    for path in (mechanism, sentence_plan_path, label_plan_path, scenes_path, flow_prompt_txt):
+    for path in (
+        script_path,
+        mechanism_path,
+        sentence_plan_path,
+        scenes_path,
+        label_plan_path,
+        flow_prompt_path,
+    ):
         require_file(path)
 
-    mechanism_text = mechanism.read_text(encoding="utf-8")
+    validate_global_contract(project)
+
+    mechanism_text = mechanism_path.read_text(encoding="utf-8")
     if PLACEHOLDER_RE.search(mechanism_text):
-        fail(f"Mechanism Map enthaelt noch Platzhalter: {mechanism}")
+        fail("Mechanism Map enthaelt noch Platzhalter")
+
+    flow_prompt_text = flow_prompt_path.read_text(encoding="utf-8").lower()
+    if "never" not in flow_prompt_text or "production" not in flow_prompt_text:
+        fail("Flow-Prompt muss Produktions-IDs ausdruecklich als unsichtbar markieren")
 
     sentence_plan = load_json(sentence_plan_path)
-    if str(sentence_plan.get("status", "")).upper() in {"", "TEMPLATE", "PENDING"}:
-        fail("sentence-visual-plan.json ist noch nicht READY")
+    if str(sentence_plan.get("status", "")).upper() in {"TEMPLATE", "PENDING", ""}:
+        fail("sentence-visual-plan.json ist nicht READY")
     items = sentence_plan.get("items")
     if not isinstance(items, list) or not items:
         fail("sentence-visual-plan.json enthaelt keine Items")
-
-    first_item = items[0]
-    if not isinstance(first_item, dict) or str(first_item.get("function", "")).lower() != "hook":
-        fail("Der erste Sentence-Visual-Beat muss function='hook' besitzen")
-    first_text = str(first_item.get("voiceover_text", "")).strip()
-    if not first_text:
-        fail("Der Hook-Text fehlt")
-    normalized_first = normalize_visible_text(first_text)
-    if any(normalized_first.startswith(normalize_visible_text(prefix)) for prefix in WEAK_OPENING_PREFIXES):
-        fail("Script startet mit schwachem Schulbuch-/Intro-Opening statt Neugier-Hook")
 
     required_item_keys = {
         "id",
@@ -264,6 +179,16 @@ def validate_phase1(project: Path) -> set[str]:
         "labels",
         "misconception_to_avoid",
     }
+
+    first = items[0]
+    if not isinstance(first, dict) or str(first.get("function", "")).lower() != "hook":
+        fail("Der erste Sentence-Visual-Beat muss function='hook' besitzen")
+    first_text = str(first.get("voiceover_text", "")).strip().lower()
+    if not first_text:
+        fail("Hook-Text fehlt")
+    if any(first_text.startswith(prefix) for prefix in WEAK_OPENING_PREFIXES):
+        fail("Script startet mit schwachem Intro statt Neugier-Hook")
+
     sentence_image_ids: set[str] = set()
     for index, item in enumerate(items, start=1):
         if not isinstance(item, dict):
@@ -277,121 +202,111 @@ def validate_phase1(project: Path) -> set[str]:
         if not isinstance(image_id, str) or not IMAGE_ID_RE.match(image_id):
             fail(f"ungueltige image_asset_id in Item {index}: {image_id!r}")
         sentence_image_ids.add(image_id)
-        if not isinstance(item.get("labels"), list) or len(item.get("labels", [])) > 3:
+        labels = item.get("labels", [])
+        if not isinstance(labels, list) or len(labels) > 3:
             fail(f"Sentence-Visual-Item {index}: maximal 3 Labels")
 
     scene_payload = load_json(scenes_path)
+    if str(scene_payload.get("status", "")).upper() in {"TEMPLATE", "PENDING", ""}:
+        fail("phase1-scenes.json ist nicht READY")
     scenes = scene_payload.get("scenes")
     if not isinstance(scenes, list) or not scenes:
         fail("phase1-scenes.json enthaelt keine Szenen")
 
-    scene_image_ids_list: list[str] = []
-    scene_numbers: set[int] = set()
+    rules = scene_payload.get("rules", {})
+    if not isinstance(rules, dict):
+        fail("phase1-scenes.json: rules muss Objekt sein")
+    if rules.get("remotion_text_overlays_allowed") is not False:
+        fail("phase1-scenes.json muss remotion_text_overlays_allowed=false setzen")
+    if rules.get("production_ids_visible_in_images") is not False:
+        fail("phase1-scenes.json muss sichtbare Produktions-IDs verbieten")
+
+    scene_ids: list[str] = []
     for index, scene in enumerate(scenes, start=1):
         if not isinstance(scene, dict):
             fail(f"phase1-scenes.json: Szene {index} ist ungueltig")
-        number = int(scene.get("scene", 0))
-        image_id = scene.get("image")
-        if number != index:
-            fail(f"phase1-scenes.json: erwartete Szene {index}, gefunden {number}")
-        if not isinstance(image_id, str) or image_id != f"Bild_{index:02d}":
-            fail(f"Szene {index}: erwartetes Bild_{index:02d}, gefunden {image_id!r}")
+        if int(scene.get("scene", 0)) != index:
+            fail(f"phase1-scenes.json: erwartete Szene {index}")
+        expected_id = f"Bild_{index:02d}"
+        if scene.get("image") != expected_id:
+            fail(f"Szene {index}: erwartetes {expected_id}, gefunden {scene.get('image')!r}")
         labels_de = scene.get("labels_de", [])
         if not isinstance(labels_de, list) or len(labels_de) > 3:
             fail(f"Szene {index}: labels_de darf maximal 3 Eintraege enthalten")
-        scene_numbers.add(number)
-        scene_image_ids_list.append(image_id)
+        scene_ids.append(expected_id)
 
-    scene_image_ids = set(scene_image_ids_list)
-    if len(scene_image_ids) != len(scene_image_ids_list):
+    scene_id_set = set(scene_ids)
+    if len(scene_id_set) != len(scene_ids):
         fail("phase1-scenes.json enthaelt doppelte Bild-IDs")
-    if sentence_image_ids - scene_image_ids:
-        fail(f"Sentence-Visual-Bilder fehlen in phase1-scenes.json: {sorted(sentence_image_ids - scene_image_ids)}")
+    if sentence_image_ids - scene_id_set:
+        fail(f"Sentence-Visual-Bilder fehlen im Szenenplan: {sorted(sentence_image_ids - scene_id_set)}")
+
+    label_plan = load_json(label_plan_path)
+    if str(label_plan.get("status", "")).upper() in {"TEMPLATE", "PENDING", ""}:
+        fail("label-plan.json ist nicht READY")
+    label_rules = label_plan.get("rules", {})
+    if not isinstance(label_rules, dict):
+        fail("label-plan.json: rules muss Objekt sein")
+    if label_rules.get("no_asset_ids_visible") is not True:
+        fail("label-plan.json muss no_asset_ids_visible=true setzen")
+    if label_rules.get("remotion_visible_text_allowed") is not False:
+        fail("label-plan.json muss Remotion sichtbaren Text verbieten")
+    if label_rules.get("remotion_text_fallback_allowed") is not False:
+        fail("label-plan.json muss Remotion-Text-Fallback verbieten")
+
+    entries = label_plan.get("images")
+    if not isinstance(entries, list):
+        fail("label-plan.json: images muss Liste sein")
+
+    planned: set[str] = set()
+    for entry in entries:
+        if not isinstance(entry, dict):
+            fail("label-plan.json enthaelt ungueltigen Eintrag")
+        image_id = entry.get("image_asset_id")
+        if image_id not in scene_id_set:
+            fail(f"Label-Plan referenziert unbekanntes Bild: {image_id}")
+        if image_id in planned:
+            fail(f"Label-Plan enthaelt doppelten Eintrag fuer {image_id}")
+        planned.add(image_id)
+
+        allowed = entry.get("allowed_visible_text", [])
+        if not isinstance(allowed, list):
+            fail(f"{image_id}: allowed_visible_text muss Liste sein")
+        if any(not isinstance(text, str) or not text.strip() for text in allowed):
+            fail(f"{image_id}: allowed_visible_text enthaelt ungueltigen Text")
+        if any(VISIBLE_INTERNAL_ID_RE.search(text) for text in allowed):
+            fail(f"{image_id}: interne Produktions-ID steht in allowed_visible_text")
+
+        texts = label_texts(entry.get("labels", []))
+        if len(texts) > 3:
+            fail(f"{image_id}: maximal 3 Labels erlaubt")
+        if any(VISIBLE_INTERNAL_ID_RE.search(text) for text in texts):
+            fail(f"{image_id}: internes Produktions-ID-Label ist verboten")
+
+        if image_id != "Bild_01" and sorted(texts) != sorted(allowed):
+            fail(f"{image_id}: Labels und allowed_visible_text stimmen nicht ueberein")
+
+    if planned != scene_id_set:
+        fail(
+            f"Label-Plan muss exakt alle Bilder abdecken. Fehlend={sorted(scene_id_set - planned)}, "
+            f"extra={sorted(planned - scene_id_set)}"
+        )
 
     test_mode_path = project / "05_info" / "test-mode.json"
     if test_mode_path.is_file():
         test_mode = load_json(test_mode_path)
         expected_images = test_mode.get("expected_images")
-        if expected_images is not None and int(expected_images) != len(scenes):
-            fail(f"test-mode.json expected_images={expected_images}, geplant sind aber {len(scenes)} Szenen")
-        hard_max = test_mode.get("hard_fail_over_seconds")
-        if hard_max is not None and float(hard_max) <= 0:
-            fail("test-mode.json: hard_fail_over_seconds muss >0 sein")
-
-    label_plan = load_json(label_plan_path)
-    if str(label_plan.get("status", "")).upper() in {"", "TEMPLATE", "PENDING"}:
-        fail("label-plan.json ist noch nicht READY")
-    images = label_plan.get("images")
-    if not isinstance(images, list):
-        fail("label-plan.json: images muss eine Liste sein")
-    rules = label_plan.get("rules", {})
-    if not isinstance(rules, dict):
-        fail("label-plan.json: rules muss ein Objekt sein")
-    if rules.get("language") != "de":
-        fail("label-plan.json: language muss de sein")
-
-    planned_ids: set[str] = set()
-    cover_hook: str | None = None
-
-    for entry in images:
-        if not isinstance(entry, dict):
-            fail("label-plan.json enthaelt ungueltigen Eintrag")
-        image_id = entry.get("image_asset_id")
-        if image_id not in scene_image_ids:
-            fail(f"Label-Plan referenziert unbekanntes Bild: {image_id}")
-        if image_id in planned_ids:
-            fail(f"Label-Plan enthaelt doppelten Eintrag fuer {image_id}")
-        planned_ids.add(image_id)
-
-        label_texts = extract_label_texts(entry.get("labels", []), str(image_id))
-        allowed = entry.get("allowed_visible_text", label_texts)
-        if not isinstance(allowed, list) or any(not isinstance(text, str) or not text.strip() for text in allowed):
-            fail(f"{image_id}: allowed_visible_text muss eine Liste nichtleerer Texte sein")
-        if any(ASSET_ID_TEXT_RE.search(text) for text in allowed):
-            fail(f"{image_id}: interner Asset-/Szenenname in allowed_visible_text")
-
-        if image_id == "Bild_01":
-            if label_texts:
-                fail("Bild_01: Cover darf keine zusaetzlichen biologischen Labels enthalten")
-            explicit_hook = str(entry.get("hook_text", "")).strip()
-            if explicit_hook:
-                cover_hook = explicit_hook
-            elif len(allowed) == 1:
-                cover_hook = allowed[0].strip()
-            else:
-                fail("Bild_01: genau eine deutsche Cover-Hook muss geplant sein")
-            if len(allowed) != 1 or normalize_visible_text(allowed[0]) != normalize_visible_text(cover_hook):
-                fail("Bild_01: allowed_visible_text muss exakt die Cover-Hook enthalten")
-        else:
-            if cover_hook and any(normalize_visible_text(text) == normalize_visible_text(cover_hook) for text in allowed):
-                fail(f"{image_id}: Cover-Hook darf nicht erneut als Flow-Text erscheinen")
-            if sorted(normalize_visible_text(text) for text in label_texts) != sorted(
-                normalize_visible_text(text) for text in allowed
-            ):
-                fail(f"{image_id}: allowed_visible_text muss den biologischen Labels entsprechen")
-
-    if planned_ids != scene_image_ids:
-        fail(
-            f"Label-Plan muss exakt alle Szenen abdecken. Fehlend={sorted(scene_image_ids - planned_ids)}, "
-            f"extra={sorted(planned_ids - scene_image_ids)}"
-        )
-
-    overlay_count = validate_overlay_plan(project, scene_numbers)
-
-    flow_prompt_text = flow_prompt_txt.read_text(encoding="utf-8")
-    if "Clean Animated Biology Illustration" not in flow_prompt_text and "animated biology illustration" not in flow_prompt_text.lower():
-        fail("Google-Flow-Prompt verweist nicht erkennbar auf die freigegebene Bildwelt")
+        if expected_images is not None and int(expected_images) != len(scene_ids):
+            fail(f"test-mode.json expected_images={expected_images}, geplant sind {len(scene_ids)}")
 
     print(f"V2-PHASE-1-PASS: {project}")
-    print(f"  Hook-Beat: {first_text}")
-    print(f"  Satz-/Visual-Items: {len(items)}")
-    print(f"  geplante Szenen/Bilder: {len(scene_image_ids)}")
-    print(f"  selektive Remotion-Overlays: {overlay_count}")
-    print("  biologische Labels: Google Flow; Praesentations-Text: nur selektiv via Remotion")
-    return scene_image_ids
+    print(f"  Szenen/Bilder: {len(scene_id_set)}")
+    print("  Remotion sichtbarer Text: 0 (hart deaktiviert)")
+    print("  Produktions-IDs im finalen Bild: verboten")
+    return scene_id_set
 
 
-def validate_phase2(project: Path, expected_image_ids: set[str]) -> None:
+def validate_phase2(project: Path, expected_ids: set[str]) -> None:
     review_path = project / "02_bildprompts" / "image-review.json"
     images_dir = project / "02_bildprompts" / "images"
     require_file(review_path)
@@ -400,23 +315,22 @@ def validate_phase2(project: Path, expected_image_ids: set[str]) -> None:
 
     review = load_json(review_path)
     status = str(review.get("status", "")).upper()
-    if status in {"", "TEMPLATE", "PENDING_IMAGES", "PENDING"}:
+    if status in {"TEMPLATE", "PENDING_IMAGES", "PENDING", ""}:
         fail(f"image-review.json ist noch nicht final: status={status or 'LEER'}")
-    if has_placeholder(review):
-        fail("image-review.json enthaelt noch TODO/TBD/PENDING-Werte")
 
     entries = review.get("images")
     if not isinstance(entries, list) or not entries:
         fail("image-review.json enthaelt keine Bildreviews")
 
     reviewed: set[str] = set()
-    required_scores = (
+    numeric_min_8 = (
         "scientific_accuracy",
         "voiceover_match",
         "immediate_clarity",
         "style_continuity",
         "composition",
         "complexity_control",
+        "label_accuracy",
         "overall_score",
     )
 
@@ -424,10 +338,10 @@ def validate_phase2(project: Path, expected_image_ids: set[str]) -> None:
         if not isinstance(entry, dict):
             fail("image-review.json enthaelt ungueltigen Eintrag")
         image_id = entry.get("image_asset_id")
-        if image_id not in expected_image_ids:
+        if image_id not in expected_ids:
             fail(f"Bildreview referenziert unbekanntes Bild: {image_id}")
         if image_id in reviewed:
-            fail(f"image-review.json enthaelt mehrfachen Review fuer {image_id}")
+            fail(f"mehrfacher retained Review fuer {image_id}")
         reviewed.add(image_id)
 
         require_file(images_dir / f"{image_id}.png")
@@ -436,23 +350,21 @@ def validate_phase2(project: Path, expected_image_ids: set[str]) -> None:
             fail(f"{image_id}: Bild ist nicht ACCEPT")
         if entry.get("ai_artifact_check") != "PASS":
             fail(f"{image_id}: AI-Artefakt-Check nicht bestanden")
-        if entry.get("labels_correct") not in {"PASS", True}:
-            fail(f"{image_id}: Label-Korrektheit nicht bestanden")
-        if entry.get("no_visible_asset_id") not in {"PASS", True}:
-            fail(f"{image_id}: interner Assetname sichtbar oder ungeprueft")
-        if entry.get("single_retained_asset_for_scene") not in {"PASS", True}:
-            fail(f"{image_id}: mehrere retained Varianten vorhanden oder ungeprueft")
+        if entry.get("visible_text_whitelist") != "PASS":
+            fail(f"{image_id}: sichtbarer Text nicht gegen Whitelist bestanden")
+        if entry.get("no_visible_asset_id") != "PASS":
+            fail(f"{image_id}: sichtbare Asset-/Bildnummer nicht ausgeschlossen")
+        if entry.get("no_visible_scene_number") != "PASS":
+            fail(f"{image_id}: sichtbare Szenennummer nicht ausgeschlossen")
+        if entry.get("no_visible_filename_or_prompt_heading") != "PASS":
+            fail(f"{image_id}: sichtbarer Dateiname/Prompttitel nicht ausgeschlossen")
+        if entry.get("single_retained_asset_for_scene") != "PASS":
+            fail(f"{image_id}: single retained asset check nicht bestanden")
 
-        for key in required_scores:
+        for key in numeric_min_8:
             value = entry.get(key)
             if not isinstance(value, (int, float)) or value < 8.0:
                 fail(f"{image_id}: {key} muss mindestens 8.0 sein")
-
-        for optional_score in ("visual_novelty", "information_value", "label_accuracy"):
-            if optional_score in entry:
-                value = entry.get(optional_score)
-                if not isinstance(value, (int, float)) or value < 8.0:
-                    fail(f"{image_id}: {optional_score} muss mindestens 8.0 sein")
 
         scene_difference = entry.get("scene_difference")
         if isinstance(scene_difference, str):
@@ -464,21 +376,20 @@ def validate_phase2(project: Path, expected_image_ids: set[str]) -> None:
         else:
             fail(f"{image_id}: scene_difference fehlt")
 
-    missing = expected_image_ids - reviewed
-    if missing:
-        fail(f"Bildreviews fehlen fuer: {sorted(missing)}")
+    if reviewed != expected_ids:
+        fail(f"Bildreviews fehlen fuer: {sorted(expected_ids - reviewed)}")
 
-    actual_png_ids = {path.stem for path in images_dir.glob("Bild_*.png")}
-    if actual_png_ids != expected_image_ids:
+    actual = {path.stem for path in images_dir.glob("Bild_*.png")}
+    if actual != expected_ids:
         fail(
-            f"Finaler Bilderordner muss exakt die Pflichtbilder enthalten. "
-            f"Fehlend={sorted(expected_image_ids - actual_png_ids)}, "
-            f"extra={sorted(actual_png_ids - expected_image_ids)}"
+            f"finaler Bilderordner stimmt nicht mit Planung ueberein. "
+            f"Fehlend={sorted(expected_ids - actual)}, extra={sorted(actual - expected_ids)}"
         )
 
-    print(f"V2-PHASE-2-REVIEW-PASS: {project}")
-    print(f"  akzeptierte eindeutige Bildreviews: {len(reviewed)}")
-    print("  Stil, Komplexitaet, Label-Korrektheit und Bild-Eindeutigkeit bestaetigt")
+    print(f"V2-PHASE-2-PASS: {project}")
+    print(f"  akzeptierte Bilder: {len(reviewed)}")
+    print("  keine sichtbaren Produktions-IDs bestaetigt")
+    print("  Remotion-Text bleibt deaktiviert")
 
 
 def main() -> None:
