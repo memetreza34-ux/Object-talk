@@ -36,11 +36,22 @@ Die Bildanzahl wird nicht kuenstlich vorher festgelegt.
 ## 5. Bildformat
 - 16:9 horizontal
 - 1920×1080 Ziel
-- genug Rand fuer dezente Bewegung und seltene Remotion-Ueberschriften
+- genug Rand fuer dezente Bewegung
+- Illustration bleibt vollformatig
 
 ## 6. Nummerierung
 `Szene 01 = Bild_01`, `Szene 02 = Bild_02`, usw.
-Keine Luecke, keine doppelte Nummer.
+
+Diese Nummerierung ist ausschliesslich interne Produktionsmetadaten.
+
+**Niemals sichtbar im finalen Bild/Video:**
+- `Bild_01`, `Bild 01`, `IMAGE 01`
+- `Szene 01`, `Scene 01`
+- Dateinamen
+- Asset-IDs
+- Prompttitel
+
+Keine Luecke, keine doppelte Nummer im Dateisystem; aber keine Nummer darf Teil der sichtbaren Illustration werden.
 
 ## 7. Verbindliche visuelle Hauptsprache
 
@@ -101,6 +112,7 @@ Mehr Inhalt = neues Bild, nicht mehr Kleinteile.
 - Prompts kurz halten
 - kanonischen Styleblock verwenden
 - interne Bildnummern, Dateinamen und Prompttitel niemals sichtbar
+- jeder Flow-Auftrag muss ausdruecklich sagen, dass Produktions-IDs nicht gerendert werden duerfen
 
 ## 11. Labels in Google Flow
 
@@ -113,29 +125,32 @@ Biologische Labels werden standardmaessig direkt in Google Flow erzeugt.
 - falsche Schreibweise oder falsche Zuordnung = regenerieren/korrigieren
 - keine Textwaende
 
-Remotion ersetzt diese Labels nicht.
+Remotion ersetzt, ergaenzt oder korrigiert diese Labels nicht.
 
-## 12. Praesentationssystem: Vollbild zuerst
+## 12. Praesentationssystem: 100 % Vollbild
 
 Kanalstandard fuer kuenftige Videos:
-- ca. 85–90 % reine Vollbild-Illustration
-- hoechstens ca. 10–15 % selektive Remotion-Praesentation
-- Illustration bleibt auch bei Remotion-Text normalerweise vollformatig sichtbar
-- keine dauerhaften Seitenleisten, Rahmen, Karten oder Presenter-Layouts
+- **100 % Vollbild-Illustration**
+- Remotion erzeugt keinen sichtbaren Text
+- keine Zwischenueberschriften
+- keine Key-Facts
+- keine Summary-Zeilen
+- keine Kapiteltexte
+- keine Callouts
+- keine Untertitel/Captions als Standard
+- keine Textkarten
+- keine dauerhaften Seitenleisten, Rahmen oder Presenter-Layouts
 
-Remotion darf gezielt:
-- Zwischenueberschriften bei echten Abschnittswechseln
-- wenige Key-Facts
-- eine Summary-/Prozesszeile
+Remotion darf nur:
+- Audio
+- Timing
+- leichte Push-/Pull-/Pan-Bewegungen
+- statische Frames
+- Schnitte
+- dezente nicht-textliche Uebergaenge
+- Rendering
 
-Remotion-Text:
-- nur Deutsch
-- bevorzugt 2–6 Woerter
-- keine ganzen Voice-over-Saetze
-- nicht auf jedem Bild
-- Zwischenueberschrift bevorzugt kurz ueber der bereits sichtbaren naechsten Illustration
-
-Fuer ca. 2 Minuten: normalerweise 2–3 Zwischenueberschriften plus optional 1 Key-Fact/Summary.
+`03_pipeline/overlay-plan.json` muss deaktiviert und leer sein.
 
 Details: `engine/PRESENTATION-OVERLAY-SYSTEM.md`.
 
@@ -147,7 +162,7 @@ Eine spaetere `assets/channel/STYLE_REFERENCE.png` ist optional und nur zusaetzl
 
 `Bild_01` ist nicht automatisch der Master-Stilanker fuer alle Folgeframes.
 
-## 14. Harte Stil-Fails
+## 14. Harte Stil-/Produktions-Fails
 
 - fotorealistischer Medizin-Look
 - Medical-CGI / Anatomiesoftware
@@ -159,8 +174,10 @@ Eine spaetere `assets/channel/STYLE_REFERENCE.png` ist optional und nur zusaetzl
 - zu viele Labels/Pfeile
 - random Icons ohne Lehrfunktion
 - Gore / nasses Gewebe
-- dauerhaftes UI-/PowerPoint-Layout ueber den Illustrationen
-- zu viele Remotion-Texte
+- sichtbare interne Bild-/Szenennummer
+- sichtbarer Dateiname / Asset-ID / Prompttitel
+- irgendein von Remotion erzeugter sichtbarer Text
+- nicht-leerer Remotion-Overlay-Plan
 
 ## 15. QA
 
@@ -170,8 +187,9 @@ Eine spaetere `assets/channel/STYLE_REFERENCE.png` ist optional und nur zusaetzl
 - Komplexitaet niedrig
 - Labels korrekt und lesbar
 - Stilkontinuitaet zur kanonischen Bildwelt
-- Vollbild-Illustration bleibt Hauptdarsteller
-- Remotion-Praesentation ist selten, kurz und sinnvoll
+- 100 % Vollbild-Illustration
+- 0 Remotion-Textelemente
+- 0 sichtbare Produktions-IDs
 - kein schwerer KI-Artefakt
 - keine unnoetige Wiederholung
-- korrekte Assetnummerierung
+- korrekte interne Assetnummerierung
