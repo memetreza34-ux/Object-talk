@@ -105,7 +105,7 @@ Regeln:
 - keine internen Nummern, Dateinamen oder Prompttitel
 - Label muss eindeutig auf die richtige Struktur zeigen
 
-Labels werden standardmaessig in Google Flow direkt im Bild erzeugt.
+Biologische Labels werden standardmaessig in Google Flow direkt im Bild erzeugt.
 
 ## 9. Prompt-Plan
 
@@ -120,7 +120,36 @@ Schema:
 
 Kein langer Style-Roman pro Szene.
 
-## 10. Bildreview
+## 10. Remotion-Praesentationsplan
+
+Jedes neue Projekt prueft nach dem Szenenplan, ob wenige Praesentationspunkte helfen.
+
+Datei:
+`03_pipeline/overlay-plan.json`
+
+Grundregel:
+- Vollbild-Illustration bleibt Standard
+- ca. 85–90 % ohne zusaetzliche Remotion-Texte
+- Remotion nur fuer echte Strukturierung
+
+Geeignet:
+- Zwischenueberschrift bei grossem Abschnittswechsel
+- sehr kurzer Key-Fact
+- Summary-/Prozesszeile
+
+Nicht geeignet:
+- anatomische Labels
+- Text fuer jede Szene
+- ganze Voice-over-Saetze
+- dauerhafte Rahmen/Balken/Seitenlayouts
+
+Fuer ca. 2 Minuten normalerweise:
+- 2–3 Zwischenueberschriften
+- optional 1 Key-Fact oder Summary
+
+Zwischenueberschrift bevorzugt auf der bereits sichtbaren naechsten Illustration fuer etwa 0.8–1.5 Sekunden.
+
+## 11. Bildreview
 
 Pflichtkriterien:
 - scientific_accuracy >= 8/10
@@ -138,7 +167,7 @@ Pflichtkriterien:
 - scene_difference bestanden
 - overall_score >= 8/10
 
-## 11. Referenzsystem
+## 12. Referenzsystem
 
 Die schriftliche Bildwelt ist die oberste Stilautoritaet:
 `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
@@ -147,7 +176,7 @@ Eine spaetere `assets/channel/STYLE_REFERENCE.png` ist nur zusaetzlicher visuell
 
 Das Cover `Bild_01` ist nicht automatisch Style-Master fuer alle Folgeframes.
 
-## 12. Schreib- und Produktionsprozess
+## 13. Schreib- und Produktionsprozess
 
 1. Thema und Zuschauerfrage definieren
 2. Quellen/Kernclaims pruefen
@@ -161,9 +190,11 @@ Das Cover `Bild_01` ist nicht automatisch Style-Master fuer alle Folgeframes.
 10. Visual-Mix und Nachbarschaftsunterschiede pruefen
 11. Label-Plan schreiben
 12. kurze Flow-Prompts aus dem kanonischen Styleblock bauen
-13. Bilder einzeln erzeugen und pruefen
+13. wenige sinnvolle Remotion-Praesentationspunkte in `overlay-plan.json` planen
+14. Bilder einzeln erzeugen und pruefen
+15. Phase 3 baut Vollbild-Illustrationen + selektive Overlays
 
-## 13. Hard FAIL
+## 14. Hard FAIL
 
 Planung/Produktion stoppen bei:
 - schwachem / schulbuchartigem Einstieg
@@ -173,4 +204,6 @@ Planung/Produktion stoppen bei:
 - ueberladenem Bildplan
 - mehr Labels als fuer das Verstaendnis noetig
 - internen Assetnamen als sichtbarem Text
+- Remotion-Text auf fast jeder Szene
+- dauerhafter PowerPoint-/Dashboard-Aufteilung statt Vollbild-Illustration
 - alter 2.5D-/Premium-3D-Bildwelt statt der freigegebenen Illustrationswelt
