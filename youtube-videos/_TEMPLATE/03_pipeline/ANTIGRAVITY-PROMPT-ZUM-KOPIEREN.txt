@@ -9,5 +9,13 @@ WICHTIG:
 - Sie muss Projektpfad, benötigte Assets, Whisper-/Timing-Ablauf, Renderer-Regeln und finalen Export enthalten.
 - Antigravity darf Script, Bildreihenfolge und Szenengrenzen nicht kreativ verändern.
 - Das finale Voiceover bleibt die Master-Timeline.
+- Die Illustration bleibt standardmaessig vollformatig.
+- Remotion-Praesentation ist selektiv: Zwischenueberschriften, wenige Key-Facts und optional eine Summary.
+- Ziel: etwa 85–90 % reine Vollbild-Illustration; hoechstens etwa 10–15 % Overlay-Laufzeit.
+- Remotion-Texte nur Deutsch, maximal 6 Woerter, pro Szene maximal ein Overlay.
+- Anatomische/biologische Labels bleiben Teil der Google-Flow-Bilder und werden nicht durch Remotion ersetzt.
+- Keine dauerhaften Rahmen, Seitenleisten oder PowerPoint-/Dashboard-Layouts.
+- `03_pipeline/overlay-plan.json` ist verbindlich zu beachten.
+- `engine/PRESENTATION-OVERLAY-SYSTEM.md` ist die globale Praesentationsregel.
 
 Wenn diese Datei noch diesen Platzhalter enthält, ist Phase 1 noch nicht vollständig.
