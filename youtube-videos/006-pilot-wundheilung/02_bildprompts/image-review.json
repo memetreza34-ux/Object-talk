@@ -7,6 +7,10 @@
     "style_continuity_minimum": 8.0,
     "complexity_control_minimum": 8.0,
     "labels_correct_required": true,
+    "visible_text_whitelist_required": true,
+    "no_visible_asset_id_required": true,
+    "no_visible_scene_number_required": true,
+    "no_visible_filename_or_prompt_heading_required": true,
     "single_retained_asset_per_scene": true,
     "expected_images": 22
   },
