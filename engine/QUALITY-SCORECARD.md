@@ -50,12 +50,15 @@ Alle Bilder muessen zur **Clean Animated Biology Illustration** passen:
 - Wiederholen sich Nachbarbilder nicht ohne neue Aussage?
 - Werden Cutaway, Querschnitt, Makro, Prozess, Vergleich und Maßstabswechsel sinnvoll gemischt?
 
-### 7. Labels und Text – 5 %
-- Sind normalerweise nur 1–3 wichtige deutsche Labels vorhanden?
+### 7. Labels und Praesentation – 5 %
+- Sind normalerweise nur 1–3 wichtige deutsche Flow-Labels vorhanden?
 - Sind Labels korrekt geschrieben und eindeutig zugeordnet?
 - Sind Hinweislinien/Pfeile sauber?
 - Gibt es keinen englischen sichtbaren Text?
-- Gibt es keine unnötigen Textblöcke?
+- Bleibt die Illustration klarer Hauptdarsteller?
+- Werden Remotion-Zwischenueberschriften/Key-Facts nur selten und sinnvoll eingesetzt?
+- Sind Remotion-Overlays kurz, normalerweise maximal 2–6 Woerter?
+- Gibt es keine dauerhaften Rahmen, Seitenleisten oder PowerPoint-/Dashboard-Aufteilung?
 
 ### 8. Audio und Synchronität – 5 %
 - Ist das Voice-over vollständig, verständlich und technisch sauber?
@@ -67,10 +70,12 @@ Alle Bilder muessen zur **Clean Animated Biology Illustration** passen:
 - keine schwarzen Frames
 - keine fehlenden oder doppelten Bildnummern
 - finaler Renderbericht vorhanden
+- Overlay-Laufzeitanteil technisch innerhalb der erlaubten Grenze
 
 ### 10. Zuschauerbindung – 5 %
 - Funktioniert Bild_01 sofort als Hook/Cover?
 - Entwickelt sich die Erklärung sichtbar weiter?
+- Helfen seltene Zwischenueberschriften bei echten Themenwechseln statt den Fluss zu unterbrechen?
 - Liefert das Ende eine klare Auflösung statt bloßer Wiederholung?
 
 ## Bild-Einzelreview
@@ -93,6 +98,20 @@ Decision:                  ACCEPT / REGENERATE
 
 Mindestziel pro Bild: 8,0/10.
 
+## Finaler Praesentationscheck
+
+Zusaetzlich am fertigen Render pruefen:
+
+```text
+Full-frame illustration clearly dominant: PASS / FAIL
+Remotion overlay share <= 15%:             PASS / FAIL
+Max 1 overlay per scene:                    PASS / FAIL
+Max 6 words per overlay:                    PASS / FAIL
+Biology labels remain Flow responsibility:  PASS / FAIL
+No persistent panels/frames:                PASS / FAIL
+Presentation supports, not replaces image:  PASS / FAIL
+```
+
 ## Harte Ausschlusskriterien
 
 Keine Freigabe bei:
@@ -108,6 +127,10 @@ Keine Freigabe bei:
 - doppelter/falscher Bildnummer
 - schwerem KI-Artefakt im Hauptmotiv
 - nicht dokumentiertem Review bei einem Pflichtbild
+- Remotion-Praesentation ueber ca. 15 % der Laufzeit
+- ganzen Voice-over-Saetzen als Remotion-Text
+- Remotion als Ersatz fuer biologische Flow-Labels
+- dauerhafter PowerPoint-/Dashboard-/Seitenleisten-Optik
 
 ## Gesamtwert
 
@@ -118,7 +141,7 @@ VO ↔ Visual:                  __ /10 × 15 %
 Visuelle Erklärtiefe:         __ /10 × 10 %
 Bildqualität/Konsistenz:      __ /10 × 10 %
 Bildrhythmus:                 __ /10 × 10 %
-Labels/Text:                  __ /10 ×  5 %
+Labels/Praesentation:         __ /10 ×  5 %
 Audio/Sync:                   __ /10 ×  5 %
 Technik:                      __ /10 ×  5 %
 Zuschauerbindung:             __ /10 ×  5 %
