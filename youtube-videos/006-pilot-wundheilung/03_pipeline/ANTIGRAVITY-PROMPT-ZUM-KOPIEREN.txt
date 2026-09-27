@@ -16,40 +16,44 @@ AUDIO ZUERST
 - finale Laufzeit über 120 Sekunden = HARD FAIL.
 
 BILDER
-- exakt 22 eindeutige Bilder: `Bild_01` bis `Bild_22`.
+- exakt 22 eindeutige Dateien: `Bild_01.png` bis `Bild_22.png`.
+- diese Dateinamen sind reine Produktionsmetadaten und dürfen niemals im finalen Video sichtbar werden.
 - keine Bildduplikate.
 - kein Bild länger als 7 Sekunden.
 - falls ein Sprachbeat länger als 7 Sekunden ist: nicht einfach Bild duplizieren; Pipeline stoppen und echten zusätzlichen visuellen Beat planen.
 
 BILDWELT
 - `Clean Animated Biology Illustration`
-- Bilder bleiben Vollbild.
+- Bilder bleiben 100 % Vollbild.
 - keine dauerhaften Rahmen, Seitenleisten oder Kartenlayouts.
-- Flow-Beschriftungen bleiben Bestandteil der Illustrationen.
-- keine anatomischen Labels mit Remotion nachbauen.
+- sichtbare biologische Labels sind bereits Bestandteil der akzeptierten Flow-Bilder.
 
-REMOTION-PRÄSENTATION
-Nutze `03_pipeline/overlay-plan.json`.
-Geplant:
-- Szene 2: `1 · Blut stoppen`
-- Szene 11: `2 · Aufräumen`
-- Szene 14: `3 · Reparieren`
-- Szene 22: `Stoppen → Aufräumen → Aufbauen → Verstärken`
+REMOTION – HARTE TEXTSPERRE
+Remotion erzeugt KEINEN sichtbaren Text.
 
-Regeln:
-- Vollbild-Illustration bleibt Hauptdarsteller.
-- Overlay-Anteil maximal 15 % der gesamten Laufzeit.
-- maximal ein Overlay pro Szene.
-- kein Overlay über 6 Wörter.
-- keine ganzen Voice-over-Sätze.
-- biologische Flow-Labels niemals durch Remotion ersetzen oder korrigieren.
+Verboten:
+- Zwischenüberschriften
+- Key-Facts
+- Summary-Zeilen
+- Kapiteltexte
+- Callouts
+- Untertitel / Captions als Standard
+- anatomische Labels
+- Textkarten
+- sichtbare Bildnummern oder Szenennummern
+- Dateinamen / Asset-IDs
+- Korrektur von Flow-Schrift
 
-REMOTION DARF
+`03_pipeline/overlay-plan.json` muss `status: DISABLED` und `scenes: []` enthalten.
+Ein nicht-leerer Overlay-Plan = HARD FAIL.
+
+REMOTION DARF NUR
 - Timing
 - Audio
 - dezente Push/Pull/Pan-Bewegung
-- saubere Schnitte / dezente Überblendungen
-- die selektiven Overlays aus `overlay-plan.json`
+- statische Bilder
+- saubere Schnitte / dezente nicht-textliche Überblendungen
+- Rendering
 
 SCHNITT
 - harte saubere Schnitte als Standard.
@@ -79,9 +83,9 @@ FINAL-QA
 - keine Bildduplikate
 - 22 Bilder vollständig
 - Flow-Labels korrekt
-- Overlays sparsam und lesbar
-- keine Textwand
-- keine sichtbaren internen Assetnamen
+- **0 von Remotion erzeugte sichtbare Textelemente**
+- keine sichtbaren Bild-/Szenennummern
+- keine sichtbaren Dateinamen oder Asset-IDs
 - Blutstillung, Entzündungs-/Aufräumphase, Aufbau und Remodeling fachlich plausibel
 - nicht suggerieren, dass die Phasen strikt getrennt sind
 - keine schwere Infektion darstellen, wenn der Text nur normale frühe Wundheilung erklärt
