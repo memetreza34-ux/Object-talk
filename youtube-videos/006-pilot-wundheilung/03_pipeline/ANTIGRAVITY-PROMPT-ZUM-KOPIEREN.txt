@@ -1,0 +1,89 @@
+ANTIGRAVITY – PILOT 006 „WAS PASSIERT BEI EINEM SCHNITT?“
+
+Arbeite ausschließlich nach dem Repository.
+
+Projekt:
+`youtube-videos/006-pilot-wundheilung/`
+
+ZIEL
+Erzeuge aus Voice + 22 finalen Google-Flow-Bildern einen klaren animierten Biologie-Erklärfilm mit maximal 2:00 Minuten Laufzeit.
+
+AUDIO ZUERST
+- Roh-TTS niemals direkt rendern.
+- `tools/prepare_audio.py` mit `--speed 1.10` verwenden.
+- lange TTS-Pausen vor Whisper/Timeline komprimieren.
+- `final-voiceover.wav` ist die einzige Timing-Quelle.
+- finale Laufzeit über 120 Sekunden = HARD FAIL.
+
+BILDER
+- exakt 22 eindeutige Bilder: `Bild_01` bis `Bild_22`.
+- keine Bildduplikate.
+- kein Bild länger als 7 Sekunden.
+- falls ein Sprachbeat länger als 7 Sekunden ist: nicht einfach Bild duplizieren; Pipeline stoppen und echten zusätzlichen visuellen Beat planen.
+
+BILDWELT
+- `Clean Animated Biology Illustration`
+- Bilder bleiben Vollbild.
+- keine dauerhaften Rahmen, Seitenleisten oder Kartenlayouts.
+- Flow-Beschriftungen bleiben Bestandteil der Illustrationen.
+- keine anatomischen Labels mit Remotion nachbauen.
+
+REMOTION-PRÄSENTATION
+Nutze `03_pipeline/overlay-plan.json`.
+Geplant:
+- Szene 2: `1 · Blut stoppen`
+- Szene 11: `2 · Aufräumen`
+- Szene 14: `3 · Reparieren`
+- Szene 22: `Stoppen → Aufräumen → Aufbauen → Verstärken`
+
+Regeln:
+- Vollbild-Illustration bleibt Hauptdarsteller.
+- Overlay-Anteil maximal 15 % der gesamten Laufzeit.
+- maximal ein Overlay pro Szene.
+- kein Overlay über 6 Wörter.
+- keine ganzen Voice-over-Sätze.
+- biologische Flow-Labels niemals durch Remotion ersetzen oder korrigieren.
+
+REMOTION DARF
+- Timing
+- Audio
+- dezente Push/Pull/Pan-Bewegung
+- saubere Schnitte / dezente Überblendungen
+- die selektiven Overlays aus `overlay-plan.json`
+
+SCHNITT
+- harte saubere Schnitte als Standard.
+- Push/Pull ca. 2–4 %.
+- Pan ca. 20–30 px.
+- keine hektischen Zooms, kein Shake, Bounce oder Meme-Transition.
+
+VORBEREITUNG
+```bash
+python -m pip install -r tools/requirements.txt
+python tools/validate_planning_v2.py youtube-videos/006-pilot-wundheilung
+python tools/prepare_phase3.py youtube-videos/006-pilot-wundheilung
+```
+
+RENDER
+```bash
+cd renderer
+npm install
+npm run render -- ../youtube-videos/006-pilot-wundheilung/04_export/fertiges-video/final-video.mp4
+```
+
+FINAL-QA
+- Laufzeit <= 120 Sekunden
+- 1920×1080 / 30 fps
+- Audio vollständig
+- keine Szene >7s
+- keine Bildduplikate
+- 22 Bilder vollständig
+- Flow-Labels korrekt
+- Overlays sparsam und lesbar
+- keine Textwand
+- keine sichtbaren internen Assetnamen
+- Blutstillung, Entzündungs-/Aufräumphase, Aufbau und Remodeling fachlich plausibel
+- nicht suggerieren, dass die Phasen strikt getrennt sind
+- keine schwere Infektion darstellen, wenn der Text nur normale frühe Wundheilung erklärt
+
+Bei Konflikt oder fehlenden Assets: FAIL statt raten.
