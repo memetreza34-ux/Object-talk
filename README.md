@@ -13,57 +13,80 @@ Standard:
 - wissenschaftlich plausibel und leicht verstaendlich
 - wichtige sichtbare Dinge knapp auf Deutsch beschriften
 
-## WICHTIG: Bildwelt ist aktuell OFFEN
+## Verbindliche Bildwelt
 
-Die frueheren Bildwelten wurden am 27.09.2026 bewusst entfernt.
+Seit 27.09.2026 gilt:
 
-Aktuell gibt es **keine freigegebene visuelle Stilrichtung**.
+**Clean Animated Biology Illustration**
 
-Nicht mehr verbindlich sind insbesondere:
-- fruehere Premium-3D-/Feature-Animation-Regeln
+Die kanonische Spezifikation liegt hier:
+
+`bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
+
+Der kurze Flow-Styleblock liegt hier:
+
+`bildwelt/FLOW-STYLE-BLOCK.txt`
+
+Kernidee:
+- moderne animierte Biologie-Illustrationen
+- vereinfachte, erkennbare Anatomie
+- weiche organische Formen
+- saubere Konturen
+- weiche Verlaeufe und subtile Schatten
+- leichte Tiefe ohne 3D-CGI-Look
+- helle ruhige Hintergruende
+- klare biologische Farben
+- wenige wichtige Elemente
+- sichtbare Prozesse statt dekorativer Objektportraits
+- normalerweise 1–3 kurze deutsche Labels
+
+Diese Bildwelt muss Muskel, Blut, Zellen, Nerven, Organe, Gewebe, Molekuele, Verdauung, Kreislauf, Immunsystem und weitere Biologie-Themen tragen koennen.
+
+## Was nicht mehr gilt
+
+Nicht reaktivieren:
 - fruehere 2.5D-/Soft-3D-Regeln
-- fruehere semantische Farbwelten
-- fruehere Style-Reference-Regeln
-- fruehere Character-/Explainer-Stiltrennung
+- fruehere Premium-3D-/Feature-Animation-Regeln
+- historische Pilot-Bildwelten als Kanalstandard
+- alte Style-Reference-Logiken
 
-Bis eine neue Bildwelt vom Nutzer ausdruecklich ausgewaehlt und freigegeben wurde, darf kein Agent eine alte Bildwelt aus historischen Piloten uebernehmen oder als Kanalstandard behandeln.
+## Visual Storytelling
 
-Historische Pilotdateien koennen alte Stilformulierungen enthalten. Diese sind **nur Produktionshistorie und niemals Stilautoritaet**.
-
-## Was weiterhin gilt
-
-Unabhaengig von der spaeteren Bildwelt bleiben folgende Produktionsregeln bestehen:
-- neugiergetriebene Hooks
-- wissenschaftliche Plausibilitaet
-- ein klarer Lehrpunkt pro Bild
-- hohe visuelle Abwechslung
-- Prozesse, Ursache/Wirkung, Wege und Vergleiche bevorzugen
-- keine Bildduplikate zum Zeitfuellen
+Unabhaengig vom konkreten Motiv:
+- ein dominanter Lehrpunkt pro Bild
+- Prozesse, Ursache/Wirkung, Wege, Vergleiche und Massstabwechsel bevorzugen
+- maximal zwei isolierte Einzelobjektbilder hintereinander
+- Bilder nicht ueberladen
+- wenn mehr erklaert werden muss: neues Bild statt mehr Kleinteile
 - ein Standbild normalerweise 3–6 Sekunden
 - harte Obergrenze 7 Sekunden
-- sichtbarer Text nur auf Deutsch
-- finale Bildassets eindeutig nummerieren
-- Voice, Whisper, Timeline und Remotion bleiben Teil der Produktionspipeline
+
+## Text im Bild
+
+- viewer-facing Text nur Deutsch
+- normalerweise 1–3 kurze Labels
+- saubere Hinweislinien/Pfeile
+- keine Textwaende
+- keine internen Assetnamen/Szenennummern
+- Labels werden standardmaessig direkt in Google Flow erzeugt
 
 ## Aktueller Pilot
 
-```text
-youtube-videos/004-pilot-muskelkater/
-```
+`youtube-videos/004-pilot-muskelkater/`
 
-Die inhaltliche Planung bleibt erhalten. Die visuelle Produktion ist pausiert, bis eine neue Bildwelt ausgewaehlt wurde.
+Die Bildprompts dieses Piloten werden auf die neue Bildwelt umgestellt.
 
 ## Drei Phasen
 
 ### Phase 1 – Creative Director
-Thema → Recherche → Claim-Check → Mechanism Map → Script → Satz-Visual-Plan → Szenenplan → Label-Plan.
+Thema → Recherche → Claim-Check → Mechanism Map → Script → Satz-Visual-Plan → Szenenplan → Label-Plan → kurze Flow-Prompts.
 
-### Phase 2 – Medienproduktion
-Erst nach Freigabe einer neuen Bildwelt: Style-Test → Referenzsystem → Cover → Einzelbilder → Bild-QA → finale Assets.
+### Phase 2 – Google Flow
+Jedes Bild einzeln erzeugen → Beschriftung pruefen → Bild-QA → finale Assets.
 
 ### Phase 3 – Antigravity + Tools + Remotion
 Audio vorbereiten → Whisper → Timeline → leichte Bildbewegung/Schnitt → Render → Final-QA.
 
-## Goldene Regel waehrend des Style-Resets
+## Goldene Regel
 
-**Keine alte Bildwelt wiederverwenden. Erst neue Bildwelt testen, auswaehlen und danach kanalweit festschreiben.**
+**Schoene Illustration + sofort verstaendliche Biologie + wenig Komplexitaet + klare Beschriftung.**
