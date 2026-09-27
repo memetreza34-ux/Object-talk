@@ -1,24 +1,16 @@
 # Channel Assets
 
-Hier liegen ausschließlich dauerhaft freigegebene Kanalreferenzen.
+Dieser Ordner ist fuer spaetere dauerhaft freigegebene Kanalreferenzen vorgesehen.
 
-## Noch fehlend
+## Aktueller Status
 
-Die wichtigste Datei ist:
+Die alte Bildwelt wurde am 27.09.2026 verworfen.
 
-```text
-STYLE_REFERENCE.png
-```
+Aktuell existiert **keine freigegebene Master-Style-Reference** und kein verbindliches Referenzsystem.
 
-Sie wird erst gespeichert, nachdem der Nutzer einen finalen Object-Talk-/Inside-the-Body-Look ausdrücklich akzeptiert hat.
+Bis eine neue Bildwelt getestet und vom Nutzer ausdruecklich freigegeben wurde:
+- keine alte STYLE_REFERENCE verwenden
+- keine historische Pilotgrafik zum Kanalanker machen
+- keine alte Referenzlogik aus frueheren Projekten uebernehmen
 
-Bis dahin gilt `engine/STYLE-REFERENCE-SYSTEM.md` zusammen mit den schriftlichen Bildweltregeln.
-
-## Wichtig
-
-- keine Screenshots einer Oberfläche als Master verwenden
-- möglichst das originale generierte Bild verwenden
-- die Master-Referenz nicht automatisch austauschen
-- Änderungen nur nach ausdrücklicher Freigabe
-
-Wiederkehrende Figuren liegen separat unter `characters/`.
+Nach Auswahl der neuen Bildwelt wird entschieden, welche Referenzdateien hier benoetigt werden und wie sie verwendet werden.
