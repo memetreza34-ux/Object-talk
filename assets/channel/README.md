@@ -1,16 +1,27 @@
 # Channel Assets
 
-Dieser Ordner ist fuer spaetere dauerhaft freigegebene Kanalreferenzen vorgesehen.
+Dieser Ordner ist fuer dauerhaft freigegebene visuelle Kanalreferenzen vorgesehen.
 
-## Aktueller Status
+## Verbindliche Bildwelt
 
-Die alte Bildwelt wurde am 27.09.2026 verworfen.
+Die kanalweite Bildwelt ist jetzt freigegeben:
 
-Aktuell existiert **keine freigegebene Master-Style-Reference** und kein verbindliches Referenzsystem.
+**Clean Animated Biology Illustration**
 
-Bis eine neue Bildwelt getestet und vom Nutzer ausdruecklich freigegeben wurde:
-- keine alte STYLE_REFERENCE verwenden
-- keine historische Pilotgrafik zum Kanalanker machen
-- keine alte Referenzlogik aus frueheren Projekten uebernehmen
+Die schriftliche Stilautoritaet ist:
+`bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
 
-Nach Auswahl der neuen Bildwelt wird entschieden, welche Referenzdateien hier benoetigt werden und wie sie verwendet werden.
+## STYLE_REFERENCE.png
+
+Aktuell existiert noch keine einzelne freigegebene Master-Style-Reference als Bild.
+
+Das ist kein Produktionsblocker: Bis ein einzelnes sauberes Referenzbild vom Nutzer akzeptiert wurde, gilt die schriftliche Bildwelt zusammen mit `bildwelt/FLOW-STYLE-BLOCK.txt`.
+
+Wenn spaeter `STYLE_REFERENCE.png` angelegt wird:
+- nur ein sauberes generiertes Bild verwenden
+- kein Browser-/Flow-Screenshot
+- kein Text- oder UI-Screenshot als Master
+- nur nach ausdruecklicher Nutzerfreigabe ersetzen
+- die Bildreferenz darf die schriftliche Spezifikation nicht ueberschreiben
+
+Historische 2.5D-/Soft-3D-/Premium-3D-Referenzen sind nicht gueltig.
