@@ -73,15 +73,15 @@ const SceneImage: React.FC<{scene: SceneRuntime}> = ({scene}) => {
 
 const positionStyle = (position: OverlayRuntime['position']): React.CSSProperties => {
   if (position === 'top-center') {
-    return {top: 72, left: '50%', transform: 'translateX(-50%)', alignItems: 'center'};
+    return {top: 70, left: '50%', transform: 'translateX(-50%)', alignItems: 'center'};
   }
   if (position === 'bottom-left') {
-    return {bottom: 76, left: 82, alignItems: 'flex-start'};
+    return {bottom: 72, left: 78, alignItems: 'flex-start'};
   }
   if (position === 'center') {
     return {top: '50%', left: '50%', transform: 'translate(-50%, -50%)', alignItems: 'center'};
   }
-  return {top: 76, left: 82, alignItems: 'flex-start'};
+  return {top: 72, left: 78, alignItems: 'flex-start'};
 };
 
 const OverlayItem: React.FC<{overlay: OverlayRuntime; scene: SceneRuntime}> = ({
@@ -115,12 +115,13 @@ const OverlayItem: React.FC<{overlay: OverlayRuntime; scene: SceneRuntime}> = ({
     easing: smoothEase,
   });
 
-  const translateY = overlay.animation === 'fade-slide' ? interpolate(enter, [0, 1], [14, 0]) : 0;
-  const scale = overlay.animation === 'pop' ? interpolate(enter, [0, 1], [0.97, 1]) : 1;
-  const accentWidth = overlay.animation === 'underline' ? `${Math.round(enter * 100)}%` : '24%';
+  const translateY = overlay.animation === 'fade-slide' ? interpolate(enter, [0, 1], [12, 0]) : 0;
+  const scale = overlay.animation === 'pop' ? interpolate(enter, [0, 1], [0.975, 1]) : 1;
+  const accentWidth = overlay.animation === 'underline' ? `${Math.round(enter * 100)}%` : '28%';
 
-  const fontSize = overlay.kind === 'heading' ? 60 : overlay.kind === 'keyword' ? 46 : 40;
+  const fontSize = overlay.kind === 'heading' ? 54 : overlay.kind === 'keyword' ? 43 : 38;
   const fontWeight = overlay.kind === 'heading' ? 800 : 700;
+  const padding = overlay.kind === 'heading' ? '18px 26px 16px' : '15px 22px 14px';
 
   return (
     <div
@@ -138,26 +139,29 @@ const OverlayItem: React.FC<{overlay: OverlayRuntime; scene: SceneRuntime}> = ({
         style={{
           transform: `translateY(${translateY}px) scale(${scale})`,
           transformOrigin: overlay.position.includes('left') ? 'left center' : 'center center',
-          color: 'white',
+          color: '#18364f',
           fontFamily: 'Inter, Arial, Helvetica, sans-serif',
           fontSize,
           fontWeight,
-          lineHeight: 1.02,
+          lineHeight: 1.04,
           letterSpacing: '-0.025em',
-          textShadow: '0 3px 18px rgba(0,0,0,0.72), 0 1px 3px rgba(0,0,0,0.85)',
           maxWidth: 760,
+          padding,
+          borderRadius: 20,
+          background: 'rgba(248, 252, 255, 0.94)',
+          border: '1px solid rgba(24, 54, 79, 0.10)',
+          boxShadow: '0 10px 30px rgba(23, 55, 80, 0.16)',
         }}
       >
         {overlay.text}
         <div
           style={{
             marginTop: 10,
-            height: 3,
+            height: 4,
             width: accentWidth,
             maxWidth: '100%',
             borderRadius: 999,
-            background: 'rgba(255,255,255,0.9)',
-            boxShadow: '0 2px 8px rgba(0,0,0,0.4)',
+            background: '#49b6d6',
           }}
         />
       </div>
