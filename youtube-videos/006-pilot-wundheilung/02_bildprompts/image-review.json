@@ -1,0 +1,14 @@
+{
+  "status": "PENDING_IMAGES",
+  "video_id": "006-pilot-wundheilung",
+  "rules": {
+    "minimum_score": 8.0,
+    "scientific_accuracy_minimum": 8.0,
+    "style_continuity_minimum": 8.0,
+    "complexity_control_minimum": 8.0,
+    "labels_correct_required": true,
+    "single_retained_asset_per_scene": true,
+    "expected_images": 22
+  },
+  "images": []
+}
