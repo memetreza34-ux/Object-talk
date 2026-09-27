@@ -1,0 +1,10 @@
+{
+  "test_mode": true,
+  "purpose": "Validate the new Clean Animated Biology Illustration world across lung, blood, heart, cell and mitochondria in one short end-to-end pilot.",
+  "target_runtime_seconds": 105,
+  "minimum_runtime_seconds": 85,
+  "maximum_runtime_seconds": 120,
+  "target_script_words": 250,
+  "expected_images": 22,
+  "voice_speed_multiplier": 1.10
+}
