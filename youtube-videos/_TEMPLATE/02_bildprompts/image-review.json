@@ -2,6 +2,8 @@
   "status": "TEMPLATE",
   "minimum_overall_score": 8.0,
   "hard_fail_on_scientific_error": true,
+  "hard_fail_on_visible_production_id": true,
+  "hard_fail_on_unplanned_visible_text": true,
   "images": [
     {
       "image_asset_id": "Bild_01",
@@ -12,6 +14,11 @@
       "composition": null,
       "complexity_control": null,
       "label_accuracy": null,
+      "visible_text_whitelist": "PENDING",
+      "no_visible_asset_id": "PENDING",
+      "no_visible_scene_number": "PENDING",
+      "no_visible_filename_or_prompt_heading": "PENDING",
+      "single_retained_asset_for_scene": "PENDING",
       "ai_artifact_check": "PENDING",
       "scene_difference": "PENDING",
       "overall_score": null,
