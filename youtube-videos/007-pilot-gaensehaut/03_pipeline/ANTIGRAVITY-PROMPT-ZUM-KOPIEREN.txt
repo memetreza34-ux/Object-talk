@@ -25,9 +25,22 @@ BILDER
 
 BILDWELT
 - `Clean Animated Biology Illustration`
+- `engine/VISIBLE-TEXT-STANDARD.md` ist verbindlich.
 - Bilder bleiben 100 % Vollbild.
 - keine dauerhaften Rahmen, Seitenleisten oder Kartenlayouts.
 - biologische Labels sind bereits Bestandteil der akzeptierten Flow-Bilder.
+
+SICHTBARER TEXT – FINAL MUSS BESTEHEN
+- Cover: exakt ein sichtbarer Textblock = `Warum Gänsehaut?`
+- keine Cover-Zusatzlabels, Unterzeile oder Zusatzinfo
+- normale Bilder: maximal 2 Labels
+- Labels maximal 3 Wörter
+- keine unnötigen Labels
+- heller Hintergrund → dunkle Schrift
+- dunkler Hintergrund → helle Schrift
+- kein hell-auf-hell / dunkel-auf-dunkel
+- schwacher Textkontrast = FAIL
+- überladener Frame = FAIL
 
 REMOTION – HARTE REGEL
 Remotion erzeugt KEINEN sichtbaren Text.
@@ -63,8 +76,11 @@ VORBEREITUNG
 ```bash
 python -m pip install -r tools/requirements.txt
 python tools/validate_planning_v2.py youtube-videos/007-pilot-gaensehaut
+python tools/validate_planning_v2.py youtube-videos/007-pilot-gaensehaut --phase2
 python tools/prepare_phase3.py youtube-videos/007-pilot-gaensehaut
 ```
+
+**WICHTIG:** Nicht rendern, wenn `--phase2` nicht PASS ist.
 
 RENDER
 ```bash
@@ -80,6 +96,12 @@ FINAL-QA
 - 20 Bilder vollständig
 - keine Szene >7s
 - keine Bildduplikate
+- Cover zeigt nur `Warum Gänsehaut?`
+- kein weiterer Cover-Text
+- alle sichtbaren Flow-Texte kontrastreich und sofort lesbar
+- normale Bilder maximal 2 Labels
+- keine unnötigen Labels oder Nebeninformationen
+- jeder Frame hat eine klare dominante Hauptidee
 - keine sichtbare Bild-/Szenennummer oder Dateiname
 - keine Remotion-Schrift
 - Flow-Labels korrekt
