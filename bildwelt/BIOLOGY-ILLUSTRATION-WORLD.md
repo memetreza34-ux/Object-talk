@@ -4,6 +4,9 @@ Status: **KANONISCH / FREIGEGEBEN**
 
 Diese Datei ist die einzige autoritative Bildwelt fuer normale Biologie-, Gesundheits- und Koerper-Erklaerszenen des Kanals.
 
+Zusaetzlich verbindlich fuer sichtbaren Text und Informationsdichte:
+`engine/VISIBLE-TEXT-STANDARD.md`
+
 ## Kernidee
 
 Object-Talk nutzt **klare animierte Biologie-Illustrationen**.
@@ -23,36 +26,65 @@ Die Bildwelt muss Muskel, Blut, Zellen, Nerven, Organe, Gewebe, Molekuele, Verda
 - leichte raeumliche Tiefe, ohne wie 3D-CGI auszusehen
 - helle, ruhige Hintergruende; bevorzugt sehr helles Blau, Mint, Creme oder andere sanfte Flaechen
 - kraeftige, klar getrennte biologische Farben
-- ein dominanter Lehrpunkt pro Bild
+- **ein dominanter Lehrpunkt pro Bild**
 - wenige wichtige Elemente statt Detailueberladung
 - wichtige Prozesse sichtbar machen, nicht nur Objekte zeigen
 
 ## Beschriftungen
 
-Beschriftungen sind Teil der Bildwelt.
+Beschriftungen sind eine Hilfe, nicht der Hauptinhalt.
 
 - viewer-facing Text nur Deutsch
-- normalerweise 1–3 kurze Labels
+- normale Bilder: **0–2 kurze Labels**, maximal 2
+- bevorzugt 0 oder 1 Label, wenn die Szene visuell bereits klar ist
+- Label bevorzugt 1–2 Woerter, maximal 3 Woerter
 - nur wirklich wichtige Strukturen oder Prozesse beschriften
-- klare, kleine Sans-Serif-Schrift
-- dunkles Grau/Blau statt dekorativer Typografie
-- duenne saubere Hinweislinien oder Pfeile
+- klare Sans-Serif-Schrift
+- keine dekorativen Anfuehrungszeichen um Labels
+- duenne saubere Hinweislinien oder Pfeile nur wenn noetig
 - Labels muessen eindeutig zur richtigen Struktur zeigen
 - keine Textwaende
 - keine englischen Labels
 - keine internen Bildnummern, Dateinamen oder Prompttitel
+
+### Textkontrast – HARD RULE
+
+- heller Hintergrund → dunkle Schrift
+- dunkler Hintergrund → helle Schrift
+- niemals helle Schrift auf hellem Hintergrund
+- niemals dunkle Schrift auf dunklem Hintergrund
+- Text bevorzugt in ruhiger negativer Flaeche platzieren
+- wenn der Hintergrund hinter dem Text zu unruhig ist, Textposition verschieben
+
+Schwacher Kontrast oder schwer lesbarer Text = **FAIL / neu generieren**.
+
+## Cover – HARD RULE
+
+Das Cover / erste Hook-Bild darf genau **einen sichtbaren Textblock** enthalten:
+
+- nur den geplanten Titel / Hook
+- keine Anatomie-Labels
+- keine Unterzeile
+- keine Zusatzinfo
+- keine Pfeiltexte
+
+Jeder weitere sichtbare Text auf dem Cover = **FAIL / neu generieren**.
 
 ## Komplexitaetsregel
 
 Ein Bild muss innerhalb etwa einer Sekunde grob verstanden werden koennen.
 
 Bevorzugt:
-- 2–5 zentrale sichtbare Elemente
-- 1 Hauptprozess
-- 1–3 Labels
+- 2–4 zentrale sichtbare Elemente
+- 1 Hauptprozess / 1 Hauptaussage
+- 0–2 Labels
 - klare Blickfuehrung
 
-Wenn mehr erklaert werden muss, wird ein neues Bild geplant statt das aktuelle Bild zu ueberladen.
+Wenn mehr erklaert werden muss:
+1. unwichtige Information weglassen, oder
+2. den Beat auf mehrere Bilder aufteilen.
+
+**Mehr einfache Bilder sind besser als ein ueberladenes Bild.**
 
 ## Erlaubte Bildtypen
 
@@ -70,7 +102,7 @@ Die Bildwelt bleibt gleich, aber die Komposition darf stark variieren:
 - Koerper → Organ → Gewebe → Zelle Massstabswechsel
 - einfache Alltagsszene mit biologischem Fokus
 
-Die Bilder sollen NICHT alle wie ein Objekt in der Mitte mit drei Labels aussehen.
+Die Bilder sollen NICHT alle wie ein Objekt in der Mitte mit zwei Labels aussehen.
 
 ## Farbprinzip
 
@@ -97,6 +129,10 @@ Keine starre Palette erzwingen, wenn sie der fachlichen Lesbarkeit schadet.
 - weisser leerer Studiohintergrund als Standard
 - random Icons ohne Erklaerfunktion
 - zu viele Pfeile oder Labels
+- schwacher Textkontrast
+- helle Schrift auf hellem Hintergrund
+- dunkle Schrift auf dunklem Hintergrund
+- Zusatzlabels auf dem Cover
 - Gore / Horror / nasses Gewebe
 - komplexe Kleinststrukturen, die fuer den Lehrpunkt nicht gebraucht werden
 
@@ -107,8 +143,9 @@ Prompts sollen kurz bleiben.
 1. kurze Style-Zeile
 2. konkrete biologische Szene
 3. sichtbarer Prozess
-4. 1–3 deutsche Labels
-5. kurze Negativregel
+4. 0–2 deutsche Labels nur wenn noetig
+5. klare Textkontrast-Anweisung
+6. kurze Negativregel
 
 Der kanonische kurze Styleblock steht in `bildwelt/FLOW-STYLE-BLOCK.txt`.
 
@@ -122,4 +159,4 @@ Eine spaetere `assets/channel/STYLE_REFERENCE.png` darf als zusaetzlicher visuel
 
 Ein gutes Object-Talk-Bild ist:
 
-**schoene Illustration + sofort verstaendliche Biologie + wenig Komplexitaet + klare Beschriftung + sichtbarer Prozess.**
+**schoene Illustration + sofort verstaendliche Biologie + eine Hauptidee + wenig Text + hoher Kontrast + keine unnoetigen Details.**
