@@ -95,17 +95,18 @@ Details: `engine/PRESENTATION-OVERLAY-SYSTEM.md`.
 
 ## Aktueller Pilot
 
-`youtube-videos/006-pilot-wundheilung/`
+`youtube-videos/007-pilot-gaensehaut/`
 
-Thema: **Was passiert in deinem Koerper, wenn du dich schneidest?**
+Thema: **Warum bekommst du Gänsehaut?**
 
 Testvorgaben:
 - maximal 2:00 Minuten final
-- ca. 213 Woerter Script
-- 22 eindeutige Bilder
-- Haut, Blutgefaesse, Blutplaettchen, Fibrin, Immunzellen, Kollagen und Gewebeumbau
+- ca. 190 Woerter Script
+- 20 eindeutige Bilder
+- Haut, Nervensignal, sympathisches Nervensystem, Haarfollikel, Haaraufrichtemuskel und Tierfell
 - 100 % Vollbild-Illustration
 - 0 sichtbare Remotion-Textelemente
+- 0 sichtbare Produktionsnummern
 
 ## Drei Phasen
 
