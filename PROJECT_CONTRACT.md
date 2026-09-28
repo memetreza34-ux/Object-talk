@@ -47,10 +47,11 @@ Sofern nichts anderes beschlossen wird:
 - harte Obergrenze 7.0 Sekunden
 - bei mehreren Lehrbeats neue eindeutige Szene planen
 - dasselbe Bild nicht wiederverwenden, um Zeit zu fuellen
-- ein dominanter Lehrpunkt pro Bild
+- **ein dominanter Lehrpunkt pro Bild**
 - Prozesse, Beziehung, Ursache/Wirkung, Wege, Vergleiche, Vorher/Nachher und Kontext bevorzugen
 - maximal zwei isolierte Einzelobjekt-Portraits direkt hintereinander
 - benachbarte Szenen sollen sich in mindestens zwei visuellen Dimensionen unterscheiden
+- wenn ein Bild mehrere Hauptaussagen braucht: **Beat teilen und mehr Bilder verwenden**
 
 ## VERBINDLICHE KANAL-BILDWELT
 
@@ -61,6 +62,7 @@ Seit 27.09.2026 gilt kanalweit:
 Autoritativ:
 - `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
 - `bildwelt/FLOW-STYLE-BLOCK.txt`
+- `engine/VISIBLE-TEXT-STANDARD.md`
 
 Kernregeln:
 - animierte Biologie-Illustration statt Render-Look
@@ -73,30 +75,49 @@ Kernregeln:
 - starke, klar getrennte biologische Farben
 - wenige wichtige Elemente
 - ein klarer biologischer Prozess oder Zusammenhang pro Bild
-- normalerweise 1–3 kurze deutsche Labels fuer wichtige Strukturen
+- normale Bilder **0–2 kurze deutsche Labels**, nur wenn wirklich noetig
 
 Die Bildwelt muss fuer Muskel, Blut, Zellen, Nerven, Organe, Gewebe, Molekuele, Verdauung, Kreislauf, Immunsystem und weitere Biologie-Themen funktionieren.
 
-## Komplexitaet
+## Informationsbudget – HARD RULE
 
 Ein Bild soll innerhalb etwa einer Sekunde grob verstanden werden koennen.
 
 Bevorzugt:
-- 2–5 zentrale sichtbare Elemente
-- 1 Hauptprozess
-- 1–3 Labels
+- 2–4 zentrale sichtbare Elemente
+- 1 Hauptprozess / 1 Hauptaussage
+- 0–2 Labels
 - klare Blickfuehrung
 
-Wenn mehr Inhalt noetig ist, wird ein neues Bild geplant statt das vorhandene zu ueberladen.
+Wenn mehr Inhalt noetig ist:
+1. unwichtige Information weglassen, oder
+2. ein weiteres Bild planen.
+
+**Mehr einfache Bilder sind besser als ein ueberladenes Bild.**
+
+## Cover – HARD RULE
+
+Das Cover / `Bild_01` darf genau **einen sichtbaren Textblock** enthalten:
+
+- nur den geplanten deutschen Titel / Hook
+- bevorzugt 3–7 Woerter
+- keine Anatomie-Labels
+- keine Zusatzinfo
+- keine Unterzeile
+- keine Pfeiltexte
+
+Wenn neben dem Titel irgendein weiterer sichtbarer Text erscheint: **FAIL → Flow-Bild neu generieren.**
 
 ## Sichtbarer Text – einzige erlaubte Quelle
 
 Sichtbarer Text darf nur bereits Bestandteil eines final akzeptierten Google-Flow-Bildes sein.
 
-Erlaubt in Flow-Bildern:
-- kurze deutsche biologische Labels
-- duenne Hinweislinien oder Pfeile
-- ein geplanter Cover-Titel, wenn das Cover ihn wirklich braucht
+Normale Bilder:
+- 0–2 Labels, maximal 2
+- Label bevorzugt 1–2 Woerter, maximal 3 Woerter
+- keine ganzen Saetze
+- keine dekorativen Anfuehrungszeichen
+- nur Begriffe, die fuer den aktuellen Lehrpunkt wirklich gebraucht werden
 
 Nicht erlaubt als sichtbarer Text:
 - interne Assetnamen
@@ -109,7 +130,20 @@ Nicht erlaubt als sichtbarer Text:
 
 **Harte Regel:** Bildnummern und Szenennummern sind reine Produktionsmetadaten und duerfen niemals in einem finalen Bild oder Video sichtbar sein.
 
-Wenn Flow eine interne Nummer oder einen falschen Text sichtbar rendert, ist das Bild FAIL und wird neu erzeugt.
+Wenn Flow eine interne Nummer, einen falschen Text oder unnoetigen Zusatztext sichtbar rendert, ist das Bild FAIL und wird neu erzeugt.
+
+## Textkontrast – HARD RULE
+
+Jeder sichtbare Text muss sofort lesbar sein.
+
+- heller Hintergrund → **dunkle Schrift**
+- dunkler Hintergrund → **helle Schrift**
+- niemals helle Schrift auf hellem Hintergrund
+- niemals dunkle Schrift auf dunklem Hintergrund
+- Text bevorzugt in ruhiger negativer Flaeche platzieren
+- bei unruhigem Hintergrund: Textposition verschieben statt schwachen Kontrast akzeptieren
+
+Schwacher Kontrast / schwer lesbare Schrift = **FAIL → neu generieren**.
 
 ## Verbindliches Praesentationssystem: 100 % Vollbild-Illustration
 
@@ -152,7 +186,11 @@ Autoritativ fuer die technische Umsetzung:
 - ueberladene Infografik
 - leere weisse Studioflaeche als Standard
 - random Icons ohne Lehrfunktion
-- zu viele Labels/Pfeile
+- mehr als 2 Labels in normalen Bildern
+- Zusatzlabels auf dem Cover
+- helle Schrift auf hellem Hintergrund
+- dunkle Schrift auf dunklem Hintergrund
+- zu viele Pfeile
 - Gore / Horror / nasses Gewebe
 - unnoetige Kleinststrukturen
 
@@ -171,7 +209,7 @@ Erlaubt und erwuenscht sind stark unterschiedliche Kompositionen innerhalb derse
 - Massstabswechsel Koerper → Organ → Gewebe → Zelle
 - einfache Alltagsszene mit biologischem Fokus
 
-Nicht alle Bilder duerfen wie ein zentriertes Einzelobjekt mit drei Labels aussehen.
+Nicht alle Bilder duerfen wie ein zentriertes Einzelobjekt mit Labels aussehen.
 
 ## Prompt-Standard
 
@@ -179,13 +217,17 @@ Prompts fuer Flow bleiben kurz:
 1. kanonischer Styleblock
 2. konkrete Szene
 3. sichtbarer Prozess
-4. 1–3 deutsche Labels, nur wenn noetig
-5. kurze Negativregel
+4. 0–2 deutsche Labels nur wenn wirklich noetig
+5. explizite Kontrastregel fuer sichtbaren Text
+6. kurze Negativregel
 
 Prompt-Anweisungen auf Englisch, sichtbare Texte Deutsch.
 
 Jeder Flow-Auftrag muss ausdruecklich sagen:
 **Asset-/Bild-/Szenennummern sind nur Dateinamen/Produktionsmetadaten und duerfen NICHT im Bild erscheinen.**
+
+Cover-Prompt muss zusaetzlich ausdruecklich sagen:
+**Exactly one visible text block: the title only. No labels, no subtitle, no extra text.**
 
 ## Referenzsystem
 
@@ -206,10 +248,10 @@ Das Cover `Bild_01` wird nicht automatisch als Stilanker fuer alle Folgebilder v
 ## Drei Phasen
 
 ### Phase 1 – Creative Director
-Recherche → Claim-Check → Script → Mechanism Map → Satz-Visual-Plan → Szenenplan → Label-Plan → kurze Flow-Prompts.
+Recherche → Claim-Check → Script → Mechanism Map → Satz-Visual-Plan → Szenenplan → Informationsbudget pruefen → Label-Plan → kurze Flow-Prompts.
 
 ### Phase 2 – Google Flow
-Bild fuer Bild erzeugen → Labels pruefen → sicherstellen, dass keine internen IDs/Nummern sichtbar sind → wissenschaftliche/visuelle QA → finale eindeutige Assets.
+Bild fuer Bild erzeugen → Cover auf Titel-only pruefen → Labels und Textkontrast pruefen → Informationsdichte pruefen → sicherstellen, dass keine internen IDs/Nummern sichtbar sind → wissenschaftliche/visuelle QA → finale eindeutige Assets.
 
 ### Phase 3 – Antigravity + Tools + Remotion
 Audio kanonisieren → Whisper → Timeline → Vollbild-Illustrationen + leichte Bildbewegung/Schnitt → Render → Final-QA.
@@ -221,12 +263,13 @@ Audio kanonisieren → Whisper → Timeline → Vollbild-Illustrationen + leicht
 1. aktuelle ausdrueckliche Nutzeranweisung
 2. `PROJECT_CONTRACT.md`
 3. `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
-4. `PROJECT_STATE.md`
-5. `config/channel.json`
-6. aktuelle Engine-Regeln
-7. aktuelles Projekt
-8. historische Piloten nur als Lern-/Fehlerhistorie
+4. `engine/VISIBLE-TEXT-STANDARD.md`
+5. `PROJECT_STATE.md`
+6. `config/channel.json`
+7. aktuelle Engine-Regeln
+8. aktuelles Projekt
+9. historische Piloten nur als Lern-/Fehlerhistorie
 
 ## Goldene Regel
 
-**100 % Vollbild-Illustration. Sichtbarer Text kommt nur aus dem freigegebenen Flow-Bild. Remotion erzeugt niemals Text. Interne Bild-/Szenennummern sind niemals sichtbar.**
+**Cover nur Titel. Normale Bilder 0–2 kurze Labels. Ein Bild = eine Hauptidee. Hoher Textkontrast. Lieber mehr Bilder als mehr Text oder Details. Remotion erzeugt niemals Text.**
