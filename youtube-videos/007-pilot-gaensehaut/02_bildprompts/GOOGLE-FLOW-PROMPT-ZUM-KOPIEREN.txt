@@ -2,70 +2,80 @@ GOOGLE FLOW – PILOT 007 GÄNSEHAUT
 
 Create every frame individually in 16:9 using the approved Clean Animated Biology Illustration world: simplified recognizable anatomy, smooth organic forms, clean outlines, soft gradients, subtle depth, bright calm backgrounds and clear biological colors.
 
-GLOBAL HARD RULE:
-File names, image numbers, scene numbers, production IDs and prompt headings are metadata only. NEVER render them inside the image. Never show text such as Bild_01, Bild 01, Scene 01, Szene 01, Image 01 or file names. Visible text is allowed only when explicitly listed as German viewer text below.
+GLOBAL HARD RULES:
+- One main teaching idea per frame.
+- Prefer 2–4 important visible elements.
+- Normal frames use 0–2 German labels maximum, only if truly needed.
+- Each label should be 1–2 words, maximum 3 words.
+- Do not render quotation marks around labels.
+- If the image is already understandable, use no label.
+- If a frame becomes too dense, omit nonessential information instead of adding more text/details.
+- Use strong text contrast: pale/light background = dark charcoal/navy text; dark background = light text. Never light-on-light or dark-on-dark. Put text in calm negative space.
 
-Keep each frame simple: usually 2–5 important elements and one clear biological idea. No realistic medical tissue, no medical CGI, no glossy 3D, no clutter, no random icons, no extra text.
+PRODUCTION IDS ARE METADATA ONLY:
+File names, image numbers, scene numbers, production IDs and prompt headings are metadata only. NEVER render them inside the image. Never show text such as Bild_01, Bild 01, Scene 01, Szene 01, Image 01 or file names.
+
+Visible text is allowed only when explicitly listed below. No extra text.
 
 ---
 FILE: Bild_01.png — metadata only, never visible
 PROMPT:
-Macro view of human skin changing from smooth skin to clear goosebumps, attractive educational biology illustration. Add only the German cover title: „Warum Gänsehaut?“
+Macro view of clean human skin changing from smooth skin to clear goosebumps, attractive educational biology illustration. Exactly ONE visible text block: Warum Gänsehaut? Title only. No anatomy labels, no subtitle, no extra text anywhere. Use dark navy or dark charcoal title text because the background is bright. Strong contrast and immediate readability.
 
 ---
 FILE: Bild_02.png — metadata only, never visible
 PROMPT:
-Simple skin cutaway with one hair follicle and one tiny muscle attached to it. Labels only: „Haarfollikel“, „kleiner Muskel“.
+Simple skin cutaway with one hair follicle and one tiny muscle attached to it. Show only the essential anatomy. Render exactly two German labels without quotation marks: Haarfollikel and Haarmuskel. Place both in clear negative space with dark text on the pale background.
 
 ---
 FILE: Bild_03.png — metadata only, never visible
 PROMPT:
-Cold reaches the skin and a few simplified temperature-sensing nerve endings react. Labels only: „Kältereiz“, „Temperaturfühler“.
+Cold reaches the skin and a few simplified temperature-sensing nerve endings react. Show the cold visually, do not label it. Render only the German label Temperaturfühler, without quotation marks, using dark high-contrast text on the light background.
 
 ---
 FILE: Bild_04.png — metadata only, never visible
 PROMPT:
-Show a clear nerve signal traveling from the skin along a sensory nerve toward the brain. Label only: „Nervensignal“.
+Show a clear nerve signal traveling from the skin along a sensory nerve toward the brain. Render only the German label Nervensignal, without quotation marks. Keep the scene simple and use strong text contrast.
 
 ---
 FILE: Bild_05.png — metadata only, never visible
 PROMPT:
-Simplified human brain receiving the incoming signal and beginning an automatic body response. Label only: „Gehirn“. Do not mark one invented goosebump center.
+Simplified human brain receiving the incoming signal and beginning an automatic body response. No visible text. Do not mark one invented goosebump center.
 
 ---
 FILE: Bild_06.png — metadata only, never visible
 PROMPT:
-Skin cutaway showing a sympathetic nerve signal reaching the tiny muscle attached to a hair follicle. Labels only: „sympathischer Nerv“, „Haarmuskel“.
+Skin cutaway showing a sympathetic nerve signal reaching the tiny muscle attached to a hair follicle. Focus visually on the target muscle. Render only the German label Haarmuskel, without quotation marks, in dark high-contrast text.
 
 ---
 FILE: Bild_07.png — metadata only, never visible
 PROMPT:
-Macro anatomy of one hair follicle with the small arrector pili muscle clearly attached. Labels only: „Haaraufrichtemuskel“, „Haarfollikel“.
+Macro anatomy of one hair follicle with the small arrector pili muscle clearly attached. Render only the German label Haaraufrichtemuskel, without quotation marks. Keep the label in calm negative space with strong contrast.
 
 ---
 FILE: Bild_08.png — metadata only, never visible
 PROMPT:
-Simple before-and-after cutaway: the tiny hair muscle relaxed, then contracted and shorter, causing the hair to stand more upright. Label only: „Muskel zieht sich zusammen“.
+Simple before-and-after cutaway: the tiny hair muscle relaxed, then contracted and shorter, causing the hair to stand more upright. No visible text. The movement itself must explain the mechanism.
 
 ---
 FILE: Bild_09.png — metadata only, never visible
 PROMPT:
-Close skin cutaway showing the contracted hair muscle gently pulling the skin upward around the follicle. Label only: „Haut hebt sich“.
+Close skin cutaway showing the contracted hair muscle gently pulling the skin upward around the follicle. No visible text. Make the local skin lift visually obvious without extra annotations.
 
 ---
 FILE: Bild_10.png — metadata only, never visible
 PROMPT:
-Clean macro view of human skin with several small raised bumps around hairs, clearly recognizable as goosebumps, not a rash. Label only: „Gänsehaut“.
+Clean macro view of human skin with several small raised bumps around hairs, clearly recognizable as normal goosebumps, not a rash. No visible text.
 
 ---
 FILE: Bild_11.png — metadata only, never visible
 PROMPT:
-Show a simplified furry mammal with dense fur in a calm educational biology scene. Label only: „dichtes Fell“.
+Show a simplified furry mammal with dense fur in a calm educational biology scene. No visible text. The dense fur should be obvious visually.
 
 ---
 FILE: Bild_12.png — metadata only, never visible
 PROMPT:
-Simple fur cross-section comparison: flat fur versus raised fur, with a visibly larger trapped air layer between hairs when raised. Label only: „Luftschicht“.
+Simple fur cross-section comparison: flat fur versus raised fur, with a visibly larger trapped air layer between hairs when raised. Render only the German label Luftschicht, without quotation marks, in a clear high-contrast position.
 
 ---
 FILE: Bild_13.png — metadata only, never visible
@@ -75,7 +85,7 @@ Before-and-after view of the same furry mammal: fur flat, then fur standing up s
 ---
 FILE: Bild_14.png — metadata only, never visible
 PROMPT:
-Clear comparison between dense animal fur and much sparser human body hair. Labels only: „Mensch“, „Tierfell“.
+Clear comparison between much sparser human body hair and dense animal fur. Render exactly two short German labels without quotation marks: Mensch and Tier. Use dark text on the bright background and keep the comparison simple.
 
 ---
 FILE: Bild_15.png — metadata only, never visible
@@ -85,34 +95,41 @@ Human skin developing goosebumps without any cold visual cue, creating a transit
 ---
 FILE: Bild_16.png — metadata only, never visible
 PROMPT:
-Show a strong emotional reaction such as tension or moving music leading into an activated sympathetic nervous system and visible goosebumps on the skin. Labels only: „starkes Gefühl“, „sympathisches Nervensystem“.
+Show a strong emotional context such as tension or moving music leading into an activated sympathetic nervous system and visible goosebumps on the skin. Do not list emotions as text. Render only the German label sympathisches Nervensystem, without quotation marks, with strong contrast.
 
 ---
 FILE: Bild_17.png — metadata only, never visible
 PROMPT:
-Two simple trigger paths, cold and strong emotion, converge on the same tiny muscle attached to a hair follicle. Label only: „Haaraufrichtemuskel“.
+Two simple visual trigger paths, cold and strong emotion, converge on the same tiny muscle attached to a hair follicle. Render only the German label Haaraufrichtemuskel, without quotation marks. Keep the two paths visually simple.
 
 ---
 FILE: Bild_18.png — metadata only, never visible
 PROMPT:
-Compact biological system view connecting nerve, hair follicle, tiny muscle and skin surface as one automatic response. Label only: „automatische Reaktion“.
+Compact biological system view connecting nerve, hair follicle, tiny muscle and skin surface as one automatic response. No visible text. Keep only the essential structures.
 
 ---
 FILE: Bild_19.png — metadata only, never visible
 PROMPT:
-Clear left-to-right biological process inside a skin cutaway: nerve signal reaches the tiny muscle, the muscle contracts, the hair becomes more upright. Labels only: „Nervensignal“, „Muskel“, „Haar“.
+Clear left-to-right biological process inside a skin cutaway: nerve signal reaches the tiny muscle, the muscle contracts, the hair becomes more upright. Render exactly two German labels without quotation marks: Nervensignal and Haarmuskel. Do not label the hair. Keep the frame uncluttered and use strong text contrast.
 
 ---
 FILE: Bild_20.png — metadata only, never visible
 PROMPT:
-Strong final macro frame of clean human skin with clearly visible goosebumps and a few upright hairs. Label only: „Gänsehaut“.
+Strong final macro frame of clean human skin with clearly visible goosebumps and a few upright hairs. No visible text. Let the final biological result speak visually.
 
 FINAL QA:
 - exactly 20 final files
 - all 16:9
 - same Clean Animated Biology Illustration world
+- cover contains exactly one visible text block: Warum Gänsehaut?
+- no extra cover labels or subtitle
+- normal frames use 0–2 labels maximum
+- every label max 3 words and no quotation marks
+- strong text contrast in every frame
 - German viewer text only from the explicit whitelist
 - absolutely no visible file name, image number, scene number, production ID or prompt heading
+- one main idea per frame
 - low complexity
+- no unnecessary information
 - no duplicate artwork
 - no Remotion text will be added later
