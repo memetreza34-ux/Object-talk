@@ -33,6 +33,9 @@ Mindestens drei konkrete Punkte, z. B.:
 - starke Maßstabsüberleitung
 - gute Label-Lesbarkeit
 - konsistenter Stil
+- sehr klares Cover mit nur einem Titel
+- starke Textkontraste
+- sinnvolle textfreie Bilder
 
 ### 3. Gemessene Schwächen
 
@@ -42,11 +45,39 @@ Mindestens drei konkrete Punkte, z. B.:
 - zwei Bilder zu ähnlich
 - falscher Maßstab
 - KI-Schrift unbrauchbar
+- schwacher Textkontrast
+- heller Text auf hellem Hintergrund
+- unnötiges Label
+- zu viele Labels
+- Cover enthält Zusatztext
+- Frame wirkt informationsüberladen
 - Bild erklärt nur das Thema, nicht den Prozess
 - schwache Hook-Komposition
 - Voice-over und Visual wechseln zu spät
 
-### 4. Bildfehler
+### 4. Cover-Check
+
+Explizit dokumentieren:
+
+- exakt ein sichtbarer Textblock? PASS / FAIL
+- nur Titel/Hook? PASS / FAIL
+- Zusatzlabels/Unterzeile vorhanden? JA / NEIN
+- Titelkontrast stark? PASS / FAIL
+- Titel sofort lesbar? PASS / FAIL
+
+### 5. Text-/Informationsdichte-Check
+
+Explizit dokumentieren:
+
+- normale Bilder maximal 2 Labels? PASS / FAIL
+- Labels maximal 3 Wörter? PASS / FAIL
+- unnötige Labels gefunden? JA / NEIN
+- heller Text auf hellem Hintergrund? JA / NEIN
+- dunkler Text auf dunklem Hintergrund? JA / NEIN
+- überladene Frames gefunden? JA / NEIN
+- hätte ein Frame besser auf zwei Bilder verteilt werden sollen? JA / NEIN
+
+### 6. Bildfehler
 
 Für jedes problematische Bild:
 
@@ -57,33 +88,38 @@ Ursache im Prompt/Workflow:
 Wie es künftig verhindert wird:
 ```
 
-### 5. Prompt-Lernen
+### 7. Prompt-Lernen
 
 Festhalten:
 
 - welche Promptformulierungen besonders zuverlässig waren
 - welche Formulierungen zu Stil- oder Anatomiefehlern führten
 - welche Labels häufig falsch gerendert wurden
+- welche Kontrastformulierungen gut funktioniert haben
+- welche Szenen ohne Text besser funktionierten
 - welche Visualtypen Google Flow besonders gut oder schlecht umgesetzt hat
 
-### 6. Pipeline-Lernen
+### 8. Pipeline-Lernen
 
 Prüfen:
 
-- funktionierte Bild_01 als Style-Anker?
-- funktionierten 5er-Blöcke und Recovery?
-- war die Script↔Audio-Ausrichtung korrekt?
+- Cover title-only eingehalten?
+- Textkontrast-Gate zuverlässig?
+- Informationsdichte-Gate zuverlässig?
+- funktionierte die Script↔Audio-Ausrichtung korrekt?
 - waren Szenengrenzen logisch?
+- wurden überladene Beats früh genug auf mehrere Bilder geteilt?
 - gab es Probleme beim ZIP-Import oder bei Dateinummern?
 - war Remotion ruhig genug, aber nicht statisch/langweilig?
+- erzeugte Remotion garantiert keinen sichtbaren Text?
 
-### 7. Konkrete Änderungen
+### 9. Konkrete Änderungen
 
 Maximal fünf konkrete Änderungen, die beim nächsten Video umgesetzt werden.
 
 Keine vagen Punkte wie „besser machen“. Jede Änderung muss ausführbar sein.
 
-### 8. Dauerhafte Regeln
+### 10. Dauerhafte Regeln
 
 Nur Erkenntnisse, die sich über dieses einzelne Video hinaus verallgemeinern lassen, werden anschließend in eine bestehende globale Regeldatei übernommen.
 
