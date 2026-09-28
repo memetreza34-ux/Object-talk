@@ -17,6 +17,22 @@ WICHTIG:
 - `03_pipeline/overlay-plan.json` muss `status: DISABLED` und `scenes: []` enthalten.
 - Ein nicht-leerer Overlay-Plan ist ein HARD FAIL.
 - Remotion darf nur Audio, Timing, statische Bilder, dezente Push/Pull/Pan-Bewegungen, Schnitte, nicht-textliche Uebergaenge und Rendering ausfuehren.
-- `engine/PRESENTATION-OVERLAY-SYSTEM.md` ist die globale Praesentationsregel.
+
+VOR PHASE 3 MUSS BILD-QA BESTANDEN SEIN:
+- `python tools/validate_planning_v2.py VIDEOORDNER --phase2` muss PASS sein.
+- Cover: exakt ein sichtbarer Textblock = Titel/Hook.
+- keine Cover-Zusatzlabels, Unterzeile oder Zusatzinfo.
+- normale Bilder: maximal 2 Labels.
+- Labels: maximal 3 Woerter.
+- kein unnoetiger Text.
+- Textkontrast: heller Hintergrund → dunkle Schrift; dunkler Hintergrund → helle Schrift.
+- kein hell-auf-hell / dunkel-auf-dunkel.
+- Informationsdichte muss PASS sein.
+- wenn ein Bild ueberladen wirkt, nicht rendern: Bild neu planen/erzeugen.
+
+Autoritativ:
+- `engine/VISIBLE-TEXT-STANDARD.md`
+- `engine/QUALITY-SCORECARD.md`
+- `engine/PRESENTATION-OVERLAY-SYSTEM.md`
 
 Wenn diese Datei noch diesen Platzhalter enthaelt, ist Phase 1 noch nicht vollstaendig.
