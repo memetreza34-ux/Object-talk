@@ -1,0 +1,118 @@
+GOOGLE FLOW – PILOT 007 GÄNSEHAUT
+
+Create every frame individually in 16:9 using the approved Clean Animated Biology Illustration world: simplified recognizable anatomy, smooth organic forms, clean outlines, soft gradients, subtle depth, bright calm backgrounds and clear biological colors.
+
+GLOBAL HARD RULE:
+File names, image numbers, scene numbers, production IDs and prompt headings are metadata only. NEVER render them inside the image. Never show text such as Bild_01, Bild 01, Scene 01, Szene 01, Image 01 or file names. Visible text is allowed only when explicitly listed as German viewer text below.
+
+Keep each frame simple: usually 2–5 important elements and one clear biological idea. No realistic medical tissue, no medical CGI, no glossy 3D, no clutter, no random icons, no extra text.
+
+---
+FILE: Bild_01.png — metadata only, never visible
+PROMPT:
+Macro view of human skin changing from smooth skin to clear goosebumps, attractive educational biology illustration. Add only the German cover title: „Warum Gänsehaut?“
+
+---
+FILE: Bild_02.png — metadata only, never visible
+PROMPT:
+Simple skin cutaway with one hair follicle and one tiny muscle attached to it. Labels only: „Haarfollikel“, „kleiner Muskel“.
+
+---
+FILE: Bild_03.png — metadata only, never visible
+PROMPT:
+Cold reaches the skin and a few simplified temperature-sensing nerve endings react. Labels only: „Kältereiz“, „Temperaturfühler“.
+
+---
+FILE: Bild_04.png — metadata only, never visible
+PROMPT:
+Show a clear nerve signal traveling from the skin along a sensory nerve toward the brain. Label only: „Nervensignal“.
+
+---
+FILE: Bild_05.png — metadata only, never visible
+PROMPT:
+Simplified human brain receiving the incoming signal and beginning an automatic body response. Label only: „Gehirn“. Do not mark one invented goosebump center.
+
+---
+FILE: Bild_06.png — metadata only, never visible
+PROMPT:
+Skin cutaway showing a sympathetic nerve signal reaching the tiny muscle attached to a hair follicle. Labels only: „sympathischer Nerv“, „Haarmuskel“.
+
+---
+FILE: Bild_07.png — metadata only, never visible
+PROMPT:
+Macro anatomy of one hair follicle with the small arrector pili muscle clearly attached. Labels only: „Haaraufrichtemuskel“, „Haarfollikel“.
+
+---
+FILE: Bild_08.png — metadata only, never visible
+PROMPT:
+Simple before-and-after cutaway: the tiny hair muscle relaxed, then contracted and shorter, causing the hair to stand more upright. Label only: „Muskel zieht sich zusammen“.
+
+---
+FILE: Bild_09.png — metadata only, never visible
+PROMPT:
+Close skin cutaway showing the contracted hair muscle gently pulling the skin upward around the follicle. Label only: „Haut hebt sich“.
+
+---
+FILE: Bild_10.png — metadata only, never visible
+PROMPT:
+Clean macro view of human skin with several small raised bumps around hairs, clearly recognizable as goosebumps, not a rash. Label only: „Gänsehaut“.
+
+---
+FILE: Bild_11.png — metadata only, never visible
+PROMPT:
+Show a simplified furry mammal with dense fur in a calm educational biology scene. Label only: „dichtes Fell“.
+
+---
+FILE: Bild_12.png — metadata only, never visible
+PROMPT:
+Simple fur cross-section comparison: flat fur versus raised fur, with a visibly larger trapped air layer between hairs when raised. Label only: „Luftschicht“.
+
+---
+FILE: Bild_13.png — metadata only, never visible
+PROMPT:
+Before-and-after view of the same furry mammal: fur flat, then fur standing up so the body silhouette looks larger. No visible text.
+
+---
+FILE: Bild_14.png — metadata only, never visible
+PROMPT:
+Clear comparison between dense animal fur and much sparser human body hair. Labels only: „Mensch“, „Tierfell“.
+
+---
+FILE: Bild_15.png — metadata only, never visible
+PROMPT:
+Human skin developing goosebumps without any cold visual cue, creating a transition from cold-triggered goosebumps to emotion-triggered goosebumps. No visible text.
+
+---
+FILE: Bild_16.png — metadata only, never visible
+PROMPT:
+Show a strong emotional reaction such as tension or moving music leading into an activated sympathetic nervous system and visible goosebumps on the skin. Labels only: „starkes Gefühl“, „sympathisches Nervensystem“.
+
+---
+FILE: Bild_17.png — metadata only, never visible
+PROMPT:
+Two simple trigger paths, cold and strong emotion, converge on the same tiny muscle attached to a hair follicle. Label only: „Haaraufrichtemuskel“.
+
+---
+FILE: Bild_18.png — metadata only, never visible
+PROMPT:
+Compact biological system view connecting nerve, hair follicle, tiny muscle and skin surface as one automatic response. Label only: „automatische Reaktion“.
+
+---
+FILE: Bild_19.png — metadata only, never visible
+PROMPT:
+Clear left-to-right biological process inside a skin cutaway: nerve signal reaches the tiny muscle, the muscle contracts, the hair becomes more upright. Labels only: „Nervensignal“, „Muskel“, „Haar“.
+
+---
+FILE: Bild_20.png — metadata only, never visible
+PROMPT:
+Strong final macro frame of clean human skin with clearly visible goosebumps and a few upright hairs. Label only: „Gänsehaut“.
+
+FINAL QA:
+- exactly 20 final files
+- all 16:9
+- same Clean Animated Biology Illustration world
+- German viewer text only from the explicit whitelist
+- absolutely no visible file name, image number, scene number, production ID or prompt heading
+- low complexity
+- no duplicate artwork
+- no Remotion text will be added later
