@@ -12,7 +12,7 @@ Standard:
 - 16:9 / 1920×1080 / 30 fps
 - hohe visuelle Dichte aus generierten Standbildern
 - wissenschaftlich plausibel und leicht verstaendlich
-- wichtige sichtbare Dinge knapp auf Deutsch beschriften
+- wichtige sichtbare Dinge nur dann knapp beschriften, wenn es wirklich hilft
 
 ## Verbindliche Bildwelt
 
@@ -23,6 +23,7 @@ Seit 27.09.2026 gilt:
 Autoritativ:
 - `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
 - `bildwelt/FLOW-STYLE-BLOCK.txt`
+- `engine/VISIBLE-TEXT-STANDARD.md`
 
 Kernidee:
 - moderne animierte Biologie-Illustrationen
@@ -33,9 +34,31 @@ Kernidee:
 - leichte Tiefe ohne 3D-CGI-Look
 - helle ruhige Hintergruende
 - klare biologische Farben
-- wenige wichtige Elemente
+- **eine Hauptidee pro Bild**
+- bevorzugt 2–4 wichtige sichtbare Elemente
+- normale Bilder **0–2 kurze deutsche Labels**, nur wenn nötig
 - sichtbare Prozesse statt dekorativer Objektportraits
-- normalerweise 1–3 kurze deutsche Labels
+
+## Cover
+
+Das Cover / erste Hook-Bild:
+- genau ein sichtbarer Textblock
+- nur Titel / Hook
+- keine Anatomie-Labels
+- keine Unterzeile
+- keine Zusatzinfo
+
+Zusatztext auf dem Cover = regenerieren.
+
+## Textkontrast
+
+- heller Hintergrund → dunkle Schrift
+- dunkler Hintergrund → helle Schrift
+- kein hell-auf-hell
+- kein dunkel-auf-dunkel
+- Text bevorzugt in ruhiger negativer Flaeche
+
+Schlecht lesbarer Text = regenerieren.
 
 ## Visual Storytelling
 
@@ -43,7 +66,8 @@ Kernidee:
 - Prozesse, Ursache/Wirkung, Wege, Vergleiche und Massstabwechsel bevorzugen
 - maximal zwei isolierte Einzelobjektbilder hintereinander
 - Bilder nicht ueberladen
-- wenn mehr erklaert werden muss: neues Bild statt mehr Kleinteile
+- wenn mehr erklaert werden muss: unwichtige Info weglassen oder neues Bild planen
+- **lieber mehr einfache Bilder als ein ueberladenes Bild**
 - ein Standbild normalerweise 3–6 Sekunden
 - harte Obergrenze 7 Sekunden
 
@@ -51,10 +75,12 @@ Kernidee:
 
 Viewer-facing Text kommt ausschliesslich aus den final akzeptierten Google-Flow-Bildern.
 
-Erlaubt:
-- kurze deutsche biologische Labels
-- Hinweislinien/Pfeile
-- geplanter Cover-Titel
+Normale Bilder:
+- 0–2 Labels, maximal 2
+- bevorzugt 0 oder 1
+- Label bevorzugt 1–2 Woerter, maximal 3 Woerter
+- keine ganzen Saetze
+- keine dekorativen Anfuehrungszeichen
 
 Niemals sichtbar:
 - `Bild_01`, `Bild 01`, `IMAGE 01`
@@ -104,6 +130,10 @@ Testvorgaben:
 - ca. 190 Woerter Script
 - 20 eindeutige Bilder
 - Haut, Nervensignal, sympathisches Nervensystem, Haarfollikel, Haaraufrichtemuskel und Tierfell
+- Cover nur Titel
+- normale Bilder max. 2 Labels
+- hoher Textkontrast
+- niedrige Informationsdichte
 - 100 % Vollbild-Illustration
 - 0 sichtbare Remotion-Textelemente
 - 0 sichtbare Produktionsnummern
@@ -111,14 +141,14 @@ Testvorgaben:
 ## Drei Phasen
 
 ### Phase 1 – Creative Director
-Thema → Recherche → Claim-Check → Mechanism Map → Script → Satz-Visual-Plan → Szenenplan → Label-Plan → kurze Flow-Prompts.
+Thema → Recherche → Claim-Check → Mechanism Map → Script → Satz-Visual-Plan → Szenenplan → Informationsbudget → Label-Plan → kurze Flow-Prompts.
 
 ### Phase 2 – Google Flow
-Jedes Bild einzeln erzeugen → Beschriftung pruefen → interne Nummern im Bild ausschliessen → Bild-QA → finale Assets.
+Jedes Bild einzeln erzeugen → Cover title-only prüfen → Beschriftung und Kontrast prüfen → Informationsdichte prüfen → interne Nummern im Bild ausschliessen → Bild-QA → finale Assets.
 
 ### Phase 3 – Antigravity + Tools + Remotion
 Audio vorbereiten → Whisper → Timeline → Vollbild-Illustrationen + leichte Bildbewegung/Schnitt → Render → Final-QA.
 
 ## Goldene Regel
 
-**Bilder + Voice + dezente Bewegung. Remotion macht keinen sichtbaren Text. Interne Nummern bleiben unsichtbar.**
+**Cover nur Titel. Ein Bild = eine Hauptidee. So wenig Text wie möglich. Hoher Kontrast. Lieber mehr Bilder als mehr Information in einem Frame.**
