@@ -15,6 +15,7 @@ Kanalweit gilt:
 Autoritativ:
 - `../bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
 - `../bildwelt/FLOW-STYLE-BLOCK.txt`
+- `VISIBLE-TEXT-STANDARD.md`
 
 Die alte 2.5D-/Soft-3D- und Premium-3D-Logik darf nicht reaktiviert werden.
 
@@ -26,10 +27,31 @@ Die alte 2.5D-/Soft-3D- und Premium-3D-Logik darf nicht reaktiviert werden.
 - klare Konturen
 - weiche Verlaeufe und leichte Tiefe
 - helle ruhige Hintergruende
-- wenige wichtige Elemente
-- ein klarer Prozess pro Bild
-- 1–3 kurze deutsche Labels, wenn sinnvoll
+- **eine Hauptidee pro Bild**
+- bevorzugt 2–4 wichtige sichtbare Elemente
+- normale Bilder **0–2 kurze deutsche Labels**, nur wenn wirklich sinnvoll
 - unterschiedliche Kompositionen statt wiederholter Objektportraits
+- lieber mehr einfache Bilder als ein ueberladenes Bild
+
+## Cover
+
+Cover / `Bild_01`:
+- genau ein sichtbarer Textblock
+- nur Titel / Hook
+- keine Anatomie-Labels
+- keine Unterzeile
+- keine Zusatzinfo
+
+Zusatztext auf dem Cover = FAIL.
+
+## Textkontrast
+
+- heller Hintergrund → dunkle Schrift
+- dunkler Hintergrund → helle Schrift
+- kein light-on-light / dark-on-dark
+- Text in ruhiger negativer Flaeche bevorzugen
+
+Schlecht lesbarer Text = FAIL.
 
 ## Praesentationssystem
 
@@ -65,10 +87,11 @@ Themen-Gehirn + Themen-Score
 → Script
 → Satz-Visual-Plan
 → semantische Szenen
+→ Informationsbudget pruefen
 → Label-Plan
 → kurze Flow-Prompts
 → Google Flow Bild fuer Bild
-→ Bild-QA
+→ Cover/Textkontrast/Informationsdichte-QA
 → Audio + Whisper
 → exakte Szenen-Timeline
 → Remotion / Render ohne sichtbaren Editor-Text
@@ -80,6 +103,7 @@ Themen-Gehirn + Themen-Score
 
 - `SCRIPT-STANDARD.md`
 - `PLANNING-V2.md`
+- `VISIBLE-TEXT-STANDARD.md`
 - `FACT-CHECK-STANDARD.md`
 - `AUDIO-REGELN.md`
 - `SYNC-WHISPER.md`
@@ -99,4 +123,4 @@ python tools/validate_planning_v2.py youtube-videos/MEIN-VIDEO --phase2
 
 ## Goldene Regel
 
-**Schoene Vollbild-Illustration + Voice + dezente Bewegung. Kein sichtbarer Remotion-Text und keine sichtbaren Produktionsnummern.**
+**Cover nur Titel. Ein Bild = eine Hauptidee. 0–2 Labels. Hoher Textkontrast. Lieber mehr Bilder als mehr Text. Kein sichtbarer Remotion-Text.**
