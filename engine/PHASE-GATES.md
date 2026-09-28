@@ -3,6 +3,7 @@
 Keine spätere Produktionsphase startet, bevor die vorherige Phase bestanden hat.
 
 `PROJECT_CONTRACT.md` bleibt die oberste Regel.
+`engine/VISIBLE-TEXT-STANDARD.md` ist fuer sichtbaren Text und Informationsdichte verbindlich.
 
 ## Interner Testmodus
 
@@ -23,9 +24,16 @@ Erforderlich:
 - jede Szene besitzt genau ein geplantes `Bild_XX`
 - `Bild_XX`/Szenennummern sind reine Produktionsmetadaten und niemals als sichtbarer Bildtext geplant
 - Szene 01 ist Cover-/Hook-Szene
+- Cover plant **genau einen sichtbaren Textblock = Titel/Hook**, ohne Zusatzlabels
 - Label-Plan vollständig
+- normale Bilder planen **0–2 Labels, maximal 2**
+- Labels bevorzugt 1–2 Woerter, maximal 3 Woerter
 - kein Bild nur dekorativ geplant
-- Bildkomplexität niedrig geplant: bevorzugt 2–5 zentrale Elemente, 1 Hauptprozess, 1–3 Labels
+- pro Bild genau eine dominante Hauptaussage / ein Hauptprozess
+- Bildkomplexität niedrig geplant: bevorzugt 2–4 zentrale Elemente
+- ueberladene Beats werden auf mehrere Bilder aufgeteilt
+- unwichtige Nebeninformation wird weggelassen
+- Textkontrast ist geplant: hell → dunkel, dunkel → hell
 - Flow-Prompts nutzen die kanonische Bildwelt `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
 - Flow-Prompts verbieten sichtbar gerenderte Asset-/Bild-/Szenennummern
 - `03_pipeline/overlay-plan.json` ist `DISABLED` und `scenes` ist leer
@@ -49,7 +57,14 @@ Erforderlich:
 - vereinfachte, erkennbare Anatomie
 - Hauptprozess sofort erkennbar
 - keine überladenen Bilder
+- normale Bilder enthalten maximal 2 Labels
 - Labels kurz, korrekt, deutsch und eindeutig zugeordnet
+- keine unnötigen Labels
+- Textkontrast = PASS
+- Label-Lesbarkeit = PASS
+- Informationsdichte = PASS
+- Cover title-only = PASS
+- Cover exakt ein sichtbarer Textblock = PASS
 - kein Medical-CGI, kein glossy 3D, kein alter 2.5D-/Premium-3D-Look
 - keine sichtbaren schweren KI-Fehler
 - keine sichtbare Bild-/Szenennummer
@@ -77,6 +92,9 @@ Erforderlich:
 - Remotion erzeugt exakt 0 sichtbare Textelemente
 - `overlay-plan.json` bleibt deaktiviert und leer
 - keine sichtbaren Bild-/Szenennummern, Dateinamen oder Asset-IDs
+- Cover zeigt weiterhin nur den Titel
+- alle Flow-Texte bleiben im finalen Render kontrastreich und lesbar
+- kein Frame wirkt informationsüberladen
 - keine permanenten Rahmen, Seitenleisten oder Dashboard-/PowerPoint-Aufteilung
 - finaler Sichtcheck bestanden
 - Renderbericht erzeugt
