@@ -4,6 +4,13 @@
     "source": "01_script/script.txt",
     "coverage": "complete-no-gaps-no-overlaps",
     "scene_boundaries": "semantic-visual-beats-not-automatic-sentences",
+    "one_main_idea_per_frame": true,
+    "prefer_more_images_over_overloaded_frame": true,
+    "omit_nonessential_information": true,
+    "max_labels_per_normal_image": 2,
+    "cover_title_only": true,
+    "cover_extra_labels_forbidden": true,
+    "text_contrast_required": true,
     "remotion_text_overlays_allowed": false,
     "production_ids_visible_in_images": false
   },
@@ -11,20 +18,20 @@
     {
       "scene": 1,
       "speech_section": "[Exakter erster gesprochener Abschnitt aus script.txt]",
-      "visual_task": "[Was der Zuschauer in diesem Abschnitt visuell verstehen soll]",
+      "visual_task": "[Eine klare visuelle Hauptidee fuer den Hook]",
       "image": "Bild_01",
       "motion": "slow-push-in",
       "labels_de": [],
-      "notes": "Cover / Hook; Bildnummer nur intern, niemals sichtbar"
+      "notes": "Cover / Hook; exakt ein sichtbarer Textblock = Titel; keine Zusatzlabels; hoher Textkontrast; Bildnummer nur intern"
     },
     {
       "scene": 2,
       "speech_section": "[Exakter naechster gesprochener Abschnitt ohne Luecke]",
-      "visual_task": "[Visuelle Aufgabe]",
+      "visual_task": "[Eine klare visuelle Hauptidee. Wenn mehr noetig ist, Beat auf mehrere Szenen teilen.]",
       "image": "Bild_02",
       "motion": "pan-left",
       "labels_de": [],
-      "notes": "Kein Remotion-Text; Bildnummer nur intern"
+      "notes": "0-2 Labels nur wenn wirklich noetig; hoher Textkontrast; kein Remotion-Text; Bildnummer nur intern"
     }
   ]
 }
