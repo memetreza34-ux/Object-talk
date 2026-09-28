@@ -15,6 +15,7 @@ Use the approved channel style:
 Authoritative files:
 - `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
 - `bildwelt/FLOW-STYLE-BLOCK.txt`
+- `engine/VISIBLE-TEXT-STANDARD.md`
 
 Do not revive historical 2.5D, soft-3D, premium-3D, feature-animation or other old pilot styles.
 
@@ -30,9 +31,22 @@ Every biology/health frame should use:
 - bright calm backgrounds
 - strong clear biological colors
 - low visual complexity
-- one dominant biological idea/process
+- **one dominant biological idea/process**
 
 The image should be understandable almost immediately.
+
+## INFORMATION BUDGET
+
+Default per normal frame:
+- 1 main teaching idea
+- preferably 2–4 important visible elements
+- 0–2 short labels
+
+If the scene requires multiple teaching ideas, many structures, several text groups or a dense diagram:
+- remove nonessential information, OR
+- split the explanation into more images.
+
+**Prefer more simple images over one overloaded image.**
 
 ## PROMPT LENGTH
 
@@ -42,33 +56,71 @@ Use this order:
 1. short canonical style block
 2. concrete scene
 3. visible process/action
-4. 1–3 German labels
-5. short negative rule
+4. 0–2 German labels only if needed
+5. text contrast instruction when text is present
+6. short negative rule
 
 Do not repeat long style essays in every prompt.
+
+## COVER – HARD RULE
+
+For the cover / first hook frame:
+- exactly ONE visible text block
+- title / hook only
+- no anatomy labels
+- no subtitle
+- no extra explanatory text
+- no pointer text
+
+If any additional text appears besides the exact title: REJECT AND REGENERATE.
 
 ## TEXT / LABELS
 
 Prompt instructions are English.
 Visible viewer-facing text is German.
 
-Default:
-- 1–3 short labels when useful
+Normal frames:
+- 0–2 short labels maximum
+- prefer 0 or 1 when the picture is self-explanatory
+- each label preferably 1–2 words, maximum 3 words
+- no full sentences
+- no decorative quotation marks in the final artwork
 - clean sans-serif text
-- thin clean leader lines or arrows
+- thin clean leader line only when useful
 - labels point unambiguously to the correct structure
 - no paragraphs
 - no English visible text
 - no internal production names
 
+Do not label an object merely because it is visible. Label only if the viewer needs the word to understand the current teaching point.
+
+## TEXT CONTRAST – HARD RULE
+
+Every visible title or label must be immediately readable.
+
+- light / pale background → dark charcoal, navy or similarly dark text
+- dark background → light text
+- never light text on a light background
+- never dark text on a dark background
+- place labels in calm negative space when possible
+- if the background behind text is busy, move the text to a clearer area
+
+Weak contrast or difficult readability = REJECT AND REGENERATE.
+
+## PRODUCTION IDS – NEVER VISIBLE
+
 Never show:
 - Bild_01 / Bild_19
-- IMAGE 19 / Scene 19
+- Bild 01 / BILD 01
+- IMAGE 19 / Scene 19 / Szene 19
 - file names
 - asset IDs
 - prompt headings
+- internal production notes
 
-If Flow misspells a label or connects it to the wrong structure, regenerate/correct the image.
+File/image/scene names are metadata only.
+
+If Flow renders an internal ID, extra cover text, misspelled label, wrong label connection or weak text contrast, regenerate/correct the image.
 
 ## VISUAL STORYTELLING
 
@@ -86,16 +138,7 @@ Prefer:
 Maximum two isolated single-object portraits in a row.
 Adjacent scenes should differ in at least two meaningful dimensions such as scale, layout, subject, direction, context or visual type.
 
-Do not make every frame an object centered on a pale background with three labels.
-
-## COMPLEXITY
-
-Prefer:
-- 2–5 central visible elements
-- 1 main process
-- 1–3 labels
-
-If more information is required, split it into another frame instead of adding more tiny details.
+Do not make every frame an object centered on a pale background with labels.
 
 ## HARD STYLE FAILS
 
@@ -111,6 +154,11 @@ Reject and regenerate if the image becomes:
 - random icon collage
 - gore/wet tissue
 - overloaded with tiny anatomy or labels
+- more than 2 labels on a normal frame
+- any extra label on the cover
+- light text on light background
+- dark text on dark background
+- unreadable or low-contrast text
 
 ## ASSET HYGIENE
 
@@ -126,8 +174,13 @@ Reject final production imagery if:
 - scientific relationship is wrong
 - scene does not match the voice-over
 - main process is unclear
+- more than one major teaching idea is competing in the frame
 - image is too complex
-- labels are wrong or unreadable
+- nonessential information was added
+- labels are wrong, unnecessary or unreadable
+- label count exceeds 2 on a normal image
+- cover contains anything except its one title text block
+- text contrast is weak
 - visual style does not match the canonical illustration world
 - image is a near-duplicate without a new teaching purpose
 - severe AI artifacts are present
