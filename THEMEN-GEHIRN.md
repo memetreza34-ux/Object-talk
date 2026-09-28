@@ -50,6 +50,7 @@ Interne `TEST`-Piloten sind davon ausgenommen, wenn sie ausschließlich Pipeline
 | 009 | IDEE | Muskeln | Wie wächst ein Muskel? | spätere Longform: Training, Hypertrophie, Proteinsynthese, Ernährung, Regeneration und Progression deutlich tiefer | Testpilot 003 behandelt nur vereinfachte Grundkette |
 | 010 | IDEE | Gehirn | Wie entsteht eine Erinnerung? | Verarbeitung, Synapsen und Gedächtnisbildung vereinfacht | 003 teilweise |
 | 011 | IDEE | Haut | Wie heilt eine Wunde? | spätere Longform: Hämostase, Entzündung, Proliferation, Remodeling und Narbenbildung deutlich tiefer | Testpilot 006 behandelt nur die vereinfachte Grundkette |
+| 012 | IDEE | Haut/Nervensystem | Warum bekommen wir Gänsehaut? | spätere Longform könnte Thermoregulation, autonome Reaktionen und emotionale Piloerektion vertiefen | Testpilot 007 behandelt nur die kurze Grundkette |
 
 ## Interne Tests
 
@@ -207,7 +208,7 @@ Zweck:
 - maximal 2:00 Minuten
 - 22 eindeutige Bilder
 - Clean Animated Biology Illustration über Haut, Blut, Gerinnung, Immunzellen und Gewebereparatur testen
-- neues Präsentationssystem testen: ca. 85–90 % Vollbild-Illustration, nur wenige selektive Remotion-Zwischenüberschriften/Summarys
+- 100 % Vollbild-Illustration mit 0 sichtbarem Remotion-Text
 - verständliche biologische Prozesskette ohne Detailüberladung testen
 
 Inhaltlich behandelt der Test vereinfacht:
@@ -215,6 +216,33 @@ Inhaltlich behandelt der Test vereinfacht:
 `Schnitt → Gefäßverletzung/Verengung → Blutplättchen → Fibrinnetz/Gerinnsel → Immunzellen/Aufräumen → Fibroblasten/Kollagen → neue Gefäße → Hautschluss → Remodeling/Narbe`
 
 **Dieser Test blockiert Thema 011 nicht.** Eine spätere Longform darf Wundheilung wesentlich tiefer und mit weiteren Einflussfaktoren erklären.
+
+### TEST 007 – Gänsehaut
+
+Projekt:
+
+```text
+youtube-videos/007-pilot-gaensehaut/
+```
+
+Status: `TEST`
+
+Zweck:
+- maximal 2:00 Minuten
+- 20 eindeutige Bilder
+- Clean Animated Biology Illustration über Haut, Nervensignal, Haarfollikel, Haaraufrichtemuskel und Tierfell testen
+- Kälte und starke Gefühle als unterschiedliche Auslöser derselben lokalen Piloerektionsreaktion erklären
+- 100 % Vollbild-Illustration mit 0 sichtbarem Remotion-Text
+- sichtbare Produktionsnummern konsequent verhindern
+
+Inhaltlich behandelt der Test vereinfacht:
+
+`Kälte/Emotion → Nervensystem → sympathisches Signal → Haaraufrichtemuskel → Haar richtet sich auf → Haut hebt sich → Gänsehaut`
+
+Zusatzkontext:
+`dichtes Tierfell → größere Luftschicht / größere Körperkontur; beim Menschen deutlich schwächerer Nutzen`
+
+**Dieser Test blockiert Thema 012 nicht.** Eine spätere Longform darf autonome Reaktionen und Thermoregulation deutlich tiefer erklären.
 
 ## Bereits produzierte normale Videos
 
