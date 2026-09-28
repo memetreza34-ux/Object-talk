@@ -1,0 +1,13 @@
+{
+  "status": "DISABLED",
+  "version": 3,
+  "reason": "Remotion visible text is forbidden. Pilot 007 uses only full-frame Flow illustrations, motion, audio and cuts.",
+  "rules": {
+    "full_frame_illustration": true,
+    "visible_remotion_text_allowed": false,
+    "text_overlays_allowed": false,
+    "asset_ids_visible": false,
+    "scene_numbers_visible": false
+  },
+  "scenes": []
+}
