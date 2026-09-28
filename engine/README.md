@@ -31,23 +31,30 @@ Die alte 2.5D-/Soft-3D- und Premium-3D-Logik darf nicht reaktiviert werden.
 - 1–3 kurze deutsche Labels, wenn sinnvoll
 - unterschiedliche Kompositionen statt wiederholter Objektportraits
 
-## Präsentationssystem
+## Praesentationssystem
 
-- Vollbild-Illustrationen bleiben Standard
-- ca. 85–90 % reine Illustration
-- maximal ca. 10–15 % selektive Remotion-Präsentation
-- nur wenige Zwischenüberschriften, Key-Facts oder Summarys
-- biologische Labels bleiben in Flow
+**100 % Vollbild-Illustration. Remotion erzeugt keinen sichtbaren Text.**
+
+Remotion darf nur:
+- Audio
+- Timing
+- statische Frames
+- leichte Push-/Pull-/Pan-Bewegungen
+- Schnitte
+- dezente nicht-textliche Uebergaenge
+- Rendering
+
+Viewer-facing Text kommt ausschliesslich aus den akzeptierten Flow-Bildern. Produktions-IDs, Bildnummern, Szenennummern und Dateinamen bleiben immer unsichtbar.
 
 Autoritativ: `PRESENTATION-OVERLAY-SYSTEM.md`
 
 ## Aktiver Testpilot
 
-`youtube-videos/006-pilot-wundheilung/`
+`youtube-videos/007-pilot-gaensehaut/`
 
-Thema: **Was passiert in deinem Koerper, wenn du dich schneidest?**
+Thema: **Warum bekommst du Gänsehaut?**
 
-Pilot 006 ist ein dokumentierter Kurztest mit harter finaler Obergrenze von 2:00 Minuten. Er testet Haut, Blutgefäße, Blutplättchen, Fibrin, Immunzellen, Kollagen, neue Gefäße und Gewebeumbau in derselben Bildwelt sowie das neue selektive Remotion-Präsentationssystem.
+Pilot 007 ist ein dokumentierter Kurztest mit harter finaler Obergrenze von 2:00 Minuten. Er testet Hautoberflaeche, Hautquerschnitt, Nervensignal, sympathisches Nervensystem, Haarfollikel, Haaraufrichtemuskel und Tierfell in derselben Bildwelt. Remotion erzeugt dabei keinerlei sichtbaren Text.
 
 ## Produktionsablauf
 
@@ -64,7 +71,7 @@ Themen-Gehirn + Themen-Score
 → Bild-QA
 → Audio + Whisper
 → exakte Szenen-Timeline
-→ Remotion / Render
+→ Remotion / Render ohne sichtbaren Editor-Text
 → technischer + visueller Final-QA
 → Postmortem
 ```
@@ -92,4 +99,4 @@ python tools/validate_planning_v2.py youtube-videos/MEIN-VIDEO --phase2
 
 ## Goldene Regel
 
-**Schoene Illustration + sofort verstaendliche Biologie + wenig Komplexitaet + klare Beschriftung + Remotion nur sparsam.**
+**Schoene Vollbild-Illustration + Voice + dezente Bewegung. Kein sichtbarer Remotion-Text und keine sichtbaren Produktionsnummern.**
