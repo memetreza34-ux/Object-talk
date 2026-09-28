@@ -7,7 +7,7 @@
     "scene_boundaries": "semantic-visual-beats",
     "expected_images": 20,
     "remotion_text_overlays_allowed": false,
-    "production_ids_visible": false
+    "production_ids_visible_in_images": false
   },
   "scenes": [
     {"scene":1,"speech_section":"Hast du dich schon mal gefragt, warum deine Haut bei Kälte plötzlich voller kleiner Hügel ist?","visual_task":"Makro einer menschlichen Hautfläche: eine Seite glatt, die andere mit klarer Gänsehaut. Cover-Hook ohne Produktionsnummern.","image":"Bild_01","motion":"slow-push-in","labels_de":[],"notes":"Cover / Hook"},
