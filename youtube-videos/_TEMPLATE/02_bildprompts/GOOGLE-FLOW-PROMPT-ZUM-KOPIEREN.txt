@@ -4,22 +4,40 @@
 
 You produce the final 16:9 still images for the German Object-Talk biology/health explainer channel.
 
-The scene plan is already fixed. Do not add, remove, merge or reinterpret scenes.
-
-## CANONICAL VISUAL WORLD
-
-Use only:
+Use the approved **Clean Animated Biology Illustration** world from:
 - `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
 - `bildwelt/FLOW-STYLE-BLOCK.txt`
+- `engine/VISIBLE-TEXT-STANDARD.md`
 
-Approved style:
-**Clean Animated Biology Illustration**
+Create a clean 16:9 animated biology illustration with simplified but recognizable anatomy, smooth organic shapes, clean outlines, soft gradients, subtle depth, bright calm background and clear biological colors. Keep exactly one main teaching idea, preferably 2–4 important visible elements, and make the frame immediately understandable.
 
-Never revive historical 2.5D, Soft-3D, premium-3D or feature-animation styles.
+## TEXT / INFORMATION RULES
 
-## SHORT STYLE BLOCK
+Normal frames:
+- 0–2 German labels maximum
+- prefer no label when the image is self-explanatory
+- each label 1–2 words preferred, maximum 3 words
+- no full sentences
+- no quotation marks around labels in the final artwork
+- omit nonessential structures and text
+- if a frame needs several teaching ideas, split it into more images
 
-Create a clean 16:9 animated biology illustration with simplified but recognizable anatomy, smooth organic shapes, clean outlines, soft gradients, subtle depth, bright calm background and clear biological colors. Keep the composition simple, visually attractive and immediately understandable. Use only 1–3 short German labels with clean pointer lines when labels are needed. No realistic tissue, no medical CGI, no glossy 3D, no clutter, no unnecessary text.
+Cover / first hook frame:
+- exactly ONE visible text block
+- exact title only
+- no anatomy labels
+- no subtitle
+- no extra explanation
+- no pointer text
+
+Text contrast:
+- light/pale background → dark charcoal/navy text
+- dark background → light text
+- never light text on light background
+- never dark text on dark background
+- put text in calm negative space when possible
+
+Weak contrast, extra cover text or information overload = REJECT AND REGENERATE.
 
 ## CRITICAL: PRODUCTION IDS ARE METADATA ONLY
 
@@ -36,39 +54,41 @@ Forbidden visible text includes:
 
 The identifiers are used only to save and organize files. The ONLY visible text allowed is the exact German title/labels explicitly requested in the scene prompt.
 
-If any internal number/name appears in the artwork: reject and regenerate.
-
 ## IMAGE DESIGN
 
-Each frame should normally contain:
-- 2–5 central visible elements
-- 1 dominant biological process or relationship
-- 1–3 short German labels when useful
+Prefer varied compositions such as:
+- cutaway
+- cross-section
+- macro view
+- cell interior
+- transport route
+- cause/effect
+- before/after
+- comparison
+- scale transition
 
-Use varied compositions such as cutaway, cross-section, macro view, cell interior, transport route, cause/effect, comparison and scale transition.
-Do not make every image a centered object with three labels.
-
-## LABELS
-
-Prompt instructions: English.
-Visible viewer-facing text: German only.
-Wrong spelling, wrong connection or visible production metadata = regenerate/correct.
-
-## GENERATION
-
-Generate every image individually.
-Keep exactly one accepted final asset per image number.
-
-`Bild_01` is the cover/hook frame, but it is NOT automatically the style master for every later image.
-The written channel style is the primary style authority.
+Do not make every frame a centered object with labels.
 
 ## HARD FAILS
 
-Regenerate if biology is wrong, the main process is unclear, the image is too complex, labels are wrong, any asset/image/scene number is visible, any filename/prompt heading is visible, or the image drifts into photoreal medicine, medical CGI, glossy 3D, feature-animation, toy/kids-book style, corporate infographic style, random icons or severe AI artifacts.
+Regenerate if:
+- biology is wrong
+- main process is unclear
+- more than one major teaching idea competes in the frame
+- image is too complex
+- nonessential information is added
+- a normal frame has more than 2 labels
+- a label has more than 3 words
+- cover has any text besides its title
+- text contrast is weak
+- labels are wrong/unreadable/unnecessary
+- any asset/image/scene number is visible
+- any filename/prompt heading is visible
+- the image drifts into photoreal medicine, medical CGI, glossy 3D, feature-animation, toy/kids-book style, corporate infographic style, random icons or severe AI artifacts
 
 # SCENES
 
-ChatGPT replaces this area for every new video with short scene prompts using the canonical style block.
+ChatGPT replaces this area for every new video with short scene prompts.
 
 Final filenames:
 Bild_01.png, Bild_02.png, ... Bild_NN.png
