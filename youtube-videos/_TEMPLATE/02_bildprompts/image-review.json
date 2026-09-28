@@ -4,6 +4,9 @@
   "hard_fail_on_scientific_error": true,
   "hard_fail_on_visible_production_id": true,
   "hard_fail_on_unplanned_visible_text": true,
+  "hard_fail_on_weak_text_contrast": true,
+  "hard_fail_on_cover_extra_text": true,
+  "hard_fail_on_information_overload": true,
   "images": [
     {
       "image_asset_id": "Bild_01",
@@ -15,6 +18,13 @@
       "complexity_control": null,
       "label_accuracy": null,
       "visible_text_whitelist": "PENDING",
+      "text_contrast": "PENDING",
+      "information_density": "PENDING",
+      "label_count": "PENDING",
+      "label_readability": "PENDING",
+      "no_unnecessary_text": "PENDING",
+      "cover_title_only": "PENDING",
+      "cover_exactly_one_visible_text_block": "PENDING",
       "no_visible_asset_id": "PENDING",
       "no_visible_scene_number": "PENDING",
       "no_visible_filename_or_prompt_heading": "PENDING",
