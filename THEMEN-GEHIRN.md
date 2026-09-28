@@ -234,6 +234,7 @@ Zweck:
 - Kälte und starke Gefühle als unterschiedliche Auslöser derselben lokalen Piloerektionsreaktion erklären
 - 100 % Vollbild-Illustration mit 0 sichtbarem Remotion-Text
 - sichtbare Produktionsnummern konsequent verhindern
+- **nach erstem Render dauerhafte Text-/Dichte-Lehren festlegen:** Cover nur Titel, normale Bilder max. 2 Labels, hoher Textkontrast, unnötige Beschriftungen weglassen, überladene Beats auf mehrere Bilder teilen
 
 Inhaltlich behandelt der Test vereinfacht:
 
