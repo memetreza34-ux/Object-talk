@@ -6,15 +6,16 @@ Diese Datei ist der Bootstrap fuer ChatGPT, Antigravity, Codex und andere Reposi
 
 1. `PROJECT_CONTRACT.md`
 2. `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
-3. `PROJECT_STATE.md`
-4. `config/channel.json`
-5. `config/video.json`
-6. `THEMEN-GEHIRN.md`
-7. `engine/README.md`
-8. `engine/SCRIPT-STANDARD.md`
-9. `engine/PLANNING-V2.md`
-10. `engine/PRESENTATION-OVERLAY-SYSTEM.md`
-11. relevante Dateien des aktuellen YouTube-Projekts
+3. `engine/VISIBLE-TEXT-STANDARD.md`
+4. `PROJECT_STATE.md`
+5. `config/channel.json`
+6. `config/video.json`
+7. `THEMEN-GEHIRN.md`
+8. `engine/README.md`
+9. `engine/SCRIPT-STANDARD.md`
+10. `engine/PLANNING-V2.md`
+11. `engine/PRESENTATION-OVERLAY-SYSTEM.md`
+12. relevante Dateien des aktuellen YouTube-Projekts
 
 Aktiver Testpilot steht in `PROJECT_STATE.md`.
 
@@ -27,6 +28,7 @@ Kanalweit gilt:
 Autoritativ:
 - `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
 - `bildwelt/FLOW-STYLE-BLOCK.txt`
+- `engine/VISIBLE-TEXT-STANDARD.md`
 
 Nicht reaktivieren:
 - alte 2.5D-/Soft-3D-Regeln
@@ -41,11 +43,33 @@ Jedes normale Biologie-/Gesundheitsbild soll:
 - vereinfachte, fachlich erkennbare Anatomie zeigen
 - weiche organische Formen, klare Konturen, weiche Verlaeufe und leichte Tiefe verwenden
 - hell und uebersichtlich bleiben
-- wenige wichtige Elemente zeigen
-- einen klaren Prozess/Zusammenhang sichtbar machen
-- normalerweise 1–3 kurze deutsche Labels enthalten
+- **eine Hauptidee / einen Hauptprozess** zeigen
+- bevorzugt nur 2–4 zentrale sichtbare Elemente enthalten
+- normalerweise **0–2 kurze deutsche Labels** enthalten
 
-Komplexitaet klein halten. Wenn ein Bild zu viel erklaeren muesste, neue Szene planen.
+Wenn ein Bild zu viel erklaeren muesste: unwichtige Information weglassen oder neue Szene planen.
+
+## Cover – HARD RULE
+
+`Bild_01` / Cover:
+- genau ein sichtbarer Textblock
+- nur Titel / Hook
+- keine Anatomie-Labels
+- keine Unterzeile
+- keine Zusatzinfo
+- keine Pfeiltexte
+
+Zusaetzlicher sichtbarer Text auf dem Cover = **REGENERATE**.
+
+## Textkontrast – HARD RULE
+
+- heller Hintergrund → dunkle Schrift
+- dunkler Hintergrund → helle Schrift
+- kein light-on-light
+- kein dark-on-dark
+- Text bevorzugt in ruhiger negativer Flaeche
+
+Schlecht lesbarer Text = **REGENERATE**.
 
 ## Prompting
 
@@ -56,8 +80,9 @@ Prompts kurz halten:
 1. kanonischer Styleblock
 2. konkrete Szene
 3. Prozess
-4. 1–3 Labels, nur wenn noetig
-5. kurze Negativregel
+4. 0–2 Labels nur wenn noetig
+5. Kontrastregel fuer sichtbaren Text
+6. kurze Negativregel
 
 Keine langen Style-Romane in jedem Szenenprompt.
 
@@ -88,7 +113,9 @@ Muss:
 - Prozesse, Beziehungen, Wege, Ursache/Wirkung, Vergleiche und Massstabwechsel bevorzugen
 - maximal zwei isolierte Einzelobjektbilder hintereinander zulassen
 - sichtbaren Erklaerwert und Unterschied zu Nachbarbildern definieren
-- Labels auf 1–3 kurze wichtige Begriffe begrenzen
+- **0–2 Labels pro normalem Bild**, nur wenn notwendig
+- Cover exakt title-only planen
+- bei zu hoher Informationsdichte den Beat auf mehr Bilder aufteilen
 - **keine Remotion-Texte oder Text-Overlays planen**
 
 ## Phase 2 – Google Flow
@@ -96,7 +123,11 @@ Muss:
 - jedes Bild einzeln erzeugen
 - kanonischen Styleblock verwenden
 - biologische Labels direkt im Bild erzeugen
-- falsche Labels/Schreibweise korrigieren oder regenerieren
+- lieber kein Label als ein unnoetiges Label
+- Labels kurz halten: bevorzugt 1–2 Woerter, maximal 3
+- Textkontrast pruefen
+- Cover auf exakt einen Textblock pruefen
+- falsche Labels/Schreibweise/Kontrast korrigieren oder regenerieren
 - interne Bild-/Szenennummern niemals sichtbar machen
 - pro finaler Bildnummer genau ein akzeptiertes Asset behalten
 - keine alte Pilot-Bildwelt als Referenz verwenden
@@ -146,7 +177,10 @@ STOP bei:
 - Script/Audio-Mismatch
 - fehlenden/doppelten Bildern
 - wissenschaftlich falscher Kernaussage
-- ueberladenem Bild
+- mehr als einer Hauptidee im selben ueberladenen Bild
+- mehr als 2 Labels in einem normalen Bild
+- Zusatztext auf dem Cover
+- schwachem Textkontrast
 - unleserlichen/falschen Labels
 - sichtbarer interner Bild-/Szenennummer
 - altem 2.5D-/3D-Look statt der freigegebenen Illustrationswelt
