@@ -8,6 +8,9 @@ Usage:
 Current channel contract:
 - Clean Animated Biology Illustration is the canonical image world.
 - Viewer-facing text may only come from accepted Google-Flow images.
+- Cover contains exactly one visible text block: title only.
+- Normal frames use 0-2 labels maximum; each label max 3 words.
+- Visible text must have strong contrast; information density must stay low.
 - Production IDs such as Bild_01 / Szene 01 / filenames are metadata only and must never be visible.
 - Remotion visible text is forbidden; overlay-plan.json must be empty/disabled.
 """
@@ -31,6 +34,8 @@ WEAK_OPENING_PREFIXES = (
     "heute erklären wir",
     "willkommen",
 )
+MAX_NORMAL_LABELS = 2
+MAX_LABEL_WORDS = 3
 
 
 def fail(message: str) -> None:
@@ -61,19 +66,28 @@ def has_placeholder(value: object) -> bool:
     return False
 
 
+def word_count(text: str) -> int:
+    return len([part for part in str(text).strip().split() if part])
+
+
 def label_texts(labels: object) -> list[str]:
     if not isinstance(labels, list):
         return []
     result: list[str] = []
     for item in labels:
         if isinstance(item, str):
-            result.append(item)
+            text = item.strip()
         elif isinstance(item, dict) and isinstance(item.get("text"), str):
             if item.get("fallback_overlay") is True:
                 fail("Remotion darf niemals Label-Fallback sein")
-            result.append(item["text"])
+            text = item["text"].strip()
         else:
             fail(f"ungueltiger Label-Eintrag: {item!r}")
+        if not text:
+            fail("leerer Labeltext ist ungueltig")
+        if word_count(text) > MAX_LABEL_WORDS:
+            fail(f"Label {text!r} hat mehr als {MAX_LABEL_WORDS} Woerter")
+        result.append(text)
     return result
 
 
@@ -86,6 +100,7 @@ def validate_global_contract(project: Path) -> None:
     visual = config.get("visual_identity", {})
     flow = config.get("flow_prompting", {})
     labels = config.get("labels", {})
+    cover = config.get("cover", {})
     presentation = config.get("presentation", {})
     remotion = config.get("remotion", {})
 
@@ -95,10 +110,42 @@ def validate_global_contract(project: Path) -> None:
         fail("config/channel.json: schriftliche Bildwelt muss autoritativ sein")
     if flow.get("never_render_asset_ids_or_scene_numbers") is not True:
         fail("config/channel.json muss sichtbare Asset-/Szenennummern verbieten")
+    if int(flow.get("max_labels_per_image", 99)) != MAX_NORMAL_LABELS:
+        fail(f"config/channel.json: max_labels_per_image muss {MAX_NORMAL_LABELS} sein")
+    if int(flow.get("max_words_per_label", 99)) != MAX_LABEL_WORDS:
+        fail(f"config/channel.json: max_words_per_label muss {MAX_LABEL_WORDS} sein")
+    if flow.get("prefer_no_label_when_self_explanatory") is not True:
+        fail("config/channel.json muss unnoetige Labels vermeiden")
+    if flow.get("cover_exactly_one_visible_text_block") is not True:
+        fail("config/channel.json muss Cover auf exakt einen sichtbaren Textblock begrenzen")
+    if flow.get("cover_title_only") is not True:
+        fail("config/channel.json muss Cover title-only setzen")
+    if flow.get("cover_extra_labels_forbidden") is not True:
+        fail("config/channel.json muss Cover-Zusatzlabels verbieten")
+    if flow.get("text_contrast_required") is not True:
+        fail("config/channel.json muss starken Textkontrast verlangen")
+    if flow.get("light_background_requires_dark_text") is not True:
+        fail("config/channel.json muss dunkle Schrift auf hellem Hintergrund verlangen")
+    if flow.get("dark_background_requires_light_text") is not True:
+        fail("config/channel.json muss helle Schrift auf dunklem Hintergrund verlangen")
     if labels.get("remotion_text_overlays_allowed") is not False:
         fail("config/channel.json muss Remotion-Textoverlays deaktivieren")
     if labels.get("remotion_is_fallback_for_failed_ai_text") is not False:
         fail("Remotion darf kein Text-Fallback fuer Flow sein")
+    if int(labels.get("max_per_image_guideline", 99)) != MAX_NORMAL_LABELS:
+        fail(f"config/channel.json: labels.max_per_image_guideline muss {MAX_NORMAL_LABELS} sein")
+    if int(labels.get("max_words_per_label", 99)) != MAX_LABEL_WORDS:
+        fail(f"config/channel.json: labels.max_words_per_label muss {MAX_LABEL_WORDS} sein")
+    if labels.get("text_contrast_required") is not True:
+        fail("config/channel.json: Label-Kontrast muss Pflicht sein")
+    if cover.get("title_only") is not True:
+        fail("config/channel.json: cover.title_only muss true sein")
+    if int(cover.get("visible_text_blocks", 99)) != 1:
+        fail("config/channel.json: Cover muss exakt einen sichtbaren Textblock erlauben")
+    if cover.get("extra_labels_allowed") is not False:
+        fail("config/channel.json: Cover darf keine Zusatzlabels erlauben")
+    if cover.get("text_contrast_required") is not True:
+        fail("config/channel.json: Cover-Textkontrast muss Pflicht sein")
     if presentation.get("full_frame_illustration_share_target") != "100%":
         fail("Praesentation muss auf 100% Vollbild-Illustration gesetzt sein")
     if presentation.get("remotion_visible_text_allowed") is not False:
@@ -156,6 +203,10 @@ def validate_phase1(project: Path) -> set[str]:
     flow_prompt_text = flow_prompt_path.read_text(encoding="utf-8").lower()
     if "never" not in flow_prompt_text or "production" not in flow_prompt_text:
         fail("Flow-Prompt muss Produktions-IDs ausdruecklich als unsichtbar markieren")
+    if "exactly one visible text block" not in flow_prompt_text:
+        fail("Flow-Prompt muss Cover auf exakt einen sichtbaren Textblock begrenzen")
+    if "dark" not in flow_prompt_text or "light" not in flow_prompt_text:
+        fail("Flow-Prompt muss Textkontrast hell/dunkel ausdruecklich regeln")
 
     sentence_plan = load_json(sentence_plan_path)
     if str(sentence_plan.get("status", "")).upper() in {"TEMPLATE", "PENDING", ""}:
@@ -202,9 +253,14 @@ def validate_phase1(project: Path) -> set[str]:
         if not isinstance(image_id, str) or not IMAGE_ID_RE.match(image_id):
             fail(f"ungueltige image_asset_id in Item {index}: {image_id!r}")
         sentence_image_ids.add(image_id)
-        labels = item.get("labels", [])
-        if not isinstance(labels, list) or len(labels) > 3:
-            fail(f"Sentence-Visual-Item {index}: maximal 3 Labels")
+        labels_for_item = item.get("labels", [])
+        if not isinstance(labels_for_item, list) or len(labels_for_item) > MAX_NORMAL_LABELS:
+            fail(f"Sentence-Visual-Item {index}: maximal {MAX_NORMAL_LABELS} Labels")
+        for label in labels_for_item:
+            if not isinstance(label, str) or not label.strip():
+                fail(f"Sentence-Visual-Item {index}: ungueltiges Label")
+            if word_count(label) > MAX_LABEL_WORDS:
+                fail(f"Sentence-Visual-Item {index}: Label {label!r} hat mehr als {MAX_LABEL_WORDS} Woerter")
 
     scene_payload = load_json(scenes_path)
     if str(scene_payload.get("status", "")).upper() in {"TEMPLATE", "PENDING", ""}:
@@ -220,6 +276,14 @@ def validate_phase1(project: Path) -> set[str]:
         fail("phase1-scenes.json muss remotion_text_overlays_allowed=false setzen")
     if rules.get("production_ids_visible_in_images") is not False:
         fail("phase1-scenes.json muss sichtbare Produktions-IDs verbieten")
+    if rules.get("one_main_idea_per_frame") is not True:
+        fail("phase1-scenes.json muss one_main_idea_per_frame=true setzen")
+    if int(rules.get("max_labels_per_normal_image", 99)) != MAX_NORMAL_LABELS:
+        fail(f"phase1-scenes.json muss max_labels_per_normal_image={MAX_NORMAL_LABELS} setzen")
+    if rules.get("cover_title_only") is not True:
+        fail("phase1-scenes.json muss cover_title_only=true setzen")
+    if rules.get("text_contrast_required") is not True:
+        fail("phase1-scenes.json muss text_contrast_required=true setzen")
 
     scene_ids: list[str] = []
     for index, scene in enumerate(scenes, start=1):
@@ -231,8 +295,15 @@ def validate_phase1(project: Path) -> set[str]:
         if scene.get("image") != expected_id:
             fail(f"Szene {index}: erwartetes {expected_id}, gefunden {scene.get('image')!r}")
         labels_de = scene.get("labels_de", [])
-        if not isinstance(labels_de, list) or len(labels_de) > 3:
-            fail(f"Szene {index}: labels_de darf maximal 3 Eintraege enthalten")
+        if not isinstance(labels_de, list) or len(labels_de) > MAX_NORMAL_LABELS:
+            fail(f"Szene {index}: labels_de darf maximal {MAX_NORMAL_LABELS} Eintraege enthalten")
+        for label in labels_de:
+            if not isinstance(label, str) or not label.strip():
+                fail(f"Szene {index}: ungueltiges Label")
+            if word_count(label) > MAX_LABEL_WORDS:
+                fail(f"Szene {index}: Label {label!r} hat mehr als {MAX_LABEL_WORDS} Woerter")
+        if index == 1 and labels_de:
+            fail("Cover-Szene darf keine labels_de enthalten")
         scene_ids.append(expected_id)
 
     scene_id_set = set(scene_ids)
@@ -253,6 +324,18 @@ def validate_phase1(project: Path) -> set[str]:
         fail("label-plan.json muss Remotion sichtbaren Text verbieten")
     if label_rules.get("remotion_text_fallback_allowed") is not False:
         fail("label-plan.json muss Remotion-Text-Fallback verbieten")
+    if int(label_rules.get("max_labels_per_image", 99)) != MAX_NORMAL_LABELS:
+        fail(f"label-plan.json muss max_labels_per_image={MAX_NORMAL_LABELS} setzen")
+    if int(label_rules.get("max_words_per_label", 99)) != MAX_LABEL_WORDS:
+        fail(f"label-plan.json muss max_words_per_label={MAX_LABEL_WORDS} setzen")
+    if label_rules.get("cover_title_only") is not True:
+        fail("label-plan.json muss cover_title_only=true setzen")
+    if label_rules.get("cover_exactly_one_visible_text_block") is not True:
+        fail("label-plan.json muss Cover auf exakt einen sichtbaren Textblock begrenzen")
+    if label_rules.get("text_contrast_required") is not True:
+        fail("label-plan.json muss text_contrast_required=true setzen")
+    if label_rules.get("prefer_no_label_when_self_explanatory") is not True:
+        fail("label-plan.json muss unnoetige Labels vermeiden")
 
     entries = label_plan.get("images")
     if not isinstance(entries, list):
@@ -278,13 +361,23 @@ def validate_phase1(project: Path) -> set[str]:
             fail(f"{image_id}: interne Produktions-ID steht in allowed_visible_text")
 
         texts = label_texts(entry.get("labels", []))
-        if len(texts) > 3:
-            fail(f"{image_id}: maximal 3 Labels erlaubt")
+        if len(texts) > MAX_NORMAL_LABELS:
+            fail(f"{image_id}: maximal {MAX_NORMAL_LABELS} Labels erlaubt")
         if any(VISIBLE_INTERNAL_ID_RE.search(text) for text in texts):
             fail(f"{image_id}: internes Produktions-ID-Label ist verboten")
 
-        if image_id != "Bild_01" and sorted(texts) != sorted(allowed):
-            fail(f"{image_id}: Labels und allowed_visible_text stimmen nicht ueberein")
+        if image_id == "Bild_01":
+            if texts:
+                fail("Bild_01/Cover darf keine Labels enthalten")
+            if len(allowed) != 1:
+                fail("Bild_01/Cover muss exakt einen sichtbaren Textblock enthalten")
+            if entry.get("mode") not in {"cover", "cover-hook"}:
+                fail("Bild_01 muss als cover/cover-hook markiert sein")
+        else:
+            if len(allowed) > MAX_NORMAL_LABELS:
+                fail(f"{image_id}: maximal {MAX_NORMAL_LABELS} sichtbare Labeltexte erlaubt")
+            if sorted(texts) != sorted(allowed):
+                fail(f"{image_id}: Labels und allowed_visible_text stimmen nicht ueberein")
 
     if planned != scene_id_set:
         fail(
@@ -301,6 +394,9 @@ def validate_phase1(project: Path) -> set[str]:
 
     print(f"V2-PHASE-1-PASS: {project}")
     print(f"  Szenen/Bilder: {len(scene_id_set)}")
+    print("  Cover: exakt ein Textblock / title-only")
+    print(f"  Normale Labels: maximal {MAX_NORMAL_LABELS}, je maximal {MAX_LABEL_WORDS} Woerter")
+    print("  Textkontrast: Pflicht")
     print("  Remotion sichtbarer Text: 0 (hart deaktiviert)")
     print("  Produktions-IDs im finalen Bild: verboten")
     return scene_id_set
@@ -333,6 +429,19 @@ def validate_phase2(project: Path, expected_ids: set[str]) -> None:
         "label_accuracy",
         "overall_score",
     )
+    required_pass_fields = (
+        "visible_text_whitelist",
+        "text_contrast",
+        "information_density",
+        "label_count",
+        "label_readability",
+        "no_unnecessary_text",
+        "no_visible_asset_id",
+        "no_visible_scene_number",
+        "no_visible_filename_or_prompt_heading",
+        "single_retained_asset_for_scene",
+        "ai_artifact_check",
+    )
 
     for entry in entries:
         if not isinstance(entry, dict):
@@ -348,18 +457,16 @@ def validate_phase2(project: Path, expected_ids: set[str]) -> None:
 
         if entry.get("decision") != "ACCEPT":
             fail(f"{image_id}: Bild ist nicht ACCEPT")
-        if entry.get("ai_artifact_check") != "PASS":
-            fail(f"{image_id}: AI-Artefakt-Check nicht bestanden")
-        if entry.get("visible_text_whitelist") != "PASS":
-            fail(f"{image_id}: sichtbarer Text nicht gegen Whitelist bestanden")
-        if entry.get("no_visible_asset_id") != "PASS":
-            fail(f"{image_id}: sichtbare Asset-/Bildnummer nicht ausgeschlossen")
-        if entry.get("no_visible_scene_number") != "PASS":
-            fail(f"{image_id}: sichtbare Szenennummer nicht ausgeschlossen")
-        if entry.get("no_visible_filename_or_prompt_heading") != "PASS":
-            fail(f"{image_id}: sichtbarer Dateiname/Prompttitel nicht ausgeschlossen")
-        if entry.get("single_retained_asset_for_scene") != "PASS":
-            fail(f"{image_id}: single retained asset check nicht bestanden")
+
+        for field in required_pass_fields:
+            if entry.get(field) != "PASS":
+                fail(f"{image_id}: {field} muss PASS sein")
+
+        if image_id == "Bild_01":
+            if entry.get("cover_title_only") != "PASS":
+                fail("Bild_01: cover_title_only muss PASS sein")
+            if entry.get("cover_exactly_one_visible_text_block") != "PASS":
+                fail("Bild_01: cover_exactly_one_visible_text_block muss PASS sein")
 
         for key in numeric_min_8:
             value = entry.get(key)
@@ -388,6 +495,7 @@ def validate_phase2(project: Path, expected_ids: set[str]) -> None:
 
     print(f"V2-PHASE-2-PASS: {project}")
     print(f"  akzeptierte Bilder: {len(reviewed)}")
+    print("  Cover title-only, Textkontrast und Informationsdichte bestaetigt")
     print("  keine sichtbaren Produktions-IDs bestaetigt")
     print("  Remotion-Text bleibt deaktiviert")
 
