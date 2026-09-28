@@ -4,13 +4,14 @@
 
 You produce the final 16:9 still images for the German Object-Talk biology/health explainer channel.
 
-The scene plan is already fixed. Do not add, remove, merge or reinterpret scenes.
+The scene plan is already fixed. Do not add, remove, merge or reinterpret scenes unless the plan itself is explicitly revised because a frame is overloaded.
 
 ## CANONICAL VISUAL WORLD
 
 Use only:
 - `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
 - `bildwelt/FLOW-STYLE-BLOCK.txt`
+- `engine/VISIBLE-TEXT-STANDARD.md`
 
 Approved style:
 **Clean Animated Biology Illustration**
@@ -20,7 +21,7 @@ Never revive historical 2.5D, Soft-3D, premium-3D or feature-animation styles.
 ## SHORT STYLE BLOCK
 
 ```text
-Create a clean 16:9 animated biology illustration with simplified but recognizable anatomy, smooth organic shapes, clean outlines, soft gradients, subtle depth, bright calm background and clear biological colors. Keep the composition simple, visually attractive and immediately understandable. Use only 1–3 short German labels with clean pointer lines when labels are needed. No realistic tissue, no medical CGI, no glossy 3D, no clutter, no unnecessary text.
+Create a clean 16:9 animated biology illustration with simplified but recognizable anatomy, smooth organic shapes, clean outlines, soft gradients, subtle depth, bright calm background and clear biological colors. Keep one main teaching idea, preferably 2–4 important visible elements, and make the frame immediately understandable. Use 0–2 short German labels only when truly needed. Each label should be 1–2 words, maximum 3 words, without quotation marks. Use strong text contrast: dark text on light backgrounds, light text on dark backgrounds. Cover frames contain exactly one visible text block: the title only, no labels or extra text. If more information is needed, split it into another image instead of adding clutter.
 ```
 
 ## HARD RULE – PRODUCTION IDS ARE NEVER VISIBLE
@@ -38,18 +39,28 @@ Never draw or print inside an image:
 
 `Bild_XX` is only the filename/asset identifier used after generation. It must never become viewer-facing text.
 
-The ONLY visible text allowed is the exact German title/labels explicitly requested for that scene.
-
 If a generated image contains an internal ID, scene number, filename or prompt heading: REJECT AND REGENERATE.
+
+## COVER – HARD RULE
+
+For `Bild_01` / cover:
+- exactly ONE visible text block
+- the exact planned German title only
+- no anatomy labels
+- no subtitle
+- no additional explanation
+- no pointer text
+
+If any other visible text appears on the cover: REJECT AND REGENERATE.
 
 ## IMAGE DESIGN
 
-Each frame should normally contain:
-- 2–5 central visible elements
+Each normal frame should normally contain:
 - 1 dominant biological process or relationship
-- 1–3 short German labels when useful
+- preferably 2–4 central visible elements
+- 0–2 short German labels when useful
 
-If a scene needs more information, split the explanation into another frame rather than making one frame complicated.
+If a scene needs more information, remove nonessential information or split the explanation into another frame rather than making one frame complicated.
 
 Use varied compositions:
 - cutaway
@@ -63,7 +74,7 @@ Use varied compositions:
 - scale transition
 - simple everyday context with biological focus
 
-Do not make every image a centered object with three labels.
+Do not make every image a centered object with labels.
 
 ## LABELS
 
@@ -71,14 +82,28 @@ Prompt instructions: English.
 Visible viewer-facing text: German only.
 
 Labels:
-- short
+- optional, not mandatory
+- 0–2 maximum
+- preferably 1–2 words, maximum 3 words each
+- no quotation marks in the final artwork
 - clean sans-serif
-- thin pointer line or arrow
+- thin pointer line only when useful
 - clearly connected to the correct structure
 - no paragraphs
 - no internal production names
 
-Wrong spelling, wrong connection or visible production metadata = regenerate/correct.
+Do not label something just because it is visible. If the picture is self-explanatory, use no label.
+
+## TEXT CONTRAST – HARD RULE
+
+- pale/light background → dark charcoal/navy text
+- dark background → light text
+- never light-on-light
+- never dark-on-dark
+- place text in calm negative space when possible
+- if the area behind text is busy, move the text to a cleaner position
+
+Weak readability = REJECT AND REGENERATE.
 
 ## GENERATION
 
@@ -106,8 +131,16 @@ The written channel style is the primary style authority. A future `assets/chann
 Regenerate if:
 - biology is wrong
 - main process is unclear
+- more than one major teaching idea competes in the frame
 - image is too complex
-- labels are wrong/unreadable
+- nonessential information was added
+- a normal frame has more than 2 labels
+- a label has more than 3 words
+- cover contains any visible text besides its title
+- text contrast is weak
+- light text sits on a light background
+- dark text sits on a dark background
+- labels are wrong/unreadable/unnecessary
 - any image/scene number or asset ID is visible
 - a filename or prompt heading is visible
 - photoreal medical look appears
@@ -126,12 +159,12 @@ ChatGPT replaces this section for each video.
 
 ### INTERNAL ASSET: Bild_01 – Cover / Hook
 ```text
-[SHORT ENGLISH SCENE PROMPT USING THE CANONICAL STYLE BLOCK. Explicitly state the exact allowed visible text. Never show the asset ID.]
+[SHORT ENGLISH SCENE PROMPT. State: exactly one visible text block, title only. Choose text color for strong contrast. Never show the asset ID.]
 ```
 
 ### INTERNAL ASSET: Bild_02
 ```text
-[SHORT ENGLISH SCENE PROMPT USING THE CANONICAL STYLE BLOCK. Never show the asset ID.]
+[SHORT ENGLISH SCENE PROMPT. Use 0–2 labels only if needed. State text contrast if labels are used. Never show the asset ID.]
 ```
 
 [Continue to Bild_NN]
@@ -142,12 +175,16 @@ ChatGPT replaces this section for each video.
 2. 16:9
 3. matches canonical illustration world
 4. immediate clarity
-5. low complexity
-6. correct German labels
-7. no random text
-8. no visible production IDs/numbers/file names
-9. no major AI artifact
-10. scientifically plausible
-11. visibly different from neighboring scenes when required
+5. one main teaching idea
+6. low complexity
+7. 0–2 labels maximum on normal frames
+8. cover = title only
+9. strong text contrast
+10. correct German labels
+11. no unnecessary/random text
+12. no visible production IDs/numbers/file names
+13. no major AI artifact
+14. scientifically plausible
+15. visibly different from neighboring scenes when required
 
 Only when every required image passes QA and the final folder is complete: finished.
