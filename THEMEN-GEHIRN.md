@@ -39,7 +39,7 @@ Interne `TEST`-Piloten sind davon ausgenommen, wenn sie ausschließlich Pipeline
 
 | Nr. | Status | Hauptbereich | Thema | Kernaussage / Abgrenzung | Überschneidet sich mit |
 |---:|---|---|---|---|---|
-| 001 | IDEE | Verdauung | Was passiert mit Essen im Körper? | mögliche spätere Longform; kompletter Weg Mund bis Ausscheidung | – |
+| 001 | IN ARBEIT | Verdauung | Was passiert mit Essen im Körper? | erstes reguläres Longform-Video; kompletter Weg Mund → Speiseröhre → Magen → Dünndarm → Blut/Lymphe → Dickdarm/Enddarm | – |
 | 002 | IDEE | Zellbiologie | Was ist eine menschliche Zelle? | Aufbau und wichtigste Zellbestandteile verständlich erklären | – |
 | 003 | IDEE | Gehirn | Wie kommunizieren Nervenzellen? | Neuron, elektrisches Signal, Synapse, Neurotransmitter | – |
 | 004 | IDEE | Ernährung | Was macht Zucker im Körper? | spätere Longform: Aufnahme, Blutzucker, Insulin, Energie und Überschuss deutlich tiefer | Testpiloten 000/002 behandeln nur die Grundkette |
@@ -51,6 +51,31 @@ Interne `TEST`-Piloten sind davon ausgenommen, wenn sie ausschließlich Pipeline
 | 010 | IDEE | Gehirn | Wie entsteht eine Erinnerung? | Verarbeitung, Synapsen und Gedächtnisbildung vereinfacht | 003 teilweise |
 | 011 | IDEE | Haut | Wie heilt eine Wunde? | spätere Longform: Hämostase, Entzündung, Proliferation, Remodeling und Narbenbildung deutlich tiefer | Testpilot 006 behandelt nur die vereinfachte Grundkette |
 | 012 | IDEE | Haut/Nervensystem | Warum bekommen wir Gänsehaut? | spätere Longform könnte Thermoregulation, autonome Reaktionen und emotionale Piloerektion vertiefen | Testpilot 007 behandelt nur die kurze Grundkette |
+
+## Aktive Longform-Produktion
+
+### 001 – Was passiert mit Essen im Körper?
+
+Projekt:
+
+```text
+youtube-videos/008-longform-verdauung/
+```
+
+Status: `IN ARBEIT`
+
+Ziel:
+- erstes reguläres Longform-Video nach Abschluss der Testphase
+- 6–7 Minuten
+- ca. 1.110 Wörter Script
+- 77 eindeutige Bilder
+- kompletter Verdauungsweg mit Aufnahme und Weitertransport der Nährstoffe
+- saubere Trennung von Blutweg und Lymphweg
+- klare Einleitung, kausaler Hauptteil und vollständiger Schluss
+
+Abgrenzung:
+- behandelt den gesamten Verdauungsweg als Überblick
+- spätere Videos können einzelne Teilthemen wie Zucker, Protein, Mikrobiom oder Leber deutlich tiefer behandeln
 
 ## Interne Tests
 
@@ -247,7 +272,9 @@ Zusatzkontext:
 
 ## Bereits produzierte normale Videos
 
-Noch keine.
+Noch keine vollständig fertiggestellten normalen Videos.
+
+Thema 001 ist aktuell `IN ARBEIT`.
 
 Der frühere Verdauungs-Pilot wurde auf Nutzerwunsch gelöscht und zählt nicht als produziert oder reserviert.
 
