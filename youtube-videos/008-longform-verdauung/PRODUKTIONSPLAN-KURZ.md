@@ -81,6 +81,24 @@ Remotion nur für:
 - nicht-textliche Übergänge
 - Render
 
+## Export / YouTube-ready Paket
+
+Nach Phase 3 liegt die komplette Veröffentlichung unter:
+`04_export/`
+
+Pflicht:
+- `04_export/fertiges-video/Object-Talk-008-Verdauung-YOUTUBE.mp4`
+- `04_export/YOUTUBE-UPLOAD-PAKET.md`
+- `04_export/YOUTUBE-TITEL-BESCHREIBUNG-ZUM-KOPIEREN.txt`
+- `04_export/YouTube-Caption.md`
+- `04_export/render-report.md`
+- `04_export/quality-scorecard.md`
+- `04_export/postmortem.md`
+
+Der Ordner `fertiges-video/` enthält nur die endgültige Master-MP4. Keine Preview- oder Draft-Dateien als final behalten.
+
+Titel, Beschreibung und Caption sind individuell für Video 008 vorbereitet und werden nach Sichtung des echten Finalrenders noch einmal gegen den tatsächlichen Inhalt geprüft.
+
 ## Qualitätsziel
 - wissenschaftliche Sicherheit >= 8/10
 - jedes Bild >= 8/10
@@ -97,9 +115,11 @@ Remotion nur für:
 4. jedes Bild gegen Label-, Kontrast-, Wissenschafts- und Dichte-QA prüfen.
 5. Phase-2-Validator ausführen.
 6. Whisper/Timeline erzeugen.
-7. Remotion textfrei rendern.
+7. Remotion textfrei direkt nach `04_export/fertiges-video/Object-Talk-008-Verdauung-YOUTUBE.mp4` rendern.
 8. kompletten finalen Film visuell sichten.
-9. Scorecard + Postmortem ausfüllen.
+9. Renderbericht + Scorecard + Postmortem ausfüllen.
+10. YouTube-Titel, Beschreibung und Caption gegen den finalen Film prüfen.
+11. Erst danach Status `YouTube-ready`.
 
 ## Besonderer Anspruch
 Dieses Video ist kein weiterer Kurztest. Es soll als erster echter Produktionslauf zeigen, dass die getestete Pipeline eine längere, zusammenhängende biologische Geschichte mit hoher Bildqualität tragen kann.
