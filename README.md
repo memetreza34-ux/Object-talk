@@ -8,15 +8,28 @@ Deutschsprachige Erklaervideos ueber Ernaehrung, Gesundheit, menschlichen Koerpe
 
 Standard:
 - normale Kanalvideos mindestens 5:00 Minuten
-- dokumentierte Testpiloten duerfen kuerzer sein
 - 16:9 / 1920×1080 / 30 fps
 - hohe visuelle Dichte aus generierten Standbildern
 - wissenschaftlich plausibel und leicht verstaendlich
 - wichtige sichtbare Dinge nur dann knapp beschriften, wenn es wirklich hilft
 
-## Verbindliche Bildwelt
+## Produktionsphase
 
-Seit 27.09.2026 gilt:
+Die interne Testphase `000–007` ist abgeschlossen.
+
+Aktive reguläre Longform-Produktion:
+`youtube-videos/008-longform-verdauung/`
+
+Thema:
+**Was passiert mit Essen in deinem Körper?**
+
+Ziel:
+- 6:00–7:00 Minuten
+- ca. 1.110 Wörter
+- 77 eindeutige Illustrationen
+- Hook → Einleitung → kausaler Hauptteil → vollständiger Schluss
+
+## Verbindliche Bildwelt
 
 **Clean Animated Biology Illustration**
 
@@ -37,7 +50,6 @@ Kernidee:
 - **eine Hauptidee pro Bild**
 - bevorzugt 2–4 wichtige sichtbare Elemente
 - normale Bilder **0–2 kurze deutsche Labels**, nur wenn nötig
-- sichtbare Prozesse statt dekorativer Objektportraits
 
 ## Cover
 
@@ -56,24 +68,22 @@ Zusatztext auf dem Cover = regenerieren.
 - dunkler Hintergrund → helle Schrift
 - kein hell-auf-hell
 - kein dunkel-auf-dunkel
-- Text bevorzugt in ruhiger negativer Flaeche
-
-Schlecht lesbarer Text = regenerieren.
+- schlecht lesbarer Text = regenerieren
 
 ## Visual Storytelling
 
 - ein dominanter Lehrpunkt pro Bild
 - Prozesse, Ursache/Wirkung, Wege, Vergleiche und Massstabwechsel bevorzugen
 - maximal zwei isolierte Einzelobjektbilder hintereinander
-- Bilder nicht ueberladen
 - wenn mehr erklaert werden muss: unwichtige Info weglassen oder neues Bild planen
 - **lieber mehr einfache Bilder als ein ueberladenes Bild**
 - ein Standbild normalerweise 3–6 Sekunden
 - harte Obergrenze 7 Sekunden
+- keine Bildduplikate zum Zeitfuellen
 
 ## Sichtbarer Text
 
-Viewer-facing Text kommt ausschliesslich aus den final akzeptierten Google-Flow-Bildern.
+Viewer-facing Text kommt ausschliesslich aus final akzeptierten Google-Flow-Bildern.
 
 Normale Bilder:
 - 0–2 Labels, maximal 2
@@ -89,8 +99,6 @@ Niemals sichtbar:
 - Asset-IDs
 - Prompttitel
 - Produktionshinweise
-
-Bild-/Szenennummern bleiben reine Produktionsmetadaten.
 
 ## Praesentationssystem
 
@@ -117,34 +125,13 @@ Nicht erlaubt:
 
 `03_pipeline/overlay-plan.json` muss deaktiviert und leer bleiben.
 
-Details: `engine/PRESENTATION-OVERLAY-SYSTEM.md`.
-
-## Aktueller Pilot
-
-`youtube-videos/007-pilot-gaensehaut/`
-
-Thema: **Warum bekommst du Gänsehaut?**
-
-Testvorgaben:
-- maximal 2:00 Minuten final
-- ca. 190 Woerter Script
-- 20 eindeutige Bilder
-- Haut, Nervensignal, sympathisches Nervensystem, Haarfollikel, Haaraufrichtemuskel und Tierfell
-- Cover nur Titel
-- normale Bilder max. 2 Labels
-- hoher Textkontrast
-- niedrige Informationsdichte
-- 100 % Vollbild-Illustration
-- 0 sichtbare Remotion-Textelemente
-- 0 sichtbare Produktionsnummern
-
 ## Drei Phasen
 
 ### Phase 1 – Creative Director
-Thema → Recherche → Claim-Check → Mechanism Map → Script → Satz-Visual-Plan → Szenenplan → Informationsbudget → Label-Plan → kurze Flow-Prompts.
+Thema → Recherche → Claim-Check → Mechanism Map → Script → Szenenplan → Informationsbudget → Label-Plan → kurze Flow-Prompts.
 
 ### Phase 2 – Google Flow
-Jedes Bild einzeln erzeugen → Cover title-only prüfen → Beschriftung und Kontrast prüfen → Informationsdichte prüfen → interne Nummern im Bild ausschliessen → Bild-QA → finale Assets.
+Jedes Bild einzeln erzeugen → Cover title-only pruefen → Beschriftung und Kontrast pruefen → Informationsdichte pruefen → interne Nummern ausschliessen → Bild-QA → finale Assets.
 
 ### Phase 3 – Antigravity + Tools + Remotion
 Audio vorbereiten → Whisper → Timeline → Vollbild-Illustrationen + leichte Bildbewegung/Schnitt → Render → Final-QA.
