@@ -38,6 +38,8 @@ Erforderlich:
 - Flow-Prompts verbieten sichtbar gerenderte Asset-/Bild-/Szenennummern
 - `03_pipeline/overlay-plan.json` ist `DISABLED` und `scenes` ist leer
 - keinerlei Remotion-Text geplant
+- `04_export/` ist im Projekt angelegt
+- `04_export/YOUTUBE-UPLOAD-PAKET.md` ist fuer das konkrete Video vorbereitet
 - `python tools/validate_planning_v2.py VIDEOORDNER` besteht
 
 Bei FAIL: keine Voice- oder Bildproduktion starten.
@@ -97,10 +99,30 @@ Erforderlich:
 - kein Frame wirkt informationsüberladen
 - keine permanenten Rahmen, Seitenleisten oder Dashboard-/PowerPoint-Aufteilung
 - finaler Sichtcheck bestanden
-- Renderbericht erzeugt
+
+### Veröffentlichungs-Export – Pflicht
+
+`04_export/` muss vollständig sein und enthalten:
+- `YOUTUBE-UPLOAD-PAKET.md`
+- `YOUTUBE-TITEL-BESCHREIBUNG-ZUM-KOPIEREN.txt`
+- `YouTube-Caption.md`
+- `render-report.md`
+- `quality-scorecard.md`
+- `postmortem.md`
+- `fertiges-video/[VIDEO-ID]-YOUTUBE.mp4`
+
+Zusätzlich gilt:
+- `fertiges-video/` enthält nur die finale YouTube-Masterdatei, keine Preview-/Draft-Dateien
+- YouTube-Titel ist individuell für genau dieses Video
+- Beschreibung ist individuell, deutsch und inhaltlich korrekt
+- Caption ist individuell und passt zum finalen Video
+- maximal 5 sinnvolle Hashtags
+- Titel/Beschreibung/Caption wurden nach dem echten Finalrender noch einmal gegen den Inhalt geprüft
+- Renderbericht ausgefüllt
 - `04_export/quality-scorecard.md` ausgefüllt
 - wissenschaftliche Sicherheit mindestens 8,0/10
 - gewichteter Gesamtscore mindestens 8,0/10
+- erst danach Status `YouTube-ready`
 
 Nach dem Finalrender wird `04_export/postmortem.md` gemäß `engine/POSTMORTEM-STANDARD.md` ausgefüllt.
 
