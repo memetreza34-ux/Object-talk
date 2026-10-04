@@ -1,0 +1,123 @@
+GOOGLE FLOW – LONGFORM 008 VERDAUUNG
+
+ROLE
+Create 77 final 16:9 still images individually for the German Object-Talk biology explainer “Was passiert mit Essen in deinem Körper?”.
+
+CANONICAL STYLE
+Clean Animated Biology Illustration: simplified but recognizable anatomy, smooth organic forms, clean outlines, soft gradients, subtle depth, bright calm backgrounds, clear biological colors, low complexity, one dominant biological idea per frame.
+
+HARD TEXT RULES
+- Production names, file names, Bild_XX, image numbers, scene numbers, prompt headings and internal notes are metadata only. NEVER render production metadata visibly.
+- COVER / first image: exactly one visible text block and nothing else. Exact title: “Was passiert mit Essen?”
+- Cover title only: no subtitle, no labels, no extra text.
+- Normal images: 0–2 German labels maximum, only when explicitly listed below.
+- Never add unlisted text.
+- No decorative quotation marks around visible labels.
+- Light background -> dark text. Dark background -> light text.
+- Text and pointer lines must have strong immediate contrast. Poor contrast = reject and regenerate.
+
+INFORMATION DENSITY
+- One main idea per image.
+- Prefer 2–4 important visible elements.
+- If something becomes crowded, simplify or split; never add more tiny details or text.
+- Vary body overview, cutaway, macro, process, route, comparison, before/after and scale transition.
+- No UI cards, dashboards or PowerPoint layouts.
+
+STYLE FAILS
+No photoreal medical imagery, no medical CGI, no glossy 3D, no feature-animation/Pixar look, no toy/kids-book look, no corporate infographic, no clutter, no gore, no random icons, no unnecessary text.
+
+The internal filenames below are for SAVING ONLY and must never appear inside the artwork.
+
+01 / Bild_01.png: Strong cover, close-up of a fork with a mixed bite just before the mouth, subtle transparent digestive-path silhouette behind it. Simple and dramatic. VISIBLE TEXT: exact title only “Was passiert mit Essen?”.
+02 / Bild_02.png: Side-view human silhouette after swallowing; the bite has vanished from view while a faint path inside the torso hints that the journey continues. NO TEXT.
+03 / Bild_03.png: Wide body cutaway showing the digestive tract as one continuous route from mouth toward intestines, small food bolus entering the path. NO TEXT.
+04 / Bild_04.png: Scale transition: recognizable food pieces transform into tiny nutrient particles beside blood vessels, liver and a body cell. NO TEXT.
+05 / Bild_05.png: Mouth and stomach in one frame, but highlight the mouth to show digestion begins before the stomach. NO TEXT.
+06 / Bild_06.png: Macro mouth scene, teeth actively breaking one bite into smaller pieces; saliva subtle. NO TEXT.
+07 / Bild_07.png: Before/after comparison of one large food piece becoming many smaller pieces, emphasizing more exposed surface. NO TEXT.
+08 / Bild_08.png: Recognizable meal components progressively become smaller particles so the original food appearance disappears. NO TEXT.
+09 / Bild_09.png: Mouth cutaway, teeth crush the bite while tongue and food stay easy to distinguish. NO TEXT.
+10 / Bild_10.png: Smaller food fragments coated by saliva; show more exposed food surfaces. NO TEXT.
+11 / Bild_11.png: Soft food bolus forming in the mouth; salivary glands only subtly suggested. VISIBLE LABEL: Speichel.
+12 / Bild_12.png: Macro biochemical view, salivary enzyme molecules approach starch chains in the food bolus. VISIBLE LABEL: Amylase.
+13 / Bild_13.png: Starch chain breaking into smaller sugar fragments under enzyme action, simple not textbook-like. VISIBLE LABELS: Stärke; Zuckerbausteine.
+14 / Bild_14.png: Bread or rice bite in the mouth with intact starch on one side and smaller sugar fragments on the other. NO TEXT.
+15 / Bild_15.png: Food bolus moving backward from tongue toward the throat; airway and food route simple. NO TEXT.
+16 / Bild_16.png: Throat cutaway with epiglottis closing over airway while food enters esophagus. VISIBLE LABELS: Kehldeckel; Speiseröhre.
+17 / Bild_17.png: Vertical esophagus cutaway with food bolus inside, clearly not just falling. NO TEXT.
+18 / Bild_18.png: Esophageal muscle squeezes behind bolus and relaxes ahead as a clear wave. VISIBLE LABEL: Peristaltik.
+19 / Bild_19.png: Reclined body side view while peristaltic wave still moves food toward stomach. NO TEXT.
+20 / Bild_20.png: Lower esophagus opens into stomach; sphincter relaxes and bolus enters. VISIBLE LABEL: Mageneingang.
+21 / Bild_21.png: Stomach cutaway with muscular wall churning food while gastric juice mixes in. NO TEXT.
+22 / Bild_22.png: Macro stomach lumen, protein-rich food exposed to acidic gastric fluid, proteins visibly unfolding. VISIBLE LABEL: Magensäure.
+23 / Bild_23.png: Simple protein chain cut into smaller pieces by pepsin in acidic stomach environment. VISIBLE LABEL: Pepsin.
+24 / Bild_24.png: Stomach wall close-up with protective mucus layer separating acidic lumen from tissue. VISIBLE LABEL: Schleimschicht.
+25 / Bild_25.png: Comparison: stomach with mixed chyme versus small intestine highlighted as main nutrient-absorption site. VISIBLE LABEL: Dünndarm.
+26 / Bild_26.png: Stomach as mixer and reservoir: upper stomach holds contents while lower stomach mixes. NO TEXT.
+27 / Bild_27.png: Pylorus releases a small portion of chyme into first small-intestine section. VISIBLE LABELS: Magenausgang; Dünndarm.
+28 / Bild_28.png: Transition into duodenum, acidic chyme enters and becomes focus of next stage. NO TEXT.
+29 / Bild_29.png: Pancreas connected to duodenum, bicarbonate-rich pancreatic juice enters intestine. VISIBLE LABEL: Bauchspeicheldrüse.
+30 / Bild_30.png: Before/after fluid comparison in duodenum, acidic chyme becomes less acidic after bicarbonate mixes in. VISIBLE LABEL: Bicarbonat.
+31 / Bild_31.png: Pancreatic enzymes enter duodenum and approach simplified carbohydrate, protein and fat groups. VISIBLE LABEL: Verdauungsenzyme.
+32 / Bild_32.png: Three clear lanes: different enzymes act on carbohydrate, protein and fat separately. NO TEXT.
+33 / Bild_33.png: Liver highlighted above intestine producing bile, gallbladder visible below. VISIBLE LABELS: Leber; Galle.
+34 / Bild_34.png: Gallbladder releases stored bile through duct into duodenum. VISIBLE LABELS: Gallenblase; Galle.
+35 / Bild_35.png: One large fat droplet becomes many smaller droplets after bile disperses it. VISIBLE LABEL: Galle.
+36 / Bild_36.png: Small fat droplets expose more surface while lipase reaches them; simple cause-effect. NO TEXT.
+37 / Bild_37.png: Three parallel transformations: carbohydrate to simple sugars, protein to amino-acid-sized pieces, fat to smaller fat components. VISIBLE LABELS: Kohlenhydrate; Proteine.
+38 / Bild_38.png: Small nutrient building blocks next to intestinal wall ready to cross; large undigested pieces stay outside. NO TEXT.
+39 / Bild_39.png: Zoom from intestinal tube to inner wall, visually asking how so much material can be absorbed. NO TEXT.
+40 / Bild_40.png: Small-intestine wall with large folds and many finger-like villi, clean and spacious. VISIBLE LABEL: Darmzotten.
+41 / Bild_41.png: Macro villus surface zooming further into microvilli on epithelial cells. VISIBLE LABEL: Mikrovilli.
+42 / Bild_42.png: Smooth wall versus folded wall with finger-like projections to show larger surface area. NO TEXT.
+43 / Bild_43.png: Nutrient-rich intestinal contents flow closely around villi, showing contact with absorptive surface. NO TEXT.
+44 / Bild_44.png: Macro villus, glucose-like sugar particles and amino-acid particles cross intestinal cells into tiny blood capillaries. VISIBLE LABELS: Glukose; Aminosäuren.
+45 / Bild_45.png: Route from intestinal capillaries through a larger vessel toward liver, nutrient particles moving with blood. VISIBLE LABEL: Leber.
+46 / Bild_46.png: Liver cutaway receiving nutrient-rich blood from intestine, central processing hub. VISIBLE LABEL: Leber.
+47 / Bild_47.png: Inside liver, incoming nutrient particles split into use, transformation or storage paths, without text boxes. NO TEXT.
+48 / Bild_48.png: Glucose particles enter liver cells; some assemble into a compact glycogen store. VISIBLE LABEL: Glykogen.
+49 / Bild_49.png: Transition from sugar route in blood toward dietary fat entering an intestinal cell. NO TEXT.
+50 / Bild_50.png: Inside intestinal cell, absorbed fat components are reassembled and packaged into round transport particles. VISIBLE LABEL: Chylomikron.
+51 / Bild_51.png: One chylomicron-like particle next to blood capillary and lymphatic vessel, emphasizing size and route difference. VISIBLE LABELS: Blutgefäß; Lymphgefäß.
+52 / Bild_52.png: Same villus, fat transport particle moves toward central lymphatic vessel instead of blood capillary. VISIBLE LABEL: Lymphgefäß.
+53 / Bild_53.png: Route from intestinal lymphatic vessels upward through lymph system and later into bloodstream. VISIBLE LABEL: Lymphe.
+54 / Bild_54.png: Split-route comparison from one meal: sugar/amino-acid particles enter blood, fat particles enter lymph first. NO TEXT.
+55 / Bild_55.png: Original meal on one side, tiny molecules moving through blood and lymph on the other. NO TEXT.
+56 / Bild_56.png: Body-wide route, nutrient molecules travel from blood and lymph toward tissues and cells. NO TEXT.
+57 / Bild_57.png: Body cell close-up, glucose enters toward energy use while amino acids move toward protein-building structures. VISIBLE LABELS: Glukose; Aminosäuren.
+58 / Bild_58.png: Fat components used in cell membrane/energy on one side and stored in fat tissue on the other. NO TEXT.
+59 / Bild_59.png: Zoom back out to intestine, showing that some material remains after small-intestinal absorption. NO TEXT.
+60 / Bild_60.png: Remaining contents move from small intestine into large intestine; show water and undigested fiber. VISIBLE LABEL: Dickdarm.
+61 / Bild_61.png: Colon cutaway, water particles move from intestinal contents across wall into nearby blood vessels. VISIBLE LABEL: Wasser.
+62 / Bild_62.png: Macro colon environment with diverse simplified gut microbes around remaining fiber particles, not cartoonish. VISIBLE LABEL: Darmbakterien.
+63 / Bild_63.png: Gut bacteria interact with fiber fragments human enzymes did not fully digest. VISIBLE LABEL: Ballaststoffe.
+64 / Bild_64.png: Simple microbial fermentation, fiber fragments become a few short-chain-fatty-acid particles plus small gas bubbles. VISIBLE LABEL: kurzkettige Fettsäuren.
+65 / Bild_65.png: Colon wall absorbs some microbial products while other residue continues through lumen. NO TEXT.
+66 / Bild_66.png: Progression through colon, contents become less watery and more formed as water is absorbed, then move toward rectum. NO TEXT.
+67 / Bild_67.png: Rectum cutaway storing formed stool before elimination, clean educational style, no gore. VISIBLE LABEL: Enddarm.
+68 / Bild_68.png: Original meal versus final stool, emphasizing nutrients and water were removed along the way. NO TEXT.
+69 / Bild_69.png: Whole-body summary, absorbed nutrients already distributed to liver, blood and cells while only residue remains in colon. NO TEXT.
+70 / Bild_70.png: Return to a new bite being swallowed, entire digestive route faintly visible as one journey. NO TEXT.
+71 / Bild_71.png: Four-step visual sequence without words: chew, mix, break down, absorb; anatomical scenes, not UI cards. NO TEXT.
+72 / Bild_72.png: Esophagus moving food and stomach mixing it, simple continuity frame. NO TEXT.
+73 / Bild_73.png: Small-intestine hero frame with pancreatic enzymes, bile and villi separated spatially so frame stays clean. NO TEXT.
+74 / Bild_74.png: Nutrients move from intestine to blood and lymph and toward liver; only main routes. NO TEXT.
+75 / Bild_75.png: Large-intestine hero frame, water leaves lumen while remaining material moves onward. NO TEXT.
+76 / Bild_76.png: Body-cell view, absorbed nutrient building blocks used for energy, growth and repair. NO TEXT.
+77 / Bild_77.png: Closing scale transition, bite of food transforms into tiny usable building blocks entering a body cell. NO TEXT.
+
+FINAL QA PER IMAGE
+- correct 16:9 scene
+- canonical illustration style
+- one main idea and low complexity
+- no extra text
+- no visible production ID, image number, scene number or filename
+- labels exactly match whitelist
+- cover contains only the exact title
+- strong text contrast: light background -> dark text; dark background -> light text
+- no decorative quote marks in final artwork
+- scientific relationship plausible
+- neighboring images are not duplicates
+
+FINAL SET
+Exactly 77 accepted files saved internally as Bild_01.png through Bild_77.png. Those filenames are never visible inside the artwork.
