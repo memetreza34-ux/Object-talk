@@ -6,7 +6,7 @@ PROJEKT
 `youtube-videos/008-longform-verdauung/`
 
 ZIEL
-Erzeuge aus finaler Voice + 77 akzeptierten Google-Flow-Bildern das erste reguläre Object-Talk-Longform-Video.
+Erzeuge aus finaler Voice + 77 akzeptierten Google-Flow-Bildern das erste reguläre Object-Talk-Longform-Video und lege das komplette veröffentlichungsfertige Paket in `04_export/` ab.
 
 LAUFZEIT
 - Nutzerziel: 6:00–7:00 Minuten final.
@@ -71,6 +71,25 @@ MOTION
 - keine hektischen Zooms, kein Shake, Bounce, Meme-Transition oder künstliches Kameragewackel.
 - bei bereits sehr informationsreichen Bildern lieber static oder minimale Bewegung.
 
+EXPORT – VERBINDLICH
+Alle Veröffentlichungsausgaben liegen unter:
+`youtube-videos/008-longform-verdauung/04_export/`
+
+Finaler YouTube-Master:
+`04_export/fertiges-video/Object-Talk-008-Verdauung-YOUTUBE.mp4`
+
+Nur diese Datei gilt als veröffentlichungsfertige Masterdatei. Keine Preview-/Draft-Dateien als final markieren.
+
+Das Exportpaket muss außerdem enthalten und nach dem echten Render geprüft/ausgefüllt werden:
+- `04_export/YOUTUBE-UPLOAD-PAKET.md`
+- `04_export/YOUTUBE-TITEL-BESCHREIBUNG-ZUM-KOPIEREN.txt`
+- `04_export/YouTube-Caption.md`
+- `04_export/render-report.md`
+- `04_export/quality-scorecard.md`
+- `04_export/postmortem.md`
+
+Titel/Beschreibung/Caption niemals blind überschreiben. Nach Sichtung des finalen Videos nur dann anpassen, wenn sie nicht mehr exakt zum tatsächlichen Inhalt passen.
+
 VORBEREITUNG
 ```bash
 python -m pip install -r tools/requirements.txt
@@ -82,7 +101,7 @@ RENDER
 ```bash
 cd renderer
 npm install
-npm run render -- ../youtube-videos/008-longform-verdauung/04_export/fertiges-video/final-video.mp4
+npm run render -- ../youtube-videos/008-longform-verdauung/04_export/fertiges-video/Object-Talk-008-Verdauung-YOUTUBE.mp4
 ```
 
 FINAL-QA
@@ -103,5 +122,9 @@ FINAL-QA
 - Hauptaufnahme nicht dem Magen zuschreiben
 - Fettweg über Lymphe korrekt vom Zucker/Aminosäure-Blutweg unterscheiden
 - finalen Render vollständig visuell sichten
+- `render-report.md` ausfüllen
+- `quality-scorecard.md` ausfüllen
+- Upload-Titel/Beschreibung/Caption gegen den echten Finalrender prüfen
+- erst nach bestandenem QA die MP4 als `YouTube-ready` behandeln
 
 Bei Konflikt, fehlendem Asset oder wissenschaftlichem Zweifel: FAIL statt raten.
