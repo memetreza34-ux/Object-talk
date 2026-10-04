@@ -1,0 +1,107 @@
+ANTIGRAVITY – 008 LONGFORM „WAS PASSIERT MIT ESSEN IM KÖRPER?“
+
+Arbeite ausschließlich nach dem Repository.
+
+PROJEKT
+`youtube-videos/008-longform-verdauung/`
+
+ZIEL
+Erzeuge aus finaler Voice + 77 akzeptierten Google-Flow-Bildern das erste reguläre Object-Talk-Longform-Video.
+
+LAUFZEIT
+- Nutzerziel: 6:00–7:00 Minuten final.
+- Voice und Script nicht künstlich strecken oder beschleunigen, nur um exakt eine Zahl zu treffen.
+- Standard Voice-Verarbeitung: 1.10x.
+- Wenn das echte kanonische Voiceover deutlich außerhalb 6:00–7:00 liegt: STOP und melden statt Standbilder künstlich zu verlängern oder Scriptteile zu entfernen.
+
+AUDIO
+- Roh-TTS niemals direkt rendern.
+- `tools/prepare_audio.py --speed 1.10` verwenden.
+- lange unnatürliche TTS-Pausen vor Whisper/Timeline komprimieren.
+- `final-voiceover.wav` ist die einzige Timing-Quelle.
+- Whisper-Wortzeiten aus dem finalen Audio erzeugen.
+- Script↔Audio-Ausrichtung muss vollständig bestehen.
+
+BILDER
+- exakt 77 eindeutige finale Bilder.
+- interne Dateinamen `Bild_01.png` bis `Bild_77.png`.
+- Dateinamen/Bildnummern/Szenennummern niemals sichtbar im Video.
+- keine Bildduplikate.
+- kein Standbild länger als 7.0 Sekunden.
+- Ziel normalerweise ca. 3–6 Sekunden pro Bild; semantisches Timing ist wichtiger als starre Gleichverteilung.
+- wenn ein Speech-Beat länger ist als ein einzelnes Bild tragen kann, nur bereits geplante benachbarte Visual-Beats nutzen; niemals ein Bild duplizieren.
+
+BILDWELT
+- `Clean Animated Biology Illustration`
+- 100 % Vollbild-Illustration
+- keine Rahmen, Seitenleisten, Karten oder Dashboard-Layouts
+- biologische Labels sind bereits Bestandteil der akzeptierten Flow-Bilder
+- Cover enthält nur den geplanten Titel und keine Zusatzlabels
+
+REMOTION – HARTE REGEL
+Remotion erzeugt **KEINEN sichtbaren Text**.
+`03_pipeline/overlay-plan.json` muss leer/deaktiviert bleiben.
+
+Remotion darf nur:
+- finales Audio
+- exaktes Timing
+- statische Vollbildframes
+- sanfte Push-/Pull-Bewegungen
+- leichte Pans
+- saubere Schnitte
+- dezente nicht-textliche Übergänge
+- Render
+
+Remotion darf NICHT:
+- Zwischenüberschriften
+- Kapiteltexte
+- Key-Facts
+- Summary-Text
+- Untertitel
+- Labels
+- Bildnummern
+- Szenennummern
+- Dateinamen
+- sonstige sichtbare Schrift erzeugen
+
+MOTION
+- Bildinhalt darf nicht durch Bewegung abgeschnitten werden.
+- Push/Pull dezent, ungefähr 2–4 %.
+- Pan dezent, ungefähr 20–30 px.
+- keine hektischen Zooms, kein Shake, Bounce, Meme-Transition oder künstliches Kameragewackel.
+- bei bereits sehr informationsreichen Bildern lieber static oder minimale Bewegung.
+
+VORBEREITUNG
+```bash
+python -m pip install -r tools/requirements.txt
+python tools/validate_planning_v2.py youtube-videos/008-longform-verdauung
+python tools/prepare_phase3.py youtube-videos/008-longform-verdauung
+```
+
+RENDER
+```bash
+cd renderer
+npm install
+npm run render -- ../youtube-videos/008-longform-verdauung/04_export/fertiges-video/final-video.mp4
+```
+
+FINAL-QA
+- Laufzeit im Nutzerziel 6:00–7:00
+- 1920×1080 / 30 fps
+- Audio vollständig
+- 77 Bilder vollständig
+- keine Szene >7s
+- keine Bildduplikate
+- keine sichtbare Bild-/Szenennummer oder Dateiname
+- keine Remotion-Schrift
+- Cover: nur Titel, keine Zusatzlabels
+- Flow-Labels kurz, korrekt, kontrastreich
+- keine helle Schrift auf hellem Hintergrund oder dunkle Schrift auf dunklem Hintergrund
+- Informationsdichte niedrig; kein Frame wirkt überladen
+- Mund → Speiseröhre → Magen → Dünndarm → Blut/Lymphe → Dickdarm visuell logisch
+- Galle nicht als Enzym darstellen
+- Hauptaufnahme nicht dem Magen zuschreiben
+- Fettweg über Lymphe korrekt vom Zucker/Aminosäure-Blutweg unterscheiden
+- finalen Render vollständig visuell sichten
+
+Bei Konflikt, fehlendem Asset oder wissenschaftlichem Zweifel: FAIL statt raten.
