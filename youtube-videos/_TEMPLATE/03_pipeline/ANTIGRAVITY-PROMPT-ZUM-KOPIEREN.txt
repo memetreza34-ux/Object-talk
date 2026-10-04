@@ -30,9 +30,29 @@ VOR PHASE 3 MUSS BILD-QA BESTANDEN SEIN:
 - Informationsdichte muss PASS sein.
 - wenn ein Bild ueberladen wirkt, nicht rendern: Bild neu planen/erzeugen.
 
+EXPORT – PFLICHT
+Jedes Video besitzt einen finalen Bereich:
+`04_export/`
+
+Dort muessen liegen:
+- `YOUTUBE-UPLOAD-PAKET.md`
+- `YOUTUBE-TITEL-BESCHREIBUNG-ZUM-KOPIEREN.txt`
+- `YouTube-Caption.md`
+- `render-report.md`
+- `quality-scorecard.md`
+- `postmortem.md`
+- `fertiges-video/[VIDEO-ID]-YOUTUBE.mp4`
+
+Der Ordner `fertiges-video/` enthaelt nur die finale YouTube-Masterdatei. Keine Preview-, Draft- oder Testexports dort als final behalten.
+
+Titel, Beschreibung und Caption werden fuer jedes Video individuell geschrieben und nach dem echten Finalrender nochmals gegen den tatsaechlichen Inhalt geprueft.
+
+Erst nach bestandenem Renderbericht und Quality-Score darf die MP4 als `YouTube-ready` gelten.
+
 Autoritativ:
 - `engine/VISIBLE-TEXT-STANDARD.md`
 - `engine/QUALITY-SCORECARD.md`
 - `engine/PRESENTATION-OVERLAY-SYSTEM.md`
+- `engine/PHASE-GATES.md`
 
 Wenn diese Datei noch diesen Platzhalter enthaelt, ist Phase 1 noch nicht vollstaendig.
