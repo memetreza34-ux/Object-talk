@@ -4,7 +4,7 @@ Dieser Ordner enthaelt die globalen Produktionsregeln fuer Object-Talk-YouTube-V
 
 ## Zweck
 
-Die Engine sorgt dafuer, dass Recherche, Script, Planung, Bildproduktion, Audio, Timing und QA nicht bei jedem Video neu erfunden werden.
+Die Engine sorgt dafuer, dass Recherche, Script, Planung, Bildproduktion, Audio, Timing, Export und QA nicht bei jedem Video neu erfunden werden.
 
 ## Verbindliche Bildwelt
 
@@ -70,6 +70,32 @@ Viewer-facing Text kommt ausschliesslich aus den akzeptierten Flow-Bildern. Prod
 
 Autoritativ: `PRESENTATION-OVERLAY-SYSTEM.md`
 
+## Veröffentlichungs-Export
+
+Autoritativ: `EXPORT-STANDARD.md`
+
+Jedes fertige Video braucht unter `04_export/`:
+- finale YouTube-MP4
+- `CAPTION-YOUTUBE.txt` mit Titel + Beschreibung + max. 5 Hashtags
+- `UNTERTITEL-MIT-ZEITEN.txt` mit komplettem gesprochenem Script und echten Zeitabschnitten
+- `UNTERTITEL-YOUTUBE.srt` als hochladbare externe YouTube-Untertiteldatei
+- Renderbericht
+- Quality-Scorecard
+- Postmortem
+
+Untertitel werden nicht eingebrannt. Sie werden nach der finalen Timeline automatisch erzeugt:
+
+```text
+final-voiceover.wav
+→ Whisper
+→ word-timings.json
+→ timeline.json
+→ tools/export_subtitles.py
+→ UNTERTITEL-MIT-ZEITEN.txt + UNTERTITEL-YOUTUBE.srt
+```
+
+Zeitcodes niemals schätzen.
+
 ## Aktive Produktion
 
 `youtube-videos/008-longform-verdauung/`
@@ -104,8 +130,10 @@ Themen-Gehirn + Themen-Score
 → Cover/Textkontrast/Informationsdichte-QA
 → Audio + Whisper
 → exakte Szenen-Timeline
+→ zeitcodierte Untertitel exportieren
 → Remotion / Render ohne sichtbaren Editor-Text
 → technischer + visueller Final-QA
+→ YouTube-Exportpaket vervollstaendigen
 → Postmortem
 ```
 
@@ -114,6 +142,7 @@ Themen-Gehirn + Themen-Score
 - `SCRIPT-STANDARD.md`
 - `PLANNING-V2.md`
 - `VISIBLE-TEXT-STANDARD.md`
+- `EXPORT-STANDARD.md`
 - `FACT-CHECK-STANDARD.md`
 - `AUDIO-REGELN.md`
 - `SYNC-WHISPER.md`
@@ -133,4 +162,4 @@ python tools/validate_planning_v2.py youtube-videos/MEIN-VIDEO --phase2
 
 ## Goldene Regel
 
-**Cover nur Titel. Ein Bild = eine Hauptidee. 0–2 Labels. Hoher Textkontrast. Lieber mehr Bilder als mehr Text. Kein sichtbarer Remotion-Text.**
+**Cover nur Titel. Ein Bild = eine Hauptidee. 0–2 Labels. Hoher Textkontrast. Kein sichtbarer Remotion-Text. Export = MP4 + Caption + echte zeitcodierte Untertitel + QA.**
