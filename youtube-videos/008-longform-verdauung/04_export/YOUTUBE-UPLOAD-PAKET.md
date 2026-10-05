@@ -33,6 +33,30 @@ Ein Bissen verschwindet in wenigen Sekunden aus deinem Blick – aber seine Reis
 
 `#Verdauung #Biologie #Ernährung #Gesundheit #ObjectTalk`
 
+## Direkt kopierbare Caption-Datei
+
+`04_export/CAPTION-YOUTUBE.txt`
+
+Enthält denselben finalen Titel, dieselbe Beschreibung und die Hashtags in einer einfachen Copy/Paste-Datei.
+
+## Untertitel-Dateien
+
+### Lesbare Komplettfassung
+`04_export/UNTERTITEL-MIT-ZEITEN.txt`
+
+Enthält das komplette tatsächlich gesprochene Script mit echten Zeitabschnitten.
+
+### YouTube-SRT
+`04_export/UNTERTITEL-YOUTUBE.srt`
+
+Direkt als externe Untertiteldatei bei YouTube hochladbar. Nicht ins Video eingebrannt.
+
+Zeitcodes werden ausschließlich aus der finalen `timeline.json` erzeugt:
+
+```bash
+python tools/export_subtitles.py youtube-videos/008-longform-verdauung
+```
+
 ## Upload-Checkliste
 
 - [ ] finale MP4 liegt im Ordner `fertiges-video/`
@@ -44,6 +68,10 @@ Ein Bissen verschwindet in wenigen Sekunden aus deinem Blick – aber seine Reis
 - [ ] Coverbild im Video enthält nur den geplanten Titel
 - [ ] Flow-Labels korrekt und gut lesbar
 - [ ] finaler Sichtcheck vollständig bestanden
+- [ ] `CAPTION-YOUTUBE.txt` vollständig und gegen Finalrender geprüft
+- [ ] `UNTERTITEL-MIT-ZEITEN.txt` enthält das komplette Script mit echten Zeitabschnitten
+- [ ] `UNTERTITEL-YOUTUBE.srt` ist nicht leer und direkt hochladbar
+- [ ] Untertitel-Zeitcodes stammen aus finaler Timeline und wurden nicht geschätzt
 - [ ] `quality-scorecard.md` ausgefüllt
 - [ ] `render-report.md` ausgefüllt
 - [ ] Titel und Beschreibung gegen den finalen Render gegengeprüft
