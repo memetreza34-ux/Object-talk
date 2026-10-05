@@ -1,0 +1,14 @@
+WIRD NACH DER FINALEN TIMELINE AUTOMATISCH ERZEUGT.
+
+Quelle:
+03_pipeline/timing/timeline.json
+
+Befehl:
+python tools/export_subtitles.py youtube-videos/008-longform-verdauung
+
+Dann enthaelt diese Datei das komplette gesprochene Script mit echten Zeitabschnitten, zum Beispiel:
+00:00–00:06  Hast du dich schon mal gefragt, ...
+00:06–00:12  ...
+
+WICHTIG:
+Die Zeitcodes werden nicht geschaetzt. Sie muessen aus dem finalen Voiceover/Whisper-Timing kommen.
