@@ -7,17 +7,18 @@ Diese Datei ist der Bootstrap fuer ChatGPT, Antigravity, Codex und andere Reposi
 1. `PROJECT_CONTRACT.md`
 2. `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
 3. `engine/VISIBLE-TEXT-STANDARD.md`
-4. `PROJECT_STATE.md`
-5. `config/channel.json`
-6. `config/video.json`
-7. `THEMEN-GEHIRN.md`
-8. `engine/README.md`
-9. `engine/SCRIPT-STANDARD.md`
-10. `engine/PLANNING-V2.md`
-11. `engine/PRESENTATION-OVERLAY-SYSTEM.md`
-12. relevante Dateien des aktuellen YouTube-Projekts
+4. `engine/EXPORT-STANDARD.md`
+5. `PROJECT_STATE.md`
+6. `config/channel.json`
+7. `config/video.json`
+8. `THEMEN-GEHIRN.md`
+9. `engine/README.md`
+10. `engine/SCRIPT-STANDARD.md`
+11. `engine/PLANNING-V2.md`
+12. `engine/PRESENTATION-OVERLAY-SYSTEM.md`
+13. relevante Dateien des aktuellen YouTube-Projekts
 
-Aktiver Testpilot steht in `PROJECT_STATE.md`.
+Aktive Produktion steht in `PROJECT_STATE.md`.
 
 ## VERBINDLICHE BILDWELT
 
@@ -117,6 +118,7 @@ Muss:
 - Cover exakt title-only planen
 - bei zu hoher Informationsdichte den Beat auf mehr Bilder aufteilen
 - **keine Remotion-Texte oder Text-Overlays planen**
+- `04_export/` nach `engine/EXPORT-STANDARD.md` vorbereiten
 
 ## Phase 2 – Google Flow
 
@@ -152,7 +154,7 @@ Remotion darf NICHT erzeugen:
 - Summary-Zeilen
 - Kapiteltexte
 - Callouts
-- Untertitel/Captions als Standard
+- eingebrannte Untertitel/Captions
 - anatomische Labels
 - Textkarten
 - sichtbare Bild-/Szenennummern
@@ -160,15 +162,34 @@ Remotion darf NICHT erzeugen:
 
 `03_pipeline/overlay-plan.json` muss leer/deaktiviert bleiben.
 
+Externe YouTube-Untertitel sind trotzdem Pflicht:
+- `04_export/UNTERTITEL-MIT-ZEITEN.txt`
+- `04_export/UNTERTITEL-YOUTUBE.srt`
+- beide aus finaler `timeline.json` mit `tools/export_subtitles.py`
+- Zeitcodes niemals schaetzen
+
 ## Timing
 
-`raw Voice → prepare_audio.py → final-voiceover.wav → transcribe_audio.py → word-timings.json → build_timeline.py → timeline.json`
+`raw Voice → prepare_audio.py → final-voiceover.wav → transcribe_audio.py → word-timings.json → build_timeline.py → timeline.json → export_subtitles.py`
 
 Standard:
 - Voice 1.10x
 - lange Pausen komprimieren
 - kein Standbild ueber 7 Sekunden
 - kein Bildasset doppelt verwenden
+
+## Export – Pflicht
+
+Jedes fertige Video braucht:
+- `04_export/CAPTION-YOUTUBE.txt` mit Titel + Beschreibung + max. 5 Hashtags
+- `04_export/UNTERTITEL-MIT-ZEITEN.txt` mit komplettem Script und echten Zeitabschnitten
+- `04_export/UNTERTITEL-YOUTUBE.srt` als hochladbare YouTube-Untertiteldatei
+- finale YouTube-MP4
+- Renderbericht
+- Quality-Scorecard
+- Postmortem
+
+Ohne diese Dateien kein `YouTube-ready`.
 
 ## Fail-closed
 
@@ -187,3 +208,5 @@ STOP bei:
 - drei oder mehr isolierten Objektportraits hintereinander
 - nicht-leerem Remotion-Textoverlay
 - irgendeinem von Remotion erzeugten sichtbaren Text
+- fehlender/leer bleibender Untertiteldatei nach Phase 3
+- geschaetzten statt echten Untertitel-Zeitcodes
