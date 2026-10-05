@@ -7,7 +7,7 @@ python tools/prepare_phase3.py youtube-videos/THEMA [--model small]
 Required order:
 raw voice -> canonical 1.10x pause-compressed voice -> safe Flow ZIP import ->
 asset validation -> strict Whisper/script alignment -> exact scene timeline ->
-Remotion runtime.
+external subtitle export -> Remotion runtime.
 
 The raw TTS file is never a valid timing source.
 """
@@ -16,7 +16,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -191,6 +190,17 @@ def main() -> None:
         repo_root,
     )
 
+    # External YouTube subtitle package: readable timed script + uploadable SRT.
+    # Uses only the final timeline; timestamps are never guessed.
+    run(
+        [
+            sys.executable,
+            "tools/export_subtitles.py",
+            str(project),
+        ],
+        repo_root,
+    )
+
     run(
         [
             sys.executable,
@@ -202,14 +212,9 @@ def main() -> None:
         repo_root,
     )
 
-    source_srt = timing_dir / "subtitles.srt"
-    subtitle_dir = project / "04_export" / "subtitles"
-    subtitle_dir.mkdir(parents=True, exist_ok=True)
-    if source_srt.is_file():
-        shutil.copy2(source_srt, subtitle_dir / "subtitles.srt")
-
     print("\nPHASE-3 PREP PASS")
     print(f"Voice-Speed: {EXPECTED_SPEED:.2f}x, Pausenkompression validiert.")
+    print("Untertitel-Export aus finaler Timeline erstellt.")
     print("Renderer-Runtime ist vorbereitet. Jetzt Preview/Render in renderer/ ausfuehren.")
 
 
