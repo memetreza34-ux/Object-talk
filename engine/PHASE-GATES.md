@@ -4,6 +4,7 @@ Keine spätere Produktionsphase startet, bevor die vorherige Phase bestanden hat
 
 `PROJECT_CONTRACT.md` bleibt die oberste Regel.
 `engine/VISIBLE-TEXT-STANDARD.md` ist fuer sichtbaren Text und Informationsdichte verbindlich.
+`engine/EXPORT-STANDARD.md` ist fuer das finale YouTube-Paket verbindlich.
 
 ## Interner Testmodus
 
@@ -39,7 +40,9 @@ Erforderlich:
 - `03_pipeline/overlay-plan.json` ist `DISABLED` und `scenes` ist leer
 - keinerlei Remotion-Text geplant
 - `04_export/` ist im Projekt angelegt
+- `04_export/CAPTION-YOUTUBE.txt` ist vorbereitet
 - `04_export/YOUTUBE-UPLOAD-PAKET.md` ist fuer das konkrete Video vorbereitet
+- Exportstruktur enthaelt Ziele fuer `UNTERTITEL-MIT-ZEITEN.txt` und `UNTERTITEL-YOUTUBE.srt`
 - `python tools/validate_planning_v2.py VIDEOORDNER` besteht
 
 Bei FAIL: keine Voice- oder Bildproduktion starten.
@@ -103,21 +106,34 @@ Erforderlich:
 ### Veröffentlichungs-Export – Pflicht
 
 `04_export/` muss vollständig sein und enthalten:
+- `CAPTION-YOUTUBE.txt`
 - `YOUTUBE-UPLOAD-PAKET.md`
 - `YOUTUBE-TITEL-BESCHREIBUNG-ZUM-KOPIEREN.txt`
 - `YouTube-Caption.md`
+- `UNTERTITEL-MIT-ZEITEN.txt`
+- `UNTERTITEL-YOUTUBE.srt`
 - `render-report.md`
 - `quality-scorecard.md`
 - `postmortem.md`
 - `fertiges-video/[VIDEO-ID]-YOUTUBE.mp4`
 
-Zusätzlich gilt:
-- `fertiges-video/` enthält nur die finale YouTube-Masterdatei, keine Preview-/Draft-Dateien
+Untertitel-Gate:
+- `python tools/export_subtitles.py VIDEOORDNER` wurde nach finaler `timeline.json` ausgeführt
+- `UNTERTITEL-MIT-ZEITEN.txt` enthält das komplette gesprochene Script mit echten Zeitabschnitten
+- `UNTERTITEL-YOUTUBE.srt` ist nicht leer und syntaktisch als SRT nutzbar
+- Zeitcodes stammen aus der finalen Timeline; keine Schätzung
+- Untertitel enthalten keine Produktionsnummern, Dateinamen oder internen Hinweise
+- Untertitel werden nicht ins Video eingebrannt; sie sind externe YouTube-Untertitel
+
+Metadaten-Gate:
+- `CAPTION-YOUTUBE.txt` enthält individuellen Titel + individuelle Beschreibung + maximal 5 Hashtags
 - YouTube-Titel ist individuell für genau dieses Video
 - Beschreibung ist individuell, deutsch und inhaltlich korrekt
 - Caption ist individuell und passt zum finalen Video
-- maximal 5 sinnvolle Hashtags
-- Titel/Beschreibung/Caption wurden nach dem echten Finalrender noch einmal gegen den Inhalt geprüft
+- Titel/Beschreibung/Caption wurden nach dem echten Finalrender nochmals geprüft
+
+Finale Freigabe:
+- `fertiges-video/` enthält nur die finale YouTube-Masterdatei, keine Preview-/Draft-Dateien
 - Renderbericht ausgefüllt
 - `04_export/quality-scorecard.md` ausgefüllt
 - wissenschaftliche Sicherheit mindestens 8,0/10
