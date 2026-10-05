@@ -36,24 +36,24 @@ python tools/create_video.py "Was passiert mit Zucker im Koerper"
 
 Das kopiert `youtube-videos/_TEMPLATE` in einen neuen Themenordner. Bestehende Projekte werden nicht überschrieben.
 
-Neue Projekte erhalten zusätzlich die V2-Planungsdateien für Mechanism Map, Satz-Visual-Plan, Label-Plan, Bildreview, Scorecard und Postmortem. Bestehende Projekte wie Video 001 bleiben kompatibel.
-
 ## V2-Planung validieren
 
-Für neue Projekte vor der Medienproduktion:
+Vor der Medienproduktion:
 
 ```bash
 python tools/validate_planning_v2.py youtube-videos/THEMA
 ```
 
 Geprüft werden unter anderem:
-
-- vollständige `mechanism-map.md` ohne Platzhalter
+- vollständige `mechanism-map.md`
 - vollständiger `sentence-visual-plan.json`
 - stabile `Bild_XX`-IDs
 - Übereinstimmung mit `phase1-scenes.json`
 - vollständiger Label-Plan
-- höchstens drei Labels pro Bild
+- normale Bilder maximal 2 Labels
+- Labels maximal 3 Wörter
+- Cover title-only
+- Textkontrast-Regeln
 - keine offenen Template-/PENDING-Werte
 
 Nach der finalen Bildauswahl:
@@ -63,18 +63,14 @@ python tools/validate_planning_v2.py youtube-videos/THEMA --phase2
 ```
 
 Zusätzlich geprüft:
-
 - jedes erwartete Bild besitzt ein Review
 - `decision` ist `ACCEPT`
 - Gesamtscore mindestens 8,0/10
 - wissenschaftliche Genauigkeit mindestens 8,0/10
 - AI-Artefakt-Check bestanden
-
-Der V2-Validator ist absichtlich separat und verändert weder Video 001 noch die bestehende Phase-3-Pipeline.
+- Textkontrast und Informationsdichte bestanden
 
 ## Phase 1 technisch validieren
-
-Nach finalem Script und Szenenplan:
 
 ```bash
 python tools/validate_phase1.py \
@@ -82,14 +78,6 @@ python tools/validate_phase1.py \
   youtube-videos/THEMA/05_info/phase1-scenes.json \
   youtube-videos/THEMA/03_pipeline/scene-map.json
 ```
-
-Der Validator verlangt:
-
-- lückenlose Szenennummerierung
-- vollständige Sprachabdeckung
-- keine Lücke oder Überlappung
-- `phase1-scenes.json` und `scene-map.json` identisch in ihren kreativen Szenengrenzen
-- korrekte `Bild_XX`-Zuordnung
 
 ## Empfohlen: komplette Phase-3-Vorbereitung mit einem Befehl
 
@@ -99,112 +87,113 @@ Sobald rohe Voice-Datei und Flow-ZIP vorhanden sind:
 python tools/prepare_phase3.py youtube-videos/THEMA
 ```
 
-Dieser Befehl führt automatisch die folgenden Schritte in fester Reihenfolge aus.
+Dieser Befehl führt automatisch aus:
 
 ### 1. Audio kanonisieren
 
-```bash
-python tools/prepare_audio.py RAW_AUDIO FINAL_WAV
-```
+`tools/prepare_audio.py`
 
-Erzeugt `final-voiceover.wav` mit 48 kHz, 1.0× Geschwindigkeit und unserem kontrollierten Lautheitsstandard. Interne Sprechpausen werden nicht künstlich komprimiert.
+Erzeugt `final-voiceover.wav` mit dem kanalweiten Voice-Standard.
 
 ### 2. Flow-ZIP sicher importieren
 
-```bash
-python tools/import_flow_zip.py SCENE_MAP BILDER_ZIP OUTPUT_IMAGES_DIR
-```
+`tools/import_flow_zip.py`
 
-Wichtig:
-
-- keine Zuordnung nach ZIP-Reihenfolge
-- nur explizite `Bild_XX`-/Szenennummer zählt
-- Duplikat oder fehlende Nummer = FAIL
-- Ausgabe wird kanonisch `Bild_01.png`, `Bild_02.png`, ...
+Keine Zuordnung nach ZIP-Reihenfolge; nur explizite `Bild_XX`-IDs zählen.
 
 ### 3. Bilder technisch validieren
 
-```bash
-python tools/validate_assets.py SCENE_MAP OUTPUT_IMAGES_DIR
-```
-
-Prüft unter anderem:
-
-- lückenlose Bildfolge
-- ungefähr 16:9
-- Mindestauflösung
-- technische Lesbarkeit
+`tools/validate_assets.py`
 
 ### 4. Whisper + strikte Script-Ausrichtung
 
-```bash
-python tools/transcribe_audio.py \
-  FINAL_WAV \
-  script.txt \
-  03_pipeline/timing
+`tools/transcribe_audio.py`
+
+Erzeugt unter anderem:
+
+```text
+03_pipeline/timing/whisper-raw.json
+03_pipeline/timing/word-timings.json
+03_pipeline/timing/subtitles.srt
 ```
+
+`word-timings.json` enthält die exakten Script-Wörter mit echten Audiozeiten.
+
+### 5. Timeline bauen
+
+`tools/build_timeline.py`
 
 Erzeugt:
 
 ```text
-whisper-raw.json
-word-timings.json
-subtitles.srt
+03_pipeline/timing/timeline.json
 ```
 
-`word-timings.json` besteht aus den **exakten Script-Wörtern** mit den echten Audiozeiten. Wenn Script und Audio nicht vollständig ausgerichtet werden können, wird abgebrochen.
+Jede `speech_section` wird sequenziell auf echte Wortzeiten abgebildet. Keine geschätzten Sekunden.
 
-Bei Bedarf:
+### 6. Veröffentlichungs-Untertitel automatisch exportieren
+
+`prepare_phase3.py` ruft automatisch auf:
 
 ```bash
-python tools/transcribe_audio.py FINAL_WAV script.txt TIMING_DIR --model medium
+python tools/export_subtitles.py youtube-videos/THEMA
 ```
 
-### 5. Timeline bauen
+Erzeugt/überschreibt:
 
-```bash
-python tools/build_timeline.py \
-  03_pipeline/scene-map.json \
-  03_pipeline/timing/word-timings.json \
-  03_pipeline/timing/timeline.json
+```text
+04_export/UNTERTITEL-MIT-ZEITEN.txt
+04_export/UNTERTITEL-YOUTUBE.srt
 ```
 
-Jede vollständige `speech_section` wird sequenziell auf echte Wortzeiten abgebildet. Keine Fuzzy-Suche, keine geschätzten Sekunden.
+`UNTERTITEL-MIT-ZEITEN.txt` enthält das komplette gesprochene Script mit Zeitabschnitten, z. B.:
 
-### 6. Feste Remotion-Runtime bauen
-
-```bash
-python tools/build_renderer_runtime.py \
-  03_pipeline/timing/timeline.json \
-  02_bildprompts/images \
-  01_script/audio/final-voiceover.wav
+```text
+00:00–00:06  Hast du dich schon mal gefragt, ...
+00:06–00:12  Danach passiert ...
 ```
+
+`UNTERTITEL-YOUTUBE.srt` ist direkt als externe Untertiteldatei bei YouTube hochladbar.
+
+Wichtig:
+- Untertitel werden nicht in das Video eingebrannt.
+- Zeitcodes werden niemals geschätzt.
+- finale `timeline.json` ist die Timing-Quelle.
+
+### 7. Feste Remotion-Runtime bauen
+
+`tools/build_renderer_runtime.py`
 
 Danach:
 
 ```bash
 cd renderer
 npm run studio
-npm run render -- ../youtube-videos/THEMA/04_export/fertiges-video/final-video.mp4
+npm run render -- ../youtube-videos/THEMA/04_export/fertiges-video/[VIDEO-ID]-YOUTUBE.mp4
 ```
+
+## Export-Paket
+
+Verbindlich: `engine/EXPORT-STANDARD.md`
+
+Jedes fertige Video besitzt in `04_export/` mindestens:
+- `CAPTION-YOUTUBE.txt` mit Titel + Beschreibung + max. 5 Hashtags
+- `UNTERTITEL-MIT-ZEITEN.txt`
+- `UNTERTITEL-YOUTUBE.srt`
+- finale YouTube-MP4
+- Renderbericht
+- Quality-Scorecard
+- Postmortem
 
 ## Finale technische QA
 
 ```bash
 python tools/qa_final.py \
-  youtube-videos/THEMA/04_export/fertiges-video/final-video.mp4 \
+  youtube-videos/THEMA/04_export/fertiges-video/[VIDEO-ID]-YOUTUBE.mp4 \
   youtube-videos/THEMA/01_script/audio/final-voiceover.wav
 ```
 
-Prüft:
-
-- mindestens 5:00 Minuten
-- 1920×1080
-- ungefähr 30 fps
-- Audio vorhanden
-- Video endet nicht vor dem Voiceover
-
-Danach bleiben der visuelle Sichtcheck nach `engine/VISUAL-QUALITY-GATE.md`, die V2-Scorecard und nach echtem Finalrender das Postmortem.
+Danach bleiben visueller Sichtcheck, Scorecard und Postmortem.
 
 ## Goldene Regel
 
