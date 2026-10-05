@@ -57,12 +57,14 @@ Remotion darf NICHT:
 - Kapiteltexte
 - Key-Facts
 - Summary-Text
-- Untertitel
+- Untertitel im gerenderten Bild
 - Labels
 - Bildnummern
 - Szenennummern
 - Dateinamen
 - sonstige sichtbare Schrift erzeugen
+
+WICHTIG: Die externen YouTube-Untertitel werden als `.srt` exportiert, aber NICHT ins Video eingebrannt.
 
 MOTION
 - Bildinhalt darf nicht durch Bewegung abgeschnitten werden.
@@ -80,13 +82,31 @@ Finaler YouTube-Master:
 
 Nur diese Datei gilt als veröffentlichungsfertige Masterdatei. Keine Preview-/Draft-Dateien als final markieren.
 
-Das Exportpaket muss außerdem enthalten und nach dem echten Render geprüft/ausgefüllt werden:
+Das Exportpaket muss außerdem enthalten:
+- `04_export/CAPTION-YOUTUBE.txt`
 - `04_export/YOUTUBE-UPLOAD-PAKET.md`
 - `04_export/YOUTUBE-TITEL-BESCHREIBUNG-ZUM-KOPIEREN.txt`
 - `04_export/YouTube-Caption.md`
+- `04_export/UNTERTITEL-MIT-ZEITEN.txt`
+- `04_export/UNTERTITEL-YOUTUBE.srt`
 - `04_export/render-report.md`
 - `04_export/quality-scorecard.md`
 - `04_export/postmortem.md`
+
+`CAPTION-YOUTUBE.txt` enthält individuellen Titel + Beschreibung + maximal 5 Hashtags.
+
+UNTERTITEL – HARTE REGEL
+- Untertitel basieren auf dem kompletten tatsächlich gesprochenen Script.
+- Zeitcodes niemals schätzen.
+- Quelle ist ausschließlich die finale `timeline.json`, die wiederum aus finalem Voiceover + Whisper-Wortzeiten entsteht.
+- `UNTERTITEL-MIT-ZEITEN.txt` ist die leicht lesbare Version mit Zeitabschnitten.
+- `UNTERTITEL-YOUTUBE.srt` ist die direkt bei YouTube hochladbare SRT-Datei.
+- SRT wird nicht in das Video eingebrannt.
+
+Nach erfolgreicher Timeline-Erstellung zwingend ausführen:
+```bash
+python tools/export_subtitles.py youtube-videos/008-longform-verdauung
+```
 
 Titel/Beschreibung/Caption niemals blind überschreiben. Nach Sichtung des finalen Videos nur dann anpassen, wenn sie nicht mehr exakt zum tatsächlichen Inhalt passen.
 
@@ -95,6 +115,7 @@ VORBEREITUNG
 python -m pip install -r tools/requirements.txt
 python tools/validate_planning_v2.py youtube-videos/008-longform-verdauung
 python tools/prepare_phase3.py youtube-videos/008-longform-verdauung
+python tools/export_subtitles.py youtube-videos/008-longform-verdauung
 ```
 
 RENDER
@@ -122,6 +143,10 @@ FINAL-QA
 - Hauptaufnahme nicht dem Magen zuschreiben
 - Fettweg über Lymphe korrekt vom Zucker/Aminosäure-Blutweg unterscheiden
 - finalen Render vollständig visuell sichten
+- `CAPTION-YOUTUBE.txt` vollständig und individuell
+- `UNTERTITEL-MIT-ZEITEN.txt` enthält das komplette Script mit echten Zeitabschnitten
+- `UNTERTITEL-YOUTUBE.srt` ist nicht leer und deckt das komplette Script ab
+- Untertitel-Zeitcodes stammen aus der finalen Timeline und wurden nicht geschätzt
 - `render-report.md` ausfüllen
 - `quality-scorecard.md` ausfüllen
 - Upload-Titel/Beschreibung/Caption gegen den echten Finalrender prüfen
