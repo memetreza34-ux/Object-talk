@@ -1,0 +1,17 @@
+OBJECT-TALK 009 GOOGLE FLOW – PHASE 1: THREE COVER OPTIONS FIRST
+
+THIS IS A STAGED JOB. DO NOT GENERATE OR DISCUSS 85 SCENES YET. Create THREE genuinely different SEPARATE 16:9 cover images; not a collage or triptych. If you can generate only one per tool call, call the image tool three times without asking the user in between.
+
+STYLE LOCK: Same approved Video 008 Clean Animated Biology Illustration: soft shaded organic anatomy, clean precise outlines, gentle gradients, real visual depth within a clearly hand-illustrated look, light cream/lavender/turquoise backgrounds, lively coral/teal/blue accents. Sleep blue/navy is only a night accent, NOT a flat dark silhouetted clipart world. 16:9; visually appealing scientific illustrations. No CGI, realistic photos or overly flat vector silhouettes.
+
+All filenames, prompt headings, Bild_XX and numbers are metadata ONLY and MUST NEVER appear in the artwork. White/pale background uses dark readable text; dark background uses bright readable text. Do not add unsolicited words. One visual process, no infographic clutter.
+
+Each cover MUST show EXACTLY ONE TEXT BLOCK with this identical correctly spelled German title: Was macht dein Körper nachts?. No extra captions, labels, numbering or brand text.
+
+1 / COVER_A.png (save name is metadata): Warm cream bedroom illustration with a shaded sleeping person on a pillow; transparent upper head revealing a recognizable softly glowing turquoise/coral brain; indigo duvet accent. Large calm pale space LEFT with exactly one dark navy title.
+
+2 / COVER_B.png (save name is metadata): Premium illustrated close-up of a sleeping head with a detailed but simplified gently glowing brain and neuron branches; pearl-lavender and light teal background, softly shaded anatomy. Open calm space RIGHT for one dark title.
+
+3 / COVER_C.png (save name is metadata): Wide three-quarter cutaway of sleeping upper body with a subtle visible brain and relaxed chest; warm twilight-to-light-blue bedroom colors, well lit scientific illustration. Open pale area UPPER LEFT for one dark title.
+
+ONLY when all THREE cover images truly exist and have passed spelling/contrast/visual QA: show all three to the user and ask precisely 'Welches Cover wählst du – 1, 2 oder 3?' STOP and wait for user choice. DO NOT generate the regular scenes or ask if you should make the first five.

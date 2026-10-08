@@ -1,5 +1,26 @@
-# FLOW AGENT – 009
+# GOOGLE FLOW AGENT – 009
 
-Follow the exact 85-scene list in `GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt` and `phase1-scenes.json`.
+FOLLOW MANDATORY GATE ORDER: 3 separate covers → explicit user selection 1/2/3 → five-image batches Bild_02..Bild_85.
 
-Global style: `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`; no legacy 3D. Work in 5-image production batches without asking after each five, then QA every image individually. 0–2 labels, cover only `Was macht dein Körper nachts?`; every image one clear cause/effect or process, varied perspectives, darker nights and warmer dawns. Avoid previous crowded multi-step charts; if too much content, simplify or plan distinct extra image with matching script. Never draw filenames, image numbers or scene indices. All text must be native to Flow images; Remotion renders zero text. Accept only accurately labeled, clearly contrasted frames with quality >=8/10.
+# Google Flow – Video 009: COVER-FIRST
+
+## Stage A – Exactly three covers
+Paste GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt or COVER-3-VARIANTEN-ZUM-KOPIEREN.txt.
+Flow MUST independently generate and actually show exactly three separate cover images, numbered 1/2/3 for selection OUTSIDE the images. Each image displays only the German title "Was macht dein Körper nachts?" with high contrast. No other text. No regular images yet.
+After completing all 3, Flow asks only "Welches Cover wählst du – 1, 2 oder 3?" and WAITS.
+
+## Stage B – User selection
+After user chooses, retain only the selected cover as Bild_01.png. Never assume approval from the existence of one cover. Reject unchosen candidates from final ZIP.
+
+## Stage C – Five-image batches
+Immediately after the user's choice, generate exactly images 02–06 from the original main prompt without further permission question. Generate remaining images in order using the corresponding files from 5er-batches/ (each batch has at most 5 images; final batch has 4). Individual images only, never a composite grid. No duplicate pictures. Do not send all 85 as one request.
+If the next batch description is missing from Flow's current context, ask for the specific next batch file, not a vague "Shall I start?" question. A tool/platform image limit may require separate turns.
+
+## Visual-world lock
+Keep the successful Video 008 biological explainer look: bright, professional, premium shaded organic shapes, clear outlines, readable anatomy and soft depth. For sleep use twilight/night lighting as accent, never turn the entire video into flat dark navy silhouette vector art.
+Each normal image has one focal biological process, max 2 necessary German labels, strong color contrast, no production numbering or filenames visible. Cover has title only.
+
+## QA and export
+Cover selection = user decision. Scene batch review = scientific/visual clarity. At end validate Bild_01 through Bild_85; regenerate missing/wrong frames and export in one correctly numbered folder/ZIP for phase 3. Never say "done" based only on prompts.
+
+**Authoritative user-paste file:** GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt. Do not use the obsolete all-85-at-once instruction. Never ask for permission to start first batch after selected cover.
