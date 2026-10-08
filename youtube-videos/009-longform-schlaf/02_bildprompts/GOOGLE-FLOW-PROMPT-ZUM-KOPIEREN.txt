@@ -4,7 +4,7 @@ Purpose: create friendly educational illustrations about human sleep. This conte
 
 STYLE: 16:9 polished Clean Animated Biology Illustration, matching the approved video 008: clean precise shapes, soft organic shading and depth, light cream/lavender/turquoise space, clear coral/blue/teal biological colors, calm natural lighting. For night shots add indigo as a gentle accent while keeping the visual world bright and readable. Anatomical illustrations are simplified separate educational motifs, not invasive views into a person. Each image shows one clear idea. Maintain useful visual variety between wide scenes, simple organ illustrations, neuron macros and warm everyday contexts.
 
-VISIBLE TEXT: on each cover, exactly the German title Was macht dein Körper nachts? and nothing else. Normal scenes have only specifically listed short German biology labels or no writing at all. Keep text high contrast: dark on light, light on dark. Internal scene IDs are only save names and must never appear inside artwork.
+VISIBLE TEXT: each cover contains exactly one visible text block: the German title Was macht dein Körper nachts? and nothing else. Normal scenes have only specifically listed short German biology labels or no writing at all. Keep text high contrast: dark on light, light on dark. Internal production IDs, scene numbers and file names are only save metadata and must never appear inside artwork.
 
 WORKFLOW: FIRST create THREE different independent 16:9 cover images, each as its own image, not a three-panel collage. Generate all three if the tools allow. Show the three to the user for selection and then WAIT for choice 1, 2 or 3. Do not begin further scenes before the choice.
 
