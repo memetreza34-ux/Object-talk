@@ -1,0 +1,95 @@
+GOOGLE FLOW – VIDEO 009 SCHLAF – 85 EINZELBILDER
+Create exactly 85 original, consistent 16:9 still illustrations. Clean Animated Biology Illustration: recognizable simplified anatomy, smooth shapes, clean outlines, soft gradients and subtle dimensional depth.
+VISUAL VARIETY: mix warm dusk, deep indigo night, teal/coral macro biology, neutral sleep-lab scenes and golden dawn. Vary camera/scale/lighting. Avoid monotonous pastel backdrops and repetitive centered hero objects.
+ONE IDEA PER FRAME. Usually 2–4 important objects. Never render multi-panel school infographics, diagrams with many arrows, UI cards or extra decorative symbols.
+METADATA RULE: Production identifiers, file names, scene indices, prompt headings and strings like Bild_01 are ONLY instructions for saving. NEVER render these visibly inside the generated picture.
+Exactly one visible text block on COVER, title ONLY: Was macht dein Körper nachts?; no subtitle, anatomical label or stray text.
+Normal scenes: render only the specified 0–2 German labels; if no labels are listed render ZERO visible text. Visible words must be correctly spelled. Light background => dark text; dark background => light text. Poor contrast => REGENERATE.
+Never allow Remotion-visible text, photorealism, glossy medical CGI, human mascots or excessive details. Scene description is not a subtitle.
+Generate in internal batches of five, keep going; reject scientific errors, duplicated compositions or visual clones. File number shown below is metadata, not artwork.
+
+01 / SAVE filename Bild_01.png. Strong cover: one peaceful sleeping silhouette, translucent softly lit brain, elegant indigo night; spacious title zone, only main title. Visible title exactly Was macht dein Körper nachts? and NO OTHER TEXT.
+02 / SAVE filename Bild_02.png. Wide sleeper at night, subtle activity suggested under skin only in brain and chest; visually different from the close cover. NO VISIBLE TEXT.
+03 / SAVE filename Bild_03.png. Side cutaway: quiet sleeping person, visible gently active brain and torso, no extra icons. NO VISIBLE TEXT.
+04 / SAVE filename Bild_04.png. Macro brain with a few softly active neural connections, isolated focused process. NO VISIBLE TEXT.
+05 / SAVE filename Bild_05.png. Single organic wave moving across a sleeping body, suggesting changing phases without labeled chart. NO VISIBLE TEXT.
+06 / SAVE filename Bild_06.png. Warm sunset room transitioning to nighttime with one sleeping figure, simple cinematic composition. NO VISIBLE TEXT.
+07 / SAVE filename Bild_07.png. Quiet progression of fading sunlight over the same bedroom window, one continuous transition without multiple panels. NO VISIBLE TEXT.
+08 / SAVE filename Bild_08.png. Daytime desk with awake person, increasing soft translucent pressure motifs around head, low-detail scene. NO VISIBLE TEXT.
+09 / SAVE filename Bild_09.png. Close-up of two simplified nerve cells with adenosine particles between, accurate generic molecular metaphor. ONLY visible German labels: Adenosin. No other text.
+10 / SAVE filename Bild_10.png. Same character in afternoon, drooping eyelids beside warm window, subtle temporal progression. NO VISIBLE TEXT.
+11 / SAVE filename Bild_11.png. Stylized body clock inside brain illuminated by morning light, avoid actual mechanical gear in brain. NO VISIBLE TEXT.
+12 / SAVE filename Bild_12.png. Sunrise light entering eyes, gentle path toward simplified brain, clear one-way signal. NO VISIBLE TEXT.
+13 / SAVE filename Bild_13.png. Twilight window, simplified pineal region in brain gently releasing particles, low complexity. ONLY visible German labels: Melatonin. No other text.
+14 / SAVE filename Bild_14.png. Macro hormone particles signal night to a body silhouette; no power-off symbols. NO VISIBLE TEXT.
+15 / SAVE filename Bild_15.png. Late-night close-up of eye exposed to bright room light, background dark; avoid harmful laser-like beams. NO VISIBLE TEXT.
+16 / SAVE filename Bild_16.png. Two distinct soft light streams converging near a relaxing sleeping silhouette, not infographic panels. NO VISIBLE TEXT.
+17 / SAVE filename Bild_17.png. A person sleepy in daylight but wide-eyed under bright night room light, single split-light scene. NO VISIBLE TEXT.
+18 / SAVE filename Bild_18.png. Macro resting arm and shoulder relaxing, soft bedside light and gradually blurred background. NO VISIBLE TEXT.
+19 / SAVE filename Bild_19.png. Sleeping face in profile with soft door sound ripple, no text or sound icons. NO VISIBLE TEXT.
+20 / SAVE filename Bild_20.png. Stylized EEG-like rhythmic neural waves on a softly visible brain, organic not dashboard. NO VISIBLE TEXT.
+21 / SAVE filename Bild_21.png. Close macro of brief bright neural bursts in otherwise calm blue network, one motif. NO VISIBLE TEXT.
+22 / SAVE filename Bild_22.png. Sleep laboratory close-up, unobtrusive EEG electrodes on sleeper head, scientist instruments only softly suggested. NO VISIBLE TEXT.
+23 / SAVE filename Bild_23.png. Anatomical chest cutaway with a calmly beating heart and blue ambient night palette. NO VISIBLE TEXT.
+24 / SAVE filename Bild_24.png. Close-up of rib cage breathing gently, subtle lung movement implied by positions. NO VISIBLE TEXT.
+25 / SAVE filename Bild_25.png. Large simplified slow brain waves spreading across cortex, darker calming indigo. ONLY visible German labels: Tiefschlaf. No other text.
+26 / SAVE filename Bild_26.png. Single brain cross-section with broad smooth synchronous wave pattern, no busy labels. NO VISIBLE TEXT.
+27 / SAVE filename Bild_27.png. Macro simplified neurons briefly synchronized in a smooth broad coordinated wave, no writing. NO VISIBLE TEXT.
+28 / SAVE filename Bild_28.png. Sleep scene with soft ambient sound fading before reaching sleeping person, cinematic. NO VISIBLE TEXT.
+29 / SAVE filename Bild_29.png. Close-up of relaxed anatomical heart in chest, subdued blood flow, warm biological red against deep teal. NO VISIBLE TEXT.
+30 / SAVE filename Bild_30.png. Flowing red blood cell traveling through a vessel toward a simple organ tissue, single route. NO VISIBLE TEXT.
+31 / SAVE filename Bild_31.png. Single illustrated cell receiving oxygen from nearby capillary, one main process. NO VISIBLE TEXT.
+32 / SAVE filename Bild_32.png. Illustrated endocrine gland releasing a few distinct hormone particles into one vessel, simplified. NO VISIBLE TEXT.
+33 / SAVE filename Bild_33.png. Pituitary region highlighted within brain, few hormone particles enter circulation, no exaggerated scaling. ONLY visible German labels: Wachstumshormon. No other text.
+34 / SAVE filename Bild_34.png. Close-up of tissue cells renewing structural proteins, restrained repair process without miracle effect. NO VISIBLE TEXT.
+35 / SAVE filename Bild_35.png. Macro muscle fibers resting with subtle routine protein renewal, unchanged size, avoid exaggerated growth. NO VISIBLE TEXT.
+36 / SAVE filename Bild_36.png. Same tissue area in a daylight environment, active ordinary cells, visual continuity. NO VISIBLE TEXT.
+37 / SAVE filename Bild_37.png. Quiet body cutaway with gentle blood flow and active cells, keep just two focal areas. NO VISIBLE TEXT.
+38 / SAVE filename Bild_38.png. Night sky over bed transitioning from early night; deep-indigo sleep waves prominent only early. NO VISIBLE TEXT.
+39 / SAVE filename Bild_39.png. Zoom inside brain from sleeper to an active curved network of memory connections. NO VISIBLE TEXT.
+40 / SAVE filename Bild_40.png. Daylight close-up of hands learning a simple guitar chord, no books full of text. NO VISIBLE TEXT.
+41 / SAVE filename Bild_41.png. Evening memory trace represented by a few illuminated neuron connections, organic realistic metaphor. NO VISIBLE TEXT.
+42 / SAVE filename Bild_42.png. Neural network: a weak connection becomes more stable, no archive or computer interface. ONLY visible German labels: Gedächtnis. No other text.
+43 / SAVE filename Bild_43.png. Two neurons with synaptic contact becoming functionally more coordinated, no magical wiring growth. ONLY visible German labels: Synapse. No other text.
+44 / SAVE filename Bild_44.png. Gentle illustrative contrast: organic neuron circuit instead of a literal computer disk; focus on brain. NO VISIBLE TEXT.
+45 / SAVE filename Bild_45.png. Abstract memory trace becomes selective small illuminated synapses, no movie screen or file metaphor. NO VISIBLE TEXT.
+46 / SAVE filename Bild_46.png. Different neural rhythms crossing one brain over time as gentle colored layers, no multipanel infographic. NO VISIBLE TEXT.
+47 / SAVE filename Bild_47.png. Morning learner looks distracted at desk with a simple blurred notebook background. NO VISIBLE TEXT.
+48 / SAVE filename Bild_48.png. Macro neural signal fading before reaching a previously active connection, visual metaphor labeled none. NO VISIBLE TEXT.
+49 / SAVE filename Bild_49.png. Night close-up of active synapse subtly echoed by a daytime learning scene in background. NO VISIBLE TEXT.
+50 / SAVE filename Bild_50.png. Macro white blood cell patrolling gently through tissue while person sleeps, avoid military metaphors. NO VISIBLE TEXT.
+51 / SAVE filename Bild_51.png. Two immune cells exchanging messenger particles in soft tissue, simple and precise. NO VISIBLE TEXT.
+52 / SAVE filename Bild_52.png. Immune cell moving along vessel with a soft light-dark gradient, not an alarm or clock diagram. NO VISIBLE TEXT.
+53 / SAVE filename Bild_53.png. Tissue cutaway with one immune cell interacting with local cell, no button metaphor. NO VISIBLE TEXT.
+54 / SAVE filename Bild_54.png. Sleep-deprived person's side profile, muted immune cell network in background, cautious metaphor. NO VISIBLE TEXT.
+55 / SAVE filename Bild_55.png. Macro immune system with one white cell communicating with another across small tissue gap, calm night environment. NO VISIBLE TEXT.
+56 / SAVE filename Bild_56.png. Simple sleeping character with calm immune activity, no shields or medical promises. NO VISIBLE TEXT.
+57 / SAVE filename Bild_57.png. Gentle body cutaway focused on heartbeat and blood circulation as night light slowly shifts. NO VISIBLE TEXT.
+58 / SAVE filename Bild_58.png. Wide view of sleeping body with softly visible lung motion and pulse in foreground. NO VISIBLE TEXT.
+59 / SAVE filename Bild_59.png. Sleeping head silhouette, deeper night, luminous internal brain activity beginning to intensify. NO VISIBLE TEXT.
+60 / SAVE filename Bild_60.png. Detailed but simple brain cutaway with lively warm neural pathways, no human face inside. ONLY visible German labels: REM-Schlaf. No other text.
+61 / SAVE filename Bild_61.png. Close-up of closed eyelids with subtle indicated eye positions, no words or arrows. NO VISIBLE TEXT.
+62 / SAVE filename Bild_62.png. Brain waves similar across a softly connected wake-to-sleep visual, avoid full chart. NO VISIBLE TEXT.
+63 / SAVE filename Bild_63.png. Dreamlike floating familiar street and abstract memories above sleeping head, no surreal gore. NO VISIBLE TEXT.
+64 / SAVE filename Bild_64.png. Body cutaway showing quiet skeletal muscle fibers with brainstem signal control, no red stop sign. NO VISIBLE TEXT.
+65 / SAVE filename Bild_65.png. Person sleeping still while subtle nonliteral running dream projection remains separate. NO VISIBLE TEXT.
+66 / SAVE filename Bild_66.png. Close anatomy of heart and chest, small variation of breathing amplitude, no graph. NO VISIBLE TEXT.
+67 / SAVE filename Bild_67.png. Dream fragment of walking through a colorful doorway softly dissolving into morning light. NO VISIBLE TEXT.
+68 / SAVE filename Bild_68.png. Dreamlike recognizable bedroom doorway opening to an impossible but gentle illustrated garden, not scary. NO VISIBLE TEXT.
+69 / SAVE filename Bild_69.png. Close thoughtful illustration of branching dream pathways inside brain fading into unknown distance. NO VISIBLE TEXT.
+70 / SAVE filename Bild_70.png. Close neural network connected to subtle familiar emotional facial expressions, not simplistic happy/sad icons. NO VISIBLE TEXT.
+71 / SAVE filename Bild_71.png. Strong single brain glow inside sleeping silhouette with dark contrasting background. NO VISIBLE TEXT.
+72 / SAVE filename Bild_72.png. Continuous ribbon-shaped sleeping rhythm repeating along night sky, no labels or segmented boxes. NO VISIBLE TEXT.
+73 / SAVE filename Bild_73.png. Bedside moon arc tracking one organic loop across sky, no numbers as text. NO VISIBLE TEXT.
+74 / SAVE filename Bild_74.png. Nighttime bedroom with several repeated soft light crescents over window, no numbered markers. NO VISIBLE TEXT.
+75 / SAVE filename Bild_75.png. Early-night indigo brain waves look slower and broader above resting head. NO VISIBLE TEXT.
+76 / SAVE filename Bild_76.png. Pre-dawn sleeper with longer flowing dream-like illustration overhead, no clock interface. NO VISIBLE TEXT.
+77 / SAVE filename Bild_77.png. Sleeping eyes briefly half-open near dawn light, gentle seamless scene. NO VISIBLE TEXT.
+78 / SAVE filename Bild_78.png. Morning person wakes slowly by window, overall relaxed body, no sleep-stage chart. NO VISIBLE TEXT.
+79 / SAVE filename Bild_79.png. Morning sunlight across bed and curtains, calm and naturally timed awakening. NO VISIBLE TEXT.
+80 / SAVE filename Bild_80.png. Bedroom clock and sleeper silhouette, natural scene with no rendered clock digits. NO VISIBLE TEXT.
+81 / SAVE filename Bild_81.png. Tired person under morning light; fading night behind, modest contrast, no exaggerated fix. NO VISIBLE TEXT.
+82 / SAVE filename Bild_82.png. Night body cutaway showing just a calm brain and beating heart as two focal components. NO VISIBLE TEXT.
+83 / SAVE filename Bild_83.png. Single organic transition from brain activity to neuron connection, smooth macro scale shift. NO VISIBLE TEXT.
+84 / SAVE filename Bild_84.png. Sunrise over sleeping figure transitioning to awake person standing, one natural visual journey. NO VISIBLE TEXT.
+85 / SAVE filename Bild_85.png. Final hopeful daylight bedroom with awake silhouette, soft brain glow fading, no text. NO VISIBLE TEXT.
