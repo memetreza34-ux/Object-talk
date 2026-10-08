@@ -1,0 +1,16 @@
+# YouTube-Caption – Schlaf
+
+## Titel
+Was passiert in deinem Körper, während du schläfst? | Schlaf einfach erklärt
+
+## Beschreibung
+Was macht dein Gehirn, während du schläfst – und warum ist Schlaf viel mehr als eine Pause?
+
+Wir folgen einer Nacht durch deinen Körper: Zuerst erklären wir Schlafdruck, Adenosin und die innere Uhr. Danach geht es durch die leichteren Schlafstufen bis in den Tiefschlaf. Du siehst, was mit Herzschlag, Atmung und Hormonen passiert und weshalb Schlaf für Lernen, Gedächtnis und das Immunsystem wichtig ist.
+
+Anschließend zeigen wir die REM-Phase mit Träumen und schnellen Augenbewegungen – und erklären, warum sich Tiefschlaf und REM im Lauf der Nacht abwechseln.
+
+Eine verständliche Biologie-Erklärung mit klaren Illustrationen, ohne übertriebene Gesundheitsversprechen.
+
+## Hashtags
+#Schlaf #Biologie #Gehirn #Gesundheit #ObjectTalk

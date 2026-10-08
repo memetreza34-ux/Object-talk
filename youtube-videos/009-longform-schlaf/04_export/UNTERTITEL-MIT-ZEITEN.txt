@@ -1,0 +1,4 @@
+PENDING – erst nach finalem Voiceover, Whisper und timeline.json automatisch erzeugen.
+Quelle: python tools/export_subtitles.py youtube-videos/009-longform-schlaf
+Das vollständige, noch ungetimte Script steht in 01_script/script.txt.
+Keine Zeiten schätzen. Kein YouTube-ready-Status vor echtem Export.

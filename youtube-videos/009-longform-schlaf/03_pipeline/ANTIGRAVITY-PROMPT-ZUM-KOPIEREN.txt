@@ -1,0 +1,21 @@
+ANTIGRAVITY / REMOTION – VIDEO 009 SCHLAF
+
+PROJEKT: youtube-videos/009-longform-schlaf/
+ZIEL: 6:00–7:00 Minuten, 1920×1080 / 30 fps, 85 unterschiedliche Flow-Bilder.
+
+1. Lies PROJECT_CONTRACT.md, AGENTS.md, engine/EXPORT-STANDARD.md und alle Projektunterlagen.
+2. Keine Medien erraten: Erst echte finale Voice und 85 geprüfte Bilder verwenden. Fehlende Assets = HARD FAIL.
+3. Baue `final-voiceover.wav` nach Kanalstandard (1.10x, Pause-Kontrolle). Erzeuge mit Whisper exakte Wortzeiten und eine lückenlose Timeline.
+4. Vorher `python tools/validate_planning_v2.py youtube-videos/009-longform-schlaf` und nach Bild-QA mit `--phase2` ausführen.
+5. Danach `python tools/prepare_phase3.py youtube-videos/009-longform-schlaf` ausführen. Diese Routine erzeugt nach Timeline automatisch die externen Untertitel-Dateien.
+6. Alle 85 Bilder 100 % vollformatig; Schnitt entlang des gesprochenen Abschnitts. Kein Einzelbild >7 Sekunden, keine Assets doppelt, keine unsynchronen Sequenzen. Bei Regelverstoß STOP statt Strecken.
+7. Bewegung nur dezent: 2–4 % Zoom oder 20–30 px Pan, niemals Beschriftungen abschneiden. Die Cover-Szene ist als etwa 3–4 Sekunden geplant – tatsächlich bestimmt das finale Audio die Dauer.
+8. Remotion darf KEINEN sichtbaren Text erzeugen: keine Überschriften, Kapiteltexte, Labels, Untertitel, Bildnummern, Dateinamen oder Credits. `overlay-plan.json` muss DISABLED und scenes=[] bleiben. Untertitel nur als separate `.srt`.
+9. Erstelle `UNTERTITEL-MIT-ZEITEN.txt` und `UNTERTITEL-YOUTUBE.srt` aus der validierten `timeline.json`, niemals durch Schätzungen.
+10. Finales MP4 im `renderer`:
+   npm install
+   npm run render -- ../youtube-videos/009-longform-schlaf/04_export/fertiges-video/Object-Talk-009-Schlaf-YOUTUBE.mp4
+11. QA: echtes Video komplett ansehen, alle 85 Bilder, 6–7 Minuten, korrekte Fachbegriffe, keine Mehrfach-Infografiken, Bildwelt einheitlich, kontrastreiche Labels, 0 Remotion-Text und sauberer Ton.
+12. Fülle Renderbericht/Scorecard/Postmortem aus und markiere es NUR bei allen PASS als YouTube-ready.
+
+Fehlende Bild-/Audiodaten, falsche Anatomie oder Script-Mismatch: STOP, keine Fakes.
