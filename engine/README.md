@@ -98,21 +98,16 @@ Zeitcodes niemals schätzen.
 
 ## Aktive Produktion
 
-`youtube-videos/008-longform-verdauung/`
+`youtube-videos/009-longform-schlaf/`
 
-Thema: **Was passiert mit Essen in deinem Koerper?**
+Thema: **Was passiert in deinem Körper, während du schläfst?**
 
-Status: **erstes regulaeres Longform-Video**
+Status: **Longform 009 / Phase 1 erstellt / Medien ausstehend**.
 
-Ziel:
-- 6–7 Minuten
-- ca. 1.110 Woerter Voiceover
-- 77 eindeutige Bilder
-- komplette Verdauungsreise von Mund bis Enddarm
-- wissenschaftlich gepruefte Trennung von Blut- und Lymphweg
-- Hook → Einleitung → kausaler Hauptteil → Schluss
-
-Die Testphase `000–007` bleibt als historische Lernbasis erhalten, ist aber nicht mehr aktive Produktion.
+- 6–7 Minuten Ziel; 1.058 Wörter; 85 individuelle Flow-Bilder.
+- Themen: Schlafdruck, innere Uhr, Schlafstadien, Herz, Hormone, Gedächtnis, Immunsystem und REM.
+- Erstes Cover kurz, nur Titel; Farb-/Lichtvariation; kein überladener Mehrfachprozess.
+- Vorheriger Longform-Film: 008 Verdauung.
 
 ## Produktionsablauf
 

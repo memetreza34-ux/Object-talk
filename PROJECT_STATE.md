@@ -1,118 +1,50 @@
 # Object-Talk – Project State
 
-Letzte Aktualisierung: 04.10.2026
+Letzte Aktualisierung: 08.10.2026
 
 ## Aktive Produktion
 
-`youtube-videos/008-longform-verdauung/`
+`youtube-videos/009-longform-schlaf/`
 
-Thema:
-**Was passiert mit Essen in deinem Körper?**
+**Thema:** Was passiert in deinem Körper, während du schläfst?
 
-Status:
-**ERSTES REGULÄRES LONGFORM-VIDEO / PHASE 1 VORBEREITET**
+**Status: PHASE 1 VORBEREITET / MEDIEN AUSSTEHEND.** Es gibt noch keine finale Voice, keine akzeptierten Flow-Bilder und kein YouTube-MP4 im neuen Projekt.
 
-Die Testphase 000–007 ist abgeschlossen. Neue Produktionen sollen grundsätzlich als reguläre Longform-Videos geplant werden, sofern der Nutzer nicht ausdrücklich einen neuen Test bestellt.
+## Ziel für Video 009
 
-## Ziel für 008
+- Laufzeit: **6:00–7:00 Minuten** nach echter Audioverarbeitung bestätigen.
+- Script: **1.058 Wörter**, 85 einzigartige semantische Bilder.
+- 16:9, 1920×1080, 30fps; finales Voice 1.10×.
+- Cover nur Titel `Was macht dein Körper nachts?` und zeitlich kurz.
+- Starke Hook → Schlafdruck/innere Uhr → Schlafstadien → Tiefschlaf/Körper → Gedächtnis → Immunsystem → REM/Träume → Zyklen → Schluss.
+- Jeder Frame: eine Hauptaussage, höchstens zwei kurze Labels, Kontrast Pflicht, keine Mehrfachtafeln.
+- Mehr Licht-/Farbvariation (Dämmerung, Dunkelblau, warme Körperfarben, Morgenlicht).
+- 0 sichtbarer Remotion-Text und 0 sichtbare Produktionsnummern.
+- keine Bildduplikate; nie länger als 7 Sekunden pro Bild.
 
-- finale Laufzeit: **6:00–7:00 Minuten**
-- Script: ca. **1.110 Wörter**
-- **77 eindeutige Illustrationen**
-- 16:9 / 1920×1080 / 30 fps
-- Voice standardmäßig 1.10x
-- keine künstliche Laufzeitstreckung
-- kein Standbild länger als 7 Sekunden
-- keine Bildduplikate
+## Recherche und Dateien
 
-## Dramaturgie
+- NIH/NHLBI, NICHD, CDC als Quellen.
+- `01_script/script.txt` und kopierbarer Voice-Text.
+- `05_info/Recherche.md`, Claim-Matrix, Mechanism Map, 85 Szenen, 85 Satz-Visual-Beats.
+- `02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt` für 85 Bilder mit deutscher Text-Whitelist.
+- `03_pipeline/ANTIGRAVITY-PROMPT-ZUM-KOPIEREN.txt`, deaktivierter Overlayplan.
+- `04_export/` mit Videoziel, individueller Caption, YouTube-SRT und komplettem zeitcodiertem Script.
+- SRT und Zeit-Script bleiben bis zur finalen `timeline.json` ausdrücklich PENDING.
 
-1. Hook: Was wird aus einem Bissen nach dem Schlucken?
-2. Wendung: Verdauung beginnt bereits im Mund.
-3. Mund: Kauen, Speichel, Amylase.
-4. Schlucken und Peristaltik.
-5. Magen: Mischen, Säure, Pepsin, Schutzschicht.
-6. Dünndarm: Pankreas, Bicarbonat, Verdauungsenzyme.
-7. Leber/Gallenblase: Galle und Fettverdauung.
-8. Aufspaltung der Nährstoffe.
-9. Darmzotten/Mikrovilli und Aufnahme.
-10. Zucker/Aminosäuren → Blut → Leber.
-11. viele Fette → Chylomikronen → Lymphe → Blut.
-12. Nutzung der Nährstoffbausteine.
-13. Dickdarm, Wasseraufnahme, Mikroorganismen und Reste.
-14. Schluss: Aus Essen werden nutzbare Bausteine.
+## Vorherige Produktion 008
 
-## Verbindliche Bildwelt
-
-**Clean Animated Biology Illustration**
-
-Autoritativ:
-- `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
-- `bildwelt/FLOW-STYLE-BLOCK.txt`
-- `engine/VISIBLE-TEXT-STANDARD.md`
-
-## Harte Bild-/Textregeln
-
-- **Cover = exakt ein sichtbarer Textblock, nur Titel**
-- Cover 008: `Was passiert mit Essen?`
-- keine Zusatzlabels auf dem Cover
-- normale Bilder: 0–2 Labels, bevorzugt 0–1
-- jedes Label maximal 3 Wörter
-- wenn ein Bild ohne Label verständlich ist: kein Label
-- heller Hintergrund → dunkle Schrift
-- dunkler Hintergrund → helle Schrift
-- schwacher Kontrast = FAIL / regenerieren
-- eine Hauptidee pro Bild
-- bevorzugt 2–4 zentrale sichtbare Elemente
-- lieber mehr Bilder als ein überladener Frame
-- Produktionsnummern/Dateinamen niemals sichtbar
-
-## Präsentationssystem
-
-**100 % Vollbild-Illustration. Remotion erzeugt keinen sichtbaren Text.**
-
-Remotion darf nur:
-- Audio
-- Timing
-- statische Vollbildbilder
-- sanfte Push-/Pull-/Pan-Bewegungen
-- Schnitte
-- dezente nicht-textliche Übergänge
-- Rendering
-
-`03_pipeline/overlay-plan.json` bleibt deaktiviert und leer.
-
-## Phase 1 vorbereitet
-
-Vorhanden:
-- finales Script
-- Voiceover-Zum-Kopieren
-- Recherche
-- Claim-Matrix
-- Mechanism Map
-- 77 semantische Szenen
-- Visual-Plan
-- Label-Plan
-- kompletter Google-Flow-Prompt für 77 Bilder
-- Flow-Agent-Regeln
-- Bild-QA-Gate
-- deaktivierter Overlay-Plan
-- Antigravity-/Phase-3-Prompt
-- Produktionsplan
+`youtube-videos/008-longform-verdauung/` ist das vorherige Longform-Thema. Der Nutzer hat einen gerenderten Film zur Besprechung bereitgestellt. Im GitHub-Repo ist die finale Master-MP4 samt echten Zeitdaten noch nicht als geprüftes Exportpaket abgelegt. Nicht fälschlich als repo-seitig YouTube-ready deklarieren.
 
 ## Nächster Produktionsschritt
 
-1. `python tools/validate_planning_v2.py youtube-videos/008-longform-verdauung`
-2. Voice aus `01_script/VOICEOVER-ZUM-KOPIEREN.txt` erzeugen.
-3. Voice auf 1.10x kanonisieren und echte Laufzeit prüfen.
-4. 77 Flow-Bilder einzeln erzeugen.
-5. Jedes Bild wissenschaftlich, visuell, textlich und auf Informationsdichte prüfen.
-6. Phase-2-Validator ausführen.
-7. Whisper/Timeline erstellen.
-8. textfreien Remotion-Render bauen.
-9. kompletten finalen Film visuell prüfen.
-10. Scorecard + Postmortem ausfüllen.
+1. `python tools/validate_planning_v2.py youtube-videos/009-longform-schlaf`
+2. Finale Voice aufnehmen/generieren und Laufzeit prüfen.
+3. Alle 85 Flow-Bilder erstellen, einzeln wissenschaftlich und visuell reviewen.
+4. `python tools/validate_planning_v2.py youtube-videos/009-longform-schlaf --phase2`
+5. `python tools/prepare_phase3.py youtube-videos/009-longform-schlaf`.
+6. MP4 rendern, komplette Sicht-/Tonprüfung, Untertitel aus echter Timeline, Export-QA.
 
-## Testphase
+## Historie
 
-Die Piloten `000` bis `007` bleiben als Lern- und Fehlerhistorie erhalten, sind aber nicht mehr aktive Produktion.
+Pilotphase 000–007 abgeschlossen; Bildwelt: **Clean Animated Biology Illustration**.

@@ -46,7 +46,7 @@ Interne `TEST`-Piloten sind davon ausgenommen, wenn sie ausschließlich Pipeline
 | 005 | IDEE | Kreislauf | Wie transportiert Blut Sauerstoff? | spätere Longform: Sauerstofftransport deutlich tiefer, ggf. Sättigung, Belastung, Regulation | Testpiloten 001/005 behandeln nur die Grundreise |
 | 006 | IDEE | Immunsystem | Wie bekämpft der Körper Bakterien? | angeborene Immunabwehr vereinfacht erklären | Pilot 006 berührt Immunzellen nur im Kontext Wundheilung |
 | 007 | IDEE | Ernährung | Was passiert nach einer proteinreichen Mahlzeit? | Verdauung von Protein, Aminosäuren und Nutzung im Körper | Testpilot 003 berührt Protein nur als Baustoff für Muskelanpassung |
-| 008 | IDEE | Schlaf | Was passiert im Körper, während wir schlafen? | Gehirn, Erholung, Gedächtnis, Hormone und Schlafphasen als Überblick | – |
+| 008 | IN ARBEIT | Schlaf | Was passiert im Körper, während wir schlafen? | Gehirn, Erholung, Gedächtnis, Hormone und Schlafphasen als Überblick | – |
 | 009 | IDEE | Muskeln | Wie wächst ein Muskel? | spätere Longform: Training, Hypertrophie, Proteinsynthese, Ernährung, Regeneration und Progression deutlich tiefer | Testpilot 003 behandelt nur vereinfachte Grundkette |
 | 010 | IDEE | Gehirn | Wie entsteht eine Erinnerung? | Verarbeitung, Synapsen und Gedächtnisbildung vereinfacht | 003 teilweise |
 | 011 | IDEE | Haut | Wie heilt eine Wunde? | spätere Longform: Hämostase, Entzündung, Proliferation, Remodeling und Narbenbildung deutlich tiefer | Testpilot 006 behandelt nur die vereinfachte Grundkette |
@@ -76,6 +76,12 @@ Ziel:
 Abgrenzung:
 - behandelt den gesamten Verdauungsweg als Überblick
 - spätere Videos können einzelne Teilthemen wie Zucker, Protein, Mikrobiom oder Leber deutlich tiefer behandeln
+
+## Longform-Produktion 009 – Schlaf
+
+Projekt: `youtube-videos/009-longform-schlaf/`
+
+**Status: IN ARBEIT – Phase 1 erstellt.** 6–7 Minuten geplant; 1.058 Wörter und 85 verschiedene Bilder. Schlafdruck/Adenosin, circadiane Uhr/Melatonin, NREM-Stufen/Tiefschlaf, Kreislauf/Hormone, Gedächtnis, Immunsystem, REM/Träume und zyklischer Verlauf. Wissenschaftlicher Rahmen NIH/NHLBI/NICHD/CDC. Kein Video zu Schlafstörungen oder individuellem Therapierat.
 
 ## Interne Tests
 
