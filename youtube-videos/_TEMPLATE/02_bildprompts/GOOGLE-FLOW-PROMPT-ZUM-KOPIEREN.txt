@@ -1,18 +1,23 @@
-GOOGLE FLOW – [VIDEO_ID] – 3 COVERS FIRST
+OBJECT-TALK – EINZIGER GOOGLE-FLOW-PROMPT FÜR [VIDEO_ID]
 
-Replace ALL [PLACEHOLDERS] with the exact video-specific content BEFORE sending to Google Flow. Never send an unfinished template.
+Diesen Platzhalter vor der Produktion komplett durch konkrete Szenen- und Coverbeschreibungen ersetzen. Agenten lesen intern engine/FLOW-COVER-FIRST-WORKFLOW.md. Der Nutzer sieht/braucht anschließend NUR DIESE EINE DATEI.
 
-STEP A – Generate EXACTLY THREE SEPARATE 16:9 cover candidates in the approved Clean Animated Biology Illustration look (soft shaded recognizable anatomy, gentle depth, precise outlines, no dark flat clipart style). This is NOT a request for all [TOTAL_IMAGES] images now.
+VERBINDLICHER ABLAUF:
+1. Sofort exakt 3 unterschiedliche SEPARATE 16:9 Cover-Bilder erzeugen (NICHT eine Collage). Auf jedem als einziger sichtbarer Text genau derselbe deutsche Titel: [EXAKTER COVER-TITEL]. Jede Option bekommt einen eigenen vollständig konkretisierten Cover-Prompt. Nicht fragen, bevor alle drei Bilder tatsächlich vorliegen.
+2. Dem Nutzer alle drei Cover zeigen und genau fragen: „Welches Cover wählst du – 1, 2 oder 3?“ STOP und auf Auswahl warten. Keine anderen Szenen erzeugen.
+3. Nach seiner Wahl nur das gewählte Cover als endgültiges Bild_01.png behalten. OHNE erneute Rückfrage sofort Bild_02–Bild_06 einzeln erzeugen; weitere Bilder in internen Fünfergruppen direkt aus dem untenstehenden vollständigen Szenenregister. Letzter Block ggf. kürzer. Bei Plattform-Limit offen den nächsten Startpunkt nennen und nach „weiter“ an gleicher Stelle fortsetzen. Keine separate Batch-Promptdatei erforderlich.
+4. Final genau Bild_01.png bis Bild_[NN].png in eine einzige ZIP packen; der Nutzer legt sie in 02_bildprompts/bilder-zip.
 
-Every cover: exactly ONE visible text block, identical German title [EXACT_COVER_TITLE]. No other text, numbers or labels.
+VISUELLE WELT: Genehmigte Clean Animated Biology Illustration aus Video 008; plastisch-weiche organische Zeichnung, saubere Linien, lesbare Anatomie, harmonische helle Farben mit thematisch passenden dunkleren Akzenten. Keine flachen dunklen Clipart-Silhouetten oder Fotoreal-/CGI-Welt.
 
-COVER 1: [DIFFERENT COVER DESIGN A WITH SPECIFIC SUBJECT/COMPOSITION/COLORS]
-COVER 2: [DIFFERENT COVER DESIGN B WITH SPECIFIC SUBJECT/COMPOSITION/COLORS]
-COVER 3: [DIFFERENT COVER DESIGN C WITH SPECIFIC SUBJECT/COMPOSITION/COLORS]
+SICHTBARER TEXT: Cover exactly one visible text block, nur Titel. Jede andere Szene 0–2 kurze deutsche Labels nur wenn unten angegeben, sonst kein Text. Light background = dark text, dark background = light text. Production IDs, numbers, filenames and all prompt instructions are NEVER visible in the generated artwork. Ein Lehrpunkt pro Bild. Keine überladenen Mehrfachinfografiken.
 
-Generate all THREE images individually, not one collage. Check spelling/contrast and show all. Ask ONLY 'Welches Cover wählst du – 1, 2 oder 3?' STOP until the user's choice.
+DREI COVER-VARIANTEN (jede als einzelne klare ausführbare Szene angeben):
+1. [COVER A: eigenes konkretes Layout, Motiv, Textplatzierung]
+2. [COVER B: eigenes konkretes Layout, Motiv, Textplatzierung]
+3. [COVER C: eigenes konkretes Layout, Motiv, Textplatzierung]
 
-STEP B – After user selects: keep only selected Cover as Bild_01.png; immediately create next FIVE images as separate artworks, no additional permission question:
-[INSERT EXACT SCENE BRIEFS FOR BILD_02 THROUGH BILD_06 ONLY]
+NUR NACH COVERWAHL: VOLLSTÄNDIGES SZENENREGISTER, bereits in 5er-Gruppen zu verarbeiten:
+[HIER alle Szenen ab Bild_02 bis Bild_NN mit konkretem englischem Bildprompt, erlaubten Labels und internem Dateinamen einsetzen. Keine zusätzliche Promptdatei.]
 
-STEP C – Use the standalone batch prompts under 5er-batches/, FIVE scenes max per prompt. Do not paste all scenes at once. Do not invent missing scene briefs or violate tool limits. Only verified accepted assets in final ZIP, no visible production filenames.
+FINAL: kein Bild fehlt oder wurde doppelt genutzt. ZIP enthält nur akzeptierte Endbilder. Behaupte nie, Bilder oder ZIP existierten, solange sie nicht wirklich erstellt wurden.
