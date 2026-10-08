@@ -80,7 +80,7 @@ def main() -> None:
     audio_dir = project / "01_script" / "audio"
     prompt_dir = project / "02_bildprompts"
     zip_dir = prompt_dir / "bilder-zip"
-    images_dir = prompt_dir / "images"
+    images_dir = (project / "03_pipeline" / "images") if (project / "05_info" / "label-plan.json").is_file() else (prompt_dir / "images")
     pipeline_dir = project / "03_pipeline"
     timing_dir = pipeline_dir / "timing"
     scene_map = pipeline_dir / "scene-map.json"

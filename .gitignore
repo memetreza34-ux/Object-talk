@@ -43,3 +43,10 @@ youtube-videos/*/04_export/fertiges-video/*.qa.json
 youtube-videos/*/04_export/subtitles/*.srt
 
 # Template placeholders/READMEs remain tracked because the glob above only targets real media extensions.
+
+# New simplified Flow workflow: output images live under 03_pipeline
+youtube-videos/*/03_pipeline/images/*.png
+youtube-videos/*/03_pipeline/images/*.jpg
+youtube-videos/*/03_pipeline/images/*.jpeg
+youtube-videos/*/03_pipeline/images/*.webp
+youtube-videos/*/03_pipeline/flow-import-report.json

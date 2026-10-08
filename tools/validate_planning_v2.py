@@ -181,7 +181,9 @@ def validate_phase1(project: Path) -> set[str]:
     mechanism_path = project / "05_info" / "mechanism-map.md"
     sentence_plan_path = project / "05_info" / "sentence-visual-plan.json"
     scenes_path = project / "05_info" / "phase1-scenes.json"
-    label_plan_path = project / "02_bildprompts" / "label-plan.json"
+    label_plan_path = project / "05_info" / "label-plan.json"
+    if not label_plan_path.is_file():  # backwards compatibility: older video projects
+        label_plan_path = project / "02_bildprompts" / "label-plan.json"
     flow_prompt_path = project / "02_bildprompts" / "GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt"
 
     for path in (
@@ -403,8 +405,11 @@ def validate_phase1(project: Path) -> set[str]:
 
 
 def validate_phase2(project: Path, expected_ids: set[str]) -> None:
-    review_path = project / "02_bildprompts" / "image-review.json"
-    images_dir = project / "02_bildprompts" / "images"
+    review_path = project / "05_info" / "image-review.json"
+    images_dir = project / "03_pipeline" / "images"
+    if not review_path.is_file():  # backwards compatibility: older video projects
+        review_path = project / "02_bildprompts" / "image-review.json"
+        images_dir = project / "02_bildprompts" / "images"
     require_file(review_path)
     if not images_dir.is_dir():
         fail(f"finaler Bilderordner fehlt: {images_dir}")
