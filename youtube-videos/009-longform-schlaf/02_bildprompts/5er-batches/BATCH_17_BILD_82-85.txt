@@ -1,0 +1,11 @@
+VIDEO 009 FLOW BATCH 17: generate precisely 4 distinct SEPARATE 16:9 artworks. Gate: the user explicitly chose 1 of 3 already generated cover candidates. Otherwise STOP and wait for their choice. Do not ask to start the batch or invent missing scenes. Keep approved Video-008 style: premium clean biology illustration, dimensional soft-gradient organic forms, fine outlines, recognizable science, pale cream/teal, coral and warm details; indigo limited to nighttime accents. NEVER flat monochrome silhouette clipart. No duplicate images. One main event per image; max 2 exact German labels when stated; strong text contrast. Never visibly render file names, numbers or English prompts.
+
+SAVE METADATA Bild_82.png: Night body cutaway showing just a calm brain and beating heart as two focal components. NO VISIBLE TEXT.
+
+SAVE METADATA Bild_83.png: Single organic transition from brain activity to neuron connection, smooth macro scale shift. NO VISIBLE TEXT.
+
+SAVE METADATA Bild_84.png: Sunrise over sleeping figure transitioning to awake person standing, one natural visual journey. NO VISIBLE TEXT.
+
+SAVE METADATA Bild_85.png: Final hopeful daylight bedroom with awake silhouette, soft brain glow fading, no text. NO VISIBLE TEXT.
+
+Check image science, readability, uniqueness and continuity and regenerate errors. If next batch is known continue automatically, otherwise request specifically the next batch file.

@@ -1,0 +1,13 @@
+VIDEO 009 FLOW BATCH 12: generate precisely 5 distinct SEPARATE 16:9 artworks. Gate: the user explicitly chose 1 of 3 already generated cover candidates. Otherwise STOP and wait for their choice. Do not ask to start the batch or invent missing scenes. Keep approved Video-008 style: premium clean biology illustration, dimensional soft-gradient organic forms, fine outlines, recognizable science, pale cream/teal, coral and warm details; indigo limited to nighttime accents. NEVER flat monochrome silhouette clipart. No duplicate images. One main event per image; max 2 exact German labels when stated; strong text contrast. Never visibly render file names, numbers or English prompts.
+
+SAVE METADATA Bild_57.png: Gentle body cutaway focused on heartbeat and blood circulation as night light slowly shifts. NO VISIBLE TEXT.
+
+SAVE METADATA Bild_58.png: Wide view of sleeping body with softly visible lung motion and pulse in foreground. NO VISIBLE TEXT.
+
+SAVE METADATA Bild_59.png: Sleeping head silhouette, deeper night, luminous internal brain activity beginning to intensify. NO VISIBLE TEXT.
+
+SAVE METADATA Bild_60.png: Detailed but simple brain cutaway with lively warm neural pathways, no human face inside. ONLY VISIBLE LABEL(S): REM-Schlaf
+
+SAVE METADATA Bild_61.png: Close-up of closed eyelids with subtle indicated eye positions, no words or arrows. NO VISIBLE TEXT.
+
+Check image science, readability, uniqueness and continuity and regenerate errors. If next batch is known continue automatically, otherwise request specifically the next batch file.

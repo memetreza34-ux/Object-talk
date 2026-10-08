@@ -1,0 +1,13 @@
+VIDEO 009 FLOW BATCH 15: generate precisely 5 distinct SEPARATE 16:9 artworks. Gate: the user explicitly chose 1 of 3 already generated cover candidates. Otherwise STOP and wait for their choice. Do not ask to start the batch or invent missing scenes. Keep approved Video-008 style: premium clean biology illustration, dimensional soft-gradient organic forms, fine outlines, recognizable science, pale cream/teal, coral and warm details; indigo limited to nighttime accents. NEVER flat monochrome silhouette clipart. No duplicate images. One main event per image; max 2 exact German labels when stated; strong text contrast. Never visibly render file names, numbers or English prompts.
+
+SAVE METADATA Bild_72.png: Continuous ribbon-shaped sleeping rhythm repeating along night sky, no labels or segmented boxes. NO VISIBLE TEXT.
+
+SAVE METADATA Bild_73.png: Bedside moon arc tracking one organic loop across sky, no numbers as text. NO VISIBLE TEXT.
+
+SAVE METADATA Bild_74.png: Nighttime bedroom with several repeated soft light crescents over window, no numbered markers. NO VISIBLE TEXT.
+
+SAVE METADATA Bild_75.png: Early-night indigo brain waves look slower and broader above resting head. NO VISIBLE TEXT.
+
+SAVE METADATA Bild_76.png: Pre-dawn sleeper with longer flowing dream-like illustration overhead, no clock interface. NO VISIBLE TEXT.
+
+Check image science, readability, uniqueness and continuity and regenerate errors. If next batch is known continue automatically, otherwise request specifically the next batch file.
