@@ -1,0 +1,13 @@
+VIDEO 009 FLOW BATCH 10: exactly 5 SEPARATE images (not an infographic grid), after the user has chosen 1 of 3 real cover variants. NO generation if not selected. Never print file names/IDs or prompt metadata in artworks. Same approved Video 008 biology illustration: clean organic anatomy, soft gradients, slight dimensional depth, clear contours, light calm backgrounds and warm/cool accents; indigo only as night accent. No flat silhouette clipart. One clear teaching point/image. Visible German labels only where listed (max 2); high text contrast.
+
+INTERNAL FILE Bild_47.png: Morning learner looks distracted at desk with a simple blurred notebook background. NO VISIBLE TEXT.
+
+INTERNAL FILE Bild_48.png: Macro neural signal fading before reaching a previously active connection, visual metaphor labeled none. NO VISIBLE TEXT.
+
+INTERNAL FILE Bild_49.png: Night close-up of active synapse subtly echoed by a daytime learning scene in background. NO VISIBLE TEXT.
+
+INTERNAL FILE Bild_50.png: Macro white blood cell patrolling gently through tissue while person sleeps, avoid military metaphors. NO VISIBLE TEXT.
+
+INTERNAL FILE Bild_51.png: Two immune cells exchanging messenger particles in soft tissue, simple and precise. NO VISIBLE TEXT.
+
+Check all 5 artworks visually, regenerate errors. When next concrete batch prompt exists, continue without generic question. If no prompt available request only next batch file; never invent descriptions.

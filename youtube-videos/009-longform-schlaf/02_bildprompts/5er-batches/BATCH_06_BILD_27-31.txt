@@ -1,0 +1,13 @@
+VIDEO 009 FLOW BATCH 6: exactly 5 SEPARATE images (not an infographic grid), after the user has chosen 1 of 3 real cover variants. NO generation if not selected. Never print file names/IDs or prompt metadata in artworks. Same approved Video 008 biology illustration: clean organic anatomy, soft gradients, slight dimensional depth, clear contours, light calm backgrounds and warm/cool accents; indigo only as night accent. No flat silhouette clipart. One clear teaching point/image. Visible German labels only where listed (max 2); high text contrast.
+
+INTERNAL FILE Bild_27.png: Macro simplified neurons briefly synchronized in a smooth broad coordinated wave, no writing. NO VISIBLE TEXT.
+
+INTERNAL FILE Bild_28.png: Sleep scene with soft ambient sound fading before reaching sleeping person, cinematic. NO VISIBLE TEXT.
+
+INTERNAL FILE Bild_29.png: Close-up of relaxed anatomical heart in chest, subdued blood flow, warm biological red against deep teal. NO VISIBLE TEXT.
+
+INTERNAL FILE Bild_30.png: Flowing red blood cell traveling through a vessel toward a simple organ tissue, single route. NO VISIBLE TEXT.
+
+INTERNAL FILE Bild_31.png: Single illustrated cell receiving oxygen from nearby capillary, one main process. NO VISIBLE TEXT.
+
+Check all 5 artworks visually, regenerate errors. When next concrete batch prompt exists, continue without generic question. If no prompt available request only next batch file; never invent descriptions.
