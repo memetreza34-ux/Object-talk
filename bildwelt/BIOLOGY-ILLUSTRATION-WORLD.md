@@ -160,3 +160,19 @@ Eine spaetere `assets/channel/STYLE_REFERENCE.png` darf als zusaetzlicher visuel
 Ein gutes Object-Talk-Bild ist:
 
 **schoene Illustration + sofort verstaendliche Biologie + eine Hauptidee + wenig Text + hoher Kontrast + keine unnoetigen Details.**
+
+## Freigegebenes Longform-Referenzvideo – 008 Verdauung (HARTE STILBINDUNG)
+
+Der **exakt ursprüngliche Stilblock aus dem erfolgreichen Video 008** lautet:
+
+> Clean Animated Biology Illustration: simplified but recognizable anatomy, smooth organic forms, clean outlines, soft gradients, subtle depth, bright calm backgrounds, clear biological colors, low complexity, one dominant biological idea per frame.
+
+Fehlstile aus Video 008:
+
+> No photoreal medical imagery, no medical CGI, no glossy 3D, no feature-animation/Pixar look, no toy/kids-book look, no corporate infographic, no clutter, no gore, no random icons, no unnecessary text.
+
+Dieser Stilblock bleibt auch bei Themen wie Schlaf, Träumen oder nächtlichen Körperprozessen dominant: überwiegend helle, ruhige Illustrationshintergründe, hochwertige gezeichnete biologische Formen, zarte Schatten und klare Farben. **Kein neuer dunkler Neon-, Anime-, Sci-Fi- oder glühende-Gehirne-Stil.** Nacht wird nur in einzelnen Kontextbildern durch dezente Farb-/Lichtakzente angedeutet. Menschliche Figuren dürfen ergänzen, biologische Illustration bleibt das Hauptmotiv.
+
+Das gewählte Cover ist **nur das erste Endbild**, NIEMALS Stilreferenz für die anderen 84 Szenen. Es darf nicht als Referenzbild an Flow übergeben werden, wenn dadurch die Szenen Bild 02+ die Coverpalette oder die Coverkomposition kopieren. Stattdessen den kanonischen Textstil auf jeden Einzelprompt anwenden.
+
+QA-Hard-Fail: Wenn Bilder in den dunklen leuchtenden Comic-/Schlafposter-Stil abdriften, nicht ins finale Assetset übernehmen; nach Vorlage 008 neu erstellen.

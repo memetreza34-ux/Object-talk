@@ -19,6 +19,16 @@ Authoritative files:
 
 Do not revive historical 2.5D, soft-3D, premium-3D, feature-animation or other old pilot styles.
 
+## EXACT STYLE INHERITANCE FROM VIDEO 008
+
+Every production MUST use the literal style definition from the last accepted longform video 008:
+
+`Clean Animated Biology Illustration: simplified but recognizable anatomy, smooth organic forms, clean outlines, soft gradients, subtle depth, bright calm backgrounds, clear biological colors, low complexity, one dominant biological idea per frame.`
+
+Reject No photoreal medical imagery, no medical CGI, no glossy 3D, no feature-animation/Pixar look, no toy/kids-book look, no corporate infographic, no clutter, no gore, no random icons, no unnecessary text.
+
+**Do not use the selected cover as image-to-image reference or visual palette/style reference for the full episode.** Especially for sleep: bright calm educational anatomy illustrations, NOT neon floating glowing brains, dark blue fantasy scenes, anime humans or monochrome dark style. Keep the same illustrated biology world as 008, regardless of topic. Cover selection gates the asset Bild_01 only.
+
 ## STYLE RULES
 
 Every biology/health frame should use:

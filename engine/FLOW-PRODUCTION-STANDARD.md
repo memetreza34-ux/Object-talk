@@ -12,6 +12,18 @@ Nutze:
 
 Keine historischen 2.5D-, Soft-3D- oder Premium-3D-Regeln verwenden.
 
+## VERBINDLICHE STILKOPIE AUS VIDEO 008
+
+Originaler Flow-Stilblock aus Video 008, wortgleich benutzen:
+
+`Clean Animated Biology Illustration: simplified but recognizable anatomy, smooth organic forms, clean outlines, soft gradients, subtle depth, bright calm backgrounds, clear biological colors, low complexity, one dominant biological idea per frame.`
+
+Originale Ausschlussregel:
+
+`No photoreal medical imagery, no medical CGI, no glossy 3D, no feature-animation/Pixar look, no toy/kids-book look, no corporate infographic, no clutter, no gore, no random icons, no unnecessary text.`
+
+Jedes Folgebild soll im selben hellen, sanft schattierten biomedizinischen Zeichenstil bleiben. Titelbild/Flow-Cover ist kein Stilanker. Bei Themen mit Nacht/Traum kein dunkles Comic-/Neon-Look-and-Feel zulassen. **Wenn die Themenästhetik den Illustrationsstil überschreibt: Image QA FAIL.**
+
 ## 2. Prompt-Schema
 
 Prompts kurz halten:
