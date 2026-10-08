@@ -1,1 +1,0 @@
-TEMPLATE – replace title and designs for each episode. Create exactly three distinct separate cover candidates (not a collage). All with the identical title-only text [EXACT_COVER_TITLE] in the approved Biology Illustration style. [COVER_DESIGN_A], [COVER_DESIGN_B], [COVER_DESIGN_C]. Show all three and ask the user ONLY to choose 1/2/3. No scene generation before selection.

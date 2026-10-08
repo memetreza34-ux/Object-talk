@@ -1,9 +1,0 @@
-{
-  "stage": "AWAITING_THREE_COVERS_AND_USER_SELECTION",
-  "candidate_count_required": 3,
-  "cover_selection": null,
-  "first_batch_start": 2,
-  "max_batch_size": 5,
-  "actual_media_status": "PENDING",
-  "required": "Use engine/FLOW-COVER-FIRST-WORKFLOW.md and fill all batch prompt files from scene plan."
-}
