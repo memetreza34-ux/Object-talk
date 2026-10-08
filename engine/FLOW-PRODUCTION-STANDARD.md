@@ -39,6 +39,13 @@ Wenn ein Bild zu komplex wird:
 
 **Mehr einfache Bilder sind besser als ein ueberladenes Bild.**
 
+
+## COVER-FIRST-WORKFLOW – HARTE PRODUKTIONSREIHENFOLGE
+
+Autoritativ: `engine/FLOW-COVER-FIRST-WORKFLOW.md`.
+
+**ZUERST drei einzelne Cover generieren → alle drei zeigen → NUR nach Auswahl 1/2/3 die Szene 02+ starten → restliche Szenen in Fünferbatches.** Kein einziges Cover als 3 Optionen ausgeben, keine generische Rückfrage „Soll ich mit den ersten fünf beginnen?“, keine 85 Bilder gleichzeitig an Flow übergeben. Der erste kopierbare Flow-Prompt darf nur drei Cover und höchstens den unmittelbar nach Freigabe folgenden ersten Fünferbatch enthalten. Image-ID ausschließlich als Datei-Metadatum. Im fertigen Video nur ausgewähltes Cover.
+
 ## 4. Cover
 
 Das Cover / `Bild_01` darf genau einen sichtbaren Textblock enthalten:
