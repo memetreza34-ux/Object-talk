@@ -1,35 +1,111 @@
-OBJECT-TALK 009 GOOGLE FLOW – PHASE 1: THREE COVER OPTIONS FIRST
+OBJECT-TALK 009 — EINZIGER GOOGLE-FLOW-PROMPT
+Du bist der Bildproduktions-Agent für ein 6–7-minütiges, deutschsprachiges Biologie-Video. Dieser EINE Prompt enthält den gesamten Ablauf und ALLE Szenen. Du brauchst keine weiteren Prompt-Dateien.
 
-THIS IS A STAGED JOB. DO NOT GENERATE OR DISCUSS 85 SCENES YET. Create THREE genuinely different SEPARATE 16:9 cover images; not a collage or triptych. If you can generate only one per tool call, call the image tool three times without asking the user in between.
+VERBINDLICHER ABLAUF — LIES DIES VOR DEN SZENEN:
+PHASE 1 (JETZT): Erzeuge zuerst genau DREI unterschiedliche, EIGENSTÄNDIGE Cover-Bilder im Format 16:9. Nicht als Collage. Wenn pro Toolaufruf nur ein Bild möglich ist, führe drei Bildgenerierungen nacheinander aus. Erst wenn alle drei wirklich existieren, zeige Cover 1, 2 und 3 und frage ausschließlich: „Welches Cover wählst du – 1, 2 oder 3?“ Dann WARTEN. Die Szenenliste weiter unten ist für SPÄTER und bedeutet NICHT, jetzt alle 85 Bilder zu erzeugen.
+PHASE 2 (NACH NUTZERWAHL): Die ausgewählte Variante wird das einzige finale Bild_01.png; die beiden anderen nicht in die fertige ZIP übernehmen. Beginne OHNE weitere Freigabe direkt mit genau FÜNF einzelnen Bildern 02–06. Danach arbeite die Bilder in weiteren Fünfergruppen in aufsteigender Reihenfolge ab: 07–11, 12–16 und so weiter; letzter Block 82–85. Nutze dafür nur die unten stehenden Szenen. Keine Collagen, keine zusätzlichen Nachfragen nach dem Start jedes Batches. Falls Google Flow seine Ausgabe pro Lauf begrenzt oder auf weitere Benutzerinteraktion wartet, sage klar, bis zu welcher Bildnummer du gekommen bist; nach „weiter“ bei der nächsten fehlenden Nummer fortsetzen. Keine erfundene Hintergrundautomatisierung.
+PHASE 3 (AM ENDE): Jedes endgültig akzeptierte Einzelbild intern sauber als Bild_01.png bis Bild_85.png benennen (Namen dürfen NIE im Bild stehen). Nur 85 akzeptierte Endbilder in EINE ZIP packen, keine alternativen Covers, keine Doppelungen, keine Dateilücken. Die ZIP heißt BILDER-009-FINAL.zip. Nutzer legt sie in den Ordner 02_bildprompts/bilder-zip. Kein weiteres Text-Prompt nötig.
 
-STYLE LOCK: Same approved Video 008 Clean Animated Biology Illustration: soft shaded organic anatomy, clean precise outlines, gentle gradients, real visual depth within a clearly hand-illustrated look, light cream/lavender/turquoise backgrounds, lively coral/teal/blue accents. Sleep blue/navy is only a night accent, NOT a flat dark silhouetted clipart world. 16:9; visually appealing scientific illustrations. No CGI, realistic photos or overly flat vector silhouettes.
+BILDWELT — WIE DAS FREIGEGEBENE VIDEO 008:
+Clean Animated Biology Illustration, hochwertige handillustrierte Animations-Ästhetik mit klarer, vereinfacht erkennbarer Anatomie, feinen sauberen Konturen, weicher plastischer Farbmodellierung und subtiler Tiefe. Helle ruhige Flächen (Creme, Hellblau, Mint, Lavendel) mit Korallrot/Türkis/Blau für biologische Formen. Bei Nachtmotiven darf Dunkelblau als Akzent vorkommen, ABER KEINE eintönige dunkle flache Silhouetten-Clipart-Bildwelt. 16:9; wissenschaftlich plausibel. Jedes Bild erklärt nur einen klaren Vorgang; meist 2–4 relevante Elemente, verschiedene Ansichten/Zoomstufen.
+VISIBLE TEXT POLICY (HARD): Production IDs, filenames, scene indices, prompt headers or internal instructions are NEVER visible in any generated image. Cover EXACTLY ONE VISIBLE TEXT BLOCK, the exact German title below, with no other labels. All other scenes: 0–2 German labels ONLY when the scene explicitly lists them, otherwise ZERO VISIBLE TEXT. Short labels (max 3 words), no extra captions. Strong contrast: light background → DARK text, dark background → LIGHT text. Reject wrong spelling, clutter, anatomy errors, excessive information, unwanted text or flat black/navy clipart. Remotion adds zero text.
 
-All filenames, prompt headings, Bild_XX and numbers are metadata ONLY and MUST NEVER appear in the artwork. White/pale background uses dark readable text; dark background uses bright readable text. Do not add unsolicited words. One visual process, no infographic clutter.
+COVER — ERST JETZT DREI VERSCHIEDENE OPTIONEN ERZEUGEN:
+JEDE OPTION ZEIGT GENAU DIESEN EINZIGEN SICHTBAREN TITEL: Was macht dein Körper nachts?
+1 / TEMPORÄRES Cover A: Ruhiges, freundlich hell illustriertes Schlafzimmer, ein schlafender Mensch im Dreiviertelwinkel auf dem Kopfkissen. Sanft durchscheinender Kopf mit biologisch erkennbarem blau-türkisem Gehirn, weiche Farbverläufe und korallfarbene Akzente, hellcremiger Freiraum LINKS für große dunkle Titelschrift. Kein flacher Scherenschnitt.
+2 / TEMPORÄRES Cover B: Hochwertige biologische Makroillustration eines ruhenden Kopfes mit subtil sichtbarem Neuronennetz und anatomisch erkennbarem Gehirn; weiche Lichtreflexe, türkise Korallenfarben, heller Lavendelhintergrund. Freie Fläche RECHTS für gut lesbaren dunkelblauen Titel.
+3 / TEMPORÄRES Cover C: Weite, leicht plastische biologische Querschnittsillustration eines schlafenden Oberkörpers in einem freundlich beleuchteten Dämmerungszimmer; Kopf und Gehirn plus ruhig arbeitender Brustbereich im Fokus. Heller Raum OBEN LINKS für den einzigen Titel. Gleicher Zeichenstil wie Video 008.
+STOP nach der tatsächlichen Generierung dieser DREI Cover und der einen Auswahlfrage. Die folgenden Szenen sind ausschließlich der Plan für PHASE 2 NACH meiner Coverwahl.
 
-Each cover MUST show EXACTLY ONE TEXT BLOCK with this identical correctly spelled German title: Was macht dein Körper nachts?. No extra captions, labels, numbering or brand text.
+--------------------
+PHASE 2 SCENE INDEX — VOLLSTÄNDIG, ABER ERST NACH COVER-AUSWAHL AUSFÜHREN
+Arbeite nur in aufeinanderfolgenden Batches von maximal fünf Bildern. Bilder IMMER einzeln. Der interne Dateiname ist kein Text für das Bild.
+--------------------
 
-1 / COVER_A.png (save name is metadata): Warm cream bedroom illustration with a shaded sleeping person on a pillow; transparent upper head revealing a recognizable softly glowing turquoise/coral brain; indigo duvet accent. Large calm pale space LEFT with exactly one dark navy title.
+02 | INTERNAL OUTPUT FILENAME: Bild_02.png (never render this name). SCENE: Wide sleeper at night, subtle activity suggested under skin only in brain and chest; visually different from the close cover. NO VISIBLE TEXT.
+03 | INTERNAL OUTPUT FILENAME: Bild_03.png (never render this name). SCENE: Side cutaway: quiet sleeping person, visible gently active brain and torso, no extra icons. NO VISIBLE TEXT.
+04 | INTERNAL OUTPUT FILENAME: Bild_04.png (never render this name). SCENE: Macro brain with a few softly active neural connections, isolated focused process. NO VISIBLE TEXT.
+05 | INTERNAL OUTPUT FILENAME: Bild_05.png (never render this name). SCENE: Single organic wave moving across a sleeping body, suggesting changing phases without labeled chart. NO VISIBLE TEXT.
+06 | INTERNAL OUTPUT FILENAME: Bild_06.png (never render this name). SCENE: Warm sunset room transitioning to nighttime with one sleeping figure, simple cinematic composition. NO VISIBLE TEXT.
+07 | INTERNAL OUTPUT FILENAME: Bild_07.png (never render this name). SCENE: Quiet progression of fading sunlight over the same bedroom window, one continuous transition without multiple panels. NO VISIBLE TEXT.
+08 | INTERNAL OUTPUT FILENAME: Bild_08.png (never render this name). SCENE: Daytime desk with awake person, increasing soft translucent pressure motifs around head, low-detail scene. NO VISIBLE TEXT.
+09 | INTERNAL OUTPUT FILENAME: Bild_09.png (never render this name). SCENE: Close-up of two simplified nerve cells with adenosine particles between, accurate generic molecular metaphor. ALLOWED VISIBLE GERMAN LABEL(S) ONLY: Adenosin. NO OTHER TEXT.
+10 | INTERNAL OUTPUT FILENAME: Bild_10.png (never render this name). SCENE: Same character in afternoon, drooping eyelids beside warm window, subtle temporal progression. NO VISIBLE TEXT.
+11 | INTERNAL OUTPUT FILENAME: Bild_11.png (never render this name). SCENE: Stylized body clock inside brain illuminated by morning light, avoid actual mechanical gear in brain. NO VISIBLE TEXT.
+12 | INTERNAL OUTPUT FILENAME: Bild_12.png (never render this name). SCENE: Sunrise light entering eyes, gentle path toward simplified brain, clear one-way signal. NO VISIBLE TEXT.
+13 | INTERNAL OUTPUT FILENAME: Bild_13.png (never render this name). SCENE: Twilight window, simplified pineal region in brain gently releasing particles, low complexity. ALLOWED VISIBLE GERMAN LABEL(S) ONLY: Melatonin. NO OTHER TEXT.
+14 | INTERNAL OUTPUT FILENAME: Bild_14.png (never render this name). SCENE: Macro hormone particles signal night to a body silhouette; no power-off symbols. NO VISIBLE TEXT.
+15 | INTERNAL OUTPUT FILENAME: Bild_15.png (never render this name). SCENE: Late-night close-up of eye exposed to bright room light, background dark; avoid harmful laser-like beams. NO VISIBLE TEXT.
+16 | INTERNAL OUTPUT FILENAME: Bild_16.png (never render this name). SCENE: Two distinct soft light streams converging near a relaxing sleeping silhouette, not infographic panels. NO VISIBLE TEXT.
+17 | INTERNAL OUTPUT FILENAME: Bild_17.png (never render this name). SCENE: A person sleepy in daylight but wide-eyed under bright night room light, single split-light scene. NO VISIBLE TEXT.
+18 | INTERNAL OUTPUT FILENAME: Bild_18.png (never render this name). SCENE: Macro resting arm and shoulder relaxing, soft bedside light and gradually blurred background. NO VISIBLE TEXT.
+19 | INTERNAL OUTPUT FILENAME: Bild_19.png (never render this name). SCENE: Sleeping face in profile with soft door sound ripple, no text or sound icons. NO VISIBLE TEXT.
+20 | INTERNAL OUTPUT FILENAME: Bild_20.png (never render this name). SCENE: Stylized EEG-like rhythmic neural waves on a softly visible brain, organic not dashboard. NO VISIBLE TEXT.
+21 | INTERNAL OUTPUT FILENAME: Bild_21.png (never render this name). SCENE: Close macro of brief bright neural bursts in otherwise calm blue network, one motif. NO VISIBLE TEXT.
+22 | INTERNAL OUTPUT FILENAME: Bild_22.png (never render this name). SCENE: Sleep laboratory close-up, unobtrusive EEG electrodes on sleeper head, scientist instruments only softly suggested. NO VISIBLE TEXT.
+23 | INTERNAL OUTPUT FILENAME: Bild_23.png (never render this name). SCENE: Anatomical chest cutaway with a calmly beating heart and blue ambient night palette. NO VISIBLE TEXT.
+24 | INTERNAL OUTPUT FILENAME: Bild_24.png (never render this name). SCENE: Close-up of rib cage breathing gently, subtle lung movement implied by positions. NO VISIBLE TEXT.
+25 | INTERNAL OUTPUT FILENAME: Bild_25.png (never render this name). SCENE: Large simplified slow brain waves spreading across cortex, darker calming indigo. ALLOWED VISIBLE GERMAN LABEL(S) ONLY: Tiefschlaf. NO OTHER TEXT.
+26 | INTERNAL OUTPUT FILENAME: Bild_26.png (never render this name). SCENE: Single brain cross-section with broad smooth synchronous wave pattern, no busy labels. NO VISIBLE TEXT.
+27 | INTERNAL OUTPUT FILENAME: Bild_27.png (never render this name). SCENE: Macro simplified neurons briefly synchronized in a smooth broad coordinated wave, no writing. NO VISIBLE TEXT.
+28 | INTERNAL OUTPUT FILENAME: Bild_28.png (never render this name). SCENE: Sleep scene with soft ambient sound fading before reaching sleeping person, cinematic. NO VISIBLE TEXT.
+29 | INTERNAL OUTPUT FILENAME: Bild_29.png (never render this name). SCENE: Close-up of relaxed anatomical heart in chest, subdued blood flow, warm biological red against deep teal. NO VISIBLE TEXT.
+30 | INTERNAL OUTPUT FILENAME: Bild_30.png (never render this name). SCENE: Flowing red blood cell traveling through a vessel toward a simple organ tissue, single route. NO VISIBLE TEXT.
+31 | INTERNAL OUTPUT FILENAME: Bild_31.png (never render this name). SCENE: Single illustrated cell receiving oxygen from nearby capillary, one main process. NO VISIBLE TEXT.
+32 | INTERNAL OUTPUT FILENAME: Bild_32.png (never render this name). SCENE: Illustrated endocrine gland releasing a few distinct hormone particles into one vessel, simplified. NO VISIBLE TEXT.
+33 | INTERNAL OUTPUT FILENAME: Bild_33.png (never render this name). SCENE: Pituitary region highlighted within brain, few hormone particles enter circulation, no exaggerated scaling. ALLOWED VISIBLE GERMAN LABEL(S) ONLY: Wachstumshormon. NO OTHER TEXT.
+34 | INTERNAL OUTPUT FILENAME: Bild_34.png (never render this name). SCENE: Close-up of tissue cells renewing structural proteins, restrained repair process without miracle effect. NO VISIBLE TEXT.
+35 | INTERNAL OUTPUT FILENAME: Bild_35.png (never render this name). SCENE: Macro muscle fibers resting with subtle routine protein renewal, unchanged size, avoid exaggerated growth. NO VISIBLE TEXT.
+36 | INTERNAL OUTPUT FILENAME: Bild_36.png (never render this name). SCENE: Same tissue area in a daylight environment, active ordinary cells, visual continuity. NO VISIBLE TEXT.
+37 | INTERNAL OUTPUT FILENAME: Bild_37.png (never render this name). SCENE: Quiet body cutaway with gentle blood flow and active cells, keep just two focal areas. NO VISIBLE TEXT.
+38 | INTERNAL OUTPUT FILENAME: Bild_38.png (never render this name). SCENE: Night sky over bed transitioning from early night; deep-indigo sleep waves prominent only early. NO VISIBLE TEXT.
+39 | INTERNAL OUTPUT FILENAME: Bild_39.png (never render this name). SCENE: Zoom inside brain from sleeper to an active curved network of memory connections. NO VISIBLE TEXT.
+40 | INTERNAL OUTPUT FILENAME: Bild_40.png (never render this name). SCENE: Daylight close-up of hands learning a simple guitar chord, no books full of text. NO VISIBLE TEXT.
+41 | INTERNAL OUTPUT FILENAME: Bild_41.png (never render this name). SCENE: Evening memory trace represented by a few illuminated neuron connections, organic realistic metaphor. NO VISIBLE TEXT.
+42 | INTERNAL OUTPUT FILENAME: Bild_42.png (never render this name). SCENE: Neural network: a weak connection becomes more stable, no archive or computer interface. ALLOWED VISIBLE GERMAN LABEL(S) ONLY: Gedächtnis. NO OTHER TEXT.
+43 | INTERNAL OUTPUT FILENAME: Bild_43.png (never render this name). SCENE: Two neurons with synaptic contact becoming functionally more coordinated, no magical wiring growth. ALLOWED VISIBLE GERMAN LABEL(S) ONLY: Synapse. NO OTHER TEXT.
+44 | INTERNAL OUTPUT FILENAME: Bild_44.png (never render this name). SCENE: Gentle illustrative contrast: organic neuron circuit instead of a literal computer disk; focus on brain. NO VISIBLE TEXT.
+45 | INTERNAL OUTPUT FILENAME: Bild_45.png (never render this name). SCENE: Abstract memory trace becomes selective small illuminated synapses, no movie screen or file metaphor. NO VISIBLE TEXT.
+46 | INTERNAL OUTPUT FILENAME: Bild_46.png (never render this name). SCENE: Different neural rhythms crossing one brain over time as gentle colored layers, no multipanel infographic. NO VISIBLE TEXT.
+47 | INTERNAL OUTPUT FILENAME: Bild_47.png (never render this name). SCENE: Morning learner looks distracted at desk with a simple blurred notebook background. NO VISIBLE TEXT.
+48 | INTERNAL OUTPUT FILENAME: Bild_48.png (never render this name). SCENE: Macro neural signal fading before reaching a previously active connection, visual metaphor labeled none. NO VISIBLE TEXT.
+49 | INTERNAL OUTPUT FILENAME: Bild_49.png (never render this name). SCENE: Night close-up of active synapse subtly echoed by a daytime learning scene in background. NO VISIBLE TEXT.
+50 | INTERNAL OUTPUT FILENAME: Bild_50.png (never render this name). SCENE: Macro white blood cell patrolling gently through tissue while person sleeps, avoid military metaphors. NO VISIBLE TEXT.
+51 | INTERNAL OUTPUT FILENAME: Bild_51.png (never render this name). SCENE: Two immune cells exchanging messenger particles in soft tissue, simple and precise. NO VISIBLE TEXT.
+52 | INTERNAL OUTPUT FILENAME: Bild_52.png (never render this name). SCENE: Immune cell moving along vessel with a soft light-dark gradient, not an alarm or clock diagram. NO VISIBLE TEXT.
+53 | INTERNAL OUTPUT FILENAME: Bild_53.png (never render this name). SCENE: Tissue cutaway with one immune cell interacting with local cell, no button metaphor. NO VISIBLE TEXT.
+54 | INTERNAL OUTPUT FILENAME: Bild_54.png (never render this name). SCENE: Sleep-deprived person's side profile, muted immune cell network in background, cautious metaphor. NO VISIBLE TEXT.
+55 | INTERNAL OUTPUT FILENAME: Bild_55.png (never render this name). SCENE: Macro immune system with one white cell communicating with another across small tissue gap, calm night environment. NO VISIBLE TEXT.
+56 | INTERNAL OUTPUT FILENAME: Bild_56.png (never render this name). SCENE: Simple sleeping character with calm immune activity, no shields or medical promises. NO VISIBLE TEXT.
+57 | INTERNAL OUTPUT FILENAME: Bild_57.png (never render this name). SCENE: Gentle body cutaway focused on heartbeat and blood circulation as night light slowly shifts. NO VISIBLE TEXT.
+58 | INTERNAL OUTPUT FILENAME: Bild_58.png (never render this name). SCENE: Wide view of sleeping body with softly visible lung motion and pulse in foreground. NO VISIBLE TEXT.
+59 | INTERNAL OUTPUT FILENAME: Bild_59.png (never render this name). SCENE: Sleeping head silhouette, deeper night, luminous internal brain activity beginning to intensify. NO VISIBLE TEXT.
+60 | INTERNAL OUTPUT FILENAME: Bild_60.png (never render this name). SCENE: Detailed but simple brain cutaway with lively warm neural pathways, no human face inside. ALLOWED VISIBLE GERMAN LABEL(S) ONLY: REM-Schlaf. NO OTHER TEXT.
+61 | INTERNAL OUTPUT FILENAME: Bild_61.png (never render this name). SCENE: Close-up of closed eyelids with subtle indicated eye positions, no words or arrows. NO VISIBLE TEXT.
+62 | INTERNAL OUTPUT FILENAME: Bild_62.png (never render this name). SCENE: Brain waves similar across a softly connected wake-to-sleep visual, avoid full chart. NO VISIBLE TEXT.
+63 | INTERNAL OUTPUT FILENAME: Bild_63.png (never render this name). SCENE: Dreamlike floating familiar street and abstract memories above sleeping head, no surreal gore. NO VISIBLE TEXT.
+64 | INTERNAL OUTPUT FILENAME: Bild_64.png (never render this name). SCENE: Body cutaway showing quiet skeletal muscle fibers with brainstem signal control, no red stop sign. NO VISIBLE TEXT.
+65 | INTERNAL OUTPUT FILENAME: Bild_65.png (never render this name). SCENE: Person sleeping still while subtle nonliteral running dream projection remains separate. NO VISIBLE TEXT.
+66 | INTERNAL OUTPUT FILENAME: Bild_66.png (never render this name). SCENE: Close anatomy of heart and chest, small variation of breathing amplitude, no graph. NO VISIBLE TEXT.
+67 | INTERNAL OUTPUT FILENAME: Bild_67.png (never render this name). SCENE: Dream fragment of walking through a colorful doorway softly dissolving into morning light. NO VISIBLE TEXT.
+68 | INTERNAL OUTPUT FILENAME: Bild_68.png (never render this name). SCENE: Dreamlike recognizable bedroom doorway opening to an impossible but gentle illustrated garden, not scary. NO VISIBLE TEXT.
+69 | INTERNAL OUTPUT FILENAME: Bild_69.png (never render this name). SCENE: Close thoughtful illustration of branching dream pathways inside brain fading into unknown distance. NO VISIBLE TEXT.
+70 | INTERNAL OUTPUT FILENAME: Bild_70.png (never render this name). SCENE: Close neural network connected to subtle familiar emotional facial expressions, not simplistic happy/sad icons. NO VISIBLE TEXT.
+71 | INTERNAL OUTPUT FILENAME: Bild_71.png (never render this name). SCENE: Strong single brain glow inside sleeping silhouette with dark contrasting background. NO VISIBLE TEXT.
+72 | INTERNAL OUTPUT FILENAME: Bild_72.png (never render this name). SCENE: Continuous ribbon-shaped sleeping rhythm repeating along night sky, no labels or segmented boxes. NO VISIBLE TEXT.
+73 | INTERNAL OUTPUT FILENAME: Bild_73.png (never render this name). SCENE: Bedside moon arc tracking one organic loop across sky, no numbers as text. NO VISIBLE TEXT.
+74 | INTERNAL OUTPUT FILENAME: Bild_74.png (never render this name). SCENE: Nighttime bedroom with several repeated soft light crescents over window, no numbered markers. NO VISIBLE TEXT.
+75 | INTERNAL OUTPUT FILENAME: Bild_75.png (never render this name). SCENE: Early-night indigo brain waves look slower and broader above resting head. NO VISIBLE TEXT.
+76 | INTERNAL OUTPUT FILENAME: Bild_76.png (never render this name). SCENE: Pre-dawn sleeper with longer flowing dream-like illustration overhead, no clock interface. NO VISIBLE TEXT.
+77 | INTERNAL OUTPUT FILENAME: Bild_77.png (never render this name). SCENE: Sleeping eyes briefly half-open near dawn light, gentle seamless scene. NO VISIBLE TEXT.
+78 | INTERNAL OUTPUT FILENAME: Bild_78.png (never render this name). SCENE: Morning person wakes slowly by window, overall relaxed body, no sleep-stage chart. NO VISIBLE TEXT.
+79 | INTERNAL OUTPUT FILENAME: Bild_79.png (never render this name). SCENE: Morning sunlight across bed and curtains, calm and naturally timed awakening. NO VISIBLE TEXT.
+80 | INTERNAL OUTPUT FILENAME: Bild_80.png (never render this name). SCENE: Bedroom clock and sleeper silhouette, natural scene with no rendered clock digits. NO VISIBLE TEXT.
+81 | INTERNAL OUTPUT FILENAME: Bild_81.png (never render this name). SCENE: Tired person under morning light; fading night behind, modest contrast, no exaggerated fix. NO VISIBLE TEXT.
+82 | INTERNAL OUTPUT FILENAME: Bild_82.png (never render this name). SCENE: Night body cutaway showing just a calm brain and beating heart as two focal components. NO VISIBLE TEXT.
+83 | INTERNAL OUTPUT FILENAME: Bild_83.png (never render this name). SCENE: Single organic transition from brain activity to neuron connection, smooth macro scale shift. NO VISIBLE TEXT.
+84 | INTERNAL OUTPUT FILENAME: Bild_84.png (never render this name). SCENE: Sunrise over sleeping figure transitioning to awake person standing, one natural visual journey. NO VISIBLE TEXT.
+85 | INTERNAL OUTPUT FILENAME: Bild_85.png (never render this name). SCENE: Final hopeful daylight bedroom with awake silhouette, soft brain glow fading, no text. NO VISIBLE TEXT.
 
-2 / COVER_B.png (save name is metadata): Premium illustrated close-up of a sleeping head with a detailed but simplified gently glowing brain and neuron branches; pearl-lavender and light teal background, softly shaded anatomy. Open calm space RIGHT for one dark title.
-
-3 / COVER_C.png (save name is metadata): Wide three-quarter cutaway of sleeping upper body with a subtle visible brain and relaxed chest; warm twilight-to-light-blue bedroom colors, well lit scientific illustration. Open pale area UPPER LEFT for one dark title.
-
-ONLY when all THREE cover images truly exist and have passed spelling/contrast/visual QA: show all three to the user and ask precisely 'Welches Cover wählst du – 1, 2 oder 3?' STOP and wait for user choice. DO NOT generate the regular scenes or ask if you should make the first five.
-
-PHASE 2 – ONLY AFTER THE USER SELECTS COVER 1, 2 OR 3:
-Accept their chosen image as Bild_01.png and exclude the other two from the final ZIP. Immediately create exactly FIVE different 16:9 images Bild_02 through Bild_06, without asking whether to begin. Use the SAME approved Video-008-style illustration world, not a new dark silhouette look.
-
-STYLE LOCK: Same approved Video 008 Clean Animated Biology Illustration: soft shaded organic anatomy, clean precise outlines, gentle gradients, real visual depth within a clearly hand-illustrated look, light cream/lavender/turquoise backgrounds, lively coral/teal/blue accents. Sleep blue/navy is only a night accent, NOT a flat dark silhouetted clipart world. 16:9; visually appealing scientific illustrations. No CGI, realistic photos or overly flat vector silhouettes.
-All filenames, prompt headings, Bild_XX and numbers are metadata ONLY and MUST NEVER appear in the artwork. White/pale background uses dark readable text; dark background uses bright readable text. Do not add unsolicited words. One visual process, no infographic clutter.
-
-FILE Bild_02.png (metadata only): Wide sleeper at night, subtle activity suggested under skin only in brain and chest; visually different from the close cover. NO VISIBLE TEXT.
-
-FILE Bild_03.png (metadata only): Side cutaway: quiet sleeping person, visible gently active brain and torso, no extra icons. NO VISIBLE TEXT.
-
-FILE Bild_04.png (metadata only): Macro brain with a few softly active neural connections, isolated focused process. NO VISIBLE TEXT.
-
-FILE Bild_05.png (metadata only): Single organic wave moving across a sleeping body, suggesting changing phases without labeled chart. NO VISIBLE TEXT.
-
-FILE Bild_06.png (metadata only): Warm sunset room transitioning to nighttime with one sleeping figure, simple cinematic composition. NO VISIBLE TEXT.
-
-AFTER FIRST FIVE: generate further groups from the separately supplied 5er-batch files under 02_bildprompts/5er-batches/. Never paste all 85 prompts at once. If the next batch text is missing, request specifically that next batch file. Do not invent shots or pretend to work in the background. Final image list must be precisely Bild_01–Bild_85 with no duplicates or missing images.
+END CHECK: exactly 85 distinct final pictures, one selected cover and 84 story illustrations; correct German spelling/contrast, no file names visible, one main teaching idea per picture, consistent illustrated visual world. Only after finishing all real images output BILDER-009-FINAL.zip. The ZIP belongs in 02_bildprompts/bilder-zip.
+Never say the images or ZIP exist unless they actually do.
