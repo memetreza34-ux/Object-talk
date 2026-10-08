@@ -247,7 +247,7 @@ Das Cover `Bild_01` wird nicht automatisch als Stilanker fuer alle Folgebilder v
 
 ## Cover-Auswahl und Bildbatches – HARD RULE
 
-Alle neuen normalen Videos starten die Flow-Medienphase nach `engine/FLOW-COVER-FIRST-WORKFLOW.md`: **erst 3 unterschiedliche Cover einzeln erzeugen und anzeigen → genau 1 Nutzerwahl abwarten → erst dann Bilder 02+ in Gruppen von maximal 5**. Der nach der Auswahl sofort folgende erste Fünferbatch benötigt keine zweite Start-Erlaubnis. Niemals 85 Bilder als einen riesigen Flow-Auftrag übergeben. Image-IDs bleiben unsichtbare Metadaten, das finale Bildset enthält nur das gewählte Cover.
+Alle neuen normalen Videos starten die Flow-Medienphase nach `engine/FLOW-COVER-FIRST-WORKFLOW.md`: **erst 3 unterschiedliche Cover einzeln erzeugen und anzeigen → genau 1 Nutzerwahl abwarten → erst dann Bilder 02+ in Gruppen von maximal 5**. Der nach der Auswahl sofort folgende erste Fünferbatch benötigt keine zweite Start-Erlaubnis. Ein vollständiger einzelner Flow-Prompt darf alle 85 Szenen enthalten; Flow erzeugt trotzdem immer nur kleine Fünfergruppen, niemals alles in einem Bildgenerierungs-Aufruf. Der sichtbare Ordner enthält nur `GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt` und `bilder-zip/`. Interne QA liegt in `05_info`, entpackte Bilder in `03_pipeline`. Image-IDs bleiben unsichtbare Metadaten, das finale Bildset enthält nur das gewählte Cover.
 
 ## Drei Phasen
 

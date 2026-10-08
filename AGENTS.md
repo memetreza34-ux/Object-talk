@@ -125,7 +125,7 @@ Muss:
 
 Autoritativ: `engine/FLOW-COVER-FIRST-WORKFLOW.md`.
 
-**ZUERST drei einzelne Cover generieren → alle drei zeigen → NUR nach Auswahl 1/2/3 die Szene 02+ starten → restliche Szenen in Fünferbatches.** Kein einziges Cover als 3 Optionen ausgeben, keine generische Rückfrage „Soll ich mit den ersten fünf beginnen?“, keine 85 Bilder gleichzeitig an Flow übergeben. Der erste kopierbare Flow-Prompt darf nur drei Cover und höchstens den unmittelbar nach Freigabe folgenden ersten Fünferbatch enthalten. Image-ID ausschließlich als Datei-Metadatum. Im fertigen Video nur ausgewähltes Cover.
+**GENAU EINE vollständige Flow-Promptdatei im sichtbaren Ordner, plus EIN ZIP-Ablageordner.** Derselbe Prompt enthält drei Cover und das vollständige Szenenregister. Flow erzeugt erst drei Cover, zeigt sie und wartet auf Nutzerwahl 1/2/3; erst danach Bilder 02+ intern in Fünfergruppen, ohne weitere Promptdateien oder generische Rückfragen. Alle 85 Szenen dürfen im Prompt beschrieben stehen, werden aber NIE in einem einzigen Bildgenerierungs-Batch angefordert. Dateinummern nur Metadaten. Finale Bilder-ZIP unter `02_bildprompts/bilder-zip`, interne QA in `05_info`, entpackte Bilder in `03_pipeline/images`.
 
 ## Phase 2 – Google Flow
 

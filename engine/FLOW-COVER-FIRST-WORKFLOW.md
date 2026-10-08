@@ -1,33 +1,28 @@
-# Kanonischer Google-Flow-Ablauf – COVER FIRST
+# Google Flow – EIN Prompt und EIN ZIP-Ordner
 
-**VERBINDLICH fuer jedes neue normale Object-Talk-Video.** Bei speziell vom Nutzer angeordneten Tests kann ein expliziter Sonderablauf gelten.
+**KANONISCHER PRODUKTIONSSTANDARD** für alle neuen Object-Talk-Videos.
 
-## 1. Drei Cover VOR den Szenen
-1. Einen **eigenen ersten Flow-Auftrag** mit genau drei unterschiedlichen Cover-Kompositionen erzeugen.
-2. Flow muss drei eigenständige Bilddateien erzeugen (niemals ein 3er-Raster, niemals 1 Cover als drei behauptete Varianten).
-3. Alle drei zeigen nur denselben exakt festgelegten **deutschen Titel**, keine weiteren Texte/Labels, starke Schriftkontraste.
-4. Erst nachdem alle drei wirklich vorliegen: nebeneinander präsentieren, **genau einmal** die Auswahl 1/2/3 erfragen.
-5. **STOP** bis die Auswahl vorliegt. In dieser Phase keine Bilder 02+ und keine Frage wie „Soll ich die ersten fünf Bilder machen?“
+## Nutzeroberfläche – genau zwei Einträge
+Im jeweiligen Videoordner `02_bildprompts/` stehen:
+```text
+02_bildprompts/
+├── GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt
+└── bilder-zip/
+    └── README.md
+```
+Die README liegt **innerhalb** des ZIP-Ordners, nicht daneben. Dort genau **eine fertige Bilder-ZIP** ablegen. Der Ordner wird von `tools/prepare_phase3.py` direkt gelesen. Entpackte Bilder gehören intern unter `03_pipeline/images/`. Interne Label-/QA-Daten liegen in `05_info/label-plan.json` und `05_info/image-review.json`, nie sichtbar neben dem Nutzerprompt. Alte Projekte dürfen historische Pfade behalten.
 
-## 2. Auswahl und erster Fünfer-Batch
-Nach ausdrücklicher Nutzerwahl gilt nur die gewählte Coverdatei als finales `Bild_01.png`. Nicht gewählte Cover dürfen nicht in finale ZIP/Assets geraten. **Sofort** Bild 02–06 aus konkreten Storyboardaufträgen einzeln erzeugen, ohne eine zweite Startfreigabe zu erfragen.
+## Ein Prompt steuert drei Phasen
+Der Prompt ist **eine einzige vollständig ausgefüllte Textdatei** mit den 3 konkreten Cover-Varianten und dem gesamten, konkreten Szenenregister von Bild 02 bis Bild NN. Keine 17 separaten Textprompts oder Batchdateien.
 
-## 3. Fortsetzung in kleinen Batches
-- Alle restlichen Bilder über **separate, selbstständige 5er-Promptdateien**, in strikter Reihenfolge, maximal 5 Bilder pro Aufruf; letzter Block gegebenenfalls kürzer.
-- **Niemals alle z. B. 85 Szenen als einen massiven Google-Flow-Auftrag senden**: Einige Plattformen haben Limits und fragen sonst nach.
-- Batch-Dateien mit fertigen konkret beschriebenen Szenen sind Pflicht. Kein frei erfundener Folgebatch.
-- Vorhandene nächste Batchdatei direkt verarbeiten, **ohne** nach jedem Fünferpaket generisch um Erlaubnis zu fragen.
-- Falls die nächste Datei in der Flow-Konversation nicht vorliegt, nur konkret um die **nächste Batchdatei** bitten; Limits ehrlich benennen. Kein Hintergrund-Automatismus versprechen, wenn die Plattform stoppt.
+**Phase 1:** Flow erzeugt zuerst tatsächlich drei unterschiedliche Cover EINZELN (niemals eine Collage). Alle tragen nur exakt denselben Titel mit starkem Textkontrast. Danach alle drei zeigen, die Frage stellen: „Welches Cover wählst du – 1, 2 oder 3?“ **STOP bis zur Nutzerwahl**. Keine normalen Bilder vor Auswahl.
 
-## 4. Bildwelt-Bindung
-Die **genehmigte, helle Clean Animated Biology Illustration** und vor allem der erfolgreiche Look des Videos 008 bleiben Referenz fuer die Bildsprache, nicht nur der knappe Kanal-Name. Weiche Schattierung, kleine Tiefenwirkung, klare biologische Formen, feine Konturen, saubere Beschriftung. Thema darf Licht/Farb-Akzente aendern; kein kompletter Stilwechsel in flache Vektorsilhouetten, dunkles Monochrom oder CGI.
-Das Cover ist **keine automatische Stilreferenz** für alle inneren Szenen; schriftlicher Biologie-Style-Lock bleibt autoritativ.
+**Phase 2:** Ausgewähltes Cover wird finale `Bild_01.png`. Die anderen zwei werden nicht in Endpaket übernommen. **Sofort**, ohne weitere Freigabe, fünf eigenständige Bilder 02–06 generieren; anschließend intern fortfahren 07–11 usw., jeweils maximal fünf einzelne Bilder pro Arbeitsschritt. Die Szenenbeschreibungen stehen alle im SELBEN Prompt. Kein neuer Prompt nötig, keine generische Frage nach jedem Batch. Wenn Google Flow stoppt oder auf eine weitere Nutzeraktion wartet, exakte nächste Bildnummer nennen; Nutzer sagt „weiter“, Agent fährt mit demselben Prompt fort. Keine unbegrenzte Hintergrundarbeit behaupten.
 
-## 5. Abschluss
-Exakt `Bild_01.png ... Bild_NN.png` als akzeptierte Dateien. Keine Duplikate, Coverkandidaten, fehlenden Bilder oder sichtbaren Dateinummern. Alle Bilder einzeln QA, bei Fehler regenerieren, dann ZIP und Phase 3. Nicht als fertig melden, solange nur Prompts erstellt sind.
+**Phase 3:** Exakt alle genehmigten Bilder `Bild_01.png … Bild_NN.png` ohne Doppelungen, Lücken oder zusätzliche Cover zu EINER ZIP zusammenfassen. Der Nutzer legt die ZIP unter `02_bildprompts/bilder-zip/` ab. ZIP bleibt lokal und wird per `.gitignore` nicht automatisch nach GitHub eingecheckt.
 
-## Projektdateien
-- `02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt` – **kurzer Launcher**, drei Cover + erster Fünferbatch; niemals gesamte Langliste.
-- `02_bildprompts/COVER-3-VARIANTEN-ZUM-KOPIEREN.txt` – eigenständige Coverphase.
-- `02_bildprompts/5er-batches/BATCH_...txt` – echte Einzelprompts je Batch.
-- `02_bildprompts/FLOW-PRODUKTIONSSTATUS.json` – optionales Protokoll; nicht als echte Bildproduktion missverstehen.
+## Bildwelt und QA
+Klarer, sanft plastischer Clean-Animated-Biology-Illustration-Look des freigegebenen Videos 008: saubere Konturen, weiche organische Formen, verständliche Anatomie, helle harmonische Farben, passend dunklere Akzente. Kein generischer flacher Nacht-Silhouettenlook. Ein dominanter Lehrpunkt/Bild; nur 0–2 notwendige kurze Labels. Heller Hintergrund → dunkle Schrift, dunkler Hintergrund → helle Schrift. Cover nur Titel. **Bildnummern und Dateinamen niemals sichtbar**. Fehlerhafte Bilder vor Aufnahme in ZIP regenerieren.
+
+## Kein Falschabschluss
+Die Promptdatei und ZIP-Ablage sind die VORBEREITUNG, keine tatsächlich produzierten Bilder. Fehlende Medien, ZIP oder Nutzer-Coverwahl offen als Status kennzeichnen; nicht „fertig“ melden.

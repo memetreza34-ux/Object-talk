@@ -53,7 +53,7 @@ Bei FAIL: keine Voice- oder Bildproduktion starten.
 - [ ] Alle drei verwenden die freigegebene Biology-Illustration-Bildwelt, keinen stilfremden flachen Silhouettenlook.
 - [ ] Nutzer hat **explizit 1, 2 oder 3 ausgewählt**. Ein automatisch erzeugtes Einzelcover ist keine Zustimmung.
 - [ ] Nur diese Variante wird das finale `Bild_01.png`, die anderen zwei sind keine finalen Assets.
-- [ ] Erst danach Bilder `Bild_02` ff. aus den konkreten Promptdateien jeweils in 5er-Batches erstellen, ohne generische Start-Rückfrage.
+- [ ] Erst danach Bilder `Bild_02` ff. aus den konkreten Szenen IM SELBEN einzigen Google-Flow-Prompt in 5er-Batches erstellen, ohne generische Start-Rückfrage.
 - [ ] Promptaufträge folgen dem kanonischen Dokument `engine/FLOW-COVER-FIRST-WORKFLOW.md` und überschreiten nicht unnötig Google-Flow-Limits.
 
 Gate gilt für neue reguläre Produktionen ab Video 009; historische Testvideos nicht rückwirkend ändern.

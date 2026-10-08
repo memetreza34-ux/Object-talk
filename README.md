@@ -130,7 +130,7 @@ Nicht erlaubt:
 
 ## Verbindlicher Flow-Produktionsablauf
 
-**3 eigenständige Cover → Nutzer wählt 1/2/3 → Bilder ab 02 in aufeinanderfolgenden 5er-Batches**. Keine 85 Bilder als einzelnen Flow-Prompt einfügen. Das Hauptprompt enthält nur die Coverphase und den nach Wahl freigegebenen ersten Fünferbatch; alle anderen Szenen in einzelnen Batchdateien. Vorgabe: `engine/FLOW-COVER-FIRST-WORKFLOW.md`.
+**3 eigenständige Cover → Nutzer wählt 1/2/3 → Bilder ab 02 in aufeinanderfolgenden 5er-Batches**. Nur EINE vollständig ausgefüllte Flow-Promptdatei (darin alle Szenen), dazu EIN Ordner `bilder-zip/`. Der Prompt erzwingt trotzdem die gestufte Generierung: drei Cover → Auswahl → jeweils höchstens fünf Bilder. Keine zusätzlichen Batchdateien. Interne Bildreviews und Labelpläne liegen in `05_info`, entpackte Bilder in `03_pipeline`. Vorgabe: `engine/FLOW-COVER-FIRST-WORKFLOW.md`.
 
 ## Drei Phasen
 
