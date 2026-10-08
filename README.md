@@ -21,13 +21,16 @@ Aktive reguläre Longform-Produktion:
 `youtube-videos/009-longform-schlaf/`
 
 Thema:
-**Was passiert mit Essen in deinem Körper?**
+**Was passiert in deinem Körper, während du schläfst?**
+
+Status: **Phase 1 vorbereitet, Medien ausstehend**.
 
 Ziel:
 - 6:00–7:00 Minuten
-- ca. 1.110 Wörter
-- 77 eindeutige Illustrationen
-- Hook → Einleitung → kausaler Hauptteil → vollständiger Schluss
+- 1.058 Wörter
+- 85 eindeutige Illustrationen
+- Hook → innere Uhr/Schlafdruck → Schlafphasen/Tiefschlaf → Gedächtnis/Immunsystem → REM → Morgen → Schluss
+- vollständiger Export mit YouTube-Caption, MP4 und externen SRT-Untertiteln
 
 ## Verbindliche Bildwelt
 
