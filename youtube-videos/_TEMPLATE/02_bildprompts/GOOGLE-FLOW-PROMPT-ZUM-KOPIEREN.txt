@@ -8,6 +8,8 @@ VERBINDLICHER ABLAUF:
 3. Nach seiner Wahl nur das gewählte Cover als endgültiges Bild_01.png behalten. OHNE erneute Rückfrage sofort Bild_02–Bild_06 einzeln erzeugen; weitere Bilder in internen Fünfergruppen direkt aus dem untenstehenden vollständigen Szenenregister. Letzter Block ggf. kürzer. Bei Plattform-Limit offen den nächsten Startpunkt nennen und nach „weiter“ an gleicher Stelle fortsetzen. Keine separate Batch-Promptdatei erforderlich.
 4. Final genau Bild_01.png bis Bild_[NN].png in eine einzige ZIP packen; der Nutzer legt sie in 02_bildprompts/bilder-zip.
 
+SAFETY-FIRST: Ein rein bildungsbezogenes, nicht-grafisches Erklärvideo. Bei Darstellungen von Menschen nur bekleidete Erwachsene in alltäglichen Situationen. Biologische Strukturen als getrennte, vereinfachte Illustrationen statt invasiver Körperansichten. Befolge die Google-Flow-Regeln; eine abgelehnte Anfrage nicht durch Umgehungsversuche erzwingen. Falls etwas nicht möglich ist, transparent den betroffenen Bildauftrag nennen.
+
 VISUELLE WELT: Genehmigte Clean Animated Biology Illustration aus Video 008; plastisch-weiche organische Zeichnung, saubere Linien, lesbare Anatomie, harmonische helle Farben mit thematisch passenden dunkleren Akzenten. Keine flachen dunklen Clipart-Silhouetten oder Fotoreal-/CGI-Welt.
 
 SICHTBARER TEXT: Cover exactly one visible text block, nur Titel. Jede andere Szene 0–2 kurze deutsche Labels nur wenn unten angegeben, sonst kein Text. Light background = dark text, dark background = light text. Production IDs, numbers, filenames and all prompt instructions are NEVER visible in the generated artwork. Ein Lehrpunkt pro Bild. Keine überladenen Mehrfachinfografiken.

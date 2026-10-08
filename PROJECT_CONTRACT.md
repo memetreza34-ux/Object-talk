@@ -274,6 +274,10 @@ Audio kanonisieren → Whisper → Timeline → Vollbild-Illustrationen + leicht
 8. aktuelles Projekt
 9. historische Piloten nur als Lern-/Fehlerhistorie
 
+## Google Flow – Sicherheits- und Richtlinienregel
+
+Die gesamte Bildproduktion muss die Richtlinien des externen Bildgenerators einhalten. Für Object-Talk nur neutrale nicht-grafische, wissensbasierte Illustrationen ohne invasive Körperbilder oder medizinische Heilungsversprechen anfordern. Die erste Flow-Generierung ist nur der separat begrenzte **3-Cover-Schritt**, auch wenn eine einzige Promptdatei alle späteren Szenen enthält. Bei einer Richtlinienablehnung sofort stoppen, keine Filterumgehung und keine erfundenen Testergebnisse. Google Flow entscheidet selbst, ob ein Prompt angenommen wird; eine Garantie dafür gibt es nicht.
+
 ## Goldene Regel
 
 **Cover nur Titel. Normale Bilder 0–2 kurze Labels. Ein Bild = eine Hauptidee. Hoher Textkontrast. Lieber mehr Bilder als mehr Text oder Details. Remotion erzeugt niemals Text.**

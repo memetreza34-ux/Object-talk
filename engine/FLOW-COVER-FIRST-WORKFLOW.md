@@ -26,3 +26,13 @@ Klarer, sanft plastischer Clean-Animated-Biology-Illustration-Look des freigegeb
 
 ## Kein Falschabschluss
 Die Promptdatei und ZIP-Ablage sind die VORBEREITUNG, keine tatsächlich produzierten Bilder. Fehlende Medien, ZIP oder Nutzer-Coverwahl offen als Status kennzeichnen; nicht „fertig“ melden.
+
+## Safety-First / Google-Flow-Richtlinien
+
+Google Flow kann bestimmte Bildanfragen ablehnen. Halte die Bildaufträge klar bildungsbezogen, freundlich und **nicht-grafisch**. Normaler Schlaf und leicht verständliche isolierte Illustrationen von Organen/Zellen sind passend; keine invasiven Körperdarstellungen, verletzten Personen, sexualisierten Motive, täuschenden Nachahmungen realer Personen oder medizinische Heilsversprechen verlangen.
+
+**Wenn Flow eine Anfrage ablehnt:** Nicht versuchen, Filter/Sicherheitsmechanismen zu umgehen oder Schutzregeln zu überschreiben. Stattdessen den betroffenen Bildauftrag kennzeichnen, die Ursache nicht als Gewissheit behaupten und nur eine sachlich zulässige, vereinfachte Illustration vorschlagen. Bei fortdauernder Ablehnung die Generation abbrechen und Feedback/Support der Plattform nutzen.
+
+Lange komplette Szenenpläne können technisch oder durch Moderation scheitern; die einzelne Promptdatei bleibt erhalten, aber im Chat zuerst nur die 3 Coverbilder als konkrete Bildgenerierung anfordern. Keine Zusage, dass jedes externe Tool alle Cover oder ZIPs automatisch erzeugt.
+
+Richtlinien: https://policies.google.com/terms/generative-ai/use-policy?hl=de-DE und https://support.google.com/flow/answer/16353333.

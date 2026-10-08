@@ -69,6 +69,10 @@ Autoritativ: `engine/FLOW-COVER-FIRST-WORKFLOW.md`.
 
 **GENAU EINE vollständige Flow-Promptdatei im sichtbaren Ordner, plus EIN ZIP-Ablageordner.** Derselbe Prompt enthält drei Cover und das vollständige Szenenregister. Flow erzeugt erst drei Cover, zeigt sie und wartet auf Nutzerwahl 1/2/3; erst danach Bilder 02+ intern in Fünfergruppen, ohne weitere Promptdateien oder generische Rückfragen. Alle 85 Szenen dürfen im Prompt beschrieben stehen, werden aber NIE in einem einzigen Bildgenerierungs-Batch angefordert. Dateinummern nur Metadaten. Finale Bilder-ZIP unter `02_bildprompts/bilder-zip`, interne QA in `05_info`, entpackte Bilder in `03_pipeline/images`.
 
+## PROVIDER POLICY: STRICT COMPLIANCE
+
+Generiere ausschließlich zulässige, nicht-grafische Bildungsinhalte. Für Körperszenen möglichst normale bekleidete Erwachsene und klar getrennte schematische Organ-/Zellillustrationen verwenden. Auf invasive Darstellungen verzichten, ohne biologische Inhalte zu verfälschen. Keine Täuschung, keine riskanten Gesundheitsempfehlungen und keine Versuche, Google-Flow-Moderation oder Sicherheitsfilter zu umgehen. Bei Ablehnung die betroffene Szene nennen und mit einer inhaltlich unbedenklichen Variante fortfahren, **nur wenn** diese von Flow erlaubt wird; sonst STOP. Google trifft die finale Plattformentscheidung.
+
 ## COVER – HARD RULE
 
 For the cover / first hook frame:
