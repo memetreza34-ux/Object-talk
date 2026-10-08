@@ -1,0 +1,19 @@
+GOOGLE FLOW – VIDEO 009 / BATCH 5 / IMAGES 22–26
+
+Generate exactly 5 SEPARATE 16:9 images, not one collage. Never render filenames or image numbers. Do not ask whether to begin.
+
+GATE: 3 independent covers must have been generated and USER must have explicitly selected 1/2/3. If choice is absent, DO NOT generate regular scenes; show covers and wait.
+
+STYLE: Preserve bright, clean, softly dimensional illustrated BIOLOGY style of approved Video 008, organic shapes, gentle shading, clean outlines, friendly cream/teal/coral; night indigo only as an accent. No flat dark clipart silhouettes, no glossy CGI, no clutter. 0–2 German labels when explicitly supplied; pale background dark writing, dark background pale writing.
+
+SAVE Bild_22.png (name is internal ONLY): Sleep laboratory close-up, unobtrusive EEG electrodes on sleeper head, scientist instruments only softly suggested. NO VISIBLE TEXT.
+
+SAVE Bild_23.png (name is internal ONLY): Anatomical chest cutaway with a calmly beating heart and blue ambient night palette. NO VISIBLE TEXT.
+
+SAVE Bild_24.png (name is internal ONLY): Close-up of rib cage breathing gently, subtle lung movement implied by positions. NO VISIBLE TEXT.
+
+SAVE Bild_25.png (name is internal ONLY): Large simplified slow brain waves spreading across cortex, darker calming indigo. Visible text ONLY: Tiefschlaf.
+
+SAVE Bild_26.png (name is internal ONLY): Single brain cross-section with broad smooth synchronous wave pattern, no busy labels. NO VISIBLE TEXT.
+
+Review every image: correct content, high text contrast, no internal numbers, one main process, same approved look. Regenerate failures. Then use next explicit batch file in order, without generic permission question. If absent, request only that specific file.
