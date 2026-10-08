@@ -1,5 +1,9 @@
 # GOOGLE FLOW – MASTERPROMPT TEMPLATE
 
+## MANDATORY PHASE GATE – COVER FIRST
+
+Before generating any scene frames, create THREE separate cover pictures in the approved Biology Illustration World, show all, and ask user to choose ONE. No regular scene images and NO question about the first batch before user selects. When user chooses 1/2/3, keep selected cover only, immediately create images 02–06 without asking again. All further images in self-contained batches of at most FIVE. A large combined prompt containing all 85 scenes is forbidden. See `engine/FLOW-COVER-FIRST-WORKFLOW.md`; first Flow paste file must be a short launcher, not this full template master prompt. Keep the illustrated, softly shaded Video-008-quality biology look for any topic, including night scenes.
+
 ## ROLE
 
 You produce the final 16:9 still images for the German Object-Talk biology/health explainer channel.

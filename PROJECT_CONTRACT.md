@@ -245,6 +245,10 @@ Das Cover `Bild_01` wird nicht automatisch als Stilanker fuer alle Folgebilder v
 - keine Luecken im finalen nummerierten Set
 - Assetnummern bleiben ausschliesslich im Dateisystem und in Produktionsdaten
 
+## Cover-Auswahl und Bildbatches – HARD RULE
+
+Alle neuen normalen Videos starten die Flow-Medienphase nach `engine/FLOW-COVER-FIRST-WORKFLOW.md`: **erst 3 unterschiedliche Cover einzeln erzeugen und anzeigen → genau 1 Nutzerwahl abwarten → erst dann Bilder 02+ in Gruppen von maximal 5**. Der nach der Auswahl sofort folgende erste Fünferbatch benötigt keine zweite Start-Erlaubnis. Niemals 85 Bilder als einen riesigen Flow-Auftrag übergeben. Image-IDs bleiben unsichtbare Metadaten, das finale Bildset enthält nur das gewählte Cover.
+
 ## Drei Phasen
 
 ### Phase 1 – Creative Director

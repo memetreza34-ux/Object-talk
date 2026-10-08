@@ -1,96 +1,18 @@
-# GOOGLE FLOW – MASTERPROMPT TEMPLATE
+GOOGLE FLOW – [VIDEO_ID] – 3 COVERS FIRST
 
-## ROLE
+Replace ALL [PLACEHOLDERS] with the exact video-specific content BEFORE sending to Google Flow. Never send an unfinished template.
 
-You produce the final 16:9 still images for the German Object-Talk biology/health explainer channel.
+STEP A – Generate EXACTLY THREE SEPARATE 16:9 cover candidates in the approved Clean Animated Biology Illustration look (soft shaded recognizable anatomy, gentle depth, precise outlines, no dark flat clipart style). This is NOT a request for all [TOTAL_IMAGES] images now.
 
-Use the approved **Clean Animated Biology Illustration** world from:
-- `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
-- `bildwelt/FLOW-STYLE-BLOCK.txt`
-- `engine/VISIBLE-TEXT-STANDARD.md`
+Every cover: exactly ONE visible text block, identical German title [EXACT_COVER_TITLE]. No other text, numbers or labels.
 
-Create a clean 16:9 animated biology illustration with simplified but recognizable anatomy, smooth organic shapes, clean outlines, soft gradients, subtle depth, bright calm background and clear biological colors. Keep exactly one main teaching idea, preferably 2–4 important visible elements, and make the frame immediately understandable.
+COVER 1: [DIFFERENT COVER DESIGN A WITH SPECIFIC SUBJECT/COMPOSITION/COLORS]
+COVER 2: [DIFFERENT COVER DESIGN B WITH SPECIFIC SUBJECT/COMPOSITION/COLORS]
+COVER 3: [DIFFERENT COVER DESIGN C WITH SPECIFIC SUBJECT/COMPOSITION/COLORS]
 
-## TEXT / INFORMATION RULES
+Generate all THREE images individually, not one collage. Check spelling/contrast and show all. Ask ONLY 'Welches Cover wählst du – 1, 2 oder 3?' STOP until the user's choice.
 
-Normal frames:
-- 0–2 German labels maximum
-- prefer no label when the image is self-explanatory
-- each label 1–2 words preferred, maximum 3 words
-- no full sentences
-- no quotation marks around labels in the final artwork
-- omit nonessential structures and text
-- if a frame needs several teaching ideas, split it into more images
+STEP B – After user selects: keep only selected Cover as Bild_01.png; immediately create next FIVE images as separate artworks, no additional permission question:
+[INSERT EXACT SCENE BRIEFS FOR BILD_02 THROUGH BILD_06 ONLY]
 
-Cover / first hook frame:
-- exactly ONE visible text block
-- exact title only
-- no anatomy labels
-- no subtitle
-- no extra explanation
-- no pointer text
-
-Text contrast:
-- light/pale background → dark charcoal/navy text
-- dark background → light text
-- never light text on light background
-- never dark text on dark background
-- put text in calm negative space when possible
-
-Weak contrast, extra cover text or information overload = REJECT AND REGENERATE.
-
-## CRITICAL: PRODUCTION IDS ARE METADATA ONLY
-
-Never render any production identifier inside an image.
-
-Forbidden visible text includes:
-- Bild_01 / Bild_02 / Bild 01 / BILD 01
-- IMAGE 01
-- Szene 01 / Scene 01
-- filenames
-- asset IDs
-- prompt headings
-- internal production notes
-
-The identifiers are used only to save and organize files. The ONLY visible text allowed is the exact German title/labels explicitly requested in the scene prompt.
-
-## IMAGE DESIGN
-
-Prefer varied compositions such as:
-- cutaway
-- cross-section
-- macro view
-- cell interior
-- transport route
-- cause/effect
-- before/after
-- comparison
-- scale transition
-
-Do not make every frame a centered object with labels.
-
-## HARD FAILS
-
-Regenerate if:
-- biology is wrong
-- main process is unclear
-- more than one major teaching idea competes in the frame
-- image is too complex
-- nonessential information is added
-- a normal frame has more than 2 labels
-- a label has more than 3 words
-- cover has any text besides its title
-- text contrast is weak
-- labels are wrong/unreadable/unnecessary
-- any asset/image/scene number is visible
-- any filename/prompt heading is visible
-- the image drifts into photoreal medicine, medical CGI, glossy 3D, feature-animation, toy/kids-book style, corporate infographic style, random icons or severe AI artifacts
-
-# SCENES
-
-ChatGPT replaces this area for every new video with short scene prompts.
-
-Final filenames:
-Bild_01.png, Bild_02.png, ... Bild_NN.png
-
-These filenames are NEVER visible inside the generated images.
+STEP C – Use the standalone batch prompts under 5er-batches/, FIVE scenes max per prompt. Do not paste all scenes at once. Do not invent missing scene briefs or violate tool limits. Only verified accepted assets in final ZIP, no visible production filenames.
