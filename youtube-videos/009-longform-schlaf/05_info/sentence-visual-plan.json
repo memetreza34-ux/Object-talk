@@ -16,7 +16,7 @@
       "new_image_required": true,
       "image_asset_id": "Bild_01",
       "visual_type": "cover-hook",
-      "visible_change": "Three approved cover choices showing a peaceful sleeping adult and a separate colorful biological illustration motif in a bright educational illustration style; exactly one title, never an invasive view.",
+      "visible_change": "Chosen title-only cover in original video-008 Clean Animated Biology Illustration; pale cream, light turquoise, soft anatomical forms; no dark neon brain or anime faces.",
       "scene_difference": "Selected cover is distinct title-only composition",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
@@ -33,8 +33,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_02",
       "visual_type": "biological-process",
-      "visible_change": "Sleeping adult in cozy bedroom, brain activity as soft floating scientific inset",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 2",
+      "visible_change": "Softly shaded adult resting on a pillow; simple close-up of healthy relaxed facial muscles, bright calm setting",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Softly shaded adult resting on a pillow; simple close-up of healthy relaxed facial muscles, bright calm setting",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -50,8 +50,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_03",
       "visual_type": "biological-process",
-      "visible_change": "Same adult sleeping peacefully, gently lit brain and heartbeat illustrations nearby",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 3",
+      "visible_change": "Simplified body cutaway showing a brain and calm heart with clean routes, bright pale-blue background",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Simplified body cutaway showing a brain and calm heart with clean routes, bright pale-blue background",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -67,8 +67,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_04",
       "visual_type": "biological-process",
-      "visible_change": "Close illustrated brain with a few glowing neuron connections",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 4",
+      "visible_change": "Macro of a few connected neurons exchanging signals inside recognizable pale brain tissue",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Macro of a few connected neurons exchanging signals inside recognizable pale brain tissue",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -84,8 +84,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_05",
       "visual_type": "biological-process",
-      "visible_change": "One sweeping sleep-rhythm wave over calm nighttime bedding",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 5",
+      "visible_change": "One large smooth brain activity wave, elegant simple biological process, no night sky",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; One large smooth brain activity wave, elegant simple biological process, no night sky",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -102,7 +102,7 @@
       "image_asset_id": "Bild_06",
       "visual_type": "biological-process",
       "visible_change": "Warm sunset light entering a quiet bedroom",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 6",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Warm sunset light entering a quiet bedroom",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -119,7 +119,7 @@
       "image_asset_id": "Bild_07",
       "visual_type": "biological-process",
       "visible_change": "Sunset gradually fading at a bedroom window",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 7",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Sunset gradually fading at a bedroom window",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -135,8 +135,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_08",
       "visual_type": "biological-process",
-      "visible_change": "Tired adult reading at a daytime desk, soft sunlight",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 8",
+      "visible_change": "Daytime adult at desk becoming tired after hours awake, small subject in airy room",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Daytime adult at desk becoming tired after hours awake, small subject in airy room",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -152,8 +152,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_09",
       "visual_type": "biological-process",
-      "visible_change": "Two enlarged colorful neurons with small adenosine messenger particles",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 9",
+      "visible_change": "Macro of two distinct neurons with several adenosine messenger particles between them",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Macro of two distinct neurons with several adenosine messenger particles between them",
       "labels": [
         "Adenosin"
       ],
@@ -172,7 +172,7 @@
       "image_asset_id": "Bild_10",
       "visual_type": "biological-process",
       "visible_change": "Adult rubbing tired eyes in late-afternoon window light",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 10",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Adult rubbing tired eyes in late-afternoon window light",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -188,8 +188,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_11",
       "visual_type": "biological-process",
-      "visible_change": "Illustrated brain with subtle day-to-night timing glow",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 11",
+      "visible_change": "Simplified brain with one area responding to day-night timing; light ivory background",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Simplified brain with one area responding to day-night timing; light ivory background",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -206,7 +206,7 @@
       "image_asset_id": "Bild_12",
       "visual_type": "biological-process",
       "visible_change": "Soft sunrise light reaching a simplified eye-and-brain illustration",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 12",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Soft sunrise light reaching a simplified eye-and-brain illustration",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -222,8 +222,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_13",
       "visual_type": "biological-process",
-      "visible_change": "Twilight with one gently highlighted melatonin-signaling brain region",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 13",
+      "visible_change": "Anatomical brain illustration with small pineal region releasing melatonin messenger particles",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Anatomical brain illustration with small pineal region releasing melatonin messenger particles",
       "labels": [
         "Melatonin"
       ],
@@ -241,8 +241,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_14",
       "visual_type": "biological-process",
-      "visible_change": "A few hormone messenger particles moving through a calm abstract field",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 14",
+      "visible_change": "Hormone signaling particles passing from one cell to another in a clean macro process",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Hormone signaling particles passing from one cell to another in a clean macro process",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -258,8 +258,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_15",
       "visual_type": "biological-process",
-      "visible_change": "Adult near a bright lamp late in the evening, dark blue room",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 15",
+      "visible_change": "Adult near a bright lamp late in the evening, gentle blue room",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Adult near a bright lamp late in the evening, gentle blue room",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -276,7 +276,7 @@
       "image_asset_id": "Bild_16",
       "visual_type": "biological-process",
       "visible_change": "Two soft natural timing signals converging beside a relaxed sleeper",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 16",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Two soft natural timing signals converging beside a relaxed sleeper",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -293,7 +293,7 @@
       "image_asset_id": "Bild_17",
       "visual_type": "biological-process",
       "visible_change": "One adult feeling sleepy by day, awake beneath evening room light",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 17",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; One adult feeling sleepy by day, awake beneath evening room light",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -310,7 +310,7 @@
       "image_asset_id": "Bild_18",
       "visual_type": "biological-process",
       "visible_change": "Relaxed resting arm on bed, soft background falloff",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 18",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Relaxed resting arm on bed, soft background falloff",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -327,7 +327,7 @@
       "image_asset_id": "Bild_19",
       "visual_type": "biological-process",
       "visible_change": "Sleeping adult face in profile, quiet sound fading in the distance",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 19",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Sleeping adult face in profile, quiet sound fading in the distance",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -343,8 +343,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_20",
       "visual_type": "biological-process",
-      "visible_change": "Brain with smooth softly illustrated early-sleep neural rhythms",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 20",
+      "visible_change": "Brain close-up with a few gentle neural rhythms, accurate simplified brain anatomy",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Brain close-up with a few gentle neural rhythms, accurate simplified brain anatomy",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -360,8 +360,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_21",
       "visual_type": "biological-process",
-      "visible_change": "Small coordinated sparks across a simple quiet neuron network",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 21",
+      "visible_change": "One small group of neurons showing brief rhythmic activity, clear organic structure",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; One small group of neurons showing brief rhythmic activity, clear organic structure",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -377,8 +377,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_22",
       "visual_type": "biological-process",
-      "visible_change": "Comfortable adult sleeper with external sleep-laboratory sensors on hair",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 22",
+      "visible_change": "Sleep-laboratory close-up with a few EEG electrodes on a resting adult, pale room",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Sleep-laboratory close-up with a few EEG electrodes on a resting adult, pale room",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -395,7 +395,7 @@
       "image_asset_id": "Bild_23",
       "visual_type": "biological-process",
       "visible_change": "Isolated illustrated heart with calm regular rhythmic movement",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 23",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Isolated illustrated heart with calm regular rhythmic movement",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -412,7 +412,7 @@
       "image_asset_id": "Bild_24",
       "visual_type": "biological-process",
       "visible_change": "Isolated simple lungs gently expanding with a peaceful breathing rhythm",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 24",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Isolated simple lungs gently expanding with a peaceful breathing rhythm",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -428,8 +428,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_25",
       "visual_type": "biological-process",
-      "visible_change": "One large slow wave rolling across a clearly illustrated brain",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 25",
+      "visible_change": "Anatomical brain macro with broad slow activity wave indicating deep sleep",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Anatomical brain macro with broad slow activity wave indicating deep sleep",
       "labels": [
         "Tiefschlaf"
       ],
@@ -447,8 +447,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_26",
       "visual_type": "biological-process",
-      "visible_change": "Close simplified brain illustration with broad slow coordinated rhythms",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 26",
+      "visible_change": "A simplified brain cross-section with broad coordinated slow neuronal activity",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; A simplified brain cross-section with broad coordinated slow neuronal activity",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -464,8 +464,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_27",
       "visual_type": "biological-process",
-      "visible_change": "Three neurons gently synchronizing activity in one direction",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 27",
+      "visible_change": "Three neurons activating in coordinated rhythm, natural pale tissue backdrop",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Three neurons activating in coordinated rhythm, natural pale tissue backdrop",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -482,7 +482,7 @@
       "image_asset_id": "Bild_28",
       "visual_type": "biological-process",
       "visible_change": "Quiet sleeper in a softly insulated peaceful bedroom",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 28",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Quiet sleeper in a softly insulated peaceful bedroom",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -498,8 +498,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_29",
       "visual_type": "biological-process",
-      "visible_change": "Single healthy heart illustration with gently moving circulation",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 29",
+      "visible_change": "Close anatomy of one heart with calmer circulation, medium-red organ on pale mint",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Close anatomy of one heart with calmer circulation, medium-red organ on pale mint",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -516,7 +516,7 @@
       "image_asset_id": "Bild_30",
       "visual_type": "biological-process",
       "visible_change": "Red blood cells following a smooth path through one intact vessel",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 30",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Red blood cells following a smooth path through one intact vessel",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -533,7 +533,7 @@
       "image_asset_id": "Bild_31",
       "visual_type": "biological-process",
       "visible_change": "One illustrated cell receiving oxygen beside a tiny vessel",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 31",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; One illustrated cell receiving oxygen beside a tiny vessel",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -550,7 +550,7 @@
       "image_asset_id": "Bild_32",
       "visual_type": "biological-process",
       "visible_change": "One simple hormone gland illustration releasing a few messenger particles",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 32",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; One simple hormone gland illustration releasing a few messenger particles",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -566,8 +566,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_33",
       "visual_type": "biological-process",
-      "visible_change": "Illustrated brain with tiny pituitary region and hormone-signaling particles",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 33",
+      "visible_change": "Simplified brain cutaway showing pituitary area and a few hormone signal particles",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Simplified brain cutaway showing pituitary area and a few hormone signal particles",
       "labels": [
         "Wachstumshormon"
       ],
@@ -586,7 +586,7 @@
       "image_asset_id": "Bild_34",
       "visual_type": "biological-process",
       "visible_change": "Simple tissue cells carrying out routine maintenance",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 34",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Simple tissue cells carrying out routine maintenance",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -603,7 +603,7 @@
       "image_asset_id": "Bild_35",
       "visual_type": "biological-process",
       "visible_change": "Resting muscle fiber illustration showing ordinary protein renewal",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 35",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Resting muscle fiber illustration showing ordinary protein renewal",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -620,7 +620,7 @@
       "image_asset_id": "Bild_36",
       "visual_type": "biological-process",
       "visible_change": "Similar healthy tissue cells at daytime, natural continuity",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 36",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Similar healthy tissue cells at daytime, natural continuity",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -636,8 +636,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_37",
       "visual_type": "biological-process",
-      "visible_change": "Soft-focus overview of cell energy use near calm circulation",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 37",
+      "visible_change": "Biological tissue and one small capillary with ordinary cell maintenance",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Biological tissue and one small capillary with ordinary cell maintenance",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -653,8 +653,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_38",
       "visual_type": "biological-process",
-      "visible_change": "Night scene with broader sleep waves early in the night",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 38",
+      "visible_change": "Early sleep brain with broad, slow neural waves on light blue background",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Early sleep brain with broad, slow neural waves on light blue background",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -670,8 +670,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_39",
       "visual_type": "biological-process",
-      "visible_change": "Zoom from quiet sleeper toward floating illustrated brain network",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 39",
+      "visible_change": "One anatomical brain with a few memory-related neuron connections",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; One anatomical brain with a few memory-related neuron connections",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -688,7 +688,7 @@
       "image_asset_id": "Bild_40",
       "visual_type": "biological-process",
       "visible_change": "Adult hands practicing a single guitar chord in sunlight",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 40",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Adult hands practicing a single guitar chord in sunlight",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -704,8 +704,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_41",
       "visual_type": "biological-process",
-      "visible_change": "Few learning-related neuron connections softly lit at night",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 41",
+      "visible_change": "Neurons involved in a newly learned movement, several clear organic connections",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Neurons involved in a newly learned movement, several clear organic connections",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -721,8 +721,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_42",
       "visual_type": "biological-process",
-      "visible_change": "One weak memory-related neural link growing more stable",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 42",
+      "visible_change": "A single synapse becomes more stable, simplified and anatomically recognizable",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; A single synapse becomes more stable, simplified and anatomically recognizable",
       "labels": [
         "Gedächtnis"
       ],
@@ -740,8 +740,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_43",
       "visual_type": "biological-process",
-      "visible_change": "Two enlarged neurons communicating at a single synapse",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 43",
+      "visible_change": "Two large neurons exchanging one chemical signal across a synapse",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Two large neurons exchanging one chemical signal across a synapse",
       "labels": [
         "Synapse"
       ],
@@ -760,7 +760,7 @@
       "image_asset_id": "Bild_44",
       "visual_type": "biological-process",
       "visible_change": "Recognizable brain with coordinated neuron connections, no screen elements",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 44",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Recognizable brain with coordinated neuron connections, no screen elements",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -776,8 +776,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_45",
       "visual_type": "biological-process",
-      "visible_change": "Selective network connections glowing while unrelated ones stay calm",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 45",
+      "visible_change": "Several selected memory-related neural connections become more stable",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Several selected memory-related neural connections become more stable",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -793,8 +793,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_46",
       "visual_type": "biological-process",
-      "visible_change": "One brain with several gentle rhythms blending through time",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 46",
+      "visible_change": "Single brain with gently different neural activity rhythms, no split panels",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Single brain with gently different neural activity rhythms, no split panels",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -811,7 +811,7 @@
       "image_asset_id": "Bild_47",
       "visual_type": "biological-process",
       "visible_change": "Morning adult at desk with slightly unfocused attention",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 47",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Morning adult at desk with slightly unfocused attention",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -827,8 +827,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_48",
       "visual_type": "biological-process",
-      "visible_change": "Soft signal fading along a single neural connection",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 48",
+      "visible_change": "One neuron with weaker signal transmission after insufficient sleep",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; One neuron with weaker signal transmission after insufficient sleep",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -844,8 +844,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_49",
       "visual_type": "biological-process",
-      "visible_change": "Focused nighttime synapse with faint daytime learning context behind",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 49",
+      "visible_change": "Close-up of a normal synapse with clear signaling in sleep",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Close-up of a normal synapse with clear signaling in sleep",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -861,8 +861,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_50",
       "visual_type": "biological-process",
-      "visible_change": "Single illustrated white blood cell moving along soft biological surroundings",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 50",
+      "visible_change": "One white immune cell traveling beside healthy body tissue",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; One white immune cell traveling beside healthy body tissue",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -879,7 +879,7 @@
       "image_asset_id": "Bild_51",
       "visual_type": "biological-process",
       "visible_change": "Two immune cells calmly exchanging signaling particles",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 51",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Two immune cells calmly exchanging signaling particles",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -896,7 +896,7 @@
       "image_asset_id": "Bild_52",
       "visual_type": "biological-process",
       "visible_change": "One immune cell circulating along a smooth intact vessel",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 52",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; One immune cell circulating along a smooth intact vessel",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -912,8 +912,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_53",
       "visual_type": "biological-process",
-      "visible_change": "One immune cell gently communicating with one neighboring tissue cell",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 53",
+      "visible_change": "One white blood cell calmly communicating with a local tissue cell",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; One white blood cell calmly communicating with a local tissue cell",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -929,8 +929,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_54",
       "visual_type": "biological-process",
-      "visible_change": "Tired adult in daytime with a subdued immune-cell illustration inset",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 54",
+      "visible_change": "Tired adult in daytime with a subdued immune-cell illustration anatomical detail",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Tired adult in daytime with a subdued immune-cell illustration anatomical detail",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -946,8 +946,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_55",
       "visual_type": "biological-process",
-      "visible_change": "Two immune cells passing simple messenger particles between them",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 55",
+      "visible_change": "Two white blood cells exchanging one cluster of signaling molecules",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Two white blood cells exchanging one cluster of signaling molecules",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -963,8 +963,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_56",
       "visual_type": "biological-process",
-      "visible_change": "Peaceful sleeper with one soft immune-cell biology illustration nearby",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 56",
+      "visible_change": "Ordinary immune activity in soft tissue during sleep, illustrated without a character",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Ordinary immune activity in soft tissue during sleep, illustrated without a character",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -980,8 +980,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_57",
       "visual_type": "biological-process",
-      "visible_change": "Warm illustrated heart with calm circulation across nighttime lighting",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 57",
+      "visible_change": "Warm illustrated heart with calm circulation across gentle lighting",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Warm illustrated heart with calm circulation across gentle lighting",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -998,7 +998,7 @@
       "image_asset_id": "Bild_58",
       "visual_type": "biological-process",
       "visible_change": "Sleep scene with separately illustrated relaxed lungs and heart",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 58",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Sleep scene with separately illustrated relaxed lungs and heart",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -1014,8 +1014,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_59",
       "visual_type": "biological-process",
-      "visible_change": "Sleeping adult beside a more active illustrated brain inset",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 59",
+      "visible_change": "Brain macro illustrating transition to REM-related neuronal activity, very light blue",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Brain macro illustrating transition to REM-related neuronal activity, very light blue",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -1031,8 +1031,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_60",
       "visual_type": "biological-process",
-      "visible_change": "Isolated illustrated brain with dynamic warm-toned REM signaling",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 60",
+      "visible_change": "Large realistic-to-illustration simplified brain, several distinct active REM circuits in muted teal, coral and blue on cream background",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Large realistic-to-illustration simplified brain, several distinct active REM circuits in muted teal, coral and blue on cream back",
       "labels": [
         "REM-Schlaf"
       ],
@@ -1051,7 +1051,7 @@
       "image_asset_id": "Bild_61",
       "visual_type": "biological-process",
       "visible_change": "Closed eyes of a resting adult, subtle eye motion implied naturally",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 61",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Closed eyes of a resting adult, subtle eye motion implied naturally",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -1067,8 +1067,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_62",
       "visual_type": "biological-process",
-      "visible_change": "One brain visual moving between alert and dreamlike neural rhythms",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 62",
+      "visible_change": "Brain tissue showing a few wake-like neural activity patterns during REM",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Brain tissue showing a few wake-like neural activity patterns during REM",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -1084,8 +1084,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_63",
       "visual_type": "biological-process",
-      "visible_change": "Light imaginative travel scene floating above a resting adult",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 63",
+      "visible_change": "A soft everyday memory of a familiar street, subdued gentle illustration",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; A soft everyday memory of a familiar street, subdued gentle illustration",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -1101,8 +1101,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_64",
       "visual_type": "biological-process",
-      "visible_change": "One calm simplified muscle-fiber illustration with reduced activity signal",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 64",
+      "visible_change": "Brainstem and a muscle-fiber group with one simplified inhibition signal",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Brainstem and a muscle-fiber group with one simplified inhibition signal",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -1118,8 +1118,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_65",
       "visual_type": "biological-process",
-      "visible_change": "Adult sleeping still, distant imagined running scene above",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 65",
+      "visible_change": "Resting adult and subtle illustration of imagined running in a small distant context, no dramatic fantasy poster",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Resting adult and subtle illustration of imagined running in a small distant context, no dramatic fantasy poster",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -1136,7 +1136,7 @@
       "image_asset_id": "Bild_66",
       "visual_type": "biological-process",
       "visible_change": "Illustrated heart and simple breathing rhythm gently varying",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 66",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Illustrated heart and simple breathing rhythm gently varying",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -1152,8 +1152,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_67",
       "visual_type": "biological-process",
-      "visible_change": "Dream memory: familiar doorway dissolving into warm morning light",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 67",
+      "visible_change": "Softly rendered memory of a doorway fading as a person wakes",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Softly rendered memory of a doorway fading as a person wakes",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -1169,8 +1169,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_68",
       "visual_type": "biological-process",
-      "visible_change": "Playful impossible garden appearing beyond a bedroom doorway",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 68",
+      "visible_change": "Familiar doorway and garden as understated dream illustration, calm light colors",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Familiar doorway and garden as understated dream illustration, calm light colors",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -1186,8 +1186,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_69",
       "visual_type": "biological-process",
-      "visible_change": "Dream motifs branching gently around a luminous illustrated brain",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 69",
+      "visible_change": "Several ordinary neurons involved in dreaming, simple pale biology backdrop",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Several ordinary neurons involved in dreaming, simple pale biology backdrop",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -1203,8 +1203,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_70",
       "visual_type": "biological-process",
-      "visible_change": "Neuron network linking a few understated human emotional expressions",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 70",
+      "visible_change": "A few active connections in brain tissue associated with emotional memory processing",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; A few active connections in brain tissue associated with emotional memory processing",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -1220,8 +1220,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_71",
       "visual_type": "biological-process",
-      "visible_change": "One bright brain illustration beside a peaceful sleeper",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 71",
+      "visible_change": "Anatomical brain with coordinated REM signaling, pale background and no neon",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Anatomical brain with coordinated REM signaling, pale background and no neon",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -1237,8 +1237,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_72",
       "visual_type": "biological-process",
-      "visible_change": "One ribbon-like sleep rhythm curving through a calm sky",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 72",
+      "visible_change": "Broad repeated sleep-cycle activity waves, clean diagram-free biological illustration",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Broad repeated sleep-cycle activity waves, clean diagram-free biological illustration",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -1254,8 +1254,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_73",
       "visual_type": "biological-process",
-      "visible_change": "One moon arc passing over a quiet bedside window",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 73",
+      "visible_change": "A single simple cycle of neuronal activity moving across brain tissue, no numbers",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; A single simple cycle of neuronal activity moving across brain tissue, no numbers",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -1271,8 +1271,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_74",
       "visual_type": "biological-process",
-      "visible_change": "Several softly repeated moonlight phases across one night-window view",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 74",
+      "visible_change": "Three successive smooth neural wave patterns in light background, no timeline cards",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Three successive smooth neural wave patterns in light background, no timeline cards",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -1288,8 +1288,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_75",
       "visual_type": "biological-process",
-      "visible_change": "Early-night sleeping brain shown with slower, broader rhythms",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 75",
+      "visible_change": "Brain with broader slow-wave activity typical of early night",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Brain with broader slow-wave activity typical of early night",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -1305,8 +1305,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_76",
       "visual_type": "biological-process",
-      "visible_change": "Dawn sleeper with softly lengthening imagined dream sequence",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 76",
+      "visible_change": "Brain with longer REM-related signal pattern typical of later night",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Brain with longer REM-related signal pattern typical of later night",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -1323,7 +1323,7 @@
       "image_asset_id": "Bild_77",
       "visual_type": "biological-process",
       "visible_change": "Brief natural eye-opening in a calm predawn bedroom",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 77",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Brief natural eye-opening in a calm predawn bedroom",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -1340,7 +1340,7 @@
       "image_asset_id": "Bild_78",
       "visual_type": "biological-process",
       "visible_change": "Refreshed adult waking slowly beside a window",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 78",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Refreshed adult waking slowly beside a window",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -1357,7 +1357,7 @@
       "image_asset_id": "Bild_79",
       "visual_type": "biological-process",
       "visible_change": "Warm sunrise entering a quiet bedroom",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 79",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Warm sunrise entering a quiet bedroom",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -1374,7 +1374,7 @@
       "image_asset_id": "Bild_80",
       "visual_type": "biological-process",
       "visible_change": "Bedroom scene with simple unlabeled nightstand clock and resting adult",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 80",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Bedroom scene with simple unlabeled nightstand clock and resting adult",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -1391,7 +1391,7 @@
       "image_asset_id": "Bild_81",
       "visual_type": "biological-process",
       "visible_change": "Tired adult in morning light, subtle late-night atmosphere behind",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 81",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Tired adult in morning light, subtle late-night atmosphere behind",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -1407,8 +1407,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_82",
       "visual_type": "biological-process",
-      "visible_change": "Calm sleeping adult with two small separate healthy brain and heart illustrations",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 82",
+      "visible_change": "Simplified body cutaway: one brain and heart continuing normal function",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Simplified body cutaway: one brain and heart continuing normal function",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -1424,8 +1424,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_83",
       "visual_type": "biological-process",
-      "visible_change": "One gently flowing transition between brain and neuron illustration",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 83",
+      "visible_change": "Macro with one brain region and a nearby magnified neuron connection",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Macro with one brain region and a nearby magnified neuron connection",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -1442,7 +1442,7 @@
       "image_asset_id": "Bild_84",
       "visual_type": "biological-process",
       "visible_change": "Sleep-to-wake transition in the same warmly lit bedroom",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 84",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Sleep-to-wake transition in the same warmly lit bedroom",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     },
@@ -1458,8 +1458,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_85",
       "visual_type": "biological-process",
-      "visible_change": "Hopeful morning room with adult awake and soft light, no text",
-      "scene_difference": "New illustrated educational focus, scale and viewpoint for picture 85",
+      "visible_change": "Bright morning illustration of an adult waking naturally, small biological focus on healthy brain activity",
+      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Bright morning illustration of an adult waking naturally, small biological focus on healthy brain activity",
       "labels": [],
       "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
     }

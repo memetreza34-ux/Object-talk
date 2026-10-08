@@ -22,7 +22,7 @@
       "index": 1,
       "chapter": "Hook",
       "voice": "Was macht dein Körper eigentlich, während du schläfst?",
-      "visual": "Three approved cover choices showing a peaceful sleeping adult and a separate colorful biological illustration motif in a bright educational illustration style; exactly one title, never an invasive view.",
+      "visual": "Chosen title-only cover in original video-008 Clean Animated Biology Illustration; pale cream, light turquoise, soft anatomical forms; no dark neon brain or anime faces.",
       "labels": [],
       "claims": [
         "C1"
@@ -32,7 +32,7 @@
       "index": 2,
       "chapter": "Hook",
       "voice": "Du liegst ganz still im Bett. Doch unter der Oberfläche passiert erstaunlich viel.",
-      "visual": "Sleeping adult in cozy bedroom, brain activity as soft floating scientific inset",
+      "visual": "Softly shaded adult resting on a pillow; simple close-up of healthy relaxed facial muscles, bright calm setting",
       "labels": [],
       "claims": [
         "C1"
@@ -42,7 +42,7 @@
       "index": 3,
       "chapter": "Hook",
       "voice": "Von außen wirkt alles still. Innen laufen gleichzeitig erstaunlich viele Prozesse weiter.",
-      "visual": "Same adult sleeping peacefully, gently lit brain and heartbeat illustrations nearby",
+      "visual": "Simplified body cutaway showing a brain and calm heart with clean routes, bright pale-blue background",
       "labels": [],
       "claims": [
         "C1"
@@ -52,7 +52,7 @@
       "index": 4,
       "chapter": "Hook",
       "voice": "Dein Gehirn bleibt aktiv, Erinnerungen verändern sich und dein Körper stellt sich auf Erholung ein.",
-      "visual": "Close illustrated brain with a few glowing neuron connections",
+      "visual": "Macro of a few connected neurons exchanging signals inside recognizable pale brain tissue",
       "labels": [],
       "claims": [
         "C5"
@@ -62,7 +62,7 @@
       "index": 5,
       "chapter": "Hook",
       "voice": "Und das alles passiert nicht gleichmäßig, sondern in mehreren Schlafphasen mit unterschiedlichen Aufgaben.",
-      "visual": "One sweeping sleep-rhythm wave over calm nighttime bedding",
+      "visual": "One large smooth brain activity wave, elegant simple biological process, no night sky",
       "labels": [],
       "claims": [
         "C3"
@@ -92,7 +92,7 @@
       "index": 8,
       "chapter": "Uhr",
       "voice": "Während du wach bist, sammelt sich nach und nach sogenannter Schlafdruck an.",
-      "visual": "Tired adult reading at a daytime desk, soft sunlight",
+      "visual": "Daytime adult at desk becoming tired after hours awake, small subject in airy room",
       "labels": [],
       "claims": [
         "C2"
@@ -102,7 +102,7 @@
       "index": 9,
       "chapter": "Uhr",
       "voice": "Ein Teil davon hängt mit dem Botenstoff Adenosin zusammen, der im Gehirn wirkt.",
-      "visual": "Two enlarged colorful neurons with small adenosine messenger particles",
+      "visual": "Macro of two distinct neurons with several adenosine messenger particles between them",
       "labels": [
         "Adenosin"
       ],
@@ -124,7 +124,7 @@
       "index": 11,
       "chapter": "Uhr",
       "voice": "Gleichzeitig arbeitet deine innere Uhr. Sie orientiert sich besonders am Wechsel von Licht und Dunkelheit.",
-      "visual": "Illustrated brain with subtle day-to-night timing glow",
+      "visual": "Simplified brain with one area responding to day-night timing; light ivory background",
       "labels": [],
       "claims": [
         "C2"
@@ -144,7 +144,7 @@
       "index": 13,
       "chapter": "Uhr",
       "voice": "Wenn es abends dunkler wird, verändert sich die Ausschüttung des Hormons Melatonin.",
-      "visual": "Twilight with one gently highlighted melatonin-signaling brain region",
+      "visual": "Anatomical brain illustration with small pineal region releasing melatonin messenger particles",
       "labels": [
         "Melatonin"
       ],
@@ -156,7 +156,7 @@
       "index": 14,
       "chapter": "Uhr",
       "voice": "Melatonin gibt deinem Körper ein Zeitsignal. Es ist kein magischer Ausschalter für das Bewusstsein.",
-      "visual": "A few hormone messenger particles moving through a calm abstract field",
+      "visual": "Hormone signaling particles passing from one cell to another in a clean macro process",
       "labels": [],
       "claims": [
         "C2"
@@ -166,7 +166,7 @@
       "index": 15,
       "chapter": "Uhr",
       "voice": "Helles Licht am späten Abend kann beeinflussen, wann diese Signale stärker oder schwächer werden.",
-      "visual": "Adult near a bright lamp late in the evening, dark blue room",
+      "visual": "Adult near a bright lamp late in the evening, gentle blue room",
       "labels": [],
       "claims": [
         "C2"
@@ -216,7 +216,7 @@
       "index": 20,
       "chapter": "Einschlafen",
       "voice": "Danach wird der Schlaf stabiler. In der zweiten Stufe verändern sich die elektrischen Muster im Gehirn.",
-      "visual": "Brain with smooth softly illustrated early-sleep neural rhythms",
+      "visual": "Brain close-up with a few gentle neural rhythms, accurate simplified brain anatomy",
       "labels": [],
       "claims": [
         "C3"
@@ -226,7 +226,7 @@
       "index": 21,
       "chapter": "Einschlafen",
       "voice": "Kurze Aktivitätsausbrüche wechseln sich mit ruhigeren Mustern ab. Das Gehirn arbeitet weiter.",
-      "visual": "Small coordinated sparks across a simple quiet neuron network",
+      "visual": "One small group of neurons showing brief rhythmic activity, clear organic structure",
       "labels": [],
       "claims": [
         "C3"
@@ -236,7 +236,7 @@
       "index": 22,
       "chapter": "Einschlafen",
       "voice": "Von außen erkennst du solche Gehirnmuster nicht. Forschende messen sie mit Elektroden am Kopf.",
-      "visual": "Comfortable adult sleeper with external sleep-laboratory sensors on hair",
+      "visual": "Sleep-laboratory close-up with a few EEG electrodes on a resting adult, pale room",
       "labels": [],
       "claims": [
         "C3"
@@ -266,7 +266,7 @@
       "index": 25,
       "chapter": "Einschlafen",
       "voice": "Nach leichteren Stufen erreicht dein Körper schließlich den sogenannten Tiefschlaf.",
-      "visual": "One large slow wave rolling across a clearly illustrated brain",
+      "visual": "Anatomical brain macro with broad slow activity wave indicating deep sleep",
       "labels": [
         "Tiefschlaf"
       ],
@@ -278,7 +278,7 @@
       "index": 26,
       "chapter": "Tiefschlaf",
       "voice": "Hier zeigen Messungen besonders langsame, kräftige Wellen der Gehirnaktivität.",
-      "visual": "Close simplified brain illustration with broad slow coordinated rhythms",
+      "visual": "A simplified brain cross-section with broad coordinated slow neuronal activity",
       "labels": [],
       "claims": [
         "C3"
@@ -288,7 +288,7 @@
       "index": 27,
       "chapter": "Tiefschlaf",
       "voice": "Dabei zeigen viele Nervenzellen zeitweise ein stärker abgestimmtes Aktivitätsmuster.",
-      "visual": "Three neurons gently synchronizing activity in one direction",
+      "visual": "Three neurons activating in coordinated rhythm, natural pale tissue backdrop",
       "labels": [],
       "claims": [
         "C3"
@@ -308,7 +308,7 @@
       "index": 29,
       "chapter": "Tiefschlaf",
       "voice": "Puls und Atmung sind normalerweise ruhig. Das unterstützt eine geringere Belastung des Kreislaufs.",
-      "visual": "Single healthy heart illustration with gently moving circulation",
+      "visual": "Close anatomy of one heart with calmer circulation, medium-red organ on pale mint",
       "labels": [],
       "claims": [
         "C4"
@@ -348,7 +348,7 @@
       "index": 33,
       "chapter": "Tiefschlaf",
       "voice": "Ein Beispiel ist Wachstumshormon, das häufig besonders in frühen Tiefschlafphasen ausgeschüttet wird.",
-      "visual": "Illustrated brain with tiny pituitary region and hormone-signaling particles",
+      "visual": "Simplified brain cutaway showing pituitary area and a few hormone signal particles",
       "labels": [
         "Wachstumshormon"
       ],
@@ -390,7 +390,7 @@
       "index": 37,
       "chapter": "Tiefschlaf",
       "voice": "Schlaf schafft günstige Bedingungen für viele Vorgänge, die du tagsüber kaum bemerkst.",
-      "visual": "Soft-focus overview of cell energy use near calm circulation",
+      "visual": "Biological tissue and one small capillary with ordinary cell maintenance",
       "labels": [],
       "claims": [
         "C4"
@@ -400,7 +400,7 @@
       "index": 38,
       "chapter": "Tiefschlaf",
       "voice": "Besonders viel Tiefschlaf liegt bei vielen Erwachsenen eher am Anfang der Nacht.",
-      "visual": "Night scene with broader sleep waves early in the night",
+      "visual": "Early sleep brain with broad, slow neural waves on light blue background",
       "labels": [],
       "claims": [
         "C3"
@@ -410,7 +410,7 @@
       "index": 39,
       "chapter": "Gedächtnis",
       "voice": "Doch während dein Körper ruhiger wird, passiert im Gehirn noch etwas anderes: Lernen geht weiter.",
-      "visual": "Zoom from quiet sleeper toward floating illustrated brain network",
+      "visual": "One anatomical brain with a few memory-related neuron connections",
       "labels": [],
       "claims": [
         "C5"
@@ -430,7 +430,7 @@
       "index": 41,
       "chapter": "Gedächtnis",
       "voice": "Die dabei entstandenen Eindrücke verschwinden nicht einfach, sobald du einschläfst.",
-      "visual": "Few learning-related neuron connections softly lit at night",
+      "visual": "Neurons involved in a newly learned movement, several clear organic connections",
       "labels": [],
       "claims": [
         "C5"
@@ -440,7 +440,7 @@
       "index": 42,
       "chapter": "Gedächtnis",
       "voice": "Schlaf unterstützt das Festigen und Ordnen von Erinnerungen. Wissenschaftler nennen das Gedächtniskonsolidierung.",
-      "visual": "One weak memory-related neural link growing more stable",
+      "visual": "A single synapse becomes more stable, simplified and anatomically recognizable",
       "labels": [
         "Gedächtnis"
       ],
@@ -452,7 +452,7 @@
       "index": 43,
       "chapter": "Gedächtnis",
       "voice": "Dabei verändern sich Verbindungen zwischen Nervenzellen. Welche Veränderungen stattfinden, hängt vom Gelernten ab.",
-      "visual": "Two enlarged neurons communicating at a single synapse",
+      "visual": "Two large neurons exchanging one chemical signal across a synapse",
       "labels": [
         "Synapse"
       ],
@@ -474,7 +474,7 @@
       "index": 45,
       "chapter": "Gedächtnis",
       "voice": "Dein Gehirn spielt dabei nicht jede Szene des Tages wie einen Film vollständig ab.",
-      "visual": "Selective network connections glowing while unrelated ones stay calm",
+      "visual": "Several selected memory-related neural connections become more stable",
       "labels": [],
       "claims": [
         "C5"
@@ -484,7 +484,7 @@
       "index": 46,
       "chapter": "Gedächtnis",
       "voice": "Verschiedene Schlafphasen tragen auf unterschiedliche Weise zum Lernen und Erinnern bei.",
-      "visual": "One brain with several gentle rhythms blending through time",
+      "visual": "Single brain with gently different neural activity rhythms, no split panels",
       "labels": [],
       "claims": [
         "C5"
@@ -504,7 +504,7 @@
       "index": 48,
       "chapter": "Gedächtnis",
       "voice": "Schlechter Schlaf kann auch erschweren, Neues gut abzuspeichern oder Bekanntes abzurufen.",
-      "visual": "Soft signal fading along a single neural connection",
+      "visual": "One neuron with weaker signal transmission after insufficient sleep",
       "labels": [],
       "claims": [
         "C5"
@@ -514,7 +514,7 @@
       "index": 49,
       "chapter": "Gedächtnis",
       "voice": "Damit ist Schlaf keine Pause vom Lernen, sondern ein Teil seiner biologischen Grundlage.",
-      "visual": "Focused nighttime synapse with faint daytime learning context behind",
+      "visual": "Close-up of a normal synapse with clear signaling in sleep",
       "labels": [],
       "claims": [
         "C5"
@@ -524,7 +524,7 @@
       "index": 50,
       "chapter": "Immunsystem",
       "voice": "Auch dein Immunsystem arbeitet nachts weiter. Allerdings nicht wie eine Armee auf Knopfdruck.",
-      "visual": "Single illustrated white blood cell moving along soft biological surroundings",
+      "visual": "One white immune cell traveling beside healthy body tissue",
       "labels": [],
       "claims": [
         "C6"
@@ -554,7 +554,7 @@
       "index": 53,
       "chapter": "Immunsystem",
       "voice": "Das ist ein Zusammenspiel vieler Prozesse, nicht eine einzelne geheimnisvolle Reparaturtaste.",
-      "visual": "One immune cell gently communicating with one neighboring tissue cell",
+      "visual": "One white blood cell calmly communicating with a local tissue cell",
       "labels": [],
       "claims": [
         "C6"
@@ -564,7 +564,7 @@
       "index": 54,
       "chapter": "Immunsystem",
       "voice": "Wenn Schlaf dauerhaft fehlt, kann das Abwehrreaktionen ungünstig beeinflussen.",
-      "visual": "Tired adult in daytime with a subdued immune-cell illustration inset",
+      "visual": "Tired adult in daytime with a subdued immune-cell illustration anatomical detail",
       "labels": [],
       "claims": [
         "C6"
@@ -574,7 +574,7 @@
       "index": 55,
       "chapter": "Immunsystem",
       "voice": "Verschiedene Immunzellen übernehmen unterschiedliche Aufgaben. Ihre Aktivität folgt keinem gemeinsamen Ein-Aus-Schalter.",
-      "visual": "Two immune cells passing simple messenger particles between them",
+      "visual": "Two white blood cells exchanging one cluster of signaling molecules",
       "labels": [],
       "claims": [
         "C6"
@@ -584,7 +584,7 @@
       "index": 56,
       "chapter": "Immunsystem",
       "voice": "Das bedeutet aber nicht, dass eine einzige perfekte Nacht dich vor jeder Krankheit schützt.",
-      "visual": "Peaceful sleeper with one soft immune-cell biology illustration nearby",
+      "visual": "Ordinary immune activity in soft tissue during sleep, illustrated without a character",
       "labels": [],
       "claims": [
         "C6"
@@ -594,7 +594,7 @@
       "index": 57,
       "chapter": "Immunsystem",
       "voice": "Auch Stoffwechsel und Kreislauf folgen nachts anderen Rhythmen als am Tag.",
-      "visual": "Warm illustrated heart with calm circulation across nighttime lighting",
+      "visual": "Warm illustrated heart with calm circulation across gentle lighting",
       "labels": [],
       "claims": [
         "C4"
@@ -614,7 +614,7 @@
       "index": 59,
       "chapter": "REM",
       "voice": "Und dann gibt es eine Schlafphase, die fast wie das Gegenteil von Tiefschlaf wirkt.",
-      "visual": "Sleeping adult beside a more active illustrated brain inset",
+      "visual": "Brain macro illustrating transition to REM-related neuronal activity, very light blue",
       "labels": [],
       "claims": [
         "C7"
@@ -624,7 +624,7 @@
       "index": 60,
       "chapter": "REM",
       "voice": "In der REM-Phase ist das Gehirn in vielen Bereichen besonders aktiv.",
-      "visual": "Isolated illustrated brain with dynamic warm-toned REM signaling",
+      "visual": "Large realistic-to-illustration simplified brain, several distinct active REM circuits in muted teal, coral and blue on cream background",
       "labels": [
         "REM-Schlaf"
       ],
@@ -646,7 +646,7 @@
       "index": 62,
       "chapter": "REM",
       "voice": "Die Gehirnaktivität kann dabei in Teilen an Wachsein erinnern, obwohl du schläfst.",
-      "visual": "One brain visual moving between alert and dreamlike neural rhythms",
+      "visual": "Brain tissue showing a few wake-like neural activity patterns during REM",
       "labels": [],
       "claims": [
         "C7"
@@ -656,7 +656,7 @@
       "index": 63,
       "chapter": "REM",
       "voice": "In dieser Phase entstehen besonders häufig lebhafte Träume. Träumen ist aber nicht auf REM beschränkt.",
-      "visual": "Light imaginative travel scene floating above a resting adult",
+      "visual": "A soft everyday memory of a familiar street, subdued gentle illustration",
       "labels": [],
       "claims": [
         "C7"
@@ -666,7 +666,7 @@
       "index": 64,
       "chapter": "REM",
       "voice": "Deine Arm- und Beinmuskeln werden im REM-Schlaf normalerweise vorübergehend stark gehemmt.",
-      "visual": "One calm simplified muscle-fiber illustration with reduced activity signal",
+      "visual": "Brainstem and a muscle-fiber group with one simplified inhibition signal",
       "labels": [],
       "claims": [
         "C7"
@@ -676,7 +676,7 @@
       "index": 65,
       "chapter": "REM",
       "voice": "Das hilft zu verhindern, dass du die Bewegungen deiner Träume einfach ausführst.",
-      "visual": "Adult sleeping still, distant imagined running scene above",
+      "visual": "Resting adult and subtle illustration of imagined running in a small distant context, no dramatic fantasy poster",
       "labels": [],
       "claims": [
         "C7"
@@ -696,7 +696,7 @@
       "index": 67,
       "chapter": "REM",
       "voice": "Ein Traum kann sich wie eine ganze Geschichte anfühlen, auch wenn er schnell verblasst.",
-      "visual": "Dream memory: familiar doorway dissolving into warm morning light",
+      "visual": "Softly rendered memory of a doorway fading as a person wakes",
       "labels": [],
       "claims": [
         "C7"
@@ -706,7 +706,7 @@
       "index": 68,
       "chapter": "REM",
       "voice": "Manche Träume wirken alltäglich. Andere verbinden Orte und Erinnerungen auf völlig unerwartete Weise.",
-      "visual": "Playful impossible garden appearing beyond a bedroom doorway",
+      "visual": "Familiar doorway and garden as understated dream illustration, calm light colors",
       "labels": [],
       "claims": [
         "C7"
@@ -716,7 +716,7 @@
       "index": 69,
       "chapter": "REM",
       "voice": "Warum wir träumen, ist wissenschaftlich noch nicht vollständig geklärt.",
-      "visual": "Dream motifs branching gently around a luminous illustrated brain",
+      "visual": "Several ordinary neurons involved in dreaming, simple pale biology backdrop",
       "labels": [],
       "claims": [
         "C7"
@@ -726,7 +726,7 @@
       "index": 70,
       "chapter": "REM",
       "voice": "Forschende untersuchen unter anderem Zusammenhänge mit Erinnerungen und der Verarbeitung von Gefühlen.",
-      "visual": "Neuron network linking a few understated human emotional expressions",
+      "visual": "A few active connections in brain tissue associated with emotional memory processing",
       "labels": [],
       "claims": [
         "C7"
@@ -736,7 +736,7 @@
       "index": 71,
       "chapter": "REM",
       "voice": "Sicher ist: Das schlafende Gehirn bleibt auch in dieser Phase alles andere als abgeschaltet.",
-      "visual": "One bright brain illustration beside a peaceful sleeper",
+      "visual": "Anatomical brain with coordinated REM signaling, pale background and no neon",
       "labels": [],
       "claims": [
         "C7"
@@ -746,7 +746,7 @@
       "index": 72,
       "chapter": "Zyklen",
       "voice": "Tiefschlaf und REM wechseln sich nicht einfach einmal ab. Dein Schlaf verläuft in wiederkehrenden Zyklen.",
-      "visual": "One ribbon-like sleep rhythm curving through a calm sky",
+      "visual": "Broad repeated sleep-cycle activity waves, clean diagram-free biological illustration",
       "labels": [],
       "claims": [
         "C3"
@@ -756,7 +756,7 @@
       "index": 73,
       "chapter": "Zyklen",
       "voice": "Ein kompletter Durchlauf dauert oft ungefähr achtzig bis hundert Minuten, kann aber schwanken.",
-      "visual": "One moon arc passing over a quiet bedside window",
+      "visual": "A single simple cycle of neuronal activity moving across brain tissue, no numbers",
       "labels": [],
       "claims": [
         "C3"
@@ -766,7 +766,7 @@
       "index": 74,
       "chapter": "Zyklen",
       "voice": "Viele Menschen erleben in einer Nacht vier bis sechs solcher Zyklen.",
-      "visual": "Several softly repeated moonlight phases across one night-window view",
+      "visual": "Three successive smooth neural wave patterns in light background, no timeline cards",
       "labels": [],
       "claims": [
         "C3"
@@ -776,7 +776,7 @@
       "index": 75,
       "chapter": "Zyklen",
       "voice": "Früher in der Nacht ist Tiefschlaf meist stärker vertreten.",
-      "visual": "Early-night sleeping brain shown with slower, broader rhythms",
+      "visual": "Brain with broader slow-wave activity typical of early night",
       "labels": [],
       "claims": [
         "C3"
@@ -786,7 +786,7 @@
       "index": 76,
       "chapter": "Zyklen",
       "voice": "Gegen Morgen werden die REM-Abschnitte häufig länger. Deshalb wirken Träume dann manchmal besonders präsent.",
-      "visual": "Dawn sleeper with softly lengthening imagined dream sequence",
+      "visual": "Brain with longer REM-related signal pattern typical of later night",
       "labels": [],
       "claims": [
         "C3"
@@ -846,7 +846,7 @@
       "index": 82,
       "chapter": "Schluss",
       "voice": "Jetzt wird die Ausgangsfrage klar: Schlaf ist weder Stillstand noch ein einziger Reparaturmodus.",
-      "visual": "Calm sleeping adult with two small separate healthy brain and heart illustrations",
+      "visual": "Simplified body cutaway: one brain and heart continuing normal function",
       "labels": [],
       "claims": [
         "C1"
@@ -856,7 +856,7 @@
       "index": 83,
       "chapter": "Schluss",
       "voice": "Dein Gehirn wechselt Zustände, dein Körper reguliert sich, und Erinnerungen werden weiterverarbeitet.",
-      "visual": "One gently flowing transition between brain and neuron illustration",
+      "visual": "Macro with one brain region and a nearby magnified neuron connection",
       "labels": [],
       "claims": [
         "C5"
@@ -876,7 +876,7 @@
       "index": 85,
       "chapter": "Schluss",
       "voice": "Und genau deshalb ist Schlaf nicht verlorene Zeit, sondern ein grundlegender Teil deines Lebens.",
-      "visual": "Hopeful morning room with adult awake and soft light, no text",
+      "visual": "Bright morning illustration of an adult waking naturally, small biological focus on healthy brain activity",
       "labels": [],
       "claims": [
         "C8"

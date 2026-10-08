@@ -17,7 +17,7 @@
     {
       "scene": 1,
       "speech_section": "Was macht dein Körper eigentlich, während du schläfst?",
-      "visual_task": "Three approved cover choices showing a peaceful sleeping adult and a separate colorful biological illustration motif in a bright educational illustration style; exactly one title, never an invasive view.",
+      "visual_task": "Chosen title-only cover in original video-008 Clean Animated Biology Illustration; pale cream, light turquoise, soft anatomical forms; no dark neon brain or anime faces.",
       "image": "Bild_01",
       "motion": "static",
       "labels_de": [],
@@ -26,7 +26,7 @@
     {
       "scene": 2,
       "speech_section": "Du liegst ganz still im Bett. Doch unter der Oberfläche passiert erstaunlich viel.",
-      "visual_task": "Sleeping adult in cozy bedroom, brain activity as soft floating scientific inset",
+      "visual_task": "Softly shaded adult resting on a pillow; simple close-up of healthy relaxed facial muscles, bright calm setting",
       "image": "Bild_02",
       "motion": "static",
       "labels_de": [],
@@ -35,7 +35,7 @@
     {
       "scene": 3,
       "speech_section": "Von außen wirkt alles still. Innen laufen gleichzeitig erstaunlich viele Prozesse weiter.",
-      "visual_task": "Same adult sleeping peacefully, gently lit brain and heartbeat illustrations nearby",
+      "visual_task": "Simplified body cutaway showing a brain and calm heart with clean routes, bright pale-blue background",
       "image": "Bild_03",
       "motion": "slow-pull-out",
       "labels_de": [],
@@ -44,7 +44,7 @@
     {
       "scene": 4,
       "speech_section": "Dein Gehirn bleibt aktiv, Erinnerungen verändern sich und dein Körper stellt sich auf Erholung ein.",
-      "visual_task": "Close illustrated brain with a few glowing neuron connections",
+      "visual_task": "Macro of a few connected neurons exchanging signals inside recognizable pale brain tissue",
       "image": "Bild_04",
       "motion": "pan-right",
       "labels_de": [],
@@ -53,7 +53,7 @@
     {
       "scene": 5,
       "speech_section": "Und das alles passiert nicht gleichmäßig, sondern in mehreren Schlafphasen mit unterschiedlichen Aufgaben.",
-      "visual_task": "One sweeping sleep-rhythm wave over calm nighttime bedding",
+      "visual_task": "One large smooth brain activity wave, elegant simple biological process, no night sky",
       "image": "Bild_05",
       "motion": "slow-push-in",
       "labels_de": [],
@@ -80,7 +80,7 @@
     {
       "scene": 8,
       "speech_section": "Während du wach bist, sammelt sich nach und nach sogenannter Schlafdruck an.",
-      "visual_task": "Tired adult reading at a daytime desk, soft sunlight",
+      "visual_task": "Daytime adult at desk becoming tired after hours awake, small subject in airy room",
       "image": "Bild_08",
       "motion": "slow-pull-out",
       "labels_de": [],
@@ -89,7 +89,7 @@
     {
       "scene": 9,
       "speech_section": "Ein Teil davon hängt mit dem Botenstoff Adenosin zusammen, der im Gehirn wirkt.",
-      "visual_task": "Two enlarged colorful neurons with small adenosine messenger particles",
+      "visual_task": "Macro of two distinct neurons with several adenosine messenger particles between them",
       "image": "Bild_09",
       "motion": "static",
       "labels_de": [
@@ -109,7 +109,7 @@
     {
       "scene": 11,
       "speech_section": "Gleichzeitig arbeitet deine innere Uhr. Sie orientiert sich besonders am Wechsel von Licht und Dunkelheit.",
-      "visual_task": "Illustrated brain with subtle day-to-night timing glow",
+      "visual_task": "Simplified brain with one area responding to day-night timing; light ivory background",
       "image": "Bild_11",
       "motion": "pan-left",
       "labels_de": [],
@@ -127,7 +127,7 @@
     {
       "scene": 13,
       "speech_section": "Wenn es abends dunkler wird, verändert sich die Ausschüttung des Hormons Melatonin.",
-      "visual_task": "Twilight with one gently highlighted melatonin-signaling brain region",
+      "visual_task": "Anatomical brain illustration with small pineal region releasing melatonin messenger particles",
       "image": "Bild_13",
       "motion": "static",
       "labels_de": [
@@ -138,7 +138,7 @@
     {
       "scene": 14,
       "speech_section": "Melatonin gibt deinem Körper ein Zeitsignal. Es ist kein magischer Ausschalter für das Bewusstsein.",
-      "visual_task": "A few hormone messenger particles moving through a calm abstract field",
+      "visual_task": "Hormone signaling particles passing from one cell to another in a clean macro process",
       "image": "Bild_14",
       "motion": "pan-right",
       "labels_de": [],
@@ -147,7 +147,7 @@
     {
       "scene": 15,
       "speech_section": "Helles Licht am späten Abend kann beeinflussen, wann diese Signale stärker oder schwächer werden.",
-      "visual_task": "Adult near a bright lamp late in the evening, dark blue room",
+      "visual_task": "Adult near a bright lamp late in the evening, gentle blue room",
       "image": "Bild_15",
       "motion": "slow-push-in",
       "labels_de": [],
@@ -192,7 +192,7 @@
     {
       "scene": 20,
       "speech_section": "Danach wird der Schlaf stabiler. In der zweiten Stufe verändern sich die elektrischen Muster im Gehirn.",
-      "visual_task": "Brain with smooth softly illustrated early-sleep neural rhythms",
+      "visual_task": "Brain close-up with a few gentle neural rhythms, accurate simplified brain anatomy",
       "image": "Bild_20",
       "motion": "slow-push-in",
       "labels_de": [],
@@ -201,7 +201,7 @@
     {
       "scene": 21,
       "speech_section": "Kurze Aktivitätsausbrüche wechseln sich mit ruhigeren Mustern ab. Das Gehirn arbeitet weiter.",
-      "visual_task": "Small coordinated sparks across a simple quiet neuron network",
+      "visual_task": "One small group of neurons showing brief rhythmic activity, clear organic structure",
       "image": "Bild_21",
       "motion": "pan-left",
       "labels_de": [],
@@ -210,7 +210,7 @@
     {
       "scene": 22,
       "speech_section": "Von außen erkennst du solche Gehirnmuster nicht. Forschende messen sie mit Elektroden am Kopf.",
-      "visual_task": "Comfortable adult sleeper with external sleep-laboratory sensors on hair",
+      "visual_task": "Sleep-laboratory close-up with a few EEG electrodes on a resting adult, pale room",
       "image": "Bild_22",
       "motion": "static",
       "labels_de": [],
@@ -237,7 +237,7 @@
     {
       "scene": 25,
       "speech_section": "Nach leichteren Stufen erreicht dein Körper schließlich den sogenannten Tiefschlaf.",
-      "visual_task": "One large slow wave rolling across a clearly illustrated brain",
+      "visual_task": "Anatomical brain macro with broad slow activity wave indicating deep sleep",
       "image": "Bild_25",
       "motion": "static",
       "labels_de": [
@@ -248,7 +248,7 @@
     {
       "scene": 26,
       "speech_section": "Hier zeigen Messungen besonders langsame, kräftige Wellen der Gehirnaktivität.",
-      "visual_task": "Close simplified brain illustration with broad slow coordinated rhythms",
+      "visual_task": "A simplified brain cross-section with broad coordinated slow neuronal activity",
       "image": "Bild_26",
       "motion": "pan-left",
       "labels_de": [],
@@ -257,7 +257,7 @@
     {
       "scene": 27,
       "speech_section": "Dabei zeigen viele Nervenzellen zeitweise ein stärker abgestimmtes Aktivitätsmuster.",
-      "visual_task": "Three neurons gently synchronizing activity in one direction",
+      "visual_task": "Three neurons activating in coordinated rhythm, natural pale tissue backdrop",
       "image": "Bild_27",
       "motion": "static",
       "labels_de": [],
@@ -275,7 +275,7 @@
     {
       "scene": 29,
       "speech_section": "Puls und Atmung sind normalerweise ruhig. Das unterstützt eine geringere Belastung des Kreislaufs.",
-      "visual_task": "Single healthy heart illustration with gently moving circulation",
+      "visual_task": "Close anatomy of one heart with calmer circulation, medium-red organ on pale mint",
       "image": "Bild_29",
       "motion": "pan-right",
       "labels_de": [],
@@ -311,7 +311,7 @@
     {
       "scene": 33,
       "speech_section": "Ein Beispiel ist Wachstumshormon, das häufig besonders in frühen Tiefschlafphasen ausgeschüttet wird.",
-      "visual_task": "Illustrated brain with tiny pituitary region and hormone-signaling particles",
+      "visual_task": "Simplified brain cutaway showing pituitary area and a few hormone signal particles",
       "image": "Bild_33",
       "motion": "static",
       "labels_de": [
@@ -349,7 +349,7 @@
     {
       "scene": 37,
       "speech_section": "Schlaf schafft günstige Bedingungen für viele Vorgänge, die du tagsüber kaum bemerkst.",
-      "visual_task": "Soft-focus overview of cell energy use near calm circulation",
+      "visual_task": "Biological tissue and one small capillary with ordinary cell maintenance",
       "image": "Bild_37",
       "motion": "static",
       "labels_de": [],
@@ -358,7 +358,7 @@
     {
       "scene": 38,
       "speech_section": "Besonders viel Tiefschlaf liegt bei vielen Erwachsenen eher am Anfang der Nacht.",
-      "visual_task": "Night scene with broader sleep waves early in the night",
+      "visual_task": "Early sleep brain with broad, slow neural waves on light blue background",
       "image": "Bild_38",
       "motion": "slow-pull-out",
       "labels_de": [],
@@ -367,7 +367,7 @@
     {
       "scene": 39,
       "speech_section": "Doch während dein Körper ruhiger wird, passiert im Gehirn noch etwas anderes: Lernen geht weiter.",
-      "visual_task": "Zoom from quiet sleeper toward floating illustrated brain network",
+      "visual_task": "One anatomical brain with a few memory-related neuron connections",
       "image": "Bild_39",
       "motion": "pan-right",
       "labels_de": [],
@@ -385,7 +385,7 @@
     {
       "scene": 41,
       "speech_section": "Die dabei entstandenen Eindrücke verschwinden nicht einfach, sobald du einschläfst.",
-      "visual_task": "Few learning-related neuron connections softly lit at night",
+      "visual_task": "Neurons involved in a newly learned movement, several clear organic connections",
       "image": "Bild_41",
       "motion": "pan-left",
       "labels_de": [],
@@ -394,7 +394,7 @@
     {
       "scene": 42,
       "speech_section": "Schlaf unterstützt das Festigen und Ordnen von Erinnerungen. Wissenschaftler nennen das Gedächtniskonsolidierung.",
-      "visual_task": "One weak memory-related neural link growing more stable",
+      "visual_task": "A single synapse becomes more stable, simplified and anatomically recognizable",
       "image": "Bild_42",
       "motion": "static",
       "labels_de": [
@@ -405,7 +405,7 @@
     {
       "scene": 43,
       "speech_section": "Dabei verändern sich Verbindungen zwischen Nervenzellen. Welche Veränderungen stattfinden, hängt vom Gelernten ab.",
-      "visual_task": "Two enlarged neurons communicating at a single synapse",
+      "visual_task": "Two large neurons exchanging one chemical signal across a synapse",
       "image": "Bild_43",
       "motion": "static",
       "labels_de": [
@@ -425,7 +425,7 @@
     {
       "scene": 45,
       "speech_section": "Dein Gehirn spielt dabei nicht jede Szene des Tages wie einen Film vollständig ab.",
-      "visual_task": "Selective network connections glowing while unrelated ones stay calm",
+      "visual_task": "Several selected memory-related neural connections become more stable",
       "image": "Bild_45",
       "motion": "slow-push-in",
       "labels_de": [],
@@ -434,7 +434,7 @@
     {
       "scene": 46,
       "speech_section": "Verschiedene Schlafphasen tragen auf unterschiedliche Weise zum Lernen und Erinnern bei.",
-      "visual_task": "One brain with several gentle rhythms blending through time",
+      "visual_task": "Single brain with gently different neural activity rhythms, no split panels",
       "image": "Bild_46",
       "motion": "pan-left",
       "labels_de": [],
@@ -452,7 +452,7 @@
     {
       "scene": 48,
       "speech_section": "Schlechter Schlaf kann auch erschweren, Neues gut abzuspeichern oder Bekanntes abzurufen.",
-      "visual_task": "Soft signal fading along a single neural connection",
+      "visual_task": "One neuron with weaker signal transmission after insufficient sleep",
       "image": "Bild_48",
       "motion": "slow-pull-out",
       "labels_de": [],
@@ -461,7 +461,7 @@
     {
       "scene": 49,
       "speech_section": "Damit ist Schlaf keine Pause vom Lernen, sondern ein Teil seiner biologischen Grundlage.",
-      "visual_task": "Focused nighttime synapse with faint daytime learning context behind",
+      "visual_task": "Close-up of a normal synapse with clear signaling in sleep",
       "image": "Bild_49",
       "motion": "pan-right",
       "labels_de": [],
@@ -470,7 +470,7 @@
     {
       "scene": 50,
       "speech_section": "Auch dein Immunsystem arbeitet nachts weiter. Allerdings nicht wie eine Armee auf Knopfdruck.",
-      "visual_task": "Single illustrated white blood cell moving along soft biological surroundings",
+      "visual_task": "One white immune cell traveling beside healthy body tissue",
       "image": "Bild_50",
       "motion": "slow-push-in",
       "labels_de": [],
@@ -497,7 +497,7 @@
     {
       "scene": 53,
       "speech_section": "Das ist ein Zusammenspiel vieler Prozesse, nicht eine einzelne geheimnisvolle Reparaturtaste.",
-      "visual_task": "One immune cell gently communicating with one neighboring tissue cell",
+      "visual_task": "One white blood cell calmly communicating with a local tissue cell",
       "image": "Bild_53",
       "motion": "slow-pull-out",
       "labels_de": [],
@@ -506,7 +506,7 @@
     {
       "scene": 54,
       "speech_section": "Wenn Schlaf dauerhaft fehlt, kann das Abwehrreaktionen ungünstig beeinflussen.",
-      "visual_task": "Tired adult in daytime with a subdued immune-cell illustration inset",
+      "visual_task": "Tired adult in daytime with a subdued immune-cell illustration anatomical detail",
       "image": "Bild_54",
       "motion": "pan-right",
       "labels_de": [],
@@ -515,7 +515,7 @@
     {
       "scene": 55,
       "speech_section": "Verschiedene Immunzellen übernehmen unterschiedliche Aufgaben. Ihre Aktivität folgt keinem gemeinsamen Ein-Aus-Schalter.",
-      "visual_task": "Two immune cells passing simple messenger particles between them",
+      "visual_task": "Two white blood cells exchanging one cluster of signaling molecules",
       "image": "Bild_55",
       "motion": "slow-push-in",
       "labels_de": [],
@@ -524,7 +524,7 @@
     {
       "scene": 56,
       "speech_section": "Das bedeutet aber nicht, dass eine einzige perfekte Nacht dich vor jeder Krankheit schützt.",
-      "visual_task": "Peaceful sleeper with one soft immune-cell biology illustration nearby",
+      "visual_task": "Ordinary immune activity in soft tissue during sleep, illustrated without a character",
       "image": "Bild_56",
       "motion": "pan-left",
       "labels_de": [],
@@ -533,7 +533,7 @@
     {
       "scene": 57,
       "speech_section": "Auch Stoffwechsel und Kreislauf folgen nachts anderen Rhythmen als am Tag.",
-      "visual_task": "Warm illustrated heart with calm circulation across nighttime lighting",
+      "visual_task": "Warm illustrated heart with calm circulation across gentle lighting",
       "image": "Bild_57",
       "motion": "static",
       "labels_de": [],
@@ -551,7 +551,7 @@
     {
       "scene": 59,
       "speech_section": "Und dann gibt es eine Schlafphase, die fast wie das Gegenteil von Tiefschlaf wirkt.",
-      "visual_task": "Sleeping adult beside a more active illustrated brain inset",
+      "visual_task": "Brain macro illustrating transition to REM-related neuronal activity, very light blue",
       "image": "Bild_59",
       "motion": "pan-right",
       "labels_de": [],
@@ -560,7 +560,7 @@
     {
       "scene": 60,
       "speech_section": "In der REM-Phase ist das Gehirn in vielen Bereichen besonders aktiv.",
-      "visual_task": "Isolated illustrated brain with dynamic warm-toned REM signaling",
+      "visual_task": "Large realistic-to-illustration simplified brain, several distinct active REM circuits in muted teal, coral and blue on cream background",
       "image": "Bild_60",
       "motion": "static",
       "labels_de": [
@@ -580,7 +580,7 @@
     {
       "scene": 62,
       "speech_section": "Die Gehirnaktivität kann dabei in Teilen an Wachsein erinnern, obwohl du schläfst.",
-      "visual_task": "One brain visual moving between alert and dreamlike neural rhythms",
+      "visual_task": "Brain tissue showing a few wake-like neural activity patterns during REM",
       "image": "Bild_62",
       "motion": "static",
       "labels_de": [],
@@ -589,7 +589,7 @@
     {
       "scene": 63,
       "speech_section": "In dieser Phase entstehen besonders häufig lebhafte Träume. Träumen ist aber nicht auf REM beschränkt.",
-      "visual_task": "Light imaginative travel scene floating above a resting adult",
+      "visual_task": "A soft everyday memory of a familiar street, subdued gentle illustration",
       "image": "Bild_63",
       "motion": "slow-pull-out",
       "labels_de": [],
@@ -598,7 +598,7 @@
     {
       "scene": 64,
       "speech_section": "Deine Arm- und Beinmuskeln werden im REM-Schlaf normalerweise vorübergehend stark gehemmt.",
-      "visual_task": "One calm simplified muscle-fiber illustration with reduced activity signal",
+      "visual_task": "Brainstem and a muscle-fiber group with one simplified inhibition signal",
       "image": "Bild_64",
       "motion": "pan-right",
       "labels_de": [],
@@ -607,7 +607,7 @@
     {
       "scene": 65,
       "speech_section": "Das hilft zu verhindern, dass du die Bewegungen deiner Träume einfach ausführst.",
-      "visual_task": "Adult sleeping still, distant imagined running scene above",
+      "visual_task": "Resting adult and subtle illustration of imagined running in a small distant context, no dramatic fantasy poster",
       "image": "Bild_65",
       "motion": "slow-push-in",
       "labels_de": [],
@@ -625,7 +625,7 @@
     {
       "scene": 67,
       "speech_section": "Ein Traum kann sich wie eine ganze Geschichte anfühlen, auch wenn er schnell verblasst.",
-      "visual_task": "Dream memory: familiar doorway dissolving into warm morning light",
+      "visual_task": "Softly rendered memory of a doorway fading as a person wakes",
       "image": "Bild_67",
       "motion": "static",
       "labels_de": [],
@@ -634,7 +634,7 @@
     {
       "scene": 68,
       "speech_section": "Manche Träume wirken alltäglich. Andere verbinden Orte und Erinnerungen auf völlig unerwartete Weise.",
-      "visual_task": "Playful impossible garden appearing beyond a bedroom doorway",
+      "visual_task": "Familiar doorway and garden as understated dream illustration, calm light colors",
       "image": "Bild_68",
       "motion": "slow-pull-out",
       "labels_de": [],
@@ -643,7 +643,7 @@
     {
       "scene": 69,
       "speech_section": "Warum wir träumen, ist wissenschaftlich noch nicht vollständig geklärt.",
-      "visual_task": "Dream motifs branching gently around a luminous illustrated brain",
+      "visual_task": "Several ordinary neurons involved in dreaming, simple pale biology backdrop",
       "image": "Bild_69",
       "motion": "pan-right",
       "labels_de": [],
@@ -652,7 +652,7 @@
     {
       "scene": 70,
       "speech_section": "Forschende untersuchen unter anderem Zusammenhänge mit Erinnerungen und der Verarbeitung von Gefühlen.",
-      "visual_task": "Neuron network linking a few understated human emotional expressions",
+      "visual_task": "A few active connections in brain tissue associated with emotional memory processing",
       "image": "Bild_70",
       "motion": "slow-push-in",
       "labels_de": [],
@@ -661,7 +661,7 @@
     {
       "scene": 71,
       "speech_section": "Sicher ist: Das schlafende Gehirn bleibt auch in dieser Phase alles andere als abgeschaltet.",
-      "visual_task": "One bright brain illustration beside a peaceful sleeper",
+      "visual_task": "Anatomical brain with coordinated REM signaling, pale background and no neon",
       "image": "Bild_71",
       "motion": "pan-left",
       "labels_de": [],
@@ -670,7 +670,7 @@
     {
       "scene": 72,
       "speech_section": "Tiefschlaf und REM wechseln sich nicht einfach einmal ab. Dein Schlaf verläuft in wiederkehrenden Zyklen.",
-      "visual_task": "One ribbon-like sleep rhythm curving through a calm sky",
+      "visual_task": "Broad repeated sleep-cycle activity waves, clean diagram-free biological illustration",
       "image": "Bild_72",
       "motion": "static",
       "labels_de": [],
@@ -679,7 +679,7 @@
     {
       "scene": 73,
       "speech_section": "Ein kompletter Durchlauf dauert oft ungefähr achtzig bis hundert Minuten, kann aber schwanken.",
-      "visual_task": "One moon arc passing over a quiet bedside window",
+      "visual_task": "A single simple cycle of neuronal activity moving across brain tissue, no numbers",
       "image": "Bild_73",
       "motion": "slow-pull-out",
       "labels_de": [],
@@ -688,7 +688,7 @@
     {
       "scene": 74,
       "speech_section": "Viele Menschen erleben in einer Nacht vier bis sechs solcher Zyklen.",
-      "visual_task": "Several softly repeated moonlight phases across one night-window view",
+      "visual_task": "Three successive smooth neural wave patterns in light background, no timeline cards",
       "image": "Bild_74",
       "motion": "pan-right",
       "labels_de": [],
@@ -697,7 +697,7 @@
     {
       "scene": 75,
       "speech_section": "Früher in der Nacht ist Tiefschlaf meist stärker vertreten.",
-      "visual_task": "Early-night sleeping brain shown with slower, broader rhythms",
+      "visual_task": "Brain with broader slow-wave activity typical of early night",
       "image": "Bild_75",
       "motion": "slow-push-in",
       "labels_de": [],
@@ -706,7 +706,7 @@
     {
       "scene": 76,
       "speech_section": "Gegen Morgen werden die REM-Abschnitte häufig länger. Deshalb wirken Träume dann manchmal besonders präsent.",
-      "visual_task": "Dawn sleeper with softly lengthening imagined dream sequence",
+      "visual_task": "Brain with longer REM-related signal pattern typical of later night",
       "image": "Bild_76",
       "motion": "pan-left",
       "labels_de": [],
@@ -760,7 +760,7 @@
     {
       "scene": 82,
       "speech_section": "Jetzt wird die Ausgangsfrage klar: Schlaf ist weder Stillstand noch ein einziger Reparaturmodus.",
-      "visual_task": "Calm sleeping adult with two small separate healthy brain and heart illustrations",
+      "visual_task": "Simplified body cutaway: one brain and heart continuing normal function",
       "image": "Bild_82",
       "motion": "static",
       "labels_de": [],
@@ -769,7 +769,7 @@
     {
       "scene": 83,
       "speech_section": "Dein Gehirn wechselt Zustände, dein Körper reguliert sich, und Erinnerungen werden weiterverarbeitet.",
-      "visual_task": "One gently flowing transition between brain and neuron illustration",
+      "visual_task": "Macro with one brain region and a nearby magnified neuron connection",
       "image": "Bild_83",
       "motion": "slow-pull-out",
       "labels_de": [],
@@ -787,7 +787,7 @@
     {
       "scene": 85,
       "speech_section": "Und genau deshalb ist Schlaf nicht verlorene Zeit, sondern ein grundlegender Teil deines Lebens.",
-      "visual_task": "Hopeful morning room with adult awake and soft light, no text",
+      "visual_task": "Bright morning illustration of an adult waking naturally, small biological focus on healthy brain activity",
       "image": "Bild_85",
       "motion": "slow-push-in",
       "labels_de": [],
