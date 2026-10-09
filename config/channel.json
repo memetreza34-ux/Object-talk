@@ -49,7 +49,7 @@
     "labels": "0-2 short German labels only when useful",
     "complexity": "low; preferably 2-4 central visible elements and one dominant process per frame",
     "style_reference_image": null,
-    "written_spec_is_authoritative": true,
+    "written_spec_is_authoritative": false,
     "final_image_generation_allowed": true,
     "historical_pilot_styles_are_authoritative": false,
     "forbidden_historical_styles": [
@@ -58,7 +58,14 @@
       "medical CGI",
       "glossy plastic 3D",
       "historical pilot visual worlds"
-    ]
+    ],
+    "original_video_style_ref": "bildwelt/008-ORIGINAL-VIDEO-STYLE-REFERENCE.md",
+    "reference_video": "008-longform-verdauung (user-approved final MP4)",
+    "reference_frames_dir": "assets/channel/references/video008",
+    "primary_style_reference": "eight actual still images from the finished 008 digestion video, uploaded as images to Google Flow",
+    "selected_cover_as_secondary_style_reference": true,
+    "reference_image_status": "NOT_YET_UPLOADED_TO_GITHUB; local download pack supplied separately",
+    "style_authority": "actual accepted 008 video frames first, textual style specification second; approved chosen cover additional secondary reference"
   },
   "flow_prompting": {
     "instruction_language": "en",
@@ -67,7 +74,7 @@
     "duplicate_image_reuse_allowed": false,
     "scene_difference_minimum_dimensions_changed": 2,
     "prefer_process_relationship_before_after_context_over_repeated_portraits": true,
-    "prompt_style": "short stable style block plus scene plus process plus optional labels plus text contrast plus short negative rule",
+    "prompt_style": "exact video 008 longform grammar + real 008 frame image reference(s) + approved cover + concrete one-process scene + optional 0-2 labels + contrast",
     "style_block_path": "bildwelt/FLOW-STYLE-BLOCK.txt",
     "labels_generated_in_flow": true,
     "preferred_labels_per_image": "0-1",
@@ -97,11 +104,14 @@
       "file names",
       "asset IDs",
       "prompt headings"
-    ]
+    ],
+    "require_actual_008_frame_references_in_flow": true,
+    "reference_priority": "008 original screenshots PRIMARY; selected approved cover SECONDARY; per-scene brief determines content",
+    "block_unsupported_exact_style_claims": true
   },
   "labels": {
     "language": "de",
-    "source": "02_bildprompts/label-plan.json",
+    "source": "05_info/label-plan.json (new projects; older projects may use 02_bildprompts/label-plan.json)",
     "preferred_per_image": "0-1",
     "max_per_image_guideline": 2,
     "max_words_per_label": 3,
@@ -126,16 +136,16 @@
     "text_contrast_required": true
   },
   "audio_pacing": {
-    "default_voice_speed_multiplier": 1.10,
+    "default_voice_speed_multiplier": 1.1,
     "compress_long_tts_pauses_before_timing": true,
     "processed_audio_is_authoritative_timing_source": true,
-    "max_final_voice_pause_seconds": 0.50,
+    "max_final_voice_pause_seconds": 0.5,
     "default_long_pause_threshold_seconds": 0.45,
     "default_retained_pause_seconds": 0.12
   },
   "video_pacing": {
     "preferred_image_hold_seconds": "3-6",
-    "max_image_hold_seconds": 7.0,
+    "max_image_hold_seconds": 7,
     "split_long_speech_beats_into_unique_images": true,
     "do_not_stretch_to_exact_runtime": true,
     "duplicate_image_reuse_allowed": false,

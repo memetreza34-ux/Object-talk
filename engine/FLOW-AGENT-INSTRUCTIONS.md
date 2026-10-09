@@ -27,7 +27,7 @@ Every production MUST use the literal style definition from the last accepted lo
 
 Reject No photoreal medical imagery, no medical CGI, no glossy 3D, no feature-animation/Pixar look, no toy/kids-book look, no corporate infographic, no clutter, no gore, no random icons, no unnecessary text.
 
-**Do not use the selected cover as image-to-image reference or visual palette/style reference for the full episode.** Especially for sleep: bright calm educational anatomy illustrations, NOT neon floating glowing brains, dark blue fantasy scenes, anime humans or monochrome dark style. Keep the same illustrated biology world as 008, regardless of topic. Cover selection gates the asset Bild_01 only.
+**USE the user-selected cover as an additional image-to-image style reference after it passes comparison with original 008 video frames. The ACTUAL 008 frames remain the PRIMARY style anchor for all episode images.** Especially for sleep: bright calm educational anatomy illustrations, NOT neon floating glowing brains, dark blue fantasy scenes, anime humans or monochrome dark style. Keep the same illustrated biology world as 008, regardless of topic. Cover selection gates the asset Bild_01 only.
 
 ## STYLE RULES
 
@@ -205,3 +205,8 @@ Reject final production imagery if:
 - visual style does not match the canonical illustration world
 - image is a near-duplicate without a new teaching purpose
 - severe AI artifacts are present
+
+
+## ORIGINAL FRAMES REQUIRED BEFORE GOOGLE FLOW
+
+Read `bildwelt/008-ORIGINAL-VIDEO-STYLE-REFERENCE.md`. Confirm that actual 008 still images (not just their filenames in text) were uploaded to the Google Flow image session; selected approved cover is added as a secondary image reference after choice. Preserve line work, soft volume, layered organ wall/tissue environments and pale textured backgrounds seen in the actual 008 MP4, not generic flat infographic neurons or glowing dark brain posters. If the reference images aren't accessible in Flow, explain the blocker instead of claiming that the same world was reproduced. See `assets/channel/references/video008/README.md`.

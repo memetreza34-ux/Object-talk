@@ -22,7 +22,7 @@ Originale Ausschlussregel:
 
 `No photoreal medical imagery, no medical CGI, no glossy 3D, no feature-animation/Pixar look, no toy/kids-book look, no corporate infographic, no clutter, no gore, no random icons, no unnecessary text.`
 
-Jedes Folgebild soll im selben hellen, sanft schattierten biomedizinischen Zeichenstil bleiben. Titelbild/Flow-Cover ist kein Stilanker. Bei Themen mit Nacht/Traum kein dunkles Comic-/Neon-Look-and-Feel zulassen. **Wenn die Themenästhetik den Illustrationsstil überschreibt: Image QA FAIL.**
+Jedes Folgebild soll im selben hellen, sanft schattierten biomedizinischen Zeichenstil bleiben. Die Originalframes des freigegebenen Videos 008 sind zwingend der primäre Stilanker; ein ausgewähltes, 008-konformes Cover ist die sekundäre Stilreferenz. Bei Themen mit Nacht/Traum kein dunkles Comic-/Neon-Look-and-Feel zulassen. **Wenn die Themenästhetik den Illustrationsstil überschreibt: Image QA FAIL.**
 
 ## 2. Prompt-Schema
 
@@ -121,11 +121,9 @@ Schwacher Kontrast = regenerieren.
 
 ## 9. Referenz
 
-Die schriftliche Bildwelt ist die oberste Stilautoritaet.
+Der konkrete originale Video-008-Look ist die oberste Stilautorität – nicht nur ein generischer Stilname. Immer echte Bilder aus `assets/channel/references/video008/` in Google Flow als visuelle Referenzen übergeben (siehe `bildwelt/008-ORIGINAL-VIDEO-STYLE-REFERENCE.md`). Das gewählte Cover muss bereits den 008-Stil erfüllen und wird dann als **sekundäre Referenz zusammen mit den Originalframes** für Bild 02+ verwendet. Cover-Titel/Komposition nicht 1:1 kopieren.
 
-Eine spaetere `assets/channel/STYLE_REFERENCE.png` darf nur als zusaetzlicher visueller Anker genutzt werden, nachdem der Nutzer sie explizit freigegeben hat.
-
-`Bild_01` ist nicht automatisch Style-Master fuer die gesamte Episode.
+Fehlen die echten 008-Bilder im Flow-Auftrag, nicht behaupten, eine visuelle 1:1-Übernahme sei abgesichert.
 
 ## 10. Hard Fails
 
@@ -155,3 +153,8 @@ Regenerieren bei:
 Ein akzeptiertes Bild soll wirken wie ein sauberer Frame aus derselben animierten Biologie-Serie und innerhalb etwa einer Sekunde grob erfassbar sein.
 
 **Cover nur Titel. Ein Bild = eine Hauptidee. So wenig Text wie moeglich.**
+
+
+## Reproduzierbare Referenzbilder
+
+Acht **echte Frames aus dem finalen 008-Verdauungsvideo**: Zeitpunkte 00:18, 01:24, 01:48, 03:24, 03:48, 04:12, 04:24, 05:36. Die vollständige Stil-Fingerabdruck-Analyse steht in `bildwelt/008-ORIGINAL-VIDEO-STYLE-REFERENCE.md`. Nur den Textblock zu kopieren war nicht ausreichend: 009 driftete zu freigestellten Schulbuch-Neuronen, dunklen Schlafpostern und leuchtenden Gehirnen. Künftig Referenz-Upload + Cover-Zusatzreferenz + Einzelbildprüfung.

@@ -2,7 +2,7 @@
 
 Status: **KANONISCH / FREIGEGEBEN**
 
-Diese Datei ist die einzige autoritative Bildwelt fuer normale Biologie-, Gesundheits- und Koerper-Erklaerszenen des Kanals.
+Diese Datei definiert die Bildwelt fuer normale Biologie-Erklaerszenen; die **konkrete Originalvideo-Referenz ist jetzt ebenso verbindlich**: `bildwelt/008-ORIGINAL-VIDEO-STYLE-REFERENCE.md` und echte Video-008-Standbilder. Kurztext allein reicht nach den Stilabweichungen von 009 nicht aus.
 
 Zusaetzlich verbindlich fuer sichtbaren Text und Informationsdichte:
 `engine/VISIBLE-TEXT-STANDARD.md`
@@ -153,7 +153,7 @@ Der kanonische kurze Styleblock steht in `bildwelt/FLOW-STYLE-BLOCK.txt`.
 
 Die Textspezifikation in dieser Datei ist die oberste Stilautoritaet.
 
-Eine spaetere `assets/channel/STYLE_REFERENCE.png` darf als zusaetzlicher visueller Anker genutzt werden, sobald ein sauberes einzelnes Referenzbild vom Nutzer explizit akzeptiert wurde. Die Referenz darf die Regeln dieser Datei nicht ueberschreiben.
+Statt auf ein hypothetisches einzelnes Stilbild zu warten, die **acht echten extrahierten 008-Frames** als Primärreferenzen verwenden (`assets/channel/references/video008/`, sofern die JPGs dort tatsächlich abgelegt wurden). Das vom Nutzer gewählte und freigegebene Cover ist als **zusätzliche sekundäre Referenz** erwünscht, muss aber die 008-Serienwelt selbst bereits erfüllen.
 
 ## Qualitaetskriterium
 
@@ -173,6 +173,13 @@ Fehlstile aus Video 008:
 
 Dieser Stilblock bleibt auch bei Themen wie Schlaf, Träumen oder nächtlichen Körperprozessen dominant: überwiegend helle, ruhige Illustrationshintergründe, hochwertige gezeichnete biologische Formen, zarte Schatten und klare Farben. **Kein neuer dunkler Neon-, Anime-, Sci-Fi- oder glühende-Gehirne-Stil.** Nacht wird nur in einzelnen Kontextbildern durch dezente Farb-/Lichtakzente angedeutet. Menschliche Figuren dürfen ergänzen, biologische Illustration bleibt das Hauptmotiv.
 
-Das gewählte Cover ist **nur das erste Endbild**, NIEMALS Stilreferenz für die anderen 84 Szenen. Es darf nicht als Referenzbild an Flow übergeben werden, wenn dadurch die Szenen Bild 02+ die Coverpalette oder die Coverkomposition kopieren. Stattdessen den kanonischen Textstil auf jeden Einzelprompt anwenden.
+Das vom Nutzer gewählte Cover wird **als sekundäre Bildreferenz für die Folgeszenen verwendet**, sofern es vorher mit echten 008-Stilframes verglichen wurde. Die **008-Originalstandbilder bleiben primär** für organische Konturen, plastische Illustration, Tiefenwirkung und Komposition. Folgebilder dürfen den Cover-Titel nicht kopieren. Es geht um gleiche Technik, nicht identischen Bildinhalt.
 
 QA-Hard-Fail: Wenn Bilder in den dunklen leuchtenden Comic-/Schlafposter-Stil abdriften, nicht ins finale Assetset übernehmen; nach Vorlage 008 neu erstellen.
+
+
+## Bildwelt durch reales Video 008 verankern
+
+Der tatsächlich hochgeladene finale Film zeigt nicht bloß Pastellfarben und vereinfachte Illustrationen, sondern **große, mit Umgebung verbundene biologische Szenen**: warm umrandete organische Gewebe, schichtige Schattierung, sanfte Bokeh-/Farbverlauf-Hintergründe, klare Flussrichtungen und abwechslungsreiche Maßstäbe. Die echte Fotogramm-Liste mit Sekundenmarken steht in `bildwelt/008-ORIGINAL-VIDEO-STYLE-REFERENCE.md`.
+
+Bei jedem neuen Video zuerst Original-008-Stilbilder als Bilder an Google Flow geben, dann drei Cover im selben Stil erzeugen. Nach Coverfreigabe das gewählte Cover gemeinsam mit den originalen Stilframes als Referenzen für folgende Bilder einsetzen. Ohne hochgeladene Stilreferenzen kein angebliches 1:1-Replikat. Nicht in die alte Idee zurückfallen, Cover überhaupt nicht als Referenz zu benutzen.

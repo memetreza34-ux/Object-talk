@@ -27,7 +27,7 @@ No photoreal medical imagery, no medical CGI, no glossy 3D, no feature-animation
 - Biologische Vorgänge im Vordergrund: 2–4 erkennbare Elemente, 0–2 Labels, korrekter Schriftkontrast.
 - Kamera wechseln: Alltag → Körperroute → Organ-Cutaway → Gewebe → Zelle → Mechanismus → Ergebnis.
 - Verbot: eigenständiger dunkler Nacht-/Anime-/Neon-Stil nur wegen Schlafthema; glühende Gehirne als Wiederholungsmotiv.
-- **Gewähltes Cover NIEMALS als Stilreferenz für Innenbilder verwenden.** Es ist nur Bild_01.
+- Das nach drei Varianten ausgewählte, visuell zu 008 passende Cover wird als **sekundäre Stilreferenz** für die Innenbilder verwendet, **immer zusammen mit den originalen 008-Stilbildern als Hauptreferenz**. Seine Schrift oder Bildkomposition nicht kopieren.
 
 ## 3. Identische Struktur des ausführlichen Flow-Prompts
 Ab `youtube-videos/008-longform-verdauung/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt`:
@@ -69,3 +69,10 @@ Kopiere die technische Detailtiefe aus `008/03_pipeline/ANTIGRAVITY-PROMPT-ZUM-K
 
 ## Formatfreiheit
 77 Bilder sind der **freigegebene konkrete Standard von 008 und 009**, nicht eine starre wissenschaftliche Notwendigkeit für jede denkbare Video-Länge. Nur mit begründeter dramaturgischer Notwendigkeit und erhaltener Bildzeit-Regel davon abweichen. 6–7 Minuten werden erst nach echtem Voice-Timing sicher bestätigt.
+
+
+## 8. Originalframes statt bloßem Stilwortlaut (neue verbindliche Referenz)
+
+Der tatsächliche finale 008-Film wurde bildweise analysiert: großer zusammenhängender Organ-/Zellprozess, sanft mehrschichtige Gewebe-Schattierung, dunklere warme organische Konturen, helle Mint/Türkis/Creme-Texturflächen und warme Korall-Rosa-Organe. Für 009 und alle künftigen Longforms echten Bilder-Kontaktbogen/acht Frame-Dateien aus `bildwelt/008-ORIGINAL-VIDEO-STYLE-REFERENCE.md` als Google-Flow-Stilinput benutzen. Der ursprünglich wiederverwendete 008-Prompt enthält **nicht** alle visuellen Besonderheiten des echten finalen Videos und kann alleine keine konstante Bildwelt gewährleisten.
+
+**Auftrag:** Referenzframes zuerst ins externe Google Flow laden, 3 passende Cover generieren, Nutzer wählt, dann ausgewähltes Cover zusätzlich zu Originalframes für Fünfer-Batches nutzen. Fehlen echte Bilder, nicht „1:1 gleicher Stil“ behaupten. Stilabweichung bedeutet Bild-QA FAIL.
