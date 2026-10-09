@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "video_id": "009-longform-schlaf",
-  "status": "PENDING_REAL_FLOW_REFERENCE_UPLOAD",
+  "status": "AWAITING_THREE_COVER_GENERATIONS",
   "primary_source": "actual user-uploaded final 008 digestion longform, 414.208 s",
   "reference_manifest": "bildwelt/008-ORIGINAL-VIDEO-STYLE-REFERENCE.md",
   "source_frames_expected": [
@@ -19,5 +19,8 @@
   "frame_style_consistency_status": "PENDING",
   "verified_by": null,
   "verified_after_actual_media_generation": false,
-  "notes": "Do not mark true based on prompt text, filenames or assumed Flow access. True only after actual style images were uploaded and final generated images visually checked. The original 008 JPGs were supplied as a separate ZIP in the conversation, not committed to GitHub."
+  "notes": "Generate three separate covers FIRST, whether or not reference images were uploaded. Actual 008 visual comparison is mandatory only for final phase2 media QA; don't mark results PASS without real review.",
+  "reference_comparison_mode": null,
+  "comparison_reference_files": [],
+  "reference_upload_required_before_covers": false
 }

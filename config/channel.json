@@ -64,7 +64,7 @@
     "reference_frames_dir": "assets/channel/references/video008",
     "primary_style_reference": "eight actual still images from the finished 008 digestion video, uploaded as images to Google Flow",
     "selected_cover_as_secondary_style_reference": true,
-    "reference_image_status": "NOT_YET_UPLOADED_TO_GITHUB; local download pack supplied separately",
+    "reference_image_status": "OPTIONAL_UPLOAD_ENHANCEMENT; NOT_BLOCKING_COVER_GENERATION",
     "style_authority": "Real accepted video 008 frame references plus binding written spec; chosen 008-compliant cover as secondary visual anchor"
   },
   "flow_prompting": {
@@ -105,10 +105,12 @@
       "asset IDs",
       "prompt headings"
     ],
-    "require_actual_008_frame_references_in_flow": true,
-    "reference_priority": "008 original screenshots PRIMARY; selected approved cover SECONDARY; per-scene brief determines content",
+    "require_actual_008_frame_references_in_flow": false,
+    "reference_priority": "008 original images if uploaded; otherwise detailed 008 style text for initial covers; approved user cover secondary; final image QA required",
     "block_unsupported_exact_style_claims": true,
-    "require_original_video_stills_upload": true
+    "require_original_video_stills_upload": false,
+    "prefer_actual_008_frame_references_when_already_attached": true,
+    "start_first_three_covers_without_reference_upload": true
   },
   "labels": {
     "language": "de",

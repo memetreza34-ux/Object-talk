@@ -12,11 +12,11 @@ Im jeweiligen Videoordner `02_bildprompts/` stehen:
 ```
 Die README liegt **innerhalb** des ZIP-Ordners, nicht daneben. Dort genau **eine fertige Bilder-ZIP** ablegen. Der Ordner wird von `tools/prepare_phase3.py` direkt gelesen. Entpackte Bilder gehören intern unter `03_pipeline/images/`. Interne Label-/QA-Daten liegen in `05_info/label-plan.json` und `05_info/image-review.json`, nie sichtbar neben dem Nutzerprompt. Alte Projekte dürfen historische Pfade behalten.
 
-## Referenz-Gate VOR dem ersten Cover
+## Keine Referenz-Upload-Sperre vor den drei Covern
 
-Der Nutzer stellt 2–4 **echte Original-008-Bildreferenzen** aus `bildwelt/008-ORIGINAL-VIDEO-STYLE-REFERENCE.md` bereit. Diese müssen Google Flow als Bildinput vorliegen; reiner GitHub-Link/Stilname reicht nicht. Ohne Bilder die Ausgabe als nicht stilverifiziert markieren und zuerst um die Bildreferenzen bitten.
+Die **erste Aktion nach Einfügen des einen Google-Flow-Prompts** ist stets die Generierung von DREI separaten Covervarianten. Google Flow darf vorher NICHT nach der Referenz-ZIP, JPGs oder weiterer Zustimmung fragen. Echte Original-008-Bilder, falls schon im Flow-Chat vorhanden, als Stilreferenz nutzen; ansonsten die im Prompt dokumentierte organische 008-Bildwelt als Best-Effort nutzen und die Cover trotzdem sofort erstellen.
 
-**Nach der Coverwahl:** das ausgewählte Cover als SEKUNDÄRE Stilreferenz gemeinsam mit den echten 008-JPGs weiterverwenden. Die 008-JPGs bleiben Hauptanker für biologische Konturen, Organ-/Zellkontexte und Schattierung. Kein Cover-Titel in Folgebildern.
+Ohne echte 008-Frames keine behauptete 1:1-Stilgarantie. Bereits erzeugte Cover vor Auswahl visuell prüfen; nach Auswahl kann das Cover als Zusatzreferenz dienen. Echte 008-JPGs **optional** für die spätere Verbesserung der Bildkonsistenz hochladen, insbesondere bei wiederholter Stilabweichung. Die Qualität wird vor dem finalen Video durch tatsächliche Bildprüfung freigegeben, nicht durch das Vorhandensein von Dateien allein.
 
 ## Ein Prompt steuert drei Phasen
 Der Prompt ist **eine einzige vollständig ausgefüllte Textdatei** mit den 3 konkreten Cover-Varianten und dem gesamten, konkreten Szenenregister von Bild 02 bis Bild NN. Keine 17 separaten Textprompts oder Batchdateien.

@@ -158,14 +158,15 @@ Nach dem Finalrender wird `04_export/postmortem.md` gemäß `engine/POSTMORTEM-S
 `WARNUNG` darf weiterlaufen, wenn sie dokumentiert und unkritisch ist.
 `FEHLER` oder `FAIL` stoppt die Pipeline.
 
-## ORIGINAL-008-BILDWELT-FREIGABE – vor Phase 2 für Video 009+
+## Original-008-Stilprüfung – erst vor finaler Bildfreigabe
 
-- [ ] **Echte Bilder** aus dem finalen 008-Film in der Google-Flow-Sitzung als Image-References hinterlegt (nicht nur Pfad oder Text).
-- [ ] mindestens zwei richtige Frame-Namen und ihre reale Verwendung in `05_info/style-reference-review.json` dokumentiert.
-- [ ] Drei Covervarianten mit denselben echten 008-Stilbildern erstellt und vom Nutzer genau eines ausgewählt.
-- [ ] Ausgewähltes Cover ist nach visueller 008-Referenzprüfung freigegeben und wurde **zusätzlich** zu den Originalframes als Stilanker eingesetzt.
-- [ ] Alle akzeptierten Bilder auf originale Linien, Schattierung, organische Szenen/Komposition, Farblogik und Qualität mit 008 verglichen. Abweichung => REGENERATE.
-- [ ] Erst dann `style-reference-review.json` PASS und `python tools/validate_planning_v2.py <PROJECT> --phase2` als prüfbar betrachten.
+Das Erzeugen der **3 Cover ist NIE durch einen Referenz-Upload blockiert**. Flow beginnt sofort mit drei selbstständigen Coverbildern und wartet ausschließlich auf die Nutzerwahl 1/2/3. JPGs aus dem Original 008 können bereits hochgeladen sein, sind aber keine Startvoraussetzung.
 
-Die Binärframes sind derzeit nicht automatisch in GitHub; Referenzpack dem Nutzer bereitstellen und im externen Flow tatsächlich hochladen. Textprompts allein begründen **keine Zusicherung** einer 1:1-Bildwelt. Generatorergebnisse sind nicht deterministisch.
+- [ ] Drei echte Cover existieren, Nutzer hat explizit 1/2/3 gewählt.
+- [ ] Das gewählte Cover erfüllt den tatsächlichen 008-Illustrationsstil.
+- [ ] Cover wird als zusätzliche Stilreferenz für Innenbilder verwendet, sofern technisch verfügbar.
+- [ ] Finale 009-Bilder werden **vor Freigabe** tatsächlich mit Original-008-Frames verglichen; bei Stilbruch erneut generieren.
+- [ ] Optional: Original-008-Bilder wurden in Google Flow hochgeladen, um höhere Stiltreue zu erreichen. Fehlen sie, ist das kein automatischer Workflow-Fehler; die tatsächliche visuelle 008-Vergleichsprüfung bleibt verpflichtend.
+- [ ] `05_info/style-reference-review.json` belegt Nutzerwahl, Bildprüfung und verwendete Vergleichsgrundlage. Nur dann `python tools/validate_planning_v2.py VIDEOORDNER --phase2` freigeben.
 
+Ein identischer Bildstil kann bei probabilistischer Generierung nicht garantiert werden. Ein Textprompt alleine begründet noch keine positive Bild-QA.

@@ -412,16 +412,14 @@ def validate_phase1(project: Path) -> set[str]:
 
 
 def validate_real_008_style_reference_gate(project: Path) -> None:
-    """For regular videos 009+, do not approve images without proof of real 008 references."""
+    """Final media QA, NOT a prerequisite to generating three initial covers."""
     video_prefix = project.name.split("-", 1)[0]
     if len(video_prefix) != 3 or not video_prefix.isdigit() or int(video_prefix) < 9:
-        return  # retain historic 008 and old pilots without changing their validation contract
+        return
 
-    gate_path = project / "05_info" / "style-reference-review.json"
-    require_file(gate_path)
-    proof = load_json(gate_path)
-
-    frame_names = proof.get("original_008_frame_filenames_uploaded")
+    proof_path = project / "05_info" / "style-reference-review.json"
+    require_file(proof_path)
+    proof = load_json(proof_path)
     approved = {
         "008_01_organ_transport.jpg",
         "008_02_peristalsis.jpg",
@@ -433,14 +431,8 @@ def validate_real_008_style_reference_gate(project: Path) -> None:
         "008_08_microbiome.jpg",
     }
 
-    if proof.get("actual_008_frames_uploaded_to_flow") is not True:
-        fail("008-Stil-Gate: Es fehlt der Nachweis, dass echte Referenzbilder in Google Flow hochgeladen wurden")
-    if not isinstance(frame_names, list) or len(set(frame_names)) < 2:
-        fail("008-Stil-Gate: Mindestens zwei echte 008-Frame-Dateien müssen dokumentiert sein")
-    if not set(frame_names).issubset(approved):
-        fail("008-Stil-Gate: Unbekannte oder nicht originale 008-Referenznamen")
     if proof.get("chosen_cover_number") not in (1, 2, 3):
-        fail("008-Stil-Gate: Nutzer-Coverwahl 1/2/3 fehlt")
+        fail("008-Stil-Gate: Nutzer muss eines der drei erzeugten Cover auswählen")
     for flag in (
         "approved_cover_passes_008_world",
         "approved_cover_used_as_secondary_reference",
@@ -448,13 +440,23 @@ def validate_real_008_style_reference_gate(project: Path) -> None:
         "verified_after_actual_media_generation",
     ):
         if proof.get(flag) is not True:
-            fail(f"008-Stil-Gate: {flag} ist nicht durch echte Medienprüfung belegt")
+            fail(f"008-Stil-Gate: {flag} ist vor finaler Bildfreigabe nicht belegt")
     if proof.get("frame_style_consistency_status") != "PASS":
-        fail("008-Stil-Gate: alle Bildreferenzprüfungen müssen PASS sein")
+        fail("008-Stil-Gate: visueller 008-Referenzvergleich steht nicht auf PASS")
     if not isinstance(proof.get("verified_by"), str) or not proof["verified_by"].strip():
-        fail("008-Stil-Gate: verified_by muss eine tatsächlich verantwortliche Prüfstelle angeben")
+        fail("008-Stil-Gate: wer hat die echten Bilder geprüft?")
 
-    print("008-REFERENZ-PASS: echte Originalframes, gewähltes Cover und visueller Abgleich bestätigt")
+    attached = proof.get("actual_008_frames_uploaded_to_flow") is True
+    frame_names = (proof.get("original_008_frame_filenames_uploaded") if attached
+                   else proof.get("comparison_reference_files"))
+    if not isinstance(frame_names, list) or len(set(frame_names)) < 2:
+        fail("008-Stil-Gate: Vergleich mit mindestens zwei echten 008-Bildreferenzen dokumentieren")
+    if not set(frame_names).issubset(approved):
+        fail("008-Stil-Gate: Vergleichsdateinamen gehören nicht zum echten Video 008")
+    if not attached and proof.get("reference_comparison_mode") != "manual_compare_to_real_008":
+        fail("008-Stil-Gate: ohne Flow-Upload ist ein dokumentierter manueller Bildvergleich erforderlich")
+
+    print("008-STIL-QA-PASS: ausgewähltes Cover und echte Bilder visuell mit 008 verglichen")
 
 
 def validate_phase2(project: Path, expected_ids: set[str]) -> None:

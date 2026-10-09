@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "video_id": "REPLACE_WITH_VIDEO_ID",
-  "status": "PENDING_REAL_FLOW_REFERENCE_UPLOAD",
+  "status": "TEMPLATE",
   "primary_source": "original real 008 digestion longform video frames",
   "reference_manifest": "bildwelt/008-ORIGINAL-VIDEO-STYLE-REFERENCE.md",
   "actual_008_frames_uploaded_to_flow": false,
@@ -12,5 +12,9 @@
   "every_accepted_image_compared_with_actual_008_frames": false,
   "frame_style_consistency_status": "PENDING",
   "verified_by": null,
-  "verified_after_actual_media_generation": false
+  "verified_after_actual_media_generation": false,
+  "reference_comparison_mode": null,
+  "comparison_reference_files": [],
+  "reference_upload_required_before_covers": false,
+  "notes": "Generate three separate covers FIRST, whether or not reference images were uploaded. Actual 008 visual comparison is mandatory only for final phase2 media QA; don't mark results PASS without real review."
 }
