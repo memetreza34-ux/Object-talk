@@ -112,9 +112,6 @@
       "labels": [],
       "claims": [
         "C1"
-      ],
-      "original_scene_ids": [
-        1
       ]
     },
     {
@@ -125,9 +122,6 @@
       "labels": [],
       "claims": [
         "C1"
-      ],
-      "original_scene_ids": [
-        2
       ]
     },
     {
@@ -138,9 +132,6 @@
       "labels": [],
       "claims": [
         "C1"
-      ],
-      "original_scene_ids": [
-        3
       ]
     },
     {
@@ -151,9 +142,6 @@
       "labels": [],
       "claims": [
         "C5"
-      ],
-      "original_scene_ids": [
-        4
       ]
     },
     {
@@ -164,9 +152,6 @@
       "labels": [],
       "claims": [
         "C3"
-      ],
-      "original_scene_ids": [
-        5
       ]
     },
     {
@@ -177,9 +162,6 @@
       "labels": [],
       "claims": [
         "C2"
-      ],
-      "original_scene_ids": [
-        6
       ]
     },
     {
@@ -190,9 +172,6 @@
       "labels": [],
       "claims": [
         "C2"
-      ],
-      "original_scene_ids": [
-        7
       ]
     },
     {
@@ -203,9 +182,6 @@
       "labels": [],
       "claims": [
         "C2"
-      ],
-      "original_scene_ids": [
-        8
       ]
     },
     {
@@ -218,9 +194,6 @@
       ],
       "claims": [
         "C2"
-      ],
-      "original_scene_ids": [
-        9
       ]
     },
     {
@@ -231,9 +204,6 @@
       "labels": [],
       "claims": [
         "C2"
-      ],
-      "original_scene_ids": [
-        10
       ]
     },
     {
@@ -244,9 +214,6 @@
       "labels": [],
       "claims": [
         "C2"
-      ],
-      "original_scene_ids": [
-        11
       ]
     },
     {
@@ -259,10 +226,6 @@
       ],
       "claims": [
         "C2"
-      ],
-      "original_scene_ids": [
-        12,
-        13
       ]
     },
     {
@@ -273,9 +236,6 @@
       "labels": [],
       "claims": [
         "C2"
-      ],
-      "original_scene_ids": [
-        14
       ]
     },
     {
@@ -286,9 +246,6 @@
       "labels": [],
       "claims": [
         "C2"
-      ],
-      "original_scene_ids": [
-        15
       ]
     },
     {
@@ -299,10 +256,6 @@
       "labels": [],
       "claims": [
         "C2"
-      ],
-      "original_scene_ids": [
-        16,
-        17
       ]
     },
     {
@@ -313,9 +266,6 @@
       "labels": [],
       "claims": [
         "C3"
-      ],
-      "original_scene_ids": [
-        18
       ]
     },
     {
@@ -326,9 +276,6 @@
       "labels": [],
       "claims": [
         "C3"
-      ],
-      "original_scene_ids": [
-        19
       ]
     },
     {
@@ -339,9 +286,6 @@
       "labels": [],
       "claims": [
         "C3"
-      ],
-      "original_scene_ids": [
-        20
       ]
     },
     {
@@ -352,9 +296,6 @@
       "labels": [],
       "claims": [
         "C3"
-      ],
-      "original_scene_ids": [
-        21
       ]
     },
     {
@@ -365,9 +306,6 @@
       "labels": [],
       "claims": [
         "C3"
-      ],
-      "original_scene_ids": [
-        22
       ]
     },
     {
@@ -378,9 +316,6 @@
       "labels": [],
       "claims": [
         "C4"
-      ],
-      "original_scene_ids": [
-        23
       ]
     },
     {
@@ -391,9 +326,6 @@
       "labels": [],
       "claims": [
         "C4"
-      ],
-      "original_scene_ids": [
-        24
       ]
     },
     {
@@ -406,9 +338,6 @@
       ],
       "claims": [
         "C3"
-      ],
-      "original_scene_ids": [
-        25
       ]
     },
     {
@@ -419,10 +348,6 @@
       "labels": [],
       "claims": [
         "C3"
-      ],
-      "original_scene_ids": [
-        26,
-        27
       ]
     },
     {
@@ -433,9 +358,6 @@
       "labels": [],
       "claims": [
         "C3"
-      ],
-      "original_scene_ids": [
-        28
       ]
     },
     {
@@ -446,9 +368,6 @@
       "labels": [],
       "claims": [
         "C4"
-      ],
-      "original_scene_ids": [
-        29
       ]
     },
     {
@@ -459,9 +378,6 @@
       "labels": [],
       "claims": [
         "C4"
-      ],
-      "original_scene_ids": [
-        30
       ]
     },
     {
@@ -472,9 +388,6 @@
       "labels": [],
       "claims": [
         "C4"
-      ],
-      "original_scene_ids": [
-        31
       ]
     },
     {
@@ -485,9 +398,6 @@
       "labels": [],
       "claims": [
         "C4"
-      ],
-      "original_scene_ids": [
-        32
       ]
     },
     {
@@ -500,10 +410,6 @@
       ],
       "claims": [
         "C4"
-      ],
-      "original_scene_ids": [
-        33,
-        34
       ]
     },
     {
@@ -514,9 +420,6 @@
       "labels": [],
       "claims": [
         "C4"
-      ],
-      "original_scene_ids": [
-        35
       ]
     },
     {
@@ -527,9 +430,6 @@
       "labels": [],
       "claims": [
         "C4"
-      ],
-      "original_scene_ids": [
-        36
       ]
     },
     {
@@ -540,9 +440,6 @@
       "labels": [],
       "claims": [
         "C4"
-      ],
-      "original_scene_ids": [
-        37
       ]
     },
     {
@@ -553,9 +450,6 @@
       "labels": [],
       "claims": [
         "C3"
-      ],
-      "original_scene_ids": [
-        38
       ]
     },
     {
@@ -566,9 +460,6 @@
       "labels": [],
       "claims": [
         "C5"
-      ],
-      "original_scene_ids": [
-        39
       ]
     },
     {
@@ -579,9 +470,6 @@
       "labels": [],
       "claims": [
         "C5"
-      ],
-      "original_scene_ids": [
-        40
       ]
     },
     {
@@ -594,10 +482,6 @@
       ],
       "claims": [
         "C5"
-      ],
-      "original_scene_ids": [
-        41,
-        42
       ]
     },
     {
@@ -610,9 +494,6 @@
       ],
       "claims": [
         "C5"
-      ],
-      "original_scene_ids": [
-        43
       ]
     },
     {
@@ -623,9 +504,6 @@
       "labels": [],
       "claims": [
         "C5"
-      ],
-      "original_scene_ids": [
-        44
       ]
     },
     {
@@ -636,9 +514,6 @@
       "labels": [],
       "claims": [
         "C5"
-      ],
-      "original_scene_ids": [
-        45
       ]
     },
     {
@@ -649,9 +524,6 @@
       "labels": [],
       "claims": [
         "C5"
-      ],
-      "original_scene_ids": [
-        46
       ]
     },
     {
@@ -662,9 +534,6 @@
       "labels": [],
       "claims": [
         "C5"
-      ],
-      "original_scene_ids": [
-        47
       ]
     },
     {
@@ -675,9 +544,6 @@
       "labels": [],
       "claims": [
         "C5"
-      ],
-      "original_scene_ids": [
-        48
       ]
     },
     {
@@ -688,9 +554,6 @@
       "labels": [],
       "claims": [
         "C5"
-      ],
-      "original_scene_ids": [
-        49
       ]
     },
     {
@@ -701,10 +564,6 @@
       "labels": [],
       "claims": [
         "C6"
-      ],
-      "original_scene_ids": [
-        50,
-        51
       ]
     },
     {
@@ -715,9 +574,6 @@
       "labels": [],
       "claims": [
         "C6"
-      ],
-      "original_scene_ids": [
-        52
       ]
     },
     {
@@ -728,9 +584,6 @@
       "labels": [],
       "claims": [
         "C6"
-      ],
-      "original_scene_ids": [
-        53
       ]
     },
     {
@@ -741,9 +594,6 @@
       "labels": [],
       "claims": [
         "C6"
-      ],
-      "original_scene_ids": [
-        54
       ]
     },
     {
@@ -754,9 +604,6 @@
       "labels": [],
       "claims": [
         "C6"
-      ],
-      "original_scene_ids": [
-        55
       ]
     },
     {
@@ -767,9 +614,6 @@
       "labels": [],
       "claims": [
         "C6"
-      ],
-      "original_scene_ids": [
-        56
       ]
     },
     {
@@ -780,9 +624,6 @@
       "labels": [],
       "claims": [
         "C4"
-      ],
-      "original_scene_ids": [
-        57
       ]
     },
     {
@@ -793,9 +634,6 @@
       "labels": [],
       "claims": [
         "C4"
-      ],
-      "original_scene_ids": [
-        58
       ]
     },
     {
@@ -806,9 +644,6 @@
       "labels": [],
       "claims": [
         "C7"
-      ],
-      "original_scene_ids": [
-        59
       ]
     },
     {
@@ -821,9 +656,6 @@
       ],
       "claims": [
         "C7"
-      ],
-      "original_scene_ids": [
-        60
       ]
     },
     {
@@ -834,9 +666,6 @@
       "labels": [],
       "claims": [
         "C7"
-      ],
-      "original_scene_ids": [
-        61
       ]
     },
     {
@@ -847,9 +676,6 @@
       "labels": [],
       "claims": [
         "C7"
-      ],
-      "original_scene_ids": [
-        62
       ]
     },
     {
@@ -860,9 +686,6 @@
       "labels": [],
       "claims": [
         "C7"
-      ],
-      "original_scene_ids": [
-        63
       ]
     },
     {
@@ -873,10 +696,6 @@
       "labels": [],
       "claims": [
         "C7"
-      ],
-      "original_scene_ids": [
-        64,
-        65
       ]
     },
     {
@@ -887,9 +706,6 @@
       "labels": [],
       "claims": [
         "C7"
-      ],
-      "original_scene_ids": [
-        66
       ]
     },
     {
@@ -900,9 +716,6 @@
       "labels": [],
       "claims": [
         "C7"
-      ],
-      "original_scene_ids": [
-        67
       ]
     },
     {
@@ -913,9 +726,6 @@
       "labels": [],
       "claims": [
         "C7"
-      ],
-      "original_scene_ids": [
-        68
       ]
     },
     {
@@ -926,9 +736,6 @@
       "labels": [],
       "claims": [
         "C7"
-      ],
-      "original_scene_ids": [
-        69
       ]
     },
     {
@@ -939,9 +746,6 @@
       "labels": [],
       "claims": [
         "C7"
-      ],
-      "original_scene_ids": [
-        70
       ]
     },
     {
@@ -952,9 +756,6 @@
       "labels": [],
       "claims": [
         "C7"
-      ],
-      "original_scene_ids": [
-        71
       ]
     },
     {
@@ -965,9 +766,6 @@
       "labels": [],
       "claims": [
         "C3"
-      ],
-      "original_scene_ids": [
-        72
       ]
     },
     {
@@ -978,9 +776,6 @@
       "labels": [],
       "claims": [
         "C3"
-      ],
-      "original_scene_ids": [
-        73
       ]
     },
     {
@@ -991,10 +786,6 @@
       "labels": [],
       "claims": [
         "C3"
-      ],
-      "original_scene_ids": [
-        74,
-        75
       ]
     },
     {
@@ -1005,9 +796,6 @@
       "labels": [],
       "claims": [
         "C3"
-      ],
-      "original_scene_ids": [
-        76
       ]
     },
     {
@@ -1018,9 +806,6 @@
       "labels": [],
       "claims": [
         "C3"
-      ],
-      "original_scene_ids": [
-        77
       ]
     },
     {
@@ -1031,9 +816,6 @@
       "labels": [],
       "claims": [
         "C8"
-      ],
-      "original_scene_ids": [
-        78
       ]
     },
     {
@@ -1044,9 +826,6 @@
       "labels": [],
       "claims": [
         "C8"
-      ],
-      "original_scene_ids": [
-        79
       ]
     },
     {
@@ -1057,9 +836,6 @@
       "labels": [],
       "claims": [
         "C8"
-      ],
-      "original_scene_ids": [
-        80
       ]
     },
     {
@@ -1070,9 +846,6 @@
       "labels": [],
       "claims": [
         "C8"
-      ],
-      "original_scene_ids": [
-        81
       ]
     },
     {
@@ -1083,9 +856,6 @@
       "labels": [],
       "claims": [
         "C1"
-      ],
-      "original_scene_ids": [
-        82
       ]
     },
     {
@@ -1096,9 +866,6 @@
       "labels": [],
       "claims": [
         "C5"
-      ],
-      "original_scene_ids": [
-        83
       ]
     },
     {
@@ -1109,9 +876,6 @@
       "labels": [],
       "claims": [
         "C8"
-      ],
-      "original_scene_ids": [
-        84
       ]
     },
     {
@@ -1122,9 +886,6 @@
       "labels": [],
       "claims": [
         "C8"
-      ],
-      "original_scene_ids": [
-        85
       ]
     }
   ]

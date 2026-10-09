@@ -13,10 +13,11 @@
     5,
     6
   ],
-  "future_batches": "each at most five, final 82–85",
+  "future_batches": "Nach Cover-Auswahl jeweils fünf einzelne Bilder, letztes Bild 77",
   "note": "Flow media generation is external. These statuses must be updated only from actual accepted assets/user cover selection.",
   "remaining_images": 76,
   "final_images_range": "Bild_01–Bild_77",
   "sequence": "Bild_02–Bild_06, danach jeweils bis zu fünf weitere; letzte Gruppe 77",
-  "notes": "Video 009 now follows exact 008 longform storyboard/visual system. Covers and images not yet regenerated or reviewed."
+  "notes": "Video 009 now follows exact 008 longform storyboard/visual system. Covers and images not yet regenerated or reviewed.",
+  "expected_final_images": 77
 }

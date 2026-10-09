@@ -6,7 +6,7 @@
   "items": [
     {
       "id": "SV_001",
-      "voiceover_text": "Hook/Einleitung: Was macht dein Körper eigentlich, während du schläfst? Du liegst ganz still im Bett. Doch unter der Oberfläche passiert erstaunlich viel. Von außen wirkt alles still. Inn…",
+      "voiceover_text": "Hook/Einleitung: Was macht dein Körper eigentlich, während du schläfst? Du liegst ganz still im Bett. Doch unter der Oberfläche passiert erstaunlich viel. Von außen wirkt alles still. Inn.",
       "function": "hook",
       "learning_goal": "Hook/Einleitung in klaren Ursachen und Wirkungen erklären.",
       "claim_ids": [
@@ -26,7 +26,7 @@
     },
     {
       "id": "SV_002",
-      "voiceover_text": "Schlafdruck/Adenosin: Dein Körper schaltet am Abend nicht plötzlich um. Seine inneren Signale verändern sich über Stunden. Während du wach bist, sammelt sich nach und nach sogenannter Schlafdr…",
+      "voiceover_text": "Schlafdruck/Adenosin: Dein Körper schaltet am Abend nicht plötzlich um. Seine inneren Signale verändern sich über Stunden. Während du wach bist, sammelt sich nach und nach sogenannter Schlafdr.",
       "function": "mechanism",
       "learning_goal": "Schlafdruck/Adenosin in klaren Ursachen und Wirkungen erklären.",
       "claim_ids": [
@@ -43,7 +43,7 @@
     },
     {
       "id": "SV_003",
-      "voiceover_text": "Innere Uhr/Melatonin: Gleichzeitig arbeitet deine innere Uhr. Sie orientiert sich besonders am Wechsel von Licht und Dunkelheit. Tageslicht unterstützt das Wachsein. Abends steigt bei Dunkelhe…",
+      "voiceover_text": "Innere Uhr/Melatonin: Gleichzeitig arbeitet deine innere Uhr. Sie orientiert sich besonders am Wechsel von Licht und Dunkelheit. Tageslicht unterstützt das Wachsein. Abends steigt bei Dunkelhe.",
       "function": "mechanism",
       "learning_goal": "Innere Uhr/Melatonin in klaren Ursachen und Wirkungen erklären.",
       "claim_ids": [
@@ -60,7 +60,7 @@
     },
     {
       "id": "SV_004",
-      "voiceover_text": "Einschlafen: Beim Einschlafen werden deine Muskeln lockerer. Reize von außen treten langsam in den Hintergrund. Du wechselst in die erste leichte Schlafstufe. Kleine Geräusche können …",
+      "voiceover_text": "Einschlafen: Beim Einschlafen werden deine Muskeln lockerer. Reize von außen treten langsam in den Hintergrund. Du wechselst in die erste leichte Schlafstufe. Kleine Geräusche können .",
       "function": "mechanism",
       "learning_goal": "Einschlafen in klaren Ursachen und Wirkungen erklären.",
       "claim_ids": [
@@ -77,7 +77,7 @@
     },
     {
       "id": "SV_005",
-      "voiceover_text": "Schlafmessung/NREM: Von außen erkennst du solche Gehirnmuster nicht. Forschende messen sie mit Elektroden am Kopf. Die Körpertemperatur sinkt etwas, und der Herzschlag wird im Durchschnitt l…",
+      "voiceover_text": "Schlafmessung/NREM: Von außen erkennst du solche Gehirnmuster nicht. Forschende messen sie mit Elektroden am Kopf. Die Körpertemperatur sinkt etwas, und der Herzschlag wird im Durchschnitt l.",
       "function": "mechanism",
       "learning_goal": "Schlafmessung/NREM in klaren Ursachen und Wirkungen erklären.",
       "claim_ids": [
@@ -95,7 +95,7 @@
     },
     {
       "id": "SV_006",
-      "voiceover_text": "Tiefschlaf: Im Tiefschlaf zeigen viele Nervenzellen besonders langsame, aufeinander abgestimmte Aktivitätswellen. Es ist jetzt meist schwerer, dich zu wecken als während leichter Sch…",
+      "voiceover_text": "Tiefschlaf: Im Tiefschlaf zeigen viele Nervenzellen besonders langsame, aufeinander abgestimmte Aktivitätswellen. Es ist jetzt meist schwerer, dich zu wecken als während leichter Sch.",
       "function": "mechanism",
       "learning_goal": "Tiefschlaf in klaren Ursachen und Wirkungen erklären.",
       "claim_ids": [
@@ -113,7 +113,7 @@
     },
     {
       "id": "SV_007",
-      "voiceover_text": "Hormone/Gewebe: Im Schlaf verändert sich außerdem die Freisetzung verschiedener Hormone über die Nacht. Früher Tiefschlaf geht oft mit stärkerer Ausschüttung von Wachstumshormon einher, …",
+      "voiceover_text": "Hormone/Gewebe: Im Schlaf verändert sich außerdem die Freisetzung verschiedener Hormone über die Nacht. Früher Tiefschlaf geht oft mit stärkerer Ausschüttung von Wachstumshormon einher, .",
       "function": "mechanism",
       "learning_goal": "Hormone/Gewebe in klaren Ursachen und Wirkungen erklären.",
       "claim_ids": [
@@ -131,7 +131,7 @@
     },
     {
       "id": "SV_008",
-      "voiceover_text": "Gedächtnis: Doch während dein Körper ruhiger wird, passiert im Gehirn noch etwas anderes: Lernen geht weiter. Stell dir vor, du hast am Tag eine neue Bewegung geübt oder etwas gelese…",
+      "voiceover_text": "Gedächtnis: Doch während dein Körper ruhiger wird, passiert im Gehirn noch etwas anderes: Lernen geht weiter. Stell dir vor, du hast am Tag eine neue Bewegung geübt oder etwas gelese.",
       "function": "mechanism",
       "learning_goal": "Gedächtnis in klaren Ursachen und Wirkungen erklären.",
       "claim_ids": [
@@ -148,7 +148,7 @@
     },
     {
       "id": "SV_009",
-      "voiceover_text": "Immunsystem: Das Immunsystem arbeitet auch nachts. Seine Zellen tauschen dazu ständig Signale mit anderen Zellen aus. Schlaf und innere Uhr beeinflussen, wann bestimmte Teile dieser A…",
+      "voiceover_text": "Immunsystem: Das Immunsystem arbeitet auch nachts. Seine Zellen tauschen dazu ständig Signale mit anderen Zellen aus. Schlaf und innere Uhr beeinflussen, wann bestimmte Teile dieser A.",
       "function": "mechanism",
       "learning_goal": "Immunsystem in klaren Ursachen und Wirkungen erklären.",
       "claim_ids": [
@@ -166,7 +166,7 @@
     },
     {
       "id": "SV_010",
-      "voiceover_text": "REM/Muskelhemmung: Und dann gibt es eine Schlafphase, die fast wie das Gegenteil von Tiefschlaf wirkt. In der REM-Phase ist das Gehirn in vielen Bereichen besonders aktiv. REM steht für sch…",
+      "voiceover_text": "REM/Muskelhemmung: Und dann gibt es eine Schlafphase, die fast wie das Gegenteil von Tiefschlaf wirkt. In der REM-Phase ist das Gehirn in vielen Bereichen besonders aktiv. REM steht für sch.",
       "function": "mechanism",
       "learning_goal": "REM/Muskelhemmung in klaren Ursachen und Wirkungen erklären.",
       "claim_ids": [
@@ -183,7 +183,7 @@
     },
     {
       "id": "SV_011",
-      "voiceover_text": "Träume: Ein Traum kann sich wie eine ganze Geschichte anfühlen, auch wenn er schnell verblasst. Manche Träume wirken alltäglich. Andere verbinden Orte und Erinnerungen auf völlig…",
+      "voiceover_text": "Träume: Ein Traum kann sich wie eine ganze Geschichte anfühlen, auch wenn er schnell verblasst. Manche Träume wirken alltäglich. Andere verbinden Orte und Erinnerungen auf völlig.",
       "function": "mechanism",
       "learning_goal": "Träume in klaren Ursachen und Wirkungen erklären.",
       "claim_ids": [
@@ -200,7 +200,7 @@
     },
     {
       "id": "SV_012",
-      "voiceover_text": "Schlafzyklen/Erholung: Tiefschlaf und REM wechseln sich nicht einfach einmal ab. Dein Schlaf verläuft in wiederkehrenden Zyklen. Ein kompletter Durchlauf dauert oft ungefähr achtzig bis hundert…",
+      "voiceover_text": "Schlafzyklen/Erholung: Tiefschlaf und REM wechseln sich nicht einfach einmal ab. Dein Schlaf verläuft in wiederkehrenden Zyklen. Ein kompletter Durchlauf dauert oft ungefähr achtzig bis hundert.",
       "function": "mechanism",
       "learning_goal": "Schlafzyklen/Erholung in klaren Ursachen und Wirkungen erklären.",
       "claim_ids": [
@@ -218,7 +218,7 @@
     },
     {
       "id": "SV_013",
-      "voiceover_text": "Schluss: Eine kurze Nacht lässt sich deshalb nicht einfach durch ein besonders langes Ausschlafen wegzaubern. Jetzt wird die Ausgangsfrage klar: Schlaf ist weder Stillstand noch e…",
+      "voiceover_text": "Schluss: Eine kurze Nacht lässt sich deshalb nicht einfach durch ein besonders langes Ausschlafen wegzaubern. Jetzt wird die Ausgangsfrage klar: Schlaf ist weder Stillstand noch e.",
       "function": "summary",
       "learning_goal": "Schluss in klaren Ursachen und Wirkungen erklären.",
       "claim_ids": [

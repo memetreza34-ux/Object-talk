@@ -56,6 +56,7 @@ python tools/export_subtitles.py youtube-videos/009-longform-schlaf
 ## Upload-Checkliste
 
 - [ ] finale MP4 liegt im Ordner `fertiges-video/`
+- [ ] exakt 77 eigenständige akzeptierte Bilder aus der freigegebenen 008-Bildwelt
 - [ ] Laufzeit 6:00–7:00 Minuten
 - [ ] 1920×1080 / 30 fps
 - [ ] Audio vollständig und sauber
