@@ -49,7 +49,7 @@
     "labels": "0-2 short German labels only when useful",
     "complexity": "low; preferably 2-4 central visible elements and one dominant process per frame",
     "style_reference_image": null,
-    "written_spec_is_authoritative": false,
+    "written_spec_is_authoritative": true,
     "final_image_generation_allowed": true,
     "historical_pilot_styles_are_authoritative": false,
     "forbidden_historical_styles": [
@@ -65,7 +65,7 @@
     "primary_style_reference": "eight actual still images from the finished 008 digestion video, uploaded as images to Google Flow",
     "selected_cover_as_secondary_style_reference": true,
     "reference_image_status": "NOT_YET_UPLOADED_TO_GITHUB; local download pack supplied separately",
-    "style_authority": "actual accepted 008 video frames first, textual style specification second; approved chosen cover additional secondary reference"
+    "style_authority": "Real accepted video 008 frame references plus binding written spec; chosen 008-compliant cover as secondary visual anchor"
   },
   "flow_prompting": {
     "instruction_language": "en",
@@ -107,7 +107,8 @@
     ],
     "require_actual_008_frame_references_in_flow": true,
     "reference_priority": "008 original screenshots PRIMARY; selected approved cover SECONDARY; per-scene brief determines content",
-    "block_unsupported_exact_style_claims": true
+    "block_unsupported_exact_style_claims": true,
+    "require_original_video_stills_upload": true
   },
   "labels": {
     "language": "de",

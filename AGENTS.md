@@ -220,4 +220,9 @@ STOP bei:
 
 ## Longform 008 – bewährter Referenzstandard
 
-Fuer neue 6–7-Minuten-Videos `engine/LONGFORM-008-MASTERSTANDARD.md` verwenden: zuerst die Dateien aus `008-longform-verdauung` auf Prompt-Struktur, wissenschaftliche Abschnittsplanung, Bildwelt, Render und Export abgleichen, danach **nur Thema und fachliche Visuals/Skript anpassen**. Keine neue Bildwelt erfinden. Kein anderer Stil aus dem Cover ableiten. Dokumentation und Medienstatus sauber unterscheiden.
+Fuer neue 6–7-Minuten-Videos `engine/LONGFORM-008-MASTERSTANDARD.md` verwenden: zuerst die Dateien aus `008-longform-verdauung` auf Prompt-Struktur, wissenschaftliche Abschnittsplanung, Bildwelt, Render und Export abgleichen, danach **nur Thema und fachliche Visuals/Skript anpassen**. Keine neue Bildwelt erfinden. Original-008-Frames müssen als reale Bilder in Flow bereitstehen; das ausgewählte und 008-konforme Cover wird als SEKUNDÄRER Referenzanker dazugenommen, nicht als alleiniger Stilgeber. Dokumentation und Medienstatus sauber unterscheiden.
+
+
+## 008 Original-Video-Fingerabdruck (Pflicht vor Flow)
+
+`bildwelt/008-ORIGINAL-VIDEO-STYLE-REFERENCE.md` lesen und 2–4 der dort dokumentierten echten 008-Frames im externen Flow-Chat tatsächlich hochladen. Der kurze Styleblock allein wurde bereits als unzureichend nachgewiesen. Nach Coverwahl das gewählte Cover als zusätzliche Referenz mitlaufen lassen. Keine neue Folge mit isolierten Lehrbuchsymbolen, leuchtenden Neon-Gehirnen oder Animefiguren als '008-Bildwelt' freigeben. Reale JPGs sind noch NICHT automatisch im GitHub-Repo eingecheckt; die Referenz-ZIP muss separat eingespielt werden.

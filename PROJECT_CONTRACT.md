@@ -231,11 +231,11 @@ Cover-Prompt muss zusaetzlich ausdruecklich sagen:
 
 ## Referenzsystem
 
-Die schriftliche Bildwelt ist die oberste Stilautoritaet.
+Die in `bildwelt/008-ORIGINAL-VIDEO-STYLE-REFERENCE.md` dokumentierten **echten Originalframes aus dem fertigen 008-Video** sind primäre Bild-Stilbelege, ergänzt durch den verbindlichen geschriebenen Stilblock.
 
-`assets/channel/STYLE_REFERENCE.png` darf spaeter als zusaetzlicher visueller Anker genutzt werden, sobald der Nutzer ein einzelnes sauberes Referenzbild explizit akzeptiert hat. Die Bildreferenz darf die schriftlichen Regeln nicht ueberschreiben.
+Mindestens zwei tatsächlich in Google Flow als Bilder hochgeladene Original-008-JPGs sind für neue Longforms erforderlich. Die acht Zeitcode-Beispiele und ein Erzeugungsskript stehen in `bildwelt/008-ORIGINAL-VIDEO-STYLE-REFERENCE.md` und `tools/build_008_style_refs.py`. Nur Text zu referenzieren genügt nicht.
 
-Das Cover `Bild_01` wird nicht automatisch als Stilanker fuer alle Folgebilder verwendet.
+Das vom Nutzer aus drei Angeboten ausgewählte und gegen die 008-Frames geprüfte Cover `Bild_01` wird **als zusätzliche sekundäre Bild-Stilreferenz** für Folgebilder verwendet, immer zusammen mit den 008-Originalframes als primären Referenzen. Weder Covertext noch spezifische Coverkomposition in Folgebilder kopieren.
 
 ## Asset-Hygiene
 
@@ -284,3 +284,8 @@ Die gesamte Bildproduktion muss die Richtlinien des externen Bildgenerators einh
 ## Longform-008-Referenz (verbindlich fuer 6–7-Minuten-Serie)
 
 `engine/LONGFORM-008-MASTERSTANDARD.md` ist die praktische Referenz fuer Promptgestalt, 77-Szenen-/13-Abschnitte-Planung, denselben Clean Animated Biology Illustration Look, ausfuehrlichen Antigravity-Workflow und vollstaendigen YouTube-Export. Bei neuen Themen wird nur fachlicher Inhalt ersetzt, keine komplett neue Stilrichtung oder Pipeline entworfen. Die Nutzeroberflaeche bleibt vereinfachtes `02_bildprompts/` mit EINER Flow-Promptdatei + `bilder-zip/`.
+
+
+## Reale Stilvorlagen-Pflicht
+
+Objekt-Talk-Longforms werden anhand echter extrahierter Bilder des fertigen 008-Verdauungsvideos erzeugt: Formgebung, Linienführung, Schattierung, Tiefenstaffelung und Kompositionsgrammatik. Promptaufbau bleibt analog zu 008. Fehlende tatsächliche Bildreferenzen sind ein Produktionsblocker für die Zusicherung einer 008-identischen Bildwelt. Sichtprüfung und Neugenerierung bei Stilabweichung sind Pflicht; kein generatives Modell kann pixelgenau gleichbleibende Bilder garantieren.

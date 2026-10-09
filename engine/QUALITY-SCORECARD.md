@@ -163,7 +163,9 @@ Keine Freigabe bei:
 - sichtbar überladenem Bild
 - mehreren konkurrierenden Hauptaussagen im selben Frame
 - englischem sichtbarem Text
-- deutlichem Stilbruch gegen `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
+- deutlichem Stilbruch gegen tatsächlich geprüfte Bilder des finalen 008-Referenzvideos (siehe `bildwelt/008-ORIGINAL-VIDEO-STYLE-REFERENCE.md`) oder gegen `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
+- fehlenden realen Original-008-Bildreferenzen im externen Flow-Workflow bei einer neuen Longform-Produktion
+- falsch als alleinige Stilreferenz verwendetem ausgewähltem Cover ohne die Original-008-Frames
 - Drift in fotorealistischen Medizin-Look, Medical-CGI oder glossy 3D
 - Voice-over und Bild widersprechen sich
 - fehlendem Pflichtbild

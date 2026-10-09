@@ -12,6 +12,12 @@ Im jeweiligen Videoordner `02_bildprompts/` stehen:
 ```
 Die README liegt **innerhalb** des ZIP-Ordners, nicht daneben. Dort genau **eine fertige Bilder-ZIP** ablegen. Der Ordner wird von `tools/prepare_phase3.py` direkt gelesen. Entpackte Bilder gehören intern unter `03_pipeline/images/`. Interne Label-/QA-Daten liegen in `05_info/label-plan.json` und `05_info/image-review.json`, nie sichtbar neben dem Nutzerprompt. Alte Projekte dürfen historische Pfade behalten.
 
+## Referenz-Gate VOR dem ersten Cover
+
+Der Nutzer stellt 2–4 **echte Original-008-Bildreferenzen** aus `bildwelt/008-ORIGINAL-VIDEO-STYLE-REFERENCE.md` bereit. Diese müssen Google Flow als Bildinput vorliegen; reiner GitHub-Link/Stilname reicht nicht. Ohne Bilder die Ausgabe als nicht stilverifiziert markieren und zuerst um die Bildreferenzen bitten.
+
+**Nach der Coverwahl:** das ausgewählte Cover als SEKUNDÄRE Stilreferenz gemeinsam mit den echten 008-JPGs weiterverwenden. Die 008-JPGs bleiben Hauptanker für biologische Konturen, Organ-/Zellkontexte und Schattierung. Kein Cover-Titel in Folgebildern.
+
 ## Ein Prompt steuert drei Phasen
 Der Prompt ist **eine einzige vollständig ausgefüllte Textdatei** mit den 3 konkreten Cover-Varianten und dem gesamten, konkreten Szenenregister von Bild 02 bis Bild NN. Keine 17 separaten Textprompts oder Batchdateien.
 
