@@ -17,7 +17,7 @@
     {
       "scene": 1,
       "speech_section": "Was macht dein Körper eigentlich, während du schläfst?",
-      "visual_task": "Cover: single simple illustrated anatomical brain resting above a subtle pillow silhouette, on a bright cream-to-pale-blue background with generous clean left title area, one clear focal visual, no neon glow",
+      "visual_task": "Original-008-like cover composition: a resting adult face and pillow dominate the RIGHT foreground; soft skin-colored organic anatomy and a connected subtle head/brain cutaway; faint sleeping-body silhouette deeper to the LEFT; cream-turquoise quiet space for bold title at lower LEFT, not a neon brain icon.",
       "image": "Bild_01",
       "motion": "static",
       "labels_de": [],
@@ -35,7 +35,7 @@
     {
       "scene": 3,
       "speech_section": "Von außen wirkt alles still. Innen laufen gleichzeitig erstaunlich viele Prozesse weiter.",
-      "visual_task": "Simple torso overview showing a distinctly recognizable heart and brain as clean educational anatomical cutaways, one clear biological relationship",
+      "visual_task": "Large upper-body biological cutaway: the brain, heart and vessels form connected structures inside a body silhouette with soft tissue layers, not two freestanding symbols.",
       "image": "Bild_03",
       "motion": "pan-left",
       "labels_de": [],
@@ -44,7 +44,7 @@
     {
       "scene": 4,
       "speech_section": "Dein Gehirn bleibt aktiv, Erinnerungen verändern sich und dein Körper stellt sich auf Erholung ein.",
-      "visual_task": "Macro of two illustrated neurons passing a signal near normal brain tissue, crisp cellular forms instead of floating luminous particles",
+      "visual_task": "Macro inside layered coral-blue brain tissue: substantial branching neurons pass one signal along a continuous nerve pathway that extends past both frame edges.",
       "image": "Bild_04",
       "motion": "slow-push-in",
       "labels_de": [],
@@ -53,7 +53,7 @@
     {
       "scene": 5,
       "speech_section": "Und das alles passiert nicht gleichmäßig, sondern in mehreren Schlafphasen mit unterschiedlichen Aufgaben.",
-      "visual_task": "Cutaway of one brain with a broad slow activity wave transitioning into a different thinner activity wave, no multi-panel chart",
+      "visual_task": "Connected section of brain cortex filling the image with smooth slow electrical activity running across visibly layered biological tissue, not an EEG poster.",
       "image": "Bild_05",
       "motion": "static",
       "labels_de": [],
@@ -80,7 +80,7 @@
     {
       "scene": 8,
       "speech_section": "Während du wach bist, sammelt sich nach und nach sogenannter Schlafdruck an.",
-      "visual_task": "Enlarged single neuron with several small adenosine signaling particles collecting around it, one clear cause",
+      "visual_task": "One large neuron branching through a pale tissue environment as small Adenosin particles gather at a nearby receptor contact; depth and organic context like 008.",
       "image": "Bild_08",
       "motion": "pan-left",
       "labels_de": [],
@@ -89,7 +89,7 @@
     {
       "scene": 9,
       "speech_section": "Ein Teil davon hängt mit dem Botenstoff Adenosin zusammen, der im Gehirn wirkt.",
-      "visual_task": "Two illustrated nerve cells exchanging a few adenosine particles across a clean pale-blue synaptic space",
+      "visual_task": "Enlarged synapse in coral brain tissue, nerve ending and receptor sides clearly linked, a few labeled Adenosin particles crossing the gap, not isolated icons.",
       "image": "Bild_09",
       "motion": "slow-push-in",
       "labels_de": [
@@ -118,7 +118,7 @@
     {
       "scene": 12,
       "speech_section": "Tageslicht unterstützt das Wachsein. Abends steigt bei Dunkelheit die Ausschüttung des Zeitsignals Melatonin.",
-      "visual_task": "Small pineal region inside a simplified brain releases a few melatonin signal particles as daylight decreases",
+      "visual_task": "Wide tissue-based brain anatomical section with a small pineal region; particles leave through one adjacent connected vessel; detailed but calm biological surroundings.",
       "image": "Bild_12",
       "motion": "slow-pull-out",
       "labels_de": [
@@ -147,7 +147,7 @@
     {
       "scene": 15,
       "speech_section": "Schlafdruck und innere Uhr müssen zusammenpassen. Darum ist Müdigkeit nicht immer dasselbe wie Schlafbereitschaft.",
-      "visual_task": "Single calm brain illustration receiving two types of simple timing signals, one focal convergence and no abstract dashboard",
+      "visual_task": "Biological head-and-brain section receiving a few timing signals, focus on a single intersection deep in brain tissue; not detached arrows or computer dashboard.",
       "image": "Bild_15",
       "motion": "static",
       "labels_de": [],
@@ -174,7 +174,7 @@
     {
       "scene": 18,
       "speech_section": "Danach wird der Schlaf stabiler. In der zweiten Stufe verändern sich die elektrischen Muster im Gehirn.",
-      "visual_task": "Brain cortex detail with smooth shallow rhythmic activity characteristic of stable light sleep, biologically drawn tissue",
+      "visual_task": "Large anatomical brain-cortex fold filled with pale tissue, a few distinct slow activity pathways weave through soft blue coral membranes.",
       "image": "Bild_18",
       "motion": "pan-left",
       "labels_de": [],
@@ -183,7 +183,7 @@
     {
       "scene": 19,
       "speech_section": "Kurze Aktivitätsausbrüche wechseln sich mit ruhigeren Mustern ab. Das Gehirn arbeitet weiter.",
-      "visual_task": "Enlarged neuron cluster showing one brief burst of synchronized signals against otherwise calm tissue",
+      "visual_task": "Three overlapping neurons in a soft tissue macro transmit a brief coordinated activity burst through one continuous neural route.",
       "image": "Bild_19",
       "motion": "slow-push-in",
       "labels_de": [],
@@ -210,7 +210,7 @@
     {
       "scene": 22,
       "speech_section": "Auch deine Atmung wird in vielen Abschnitten ruhiger. Doch Schlaf bleibt kein starrer Zustand.",
-      "visual_task": "Isolated pair of healthy lungs in simplified anatomy, one gentle breathing expansion motion represented clearly",
+      "visual_task": "Large rounded lungs with surrounding ribs, capillary vessels and gently shaded chest context, one clear breathing event rather than detached lung icon.",
       "image": "Bild_22",
       "motion": "slow-pull-out",
       "labels_de": [],
@@ -219,7 +219,7 @@
     {
       "scene": 23,
       "speech_section": "Nach leichteren Stufen erreicht dein Körper schließlich den sogenannten Tiefschlaf.",
-      "visual_task": "Anatomically recognizable brain cortex with one wide slow wave marking the move into deeper sleep, pale turquoise",
+      "visual_task": "Close tissue-cortex anatomical cutaway fills frame; one slow wave passes several contiguous nerve-cell layers, similar spatial depth to 008 intestinal folds.",
       "image": "Bild_23",
       "motion": "pan-left",
       "labels_de": [
@@ -230,7 +230,7 @@
     {
       "scene": 24,
       "speech_section": "Im Tiefschlaf zeigen viele Nervenzellen besonders langsame, aufeinander abgestimmte Aktivitätswellen.",
-      "visual_task": "Three individual neurons with slow matched electrical signals spreading across them, one coherent synchronized event",
+      "visual_task": "Three connected neuron branches embedded in tissue show synchronized signals, large organic shapes and one clear directional process.",
       "image": "Bild_24",
       "motion": "slow-push-in",
       "labels_de": [],
@@ -284,7 +284,7 @@
     {
       "scene": 30,
       "speech_section": "Früher Tiefschlaf geht oft mit stärkerer Ausschüttung von Wachstumshormon einher, das Gewebeerneuerung mitreguliert.",
-      "visual_task": "Illustrated brain focused on pituitary region releasing growth-hormone particles toward one nearby blood vessel",
+      "visual_task": "Large connected hypothalamus-pituitary area of a brain anatomical section shows hormone particles entering a neighboring red blood vessel.",
       "image": "Bild_30",
       "motion": "static",
       "labels_de": [
@@ -322,7 +322,7 @@
     {
       "scene": 34,
       "speech_section": "Besonders viel Tiefschlaf liegt bei vielen Erwachsenen eher am Anfang der Nacht.",
-      "visual_task": "One illustrated brain cortex with broad slow waves prominent early in the night, pale cream background and subtle time-light accent",
+      "visual_task": "Pale coral brain tissue layered cutaway with broad slow activity between connected neurons, only a subtle early-night lighting accent.",
       "image": "Bild_34",
       "motion": "slow-push-in",
       "labels_de": [],
@@ -349,7 +349,7 @@
     {
       "scene": 37,
       "speech_section": "Im Schlaf werden Eindrücke weiterverarbeitet. Dabei können sich neue Erinnerungen festigen.",
-      "visual_task": "Three clearly drawn neurons develop a more coordinated signal route during sleep, focus on strengthening pathway",
+      "visual_task": "Three neurons embedded in brain tissue develop one more coordinated memory signal route, close biological macro and softly layered surroundings.",
       "image": "Bild_37",
       "motion": "slow-pull-out",
       "labels_de": [
@@ -389,7 +389,7 @@
     {
       "scene": 41,
       "speech_section": "Verschiedene Schlafphasen tragen auf unterschiedliche Weise zum Lernen und Erinnern bei.",
-      "visual_task": "Two visibly different but anatomically plausible network activity patterns within a single brain cortex, no split frame",
+      "visual_task": "Cropped layered brain-cortex cutaway shows two activity pathways in the same continuous living tissue; no isolated brains or infographic split cards.",
       "image": "Bild_41",
       "motion": "pan-right",
       "labels_de": [],
@@ -497,7 +497,7 @@
     {
       "scene": 53,
       "speech_section": "Und dann gibt es eine Schlafphase, die fast wie das Gegenteil von Tiefschlaf wirkt.",
-      "visual_task": "Close brain cortex transition from a broad slow wave toward smaller varied neural activity, no neon EEG poster",
+      "visual_task": "Connected brain-cortex tissue with slow wave changing into varied REM neural activity along real curved nerve structures, no neon EEG poster.",
       "image": "Bild_53",
       "motion": "pan-left",
       "labels_de": [],
@@ -506,7 +506,7 @@
     {
       "scene": 54,
       "speech_section": "In der REM-Phase ist das Gehirn in vielen Bereichen besonders aktiv.",
-      "visual_task": "Recognizable simplified whole brain with a few more active REM-related neural regions, natural teal, coral and blue organ colors",
+      "visual_task": "Anatomical brain section fills most frame, a few active REM circuit zones shown inside detailed biological tissue with pale aqua background.",
       "image": "Bild_54",
       "motion": "slow-push-in",
       "labels_de": [
@@ -526,7 +526,7 @@
     {
       "scene": 56,
       "speech_section": "Die Gehirnaktivität kann dabei in Teilen an Wachsein erinnern, obwohl du schläfst.",
-      "visual_task": "Two distinct neuron groups show faster irregular signals within recognizable brain tissue, low complexity",
+      "visual_task": "Two contiguous neuron groups in a pale brain-tissue section show faster varied REM signal flow through connected branches.",
       "image": "Bild_56",
       "motion": "pan-right",
       "labels_de": [],
@@ -598,7 +598,7 @@
     {
       "scene": 64,
       "speech_section": "Sicher ist: Das schlafende Gehirn bleibt auch in dieser Phase alles andere als abgeschaltet.",
-      "visual_task": "Anatomical brain during REM with neatly differentiated but active regions, softly shaded as in video 008, not glowing",
+      "visual_task": "Anatomical brain tissue close-up, many natural connected neural pathways with muted highlighted REM activity; no lone glowing brain on blank background.",
       "image": "Bild_64",
       "motion": "slow-push-in",
       "labels_de": [],
@@ -607,7 +607,7 @@
     {
       "scene": 65,
       "speech_section": "Tiefschlaf und REM wechseln sich nicht einfach einmal ab. Dein Schlaf verläuft in wiederkehrenden Zyklen.",
-      "visual_task": "One brain illustrated with a smooth transition from NREM-like broad waves to REM-like fine activity across tissue",
+      "visual_task": "Continuous cross-sectional brain-cortex tissue illustrates transition from broader slow neural signals to smaller irregular signals across connected membranes.",
       "image": "Bild_65",
       "motion": "static",
       "labels_de": [],
@@ -616,7 +616,7 @@
     {
       "scene": 66,
       "speech_section": "Ein kompletter Durchlauf dauert oft ungefähr achtzig bis hundert Minuten, kann aber schwanken.",
-      "visual_task": "Single repeating neurophysiological activity cycle shown around one brain, no timer and no numerical graph",
+      "visual_task": "Large macro of neuronal tissue around connected synapses depicts one repeating cycle of activity, not a standalone icon or chart.",
       "image": "Bild_66",
       "motion": "pan-right",
       "labels_de": [],
@@ -688,7 +688,7 @@
     {
       "scene": 74,
       "speech_section": "Jetzt wird die Ausgangsfrage klar: Schlaf ist weder Stillstand noch ein einziger Reparaturmodus.",
-      "visual_task": "One anatomical heart and brain are both active during sleep, two clearly separated structures, cream background",
+      "visual_task": "Whole upper torso cutaway with heart, circulation vessels and brain appearing in their actual connected body positions; softly rounded biological volumes.",
       "image": "Bild_74",
       "motion": "slow-push-in",
       "labels_de": [],
@@ -697,7 +697,7 @@
     {
       "scene": 75,
       "speech_section": "Dein Gehirn wechselt Zustände, dein Körper reguliert sich, und Erinnerungen werden weiterverarbeitet.",
-      "visual_task": "Single neuron pathway inside a simplified brain linked to ordinary body-cell maintenance, simple foreground/background depth",
+      "visual_task": "Connected visual zoom from a brain nerve bundle through tissue and capillary route to body cells: one plausible path across scales.",
       "image": "Bild_75",
       "motion": "static",
       "labels_de": [],
@@ -715,7 +715,7 @@
     {
       "scene": 77,
       "speech_section": "Und genau deshalb ist Schlaf nicht verlorene Zeit, sondern ein grundlegender Teil deines Lebens.",
-      "visual_task": "Final clean biological illustration of one healthy brain and adjoining body cell continuing normal activity beside warm morning window, one resolved process",
+      "visual_task": "Final payoff as a continuous anatomical full-body-to-cell route: recognizable rested figure with soft torso/head tissue cutaway, brain cells and normal organ activity spatially linked, airy turquoise cream background.",
       "image": "Bild_77",
       "motion": "slow-pull-out",
       "labels_de": [],

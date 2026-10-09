@@ -19,8 +19,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_01",
       "visual_type": "cover-hook",
-      "visible_change": "Cover: single simple illustrated anatomical brain resting above a subtle pillow silhouette, on a bright cream-to-pale-blue background with generous clean left title area, one clear focal visual, no neon glow",
-      "scene_difference": "Cover → Körper/Zelle statt isoliertes Poster",
+      "visible_change": "Original-008-like cover composition: a resting adult face and pillow dominate the RIGHT foreground; soft skin-colored organic anatomy and a connected subtle head/brain cutaway; faint sleeping-body silhouette deeper to the LEFT; cream-turquoise quiet space for bold title at lower LEFT, not a neon brain icon.",
+      "scene_difference": "008 connected illustrated anatomical process, scale and camera variation: Original-008-like cover composition: a resting adult face and pillow dominate the RIGHT foreground; soft skin-colored organic anat",
       "labels": [],
       "misconception_to_avoid": "Keine Neon-/Comicbildwelt, keine falsche Anatomie oder zusätzlichen Texte."
     },
@@ -37,7 +37,7 @@
       "image_asset_id": "Bild_07",
       "visual_type": "mechanism",
       "visible_change": "Macro brain region with gentle gradual shift of a few neuron activity signals, cellular explanation of circadian changes",
-      "scene_difference": "Schlafdruck/Adenosin: Perspektiv- und Maßstabswechsel statt erneutem Schlafzimmerbild",
+      "scene_difference": "008 connected illustrated anatomical process, scale and camera variation: Macro brain region with gentle gradual shift of a few neuron activity signals, cellular explanation of circadian changes",
       "labels": [],
       "misconception_to_avoid": "Keine Neon-/Comicbildwelt, keine falsche Anatomie oder zusätzlichen Texte."
     },
@@ -54,7 +54,7 @@
       "image_asset_id": "Bild_11",
       "visual_type": "mechanism",
       "visible_change": "Eye receiving simple morning daylight, a clean single signal route toward a recognizable brain region",
-      "scene_difference": "Innere Uhr/Melatonin: Perspektiv- und Maßstabswechsel statt erneutem Schlafzimmerbild",
+      "scene_difference": "008 connected illustrated anatomical process, scale and camera variation: Eye receiving simple morning daylight, a clean single signal route toward a recognizable brain region",
       "labels": [],
       "misconception_to_avoid": "Keine Neon-/Comicbildwelt, keine falsche Anatomie oder zusätzlichen Texte."
     },
@@ -71,7 +71,7 @@
       "image_asset_id": "Bild_16",
       "visual_type": "mechanism",
       "visible_change": "Macro view of resting shoulder muscle fibers becoming visibly more relaxed, recognizable red organic forms",
-      "scene_difference": "Einschlafen: Perspektiv- und Maßstabswechsel statt erneutem Schlafzimmerbild",
+      "scene_difference": "008 connected illustrated anatomical process, scale and camera variation: Macro view of resting shoulder muscle fibers becoming visibly more relaxed, recognizable red organic forms",
       "labels": [],
       "misconception_to_avoid": "Keine Neon-/Comicbildwelt, keine falsche Anatomie oder zusätzlichen Texte."
     },
@@ -89,7 +89,7 @@
       "image_asset_id": "Bild_20",
       "visual_type": "mechanism",
       "visible_change": "Sleep-lab close view with a few EEG sensors on an adult's head; external measurement, clean white-and-mint scene",
-      "scene_difference": "Schlafmessung/NREM: Perspektiv- und Maßstabswechsel statt erneutem Schlafzimmerbild",
+      "scene_difference": "008 connected illustrated anatomical process, scale and camera variation: Sleep-lab close view with a few EEG sensors on an adult's head; external measurement, clean white-and-mint scene",
       "labels": [],
       "misconception_to_avoid": "Keine Neon-/Comicbildwelt, keine falsche Anatomie oder zusätzlichen Texte."
     },
@@ -106,8 +106,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_24",
       "visual_type": "mechanism",
-      "visible_change": "Three individual neurons with slow matched electrical signals spreading across them, one coherent synchronized event",
-      "scene_difference": "Tiefschlaf: Perspektiv- und Maßstabswechsel statt erneutem Schlafzimmerbild",
+      "visible_change": "Three connected neuron branches embedded in tissue show synchronized signals, large organic shapes and one clear directional process.",
+      "scene_difference": "008 connected illustrated anatomical process, scale and camera variation: Three connected neuron branches embedded in tissue show synchronized signals, large organic shapes and one clear directional proce",
       "labels": [],
       "misconception_to_avoid": "Keine Neon-/Comicbildwelt, keine falsche Anatomie oder zusätzlichen Texte."
     },
@@ -125,7 +125,7 @@
       "image_asset_id": "Bild_29",
       "visual_type": "mechanism",
       "visible_change": "Simplified endocrine gland releasing a small set of hormone messengers into one recognizable blood vessel",
-      "scene_difference": "Hormone/Gewebe: Perspektiv- und Maßstabswechsel statt erneutem Schlafzimmerbild",
+      "scene_difference": "008 connected illustrated anatomical process, scale and camera variation: Simplified endocrine gland releasing a small set of hormone messengers into one recognizable blood vessel",
       "labels": [],
       "misconception_to_avoid": "Keine Neon-/Comicbildwelt, keine falsche Anatomie oder zusätzlichen Texte."
     },
@@ -142,7 +142,7 @@
       "image_asset_id": "Bild_35",
       "visual_type": "mechanism",
       "visible_change": "Wide context bridge: adult learning an unfamiliar hand movement beside a simple enlarged neuronal connection inset, focus on neurons",
-      "scene_difference": "Gedächtnis: Perspektiv- und Maßstabswechsel statt erneutem Schlafzimmerbild",
+      "scene_difference": "008 connected illustrated anatomical process, scale and camera variation: Wide context bridge: adult learning an unfamiliar hand movement beside a simple enlarged neuronal connection inset, focus on neuro",
       "labels": [],
       "misconception_to_avoid": "Keine Neon-/Comicbildwelt, keine falsche Anatomie oder zusätzlichen Texte."
     },
@@ -160,7 +160,7 @@
       "image_asset_id": "Bild_45",
       "visual_type": "mechanism",
       "visible_change": "One white blood cell interacting with a nearby tissue cell and exchanging small messenger particles",
-      "scene_difference": "Immunsystem: Perspektiv- und Maßstabswechsel statt erneutem Schlafzimmerbild",
+      "scene_difference": "008 connected illustrated anatomical process, scale and camera variation: One white blood cell interacting with a nearby tissue cell and exchanging small messenger particles",
       "labels": [],
       "misconception_to_avoid": "Keine Neon-/Comicbildwelt, keine falsche Anatomie oder zusätzlichen Texte."
     },
@@ -176,8 +176,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_53",
       "visual_type": "mechanism",
-      "visible_change": "Close brain cortex transition from a broad slow wave toward smaller varied neural activity, no neon EEG poster",
-      "scene_difference": "REM/Muskelhemmung: Perspektiv- und Maßstabswechsel statt erneutem Schlafzimmerbild",
+      "visible_change": "Connected brain-cortex tissue with slow wave changing into varied REM neural activity along real curved nerve structures, no neon EEG poster.",
+      "scene_difference": "008 connected illustrated anatomical process, scale and camera variation: Connected brain-cortex tissue with slow wave changing into varied REM neural activity along real curved nerve structures, no neon ",
       "labels": [],
       "misconception_to_avoid": "Keine Neon-/Comicbildwelt, keine falsche Anatomie oder zusätzlichen Texte."
     },
@@ -194,7 +194,7 @@
       "image_asset_id": "Bild_60",
       "visual_type": "mechanism",
       "visible_change": "A remembered street view fades into an indistinct memory fragment, gentle pale illustrated scene not dream fantasy",
-      "scene_difference": "Träume: Perspektiv- und Maßstabswechsel statt erneutem Schlafzimmerbild",
+      "scene_difference": "008 connected illustrated anatomical process, scale and camera variation: A remembered street view fades into an indistinct memory fragment, gentle pale illustrated scene not dream fantasy",
       "labels": [],
       "misconception_to_avoid": "Keine Neon-/Comicbildwelt, keine falsche Anatomie oder zusätzlichen Texte."
     },
@@ -211,8 +211,8 @@
       "new_image_required": true,
       "image_asset_id": "Bild_65",
       "visual_type": "mechanism",
-      "visible_change": "One brain illustrated with a smooth transition from NREM-like broad waves to REM-like fine activity across tissue",
-      "scene_difference": "Schlafzyklen/Erholung: Perspektiv- und Maßstabswechsel statt erneutem Schlafzimmerbild",
+      "visible_change": "Continuous cross-sectional brain-cortex tissue illustrates transition from broader slow neural signals to smaller irregular signals across connected membranes.",
+      "scene_difference": "008 connected illustrated anatomical process, scale and camera variation: Continuous cross-sectional brain-cortex tissue illustrates transition from broader slow neural signals to smaller irregular signal",
       "labels": [],
       "misconception_to_avoid": "Keine Neon-/Comicbildwelt, keine falsche Anatomie oder zusätzlichen Texte."
     },
@@ -231,7 +231,7 @@
       "image_asset_id": "Bild_73",
       "visual_type": "summary",
       "visible_change": "Tired adult at an ordinary morning desk, cut to one simple unfocused neuron connection as consequence of insufficient sleep",
-      "scene_difference": "Schluss: Perspektiv- und Maßstabswechsel statt erneutem Schlafzimmerbild",
+      "scene_difference": "008 connected illustrated anatomical process, scale and camera variation: Tired adult at an ordinary morning desk, cut to one simple unfocused neuron connection as consequence of insufficient sleep",
       "labels": [],
       "misconception_to_avoid": "Keine Neon-/Comicbildwelt, keine falsche Anatomie oder zusätzlichen Texte."
     }
