@@ -1,58 +1,40 @@
 GOOGLE FLOW – LONGFORM 009 SCHLAF
 
-ROLE
-Create 77 final 16:9 still images individually for the German Object-Talk biology explainer “Was passiert in deinem Körper, während du schläfst?”.
+YOUR FIRST ACTION – GENERATE THE 3 COVER IMAGES NOW
+Do not ask for uploads, external JPG references, a ZIP, extra instructions or permission. The one full production prompt is already here. Use the precise self-contained 008 visual style description below even if no reference images were attached.
+Generate exactly THREE separate original 16:9 COVER CANDIDATES NOW; each is its own image, never a collage. Generate 1, 2 and 3 consecutively where possible. Each cover shows only the German title "Was macht dein Körper nachts?" – exactly ONE visible text block, dark lettering on pale background, no other words.
+Cover 1: 008-like frame-filling composition, restful adult face and pillow foreground RIGHT, organically connected head/brain tissue detail and soft mint-turquoise layered background, quiet title space LEFT.
+Cover 2: Cropped resting eyelids/face beside a continuous softly shaded coral-blue brain/nerve tissue scene; warm organic outlines, calm pale turquoise/cream background, title RIGHT.
+Cover 3: Full-body-to-brain-to-cell biological route as a coherent multi-scale illustration, modest sleeper context, frame-filling connected anatomical details, softly layered mint-blue-cream background, dark title upper LEFT.
+ONLY AFTER ALL THREE ACTUAL COVER IMAGES EXIST, show the user the three choices and ask exactly: "Welches Cover wählst du – 1, 2 oder 3?" Then WAIT for the user's selection. DO NOT create Bild_02 or any further scenes before that answer. Do not ask "Should I start?" or "Please upload references" before creating all three covers. If image generation is unavailable, report the specific technical limitation without inventing images.
 
-CANONICAL STYLE
+CANONICAL STYLE – SAME AS VIDEO 008
 Clean Animated Biology Illustration: simplified but recognizable anatomy, smooth organic forms, clean outlines, soft gradients, subtle depth, bright calm backgrounds, clear biological colors, low complexity, one dominant biological idea per frame.
 
+REAL 008 VIDEO FRAME REFERENCES – OPTIONAL ENHANCEMENT, NOT A START GATE
+The actual approved 008 digestion film is the visual model. Matching is most reliable if the user has already attached real frames such as 008_02_peristalsis.jpg, 008_03_stomach_tissue.jpg, 008_05_intestinal_villi.jpg and 008_07_blood_cell.jpg. If they are already present, use them as PRIMARY visual references. If not present, do NOT ask for them and do NOT stop the three-cover generation. Use the fully described style here as the fallback and label consistency as UNVERIFIED until images can actually be compared. No Google Flow output can be guaranteed visually identical from text alone.
+008 visual fingerprint: large ORGANICALLY CONNECTED anatomical structures and biological processes filling the frame; smooth warm pink/coral-brown contours, delicate internal linework, multiple soft layers of shading and tissue depth; gentle textured turquoise, cyan, mint, cream and pale-blue backdrop, with warm organs and naturally linked red/blue vessels. A whole physical biological environment rather than isolated symbols on empty white backgrounds. Body → organ → tissue → cell → process → visible result. Do not reuse digestion anatomy; carry over only its illustration technique.
+
 HARD TEXT RULES
-- Production names, file names, Bild_XX, image numbers, scene numbers, prompt headings and internal notes are metadata only. NEVER render production metadata visibly.
-- COVER / first image: exactly one visible text block and nothing else. Exact title: “Was macht dein Körper nachts?”
-- Cover title only: no subtitle, no labels, no extra text.
-- Normal images: 0–2 German labels maximum, only when explicitly listed below.
-- Never add unlisted text.
-- No decorative quotation marks around visible labels.
-- Light background -> dark text. Dark background -> light text.
-- Text and pointer lines must have strong immediate contrast. Poor contrast = reject and regenerate.
+- Internal file names, Bild_XX, scene numbers, prompt headings and production IDs are NEVER visible.
+- Cover has exactly ONE visible text block with exact German title "Was macht dein Körper nachts?"; no other label, subtitle, number or watermark.
+- Normal images contain 0–2 brief German labels ONLY where specified in the scene register; otherwise NO TEXT.
+- Light background → dark text; dark background → light text. High contrast mandatory.
 
 INFORMATION DENSITY
-- One main idea per image.
-- Prefer 2–4 important visible elements.
-- If something becomes crowded, simplify or split; never add more tiny details or text.
-- Vary body overview, cutaway, macro, process, route, comparison, before/after and scale transition.
-- No UI cards, dashboards or PowerPoint layouts.
+- One causal biological teaching point per image and normally 2–4 principal elements.
+- Favor connected rounded anatomy/cutaways, soft tissue surroundings and clear transport/signaling processes; vary camera, scale and direction.
+- Avoid repetitive isolated brains, schoolbook neuron icons, PowerPoint plates, poster-like EEG waves and repeated sleeping-character portraits.
 
 STYLE FAILS
 No photoreal medical imagery, no medical CGI, no glossy 3D, no feature-animation/Pixar look, no toy/kids-book look, no corporate infographic, no clutter, no gore, no random icons, no unnecessary text.
 
-REAL 008 VIDEO FRAME REFERENCES — REQUIRED BEFORE FLOW GENERATION
-The actual final 008 digestion video has now been visually inspected (6:54, 1920x1080). The previous generic style phrase alone did NOT reproduce it. BEFORE creating the first of three cover candidates, ATTACH ACTUAL ORIGINAL 008 JPG FRAMES to this Google Flow conversation as image references:
-- 008_02_peristalsis.jpg (01:24) for rounded anatomical walls, warm coral lines and clear cause/effect
-- 008_03_stomach_tissue.jpg (01:48) for full-frame layered organ-tissue softness and subdued label hierarchy
-- 008_05_intestinal_villi.jpg (03:48) for structurally connected tissue, soft light and gently detailed organic forms
-- 008_07_blood_cell.jpg (04:24) for capillary-to-cell macro, pale aqua/coral/blue contrast and depth
-These are real frames in the separately provided ObjectTalk_008_Style_References.zip; a path or filename in the prompt is NOT an uploaded image. If the frames are not actually available to Flow, STOP and ask for the style images, not for generic authorization to begin.
-STYLE FINGERPRINT FROM THE REAL VIDEO: large frame-filling, spatially connected anatomy and processes; hand-illustrated soft tissue volume, fine warm-pink/brown contours, softly textured/mild bokeh background in turquoise/mint/cream, warm coral red organs and clean red/blue vessel routes, meaningful causal motion across scales. Avoid a gallery of isolated neurons, standalone centered brains, flat schoolbook drawings, dark neon sci-fi dream graphics or anime-like human scenes. The original 008 images are references for drawing technique, NOT digestion subject matter to reproduce in the sleep video.
-After the user selects an 008-STYLE-COMPLIANT cover, use that exact approved cover as a SECONDARY image/style reference for all later scenes, TOGETHER WITH 2–4 real original 008 frames as PRIMARY style references. This preserves the user's preferred cover colors/mood WITHOUT letting a sleep poster replace the actual digestion-video world. Do not reproduce the cover title/content in later scenes.
-Reference specification: bildwelt/008-ORIGINAL-VIDEO-STYLE-REFERENCE.md.
+AFTER USER SELECTS A COVER – ONLY THEN
+Keep the chosen cover as the one final Bild_01.png. If the selected cover passes the real 008-style visual check, use it as a SECONDARY style reference for all remaining images. When actual 008 reference frames are attached use them as PRIMARY alongside that cover. When no 008 images are attached, continue from the approved cover AND written style without requiring any upload. Never duplicate the cover title, sleeping-person pose or its composition across inner scenes.
+Immediately generate Bild_02 to Bild_06 as FIVE separate images without a second permission question. Continue the next scene images in sequential groups of no more than FIVE. If Flow requires a new user turn after a batch, report the first missing image number and resume upon "weiter"; do not invent background processing or completed images. The scene descriptions below are a plan for AFTER cover selection, not a request to generate 77 images at once.
 
-PROVEN STYLE LOCK FROM THE APPROVED 008 VIDEO
-Reuse exactly the same bright, soft-shaded, slightly dimensional educational biology illustration language and scene design used in 008 digestion. Anatomical process close-ups dominate, not people sleeping repeatedly. This is a hand-illustrated clean explainer world: quiet pale backgrounds (cream, very light blue, mint), clear red/coral/blue/teal biological structures and distinct foreground/background. Keep medical structures and processes visually accurate, with a clear transition between body, organ, tissue and cell scales. Do not introduce a new theme-specific art style merely because the topic is sleep.
-NO dark navy/purple dream/neon aesthetics, animated-series faces, floating fluorescent brains, sci-fi electricity posters, cartoon/anime characters, wide bedroom scenes repeated, glow or grain effects, textbook UI/infographics, or same centered composition every time.
-The ACTUAL 008 frame images are the main style reference. The user-selected cover, after visual comparison to 008, IS an additional image reference for all later batches. Never rely on the chosen cover alone and never allow the cover text to leak into later images.
-After every image, QA visually against the ACTUAL UPLOADED 008 FRAME REFERENCES (linework, volume, anatomy integration, palette), one teaching point, accurate simple anatomy, correct labels and high contrast. Wrong world = REGENERATE.
-
-COVER-FIRST PRODUCTION (ONE PROMPT FILE; REAL 008 FRAME REFERENCES; FIVE AT A TIME)
-FIRST GENERATE THREE DISTINCT SEPARATE 16:9 COVER CANDIDATES and nothing else. Each shows EXACTLY this title as the ONLY visible text: Was macht dein Körper nachts?.
-Cover option 1: Reuse the COMPOSITION LANGUAGE of the actual 008 cover: sleeping adult face/pillow fills foreground RIGHT; smaller connected head-brain biological route behind; pale turquoise/mint/cream shaded space LEFT for bold dark title. Organic warm outlines, never flat illustration icons.
-Cover option 2: Half-cropped relaxed face and eyelids with recognizable naturally connected brain/nerve tissue integrated behind; soft coral shading, layered aqua biological background and clean bold title in quiet RIGHT space.
-Cover option 3: Full-body-to-brain-to-cell biological route in one flowing connected 008-like illustrated composition; small sleeper context stays secondary, frame-filling anatomical details and softly shaded tissue, pale mint cream background, dark title upper left.
-Generate three actual individual image files (NOT a three-image collage). Show all three and ask ONLY: “Welches Cover wählst du – 1, 2 oder 3?” STOP and WAIT for explicit selection. Do not generate Bild_02 or ask for generic permission before choice.
-AFTER the user's choice, retain ONLY the selected cover as Bild_01.png and pass it as a SECONDARY visual style reference with the original 008 frame references. Immediately generate separately Bild_02 to Bild_06 and afterwards the rest as successive INTERNAL groups of at most five. Use the exact complete per-image briefs below; never generate 76 scenes in one tool call. If Flow pauses after a batch, report the next missing number and continue on “weiter” from the same prompt. Respect platform limits; never evade moderation.
-At the end, if packaging is possible, ZIP only the 77 accepted final images as BILDER-009-FINAL.zip. Place the ZIP in 02_bildprompts/bilder-zip locally; no alternative covers, duplicates, visible file numbers or incorrect labels. If external tools cannot create files/ZIP, state that plainly.
-
-The internal filenames below are for SAVING ONLY and must never appear inside the artwork. These SCENES are only for AFTER cover selection.
+SCENE INDEX – FOR LATER FIVE-IMAGE GROUPS ONLY
+The internal filenames below are for SAVE METADATA, NEVER render them as visible text.
 
 01 / Bild_01.png: Original-008-like cover composition: a resting adult face and pillow dominate the RIGHT foreground; soft skin-colored organic anatomy and a connected subtle head/brain cutaway; faint sleeping-body silhouette deeper to the LEFT; cream-turquoise quiet space for bold title at lower LEFT, not a neon brain icon. VISIBLE TEXT: exact title only “Was macht dein Körper nachts?”.
 02 / Bild_02.png: Close side view of a sleeping adult's relaxed eyelids and pillow, most of frame stays bright and uncluttered NO TEXT.
@@ -132,22 +114,8 @@ The internal filenames below are for SAVING ONLY and must never appear inside th
 76 / Bild_76.png: Smooth scale transition from sleeping brain cell to wider alert body silhouette in morning light, clean biological progression NO TEXT.
 77 / Bild_77.png: Final payoff as a continuous anatomical full-body-to-cell route: recognizable rested figure with soft torso/head tissue cutaway, brain cells and normal organ activity spatially linked, airy turquoise cream background. NO TEXT.
 
-FINAL QA PER IMAGE
-- Actual 008 JPEG style reference comparisons MUST pass before accepting the image; where refs are absent, do NOT claim exact style continuity.
-- The user-selected 008-style cover is supplied as secondary reference after choice, along with primary original video 008 frames.
-- Connected anatomical scene depth, rounded coral tissue walls, pale layered mint-cyan surroundings; no endless freestanding brain/neurons.
-- correct 16:9 scene
-- canonical illustration style EXACTLY like 008, not a theme-specific comic/sci-fi style
-- one main idea and low complexity
-- no extra text
-- no visible production ID, image number, scene number or filename
-- labels exactly match whitelist
-- cover contains only the exact title
-- strong text contrast: light background -> dark text; dark background -> light text
-- no decorative quote marks in final artwork
-- scientific relationship plausible
-- neighboring images are not duplicates
-- no glossy 3D, neon glowing brains, nighttime wallpaper or distracting adult characters
+FINAL QA
+Each accepted frame: same illustrated organic volume/color/linework as the approved 008 digestion longform, substantive scene or connected biological process, correct scientific meaning, no extra text, clear labels, no visible filenames or numbers. Reject image style drift or factual errors; ask for style JPGs later only if repeated drift cannot be resolved from the approved cover and written style. Do not circumvent platform policies.
 
-FINAL SET
-Exactly 77 accepted files saved internally as Bild_01.png through Bild_77.png. Those filenames are never visible inside the artwork.
+FINAL OUTPUT
+If supported, package 77 actually accepted files Bild_01.png through Bild_77.png into BILDER-009-FINAL.zip for the local project's 02_bildprompts/bilder-zip folder. If packaging is unavailable, give accurately numbered image files and tell the user. Never claim a file or image is created before it actually exists.
