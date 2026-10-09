@@ -27,8 +27,8 @@ Status: **Phase 1 vorbereitet, Medien ausstehend**.
 
 Ziel:
 - 6:00–7:00 Minuten
-- 1.058 Wörter
-- 85 eindeutige Illustrationen
+- 986 Wörter
+- 77 eindeutige Illustrationen
 - Hook → innere Uhr/Schlafdruck → Schlafphasen/Tiefschlaf → Gedächtnis/Immunsystem → REM → Morgen → Schluss
 - vollständiger Export mit YouTube-Caption, MP4 und externen SRT-Untertiteln
 
@@ -127,6 +127,10 @@ Nicht erlaubt:
 - sichtbare Bild-/Szenennummern
 
 `03_pipeline/overlay-plan.json` muss deaktiviert und leer bleiben.
+
+## Referenz für Longform-Videos
+
+Der erste freigegebene 6–7-Minuten-Film **008 Verdauung** ist Referenz für **Bildwelt, Flow-Promptgliederung, szenische Planung, Antigravity/Remotion, Export und QA**. 009 Schlaf übernimmt diese Produktionsstruktur bis hin zu 77 Szenen und 13 Mechanismusabschnitten; nur der fachliche Inhalt wechselt. Details: `engine/LONGFORM-008-MASTERSTANDARD.md`.
 
 ## Verbindlicher Flow-Produktionsablauf
 

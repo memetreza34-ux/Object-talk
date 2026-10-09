@@ -5,7 +5,7 @@
   "covers_generated_in_repository": false,
   "user_selected_cover": null,
   "final_accepted_assets": 0,
-  "expected_final_assets": 85,
+  "expected_final_assets": 77,
   "first_scene_batch": [
     2,
     3,
@@ -14,5 +14,9 @@
     6
   ],
   "future_batches": "each at most five, final 82–85",
-  "note": "Flow media generation is external. These statuses must be updated only from actual accepted assets/user cover selection."
+  "note": "Flow media generation is external. These statuses must be updated only from actual accepted assets/user cover selection.",
+  "remaining_images": 76,
+  "final_images_range": "Bild_01–Bild_77",
+  "sequence": "Bild_02–Bild_06, danach jeweils bis zu fünf weitere; letzte Gruppe 77",
+  "notes": "Video 009 now follows exact 008 longform storyboard/visual system. Covers and images not yet regenerated or reviewed."
 }

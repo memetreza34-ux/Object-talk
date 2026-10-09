@@ -81,7 +81,7 @@ Abgrenzung:
 
 Projekt: `youtube-videos/009-longform-schlaf/`
 
-**Status: IN ARBEIT – Phase 1 erstellt.** 6–7 Minuten geplant; 1.058 Wörter und 85 verschiedene Bilder. Schlafdruck/Adenosin, circadiane Uhr/Melatonin, NREM-Stufen/Tiefschlaf, Kreislauf/Hormone, Gedächtnis, Immunsystem, REM/Träume und zyklischer Verlauf. Wissenschaftlicher Rahmen NIH/NHLBI/NICHD/CDC. Kein Video zu Schlafstörungen oder individuellem Therapierat.
+**Status: IN ARBEIT – Phase 1 nach Video 008 neu aufgebaut.** 6–7 Minuten geplant; 986 Wörter und 77 verschiedene Bilder. Schlafdruck/Adenosin, circadiane Uhr/Melatonin, NREM-Stufen/Tiefschlaf, Kreislauf/Hormone, Gedächtnis, Immunsystem, REM/Träume und zyklischer Verlauf. Wissenschaftlicher Rahmen NIH/NHLBI/NICHD/CDC. Kein Video zu Schlafstörungen oder individuellem Therapierat.
 
 ## Interne Tests
 

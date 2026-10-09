@@ -96,6 +96,10 @@ final-voiceover.wav
 
 Zeitcodes niemals schätzen.
 
+## Bewährte Longform-Referenz
+
+Für reguläre 6–7-Minuten-Videos gilt `engine/LONGFORM-008-MASTERSTANDARD.md`. Video 008 Verdauung stellt die verifizierte Referenz für Flow-Stil, 77 Szenen, 13 Mechanismus-Abschnitte, ausführlichen Remotion-Prompt, Export und QA. 009 nutzt denselben Aufbau für Schlaf.
+
 ## Aktive Produktion
 
 `youtube-videos/009-longform-schlaf/`
@@ -104,7 +108,7 @@ Thema: **Was passiert in deinem Körper, während du schläfst?**
 
 Status: **Longform 009 / Phase 1 erstellt / Medien ausstehend**.
 
-- 6–7 Minuten Ziel; 1.058 Wörter; 85 individuelle Flow-Bilder.
+- 6–7 Minuten Ziel; 986 Wörter; 77 individuelle Flow-Bilder.
 - Themen: Schlafdruck, innere Uhr, Schlafstadien, Herz, Hormone, Gedächtnis, Immunsystem und REM.
 - Erstes Cover kurz, nur Titel; Farb-/Lichtvariation; kein überladener Mehrfachprozess.
 - Vorheriger Longform-Film: 008 Verdauung.

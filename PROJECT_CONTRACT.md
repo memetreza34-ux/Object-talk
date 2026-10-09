@@ -281,3 +281,6 @@ Die gesamte Bildproduktion muss die Richtlinien des externen Bildgenerators einh
 ## Goldene Regel
 
 **Cover nur Titel. Normale Bilder 0–2 kurze Labels. Ein Bild = eine Hauptidee. Hoher Textkontrast. Lieber mehr Bilder als mehr Text oder Details. Remotion erzeugt niemals Text.**
+## Longform-008-Referenz (verbindlich fuer 6–7-Minuten-Serie)
+
+`engine/LONGFORM-008-MASTERSTANDARD.md` ist die praktische Referenz fuer Promptgestalt, 77-Szenen-/13-Abschnitte-Planung, denselben Clean Animated Biology Illustration Look, ausfuehrlichen Antigravity-Workflow und vollstaendigen YouTube-Export. Bei neuen Themen wird nur fachlicher Inhalt ersetzt, keine komplett neue Stilrichtung oder Pipeline entworfen. Die Nutzeroberflaeche bleibt vereinfachtes `02_bildprompts/` mit EINER Flow-Promptdatei + `bilder-zip/`.
