@@ -157,3 +157,15 @@ Nach dem Finalrender wird `04_export/postmortem.md` gemäß `engine/POSTMORTEM-S
 
 `WARNUNG` darf weiterlaufen, wenn sie dokumentiert und unkritisch ist.
 `FEHLER` oder `FAIL` stoppt die Pipeline.
+
+## ORIGINAL-008-BILDWELT-FREIGABE – vor Phase 2 für Video 009+
+
+- [ ] **Echte Bilder** aus dem finalen 008-Film in der Google-Flow-Sitzung als Image-References hinterlegt (nicht nur Pfad oder Text).
+- [ ] mindestens zwei richtige Frame-Namen und ihre reale Verwendung in `05_info/style-reference-review.json` dokumentiert.
+- [ ] Drei Covervarianten mit denselben echten 008-Stilbildern erstellt und vom Nutzer genau eines ausgewählt.
+- [ ] Ausgewähltes Cover ist nach visueller 008-Referenzprüfung freigegeben und wurde **zusätzlich** zu den Originalframes als Stilanker eingesetzt.
+- [ ] Alle akzeptierten Bilder auf originale Linien, Schattierung, organische Szenen/Komposition, Farblogik und Qualität mit 008 verglichen. Abweichung => REGENERATE.
+- [ ] Erst dann `style-reference-review.json` PASS und `python tools/validate_planning_v2.py <PROJECT> --phase2` als prüfbar betrachten.
+
+Die Binärframes sind derzeit nicht automatisch in GitHub; Referenzpack dem Nutzer bereitstellen und im externen Flow tatsächlich hochladen. Textprompts allein begründen **keine Zusicherung** einer 1:1-Bildwelt. Generatorergebnisse sind nicht deterministisch.
+

@@ -126,3 +126,13 @@ Titel, Beschreibung und Caption sind individuell für Video 008 vorbereitet und 
 
 ## Besonderer Anspruch
 Dieses Video ist kein weiterer Kurztest. Es nutzt die vollständige dramaturgische, technische und visuelle Produktionsmethodik des freigegebenen Video 008; lediglich die biologischen Inhalte werden zum Thema Schlaf neu geplant.
+
+## Neue Pflicht – realer 008-Stilnachweis
+
+1. Echte Standbilder aus `ObjectTalk_008_Style_References.zip` entpacken, 2–4 Referenzen (empfohlen Peristaltik/Schleimhaut/Darmzotten/Blut-Gewebe) als **BILDER** in Google Flow hochladen. `bildwelt/008-ORIGINAL-VIDEO-STYLE-REFERENCE.md` beschreibt die Zeitcodes und den Stil.
+2. Genau drei Cover mit diesen Referenzen erzeugen; erst nach Nutzerwahl 1/2/3 fortfahren.
+3. Das ausgewählte, nach 008-Look geprüfte Cover als sekundäre Referenz zusätzlich zu 008-JPGs für die fünf Bilder pro Batch verwenden.
+4. Neue 009-Bilder mit echten 008-Frames vergleichen; isolierte Schulbuch-Neuronen oder leuchtende Traum-/Gehirnposter = neu generieren.
+5. `05_info/style-reference-review.json` nur anhand tatsächlich verwendeter Flow-Bildreferenzen und gesichteter finaler Frames ausfüllen. `--phase2` verlangt danach PASS. Aktuell PENDING.
+
+Die im Repo hinterlegten Referenzdateinamen sind keine tatsächlichen Flow-Bild-Uploads. Gleichartige Ausgabe ist ohne echte Bildreferenzen nicht garantiert.
