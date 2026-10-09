@@ -2,7 +2,7 @@
   "status": "PENDING_IMAGES",
   "video_id": "009-longform-schlaf",
   "rules": {
-    "expected_images": 85,
+    "expected_images": 77,
     "minimum_score": 8,
     "scientific_accuracy_minimum": 8,
     "style_continuity_minimum": 8,

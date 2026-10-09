@@ -2,1466 +2,238 @@
   "status": "READY",
   "source_script": "01_script/script.txt",
   "authoritative_per_beat_plan": true,
-  "note": "one unique frame per speech beat",
+  "note": "Wie Video 008: 13 Mechanismusabschnitte als Navigationsindex. Exakte 77 Speech-Beats stehen vollständig in phase1-scenes.json.",
   "items": [
     {
       "id": "SV_001",
-      "voiceover_text": "Was macht dein Körper eigentlich, während du schläfst?",
+      "voiceover_text": "Hook/Einleitung: Was macht dein Körper eigentlich, während du schläfst? Du liegst ganz still im Bett. Doch unter der Oberfläche passiert erstaunlich viel. Von außen wirkt alles still. Inn…",
       "function": "hook",
-      "learning_goal": "Was macht dein Körper eigentlich, während du schläfst?",
+      "learning_goal": "Hook/Einleitung in klaren Ursachen und Wirkungen erklären.",
       "claim_ids": [
-        "C1"
+        "C1",
+        "C5",
+        "C3",
+        "C2"
       ],
-      "scale_level": "Hook",
+      "scale_level": "Körper/Überblick",
       "new_image_required": true,
       "image_asset_id": "Bild_01",
       "visual_type": "cover-hook",
-      "visible_change": "Chosen title-only cover in original video-008 Clean Animated Biology Illustration; pale cream, light turquoise, soft anatomical forms; no dark neon brain or anime faces.",
-      "scene_difference": "Selected cover is distinct title-only composition",
+      "visible_change": "Cover: single simple illustrated anatomical brain resting above a subtle pillow silhouette, on a bright cream-to-pale-blue background with generous clean left title area, one clear focal visual, no neon glow",
+      "scene_difference": "Cover → Körper/Zelle statt isoliertes Poster",
       "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
+      "misconception_to_avoid": "Keine Neon-/Comicbildwelt, keine falsche Anatomie oder zusätzlichen Texte."
     },
     {
       "id": "SV_002",
-      "voiceover_text": "Du liegst ganz still im Bett. Doch unter der Oberfläche passiert erstaunlich viel.",
-      "function": "intro",
-      "learning_goal": "Du liegst ganz still im Bett. Doch unter der Oberfläche passiert erstaunlich viel.",
+      "voiceover_text": "Schlafdruck/Adenosin: Dein Körper schaltet am Abend nicht plötzlich um. Seine inneren Signale verändern sich über Stunden. Während du wach bist, sammelt sich nach und nach sogenannter Schlafdr…",
+      "function": "mechanism",
+      "learning_goal": "Schlafdruck/Adenosin in klaren Ursachen und Wirkungen erklären.",
       "claim_ids": [
-        "C1"
+        "C2"
       ],
-      "scale_level": "Hook",
+      "scale_level": "Neuron/Molekül",
       "new_image_required": true,
-      "image_asset_id": "Bild_02",
-      "visual_type": "biological-process",
-      "visible_change": "Softly shaded adult resting on a pillow; simple close-up of healthy relaxed facial muscles, bright calm setting",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Softly shaded adult resting on a pillow; simple close-up of healthy relaxed facial muscles, bright calm setting",
+      "image_asset_id": "Bild_07",
+      "visual_type": "mechanism",
+      "visible_change": "Macro brain region with gentle gradual shift of a few neuron activity signals, cellular explanation of circadian changes",
+      "scene_difference": "Schlafdruck/Adenosin: Perspektiv- und Maßstabswechsel statt erneutem Schlafzimmerbild",
       "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
+      "misconception_to_avoid": "Keine Neon-/Comicbildwelt, keine falsche Anatomie oder zusätzlichen Texte."
     },
     {
       "id": "SV_003",
-      "voiceover_text": "Von außen wirkt alles still. Innen laufen gleichzeitig erstaunlich viele Prozesse weiter.",
-      "function": "intro",
-      "learning_goal": "Von außen wirkt alles still. Innen laufen gleichzeitig erstaunlich viele Prozesse weiter.",
+      "voiceover_text": "Innere Uhr/Melatonin: Gleichzeitig arbeitet deine innere Uhr. Sie orientiert sich besonders am Wechsel von Licht und Dunkelheit. Tageslicht unterstützt das Wachsein. Abends steigt bei Dunkelhe…",
+      "function": "mechanism",
+      "learning_goal": "Innere Uhr/Melatonin in klaren Ursachen und Wirkungen erklären.",
       "claim_ids": [
-        "C1"
+        "C2"
       ],
-      "scale_level": "Hook",
+      "scale_level": "Auge/Gehirn",
       "new_image_required": true,
-      "image_asset_id": "Bild_03",
-      "visual_type": "biological-process",
-      "visible_change": "Simplified body cutaway showing a brain and calm heart with clean routes, bright pale-blue background",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Simplified body cutaway showing a brain and calm heart with clean routes, bright pale-blue background",
+      "image_asset_id": "Bild_11",
+      "visual_type": "mechanism",
+      "visible_change": "Eye receiving simple morning daylight, a clean single signal route toward a recognizable brain region",
+      "scene_difference": "Innere Uhr/Melatonin: Perspektiv- und Maßstabswechsel statt erneutem Schlafzimmerbild",
       "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
+      "misconception_to_avoid": "Keine Neon-/Comicbildwelt, keine falsche Anatomie oder zusätzlichen Texte."
     },
     {
       "id": "SV_004",
-      "voiceover_text": "Dein Gehirn bleibt aktiv, Erinnerungen verändern sich und dein Körper stellt sich auf Erholung ein.",
-      "function": "intro",
-      "learning_goal": "Dein Gehirn bleibt aktiv, Erinnerungen verändern sich und dein Körper stellt sich auf Erholung ein.",
+      "voiceover_text": "Einschlafen: Beim Einschlafen werden deine Muskeln lockerer. Reize von außen treten langsam in den Hintergrund. Du wechselst in die erste leichte Schlafstufe. Kleine Geräusche können …",
+      "function": "mechanism",
+      "learning_goal": "Einschlafen in klaren Ursachen und Wirkungen erklären.",
       "claim_ids": [
-        "C5"
+        "C3"
       ],
-      "scale_level": "Hook",
+      "scale_level": "Muskel/Gehirn",
       "new_image_required": true,
-      "image_asset_id": "Bild_04",
-      "visual_type": "biological-process",
-      "visible_change": "Macro of a few connected neurons exchanging signals inside recognizable pale brain tissue",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Macro of a few connected neurons exchanging signals inside recognizable pale brain tissue",
+      "image_asset_id": "Bild_16",
+      "visual_type": "mechanism",
+      "visible_change": "Macro view of resting shoulder muscle fibers becoming visibly more relaxed, recognizable red organic forms",
+      "scene_difference": "Einschlafen: Perspektiv- und Maßstabswechsel statt erneutem Schlafzimmerbild",
       "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
+      "misconception_to_avoid": "Keine Neon-/Comicbildwelt, keine falsche Anatomie oder zusätzlichen Texte."
     },
     {
       "id": "SV_005",
-      "voiceover_text": "Und das alles passiert nicht gleichmäßig, sondern in mehreren Schlafphasen mit unterschiedlichen Aufgaben.",
-      "function": "intro",
-      "learning_goal": "Und das alles passiert nicht gleichmäßig, sondern in mehreren Schlafphasen mit unterschiedlichen Aufgaben.",
+      "voiceover_text": "Schlafmessung/NREM: Von außen erkennst du solche Gehirnmuster nicht. Forschende messen sie mit Elektroden am Kopf. Die Körpertemperatur sinkt etwas, und der Herzschlag wird im Durchschnitt l…",
+      "function": "mechanism",
+      "learning_goal": "Schlafmessung/NREM in klaren Ursachen und Wirkungen erklären.",
       "claim_ids": [
-        "C3"
+        "C3",
+        "C4"
       ],
-      "scale_level": "Hook",
+      "scale_level": "Gehirn/Kreislauf",
       "new_image_required": true,
-      "image_asset_id": "Bild_05",
-      "visual_type": "biological-process",
-      "visible_change": "One large smooth brain activity wave, elegant simple biological process, no night sky",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; One large smooth brain activity wave, elegant simple biological process, no night sky",
+      "image_asset_id": "Bild_20",
+      "visual_type": "mechanism",
+      "visible_change": "Sleep-lab close view with a few EEG sensors on an adult's head; external measurement, clean white-and-mint scene",
+      "scene_difference": "Schlafmessung/NREM: Perspektiv- und Maßstabswechsel statt erneutem Schlafzimmerbild",
       "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
+      "misconception_to_avoid": "Keine Neon-/Comicbildwelt, keine falsche Anatomie oder zusätzlichen Texte."
     },
     {
       "id": "SV_006",
-      "voiceover_text": "Warum du morgens anders aufwachst als abends, beginnt schon lange vor dem Einschlafen.",
-      "function": "intro",
-      "learning_goal": "Warum du morgens anders aufwachst als abends, beginnt schon lange vor dem Einschlafen.",
+      "voiceover_text": "Tiefschlaf: Im Tiefschlaf zeigen viele Nervenzellen besonders langsame, aufeinander abgestimmte Aktivitätswellen. Es ist jetzt meist schwerer, dich zu wecken als während leichter Sch…",
+      "function": "mechanism",
+      "learning_goal": "Tiefschlaf in klaren Ursachen und Wirkungen erklären.",
       "claim_ids": [
-        "C2"
+        "C3",
+        "C4"
       ],
-      "scale_level": "Hook",
+      "scale_level": "Nervenzelle/Herz/Gewebe",
       "new_image_required": true,
-      "image_asset_id": "Bild_06",
-      "visual_type": "biological-process",
-      "visible_change": "Warm sunset light entering a quiet bedroom",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Warm sunset light entering a quiet bedroom",
+      "image_asset_id": "Bild_24",
+      "visual_type": "mechanism",
+      "visible_change": "Three individual neurons with slow matched electrical signals spreading across them, one coherent synchronized event",
+      "scene_difference": "Tiefschlaf: Perspektiv- und Maßstabswechsel statt erneutem Schlafzimmerbild",
       "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
+      "misconception_to_avoid": "Keine Neon-/Comicbildwelt, keine falsche Anatomie oder zusätzlichen Texte."
     },
     {
       "id": "SV_007",
-      "voiceover_text": "Dein Körper schaltet am Abend nicht plötzlich um. Seine inneren Signale verändern sich über Stunden.",
+      "voiceover_text": "Hormone/Gewebe: Im Schlaf verändert sich außerdem die Freisetzung verschiedener Hormone über die Nacht. Früher Tiefschlaf geht oft mit stärkerer Ausschüttung von Wachstumshormon einher, …",
       "function": "mechanism",
-      "learning_goal": "Dein Körper schaltet am Abend nicht plötzlich um. Seine inneren Signale verändern sich über Stunden.",
+      "learning_goal": "Hormone/Gewebe in klaren Ursachen und Wirkungen erklären.",
       "claim_ids": [
-        "C2"
+        "C4",
+        "C3"
       ],
-      "scale_level": "Uhr",
+      "scale_level": "Drüse/Zelle",
       "new_image_required": true,
-      "image_asset_id": "Bild_07",
-      "visual_type": "biological-process",
-      "visible_change": "Sunset gradually fading at a bedroom window",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Sunset gradually fading at a bedroom window",
+      "image_asset_id": "Bild_29",
+      "visual_type": "mechanism",
+      "visible_change": "Simplified endocrine gland releasing a small set of hormone messengers into one recognizable blood vessel",
+      "scene_difference": "Hormone/Gewebe: Perspektiv- und Maßstabswechsel statt erneutem Schlafzimmerbild",
       "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
+      "misconception_to_avoid": "Keine Neon-/Comicbildwelt, keine falsche Anatomie oder zusätzlichen Texte."
     },
     {
       "id": "SV_008",
-      "voiceover_text": "Während du wach bist, sammelt sich nach und nach sogenannter Schlafdruck an.",
+      "voiceover_text": "Gedächtnis: Doch während dein Körper ruhiger wird, passiert im Gehirn noch etwas anderes: Lernen geht weiter. Stell dir vor, du hast am Tag eine neue Bewegung geübt oder etwas gelese…",
       "function": "mechanism",
-      "learning_goal": "Während du wach bist, sammelt sich nach und nach sogenannter Schlafdruck an.",
+      "learning_goal": "Gedächtnis in klaren Ursachen und Wirkungen erklären.",
       "claim_ids": [
-        "C2"
+        "C5"
       ],
-      "scale_level": "Uhr",
+      "scale_level": "Neuron/Synapse",
       "new_image_required": true,
-      "image_asset_id": "Bild_08",
-      "visual_type": "biological-process",
-      "visible_change": "Daytime adult at desk becoming tired after hours awake, small subject in airy room",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Daytime adult at desk becoming tired after hours awake, small subject in airy room",
+      "image_asset_id": "Bild_35",
+      "visual_type": "mechanism",
+      "visible_change": "Wide context bridge: adult learning an unfamiliar hand movement beside a simple enlarged neuronal connection inset, focus on neurons",
+      "scene_difference": "Gedächtnis: Perspektiv- und Maßstabswechsel statt erneutem Schlafzimmerbild",
       "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
+      "misconception_to_avoid": "Keine Neon-/Comicbildwelt, keine falsche Anatomie oder zusätzlichen Texte."
     },
     {
       "id": "SV_009",
-      "voiceover_text": "Ein Teil davon hängt mit dem Botenstoff Adenosin zusammen, der im Gehirn wirkt.",
+      "voiceover_text": "Immunsystem: Das Immunsystem arbeitet auch nachts. Seine Zellen tauschen dazu ständig Signale mit anderen Zellen aus. Schlaf und innere Uhr beeinflussen, wann bestimmte Teile dieser A…",
       "function": "mechanism",
-      "learning_goal": "Ein Teil davon hängt mit dem Botenstoff Adenosin zusammen, der im Gehirn wirkt.",
+      "learning_goal": "Immunsystem in klaren Ursachen und Wirkungen erklären.",
       "claim_ids": [
-        "C2"
+        "C6",
+        "C4"
       ],
-      "scale_level": "Uhr",
+      "scale_level": "Immunzelle/Gewebe",
       "new_image_required": true,
-      "image_asset_id": "Bild_09",
-      "visual_type": "biological-process",
-      "visible_change": "Macro of two distinct neurons with several adenosine messenger particles between them",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Macro of two distinct neurons with several adenosine messenger particles between them",
-      "labels": [
-        "Adenosin"
-      ],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
+      "image_asset_id": "Bild_45",
+      "visual_type": "mechanism",
+      "visible_change": "One white blood cell interacting with a nearby tissue cell and exchanging small messenger particles",
+      "scene_difference": "Immunsystem: Perspektiv- und Maßstabswechsel statt erneutem Schlafzimmerbild",
+      "labels": [],
+      "misconception_to_avoid": "Keine Neon-/Comicbildwelt, keine falsche Anatomie oder zusätzlichen Texte."
     },
     {
       "id": "SV_010",
-      "voiceover_text": "Je länger du wach bleibst, desto stärker wird normalerweise dein Bedürfnis nach Schlaf.",
+      "voiceover_text": "REM/Muskelhemmung: Und dann gibt es eine Schlafphase, die fast wie das Gegenteil von Tiefschlaf wirkt. In der REM-Phase ist das Gehirn in vielen Bereichen besonders aktiv. REM steht für sch…",
       "function": "mechanism",
-      "learning_goal": "Je länger du wach bleibst, desto stärker wird normalerweise dein Bedürfnis nach Schlaf.",
+      "learning_goal": "REM/Muskelhemmung in klaren Ursachen und Wirkungen erklären.",
       "claim_ids": [
-        "C2"
+        "C7"
       ],
-      "scale_level": "Uhr",
+      "scale_level": "Gehirn/Muskel",
       "new_image_required": true,
-      "image_asset_id": "Bild_10",
-      "visual_type": "biological-process",
-      "visible_change": "Adult rubbing tired eyes in late-afternoon window light",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Adult rubbing tired eyes in late-afternoon window light",
+      "image_asset_id": "Bild_53",
+      "visual_type": "mechanism",
+      "visible_change": "Close brain cortex transition from a broad slow wave toward smaller varied neural activity, no neon EEG poster",
+      "scene_difference": "REM/Muskelhemmung: Perspektiv- und Maßstabswechsel statt erneutem Schlafzimmerbild",
       "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
+      "misconception_to_avoid": "Keine Neon-/Comicbildwelt, keine falsche Anatomie oder zusätzlichen Texte."
     },
     {
       "id": "SV_011",
-      "voiceover_text": "Gleichzeitig arbeitet deine innere Uhr. Sie orientiert sich besonders am Wechsel von Licht und Dunkelheit.",
+      "voiceover_text": "Träume: Ein Traum kann sich wie eine ganze Geschichte anfühlen, auch wenn er schnell verblasst. Manche Träume wirken alltäglich. Andere verbinden Orte und Erinnerungen auf völlig…",
       "function": "mechanism",
-      "learning_goal": "Gleichzeitig arbeitet deine innere Uhr. Sie orientiert sich besonders am Wechsel von Licht und Dunkelheit.",
+      "learning_goal": "Träume in klaren Ursachen und Wirkungen erklären.",
       "claim_ids": [
-        "C2"
+        "C7"
       ],
-      "scale_level": "Uhr",
+      "scale_level": "Erinnerung/Neuron",
       "new_image_required": true,
-      "image_asset_id": "Bild_11",
-      "visual_type": "biological-process",
-      "visible_change": "Simplified brain with one area responding to day-night timing; light ivory background",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Simplified brain with one area responding to day-night timing; light ivory background",
+      "image_asset_id": "Bild_60",
+      "visual_type": "mechanism",
+      "visible_change": "A remembered street view fades into an indistinct memory fragment, gentle pale illustrated scene not dream fantasy",
+      "scene_difference": "Träume: Perspektiv- und Maßstabswechsel statt erneutem Schlafzimmerbild",
       "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
+      "misconception_to_avoid": "Keine Neon-/Comicbildwelt, keine falsche Anatomie oder zusätzlichen Texte."
     },
     {
       "id": "SV_012",
-      "voiceover_text": "Am Morgen hilft Tageslicht deinem Gehirn dabei, auf Wachsein umzuschalten.",
+      "voiceover_text": "Schlafzyklen/Erholung: Tiefschlaf und REM wechseln sich nicht einfach einmal ab. Dein Schlaf verläuft in wiederkehrenden Zyklen. Ein kompletter Durchlauf dauert oft ungefähr achtzig bis hundert…",
       "function": "mechanism",
-      "learning_goal": "Am Morgen hilft Tageslicht deinem Gehirn dabei, auf Wachsein umzuschalten.",
+      "learning_goal": "Schlafzyklen/Erholung in klaren Ursachen und Wirkungen erklären.",
       "claim_ids": [
-        "C2"
+        "C3",
+        "C8"
       ],
-      "scale_level": "Uhr",
+      "scale_level": "Gehirn/Körper",
       "new_image_required": true,
-      "image_asset_id": "Bild_12",
-      "visual_type": "biological-process",
-      "visible_change": "Soft sunrise light reaching a simplified eye-and-brain illustration",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Soft sunrise light reaching a simplified eye-and-brain illustration",
+      "image_asset_id": "Bild_65",
+      "visual_type": "mechanism",
+      "visible_change": "One brain illustrated with a smooth transition from NREM-like broad waves to REM-like fine activity across tissue",
+      "scene_difference": "Schlafzyklen/Erholung: Perspektiv- und Maßstabswechsel statt erneutem Schlafzimmerbild",
       "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
+      "misconception_to_avoid": "Keine Neon-/Comicbildwelt, keine falsche Anatomie oder zusätzlichen Texte."
     },
     {
       "id": "SV_013",
-      "voiceover_text": "Wenn es abends dunkler wird, verändert sich die Ausschüttung des Hormons Melatonin.",
-      "function": "mechanism",
-      "learning_goal": "Wenn es abends dunkler wird, verändert sich die Ausschüttung des Hormons Melatonin.",
+      "voiceover_text": "Schluss: Eine kurze Nacht lässt sich deshalb nicht einfach durch ein besonders langes Ausschlafen wegzaubern. Jetzt wird die Ausgangsfrage klar: Schlaf ist weder Stillstand noch e…",
+      "function": "summary",
+      "learning_goal": "Schluss in klaren Ursachen und Wirkungen erklären.",
       "claim_ids": [
-        "C2"
-      ],
-      "scale_level": "Uhr",
-      "new_image_required": true,
-      "image_asset_id": "Bild_13",
-      "visual_type": "biological-process",
-      "visible_change": "Anatomical brain illustration with small pineal region releasing melatonin messenger particles",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Anatomical brain illustration with small pineal region releasing melatonin messenger particles",
-      "labels": [
-        "Melatonin"
-      ],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_014",
-      "voiceover_text": "Melatonin gibt deinem Körper ein Zeitsignal. Es ist kein magischer Ausschalter für das Bewusstsein.",
-      "function": "mechanism",
-      "learning_goal": "Melatonin gibt deinem Körper ein Zeitsignal. Es ist kein magischer Ausschalter für das Bewusstsein.",
-      "claim_ids": [
-        "C2"
-      ],
-      "scale_level": "Uhr",
-      "new_image_required": true,
-      "image_asset_id": "Bild_14",
-      "visual_type": "biological-process",
-      "visible_change": "Hormone signaling particles passing from one cell to another in a clean macro process",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Hormone signaling particles passing from one cell to another in a clean macro process",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_015",
-      "voiceover_text": "Helles Licht am späten Abend kann beeinflussen, wann diese Signale stärker oder schwächer werden.",
-      "function": "mechanism",
-      "learning_goal": "Helles Licht am späten Abend kann beeinflussen, wann diese Signale stärker oder schwächer werden.",
-      "claim_ids": [
-        "C2"
-      ],
-      "scale_level": "Uhr",
-      "new_image_required": true,
-      "image_asset_id": "Bild_15",
-      "visual_type": "biological-process",
-      "visible_change": "Adult near a bright lamp late in the evening, gentle blue room",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Adult near a bright lamp late in the evening, gentle blue room",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_016",
-      "voiceover_text": "Wenn Schlafdruck und innere Uhr zusammenpassen, fällt das Einschlafen meistens leichter.",
-      "function": "mechanism",
-      "learning_goal": "Wenn Schlafdruck und innere Uhr zusammenpassen, fällt das Einschlafen meistens leichter.",
-      "claim_ids": [
-        "C2"
-      ],
-      "scale_level": "Uhr",
-      "new_image_required": true,
-      "image_asset_id": "Bild_16",
-      "visual_type": "biological-process",
-      "visible_change": "Two soft natural timing signals converging beside a relaxed sleeper",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Two soft natural timing signals converging beside a relaxed sleeper",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_017",
-      "voiceover_text": "Deshalb kann Müdigkeit zur falschen Tageszeit ganz anders sein als echte Schlafbereitschaft.",
-      "function": "mechanism",
-      "learning_goal": "Deshalb kann Müdigkeit zur falschen Tageszeit ganz anders sein als echte Schlafbereitschaft.",
-      "claim_ids": [
-        "C2"
-      ],
-      "scale_level": "Uhr",
-      "new_image_required": true,
-      "image_asset_id": "Bild_17",
-      "visual_type": "biological-process",
-      "visible_change": "One adult feeling sleepy by day, awake beneath evening room light",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; One adult feeling sleepy by day, awake beneath evening room light",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_018",
-      "voiceover_text": "Beim Einschlafen werden deine Muskeln lockerer. Reize von außen treten langsam in den Hintergrund.",
-      "function": "mechanism",
-      "learning_goal": "Beim Einschlafen werden deine Muskeln lockerer. Reize von außen treten langsam in den Hintergrund.",
-      "claim_ids": [
-        "C3"
-      ],
-      "scale_level": "Einschlafen",
-      "new_image_required": true,
-      "image_asset_id": "Bild_18",
-      "visual_type": "biological-process",
-      "visible_change": "Relaxed resting arm on bed, soft background falloff",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Relaxed resting arm on bed, soft background falloff",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_019",
-      "voiceover_text": "Du wechselst in die erste leichte Schlafstufe. Kleine Geräusche können dich noch leicht wecken.",
-      "function": "mechanism",
-      "learning_goal": "Du wechselst in die erste leichte Schlafstufe. Kleine Geräusche können dich noch leicht wecken.",
-      "claim_ids": [
-        "C3"
-      ],
-      "scale_level": "Einschlafen",
-      "new_image_required": true,
-      "image_asset_id": "Bild_19",
-      "visual_type": "biological-process",
-      "visible_change": "Sleeping adult face in profile, quiet sound fading in the distance",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Sleeping adult face in profile, quiet sound fading in the distance",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_020",
-      "voiceover_text": "Danach wird der Schlaf stabiler. In der zweiten Stufe verändern sich die elektrischen Muster im Gehirn.",
-      "function": "mechanism",
-      "learning_goal": "Danach wird der Schlaf stabiler. In der zweiten Stufe verändern sich die elektrischen Muster im Gehirn.",
-      "claim_ids": [
-        "C3"
-      ],
-      "scale_level": "Einschlafen",
-      "new_image_required": true,
-      "image_asset_id": "Bild_20",
-      "visual_type": "biological-process",
-      "visible_change": "Brain close-up with a few gentle neural rhythms, accurate simplified brain anatomy",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Brain close-up with a few gentle neural rhythms, accurate simplified brain anatomy",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_021",
-      "voiceover_text": "Kurze Aktivitätsausbrüche wechseln sich mit ruhigeren Mustern ab. Das Gehirn arbeitet weiter.",
-      "function": "mechanism",
-      "learning_goal": "Kurze Aktivitätsausbrüche wechseln sich mit ruhigeren Mustern ab. Das Gehirn arbeitet weiter.",
-      "claim_ids": [
-        "C3"
-      ],
-      "scale_level": "Einschlafen",
-      "new_image_required": true,
-      "image_asset_id": "Bild_21",
-      "visual_type": "biological-process",
-      "visible_change": "One small group of neurons showing brief rhythmic activity, clear organic structure",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; One small group of neurons showing brief rhythmic activity, clear organic structure",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_022",
-      "voiceover_text": "Von außen erkennst du solche Gehirnmuster nicht. Forschende messen sie mit Elektroden am Kopf.",
-      "function": "mechanism",
-      "learning_goal": "Von außen erkennst du solche Gehirnmuster nicht. Forschende messen sie mit Elektroden am Kopf.",
-      "claim_ids": [
-        "C3"
-      ],
-      "scale_level": "Einschlafen",
-      "new_image_required": true,
-      "image_asset_id": "Bild_22",
-      "visual_type": "biological-process",
-      "visible_change": "Sleep-laboratory close-up with a few EEG electrodes on a resting adult, pale room",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Sleep-laboratory close-up with a few EEG electrodes on a resting adult, pale room",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_023",
-      "voiceover_text": "Die Körpertemperatur sinkt etwas, und der Herzschlag wird im Durchschnitt langsamer.",
-      "function": "mechanism",
-      "learning_goal": "Die Körpertemperatur sinkt etwas, und der Herzschlag wird im Durchschnitt langsamer.",
-      "claim_ids": [
-        "C4"
-      ],
-      "scale_level": "Einschlafen",
-      "new_image_required": true,
-      "image_asset_id": "Bild_23",
-      "visual_type": "biological-process",
-      "visible_change": "Isolated illustrated heart with calm regular rhythmic movement",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Isolated illustrated heart with calm regular rhythmic movement",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_024",
-      "voiceover_text": "Auch deine Atmung wird in vielen Abschnitten ruhiger. Doch Schlaf bleibt kein starrer Zustand.",
-      "function": "mechanism",
-      "learning_goal": "Auch deine Atmung wird in vielen Abschnitten ruhiger. Doch Schlaf bleibt kein starrer Zustand.",
-      "claim_ids": [
-        "C4"
-      ],
-      "scale_level": "Einschlafen",
-      "new_image_required": true,
-      "image_asset_id": "Bild_24",
-      "visual_type": "biological-process",
-      "visible_change": "Isolated simple lungs gently expanding with a peaceful breathing rhythm",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Isolated simple lungs gently expanding with a peaceful breathing rhythm",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_025",
-      "voiceover_text": "Nach leichteren Stufen erreicht dein Körper schließlich den sogenannten Tiefschlaf.",
-      "function": "mechanism",
-      "learning_goal": "Nach leichteren Stufen erreicht dein Körper schließlich den sogenannten Tiefschlaf.",
-      "claim_ids": [
-        "C3"
-      ],
-      "scale_level": "Einschlafen",
-      "new_image_required": true,
-      "image_asset_id": "Bild_25",
-      "visual_type": "biological-process",
-      "visible_change": "Anatomical brain macro with broad slow activity wave indicating deep sleep",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Anatomical brain macro with broad slow activity wave indicating deep sleep",
-      "labels": [
-        "Tiefschlaf"
-      ],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_026",
-      "voiceover_text": "Hier zeigen Messungen besonders langsame, kräftige Wellen der Gehirnaktivität.",
-      "function": "mechanism",
-      "learning_goal": "Hier zeigen Messungen besonders langsame, kräftige Wellen der Gehirnaktivität.",
-      "claim_ids": [
-        "C3"
-      ],
-      "scale_level": "Tiefschlaf",
-      "new_image_required": true,
-      "image_asset_id": "Bild_26",
-      "visual_type": "biological-process",
-      "visible_change": "A simplified brain cross-section with broad coordinated slow neuronal activity",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; A simplified brain cross-section with broad coordinated slow neuronal activity",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_027",
-      "voiceover_text": "Dabei zeigen viele Nervenzellen zeitweise ein stärker abgestimmtes Aktivitätsmuster.",
-      "function": "mechanism",
-      "learning_goal": "Dabei zeigen viele Nervenzellen zeitweise ein stärker abgestimmtes Aktivitätsmuster.",
-      "claim_ids": [
-        "C3"
-      ],
-      "scale_level": "Tiefschlaf",
-      "new_image_required": true,
-      "image_asset_id": "Bild_27",
-      "visual_type": "biological-process",
-      "visible_change": "Three neurons activating in coordinated rhythm, natural pale tissue backdrop",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Three neurons activating in coordinated rhythm, natural pale tissue backdrop",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_028",
-      "voiceover_text": "Es ist jetzt meist schwerer, dich zu wecken als während leichter Schlafstufen.",
-      "function": "mechanism",
-      "learning_goal": "Es ist jetzt meist schwerer, dich zu wecken als während leichter Schlafstufen.",
-      "claim_ids": [
-        "C3"
-      ],
-      "scale_level": "Tiefschlaf",
-      "new_image_required": true,
-      "image_asset_id": "Bild_28",
-      "visual_type": "biological-process",
-      "visible_change": "Quiet sleeper in a softly insulated peaceful bedroom",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Quiet sleeper in a softly insulated peaceful bedroom",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_029",
-      "voiceover_text": "Puls und Atmung sind normalerweise ruhig. Das unterstützt eine geringere Belastung des Kreislaufs.",
-      "function": "mechanism",
-      "learning_goal": "Puls und Atmung sind normalerweise ruhig. Das unterstützt eine geringere Belastung des Kreislaufs.",
-      "claim_ids": [
-        "C4"
-      ],
-      "scale_level": "Tiefschlaf",
-      "new_image_required": true,
-      "image_asset_id": "Bild_29",
-      "visual_type": "biological-process",
-      "visible_change": "Close anatomy of one heart with calmer circulation, medium-red organ on pale mint",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Close anatomy of one heart with calmer circulation, medium-red organ on pale mint",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_030",
-      "voiceover_text": "Dein Herz steht dabei nie still. Es schlägt weiter und versorgt deine Organe.",
-      "function": "mechanism",
-      "learning_goal": "Dein Herz steht dabei nie still. Es schlägt weiter und versorgt deine Organe.",
-      "claim_ids": [
-        "C4"
-      ],
-      "scale_level": "Tiefschlaf",
-      "new_image_required": true,
-      "image_asset_id": "Bild_30",
-      "visual_type": "biological-process",
-      "visible_change": "Red blood cells following a smooth path through one intact vessel",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Red blood cells following a smooth path through one intact vessel",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_031",
-      "voiceover_text": "Auch Zellen brauchen ständig Sauerstoff und Energie, selbst wenn du tief schläfst.",
-      "function": "mechanism",
-      "learning_goal": "Auch Zellen brauchen ständig Sauerstoff und Energie, selbst wenn du tief schläfst.",
-      "claim_ids": [
-        "C4"
-      ],
-      "scale_level": "Tiefschlaf",
-      "new_image_required": true,
-      "image_asset_id": "Bild_31",
-      "visual_type": "biological-process",
-      "visible_change": "One illustrated cell receiving oxygen beside a tiny vessel",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; One illustrated cell receiving oxygen beside a tiny vessel",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_032",
-      "voiceover_text": "Im Schlaf verändert sich außerdem die Freisetzung verschiedener Hormone über die Nacht.",
-      "function": "mechanism",
-      "learning_goal": "Im Schlaf verändert sich außerdem die Freisetzung verschiedener Hormone über die Nacht.",
-      "claim_ids": [
-        "C4"
-      ],
-      "scale_level": "Tiefschlaf",
-      "new_image_required": true,
-      "image_asset_id": "Bild_32",
-      "visual_type": "biological-process",
-      "visible_change": "One simple hormone gland illustration releasing a few messenger particles",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; One simple hormone gland illustration releasing a few messenger particles",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_033",
-      "voiceover_text": "Ein Beispiel ist Wachstumshormon, das häufig besonders in frühen Tiefschlafphasen ausgeschüttet wird.",
-      "function": "mechanism",
-      "learning_goal": "Ein Beispiel ist Wachstumshormon, das häufig besonders in frühen Tiefschlafphasen ausgeschüttet wird.",
-      "claim_ids": [
-        "C4"
-      ],
-      "scale_level": "Tiefschlaf",
-      "new_image_required": true,
-      "image_asset_id": "Bild_33",
-      "visual_type": "biological-process",
-      "visible_change": "Simplified brain cutaway showing pituitary area and a few hormone signal particles",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Simplified brain cutaway showing pituitary area and a few hormone signal particles",
-      "labels": [
-        "Wachstumshormon"
-      ],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_034",
-      "voiceover_text": "Es gehört zu den Signalen, die Wachstum und Gewebeerneuerung mitregulieren.",
-      "function": "mechanism",
-      "learning_goal": "Es gehört zu den Signalen, die Wachstum und Gewebeerneuerung mitregulieren.",
-      "claim_ids": [
-        "C4"
-      ],
-      "scale_level": "Tiefschlaf",
-      "new_image_required": true,
-      "image_asset_id": "Bild_34",
-      "visual_type": "biological-process",
-      "visible_change": "Simple tissue cells carrying out routine maintenance",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Simple tissue cells carrying out routine maintenance",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_035",
-      "voiceover_text": "Das bedeutet nicht, dass Muskeln in einer Nacht plötzlich sichtbar größer werden.",
-      "function": "mechanism",
-      "learning_goal": "Das bedeutet nicht, dass Muskeln in einer Nacht plötzlich sichtbar größer werden.",
-      "claim_ids": [
-        "C4"
-      ],
-      "scale_level": "Tiefschlaf",
-      "new_image_required": true,
-      "image_asset_id": "Bild_35",
-      "visual_type": "biological-process",
-      "visible_change": "Resting muscle fiber illustration showing ordinary protein renewal",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Resting muscle fiber illustration showing ordinary protein renewal",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_036",
-      "voiceover_text": "Aber Reparatur beginnt nicht erst nachts. Dein Körper arbeitet auch tagsüber an seinen Geweben.",
-      "function": "mechanism",
-      "learning_goal": "Aber Reparatur beginnt nicht erst nachts. Dein Körper arbeitet auch tagsüber an seinen Geweben.",
-      "claim_ids": [
-        "C4"
-      ],
-      "scale_level": "Tiefschlaf",
-      "new_image_required": true,
-      "image_asset_id": "Bild_36",
-      "visual_type": "biological-process",
-      "visible_change": "Similar healthy tissue cells at daytime, natural continuity",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Similar healthy tissue cells at daytime, natural continuity",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_037",
-      "voiceover_text": "Schlaf schafft günstige Bedingungen für viele Vorgänge, die du tagsüber kaum bemerkst.",
-      "function": "mechanism",
-      "learning_goal": "Schlaf schafft günstige Bedingungen für viele Vorgänge, die du tagsüber kaum bemerkst.",
-      "claim_ids": [
-        "C4"
-      ],
-      "scale_level": "Tiefschlaf",
-      "new_image_required": true,
-      "image_asset_id": "Bild_37",
-      "visual_type": "biological-process",
-      "visible_change": "Biological tissue and one small capillary with ordinary cell maintenance",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Biological tissue and one small capillary with ordinary cell maintenance",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_038",
-      "voiceover_text": "Besonders viel Tiefschlaf liegt bei vielen Erwachsenen eher am Anfang der Nacht.",
-      "function": "mechanism",
-      "learning_goal": "Besonders viel Tiefschlaf liegt bei vielen Erwachsenen eher am Anfang der Nacht.",
-      "claim_ids": [
-        "C3"
-      ],
-      "scale_level": "Tiefschlaf",
-      "new_image_required": true,
-      "image_asset_id": "Bild_38",
-      "visual_type": "biological-process",
-      "visible_change": "Early sleep brain with broad, slow neural waves on light blue background",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Early sleep brain with broad, slow neural waves on light blue background",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_039",
-      "voiceover_text": "Doch während dein Körper ruhiger wird, passiert im Gehirn noch etwas anderes: Lernen geht weiter.",
-      "function": "mechanism",
-      "learning_goal": "Doch während dein Körper ruhiger wird, passiert im Gehirn noch etwas anderes: Lernen geht weiter.",
-      "claim_ids": [
+        "C8",
+        "C1",
         "C5"
       ],
-      "scale_level": "Gedächtnis",
-      "new_image_required": true,
-      "image_asset_id": "Bild_39",
-      "visual_type": "biological-process",
-      "visible_change": "One anatomical brain with a few memory-related neuron connections",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; One anatomical brain with a few memory-related neuron connections",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_040",
-      "voiceover_text": "Stell dir vor, du hast am Tag eine neue Bewegung geübt oder etwas gelesen.",
-      "function": "mechanism",
-      "learning_goal": "Stell dir vor, du hast am Tag eine neue Bewegung geübt oder etwas gelesen.",
-      "claim_ids": [
-        "C5"
-      ],
-      "scale_level": "Gedächtnis",
-      "new_image_required": true,
-      "image_asset_id": "Bild_40",
-      "visual_type": "biological-process",
-      "visible_change": "Adult hands practicing a single guitar chord in sunlight",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Adult hands practicing a single guitar chord in sunlight",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_041",
-      "voiceover_text": "Die dabei entstandenen Eindrücke verschwinden nicht einfach, sobald du einschläfst.",
-      "function": "mechanism",
-      "learning_goal": "Die dabei entstandenen Eindrücke verschwinden nicht einfach, sobald du einschläfst.",
-      "claim_ids": [
-        "C5"
-      ],
-      "scale_level": "Gedächtnis",
-      "new_image_required": true,
-      "image_asset_id": "Bild_41",
-      "visual_type": "biological-process",
-      "visible_change": "Neurons involved in a newly learned movement, several clear organic connections",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Neurons involved in a newly learned movement, several clear organic connections",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_042",
-      "voiceover_text": "Schlaf unterstützt das Festigen und Ordnen von Erinnerungen. Wissenschaftler nennen das Gedächtniskonsolidierung.",
-      "function": "mechanism",
-      "learning_goal": "Schlaf unterstützt das Festigen und Ordnen von Erinnerungen. Wissenschaftler nennen das Gedächtniskonsolidierung.",
-      "claim_ids": [
-        "C5"
-      ],
-      "scale_level": "Gedächtnis",
-      "new_image_required": true,
-      "image_asset_id": "Bild_42",
-      "visual_type": "biological-process",
-      "visible_change": "A single synapse becomes more stable, simplified and anatomically recognizable",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; A single synapse becomes more stable, simplified and anatomically recognizable",
-      "labels": [
-        "Gedächtnis"
-      ],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_043",
-      "voiceover_text": "Dabei verändern sich Verbindungen zwischen Nervenzellen. Welche Veränderungen stattfinden, hängt vom Gelernten ab.",
-      "function": "mechanism",
-      "learning_goal": "Dabei verändern sich Verbindungen zwischen Nervenzellen. Welche Veränderungen stattfinden, hängt vom Gelernten ab.",
-      "claim_ids": [
-        "C5"
-      ],
-      "scale_level": "Gedächtnis",
-      "new_image_required": true,
-      "image_asset_id": "Bild_43",
-      "visual_type": "biological-process",
-      "visible_change": "Two large neurons exchanging one chemical signal across a synapse",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Two large neurons exchanging one chemical signal across a synapse",
-      "labels": [
-        "Synapse"
-      ],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_044",
-      "voiceover_text": "Es geht also nicht darum, dass dein Gehirn nachts einfach eine Festplatte kopiert.",
-      "function": "mechanism",
-      "learning_goal": "Es geht also nicht darum, dass dein Gehirn nachts einfach eine Festplatte kopiert.",
-      "claim_ids": [
-        "C5"
-      ],
-      "scale_level": "Gedächtnis",
-      "new_image_required": true,
-      "image_asset_id": "Bild_44",
-      "visual_type": "biological-process",
-      "visible_change": "Recognizable brain with coordinated neuron connections, no screen elements",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Recognizable brain with coordinated neuron connections, no screen elements",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_045",
-      "voiceover_text": "Dein Gehirn spielt dabei nicht jede Szene des Tages wie einen Film vollständig ab.",
-      "function": "mechanism",
-      "learning_goal": "Dein Gehirn spielt dabei nicht jede Szene des Tages wie einen Film vollständig ab.",
-      "claim_ids": [
-        "C5"
-      ],
-      "scale_level": "Gedächtnis",
-      "new_image_required": true,
-      "image_asset_id": "Bild_45",
-      "visual_type": "biological-process",
-      "visible_change": "Several selected memory-related neural connections become more stable",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Several selected memory-related neural connections become more stable",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_046",
-      "voiceover_text": "Verschiedene Schlafphasen tragen auf unterschiedliche Weise zum Lernen und Erinnern bei.",
-      "function": "mechanism",
-      "learning_goal": "Verschiedene Schlafphasen tragen auf unterschiedliche Weise zum Lernen und Erinnern bei.",
-      "claim_ids": [
-        "C5"
-      ],
-      "scale_level": "Gedächtnis",
-      "new_image_required": true,
-      "image_asset_id": "Bild_46",
-      "visual_type": "biological-process",
-      "visible_change": "Single brain with gently different neural activity rhythms, no split panels",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Single brain with gently different neural activity rhythms, no split panels",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_047",
-      "voiceover_text": "Wer zu wenig schläft, hat am nächsten Tag häufig mehr Probleme mit Konzentration und Aufmerksamkeit.",
-      "function": "mechanism",
-      "learning_goal": "Wer zu wenig schläft, hat am nächsten Tag häufig mehr Probleme mit Konzentration und Aufmerksamkeit.",
-      "claim_ids": [
-        "C5"
-      ],
-      "scale_level": "Gedächtnis",
-      "new_image_required": true,
-      "image_asset_id": "Bild_47",
-      "visual_type": "biological-process",
-      "visible_change": "Morning adult at desk with slightly unfocused attention",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Morning adult at desk with slightly unfocused attention",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_048",
-      "voiceover_text": "Schlechter Schlaf kann auch erschweren, Neues gut abzuspeichern oder Bekanntes abzurufen.",
-      "function": "mechanism",
-      "learning_goal": "Schlechter Schlaf kann auch erschweren, Neues gut abzuspeichern oder Bekanntes abzurufen.",
-      "claim_ids": [
-        "C5"
-      ],
-      "scale_level": "Gedächtnis",
-      "new_image_required": true,
-      "image_asset_id": "Bild_48",
-      "visual_type": "biological-process",
-      "visible_change": "One neuron with weaker signal transmission after insufficient sleep",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; One neuron with weaker signal transmission after insufficient sleep",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_049",
-      "voiceover_text": "Damit ist Schlaf keine Pause vom Lernen, sondern ein Teil seiner biologischen Grundlage.",
-      "function": "mechanism",
-      "learning_goal": "Damit ist Schlaf keine Pause vom Lernen, sondern ein Teil seiner biologischen Grundlage.",
-      "claim_ids": [
-        "C5"
-      ],
-      "scale_level": "Gedächtnis",
-      "new_image_required": true,
-      "image_asset_id": "Bild_49",
-      "visual_type": "biological-process",
-      "visible_change": "Close-up of a normal synapse with clear signaling in sleep",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Close-up of a normal synapse with clear signaling in sleep",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_050",
-      "voiceover_text": "Auch dein Immunsystem arbeitet nachts weiter. Allerdings nicht wie eine Armee auf Knopfdruck.",
-      "function": "mechanism",
-      "learning_goal": "Auch dein Immunsystem arbeitet nachts weiter. Allerdings nicht wie eine Armee auf Knopfdruck.",
-      "claim_ids": [
-        "C6"
-      ],
-      "scale_level": "Immunsystem",
-      "new_image_required": true,
-      "image_asset_id": "Bild_50",
-      "visual_type": "biological-process",
-      "visible_change": "One white immune cell traveling beside healthy body tissue",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; One white immune cell traveling beside healthy body tissue",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_051",
-      "voiceover_text": "Immunzellen stehen ständig mit anderen Zellen und Botenstoffen in Kontakt.",
-      "function": "mechanism",
-      "learning_goal": "Immunzellen stehen ständig mit anderen Zellen und Botenstoffen in Kontakt.",
-      "claim_ids": [
-        "C6"
-      ],
-      "scale_level": "Immunsystem",
-      "new_image_required": true,
-      "image_asset_id": "Bild_51",
-      "visual_type": "biological-process",
-      "visible_change": "Two immune cells calmly exchanging signaling particles",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Two immune cells calmly exchanging signaling particles",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_052",
-      "voiceover_text": "Schlaf und innere Uhr beeinflussen, wann bestimmte Teile dieser Abwehr besonders aktiv sind.",
-      "function": "mechanism",
-      "learning_goal": "Schlaf und innere Uhr beeinflussen, wann bestimmte Teile dieser Abwehr besonders aktiv sind.",
-      "claim_ids": [
-        "C6"
-      ],
-      "scale_level": "Immunsystem",
-      "new_image_required": true,
-      "image_asset_id": "Bild_52",
-      "visual_type": "biological-process",
-      "visible_change": "One immune cell circulating along a smooth intact vessel",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; One immune cell circulating along a smooth intact vessel",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_053",
-      "voiceover_text": "Das ist ein Zusammenspiel vieler Prozesse, nicht eine einzelne geheimnisvolle Reparaturtaste.",
-      "function": "mechanism",
-      "learning_goal": "Das ist ein Zusammenspiel vieler Prozesse, nicht eine einzelne geheimnisvolle Reparaturtaste.",
-      "claim_ids": [
-        "C6"
-      ],
-      "scale_level": "Immunsystem",
-      "new_image_required": true,
-      "image_asset_id": "Bild_53",
-      "visual_type": "biological-process",
-      "visible_change": "One white blood cell calmly communicating with a local tissue cell",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; One white blood cell calmly communicating with a local tissue cell",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_054",
-      "voiceover_text": "Wenn Schlaf dauerhaft fehlt, kann das Abwehrreaktionen ungünstig beeinflussen.",
-      "function": "mechanism",
-      "learning_goal": "Wenn Schlaf dauerhaft fehlt, kann das Abwehrreaktionen ungünstig beeinflussen.",
-      "claim_ids": [
-        "C6"
-      ],
-      "scale_level": "Immunsystem",
-      "new_image_required": true,
-      "image_asset_id": "Bild_54",
-      "visual_type": "biological-process",
-      "visible_change": "Tired adult in daytime with a subdued immune-cell illustration anatomical detail",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Tired adult in daytime with a subdued immune-cell illustration anatomical detail",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_055",
-      "voiceover_text": "Verschiedene Immunzellen übernehmen unterschiedliche Aufgaben. Ihre Aktivität folgt keinem gemeinsamen Ein-Aus-Schalter.",
-      "function": "mechanism",
-      "learning_goal": "Verschiedene Immunzellen übernehmen unterschiedliche Aufgaben. Ihre Aktivität folgt keinem gemeinsamen Ein-Aus-Schalter.",
-      "claim_ids": [
-        "C6"
-      ],
-      "scale_level": "Immunsystem",
-      "new_image_required": true,
-      "image_asset_id": "Bild_55",
-      "visual_type": "biological-process",
-      "visible_change": "Two white blood cells exchanging one cluster of signaling molecules",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Two white blood cells exchanging one cluster of signaling molecules",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_056",
-      "voiceover_text": "Das bedeutet aber nicht, dass eine einzige perfekte Nacht dich vor jeder Krankheit schützt.",
-      "function": "mechanism",
-      "learning_goal": "Das bedeutet aber nicht, dass eine einzige perfekte Nacht dich vor jeder Krankheit schützt.",
-      "claim_ids": [
-        "C6"
-      ],
-      "scale_level": "Immunsystem",
-      "new_image_required": true,
-      "image_asset_id": "Bild_56",
-      "visual_type": "biological-process",
-      "visible_change": "Ordinary immune activity in soft tissue during sleep, illustrated without a character",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Ordinary immune activity in soft tissue during sleep, illustrated without a character",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_057",
-      "voiceover_text": "Auch Stoffwechsel und Kreislauf folgen nachts anderen Rhythmen als am Tag.",
-      "function": "mechanism",
-      "learning_goal": "Auch Stoffwechsel und Kreislauf folgen nachts anderen Rhythmen als am Tag.",
-      "claim_ids": [
-        "C4"
-      ],
-      "scale_level": "Immunsystem",
-      "new_image_required": true,
-      "image_asset_id": "Bild_57",
-      "visual_type": "biological-process",
-      "visible_change": "Warm illustrated heart with calm circulation across gentle lighting",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Warm illustrated heart with calm circulation across gentle lighting",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_058",
-      "voiceover_text": "Dein Körper verteilt seine Arbeit anders, während wichtige Lebensfunktionen ununterbrochen weiterlaufen.",
-      "function": "mechanism",
-      "learning_goal": "Dein Körper verteilt seine Arbeit anders, während wichtige Lebensfunktionen ununterbrochen weiterlaufen.",
-      "claim_ids": [
-        "C4"
-      ],
-      "scale_level": "Immunsystem",
-      "new_image_required": true,
-      "image_asset_id": "Bild_58",
-      "visual_type": "biological-process",
-      "visible_change": "Sleep scene with separately illustrated relaxed lungs and heart",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Sleep scene with separately illustrated relaxed lungs and heart",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_059",
-      "voiceover_text": "Und dann gibt es eine Schlafphase, die fast wie das Gegenteil von Tiefschlaf wirkt.",
-      "function": "mechanism",
-      "learning_goal": "Und dann gibt es eine Schlafphase, die fast wie das Gegenteil von Tiefschlaf wirkt.",
-      "claim_ids": [
-        "C7"
-      ],
-      "scale_level": "REM",
-      "new_image_required": true,
-      "image_asset_id": "Bild_59",
-      "visual_type": "biological-process",
-      "visible_change": "Brain macro illustrating transition to REM-related neuronal activity, very light blue",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Brain macro illustrating transition to REM-related neuronal activity, very light blue",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_060",
-      "voiceover_text": "In der REM-Phase ist das Gehirn in vielen Bereichen besonders aktiv.",
-      "function": "mechanism",
-      "learning_goal": "In der REM-Phase ist das Gehirn in vielen Bereichen besonders aktiv.",
-      "claim_ids": [
-        "C7"
-      ],
-      "scale_level": "REM",
-      "new_image_required": true,
-      "image_asset_id": "Bild_60",
-      "visual_type": "biological-process",
-      "visible_change": "Large realistic-to-illustration simplified brain, several distinct active REM circuits in muted teal, coral and blue on cream background",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Large realistic-to-illustration simplified brain, several distinct active REM circuits in muted teal, coral and blue on cream back",
-      "labels": [
-        "REM-Schlaf"
-      ],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_061",
-      "voiceover_text": "REM steht für schnelle Augenbewegungen. Unter geschlossenen Lidern bewegen sich die Augen ruckartig.",
-      "function": "mechanism",
-      "learning_goal": "REM steht für schnelle Augenbewegungen. Unter geschlossenen Lidern bewegen sich die Augen ruckartig.",
-      "claim_ids": [
-        "C7"
-      ],
-      "scale_level": "REM",
-      "new_image_required": true,
-      "image_asset_id": "Bild_61",
-      "visual_type": "biological-process",
-      "visible_change": "Closed eyes of a resting adult, subtle eye motion implied naturally",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Closed eyes of a resting adult, subtle eye motion implied naturally",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_062",
-      "voiceover_text": "Die Gehirnaktivität kann dabei in Teilen an Wachsein erinnern, obwohl du schläfst.",
-      "function": "mechanism",
-      "learning_goal": "Die Gehirnaktivität kann dabei in Teilen an Wachsein erinnern, obwohl du schläfst.",
-      "claim_ids": [
-        "C7"
-      ],
-      "scale_level": "REM",
-      "new_image_required": true,
-      "image_asset_id": "Bild_62",
-      "visual_type": "biological-process",
-      "visible_change": "Brain tissue showing a few wake-like neural activity patterns during REM",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Brain tissue showing a few wake-like neural activity patterns during REM",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_063",
-      "voiceover_text": "In dieser Phase entstehen besonders häufig lebhafte Träume. Träumen ist aber nicht auf REM beschränkt.",
-      "function": "mechanism",
-      "learning_goal": "In dieser Phase entstehen besonders häufig lebhafte Träume. Träumen ist aber nicht auf REM beschränkt.",
-      "claim_ids": [
-        "C7"
-      ],
-      "scale_level": "REM",
-      "new_image_required": true,
-      "image_asset_id": "Bild_63",
-      "visual_type": "biological-process",
-      "visible_change": "A soft everyday memory of a familiar street, subdued gentle illustration",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; A soft everyday memory of a familiar street, subdued gentle illustration",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_064",
-      "voiceover_text": "Deine Arm- und Beinmuskeln werden im REM-Schlaf normalerweise vorübergehend stark gehemmt.",
-      "function": "mechanism",
-      "learning_goal": "Deine Arm- und Beinmuskeln werden im REM-Schlaf normalerweise vorübergehend stark gehemmt.",
-      "claim_ids": [
-        "C7"
-      ],
-      "scale_level": "REM",
-      "new_image_required": true,
-      "image_asset_id": "Bild_64",
-      "visual_type": "biological-process",
-      "visible_change": "Brainstem and a muscle-fiber group with one simplified inhibition signal",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Brainstem and a muscle-fiber group with one simplified inhibition signal",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_065",
-      "voiceover_text": "Das hilft zu verhindern, dass du die Bewegungen deiner Träume einfach ausführst.",
-      "function": "mechanism",
-      "learning_goal": "Das hilft zu verhindern, dass du die Bewegungen deiner Träume einfach ausführst.",
-      "claim_ids": [
-        "C7"
-      ],
-      "scale_level": "REM",
-      "new_image_required": true,
-      "image_asset_id": "Bild_65",
-      "visual_type": "biological-process",
-      "visible_change": "Resting adult and subtle illustration of imagined running in a small distant context, no dramatic fantasy poster",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Resting adult and subtle illustration of imagined running in a small distant context, no dramatic fantasy poster",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_066",
-      "voiceover_text": "Atmung und Herzschlag können jetzt unregelmäßiger sein als im ruhigen Tiefschlaf.",
-      "function": "mechanism",
-      "learning_goal": "Atmung und Herzschlag können jetzt unregelmäßiger sein als im ruhigen Tiefschlaf.",
-      "claim_ids": [
-        "C7"
-      ],
-      "scale_level": "REM",
-      "new_image_required": true,
-      "image_asset_id": "Bild_66",
-      "visual_type": "biological-process",
-      "visible_change": "Illustrated heart and simple breathing rhythm gently varying",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Illustrated heart and simple breathing rhythm gently varying",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_067",
-      "voiceover_text": "Ein Traum kann sich wie eine ganze Geschichte anfühlen, auch wenn er schnell verblasst.",
-      "function": "mechanism",
-      "learning_goal": "Ein Traum kann sich wie eine ganze Geschichte anfühlen, auch wenn er schnell verblasst.",
-      "claim_ids": [
-        "C7"
-      ],
-      "scale_level": "REM",
-      "new_image_required": true,
-      "image_asset_id": "Bild_67",
-      "visual_type": "biological-process",
-      "visible_change": "Softly rendered memory of a doorway fading as a person wakes",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Softly rendered memory of a doorway fading as a person wakes",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_068",
-      "voiceover_text": "Manche Träume wirken alltäglich. Andere verbinden Orte und Erinnerungen auf völlig unerwartete Weise.",
-      "function": "mechanism",
-      "learning_goal": "Manche Träume wirken alltäglich. Andere verbinden Orte und Erinnerungen auf völlig unerwartete Weise.",
-      "claim_ids": [
-        "C7"
-      ],
-      "scale_level": "REM",
-      "new_image_required": true,
-      "image_asset_id": "Bild_68",
-      "visual_type": "biological-process",
-      "visible_change": "Familiar doorway and garden as understated dream illustration, calm light colors",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Familiar doorway and garden as understated dream illustration, calm light colors",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_069",
-      "voiceover_text": "Warum wir träumen, ist wissenschaftlich noch nicht vollständig geklärt.",
-      "function": "mechanism",
-      "learning_goal": "Warum wir träumen, ist wissenschaftlich noch nicht vollständig geklärt.",
-      "claim_ids": [
-        "C7"
-      ],
-      "scale_level": "REM",
-      "new_image_required": true,
-      "image_asset_id": "Bild_69",
-      "visual_type": "biological-process",
-      "visible_change": "Several ordinary neurons involved in dreaming, simple pale biology backdrop",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Several ordinary neurons involved in dreaming, simple pale biology backdrop",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_070",
-      "voiceover_text": "Forschende untersuchen unter anderem Zusammenhänge mit Erinnerungen und der Verarbeitung von Gefühlen.",
-      "function": "mechanism",
-      "learning_goal": "Forschende untersuchen unter anderem Zusammenhänge mit Erinnerungen und der Verarbeitung von Gefühlen.",
-      "claim_ids": [
-        "C7"
-      ],
-      "scale_level": "REM",
-      "new_image_required": true,
-      "image_asset_id": "Bild_70",
-      "visual_type": "biological-process",
-      "visible_change": "A few active connections in brain tissue associated with emotional memory processing",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; A few active connections in brain tissue associated with emotional memory processing",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_071",
-      "voiceover_text": "Sicher ist: Das schlafende Gehirn bleibt auch in dieser Phase alles andere als abgeschaltet.",
-      "function": "mechanism",
-      "learning_goal": "Sicher ist: Das schlafende Gehirn bleibt auch in dieser Phase alles andere als abgeschaltet.",
-      "claim_ids": [
-        "C7"
-      ],
-      "scale_level": "REM",
-      "new_image_required": true,
-      "image_asset_id": "Bild_71",
-      "visual_type": "biological-process",
-      "visible_change": "Anatomical brain with coordinated REM signaling, pale background and no neon",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Anatomical brain with coordinated REM signaling, pale background and no neon",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_072",
-      "voiceover_text": "Tiefschlaf und REM wechseln sich nicht einfach einmal ab. Dein Schlaf verläuft in wiederkehrenden Zyklen.",
-      "function": "mechanism",
-      "learning_goal": "Tiefschlaf und REM wechseln sich nicht einfach einmal ab. Dein Schlaf verläuft in wiederkehrenden Zyklen.",
-      "claim_ids": [
-        "C3"
-      ],
-      "scale_level": "Zyklen",
-      "new_image_required": true,
-      "image_asset_id": "Bild_72",
-      "visual_type": "biological-process",
-      "visible_change": "Broad repeated sleep-cycle activity waves, clean diagram-free biological illustration",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Broad repeated sleep-cycle activity waves, clean diagram-free biological illustration",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_073",
-      "voiceover_text": "Ein kompletter Durchlauf dauert oft ungefähr achtzig bis hundert Minuten, kann aber schwanken.",
-      "function": "mechanism",
-      "learning_goal": "Ein kompletter Durchlauf dauert oft ungefähr achtzig bis hundert Minuten, kann aber schwanken.",
-      "claim_ids": [
-        "C3"
-      ],
-      "scale_level": "Zyklen",
+      "scale_level": "Körper/Zelle",
       "new_image_required": true,
       "image_asset_id": "Bild_73",
-      "visual_type": "biological-process",
-      "visible_change": "A single simple cycle of neuronal activity moving across brain tissue, no numbers",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; A single simple cycle of neuronal activity moving across brain tissue, no numbers",
+      "visual_type": "summary",
+      "visible_change": "Tired adult at an ordinary morning desk, cut to one simple unfocused neuron connection as consequence of insufficient sleep",
+      "scene_difference": "Schluss: Perspektiv- und Maßstabswechsel statt erneutem Schlafzimmerbild",
       "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_074",
-      "voiceover_text": "Viele Menschen erleben in einer Nacht vier bis sechs solcher Zyklen.",
-      "function": "mechanism",
-      "learning_goal": "Viele Menschen erleben in einer Nacht vier bis sechs solcher Zyklen.",
-      "claim_ids": [
-        "C3"
-      ],
-      "scale_level": "Zyklen",
-      "new_image_required": true,
-      "image_asset_id": "Bild_74",
-      "visual_type": "biological-process",
-      "visible_change": "Three successive smooth neural wave patterns in light background, no timeline cards",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Three successive smooth neural wave patterns in light background, no timeline cards",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_075",
-      "voiceover_text": "Früher in der Nacht ist Tiefschlaf meist stärker vertreten.",
-      "function": "mechanism",
-      "learning_goal": "Früher in der Nacht ist Tiefschlaf meist stärker vertreten.",
-      "claim_ids": [
-        "C3"
-      ],
-      "scale_level": "Zyklen",
-      "new_image_required": true,
-      "image_asset_id": "Bild_75",
-      "visual_type": "biological-process",
-      "visible_change": "Brain with broader slow-wave activity typical of early night",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Brain with broader slow-wave activity typical of early night",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_076",
-      "voiceover_text": "Gegen Morgen werden die REM-Abschnitte häufig länger. Deshalb wirken Träume dann manchmal besonders präsent.",
-      "function": "mechanism",
-      "learning_goal": "Gegen Morgen werden die REM-Abschnitte häufig länger. Deshalb wirken Träume dann manchmal besonders präsent.",
-      "claim_ids": [
-        "C3"
-      ],
-      "scale_level": "Zyklen",
-      "new_image_required": true,
-      "image_asset_id": "Bild_76",
-      "visual_type": "biological-process",
-      "visible_change": "Brain with longer REM-related signal pattern typical of later night",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Brain with longer REM-related signal pattern typical of later night",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_077",
-      "voiceover_text": "Kurzes Aufwachen zwischen einzelnen Zyklen kann vorkommen, ohne dass du dich später daran erinnerst.",
-      "function": "mechanism",
-      "learning_goal": "Kurzes Aufwachen zwischen einzelnen Zyklen kann vorkommen, ohne dass du dich später daran erinnerst.",
-      "claim_ids": [
-        "C3"
-      ],
-      "scale_level": "Zyklen",
-      "new_image_required": true,
-      "image_asset_id": "Bild_77",
-      "visual_type": "biological-process",
-      "visible_change": "Brief natural eye-opening in a calm predawn bedroom",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Brief natural eye-opening in a calm predawn bedroom",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_078",
-      "voiceover_text": "Wie erholt du dich fühlst, hängt nicht nur von einer bestimmten Schlafphase ab.",
-      "function": "mechanism",
-      "learning_goal": "Wie erholt du dich fühlst, hängt nicht nur von einer bestimmten Schlafphase ab.",
-      "claim_ids": [
-        "C8"
-      ],
-      "scale_level": "Zyklen",
-      "new_image_required": true,
-      "image_asset_id": "Bild_78",
-      "visual_type": "biological-process",
-      "visible_change": "Refreshed adult waking slowly beside a window",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Refreshed adult waking slowly beside a window",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_079",
-      "voiceover_text": "Wichtig sind auch genug Schlaf, seine Qualität und ein möglichst passender Rhythmus.",
-      "function": "mechanism",
-      "learning_goal": "Wichtig sind auch genug Schlaf, seine Qualität und ein möglichst passender Rhythmus.",
-      "claim_ids": [
-        "C8"
-      ],
-      "scale_level": "Zyklen",
-      "new_image_required": true,
-      "image_asset_id": "Bild_79",
-      "visual_type": "biological-process",
-      "visible_change": "Warm sunrise entering a quiet bedroom",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Warm sunrise entering a quiet bedroom",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_080",
-      "voiceover_text": "Für die meisten Erwachsenen werden regelmäßig ungefähr sieben bis neun Stunden Schlaf empfohlen.",
-      "function": "mechanism",
-      "learning_goal": "Für die meisten Erwachsenen werden regelmäßig ungefähr sieben bis neun Stunden Schlaf empfohlen.",
-      "claim_ids": [
-        "C8"
-      ],
-      "scale_level": "Zyklen",
-      "new_image_required": true,
-      "image_asset_id": "Bild_80",
-      "visual_type": "biological-process",
-      "visible_change": "Bedroom scene with simple unlabeled nightstand clock and resting adult",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Bedroom scene with simple unlabeled nightstand clock and resting adult",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_081",
-      "voiceover_text": "Eine kurze Nacht lässt sich deshalb nicht einfach durch ein besonders langes Ausschlafen wegzaubern.",
-      "function": "summary",
-      "learning_goal": "Eine kurze Nacht lässt sich deshalb nicht einfach durch ein besonders langes Ausschlafen wegzaubern.",
-      "claim_ids": [
-        "C8"
-      ],
-      "scale_level": "Schluss",
-      "new_image_required": true,
-      "image_asset_id": "Bild_81",
-      "visual_type": "biological-process",
-      "visible_change": "Tired adult in morning light, subtle late-night atmosphere behind",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Tired adult in morning light, subtle late-night atmosphere behind",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_082",
-      "voiceover_text": "Jetzt wird die Ausgangsfrage klar: Schlaf ist weder Stillstand noch ein einziger Reparaturmodus.",
-      "function": "summary",
-      "learning_goal": "Jetzt wird die Ausgangsfrage klar: Schlaf ist weder Stillstand noch ein einziger Reparaturmodus.",
-      "claim_ids": [
-        "C1"
-      ],
-      "scale_level": "Schluss",
-      "new_image_required": true,
-      "image_asset_id": "Bild_82",
-      "visual_type": "biological-process",
-      "visible_change": "Simplified body cutaway: one brain and heart continuing normal function",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Simplified body cutaway: one brain and heart continuing normal function",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_083",
-      "voiceover_text": "Dein Gehirn wechselt Zustände, dein Körper reguliert sich, und Erinnerungen werden weiterverarbeitet.",
-      "function": "summary",
-      "learning_goal": "Dein Gehirn wechselt Zustände, dein Körper reguliert sich, und Erinnerungen werden weiterverarbeitet.",
-      "claim_ids": [
-        "C5"
-      ],
-      "scale_level": "Schluss",
-      "new_image_required": true,
-      "image_asset_id": "Bild_83",
-      "visual_type": "biological-process",
-      "visible_change": "Macro with one brain region and a nearby magnified neuron connection",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Macro with one brain region and a nearby magnified neuron connection",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_084",
-      "voiceover_text": "Während du schläfst, laufen viele Aufgaben weiter, die dein Wachsein am nächsten Tag unterstützen.",
-      "function": "summary",
-      "learning_goal": "Während du schläfst, laufen viele Aufgaben weiter, die dein Wachsein am nächsten Tag unterstützen.",
-      "claim_ids": [
-        "C8"
-      ],
-      "scale_level": "Schluss",
-      "new_image_required": true,
-      "image_asset_id": "Bild_84",
-      "visual_type": "biological-process",
-      "visible_change": "Sleep-to-wake transition in the same warmly lit bedroom",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Sleep-to-wake transition in the same warmly lit bedroom",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
-    },
-    {
-      "id": "SV_085",
-      "voiceover_text": "Und genau deshalb ist Schlaf nicht verlorene Zeit, sondern ein grundlegender Teil deines Lebens.",
-      "function": "summary",
-      "learning_goal": "Und genau deshalb ist Schlaf nicht verlorene Zeit, sondern ein grundlegender Teil deines Lebens.",
-      "claim_ids": [
-        "C8"
-      ],
-      "scale_level": "Schluss",
-      "new_image_required": true,
-      "image_asset_id": "Bild_85",
-      "visual_type": "biological-process",
-      "visible_change": "Bright morning illustration of an adult waking naturally, small biological focus on healthy brain activity",
-      "scene_difference": "New biological focus or viewpoint, 008 illustration style; Bright morning illustration of an adult waking naturally, small biological focus on healthy brain activity",
-      "labels": [],
-      "misconception_to_avoid": "No unlisted text or medically unsupported mechanism"
+      "misconception_to_avoid": "Keine Neon-/Comicbildwelt, keine falsche Anatomie oder zusätzlichen Texte."
     }
   ]
 }

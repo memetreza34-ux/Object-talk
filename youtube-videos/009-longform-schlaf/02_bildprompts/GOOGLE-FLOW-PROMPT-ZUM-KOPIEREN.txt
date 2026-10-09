@@ -1,115 +1,139 @@
 GOOGLE FLOW – LONGFORM 009 SCHLAF
 
 ROLE
-Create 85 final 16:9 still images for the German Object-Talk biology explainer, with cover selection before the 84 other frames.
+Create 77 final 16:9 still images individually for the German Object-Talk biology explainer “Was passiert in deinem Körper, während du schläfst?”.
 
-CANONICAL STYLE — ORIGINAL VERBATIM FROM VIDEO 008
+CANONICAL STYLE
 Clean Animated Biology Illustration: simplified but recognizable anatomy, smooth organic forms, clean outlines, soft gradients, subtle depth, bright calm backgrounds, clear biological colors, low complexity, one dominant biological idea per frame.
 
-STYLE FAILS — ORIGINAL VERBATIM FROM VIDEO 008
+HARD TEXT RULES
+- Production names, file names, Bild_XX, image numbers, scene numbers, prompt headings and internal notes are metadata only. NEVER render production metadata visibly.
+- COVER / first image: exactly one visible text block and nothing else. Exact title: “Was macht dein Körper nachts?”
+- Cover title only: no subtitle, no labels, no extra text.
+- Normal images: 0–2 German labels maximum, only when explicitly listed below.
+- Never add unlisted text.
+- No decorative quotation marks around visible labels.
+- Light background -> dark text. Dark background -> light text.
+- Text and pointer lines must have strong immediate contrast. Poor contrast = reject and regenerate.
+
+INFORMATION DENSITY
+- One main idea per image.
+- Prefer 2–4 important visible elements.
+- If something becomes crowded, simplify or split; never add more tiny details or text.
+- Vary body overview, cutaway, macro, process, route, comparison, before/after and scale transition.
+- No UI cards, dashboards or PowerPoint layouts.
+
+STYLE FAILS
 No photoreal medical imagery, no medical CGI, no glossy 3D, no feature-animation/Pixar look, no toy/kids-book look, no corporate infographic, no clutter, no gore, no random icons, no unnecessary text.
 
-STYLE LOCK
-Video 008 (Verdauung) is the ONLY approved visual style. Illustrations must have bright calm backgrounds, recognizable simple biology, smooth organic shapes, restrained realistic coloring, clean outlines, subtle shading and low complexity. At least 75–80% of frames use very light mint, cream, light blue, soft pale teal or lavender backgrounds. Night is only the subject, not an instruction to turn the pictures dark. Biology is the main subject; use human sleeper illustrations sparingly for context.
-ABSOLUTELY AVOID: dark navy or black night scenes as the default, purple/neon lighting, fluorescent glowing brains, colorful sci-fi neural-wave posters, generic anime/cartoon people, Pixar characters, floating oversized brains above sleepers, surreal dreams as dominant art style, flat vector silhouettes, unrealistic rainbow organs or flashy effects.
-IMPORTANT: The user-chosen cover is Bild_01 ONLY. Do NOT use it or any old video 009 screenshot/frame as a STYLE REFERENCE for scenes Bild_02–Bild_85. Apply THIS 008 style block to EVERY scene independently. Do not extrapolate a night look from the cover. If the style is visibly different from 008, REGENERATE.
+PROVEN STYLE LOCK FROM THE APPROVED 008 VIDEO
+Reuse exactly the same bright, soft-shaded, slightly dimensional educational biology illustration language and scene design used in 008 digestion. Anatomical process close-ups dominate, not people sleeping repeatedly. This is a hand-illustrated clean explainer world: quiet pale backgrounds (cream, very light blue, mint), clear red/coral/blue/teal biological structures and distinct foreground/background. Keep medical structures and processes visually accurate, with a clear transition between body, organ, tissue and cell scales. Do not introduce a new theme-specific art style merely because the topic is sleep.
+NO dark navy/purple dream/neon aesthetics, animated-series faces, floating fluorescent brains, sci-fi electricity posters, cartoon/anime characters, wide bedroom scenes repeated, glow or grain effects, textbook UI/infographics, or same centered composition every time.
+Do NOT use the chosen cover or a previous sleep image as style reference; only the written approved 008 visual world is the style authority. Cover is only an asset, not a visual style source.
+After every image, QA against video 008 aesthetic, one teaching point, accurate simple anatomy, correct labels and high contrast. Wrong world = REGENERATE.
 
-HARD TEXT RULES
-- Production names, filenames, Bild_XX, image numbers, scene numbers, prompt headings and internal notes are metadata only. NEVER render production metadata visibly.
-- Cover: exactly one visible text block, title ONLY: Was macht dein Körper nachts?. No other labels.
-- Other images: 0–2 short German labels ONLY where the scene explicitly lists them. Otherwise NO TEXT.
-- Light background -> dark text. Dark background -> light text. No quotation marks, no illegible small labels.
-- Each image must communicate one main process with 2–4 relevant elements and immediately understandable biology.
+COVER-FIRST PRODUCTION (ONE PROMPT FILE; FIVE AT A TIME)
+FIRST GENERATE THREE DISTINCT SEPARATE 16:9 COVER CANDIDATES and nothing else. Each shows EXACTLY this title as the ONLY visible text: Was macht dein Körper nachts?.
+Cover option 1: Bright pale-cream explanatory close-up of simplified healthy anatomical brain beside a folded pillow edge, smooth pale turquoise, blue and muted coral, spacious dark-navy title upper left.
+Cover option 2: Clean close-up of relaxed closed eyelids above pillow with a small precise anatomical brain inset, light-blue/cream background, title in high-contrast dark color on open area right.
+Cover option 3: Simplified educational brain and heart anatomy with a tiny sleeping-body silhouette only for scale/context, spacious light mint setting, high-contrast dark title top left.
+Generate three actual individual image files (NOT a three-image collage). Show all three and ask ONLY: “Welches Cover wählst du – 1, 2 oder 3?” STOP and WAIT for explicit selection. Do not generate Bild_02 or ask for generic permission before choice.
+AFTER the user's choice, retain ONLY the selected cover as Bild_01.png. Immediately generate separately Bild_02 to Bild_06 and afterwards the rest as successive INTERNAL groups of at most five. Use the exact complete per-image briefs below; never generate 76 scenes in one tool call. If Flow pauses after a batch, report the next missing number and continue on “weiter” from the same prompt. Respect platform limits; never evade moderation.
+At the end, if packaging is possible, ZIP only the 77 accepted final images as BILDER-009-FINAL.zip. Place the ZIP in 02_bildprompts/bilder-zip locally; no alternative covers, duplicates, visible file numbers or incorrect labels. If external tools cannot create files/ZIP, state that plainly.
 
-WORKFLOW
-STAGE A, RIGHT NOW: Generate exactly THREE SEPARATE 16:9 covers in the light 008 illustrated biology style, NOT a collage. Every option has only the identical title "Was macht dein Körper nachts?" as its single visible text block. Cover 1: clean anatomical brain close-up with a small pillow and spacious light background, title left. Cover 2: softly illustrated resting adult in a light bedroom with brain as a small *anatomical* inset, title upper right. Cover 3: simplified profile of a sleeping adult at bottom of bright composition, clear brain and heart anatomical illustration nearby, title on pale area. Show all three, ASK ONLY "Welches Cover wählst du – 1, 2 oder 3?" Wait.
-STAGE B: AFTER explicit user cover choice, use chosen cover as final Bild_01 ONLY. Generate images 02–06 immediately, then later images sequentially in five-image batches using the complete scene index below. Do not ask whether to start after choice. Each scene is a SEPARATE 16:9 frame, not a grid. If the platform requires a pause/new turn, report the next incomplete image number. No claims of silent/background generation.
-STAGE C: After verifying all 85 final distinct images, if file export is supported, package Bild_01.png–Bild_85.png into BILDER-009-FINAL.zip for local folder 02_bildprompts/bilder-zip. Never claim exported files exist unless they do. Respect Google Flow safety and usage limits; no attempts to circumvent policy refusals.
+The internal filenames below are for SAVING ONLY and must never appear inside the artwork. These SCENES are only for AFTER cover selection.
 
-SCENE INDEX — ONLY FOR AFTER COVER CHOICE
-02 / Bild_02.png: Softly shaded adult resting on a pillow; simple close-up of healthy relaxed facial muscles, bright calm setting. NO TEXT.
-03 / Bild_03.png: Simplified body cutaway showing a brain and calm heart with clean routes, bright pale-blue background. NO TEXT.
-04 / Bild_04.png: Macro of a few connected neurons exchanging signals inside recognizable pale brain tissue. NO TEXT.
-05 / Bild_05.png: One large smooth brain activity wave, elegant simple biological process, no night sky. NO TEXT.
-06 / Bild_06.png: Warm sunset light entering a quiet bedroom NO TEXT.
-07 / Bild_07.png: Sunset gradually fading at a bedroom window NO TEXT.
-08 / Bild_08.png: Daytime adult at desk becoming tired after hours awake, small subject in airy room. NO TEXT.
-09 / Bild_09.png: Macro of two distinct neurons with several adenosine messenger particles between them. VISIBLE LABEL ONLY: Adenosin.
-10 / Bild_10.png: Adult rubbing tired eyes in late-afternoon window light NO TEXT.
-11 / Bild_11.png: Simplified brain with one area responding to day-night timing; light ivory background. NO TEXT.
-12 / Bild_12.png: Soft sunrise light reaching a simplified eye-and-brain illustration NO TEXT.
-13 / Bild_13.png: Anatomical brain illustration with small pineal region releasing melatonin messenger particles. VISIBLE LABEL ONLY: Melatonin.
-14 / Bild_14.png: Hormone signaling particles passing from one cell to another in a clean macro process. NO TEXT.
-15 / Bild_15.png: Adult near a bright lamp late in the evening, gentle blue room NO TEXT.
-16 / Bild_16.png: Two soft natural timing signals converging beside a relaxed sleeper NO TEXT.
-17 / Bild_17.png: One adult feeling sleepy by day, awake beneath evening room light NO TEXT.
-18 / Bild_18.png: Relaxed resting arm on bed, soft background falloff NO TEXT.
-19 / Bild_19.png: Sleeping adult face in profile, quiet sound fading in the distance NO TEXT.
-20 / Bild_20.png: Brain close-up with a few gentle neural rhythms, accurate simplified brain anatomy. NO TEXT.
-21 / Bild_21.png: One small group of neurons showing brief rhythmic activity, clear organic structure. NO TEXT.
-22 / Bild_22.png: Sleep-laboratory close-up with a few EEG electrodes on a resting adult, pale room. NO TEXT.
-23 / Bild_23.png: Isolated illustrated heart with calm regular rhythmic movement NO TEXT.
-24 / Bild_24.png: Isolated simple lungs gently expanding with a peaceful breathing rhythm NO TEXT.
-25 / Bild_25.png: Anatomical brain macro with broad slow activity wave indicating deep sleep. VISIBLE LABEL ONLY: Tiefschlaf.
-26 / Bild_26.png: A simplified brain cross-section with broad coordinated slow neuronal activity. NO TEXT.
-27 / Bild_27.png: Three neurons activating in coordinated rhythm, natural pale tissue backdrop. NO TEXT.
-28 / Bild_28.png: Quiet sleeper in a softly insulated peaceful bedroom NO TEXT.
-29 / Bild_29.png: Close anatomy of one heart with calmer circulation, medium-red organ on pale mint. NO TEXT.
-30 / Bild_30.png: Red blood cells following a smooth path through one intact vessel NO TEXT.
-31 / Bild_31.png: One illustrated cell receiving oxygen beside a tiny vessel NO TEXT.
-32 / Bild_32.png: One simple hormone gland illustration releasing a few messenger particles NO TEXT.
-33 / Bild_33.png: Simplified brain cutaway showing pituitary area and a few hormone signal particles. VISIBLE LABEL ONLY: Wachstumshormon.
-34 / Bild_34.png: Simple tissue cells carrying out routine maintenance NO TEXT.
-35 / Bild_35.png: Resting muscle fiber illustration showing ordinary protein renewal NO TEXT.
-36 / Bild_36.png: Similar healthy tissue cells at daytime, natural continuity NO TEXT.
-37 / Bild_37.png: Biological tissue and one small capillary with ordinary cell maintenance. NO TEXT.
-38 / Bild_38.png: Early sleep brain with broad, slow neural waves on light blue background. NO TEXT.
-39 / Bild_39.png: One anatomical brain with a few memory-related neuron connections. NO TEXT.
-40 / Bild_40.png: Adult hands practicing a single guitar chord in sunlight NO TEXT.
-41 / Bild_41.png: Neurons involved in a newly learned movement, several clear organic connections. NO TEXT.
-42 / Bild_42.png: A single synapse becomes more stable, simplified and anatomically recognizable. VISIBLE LABEL ONLY: Gedächtnis.
-43 / Bild_43.png: Two large neurons exchanging one chemical signal across a synapse. VISIBLE LABEL ONLY: Synapse.
-44 / Bild_44.png: Recognizable brain with coordinated neuron connections, no screen elements NO TEXT.
-45 / Bild_45.png: Several selected memory-related neural connections become more stable. NO TEXT.
-46 / Bild_46.png: Single brain with gently different neural activity rhythms, no split panels. NO TEXT.
-47 / Bild_47.png: Morning adult at desk with slightly unfocused attention NO TEXT.
-48 / Bild_48.png: One neuron with weaker signal transmission after insufficient sleep. NO TEXT.
-49 / Bild_49.png: Close-up of a normal synapse with clear signaling in sleep. NO TEXT.
-50 / Bild_50.png: One white immune cell traveling beside healthy body tissue. NO TEXT.
-51 / Bild_51.png: Two immune cells calmly exchanging signaling particles NO TEXT.
-52 / Bild_52.png: One immune cell circulating along a smooth intact vessel NO TEXT.
-53 / Bild_53.png: One white blood cell calmly communicating with a local tissue cell. NO TEXT.
-54 / Bild_54.png: Tired adult in daytime with a subdued immune-cell illustration anatomical detail NO TEXT.
-55 / Bild_55.png: Two white blood cells exchanging one cluster of signaling molecules. NO TEXT.
-56 / Bild_56.png: Ordinary immune activity in soft tissue during sleep, illustrated without a character. NO TEXT.
-57 / Bild_57.png: Warm illustrated heart with calm circulation across gentle lighting NO TEXT.
-58 / Bild_58.png: Sleep scene with separately illustrated relaxed lungs and heart NO TEXT.
-59 / Bild_59.png: Brain macro illustrating transition to REM-related neuronal activity, very light blue. NO TEXT.
-60 / Bild_60.png: Large realistic-to-illustration simplified brain, several distinct active REM circuits in muted teal, coral and blue on cream background. VISIBLE LABEL ONLY: REM-Schlaf.
-61 / Bild_61.png: Closed eyes of a resting adult, subtle eye motion implied naturally NO TEXT.
-62 / Bild_62.png: Brain tissue showing a few wake-like neural activity patterns during REM. NO TEXT.
-63 / Bild_63.png: A soft everyday memory of a familiar street, subdued gentle illustration. NO TEXT.
-64 / Bild_64.png: Brainstem and a muscle-fiber group with one simplified inhibition signal. NO TEXT.
-65 / Bild_65.png: Resting adult and subtle illustration of imagined running in a small distant context, no dramatic fantasy poster. NO TEXT.
-66 / Bild_66.png: Illustrated heart and simple breathing rhythm gently varying NO TEXT.
-67 / Bild_67.png: Softly rendered memory of a doorway fading as a person wakes. NO TEXT.
-68 / Bild_68.png: Familiar doorway and garden as understated dream illustration, calm light colors. NO TEXT.
-69 / Bild_69.png: Several ordinary neurons involved in dreaming, simple pale biology backdrop. NO TEXT.
-70 / Bild_70.png: A few active connections in brain tissue associated with emotional memory processing. NO TEXT.
-71 / Bild_71.png: Anatomical brain with coordinated REM signaling, pale background and no neon. NO TEXT.
-72 / Bild_72.png: Broad repeated sleep-cycle activity waves, clean diagram-free biological illustration. NO TEXT.
-73 / Bild_73.png: A single simple cycle of neuronal activity moving across brain tissue, no numbers. NO TEXT.
-74 / Bild_74.png: Three successive smooth neural wave patterns in light background, no timeline cards. NO TEXT.
-75 / Bild_75.png: Brain with broader slow-wave activity typical of early night. NO TEXT.
-76 / Bild_76.png: Brain with longer REM-related signal pattern typical of later night. NO TEXT.
-77 / Bild_77.png: Brief natural eye-opening in a calm predawn bedroom NO TEXT.
-78 / Bild_78.png: Refreshed adult waking slowly beside a window NO TEXT.
-79 / Bild_79.png: Warm sunrise entering a quiet bedroom NO TEXT.
-80 / Bild_80.png: Bedroom scene with simple unlabeled nightstand clock and resting adult NO TEXT.
-81 / Bild_81.png: Tired adult in morning light, subtle late-night atmosphere behind NO TEXT.
-82 / Bild_82.png: Simplified body cutaway: one brain and heart continuing normal function. NO TEXT.
-83 / Bild_83.png: Macro with one brain region and a nearby magnified neuron connection. NO TEXT.
-84 / Bild_84.png: Sleep-to-wake transition in the same warmly lit bedroom NO TEXT.
-85 / Bild_85.png: Bright morning illustration of an adult waking naturally, small biological focus on healthy brain activity. NO TEXT.
+01 / Bild_01.png: single simple illustrated anatomical brain resting above a subtle pillow silhouette, on a bright cream-to-pale-blue background with generous clean left title area, one clear focal visual, no neon glow VISIBLE TEXT: exact title only “Was macht dein Körper nachts?”.
+02 / Bild_02.png: Close side view of a sleeping adult's relaxed eyelids and pillow, most of frame stays bright and uncluttered NO TEXT.
+03 / Bild_03.png: Simple torso overview showing a distinctly recognizable heart and brain as clean educational anatomical cutaways, one clear biological relationship NO TEXT.
+04 / Bild_04.png: Macro of two illustrated neurons passing a signal near normal brain tissue, crisp cellular forms instead of floating luminous particles NO TEXT.
+05 / Bild_05.png: Cutaway of one brain with a broad slow activity wave transitioning into a different thinner activity wave, no multi-panel chart NO TEXT.
+06 / Bild_06.png: Warm illustrated bedroom window at late sunset with just a small resting silhouette below, bright walls and cream-colored negative space NO TEXT.
+07 / Bild_07.png: Macro brain region with gentle gradual shift of a few neuron activity signals, cellular explanation of circadian changes NO TEXT.
+08 / Bild_08.png: Enlarged single neuron with several small adenosine signaling particles collecting around it, one clear cause NO TEXT.
+09 / Bild_09.png: Two illustrated nerve cells exchanging a few adenosine particles across a clean pale-blue synaptic space VISIBLE LABEL: Adenosin.
+10 / Bild_10.png: Adult's eyelids growing heavy beside a daytime window, close crop with believable human proportions, no cartoon expression NO TEXT.
+11 / Bild_11.png: Eye receiving simple morning daylight, a clean single signal route toward a recognizable brain region NO TEXT.
+12 / Bild_12.png: Small pineal region inside a simplified brain releases a few melatonin signal particles as daylight decreases VISIBLE LABEL: Melatonin.
+13 / Bild_13.png: Few melatonin messenger particles travel between two distinct simplified cells, no magic sleep switch symbol NO TEXT.
+14 / Bild_14.png: Eye and brain react to bright evening indoor light, biological one-way pathway, pale background NO TEXT.
+15 / Bild_15.png: Single calm brain illustration receiving two types of simple timing signals, one focal convergence and no abstract dashboard NO TEXT.
+16 / Bild_16.png: Macro view of resting shoulder muscle fibers becoming visibly more relaxed, recognizable red organic forms NO TEXT.
+17 / Bild_17.png: Human ear with a faint external sound ripple and a subtle sleeping brain background, simple input fading NO TEXT.
+18 / Bild_18.png: Brain cortex detail with smooth shallow rhythmic activity characteristic of stable light sleep, biologically drawn tissue NO TEXT.
+19 / Bild_19.png: Enlarged neuron cluster showing one brief burst of synchronized signals against otherwise calm tissue NO TEXT.
+20 / Bild_20.png: Sleep-lab close view with a few EEG sensors on an adult's head; external measurement, clean white-and-mint scene NO TEXT.
+21 / Bild_21.png: Illustrated heart with slower calmer activity and a subtle cool-vs-warm color change, not a clinical monitor NO TEXT.
+22 / Bild_22.png: Isolated pair of healthy lungs in simplified anatomy, one gentle breathing expansion motion represented clearly NO TEXT.
+23 / Bild_23.png: Anatomically recognizable brain cortex with one wide slow wave marking the move into deeper sleep, pale turquoise VISIBLE LABEL: Tiefschlaf.
+24 / Bild_24.png: Three individual neurons with slow matched electrical signals spreading across them, one coherent synchronized event NO TEXT.
+25 / Bild_25.png: Resting human ear with a quieter incoming sound near sleeping face; one clear difference from previous light sleep NO TEXT.
+26 / Bild_26.png: Anatomical heart and one large blood vessel showing steady calm circulation during deep sleep NO TEXT.
+27 / Bild_27.png: One red blood cell travelling through an intact vessel toward healthy tissue, demonstrating continuous oxygen delivery NO TEXT.
+28 / Bild_28.png: Macro tissue cell receiving a few oxygen particles from adjacent capillary, a clear biological transport process NO TEXT.
+29 / Bild_29.png: Simplified endocrine gland releasing a small set of hormone messengers into one recognizable blood vessel NO TEXT.
+30 / Bild_30.png: Illustrated brain focused on pituitary region releasing growth-hormone particles toward one nearby blood vessel VISIBLE LABEL: Wachstumshormon.
+31 / Bild_31.png: Close-up of several normal red muscle fibers with routine protein renewal inside one fiber, unchanged overall size NO TEXT.
+32 / Bild_32.png: Same recognizable muscle tissue shown in daylight with ordinary repair and rebuilding of cellular proteins NO TEXT.
+33 / Bild_33.png: Macro healthy tissue cell assembling one simple protein chain with nearby oxygen supply, biologically clear NO TEXT.
+34 / Bild_34.png: One illustrated brain cortex with broad slow waves prominent early in the night, pale cream background and subtle time-light accent NO TEXT.
+35 / Bild_35.png: Wide context bridge: adult learning an unfamiliar hand movement beside a simple enlarged neuronal connection inset, focus on neurons NO TEXT.
+36 / Bild_36.png: Close view of fingertips practicing one guitar chord, simple daylight learning action, no writing NO TEXT.
+37 / Bild_37.png: Three clearly drawn neurons develop a more coordinated signal route during sleep, focus on strengthening pathway VISIBLE LABEL: Gedächtnis.
+38 / Bild_38.png: Two enlarged synaptic nerve endings pass a signal more consistently; one synapse is main visual subject VISIBLE LABEL: Synapse.
+39 / Bild_39.png: Neural tissue from real learning experience, several distinct synapses without any computer-chip metaphor NO TEXT.
+40 / Bild_40.png: Macro of one selective memory-related pathway staying active while surrounding pathways remain calm and soft NO TEXT.
+41 / Bild_41.png: Two visibly different but anatomically plausible network activity patterns within a single brain cortex, no split frame NO TEXT.
+42 / Bild_42.png: Realistic-in-illustration adult at morning desk with an unfocused gaze beside a simple faded brain signal inset NO TEXT.
+43 / Bild_43.png: Close synapse showing a weaker reliable signal path after insufficient sleep, pale-blue biology macro NO TEXT.
+44 / Bild_44.png: Strong clear connection between two nerve cells as final causal memory payoff, simple living tissue environment NO TEXT.
+45 / Bild_45.png: One white blood cell interacting with a nearby tissue cell and exchanging small messenger particles NO TEXT.
+46 / Bild_46.png: A white blood cell circulates through a blood vessel while a few signaling particles change position around it NO TEXT.
+47 / Bild_47.png: Two immune cells communicate at close range, no shields, soldier imagery, icons or extra labels NO TEXT.
+48 / Bild_48.png: Single tissue macrophage-like immune cell responds gently to a local signal, mild non-graphic biological illustration NO TEXT.
+49 / Bild_49.png: Two different simplified immune cells engaged in visibly different cellular tasks inside the same soft tissue region NO TEXT.
+50 / Bild_50.png: Healthy tissue with calmly patrolling white blood cell and ordinary surrounding cells, not a magic protective barrier NO TEXT.
+51 / Bild_51.png: Anatomical blood vessel with normal steady circulation, warm cells contrasting light-blue surrounding tissue NO TEXT.
+52 / Bild_52.png: Simplified heart and lungs work together: one clear blood-to-oxygen route, no oversized composite organ collage NO TEXT.
+53 / Bild_53.png: Close brain cortex transition from a broad slow wave toward smaller varied neural activity, no neon EEG poster NO TEXT.
+54 / Bild_54.png: Recognizable simplified whole brain with a few more active REM-related neural regions, natural teal, coral and blue organ colors VISIBLE LABEL: REM-Schlaf.
+55 / Bild_55.png: Natural closed eyelids with barely perceptible eye movement arrows, few clean biological details NO TEXT.
+56 / Bild_56.png: Two distinct neuron groups show faster irregular signals within recognizable brain tissue, low complexity NO TEXT.
+57 / Bild_57.png: A modest everyday dream scene shown as soft memory reflection next to a small brain-tissue illustration, understated NO TEXT.
+58 / Bild_58.png: Brainstem signal travels toward a simplified arm muscle fiber group, visibly reducing skeletal-muscle activity NO TEXT.
+59 / Bild_59.png: One healthy heart and lung side-by-side connected by subtle physiological flow, slight rhythm variability, simple process NO TEXT.
+60 / Bild_60.png: A remembered street view fades into an indistinct memory fragment, gentle pale illustrated scene not dream fantasy NO TEXT.
+61 / Bild_61.png: Close view of ordinary bedroom doorway with subtle changing remembered garden scene, pastel and grounded NO TEXT.
+62 / Bild_62.png: A few neurons in a calm brain region form an unfinished branching connection, representing scientific uncertainty without question marks NO TEXT.
+63 / Bild_63.png: One synapse in an emotional-memory-related neural route, small context silhouette of facial expression in distant background NO TEXT.
+64 / Bild_64.png: Anatomical brain during REM with neatly differentiated but active regions, softly shaded as in video 008, not glowing NO TEXT.
+65 / Bild_65.png: One brain illustrated with a smooth transition from NREM-like broad waves to REM-like fine activity across tissue NO TEXT.
+66 / Bild_66.png: Single repeating neurophysiological activity cycle shown around one brain, no timer and no numerical graph NO TEXT.
+67 / Bild_67.png: Broad slow neural waves near early-night brain illustrated on bright mint background, no night-sky poster NO TEXT.
+68 / Bild_68.png: A more active REM-like neuron pattern near morning, warm soft daylight accent and recognizable tissue NO TEXT.
+69 / Bild_69.png: Adult briefly opening eyes on a pillow, cropped calmly, morning light without elaborate context NO TEXT.
+70 / Bild_70.png: Rested adult waking near a bright window, simple anatomical brain inset explaining overall state NO TEXT.
+71 / Bild_71.png: Morning sunlight reaching the eyes of an awake adult, brain activation through a clear daylight route NO TEXT.
+72 / Bild_72.png: Calm adult asleep in simple bedroom with a small unlabeled bedside clock, bright clean illustration without numerals NO TEXT.
+73 / Bild_73.png: Tired adult at an ordinary morning desk, cut to one simple unfocused neuron connection as consequence of insufficient sleep NO TEXT.
+74 / Bild_74.png: One anatomical heart and brain are both active during sleep, two clearly separated structures, cream background NO TEXT.
+75 / Bild_75.png: Single neuron pathway inside a simplified brain linked to ordinary body-cell maintenance, simple foreground/background depth NO TEXT.
+76 / Bild_76.png: Smooth scale transition from sleeping brain cell to wider alert body silhouette in morning light, clean biological progression NO TEXT.
+77 / Bild_77.png: Final clean biological illustration of one healthy brain and adjoining body cell continuing normal activity beside warm morning window, one resolved process NO TEXT.
 
-FINAL QA: same bright, clear, low-complexity educational biology art world as 008; no sci-fi, neon, anime, dark night poster, generic cartoon, glowing oversized brain; no extra labels or visible file numbers. One accepted file per number. Scientific accuracy and strong text contrast mandatory.
+FINAL QA PER IMAGE
+- correct 16:9 scene
+- canonical illustration style EXACTLY like 008, not a theme-specific comic/sci-fi style
+- one main idea and low complexity
+- no extra text
+- no visible production ID, image number, scene number or filename
+- labels exactly match whitelist
+- cover contains only the exact title
+- strong text contrast: light background -> dark text; dark background -> light text
+- no decorative quote marks in final artwork
+- scientific relationship plausible
+- neighboring images are not duplicates
+- no glossy 3D, neon glowing brains, nighttime wallpaper or distracting adult characters
+
+FINAL SET
+Exactly 77 accepted files saved internally as Bild_01.png through Bild_77.png. Those filenames are never visible inside the artwork.
