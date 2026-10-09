@@ -1,21 +1,162 @@
-ANTIGRAVITY / REMOTION – VIDEO 009 SCHLAF
+ANTIGRAVITY – 009 LONGFORM „WAS PASSIERT MIT DEINEM KÖRPER IM SCHLAF?“
 
-PROJEKT: youtube-videos/009-longform-schlaf/
-ZIEL: 6:00–7:00 Minuten, 1920×1080 / 30 fps, 85 unterschiedliche Flow-Bilder.
+Arbeite ausschließlich nach dem Repository.
 
-1. Lies PROJECT_CONTRACT.md, AGENTS.md, engine/EXPORT-STANDARD.md und alle Projektunterlagen.
-2. Keine Medien erraten: Erst echte finale Voice und 85 geprüfte Bilder verwenden. Fehlende Assets = HARD FAIL.
-3. Baue `final-voiceover.wav` nach Kanalstandard (1.10x, Pause-Kontrolle). Erzeuge mit Whisper exakte Wortzeiten und eine lückenlose Timeline.
-4. Vorher `python tools/validate_planning_v2.py youtube-videos/009-longform-schlaf` und nach Bild-QA mit `--phase2` ausführen.
-5. Danach `python tools/prepare_phase3.py youtube-videos/009-longform-schlaf` ausführen. Diese Routine erzeugt nach Timeline automatisch die externen Untertitel-Dateien.
-6. Alle 85 Bilder 100 % vollformatig; Schnitt entlang des gesprochenen Abschnitts. Kein Einzelbild >7 Sekunden, keine Assets doppelt, keine unsynchronen Sequenzen. Bei Regelverstoß STOP statt Strecken.
-7. Bewegung nur dezent: 2–4 % Zoom oder 20–30 px Pan, niemals Beschriftungen abschneiden. Die Cover-Szene ist als etwa 3–4 Sekunden geplant – tatsächlich bestimmt das finale Audio die Dauer.
-8. Remotion darf KEINEN sichtbaren Text erzeugen: keine Überschriften, Kapiteltexte, Labels, Untertitel, Bildnummern, Dateinamen oder Credits. `overlay-plan.json` muss DISABLED und scenes=[] bleiben. Untertitel nur als separate `.srt`.
-9. Erstelle `UNTERTITEL-MIT-ZEITEN.txt` und `UNTERTITEL-YOUTUBE.srt` aus der validierten `timeline.json`, niemals durch Schätzungen.
-10. Finales MP4 im `renderer`:
-   npm install
-   npm run render -- ../youtube-videos/009-longform-schlaf/04_export/fertiges-video/Object-Talk-009-Schlaf-YOUTUBE.mp4
-11. QA: echtes Video komplett ansehen, alle 85 Bilder, 6–7 Minuten, korrekte Fachbegriffe, keine Mehrfach-Infografiken, Bildwelt einheitlich, kontrastreiche Labels, 0 Remotion-Text und sauberer Ton.
-12. Fülle Renderbericht/Scorecard/Postmortem aus und markiere es NUR bei allen PASS als YouTube-ready.
+PROJEKT
+`youtube-videos/009-longform-schlaf/`
 
-Fehlende Bild-/Audiodaten, falsche Anatomie oder Script-Mismatch: STOP, keine Fakes.
+ZIEL
+Erzeuge aus finaler Voice + 77 akzeptierten Google-Flow-Bildern das nächste reguläre Object-Talk-Longform-Video und lege das komplette veröffentlichungsfertige Paket in `04_export/` ab.
+
+LAUFZEIT
+- Nutzerziel: 6:00–7:00 Minuten final.
+- Voice und Script nicht künstlich strecken oder beschleunigen, nur um exakt eine Zahl zu treffen.
+- Standard Voice-Verarbeitung: 1.10x.
+- Wenn das echte kanonische Voiceover deutlich außerhalb 6:00–7:00 liegt: STOP und melden statt Standbilder künstlich zu verlängern oder Scriptteile zu entfernen.
+
+AUDIO
+- Roh-TTS niemals direkt rendern.
+- `tools/prepare_audio.py --speed 1.10` verwenden.
+- lange unnatürliche TTS-Pausen vor Whisper/Timeline komprimieren.
+- `final-voiceover.wav` ist die einzige Timing-Quelle.
+- Whisper-Wortzeiten aus dem finalen Audio erzeugen.
+- Script↔Audio-Ausrichtung muss vollständig bestehen.
+
+BILDER
+- Nutzer legt eine geprüfte `BILDER-009-FINAL.zip` unter `02_bildprompts/bilder-zip/` ab. `tools/prepare_phase3.py` übernimmt den Import. Interne Label-/Reviewpläne unter `05_info/`, entpackte Medien unter `03_pipeline/images/`.
+- exakt 77 eindeutige finale Bilder.
+- interne Dateinamen `Bild_01.png` bis `Bild_77.png`.
+- Dateinamen/Bildnummern/Szenennummern niemals sichtbar im Video.
+- keine Bildduplikate.
+- kein Standbild länger als 7.0 Sekunden.
+- Ziel normalerweise ca. 3–6 Sekunden pro Bild; semantisches Timing ist wichtiger als starre Gleichverteilung.
+- wenn ein Speech-Beat länger ist als ein einzelnes Bild tragen kann, nur bereits geplante benachbarte Visual-Beats nutzen; niemals ein Bild duplizieren.
+
+BILDWELT
+- `Clean Animated Biology Illustration`
+- 100 % Vollbild-Illustration
+- keine Rahmen, Seitenleisten, Karten oder Dashboard-Layouts
+- biologische Labels sind bereits Bestandteil der akzeptierten Flow-Bilder
+- Cover enthält nur den geplanten Titel und keine Zusatzlabels
+
+REMOTION – HARTE REGEL
+Remotion erzeugt **KEINEN sichtbaren Text**.
+`03_pipeline/overlay-plan.json` muss leer/deaktiviert bleiben.
+
+Remotion darf nur:
+- finales Audio
+- exaktes Timing
+- statische Vollbildframes
+- sanfte Push-/Pull-Bewegungen
+- leichte Pans
+- saubere Schnitte
+- dezente nicht-textliche Übergänge
+- Render
+
+Remotion darf NICHT:
+- Zwischenüberschriften
+- Kapiteltexte
+- Key-Facts
+- Summary-Text
+- Untertitel im gerenderten Bild
+- Labels
+- Bildnummern
+- Szenennummern
+- Dateinamen
+- sonstige sichtbare Schrift erzeugen
+
+WICHTIG: Die externe SRT gehört in den Exportordner und wird NIE durch Remotion eingeblendet.
+
+WICHTIG: Das Video 008 (Verdauung) ist der verbindliche Produktions- und Bildwelt-Referenzlauf. Das Schlafthema darf nicht zu neuen Comic-/Neon-/Traumstilvarianten führen.
+
+WICHTIG: Die externen YouTube-Untertitel werden als `.srt` exportiert, aber NICHT ins Video eingebrannt.
+
+MOTION
+- Bildinhalt darf nicht durch Bewegung abgeschnitten werden.
+- Push/Pull dezent, ungefähr 2–4 %.
+- Pan dezent, ungefähr 20–30 px.
+- keine hektischen Zooms, kein Shake, Bounce, Meme-Transition oder künstliches Kameragewackel.
+- bei bereits sehr informationsreichen Bildern lieber static oder minimale Bewegung.
+
+EXPORT – VERBINDLICH
+Alle Veröffentlichungsausgaben liegen unter:
+`youtube-videos/009-longform-schlaf/04_export/`
+
+Finaler YouTube-Master:
+`04_export/fertiges-video/Object-Talk-009-Schlaf-YOUTUBE.mp4`
+
+Nur diese Datei gilt als veröffentlichungsfertige Masterdatei. Keine Preview-/Draft-Dateien als final markieren.
+
+Das Exportpaket muss außerdem enthalten:
+- `04_export/CAPTION-YOUTUBE.txt`
+- `04_export/YOUTUBE-UPLOAD-PAKET.md`
+- `04_export/YOUTUBE-TITEL-BESCHREIBUNG-ZUM-KOPIEREN.txt`
+- `04_export/YouTube-Caption.md`
+- `04_export/UNTERTITEL-MIT-ZEITEN.txt`
+- `04_export/UNTERTITEL-YOUTUBE.srt`
+- `04_export/render-report.md`
+- `04_export/quality-scorecard.md`
+- `04_export/postmortem.md`
+
+`CAPTION-YOUTUBE.txt` enthält individuellen Titel + Beschreibung + maximal 5 Hashtags.
+
+UNTERTITEL – HARTE REGEL
+- Untertitel basieren auf dem kompletten tatsächlich gesprochenen Script.
+- Zeitcodes niemals schätzen.
+- Quelle ist ausschließlich die finale `timeline.json`, die wiederum aus finalem Voiceover + Whisper-Wortzeiten entsteht.
+- `UNTERTITEL-MIT-ZEITEN.txt` ist die leicht lesbare Version mit Zeitabschnitten.
+- `UNTERTITEL-YOUTUBE.srt` ist die direkt bei YouTube hochladbare SRT-Datei.
+- SRT wird nicht in das Video eingebrannt.
+
+Nach erfolgreicher Timeline-Erstellung zwingend ausführen:
+```bash
+python tools/export_subtitles.py youtube-videos/009-longform-schlaf
+```
+
+Titel/Beschreibung/Caption niemals blind überschreiben. Nach Sichtung des finalen Videos nur dann anpassen, wenn sie nicht mehr exakt zum tatsächlichen Inhalt passen.
+
+VORBEREITUNG
+```bash
+python -m pip install -r tools/requirements.txt
+python tools/validate_planning_v2.py youtube-videos/009-longform-schlaf
+python tools/prepare_phase3.py youtube-videos/009-longform-schlaf
+python tools/export_subtitles.py youtube-videos/009-longform-schlaf
+```
+
+RENDER
+```bash
+cd renderer
+npm install
+npm run render -- ../youtube-videos/009-longform-schlaf/04_export/fertiges-video/Object-Talk-009-Schlaf-YOUTUBE.mp4
+```
+
+FINAL-QA
+- Laufzeit im Nutzerziel 6:00–7:00
+- 1920×1080 / 30 fps
+- Audio vollständig
+- 77 Bilder vollständig
+- keine Szene >7s
+- keine Bildduplikate
+- keine sichtbare Bild-/Szenennummer oder Dateiname
+- keine Remotion-Schrift
+- Cover: nur Titel, keine Zusatzlabels
+- Flow-Labels kurz, korrekt, kontrastreich
+- keine helle Schrift auf hellem Hintergrund oder dunkle Schrift auf dunklem Hintergrund
+- Informationsdichte niedrig; kein Frame wirkt überladen
+- Schlafdruck → innere Uhr → NREM/Tiefschlaf → Gedächtnis/Abwehr → REM/Träume → Zyklen → Erholung visuell logisch
+- Schlaf ist nicht das vollständige Abschalten des Gehirns
+- Melatonin nicht als alleiniger Ausschalter für Schlaf darstellen
+- Wachstumshormon nicht als sofortige Muskelvergrößerung zeigen
+- REM ist nicht die einzige Traumphase; REM-Muskelhemmung physiologisch korrekt zeigen
+- Innere Uhr und Schlafdruck als unterschiedliche Mechanismen erkennbar halten
+- finalen Render vollständig visuell sichten
+- `CAPTION-YOUTUBE.txt` vollständig und individuell
+- `UNTERTITEL-MIT-ZEITEN.txt` enthält das komplette Script mit echten Zeitabschnitten
+- `UNTERTITEL-YOUTUBE.srt` ist nicht leer und deckt das komplette Script ab
+- Untertitel-Zeitcodes stammen aus der finalen Timeline und wurden nicht geschätzt
+- `render-report.md` ausfüllen
+- `quality-scorecard.md` ausfüllen
+- Upload-Titel/Beschreibung/Caption gegen den echten Finalrender prüfen
+- erst nach bestandenem QA die MP4 als `YouTube-ready` behandeln
+
+Bei Konflikt, fehlendem Asset oder wissenschaftlichem Zweifel: FAIL statt raten.

@@ -1,8 +1,11 @@
-# Bild-QA 009
+# Bild-QA – 009 nach dem erfolgreichen Video 008
 
-Jedes der 85 Bilder nach Flow einzeln prüfen: Anatomie, Biologie, Voice-Passung, Cover title-only, 0–2 korrekte Labels, hoher Kontrast, keine Bildnummer/Dateiname, ein Vorgang, wenig Information, anderer Bildaufbau als Nachbarn. Jedes Bild mindestens 8/10. Fehlerhaftes Asset neu erzeugen. Ergebnisse in image-review.json mit vollständigem PASS-Set dokumentieren. --phase2 ausführen.
+**Exakte 008-Referenz:** `youtube-videos/008-longform-verdauung/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt`.
 
-
-## Sichtkontrolle: 008-Stil (Pflicht)
-
-Vergleiche jedes echte Flow-Bild mit dem freigegebenen Video 008 / dessen Flow-Bildsprache. **PASS** nur für saubere, vereinfachte, leicht plastische Biologie-Illustration (heller ruhiger Hintergrund, erkennbare Organe/Zellen/Signale, klare Farbtrennung). **FAIL + neu erzeugen:** überwiegend dunkler Anime-/Comicstil, neonleuchtende oder frei über Betten schwebende Gehirne, violette Sci-Fi-Neuronenposter, flache Scherenschnittgesichter oder Cover-Stilübernahme auf alle Szenen. Titelbild darf keine visuelle Stilreferenz für die übrigen Bilder sein.
+- Erwartung: 77 Einzelbilder, Bild_01–Bild_77. Ein gewähltes Cover, keine anderen Cover in finaler ZIP.
+- Anatomisch richtige, helle, leicht plastische Clean Animated Biology Illustration. Organe/Zellen/Gefäße/Nerven/Signalprozesse müssen wirken wie aus 008.
+- Hauptprozess in etwa einer Sekunde erkennbar; 2–4 große Elemente, maximal 2 Labels, meistens textfrei.
+- Falsche Schlafphysiologie, überladene Lehrbuchbilder, unlesbarer Text, sichtbare Nummern, Anime-/Comicpersonen, dunkle Neon- oder Glühgehirn-Bilder = **FAIL / neu generieren**.
+- Weder gewähltes Cover noch vorherige 009-Bilder dürfen als Stilreferenz dienen.
+- Nach echten Bildern `05_info/image-review.json` für jeden Shot vervollständigen und Phase-2-Validator ausführen.
+- Kein Bild allein aufgrund eines Prompttextes als fertig/akzeptiert markieren.
