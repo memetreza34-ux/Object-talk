@@ -207,6 +207,6 @@ Reject final production imagery if:
 - severe AI artifacts are present
 
 
-## ORIGINAL FRAMES REQUIRED BEFORE GOOGLE FLOW
+## FLOW SOFORTSTART – DREI COVER OHNE REFERENZ-UPLOAD
 
-Read `bildwelt/008-ORIGINAL-VIDEO-STYLE-REFERENCE.md`. Confirm that actual 008 still images (not just their filenames in text) were uploaded to the Google Flow image session; selected approved cover is added as a secondary image reference after choice. Preserve line work, soft volume, layered organ wall/tissue environments and pale textured backgrounds seen in the actual 008 MP4, not generic flat infographic neurons or glowing dark brain posters. If the reference images aren't accessible in Flow, explain the blocker instead of claiming that the same world was reproduced. See `assets/channel/references/video008/README.md`.
+Bei Eingang des einen Produktionsprompts SOFORT drei separate Cover generieren. Keine Nachfrage nach 008-Frames, ZIP oder Upload davor. Liegen Original-008-Frames bereits als echte Bildinputs vor, diese nutzen; sonst den realen 008-Stil-Fingerabdruck aus `bildwelt/008-ORIGINAL-VIDEO-STYLE-REFERENCE.md` als Textgrundlage verwenden und drei Cover erstellen. Nutzer wählt 1/2/3. Gewähltes Cover als sekundäre Stilreferenz für Folgebilder; falls vorhandene echte 008-Frames zusätzlich verwenden. Stiltreue ohne Originalreferenzen NICHT als garantiert darstellen. Die finale Medien-QA muss weiterhin echte Bildvergleiche bestehen.

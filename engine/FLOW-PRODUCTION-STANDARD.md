@@ -121,9 +121,9 @@ Schwacher Kontrast = regenerieren.
 
 ## 9. Referenz
 
-Der konkrete originale Video-008-Look ist die oberste Stilautorität – nicht nur ein generischer Stilname. Immer echte Bilder aus `assets/channel/references/video008/` in Google Flow als visuelle Referenzen übergeben (siehe `bildwelt/008-ORIGINAL-VIDEO-STYLE-REFERENCE.md`). Das gewählte Cover muss bereits den 008-Stil erfüllen und wird dann als **sekundäre Referenz zusammen mit den Originalframes** für Bild 02+ verwendet. Cover-Titel/Komposition nicht 1:1 kopieren.
+Der konkrete originale Video-008-Look ist die oberste Stilautorität – nicht nur ein generischer Stilname. Nach Möglichkeit echte Bilder aus `assets/channel/references/video008/` in Google Flow als visuelle Referenzen übergeben (siehe `bildwelt/008-ORIGINAL-VIDEO-STYLE-REFERENCE.md`). Das gewählte Cover muss bereits den 008-Stil erfüllen und wird dann als **sekundäre Referenz zusammen mit den Originalframes** für Bild 02+ verwendet. Cover-Titel/Komposition nicht 1:1 kopieren.
 
-Fehlen die echten 008-Bilder im Flow-Auftrag, nicht behaupten, eine visuelle 1:1-Übernahme sei abgesichert.
+Fehlen die echten 008-Bilder im Flow-Auftrag, die drei Cover TROTZDEM sofort erzeugen, aber eine visuelle 1:1-Übernahme nicht behaupten.
 
 ## 10. Hard Fails
 

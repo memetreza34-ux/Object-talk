@@ -25,15 +25,15 @@
 | `008_07_blood_cell.jpg` | 04:24 | Mikroansicht aus Gefäß und Nachbarzelle mit warm-/kalt-Farbtrennung |
 | `008_08_microbiome.jpg` | 05:36 | Zelle/Mikrobe im Gewebe-Kontext, biologisch unterschiedliche Formen |
 
-**Eigentliche Bilddateien:** Das Video stammt aus einem Chat-Upload; seine privaten Frames sind *nicht automatisch im GitHub-Repository vorhanden*. Der passende Referenz-ZIP wird dem Nutzer separat bereitgestellt. Er muss die JPGs entweder lokal nach `assets/channel/references/video008/` legen oder direkt als Flow-Bildreferenzen hochladen. `tools/build_008_style_refs.py` kann die Bilder aus dem Original-MP4 erneut erzeugen. Nicht behaupten, GitHub enthalte die JPGs, solange sie nicht physisch vorhanden sind.
+**Eigentliche Bilddateien:** Das Video stammt aus einem Chat-Upload; seine privaten Frames sind *nicht automatisch im GitHub-Repository vorhanden*. Der passende Referenz-ZIP wird dem Nutzer separat bereitgestellt. Zur Verbesserung der Stiltreue kann der Nutzer die JPGs lokal nach `assets/channel/references/video008/` legen oder direkt als Flow-Bildreferenzen hochladen. Für die drei ersten Cover ist dies KEINE Voraussetzung. `tools/build_008_style_refs.py` kann die Bilder aus dem Original-MP4 erneut erzeugen. Nicht behaupten, GitHub enthalte die JPGs, solange sie nicht physisch vorhanden sind.
 
 ## Reale visuelle Stilreferenz ist stärker als Text
 
-Bei jeder Folge dieselben **echten Standbilder aus 008** als Bild-Stilreferenzen in Google Flow übergeben. Ideales Set für Innenszenen: `008_02_peristalsis`, `008_03_stomach_tissue`, `008_05_intestinal_villi`, `008_07_blood_cell`. Je nach Szenentyp zwei bis vier geeignete Bilder aus der Sammlung zeigen; sie belegen Formensprache, Linien und Farben, **nicht** das neue biologische Motiv.
+Für möglichst hohe Stiltreue nach Möglichkeit dieselben **echten Standbilder aus 008** als Bild-Stilreferenzen in Google Flow übergeben; die ersten drei Cover müssen auch ohne solche Uploads starten. Ideales Set für Innenszenen: `008_02_peristalsis`, `008_03_stomach_tissue`, `008_05_intestinal_villi`, `008_07_blood_cell`. Je nach Szenentyp zwei bis vier geeignete Bilder aus der Sammlung zeigen; sie belegen Formensprache, Linien und Farben, **nicht** das neue biologische Motiv.
 
 ## Cover-Referenz – neue verbindliche Regel
 
-1. Cover 1/2/3 werden **mit den echten 008-Referenzbildern** in derselben Illustrationswelt generiert.
+1. Cover 1/2/3 werden SOFORT generiert. Falls echte 008-Referenzbilder bereits hochgeladen sind, diese nutzen; andernfalls aus der dokumentierten Bildweltbeschreibung erzeugen und die Stiltreue anschließend prüfen.
 2. Nutzer wählt genau ein Cover.
 3. Das gewählte Cover darf und soll für die folgenden Bilder als **sekundäre Stil-/Mood-Referenz** hinzugefügt werden, **ABER nur wenn es den 008-Look bereits nachweisbar erfüllt**.
 4. Die echten 008-Prozessframes bleiben **primäre Referenz für Konturen, Detaildichte, anatomische Darstellung und Bildkomposition**. Das Cover steuert keine falsche Schlaf-Poster-/Neon-/Gehirn-Look-Abweichung.
@@ -50,4 +50,4 @@ Bei jeder Folge dieselben **echten Standbilder aus 008** als Bild-Stilreferenzen
 - Ein klarer Mechanismus, korrektes Deutsch, 0–2 Labels, Cover nur Titel?
 - Keine dunklen Neon-Gehirnposter, Anime-Schlafcharaktere, übermäßig lineare Infografiken?
 
-Ein FAIL verlangt ein neues Bild mit gleichen hochgeladenen 008-Referenzen. Stochastische Google-Flow-Generierung garantiert **niemals pixelidentische Ergebnisse**, aber ein echtes Referenzset + konstante Technik + Bild-QA minimiert Stilabweichungen wesentlich stärker als der bisherige generische Einzeiler.
+Ein FAIL verlangt ein neues Bild im 008-Stil, möglichst unter Nutzung der echten Originalreferenzen, falls verfügbar. Stochastische Google-Flow-Generierung garantiert **niemals pixelidentische Ergebnisse**, aber ein echtes Referenzset + konstante Technik + Bild-QA minimiert Stilabweichungen wesentlich stärker als der bisherige generische Einzeiler.
