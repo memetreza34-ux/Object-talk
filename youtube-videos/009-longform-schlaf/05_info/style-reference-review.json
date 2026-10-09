@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "video_id": "009-longform-schlaf",
+  "status": "PENDING_REAL_FLOW_REFERENCE_UPLOAD",
+  "primary_source": "actual user-uploaded final 008 digestion longform, 414.208 s",
+  "reference_manifest": "bildwelt/008-ORIGINAL-VIDEO-STYLE-REFERENCE.md",
+  "source_frames_expected": [
+    "008_02_peristalsis.jpg",
+    "008_03_stomach_tissue.jpg",
+    "008_05_intestinal_villi.jpg",
+    "008_07_blood_cell.jpg"
+  ],
+  "actual_008_frames_uploaded_to_flow": false,
+  "original_008_frame_filenames_uploaded": [],
+  "chosen_cover_number": null,
+  "approved_cover_passes_008_world": false,
+  "approved_cover_used_as_secondary_reference": false,
+  "every_accepted_image_compared_with_actual_008_frames": false,
+  "frame_style_consistency_status": "PENDING",
+  "verified_by": null,
+  "verified_after_actual_media_generation": false,
+  "notes": "Do not mark true based on prompt text, filenames or assumed Flow access. True only after actual style images were uploaded and final generated images visually checked. The original 008 JPGs were supplied as a separate ZIP in the conversation, not committed to GitHub."
+}
