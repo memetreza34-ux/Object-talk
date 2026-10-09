@@ -203,8 +203,8 @@ def validate_phase1(project: Path) -> set[str]:
         fail("Mechanism Map enthaelt noch Platzhalter")
 
     flow_prompt_text = flow_prompt_path.read_text(encoding="utf-8").lower()
-    match_video = re.match(r"^(\\d{3})-", project.name)
-    if match_video and int(match_video.group(1)) >= 9:
+    video_prefix = project.name.split("-", 1)[0]
+    if len(video_prefix) == 3 and video_prefix.isdigit() and int(video_prefix) >= 9:
         if ("real 008 video frame references" not in flow_prompt_text
                 or "secondary" not in flow_prompt_text
                 or "008_03_stomach_tissue.jpg" not in flow_prompt_text):
@@ -413,8 +413,8 @@ def validate_phase1(project: Path) -> set[str]:
 
 def validate_real_008_style_reference_gate(project: Path) -> None:
     """For regular videos 009+, do not approve images without proof of real 008 references."""
-    match = re.match(r"^(\\d{3})-", project.name)
-    if not match or int(match.group(1)) < 9:
+    video_prefix = project.name.split("-", 1)[0]
+    if len(video_prefix) != 3 or not video_prefix.isdigit() or int(video_prefix) < 9:
         return  # retain historic 008 and old pilots without changing their validation contract
 
     gate_path = project / "05_info" / "style-reference-review.json"
