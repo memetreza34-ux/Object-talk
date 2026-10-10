@@ -214,3 +214,8 @@ Siehe:
 - keine erfundenen Gesundheitswirkungen
 - keine Themen unnötig wiederholen
 - keine geratenen Audio-/Bild-Zeitpunkte
+
+
+## Ab Video 009 – neue Ordnerform (Altprojekte behalten alte Struktur)
+
+`01_script/`, `02_bildprompts/`, `03_export/` sind die einzigen sichtbaren Arbeitsordner. Alles Technische nach `.intern/`. YouTube-Cover separat in `03_export/COVER.png`, `Bild_01` ist die erste erzählte Szene im Video. Genau ein Flow-Prompt. Endtext mit echten Zeiten automatisch erzeugen, keine Schätzwerte.

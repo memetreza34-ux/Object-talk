@@ -60,7 +60,7 @@ Autoritativ: `engine/FLOW-COVER-FIRST-WORKFLOW.md`.
 
 ## 4. Cover
 
-Das Cover / `Bild_01` darf genau einen sichtbaren Textblock enthalten:
+Das separate YouTube-Cover außerhalb der nummerierten Videobilder darf genau einen sichtbaren Textblock enthalten:
 - nur Titel / Hook
 - keine Anatomie-Labels
 - keine Unterzeile
@@ -153,3 +153,8 @@ Ein akzeptiertes Bild soll wirken wie ein sauberer Frame aus derselben animierte
 
 ## Textbasierte Reproduzierbarkeit
 Die erfolgreiche Verdauungsproduktion arbeitete ohne Bildvorlagen. Die Serienkonsistenz wird künftig über denselben ausführlichen 008-Styleblock und konkretisierte Szenenbeschreibungen hergestellt, nie durch Uploads. Mehr Abwechslung: große verbundene Organe, Gewebe-Querschnitte, Zellumgebung, Kapillaren und Prozesse statt leerer Einzelobjekt-Tafeln. Generative Ausgaben sind nicht pixelgenau deterministisch.
+
+
+## Neue 3-Ordner-Regel ab Video 009 (verbindlich)
+
+Sichtbar nur `01_script/`, `02_bildprompts/`, `03_export/`. Technische Planungs- und Renderdateien unter verstecktem `.intern/`. Das Google-Flow-Cover ist ein **eigenes YouTube-Thumbnail `03_export/COVER.png` und KEINE Szene `Bild_01`**. Bild_01 ist sofort die erste normale biologische Illustration, nur die normal nummerierten Bilder in die Bilder-ZIP und das MP4. Nach Coverwahl Bilder 01–05, danach 06–10 usw. Untertitel aus echter Audioausrichtung nach `03_export/UNTERTITEL-MIT-ZEITEN.txt`. Alle Labels sollen häufig dann erscheinen, wenn sie einen Vorgang verständlicher machen, ansonsten textfrei; höchstens 2 kurze Wörter/Gruppen pro Bild. Keine Vorlagen-Uploads, keine Remotion-Textlayer, keine überfüllten Szenen.

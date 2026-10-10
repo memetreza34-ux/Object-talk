@@ -150,3 +150,8 @@ Audio vorbereiten → Whisper → Timeline → Vollbild-Illustrationen + leichte
 ## Goldene Regel
 
 **Cover nur Titel. Ein Bild = eine Hauptidee. So wenig Text wie möglich. Hoher Kontrast. Lieber mehr Bilder als mehr Information in einem Frame.**
+
+
+## Neuer einfacher Videoordner (ab 009)
+
+Für neue Videos gibt es nur drei sichtbare Arbeitsordner: `01_script` (Fließtext + Audio), `02_bildprompts` (ein Flow-Prompt + Bilder-ZIP), `03_export` (VIDEO.mp4, COVER.png, YouTube-Caption, Untertitel mit echten Zeitstempeln). Alle technischen Details in verstecktem `.intern`. Das Cover ist NUR Thumbnail, nicht Videoszene. Vollständige Beschreibung: `engine/FLOW-COVER-FIRST-WORKFLOW.md`.

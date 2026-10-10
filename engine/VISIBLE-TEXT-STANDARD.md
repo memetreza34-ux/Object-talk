@@ -12,7 +12,7 @@ Das Bild erklaert zuerst visuell. Text ist nur eine Orientierungshilfe.
 
 ## 2. Cover – harte Sonderregel
 
-Das Cover / `Bild_01` darf genau **einen sichtbaren Textblock** enthalten:
+Das Cover (separate PNG-Datei; Bild_01 ist erste normale Szene) darf genau **einen sichtbaren Textblock** enthalten:
 
 - nur den geplanten deutschen Titel / Hook
 - bevorzugt 3–7 Woerter
@@ -106,3 +106,7 @@ Bei einem FAIL wird das Bild nicht repariert oder per Remotion ueberdeckt, sonde
 ## Goldene Regel
 
 **So wenig Text wie moeglich, so viel wie noetig. Cover nur Titel. Ein Bild = eine Hauptidee. Gute Lesbarkeit vor Dekoration.**
+
+## Neue 3-Ordner-Regel ab Video 009 (verbindlich)
+
+Sichtbar nur `01_script/`, `02_bildprompts/`, `03_export/`. Technische Planungs- und Renderdateien unter verstecktem `.intern/`. Das Google-Flow-Cover ist ein **eigenes YouTube-Thumbnail `03_export/COVER.png` und KEINE Szene `Bild_01`**. Bild_01 ist sofort die erste normale biologische Illustration, nur die normal nummerierten Bilder in die Bilder-ZIP und das MP4. Nach Coverwahl Bilder 01–05, danach 06–10 usw. Untertitel aus echter Audioausrichtung nach `03_export/UNTERTITEL-MIT-ZEITEN.txt`. Alle Labels sollen häufig dann erscheinen, wenn sie einen Vorgang verständlicher machen, ansonsten textfrei; höchstens 2 kurze Wörter/Gruppen pro Bild. Keine Vorlagen-Uploads, keine Remotion-Textlayer, keine überfüllten Szenen.

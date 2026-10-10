@@ -27,7 +27,7 @@ No photoreal medical imagery, no medical CGI, no glossy 3D, no feature-animation
 - Biologische Vorgänge im Vordergrund: 2–4 erkennbare Elemente, 0–2 Labels, korrekter Schriftkontrast.
 - Kamera wechseln: Alltag → Körperroute → Organ-Cutaway → Gewebe → Zelle → Mechanismus → Ergebnis.
 - Verbot: eigenständiger dunkler Nacht-/Anime-/Neon-Stil nur wegen Schlafthema; glühende Gehirne als Wiederholungsmotiv.
-- Das gewählte Cover wird allein als finales Bild_01 gespeichert. Für Folgebilder wird weder dieses Cover noch ein 008-Standbild als Bildvorlage verwendet. Einheitlich bleibt die ausführliche geschriebene Stilbeschreibung.
+- Das gewählte Cover wird nur als separates `03_export/COVER.png` gespeichert; Bild_01 ist die erste normale Szene. Für Folgebilder wird weder dieses Cover noch ein 008-Standbild als Bildvorlage verwendet. Einheitlich bleibt die ausführliche geschriebene Stilbeschreibung.
 
 ## 3. Identische Struktur des ausführlichen Flow-Prompts
 Ab `youtube-videos/008-longform-verdauung/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt`:
@@ -39,7 +39,7 @@ Ab `youtube-videos/008-longform-verdauung/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-
 6. Szenenregister, je Bild eine konkrete biologische Hauptaktion, sichtbare Labels nur aus Whitelist
 7. FINAL QA PER IMAGE und FINAL SET.
 
-Zusatz aus Nutzerwunsch für neue Produktionen: **im selben EINEN Prompt** zunächst drei getrennte Cover generieren und 1/2/3 wählen lassen, dann Bilder ab 02 in internen Fünfergruppen; keine weitere Promptdatei an Nutzer. Unter `02_bildprompts/` gibt es genau `GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt` und `bilder-zip/`.
+Zusatz aus Nutzerwunsch für neue Produktionen: **im selben EINEN Prompt** zunächst drei getrennte Cover generieren und 1/2/3 wählen lassen, dann Bilder ab 01 in internen Fünfergruppen; keine weitere Promptdatei an Nutzer. Unter `02_bildprompts/` gibt es genau `GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt` und `bilder-zip/`.
 
 ## 4. Identische Planungsdateien, nur intern
 - `01_script/script.txt` und `VOICEOVER-ZUM-KOPIEREN.txt` sind identisch.
@@ -73,3 +73,8 @@ Kopiere die technische Detailtiefe aus `008/03_pipeline/ANTIGRAVITY-PROMPT-ZUM-K
 
 ## 8. Gleiche Bildwelt ohne Vorlagen
 Die bewährte Verdauungs-Produktion 008 hat keine visuellen Vorlagen benötigt. Auch neue Videos werden ausschließlich aus dem einen vollständig geschriebenen Prompt generiert. Gleiche Linienführung und organische Formen, warme Konturen, weiche Tiefenschattierung, ruhige Türkis-/Mint-/Creme-Hintergründe und bildfüllende zusammenhängende Prozesse sind positiv und konkret zu beschreiben. Cover-Auswahl → Bild_01; danach ohne Bildreferenzen die Fünfergruppen. Keine Uploadfragen. Ergebnisse prüfen und Stilfehler neu erzeugen.
+
+
+## Neue 3-Ordner-Regel ab Video 009 (verbindlich)
+
+Sichtbar nur `01_script/`, `02_bildprompts/`, `03_export/`. Technische Planungs- und Renderdateien unter verstecktem `.intern/`. Das Google-Flow-Cover ist ein **eigenes YouTube-Thumbnail `03_export/COVER.png` und KEINE Szene `Bild_01`**. Bild_01 ist sofort die erste normale biologische Illustration, nur die normal nummerierten Bilder in die Bilder-ZIP und das MP4. Nach Coverwahl Bilder 01–05, danach 06–10 usw. Untertitel aus echter Audioausrichtung nach `03_export/UNTERTITEL-MIT-ZEITEN.txt`. Alle Labels sollen häufig dann erscheinen, wenn sie einen Vorgang verständlicher machen, ansonsten textfrei; höchstens 2 kurze Wörter/Gruppen pro Bild. Keine Vorlagen-Uploads, keine Remotion-Textlayer, keine überfüllten Szenen.

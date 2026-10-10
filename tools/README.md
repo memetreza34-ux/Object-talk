@@ -198,3 +198,10 @@ Danach bleiben visueller Sichtcheck, Scorecard und Postmortem.
 ## Goldene Regel
 
 Bei Unsicherheit oder Inkonsistenz: **FAIL statt raten**.
+
+
+## NEUE PROJEKTE ab 009 – vereinfachte Ordner (Vorlage)
+
+`01_script/script.txt` + `01_script/audio/`; `02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt` + `bilder-zip/`; `03_export/VIDEO.mp4`, `COVER.png`, `CAPTION-YOUTUBE.txt`, `UNTERTITEL-MIT-ZEITEN.txt`. Alles Technische `.intern/03_pipeline/` und `.intern/05_info/`; das SRT liegt versteckt unter `.intern/UNTERTITEL-YOUTUBE.srt`.
+
+Das YouTube-Cover ist kein `Bild_01` und wird nicht ins MP4 aufgenommen. Der erste Szenenframe `Bild_01.png` ist ein normaler erzählender biologischer Vorgang. Alt-Videos 008 und früher werden nicht rückwirkend geändert.

@@ -1,40 +1,34 @@
-# Google Flow – EIN Prompt und EIN ZIP-Ordner
+# Google Flow – einfacher Drei-Ordner-Ablauf
 
-**KANONISCHER PRODUKTIONSSTANDARD** für alle neuen Object-Talk-Videos.
-
-## Nutzeroberfläche – genau zwei Einträge
-Im jeweiligen Videoordner `02_bildprompts/` stehen:
+## Sichtbar für den Nutzer: genau drei Ordner
 ```text
-02_bildprompts/
-├── GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt
-└── bilder-zip/
-    └── README.md
+VIDEOORDNER/
+├── 01_script/
+│   ├── script.txt                  ← einziger Fließtext des Sprechers
+│   └── audio/                      ← hier die Sprachdatei einlegen
+├── 02_bildprompts/
+│   ├── GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt
+│   └── bilder-zip/                 ← nur fertige NORMALEN Szenenbilder
+└── 03_export/
+    ├── VIDEO.mp4                   ← entsteht erst nach Render
+    ├── COVER.png                   ← separates YouTube-Thumbnail
+    ├── CAPTION-YOUTUBE.txt         ← individueller Titel/Beschreibung
+    └── UNTERTITEL-MIT-ZEITEN.txt   ← exakte Audio-Zeitabschnitte
 ```
-Die README liegt **innerhalb** des ZIP-Ordners, nicht daneben. Dort genau **eine fertige Bilder-ZIP** ablegen. Der Ordner wird von `tools/prepare_phase3.py` direkt gelesen. Entpackte Bilder gehören intern unter `03_pipeline/images/`. Interne Label-/QA-Daten liegen in `05_info/label-plan.json` und `05_info/image-review.json`, nie sichtbar neben dem Nutzerprompt. Alte Projekte dürfen historische Pfade behalten.
+Alle weiteren Forschungs-, QA- und Pipeline-Dateien liegen versteckt in `.intern/`. Die 008-Verdauungsproduktion bleibt als historisches Altformat unverändert.
 
-## Keine Bildvorlagen – kompletter Ablauf nur mit Text
-Wie beim Video 008 werden **keine Bildvorlagen** verwendet: keine 008-Frames, keine Stilbilder, keine ZIP-Uploads, kein ausgewähltes Cover als Referenzbild. Flow startet aus dem einen schriftlichen Prompt unmittelbar mit drei eigenständigen Covern. Nach Auswahl ist das gewählte Cover nur `Bild_01`; die anderen 76 Bilder entstehen aus derselben verbindlichen Text-Bildwelt in Fünfergruppen.
-## Ein Prompt steuert drei Phasen
-Der Prompt ist **eine einzige vollständig ausgefüllte Textdatei** mit den 3 konkreten Cover-Varianten und dem gesamten, konkreten Szenenregister von Bild 02 bis Bild NN. Keine 17 separaten Textprompts oder Batchdateien.
+## Reihenfolge – KEINE visuellen Vorlagen
+1. Ein einziger ausführlicher Flow-TEXTPROMPT enthält drei Coverkandidaten plus alle nummerierten Videoszenen. Keine hochgeladenen JPG-Referenzen und keine zusätzlichen Promptdateien.
+2. Flow erzeugt **drei separate Coverbilder**, jedes mit nur exakt dem einen YouTube-Titel. Nutzer wählt 1/2/3. Bis dahin keine normalen Bilder erzeugen.
+3. Das gewählte Cover ist **nur** `03_export/COVER.png`, **NICHT Bild_01 und nicht Teil der Videotimeline**. Kein Cover in die Bilder-ZIP.
+4. Ab Auswahl unverzüglich **Bild_01 bis Bild_05** als fünf einfache 16:9-Videoszenen erzeugen. Danach Bild_06–10 usw. in max. Fünfergruppen, letzter Batch ggf. kleiner. Kein zweites Startsignal. Flow-Limits transparent angeben und auf „weiter“ fortsetzen.
+5. Jedes Bild: **ein einfach erkennbarer biologischer Vorgang**, große klare Strukturen, ruhige freundliche organische Illustration, wechselnde Maßstäbe, mit deutschen Labels (0–2) immer dann, wenn sie helfen. Keine komplizierten Neuronen-Labyrinthe, generischen Schaubild-Poster oder dekorativen Angaben. Sichtbare Produktionsnummern verboten.
+6. Alle NORMALEN Videoszenen in die eine ZIP unter `02_bildprompts/bilder-zip/`. Cover separat als PNG.
+7. Render nur die normalen Szenen zu `03_export/VIDEO.mp4`, ohne Cover und ohne jeglichen Remotion-Text. Das finale Audio bestimmt den Schnitt.
+8. Erst nach Audio-/Whisper-Alignment das gesprochene Skript aus `.intern/03_pipeline/timing/timeline.json` nach `03_export/UNTERTITEL-MIT-ZEITEN.txt` schreiben. Keine geschätzten Zeiten. Optionales SRT liegt intern unter `.intern/`.
 
-**Phase 1:** Flow erzeugt zuerst tatsächlich drei unterschiedliche Cover EINZELN (niemals eine Collage). Alle tragen nur exakt denselben Titel mit starkem Textkontrast. Danach alle drei zeigen, die Frage stellen: „Welches Cover wählst du – 1, 2 oder 3?“ **STOP bis zur Nutzerwahl**. Keine normalen Bilder vor Auswahl.
+## QA
+Die Datei `COVER.png` gehört nicht in das MP4. `Bild_01` ist die erste echte Szene, nicht das Cover. 0–2 wirklich notwendige Kurzlabels, gut lesbar, korrekte deutsche Worte, 16:9. Fehlende Bilder oder Medien nicht als fertig ausgeben.
 
-**Phase 2:** Ausgewähltes Cover wird finale `Bild_01.png`. Die anderen zwei werden nicht in Endpaket übernommen. **Sofort**, ohne weitere Freigabe, fünf eigenständige Bilder 02–06 generieren; anschließend intern fortfahren 07–11 usw., jeweils maximal fünf einzelne Bilder pro Arbeitsschritt. Die Szenenbeschreibungen stehen alle im SELBEN Prompt. Kein neuer Prompt nötig, keine generische Frage nach jedem Batch. Wenn Google Flow stoppt oder auf eine weitere Nutzeraktion wartet, exakte nächste Bildnummer nennen; Nutzer sagt „weiter“, Agent fährt mit demselben Prompt fort. Keine unbegrenzte Hintergrundarbeit behaupten.
-
-**Phase 3:** Exakt alle genehmigten Bilder `Bild_01.png … Bild_NN.png` ohne Doppelungen, Lücken oder zusätzliche Cover zu EINER ZIP zusammenfassen. Der Nutzer legt die ZIP unter `02_bildprompts/bilder-zip/` ab. ZIP bleibt lokal und wird per `.gitignore` nicht automatisch nach GitHub eingecheckt.
-
-## Bildwelt und QA
-Klarer, sanft plastischer Clean-Animated-Biology-Illustration-Look des freigegebenen Videos 008: saubere Konturen, weiche organische Formen, verständliche Anatomie, helle harmonische Farben, passend dunklere Akzente. Kein generischer flacher Nacht-Silhouettenlook. Ein dominanter Lehrpunkt/Bild; nur 0–2 notwendige kurze Labels. Heller Hintergrund → dunkle Schrift, dunkler Hintergrund → helle Schrift. Cover nur Titel. **Bildnummern und Dateinamen niemals sichtbar**. Fehlerhafte Bilder vor Aufnahme in ZIP regenerieren.
-
-## Kein Falschabschluss
-Die Promptdatei und ZIP-Ablage sind die VORBEREITUNG, keine tatsächlich produzierten Bilder. Fehlende Medien, ZIP oder Nutzer-Coverwahl offen als Status kennzeichnen; nicht „fertig“ melden.
-
-## Safety-First / Google-Flow-Richtlinien
-
-Google Flow kann bestimmte Bildanfragen ablehnen. Halte die Bildaufträge klar bildungsbezogen, freundlich und **nicht-grafisch**. Normaler Schlaf und leicht verständliche isolierte Illustrationen von Organen/Zellen sind passend; keine invasiven Körperdarstellungen, verletzten Personen, sexualisierten Motive, täuschenden Nachahmungen realer Personen oder medizinische Heilsversprechen verlangen.
-
-**Wenn Flow eine Anfrage ablehnt:** Nicht versuchen, Filter/Sicherheitsmechanismen zu umgehen oder Schutzregeln zu überschreiben. Stattdessen den betroffenen Bildauftrag kennzeichnen, die Ursache nicht als Gewissheit behaupten und nur eine sachlich zulässige, vereinfachte Illustration vorschlagen. Bei fortdauernder Ablehnung die Generation abbrechen und Feedback/Support der Plattform nutzen.
-
-Lange komplette Szenenpläne können technisch oder durch Moderation scheitern; die einzelne Promptdatei bleibt erhalten, aber im Chat zuerst nur die 3 Coverbilder als konkrete Bildgenerierung anfordern. Keine Zusage, dass jedes externe Tool alle Cover oder ZIPs automatisch erzeugt.
-
-Richtlinien: https://policies.google.com/terms/generative-ai/use-policy?hl=de-DE und https://support.google.com/flow/answer/16353333.
+## Technische Kompatibilität
+`tools/prepare_phase3.py`, `tools/export_subtitles.py` und Validatoren erkennen neue `.intern/`-Projekte automatisch. Alte 008-Projekte dürfen ihren historischen 5-Ordner-Aufbau weiterverwenden, ohne rückwirkende Migration.

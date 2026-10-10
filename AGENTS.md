@@ -52,7 +52,7 @@ Wenn ein Bild zu viel erklaeren muesste: unwichtige Information weglassen oder n
 
 ## Cover – HARD RULE
 
-`Bild_01` / Cover:
+Separates Cover (neue Produktionen, außerhalb Bild_01):
 - genau ein sichtbarer Textblock
 - nur Titel / Hook
 - keine Anatomie-Labels
@@ -225,3 +225,8 @@ Fuer neue 6–7-Minuten-Videos `engine/LONGFORM-008-MASTERSTANDARD.md` verwenden
 
 ## Ohne visuelle Vorlagen produzieren
 Die Bildwelt von 008 durch den immer gleichen ausführlichen Textstil und konkrete biologische Szenenbeschreibungen nachbilden. Weder 008-JPGs noch gewähltes Cover als Bildvorlage hochladen. Google Flow darf keinen Referenz-Upload verlangen. Die visuelle Qualität wird an den tatsächlich generierten Bildern geprüft.
+
+
+## Neue 3-Ordner-Regel ab Video 009 (verbindlich)
+
+Sichtbar nur `01_script/`, `02_bildprompts/`, `03_export/`. Technische Planungs- und Renderdateien unter verstecktem `.intern/`. Das Google-Flow-Cover ist ein **eigenes YouTube-Thumbnail `03_export/COVER.png` und KEINE Szene `Bild_01`**. Bild_01 ist sofort die erste normale biologische Illustration, nur die normal nummerierten Bilder in die Bilder-ZIP und das MP4. Nach Coverwahl Bilder 01–05, danach 06–10 usw. Untertitel aus echter Audioausrichtung nach `03_export/UNTERTITEL-MIT-ZEITEN.txt`. Alle Labels sollen häufig dann erscheinen, wenn sie einen Vorgang verständlicher machen, ansonsten textfrei; höchstens 2 kurze Wörter/Gruppen pro Bild. Keine Vorlagen-Uploads, keine Remotion-Textlayer, keine überfüllten Szenen.

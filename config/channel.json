@@ -70,7 +70,7 @@
     "prompt_style": "one self-contained text prompt; three covers then user choice; five image batches; canonical written illustrated biology world and concrete per-image descriptions",
     "style_block_path": "bildwelt/FLOW-STYLE-BLOCK.txt",
     "labels_generated_in_flow": true,
-    "preferred_labels_per_image": "0-1",
+    "preferred_labels_per_image": "0-2, frequently on teaching frames but never forced",
     "max_labels_per_image": 2,
     "max_words_per_label": 3,
     "prefer_no_label_when_self_explanatory": true,
@@ -100,12 +100,15 @@
     ],
     "start_first_three_covers_without_reference_upload": true,
     "use_external_style_reference_images": false,
-    "use_selected_cover_as_image_reference": false
+    "use_selected_cover_as_image_reference": false,
+    "separate_cover_not_in_video": true,
+    "first_video_scene_image": "Bild_01",
+    "first_scene_batch": "Bild_01..Bild_05"
   },
   "labels": {
     "language": "de",
-    "source": "05_info/label-plan.json (new projects; older projects may use 02_bildprompts/label-plan.json)",
-    "preferred_per_image": "0-1",
+    "source": ".intern/05_info/label-plan.json (new videos; old videos use their original paths)",
+    "preferred_per_image": "0-2 when important for biological understanding",
     "max_per_image_guideline": 2,
     "max_words_per_label": 3,
     "avoid_overload": true,
@@ -126,7 +129,10 @@
     "subtitle_allowed": false,
     "pointer_text_allowed": false,
     "preferred_title_words": "3-7",
-    "text_contrast_required": true
+    "text_contrast_required": true,
+    "separate_youtube_thumbnail": true,
+    "not_counted_as_video_scene": true,
+    "output": "03_export/COVER.png"
   },
   "audio_pacing": {
     "default_voice_speed_multiplier": 1.1,
@@ -150,7 +156,9 @@
     "adjacent_scene_visual_difference_rule": "change at least two of camera scale, spatial layout, main subject, process direction, background context, or visual type",
     "one_main_idea_per_frame": true,
     "prefer_more_frames_over_overloaded_frame": true,
-    "omit_nonessential_visual_information": true
+    "omit_nonessential_visual_information": true,
+    "first_scene_is_not_cover": true,
+    "require_simple_scene_specific_explanation": true
   },
   "presentation": {
     "full_frame_illustration_share_target": "100%",
@@ -177,5 +185,22 @@
       "pan-right"
     ]
   },
-  "topic_memory": "THEMEN-GEHIRN.md"
+  "topic_memory": "THEMEN-GEHIRN.md",
+  "user_folder_layout": {
+    "visible": [
+      "01_script",
+      "02_bildprompts",
+      "03_export"
+    ],
+    "technical": ".intern",
+    "audio_drop": "01_script/audio",
+    "flow_prompt": "02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt",
+    "image_zip_drop": "02_bildprompts/bilder-zip",
+    "exports": [
+      "03_export/VIDEO.mp4",
+      "03_export/COVER.png",
+      "03_export/CAPTION-YOUTUBE.txt",
+      "03_export/UNTERTITEL-MIT-ZEITEN.txt"
+    ]
+  }
 }
