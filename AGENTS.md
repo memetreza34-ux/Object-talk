@@ -118,7 +118,7 @@ Muss:
 - Cover exakt title-only planen
 - bei zu hoher Informationsdichte den Beat auf mehr Bilder aufteilen
 - **keine Remotion-Texte oder Text-Overlays planen**
-- `04_export/` nach `engine/EXPORT-STANDARD.md` vorbereiten
+- `03_export/` als einfachen Nutzerexport vorbereiten; technische QA in `.intern/`
 
 
 ## COVER-FIRST-WORKFLOW – HARTE PRODUKTIONSREIHENFOLGE
@@ -167,11 +167,11 @@ Remotion darf NICHT erzeugen:
 - sichtbare Bild-/Szenennummern
 - irgendeinen sonstigen viewer-facing Text
 
-`03_pipeline/overlay-plan.json` muss leer/deaktiviert bleiben.
+`.intern/03_pipeline/overlay-plan.json` muss leer/deaktiviert bleiben.
 
 Externe YouTube-Untertitel sind trotzdem Pflicht:
-- `04_export/UNTERTITEL-MIT-ZEITEN.txt`
-- `04_export/UNTERTITEL-YOUTUBE.srt`
+- `03_export/UNTERTITEL-MIT-ZEITEN.txt`
+- `.intern/UNTERTITEL-YOUTUBE.srt`
 - beide aus finaler `timeline.json` mit `tools/export_subtitles.py`
 - Zeitcodes niemals schaetzen
 
@@ -188,9 +188,9 @@ Standard:
 ## Export – Pflicht
 
 Jedes fertige Video braucht:
-- `04_export/CAPTION-YOUTUBE.txt` mit Titel + Beschreibung + max. 5 Hashtags
-- `04_export/UNTERTITEL-MIT-ZEITEN.txt` mit komplettem Script und echten Zeitabschnitten
-- `04_export/UNTERTITEL-YOUTUBE.srt` als hochladbare YouTube-Untertiteldatei
+- `03_export/CAPTION-YOUTUBE.txt` mit Titel + Beschreibung + max. 5 Hashtags
+- `03_export/UNTERTITEL-MIT-ZEITEN.txt` mit komplettem Script und echten Zeitabschnitten
+- `.intern/UNTERTITEL-YOUTUBE.srt` als hochladbare YouTube-Untertiteldatei
 - finale YouTube-MP4
 - Renderbericht
 - Quality-Scorecard

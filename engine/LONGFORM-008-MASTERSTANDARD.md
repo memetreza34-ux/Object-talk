@@ -43,8 +43,8 @@ Zusatz aus Nutzerwunsch für neue Produktionen: **im selben EINEN Prompt** zunä
 
 ## 4. Identische Planungsdateien, nur intern
 - `01_script/script.txt` und `VOICEOVER-ZUM-KOPIEREN.txt` sind identisch.
-- `05_info/phase1-scenes.json`: genau 1 Scene je finalem Bild, Script-Abdeckung ohne Lücke.
-- `05_info/sentence-visual-plan.json`: 13 Mechanismusabschnitte als Navigationsindex wie 008; echte Sprachbeats separat in phase1-scenes.
+- `.intern/05_info/phase1-scenes.json`: genau 1 Scene je finalem Bild, Script-Abdeckung ohne Lücke.
+- `.intern/05_info/sentence-visual-plan.json`: 13 Mechanismusabschnitte als Navigationsindex wie 008; echte Sprachbeats separat in phase1-scenes.
 - Recherche, Claim-Matrix, Mechanism-Map und Label-Plan mit konkreten wissenschaftlichen Behauptungen.
 - `02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt`: genau die zugehörige Bildanzahl, numerierte Namen nur als interne Produktionsdaten.
 
@@ -56,7 +56,7 @@ Kopiere die technische Detailtiefe aus `008/03_pipeline/ANTIGRAVITY-PROMPT-ZUM-K
 - `overlay-plan.json` disabled / leer.
 
 ## 6. YouTube-Export identisch vollständig
-`04_export/fertiges-video/Object-Talk-XXX-THEMA-YOUTUBE.mp4`, fertige individuelle Copy-Paste-Caption, Beschreibung, Hashtags, komplettes zeitcodiertes Script, externe SRT, Renderbericht, Quality-Scorecard, Postmortem, Upload-Paket. Zeitcodes nur aus echter finaler Timeline. Keine fehlenden Medien als fertig melden.
+`03_export/VIDEO.mp4`, fertige individuelle Copy-Paste-Caption, Beschreibung, Hashtags, komplettes zeitcodiertes Script, externe SRT, Renderbericht, Quality-Scorecard, Postmortem, Upload-Paket. Zeitcodes nur aus echter finaler Timeline. Keine fehlenden Medien als fertig melden.
 
 ## 7. Qualitätsübernahme 008
 - 0 sichtbare interne Bildnummern

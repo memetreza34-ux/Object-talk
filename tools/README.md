@@ -176,7 +176,7 @@ npm run render -- ../youtube-videos/THEMA/04_export/fertiges-video/[VIDEO-ID]-YO
 
 Verbindlich: `engine/EXPORT-STANDARD.md`
 
-Jedes fertige Video besitzt in `04_export/` mindestens:
+Jedes fertige Video besitzt in `03_export/` mindestens:
 - `CAPTION-YOUTUBE.txt` mit Titel + Beschreibung + max. 5 Hashtags
 - `UNTERTITEL-MIT-ZEITEN.txt`
 - `UNTERTITEL-YOUTUBE.srt`

@@ -170,7 +170,7 @@ Remotion darf ausschliesslich:
 - saubere Schnitte und sehr dezente nicht-textliche Uebergaenge erzeugen
 - das finale Video rendern
 
-`03_pipeline/overlay-plan.json` muss fuer neue Projekte deaktiviert bzw. leer bleiben.
+`.intern/03_pipeline/overlay-plan.json` muss fuer neue Projekte deaktiviert bzw. leer bleiben.
 
 Autoritativ fuer die technische Umsetzung:
 `engine/PRESENTATION-OVERLAY-SYSTEM.md`
