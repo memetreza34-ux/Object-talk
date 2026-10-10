@@ -1,0 +1,1 @@
+NOCH NICHT ERSTELLT – das finale Audio ist in diesem GitHub-Projekt nicht zeitlich ausgerichtet. Echte Abschnitte wie 00:00–00:10 mit gesprochenem Text werden automatisch durch `python tools/export_subtitles.py VIDEOORDNER` nach Voiceover-Ausrichtung erzeugt. Die Zeiten dürfen nicht geschätzt werden. Bis dahin kein kopierfertiges Untertitel-Skript behaupten.

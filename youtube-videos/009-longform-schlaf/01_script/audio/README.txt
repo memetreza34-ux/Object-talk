@@ -1,0 +1,1 @@
+HIER DEINE AUDIO-DATEI REINLEGEN (MP3, WAV oder M4A). Nur eine rohe Sprachdatei. Der technische Ablauf erstellt aus ihr das finale Audio und echte, zeitgestempelte Untertitel. Im Skriptordner liegt nur script.txt und dieser Audioordner.
