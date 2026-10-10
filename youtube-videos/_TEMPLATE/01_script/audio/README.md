@@ -1,17 +1,3 @@
-# Audio
+# Audio hier ablegen
 
-Hier kommt die fertige Voiceover-Audiodatei hinein.
-
-Empfohlener Dateiname:
-
-```text
-voiceover.wav
-```
-
-oder
-
-```text
-voiceover.mp3
-```
-
-Die Audiodatei muss exakt auf `../script.txt` basieren. Der Text darf bei der Audioerstellung nicht umgeschrieben, gekürzt oder erweitert werden, weil die Bild-Timing-Pipeline auf diesem exakten Skript basiert.
+Leg deine fertige Sprachdatei als .mp3, .m4a oder .wav hier hinein. Für echte Untertitel mit Zeitstempeln wird sie durch die bestehende Audio-/Timeline-Pipeline ausgerichtet.

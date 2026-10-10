@@ -25,8 +25,8 @@
       "scale_level": "[Lebensmittel|Mensch|Organ|Gewebe|Blut|Zelle|Organell|Molekuel]",
       "new_image_required": true,
       "image_asset_id": "Bild_01",
-      "visual_type": "single-image",
-      "visible_change": "[Was im Bild konkret sichtbar anders oder wichtig ist]",
+      "visual_type": "hook-scene",
+      "visible_change": "[Erste biologische Szene ohne Covertext]",
       "scene_difference": "[Wie sich dieses Bild sichtbar vom vorherigen und naechsten Bild unterscheidet]",
       "labels": [],
       "misconception_to_avoid": "[Was der Zuschauer nicht falsch verstehen darf]"

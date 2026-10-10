@@ -28,20 +28,23 @@
     "remotion_text_fallback_allowed": false,
     "regenerate_if_internal_id_visible": true,
     "split_if_information_overloaded": true,
-    "omit_nonessential_information": true
+    "omit_nonessential_information": true,
+    "cover_is_scene": false,
+    "cover_output": "03_export/COVER.png"
   },
   "images": [
     {
       "image_asset_id": "Bild_01",
-      "mode": "cover-hook",
-      "hook_text": "[Kurzer deutscher Hook zum Thema]",
-      "allowed_visible_text": ["[Kurzer deutscher Hook zum Thema]"],
+      "mode": "scene",
+      "allowed_visible_text": [],
       "labels": []
     },
     {
       "image_asset_id": "Bild_02",
       "mode": "key-labels",
-      "allowed_visible_text": ["[Nur wenn wirklich noetig: kurzer Begriff]"],
+      "allowed_visible_text": [
+        "[Nur wenn wirklich noetig: kurzer Begriff]"
+      ],
       "labels": [
         {
           "text": "[Kurzer Begriff]",

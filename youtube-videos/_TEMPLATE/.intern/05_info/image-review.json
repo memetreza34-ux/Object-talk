@@ -1,6 +1,6 @@
 {
   "status": "TEMPLATE",
-  "minimum_overall_score": 8.0,
+  "minimum_overall_score": 8,
   "hard_fail_on_scientific_error": true,
   "hard_fail_on_visible_production_id": true,
   "hard_fail_on_unplanned_visible_text": true,

@@ -12,17 +12,19 @@
     "cover_extra_labels_forbidden": true,
     "text_contrast_required": true,
     "remotion_text_overlays_allowed": false,
-    "production_ids_visible_in_images": false
+    "production_ids_visible_in_images": false,
+    "cover_is_scene": false,
+    "cover_output": "03_export/COVER.png"
   },
   "scenes": [
     {
       "scene": 1,
       "speech_section": "[Exakter erster gesprochener Abschnitt aus script.txt]",
-      "visual_task": "[Eine klare visuelle Hauptidee fuer den Hook]",
+      "visual_task": "[Erste eigenstaendige Biologie-Szene ohne Cover: einfacher Vorgang passend zum ersten gesprochene Satz]",
       "image": "Bild_01",
       "motion": "slow-push-in",
       "labels_de": [],
-      "notes": "Cover / Hook; exakt ein sichtbarer Textblock = Titel; keine Zusatzlabels; hoher Textkontrast; Bildnummer nur intern"
+      "notes": "Erste NORMALE Videoszene, kein Cover-Titel oder Bildvorlage; ein klarer biologischer Hook"
     },
     {
       "scene": 2,
