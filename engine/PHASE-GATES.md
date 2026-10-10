@@ -158,15 +158,9 @@ Nach dem Finalrender wird `04_export/postmortem.md` gemäß `engine/POSTMORTEM-S
 `WARNUNG` darf weiterlaufen, wenn sie dokumentiert und unkritisch ist.
 `FEHLER` oder `FAIL` stoppt die Pipeline.
 
-## Original-008-Stilprüfung – erst vor finaler Bildfreigabe
-
-Das Erzeugen der **3 Cover ist NIE durch einen Referenz-Upload blockiert**. Flow beginnt sofort mit drei selbstständigen Coverbildern und wartet ausschließlich auf die Nutzerwahl 1/2/3. JPGs aus dem Original 008 können bereits hochgeladen sein, sind aber keine Startvoraussetzung.
-
-- [ ] Drei echte Cover existieren, Nutzer hat explizit 1/2/3 gewählt.
-- [ ] Das gewählte Cover erfüllt den tatsächlichen 008-Illustrationsstil.
-- [ ] Cover wird als zusätzliche Stilreferenz für Innenbilder verwendet, sofern technisch verfügbar.
-- [ ] Finale 009-Bilder werden **vor Freigabe** tatsächlich mit Original-008-Frames verglichen; bei Stilbruch erneut generieren.
-- [ ] Optional: Original-008-Bilder wurden in Google Flow hochgeladen, um höhere Stiltreue zu erreichen. Fehlen sie, ist das kein automatischer Workflow-Fehler; die tatsächliche visuelle 008-Vergleichsprüfung bleibt verpflichtend.
-- [ ] `05_info/style-reference-review.json` belegt Nutzerwahl, Bildprüfung und verwendete Vergleichsgrundlage. Nur dann `python tools/validate_planning_v2.py VIDEOORDNER --phase2` freigeben.
-
-Ein identischer Bildstil kann bei probabilistischer Generierung nicht garantiert werden. Ein Textprompt alleine begründet noch keine positive Bild-QA.
+## Textbasierte Bildwelt-QA vor finaler Bildfreigabe
+- [ ] Drei Cover ohne Bildvorlagen generiert, Nutzer wählt explizit 1/2/3.
+- [ ] Das gewählte Cover wird Bild_01, NICHT als hochzuladende Vorlage für spätere Bilder benutzt.
+- [ ] Alle Folgeszenen werden aus dem gleichen schriftlichen 008-Stil und jeweils einer konkreten biologischen Hauptaktion generiert.
+- [ ] Alle fertigen Bilder visuell kontrolliert: passende organische Zeichnung, weiche Schattierung, klare Erzählperspektive, Wissenschaft, kurze Labels und starker Kontrast.
+- [ ] Stilbrüche oder falsche Bilder neu erzeugt. Danach normale Phase-2-Medienprüfung ohne separate Referenzprüfung durchführen.

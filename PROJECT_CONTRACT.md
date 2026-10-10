@@ -229,14 +229,8 @@ Jeder Flow-Auftrag muss ausdruecklich sagen:
 Cover-Prompt muss zusaetzlich ausdruecklich sagen:
 **Exactly one visible text block: the title only. No labels, no subtitle, no extra text.**
 
-## Referenzsystem
-
-Die in `bildwelt/008-ORIGINAL-VIDEO-STYLE-REFERENCE.md` dokumentierten **echten Originalframes aus dem fertigen 008-Video** sind primäre Bild-Stilbelege, ergänzt durch den verbindlichen geschriebenen Stilblock.
-
-Mindestens zwei tatsächlich in Google Flow als Bilder hochgeladene Original-008-JPGs sind für neue Longforms erforderlich. Die acht Zeitcode-Beispiele und ein Erzeugungsskript stehen in `bildwelt/008-ORIGINAL-VIDEO-STYLE-REFERENCE.md` und `tools/build_008_style_refs.py`. Nur Text zu referenzieren genügt nicht.
-
-Das vom Nutzer aus drei Angeboten ausgewählte und gegen die 008-Frames geprüfte Cover `Bild_01` wird **als zusätzliche sekundäre Bild-Stilreferenz** für Folgebilder verwendet, immer zusammen mit den 008-Originalframes als primären Referenzen. Weder Covertext noch spezifische Coverkomposition in Folgebilder kopieren.
-
+## Bildwelt ohne Vorlagen
+Wie beim erfolgreichen Verdauungs-Longform 008 wird Google Flow **ausschließlich mit einem vollständigen Textprompt** geführt. Keine JPG-/Video-Frames, externe Stilbilder, Referenz-ZIPs oder Coverbilder als Bildvorlage an Flow geben. Die kanonische Beschreibung in `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`, der wortgleiche 008-Stilblock und konkret komponierte Szenen sind verbindlich. Die drei Cover werden per Text erzeugt; die Auswahl bestimmt lediglich `Bild_01`.
 ## Asset-Hygiene
 
 - pro finaler Bildnummer genau ein retained Asset
@@ -286,6 +280,5 @@ Die gesamte Bildproduktion muss die Richtlinien des externen Bildgenerators einh
 `engine/LONGFORM-008-MASTERSTANDARD.md` ist die praktische Referenz fuer Promptgestalt, 77-Szenen-/13-Abschnitte-Planung, denselben Clean Animated Biology Illustration Look, ausfuehrlichen Antigravity-Workflow und vollstaendigen YouTube-Export. Bei neuen Themen wird nur fachlicher Inhalt ersetzt, keine komplett neue Stilrichtung oder Pipeline entworfen. Die Nutzeroberflaeche bleibt vereinfachtes `02_bildprompts/` mit EINER Flow-Promptdatei + `bilder-zip/`.
 
 
-## Reale Stilvorlagen-Pflicht
-
-Objekt-Talk-Longforms werden anhand echter extrahierter Bilder des fertigen 008-Verdauungsvideos erzeugt: Formgebung, Linienführung, Schattierung, Tiefenstaffelung und Kompositionsgrammatik. Promptaufbau bleibt analog zu 008. Fehlende tatsächliche Bildreferenzen sind ein Produktionsblocker für die Zusicherung einer 008-identischen Bildwelt. Sichtprüfung und Neugenerierung bei Stilabweichung sind Pflicht; kein generatives Modell kann pixelgenau gleichbleibende Bilder garantieren.
+## Ausschließlich Textprompts – feste Entscheidung
+Bei 008 wurden keine Bildvorlagen benutzt. Auch 009 und alle folgenden Longforms werden ohne visuelle Referenzbilder generiert. Nicht nach Stil-ZIPs, JPGs oder Uploads fragen. Konsistenz über klare unveränderte Stilbeschreibung, lebendige bildfüllende Biologieszenen und anschließende Sichtprüfung sicherstellen. Das gewählte Cover ist nur das erste Bild und wird nicht als Image-to-Image-Vorlage verwendet. Ein generatives Modell garantiert trotzdem keine pixelidentischen Stile.

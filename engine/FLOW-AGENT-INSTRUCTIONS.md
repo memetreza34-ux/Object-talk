@@ -27,7 +27,7 @@ Every production MUST use the literal style definition from the last accepted lo
 
 Reject No photoreal medical imagery, no medical CGI, no glossy 3D, no feature-animation/Pixar look, no toy/kids-book look, no corporate infographic, no clutter, no gore, no random icons, no unnecessary text.
 
-**USE the user-selected cover as an additional image-to-image style reference after it passes comparison with original 008 video frames. The ACTUAL 008 frames remain the PRIMARY style anchor for all episode images.** Especially for sleep: bright calm educational anatomy illustrations, NOT neon floating glowing brains, dark blue fantasy scenes, anime humans or monochrome dark style. Keep the same illustrated biology world as 008, regardless of topic. Cover selection gates the asset Bild_01 only.
+**No image-to-image references.** Generate cover and later scenes only from the same canonical written style description, never from uploaded JPGs, the 008 video or the selected cover used as an image template.
 
 ## STYLE RULES
 
@@ -207,6 +207,5 @@ Reject final production imagery if:
 - severe AI artifacts are present
 
 
-## FLOW SOFORTSTART – DREI COVER OHNE REFERENZ-UPLOAD
-
-Bei Eingang des einen Produktionsprompts SOFORT drei separate Cover generieren. Keine Nachfrage nach 008-Frames, ZIP oder Upload davor. Liegen Original-008-Frames bereits als echte Bildinputs vor, diese nutzen; sonst den realen 008-Stil-Fingerabdruck aus `bildwelt/008-ORIGINAL-VIDEO-STYLE-REFERENCE.md` als Textgrundlage verwenden und drei Cover erstellen. Nutzer wählt 1/2/3. Gewähltes Cover als sekundäre Stilreferenz für Folgebilder; falls vorhandene echte 008-Frames zusätzlich verwenden. Stiltreue ohne Originalreferenzen NICHT als garantiert darstellen. Die finale Medien-QA muss weiterhin echte Bildvergleiche bestehen.
+## FLOW SOFORTSTART – AUSNAHMSLOS OHNE BILDVORLAGEN
+Google Flow bekommt EINEN vollständigen Textprompt, ohne Referenz-Bilder, ZIPs oder Uploadaufforderungen. Sofort drei separate Cover erzeugen, Nutzer wählt 1/2/3, danach Bild 02–06 einzeln und weitere Fünfergruppen. Das gewählte Cover ist ausschließlich Bild 01 und wird NICHT als Style-Reference weitergereicht. Bildwelt aus dem kanonischen Textblock und den jeweiligen biologischen Szenen konsequent beibehalten. Sichtkontrolle ist Pflicht.

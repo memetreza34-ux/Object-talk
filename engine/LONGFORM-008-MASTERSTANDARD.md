@@ -27,7 +27,7 @@ No photoreal medical imagery, no medical CGI, no glossy 3D, no feature-animation
 - Biologische Vorgänge im Vordergrund: 2–4 erkennbare Elemente, 0–2 Labels, korrekter Schriftkontrast.
 - Kamera wechseln: Alltag → Körperroute → Organ-Cutaway → Gewebe → Zelle → Mechanismus → Ergebnis.
 - Verbot: eigenständiger dunkler Nacht-/Anime-/Neon-Stil nur wegen Schlafthema; glühende Gehirne als Wiederholungsmotiv.
-- Das nach drei Varianten ausgewählte, visuell zu 008 passende Cover wird als **sekundäre Stilreferenz** für die Innenbilder verwendet, **immer zusammen mit den originalen 008-Stilbildern als Hauptreferenz**. Seine Schrift oder Bildkomposition nicht kopieren.
+- Das gewählte Cover wird allein als finales Bild_01 gespeichert. Für Folgebilder wird weder dieses Cover noch ein 008-Standbild als Bildvorlage verwendet. Einheitlich bleibt die ausführliche geschriebene Stilbeschreibung.
 
 ## 3. Identische Struktur des ausführlichen Flow-Prompts
 Ab `youtube-videos/008-longform-verdauung/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt`:
@@ -71,8 +71,5 @@ Kopiere die technische Detailtiefe aus `008/03_pipeline/ANTIGRAVITY-PROMPT-ZUM-K
 77 Bilder sind der **freigegebene konkrete Standard von 008 und 009**, nicht eine starre wissenschaftliche Notwendigkeit für jede denkbare Video-Länge. Nur mit begründeter dramaturgischer Notwendigkeit und erhaltener Bildzeit-Regel davon abweichen. 6–7 Minuten werden erst nach echtem Voice-Timing sicher bestätigt.
 
 
-## 8. Originalframes statt bloßem Stilwortlaut (neue verbindliche Referenz)
-
-Der tatsächliche finale 008-Film wurde bildweise analysiert: großer zusammenhängender Organ-/Zellprozess, sanft mehrschichtige Gewebe-Schattierung, dunklere warme organische Konturen, helle Mint/Türkis/Creme-Texturflächen und warme Korall-Rosa-Organe. Für 009 und künftige Longforms den echten Bilder-Kontaktbogen/acht Frame-Dateien aus `bildwelt/008-ORIGINAL-VIDEO-STYLE-REFERENCE.md` als bevorzugten Stilinput verwenden, falls bereits verfügbar. Die ersten drei Cover werden andernfalls sofort anhand der ausführlichen Textbeschreibung generiert. Der ursprünglich wiederverwendete 008-Prompt enthält **nicht** alle visuellen Besonderheiten des echten finalen Videos und kann alleine keine konstante Bildwelt gewährleisten.
-
-**Auftrag:** Sofort 3 passende Cover generieren – ohne Upload-Nachfrage –, Nutzer wählt, dann ausgewähltes Cover für Fünfer-Batches nutzen. Bereits hochgeladene Originalframes ergänzen diese Stilreferenz optional. Fehlen echte Bilder, nicht „1:1 gleicher Stil“ behaupten. Stilabweichung bedeutet Bild-QA FAIL.
+## 8. Gleiche Bildwelt ohne Vorlagen
+Die bewährte Verdauungs-Produktion 008 hat keine visuellen Vorlagen benötigt. Auch neue Videos werden ausschließlich aus dem einen vollständig geschriebenen Prompt generiert. Gleiche Linienführung und organische Formen, warme Konturen, weiche Tiefenschattierung, ruhige Türkis-/Mint-/Creme-Hintergründe und bildfüllende zusammenhängende Prozesse sind positiv und konkret zu beschreiben. Cover-Auswahl → Bild_01; danach ohne Bildreferenzen die Fünfergruppen. Keine Uploadfragen. Ergebnisse prüfen und Stilfehler neu erzeugen.

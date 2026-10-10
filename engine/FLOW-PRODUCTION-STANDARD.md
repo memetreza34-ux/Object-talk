@@ -22,7 +22,7 @@ Originale Ausschlussregel:
 
 `No photoreal medical imagery, no medical CGI, no glossy 3D, no feature-animation/Pixar look, no toy/kids-book look, no corporate infographic, no clutter, no gore, no random icons, no unnecessary text.`
 
-Jedes Folgebild soll im selben hellen, sanft schattierten biomedizinischen Zeichenstil bleiben. Die Originalframes des freigegebenen Videos 008 sind zwingend der primäre Stilanker; ein ausgewähltes, 008-konformes Cover ist die sekundäre Stilreferenz. Bei Themen mit Nacht/Traum kein dunkles Comic-/Neon-Look-and-Feel zulassen. **Wenn die Themenästhetik den Illustrationsstil überschreibt: Image QA FAIL.**
+Jedes Folgebild soll im selben hellen, sanft schattierten biomedizinischen Zeichenstil bleiben. Der 008-Stil wird ausschließlich durch den ausführlichen unveränderten Textblock und konkrete Biologie-Szenen übertragen. Keine alten JPGs und kein Cover als Referenzbilder. Bei Themen mit Nacht/Traum kein dunkles Comic-/Neon-Look-and-Feel zulassen. **Wenn die Themenästhetik den Illustrationsstil überschreibt: Image QA FAIL.**
 
 ## 2. Prompt-Schema
 
@@ -119,12 +119,8 @@ Schwacher Kontrast = regenerieren.
 - fehlgeschlagenes Bild ersetzen, nicht Varianten sammeln
 - Produktionsnummern nur als Dateinamen/Metadaten nutzen, niemals sichtbar rendern
 
-## 9. Referenz
-
-Der konkrete originale Video-008-Look ist die oberste Stilautorität – nicht nur ein generischer Stilname. Nach Möglichkeit echte Bilder aus `assets/channel/references/video008/` in Google Flow als visuelle Referenzen übergeben (siehe `bildwelt/008-ORIGINAL-VIDEO-STYLE-REFERENCE.md`). Das gewählte Cover muss bereits den 008-Stil erfüllen und wird dann als **sekundäre Referenz zusammen mit den Originalframes** für Bild 02+ verwendet. Cover-Titel/Komposition nicht 1:1 kopieren.
-
-Fehlen die echten 008-Bilder im Flow-Auftrag, die drei Cover TROTZDEM sofort erzeugen, aber eine visuelle 1:1-Übernahme nicht behaupten.
-
+## 9. Textbasierte Stilkonstanz ohne Vorlagen
+Google Flow generiert genauso wie beim bewährten Video 008 **ohne Bildvorlage**. Ein einziger Textprompt definiert Kontur, Form, Schatten, Farbkontrast, Bildtiefe, Kamerasprache, Beschriftung und jede biologische Hauptaktion. Keine hochgeladenen Referenzbilder, Original-008-Frames, Stil-ZIPs oder ausgewählte Cover als Image-to-Image-Vorlage. Jede fertige Szene visuell kontrollieren und abweichende Bilder erneut generieren.
 ## 10. Hard Fails
 
 Regenerieren bei:
@@ -155,6 +151,5 @@ Ein akzeptiertes Bild soll wirken wie ein sauberer Frame aus derselben animierte
 **Cover nur Titel. Ein Bild = eine Hauptidee. So wenig Text wie moeglich.**
 
 
-## Reproduzierbare Referenzbilder
-
-Acht **echte Frames aus dem finalen 008-Verdauungsvideo**: Zeitpunkte 00:18, 01:24, 01:48, 03:24, 03:48, 04:12, 04:24, 05:36. Die vollständige Stil-Fingerabdruck-Analyse steht in `bildwelt/008-ORIGINAL-VIDEO-STYLE-REFERENCE.md`. Nur den Textblock zu kopieren war nicht ausreichend: 009 driftete zu freigestellten Schulbuch-Neuronen, dunklen Schlafpostern und leuchtenden Gehirnen. Künftig Referenz-Upload + Cover-Zusatzreferenz + Einzelbildprüfung.
+## Textbasierte Reproduzierbarkeit
+Die erfolgreiche Verdauungsproduktion arbeitete ohne Bildvorlagen. Die Serienkonsistenz wird künftig über denselben ausführlichen 008-Styleblock und konkretisierte Szenenbeschreibungen hergestellt, nie durch Uploads. Mehr Abwechslung: große verbundene Organe, Gewebe-Querschnitte, Zellumgebung, Kapillaren und Prozesse statt leerer Einzelobjekt-Tafeln. Generative Ausgaben sind nicht pixelgenau deterministisch.

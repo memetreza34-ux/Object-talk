@@ -12,12 +12,8 @@ Im jeweiligen Videoordner `02_bildprompts/` stehen:
 ```
 Die README liegt **innerhalb** des ZIP-Ordners, nicht daneben. Dort genau **eine fertige Bilder-ZIP** ablegen. Der Ordner wird von `tools/prepare_phase3.py` direkt gelesen. Entpackte Bilder gehören intern unter `03_pipeline/images/`. Interne Label-/QA-Daten liegen in `05_info/label-plan.json` und `05_info/image-review.json`, nie sichtbar neben dem Nutzerprompt. Alte Projekte dürfen historische Pfade behalten.
 
-## Keine Referenz-Upload-Sperre vor den drei Covern
-
-Die **erste Aktion nach Einfügen des einen Google-Flow-Prompts** ist stets die Generierung von DREI separaten Covervarianten. Google Flow darf vorher NICHT nach der Referenz-ZIP, JPGs oder weiterer Zustimmung fragen. Echte Original-008-Bilder, falls schon im Flow-Chat vorhanden, als Stilreferenz nutzen; ansonsten die im Prompt dokumentierte organische 008-Bildwelt als Best-Effort nutzen und die Cover trotzdem sofort erstellen.
-
-Ohne echte 008-Frames keine behauptete 1:1-Stilgarantie. Bereits erzeugte Cover vor Auswahl visuell prüfen; nach Auswahl kann das Cover als Zusatzreferenz dienen. Echte 008-JPGs **optional** für die spätere Verbesserung der Bildkonsistenz hochladen, insbesondere bei wiederholter Stilabweichung. Die Qualität wird vor dem finalen Video durch tatsächliche Bildprüfung freigegeben, nicht durch das Vorhandensein von Dateien allein.
-
+## Keine Bildvorlagen – kompletter Ablauf nur mit Text
+Wie beim Video 008 werden **keine Bildvorlagen** verwendet: keine 008-Frames, keine Stilbilder, keine ZIP-Uploads, kein ausgewähltes Cover als Referenzbild. Flow startet aus dem einen schriftlichen Prompt unmittelbar mit drei eigenständigen Covern. Nach Auswahl ist das gewählte Cover nur `Bild_01`; die anderen 76 Bilder entstehen aus derselben verbindlichen Text-Bildwelt in Fünfergruppen.
 ## Ein Prompt steuert drei Phasen
 Der Prompt ist **eine einzige vollständig ausgefüllte Textdatei** mit den 3 konkreten Cover-Varianten und dem gesamten, konkreten Szenenregister von Bild 02 bis Bild NN. Keine 17 separaten Textprompts oder Batchdateien.
 
