@@ -21,6 +21,7 @@ import argparse
 import json
 import re
 from pathlib import Path
+from urllib.parse import quote
 
 IMAGE_ID_RE = re.compile(r"^Bild_\d{2,}$")
 PLACEHOLDER_RE = re.compile(r"\[[^\]]+\]|\b(?:TODO|TBD|PENDING)\b", re.IGNORECASE)
@@ -517,6 +518,32 @@ def validate_phase2(project: Path, expected_ids: set[str]) -> None:
     print("  Remotion-Text bleibt deaktiviert")
 
 
+
+def print_phase1_tablet_links(project: Path) -> None:
+    """Print the two clickable copy links after *validated* Phase 1, not a generic repo link.
+
+    This helper is private to technical tools; it does not add user-facing files.
+    """
+    repository_root = Path(__file__).resolve().parents[1]
+    try:
+        relative_project = project.resolve().relative_to(repository_root).as_posix()
+    except ValueError:
+        print("PHASE-1-HANDOFF: Projekt ausserhalb dieses Repositories; keine GitHub-Links geraten.")
+        return
+    script = project / "01_script" / "script.txt"
+    flow_prompt = project / "02_bildprompts" / "GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt"
+    if not script.is_file() or not flow_prompt.is_file():
+        print("PHASE-1-HANDOFF: Skript oder Flow-Datei fehlt. Keine Direktlinks ausgeben.")
+        return
+
+    prefix = "https://github.com/memetreza34-ux/Object-talk/blob/main/"
+    script_url = prefix + quote(relative_project + "/01_script/script.txt", safe="/")
+    flow_url = prefix + quote(relative_project + "/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt", safe="/")
+    print("\\nPHASE-1-HANDOFF (in Chat-Antwort IMMER beide anklickbaren Links ausgeben):")
+    print(f"[Google-Flow-Prompt öffnen]({flow_url})")
+    print(f"[Voice-over-Skript öffnen]({script_url})")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("project", help="Pfad zum Video-Projekt")
@@ -528,6 +555,7 @@ def main() -> None:
         fail(f"Projektordner nicht gefunden: {project}")
 
     expected = validate_phase1(project)
+    print_phase1_tablet_links(project)
     if args.phase2:
         validate_phase2(project, expected)
 

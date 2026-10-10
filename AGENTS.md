@@ -125,7 +125,19 @@ Muss:
 
 Autoritativ: `engine/FLOW-COVER-FIRST-WORKFLOW.md`.
 
-**GENAU EINE vollständige Flow-Promptdatei im sichtbaren Ordner, plus EIN ZIP-Ablageordner.** Derselbe Prompt enthält drei Cover und das vollständige Szenenregister. Flow erzeugt erst drei Cover, zeigt sie und wartet auf Nutzerwahl 1/2/3; erst danach Bilder 02+ intern in Fünfergruppen, ohne weitere Promptdateien oder generische Rückfragen. Alle geplanten Szenen dürfen im Prompt beschrieben stehen, werden aber NIE in einem einzigen Bildgenerierungs-Batch angefordert. Dateinummern nur Metadaten. Finale Bilder-ZIP unter `02_bildprompts/bilder-zip`, interne QA in `05_info`, entpackte Bilder in `03_pipeline/images`.
+**GENAU EINE vollständige Flow-Promptdatei im sichtbaren Ordner, plus EIN ZIP-Ablageordner.** Derselbe Prompt enthält drei Cover und das vollständige Szenenregister. Flow erzeugt erst drei Cover, zeigt sie und wartet auf Nutzerwahl 1/2/3; erst danach Bilder 01+ intern in Fünfergruppen, ohne weitere Promptdateien oder generische Rückfragen. Alle geplanten Szenen dürfen im Prompt beschrieben stehen, werden aber NIE in einem einzigen Bildgenerierungs-Batch angefordert. Dateinummern nur Metadaten. Finale Bilder-ZIP unter `02_bildprompts/bilder-zip`, interne QA in `.intern/05_info`, entpackte Bilder in `.intern/03_pipeline/images`.
+
+
+## Phase-1-Handoff – ZWEI DIREKTLINKS ANTWORTEN (verbindlich)
+
+**Sobald Phase 1 eines Videos nach tatsächlicher Erstellung und Prüfung erfolgreich abgeschlossen ist, MUSS die Antwort von ChatGPT oder einem anderen Chat-Agenten sofort diese zwei ANKLICKBAREN Links zum AKTUELLEN Video enthalten** (wie die zwei Aktionslinks im Beispiel des Nutzers):
+
+- **Google-Flow-Prompt öffnen** → `https://github.com/memetreza34-ux/Object-talk/blob/main/youtube-videos/<VIDEOORDNER>/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt`
+- **Voice-over-Skript öffnen** → `https://github.com/memetreza34-ux/Object-talk/blob/main/youtube-videos/<VIDEOORDNER>/01_script/script.txt`
+
+`<VIDEOORDNER>` zwingend durch den tatsächlich gerade erstellten Videoordner ersetzen; echte Pfade/Dateiinhalte vor dem Link überprüfen. Niemals die Template-Platzhalter oder Links eines älteren Videos ausgeben. Links als Markdown-Klicklinks oder als zwei bedienbare Öffnen-Schaltflächen in der Chat-Antwort präsentieren, **nicht nur Dateipfade, einen allgemeinen Repository-Link oder eine Erklärung**. Beide Dateien öffnen die komplette Datei in GitHub und sind auch im mobilen Browser/Tablet zugänglich (bei privaten Repos mit GitHub-Anmeldung). Nutzer kann Text von dort 1:1 in Google Flow bzw. seine Voice-KI kopieren. Ein GitHub-Dateilink öffnet **nicht automatisch** Google Flow selbst; nichts anderes behaupten.
+
+Die Übergabe darf KEINE zusätzliche Bestätigung abfragen und soll direkt nach dem Phase-1-Abschluss erfolgen. Keine weiteren sichtbaren Dateien im Videoordner erzeugen; `01_script/script.txt` und der eine Flow-TXT reichen. Wenn eine der Dateien fehlt, unvollständig oder ein Template ist, Phase 1 NICHT als fertig behaupten und keine falschen Links ausgeben. Nach erfolgreichem `python tools/validate_planning_v2.py youtube-videos/<VIDEOORDNER>` druckt der Validator exakt diese zwei Links als Handoff-Vorlage.
 
 ## Phase 2 – Google Flow
 

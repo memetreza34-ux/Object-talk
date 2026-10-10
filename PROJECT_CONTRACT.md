@@ -241,12 +241,24 @@ Wie beim erfolgreichen Verdauungs-Longform 008 wird Google Flow **ausschließlic
 
 ## Cover-Auswahl und Bildbatches – HARD RULE
 
-Alle neuen normalen Videos starten die Flow-Medienphase nach `engine/FLOW-COVER-FIRST-WORKFLOW.md`: **erst 3 unterschiedliche Cover einzeln erzeugen und anzeigen → genau 1 Nutzerwahl abwarten → erst dann Bilder 02+ in Gruppen von maximal 5**. Der nach der Auswahl sofort folgende erste Fünferbatch benötigt keine zweite Start-Erlaubnis. Ein vollständiger einzelner Flow-Prompt darf alle 85 Szenen enthalten; Flow erzeugt trotzdem immer nur kleine Fünfergruppen, niemals alles in einem Bildgenerierungs-Aufruf. Der sichtbare Ordner enthält nur `GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt` und `bilder-zip/`. Interne QA liegt in `05_info`, entpackte Bilder in `03_pipeline`. Image-IDs bleiben unsichtbare Metadaten, das finale Bildset enthält nur das gewählte Cover.
+Alle neuen normalen Videos starten die Flow-Medienphase nach `engine/FLOW-COVER-FIRST-WORKFLOW.md`: **erst 3 unterschiedliche Cover einzeln erzeugen und anzeigen → genau 1 Nutzerwahl abwarten → erst dann Bilder 01+ in Gruppen von maximal 5**. Der nach der Auswahl sofort folgende erste Fünferbatch benötigt keine zweite Start-Erlaubnis. Ein vollständiger einzelner Flow-Prompt darf alle 85 Szenen enthalten; Flow erzeugt trotzdem immer nur kleine Fünfergruppen, niemals alles in einem Bildgenerierungs-Aufruf. Der sichtbare Ordner enthält nur `GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt` und `bilder-zip/`. Interne QA liegt in `.intern/05_info`, entpackte Szenenbilder in `.intern/03_pipeline`. Image-IDs bleiben unsichtbare Metadaten; das gewählte Cover liegt separat in `03_export/COVER.png` und NICHT in der Videotimeline.
 
 ## Drei Phasen
 
 ### Phase 1 – Creative Director
 Recherche → Claim-Check → Script → Mechanism Map → Satz-Visual-Plan → Szenenplan → Informationsbudget pruefen → Label-Plan → kurze Flow-Prompts.
+
+
+## Phase-1-Handoff – ZWEI DIREKTLINKS ANTWORTEN (verbindlich)
+
+**Sobald Phase 1 eines Videos nach tatsächlicher Erstellung und Prüfung erfolgreich abgeschlossen ist, MUSS die Antwort von ChatGPT oder einem anderen Chat-Agenten sofort diese zwei ANKLICKBAREN Links zum AKTUELLEN Video enthalten** (wie die zwei Aktionslinks im Beispiel des Nutzers):
+
+- **Google-Flow-Prompt öffnen** → `https://github.com/memetreza34-ux/Object-talk/blob/main/youtube-videos/<VIDEOORDNER>/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt`
+- **Voice-over-Skript öffnen** → `https://github.com/memetreza34-ux/Object-talk/blob/main/youtube-videos/<VIDEOORDNER>/01_script/script.txt`
+
+`<VIDEOORDNER>` zwingend durch den tatsächlich gerade erstellten Videoordner ersetzen; echte Pfade/Dateiinhalte vor dem Link überprüfen. Niemals die Template-Platzhalter oder Links eines älteren Videos ausgeben. Links als Markdown-Klicklinks oder als zwei bedienbare Öffnen-Schaltflächen in der Chat-Antwort präsentieren, **nicht nur Dateipfade, einen allgemeinen Repository-Link oder eine Erklärung**. Beide Dateien öffnen die komplette Datei in GitHub und sind auch im mobilen Browser/Tablet zugänglich (bei privaten Repos mit GitHub-Anmeldung). Nutzer kann Text von dort 1:1 in Google Flow bzw. seine Voice-KI kopieren. Ein GitHub-Dateilink öffnet **nicht automatisch** Google Flow selbst; nichts anderes behaupten.
+
+Die Übergabe darf KEINE zusätzliche Bestätigung abfragen und soll direkt nach dem Phase-1-Abschluss erfolgen. Keine weiteren sichtbaren Dateien im Videoordner erzeugen; `01_script/script.txt` und der eine Flow-TXT reichen. Wenn eine der Dateien fehlt, unvollständig oder ein Template ist, Phase 1 NICHT als fertig behaupten und keine falschen Links ausgeben. Nach erfolgreichem `python tools/validate_planning_v2.py youtube-videos/<VIDEOORDNER>` druckt der Validator exakt diese zwei Links als Handoff-Vorlage.
 
 ### Phase 2 – Google Flow
 Bild fuer Bild erzeugen → Cover auf Titel-only pruefen → Labels und Textkontrast pruefen → Informationsdichte pruefen → sicherstellen, dass keine internen IDs/Nummern sichtbar sind → wissenschaftliche/visuelle QA → finale eindeutige Assets.
