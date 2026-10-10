@@ -108,7 +108,7 @@
       "index": 1,
       "chapter": "Hook/Einleitung",
       "voice": "Was macht dein Körper eigentlich, während du schläfst?",
-      "visual": "Original-008-like cover composition: a resting adult face and pillow dominate the RIGHT foreground; soft skin-colored organic anatomy and a connected subtle head/brain cutaway; faint sleeping-body silhouette deeper to the LEFT; cream-turquoise quiet space for bold title at lower LEFT, not a neon brain icon.",
+      "visual": "A calm adult resting naturally in bed in a bright, softly shaded bedroom; alongside their upper body, a simple connected heart-and-brain biological detail shows that the body stays active during sleep. Full-frame recognizable illustrated scene; NO title or other writing.",
       "labels": [],
       "claims": [
         "C1"
@@ -129,7 +129,10 @@
       "chapter": "Hook/Einleitung",
       "voice": "Von außen wirkt alles still. Innen laufen gleichzeitig erstaunlich viele Prozesse weiter.",
       "visual": "Large upper-body biological cutaway: the brain, heart and vessels form connected structures inside a body silhouette with soft tissue layers, not two freestanding symbols.",
-      "labels": [],
+      "labels": [
+        "Gehirn",
+        "Herz"
+      ],
       "claims": [
         "C1"
       ]
@@ -139,7 +142,9 @@
       "chapter": "Hook/Einleitung",
       "voice": "Dein Gehirn bleibt aktiv, Erinnerungen verändern sich und dein Körper stellt sich auf Erholung ein.",
       "visual": "Macro inside layered coral-blue brain tissue: substantial branching neurons pass one signal along a continuous nerve pathway that extends past both frame edges.",
-      "labels": [],
+      "labels": [
+        "Nervenzelle"
+      ],
       "claims": [
         "C5"
       ]
@@ -179,7 +184,9 @@
       "chapter": "Schlafdruck/Adenosin",
       "voice": "Während du wach bist, sammelt sich nach und nach sogenannter Schlafdruck an.",
       "visual": "One large neuron branching through a pale tissue environment as small Adenosin particles gather at a nearby receptor contact; depth and organic context like 008.",
-      "labels": [],
+      "labels": [
+        "Adenosin"
+      ],
       "claims": [
         "C2"
       ]
@@ -211,7 +218,9 @@
       "chapter": "Innere Uhr/Melatonin",
       "voice": "Gleichzeitig arbeitet deine innere Uhr. Sie orientiert sich besonders am Wechsel von Licht und Dunkelheit.",
       "visual": "Eye receiving simple morning daylight, a clean single signal route toward a recognizable brain region",
-      "labels": [],
+      "labels": [
+        "Netzhaut"
+      ],
       "claims": [
         "C2"
       ]
@@ -253,7 +262,9 @@
       "chapter": "Innere Uhr/Melatonin",
       "voice": "Schlafdruck und innere Uhr müssen zusammenpassen. Darum ist Müdigkeit nicht immer dasselbe wie Schlafbereitschaft.",
       "visual": "Biological head-and-brain section receiving a few timing signals, focus on a single intersection deep in brain tissue; not detached arrows or computer dashboard.",
-      "labels": [],
+      "labels": [
+        "Schlafdruck"
+      ],
       "claims": [
         "C2"
       ]
@@ -283,7 +294,9 @@
       "chapter": "Einschlafen",
       "voice": "Danach wird der Schlaf stabiler. In der zweiten Stufe verändern sich die elektrischen Muster im Gehirn.",
       "visual": "Large anatomical brain-cortex fold filled with pale tissue, a few distinct slow activity pathways weave through soft blue coral membranes.",
-      "labels": [],
+      "labels": [
+        "Nervenzelle"
+      ],
       "claims": [
         "C3"
       ]
@@ -303,7 +316,9 @@
       "chapter": "Schlafmessung/NREM",
       "voice": "Von außen erkennst du solche Gehirnmuster nicht. Forschende messen sie mit Elektroden am Kopf.",
       "visual": "Sleep-lab close view with a few EEG sensors on an adult's head; external measurement, clean white-and-mint scene",
-      "labels": [],
+      "labels": [
+        "EEG"
+      ],
       "claims": [
         "C3"
       ]
@@ -313,7 +328,9 @@
       "chapter": "Schlafmessung/NREM",
       "voice": "Die Körpertemperatur sinkt etwas, und der Herzschlag wird im Durchschnitt langsamer.",
       "visual": "Illustrated heart with slower calmer activity and a subtle cool-vs-warm color change, not a clinical monitor",
-      "labels": [],
+      "labels": [
+        "Herz"
+      ],
       "claims": [
         "C4"
       ]
@@ -323,7 +340,9 @@
       "chapter": "Schlafmessung/NREM",
       "voice": "Auch deine Atmung wird in vielen Abschnitten ruhiger. Doch Schlaf bleibt kein starrer Zustand.",
       "visual": "Large rounded lungs with surrounding ribs, capillary vessels and gently shaded chest context, one clear breathing event rather than detached lung icon.",
-      "labels": [],
+      "labels": [
+        "Lunge"
+      ],
       "claims": [
         "C4"
       ]
@@ -345,7 +364,9 @@
       "chapter": "Tiefschlaf",
       "voice": "Im Tiefschlaf zeigen viele Nervenzellen besonders langsame, aufeinander abgestimmte Aktivitätswellen.",
       "visual": "Three connected neuron branches embedded in tissue show synchronized signals, large organic shapes and one clear directional process.",
-      "labels": [],
+      "labels": [
+        "Nervenzelle"
+      ],
       "claims": [
         "C3"
       ]
@@ -375,7 +396,9 @@
       "chapter": "Tiefschlaf",
       "voice": "Dein Herz steht dabei nie still. Es schlägt weiter und versorgt deine Organe.",
       "visual": "One red blood cell travelling through an intact vessel toward healthy tissue, demonstrating continuous oxygen delivery",
-      "labels": [],
+      "labels": [
+        "Blutkörperchen"
+      ],
       "claims": [
         "C4"
       ]
@@ -385,7 +408,9 @@
       "chapter": "Tiefschlaf",
       "voice": "Auch Zellen brauchen ständig Sauerstoff und Energie, selbst wenn du tief schläfst.",
       "visual": "Macro tissue cell receiving a few oxygen particles from adjacent capillary, a clear biological transport process",
-      "labels": [],
+      "labels": [
+        "Sauerstoff"
+      ],
       "claims": [
         "C4"
       ]
@@ -395,7 +420,9 @@
       "chapter": "Hormone/Gewebe",
       "voice": "Im Schlaf verändert sich außerdem die Freisetzung verschiedener Hormone über die Nacht.",
       "visual": "Simplified endocrine gland releasing a small set of hormone messengers into one recognizable blood vessel",
-      "labels": [],
+      "labels": [
+        "Hormon"
+      ],
       "claims": [
         "C4"
       ]
@@ -417,7 +444,9 @@
       "chapter": "Hormone/Gewebe",
       "voice": "Das bedeutet nicht, dass Muskeln in einer Nacht plötzlich sichtbar größer werden.",
       "visual": "Close-up of several normal red muscle fibers with routine protein renewal inside one fiber, unchanged overall size",
-      "labels": [],
+      "labels": [
+        "Muskelfaser"
+      ],
       "claims": [
         "C4"
       ]
@@ -447,7 +476,9 @@
       "chapter": "Hormone/Gewebe",
       "voice": "Besonders viel Tiefschlaf liegt bei vielen Erwachsenen eher am Anfang der Nacht.",
       "visual": "Pale coral brain tissue layered cutaway with broad slow activity between connected neurons, only a subtle early-night lighting accent.",
-      "labels": [],
+      "labels": [
+        "Tiefschlaf"
+      ],
       "claims": [
         "C3"
       ]
@@ -531,7 +562,9 @@
       "chapter": "Gedächtnis",
       "voice": "Wer zu wenig schläft, hat am nächsten Tag häufig mehr Probleme mit Konzentration und Aufmerksamkeit.",
       "visual": "Realistic-in-illustration adult at morning desk with an unfocused gaze beside a simple faded brain signal inset",
-      "labels": [],
+      "labels": [
+        "Konzentration"
+      ],
       "claims": [
         "C5"
       ]
@@ -561,7 +594,9 @@
       "chapter": "Immunsystem",
       "voice": "Das Immunsystem arbeitet auch nachts. Seine Zellen tauschen dazu ständig Signale mit anderen Zellen aus.",
       "visual": "One white blood cell interacting with a nearby tissue cell and exchanging small messenger particles",
-      "labels": [],
+      "labels": [
+        "Immunzelle"
+      ],
       "claims": [
         "C6"
       ]
@@ -571,7 +606,9 @@
       "chapter": "Immunsystem",
       "voice": "Schlaf und innere Uhr beeinflussen, wann bestimmte Teile dieser Abwehr besonders aktiv sind.",
       "visual": "A white blood cell circulates through a blood vessel while a few signaling particles change position around it",
-      "labels": [],
+      "labels": [
+        "Blutgefäß"
+      ],
       "claims": [
         "C6"
       ]
@@ -581,7 +618,9 @@
       "chapter": "Immunsystem",
       "voice": "Das ist ein Zusammenspiel vieler Prozesse, nicht eine einzelne geheimnisvolle Reparaturtaste.",
       "visual": "Two immune cells communicate at close range, no shields, soldier imagery, icons or extra labels",
-      "labels": [],
+      "labels": [
+        "Immunzelle"
+      ],
       "claims": [
         "C6"
       ]
@@ -641,7 +680,9 @@
       "chapter": "REM/Muskelhemmung",
       "voice": "Und dann gibt es eine Schlafphase, die fast wie das Gegenteil von Tiefschlaf wirkt.",
       "visual": "Connected brain-cortex tissue with slow wave changing into varied REM neural activity along real curved nerve structures, no neon EEG poster.",
-      "labels": [],
+      "labels": [
+        "REM-Schlaf"
+      ],
       "claims": [
         "C7"
       ]
@@ -693,7 +734,9 @@
       "chapter": "REM/Muskelhemmung",
       "voice": "Im REM-Schlaf wird deine Skelettmuskulatur vorübergehend stark gehemmt, damit du Traumbewegungen normalerweise nicht ausführst.",
       "visual": "Brainstem signal travels toward a simplified arm muscle fiber group, visibly reducing skeletal-muscle activity",
-      "labels": [],
+      "labels": [
+        "Gehirnstamm"
+      ],
       "claims": [
         "C7"
       ]
@@ -703,7 +746,10 @@
       "chapter": "REM/Muskelhemmung",
       "voice": "Atmung und Herzschlag können jetzt unregelmäßiger sein als im ruhigen Tiefschlaf.",
       "visual": "One healthy heart and lung side-by-side connected by subtle physiological flow, slight rhythm variability, simple process",
-      "labels": [],
+      "labels": [
+        "Herz",
+        "Lunge"
+      ],
       "claims": [
         "C7"
       ]
@@ -753,7 +799,9 @@
       "chapter": "Träume",
       "voice": "Sicher ist: Das schlafende Gehirn bleibt auch in dieser Phase alles andere als abgeschaltet.",
       "visual": "Anatomical brain tissue close-up, many natural connected neural pathways with muted highlighted REM activity; no lone glowing brain on blank background.",
-      "labels": [],
+      "labels": [
+        "REM-Schlaf"
+      ],
       "claims": [
         "C7"
       ]
@@ -793,7 +841,9 @@
       "chapter": "Schlafzyklen/Erholung",
       "voice": "Gegen Morgen werden die REM-Abschnitte häufig länger. Deshalb wirken Träume dann manchmal besonders präsent.",
       "visual": "A more active REM-like neuron pattern near morning, warm soft daylight accent and recognizable tissue",
-      "labels": [],
+      "labels": [
+        "REM-Schlaf"
+      ],
       "claims": [
         "C3"
       ]
@@ -853,7 +903,10 @@
       "chapter": "Schluss",
       "voice": "Jetzt wird die Ausgangsfrage klar: Schlaf ist weder Stillstand noch ein einziger Reparaturmodus.",
       "visual": "Whole upper torso cutaway with heart, circulation vessels and brain appearing in their actual connected body positions; softly rounded biological volumes.",
-      "labels": [],
+      "labels": [
+        "Gehirn",
+        "Herz"
+      ],
       "claims": [
         "C1"
       ]
@@ -863,7 +916,9 @@
       "chapter": "Schluss",
       "voice": "Dein Gehirn wechselt Zustände, dein Körper reguliert sich, und Erinnerungen werden weiterverarbeitet.",
       "visual": "Connected visual zoom from a brain nerve bundle through tissue and capillary route to body cells: one plausible path across scales.",
-      "labels": [],
+      "labels": [
+        "Nervenzelle"
+      ],
       "claims": [
         "C5"
       ]
@@ -888,5 +943,7 @@
         "C8"
       ]
     }
-  ]
+  ],
+  "cover_is_scene": false,
+  "cover_output": "03_export/COVER.png"
 }

@@ -8,7 +8,7 @@
     "style_continuity_minimum": 8,
     "complexity_control_minimum": 8,
     "labels_correct_required": true,
-    "cover_title_only_required": true,
+    "cover_title_only_required": false,
     "text_contrast_required": true,
     "information_density_required": true,
     "max_labels_per_normal_image": 2,
@@ -16,7 +16,8 @@
     "no_visible_asset_id_required": true,
     "no_visible_scene_number_required": true,
     "no_visible_filename_or_prompt_heading_required": true,
-    "single_retained_asset_per_scene": true
+    "single_retained_asset_per_scene": true,
+    "cover_separate_from_video": true
   },
   "images": []
 }

@@ -7,17 +7,20 @@
   "final_accepted_assets": 0,
   "expected_final_assets": 77,
   "first_scene_batch": [
+    1,
     2,
     3,
     4,
-    5,
-    6
+    5
   ],
   "future_batches": "Nach Cover-Auswahl jeweils fünf einzelne Bilder, letztes Bild 77",
   "note": "Flow media generation is external. These statuses must be updated only from actual accepted assets/user cover selection.",
   "remaining_images": 76,
   "final_images_range": "Bild_01–Bild_77",
   "sequence": "Bild_02–Bild_06, danach jeweils bis zu fünf weitere; letzte Gruppe 77",
-  "notes": "Video 009 now follows exact 008 longform storyboard/visual system. Covers and images not yet regenerated or reviewed.",
-  "expected_final_images": 77
+  "notes": "3 cover variants outside 77 images. User picks 1 separate COVER.png. Then 77 normal numbered scenes, beginning Bild_01..Bild_05. Actual media not yet verified.",
+  "expected_final_images": 77,
+  "cover_is_video_scene": false,
+  "cover_output": "03_export/COVER.png",
+  "final_scene_range": "Bild_01..Bild_77"
 }

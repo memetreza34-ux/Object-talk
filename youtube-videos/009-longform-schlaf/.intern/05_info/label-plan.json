@@ -20,15 +20,15 @@
     "regenerate_if_label_wrong": true,
     "production_file_names_are_metadata_only": true,
     "split_if_information_overloaded": true,
-    "omit_nonessential_information": true
+    "omit_nonessential_information": true,
+    "cover_is_scene": false,
+    "cover_separate_output": "03_export/COVER.png"
   },
   "images": [
     {
       "image_asset_id": "Bild_01",
-      "mode": "cover",
-      "allowed_visible_text": [
-        "Was macht dein Körper nachts?"
-      ],
+      "mode": "scene",
+      "allowed_visible_text": [],
       "labels": []
     },
     {
@@ -38,13 +38,23 @@
     },
     {
       "image_asset_id": "Bild_03",
-      "allowed_visible_text": [],
-      "labels": []
+      "allowed_visible_text": [
+        "Gehirn",
+        "Herz"
+      ],
+      "labels": [
+        "Gehirn",
+        "Herz"
+      ]
     },
     {
       "image_asset_id": "Bild_04",
-      "allowed_visible_text": [],
-      "labels": []
+      "allowed_visible_text": [
+        "Nervenzelle"
+      ],
+      "labels": [
+        "Nervenzelle"
+      ]
     },
     {
       "image_asset_id": "Bild_05",
@@ -63,8 +73,12 @@
     },
     {
       "image_asset_id": "Bild_08",
-      "allowed_visible_text": [],
-      "labels": []
+      "allowed_visible_text": [
+        "Adenosin"
+      ],
+      "labels": [
+        "Adenosin"
+      ]
     },
     {
       "image_asset_id": "Bild_09",
@@ -82,8 +96,12 @@
     },
     {
       "image_asset_id": "Bild_11",
-      "allowed_visible_text": [],
-      "labels": []
+      "allowed_visible_text": [
+        "Netzhaut"
+      ],
+      "labels": [
+        "Netzhaut"
+      ]
     },
     {
       "image_asset_id": "Bild_12",
@@ -106,8 +124,12 @@
     },
     {
       "image_asset_id": "Bild_15",
-      "allowed_visible_text": [],
-      "labels": []
+      "allowed_visible_text": [
+        "Schlafdruck"
+      ],
+      "labels": [
+        "Schlafdruck"
+      ]
     },
     {
       "image_asset_id": "Bild_16",
@@ -121,8 +143,12 @@
     },
     {
       "image_asset_id": "Bild_18",
-      "allowed_visible_text": [],
-      "labels": []
+      "allowed_visible_text": [
+        "Nervenzelle"
+      ],
+      "labels": [
+        "Nervenzelle"
+      ]
     },
     {
       "image_asset_id": "Bild_19",
@@ -131,18 +157,30 @@
     },
     {
       "image_asset_id": "Bild_20",
-      "allowed_visible_text": [],
-      "labels": []
+      "allowed_visible_text": [
+        "EEG"
+      ],
+      "labels": [
+        "EEG"
+      ]
     },
     {
       "image_asset_id": "Bild_21",
-      "allowed_visible_text": [],
-      "labels": []
+      "allowed_visible_text": [
+        "Herz"
+      ],
+      "labels": [
+        "Herz"
+      ]
     },
     {
       "image_asset_id": "Bild_22",
-      "allowed_visible_text": [],
-      "labels": []
+      "allowed_visible_text": [
+        "Lunge"
+      ],
+      "labels": [
+        "Lunge"
+      ]
     },
     {
       "image_asset_id": "Bild_23",
@@ -155,8 +193,12 @@
     },
     {
       "image_asset_id": "Bild_24",
-      "allowed_visible_text": [],
-      "labels": []
+      "allowed_visible_text": [
+        "Nervenzelle"
+      ],
+      "labels": [
+        "Nervenzelle"
+      ]
     },
     {
       "image_asset_id": "Bild_25",
@@ -170,18 +212,30 @@
     },
     {
       "image_asset_id": "Bild_27",
-      "allowed_visible_text": [],
-      "labels": []
+      "allowed_visible_text": [
+        "Blutkörperchen"
+      ],
+      "labels": [
+        "Blutkörperchen"
+      ]
     },
     {
       "image_asset_id": "Bild_28",
-      "allowed_visible_text": [],
-      "labels": []
+      "allowed_visible_text": [
+        "Sauerstoff"
+      ],
+      "labels": [
+        "Sauerstoff"
+      ]
     },
     {
       "image_asset_id": "Bild_29",
-      "allowed_visible_text": [],
-      "labels": []
+      "allowed_visible_text": [
+        "Hormon"
+      ],
+      "labels": [
+        "Hormon"
+      ]
     },
     {
       "image_asset_id": "Bild_30",
@@ -194,8 +248,12 @@
     },
     {
       "image_asset_id": "Bild_31",
-      "allowed_visible_text": [],
-      "labels": []
+      "allowed_visible_text": [
+        "Muskelfaser"
+      ],
+      "labels": [
+        "Muskelfaser"
+      ]
     },
     {
       "image_asset_id": "Bild_32",
@@ -209,8 +267,12 @@
     },
     {
       "image_asset_id": "Bild_34",
-      "allowed_visible_text": [],
-      "labels": []
+      "allowed_visible_text": [
+        "Tiefschlaf"
+      ],
+      "labels": [
+        "Tiefschlaf"
+      ]
     },
     {
       "image_asset_id": "Bild_35",
@@ -257,8 +319,12 @@
     },
     {
       "image_asset_id": "Bild_42",
-      "allowed_visible_text": [],
-      "labels": []
+      "allowed_visible_text": [
+        "Konzentration"
+      ],
+      "labels": [
+        "Konzentration"
+      ]
     },
     {
       "image_asset_id": "Bild_43",
@@ -272,18 +338,30 @@
     },
     {
       "image_asset_id": "Bild_45",
-      "allowed_visible_text": [],
-      "labels": []
+      "allowed_visible_text": [
+        "Immunzelle"
+      ],
+      "labels": [
+        "Immunzelle"
+      ]
     },
     {
       "image_asset_id": "Bild_46",
-      "allowed_visible_text": [],
-      "labels": []
+      "allowed_visible_text": [
+        "Blutgefäß"
+      ],
+      "labels": [
+        "Blutgefäß"
+      ]
     },
     {
       "image_asset_id": "Bild_47",
-      "allowed_visible_text": [],
-      "labels": []
+      "allowed_visible_text": [
+        "Immunzelle"
+      ],
+      "labels": [
+        "Immunzelle"
+      ]
     },
     {
       "image_asset_id": "Bild_48",
@@ -312,8 +390,12 @@
     },
     {
       "image_asset_id": "Bild_53",
-      "allowed_visible_text": [],
-      "labels": []
+      "allowed_visible_text": [
+        "REM-Schlaf"
+      ],
+      "labels": [
+        "REM-Schlaf"
+      ]
     },
     {
       "image_asset_id": "Bild_54",
@@ -341,13 +423,23 @@
     },
     {
       "image_asset_id": "Bild_58",
-      "allowed_visible_text": [],
-      "labels": []
+      "allowed_visible_text": [
+        "Gehirnstamm"
+      ],
+      "labels": [
+        "Gehirnstamm"
+      ]
     },
     {
       "image_asset_id": "Bild_59",
-      "allowed_visible_text": [],
-      "labels": []
+      "allowed_visible_text": [
+        "Herz",
+        "Lunge"
+      ],
+      "labels": [
+        "Herz",
+        "Lunge"
+      ]
     },
     {
       "image_asset_id": "Bild_60",
@@ -371,8 +463,12 @@
     },
     {
       "image_asset_id": "Bild_64",
-      "allowed_visible_text": [],
-      "labels": []
+      "allowed_visible_text": [
+        "REM-Schlaf"
+      ],
+      "labels": [
+        "REM-Schlaf"
+      ]
     },
     {
       "image_asset_id": "Bild_65",
@@ -391,8 +487,12 @@
     },
     {
       "image_asset_id": "Bild_68",
-      "allowed_visible_text": [],
-      "labels": []
+      "allowed_visible_text": [
+        "REM-Schlaf"
+      ],
+      "labels": [
+        "REM-Schlaf"
+      ]
     },
     {
       "image_asset_id": "Bild_69",
@@ -421,13 +521,23 @@
     },
     {
       "image_asset_id": "Bild_74",
-      "allowed_visible_text": [],
-      "labels": []
+      "allowed_visible_text": [
+        "Gehirn",
+        "Herz"
+      ],
+      "labels": [
+        "Gehirn",
+        "Herz"
+      ]
     },
     {
       "image_asset_id": "Bild_75",
-      "allowed_visible_text": [],
-      "labels": []
+      "allowed_visible_text": [
+        "Nervenzelle"
+      ],
+      "labels": [
+        "Nervenzelle"
+      ]
     },
     {
       "image_asset_id": "Bild_76",

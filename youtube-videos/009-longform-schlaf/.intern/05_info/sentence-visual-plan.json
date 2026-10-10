@@ -18,9 +18,9 @@
       "scale_level": "Körper/Überblick",
       "new_image_required": true,
       "image_asset_id": "Bild_01",
-      "visual_type": "cover-hook",
-      "visible_change": "Original-008-like cover composition: a resting adult face and pillow dominate the RIGHT foreground; soft skin-colored organic anatomy and a connected subtle head/brain cutaway; faint sleeping-body silhouette deeper to the LEFT; cream-turquoise quiet space for bold title at lower LEFT, not a neon brain icon.",
-      "scene_difference": "008 connected illustrated anatomical process, scale and camera variation: Original-008-like cover composition: a resting adult face and pillow dominate the RIGHT foreground; soft skin-colored organic anat",
+      "visual_type": "first-scene-hook",
+      "visible_change": "A calm adult resting naturally in bed in a bright, softly shaded bedroom; alongside their upper body, a simple connected heart-and-brain biological detail shows that the body stays active during sleep. Full-frame recognizable illustrated scene; NO title or other writing.",
+      "scene_difference": "First biological story scene; no cover, no text; clear sleeping body and active heart/brain context.",
       "labels": [],
       "misconception_to_avoid": "Keine Neon-/Comicbildwelt, keine falsche Anatomie oder zusätzlichen Texte."
     },

@@ -11,13 +11,16 @@
     "one_main_idea_per_frame": true,
     "max_labels_per_normal_image": 2,
     "cover_title_only": true,
-    "text_contrast_required": true
+    "text_contrast_required": true,
+    "cover_is_scene": false,
+    "cover_output": "03_export/COVER.png",
+    "first_scene_is_biological_action": true
   },
   "scenes": [
     {
       "scene": 1,
       "speech_section": "Was macht dein Körper eigentlich, während du schläfst?",
-      "visual_task": "Original-008-like cover composition: a resting adult face and pillow dominate the RIGHT foreground; soft skin-colored organic anatomy and a connected subtle head/brain cutaway; faint sleeping-body silhouette deeper to the LEFT; cream-turquoise quiet space for bold title at lower LEFT, not a neon brain icon.",
+      "visual_task": "A calm adult resting naturally in bed in a bright, softly shaded bedroom; alongside their upper body, a simple connected heart-and-brain biological detail shows that the body stays active during sleep. Full-frame recognizable illustrated scene; NO title or other writing.",
       "image": "Bild_01",
       "motion": "static",
       "labels_de": [],
@@ -38,7 +41,10 @@
       "visual_task": "Large upper-body biological cutaway: the brain, heart and vessels form connected structures inside a body silhouette with soft tissue layers, not two freestanding symbols.",
       "image": "Bild_03",
       "motion": "pan-left",
-      "labels_de": [],
+      "labels_de": [
+        "Gehirn",
+        "Herz"
+      ],
       "notes": "Hook/Einleitung"
     },
     {
@@ -47,7 +53,9 @@
       "visual_task": "Macro inside layered coral-blue brain tissue: substantial branching neurons pass one signal along a continuous nerve pathway that extends past both frame edges.",
       "image": "Bild_04",
       "motion": "slow-push-in",
-      "labels_de": [],
+      "labels_de": [
+        "Nervenzelle"
+      ],
       "notes": "Hook/Einleitung"
     },
     {
@@ -83,7 +91,9 @@
       "visual_task": "One large neuron branching through a pale tissue environment as small Adenosin particles gather at a nearby receptor contact; depth and organic context like 008.",
       "image": "Bild_08",
       "motion": "pan-left",
-      "labels_de": [],
+      "labels_de": [
+        "Adenosin"
+      ],
       "notes": "Schlafdruck/Adenosin"
     },
     {
@@ -112,7 +122,9 @@
       "visual_task": "Eye receiving simple morning daylight, a clean single signal route toward a recognizable brain region",
       "image": "Bild_11",
       "motion": "pan-right",
-      "labels_de": [],
+      "labels_de": [
+        "Netzhaut"
+      ],
       "notes": "Innere Uhr/Melatonin"
     },
     {
@@ -150,7 +162,9 @@
       "visual_task": "Biological head-and-brain section receiving a few timing signals, focus on a single intersection deep in brain tissue; not detached arrows or computer dashboard.",
       "image": "Bild_15",
       "motion": "static",
-      "labels_de": [],
+      "labels_de": [
+        "Schlafdruck"
+      ],
       "notes": "Innere Uhr/Melatonin"
     },
     {
@@ -177,7 +191,9 @@
       "visual_task": "Large anatomical brain-cortex fold filled with pale tissue, a few distinct slow activity pathways weave through soft blue coral membranes.",
       "image": "Bild_18",
       "motion": "pan-left",
-      "labels_de": [],
+      "labels_de": [
+        "Nervenzelle"
+      ],
       "notes": "Einschlafen"
     },
     {
@@ -195,7 +211,9 @@
       "visual_task": "Sleep-lab close view with a few EEG sensors on an adult's head; external measurement, clean white-and-mint scene",
       "image": "Bild_20",
       "motion": "static",
-      "labels_de": [],
+      "labels_de": [
+        "EEG"
+      ],
       "notes": "Schlafmessung/NREM"
     },
     {
@@ -204,7 +222,9 @@
       "visual_task": "Illustrated heart with slower calmer activity and a subtle cool-vs-warm color change, not a clinical monitor",
       "image": "Bild_21",
       "motion": "pan-right",
-      "labels_de": [],
+      "labels_de": [
+        "Herz"
+      ],
       "notes": "Schlafmessung/NREM"
     },
     {
@@ -213,7 +233,9 @@
       "visual_task": "Large rounded lungs with surrounding ribs, capillary vessels and gently shaded chest context, one clear breathing event rather than detached lung icon.",
       "image": "Bild_22",
       "motion": "slow-pull-out",
-      "labels_de": [],
+      "labels_de": [
+        "Lunge"
+      ],
       "notes": "Schlafmessung/NREM"
     },
     {
@@ -233,7 +255,9 @@
       "visual_task": "Three connected neuron branches embedded in tissue show synchronized signals, large organic shapes and one clear directional process.",
       "image": "Bild_24",
       "motion": "slow-push-in",
-      "labels_de": [],
+      "labels_de": [
+        "Nervenzelle"
+      ],
       "notes": "Tiefschlaf"
     },
     {
@@ -260,7 +284,9 @@
       "visual_task": "One red blood cell travelling through an intact vessel toward healthy tissue, demonstrating continuous oxygen delivery",
       "image": "Bild_27",
       "motion": "slow-pull-out",
-      "labels_de": [],
+      "labels_de": [
+        "Blutkörperchen"
+      ],
       "notes": "Tiefschlaf"
     },
     {
@@ -269,7 +295,9 @@
       "visual_task": "Macro tissue cell receiving a few oxygen particles from adjacent capillary, a clear biological transport process",
       "image": "Bild_28",
       "motion": "pan-left",
-      "labels_de": [],
+      "labels_de": [
+        "Sauerstoff"
+      ],
       "notes": "Tiefschlaf"
     },
     {
@@ -278,7 +306,9 @@
       "visual_task": "Simplified endocrine gland releasing a small set of hormone messengers into one recognizable blood vessel",
       "image": "Bild_29",
       "motion": "slow-push-in",
-      "labels_de": [],
+      "labels_de": [
+        "Hormon"
+      ],
       "notes": "Hormone/Gewebe"
     },
     {
@@ -298,7 +328,9 @@
       "visual_task": "Close-up of several normal red muscle fibers with routine protein renewal inside one fiber, unchanged overall size",
       "image": "Bild_31",
       "motion": "pan-right",
-      "labels_de": [],
+      "labels_de": [
+        "Muskelfaser"
+      ],
       "notes": "Hormone/Gewebe"
     },
     {
@@ -325,7 +357,9 @@
       "visual_task": "Pale coral brain tissue layered cutaway with broad slow activity between connected neurons, only a subtle early-night lighting accent.",
       "image": "Bild_34",
       "motion": "slow-push-in",
-      "labels_de": [],
+      "labels_de": [
+        "Tiefschlaf"
+      ],
       "notes": "Hormone/Gewebe"
     },
     {
@@ -401,7 +435,9 @@
       "visual_task": "Realistic-in-illustration adult at morning desk with an unfocused gaze beside a simple faded brain signal inset",
       "image": "Bild_42",
       "motion": "slow-pull-out",
-      "labels_de": [],
+      "labels_de": [
+        "Konzentration"
+      ],
       "notes": "Gedächtnis"
     },
     {
@@ -428,7 +464,9 @@
       "visual_task": "One white blood cell interacting with a nearby tissue cell and exchanging small messenger particles",
       "image": "Bild_45",
       "motion": "static",
-      "labels_de": [],
+      "labels_de": [
+        "Immunzelle"
+      ],
       "notes": "Immunsystem"
     },
     {
@@ -437,7 +475,9 @@
       "visual_task": "A white blood cell circulates through a blood vessel while a few signaling particles change position around it",
       "image": "Bild_46",
       "motion": "pan-right",
-      "labels_de": [],
+      "labels_de": [
+        "Blutgefäß"
+      ],
       "notes": "Immunsystem"
     },
     {
@@ -446,7 +486,9 @@
       "visual_task": "Two immune cells communicate at close range, no shields, soldier imagery, icons or extra labels",
       "image": "Bild_47",
       "motion": "slow-pull-out",
-      "labels_de": [],
+      "labels_de": [
+        "Immunzelle"
+      ],
       "notes": "Immunsystem"
     },
     {
@@ -500,7 +542,9 @@
       "visual_task": "Connected brain-cortex tissue with slow wave changing into varied REM neural activity along real curved nerve structures, no neon EEG poster.",
       "image": "Bild_53",
       "motion": "pan-left",
-      "labels_de": [],
+      "labels_de": [
+        "REM-Schlaf"
+      ],
       "notes": "REM/Muskelhemmung"
     },
     {
@@ -547,7 +591,9 @@
       "visual_task": "Brainstem signal travels toward a simplified arm muscle fiber group, visibly reducing skeletal-muscle activity",
       "image": "Bild_58",
       "motion": "pan-left",
-      "labels_de": [],
+      "labels_de": [
+        "Gehirnstamm"
+      ],
       "notes": "REM/Muskelhemmung"
     },
     {
@@ -556,7 +602,10 @@
       "visual_task": "One healthy heart and lung side-by-side connected by subtle physiological flow, slight rhythm variability, simple process",
       "image": "Bild_59",
       "motion": "slow-push-in",
-      "labels_de": [],
+      "labels_de": [
+        "Herz",
+        "Lunge"
+      ],
       "notes": "REM/Muskelhemmung"
     },
     {
@@ -601,7 +650,9 @@
       "visual_task": "Anatomical brain tissue close-up, many natural connected neural pathways with muted highlighted REM activity; no lone glowing brain on blank background.",
       "image": "Bild_64",
       "motion": "slow-push-in",
-      "labels_de": [],
+      "labels_de": [
+        "REM-Schlaf"
+      ],
       "notes": "Träume"
     },
     {
@@ -637,7 +688,9 @@
       "visual_task": "A more active REM-like neuron pattern near morning, warm soft daylight accent and recognizable tissue",
       "image": "Bild_68",
       "motion": "pan-left",
-      "labels_de": [],
+      "labels_de": [
+        "REM-Schlaf"
+      ],
       "notes": "Schlafzyklen/Erholung"
     },
     {
@@ -691,7 +744,10 @@
       "visual_task": "Whole upper torso cutaway with heart, circulation vessels and brain appearing in their actual connected body positions; softly rounded biological volumes.",
       "image": "Bild_74",
       "motion": "slow-push-in",
-      "labels_de": [],
+      "labels_de": [
+        "Gehirn",
+        "Herz"
+      ],
       "notes": "Schluss"
     },
     {
@@ -700,7 +756,9 @@
       "visual_task": "Connected visual zoom from a brain nerve bundle through tissue and capillary route to body cells: one plausible path across scales.",
       "image": "Bild_75",
       "motion": "static",
-      "labels_de": [],
+      "labels_de": [
+        "Nervenzelle"
+      ],
       "notes": "Schluss"
     },
     {

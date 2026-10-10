@@ -6,16 +6,16 @@ Generate exactly THREE separate original 16:9 COVER CANDIDATES NOW; each is its 
 Cover 1: 008-like frame-filling composition, restful adult face and pillow foreground RIGHT, organically connected head/brain tissue detail and soft mint-turquoise layered background, quiet title space LEFT.
 Cover 2: Cropped resting eyelids/face beside a continuous softly shaded coral-blue brain/nerve tissue scene; warm organic outlines, calm pale turquoise/cream background, title RIGHT.
 Cover 3: Full-body-to-brain-to-cell biological route as a coherent multi-scale illustration, modest sleeper context, frame-filling connected anatomical details, softly layered mint-blue-cream background, dark title upper LEFT.
-ONLY AFTER ALL THREE ACTUAL COVER IMAGES EXIST, show the user the three choices and ask exactly: "Welches Cover wählst du – 1, 2 oder 3?" Then WAIT for the user's selection. DO NOT create Bild_02 or any further scenes before that answer. Do not ask "Should I start?" or "Please upload references" before creating all three covers. If image generation is unavailable, report the specific technical limitation without inventing images.
+ONLY AFTER ALL THREE ACTUAL COVER IMAGES EXIST, show the user the three choices and ask exactly: "Welches Cover wählst du – 1, 2 oder 3?" Then WAIT for the user's selection. DO NOT create Bild_01 or any video scene before that answer. Do not ask "Should I start?" or "Please upload references" before creating all three covers. If image generation is unavailable, report the specific technical limitation without inventing images.
 
 CANONICAL STYLE – SAME AS VIDEO 008
 Clean Animated Biology Illustration: simplified but recognizable anatomy, smooth organic forms, clean outlines, soft gradients, subtle depth, bright calm backgrounds, clear biological colors, low complexity, one dominant biological idea per frame.
 
-VISUAL WORLD – GENERATED SOLELY FROM THIS TEXT, LIKE VIDEO 008
+VISUAL WORLD – SIMPLE ANIMATED EDUCATIONAL ILLUSTRATIONS GENERATED ONLY FROM THIS TEXT
 No images or old video frames are to be uploaded, copied, fetched or used as image-to-image style references. The previously successful digestion video 008 was generated without visual templates; preserve that approach.
 Draw large spatially connected biological scenes: softly shaded, rounded organic anatomy with fine coral-pink outlines; natural tissue depth and delicate highlights; gentle turquoise, mint, pale-blue and cream backgrounds with subtle gradients; warm pink/red organs and distinct red/blue vessel routes. Scenes should be integrated environments with obvious biological action, not isolated neuron or organ icons on blank white backgrounds.
-For sleep, change ONLY the scientific subject and scenes; keep this same drawn biology aesthetic on all covers and interior images. No glowing dark sci-fi brains, sterile diagrams or anime character scenes. Use the same written style rules for every frame.
-No image reference is needed or requested at any point. The selected cover is only the final first asset, not an image upload or separate style reference. Visual variation is possible with AI generation; inspect results and regenerate inconsistent scenes.
+For sleep, change ONLY the scientific subject and scenes; keep this same drawn biology aesthetic on all covers and interior images. No glowing dark sci-fi brains, sterile diagrams or anime character scenes. Prefer clear labels, easy biological scale comparisons and simplified process scenes; don't make everything too intricate. Use the same written style rules for every frame.
+No image reference is needed or requested at any point. The selected cover becomes the SEPARATE YouTube thumbnail COVER.png in 03_export. It is NOT a video scene, NOT Bild_01 and NOT a style-upload reference. Visual variation is possible with AI generation; inspect results and regenerate inconsistent scenes.
 
 HARD TEXT RULES
 - Internal file names, Bild_XX, scene numbers, prompt headings and production IDs are NEVER visible.
@@ -25,6 +25,9 @@ HARD TEXT RULES
 
 INFORMATION DENSITY
 - One causal biological teaching point per image and normally 2–4 principal elements.
+- Explain it simply enough to understand immediately; prefer one legible biological process over intricate or cluttered neuron networks.
+- Use SHORT, accurate German labels frequently where they improve clarity; no forced labels when the scene is obvious. Never invent extra labels outside the scene register.
+- When a process is hard to understand, zoom closer or use a clear arrow and 1–2 terms rather than decorative details.
 - Favor connected rounded anatomy/cutaways, soft tissue surroundings and clear transport/signaling processes; vary camera, scale and direction.
 - Avoid repetitive isolated brains, schoolbook neuron icons, PowerPoint plates, poster-like EEG waves and repeated sleeping-character portraits.
 
@@ -32,92 +35,92 @@ STYLE FAILS
 No photoreal medical imagery, no medical CGI, no glossy 3D, no feature-animation/Pixar look, no toy/kids-book look, no corporate infographic, no clutter, no gore, no random icons, no unnecessary text.
 
 AFTER USER SELECTS A COVER – ONLY THEN
-Keep the chosen cover as the sole final Bild_01.png. Do NOT submit it or any older frame as an image reference for the later images. Continue using exactly the SAME WRITTEN VISUAL-WORLD RULES for every frame; do not repeat the cover title, pose or composition.
-Immediately generate Bild_02 to Bild_06 as FIVE separate images without a second permission question. Continue the next scene images in sequential groups of no more than FIVE. If Flow requires a new user turn after a batch, report the first missing image number and resume upon "weiter"; do not invent background processing or completed images. The scene descriptions below are a plan for AFTER cover selection, not a request to generate 77 images at once.
+Save the chosen cover separately as COVER.png for YouTube; never put it in the 77 scene images, the image ZIP or the Remotion timeline. Do not pass it as a style reference. Bild_01 is an ORIGINAL NORMAL FIRST VIDEO SCENE with NO cover headline. Continue using exactly the SAME WRITTEN VISUAL-WORLD RULES for all frames.
+Immediately generate Bild_01 to Bild_05 as FIVE separate normal video scenes without a second permission question. Continue the next scene images in sequential groups of no more than FIVE. If Flow requires a new user turn after a batch, report the first missing image number and resume upon "weiter"; do not invent background processing or completed images. The scene descriptions below are a plan for AFTER cover selection, not a request to generate 77 images at once.
 
-SCENE INDEX – FOR LATER FIVE-IMAGE GROUPS ONLY
+VIDEO SCENE INDEX – ALL 77 ARE NORMAL VIDEO FRAMES, IN FIVE-IMAGE GROUPS
 The internal filenames below are for SAVE METADATA, NEVER render them as visible text.
 
-01 / Bild_01.png: Original-008-like cover composition: a resting adult face and pillow dominate the RIGHT foreground; soft skin-colored organic anatomy and a connected subtle head/brain cutaway; faint sleeping-body silhouette deeper to the LEFT; cream-turquoise quiet space for bold title at lower LEFT, not a neon brain icon. VISIBLE TEXT: exact title only “Was macht dein Körper nachts?”.
-02 / Bild_02.png: Close side view of a sleeping adult's relaxed eyelids and pillow, most of frame stays bright and uncluttered NO TEXT.
-03 / Bild_03.png: Large upper-body biological cutaway: the brain, heart and vessels form connected structures inside a body silhouette with soft tissue layers, not two freestanding symbols. NO TEXT.
-04 / Bild_04.png: Macro inside layered coral-blue brain tissue: substantial branching neurons pass one signal along a continuous nerve pathway that extends past both frame edges. NO TEXT.
-05 / Bild_05.png: Connected section of brain cortex filling the image with smooth slow electrical activity running across visibly layered biological tissue, not an EEG poster. NO TEXT.
-06 / Bild_06.png: Warm illustrated bedroom window at late sunset with just a small resting silhouette below, bright walls and cream-colored negative space NO TEXT.
-07 / Bild_07.png: Macro brain region with gentle gradual shift of a few neuron activity signals, cellular explanation of circadian changes NO TEXT.
-08 / Bild_08.png: One large neuron branching through a pale tissue environment as small Adenosin particles gather at a nearby receptor contact; depth and organic context like 008. NO TEXT.
-09 / Bild_09.png: Enlarged synapse in coral brain tissue, nerve ending and receptor sides clearly linked, a few labeled Adenosin particles crossing the gap, not isolated icons. VISIBLE LABEL: Adenosin.
-10 / Bild_10.png: Adult's eyelids growing heavy beside a daytime window, close crop with believable human proportions, no cartoon expression NO TEXT.
-11 / Bild_11.png: Eye receiving simple morning daylight, a clean single signal route toward a recognizable brain region NO TEXT.
-12 / Bild_12.png: Wide tissue-based brain anatomical section with a small pineal region; particles leave through one adjacent connected vessel; detailed but calm biological surroundings. VISIBLE LABEL: Melatonin.
-13 / Bild_13.png: Few melatonin messenger particles travel between two distinct simplified cells, no magic sleep switch symbol NO TEXT.
-14 / Bild_14.png: Eye and brain react to bright evening indoor light, biological one-way pathway, pale background NO TEXT.
-15 / Bild_15.png: Biological head-and-brain section receiving a few timing signals, focus on a single intersection deep in brain tissue; not detached arrows or computer dashboard. NO TEXT.
-16 / Bild_16.png: Macro view of resting shoulder muscle fibers becoming visibly more relaxed, recognizable red organic forms NO TEXT.
-17 / Bild_17.png: Human ear with a faint external sound ripple and a subtle sleeping brain background, simple input fading NO TEXT.
-18 / Bild_18.png: Large anatomical brain-cortex fold filled with pale tissue, a few distinct slow activity pathways weave through soft blue coral membranes. NO TEXT.
-19 / Bild_19.png: Three overlapping neurons in a soft tissue macro transmit a brief coordinated activity burst through one continuous neural route. NO TEXT.
-20 / Bild_20.png: Sleep-lab close view with a few EEG sensors on an adult's head; external measurement, clean white-and-mint scene NO TEXT.
-21 / Bild_21.png: Illustrated heart with slower calmer activity and a subtle cool-vs-warm color change, not a clinical monitor NO TEXT.
-22 / Bild_22.png: Large rounded lungs with surrounding ribs, capillary vessels and gently shaded chest context, one clear breathing event rather than detached lung icon. NO TEXT.
-23 / Bild_23.png: Close tissue-cortex anatomical cutaway fills frame; one slow wave passes several contiguous nerve-cell layers, similar spatial depth to 008 intestinal folds. VISIBLE LABEL: Tiefschlaf.
-24 / Bild_24.png: Three connected neuron branches embedded in tissue show synchronized signals, large organic shapes and one clear directional process. NO TEXT.
-25 / Bild_25.png: Resting human ear with a quieter incoming sound near sleeping face; one clear difference from previous light sleep NO TEXT.
-26 / Bild_26.png: Anatomical heart and one large blood vessel showing steady calm circulation during deep sleep NO TEXT.
-27 / Bild_27.png: One red blood cell travelling through an intact vessel toward healthy tissue, demonstrating continuous oxygen delivery NO TEXT.
-28 / Bild_28.png: Macro tissue cell receiving a few oxygen particles from adjacent capillary, a clear biological transport process NO TEXT.
-29 / Bild_29.png: Simplified endocrine gland releasing a small set of hormone messengers into one recognizable blood vessel NO TEXT.
-30 / Bild_30.png: Large connected hypothalamus-pituitary area of a brain anatomical section shows hormone particles entering a neighboring red blood vessel. VISIBLE LABEL: Wachstumshormon.
-31 / Bild_31.png: Close-up of several normal red muscle fibers with routine protein renewal inside one fiber, unchanged overall size NO TEXT.
-32 / Bild_32.png: Same recognizable muscle tissue shown in daylight with ordinary repair and rebuilding of cellular proteins NO TEXT.
-33 / Bild_33.png: Macro healthy tissue cell assembling one simple protein chain with nearby oxygen supply, biologically clear NO TEXT.
-34 / Bild_34.png: Pale coral brain tissue layered cutaway with broad slow activity between connected neurons, only a subtle early-night lighting accent. NO TEXT.
-35 / Bild_35.png: Wide context bridge: adult learning an unfamiliar hand movement beside a simple enlarged neuronal connection inset, focus on neurons NO TEXT.
-36 / Bild_36.png: Close view of fingertips practicing one guitar chord, simple daylight learning action, no writing NO TEXT.
-37 / Bild_37.png: Three neurons embedded in brain tissue develop one more coordinated memory signal route, close biological macro and softly layered surroundings. VISIBLE LABEL: Gedächtnis.
-38 / Bild_38.png: Two enlarged synaptic nerve endings pass a signal more consistently; one synapse is main visual subject VISIBLE LABEL: Synapse.
-39 / Bild_39.png: Neural tissue from real learning experience, several distinct synapses without any computer-chip metaphor NO TEXT.
-40 / Bild_40.png: Macro of one selective memory-related pathway staying active while surrounding pathways remain calm and soft NO TEXT.
-41 / Bild_41.png: Cropped layered brain-cortex cutaway shows two activity pathways in the same continuous living tissue; no isolated brains or infographic split cards. NO TEXT.
-42 / Bild_42.png: Realistic-in-illustration adult at morning desk with an unfocused gaze beside a simple faded brain signal inset NO TEXT.
-43 / Bild_43.png: Close synapse showing a weaker reliable signal path after insufficient sleep, pale-blue biology macro NO TEXT.
-44 / Bild_44.png: Strong clear connection between two nerve cells as final causal memory payoff, simple living tissue environment NO TEXT.
-45 / Bild_45.png: One white blood cell interacting with a nearby tissue cell and exchanging small messenger particles NO TEXT.
-46 / Bild_46.png: A white blood cell circulates through a blood vessel while a few signaling particles change position around it NO TEXT.
-47 / Bild_47.png: Two immune cells communicate at close range, no shields, soldier imagery, icons or extra labels NO TEXT.
-48 / Bild_48.png: Single tissue macrophage-like immune cell responds gently to a local signal, mild non-graphic biological illustration NO TEXT.
-49 / Bild_49.png: Two different simplified immune cells engaged in visibly different cellular tasks inside the same soft tissue region NO TEXT.
-50 / Bild_50.png: Healthy tissue with calmly patrolling white blood cell and ordinary surrounding cells, not a magic protective barrier NO TEXT.
-51 / Bild_51.png: Anatomical blood vessel with normal steady circulation, warm cells contrasting light-blue surrounding tissue NO TEXT.
-52 / Bild_52.png: Simplified heart and lungs work together: one clear blood-to-oxygen route, no oversized composite organ collage NO TEXT.
-53 / Bild_53.png: Connected brain-cortex tissue with slow wave changing into varied REM neural activity along real curved nerve structures, no neon EEG poster. NO TEXT.
-54 / Bild_54.png: Anatomical brain section fills most frame, a few active REM circuit zones shown inside detailed biological tissue with pale aqua background. VISIBLE LABEL: REM-Schlaf.
-55 / Bild_55.png: Natural closed eyelids with barely perceptible eye movement arrows, few clean biological details NO TEXT.
-56 / Bild_56.png: Two contiguous neuron groups in a pale brain-tissue section show faster varied REM signal flow through connected branches. NO TEXT.
-57 / Bild_57.png: A modest everyday dream scene shown as soft memory reflection next to a small brain-tissue illustration, understated NO TEXT.
-58 / Bild_58.png: Brainstem signal travels toward a simplified arm muscle fiber group, visibly reducing skeletal-muscle activity NO TEXT.
-59 / Bild_59.png: One healthy heart and lung side-by-side connected by subtle physiological flow, slight rhythm variability, simple process NO TEXT.
-60 / Bild_60.png: A remembered street view fades into an indistinct memory fragment, gentle pale illustrated scene not dream fantasy NO TEXT.
-61 / Bild_61.png: Close view of ordinary bedroom doorway with subtle changing remembered garden scene, pastel and grounded NO TEXT.
-62 / Bild_62.png: A few neurons in a calm brain region form an unfinished branching connection, representing scientific uncertainty without question marks NO TEXT.
-63 / Bild_63.png: One synapse in an emotional-memory-related neural route, small context silhouette of facial expression in distant background NO TEXT.
-64 / Bild_64.png: Anatomical brain tissue close-up, many natural connected neural pathways with muted highlighted REM activity; no lone glowing brain on blank background. NO TEXT.
-65 / Bild_65.png: Continuous cross-sectional brain-cortex tissue illustrates transition from broader slow neural signals to smaller irregular signals across connected membranes. NO TEXT.
-66 / Bild_66.png: Large macro of neuronal tissue around connected synapses depicts one repeating cycle of activity, not a standalone icon or chart. NO TEXT.
-67 / Bild_67.png: Broad slow neural waves near early-night brain illustrated on bright mint background, no night-sky poster NO TEXT.
-68 / Bild_68.png: A more active REM-like neuron pattern near morning, warm soft daylight accent and recognizable tissue NO TEXT.
-69 / Bild_69.png: Adult briefly opening eyes on a pillow, cropped calmly, morning light without elaborate context NO TEXT.
-70 / Bild_70.png: Rested adult waking near a bright window, simple anatomical brain inset explaining overall state NO TEXT.
-71 / Bild_71.png: Morning sunlight reaching the eyes of an awake adult, brain activation through a clear daylight route NO TEXT.
-72 / Bild_72.png: Calm adult asleep in simple bedroom with a small unlabeled bedside clock, bright clean illustration without numerals NO TEXT.
-73 / Bild_73.png: Tired adult at an ordinary morning desk, cut to one simple unfocused neuron connection as consequence of insufficient sleep NO TEXT.
-74 / Bild_74.png: Whole upper torso cutaway with heart, circulation vessels and brain appearing in their actual connected body positions; softly rounded biological volumes. NO TEXT.
-75 / Bild_75.png: Connected visual zoom from a brain nerve bundle through tissue and capillary route to body cells: one plausible path across scales. NO TEXT.
-76 / Bild_76.png: Smooth scale transition from sleeping brain cell to wider alert body silhouette in morning light, clean biological progression NO TEXT.
-77 / Bild_77.png: Final payoff as a continuous anatomical full-body-to-cell route: recognizable rested figure with soft torso/head tissue cutaway, brain cells and normal organ activity spatially linked, airy turquoise cream background. NO TEXT.
+01 / Bild_01.png: A calm adult resting naturally in bed in a bright, softly shaded bedroom; alongside their upper body, a simple connected heart-and-brain biological detail shows that the body stays active during sleep. Full-frame recognizable illustrated scene; NO title or other writing. NO VISIBLE TEXT.
+02 / Bild_02.png: Close side view of a sleeping adult's relaxed eyelids and pillow, most of frame stays bright and uncluttered NO VISIBLE TEXT.
+03 / Bild_03.png: Large upper-body biological cutaway: the brain, heart and vessels form connected structures inside a body silhouette with soft tissue layers, not two freestanding symbols. VISIBLE GERMAN LABELS ONLY: Gehirn; Herz.
+04 / Bild_04.png: Macro inside layered coral-blue brain tissue: substantial branching neurons pass one signal along a continuous nerve pathway that extends past both frame edges. VISIBLE GERMAN LABEL ONLY: Nervenzelle.
+05 / Bild_05.png: Connected section of brain cortex filling the image with smooth slow electrical activity running across visibly layered biological tissue, not an EEG poster. NO VISIBLE TEXT.
+06 / Bild_06.png: Warm illustrated bedroom window at late sunset with just a small resting silhouette below, bright walls and cream-colored negative space NO VISIBLE TEXT.
+07 / Bild_07.png: Macro brain region with gentle gradual shift of a few neuron activity signals, cellular explanation of circadian changes NO VISIBLE TEXT.
+08 / Bild_08.png: One large neuron branching through a pale tissue environment as small Adenosin particles gather at a nearby receptor contact; depth and organic context like 008. VISIBLE GERMAN LABEL ONLY: Adenosin.
+09 / Bild_09.png: Enlarged synapse in coral brain tissue, nerve ending and receptor sides clearly linked, a few labeled Adenosin particles crossing the gap, not isolated icons. VISIBLE GERMAN LABEL ONLY: Adenosin.
+10 / Bild_10.png: Adult's eyelids growing heavy beside a daytime window, close crop with believable human proportions, no cartoon expression NO VISIBLE TEXT.
+11 / Bild_11.png: Eye receiving simple morning daylight, a clean single signal route toward a recognizable brain region VISIBLE GERMAN LABEL ONLY: Netzhaut.
+12 / Bild_12.png: Wide tissue-based brain anatomical section with a small pineal region; particles leave through one adjacent connected vessel; detailed but calm biological surroundings. VISIBLE GERMAN LABEL ONLY: Melatonin.
+13 / Bild_13.png: Few melatonin messenger particles travel between two distinct simplified cells, no magic sleep switch symbol NO VISIBLE TEXT.
+14 / Bild_14.png: Eye and brain react to bright evening indoor light, biological one-way pathway, pale background NO VISIBLE TEXT.
+15 / Bild_15.png: Biological head-and-brain section receiving a few timing signals, focus on a single intersection deep in brain tissue; not detached arrows or computer dashboard. VISIBLE GERMAN LABEL ONLY: Schlafdruck.
+16 / Bild_16.png: Macro view of resting shoulder muscle fibers becoming visibly more relaxed, recognizable red organic forms NO VISIBLE TEXT.
+17 / Bild_17.png: Human ear with a faint external sound ripple and a subtle sleeping brain background, simple input fading NO VISIBLE TEXT.
+18 / Bild_18.png: Large anatomical brain-cortex fold filled with pale tissue, a few distinct slow activity pathways weave through soft blue coral membranes. VISIBLE GERMAN LABEL ONLY: Nervenzelle.
+19 / Bild_19.png: Three overlapping neurons in a soft tissue macro transmit a brief coordinated activity burst through one continuous neural route. NO VISIBLE TEXT.
+20 / Bild_20.png: Sleep-lab close view with a few EEG sensors on an adult's head; external measurement, clean white-and-mint scene VISIBLE GERMAN LABEL ONLY: EEG.
+21 / Bild_21.png: Illustrated heart with slower calmer activity and a subtle cool-vs-warm color change, not a clinical monitor VISIBLE GERMAN LABEL ONLY: Herz.
+22 / Bild_22.png: Large rounded lungs with surrounding ribs, capillary vessels and gently shaded chest context, one clear breathing event rather than detached lung icon. VISIBLE GERMAN LABEL ONLY: Lunge.
+23 / Bild_23.png: Close tissue-cortex anatomical cutaway fills frame; one slow wave passes several contiguous nerve-cell layers, similar spatial depth to 008 intestinal folds. VISIBLE GERMAN LABEL ONLY: Tiefschlaf.
+24 / Bild_24.png: Three connected neuron branches embedded in tissue show synchronized signals, large organic shapes and one clear directional process. VISIBLE GERMAN LABEL ONLY: Nervenzelle.
+25 / Bild_25.png: Resting human ear with a quieter incoming sound near sleeping face; one clear difference from previous light sleep NO VISIBLE TEXT.
+26 / Bild_26.png: Anatomical heart and one large blood vessel showing steady calm circulation during deep sleep NO VISIBLE TEXT.
+27 / Bild_27.png: One red blood cell travelling through an intact vessel toward healthy tissue, demonstrating continuous oxygen delivery VISIBLE GERMAN LABEL ONLY: Blutkörperchen.
+28 / Bild_28.png: Macro tissue cell receiving a few oxygen particles from adjacent capillary, a clear biological transport process VISIBLE GERMAN LABEL ONLY: Sauerstoff.
+29 / Bild_29.png: Simplified endocrine gland releasing a small set of hormone messengers into one recognizable blood vessel VISIBLE GERMAN LABEL ONLY: Hormon.
+30 / Bild_30.png: Large connected hypothalamus-pituitary area of a brain anatomical section shows hormone particles entering a neighboring red blood vessel. VISIBLE GERMAN LABEL ONLY: Wachstumshormon.
+31 / Bild_31.png: Close-up of several normal red muscle fibers with routine protein renewal inside one fiber, unchanged overall size VISIBLE GERMAN LABEL ONLY: Muskelfaser.
+32 / Bild_32.png: Same recognizable muscle tissue shown in daylight with ordinary repair and rebuilding of cellular proteins NO VISIBLE TEXT.
+33 / Bild_33.png: Macro healthy tissue cell assembling one simple protein chain with nearby oxygen supply, biologically clear NO VISIBLE TEXT.
+34 / Bild_34.png: Pale coral brain tissue layered cutaway with broad slow activity between connected neurons, only a subtle early-night lighting accent. VISIBLE GERMAN LABEL ONLY: Tiefschlaf.
+35 / Bild_35.png: Wide context bridge: adult learning an unfamiliar hand movement beside a simple enlarged neuronal connection inset, focus on neurons NO VISIBLE TEXT.
+36 / Bild_36.png: Close view of fingertips practicing one guitar chord, simple daylight learning action, no writing NO VISIBLE TEXT.
+37 / Bild_37.png: Three neurons embedded in brain tissue develop one more coordinated memory signal route, close biological macro and softly layered surroundings. VISIBLE GERMAN LABEL ONLY: Gedächtnis.
+38 / Bild_38.png: Two enlarged synaptic nerve endings pass a signal more consistently; one synapse is main visual subject VISIBLE GERMAN LABEL ONLY: Synapse.
+39 / Bild_39.png: Neural tissue from real learning experience, several distinct synapses without any computer-chip metaphor NO VISIBLE TEXT.
+40 / Bild_40.png: Macro of one selective memory-related pathway staying active while surrounding pathways remain calm and soft NO VISIBLE TEXT.
+41 / Bild_41.png: Cropped layered brain-cortex cutaway shows two activity pathways in the same continuous living tissue; no isolated brains or infographic split cards. NO VISIBLE TEXT.
+42 / Bild_42.png: Realistic-in-illustration adult at morning desk with an unfocused gaze beside a simple faded brain signal inset VISIBLE GERMAN LABEL ONLY: Konzentration.
+43 / Bild_43.png: Close synapse showing a weaker reliable signal path after insufficient sleep, pale-blue biology macro NO VISIBLE TEXT.
+44 / Bild_44.png: Strong clear connection between two nerve cells as final causal memory payoff, simple living tissue environment NO VISIBLE TEXT.
+45 / Bild_45.png: One white blood cell interacting with a nearby tissue cell and exchanging small messenger particles VISIBLE GERMAN LABEL ONLY: Immunzelle.
+46 / Bild_46.png: A white blood cell circulates through a blood vessel while a few signaling particles change position around it VISIBLE GERMAN LABEL ONLY: Blutgefäß.
+47 / Bild_47.png: Two immune cells communicate at close range, no shields, soldier imagery, icons or extra labels VISIBLE GERMAN LABEL ONLY: Immunzelle.
+48 / Bild_48.png: Single tissue macrophage-like immune cell responds gently to a local signal, mild non-graphic biological illustration NO VISIBLE TEXT.
+49 / Bild_49.png: Two different simplified immune cells engaged in visibly different cellular tasks inside the same soft tissue region NO VISIBLE TEXT.
+50 / Bild_50.png: Healthy tissue with calmly patrolling white blood cell and ordinary surrounding cells, not a magic protective barrier NO VISIBLE TEXT.
+51 / Bild_51.png: Anatomical blood vessel with normal steady circulation, warm cells contrasting light-blue surrounding tissue NO VISIBLE TEXT.
+52 / Bild_52.png: Simplified heart and lungs work together: one clear blood-to-oxygen route, no oversized composite organ collage NO VISIBLE TEXT.
+53 / Bild_53.png: Connected brain-cortex tissue with slow wave changing into varied REM neural activity along real curved nerve structures, no neon EEG poster. VISIBLE GERMAN LABEL ONLY: REM-Schlaf.
+54 / Bild_54.png: Anatomical brain section fills most frame, a few active REM circuit zones shown inside detailed biological tissue with pale aqua background. VISIBLE GERMAN LABEL ONLY: REM-Schlaf.
+55 / Bild_55.png: Natural closed eyelids with barely perceptible eye movement arrows, few clean biological details NO VISIBLE TEXT.
+56 / Bild_56.png: Two contiguous neuron groups in a pale brain-tissue section show faster varied REM signal flow through connected branches. NO VISIBLE TEXT.
+57 / Bild_57.png: A modest everyday dream scene shown as soft memory reflection next to a small brain-tissue illustration, understated NO VISIBLE TEXT.
+58 / Bild_58.png: Brainstem signal travels toward a simplified arm muscle fiber group, visibly reducing skeletal-muscle activity VISIBLE GERMAN LABEL ONLY: Gehirnstamm.
+59 / Bild_59.png: One healthy heart and lung side-by-side connected by subtle physiological flow, slight rhythm variability, simple process VISIBLE GERMAN LABELS ONLY: Herz; Lunge.
+60 / Bild_60.png: A remembered street view fades into an indistinct memory fragment, gentle pale illustrated scene not dream fantasy NO VISIBLE TEXT.
+61 / Bild_61.png: Close view of ordinary bedroom doorway with subtle changing remembered garden scene, pastel and grounded NO VISIBLE TEXT.
+62 / Bild_62.png: A few neurons in a calm brain region form an unfinished branching connection, representing scientific uncertainty without question marks NO VISIBLE TEXT.
+63 / Bild_63.png: One synapse in an emotional-memory-related neural route, small context silhouette of facial expression in distant background NO VISIBLE TEXT.
+64 / Bild_64.png: Anatomical brain tissue close-up, many natural connected neural pathways with muted highlighted REM activity; no lone glowing brain on blank background. VISIBLE GERMAN LABEL ONLY: REM-Schlaf.
+65 / Bild_65.png: Continuous cross-sectional brain-cortex tissue illustrates transition from broader slow neural signals to smaller irregular signals across connected membranes. NO VISIBLE TEXT.
+66 / Bild_66.png: Large macro of neuronal tissue around connected synapses depicts one repeating cycle of activity, not a standalone icon or chart. NO VISIBLE TEXT.
+67 / Bild_67.png: Broad slow neural waves near early-night brain illustrated on bright mint background, no night-sky poster NO VISIBLE TEXT.
+68 / Bild_68.png: A more active REM-like neuron pattern near morning, warm soft daylight accent and recognizable tissue VISIBLE GERMAN LABEL ONLY: REM-Schlaf.
+69 / Bild_69.png: Adult briefly opening eyes on a pillow, cropped calmly, morning light without elaborate context NO VISIBLE TEXT.
+70 / Bild_70.png: Rested adult waking near a bright window, simple anatomical brain inset explaining overall state NO VISIBLE TEXT.
+71 / Bild_71.png: Morning sunlight reaching the eyes of an awake adult, brain activation through a clear daylight route NO VISIBLE TEXT.
+72 / Bild_72.png: Calm adult asleep in simple bedroom with a small unlabeled bedside clock, bright clean illustration without numerals NO VISIBLE TEXT.
+73 / Bild_73.png: Tired adult at an ordinary morning desk, cut to one simple unfocused neuron connection as consequence of insufficient sleep NO VISIBLE TEXT.
+74 / Bild_74.png: Whole upper torso cutaway with heart, circulation vessels and brain appearing in their actual connected body positions; softly rounded biological volumes. VISIBLE GERMAN LABELS ONLY: Gehirn; Herz.
+75 / Bild_75.png: Connected visual zoom from a brain nerve bundle through tissue and capillary route to body cells: one plausible path across scales. VISIBLE GERMAN LABEL ONLY: Nervenzelle.
+76 / Bild_76.png: Smooth scale transition from sleeping brain cell to wider alert body silhouette in morning light, clean biological progression NO VISIBLE TEXT.
+77 / Bild_77.png: Final payoff as a continuous anatomical full-body-to-cell route: recognizable rested figure with soft torso/head tissue cutaway, brain cells and normal organ activity spatially linked, airy turquoise cream background. NO VISIBLE TEXT.
 
 FINAL QA
-Each accepted frame: same illustrated organic volume/color/linework as the successful text-only 008 longform, a meaningful connected biological process, correct scientific meaning, no extra text, clear labels, no visible filenames or numbers. Reject inconsistent or factually wrong images and regenerate using ONLY the written style and scene description. No image-reference request at any stage. Do not circumvent platform policies.
+Each accepted normal scene frame: same illustrated organic volume/color/linework as the successful text-only 008 longform, a meaningful connected biological process, correct scientific meaning, no extra text, clear labels, no visible filenames or numbers. Reject inconsistent or factually wrong images and regenerate using ONLY the written style and scene description. No image-reference request at any stage. Do not circumvent platform policies.
 
 FINAL OUTPUT
-If supported, package 77 actually accepted files Bild_01.png through Bild_77.png into BILDER-009-FINAL.zip for the local project's 02_bildprompts/bilder-zip folder. If packaging is unavailable, give accurately numbered image files and tell the user. Never claim a file or image is created before it actually exists.
+If supported, package 77 actually accepted NORMAL SCENE files Bild_01.png through Bild_77.png into BILDER-009-FINAL.zip for the local project's 02_bildprompts/bilder-zip folder. EXCLUDE the selected cover from that ZIP. The selected Cover should be saved separately as COVER.png for 03_export, never placed at the start of the rendered movie. If packaging is unavailable, give accurately numbered image files and tell the user. Never claim a file or image is created before it actually exists.
