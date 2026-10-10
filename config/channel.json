@@ -48,7 +48,6 @@
     "color_system": "clear biological colors chosen for readability; flexible by topic",
     "labels": "0-2 short German labels only when useful",
     "complexity": "low; preferably 2-4 central visible elements and one dominant process per frame",
-    "style_reference_image": null,
     "written_spec_is_authoritative": true,
     "final_image_generation_allowed": true,
     "historical_pilot_styles_are_authoritative": false,
@@ -59,13 +58,7 @@
       "glossy plastic 3D",
       "historical pilot visual worlds"
     ],
-    "original_video_style_ref": "bildwelt/008-ORIGINAL-VIDEO-STYLE-REFERENCE.md",
-    "reference_video": "008-longform-verdauung (user-approved final MP4)",
-    "reference_frames_dir": "assets/channel/references/video008",
-    "primary_style_reference": "eight actual still images from the finished 008 digestion video, uploaded as images to Google Flow",
-    "selected_cover_as_secondary_style_reference": true,
-    "reference_image_status": "OPTIONAL_UPLOAD_ENHANCEMENT; NOT_BLOCKING_COVER_GENERATION",
-    "style_authority": "Real accepted video 008 frame references plus binding written spec; chosen 008-compliant cover as secondary visual anchor"
+    "style_authority": "Written Clean Animated Biology Illustration style and concrete unique biology scene briefs; no image or cover reference templates"
   },
   "flow_prompting": {
     "instruction_language": "en",
@@ -74,7 +67,7 @@
     "duplicate_image_reuse_allowed": false,
     "scene_difference_minimum_dimensions_changed": 2,
     "prefer_process_relationship_before_after_context_over_repeated_portraits": true,
-    "prompt_style": "exact video 008 longform grammar + real 008 frame image reference(s) + approved cover + concrete one-process scene + optional 0-2 labels + contrast",
+    "prompt_style": "one self-contained text prompt; three covers then user choice; five image batches; canonical written illustrated biology world and concrete per-image descriptions",
     "style_block_path": "bildwelt/FLOW-STYLE-BLOCK.txt",
     "labels_generated_in_flow": true,
     "preferred_labels_per_image": "0-1",
@@ -105,12 +98,9 @@
       "asset IDs",
       "prompt headings"
     ],
-    "require_actual_008_frame_references_in_flow": false,
-    "reference_priority": "008 original images if uploaded; otherwise detailed 008 style text for initial covers; approved user cover secondary; final image QA required",
-    "block_unsupported_exact_style_claims": true,
-    "require_original_video_stills_upload": false,
-    "prefer_actual_008_frame_references_when_already_attached": true,
-    "start_first_three_covers_without_reference_upload": true
+    "start_first_three_covers_without_reference_upload": true,
+    "use_external_style_reference_images": false,
+    "use_selected_cover_as_image_reference": false
   },
   "labels": {
     "language": "de",
