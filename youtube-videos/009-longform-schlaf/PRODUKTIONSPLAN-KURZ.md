@@ -127,12 +127,10 @@ Titel, Beschreibung und Caption sind individuell für Video 009 vorbereitet und 
 ## Besonderer Anspruch
 Dieses Video ist kein weiterer Kurztest. Es nutzt die vollständige dramaturgische, technische und visuelle Produktionsmethodik des freigegebenen Video 008; lediglich die biologischen Inhalte werden zum Thema Schlaf neu geplant.
 
-## Stilnachweis – kein Uploadzwang vor drei Covern
-
-1. Die 3 Cover werden SOFORT erstellt, auch ohne hochgeladene 008-JPGs. Optional können zur besseren Stiltreue 2–4 Referenzen aus `ObjectTalk_008_Style_References.zip` in Flow hochgeladen werden. `bildwelt/008-ORIGINAL-VIDEO-STYLE-REFERENCE.md` beschreibt die Zeitcodes und den Stil.
-2. Drei Cover im 008-Look tatsächlich erzeugen und erst nach Nutzerwahl 1/2/3 mit normalen Szenen fortfahren; bei fehlenden Bildern NICHT nach einem Upload fragen.
-3. Das ausgewählte, nach 008-Look geprüfte Cover als zusätzliche Stilreferenz für die Fünfer-Batches verwenden; vorhandene originale 008-JPGs ergänzen.
-4. Neue 009-Bilder mit echten 008-Frames vergleichen; isolierte Schulbuch-Neuronen oder leuchtende Traum-/Gehirnposter = neu generieren.
-5. `05_info/style-reference-review.json` erst nach tatsächlichem visuellen Vergleich aller generierten Bilder mit echten 008-Referenzframes ausfüllen; Bilder müssen nicht zwingend zuvor in Flow hochgeladen worden sein. `--phase2` verlangt danach PASS. Aktuell PENDING.
-
-Die im Repo hinterlegten Referenzdateinamen sind keine tatsächlichen Flow-Bild-Uploads. Gleichartige Ausgabe ist ohne echte Bildreferenzen nicht garantiert.
+## Google Flow ohne Bildvorlagen (wie Video 008)
+- Ein vollständiger Textprompt mit allen 77 Bildbeschreibungen.
+- Flow erzeugt sofort drei unterschiedliche Cover und wartet auf deine Auswahl.
+- Das gewählte Cover ist Bild_01 und **keine** Stilvorlage für die übrigen Szenen.
+- Bild_02–Bild_06 unmittelbar nach Auswahl, danach weitere Fünfergruppen ohne separate Datei.
+- Keine JPGs, Screenshots, Referenzbilder, Style-ZIPs oder andere Bildvorlagen anfordern.
+- Alle Bilder aus demselben ausführlichen Textstil erzeugen und biologisch/visuell prüfen. Bei abweichender Bildwelt neu generieren.

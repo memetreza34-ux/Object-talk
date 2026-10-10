@@ -220,9 +220,8 @@ STOP bei:
 
 ## Longform 008 – bewährter Referenzstandard
 
-Fuer neue 6–7-Minuten-Videos `engine/LONGFORM-008-MASTERSTANDARD.md` verwenden: zuerst die Dateien aus `008-longform-verdauung` auf Prompt-Struktur, wissenschaftliche Abschnittsplanung, Bildwelt, Render und Export abgleichen, danach **nur Thema und fachliche Visuals/Skript anpassen**. Keine neue Bildwelt erfinden. Original-008-Frames sollen für maximale Stiltreue verwendet werden, blockieren aber die sofortige Erzeugung von drei Covern NICHT; das ausgewählte und 008-konforme Cover wird als SEKUNDÄRER Referenzanker dazugenommen, nicht als alleiniger Stilgeber. Dokumentation und Medienstatus sauber unterscheiden.
+Fuer neue 6–7-Minuten-Videos `engine/LONGFORM-008-MASTERSTANDARD.md` verwenden: zuerst die Dateien aus `008-longform-verdauung` auf Prompt-Struktur, wissenschaftliche Abschnittsplanung, Bildwelt, Render und Export abgleichen, danach **nur Thema und fachliche Visuals/Skript anpassen**. Keine neue Bildwelt erfinden. Wie im Verdauungsfilm 008 ohne Bildvorlagen arbeiten: ein Textprompt, drei Cover, Nutzer wählt, danach Fünfergruppen in derselben schriftlichen Bildwelt; kein Cover als Bildreferenz. Dokumentation und Medienstatus sauber unterscheiden.
 
 
-## 008 Original-Video-Fingerabdruck (Qualitätsregel, nicht Cover-Startblockade)
-
-`bildwelt/008-ORIGINAL-VIDEO-STYLE-REFERENCE.md` lesen, optional 2–4 echte 008-Frames im Flow-Chat nutzen, falls bereits vorhanden; bei fehlenden Bildern unmittelbar drei Cover aus der genauen Stilbeschreibung generieren, ohne Nachfrage. Der kurze Styleblock allein wurde bereits als unzureichend nachgewiesen. Nach Coverwahl das gewählte Cover als zusätzliche Referenz mitlaufen lassen. Keine neue Folge mit isolierten Lehrbuchsymbolen, leuchtenden Neon-Gehirnen oder Animefiguren als '008-Bildwelt' freigeben. Reale JPGs sind noch NICHT automatisch im GitHub-Repo eingecheckt; die Referenz-ZIP muss separat eingespielt werden.
+## Ohne visuelle Vorlagen produzieren
+Die Bildwelt von 008 durch den immer gleichen ausführlichen Textstil und konkrete biologische Szenenbeschreibungen nachbilden. Weder 008-JPGs noch gewähltes Cover als Bildvorlage hochladen. Google Flow darf keinen Referenz-Upload verlangen. Die visuelle Qualität wird an den tatsächlich generierten Bildern geprüft.

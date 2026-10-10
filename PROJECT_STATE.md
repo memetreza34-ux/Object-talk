@@ -53,8 +53,5 @@ Das freigegebene erste Longform-Video 008 ist für 009 das strukturelle und visu
 
 Pilotphase 000–007 abgeschlossen; Bildwelt: **Clean Animated Biology Illustration**.
 
-## WICHTIG: Reale Video-008-Bildreferenzen (Stand 09.10.2026)
-
-Die visuelle Original-MP4 von 008 wurde erneut geprüft. Die frühere Übernahme allein des generischen `Clean Animated Biology Illustration`-Stils war unzureichend. Der neue verbindliche Stilanker sind echte Standbilder aus 008 (Referenzanalyse `bildwelt/008-ORIGINAL-VIDEO-STYLE-REFERENCE.md`, technisches Extraktionstool `tools/build_008_style_refs.py`). Das vom Nutzer gewählte Cover ist nach 008-Abgleich eine **zusätzliche** Referenz, nicht Ersatz des Originalmaterials.
-
-**Kein Startblocker mehr:** Die 008-Referenz-JPGs sind im Chat separat bereitgestellt, aber nicht automatisch in Google Flow verfügbar. Trotzdem erstellt Flow zuerst 3 Cover ohne Dateien nachzufragen. Optionaler Referenzupload verbessert Stiltreue. `05_info/style-reference-review.json` bleibt bis zur tatsächlichen finalen Bildprüfung auf PENDING; Phase 2 erfordert visuellen Vergleich, aber keinen Upload als solchen. Ein Promptcommit repariert keine bereits falsch generierten 009-Bilder.
+## Produktionsentscheidung: keine Bildvorlagen (10.10.2026)
+Wie beim erfolgreichen Verdauungsvideo 008 wird Google Flow **ausschließlich mit einem vollständigen Textprompt** bedient. Keine externen Stilbilder, 008-Frame-ZIP-Dateien oder Cover-als-Referenz. Erst genau drei separate Cover erstellen, Auswahl abwarten, dann Szenen 02–77 in Fünfergruppen. Die bekannte organisch-illustrative Bildwelt ist im Prompt positiv beschrieben. Bild-QA bleibt Pflicht; eine exakte Reproduktion ist mit generativer KI nicht garantiert.

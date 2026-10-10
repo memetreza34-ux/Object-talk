@@ -130,7 +130,7 @@ Nicht erlaubt:
 
 ## Referenz für Longform-Videos
 
-Der erste freigegebene 6–7-Minuten-Film **008 Verdauung** ist Referenz für **Bildwelt, Flow-Promptgliederung, szenische Planung, Antigravity/Remotion, Export und QA**. 009 Schlaf übernimmt diese Produktionsstruktur bis hin zu 77 Szenen und 13 Mechanismusabschnitten; nur der fachliche Inhalt wechselt. Details: `engine/LONGFORM-008-MASTERSTANDARD.md`.
+Der erste erfolgreiche 6–7-Minuten-Film **008 Verdauung** dient als inhaltlich-technisches Beispiel für **schriftliche Bildwelt, Flow-Promptgliederung, szenische Planung, Antigravity/Remotion, Export und QA**. **Keine Bildvorlage oder Referenzdatei hochladen.** 009 Schlaf übernimmt diese Produktionsstruktur bis hin zu 77 Szenen und 13 Mechanismusabschnitten; nur der fachliche Inhalt wechselt. Details: `engine/LONGFORM-008-MASTERSTANDARD.md`.
 
 ## Verbindlicher Flow-Produktionsablauf
 

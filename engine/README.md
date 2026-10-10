@@ -98,7 +98,7 @@ Zeitcodes niemals schätzen.
 
 ## Bewährte Longform-Referenz
 
-Für reguläre 6–7-Minuten-Videos gilt `engine/LONGFORM-008-MASTERSTANDARD.md`. Video 008 Verdauung stellt die verifizierte Referenz für Flow-Stil, 77 Szenen, 13 Mechanismus-Abschnitte, ausführlichen Remotion-Prompt, Export und QA. 009 nutzt denselben Aufbau für Schlaf.
+Für reguläre 6–7-Minuten-Videos gilt `engine/LONGFORM-008-MASTERSTANDARD.md`. Video 008 Verdauung zeigt das bewährte reine Textprompt-Verfahren für Flow-Stil, 77 Szenen, 13 Mechanismus-Abschnitte, ausführlichen Remotion-Prompt, Export und QA. Keine visuellen Stilvorlagen. 009 nutzt denselben Aufbau für Schlaf.
 
 ## Aktive Produktion
 
