@@ -539,7 +539,8 @@ def print_phase1_tablet_links(project: Path) -> None:
     prefix = "https://github.com/memetreza34-ux/Object-talk/blob/main/"
     script_url = prefix + quote(relative_project + "/01_script/script.txt", safe="/")
     flow_url = prefix + quote(relative_project + "/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt", safe="/")
-    print("\\nPHASE-1-HANDOFF (in Chat-Antwort IMMER beide anklickbaren Links ausgeben):")
+    print()
+    print("PHASE-1-HANDOFF (in Chat-Antwort IMMER beide anklickbaren Links ausgeben):")
     print(f"[Google-Flow-Prompt öffnen]({flow_url})")
     print(f"[Voice-over-Skript öffnen]({script_url})")
 
