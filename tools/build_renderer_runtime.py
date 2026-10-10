@@ -42,7 +42,8 @@ ALLOWED_MOTIONS = {
 
 def enforce_no_text_overlays(timeline_path: Path) -> None:
     """Fail closed if any Remotion text overlay is planned."""
-    project_dir = timeline_path.resolve().parents[2]
+    internal_or_project = timeline_path.resolve().parents[2]
+    project_dir = internal_or_project.parent if internal_or_project.name == ".intern" else internal_or_project
     overlay_path = (project_dir / ".intern" / "03_pipeline" / "overlay-plan.json") if (project_dir / ".intern" / "03_pipeline").is_dir() else (project_dir / "03_pipeline" / "overlay-plan.json")
     if not overlay_path.is_file():
         return

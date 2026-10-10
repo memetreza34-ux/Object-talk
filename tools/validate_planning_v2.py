@@ -274,6 +274,8 @@ def validate_phase1(project: Path) -> set[str]:
         fail("phase1-scenes.json enthaelt keine Szenen")
 
     rules = scene_payload.get("rules", {})
+    if simplified and rules.get("cover_is_scene") is not False:
+        fail("Im neuen 3-Ordner-Format muss das Cover SEPARAT vom Video liegen")
     if not isinstance(rules, dict):
         fail("phase1-scenes.json: rules muss Objekt sein")
     if rules.get("remotion_text_overlays_allowed") is not False:
@@ -341,6 +343,8 @@ def validate_phase1(project: Path) -> set[str]:
     if label_rules.get("prefer_no_label_when_self_explanatory") is not True:
         fail("label-plan.json muss unnoetige Labels vermeiden")
 
+    if simplified and label_rules.get("cover_is_scene") is not False:
+        fail("Bildlabel-Plan muss Cover außerhalb der Videoszenen speichern")
     entries = label_plan.get("images")
     if not isinstance(entries, list):
         fail("label-plan.json: images muss Liste sein")
@@ -370,6 +374,8 @@ def validate_phase1(project: Path) -> set[str]:
         if any(VISIBLE_INTERNAL_ID_RE.search(text) for text in texts):
             fail(f"{image_id}: internes Produktions-ID-Label ist verboten")
 
+        if simplified and image_id == "Bild_01" and entry.get("mode") in {"cover", "cover-hook"}:
+            fail("Bild_01 muss eine normale Szene sein, nicht das Cover")
         if image_id == "Bild_01" and not simplified:
             if texts:
                 fail("Bild_01/Cover darf keine Labels enthalten")
@@ -417,6 +423,8 @@ def validate_phase2(project: Path, expected_ids: set[str]) -> None:
     require_file(review_path)
     if not images_dir.is_dir():
         fail(f"finaler Bilderordner fehlt: {images_dir}")
+    if simplified and not (project / "03_export" / "COVER.png").is_file():
+        fail("Cover fehlt separat unter 03_export/COVER.png; NICHT als Bild_01 einsetzen")
 
     review = load_json(review_path)
     status = str(review.get("status", "")).upper()
