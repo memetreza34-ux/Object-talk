@@ -43,8 +43,9 @@ def main() -> None:
     args = parser.parse_args()
 
     project = args.project
-    timeline_path = project / "03_pipeline" / "timing" / "timeline.json"
-    export_dir = project / "04_export"
+    simplified = (project / ".intern" / "05_info" / "phase1-scenes.json").is_file()
+    timeline_path = (project / ".intern" / "03_pipeline" / "timing" / "timeline.json") if simplified else (project / "03_pipeline" / "timing" / "timeline.json")
+    export_dir = (project / "03_export") if simplified else (project / "04_export")
 
     if not timeline_path.is_file():
         raise SystemExit(
@@ -93,7 +94,8 @@ def main() -> None:
         previous_end = end
 
     readable_path = export_dir / "UNTERTITEL-MIT-ZEITEN.txt"
-    srt_path = export_dir / "UNTERTITEL-YOUTUBE.srt"
+    srt_path = (project / ".intern" / "UNTERTITEL-YOUTUBE.srt") if simplified else (export_dir / "UNTERTITEL-YOUTUBE.srt")
+    srt_path.parent.mkdir(parents=True, exist_ok=True)
 
     readable_path.write_text("\n\n".join(readable_lines) + "\n", encoding="utf-8")
     srt_path.write_text("\n".join(srt_blocks), encoding="utf-8")

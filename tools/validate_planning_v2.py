@@ -163,7 +163,7 @@ def validate_global_contract(project: Path) -> None:
     if remotion.get("overlay_plan_must_be_empty") is not True:
         fail("Remotion overlay_plan_must_be_empty muss true sein")
 
-    overlay_path = project / "03_pipeline" / "overlay-plan.json"
+    overlay_path = ((project / ".intern" / "03_pipeline" / "overlay-plan.json") if (project / ".intern" / "03_pipeline").is_dir() else (project / "03_pipeline" / "overlay-plan.json"))
     if overlay_path.is_file():
         overlay = load_json(overlay_path)
         scenes = overlay.get("scenes", [])
@@ -178,10 +178,12 @@ def validate_global_contract(project: Path) -> None:
 
 def validate_phase1(project: Path) -> set[str]:
     script_path = project / "01_script" / "script.txt"
-    mechanism_path = project / "05_info" / "mechanism-map.md"
-    sentence_plan_path = project / "05_info" / "sentence-visual-plan.json"
-    scenes_path = project / "05_info" / "phase1-scenes.json"
-    label_plan_path = project / "05_info" / "label-plan.json"
+    internal_dir = (project / ".intern") if (project / ".intern" / "05_info").is_dir() else project
+    simplified = internal_dir != project
+    mechanism_path = internal_dir / "05_info" / "mechanism-map.md"
+    sentence_plan_path = internal_dir / "05_info" / "sentence-visual-plan.json"
+    scenes_path = internal_dir / "05_info" / "phase1-scenes.json"
+    label_plan_path = internal_dir / "05_info" / "label-plan.json"
     if not label_plan_path.is_file():  # backwards compatibility: older video projects
         label_plan_path = project / "02_bildprompts" / "label-plan.json"
     flow_prompt_path = project / "02_bildprompts" / "GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt"
@@ -304,7 +306,7 @@ def validate_phase1(project: Path) -> set[str]:
                 fail(f"Szene {index}: ungueltiges Label")
             if word_count(label) > MAX_LABEL_WORDS:
                 fail(f"Szene {index}: Label {label!r} hat mehr als {MAX_LABEL_WORDS} Woerter")
-        if index == 1 and labels_de:
+        if index == 1 and labels_de and not simplified:
             fail("Cover-Szene darf keine labels_de enthalten")
         scene_ids.append(expected_id)
 
@@ -368,7 +370,7 @@ def validate_phase1(project: Path) -> set[str]:
         if any(VISIBLE_INTERNAL_ID_RE.search(text) for text in texts):
             fail(f"{image_id}: internes Produktions-ID-Label ist verboten")
 
-        if image_id == "Bild_01":
+        if image_id == "Bild_01" and not simplified:
             if texts:
                 fail("Bild_01/Cover darf keine Labels enthalten")
             if len(allowed) != 1:
@@ -387,7 +389,7 @@ def validate_phase1(project: Path) -> set[str]:
             f"extra={sorted(planned - scene_id_set)}"
         )
 
-    test_mode_path = project / "05_info" / "test-mode.json"
+    test_mode_path = internal_dir / "05_info" / "test-mode.json"
     if test_mode_path.is_file():
         test_mode = load_json(test_mode_path)
         expected_images = test_mode.get("expected_images")
@@ -405,8 +407,10 @@ def validate_phase1(project: Path) -> set[str]:
 
 
 def validate_phase2(project: Path, expected_ids: set[str]) -> None:
-    review_path = project / "05_info" / "image-review.json"
-    images_dir = project / "03_pipeline" / "images"
+    internal_dir = (project / ".intern") if (project / ".intern" / "05_info").is_dir() else project
+    simplified = internal_dir != project
+    review_path = internal_dir / "05_info" / "image-review.json"
+    images_dir = internal_dir / "03_pipeline" / "images"
     if not review_path.is_file():  # backwards compatibility: older video projects
         review_path = project / "02_bildprompts" / "image-review.json"
         images_dir = project / "02_bildprompts" / "images"
@@ -467,7 +471,7 @@ def validate_phase2(project: Path, expected_ids: set[str]) -> None:
             if entry.get(field) != "PASS":
                 fail(f"{image_id}: {field} muss PASS sein")
 
-        if image_id == "Bild_01":
+        if image_id == "Bild_01" and not simplified:
             if entry.get("cover_title_only") != "PASS":
                 fail("Bild_01: cover_title_only muss PASS sein")
             if entry.get("cover_exactly_one_visible_text_block") != "PASS":
@@ -500,7 +504,7 @@ def validate_phase2(project: Path, expected_ids: set[str]) -> None:
 
     print(f"V2-PHASE-2-PASS: {project}")
     print(f"  akzeptierte Bilder: {len(reviewed)}")
-    print("  Cover title-only, Textkontrast und Informationsdichte bestaetigt")
+    print("  Separate cover / title-only, Textkontrast und Informationsdichte bestaetigt" if simplified else "  Cover title-only, Textkontrast und Informationsdichte bestaetigt")
     print("  keine sichtbaren Produktions-IDs bestaetigt")
     print("  Remotion-Text bleibt deaktiviert")
 

@@ -50,3 +50,12 @@ youtube-videos/*/03_pipeline/images/*.jpg
 youtube-videos/*/03_pipeline/images/*.jpeg
 youtube-videos/*/03_pipeline/images/*.webp
 youtube-videos/*/03_pipeline/flow-import-report.json
+
+# New 3-folder layout; technical image/audio outputs stay local
+youtube-videos/*/.intern/03_pipeline/images/*.png
+youtube-videos/*/.intern/03_pipeline/images/*.jpeg
+youtube-videos/*/.intern/03_pipeline/images/*.jpg
+youtube-videos/*/.intern/03_pipeline/timing/*
+youtube-videos/*/03_export/VIDEO.mp4
+youtube-videos/*/03_export/COVER.png
+youtube-videos/*/03_export/*.srt

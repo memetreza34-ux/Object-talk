@@ -80,11 +80,13 @@ def main() -> None:
     audio_dir = project / "01_script" / "audio"
     prompt_dir = project / "02_bildprompts"
     zip_dir = prompt_dir / "bilder-zip"
-    images_dir = (project / "03_pipeline" / "images") if (project / "05_info" / "label-plan.json").is_file() else (prompt_dir / "images")
-    pipeline_dir = project / "03_pipeline"
+    simplified = (project / ".intern" / "05_info" / "phase1-scenes.json").is_file()
+    internal_dir = project / ".intern" if simplified else project
+    pipeline_dir = internal_dir / "03_pipeline"
+    images_dir = pipeline_dir / "images" if simplified else ((project / "03_pipeline" / "images") if (project / "05_info" / "label-plan.json").is_file() else (prompt_dir / "images"))
     timing_dir = pipeline_dir / "timing"
     scene_map = pipeline_dir / "scene-map.json"
-    phase1_scenes = project / "05_info" / "phase1-scenes.json"
+    phase1_scenes = internal_dir / "05_info" / "phase1-scenes.json"
     final_audio = audio_dir / "final-voiceover.wav"
 
     for required in (script, phase1_scenes):
