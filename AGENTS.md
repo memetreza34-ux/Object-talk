@@ -197,18 +197,17 @@ Standard:
 - kein Standbild ueber 7 Sekunden
 - kein Bildasset doppelt verwenden
 
-## Export – Pflicht
+## Export – genau vier sichtbare Dateien bei neuen Produktionen
 
-Jedes fertige Video braucht:
-- `03_export/CAPTION-YOUTUBE.txt` mit Titel + Beschreibung + max. 5 Hashtags
-- `03_export/UNTERTITEL-MIT-ZEITEN.txt` mit komplettem Script und echten Zeitabschnitten
-- `.intern/UNTERTITEL-YOUTUBE.srt` als hochladbare YouTube-Untertiteldatei
-- finale YouTube-MP4
-- Renderbericht
-- Quality-Scorecard
-- Postmortem
+**Autoritativ: `engine/EXPORT-STANDARD.md`.** Nach der Produktion stehen im sichtbaren `03_export/` ausschließlich:
+- `VIDEO.mp4`: finaler Film, ohne YouTube-Cover als Anfangsszene.
+- `COVER.png`: separates, vom Nutzer gewähltes YouTube-Thumbnail.
+- `CAPTION-YOUTUBE.txt`: einmaliger YouTube-Titel + individuelle Beschreibung + bis zu fünf Hashtags.
+- `UNTERTITEL-MIT-ZEITEN.txt`: vollständiges tatsächlich gesprochenes Script mit echten Audiotimestamps zum Kopieren.
 
-Ohne diese Dateien kein `YouTube-ready`.
+Keine weiteren sichtbaren Exportdateien oder Unterordner (kein `fertiges-video`, keine zweiten Captions, keine SRT, keine QA-Berichte, keine Postmortems, keine Placeholder). **Technische** SRT, Renderbericht, Scorecard, Postmortem, Audio-/Video-QA und `timeline.json` werden weiterhin erstellt/geprüft, liegen aber nur in `.intern/`. Keine Mediendateien oder echte Zeitstempel vortäuschen, bevor sie existieren.
+
+Diese Regel gilt nur für **zukünftige Produktionen**. Vorhandene Videos/Exportordner nicht rückwirkend verändern.
 
 ## Fail-closed
 

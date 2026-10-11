@@ -1,99 +1,49 @@
 # Export-Standard – Object-Talk
 
-Status: **KANONISCH / VERBINDLICH**
+Status: **VERBINDLICH FÜR ALLE KÜNFTIGEN VIDEOS (ab der neuen 3-Ordner-Struktur)**
 
-Jedes reguläre Video muss am Ende ein vollständiges Veröffentlichungs-Paket unter `04_export/` besitzen.
+## Oberste Regel: Der sichtbare Export muss sauber bleiben
 
-## Pflichtstruktur
+In `03_export/` liegen nach vollständig abgeschlossener Produktion **genau vier Dateien** – weder mehr noch weniger:
 
 ```text
-04_export/
+03_export/
+├── VIDEO.mp4
+├── COVER.png
 ├── CAPTION-YOUTUBE.txt
-├── YOUTUBE-UPLOAD-PAKET.md
-├── YOUTUBE-TITEL-BESCHREIBUNG-ZUM-KOPIEREN.txt
-├── YouTube-Caption.md
-├── UNTERTITEL-MIT-ZEITEN.txt
-├── UNTERTITEL-YOUTUBE.srt
-├── render-report.md
-├── quality-scorecard.md
-├── postmortem.md
-└── fertiges-video/
-    └── [VIDEO-ID]-YOUTUBE.mp4
+└── UNTERTITEL-MIT-ZEITEN.txt
 ```
 
-## 1. CAPTION-YOUTUBE.txt
+1. **VIDEO.mp4:** einziges fertiges YouTube-Video; keine Previews oder Testversionen. Das Cover ist NICHT im Video; die erste Szene ist `Bild_01`.
+2. **COVER.png:** genau das vom Nutzer ausgewählte, separat gespeicherte YouTube-Vorschaubild. Kein Bild aus der normalen Videoszenen-ZIP und kein Videostart.
+3. **CAPTION-YOUTUBE.txt:** *ein* individuell formulierter und komplett kopierbarer YouTube-Titel und *eine* Beschreibung inklusive bis zu fünf passenden Hashtags. Keine zusätzlichen Titel-/Caption-/Metadaten-Dateien.
+4. **UNTERTITEL-MIT-ZEITEN.txt:** der komplette tatsächlich gesprochene Sprechertext, in gut kopierbaren Abschnitten mit **echten** Start-/Endzeitstempeln aus dem finalen Audio, z. B. `00:00–00:10  Tatsächlich gesprochener Text`. Keine erfundenen Zeiten, keine ausgelassenen Sätze.
 
-Direkt kopierbare Veröffentlichungsdatei mit:
-- individuellem YouTube-Titel
-- individueller YouTube-Beschreibung
-- maximal 5 passenden Hashtags
+Diese vier Namen sind fest. Nicht mehr `final-video.mp4`, `fertiges-video/`, zusätzliche Caption-Versionen oder `YOUTUBE-UPLOAD-PAKET.md` im sichtbaren Export anlegen.
 
-Titel und Beschreibung müssen nach dem echten Finalrender nochmals gegen den Inhalt geprüft werden.
+## Technischer Bereich – nicht im sichtbaren Export
 
-## 2. Komplettes Script mit Zeitabschnitten
+Sämtliche internen Dateien wie `render-report.md`, `quality-scorecard.md`, `postmortem.md`, `final-video.qa.json`, `UNTERTITEL-YOUTUBE.srt`, `timeline.json`, `word-timings.json`, Audio-Zwischenstände und Prüfprotokolle gehören **nur nach `.intern/`** (jeweils passende Unterordner). Die technische QA bleibt verbindlich, aber darf den Nutzerexport nicht auffüllen. Kein technischer README, PLACEHOLDER, Zwischenordner oder JSON in `03_export/`.
 
-`UNTERTITEL-MIT-ZEITEN.txt` enthält das **komplette tatsächlich gesprochene Script** mit echten Zeitfenstern aus dem finalen Voiceover.
+**Ausnahme nach Status, nicht nach Inhalt:** Vor Abschluss der Produktion existieren `VIDEO.mp4` und `COVER.png` möglicherweise noch gar nicht; keine leeren oder erfundenen Mediendateien anlegen. Die zwei Textdateien können vorläufige Entwürfe sein und dürfen erst als fertig bezeichnet werden, wenn die Inhalte geprüft wurden.
 
-Beispiel:
-
-```text
-00:00–00:06  Hast du dich schon mal gefragt, ...
-00:06–00:12  Danach passiert ...
-```
-
-Die Abschnitte müssen zusammen den gesamten gesprochenen Inhalt abdecken.
-
-## 3. YouTube-Untertitel
-
-`UNTERTITEL-YOUTUBE.srt` ist die direkt hochladbare SRT-Datei.
-
-Pflicht:
-- gleiche finale Sprachfassung wie im Video
-- echte Zeitcodes
-- keine geschätzten Zeiten
-- keine fehlenden gesprochenen Abschnitte
-- keine Produktionshinweise, Bildnummern oder Szenennummern im Untertiteltext
-
-## 4. Timing-Quelle
-
-**Zeitcodes dürfen niemals manuell geschätzt werden.**
-
-Autoritative Reihenfolge:
+## Zeitcode-Regel
 
 ```text
 final-voiceover.wav
 → Whisper / word-timings.json
 → timeline.json
 → tools/export_subtitles.py
-→ UNTERTITEL-MIT-ZEITEN.txt + UNTERTITEL-YOUTUBE.srt
+→ 03_export/UNTERTITEL-MIT-ZEITEN.txt
+→ .intern/UNTERTITEL-YOUTUBE.srt (internes optionales Zusatzformat)
 ```
 
-Befehl:
+`python tools/export_subtitles.py youtube-videos/VIDEOORDNER` verwendet die finale Timeline. Fehlt sie oder ist sie ungültig, keine fertigen Untertitel und keine geratenen Zeitfenster behaupten.
 
-```bash
-python tools/export_subtitles.py youtube-videos/VIDEOORDNER
-```
+## Finalfreigabe
 
-Wenn `timeline.json` fehlt oder nicht valide ist: **FAIL**, keine Untertitel erzeugen.
+Erst nach echtem MP4-Render und Prüfung: Videodauer, 16:9, Ton, passende normale Szenen ohne Cover-Einblendung, korrekte Titel-/Beschreibungsdatei, vollständiges zeitgestempeltes Skript sowie technische QA in `.intern/`. Dann besteht der sichtbare Export aus genau den vier festgelegten Dateien.
 
-## 5. Finales Video
+## Bestandsschutz
 
-`fertiges-video/` enthält nur die finale YouTube-Masterdatei.
-Keine Preview-, Draft- oder Testexports dort behalten.
-
-## 6. YouTube-ready Gate
-
-Ein Video ist erst `YouTube-ready`, wenn:
-- finale MP4 vorhanden und geprüft
-- `CAPTION-YOUTUBE.txt` individuell ausgefüllt
-- `UNTERTITEL-MIT-ZEITEN.txt` aus finaler Timeline erzeugt
-- `UNTERTITEL-YOUTUBE.srt` aus finaler Timeline erzeugt
-- SRT nicht leer ist
-- Titel/Beschreibung gegen Finalrender geprüft
-- Renderbericht ausgefüllt
-- Quality-Scorecard bestanden
-- Postmortem vorbereitet/ausgefüllt nach Finalrender
-
-## Goldene Regel
-
-**Export bedeutet nicht nur MP4. Export = fertiges Video + YouTube-Metadaten + vollständige zeitcodierte Untertitel + QA.**
+Die historische Verdauungsproduktion `008-longform-verdauung` und andere bestehende Videoordner werden **NICHT verändert oder rückwirkend migriert**. Ihre bisherigen `04_export/`-Strukturen sind ausschließlich historisch. Neue Videos richten sich immer nach diesem 3-Ordner-Standard; `03_export/` ist für fertige Nutzerdateien reserviert.

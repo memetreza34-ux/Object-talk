@@ -172,18 +172,30 @@ npm run studio
 npm run render -- ../youtube-videos/THEMA/04_export/fertiges-video/[VIDEO-ID]-YOUTUBE.mp4
 ```
 
-## Export-Paket
+## Export-Paket für zukünftige Videos
 
-Verbindlich: `engine/EXPORT-STANDARD.md`
+Verbindlich ist `engine/EXPORT-STANDARD.md`. **Im sichtbaren `03_export/` stehen nach Fertigstellung genau diese vier Dateien**:
 
-Jedes fertige Video besitzt in `03_export/` mindestens:
-- `CAPTION-YOUTUBE.txt` mit Titel + Beschreibung + max. 5 Hashtags
-- `UNTERTITEL-MIT-ZEITEN.txt`
-- `UNTERTITEL-YOUTUBE.srt`
-- finale YouTube-MP4
-- Renderbericht
-- Quality-Scorecard
-- Postmortem
+```text
+03_export/
+  VIDEO.mp4
+  COVER.png
+  CAPTION-YOUTUBE.txt
+  UNTERTITEL-MIT-ZEITEN.txt
+```
+
+Keine anderen Dateien und kein `fertiges-video/`-Unterordner. `UNTERTITEL-YOUTUBE.srt`, `render-report.md`, `quality-scorecard.md`, `postmortem.md` und sonstige technische Outputs liegen ausschließlich unter `.intern/`. Vor dem Render keine Platzhalter-MP4 erzeugen. Alle Zeitcodes aus der finalen Audio-Timeline, niemals schätzen.
+
+**Aktuelle Befehle für neue Videoordner:**
+
+```bash
+python tools/prepare_phase3.py youtube-videos/THEMA
+python tools/export_subtitles.py youtube-videos/THEMA
+cd renderer
+npm run render -- ../youtube-videos/THEMA/03_export/VIDEO.mp4
+```
+
+Die weiter oben genannten `04_export`-Pfade beschreiben ausschließlich den älteren, unveränderten 008-Projektaufbau. **Nicht** für neue Produktionen verwenden.
 
 ## Finale technische QA
 

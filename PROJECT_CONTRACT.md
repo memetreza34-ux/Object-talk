@@ -230,7 +230,7 @@ Cover-Prompt muss zusaetzlich ausdruecklich sagen:
 **Exactly one visible text block: the title only. No labels, no subtitle, no extra text.**
 
 ## Bildwelt ohne Vorlagen
-Wie beim erfolgreichen Verdauungs-Longform 008 wird Google Flow **ausschließlich mit einem vollständigen Textprompt** geführt. Keine JPG-/Video-Frames, externe Stilbilder, Referenz-ZIPs oder Coverbilder als Bildvorlage an Flow geben. Die kanonische Beschreibung in `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`, der wortgleiche 008-Stilblock und konkret komponierte Szenen sind verbindlich. Die drei Cover werden per Text erzeugt; die Auswahl bestimmt lediglich `Bild_01`.
+Wie beim erfolgreichen Verdauungs-Longform 008 wird Google Flow **ausschließlich mit einem vollständigen Textprompt** geführt. Keine JPG-/Video-Frames, externe Stilbilder, Referenz-ZIPs oder Coverbilder als Bildvorlage an Flow geben. Die kanonische Beschreibung in `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`, der wortgleiche 008-Stilblock und konkret komponierte Szenen sind verbindlich. Die drei Cover werden per Text erzeugt; die Auswahl bestimmt nur das separate YouTube-Cover `03_export/COVER.png`, niemals die erste Videoszene `Bild_01`.
 ## Asset-Hygiene
 
 - pro finaler Bildnummer genau ein retained Asset
@@ -293,9 +293,13 @@ Die gesamte Bildproduktion muss die Richtlinien des externen Bildgenerators einh
 
 
 ## Ausschließlich Textprompts – feste Entscheidung
-Bei 008 wurden keine Bildvorlagen benutzt. Auch 009 und alle folgenden Longforms werden ohne visuelle Referenzbilder generiert. Nicht nach Stil-ZIPs, JPGs oder Uploads fragen. Konsistenz über klare unveränderte Stilbeschreibung, lebendige bildfüllende Biologieszenen und anschließende Sichtprüfung sicherstellen. Das gewählte Cover ist nur das erste Bild und wird nicht als Image-to-Image-Vorlage verwendet. Ein generatives Modell garantiert trotzdem keine pixelidentischen Stile.
+Bei 008 wurden keine Bildvorlagen benutzt. Auch 009 und alle folgenden Longforms werden ohne visuelle Referenzbilder generiert. Nicht nach Stil-ZIPs, JPGs oder Uploads fragen. Konsistenz über klare unveränderte Stilbeschreibung, lebendige bildfüllende Biologieszenen und anschließende Sichtprüfung sicherstellen. Das gewählte Cover ist nur das **separate Thumbnail** und wird nicht als Image-to-Image-Vorlage oder erste Videoszene verwendet. Ein generatives Modell garantiert trotzdem keine pixelidentischen Stile.
 
 
 ## Neue 3-Ordner-Regel ab Video 009 (verbindlich)
 
 Sichtbar nur `01_script/`, `02_bildprompts/`, `03_export/`. Technische Planungs- und Renderdateien unter verstecktem `.intern/`. Das Google-Flow-Cover ist ein **eigenes YouTube-Thumbnail `03_export/COVER.png` und KEINE Szene `Bild_01`**. Bild_01 ist sofort die erste normale biologische Illustration, nur die normal nummerierten Bilder in die Bilder-ZIP und das MP4. Nach Coverwahl Bilder 01–05, danach 06–10 usw. Untertitel aus echter Audioausrichtung nach `03_export/UNTERTITEL-MIT-ZEITEN.txt`. Alle Labels sollen häufig dann erscheinen, wenn sie einen Vorgang verständlicher machen, ansonsten textfrei; höchstens 2 kurze Wörter/Gruppen pro Bild. Keine Vorlagen-Uploads, keine Remotion-Textlayer, keine überfüllten Szenen.
+
+## Zukunftsregel: sauberer Export – keine Migration bestehender Videos
+
+Für alle **neu erstellten** Videoordner ist `engine/EXPORT-STANDARD.md` verbindlich. `03_export/` enthält **nach Fertigstellung nur** `VIDEO.mp4`, `COVER.png`, `CAPTION-YOUTUBE.txt`, `UNTERTITEL-MIT-ZEITEN.txt`. Keine weiteren Dateien oder Unterordner. Renderberichte, JSON, SRT, QA und Postmortem bleiben für die Automatisierung erhalten, aber nur verborgen unter `.intern/`. Das Cover wird separat ausgeliefert, nicht im Video. Zeitstempel müssen aus echter finaler Audio-Ausrichtung stammen. Bestehende Projekte (insbesondere 008 und 009) bleiben bei dieser Änderung **unangetastet**.
