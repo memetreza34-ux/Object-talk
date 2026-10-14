@@ -1,0 +1,727 @@
+{
+  "status": "READY",
+  "video": "010",
+  "chapter_titles": [
+    "Hook: das rätselhafte Hungergefühl",
+    "Was Sättigung im Körper bedeutet",
+    "Was Protein beiträgt",
+    "Die Kraft von Ballaststoffen",
+    "Warum Getränke anders wirken",
+    "Schnelle Snacks und Energie",
+    "Schlaf, Stress und Umgebung",
+    "Vier hilfreiche Ideen für den Alltag",
+    "Fazit ohne Wunderversprechen"
+  ],
+  "cover_title": "Warum bist du wieder hungrig?",
+  "cover_is_scene": false,
+  "expected_images": 72,
+  "scenes": [
+    {
+      "scene": 1,
+      "speech_section": "Du hast gerade gegessen. Und kaum eine Stunde später stehst du wieder vor dem Kühlschrank. Wie kann das sein?",
+      "visual_task": "Cozy kitchen, clothed adult looks puzzled at open refrigerator after a finished lunch; single expressive action, three-quarter view",
+      "image": "Bild_01",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "notes": "Kapitel 1: Hook: das rätselhafte Hungergefühl. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 2,
+      "speech_section": "Die einfache Antwort wäre: Du hast zu wenig gegessen. Doch das ist längst nicht immer der Grund.",
+      "visual_task": "Side-by-side scene in the same dining room: a full bowl and a questioning hungry adult, no numerical infographic",
+      "image": "Bild_02",
+      "motion": "pan-right",
+      "labels_de": [],
+      "notes": "Kapitel 1: Hook: das rätselhafte Hungergefühl. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 3,
+      "speech_section": "Denn Hunger entsteht nicht nur im Magen. Dein Gehirn verarbeitet viele Signale gleichzeitig.",
+      "visual_task": "Illustrated adult torso with softly highlighted stomach connected by a single visible nerve path to brain",
+      "image": "Bild_03",
+      "motion": "slow-pull-back",
+      "labels_de": [
+        "Magen",
+        "Gehirn"
+      ],
+      "notes": "Kapitel 1: Hook: das rätselhafte Hungergefühl. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 4,
+      "speech_section": "Wie lange dich Essen satt hält, hängt deshalb von mehr ab als von der Menge auf dem Teller.",
+      "visual_task": "Overhead view: same-sized two dinner plates, one pastry meal and one balanced meal, inviting warm light",
+      "image": "Bild_04",
+      "motion": "pan-left",
+      "labels_de": [],
+      "notes": "Kapitel 1: Hook: das rätselhafte Hungergefühl. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 5,
+      "speech_section": "Eiweiß, Ballaststoffe, flüssige Kalorien und sogar dein Schlaf spielen dabei eine Rolle.",
+      "visual_task": "Four carefully separated recognizable objects in one natural kitchen counter grouping: yogurt, beans, juice, sleep pillow; no UI cards",
+      "image": "Bild_05",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "notes": "Kapitel 1: Hook: das rätselhafte Hungergefühl. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 6,
+      "speech_section": "Wir schauen uns an, wie dein Körper Sättigung meldet und warum dieses Signal manchmal schnell nachlässt.",
+      "visual_task": "Close-up of a simplified human stomach sending a clear small pulse through a nerve toward the brain, airy medical illustration",
+      "image": "Bild_06",
+      "motion": "gentle-up-pan",
+      "labels_de": [
+        "Sättigungssignal"
+      ],
+      "notes": "Kapitel 1: Hook: das rätselhafte Hungergefühl. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 7,
+      "speech_section": "Und am Ende kennst du einfache Veränderungen, die dir im Alltag helfen können, länger angenehm satt zu bleiben.",
+      "visual_task": "Everyday breakfast table, adult adding lentils and vegetables to a real meal, gentle daylight, simple action",
+      "image": "Bild_07",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "notes": "Kapitel 1: Hook: das rätselhafte Hungergefühl. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 8,
+      "speech_section": "Dabei geht es nicht ums Hungern oder darum, einzelne Lebensmittel als schlecht abzustempeln.",
+      "visual_task": "Calm balanced table where bread, fruit, nuts and cooked meal all coexist; no warning badges, no scales",
+      "image": "Bild_08",
+      "motion": "pan-right",
+      "labels_de": [],
+      "notes": "Kapitel 1: Hook: das rätselhafte Hungergefühl. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 9,
+      "speech_section": "Zuerst die wichtigste Unterscheidung: Ein voller Magen ist nicht dasselbe wie ein langfristig zufriedener Körper.",
+      "visual_task": "Clean simplified side cutaway: stomach comfortably filled after meal, separate distant brain silhouette in same organic world",
+      "image": "Bild_09",
+      "motion": "slow-pull-back",
+      "labels_de": [
+        "Magen"
+      ],
+      "notes": "Kapitel 2: Was Sättigung im Körper bedeutet. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 10,
+      "speech_section": "Wenn du isst, dehnt sich dein Magen aus. Spezielle Rezeptoren registrieren diese Dehnung.",
+      "visual_task": "One large recognizable simplified stomach gently expanding around a meal; few wall sensors subtly highlighted",
+      "image": "Bild_10",
+      "motion": "pan-left",
+      "labels_de": [
+        "Dehnungsrezeptoren"
+      ],
+      "notes": "Kapitel 2: Was Sättigung im Körper bedeutet. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 11,
+      "speech_section": "Über Nerven gelangen Informationen an Bereiche im Gehirn, die beim Sättigungsgefühl mithelfen.",
+      "visual_task": "Single enlarged curved vagus nerve pathway linking simplified stomach to brainstem, easy left-to-right reading",
+      "image": "Bild_11",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Vagusnerv"
+      ],
+      "notes": "Kapitel 2: Was Sättigung im Körper bedeutet. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 12,
+      "speech_section": "Aber das ist nur ein Teil des Ganzen. Auch der Dünndarm meldet, dass Nahrung angekommen ist.",
+      "visual_task": "Cutaway showing a small amount of digested food entering a clearly recognizable short section of small intestine",
+      "image": "Bild_12",
+      "motion": "gentle-up-pan",
+      "labels_de": [
+        "Dünndarm"
+      ],
+      "notes": "Kapitel 2: Was Sättigung im Körper bedeutet. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 13,
+      "speech_section": "Dort werden Botenstoffe freigesetzt, die gemeinsam mit Nervensignalen die weitere Nahrungsaufnahme beeinflussen.",
+      "visual_task": "One intestinal wall with three small messenger particles moving toward nearby blood vessel, restrained detail",
+      "image": "Bild_13",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Botenstoffe"
+      ],
+      "notes": "Kapitel 2: Was Sättigung im Körper bedeutet. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 14,
+      "speech_section": "Dein Gehirn kombiniert solche Signale mit Gewohnheiten, Gerüchen und dem, was du gerade siehst.",
+      "visual_task": "Brain beside adult at kitchen counter, steam from fresh food gently in foreground; not a split infographic",
+      "image": "Bild_14",
+      "motion": "pan-right",
+      "labels_de": [],
+      "notes": "Kapitel 2: Was Sättigung im Körper bedeutet. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 15,
+      "speech_section": "Deshalb kannst du Appetit auf etwas Leckeres haben, obwohl dein Magen eigentlich schon gut gefüllt ist.",
+      "visual_task": "Clothed adult after meal noticing bakery window with appealing bun; body relaxed, no judgmental emotion",
+      "image": "Bild_15",
+      "motion": "slow-pull-back",
+      "labels_de": [
+        "Appetit"
+      ],
+      "notes": "Kapitel 2: Was Sättigung im Körper bedeutet. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 16,
+      "speech_section": "Hunger und Appetit überschneiden sich, sind aber nicht immer genau dasselbe.",
+      "visual_task": "Two simple natural scenes with one person feeling tummy rumble and another drawn to aroma; no charts",
+      "image": "Bild_16",
+      "motion": "pan-left",
+      "labels_de": [
+        "Hunger",
+        "Appetit"
+      ],
+      "notes": "Kapitel 2: Was Sättigung im Körper bedeutet. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 17,
+      "speech_section": "Ein wichtiger Baustein einer sättigenden Mahlzeit ist Eiweiß. Es steckt nicht nur in Fleisch oder Eiern.",
+      "visual_task": "Warm simple food still life with eggs, natural yogurt, beans and tofu, no labels on packaging",
+      "image": "Bild_17",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Eiweiß"
+      ],
+      "notes": "Kapitel 3: Was Protein beiträgt. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 18,
+      "speech_section": "Auch Linsen, Bohnen, Tofu und Milchprodukte können dazu beitragen, ausreichend Eiweiß zu essen.",
+      "visual_task": "Overhead natural bowl of cooked lentils and tofu with small yogurt cup, clean ingredient photography-like illustration",
+      "image": "Bild_18",
+      "motion": "gentle-up-pan",
+      "labels_de": [],
+      "notes": "Kapitel 3: Was Protein beiträgt. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 19,
+      "speech_section": "Eiweißreiche Mahlzeiten können das Sättigungsgefühl unterstützen. Wie stark, unterscheidet sich allerdings von Mensch zu Mensch.",
+      "visual_task": "Clothed adult enjoying protein-inclusive lunch at a table, peaceful relaxed face with smaller later-snack temptation",
+      "image": "Bild_19",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "notes": "Kapitel 3: Was Protein beiträgt. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 20,
+      "speech_section": "Warum? Bei der Verdauung entstehen unter anderem Signale, die deinem Gehirn bei der Sättigungsregulation helfen.",
+      "visual_task": "Simplified food protein pieces progressing from stomach to short upper intestine, only one gentle arrow, no atom diagrams",
+      "image": "Bild_20",
+      "motion": "pan-right",
+      "labels_de": [
+        "Verdauung"
+      ],
+      "notes": "Kapitel 3: Was Protein beiträgt. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 21,
+      "speech_section": "Du musst dafür aber keine riesigen Mengen Eiweiß essen oder jede Mahlzeit mit Pulver ergänzen.",
+      "visual_task": "Natural tabletop, regular bowl with yogurt and fruit while large supplement tub sits far outside focus, gentle no-judgment composition",
+      "image": "Bild_21",
+      "motion": "slow-pull-back",
+      "labels_de": [],
+      "notes": "Kapitel 3: Was Protein beiträgt. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 22,
+      "speech_section": "Oft reicht es, beim Frühstück oder Mittagessen eine passende Eiweißquelle mit einzuplanen.",
+      "visual_task": "Person putting plain yogurt beside fruit and oats for breakfast, clear scene action",
+      "image": "Bild_22",
+      "motion": "pan-left",
+      "labels_de": [],
+      "notes": "Kapitel 3: Was Protein beiträgt. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 23,
+      "speech_section": "Zum Beispiel Haferflocken mit Joghurt oder ein warmes Gericht mit Linsen und Gemüse.",
+      "visual_task": "Large illustrated plate split by perspective into oats with yogurt in foreground and lentil vegetable pot in back, natural kitchen",
+      "image": "Bild_23",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "notes": "Kapitel 3: Was Protein beiträgt. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 24,
+      "speech_section": "Entscheidend bleibt das Gesamtbild deiner Ernährung. Ein einzelner Nährstoff löst nicht jedes Hungerproblem.",
+      "visual_task": "Balanced table featuring mixed food group bowls, adult assembling varied meal, no symbols or badges",
+      "image": "Bild_24",
+      "motion": "gentle-up-pan",
+      "labels_de": [],
+      "notes": "Kapitel 3: Was Protein beiträgt. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 25,
+      "speech_section": "Der nächste Faktor wird oft unterschätzt: Ballaststoffe. Sie kommen vor allem in pflanzlichen Lebensmitteln vor.",
+      "visual_task": "Macro of whole grain oats, lentils, apples and carrots arranged naturally on wooden board, subtle pastel backdrop",
+      "image": "Bild_25",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Ballaststoffe"
+      ],
+      "notes": "Kapitel 4: Die Kraft von Ballaststoffen. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 26,
+      "speech_section": "Sie stecken zum Beispiel in Vollkorn, Bohnen, Gemüse, Obst und vielen Hülsenfrüchten.",
+      "visual_task": "Cross-cut scene with a wholegrain bread slice, beans and apple on simple table, organic shading",
+      "image": "Bild_26",
+      "motion": "pan-right",
+      "labels_de": [],
+      "notes": "Kapitel 4: Die Kraft von Ballaststoffen. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 27,
+      "speech_section": "Ballaststoffreiche Lebensmittel brauchen häufig mehr Kauen und bringen oft viel Volumen auf den Teller.",
+      "visual_task": "Person slowly chewing crunchy vegetables at a table, nearby large colorful salad bowl",
+      "image": "Bild_27",
+      "motion": "slow-pull-back",
+      "labels_de": [],
+      "notes": "Kapitel 4: Die Kraft von Ballaststoffen. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 28,
+      "speech_section": "Manche Ballaststoffe nehmen Wasser auf und bilden im Verdauungstrakt eine gelartige Masse.",
+      "visual_task": "Simple cutaway of intestinal lumen showing soluble fibers holding water in one soft translucent gel, not microscopic clutter",
+      "image": "Bild_28",
+      "motion": "pan-left",
+      "labels_de": [
+        "Lösliche Ballaststoffe"
+      ],
+      "notes": "Kapitel 4: Die Kraft von Ballaststoffen. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 29,
+      "speech_section": "Das kann die Verdauung verlangsamen und mit dazu beitragen, dass du dich länger satt fühlst.",
+      "visual_task": "One simplified intestinal tube with slower-moving food mass and gentle rhythmic movement, minimal transparent illustration",
+      "image": "Bild_29",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "notes": "Kapitel 4: Die Kraft von Ballaststoffen. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 30,
+      "speech_section": "Dazu kommen Wasser und Volumen vieler Gemüsesorten. Ein großer Teller muss also nicht extrem energiereich sein.",
+      "visual_task": "Side view big plate of vegetables and lentils, filled with volume, human hand for scale",
+      "image": "Bild_30",
+      "motion": "gentle-up-pan",
+      "labels_de": [],
+      "notes": "Kapitel 4: Die Kraft von Ballaststoffen. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 31,
+      "speech_section": "Ein Apfel enthält außerdem Ballaststoffe. Als ganzes Obst sättigt er oft besser als die entsprechende Saftportion.",
+      "visual_task": "Whole apple on plate beside small transparent glass of apple juice, both same kitchen view",
+      "image": "Bild_31",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Apfel",
+        "Apfelsaft"
+      ],
+      "notes": "Kapitel 4: Die Kraft von Ballaststoffen. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 32,
+      "speech_section": "Wichtig ist dabei nicht Perfektion. Mehr pflanzliche Vielfalt ist meist sinnvoller als die Suche nach einem Wundermittel.",
+      "visual_task": "Cozy market stall, adult choosing colorful simple vegetables and fruit, relaxed inviting real-world scene",
+      "image": "Bild_32",
+      "motion": "pan-right",
+      "labels_de": [],
+      "notes": "Kapitel 4: Die Kraft von Ballaststoffen. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 33,
+      "speech_section": "Jetzt kommt ein Unterschied, den man leicht übersieht: Kalorien lassen sich auch trinken.",
+      "visual_task": "Simple cafe table with soda in a glass and a plated meal, glass in focus, no logos",
+      "image": "Bild_33",
+      "motion": "slow-pull-back",
+      "labels_de": [],
+      "notes": "Kapitel 5: Warum Getränke anders wirken. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 34,
+      "speech_section": "Ein süßes Getränk liefert Energie, aber macht viele Menschen nicht so satt wie feste Nahrung.",
+      "visual_task": "Adult holds a glass of sweet beverage after meal, plate and satisfied/unsatisfied question conveyed without text",
+      "image": "Bild_34",
+      "motion": "pan-left",
+      "labels_de": [],
+      "notes": "Kapitel 5: Warum Getränke anders wirken. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 35,
+      "speech_section": "Beim Trinken musst du kaum kauen. Auch die Struktur der Nahrung ist eine andere.",
+      "visual_task": "Macro close-up of juice being poured into glass, crisp liquid droplets next to intact orange segments",
+      "image": "Bild_35",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "notes": "Kapitel 5: Warum Getränke anders wirken. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 36,
+      "speech_section": "Das bedeutet nicht, dass jede Suppe oder jeder Smoothie schlecht sättigt. Zutaten und Konsistenz zählen.",
+      "visual_task": "Large bowl of chunky vegetable soup beside blended fruit smoothie, uncomplicated educational still life",
+      "image": "Bild_36",
+      "motion": "gentle-up-pan",
+      "labels_de": [],
+      "notes": "Kapitel 5: Warum Getränke anders wirken. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 37,
+      "speech_section": "Eine Gemüsesuppe mit Bohnen verhält sich anders als eine Limonade voller zugesetztem Zucker.",
+      "visual_task": "Warm bowl of thick vegetable-bean soup contrasting with simple sugary drink glass, no commercial branding",
+      "image": "Bild_37",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Bohnensuppe",
+        "Limonade"
+      ],
+      "notes": "Kapitel 5: Warum Getränke anders wirken. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 38,
+      "speech_section": "Wenn du oft nebenbei Kalorien trinkst, können Wasser oder ungesüßte Getränke eine einfache Alternative sein.",
+      "visual_task": "Person filling reusable drinking glass from faucet on kitchen counter, bright relaxed composition",
+      "image": "Bild_38",
+      "motion": "pan-right",
+      "labels_de": [
+        "Wasser"
+      ],
+      "notes": "Kapitel 5: Warum Getränke anders wirken. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 39,
+      "speech_section": "Wer gern Saft trinkt, kann ihn bewusst genießen. Nur: Er ersetzt nicht automatisch eine Portion ganzes Obst.",
+      "visual_task": "Person eating orange slices while a small juice glass stands nearby, warm natural light",
+      "image": "Bild_39",
+      "motion": "slow-pull-back",
+      "labels_de": [],
+      "notes": "Kapitel 5: Warum Getränke anders wirken. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 40,
+      "speech_section": "Denn wie satt eine Mahlzeit macht, entscheidet sich nicht an einem einzelnen Etikett wie gesund oder ungesund.",
+      "visual_task": "Restaurant table with fresh meal, drink and side of fruit, harmonious composition with no classification symbols",
+      "image": "Bild_40",
+      "motion": "pan-left",
+      "labels_de": [],
+      "notes": "Kapitel 5: Warum Getränke anders wirken. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 41,
+      "speech_section": "Vielleicht kennst du das: Ein süßes Gebäck ist schnell gegessen, und bald darauf willst du etwas Neues.",
+      "visual_task": "Adult finishes small pastry on park bench and glances at food bag, understated everyday illustration",
+      "image": "Bild_41",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "notes": "Kapitel 6: Schnelle Snacks und Energie. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 42,
+      "speech_section": "Solche Snacks enthalten manchmal viel Energie, aber wenig Eiweiß, Wasser und Ballaststoffe.",
+      "visual_task": "Close-up pastry with simplified cutaway showing airy refined crumb, no numerical chart",
+      "image": "Bild_42",
+      "motion": "gentle-up-pan",
+      "labels_de": [],
+      "notes": "Kapitel 6: Schnelle Snacks und Energie. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 43,
+      "speech_section": "Dann fehlt ein Teil dessen, was eine Mahlzeit besonders sättigend machen kann.",
+      "visual_task": "Plate with one small pastry beside large colorful food bowl, elegant composition not shaming food",
+      "image": "Bild_43",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "notes": "Kapitel 6: Schnelle Snacks und Energie. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 44,
+      "speech_section": "Aber Vorsicht: Nicht jeder schnelle Hunger entsteht durch einen gefährlichen Blutzuckerabsturz.",
+      "visual_task": "Simplified blood vessel with smooth normal glucose dots and a balanced small waveform shape, no dramatic red drop",
+      "image": "Bild_44",
+      "motion": "pan-right",
+      "labels_de": [
+        "Blutzucker"
+      ],
+      "notes": "Kapitel 6: Schnelle Snacks und Energie. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 45,
+      "speech_section": "Der Blutzucker verändert sich nach dem Essen ganz normal. Die Reaktion hängt auch von der Mahlzeit ab.",
+      "visual_task": "Macro small intestine sending absorbed glucose particles toward bloodstream, simple bridge scene",
+      "image": "Bild_45",
+      "motion": "slow-pull-back",
+      "labels_de": [
+        "Glukose"
+      ],
+      "notes": "Kapitel 6: Schnelle Snacks und Energie. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 46,
+      "speech_section": "Bei gesunden Menschen reguliert der Körper diese Werte normalerweise innerhalb eines funktionierenden Stoffwechsels.",
+      "visual_task": "Warm clean pancreas beside nearby blood vessel, gentle signaling particles, not dramatic or glowing",
+      "image": "Bild_46",
+      "motion": "pan-left",
+      "labels_de": [
+        "Bauchspeicheldrüse"
+      ],
+      "notes": "Kapitel 6: Schnelle Snacks und Energie. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 47,
+      "speech_section": "Für den Alltag hilft deshalb eine praktischere Frage: Was fehlt meinem Snack vielleicht, damit er länger vorhält?",
+      "visual_task": "Kitchen counter, adult looking at small snack and preparing bowl with nuts and fruit, natural posture",
+      "image": "Bild_47",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "notes": "Kapitel 6: Schnelle Snacks und Energie. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 48,
+      "speech_section": "Eine Ergänzung wie Joghurt, Nüsse oder Obst kann ihn ausgewogener machen. Verbote sind dafür nicht nötig.",
+      "visual_task": "Simple snack plate adding yogurt cup, few nuts and apple slices next to a small pastry, friendly atmosphere",
+      "image": "Bild_48",
+      "motion": "gentle-up-pan",
+      "labels_de": [],
+      "notes": "Kapitel 6: Schnelle Snacks und Energie. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 49,
+      "speech_section": "Warum bist du an manchen Tagen besonders hungrig, obwohl du ungefähr gleich viel gegessen hast?",
+      "visual_task": "Adult at breakfast table on two different mornings as simple time transition, same mug and table",
+      "image": "Bild_49",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "notes": "Kapitel 7: Schlaf, Stress und Umgebung. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 50,
+      "speech_section": "Ein möglicher Faktor ist Schlaf. Zu wenig Schlaf kann Hunger und Appetit beeinflussen.",
+      "visual_task": "Clothed adult lying awake in a quiet dim bedroom, soft clock silhouette without numbers",
+      "image": "Bild_50",
+      "motion": "pan-right",
+      "labels_de": [
+        "Schlaf"
+      ],
+      "notes": "Kapitel 7: Schlaf, Stress und Umgebung. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 51,
+      "speech_section": "Er wirkt unter anderem auf Signale, die an der Regulation unseres Essverhaltens beteiligt sind.",
+      "visual_task": "Soft illustration of brain connected to circadian rhythm and gut silhouette, one understandable curved link",
+      "image": "Bild_51",
+      "motion": "slow-pull-back",
+      "labels_de": [
+        "Gehirn"
+      ],
+      "notes": "Kapitel 7: Schlaf, Stress und Umgebung. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 52,
+      "speech_section": "Auch Stress verändert bei manchen Menschen das Essverhalten. Andere verlieren unter Stress eher ihren Appetit.",
+      "visual_task": "Adult in work environment looking tired, unopened snack nearby; quiet realistic illustration, no alarm icons",
+      "image": "Bild_52",
+      "motion": "pan-left",
+      "labels_de": [
+        "Stress"
+      ],
+      "notes": "Kapitel 7: Schlaf, Stress und Umgebung. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 53,
+      "speech_section": "Und dann ist da unsere Umgebung: Duft, Werbung, Gewohnheit und leicht verfügbare Snacks spielen mit hinein.",
+      "visual_task": "City bakery window, bread aroma drifting toward passing adult, no ad logos or words",
+      "image": "Bild_53",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "notes": "Kapitel 7: Schlaf, Stress und Umgebung. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 54,
+      "speech_section": "Du musst deshalb nicht jeden Appetit als Mangel an Disziplin betrachten.",
+      "visual_task": "Person pauses at their desk, breathes calmly and considers an apple, nonjudgmental body language",
+      "image": "Bild_54",
+      "motion": "gentle-up-pan",
+      "labels_de": [],
+      "notes": "Kapitel 7: Schlaf, Stress und Umgebung. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 55,
+      "speech_section": "Es lohnt sich eher zu beobachten, wann du hungrig wirst und wie deine Mahlzeiten aussehen.",
+      "visual_task": "Hand writing a few simple meal observations in a blank notebook next to glass of water, no legible text",
+      "image": "Bild_55",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "notes": "Kapitel 7: Schlaf, Stress und Umgebung. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 56,
+      "speech_section": "Manchmal liegt die Lösung nicht in einer strengeren Regel, sondern in einem besser passenden Alltag.",
+      "visual_task": "Person packing lunch for next day and closing kitchen drawer, relaxed domestic scene",
+      "image": "Bild_56",
+      "motion": "pan-right",
+      "labels_de": [],
+      "notes": "Kapitel 7: Schlaf, Stress und Umgebung. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 57,
+      "speech_section": "Was kannst du konkret ausprobieren? Beginne mit einer Mahlzeit, die dich bisher nur kurz satt hält.",
+      "visual_task": "Adult looking at familiar light lunch plate in home kitchen, preparing to add foods",
+      "image": "Bild_57",
+      "motion": "slow-pull-back",
+      "labels_de": [],
+      "notes": "Kapitel 8: Vier hilfreiche Ideen für den Alltag. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 58,
+      "speech_section": "Erstens: Ergänze nach Möglichkeit eine Eiweißquelle, die du magst und gut verträgst.",
+      "visual_task": "Hands add a serving of lentils to colorful grain bowl, one visible movement",
+      "image": "Bild_58",
+      "motion": "pan-left",
+      "labels_de": [
+        "Eiweißquelle"
+      ],
+      "notes": "Kapitel 8: Vier hilfreiche Ideen für den Alltag. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 59,
+      "speech_section": "Zweitens: Bring Gemüse, Obst oder Vollkorn auf den Teller, damit Ballaststoffe und Volumen dazukommen.",
+      "visual_task": "Hand adds roasted vegetables to lunch plate beside wholegrain bread, one action",
+      "image": "Bild_59",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Ballaststoffe"
+      ],
+      "notes": "Kapitel 8: Vier hilfreiche Ideen für den Alltag. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 60,
+      "speech_section": "Drittens: Iss, wenn möglich, in Ruhe und achte darauf, wann du angenehm satt wirst.",
+      "visual_task": "Adult seated calmly with fork placed down mid meal, relaxed dining scene",
+      "image": "Bild_60",
+      "motion": "gentle-up-pan",
+      "labels_de": [],
+      "notes": "Kapitel 8: Vier hilfreiche Ideen für den Alltag. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 61,
+      "speech_section": "Sättigungssignale entwickeln sich während einer Mahlzeit. Langsamer essen kann dir helfen, sie besser wahrzunehmen.",
+      "visual_task": "Close-up natural dinner plate and adult hand putting fork down, gentle stomach-to-brain echo in background",
+      "image": "Bild_61",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Sättigung"
+      ],
+      "notes": "Kapitel 8: Vier hilfreiche Ideen für den Alltag. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 62,
+      "speech_section": "Viertens: Prüfe, ob Getränke und beiläufige Snacks bei dir einen großen Teil des Essens ausmachen.",
+      "visual_task": "Desk with open laptop, small glass of soda and snack wrappers; reflective not judgmental moment",
+      "image": "Bild_62",
+      "motion": "pan-right",
+      "labels_de": [],
+      "notes": "Kapitel 8: Vier hilfreiche Ideen für den Alltag. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 63,
+      "speech_section": "Wähle kleine Veränderungen, die du langfristig beibehalten kannst, statt morgen alles radikal umzustellen.",
+      "visual_task": "Friendly kitchen scene preparing a simple lunchbox with vegetables and favorite sandwich",
+      "image": "Bild_63",
+      "motion": "slow-pull-back",
+      "labels_de": [],
+      "notes": "Kapitel 8: Vier hilfreiche Ideen für den Alltag. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 64,
+      "speech_section": "Und wenn du abnehmen möchtest: Entscheidend ist auf Dauer die gesamte Energiebilanz, nicht ein magischer Trick.",
+      "visual_task": "Clean energy-balance illustration with balanced everyday food and walking shoes, no weight-number, one understandable idea",
+      "image": "Bild_64",
+      "motion": "pan-left",
+      "labels_de": [
+        "Energiebilanz"
+      ],
+      "notes": "Kapitel 8: Vier hilfreiche Ideen für den Alltag. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 65,
+      "speech_section": "Satt sein bedeutet also nicht nur: Der Magen ist voll. Mehrere Signale arbeiten zusammen.",
+      "visual_task": "Clear organic scene brain and stomach with small consistent signals between them, simple friendly cutaway",
+      "image": "Bild_65",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Gehirn",
+        "Magen"
+      ],
+      "notes": "Kapitel 9: Fazit ohne Wunderversprechen. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 66,
+      "speech_section": "Die Zusammensetzung deiner Mahlzeit, dein Essverhalten und deine Lebenssituation können dabei eine Rolle spielen.",
+      "visual_task": "Three connected real-life moments: meal at table, quiet sleep, busy street; coherent transition without panels",
+      "image": "Bild_66",
+      "motion": "gentle-up-pan",
+      "labels_de": [],
+      "notes": "Kapitel 9: Fazit ohne Wunderversprechen. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 67,
+      "speech_section": "Deshalb ist nicht jede Person nach demselben Frühstück gleich lange satt.",
+      "visual_task": "Two clothed adults at same breakfast table with relaxed different responses, no stereotypes",
+      "image": "Bild_67",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "notes": "Kapitel 9: Fazit ohne Wunderversprechen. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 68,
+      "speech_section": "Wenn du schnell wieder Hunger bekommst, beobachte zuerst die Muster, statt sofort das Essen zu verbieten.",
+      "visual_task": "Adult pauses before snack, checks whether genuinely hungry in thoughtful everyday kitchen moment",
+      "image": "Bild_68",
+      "motion": "pan-right",
+      "labels_de": [],
+      "notes": "Kapitel 9: Fazit ohne Wunderversprechen. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 69,
+      "speech_section": "Probier zum Beispiel mehr Eiweiß und Ballaststoffe, genug Schlaf und etwas mehr Ruhe beim Essen.",
+      "visual_task": "Overhead inviting balanced bowl with beans, grains, greens and glass of water; morning sun",
+      "image": "Bild_69",
+      "motion": "slow-pull-back",
+      "labels_de": [],
+      "notes": "Kapitel 9: Fazit ohne Wunderversprechen. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 70,
+      "speech_section": "Wenn Hunger plötzlich stark zunimmt oder mit auffälligen Beschwerden einhergeht, lass das medizinisch abklären.",
+      "visual_task": "Adult calmly speaking with a healthcare professional at a bright consultation desk, no medical devices in foreground",
+      "image": "Bild_70",
+      "motion": "pan-left",
+      "labels_de": [],
+      "notes": "Kapitel 9: Fazit ohne Wunderversprechen. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 71,
+      "speech_section": "Und denk daran: Hunger ist ein Signal deines Körpers, kein Fehler, gegen den du ständig kämpfen musst.",
+      "visual_task": "Close friendly cutaway of body with stomach and brain peacefully communicating, softly highlighted",
+      "image": "Bild_71",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "notes": "Kapitel 9: Fazit ohne Wunderversprechen. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    },
+    {
+      "scene": 72,
+      "speech_section": "Wenn du das verstehst, kannst du Ernährung bewusster gestalten – ohne komplizierte Regeln und ohne falsche Versprechen.",
+      "visual_task": "Final hopeful scene adult eats balanced enjoyable meal at sunlit table, clean organic illustration matching intro",
+      "image": "Bild_72",
+      "motion": "gentle-up-pan",
+      "labels_de": [],
+      "notes": "Kapitel 9: Fazit ohne Wunderversprechen. Ein Lehrpunkt. 16:9, vereinfachte Biology-Illustration. Motiv und Maßstab variieren; keine Render-Texte."
+    }
+  ]
+}

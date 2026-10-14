@@ -1,2 +1,2 @@
-WIRD ERST NACH ECHTER AUDIO-ALIGNMENT/TIMELINE AUTOMATISCH GEFÜLLT.
-Keine erfundenen Zeitstempel. Format: 00:00–00:10  Tatsächlich gesprochene Wörter …
+NOCH NICHT BERECHENBAR: Das echte finale Voice-over und die Whisper-Wortzeitstempel sind noch nicht vorhanden. 
+Nach Fertigstellung des Audiomaterials die echten Zeitfenster mit tools/export_subtitles.py erzeugen. Keine geschätzten Zeiten oder künstliche SRTs eintragen.

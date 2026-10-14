@@ -1,28 +1,177 @@
-OBJECT-TALK – EINZIGER GOOGLE-FLOW-PROMPT FÜR [VIDEO_ID]
+LEBENSLOGIK | VIDEO 010 | SINGLE COMPLETE GOOGLE FLOW IMAGE AGENT PROMPT
 
-Diesen Platzhalter vor der Produktion komplett durch konkrete Szenen- und Coverbeschreibungen ersetzen. Agenten lesen intern engine/FLOW-COVER-FIRST-WORKFLOW.md. Der Nutzer sieht/braucht anschließend NUR DIESE EINE DATEI.
+German educational biology / nutrition YouTube video: Warum du nach dem Essen so schnell wieder Hunger hast
 
-SOFORT STARTEN – REINE TEXTGENERIERUNG, KEINE VORLAGEN:
-Erzeuge als erste Aktion genau drei separate Cover. Die Bildwelt entsteht ausschließlich aus dem ausführlichen Stiltext und den Bildbeschreibungen, wie beim erfolgreichen Verdauungsvideo 008. Keine JPGs, ZIPs, Bilder-Uploads, Stilreferenzen oder weitere Prompts anfordern. Nach Nutzerwahl alle Folgebilder aus derselben schriftlichen Bildwelt generieren, ohne das Cover als Bildreferenz hochzuladen.
+Generate still images only. Aspect ratio 16:9. Image captions and file names are INTERNAL production metadata and must NEVER be visibly drawn in the images. The numbered index is only for download naming.
 
-VERBINDLICHER ABLAUF:
-1. Sofort exakt 3 unterschiedliche SEPARATE 16:9 Cover-Bilder erzeugen (NICHT eine Collage). Auf jedem als einziger sichtbarer Text genau derselbe deutsche Titel: [EXAKTER COVER-TITEL]. Jede Option bekommt einen eigenen vollständig konkretisierten Cover-Prompt. Nicht fragen, bevor alle drei Bilder tatsächlich vorliegen.
-2. Dem Nutzer alle drei Cover zeigen und genau fragen: „Welches Cover wählst du – 1, 2 oder 3?“ STOP und auf Auswahl warten. Keine anderen Szenen erzeugen.
-3. Nach der Wahl das Cover ausschließlich als SEPARATES `COVER.png` für den YouTube-Export sichern. Das Cover ist KEINE Szene und darf NIEMALS in der Bilder-ZIP oder im Video-Timeline-Render erscheinen. Das normale Video beginnt mit `Bild_01.png` ohne Covertext. OHNE erneute Rückfrage sofort Bild_01–Bild_05 einzeln erzeugen; weitere Bilder in Fünfergruppen direkt aus dem untenstehenden Szenenregister. Letzter Block ggf. kürzer. Bei Plattform-Limit offen den nächsten Startpunkt nennen und nach „weiter“ an gleicher Stelle fortsetzen. Keine separate Batch-Promptdatei erforderlich.
-4. Final genau die normal illustrierten Video-Szenen Bild_01.png bis Bild_[NN].png in eine ZIP packen (ohne Cover); Nutzer legt sie in `02_bildprompts/bilder-zip`. Das separat gewählte Cover gehört in `03_export/COVER.png`, das fertige Video ohne Cover in `03_export/VIDEO.mp4`.
+IMPORTANT: Produce THREE distinct separate cover candidates first, then STOP and wait for the user to choose 1, 2 or 3. Do not ask for reference uploads, ZIPs, extra prompts, script or permission to start. This written prompt is all you need. NEVER create a montage of three covers.
 
-SAFETY-FIRST: Ein rein bildungsbezogenes, nicht-grafisches Erklärvideo. Bei Darstellungen von Menschen nur bekleidete Erwachsene in alltäglichen Situationen. Biologische Strukturen als getrennte, vereinfachte Illustrationen statt invasiver Körperansichten. Befolge die Google-Flow-Regeln; eine abgelehnte Anfrage nicht durch Umgehungsversuche erzwingen. Falls etwas nicht möglich ist, transparent den betroffenen Bildauftrag nennen.
+CANONICAL VISUAL WORLD FOR EVERY IMAGE: Clean Animated Biology Illustration. Polished premium 2D illustrated educational animation still, simplified recognizable human biology, softly painted organic forms, clean subtle outlines, gentle gradients and subtle depth, coherent coral/red for tissues, turquoise/blue for surroundings, warm cream daylight, calm uncluttered backgrounds. One simple dominant teaching action with 2–4 recognizable elements. Alternate real everyday contexts, large organ cutaways, macro close-ups, close comparisons and action scenes. Not photorealistic, no medical CGI, no glossy 3D, no infographic cards, no cinematic neon brain, no gore. Each image must be immediately understandable even on a phone.
 
-VISUELLE WELT: IMMER exakt folgenden Stilblock aus Video 008 als feste Stilvererbung in den konkreten Videoprompt übernehmen: Clean Animated Biology Illustration: simplified but recognizable anatomy, smooth organic forms, clean outlines, soft gradients, subtle depth, bright calm backgrounds, clear biological colors, low complexity, one dominant biological idea per frame. Ausschlussregeln: No photoreal medical imagery, no medical CGI, no glossy 3D, no feature-animation/Pixar look, no toy/kids-book look, no corporate infographic, no clutter, no gore, no random icons, no unnecessary text. Ausschließlich aus der genauen schriftlichen 008-Bildwelt generieren, ohne Bilddateien als Stilvorlage. Gewähltes Cover wird erstes Asset, keine Style-Reference. Themen wie Nacht/Schlaf dürfen nie die Bildwelt in düstere Anime-/Neon-/Comicbilder verwandeln. Genehmigte Clean Animated Biology Illustration aus Video 008; plastisch-weiche organische Zeichnung, saubere Linien, lesbare Anatomie, harmonische helle Farben mit thematisch passenden dunkleren Akzenten. Keine flachen dunklen Clipart-Silhouetten oder Fotoreal-/CGI-Welt.
+COVER RULE: exactly one visible text block containing EXACTLY "Warum bist du wieder hungrig?" in correct German spelling. NO subtitles, no icons with text, no anatomy labels, no quotes or numbers. High contrast: DARK text on LIGHT area, LIGHT text on DARK area. Strong readability on a smartphone.
 
-SICHTBARER TEXT: Cover (außerhalb Video) genau ein Titeltext. Alle normal nummerierten Szenen inklusive Bild_01: 0–2 kurze deutsche Labels nur wenn sie erkennbar helfen und in der Szenenbeschreibung stehen, sonst kein Text. Light background = dark text, dark background = light text. Production IDs, numbers, filenames and all prompt instructions are NEVER visible in the generated artwork. Ein Lehrpunkt pro Bild. Keine überladenen Mehrfachinfografiken. Häufig kurze erklärende deutsche Beschriftungen auf sinnvollen Bilderlebnissen; ein Hauptvorgang und bildfüllende klare Formen.
+COVER OPTION 1: Friendly breakfast table with a half-finished delicious meal and a puzzled clothed adult looking at a small snack. Clean bold dark title on generous light cream space on left. Illustration coherent with the full video.
 
-DREI COVER-VARIANTEN (jede als einzelne klare ausführbare Szene angeben):
-1. [COVER A: eigenes konkretes Layout, Motiv, Textplatzierung]
-2. [COVER B: eigenes konkretes Layout, Motiv, Textplatzierung]
-3. [COVER C: eigenes konkretes Layout, Motiv, Textplatzierung]
+COVER OPTION 2: One large beautifully simplified stomach gently connected to the brain by a thin curved path; appetite question portrayed through an empty plate, not an icon collage. Large exact dark title on pale mint negative space.
 
-NUR NACH COVERWAHL: VOLLSTÄNDIGES NORMALES VIDEO-SZENENREGISTER, bereits in 5er-Gruppen zu verarbeiten:
-[HIER alle Szenen ab Bild_01 bis Bild_NN mit konkretem englischem Bildprompt, erlaubten Labels und internem Dateinamen einsetzen. Keine zusätzliche Promptdatei.]
+COVER OPTION 3: Two inviting breakfast meals in perspective, one pastry-only and another oats+yogurt+fruit, curious glance of clothed adult; strong title on calm light blue central area, exactly one text group.
 
-FINAL: kein Bild fehlt oder wurde doppelt genutzt. ZIP enthält NUR normale Szenen; Cover ist ein separates YouTube-Thumbnail, kein Startframe. Behaupte nie, Bilder oder ZIP existierten, solange sie nicht wirklich erstellt wurden.
+AFTER THREE ACTUAL COVER IMAGES: show all 3 and ask ONLY: "Welches Cover wählst du – 1, 2 oder 3?" Then WAIT. Never claim a generated image exists until truly generated.
+
+AFTER USER CHOICE: selected cover is separate YouTube thumbnail COVER.png for 03_export. NEVER call it Bild_01, never put it in the 72 video-scene ZIP, never place it at the beginning of the video or use it as uploaded style reference.
+
+Immediately generate NORMAL SCENES Bild_01–Bild_05 as five separate 16:9 images WITHOUT any new permission question. Then Bild_06–Bild_10 etc. in consecutive batches of five until Bild_72. Last group Bild_71–Bild_72. If a real provider per-call limit interrupts you, explain the resume point without pretending completion.
+
+TEXT INSIDE NORMAL SCENES: If a scene has an allowed German label line, generate ONLY those exact short German labels, placed next to the structure they describe, with excellent dark-on-light or light-on-dark contrast. If label line reads NO VISIBLE TEXT, show absolutely no text. Never display Bild_XX, filename, sequence number, prompt line, English text or decorative labels. No Remotion/editor text to be added later.
+
+SAFETY AND SCIENCE: nonfiction illustrations, adults fully clothed when present, no sensational medical claims, no blood-sugar crash myths, no weight-loss miracles, no stigmatizing bodies. Anatomical relationship should be plausible while simplified. If Google Flow refuses an image, report exactly which one and respect its policies; do not try to bypass.
+
+QUALITY CHECK EVERY BATCH: Check that five actual images exist, match story line, have same visual world yet distinct compositions, German spelling is correct, allowed labels only, no number leak, low visual complexity. Replace failed images before accepting and rename files exactly as their production ID for download. Do not generate fake ZIP or claim files exist without confirmation.
+
+IMAGE SCENE REGISTER (each row is its own complete image request; use the global style above and scene instruction, avoid restating the cover):
+
+01 / Bild_01.png | Cozy kitchen, clothed adult looks puzzled at open refrigerator after a finished lunch; single expressive action, three-quarter view. NO VISIBLE TEXT.
+
+02 / Bild_02.png | Side-by-side scene in the same dining room: a full bowl and a questioning hungry adult, no numerical infographic. NO VISIBLE TEXT.
+
+03 / Bild_03.png | Illustrated adult torso with softly highlighted stomach connected by a single visible nerve path to brain. ONLY VISIBLE GERMAN LABELS: Magen ; Gehirn.
+
+04 / Bild_04.png | Overhead view: same-sized two dinner plates, one pastry meal and one balanced meal, inviting warm light. NO VISIBLE TEXT.
+
+05 / Bild_05.png | Four carefully separated recognizable objects in one natural kitchen counter grouping: yogurt, beans, juice, sleep pillow; no UI cards. NO VISIBLE TEXT.
+
+06 / Bild_06.png | Close-up of a simplified human stomach sending a clear small pulse through a nerve toward the brain, airy medical illustration. ONLY VISIBLE GERMAN LABELS: Sättigungssignal.
+
+07 / Bild_07.png | Everyday breakfast table, adult adding lentils and vegetables to a real meal, gentle daylight, simple action. NO VISIBLE TEXT.
+
+08 / Bild_08.png | Calm balanced table where bread, fruit, nuts and cooked meal all coexist; no warning badges, no scales. NO VISIBLE TEXT.
+
+09 / Bild_09.png | Clean simplified side cutaway: stomach comfortably filled after meal, separate distant brain silhouette in same organic world. ONLY VISIBLE GERMAN LABELS: Magen.
+
+10 / Bild_10.png | One large recognizable simplified stomach gently expanding around a meal; few wall sensors subtly highlighted. ONLY VISIBLE GERMAN LABELS: Dehnungsrezeptoren.
+
+11 / Bild_11.png | Single enlarged curved vagus nerve pathway linking simplified stomach to brainstem, easy left-to-right reading. ONLY VISIBLE GERMAN LABELS: Vagusnerv.
+
+12 / Bild_12.png | Cutaway showing a small amount of digested food entering a clearly recognizable short section of small intestine. ONLY VISIBLE GERMAN LABELS: Dünndarm.
+
+13 / Bild_13.png | One intestinal wall with three small messenger particles moving toward nearby blood vessel, restrained detail. ONLY VISIBLE GERMAN LABELS: Botenstoffe.
+
+14 / Bild_14.png | Brain beside adult at kitchen counter, steam from fresh food gently in foreground; not a split infographic. NO VISIBLE TEXT.
+
+15 / Bild_15.png | Clothed adult after meal noticing bakery window with appealing bun; body relaxed, no judgmental emotion. ONLY VISIBLE GERMAN LABELS: Appetit.
+
+16 / Bild_16.png | Two simple natural scenes with one person feeling tummy rumble and another drawn to aroma; no charts. ONLY VISIBLE GERMAN LABELS: Hunger ; Appetit.
+
+17 / Bild_17.png | Warm simple food still life with eggs, natural yogurt, beans and tofu, no labels on packaging. ONLY VISIBLE GERMAN LABELS: Eiweiß.
+
+18 / Bild_18.png | Overhead natural bowl of cooked lentils and tofu with small yogurt cup, clean ingredient photography-like illustration. NO VISIBLE TEXT.
+
+19 / Bild_19.png | Clothed adult enjoying protein-inclusive lunch at a table, peaceful relaxed face with smaller later-snack temptation. NO VISIBLE TEXT.
+
+20 / Bild_20.png | Simplified food protein pieces progressing from stomach to short upper intestine, only one gentle arrow, no atom diagrams. ONLY VISIBLE GERMAN LABELS: Verdauung.
+
+21 / Bild_21.png | Natural tabletop, regular bowl with yogurt and fruit while large supplement tub sits far outside focus, gentle no-judgment composition. NO VISIBLE TEXT.
+
+22 / Bild_22.png | Person putting plain yogurt beside fruit and oats for breakfast, clear scene action. NO VISIBLE TEXT.
+
+23 / Bild_23.png | Large illustrated plate split by perspective into oats with yogurt in foreground and lentil vegetable pot in back, natural kitchen. NO VISIBLE TEXT.
+
+24 / Bild_24.png | Balanced table featuring mixed food group bowls, adult assembling varied meal, no symbols or badges. NO VISIBLE TEXT.
+
+25 / Bild_25.png | Macro of whole grain oats, lentils, apples and carrots arranged naturally on wooden board, subtle pastel backdrop. ONLY VISIBLE GERMAN LABELS: Ballaststoffe.
+
+26 / Bild_26.png | Cross-cut scene with a wholegrain bread slice, beans and apple on simple table, organic shading. NO VISIBLE TEXT.
+
+27 / Bild_27.png | Person slowly chewing crunchy vegetables at a table, nearby large colorful salad bowl. NO VISIBLE TEXT.
+
+28 / Bild_28.png | Simple cutaway of intestinal lumen showing soluble fibers holding water in one soft translucent gel, not microscopic clutter. ONLY VISIBLE GERMAN LABELS: Lösliche Ballaststoffe.
+
+29 / Bild_29.png | One simplified intestinal tube with slower-moving food mass and gentle rhythmic movement, minimal transparent illustration. NO VISIBLE TEXT.
+
+30 / Bild_30.png | Side view big plate of vegetables and lentils, filled with volume, human hand for scale. NO VISIBLE TEXT.
+
+31 / Bild_31.png | Whole apple on plate beside small transparent glass of apple juice, both same kitchen view. ONLY VISIBLE GERMAN LABELS: Apfel ; Apfelsaft.
+
+32 / Bild_32.png | Cozy market stall, adult choosing colorful simple vegetables and fruit, relaxed inviting real-world scene. NO VISIBLE TEXT.
+
+33 / Bild_33.png | Simple cafe table with soda in a glass and a plated meal, glass in focus, no logos. NO VISIBLE TEXT.
+
+34 / Bild_34.png | Adult holds a glass of sweet beverage after meal, plate and satisfied/unsatisfied question conveyed without text. NO VISIBLE TEXT.
+
+35 / Bild_35.png | Macro close-up of juice being poured into glass, crisp liquid droplets next to intact orange segments. NO VISIBLE TEXT.
+
+36 / Bild_36.png | Large bowl of chunky vegetable soup beside blended fruit smoothie, uncomplicated educational still life. NO VISIBLE TEXT.
+
+37 / Bild_37.png | Warm bowl of thick vegetable-bean soup contrasting with simple sugary drink glass, no commercial branding. ONLY VISIBLE GERMAN LABELS: Bohnensuppe ; Limonade.
+
+38 / Bild_38.png | Person filling reusable drinking glass from faucet on kitchen counter, bright relaxed composition. ONLY VISIBLE GERMAN LABELS: Wasser.
+
+39 / Bild_39.png | Person eating orange slices while a small juice glass stands nearby, warm natural light. NO VISIBLE TEXT.
+
+40 / Bild_40.png | Restaurant table with fresh meal, drink and side of fruit, harmonious composition with no classification symbols. NO VISIBLE TEXT.
+
+41 / Bild_41.png | Adult finishes small pastry on park bench and glances at food bag, understated everyday illustration. NO VISIBLE TEXT.
+
+42 / Bild_42.png | Close-up pastry with simplified cutaway showing airy refined crumb, no numerical chart. NO VISIBLE TEXT.
+
+43 / Bild_43.png | Plate with one small pastry beside large colorful food bowl, elegant composition not shaming food. NO VISIBLE TEXT.
+
+44 / Bild_44.png | Simplified blood vessel with smooth normal glucose dots and a balanced small waveform shape, no dramatic red drop. ONLY VISIBLE GERMAN LABELS: Blutzucker.
+
+45 / Bild_45.png | Macro small intestine sending absorbed glucose particles toward bloodstream, simple bridge scene. ONLY VISIBLE GERMAN LABELS: Glukose.
+
+46 / Bild_46.png | Warm clean pancreas beside nearby blood vessel, gentle signaling particles, not dramatic or glowing. ONLY VISIBLE GERMAN LABELS: Bauchspeicheldrüse.
+
+47 / Bild_47.png | Kitchen counter, adult looking at small snack and preparing bowl with nuts and fruit, natural posture. NO VISIBLE TEXT.
+
+48 / Bild_48.png | Simple snack plate adding yogurt cup, few nuts and apple slices next to a small pastry, friendly atmosphere. NO VISIBLE TEXT.
+
+49 / Bild_49.png | Adult at breakfast table on two different mornings as simple time transition, same mug and table. NO VISIBLE TEXT.
+
+50 / Bild_50.png | Clothed adult lying awake in a quiet dim bedroom, soft clock silhouette without numbers. ONLY VISIBLE GERMAN LABELS: Schlaf.
+
+51 / Bild_51.png | Soft illustration of brain connected to circadian rhythm and gut silhouette, one understandable curved link. ONLY VISIBLE GERMAN LABELS: Gehirn.
+
+52 / Bild_52.png | Adult in work environment looking tired, unopened snack nearby; quiet realistic illustration, no alarm icons. ONLY VISIBLE GERMAN LABELS: Stress.
+
+53 / Bild_53.png | City bakery window, bread aroma drifting toward passing adult, no ad logos or words. NO VISIBLE TEXT.
+
+54 / Bild_54.png | Person pauses at their desk, breathes calmly and considers an apple, nonjudgmental body language. NO VISIBLE TEXT.
+
+55 / Bild_55.png | Hand writing a few simple meal observations in a blank notebook next to glass of water, no legible text. NO VISIBLE TEXT.
+
+56 / Bild_56.png | Person packing lunch for next day and closing kitchen drawer, relaxed domestic scene. NO VISIBLE TEXT.
+
+57 / Bild_57.png | Adult looking at familiar light lunch plate in home kitchen, preparing to add foods. NO VISIBLE TEXT.
+
+58 / Bild_58.png | Hands add a serving of lentils to colorful grain bowl, one visible movement. ONLY VISIBLE GERMAN LABELS: Eiweißquelle.
+
+59 / Bild_59.png | Hand adds roasted vegetables to lunch plate beside wholegrain bread, one action. ONLY VISIBLE GERMAN LABELS: Ballaststoffe.
+
+60 / Bild_60.png | Adult seated calmly with fork placed down mid meal, relaxed dining scene. NO VISIBLE TEXT.
+
+61 / Bild_61.png | Close-up natural dinner plate and adult hand putting fork down, gentle stomach-to-brain echo in background. ONLY VISIBLE GERMAN LABELS: Sättigung.
+
+62 / Bild_62.png | Desk with open laptop, small glass of soda and snack wrappers; reflective not judgmental moment. NO VISIBLE TEXT.
+
+63 / Bild_63.png | Friendly kitchen scene preparing a simple lunchbox with vegetables and favorite sandwich. NO VISIBLE TEXT.
+
+64 / Bild_64.png | Clean energy-balance illustration with balanced everyday food and walking shoes, no weight-number, one understandable idea. ONLY VISIBLE GERMAN LABELS: Energiebilanz.
+
+65 / Bild_65.png | Clear organic scene brain and stomach with small consistent signals between them, simple friendly cutaway. ONLY VISIBLE GERMAN LABELS: Gehirn ; Magen.
+
+66 / Bild_66.png | Three connected real-life moments: meal at table, quiet sleep, busy street; coherent transition without panels. NO VISIBLE TEXT.
+
+67 / Bild_67.png | Two clothed adults at same breakfast table with relaxed different responses, no stereotypes. NO VISIBLE TEXT.
+
+68 / Bild_68.png | Adult pauses before snack, checks whether genuinely hungry in thoughtful everyday kitchen moment. NO VISIBLE TEXT.
+
+69 / Bild_69.png | Overhead inviting balanced bowl with beans, grains, greens and glass of water; morning sun. NO VISIBLE TEXT.
+
+70 / Bild_70.png | Adult calmly speaking with a healthcare professional at a bright consultation desk, no medical devices in foreground. NO VISIBLE TEXT.
+
+71 / Bild_71.png | Close friendly cutaway of body with stomach and brain peacefully communicating, softly highlighted. NO VISIBLE TEXT.
+
+72 / Bild_72.png | Final hopeful scene adult eats balanced enjoyable meal at sunlit table, clean organic illustration matching intro. NO VISIBLE TEXT.
+
+FINAL CHECK: Exactly 72 different accepted NORMAL video images Bild_01.png through Bild_72.png (NO COVER), each 16:9. If ZIP export available, create ONE ZIP only for these 72 under user-visible 02_bildprompts/bilder-zip. Cover must be downloaded separately as COVER.png for 03_export. If no ZIP export capability, provide actual downloadable images; never claim a ZIP was created. Do not create an MP4, subtitle text, additional prompts or extra visible user folders.

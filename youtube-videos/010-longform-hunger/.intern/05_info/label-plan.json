@@ -1,5 +1,5 @@
 {
-  "status": "TEMPLATE",
+  "status": "READY",
   "rules": {
     "language": "de",
     "prompt_language": "en",
@@ -41,17 +41,547 @@
     },
     {
       "image_asset_id": "Bild_02",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_03",
       "mode": "key-labels",
       "allowed_visible_text": [
-        "[Nur wenn wirklich noetig: kurzer Begriff]"
+        "Magen",
+        "Gehirn"
       ],
       "labels": [
-        {
-          "text": "[Kurzer Begriff]",
-          "target": "[Konkrete sichtbare Struktur]",
-          "reason": "[Warum das Label fuer den aktuellen Lehrpunkt wirklich noetig ist]"
-        }
+        "Magen",
+        "Gehirn"
       ]
+    },
+    {
+      "image_asset_id": "Bild_04",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_05",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_06",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Sättigungssignal"
+      ],
+      "labels": [
+        "Sättigungssignal"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_07",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_08",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_09",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Magen"
+      ],
+      "labels": [
+        "Magen"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_10",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Dehnungsrezeptoren"
+      ],
+      "labels": [
+        "Dehnungsrezeptoren"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_11",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Vagusnerv"
+      ],
+      "labels": [
+        "Vagusnerv"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_12",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Dünndarm"
+      ],
+      "labels": [
+        "Dünndarm"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_13",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Botenstoffe"
+      ],
+      "labels": [
+        "Botenstoffe"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_14",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_15",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Appetit"
+      ],
+      "labels": [
+        "Appetit"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_16",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Hunger",
+        "Appetit"
+      ],
+      "labels": [
+        "Hunger",
+        "Appetit"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_17",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Eiweiß"
+      ],
+      "labels": [
+        "Eiweiß"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_18",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_19",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_20",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Verdauung"
+      ],
+      "labels": [
+        "Verdauung"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_21",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_22",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_23",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_24",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_25",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Ballaststoffe"
+      ],
+      "labels": [
+        "Ballaststoffe"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_26",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_27",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_28",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Lösliche Ballaststoffe"
+      ],
+      "labels": [
+        "Lösliche Ballaststoffe"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_29",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_30",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_31",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Apfel",
+        "Apfelsaft"
+      ],
+      "labels": [
+        "Apfel",
+        "Apfelsaft"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_32",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_33",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_34",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_35",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_36",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_37",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Bohnensuppe",
+        "Limonade"
+      ],
+      "labels": [
+        "Bohnensuppe",
+        "Limonade"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_38",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Wasser"
+      ],
+      "labels": [
+        "Wasser"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_39",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_40",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_41",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_42",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_43",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_44",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Blutzucker"
+      ],
+      "labels": [
+        "Blutzucker"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_45",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Glukose"
+      ],
+      "labels": [
+        "Glukose"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_46",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Bauchspeicheldrüse"
+      ],
+      "labels": [
+        "Bauchspeicheldrüse"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_47",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_48",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_49",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_50",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Schlaf"
+      ],
+      "labels": [
+        "Schlaf"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_51",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Gehirn"
+      ],
+      "labels": [
+        "Gehirn"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_52",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Stress"
+      ],
+      "labels": [
+        "Stress"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_53",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_54",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_55",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_56",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_57",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_58",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Eiweißquelle"
+      ],
+      "labels": [
+        "Eiweißquelle"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_59",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Ballaststoffe"
+      ],
+      "labels": [
+        "Ballaststoffe"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_60",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_61",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Sättigung"
+      ],
+      "labels": [
+        "Sättigung"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_62",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_63",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_64",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Energiebilanz"
+      ],
+      "labels": [
+        "Energiebilanz"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_65",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Gehirn",
+        "Magen"
+      ],
+      "labels": [
+        "Gehirn",
+        "Magen"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_66",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_67",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_68",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_69",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_70",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_71",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_72",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
     }
   ]
 }

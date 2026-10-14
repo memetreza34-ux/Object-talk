@@ -1,26 +1,33 @@
 {
   "schema_version": 1,
-  "status": "PENDING",
+  "status": "APPLIED",
   "source_review_video": null,
   "lessons": [
     {
       "id": "BASE-CLARITY",
-      "implemented_as": "",
-      "evidence_files": [],
-      "verification": ""
+      "implemented_as": "72 handgeplante verständliche, abwechslungsreiche biologische Einzelbilder, maximal zwei Labels, pro Beat ein spezifischer sichtbarer Vorgang.",
+      "evidence_files": [
+        "youtube-videos/010-longform-hunger/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt",
+        "youtube-videos/010-longform-hunger/.intern/05_info/phase1-scenes.json"
+      ],
+      "verification": "Planprüfung: 72 eindeutige Szenen, 72 konkrete Visual-Aufträge, Label-Liste je Bild und überladene Darstellungen im Prompt verboten."
     },
     {
       "id": "BASE-FLOW",
-      "implemented_as": "",
-      "evidence_files": [],
-      "verification": ""
+      "implemented_as": "Ein Google-Flow-Textprompt mit genau drei Covervarianten vor Auswahl und anschließend normalen Bildern 01–72 in Fünfergruppen, ohne Vorlagen-Upload.",
+      "evidence_files": [
+        "youtube-videos/010-longform-hunger/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt"
+      ],
+      "verification": "Statische Textprüfung: drei separate Cover, explizites Nutzerwahl-STOP, Start mit Bild_01–Bild_05 und keine Cover-ZIP-Vermischung."
     },
     {
       "id": "BASE-EXPORT",
-      "implemented_as": "",
-      "evidence_files": [],
-      "verification": ""
+      "implemented_as": "Die einzige sichtbare Exportstelle ist 03_export für Video, separates Cover, YouTube-Caption und erst später echte zeitgestempelte Untertitel.",
+      "evidence_files": [
+        "youtube-videos/010-longform-hunger/03_export/CAPTION-YOUTUBE.txt",
+        "youtube-videos/010-longform-hunger/03_export/UNTERTITEL-MIT-ZEITEN.txt"
+      ],
+      "verification": "Ordner und Ausgabepfade statisch geprüft; AUDIO/VIDEO-Zeitcodes ausdrücklich offen, keine erfundenen fertigen Medien."
     }
-  ],
-  "notes": "Vor Phase 1 des NEUEN Videos nachweisbar ausfüllen, inklusive aktuellster lessons aus engine/IMPROVEMENT-LEDGER.json."
+  ]
 }

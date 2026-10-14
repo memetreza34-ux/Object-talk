@@ -1,17 +1,14 @@
-# Claim-Matrix
+# Interne Claim-Matrix – Video 010
 
-Diese Datei wird in Phase 1 ausgefüllt. Sie dokumentiert die überprüfbaren biologischen, gesundheitlichen und ernährungswissenschaftlichen Kernaussagen des Videos.
+| Claim | Geprüfte Kernaussage | Quelle | Status | Einschränkung |
+|---|---|---|---|---|
+| C01 | Sättigung ist ein Zusammenspiel von Magendehnung, neuronalen und intestinalen Signalen sowie Essumgebung. | [Harvard Health (2010) und NIDDK Appetite Research](https://www.health.harvard.edu/blog/why-eating-slowly-may-help-you-feel-full-faster-20101019605) | BESTÄTIGT MIT EINORDNUNG | komplexe Regulation; keine Ein-Hormon-Erklärung |
+| C02 | Proteinquellen gehören zu ausgewogenen Mahlzeiten und können zur Sättigung beitragen. | [CDC Meals and Snacks 2026](https://www.cdc.gov/healthy-weight-growth/healthy-eating/meals-snacks.html) | BESTÄTIGT MIT EINORDNUNG | individuelle Reaktion; kein fixes Grammziel |
+| C03 | Ballaststoffreiches Vollkorn, Obst, Gemüse, Hülsenfrüchte unterstützen Sättigung; Wasser/Volumen spielen Rolle. | [CDC Healthy Eating Tips 2026; CDC Fruits and Vegetables 2026](https://www.cdc.gov/nutrition/features/healthy-eating-tips.html) | BESTÄTIGT MIT EINORDNUNG | Ballaststofftypen unterscheiden sich; nicht jede Pflanze gleich |
+| C04 | Ganze Früchte sind oft sättigender als Saft; stark gezuckerte Getränke liefern Energie ohne viel Sättigung. | [CDC Fruits and Vegetables 2026](https://www.cdc.gov/healthy-weight-growth/healthy-eating/fruits-vegetables.html) | BESTÄTIGT MIT EINORDNUNG | kein Pauschalurteil über Suppen/Smoothies |
+| C05 | Süße Snacks können relativ energiehaltig und ballaststoffarm sein, aber schneller Hunger bedeutet nicht stets Blutzuckerabsturz. | [CDC Healthy Eating Tips 2026, Harvard Appetite 2010](https://www.cdc.gov/nutrition/features/healthy-eating-tips.html) | BESTÄTIGT MIT EINORDNUNG | keine Diagnose individueller Glukoseantwort |
+| C06 | Schlaf, Stress, Essumgebung und Gewohnheiten können Appetit und Essverhalten mitprägen. | [NIDDK Metabolism and Energy Research](https://www.niddk.nih.gov/research-funding/research-programs/metabolism-energy-obesity) | BESTÄTIGT MIT EINORDNUNG | Stressreaktionen individuell; kein einheitlicher Effekt |
+| C07 | Praktisch: Protein, Ballaststoffe, Volumen und achtsames Essen unterstützen ausgewogene Mahlzeiten; Energiegesamtmenge zählt für Gewicht. | [CDC Meals/Snacks 2026; CDC Healthy Weight 2026](https://www.cdc.gov/healthy-weight-growth/healthy-eating/meals-snacks.html) | BESTÄTIGT MIT EINORDNUNG | keine Abnehmgarantie |
+| C08 | Hunger ist individuell; starke plötzliche Veränderung oder Begleitsymptome verdienen medizinische Abklärung. | [NIDDK Appetite Research](https://www.niddk.nih.gov/research-funding/research-programs/metabolism-energy-obesity) | BESTÄTIGT MIT EINORDNUNG | allgemeine Bildung, kein persönlicher Rat |
 
-| ID | Aussage im Video | Bedeutung | Quelle(n) | Status | Unsicherheit / Kontext | Visualisierung |
-|---|---|---|---|---|---|---|
-| C01 | [Claim] | [Warum wichtig] | [Quelle + Link/Referenz] | BESTÄTIGT | [falls nötig] | [Was darf das Bild zeigen?] |
-
-## Status
-
-- `BESTÄTIGT` – Aussage kann so verwendet werden
-- `EINGESCHRÄNKT` – Script muss die Einschränkung sichtbar/verständlich enthalten
-- `ENTFERNT` – Aussage darf nicht ins finale Script
-
-## Phase-1-PASS
-
-Kein Phase-1-PASS, solange ein zentraler Claim ungeprüft oder widersprüchlich ist.
+Keine persönlichen Heil-/Abnehmversprechen. Alle zentralen Aussagen im Script basieren auf diesen allgemeinen Forschungs- und Praxisquellen.

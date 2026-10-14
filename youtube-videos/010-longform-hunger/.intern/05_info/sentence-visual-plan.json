@@ -1,5 +1,5 @@
 {
-  "status": "TEMPLATE",
+  "status": "READY",
   "source_script": "01_script/script.txt",
   "rules": {
     "each_spoken_sentence_or_logical_block_has_visual_plan": true,
@@ -18,18 +18,1286 @@
   "items": [
     {
       "id": "SV_001",
-      "voiceover_text": "[Exakter Satz oder logisch untrennbarer Satzblock]",
-      "function": "observation",
-      "learning_goal": "[Was der Zuschauer nach diesem Satz verstanden haben soll]",
-      "claim_ids": [],
-      "scale_level": "[Lebensmittel|Mensch|Organ|Gewebe|Blut|Zelle|Organell|Molekuel]",
+      "voiceover_text": "Du hast gerade gegessen. Und kaum eine Stunde später stehst du wieder vor dem Kühlschrank. Wie kann das sein?",
+      "function": "hook",
+      "learning_goal": "Zuschauer versteht: Du hast gerade gegessen. Und kaum eine Stunde später stehst du wieder vor dem Kühlschrank. Wie kann das sein?",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Mensch",
       "new_image_required": true,
       "image_asset_id": "Bild_01",
-      "visual_type": "hook-scene",
-      "visible_change": "[Erste biologische Szene ohne Covertext]",
-      "scene_difference": "[Wie sich dieses Bild sichtbar vom vorherigen und naechsten Bild unterscheidet]",
+      "visual_type": "everyday-context",
+      "visible_change": "Cozy kitchen, clothed adult looks puzzled at open refrigerator after a finished lunch; single expressive action, three-quarter view",
+      "scene_difference": "Alltags-Hook in der Küche, danach Körper-Magen-Verbindung.",
       "labels": [],
-      "misconception_to_avoid": "[Was der Zuschauer nicht falsch verstehen darf]"
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_002",
+      "voiceover_text": "Die einfache Antwort wäre: Du hast zu wenig gegessen. Doch das ist längst nicht immer der Grund.",
+      "function": "path",
+      "learning_goal": "Zuschauer versteht: Die einfache Antwort wäre: Du hast zu wenig gegessen. Doch das ist längst nicht immer der Grund.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_02",
+      "visual_type": "organ-cutaway",
+      "visible_change": "Side-by-side scene in the same dining room: a full bowl and a questioning hungry adult, no numerical infographic",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_01; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_003",
+      "voiceover_text": "Denn Hunger entsteht nicht nur im Magen. Dein Gehirn verarbeitet viele Signale gleichzeitig.",
+      "function": "wirkung",
+      "learning_goal": "Zuschauer versteht: Denn Hunger entsteht nicht nur im Magen. Dein Gehirn verarbeitet viele Signale gleichzeitig.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_03",
+      "visual_type": "process-closeup",
+      "visible_change": "Illustrated adult torso with softly highlighted stomach connected by a single visible nerve path to brain",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_02; Einzelvorgang statt Wiederholung.",
+      "labels": [
+        "Magen",
+        "Gehirn"
+      ],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_004",
+      "voiceover_text": "Wie lange dich Essen satt hält, hängt deshalb von mehr ab als von der Menge auf dem Teller.",
+      "function": "comparison",
+      "learning_goal": "Zuschauer versteht: Wie lange dich Essen satt hält, hängt deshalb von mehr ab als von der Menge auf dem Teller.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_04",
+      "visual_type": "natural-comparison",
+      "visible_change": "Overhead view: same-sized two dinner plates, one pastry meal and one balanced meal, inviting warm light",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_03; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_005",
+      "voiceover_text": "Eiweiß, Ballaststoffe, flüssige Kalorien und sogar dein Schlaf spielen dabei eine Rolle.",
+      "function": "trigger",
+      "learning_goal": "Zuschauer versteht: Eiweiß, Ballaststoffe, flüssige Kalorien und sogar dein Schlaf spielen dabei eine Rolle.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_05",
+      "visual_type": "macro-view",
+      "visible_change": "Four carefully separated recognizable objects in one natural kitchen counter grouping: yogurt, beans, juice, sleep pillow; no UI cards",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_04; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_006",
+      "voiceover_text": "Wir schauen uns an, wie dein Körper Sättigung meldet und warum dieses Signal manchmal schnell nachlässt.",
+      "function": "path",
+      "learning_goal": "Zuschauer versteht: Wir schauen uns an, wie dein Körper Sättigung meldet und warum dieses Signal manchmal schnell nachlässt.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_06",
+      "visual_type": "biological-path",
+      "visible_change": "Close-up of a simplified human stomach sending a clear small pulse through a nerve toward the brain, airy medical illustration",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_05; Einzelvorgang statt Wiederholung.",
+      "labels": [
+        "Sättigungssignal"
+      ],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_007",
+      "voiceover_text": "Und am Ende kennst du einfache Veränderungen, die dir im Alltag helfen können, länger angenehm satt zu bleiben.",
+      "function": "observation",
+      "learning_goal": "Zuschauer versteht: Und am Ende kennst du einfache Veränderungen, die dir im Alltag helfen können, länger angenehm satt zu bleiben.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_07",
+      "visual_type": "everyday-result",
+      "visible_change": "Everyday breakfast table, adult adding lentils and vegetables to a real meal, gentle daylight, simple action",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_06; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_008",
+      "voiceover_text": "Dabei geht es nicht ums Hungern oder darum, einzelne Lebensmittel als schlecht abzustempeln.",
+      "function": "result",
+      "learning_goal": "Zuschauer versteht: Dabei geht es nicht ums Hungern oder darum, einzelne Lebensmittel als schlecht abzustempeln.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_08",
+      "visual_type": "transition",
+      "visible_change": "Calm balanced table where bread, fruit, nuts and cooked meal all coexist; no warning badges, no scales",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_07; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_009",
+      "voiceover_text": "Zuerst die wichtigste Unterscheidung: Ein voller Magen ist nicht dasselbe wie ein langfristig zufriedener Körper.",
+      "function": "trigger",
+      "learning_goal": "Zuschauer versteht: Zuerst die wichtigste Unterscheidung: Ein voller Magen ist nicht dasselbe wie ein langfristig zufriedener Körper.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_09",
+      "visual_type": "everyday-context",
+      "visible_change": "Clean simplified side cutaway: stomach comfortably filled after meal, separate distant brain silhouette in same organic world",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_08; Einzelvorgang statt Wiederholung.",
+      "labels": [
+        "Magen"
+      ],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_010",
+      "voiceover_text": "Wenn du isst, dehnt sich dein Magen aus. Spezielle Rezeptoren registrieren diese Dehnung.",
+      "function": "comparison",
+      "learning_goal": "Zuschauer versteht: Wenn du isst, dehnt sich dein Magen aus. Spezielle Rezeptoren registrieren diese Dehnung.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_10",
+      "visual_type": "organ-cutaway",
+      "visible_change": "One large recognizable simplified stomach gently expanding around a meal; few wall sensors subtly highlighted",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_09; Einzelvorgang statt Wiederholung.",
+      "labels": [
+        "Dehnungsrezeptoren"
+      ],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_011",
+      "voiceover_text": "Über Nerven gelangen Informationen an Bereiche im Gehirn, die beim Sättigungsgefühl mithelfen.",
+      "function": "trigger",
+      "learning_goal": "Zuschauer versteht: Über Nerven gelangen Informationen an Bereiche im Gehirn, die beim Sättigungsgefühl mithelfen.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_11",
+      "visual_type": "process-closeup",
+      "visible_change": "Single enlarged curved vagus nerve pathway linking simplified stomach to brainstem, easy left-to-right reading",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_10; Einzelvorgang statt Wiederholung.",
+      "labels": [
+        "Vagusnerv"
+      ],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_012",
+      "voiceover_text": "Aber das ist nur ein Teil des Ganzen. Auch der Dünndarm meldet, dass Nahrung angekommen ist.",
+      "function": "path",
+      "learning_goal": "Zuschauer versteht: Aber das ist nur ein Teil des Ganzen. Auch der Dünndarm meldet, dass Nahrung angekommen ist.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_12",
+      "visual_type": "natural-comparison",
+      "visible_change": "Cutaway showing a small amount of digested food entering a clearly recognizable short section of small intestine",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_11; Einzelvorgang statt Wiederholung.",
+      "labels": [
+        "Dünndarm"
+      ],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_013",
+      "voiceover_text": "Dort werden Botenstoffe freigesetzt, die gemeinsam mit Nervensignalen die weitere Nahrungsaufnahme beeinflussen.",
+      "function": "observation",
+      "learning_goal": "Zuschauer versteht: Dort werden Botenstoffe freigesetzt, die gemeinsam mit Nervensignalen die weitere Nahrungsaufnahme beeinflussen.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_13",
+      "visual_type": "macro-view",
+      "visible_change": "One intestinal wall with three small messenger particles moving toward nearby blood vessel, restrained detail",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_12; Einzelvorgang statt Wiederholung.",
+      "labels": [
+        "Botenstoffe"
+      ],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_014",
+      "voiceover_text": "Dein Gehirn kombiniert solche Signale mit Gewohnheiten, Gerüchen und dem, was du gerade siehst.",
+      "function": "path",
+      "learning_goal": "Zuschauer versteht: Dein Gehirn kombiniert solche Signale mit Gewohnheiten, Gerüchen und dem, was du gerade siehst.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_14",
+      "visual_type": "biological-path",
+      "visible_change": "Brain beside adult at kitchen counter, steam from fresh food gently in foreground; not a split infographic",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_13; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_015",
+      "voiceover_text": "Deshalb kannst du Appetit auf etwas Leckeres haben, obwohl dein Magen eigentlich schon gut gefüllt ist.",
+      "function": "wirkung",
+      "learning_goal": "Zuschauer versteht: Deshalb kannst du Appetit auf etwas Leckeres haben, obwohl dein Magen eigentlich schon gut gefüllt ist.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_15",
+      "visual_type": "everyday-result",
+      "visible_change": "Clothed adult after meal noticing bakery window with appealing bun; body relaxed, no judgmental emotion",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_14; Einzelvorgang statt Wiederholung.",
+      "labels": [
+        "Appetit"
+      ],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_016",
+      "voiceover_text": "Hunger und Appetit überschneiden sich, sind aber nicht immer genau dasselbe.",
+      "function": "result",
+      "learning_goal": "Zuschauer versteht: Hunger und Appetit überschneiden sich, sind aber nicht immer genau dasselbe.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_16",
+      "visual_type": "transition",
+      "visible_change": "Two simple natural scenes with one person feeling tummy rumble and another drawn to aroma; no charts",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_15; Einzelvorgang statt Wiederholung.",
+      "labels": [
+        "Hunger",
+        "Appetit"
+      ],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_017",
+      "voiceover_text": "Ein wichtiger Baustein einer sättigenden Mahlzeit ist Eiweiß. Es steckt nicht nur in Fleisch oder Eiern.",
+      "function": "trigger",
+      "learning_goal": "Zuschauer versteht: Ein wichtiger Baustein einer sättigenden Mahlzeit ist Eiweiß. Es steckt nicht nur in Fleisch oder Eiern.",
+      "claim_ids": [
+        "C02"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_17",
+      "visual_type": "everyday-context",
+      "visible_change": "Warm simple food still life with eggs, natural yogurt, beans and tofu, no labels on packaging",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_16; Einzelvorgang statt Wiederholung.",
+      "labels": [
+        "Eiweiß"
+      ],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_018",
+      "voiceover_text": "Auch Linsen, Bohnen, Tofu und Milchprodukte können dazu beitragen, ausreichend Eiweiß zu essen.",
+      "function": "path",
+      "learning_goal": "Zuschauer versteht: Auch Linsen, Bohnen, Tofu und Milchprodukte können dazu beitragen, ausreichend Eiweiß zu essen.",
+      "claim_ids": [
+        "C02"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_18",
+      "visual_type": "organ-cutaway",
+      "visible_change": "Overhead natural bowl of cooked lentils and tofu with small yogurt cup, clean ingredient photography-like illustration",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_17; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_019",
+      "voiceover_text": "Eiweißreiche Mahlzeiten können das Sättigungsgefühl unterstützen. Wie stark, unterscheidet sich allerdings von Mensch zu Mensch.",
+      "function": "observation",
+      "learning_goal": "Zuschauer versteht: Eiweißreiche Mahlzeiten können das Sättigungsgefühl unterstützen. Wie stark, unterscheidet sich allerdings von Mensch zu Mensch.",
+      "claim_ids": [
+        "C02"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_19",
+      "visual_type": "process-closeup",
+      "visible_change": "Clothed adult enjoying protein-inclusive lunch at a table, peaceful relaxed face with smaller later-snack temptation",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_18; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_020",
+      "voiceover_text": "Warum? Bei der Verdauung entstehen unter anderem Signale, die deinem Gehirn bei der Sättigungsregulation helfen.",
+      "function": "path",
+      "learning_goal": "Zuschauer versteht: Warum? Bei der Verdauung entstehen unter anderem Signale, die deinem Gehirn bei der Sättigungsregulation helfen.",
+      "claim_ids": [
+        "C02"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_20",
+      "visual_type": "natural-comparison",
+      "visible_change": "Simplified food protein pieces progressing from stomach to short upper intestine, only one gentle arrow, no atom diagrams",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_19; Einzelvorgang statt Wiederholung.",
+      "labels": [
+        "Verdauung"
+      ],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_021",
+      "voiceover_text": "Du musst dafür aber keine riesigen Mengen Eiweiß essen oder jede Mahlzeit mit Pulver ergänzen.",
+      "function": "wirkung",
+      "learning_goal": "Zuschauer versteht: Du musst dafür aber keine riesigen Mengen Eiweiß essen oder jede Mahlzeit mit Pulver ergänzen.",
+      "claim_ids": [
+        "C02"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_21",
+      "visual_type": "macro-view",
+      "visible_change": "Natural tabletop, regular bowl with yogurt and fruit while large supplement tub sits far outside focus, gentle no-judgment composition",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_20; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_022",
+      "voiceover_text": "Oft reicht es, beim Frühstück oder Mittagessen eine passende Eiweißquelle mit einzuplanen.",
+      "function": "comparison",
+      "learning_goal": "Zuschauer versteht: Oft reicht es, beim Frühstück oder Mittagessen eine passende Eiweißquelle mit einzuplanen.",
+      "claim_ids": [
+        "C02"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_22",
+      "visual_type": "biological-path",
+      "visible_change": "Person putting plain yogurt beside fruit and oats for breakfast, clear scene action",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_21; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_023",
+      "voiceover_text": "Zum Beispiel Haferflocken mit Joghurt oder ein warmes Gericht mit Linsen und Gemüse.",
+      "function": "trigger",
+      "learning_goal": "Zuschauer versteht: Zum Beispiel Haferflocken mit Joghurt oder ein warmes Gericht mit Linsen und Gemüse.",
+      "claim_ids": [
+        "C02"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_23",
+      "visual_type": "everyday-result",
+      "visible_change": "Large illustrated plate split by perspective into oats with yogurt in foreground and lentil vegetable pot in back, natural kitchen",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_22; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_024",
+      "voiceover_text": "Entscheidend bleibt das Gesamtbild deiner Ernährung. Ein einzelner Nährstoff löst nicht jedes Hungerproblem.",
+      "function": "result",
+      "learning_goal": "Zuschauer versteht: Entscheidend bleibt das Gesamtbild deiner Ernährung. Ein einzelner Nährstoff löst nicht jedes Hungerproblem.",
+      "claim_ids": [
+        "C02"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_24",
+      "visual_type": "transition",
+      "visible_change": "Balanced table featuring mixed food group bowls, adult assembling varied meal, no symbols or badges",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_23; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_025",
+      "voiceover_text": "Der nächste Faktor wird oft unterschätzt: Ballaststoffe. Sie kommen vor allem in pflanzlichen Lebensmitteln vor.",
+      "function": "trigger",
+      "learning_goal": "Zuschauer versteht: Der nächste Faktor wird oft unterschätzt: Ballaststoffe. Sie kommen vor allem in pflanzlichen Lebensmitteln vor.",
+      "claim_ids": [
+        "C03"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_25",
+      "visual_type": "everyday-context",
+      "visible_change": "Macro of whole grain oats, lentils, apples and carrots arranged naturally on wooden board, subtle pastel backdrop",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_24; Einzelvorgang statt Wiederholung.",
+      "labels": [
+        "Ballaststoffe"
+      ],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_026",
+      "voiceover_text": "Sie stecken zum Beispiel in Vollkorn, Bohnen, Gemüse, Obst und vielen Hülsenfrüchten.",
+      "function": "path",
+      "learning_goal": "Zuschauer versteht: Sie stecken zum Beispiel in Vollkorn, Bohnen, Gemüse, Obst und vielen Hülsenfrüchten.",
+      "claim_ids": [
+        "C03"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_26",
+      "visual_type": "organ-cutaway",
+      "visible_change": "Cross-cut scene with a wholegrain bread slice, beans and apple on simple table, organic shading",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_25; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_027",
+      "voiceover_text": "Ballaststoffreiche Lebensmittel brauchen häufig mehr Kauen und bringen oft viel Volumen auf den Teller.",
+      "function": "wirkung",
+      "learning_goal": "Zuschauer versteht: Ballaststoffreiche Lebensmittel brauchen häufig mehr Kauen und bringen oft viel Volumen auf den Teller.",
+      "claim_ids": [
+        "C03"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_27",
+      "visual_type": "process-closeup",
+      "visible_change": "Person slowly chewing crunchy vegetables at a table, nearby large colorful salad bowl",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_26; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_028",
+      "voiceover_text": "Manche Ballaststoffe nehmen Wasser auf und bilden im Verdauungstrakt eine gelartige Masse.",
+      "function": "comparison",
+      "learning_goal": "Zuschauer versteht: Manche Ballaststoffe nehmen Wasser auf und bilden im Verdauungstrakt eine gelartige Masse.",
+      "claim_ids": [
+        "C03"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_28",
+      "visual_type": "natural-comparison",
+      "visible_change": "Simple cutaway of intestinal lumen showing soluble fibers holding water in one soft translucent gel, not microscopic clutter",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_27; Einzelvorgang statt Wiederholung.",
+      "labels": [
+        "Lösliche Ballaststoffe"
+      ],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_029",
+      "voiceover_text": "Das kann die Verdauung verlangsamen und mit dazu beitragen, dass du dich länger satt fühlst.",
+      "function": "trigger",
+      "learning_goal": "Zuschauer versteht: Das kann die Verdauung verlangsamen und mit dazu beitragen, dass du dich länger satt fühlst.",
+      "claim_ids": [
+        "C03"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_29",
+      "visual_type": "macro-view",
+      "visible_change": "One simplified intestinal tube with slower-moving food mass and gentle rhythmic movement, minimal transparent illustration",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_28; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_030",
+      "voiceover_text": "Dazu kommen Wasser und Volumen vieler Gemüsesorten. Ein großer Teller muss also nicht extrem energiereich sein.",
+      "function": "path",
+      "learning_goal": "Zuschauer versteht: Dazu kommen Wasser und Volumen vieler Gemüsesorten. Ein großer Teller muss also nicht extrem energiereich sein.",
+      "claim_ids": [
+        "C03"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_30",
+      "visual_type": "biological-path",
+      "visible_change": "Side view big plate of vegetables and lentils, filled with volume, human hand for scale",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_29; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_031",
+      "voiceover_text": "Ein Apfel enthält außerdem Ballaststoffe. Als ganzes Obst sättigt er oft besser als die entsprechende Saftportion.",
+      "function": "observation",
+      "learning_goal": "Zuschauer versteht: Ein Apfel enthält außerdem Ballaststoffe. Als ganzes Obst sättigt er oft besser als die entsprechende Saftportion.",
+      "claim_ids": [
+        "C03"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_31",
+      "visual_type": "everyday-result",
+      "visible_change": "Whole apple on plate beside small transparent glass of apple juice, both same kitchen view",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_30; Einzelvorgang statt Wiederholung.",
+      "labels": [
+        "Apfel",
+        "Apfelsaft"
+      ],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_032",
+      "voiceover_text": "Wichtig ist dabei nicht Perfektion. Mehr pflanzliche Vielfalt ist meist sinnvoller als die Suche nach einem Wundermittel.",
+      "function": "result",
+      "learning_goal": "Zuschauer versteht: Wichtig ist dabei nicht Perfektion. Mehr pflanzliche Vielfalt ist meist sinnvoller als die Suche nach einem Wundermittel.",
+      "claim_ids": [
+        "C03"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_32",
+      "visual_type": "transition",
+      "visible_change": "Cozy market stall, adult choosing colorful simple vegetables and fruit, relaxed inviting real-world scene",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_31; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_033",
+      "voiceover_text": "Jetzt kommt ein Unterschied, den man leicht übersieht: Kalorien lassen sich auch trinken.",
+      "function": "trigger",
+      "learning_goal": "Zuschauer versteht: Jetzt kommt ein Unterschied, den man leicht übersieht: Kalorien lassen sich auch trinken.",
+      "claim_ids": [
+        "C04"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_33",
+      "visual_type": "everyday-context",
+      "visible_change": "Simple cafe table with soda in a glass and a plated meal, glass in focus, no logos",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_32; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_034",
+      "voiceover_text": "Ein süßes Getränk liefert Energie, aber macht viele Menschen nicht so satt wie feste Nahrung.",
+      "function": "comparison",
+      "learning_goal": "Zuschauer versteht: Ein süßes Getränk liefert Energie, aber macht viele Menschen nicht so satt wie feste Nahrung.",
+      "claim_ids": [
+        "C04"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_34",
+      "visual_type": "organ-cutaway",
+      "visible_change": "Adult holds a glass of sweet beverage after meal, plate and satisfied/unsatisfied question conveyed without text",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_33; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_035",
+      "voiceover_text": "Beim Trinken musst du kaum kauen. Auch die Struktur der Nahrung ist eine andere.",
+      "function": "trigger",
+      "learning_goal": "Zuschauer versteht: Beim Trinken musst du kaum kauen. Auch die Struktur der Nahrung ist eine andere.",
+      "claim_ids": [
+        "C04"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_35",
+      "visual_type": "process-closeup",
+      "visible_change": "Macro close-up of juice being poured into glass, crisp liquid droplets next to intact orange segments",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_34; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_036",
+      "voiceover_text": "Das bedeutet nicht, dass jede Suppe oder jeder Smoothie schlecht sättigt. Zutaten und Konsistenz zählen.",
+      "function": "path",
+      "learning_goal": "Zuschauer versteht: Das bedeutet nicht, dass jede Suppe oder jeder Smoothie schlecht sättigt. Zutaten und Konsistenz zählen.",
+      "claim_ids": [
+        "C04"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_36",
+      "visual_type": "natural-comparison",
+      "visible_change": "Large bowl of chunky vegetable soup beside blended fruit smoothie, uncomplicated educational still life",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_35; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_037",
+      "voiceover_text": "Eine Gemüsesuppe mit Bohnen verhält sich anders als eine Limonade voller zugesetztem Zucker.",
+      "function": "observation",
+      "learning_goal": "Zuschauer versteht: Eine Gemüsesuppe mit Bohnen verhält sich anders als eine Limonade voller zugesetztem Zucker.",
+      "claim_ids": [
+        "C04"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_37",
+      "visual_type": "macro-view",
+      "visible_change": "Warm bowl of thick vegetable-bean soup contrasting with simple sugary drink glass, no commercial branding",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_36; Einzelvorgang statt Wiederholung.",
+      "labels": [
+        "Bohnensuppe",
+        "Limonade"
+      ],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_038",
+      "voiceover_text": "Wenn du oft nebenbei Kalorien trinkst, können Wasser oder ungesüßte Getränke eine einfache Alternative sein.",
+      "function": "path",
+      "learning_goal": "Zuschauer versteht: Wenn du oft nebenbei Kalorien trinkst, können Wasser oder ungesüßte Getränke eine einfache Alternative sein.",
+      "claim_ids": [
+        "C04"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_38",
+      "visual_type": "biological-path",
+      "visible_change": "Person filling reusable drinking glass from faucet on kitchen counter, bright relaxed composition",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_37; Einzelvorgang statt Wiederholung.",
+      "labels": [
+        "Wasser"
+      ],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_039",
+      "voiceover_text": "Wer gern Saft trinkt, kann ihn bewusst genießen. Nur: Er ersetzt nicht automatisch eine Portion ganzes Obst.",
+      "function": "wirkung",
+      "learning_goal": "Zuschauer versteht: Wer gern Saft trinkt, kann ihn bewusst genießen. Nur: Er ersetzt nicht automatisch eine Portion ganzes Obst.",
+      "claim_ids": [
+        "C04"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_39",
+      "visual_type": "everyday-result",
+      "visible_change": "Person eating orange slices while a small juice glass stands nearby, warm natural light",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_38; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_040",
+      "voiceover_text": "Denn wie satt eine Mahlzeit macht, entscheidet sich nicht an einem einzelnen Etikett wie gesund oder ungesund.",
+      "function": "result",
+      "learning_goal": "Zuschauer versteht: Denn wie satt eine Mahlzeit macht, entscheidet sich nicht an einem einzelnen Etikett wie gesund oder ungesund.",
+      "claim_ids": [
+        "C04"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_40",
+      "visual_type": "transition",
+      "visible_change": "Restaurant table with fresh meal, drink and side of fruit, harmonious composition with no classification symbols",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_39; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_041",
+      "voiceover_text": "Vielleicht kennst du das: Ein süßes Gebäck ist schnell gegessen, und bald darauf willst du etwas Neues.",
+      "function": "trigger",
+      "learning_goal": "Zuschauer versteht: Vielleicht kennst du das: Ein süßes Gebäck ist schnell gegessen, und bald darauf willst du etwas Neues.",
+      "claim_ids": [
+        "C05"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_41",
+      "visual_type": "everyday-context",
+      "visible_change": "Adult finishes small pastry on park bench and glances at food bag, understated everyday illustration",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_40; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_042",
+      "voiceover_text": "Solche Snacks enthalten manchmal viel Energie, aber wenig Eiweiß, Wasser und Ballaststoffe.",
+      "function": "path",
+      "learning_goal": "Zuschauer versteht: Solche Snacks enthalten manchmal viel Energie, aber wenig Eiweiß, Wasser und Ballaststoffe.",
+      "claim_ids": [
+        "C05"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_42",
+      "visual_type": "organ-cutaway",
+      "visible_change": "Close-up pastry with simplified cutaway showing airy refined crumb, no numerical chart",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_41; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_043",
+      "voiceover_text": "Dann fehlt ein Teil dessen, was eine Mahlzeit besonders sättigend machen kann.",
+      "function": "observation",
+      "learning_goal": "Zuschauer versteht: Dann fehlt ein Teil dessen, was eine Mahlzeit besonders sättigend machen kann.",
+      "claim_ids": [
+        "C05"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_43",
+      "visual_type": "process-closeup",
+      "visible_change": "Plate with one small pastry beside large colorful food bowl, elegant composition not shaming food",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_42; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_044",
+      "voiceover_text": "Aber Vorsicht: Nicht jeder schnelle Hunger entsteht durch einen gefährlichen Blutzuckerabsturz.",
+      "function": "path",
+      "learning_goal": "Zuschauer versteht: Aber Vorsicht: Nicht jeder schnelle Hunger entsteht durch einen gefährlichen Blutzuckerabsturz.",
+      "claim_ids": [
+        "C05"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_44",
+      "visual_type": "natural-comparison",
+      "visible_change": "Simplified blood vessel with smooth normal glucose dots and a balanced small waveform shape, no dramatic red drop",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_43; Einzelvorgang statt Wiederholung.",
+      "labels": [
+        "Blutzucker"
+      ],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_045",
+      "voiceover_text": "Der Blutzucker verändert sich nach dem Essen ganz normal. Die Reaktion hängt auch von der Mahlzeit ab.",
+      "function": "wirkung",
+      "learning_goal": "Zuschauer versteht: Der Blutzucker verändert sich nach dem Essen ganz normal. Die Reaktion hängt auch von der Mahlzeit ab.",
+      "claim_ids": [
+        "C05"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_45",
+      "visual_type": "macro-view",
+      "visible_change": "Macro small intestine sending absorbed glucose particles toward bloodstream, simple bridge scene",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_44; Einzelvorgang statt Wiederholung.",
+      "labels": [
+        "Glukose"
+      ],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_046",
+      "voiceover_text": "Bei gesunden Menschen reguliert der Körper diese Werte normalerweise innerhalb eines funktionierenden Stoffwechsels.",
+      "function": "comparison",
+      "learning_goal": "Zuschauer versteht: Bei gesunden Menschen reguliert der Körper diese Werte normalerweise innerhalb eines funktionierenden Stoffwechsels.",
+      "claim_ids": [
+        "C05"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_46",
+      "visual_type": "biological-path",
+      "visible_change": "Warm clean pancreas beside nearby blood vessel, gentle signaling particles, not dramatic or glowing",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_45; Einzelvorgang statt Wiederholung.",
+      "labels": [
+        "Bauchspeicheldrüse"
+      ],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_047",
+      "voiceover_text": "Für den Alltag hilft deshalb eine praktischere Frage: Was fehlt meinem Snack vielleicht, damit er länger vorhält?",
+      "function": "trigger",
+      "learning_goal": "Zuschauer versteht: Für den Alltag hilft deshalb eine praktischere Frage: Was fehlt meinem Snack vielleicht, damit er länger vorhält?",
+      "claim_ids": [
+        "C05"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_47",
+      "visual_type": "everyday-result",
+      "visible_change": "Kitchen counter, adult looking at small snack and preparing bowl with nuts and fruit, natural posture",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_46; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_048",
+      "voiceover_text": "Eine Ergänzung wie Joghurt, Nüsse oder Obst kann ihn ausgewogener machen. Verbote sind dafür nicht nötig.",
+      "function": "result",
+      "learning_goal": "Zuschauer versteht: Eine Ergänzung wie Joghurt, Nüsse oder Obst kann ihn ausgewogener machen. Verbote sind dafür nicht nötig.",
+      "claim_ids": [
+        "C05"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_48",
+      "visual_type": "transition",
+      "visible_change": "Simple snack plate adding yogurt cup, few nuts and apple slices next to a small pastry, friendly atmosphere",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_47; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_049",
+      "voiceover_text": "Warum bist du an manchen Tagen besonders hungrig, obwohl du ungefähr gleich viel gegessen hast?",
+      "function": "trigger",
+      "learning_goal": "Zuschauer versteht: Warum bist du an manchen Tagen besonders hungrig, obwohl du ungefähr gleich viel gegessen hast?",
+      "claim_ids": [
+        "C06"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_49",
+      "visual_type": "everyday-context",
+      "visible_change": "Adult at breakfast table on two different mornings as simple time transition, same mug and table",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_48; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_050",
+      "voiceover_text": "Ein möglicher Faktor ist Schlaf. Zu wenig Schlaf kann Hunger und Appetit beeinflussen.",
+      "function": "path",
+      "learning_goal": "Zuschauer versteht: Ein möglicher Faktor ist Schlaf. Zu wenig Schlaf kann Hunger und Appetit beeinflussen.",
+      "claim_ids": [
+        "C06"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_50",
+      "visual_type": "organ-cutaway",
+      "visible_change": "Clothed adult lying awake in a quiet dim bedroom, soft clock silhouette without numbers",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_49; Einzelvorgang statt Wiederholung.",
+      "labels": [
+        "Schlaf"
+      ],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_051",
+      "voiceover_text": "Er wirkt unter anderem auf Signale, die an der Regulation unseres Essverhaltens beteiligt sind.",
+      "function": "wirkung",
+      "learning_goal": "Zuschauer versteht: Er wirkt unter anderem auf Signale, die an der Regulation unseres Essverhaltens beteiligt sind.",
+      "claim_ids": [
+        "C06"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_51",
+      "visual_type": "process-closeup",
+      "visible_change": "Soft illustration of brain connected to circadian rhythm and gut silhouette, one understandable curved link",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_50; Einzelvorgang statt Wiederholung.",
+      "labels": [
+        "Gehirn"
+      ],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_052",
+      "voiceover_text": "Auch Stress verändert bei manchen Menschen das Essverhalten. Andere verlieren unter Stress eher ihren Appetit.",
+      "function": "comparison",
+      "learning_goal": "Zuschauer versteht: Auch Stress verändert bei manchen Menschen das Essverhalten. Andere verlieren unter Stress eher ihren Appetit.",
+      "claim_ids": [
+        "C06"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_52",
+      "visual_type": "natural-comparison",
+      "visible_change": "Adult in work environment looking tired, unopened snack nearby; quiet realistic illustration, no alarm icons",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_51; Einzelvorgang statt Wiederholung.",
+      "labels": [
+        "Stress"
+      ],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_053",
+      "voiceover_text": "Und dann ist da unsere Umgebung: Duft, Werbung, Gewohnheit und leicht verfügbare Snacks spielen mit hinein.",
+      "function": "trigger",
+      "learning_goal": "Zuschauer versteht: Und dann ist da unsere Umgebung: Duft, Werbung, Gewohnheit und leicht verfügbare Snacks spielen mit hinein.",
+      "claim_ids": [
+        "C06"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_53",
+      "visual_type": "macro-view",
+      "visible_change": "City bakery window, bread aroma drifting toward passing adult, no ad logos or words",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_52; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_054",
+      "voiceover_text": "Du musst deshalb nicht jeden Appetit als Mangel an Disziplin betrachten.",
+      "function": "path",
+      "learning_goal": "Zuschauer versteht: Du musst deshalb nicht jeden Appetit als Mangel an Disziplin betrachten.",
+      "claim_ids": [
+        "C06"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_54",
+      "visual_type": "biological-path",
+      "visible_change": "Person pauses at their desk, breathes calmly and considers an apple, nonjudgmental body language",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_53; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_055",
+      "voiceover_text": "Es lohnt sich eher zu beobachten, wann du hungrig wirst und wie deine Mahlzeiten aussehen.",
+      "function": "observation",
+      "learning_goal": "Zuschauer versteht: Es lohnt sich eher zu beobachten, wann du hungrig wirst und wie deine Mahlzeiten aussehen.",
+      "claim_ids": [
+        "C06"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_55",
+      "visual_type": "everyday-result",
+      "visible_change": "Hand writing a few simple meal observations in a blank notebook next to glass of water, no legible text",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_54; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_056",
+      "voiceover_text": "Manchmal liegt die Lösung nicht in einer strengeren Regel, sondern in einem besser passenden Alltag.",
+      "function": "result",
+      "learning_goal": "Zuschauer versteht: Manchmal liegt die Lösung nicht in einer strengeren Regel, sondern in einem besser passenden Alltag.",
+      "claim_ids": [
+        "C06"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_56",
+      "visual_type": "transition",
+      "visible_change": "Person packing lunch for next day and closing kitchen drawer, relaxed domestic scene",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_55; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_057",
+      "voiceover_text": "Was kannst du konkret ausprobieren? Beginne mit einer Mahlzeit, die dich bisher nur kurz satt hält.",
+      "function": "trigger",
+      "learning_goal": "Zuschauer versteht: Was kannst du konkret ausprobieren? Beginne mit einer Mahlzeit, die dich bisher nur kurz satt hält.",
+      "claim_ids": [
+        "C07"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_57",
+      "visual_type": "everyday-context",
+      "visible_change": "Adult looking at familiar light lunch plate in home kitchen, preparing to add foods",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_56; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_058",
+      "voiceover_text": "Erstens: Ergänze nach Möglichkeit eine Eiweißquelle, die du magst und gut verträgst.",
+      "function": "comparison",
+      "learning_goal": "Zuschauer versteht: Erstens: Ergänze nach Möglichkeit eine Eiweißquelle, die du magst und gut verträgst.",
+      "claim_ids": [
+        "C07"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_58",
+      "visual_type": "organ-cutaway",
+      "visible_change": "Hands add a serving of lentils to colorful grain bowl, one visible movement",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_57; Einzelvorgang statt Wiederholung.",
+      "labels": [
+        "Eiweißquelle"
+      ],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_059",
+      "voiceover_text": "Zweitens: Bring Gemüse, Obst oder Vollkorn auf den Teller, damit Ballaststoffe und Volumen dazukommen.",
+      "function": "trigger",
+      "learning_goal": "Zuschauer versteht: Zweitens: Bring Gemüse, Obst oder Vollkorn auf den Teller, damit Ballaststoffe und Volumen dazukommen.",
+      "claim_ids": [
+        "C07"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_59",
+      "visual_type": "process-closeup",
+      "visible_change": "Hand adds roasted vegetables to lunch plate beside wholegrain bread, one action",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_58; Einzelvorgang statt Wiederholung.",
+      "labels": [
+        "Ballaststoffe"
+      ],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_060",
+      "voiceover_text": "Drittens: Iss, wenn möglich, in Ruhe und achte darauf, wann du angenehm satt wirst.",
+      "function": "path",
+      "learning_goal": "Zuschauer versteht: Drittens: Iss, wenn möglich, in Ruhe und achte darauf, wann du angenehm satt wirst.",
+      "claim_ids": [
+        "C07"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_60",
+      "visual_type": "natural-comparison",
+      "visible_change": "Adult seated calmly with fork placed down mid meal, relaxed dining scene",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_59; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_061",
+      "voiceover_text": "Sättigungssignale entwickeln sich während einer Mahlzeit. Langsamer essen kann dir helfen, sie besser wahrzunehmen.",
+      "function": "observation",
+      "learning_goal": "Zuschauer versteht: Sättigungssignale entwickeln sich während einer Mahlzeit. Langsamer essen kann dir helfen, sie besser wahrzunehmen.",
+      "claim_ids": [
+        "C07"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_61",
+      "visual_type": "macro-view",
+      "visible_change": "Close-up natural dinner plate and adult hand putting fork down, gentle stomach-to-brain echo in background",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_60; Einzelvorgang statt Wiederholung.",
+      "labels": [
+        "Sättigung"
+      ],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_062",
+      "voiceover_text": "Viertens: Prüfe, ob Getränke und beiläufige Snacks bei dir einen großen Teil des Essens ausmachen.",
+      "function": "path",
+      "learning_goal": "Zuschauer versteht: Viertens: Prüfe, ob Getränke und beiläufige Snacks bei dir einen großen Teil des Essens ausmachen.",
+      "claim_ids": [
+        "C07"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_62",
+      "visual_type": "biological-path",
+      "visible_change": "Desk with open laptop, small glass of soda and snack wrappers; reflective not judgmental moment",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_61; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_063",
+      "voiceover_text": "Wähle kleine Veränderungen, die du langfristig beibehalten kannst, statt morgen alles radikal umzustellen.",
+      "function": "wirkung",
+      "learning_goal": "Zuschauer versteht: Wähle kleine Veränderungen, die du langfristig beibehalten kannst, statt morgen alles radikal umzustellen.",
+      "claim_ids": [
+        "C07"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_63",
+      "visual_type": "everyday-result",
+      "visible_change": "Friendly kitchen scene preparing a simple lunchbox with vegetables and favorite sandwich",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_62; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_064",
+      "voiceover_text": "Und wenn du abnehmen möchtest: Entscheidend ist auf Dauer die gesamte Energiebilanz, nicht ein magischer Trick.",
+      "function": "result",
+      "learning_goal": "Zuschauer versteht: Und wenn du abnehmen möchtest: Entscheidend ist auf Dauer die gesamte Energiebilanz, nicht ein magischer Trick.",
+      "claim_ids": [
+        "C07"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_64",
+      "visual_type": "transition",
+      "visible_change": "Clean energy-balance illustration with balanced everyday food and walking shoes, no weight-number, one understandable idea",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_63; Einzelvorgang statt Wiederholung.",
+      "labels": [
+        "Energiebilanz"
+      ],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_065",
+      "voiceover_text": "Satt sein bedeutet also nicht nur: Der Magen ist voll. Mehrere Signale arbeiten zusammen.",
+      "function": "trigger",
+      "learning_goal": "Zuschauer versteht: Satt sein bedeutet also nicht nur: Der Magen ist voll. Mehrere Signale arbeiten zusammen.",
+      "claim_ids": [
+        "C08"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_65",
+      "visual_type": "everyday-context",
+      "visible_change": "Clear organic scene brain and stomach with small consistent signals between them, simple friendly cutaway",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_64; Einzelvorgang statt Wiederholung.",
+      "labels": [
+        "Gehirn",
+        "Magen"
+      ],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_066",
+      "voiceover_text": "Die Zusammensetzung deiner Mahlzeit, dein Essverhalten und deine Lebenssituation können dabei eine Rolle spielen.",
+      "function": "path",
+      "learning_goal": "Zuschauer versteht: Die Zusammensetzung deiner Mahlzeit, dein Essverhalten und deine Lebenssituation können dabei eine Rolle spielen.",
+      "claim_ids": [
+        "C08"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_66",
+      "visual_type": "organ-cutaway",
+      "visible_change": "Three connected real-life moments: meal at table, quiet sleep, busy street; coherent transition without panels",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_65; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_067",
+      "voiceover_text": "Deshalb ist nicht jede Person nach demselben Frühstück gleich lange satt.",
+      "function": "observation",
+      "learning_goal": "Zuschauer versteht: Deshalb ist nicht jede Person nach demselben Frühstück gleich lange satt.",
+      "claim_ids": [
+        "C08"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_67",
+      "visual_type": "process-closeup",
+      "visible_change": "Two clothed adults at same breakfast table with relaxed different responses, no stereotypes",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_66; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_068",
+      "voiceover_text": "Wenn du schnell wieder Hunger bekommst, beobachte zuerst die Muster, statt sofort das Essen zu verbieten.",
+      "function": "path",
+      "learning_goal": "Zuschauer versteht: Wenn du schnell wieder Hunger bekommst, beobachte zuerst die Muster, statt sofort das Essen zu verbieten.",
+      "claim_ids": [
+        "C08"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_68",
+      "visual_type": "natural-comparison",
+      "visible_change": "Adult pauses before snack, checks whether genuinely hungry in thoughtful everyday kitchen moment",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_67; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_069",
+      "voiceover_text": "Probier zum Beispiel mehr Eiweiß und Ballaststoffe, genug Schlaf und etwas mehr Ruhe beim Essen.",
+      "function": "wirkung",
+      "learning_goal": "Zuschauer versteht: Probier zum Beispiel mehr Eiweiß und Ballaststoffe, genug Schlaf und etwas mehr Ruhe beim Essen.",
+      "claim_ids": [
+        "C08"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_69",
+      "visual_type": "macro-view",
+      "visible_change": "Overhead inviting balanced bowl with beans, grains, greens and glass of water; morning sun",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_68; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_070",
+      "voiceover_text": "Wenn Hunger plötzlich stark zunimmt oder mit auffälligen Beschwerden einhergeht, lass das medizinisch abklären.",
+      "function": "comparison",
+      "learning_goal": "Zuschauer versteht: Wenn Hunger plötzlich stark zunimmt oder mit auffälligen Beschwerden einhergeht, lass das medizinisch abklären.",
+      "claim_ids": [
+        "C08"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_70",
+      "visual_type": "biological-path",
+      "visible_change": "Adult calmly speaking with a healthcare professional at a bright consultation desk, no medical devices in foreground",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_69; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_071",
+      "voiceover_text": "Und denk daran: Hunger ist ein Signal deines Körpers, kein Fehler, gegen den du ständig kämpfen musst.",
+      "function": "trigger",
+      "learning_goal": "Zuschauer versteht: Und denk daran: Hunger ist ein Signal deines Körpers, kein Fehler, gegen den du ständig kämpfen musst.",
+      "claim_ids": [
+        "C08"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_71",
+      "visual_type": "everyday-result",
+      "visible_change": "Close friendly cutaway of body with stomach and brain peacefully communicating, softly highlighted",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_70; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
+    },
+    {
+      "id": "SV_072",
+      "voiceover_text": "Wenn du das verstehst, kannst du Ernährung bewusster gestalten – ohne komplizierte Regeln und ohne falsche Versprechen.",
+      "function": "result",
+      "learning_goal": "Zuschauer versteht: Wenn du das verstehst, kannst du Ernährung bewusster gestalten – ohne komplizierte Regeln und ohne falsche Versprechen.",
+      "claim_ids": [
+        "C08"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_72",
+      "visual_type": "transition",
+      "visible_change": "Final hopeful scene adult eats balanced enjoyable meal at sunlit table, clean organic illustration matching intro",
+      "scene_difference": "Andere Perspektive und anderes Hauptmotiv als Bild_71; Einzelvorgang statt Wiederholung.",
+      "labels": [],
+      "misconception_to_avoid": "Illustration ist vereinfacht, keine automatische Wunderwirkung oder individuelle medizinische Diagnose."
     }
   ]
 }
