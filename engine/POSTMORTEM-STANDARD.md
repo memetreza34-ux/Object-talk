@@ -1,137 +1,36 @@
-# Postmortem-Standard – Object-Talk
+# Verbindliches Post-Video-Review – höchste Priorität
 
-## Zweck
+Gilt **nach jedem tatsächlich fertig produzierten Video**. Zusammen mit `engine/CONTINUOUS-IMPROVEMENT.md` ist diese Prüfung Pflicht, bevor das nächste Video freigegeben wird. Ein leeres Postmortem mit drei Listen ist kein Review; ein nur ausgefülltes Postmortem ohne tatsächliche globale Änderungen ist keine Verbesserung.
 
-Nach jedem echten Finalrender wird dokumentiert, was funktioniert hat und was beim nächsten Video anders gemacht werden muss. Dadurch wird das Repository schrittweise besser, statt bekannte Fehler zu wiederholen.
+## Interne Review-Datei
+`VIDEOORDNER/.intern/05_info/improvement-review.json`, nie in `03_export/`. Vorlage unter `youtube-videos/_TEMPLATE/.intern/05_info/`.
 
-## Datei pro Video
+Für historische Videos 000–009 werden keine leeren Altpostmortems ohne reale Sichtung nachträglich als geprüft erklärt.
 
-```text
-04_export/postmortem.md
+## Vollständige echte Sichtung
+- finales MP4 (Laufzeit und Abschnitte), separates Titelcover, fertiges Audio und die tatsächlich angezeigten Bilder ansehen
+- Hook, Hauptteil, Schluss, Erklärungstiefe, Informationsbudget, sichtbare Labels, Abwechslung, Flow-Stabilität, Flow-Anatomie, Voice↔Bild-Verhältnis, Textkontrast, 16:9-Render, Qualitäts- und Exportfehler untersuchen
+- Nutzerfeedback wörtlich bzw. sinngemäß erfassen; nicht verfügbare YouTube-Zuschauerdaten als unbekannt markieren
+- mindestens zwei konkrete Stärken, **mindestens drei mit Zeitstelle/Bild-ID verortete Schwächen**, zu jeder Schwäche eine überprüfbare Ursache
+- die stärksten 2–5 dauerhaften Fehlerquellen beheben, nicht bloß beschreiben; jede Implementierung belegt betroffene globale Dateien und einen echten Test mit PASS
+- vorheriges Video nur mit tatsächlich vorliegenden Daten vergleichen; qualitative Bewertung von objektiver Metrik trennen
+- neue Regeln und Prompts möglichst in bestehende globale Dateien und Tools integrieren; keine neue Bildwelt erfinden, keine Altfilme umschreiben
+
+## Harte Vererbung
+Nach bestandener inhaltlicher und technischer Prüfung:
+
+```bash
+python tools/improvement_loop.py register youtube-videos/VIDEOORDNER
 ```
 
-Das Postmortem wird erst nach Sichtung des echten finalen Videos ausgefüllt. Keine erfundenen Bewertungen ohne Render.
+Dadurch wird `engine/IMPROVEMENT-LEDGER.json` ergänzt und die 2–5 gerade behobenen Probleme werden zur verbindlichen Aufgabe für das nächste Video.
 
-## Pflichtinhalt
+Das nächste Projekt belegt vor Phase 1 in `.intern/05_info/improvement-applied.json` für jede vorgeschriebene Lesson die konkrete Anpassung, die verwendete echte Datei und deren Überprüfung. `tools/validate_planning_v2.py` setzt diesen Prüfpunkt automatisch durch.
 
-### 1. Technische Daten
-
-- Videodauer
-- Auflösung / FPS
-- Audioformat
-- verwendete Bildanzahl
-- fehlgeschlagene Flow-Generierungen
-- Recovery-Anzahl
-- finale Bildanzahl
-
-### 2. Gemessene Stärken
-
-Mindestens drei konkrete Punkte, z. B.:
-
-- besonders verständlicher Mechanismusschritt
-- sehr gutes Bild↔Voice-over-Matching
-- starke Maßstabsüberleitung
-- gute Label-Lesbarkeit
-- konsistenter Stil
-- sehr klares Cover mit nur einem Titel
-- starke Textkontraste
-- sinnvolle textfreie Bilder
-
-### 3. Gemessene Schwächen
-
-Mindestens drei konkrete Punkte, z. B.:
-
-- Szene zu lang
-- zwei Bilder zu ähnlich
-- falscher Maßstab
-- KI-Schrift unbrauchbar
-- schwacher Textkontrast
-- heller Text auf hellem Hintergrund
-- unnötiges Label
-- zu viele Labels
-- Cover enthält Zusatztext
-- Frame wirkt informationsüberladen
-- Bild erklärt nur das Thema, nicht den Prozess
-- schwache Hook-Komposition
-- Voice-over und Visual wechseln zu spät
-
-### 4. Cover-Check
-
-Explizit dokumentieren:
-
-- exakt ein sichtbarer Textblock? PASS / FAIL
-- nur Titel/Hook? PASS / FAIL
-- Zusatzlabels/Unterzeile vorhanden? JA / NEIN
-- Titelkontrast stark? PASS / FAIL
-- Titel sofort lesbar? PASS / FAIL
-
-### 5. Text-/Informationsdichte-Check
-
-Explizit dokumentieren:
-
-- normale Bilder maximal 2 Labels? PASS / FAIL
-- Labels maximal 3 Wörter? PASS / FAIL
-- unnötige Labels gefunden? JA / NEIN
-- heller Text auf hellem Hintergrund? JA / NEIN
-- dunkler Text auf dunklem Hintergrund? JA / NEIN
-- überladene Frames gefunden? JA / NEIN
-- hätte ein Frame besser auf zwei Bilder verteilt werden sollen? JA / NEIN
-
-### 6. Bildfehler
-
-Für jedes problematische Bild:
-
-```text
-Bild-ID:
-Problem:
-Ursache im Prompt/Workflow:
-Wie es künftig verhindert wird:
-```
-
-### 7. Prompt-Lernen
-
-Festhalten:
-
-- welche Promptformulierungen besonders zuverlässig waren
-- welche Formulierungen zu Stil- oder Anatomiefehlern führten
-- welche Labels häufig falsch gerendert wurden
-- welche Kontrastformulierungen gut funktioniert haben
-- welche Szenen ohne Text besser funktionierten
-- welche Visualtypen Google Flow besonders gut oder schlecht umgesetzt hat
-
-### 8. Pipeline-Lernen
-
-Prüfen:
-
-- Cover title-only eingehalten?
-- Textkontrast-Gate zuverlässig?
-- Informationsdichte-Gate zuverlässig?
-- funktionierte die Script↔Audio-Ausrichtung korrekt?
-- waren Szenengrenzen logisch?
-- wurden überladene Beats früh genug auf mehrere Bilder geteilt?
-- gab es Probleme beim ZIP-Import oder bei Dateinummern?
-- war Remotion ruhig genug, aber nicht statisch/langweilig?
-- erzeugte Remotion garantiert keinen sichtbaren Text?
-
-### 9. Konkrete Änderungen
-
-Maximal fünf konkrete Änderungen, die beim nächsten Video umgesetzt werden.
-
-Keine vagen Punkte wie „besser machen“. Jede Änderung muss ausführbar sein.
-
-### 10. Dauerhafte Regeln
-
-Nur Erkenntnisse, die sich über dieses einzelne Video hinaus verallgemeinern lassen, werden anschließend in eine bestehende globale Regeldatei übernommen.
-
-Dabei gilt:
-
-- keine neue Lock-Datei für jede Kleinigkeit
-- zuerst bestehende Datei aktualisieren
-- `PROJECT_CONTRACT.md` nur bei wirklich dauerhaften Grundregeln ändern
-- Widersprüche zu älteren Regeln vermeiden
-
-## Scorecard
-
-Das Postmortem übernimmt den finalen Gesamtwert aus `engine/QUALITY-SCORECARD.md`.
-
-Ein Video mit weniger als 8,0/10 darf zwar analysiert werden, aber nicht als Goldstandard oder Referenzvideo markiert werden.
+## Ehrlichkeit und Freigabe
+- keine Behauptung tatsächlicher Medienprüfungen ohne Sichtung
+- keine erfundenen Zeitstellen, Scores oder YouTube-Analytics
+- wenn der Film noch nicht fertig ist, Review-Status `PENDING_FINAL_MEDIA` lassen
+- falls Fix nicht bestanden: Test nicht PASS nennen, Fehler weiter untersuchen
+- vollständige Evidenz ist wichtiger als kosmetische Verbesserungspunkte
+- sichtbarer Export für neue Produktionen bleibt bei **genau vier Dateien** gemäß `engine/EXPORT-STANDARD.md`

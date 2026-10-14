@@ -22,6 +22,7 @@ import json
 import re
 from pathlib import Path
 from urllib.parse import quote
+from improvement_loop import check_next
 
 IMAGE_ID_RE = re.compile(r"^Bild_\d{2,}$")
 PLACEHOLDER_RE = re.compile(r"\[[^\]]+\]|\b(?:TODO|TBD|PENDING)\b", re.IGNORECASE)
@@ -555,6 +556,11 @@ def main() -> None:
     if not project.is_dir():
         fail(f"Projektordner nicht gefunden: {project}")
 
+    try:
+        improvement_status = check_next(project)
+    except ValueError as exc:
+        fail(str(exc))
+    print(f"IMPROVEMENT-PRIORITY: {improvement_status}")
     expected = validate_phase1(project)
     print_phase1_tablet_links(project)
     if args.phase2:

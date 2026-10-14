@@ -7,7 +7,8 @@ Diese Datei ist der Bootstrap fuer ChatGPT, Antigravity, Codex und andere Reposi
 1. `PROJECT_CONTRACT.md`
 2. `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
 3. `engine/VISIBLE-TEXT-STANDARD.md`
-4. `engine/EXPORT-STANDARD.md`
+4. `engine/CONTINUOUS-IMPROVEMENT.md`
+5. `engine/EXPORT-STANDARD.md`
 5. `PROJECT_STATE.md`
 6. `config/channel.json`
 7. `config/video.json`
@@ -19,6 +20,11 @@ Diese Datei ist der Bootstrap fuer ChatGPT, Antigravity, Codex und andere Reposi
 13. relevante Dateien des aktuellen YouTube-Projekts
 
 Aktive Produktion steht in `PROJECT_STATE.md`.
+
+## ABSOLUTE NORMALE PRODUKTIONSPRIORITÄT – VERBESSERUNG NACH JEDEM VIDEO
+
+**Autoritativ: `engine/CONTINUOUS-IMPROVEMENT.md` – VOR allen normalen neuen Videoarbeiten lesen.** Jede tatsächlich fertig gerenderte Videoausgabe kritisch anschauen, mindestens drei konkrete Schwächen mit Ursache benennen, 2–5 wirksame globale Workflow-/Prompt-/Toolverbesserungen wirklich umsetzen und testen, danach den Bericht unter `.intern/05_info/improvement-review.json` dokumentieren und mit `tools/improvement_loop.py register` ins Lernprotokoll übernehmen. Vor der nächsten Phase 1 nachweisen, wie **alle aktiven Lessons** im aktuellen Skript/Bildprompt/Workflow eingesetzt wurden (`.intern/05_info/improvement-applied.json`); Validator blockiert unbehandelte Pflichten. Nie Erfolg oder ein gesehenes Video behaupten, wenn keine echte Prüfung stattgefunden hat. Keine zusätzlichen sichtbaren Ordner oder Exportdateien. Historische Videos nicht rückwirkend verändern.
+
 
 ## VERBINDLICHE BILDWELT
 

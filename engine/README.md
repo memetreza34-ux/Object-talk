@@ -35,7 +35,7 @@ Die alte 2.5D-/Soft-3D- und Premium-3D-Logik darf nicht reaktiviert werden.
 
 ## Cover
 
-Cover / `Bild_01`:
+Separates Cover (nicht `Bild_01`):
 - genau ein sichtbarer Textblock
 - nur Titel / Hook
 - keine Anatomie-Labels
@@ -72,29 +72,11 @@ Autoritativ: `PRESENTATION-OVERLAY-SYSTEM.md`
 
 ## Veröffentlichungs-Export
 
-Autoritativ: `EXPORT-STANDARD.md`
+Ab neuen Videos nach `EXPORT-STANDARD.md`: `03_export/` mit genau `VIDEO.mp4`, `COVER.png`, `CAPTION-YOUTUBE.txt`, `UNTERTITEL-MIT-ZEITEN.txt`. Alle technischen SRT/QA/Scorecard/Postmortem-Dateien nach `.intern/`. Zeitcodes nur aus echtem finalem Audio.
 
-Jedes fertige Video braucht unter `04_export/`:
-- finale YouTube-MP4
-- `CAPTION-YOUTUBE.txt` mit Titel + Beschreibung + max. 5 Hashtags
-- `UNTERTITEL-MIT-ZEITEN.txt` mit komplettem gesprochenem Script und echten Zeitabschnitten
-- `UNTERTITEL-YOUTUBE.srt` als hochladbare externe YouTube-Untertiteldatei
-- Renderbericht
-- Quality-Scorecard
-- Postmortem
+## Höchste Priorität: Verbesserung nach jedem Video
 
-Untertitel werden nicht eingebrannt. Sie werden nach der finalen Timeline automatisch erzeugt:
-
-```text
-final-voiceover.wav
-→ Whisper
-→ word-timings.json
-→ timeline.json
-→ tools/export_subtitles.py
-→ UNTERTITEL-MIT-ZEITEN.txt + UNTERTITEL-YOUTUBE.srt
-```
-
-Zeitcodes niemals schätzen.
+`CONTINUOUS-IMPROVEMENT.md` verpflichtet zur echten Sichtung, Ursachenanalyse, 2–5 umgesetzten und überprüften globalen Verbesserungen und zur Übernahme der Lessons in die nächste Phase 1. Technische Prüfung: `tools/improvement_loop.py`. Kein neuer sichtbarer Nutzerordner.
 
 ## Bewährte Longform-Referenz
 
@@ -133,7 +115,7 @@ Themen-Gehirn + Themen-Score
 → Remotion / Render ohne sichtbaren Editor-Text
 → technischer + visueller Final-QA
 → YouTube-Exportpaket vervollstaendigen
-→ Postmortem
+→ Postmortem + dauerhafte Repo-Fixes + Improvement-Ledger + Lessons im nächsten Video
 ```
 
 ## Wichtige Dateien

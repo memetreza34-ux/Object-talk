@@ -1,77 +1,28 @@
-# Visual Quality Gate
+# Visuelle Qualitätsprüfung – keine Rückkehr zum alten 3D-System
 
-Vor dem finalen Render muss Antigravity jedes Bild, jede Overlay-Ebene und die gesamte Timeline prüfen.
+Aktuelle autoritative Regeln: `PROJECT_CONTRACT.md`, `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`, `engine/VISIBLE-TEXT-STANDARD.md` und `engine/CONTINUOUS-IMPROVEMENT.md`.
 
-## Pflichtprüfung pro Bild
+## Jedes NORMAL nummerierte Bild prüfen
+- 16:9 und korrekte Bildnummer als **Dateimetadatum**, niemals sichtbar ins Bild gerendert
+- Clean Animated Biology Illustration: organische lesbare Formensprache, leichte Schattentiefe, keine glossy CGI-, Medizinsoftware- oder überladene Infografik-Welt
+- ein eindeutig verständlicher biologischer Lehrvorgang; ausreichend große relevante Elemente, keine Detail-Labyrinthe
+- wissenschaftlich plausible Ursache/Wirkung, richtige Strukturen und Pfeile
+- 0–2 kurze deutsche Beschriftungen nur wenn sie der Erklärung dienen, korrekter Kontrast dunkel auf hell bzw. hell auf dunkel
+- keine englischen Flow-Labels, Produktionsnummern, zusätzlichen Figuren oder Textblöcke
+- erkennbare Abwechslung in Motiv, Maßstab, Kamerawinkel und Lehrziel; keine Duplikate
 
-- korrektes Seitenverhältnis 16:9
-- ausreichende Auflösung
-- richtige Dateinummer
-- keine fehlenden oder doppelten Szenennummern
-- keine sichtbaren schweren KI-Artefakte
-- keine ungewollten zusätzlichen Figuren
-- anatomische Darstellung verständlich und plausibel
-- **stark stilisierte hochwertige 3D-Animationsfilm-Welt**, kein Drift in Fotorealismus
-- weiche, klare Formensprache und konsistente Materialien/Lichtwelt
-- wichtigste sichtbare Strukturen/Prozesse sinnvoll beschriftet
-- normalerweise 1–3 kurze deutsche Labels
-- deutsche Beschriftungen korrekt geschrieben
-- Pfeile/Labels zeigen eindeutig auf die richtige Struktur
-- kein englischer sichtbarer Text
-- keine unnötigen Textblöcke
-- keine eklige medizinische Realistik, kein Gore
+## Cover separat prüfen
+- `03_export/COVER.png` ist das ausgewählte YouTube-Thumbnail, nicht das Videoszenenbild `Bild_01`
+- exakt ein sichtbarer Titeltext; kein Untertitel, kein Anatomie-Label, keine Dateinummer
+- auf Smartphonegröße kontrastreich und klar lesbar; Cover nicht in der Video-Timeline
 
-## Pflichtprüfung Bild_01
+## Timeline und fertiges Video
+- erste Szene startet mit `Bild_01` als eigenständigem Video-Hook, nicht mit dem Cover
+- Voice↔Bild passt ohne fehlende Sätze oder Umstellungen
+- bevorzugt 3–6 Sekunden pro Standbild, niemals über 7 Sekunden
+- Remotion nur für Audio, Timing, dezente Pans/Zooms und Schnitt, kein sichtbarer Editor-Text
+- 1920×1080 bei 30 fps, Ton vollständig, keine schwarzen Bildabschnitte
+- sichtbarer Endexport nur vier Dateien, technische QA verborgen unter `.intern/`
 
-`Bild_01` muss zusätzlich bestehen:
-
-- funktioniert als Cover und erster Shot
-- Thema auf einen Blick verständlich
-- enthält eine kurze starke deutsche Hook-Zeile zum Thema
-- Hook ist korrekt geschrieben und nicht irreführend
-- Hook bleibt auch als Cover lesbar
-- definiert klar den gewünschten Renderstil für alle späteren Bilder
-- spätere Bilder wirken sichtbar wie dieselbe Welt
-
-## Pflichtprüfung der Overlays
-
-Wenn `03_pipeline/overlay-plan.json` vorhanden ist:
-
-- Vollbild bleibt dominant; kein PowerPoint-/Dashboard-Look
-- Overlay-Text ist auf Deutsch
-- keine unnötige Wiederholung bereits sichtbarer Flow-Labels
-- kein zweiter Cover-Hook über Bild_01
-- Überschrift möglichst 2–5 Wörter, maximal ungefähr 6 Wörter
-- keine kompletten Voice-over-Sätze als eingebrannter Text
-- kein Overlay verdeckt das entscheidende Organ oder die zentrale Bildaussage
-- keine Anime-/Comic-/Meme-Typografie oder hektische Popup-Animation
-- Overlay-Timing liegt innerhalb der passenden Szene
-- Text bleibt maximal zwei Zeilen
-
-## Pflichtprüfung der Timeline
-
-- Szene 01 beginnt bei 0 Sekunden
-- keine Lücken zwischen Szenen
-- keine Überlappungen
-- letztes Bild endet mit dem Voiceover
-- Zielrhythmus überwiegend 3–6 Sekunden pro Bild
-- über 8 Sekunden nur mit bewusstem Grund
-- lange Standzeiten werden nicht nur durch Zoom/Pan kaschiert
-- wichtige neue Aussage bekommt das passende Bild
-- Bildwechsel erfolgen nicht mitten in einer zusammengehörigen Aussage, wenn vermeidbar
-
-## Pflichtprüfung des fertigen Videos
-
-- normales Kanalvideo mindestens 5:00 Minuten; dokumentierter Testmodus darf die definierte Ausnahme verwenden
-- Audio vollständig und verständlich
-- Bilder synchron zur Aussage
-- Zooms/Schwenks ruhig und sauber
-- Overlays ruhig, lesbar und gezielt
-- keine schwarzen Frames
-- keine falschen Bildreihenfolgen
-- kein Bild fehlt
-- 1920×1080, 30 fps
-- `final-video.mp4` erfolgreich erzeugt
-- `YouTube-Caption.md` vollständig
-
-Wenn eine Pflichtprüfung fehlschlägt, darf nicht einfach final exportiert werden. Der Fehler wird zuerst behoben.
+## Nach jedem Video: Lernen ist Pflicht
+Problematische Bild-IDs / Zeitstellen zusammen mit der konkreten Fehlerursache im tatsächlichen Video festhalten. Mindestens zwei umgesetzte und getestete global gültige Verbesserungen ins Ledger übernehmen, nicht nur „guter Stil“ behaupten. `engine/CONTINUOUS-IMPROVEMENT.md` ist verbindlich.

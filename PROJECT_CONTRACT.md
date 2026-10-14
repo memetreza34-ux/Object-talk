@@ -2,6 +2,10 @@
 
 Diese Datei ist die dauerhafte oberste Produktionsregel des Repositories. Bei Widerspruechen gilt zuerst eine ausdrueckliche aktuelle Nutzeranweisung, danach dieser Contract.
 
+## HÖCHSTE PRODUKTIONSPRIORITÄT: Kontinuierliche Verbesserung
+
+**JEDES fertig gerenderte Video muss eine neue, beweisgestützte Lernrunde auslösen, BEVOR das nächste Video als fertig geplant gilt.** Pflicht: echte Videosichtung, Ursachenanalyse, mindestens 2 wirksame getestete Änderungen an der globalen Produktion, interner Verbesserungsbericht, Aktualisierung des zentralen Ledgers und nachweisliche Übernahme aller aktiven Lehren in die nächste Phase 1. Bewertungszahlen und Verbesserungen niemals ohne Belege erfinden. Das ist wichtiger als schneller Videoausstoß. Vollständiger Ablauf und technische Prüfer: `engine/CONTINUOUS-IMPROVEMENT.md`, `tools/improvement_loop.py`. Alle technischen Berichte bleiben in `.intern/`, die sichtbaren drei Nutzerordner bleiben unverändert. Ältere Videos 000–009 werden nicht rückwirkend migriert.
+
 ## Ziel
 
 Object-Talk produziert deutschsprachige YouTube-Erklaervideos zu Ernaehrung, Gesundheit, menschlichem Koerper und Biologie.

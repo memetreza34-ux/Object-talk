@@ -1,166 +1,54 @@
-# Phase-Gates
+# Verbindliche Phasen-Gates – Object-Talk
 
-Keine spätere Produktionsphase startet, bevor die vorherige Phase bestanden hat.
+Priorität vor neuer Produktion: `PROJECT_CONTRACT.md` und `engine/CONTINUOUS-IMPROVEMENT.md`; für Export `engine/EXPORT-STANDARD.md`, für Sichtbarkeit `engine/VISIBLE-TEXT-STANDARD.md`.
 
-`PROJECT_CONTRACT.md` bleibt die oberste Regel.
-`engine/VISIBLE-TEXT-STANDARD.md` ist fuer sichtbaren Text und Informationsdichte verbindlich.
-`engine/EXPORT-STANDARD.md` ist fuer das finale YouTube-Paket verbindlich.
+## GATE 0 – Verbesserung vor der NÄCHSTEN Phase 1
 
-## Interner Testmodus
+- nach jedem **tatsächlich fertig gerenderten** vorherigen Video echtes Finale, Cover und Audio anschauen und `.intern/05_info/improvement-review.json` vollständig ausfüllen
+- Probleme mit Zeit-/Bildbeleg und Ursachen analysieren, zwei bis fünf globale Korrekturen umsetzen und testen, im zentralen Ledger registrieren
+- beim neuen Video `.intern/05_info/improvement-applied.json` ausfüllen: permanente und zuletzt registrierte Lessons in konkret sichtbare Verbesserungen überführen
+- `python tools/improvement_loop.py check-next VIDEOORDNER` muss bestehen; wird automatisch durch den Phase-1-Validator aufgerufen
+- Historische Projekte bis einschließlich 009 bleiben ohne rückwirkende Pflichtdateien und werden nicht als geprüft ausgegeben
 
-Wenn ein Projekt eine gültige Datei `05_info/test-mode.json` mit `test_mode: true` besitzt, darf die dort dokumentierte Testlaufzeit anstelle der normalen 300-Sekunden-Grenze verwendet werden.
+## PHASE 1 – Recherche und Produktion vorbereiten
 
-Alle wissenschaftlichen, visuellen, Asset-, Sync- und Qualitäts-Gates bleiben aktiv.
+- Faktenquellen, Claim-Matrix und Script prüfen; neugierig machender Hook, klarer Aufbau, korrekte Gesundheitstipps
+- vollständiges `01_script/script.txt`, EINE `02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt`
+- Mechanism-, Szenen-, Satz-Visual- und Labelpläne nur intern unter `.intern/05_info/`
+- erste Videoszene `Bild_01` ist **normale Erklärungsszene**; separates Cover zeigt exakt einen lesbaren Titel und ist nicht im Video
+- einfache, in 1–2 Sekunden verständliche biologisch korrekte Illustrationen: eine Hauptidee, normalerweise 2–4 wichtige Formen und höchstens zwei relevante deutsche Labels
+- Projekt und alle vererbten Verbesserungen bestehen `python tools/validate_planning_v2.py VIDEOORDNER`
+- **Nach PASS zwei anklickbare Direktlinks** in der Chat-Antwort: Flow-Prompt und Sprecher-Script
+- bei FAIL keine Freigabe als Phase-1-fertig
 
-## PHASE-1-PASS
+## FLOW-COVER-GATE
 
-Erforderlich:
-- Thema gegen `THEMEN-GEHIRN.md` geprüft
-- Recherche abgeschlossen
-- Kernclaims geprüft
-- `script.txt` ist finaler gesprochener Text
-- Mechanism Map vollständig
-- Satz-Visual-Plan vollständig
-- Szenengrenzen und Bild-IDs konsistent
-- jede Szene besitzt genau ein geplantes `Bild_XX`
-- `Bild_XX`/Szenennummern sind reine Produktionsmetadaten und niemals als sichtbarer Bildtext geplant
-- Szene 01 ist Cover-/Hook-Szene
-- Cover plant **genau einen sichtbaren Textblock = Titel/Hook**, ohne Zusatzlabels
-- Label-Plan vollständig
-- normale Bilder planen **0–2 Labels, maximal 2**
-- Labels bevorzugt 1–2 Woerter, maximal 3 Woerter
-- kein Bild nur dekorativ geplant
-- pro Bild genau eine dominante Hauptaussage / ein Hauptprozess
-- Bildkomplexität niedrig geplant: bevorzugt 2–4 zentrale Elemente
-- ueberladene Beats werden auf mehrere Bilder aufgeteilt
-- unwichtige Nebeninformation wird weggelassen
-- Textkontrast ist geplant: hell → dunkel, dunkel → hell
-- Flow-Prompts nutzen die kanonische Bildwelt `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
-- Flow-Prompts verbieten sichtbar gerenderte Asset-/Bild-/Szenennummern
-- `03_pipeline/overlay-plan.json` ist `DISABLED` und `scenes` ist leer
-- keinerlei Remotion-Text geplant
-- `04_export/` ist im Projekt angelegt
-- `04_export/CAPTION-YOUTUBE.txt` ist vorbereitet
-- `04_export/YOUTUBE-UPLOAD-PAKET.md` ist fuer das konkrete Video vorbereitet
-- Exportstruktur enthaelt Ziele fuer `UNTERTITEL-MIT-ZEITEN.txt` und `UNTERTITEL-YOUTUBE.srt`
-- `python tools/validate_planning_v2.py VIDEOORDNER` besteht
+- genau drei echte eigenständige Covervarianten erstellen und anzeigen; Nutzer wählt 1/2/3
+- das gewählte Cover ist **ausschließlich** `03_export/COVER.png`, nicht `Bild_01`, nicht in der Bilder-ZIP oder der Remotion-Timeline
+- ohne weitere Startfrage normale `Bild_01`–`Bild_05` und danach fünf Szenen je Batch
+- ein textbasierter kompletter Google-Flow-Prompt, keine verlangten Bild-Referenz-Uploads
+- interne Produktionsnummern erscheinen NIEMALS auf den Bildern
 
-Bei FAIL: keine Voice- oder Bildproduktion starten.
+## PHASE 2 – Bilder und Audio
 
-## FLOW-COVER-GATE – vor allen regulären Bildern ab 02
+- echte Flow-Bilder vor Freigabe sichten; falsche Anatomy, Stilbrüche, unlesbare/unnötige Labels, zu komplizierte Strukturen oder Duplikate ersetzen
+- wissenschaftliche Genauigkeit, Flow-Bildwelt, Prozessverständnis, Bild-Unterschiede, deutsche korrekte 0–2 Labels und Kontrast PASS
+- Bilder-ZIP vollständig; erstes normales Asset `Bild_01`, separates Cover nicht enthalten
+- Voice-Datei vollständig, final verarbeitet und Script↔Voice korrekt
+- `python tools/validate_planning_v2.py VIDEOORDNER --phase2` muss bestehen, bevor gerendert wird
 
-- [ ] Drei eigenständige Covervarianten mit identischem title-only-Text tatsächlich generiert und gezeigt.
-- [ ] Alle drei verwenden die freigegebene Biology-Illustration-Bildwelt, keinen stilfremden flachen Silhouettenlook.
-- [ ] Nutzer hat **explizit 1, 2 oder 3 ausgewählt**. Ein automatisch erzeugtes Einzelcover ist keine Zustimmung.
-- [ ] Nur diese Variante wird das finale `Bild_01.png`, die anderen zwei sind keine finalen Assets.
-- [ ] Erst danach Bilder `Bild_02` ff. aus den konkreten Szenen IM SELBEN einzigen Google-Flow-Prompt in 5er-Batches erstellen, ohne generische Start-Rückfrage.
-- [ ] Promptaufträge folgen dem kanonischen Dokument `engine/FLOW-COVER-FIRST-WORKFLOW.md` und überschreiten nicht unnötig Google-Flow-Limits.
+## PHASE 3 – Video, Export und Qualitätsfreigabe
 
-Gate gilt für neue reguläre Produktionen ab Video 009; historische Testvideos nicht rückwirkend ändern.
+- echtes final verarbeitetes Voiceover nach Whisper-Wortzeiten ausrichten
+- normale Videobilder mit ruhigen Schnitten/leichter Kamerabewegung, maximal 7 Sekunden pro Standbild, keine erzwungenen Wiederholungen
+- Remotion erzeugt **keinen** sichtbaren Text, Cover nicht im Video
+- fertig gerendertes MP4 1920×1080, 30fps, vollständiger Ton, keine schwarzen Lücken
+- `03_export/` enthält nach Abschluss **genau** `VIDEO.mp4`, `COVER.png`, `CAPTION-YOUTUBE.txt`, `UNTERTITEL-MIT-ZEITEN.txt`
+- echte Audiotimestamps (keine Schätzungen); technisch notwendige SRT, Bericht, Scorecard und Postmortem bleiben in `.intern/`
+- Quality-Scorecard >= 8.0/10 und harte QA-Blocker bestanden, **erst dann** YouTube-ready behaupten
 
-## PHASE-2-PASS
+## GATE 4 – Ohne Abschlussreview kein nachweisbarer Fortschritt
 
-Erforderlich:
-- rohe Voice-Datei vorhanden
-- kanonisches `final-voiceover.wav` erstellt
-- Audio entspricht inhaltlich exakt `script.txt`
-- Bilder-ZIP vorhanden und sicher importiert
-- exakt die erwarteten Bilddateien vorhanden
-- keine Duplikate
-- Bilder ungefähr 16:9
-- technische Mindestauflösung bestanden
-- jedes Bild passt zur **Clean Animated Biology Illustration**
-- vereinfachte, erkennbare Anatomie
-- Hauptprozess sofort erkennbar
-- keine überladenen Bilder
-- normale Bilder enthalten maximal 2 Labels
-- Labels kurz, korrekt, deutsch und eindeutig zugeordnet
-- keine unnötigen Labels
-- Textkontrast = PASS
-- Label-Lesbarkeit = PASS
-- Informationsdichte = PASS
-- Cover title-only = PASS
-- Cover exakt ein sichtbarer Textblock = PASS
-- kein Medical-CGI, kein glossy 3D, kein alter 2.5D-/Premium-3D-Look
-- keine sichtbaren schweren KI-Fehler
-- keine sichtbare Bild-/Szenennummer
-- kein sichtbarer Dateiname, Asset-ID oder Prompttitel
-- `image-review.json` enthält jedes finale Pflichtbild
-- jedes akzeptierte Bild erreicht mindestens 8,0/10
-- `python tools/validate_planning_v2.py VIDEOORDNER --phase2` besteht
+Nach dem echten Video Final-Review wie Gate 0 durchführen, `tools/improvement_loop.py register` bestehen lassen und die Lehren in die nächste Produktion übernehmen. **Ein Repo-Commit allein beweist keine Videobildqualität.** Für echte Verbesserungsbehauptungen tatsächliche Ergebnisse prüfen; unbekannte Ergebnisse ehrlich als noch nicht geprüft deklarieren.
 
-Bei FAIL: kein Timing/Render starten.
-
-## PHASE-3-PASS
-
-Erforderlich:
-- Whisper-Wortzeiten aus dem finalen kanonischen Audio
-- vollständige strenge Script↔Audio-Ausrichtung bestanden
-- jede Szene auf exakte Wortzeiten gemappt
-- gesamte Sprache ohne Lücke oder Überlappung abgedeckt
-- `timeline.json` valide
-- Renderer-Runtime erfolgreich gebaut
-- finaler Render technisch erfolgreich
-- 1920×1080 / 30 fps
-- Audio vorhanden und vollständig
-- kein unerwarteter langer schwarzer Abschnitt
-- 100 % Vollbild-Illustration
-- Remotion erzeugt exakt 0 sichtbare Textelemente
-- `overlay-plan.json` bleibt deaktiviert und leer
-- keine sichtbaren Bild-/Szenennummern, Dateinamen oder Asset-IDs
-- Cover zeigt weiterhin nur den Titel
-- alle Flow-Texte bleiben im finalen Render kontrastreich und lesbar
-- kein Frame wirkt informationsüberladen
-- keine permanenten Rahmen, Seitenleisten oder Dashboard-/PowerPoint-Aufteilung
-- finaler Sichtcheck bestanden
-
-### Veröffentlichungs-Export – Pflicht
-
-`04_export/` muss vollständig sein und enthalten:
-- `CAPTION-YOUTUBE.txt`
-- `YOUTUBE-UPLOAD-PAKET.md`
-- `YOUTUBE-TITEL-BESCHREIBUNG-ZUM-KOPIEREN.txt`
-- `YouTube-Caption.md`
-- `UNTERTITEL-MIT-ZEITEN.txt`
-- `UNTERTITEL-YOUTUBE.srt`
-- `render-report.md`
-- `quality-scorecard.md`
-- `postmortem.md`
-- `fertiges-video/[VIDEO-ID]-YOUTUBE.mp4`
-
-Untertitel-Gate:
-- `python tools/export_subtitles.py VIDEOORDNER` wurde nach finaler `timeline.json` ausgeführt
-- `UNTERTITEL-MIT-ZEITEN.txt` enthält das komplette gesprochene Script mit echten Zeitabschnitten
-- `UNTERTITEL-YOUTUBE.srt` ist nicht leer und syntaktisch als SRT nutzbar
-- Zeitcodes stammen aus der finalen Timeline; keine Schätzung
-- Untertitel enthalten keine Produktionsnummern, Dateinamen oder internen Hinweise
-- Untertitel werden nicht ins Video eingebrannt; sie sind externe YouTube-Untertitel
-
-Metadaten-Gate:
-- `CAPTION-YOUTUBE.txt` enthält individuellen Titel + individuelle Beschreibung + maximal 5 Hashtags
-- YouTube-Titel ist individuell für genau dieses Video
-- Beschreibung ist individuell, deutsch und inhaltlich korrekt
-- Caption ist individuell und passt zum finalen Video
-- Titel/Beschreibung/Caption wurden nach dem echten Finalrender nochmals geprüft
-
-Finale Freigabe:
-- `fertiges-video/` enthält nur die finale YouTube-Masterdatei, keine Preview-/Draft-Dateien
-- Renderbericht ausgefüllt
-- `04_export/quality-scorecard.md` ausgefüllt
-- wissenschaftliche Sicherheit mindestens 8,0/10
-- gewichteter Gesamtscore mindestens 8,0/10
-- erst danach Status `YouTube-ready`
-
-Nach dem Finalrender wird `04_export/postmortem.md` gemäß `engine/POSTMORTEM-STANDARD.md` ausgefüllt.
-
-## Grundsatz
-
-`WARNUNG` darf weiterlaufen, wenn sie dokumentiert und unkritisch ist.
-`FEHLER` oder `FAIL` stoppt die Pipeline.
-
-## Textbasierte Bildwelt-QA vor finaler Bildfreigabe
-- [ ] Drei Cover ohne Bildvorlagen generiert, Nutzer wählt explizit 1/2/3.
-- [ ] Das gewählte Cover wird Bild_01, NICHT als hochzuladende Vorlage für spätere Bilder benutzt.
-- [ ] Alle Folgeszenen werden aus dem gleichen schriftlichen 008-Stil und jeweils einer konkreten biologischen Hauptaktion generiert.
-- [ ] Alle fertigen Bilder visuell kontrolliert: passende organische Zeichnung, weiche Schattierung, klare Erzählperspektive, Wissenschaft, kurze Labels und starker Kontrast.
-- [ ] Stilbrüche oder falsche Bilder neu erzeugt. Danach normale Phase-2-Medienprüfung ohne separate Referenzprüfung durchführen.
+FAIL blockiert die jeweils folgende Freigabe. WARN darf nur begründet und dokumentiert weiterlaufen.

@@ -120,7 +120,7 @@ Overall:                               __ /10
 Decision:                              ACCEPT / REGENERATE
 ```
 
-Cover (`Bild_01`) zusätzlich:
+Separates YouTube-Cover (`03_export/COVER.png`, niemals `Bild_01`) zusätzlich:
 
 ```text
 Cover title only:                      PASS / FAIL
@@ -163,9 +163,7 @@ Keine Freigabe bei:
 - sichtbar überladenem Bild
 - mehreren konkurrierenden Hauptaussagen im selben Frame
 - englischem sichtbarem Text
-- deutlichem Stilbruch gegen tatsächlich geprüfte Bilder des finalen 008-Referenzvideos (siehe `bildwelt/008-ORIGINAL-VIDEO-STYLE-REFERENCE.md`) oder gegen `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
-- fehlenden realen Original-008-Bildreferenzen im externen Flow-Workflow bei einer neuen Longform-Produktion
-- falsch als alleinige Stilreferenz verwendetem ausgewähltem Cover ohne die Original-008-Frames
+- deutlichem Stilbruch gegen die geschriebene kanalweite Bildwelt `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
 - Drift in fotorealistischen Medizin-Look, Medical-CGI oder glossy 3D
 - Voice-over und Bild widersprechen sich
 - fehlendem Pflichtbild
@@ -195,3 +193,7 @@ Technik/Zuschauerbindung:     __ /10 ×  5 %
 Gesamt:                       __ /10
 Freigabe:                     JA / NEIN
 ```
+
+## Höchste Priorität nach der Freigabe
+
+Die Scorecard wird aus dem **echten** finalen Film abgeleitet, nicht vor dem Render geschätzt. Nach jedem fertigen Video als Grundlage für `engine/CONTINUOUS-IMPROVEMENT.md` verwenden: Fehlerbild mit Zeitstelle, Ursache, konkreter globaler Fix, PASS-Test und Vergleich mit dem folgenden Video. Die Ergebnisse gehören nach `.intern/`, NICHT als Zusatzdateien in `03_export/`.
