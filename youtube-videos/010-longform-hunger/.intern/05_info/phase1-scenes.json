@@ -1,0 +1,39 @@
+{
+  "status": "TEMPLATE",
+  "rules": {
+    "source": "01_script/script.txt",
+    "coverage": "complete-no-gaps-no-overlaps",
+    "scene_boundaries": "semantic-visual-beats-not-automatic-sentences",
+    "one_main_idea_per_frame": true,
+    "prefer_more_images_over_overloaded_frame": true,
+    "omit_nonessential_information": true,
+    "max_labels_per_normal_image": 2,
+    "cover_title_only": true,
+    "cover_extra_labels_forbidden": true,
+    "text_contrast_required": true,
+    "remotion_text_overlays_allowed": false,
+    "production_ids_visible_in_images": false,
+    "cover_is_scene": false,
+    "cover_output": "03_export/COVER.png"
+  },
+  "scenes": [
+    {
+      "scene": 1,
+      "speech_section": "[Exakter erster gesprochener Abschnitt aus script.txt]",
+      "visual_task": "[Erste eigenstaendige Biologie-Szene ohne Cover: einfacher Vorgang passend zum ersten gesprochene Satz]",
+      "image": "Bild_01",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "notes": "Erste NORMALE Videoszene, kein Cover-Titel oder Bildvorlage; ein klarer biologischer Hook"
+    },
+    {
+      "scene": 2,
+      "speech_section": "[Exakter naechster gesprochener Abschnitt ohne Luecke]",
+      "visual_task": "[Eine klare visuelle Hauptidee. Wenn mehr noetig ist, Beat auf mehrere Szenen teilen.]",
+      "image": "Bild_02",
+      "motion": "pan-left",
+      "labels_de": [],
+      "notes": "0-2 Labels nur wenn wirklich noetig; hoher Textkontrast; kein Remotion-Text; Bildnummer nur intern"
+    }
+  ]
+}

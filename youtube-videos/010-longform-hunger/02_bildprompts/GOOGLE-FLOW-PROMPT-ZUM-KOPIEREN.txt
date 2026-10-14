@@ -1,0 +1,28 @@
+OBJECT-TALK – EINZIGER GOOGLE-FLOW-PROMPT FÜR [VIDEO_ID]
+
+Diesen Platzhalter vor der Produktion komplett durch konkrete Szenen- und Coverbeschreibungen ersetzen. Agenten lesen intern engine/FLOW-COVER-FIRST-WORKFLOW.md. Der Nutzer sieht/braucht anschließend NUR DIESE EINE DATEI.
+
+SOFORT STARTEN – REINE TEXTGENERIERUNG, KEINE VORLAGEN:
+Erzeuge als erste Aktion genau drei separate Cover. Die Bildwelt entsteht ausschließlich aus dem ausführlichen Stiltext und den Bildbeschreibungen, wie beim erfolgreichen Verdauungsvideo 008. Keine JPGs, ZIPs, Bilder-Uploads, Stilreferenzen oder weitere Prompts anfordern. Nach Nutzerwahl alle Folgebilder aus derselben schriftlichen Bildwelt generieren, ohne das Cover als Bildreferenz hochzuladen.
+
+VERBINDLICHER ABLAUF:
+1. Sofort exakt 3 unterschiedliche SEPARATE 16:9 Cover-Bilder erzeugen (NICHT eine Collage). Auf jedem als einziger sichtbarer Text genau derselbe deutsche Titel: [EXAKTER COVER-TITEL]. Jede Option bekommt einen eigenen vollständig konkretisierten Cover-Prompt. Nicht fragen, bevor alle drei Bilder tatsächlich vorliegen.
+2. Dem Nutzer alle drei Cover zeigen und genau fragen: „Welches Cover wählst du – 1, 2 oder 3?“ STOP und auf Auswahl warten. Keine anderen Szenen erzeugen.
+3. Nach der Wahl das Cover ausschließlich als SEPARATES `COVER.png` für den YouTube-Export sichern. Das Cover ist KEINE Szene und darf NIEMALS in der Bilder-ZIP oder im Video-Timeline-Render erscheinen. Das normale Video beginnt mit `Bild_01.png` ohne Covertext. OHNE erneute Rückfrage sofort Bild_01–Bild_05 einzeln erzeugen; weitere Bilder in Fünfergruppen direkt aus dem untenstehenden Szenenregister. Letzter Block ggf. kürzer. Bei Plattform-Limit offen den nächsten Startpunkt nennen und nach „weiter“ an gleicher Stelle fortsetzen. Keine separate Batch-Promptdatei erforderlich.
+4. Final genau die normal illustrierten Video-Szenen Bild_01.png bis Bild_[NN].png in eine ZIP packen (ohne Cover); Nutzer legt sie in `02_bildprompts/bilder-zip`. Das separat gewählte Cover gehört in `03_export/COVER.png`, das fertige Video ohne Cover in `03_export/VIDEO.mp4`.
+
+SAFETY-FIRST: Ein rein bildungsbezogenes, nicht-grafisches Erklärvideo. Bei Darstellungen von Menschen nur bekleidete Erwachsene in alltäglichen Situationen. Biologische Strukturen als getrennte, vereinfachte Illustrationen statt invasiver Körperansichten. Befolge die Google-Flow-Regeln; eine abgelehnte Anfrage nicht durch Umgehungsversuche erzwingen. Falls etwas nicht möglich ist, transparent den betroffenen Bildauftrag nennen.
+
+VISUELLE WELT: IMMER exakt folgenden Stilblock aus Video 008 als feste Stilvererbung in den konkreten Videoprompt übernehmen: Clean Animated Biology Illustration: simplified but recognizable anatomy, smooth organic forms, clean outlines, soft gradients, subtle depth, bright calm backgrounds, clear biological colors, low complexity, one dominant biological idea per frame. Ausschlussregeln: No photoreal medical imagery, no medical CGI, no glossy 3D, no feature-animation/Pixar look, no toy/kids-book look, no corporate infographic, no clutter, no gore, no random icons, no unnecessary text. Ausschließlich aus der genauen schriftlichen 008-Bildwelt generieren, ohne Bilddateien als Stilvorlage. Gewähltes Cover wird erstes Asset, keine Style-Reference. Themen wie Nacht/Schlaf dürfen nie die Bildwelt in düstere Anime-/Neon-/Comicbilder verwandeln. Genehmigte Clean Animated Biology Illustration aus Video 008; plastisch-weiche organische Zeichnung, saubere Linien, lesbare Anatomie, harmonische helle Farben mit thematisch passenden dunkleren Akzenten. Keine flachen dunklen Clipart-Silhouetten oder Fotoreal-/CGI-Welt.
+
+SICHTBARER TEXT: Cover (außerhalb Video) genau ein Titeltext. Alle normal nummerierten Szenen inklusive Bild_01: 0–2 kurze deutsche Labels nur wenn sie erkennbar helfen und in der Szenenbeschreibung stehen, sonst kein Text. Light background = dark text, dark background = light text. Production IDs, numbers, filenames and all prompt instructions are NEVER visible in the generated artwork. Ein Lehrpunkt pro Bild. Keine überladenen Mehrfachinfografiken. Häufig kurze erklärende deutsche Beschriftungen auf sinnvollen Bilderlebnissen; ein Hauptvorgang und bildfüllende klare Formen.
+
+DREI COVER-VARIANTEN (jede als einzelne klare ausführbare Szene angeben):
+1. [COVER A: eigenes konkretes Layout, Motiv, Textplatzierung]
+2. [COVER B: eigenes konkretes Layout, Motiv, Textplatzierung]
+3. [COVER C: eigenes konkretes Layout, Motiv, Textplatzierung]
+
+NUR NACH COVERWAHL: VOLLSTÄNDIGES NORMALES VIDEO-SZENENREGISTER, bereits in 5er-Gruppen zu verarbeiten:
+[HIER alle Szenen ab Bild_01 bis Bild_NN mit konkretem englischem Bildprompt, erlaubten Labels und internem Dateinamen einsetzen. Keine zusätzliche Promptdatei.]
+
+FINAL: kein Bild fehlt oder wurde doppelt genutzt. ZIP enthält NUR normale Szenen; Cover ist ein separates YouTube-Thumbnail, kein Startframe. Behaupte nie, Bilder oder ZIP existierten, solange sie nicht wirklich erstellt wurden.

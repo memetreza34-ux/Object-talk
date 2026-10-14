@@ -1,0 +1,10 @@
+[Hier kommt bei jedem Video exakt derselbe finale Sprechertext wie in script.txt hinein.]
+
+Diese Datei ist nur für den Nutzer gedacht, damit der Sprechertext schnell als normale .txt-Datei geöffnet, heruntergeladen und 1:1 in die Voice-KI kopiert werden kann.
+
+WICHTIG:
+- Inhalt muss 1:1 mit script.txt übereinstimmen.
+- Keine Szenennummern.
+- Keine Regieanweisungen.
+- Keine Zeitcodes.
+- Keine zusätzlichen Hinweise.

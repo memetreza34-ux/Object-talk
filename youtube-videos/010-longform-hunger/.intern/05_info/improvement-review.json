@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "status": "PENDING_FINAL_MEDIA",
+  "video_id": null,
+  "reviewed_final_video": false,
+  "media_evidence": {
+    "source": "",
+    "runtime_seconds": null,
+    "reviewed_sections": "",
+    "cover_source": "",
+    "audio_source": ""
+  },
+  "strengths": [],
+  "problems": [],
+  "fixes": [],
+  "user_feedback": [],
+  "prior_comparison": {
+    "previous_video": null,
+    "method": "",
+    "result": "UNVERIFIED"
+  },
+  "reviewer": "",
+  "notes": "Erst nach realer MP4-/Cover-/Audio-Sichtung, konkreter Ursachenanalyse und mindestens zwei getesteten Repo-Fixes als VERIFIED kennzeichnen."
+}

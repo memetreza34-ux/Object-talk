@@ -1,0 +1,74 @@
+ANTIGRAVITY PROMPT ZUM KOPIEREN
+
+Diese Datei ist die Nutzer-Datei fuer Phase 3.
+
+Bei jedem neuen Video ersetzt ChatGPT diesen Inhalt vollstaendig durch den finalen Antigravity-Prompt fuer genau dieses Video.
+
+WICHTIG:
+- Diese .txt-Datei ist zum normalen Oeffnen und Kopieren gedacht.
+- Sie muss Projektpfad, benoetigte Assets, Whisper-/Timing-Ablauf, Renderer-Regeln und finalen Export enthalten.
+- Antigravity darf Script, Bildreihenfolge und Szenengrenzen nicht kreativ veraendern.
+- Das finale Voiceover bleibt die Master-Timeline.
+- Die Illustration bleibt zu 100 % vollformatig.
+- Remotion erzeugt KEINEN sichtbaren Text.
+- Keine Zwischenueberschriften, Key-Facts, Summary-Zeilen, Kapiteltexte, Callouts oder eingebrannte Untertitel.
+- Anatomische/biologische Labels bleiben Teil der Google-Flow-Bilder und werden nicht durch Remotion ersetzt.
+- Bildnummern, Szenennummern, Dateinamen und Asset-IDs sind reine Produktionsmetadaten und duerfen niemals sichtbar werden.
+- `03_pipeline/overlay-plan.json` muss `status: DISABLED` und `scenes: []` enthalten.
+- Ein nicht-leerer Overlay-Plan ist ein HARD FAIL.
+- Remotion darf nur Audio, Timing, statische Bilder, dezente Push/Pull/Pan-Bewegungen, Schnitte, nicht-textliche Uebergaenge und Rendering ausfuehren.
+
+VOR PHASE 3 MUSS BILD-QA BESTANDEN SEIN:
+- `python tools/validate_planning_v2.py VIDEOORDNER --phase2` muss PASS sein.
+- Cover: exakt ein sichtbarer Textblock = Titel/Hook.
+- keine Cover-Zusatzlabels, Unterzeile oder Zusatzinfo.
+- normale Bilder: maximal 2 Labels.
+- Labels: maximal 3 Woerter.
+- kein unnoetiger Text.
+- Textkontrast: heller Hintergrund → dunkle Schrift; dunkler Hintergrund → helle Schrift.
+- kein hell-auf-hell / dunkel-auf-dunkel.
+- Informationsdichte muss PASS sein.
+- wenn ein Bild ueberladen wirkt, nicht rendern: Bild neu planen/erzeugen.
+
+EXPORT – PFLICHT
+Jedes Video besitzt einen finalen Bereich:
+`04_export/`
+
+Dort muessen liegen:
+- `CAPTION-YOUTUBE.txt`
+- `YOUTUBE-UPLOAD-PAKET.md`
+- `YOUTUBE-TITEL-BESCHREIBUNG-ZUM-KOPIEREN.txt`
+- `YouTube-Caption.md`
+- `UNTERTITEL-MIT-ZEITEN.txt`
+- `UNTERTITEL-YOUTUBE.srt`
+- `render-report.md`
+- `quality-scorecard.md`
+- `postmortem.md`
+- `fertiges-video/[VIDEO-ID]-YOUTUBE.mp4`
+
+`CAPTION-YOUTUBE.txt` enthaelt den individuellen YouTube-Titel, die individuelle Beschreibung und maximal 5 Hashtags.
+
+UNTERTITEL – HARTE REGEL
+- Die Untertitel sind extern fuer YouTube und werden NICHT ins Video eingebrannt.
+- Sie muessen das komplette tatsaechlich gesprochene Script abdecken.
+- Zeitcodes niemals schaetzen.
+- Timing-Quelle: finales Voiceover → Whisper → `word-timings.json` → `timeline.json`.
+- Nach erfolgreicher Timeline-Erstellung ausfuehren:
+  `python tools/export_subtitles.py VIDEOORDNER`
+- Dadurch werden `UNTERTITEL-MIT-ZEITEN.txt` und `UNTERTITEL-YOUTUBE.srt` automatisch erzeugt/ueberschrieben.
+- Leere SRT oder noch als PENDING markierte Zeittext-Datei = Export FAIL.
+
+Der Ordner `fertiges-video/` enthaelt nur die finale YouTube-Masterdatei. Keine Preview-, Draft- oder Testexports dort als final behalten.
+
+Titel, Beschreibung und Caption werden fuer jedes Video individuell geschrieben und nach dem echten Finalrender nochmals gegen den tatsaechlichen Inhalt geprueft.
+
+Erst nach bestandenem Renderbericht, Quality-Score und vollstaendigem Untertitel-Export darf die MP4 als `YouTube-ready` gelten.
+
+Autoritativ:
+- `engine/VISIBLE-TEXT-STANDARD.md`
+- `engine/QUALITY-SCORECARD.md`
+- `engine/PRESENTATION-OVERLAY-SYSTEM.md`
+- `engine/PHASE-GATES.md`
+- `engine/EXPORT-STANDARD.md`
+
+Wenn diese Datei noch diesen Platzhalter enthaelt, ist Phase 1 noch nicht vollstaendig.

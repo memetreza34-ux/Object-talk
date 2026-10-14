@@ -1,0 +1,57 @@
+{
+  "status": "TEMPLATE",
+  "rules": {
+    "language": "de",
+    "prompt_language": "en",
+    "preferred_labels_per_image": "0-1",
+    "max_labels_per_image": 2,
+    "max_words_per_label": 3,
+    "prefer_no_label_when_self_explanatory": true,
+    "label_only_important_visible_things": true,
+    "labels_generated_in_flow": true,
+    "fallback_to_overlay_if_ai_text_wrong": false,
+    "regenerate_if_label_wrong": true,
+    "cover_requires_german_hook": true,
+    "cover_hook_words": "3-7",
+    "cover_title_only": true,
+    "cover_exactly_one_visible_text_block": true,
+    "cover_extra_labels_forbidden": true,
+    "text_contrast_required": true,
+    "light_background_requires_dark_text": true,
+    "dark_background_requires_light_text": true,
+    "no_decorative_quotation_marks": true,
+    "no_asset_ids_visible": true,
+    "no_scene_numbers_visible": true,
+    "no_file_names_visible": true,
+    "no_prompt_headings_visible": true,
+    "remotion_visible_text_allowed": false,
+    "remotion_text_fallback_allowed": false,
+    "regenerate_if_internal_id_visible": true,
+    "split_if_information_overloaded": true,
+    "omit_nonessential_information": true,
+    "cover_is_scene": false,
+    "cover_output": "03_export/COVER.png"
+  },
+  "images": [
+    {
+      "image_asset_id": "Bild_01",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_02",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "[Nur wenn wirklich noetig: kurzer Begriff]"
+      ],
+      "labels": [
+        {
+          "text": "[Kurzer Begriff]",
+          "target": "[Konkrete sichtbare Struktur]",
+          "reason": "[Warum das Label fuer den aktuellen Lehrpunkt wirklich noetig ist]"
+        }
+      ]
+    }
+  ]
+}
