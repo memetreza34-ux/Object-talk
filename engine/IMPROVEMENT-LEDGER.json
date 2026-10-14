@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "priority": "HIGHEST",
+  "latest_reviewed_video": null,
+  "permanent_lessons": [
+    {
+      "id": "BASE-CLARITY",
+      "rule": "Ein sofort verständlicher biologischer Vorgang je Illustration; große organische Formen, 0–2 zweckmäßige Labels; komplizierte Bilder aufteilen.",
+      "source": "Historisches Nutzerfeedback zu 008/009; kein formales neues Finalrender-Review"
+    },
+    {
+      "id": "BASE-FLOW",
+      "rule": "Ein kompletter Textprompt ohne Bild-Uploadvorlagen; 3 Cover vor Nutzerwahl, danach 5er-Batches mit Bild_01 als erster normaler Szene.",
+      "source": "Nutzerfeedback zu Flow-Prompts und Cover-Szenentrennung"
+    },
+    {
+      "id": "BASE-EXPORT",
+      "rule": "Drei sichtbare Arbeitsordner; im fertigen 03_export exakt VIDEO.mp4, COVER.png, CAPTION-YOUTUBE.txt, UNTERTITEL-MIT-ZEITEN.txt.",
+      "source": "Nutzerfeedback zum überfüllten Export"
+    }
+  ],
+  "next_video_lessons": [],
+  "history": [],
+  "notes": "Bootstrap aus Nutzerfeedback, keine erfundenen Bewertungen. Nur nach realem Finalvideo-Review registrieren."
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "status": "PENDING",
+  "source_review_video": null,
+  "lessons": [
+    {
+      "id": "BASE-CLARITY",
+      "implemented_as": "",
+      "evidence_files": [],
+      "verification": ""
+    },
+    {
+      "id": "BASE-FLOW",
+      "implemented_as": "",
+      "evidence_files": [],
+      "verification": ""
+    },
+    {
+      "id": "BASE-EXPORT",
+      "implemented_as": "",
+      "evidence_files": [],
+      "verification": ""
+    }
+  ],
+  "notes": "Vor Phase 1 des NEUEN Videos nachweisbar ausfüllen, inklusive aktuellster lessons aus engine/IMPROVEMENT-LEDGER.json."
+}
