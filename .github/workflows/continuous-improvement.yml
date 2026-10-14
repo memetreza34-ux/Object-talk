@@ -14,6 +14,8 @@ jobs:
         with:
           python-version: '3.11'
       - name: Check improvement and phase-1 validator syntax
-        run: python -m compileall -q tools/improvement_loop.py tools/validate_planning_v2.py tools/create_video.py
+        run: python -m compileall -q tools/improvement_loop.py tools/validate_planning_v2.py tools/create_video.py tools/visual_storyboard_gate.py
+      - name: Run illustration-first storyboard tests
+        run: python -m unittest discover -s tools/tests -p 'test_visual_storyboard_gate.py' -v
       - name: Run improvement-loop regression tests
         run: python -m unittest discover -s tools/tests -p 'test_improvement_loop.py' -v

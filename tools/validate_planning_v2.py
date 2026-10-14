@@ -23,6 +23,7 @@ import re
 from pathlib import Path
 from urllib.parse import quote
 from improvement_loop import check_next
+from visual_storyboard_gate import check_visual_mix, VisualMixError
 
 IMAGE_ID_RE = re.compile(r"^Bild_\d{2,}$")
 PLACEHOLDER_RE = re.compile(r"\[[^\]]+\]|\b(?:TODO|TBD|PENDING)\b", re.IGNORECASE)
@@ -562,6 +563,18 @@ def main() -> None:
         fail(str(exc))
     print(f"IMPROVEMENT-PRIORITY: {improvement_status}")
     expected = validate_phase1(project)
+    # New episodes only: enforce the 010 feedback on visual planning before Phase-1 links.
+    scene_plan = project / ".intern" / "05_info" / "phase1-scenes.json"
+    if scene_plan.is_file():
+        try:
+            channel_config = load_json(Path(__file__).resolve().parents[1] / "config" / "channel.json")
+            prompt = (project / "02_bildprompts" / "GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt").read_text(encoding="utf-8")
+            visual_status = check_visual_mix(
+                project, load_json(scene_plan), prompt, channel_config.get("visual_storytelling_v2", {})
+            )
+        except (VisualMixError, FileNotFoundError, UnicodeError) as exc:
+            fail(f"Neue Bildregie: {exc}")
+        print(f"ILLUSTRATION-FIRST: {visual_status}")
     print_phase1_tablet_links(project)
     if args.phase2:
         validate_phase2(project, expected)
