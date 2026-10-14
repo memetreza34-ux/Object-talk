@@ -8,3 +8,10 @@
 - Gate-0-Lehren BASE-CLARITY, BASE-FLOW, BASE-EXPORT in `improvement-applied.json` dokumentiert.
 - VORHANDEN: ausschließlich Text-Planung, kein Audio, kein tatsächliches Flow-Cover, keine Bilder, kein MP4, keine echten Untertitel-Timestamps. Keinen fertigen Film behaupten.
 - Respektiere die Google-Flow-Nutzungsregeln; falls generierte Visuals unbrauchbar, individuell ersetzen.
+
+## Abschluss der statischen Planungskontrolle
+- GitHub-API-Prüfung: alle 72 Szenen in `phase1-scenes.json` und `sentence-visual-plan.json` stimmen satzgenau überein.
+- 72 Labelplan-Einträge und 72 eindeutige Flow-Szenenzeilen; Labels konsistent.
+- Status `APPLIED`: drei historischen Lessons mit konkreten Pfaden und nachvollziehbarer Implementierung.
+- Audio noch nicht vorhanden; fertige Länge 6–7 Minuten ist vorerst ein Produktionsziel, keine gemessene Dauer.
+- Die Ausführung des Python-Validators in CI ist noch nicht erfolgreich bestätigt; nicht als bestanden behaupten.

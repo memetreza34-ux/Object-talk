@@ -52,7 +52,14 @@ Interne `TEST`-Piloten sind davon ausgenommen, wenn sie ausschließlich Pipeline
 | 011 | IDEE | Haut | Wie heilt eine Wunde? | spätere Longform: Hämostase, Entzündung, Proliferation, Remodeling und Narbenbildung deutlich tiefer | Testpilot 006 behandelt nur die vereinfachte Grundkette |
 | 012 | IDEE | Haut/Nervensystem | Warum bekommen wir Gänsehaut? | spätere Longform könnte Thermoregulation, autonome Reaktionen und emotionale Piloerektion vertiefen | Testpilot 007 behandelt nur die kurze Grundkette |
 
+| 013 | IN ARBEIT | Ernährung / Sättigung | Warum bist du nach dem Essen schnell wieder hungrig? | 010: Magen-Gehirn-Signale, Protein, Ballaststoffe, Getränke, Snacks, Schlaf/Stress und praxistaugliche Mahlzeitideen | 008 erklärt den Verdauungsweg, 010 dagegen Hunger und Sättigung |
+
 ## Aktive Longform-Produktion
+
+### 010 – Warum du nach dem Essen so schnell wieder Hunger hast?
+
+Projekt: `youtube-videos/010-longform-hunger/`. **Phase 1 vorbereitet, keine erzeugten Medien:** 1.044 gesprochene Wörter, 72 einfache bildspezifische Szenen, ein Google-Flow-Prompt mit drei separaten Coverentwürfen vor Nutzerwahl. Kein neuer Verdauungsfilm, sondern Hunger-/Sättigungsmechanismen mit alltagstauglichen Tipps. Wissenschaftliche Einschränkungen beachten, keine Abnehmgarantien. Quelle/Planung `010/.intern/05_info/`. Nutzername des Kanals: **Lebenslogik** (GitHub-Projekt weiterhin Object-Talk).
+
 
 ### 001 – Was passiert mit Essen im Körper?
 

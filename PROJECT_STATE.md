@@ -1,8 +1,24 @@
-# Object-Talk – Project State
+# Object-Talk / Lebenslogik – Aktueller Projektstand
 
-Letzte Aktualisierung: 08.10.2026
+Letzte Aktualisierung: 14.10.2026
 
-## Aktive Produktion
+## AKTIVE PRODUKTION – VIDEO 010
+
+`youtube-videos/010-longform-hunger/`
+
+**Thema:** Warum du nach dem Essen so schnell wieder Hunger hast?
+**YouTube-Kanal:** Lebenslogik (technisches Repo: Object-Talk).
+**Status:** Phase-1-Material erstellt und statisch konsistent, Flow-/Audio-/MP4-Produktion NOCH NICHT durchgeführt. Keine finale Videodauer bestätigt.
+
+- **1044 Sprecherwörter**, 9 Kapitel, 72 individuelle normale Flow-Videoszenen, 27 davon mit 1–2 sinnvollen deutschen Labels.
+- 3 separate Coverkandidaten; danach Nutzerwahl und erste normale Videoszenen 01–05, anschließend Fünfergruppen.
+- Ein EINZIGER Flow-Prompt unter `02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt` und ein Fließtext-Skript `01_script/script.txt`.
+- 3 sichtbare Ordner; `03_export/` soll final genau Video, separates Cover, YouTube-Beschreibung und echt zeitgestempelte Untertitel enthalten. Bis Medien erstellt sind nur Entwurfstexte; keine falsche MP4.
+- Frühere Fehler aus 008/009 in `.intern/05_info/improvement-applied.json` konkret nachgewiesen: klare biologisch nachvollziehbare Bilder, sicherer Flow-Workflow, schlanker Export.
+- Nächster Schritt: zuerst drei Cover in Google Flow erzeugen, Nutzer wählt 1/2/3, danach 72 Szenen, Voice und Render.
+- `tools/improvement_loop.py` ist in der Phase-1-Prüfung integriert; GitHub Actions waren zuletzt fehlgeschlagen. Ein vollständig ausgeführter Python-Test ist derzeit **nicht bestätigt**. Statische Querverweisprüfungen der 72 Szenen wurden durchgeführt.
+
+## Bisherige Produktionsnotizen / Video 009
 
 `youtube-videos/009-longform-schlaf/`
 

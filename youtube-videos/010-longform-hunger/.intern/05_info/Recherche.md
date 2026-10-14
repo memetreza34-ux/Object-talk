@@ -48,3 +48,8 @@ Die Aussagen beruhen auf öffentlich zugänglichen CDC-/NIDDK-/Harvard-Health-In
 
 ## Video-Schwerpunkte
 Hook → Sättigungssignale → Protein → Ballaststoffe → Getränke → Snackstruktur/Blutzucker-Mythos → Schlaf/Stress → alltagstaugliche Tipps → differenziertes Fazit.
+
+## Ergänzende Primär-/Übersichtsquellen
+- NIDDK: Ein neu auffällig gesteigerter Hunger kann zusammen mit Durst/Harndrang und anderen Symptomen ärztlich abklärungsbedürftig sein: https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes
+- Machalias et al., *Nutrition Reviews* 2026, systematischer Review zu Getreideballaststoffen und Sättigung: https://pubmed.ncbi.nlm.nih.gov/40644449/ – positive subjektive Sättigung, aber bei frei wählbarer Gesamtenergieaufnahme in Studien begrenzte Evidenz. Darum keine allgemeine Behauptung „Ballaststoffe garantieren Gewichtsabnahme“.
+- Der Skriptsatz zur Abklärung ist bewusst konditional formuliert, nicht diagnostisch.
