@@ -1,0 +1,19 @@
+name: Continuous Improvement Gate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  python-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check improvement and phase-1 validator syntax
+        run: python -m compileall -q tools/improvement_loop.py tools/validate_planning_v2.py tools/create_video.py
+      - name: Run improvement-loop regression tests
+        run: python -m unittest discover -s tools/tests -p 'test_improvement_loop.py' -v
