@@ -202,5 +202,42 @@
       "03_export/CAPTION-YOUTUBE.txt",
       "03_export/UNTERTITEL-MIT-ZEITEN.txt"
     ]
+  },
+  "visual_storytelling_v2": {
+    "effective_from_video": 11,
+    "primary_rule": "illustrate the actual subject and mechanism, not a repeated whole-person everyday scene",
+    "min_explanatory_scene_share": 0.65,
+    "max_human_centered_scene_share": 0.2,
+    "max_whole_person_scene_share": 0.1,
+    "explanatory_categories": [
+      "mechanism",
+      "cutaway",
+      "macro",
+      "educational_comparison",
+      "food_structure",
+      "process_path"
+    ],
+    "all_categories": [
+      "mechanism",
+      "cutaway",
+      "macro",
+      "educational_comparison",
+      "food_structure",
+      "process_path",
+      "everyday_context",
+      "human_action",
+      "transition"
+    ],
+    "framing_values": [
+      "none",
+      "hands_or_crop",
+      "partial_person",
+      "whole_person"
+    ],
+    "palette": "same organic illustrated world; diverse contextual coral, amber, gold, teal, sky blue, green, restrained violet; clean contrast, never uniform pale mint",
+    "quality_priority": "actual visual explanation > decorative person or generic stock still life",
+    "exceptions": "documented topic-specific reason and manual quality approval",
+    "no_metadata_text_on_images": true,
+    "review_actual_images_after_generation": true
   }
 }

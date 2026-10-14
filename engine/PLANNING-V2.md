@@ -36,7 +36,7 @@ Fuer jeden Schritt:
 
 ## 3. Satz-Visual-Plan
 
-Jedes neue Projekt erhaelt `05_info/sentence-visual-plan.json`.
+Jedes neue Projekt erhaelt `.intern/05_info/sentence-visual-plan.json`.
 
 Jeder Speech-Beat besitzt mindestens:
 - `id`
@@ -80,6 +80,24 @@ Ein schoenes Themenbild ohne klaren Erklaerwert wird nicht produziert.
 - gleiche Uebersichtskomposition nicht ohne echten neuen Zweck wiederholen
 - verschiedene Bildtypen nutzen: Cutaway, Querschnitt, Makro, Zell-Innenansicht, Transportweg, Vergleich, Massstabswechsel, Alltagsszene
 
+## Neue verbindliche Bildregie ab Video 011 – mehr echte Erklärillustrationen
+
+**Die Bildwelt bleibt Clean Animated Biology Illustration wie beim bewährten Verdauungsvideo – die BILDIDEE wird wesentlich besser.** Nicht jede Voice-Zeile mit einer Person, Küche oder einem beliebigen Teller bebildern. Zeige stattdessen die Sache, die der Zuschauer gerade VERSTEHEN soll. Beispiele:
+
+- Hunger-Signal: vergrößerter Magen-Darm-Gehirn-Signalweg, KEINE Person vor dem Kühlschrank als Standard.
+- Eiweiß/Sättigung: schön illustrierte Proteinquelle und dazu leicht verständliche innere Verdauungs-/Sättigungswirkung, nicht nur ein Mann mit Schüssel.
+- Ballaststoffe: klarer Querschnitt von Fasern, Wasserbindung und Darm, statt weiterer Gemüsetisch-Aufnahme.
+- Ganzer Apfel vs. Saft: essbarer Anschnitt, Faserstruktur, Flüssigkeit und eine optisch direkte Gegenüberstellung.
+- Für Alltagstipps: Hände/Teilansicht, aussagekräftige Lebensmittel, echte Vorher/Nachher-Komposition oder kurzer visueller Ursache→Wirkung-Ablauf.
+
+**Bildmix für neue lange Biologie-/Ernährungs-/Gesundheitsvideos:** Ziel mindestens 65 % erklärende Illustrationen (Makro, Querschnitt, Prozess, Funktionsweg, Mechanismus, lehrreicher Vergleich); höchstens 20 % menschenzentrierte Alltagsszenen, davon höchstens 10 % Ganzkörper-Mensch. Das sind PLANUNGSGRENZEN, nicht die Behauptung, dass ein fertiges Flow-Bild gut geworden ist. Bei anderen Themen können begründete Ausnahmen notwendig sein. Nach echten Flow-Bildern nochmals visuell prüfen.
+
+**Mehr Farben, gleiche Welt:** helle Mint-/Creme-/Türkis-Basis bleibt ein Element, aber nicht 72 gleiche blasse Hintergründe. Je nach biologischem Vorgang bewusst kräftiges Korallrot, warmes Orange, Goldgelb, sattes Blau, Aquamarin, frisches Grün oder zurückhaltendes Violett nutzen. Farbakzente führen das Auge zur wichtigen Sache; keine grelle Leuchtreklame, kein einheitlicher Neonlook. Licht/Schatten, perspektivische Tiefe, klare hochwertige Illustration und große miteinander verbundene Formen statt flacher generischer Stockgrafik.
+
+**Variantenreiches Erklären:** organische Cutaways, anatomische Ausschnitte, Schichten, geführte Wege, Lebensmittel-Innenstruktur, Vergrößerung, klarer 2-Zustandsvergleich, Vorher/Nachher, einfache visuelle Metapher mit wissenschaftlichem Bezug. Pro Szene nur eine Hauptidee, 2–4 lesbare relevante Elemente und 0–2 kurze passende deutsche Labels. Bild darf auch ein klares vollflächiges Schema/Diagramm sein, WENN es anschaulicher erklärt als eine Figur. Szenen kompositorisch wechseln; nicht alle mittig und nicht immer gleiche Vogelperspektive.
+
+**Promptpflicht:** pro normalem Bild `VISUAL CATEGORY`, `HUMAN FRAMING`, `WHAT CHANGES VISIBLY`, konkretes Motiv/Prozess + ggf. 0–2 Labels planen. Die Ausgabe soll diese technischen Felder NIEMALS als Text im Bild darstellen. Fehlt der Erklärnutzen, neu konzipieren. Ganze Menschen nur bei echtem psychologischem/Alltags-Lernzweck, nicht als Füllmotiv.
+
 ## 6. Informationsbudget / Komplexitaetsplanung
 
 Die freigegebene Bildwelt ist bewusst einfach.
@@ -106,20 +124,10 @@ Die ID ist Produktionsmetadaten und darf nie sichtbar im Bild erscheinen.
 
 ## 8. Cover-Regel
 
-`Bild_01` ist das Cover-/Hook-Bild.
-
-Es darf genau einen sichtbaren Textblock haben:
-- nur den geplanten Titel / Hook
-- keine Anatomie-Labels
-- keine Unterzeile
-- keine Zusatzinfo
-- keine Pfeiltexte
-
-Der Label-Plan fuer `Bild_01` muss deshalb `labels: []` und genau einen Eintrag in `allowed_visible_text` enthalten.
-
+Das YouTube-Cover ist **eine separate Datei `03_export/COVER.png`, niemals `Bild_01`**, niemals Teil der Szenen-ZIP oder Videotimeline. Es wird in Google Flow aus drei eigenständigen Varianten gewählt und zeigt genau einen sichtbaren Titeltext. Die nummerierten Video-Szenen beginnen direkt mit normalem `Bild_01`, ohne Cover-Schrift.
 ## 9. Label-Plan
 
-Jedes Projekt erhaelt `02_bildprompts/label-plan.json`.
+Jedes neue Projekt erhaelt `.intern/05_info/label-plan.json`.
 
 Regeln:
 - viewer-facing Text nur Deutsch
@@ -157,7 +165,7 @@ Cover-Prompt muss explizit enthalten:
 
 Remotion erzeugt keinen sichtbaren Text.
 
-`03_pipeline/overlay-plan.json` bleibt leer / `DISABLED`.
+`.intern/03_pipeline/overlay-plan.json` bleibt leer / `DISABLED`.
 
 Remotion ist nur fuer:
 - Audio
@@ -199,9 +207,9 @@ Cover zusaetzlich:
 Die schriftliche Bildwelt ist die oberste Stilautoritaet:
 `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
 
-Eine spaetere `assets/channel/STYLE_REFERENCE.png` ist nur zusaetzlicher visueller Anker nach Nutzerfreigabe.
+Keine Bildvorlagen oder externen Stilreferenzen im Google-Flow-Workflow.
 
-Das Cover `Bild_01` ist nicht automatisch Style-Master fuer alle Folgeframes.
+Das separate Cover ist niemals Style-Upload für die nachfolgenden Bilder.
 
 ## 14. Schreib- und Produktionsprozess
 

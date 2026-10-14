@@ -43,6 +43,10 @@ Nicht reaktivieren:
 - historische Pilot-Stile als Kanalstandard
 - alte Style-Reference-Systeme
 
+## Höchste visuelle Verbesserung seit Video 010
+
+Video 010 wurde vom Nutzer für das Skript gelobt, die Bilder jedoch als zu häufig personenlastig und erklärungsschwach kritisiert. **Ab Video 011 zuerst die sichtbare Wissenschaft gestalten:** dominierende Makro-/Organ-/Gewebe-/Lebensmittel-Innenansichten, Cutaways, Funktionswege und verständliche Vergleiche. Mehr harmonische Farben, klarere bildfüllende Illustrator-Kompositionen. Ganzer Mensch nur mit echtem Lernzweck, keine redundanten Küchen-/Einkaufsposen. Vorgaben und Mixprüfung stehen in `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md` und `engine/PLANNING-V2.md`. Skript deshalb nicht ungefragt umschreiben, nicht bereits gerenderte Videos verändern.
+
 ## Bildprinzip
 
 Jedes normale Biologie-/Gesundheitsbild soll:

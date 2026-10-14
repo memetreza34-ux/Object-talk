@@ -11,6 +11,16 @@ Aktuelle autoritative Regeln: `PROJECT_CONTRACT.md`, `bildwelt/BIOLOGY-ILLUSTRAT
 - keine englischen Flow-Labels, Produktionsnummern, zusätzlichen Figuren oder Textblöcke
 - erkennbare Abwechslung in Motiv, Maßstab, Kamerawinkel und Lehrziel; keine Duplikate
 
+## Zusätzlicher visueller Director-Check ab Video 011
+
+- Kann ein Zuschauer den zentralen Vorgang im Bild in etwa 1 Sekunde erkennen? Wenn nein: klare Vergrößerung oder weniger Bildelemente.
+- Ist das Motiv selbst ein erklärendes Bild statt nur „Person schaut/isst/steht“? Wenn nein: ersetzen, sofern nicht wirklich eine Alltagshandlung erklärt wird.
+- Zeigt der Film überwiegend hochwertige lehrreiche Cutaways/Prozesse/Vergleiche und nur punktuell Ganzkörper-Personen?
+- Farben und Perspektiven variieren sinnvoll, ohne den durchgehenden gezeichneten Stil zu verlieren.
+- Wenn eine Szene anschaulicher mit einem beschrifteten Querschnitt oder Diagramm wäre, wird nicht automatisch eine Person verwendet.
+- Bei wiederholtem Menschen-/Küchenmotiv trotz unterschiedlichen Sätzen: visuelles Konzept vor Flow-Regeneration ändern, nicht nur Seed austauschen.
+- Aus Meta-Plan-Feldern darf NICHT auf echte Bildqualität geschlossen werden: jedes generierte Bild nach Produktion gesondert prüfen.
+
 ## Cover separat prüfen
 - `03_export/COVER.png` ist das ausgewählte YouTube-Thumbnail, nicht das Videoszenenbild `Bild_01`
 - exakt ein sichtbarer Titeltext; kein Untertitel, kein Anatomie-Label, keine Dateinummer

@@ -27,6 +27,10 @@ Alle weiteren Forschungs-, QA- und Pipeline-Dateien liegen versteckt in `.intern
 7. Render nur die normalen Szenen zu `03_export/VIDEO.mp4`, ohne Cover und ohne jeglichen Remotion-Text. Das finale Audio bestimmt den Schnitt.
 8. Erst nach Audio-/Whisper-Alignment das gesprochene Skript aus `.intern/03_pipeline/timing/timeline.json` nach `03_export/UNTERTITEL-MIT-ZEITEN.txt` schreiben. Keine geschätzten Zeiten. Optionales SRT liegt intern unter `.intern/`.
 
+## Bildregie nach Feedback aus Video 010
+
+Lesen und konsequent anwenden: `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`, Abschnitt „Neue verbindliche Bildregie ab Video 011“. Mechanismen, Cutaways, Makros und echte Erklärung statt weiterer voller Menschenfiguren als Standard. Mehr kontrollierte Farben und bessere Komposition. Das reine Textprompt-Prinzip, die 3 Cover und die Fünfergruppen bleiben unverändert.
+
 ## QA
 Die Datei `COVER.png` gehört nicht in das MP4. `Bild_01` ist die erste echte Szene, nicht das Cover. 0–2 wirklich notwendige Kurzlabels, gut lesbar, korrekte deutsche Worte, 16:9. Fehlende Bilder oder Medien nicht als fertig ausgeben.
 

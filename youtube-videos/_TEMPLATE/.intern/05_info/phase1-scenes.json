@@ -14,7 +14,12 @@
     "remotion_text_overlays_allowed": false,
     "production_ids_visible_in_images": false,
     "cover_is_scene": false,
-    "cover_output": "03_export/COVER.png"
+    "cover_output": "03_export/COVER.png",
+    "visual_mix_v2": true,
+    "explanatory_scene_min_share": 0.65,
+    "human_centered_max_share": 0.2,
+    "whole_person_max_share": 0.1,
+    "visual_mix_exception_reason": ""
   },
   "scenes": [
     {
@@ -24,7 +29,10 @@
       "image": "Bild_01",
       "motion": "slow-push-in",
       "labels_de": [],
-      "notes": "Erste NORMALE Videoszene, kein Cover-Titel oder Bildvorlage; ein klarer biologischer Hook"
+      "notes": "Erste NORMALE Videoszene, kein Cover-Titel oder Bildvorlage; ein klarer biologischer Hook",
+      "visual_category": "mechanism",
+      "human_framing": "none",
+      "explanation_visible": "[Welche fachlich erkennbare Veränderung soll der Zuschauer sehen?]"
     },
     {
       "scene": 2,
@@ -33,7 +41,10 @@
       "image": "Bild_02",
       "motion": "pan-left",
       "labels_de": [],
-      "notes": "0-2 Labels nur wenn wirklich noetig; hoher Textkontrast; kein Remotion-Text; Bildnummer nur intern"
+      "notes": "0-2 Labels nur wenn wirklich noetig; hoher Textkontrast; kein Remotion-Text; Bildnummer nur intern",
+      "visual_category": "cutaway",
+      "human_framing": "none",
+      "explanation_visible": "[Ein sichtbarer Zusammenhang, ohne dekorative Person]"
     }
   ]
 }

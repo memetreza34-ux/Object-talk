@@ -197,3 +197,7 @@ Freigabe:                     JA / NEIN
 ## Höchste Priorität nach der Freigabe
 
 Die Scorecard wird aus dem **echten** finalen Film abgeleitet, nicht vor dem Render geschätzt. Nach jedem fertigen Video als Grundlage für `engine/CONTINUOUS-IMPROVEMENT.md` verwenden: Fehlerbild mit Zeitstelle, Ursache, konkreter globaler Fix, PASS-Test und Vergleich mit dem folgenden Video. Die Ergebnisse gehören nach `.intern/`, NICHT als Zusatzdateien in `03_export/`.
+
+## Zusätzliche Bildidee-Bewertung ab Video 011
+
+Neben Stiltreue explizit prüfen: Sind Makros/Querschnitte/Prozesse wissenschaftlich anschaulich? Ist der Bildmix organ-/lebensmittel-/prozesszentriert statt Standard-Küchen-/Ganzkörper-Porträts? Werden kräftigere harmonische Farbakzente und interessante Bildwinkel benutzt? Werden direkt aus dem Voice-Beat konkrete visuelle Sachverhalte gezeigt? Wiederholte Person-am-Tisch-Motive kosten deutliche Punkte bei visueller Erklärtiefe, Bildrhythmus und Zuschauerverständnis. Keine automatische Punktzahl aus reinem JSON ableiten, sondern die fertigen Flow-Bilder sichten.

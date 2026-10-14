@@ -24,11 +24,29 @@ Die Bildwelt muss Muskel, Blut, Zellen, Nerven, Organe, Gewebe, Molekuele, Verda
 - saubere Konturen
 - weiche Farbverlaeufe und subtile Schatten
 - leichte raeumliche Tiefe, ohne wie 3D-CGI auszusehen
-- helle, ruhige Hintergruende; bevorzugt sehr helles Blau, Mint, Creme oder andere sanfte Flaechen
+- abwechslungsreiche ruhige Hintergruende: Mint, Creme, Türkis, Himmelblau, aber auch warme helle oder kräftigere thematisch passende Farbflächen; NICHT jedes Bild gleich blass
 - kraeftige, klar getrennte biologische Farben
 - **ein dominanter Lehrpunkt pro Bild**
 - wenige wichtige Elemente statt Detailueberladung
 - wichtige Prozesse sichtbar machen, nicht nur Objekte zeigen
+
+## Neue verbindliche Bildregie ab Video 011 – mehr echte Erklärillustrationen
+
+**Die Bildwelt bleibt Clean Animated Biology Illustration wie beim bewährten Verdauungsvideo – die BILDIDEE wird wesentlich besser.** Nicht jede Voice-Zeile mit einer Person, Küche oder einem beliebigen Teller bebildern. Zeige stattdessen die Sache, die der Zuschauer gerade VERSTEHEN soll. Beispiele:
+
+- Hunger-Signal: vergrößerter Magen-Darm-Gehirn-Signalweg, KEINE Person vor dem Kühlschrank als Standard.
+- Eiweiß/Sättigung: schön illustrierte Proteinquelle und dazu leicht verständliche innere Verdauungs-/Sättigungswirkung, nicht nur ein Mann mit Schüssel.
+- Ballaststoffe: klarer Querschnitt von Fasern, Wasserbindung und Darm, statt weiterer Gemüsetisch-Aufnahme.
+- Ganzer Apfel vs. Saft: essbarer Anschnitt, Faserstruktur, Flüssigkeit und eine optisch direkte Gegenüberstellung.
+- Für Alltagstipps: Hände/Teilansicht, aussagekräftige Lebensmittel, echte Vorher/Nachher-Komposition oder kurzer visueller Ursache→Wirkung-Ablauf.
+
+**Bildmix für neue lange Biologie-/Ernährungs-/Gesundheitsvideos:** Ziel mindestens 65 % erklärende Illustrationen (Makro, Querschnitt, Prozess, Funktionsweg, Mechanismus, lehrreicher Vergleich); höchstens 20 % menschenzentrierte Alltagsszenen, davon höchstens 10 % Ganzkörper-Mensch. Das sind PLANUNGSGRENZEN, nicht die Behauptung, dass ein fertiges Flow-Bild gut geworden ist. Bei anderen Themen können begründete Ausnahmen notwendig sein. Nach echten Flow-Bildern nochmals visuell prüfen.
+
+**Mehr Farben, gleiche Welt:** helle Mint-/Creme-/Türkis-Basis bleibt ein Element, aber nicht 72 gleiche blasse Hintergründe. Je nach biologischem Vorgang bewusst kräftiges Korallrot, warmes Orange, Goldgelb, sattes Blau, Aquamarin, frisches Grün oder zurückhaltendes Violett nutzen. Farbakzente führen das Auge zur wichtigen Sache; keine grelle Leuchtreklame, kein einheitlicher Neonlook. Licht/Schatten, perspektivische Tiefe, klare hochwertige Illustration und große miteinander verbundene Formen statt flacher generischer Stockgrafik.
+
+**Variantenreiches Erklären:** organische Cutaways, anatomische Ausschnitte, Schichten, geführte Wege, Lebensmittel-Innenstruktur, Vergrößerung, klarer 2-Zustandsvergleich, Vorher/Nachher, einfache visuelle Metapher mit wissenschaftlichem Bezug. Pro Szene nur eine Hauptidee, 2–4 lesbare relevante Elemente und 0–2 kurze passende deutsche Labels. Bild darf auch ein klares vollflächiges Schema/Diagramm sein, WENN es anschaulicher erklärt als eine Figur. Szenen kompositorisch wechseln; nicht alle mittig und nicht immer gleiche Vogelperspektive.
+
+**Promptpflicht:** pro normalem Bild `VISUAL CATEGORY`, `HUMAN FRAMING`, `WHAT CHANGES VISIBLY`, konkretes Motiv/Prozess + ggf. 0–2 Labels planen. Die Ausgabe soll diese technischen Felder NIEMALS als Text im Bild darstellen. Fehlt der Erklärnutzen, neu konzipieren. Ganze Menschen nur bei echtem psychologischem/Alltags-Lernzweck, nicht als Füllmotiv.
 
 ## Beschriftungen
 
@@ -60,7 +78,7 @@ Schwacher Kontrast oder schwer lesbarer Text = **FAIL / neu generieren**.
 
 ## Cover – HARD RULE
 
-Das Cover / erste Hook-Bild darf genau **einen sichtbaren Textblock** enthalten:
+Das **separat ausgelieferte YouTube-Cover** (NICHT `Bild_01`, nicht Teil des Videos) darf genau **einen sichtbaren Textblock** enthalten:
 
 - nur den geplanten Titel / Hook
 - keine Anatomie-Labels
@@ -150,7 +168,7 @@ Prompts sollen kurz bleiben.
 Der kanonische kurze Styleblock steht in `bildwelt/FLOW-STYLE-BLOCK.txt`.
 
 ## Bildwelt ohne hochgeladene Vorlagen
-Die schriftliche Bildwelt, der unveränderte 008-Styleblock und die konkreten Szenenbeschreibungen steuern jede Google-Flow-Generierung. Wie beim Verdauungsfilm 008 **keine Referenzbilder hochladen oder anfordern**, auch nicht das ausgewählte Cover. Cover wählen = `Bild_01` festlegen. Alle Folgebilder im gleichen Textstil neu generieren.
+Die schriftliche Bildwelt, der unveränderte 008-Styleblock und die konkreten Szenenbeschreibungen steuern jede Google-Flow-Generierung. Wie beim Verdauungsfilm 008 **keine Referenzbilder hochladen oder anfordern**, auch nicht das ausgewählte Cover. Cover wählen = separates `03_export/COVER.png` festlegen. `Bild_01` ist die erste normale Videoszene. Alle Folgebilder im gleichen Textstil neu generieren.
 ## Qualitaetskriterium
 
 Ein gutes Object-Talk-Bild ist:
