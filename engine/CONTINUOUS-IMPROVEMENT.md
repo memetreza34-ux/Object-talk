@@ -36,3 +36,7 @@ python tools/validate_planning_v2.py youtube-videos/NEUES-VIDEO
 ```
 
 Fehlt ein Review, muss offen darauf hingewiesen werden, statt Verbesserung zu behaupten. Den Plan zur Nachbesserung dokumentieren und den neuen Film nicht allein als Fortschritt darstellen.
+
+## Dokumentiertes aktuelles Lernsignal aus Video 010
+
+Gezielte Sichtung des hochgeladenen `VIDEO.mp4` anhand 21 Zeitstichproben, **keine vollständige lückenlose Sichtung**: Nutzer fand Skript gut, Bildstil grundsätzlich passend, Illustrationserklärwert und Vielfalt aber zu schwach; zu viele ganze Menschen, Küche und Essen als rein dekorativer Hintergrund. Deshalb wurden vor Video 011 der globale Style-/Plan-/Promptmix, zusätzliche konkrete Art-Direction-Beispiele und ein neuer visueller Storyboard-Gate entwickelt. Primär ist das ein Fehler in der Bildplanung, nicht im Voice-Skript. Belege: `engine/VIDEO-010-VISUAL-FEEDBACK.md`, `bildwelt/ILLUSTRATION-FIRST-SCENE-EXAMPLES.md`. Die neue Qualität gilt erst als verifiziert, wenn die echten Bilder und das nächste fertige Video visuell verglichen wurden. Eine umfassende Postmortem-Registrierung von 010 wurde durch diese Stichproben **nicht** ersetzt.

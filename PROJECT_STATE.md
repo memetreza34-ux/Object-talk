@@ -81,3 +81,8 @@ Bei jeder abgeschlossenen Phase 1 direkt in der Chat-Antwort zwei anklickbare Da
 **Voice-over-Skript öffnen:** https://github.com/memetreza34-ux/Object-talk/blob/main/youtube-videos/009-longform-schlaf/01_script/script.txt
 
 Diese URLs gelten NUR für das aktuelle Video 009. Bei späteren Videos immer den zugehörigen Projektordner einsetzen. Als Markdown-Klicklinks oder funktionierende Öffnen-Schaltflächen in der Antwort präsentieren. Die Dateien sind Text zum direkten Kopieren auf Tablet/PC; Login kann erforderlich sein. Details: `AGENTS.md`, `PROJECT_CONTRACT.md`.
+
+
+## Verbindliches neues Bildfeedback (14.10.2026, ab Video 011)
+
+Video 010 („Warum du nach dem Essen so schnell wieder Hunger hast“) wurde durch den Nutzer beim Skript gelobt; die Bildwelt passt grundsätzlich, aber die Illustrationen sind noch zu oft alltägliche Personen-/Küchen-/Markt-Szenen. Aus 21 gezielten Standbildern: erklärende Magen-/Darm-/Signal-Illustrationen sind anschaulicher als die wiederholten ganzen Menschen. **Kein Umschreiben des guten Skripts oder rückwirkender Exportumbau.** Globaler Fix in `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`, `bildwelt/ILLUSTRATION-FIRST-SCENE-EXAMPLES.md` und `engine/PLANNING-V2.md`: deutlich mehr Makros, anatomische Cutaways, biologisch erklärte Vergleiche, schönere detailbewusste organische Formen, mehr harmonisch kräftige Farben, deutlich weniger menschenzentrierte Bilder. Ab Video 011 verlangt die technische Phase-1-Prüfung passende Visual-Kategorien und einen nachvollziehbaren Mix (siehe `tools/visual_storyboard_gate.py`). Tatsächliche Qualitätssteigerung der generierten Folgebilder ist noch nicht nachgewiesen und wird im nächsten Finalvideo geprüft.
