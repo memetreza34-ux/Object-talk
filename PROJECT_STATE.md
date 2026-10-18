@@ -6,7 +6,8 @@ Letzte Aktualisierung: 18.10.2026
 
 - Startklar für Phase 1: `python tools/create_video.py "011-<thema>"` übernimmt Vorlage und 4 aktive Lessons (inkl. BASE-ILLUSTRATION-FIRST aus 010).
 - Neu: `tools/phase1_content_gate.py` prüft ab 011 das Skript selbst (900–1200 Wörter, Hook → Einleitung → Hauptteil → Schluss, 1:1-Abdeckung durch die Szenen) und dass der eine Flow-Prompt jedes geplante Bild enthält. Vorher hätte der Validator ein leeres Vorlagen-Skript bzw. einen Prompt mit fehlendem Bild durchgelassen (Scratch-Probe nachgewiesen).
-- Nicht bewiesen: dass Google Flow mit Bildregie V2 tatsächlich bessere Bilder erzeugt – erst an den ersten echten 011-Bildern prüfen.
+- Erster echter Flow-Test (18.10.2026, eine Szene „Insulin/Zuckertüren“, Nano Banana 2.1, per Screenshot gesichtet): nur kurzer Stilblock → flache Vektorgrafik (~7/10); mit Tiefenzeile + sichtbarer Veränderung + Ursache→Wirkung-Weg → 008-naher Look (~8/10). Tiefenzeile ist jetzt Pflicht in Vorlage und Validator. Siehe `bildwelt/ILLUSTRATION-FIRST-SCENE-EXAMPLES.md` Beispiel 9.
+- Noch nicht bewiesen: gleichbleibende Qualität über alle Szenen eines ganzen Videos – an den echten 011-Bildern prüfen.
 - Offen: vollständiges Postmortem von 010 (`improvement-review.json` noch PENDING, MP4 nicht im Repo; bisher 21 Stichproben-Frames). Blockiert 011 technisch nicht.
 
 ## AKTIVE PRODUKTION – VIDEO 010

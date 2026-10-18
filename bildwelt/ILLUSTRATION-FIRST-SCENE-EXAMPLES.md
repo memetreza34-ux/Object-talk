@@ -40,6 +40,12 @@ Ein Mensch, der bloß zuhört, isst, schaut oder steht, ist meistens kein guter 
 **8. Psychologie / Alltag, wo Menschen sinnvoll sind**
 - SINNVOLL: Detailed close-up of a person's hand reaching for an afternoon snack while the other holds a still-full plate; the contrast demonstrates an actual decision. Only hand/food crop, not a generic standing person. If the lesson is genuinely social or behavioral, whole people are permitted, but make their action explain the claim.
 
+**9. Echter Flow-Test 18.10.2026 – Insulin öffnet Zuckertüren (Nano Banana 2.1, Sichtung per Screenshot)**
+- Voice: „Insulin dockt außen an der Muskelzelle an. Daraufhin baut die Zelle zusätzliche Zuckertüren in ihre Wand ein.“
+- v1 (nur kurzer 008-Stilblock + Szene): Inhalt und Labels korrekt, aber flache Vektor-/Schulbuchgrafik, große leere Fläche, Insulin winzig und ohne Verbindung zu den Kanälen, „baut zusätzliche Türen ein“ nicht sichtbar. Ca. 7/10 → regenerieren.
+- v2 (+ Tiefenzeile aus `FLOW-STYLE-BLOCK.txt`, sichtbares Signal Rezeptor → Kanal, neuer Kanal kommt in einem Bläschen von innen, schwache Muskelfasern): geschichtete Tiefe, bildfüllend, Ursache→Wirkung lesbar, 2 korrekte Labels mit gutem Kontrast. Ca. 8/10 → verwendbar. Rest: Das Bläschen liest sich für Laien eher als Einstülpung; ggf. kleiner Bewegungspfeil „von innen nach oben“.
+- Lehre: Tiefenzeile in JEDER Bildanfrage; das Verb des Sprechertexts als sichtbare Veränderung und Ursache→Wirkung als sichtbaren Weg ausschreiben.
+
 ## Palette und Bildinszenierung
 Das Ganze bleibt die bestehende organische `Clean Animated Biology Illustration`. **Nicht** alle Hintergründe einheitlich blass mint/türkis. Organisch reichere, harmonisch verteilte Korall- und Terrakottatöne, warmes Orange/Gold für Signale, sattes Türkis und Himmelblau für Flüssigkeiten, frisches Blattgrün für Pflanzen, sparsam Violett für klar unterscheidbare Strukturen; niemals volle Neon- oder CGI-Ästhetik.
 

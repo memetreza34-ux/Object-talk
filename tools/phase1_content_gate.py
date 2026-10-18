@@ -27,6 +27,8 @@ FLOW_TEMPLATE_MARKERS = (
     "[HIER alle Szenen", "[NN]", "Diesen Platzhalter",
 )
 FLOW_IMAGE_RE = re.compile(r"\bBild_(\d+)\b")
+# Flow test 18.10.2026: without this per-image line the 008 style came out as a flat vector diagram.
+DEPTH_LINE_MARKER = "not a flat vector diagram"
 
 
 class ContentGateError(ValueError):
@@ -151,6 +153,10 @@ def check_flow_register(project: Path, scene_payload: dict, flow_prompt_text: st
     leftovers = [marker for marker in FLOW_TEMPLATE_MARKERS if marker in flow_prompt_text]
     if leftovers:
         raise ContentGateError(f"Flow-Prompt enthaelt noch Vorlagen-Platzhalter: {leftovers}")
+    if DEPTH_LINE_MARKER not in flow_prompt_text.lower():
+        raise ContentGateError(
+            "Flow-Prompt fehlt die Tiefenzeile aus bildwelt/FLOW-STYLE-BLOCK.txt ('Not a flat vector diagram')"
+        )
     scenes = scene_payload.get("scenes")
     if not isinstance(scenes, list) or not scenes:
         raise ContentGateError("Keine Szenen fuer Flow-Register-Pruefung")

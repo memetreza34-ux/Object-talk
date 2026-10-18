@@ -38,7 +38,7 @@ def build(parts=None, arc=ARC):
 
 
 def flow_for(n):
-    return "COVER RULE: exactly one visible text block.\n" + "\n".join(
+    return "COVER RULE: exactly one visible text block.\nNot a flat vector diagram, not clip-art.\n" + "\n".join(
         f"{i:02d} / Bild_{i:02d}.png | cutaway scene" for i in range(1, n + 1)
     )
 
@@ -106,6 +106,12 @@ class FlowRegisterTests(unittest.TestCase):
         template = Path(__file__).resolve().parents[2] / "youtube-videos/_TEMPLATE/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt"
         with self.assertRaisesRegex(ContentGateError, "Platzhalter"):
             check_flow_register(Path("011-next-video"), data, template.read_text(encoding="utf-8"), POLICY)
+
+    def test_missing_depth_line_fails(self):
+        _, data = build()
+        flat = flow_for(4).replace("Not a flat vector diagram, not clip-art.\n", "")
+        with self.assertRaisesRegex(ContentGateError, "Tiefenzeile"):
+            check_flow_register(Path("011-next-video"), data, flat, POLICY)
 
 
 if __name__ == "__main__":
