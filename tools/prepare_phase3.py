@@ -203,6 +203,10 @@ def main() -> None:
         repo_root,
     )
 
+    # YouTube chapter marks from the same final timeline (skipped for projects without chapter planning).
+    if simplified:
+        run([sys.executable, "tools/export_chapters.py", str(project)], repo_root)
+
     run(
         [
             sys.executable,

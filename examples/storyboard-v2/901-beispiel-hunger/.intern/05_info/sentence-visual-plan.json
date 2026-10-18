@@ -1,0 +1,1705 @@
+{
+  "status": "READY",
+  "source_script": "01_script/script.txt",
+  "generated_from": "storyboard-source.json",
+  "rules": {
+    "each_spoken_sentence_or_logical_block_has_visual_plan": true,
+    "image_ids_match_phase1_scenes": true,
+    "no_estimated_final_timestamps_in_phase1": true
+  },
+  "items": [
+    {
+      "id": "SV_001",
+      "voiceover_text": "Du isst ein Croissant.",
+      "function": "hook",
+      "learning_goal": "Alltägliche Ausgangssituation: ein Croissant wird gegessen.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_01",
+      "visual_type": "food_structure",
+      "visible_change": "The croissant is broken open, establishing the food the episode starts with.",
+      "scene_difference": "zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Schneller Hunger heißt nicht automatisch, dass zu wenig gegessen wurde; Kalorienmenge allein bestimmt Sättigung nicht."
+    },
+    {
+      "id": "SV_002",
+      "voiceover_text": "Kurz darauf knurrt dein Magen schon wieder.",
+      "function": "observation",
+      "learning_goal": "Das Problem: kurz nach dem Essen meldet sich wieder Hunger.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_02",
+      "visual_type": "cutaway",
+      "visible_change": "Shortly after eating, the stomach is nearly empty again and sends a warm-orange hunger ripple.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Schneller Hunger heißt nicht automatisch, dass zu wenig gegessen wurde; Kalorienmenge allein bestimmt Sättigung nicht."
+    },
+    {
+      "id": "SV_003",
+      "voiceover_text": "Mit gleich vielen Kalorien aus gekochten Kartoffeln wärst du deutlich länger satt geblieben.",
+      "function": "observation",
+      "learning_goal": "Gleiche Kalorien, aber Kartoffeln sättigen deutlich länger.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_03",
+      "visual_type": "educational_comparison",
+      "visible_change": "Both foods carry the same energy, so the balance is level, yet the potato portion is far bigger.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: scale wechseln",
+      "labels": [
+        "gleiche Kalorien"
+      ],
+      "misconception_to_avoid": "Schneller Hunger heißt nicht automatisch, dass zu wenig gegessen wurde; Kalorienmenge allein bestimmt Sättigung nicht."
+    },
+    {
+      "id": "SV_004",
+      "voiceover_text": "In einem bekannten Experiment schnitten Kartoffeln beim Sättigungsgefühl fast siebenmal besser ab als das Croissant.",
+      "function": "observation",
+      "learning_goal": "Sättigungsindex-Experiment: Kartoffel fast siebenmal besser als Croissant.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_04",
+      "visual_type": "educational_comparison",
+      "visible_change": "With equal calories the potato stomach sends a much stronger turquoise fullness signal than the croissant stomach.",
+      "scene_difference": "zum vorherigen Bild: scale wechseln; zum nächsten Bild: cat wechseln",
+      "labels": [
+        "Croissant",
+        "Kartoffeln"
+      ],
+      "misconception_to_avoid": "Schneller Hunger heißt nicht automatisch, dass zu wenig gegessen wurde; Kalorienmenge allein bestimmt Sättigung nicht."
+    },
+    {
+      "id": "SV_005",
+      "voiceover_text": "Gleiche Energie, völlig anderes Gefühl. Das zeigt: Hunger ist keine einfache Tankanzeige.",
+      "function": "observation",
+      "learning_goal": "Hunger ist mehr als ein leerer Tank.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_05",
+      "visual_type": "mechanism",
+      "visible_change": "The idea of one simple fuel gauge is replaced by several colored signal threads.",
+      "scene_difference": "zum vorherigen Bild: cat wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Schneller Hunger heißt nicht automatisch, dass zu wenig gegessen wurde; Kalorienmenge allein bestimmt Sättigung nicht."
+    },
+    {
+      "id": "SV_006",
+      "voiceover_text": "Er ist eine Nachricht, die dein Körper aus mehreren Signalen zusammensetzt.",
+      "function": "observation",
+      "learning_goal": "Hunger entsteht aus mehreren Körpersignalen, die im Gehirn zusammenlaufen.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Körper",
+      "new_image_required": true,
+      "image_asset_id": "Bild_06",
+      "visual_type": "process_path",
+      "visible_change": "Signals from stomach, intestine and fat tissue travel upward and converge in one spot in the brain.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: scale, frame wechseln",
+      "labels": [
+        "Gehirn"
+      ],
+      "misconception_to_avoid": "Schneller Hunger heißt nicht automatisch, dass zu wenig gegessen wurde; Kalorienmenge allein bestimmt Sättigung nicht."
+    },
+    {
+      "id": "SV_007",
+      "voiceover_text": "Manche kommen aus dem Magen, manche aus dem Darm, manche sogar aus deinem Schlafzimmer.",
+      "function": "observation",
+      "learning_goal": "Auch Schlaf beeinflusst Hunger (Open Loop).",
+      "claim_ids": [
+        "C10"
+      ],
+      "scale_level": "Alltag",
+      "new_image_required": true,
+      "image_asset_id": "Bild_07",
+      "visual_type": "process_path",
+      "visible_change": "Stomach, intestine and sleep are joined to the brain by one glowing ribbon – sleep belongs to hunger control.",
+      "scene_difference": "zum vorherigen Bild: scale, frame wechseln; zum nächsten Bild: cat, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Schneller Hunger heißt nicht automatisch, dass zu wenig gegessen wurde; Kalorienmenge allein bestimmt Sättigung nicht."
+    },
+    {
+      "id": "SV_008",
+      "voiceover_text": "Und ganz am Ende klären wir, warum der Nachtisch immer noch reinpasst, obwohl du eigentlich pappsatt bist.",
+      "function": "observation",
+      "learning_goal": "Open Loop: Warum passt der Nachtisch noch rein?",
+      "claim_ids": [
+        "C11"
+      ],
+      "scale_level": "Alltag",
+      "new_image_required": true,
+      "image_asset_id": "Bild_08",
+      "visual_type": "everyday_context",
+      "visible_change": "Despite a full turquoise stomach, the dessert sparks a new pink appetite signal – the open question of the video.",
+      "scene_difference": "zum vorherigen Bild: cat, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Schneller Hunger heißt nicht automatisch, dass zu wenig gegessen wurde; Kalorienmenge allein bestimmt Sättigung nicht."
+    },
+    {
+      "id": "SV_009",
+      "voiceover_text": "Fangen wir dort an, wo Hunger beginnt: in deinem Magen.",
+      "function": "path",
+      "learning_goal": "Der Magen ist Ausgangspunkt des Hungersignals.",
+      "claim_ids": [
+        "C02"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_09",
+      "visual_type": "cutaway",
+      "visible_change": "The empty stomach is introduced as the starting point of the hunger signal.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [
+        "Magen"
+      ],
+      "misconception_to_avoid": "Ghrelin ist kein Einzelschalter für Hunger; es ist ein wichtiges Signal unter mehreren und reagiert auch auf Gewohnheiten."
+    },
+    {
+      "id": "SV_010",
+      "voiceover_text": "Ist er eine Weile leer, schütten Zellen in seiner Wand ein Hormon aus.",
+      "function": "path",
+      "learning_goal": "Zellen der Magenwand geben bei leerem Magen ein Hormon ab.",
+      "claim_ids": [
+        "C02"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_10",
+      "visual_type": "macro",
+      "visible_change": "Cells in the empty stomach wall begin releasing orange hormone particles into the blood.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Ghrelin ist kein Einzelschalter für Hunger; es ist ein wichtiges Signal unter mehreren und reagiert auch auf Gewohnheiten."
+    },
+    {
+      "id": "SV_011",
+      "voiceover_text": "Es heißt Ghrelin und wird oft Hungerhormon genannt.",
+      "function": "path",
+      "learning_goal": "Name und Rolle von Ghrelin.",
+      "claim_ids": [
+        "C02"
+      ],
+      "scale_level": "Molekül",
+      "new_image_required": true,
+      "image_asset_id": "Bild_11",
+      "visual_type": "macro",
+      "visible_change": "The hunger hormone is shown large as an orange particle travelling in the blood.",
+      "scene_difference": "zum vorherigen Bild: scale wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [
+        "Ghrelin"
+      ],
+      "misconception_to_avoid": "Ghrelin ist kein Einzelschalter für Hunger; es ist ein wichtiges Signal unter mehreren und reagiert auch auf Gewohnheiten."
+    },
+    {
+      "id": "SV_012",
+      "voiceover_text": "Ghrelin reist mit dem Blut bis in dein Gehirn.",
+      "function": "path",
+      "learning_goal": "Ghrelin gelangt über das Blut zum Gehirn.",
+      "claim_ids": [
+        "C02"
+      ],
+      "scale_level": "Körper",
+      "new_image_required": true,
+      "image_asset_id": "Bild_12",
+      "visual_type": "process_path",
+      "visible_change": "Orange ghrelin particles flow from the stomach through the bloodstream to the brain.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Ghrelin ist kein Einzelschalter für Hunger; es ist ein wichtiges Signal unter mehreren und reagiert auch auf Gewohnheiten."
+    },
+    {
+      "id": "SV_013",
+      "voiceover_text": "Sein Ziel ist der Hypothalamus, ein Kontrollzentrum ungefähr so groß wie eine Mandel.",
+      "function": "path",
+      "learning_goal": "Der Hypothalamus ist das Kontrollzentrum für Hunger.",
+      "claim_ids": [
+        "C02"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_13",
+      "visual_type": "educational_comparison",
+      "visible_change": "The hypothalamus sits deep at the base of the brain and is about as big as an almond.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [
+        "Hypothalamus"
+      ],
+      "misconception_to_avoid": "Ghrelin ist kein Einzelschalter für Hunger; es ist ein wichtiges Signal unter mehreren und reagiert auch auf Gewohnheiten."
+    },
+    {
+      "id": "SV_014",
+      "voiceover_text": "Dort weckt es Nervenzellen, die nur eine Botschaft haben: Such dir etwas zu essen!",
+      "function": "path",
+      "learning_goal": "Ghrelin aktiviert Hunger-Nervenzellen.",
+      "claim_ids": [
+        "C02"
+      ],
+      "scale_level": "Zelle",
+      "new_image_required": true,
+      "image_asset_id": "Bild_14",
+      "visual_type": "mechanism",
+      "visible_change": "Ghrelin switches on hunger nerve cells, which start firing yellow signals.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Ghrelin ist kein Einzelschalter für Hunger; es ist ein wichtiges Signal unter mehreren und reagiert auch auf Gewohnheiten."
+    },
+    {
+      "id": "SV_015",
+      "voiceover_text": "Und jetzt wird es seltsam. Ghrelin steigt nicht nur, wenn dein Magen leer ist.",
+      "function": "path",
+      "learning_goal": "Ghrelin hängt nicht nur vom Füllstand ab.",
+      "claim_ids": [
+        "C02"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_15",
+      "visual_type": "mechanism",
+      "visible_change": "Orange hunger particles appear although the stomach is not empty.",
+      "scene_difference": "zum vorherigen Bild: scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Ghrelin ist kein Einzelschalter für Hunger; es ist ein wichtiges Signal unter mehreren und reagiert auch auf Gewohnheiten."
+    },
+    {
+      "id": "SV_016",
+      "voiceover_text": "Es steigt auch kurz vor den Uhrzeiten, zu denen du normalerweise isst.",
+      "function": "path",
+      "learning_goal": "Ghrelin steigt vor gewohnten Mahlzeiten an.",
+      "claim_ids": [
+        "C02"
+      ],
+      "scale_level": "Alltag",
+      "new_image_required": true,
+      "image_asset_id": "Bild_16",
+      "visual_type": "process_path",
+      "visible_change": "The orange ghrelin ribbon peaks shortly before each usual mealtime and falls after eating.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, frame wechseln",
+      "labels": [
+        "Ghrelin"
+      ],
+      "misconception_to_avoid": "Ghrelin ist kein Einzelschalter für Hunger; es ist ein wichtiges Signal unter mehreren und reagiert auch auf Gewohnheiten."
+    },
+    {
+      "id": "SV_017",
+      "voiceover_text": "Wer jeden Tag um zwölf zu Mittag isst, bekommt oft schon kurz vorher Hunger.",
+      "function": "path",
+      "learning_goal": "Alltagsbeispiel für gelernte Hungerzeiten.",
+      "claim_ids": [
+        "C02"
+      ],
+      "scale_level": "Alltag",
+      "new_image_required": true,
+      "image_asset_id": "Bild_17",
+      "visual_type": "everyday_context",
+      "visible_change": "Just before the habitual lunchtime the orange hunger glow is already rising.",
+      "scene_difference": "zum vorherigen Bild: cat, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Ghrelin ist kein Einzelschalter für Hunger; es ist ein wichtiges Signal unter mehreren und reagiert auch auf Gewohnheiten."
+    },
+    {
+      "id": "SV_018",
+      "voiceover_text": "Dein Hunger führt also eine Art Kalender. Er lernt deine Gewohnheiten.",
+      "function": "path",
+      "learning_goal": "Hunger passt sich an Gewohnheiten an.",
+      "claim_ids": [
+        "C02"
+      ],
+      "scale_level": "Zelle",
+      "new_image_required": true,
+      "image_asset_id": "Bild_18",
+      "visual_type": "mechanism",
+      "visible_change": "Repeated mealtimes strengthen a hunger pathway, so the signal arrives on schedule.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Ghrelin ist kein Einzelschalter für Hunger; es ist ein wichtiges Signal unter mehreren und reagiert auch auf Gewohnheiten."
+    },
+    {
+      "id": "SV_019",
+      "voiceover_text": "Nach dem Essen sinkt Ghrelin wieder. Gleichzeitig startet die Gegenseite: die Sättigungssignale.",
+      "function": "path",
+      "learning_goal": "Hunger- und Sättigungssignale arbeiten gegeneinander.",
+      "claim_ids": [
+        "C02",
+        "C04"
+      ],
+      "scale_level": "Molekül",
+      "new_image_required": true,
+      "image_asset_id": "Bild_19",
+      "visual_type": "educational_comparison",
+      "visible_change": "After a meal the orange hunger particles decrease and turquoise satiety particles take over the balance.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [
+        "Hunger",
+        "Sättigung"
+      ],
+      "misconception_to_avoid": "Ein voller Magen allein hält nicht lange satt; die stärkeren Signale kommen zeitverzögert aus dem Darm."
+    },
+    {
+      "id": "SV_020",
+      "voiceover_text": "Das erste ist simpel. Dein Magen dehnt sich. In seiner Wand sitzen Dehnungsrezeptoren.",
+      "function": "path",
+      "learning_goal": "Dehnungsrezeptoren registrieren die Magenfüllung.",
+      "claim_ids": [
+        "C03"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_20",
+      "visual_type": "cutaway",
+      "visible_change": "As the stomach fills and stretches, sensors in its wall light up.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [
+        "Dehnungsrezeptoren"
+      ],
+      "misconception_to_avoid": "Ein voller Magen allein hält nicht lange satt; die stärkeren Signale kommen zeitverzögert aus dem Darm."
+    },
+    {
+      "id": "SV_021",
+      "voiceover_text": "Sie funken über den Vagusnerv, eine Art Datenkabel zwischen Bauch und Gehirn, nach oben.",
+      "function": "path",
+      "learning_goal": "Der Vagusnerv leitet Dehnungssignale zum Gehirn.",
+      "claim_ids": [
+        "C03"
+      ],
+      "scale_level": "Körper",
+      "new_image_required": true,
+      "image_asset_id": "Bild_21",
+      "visual_type": "process_path",
+      "visible_change": "Stretch messages travel as yellow pulses along the vagus nerve to the brain.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [
+        "Vagusnerv"
+      ],
+      "misconception_to_avoid": "Ein voller Magen allein hält nicht lange satt; die stärkeren Signale kommen zeitverzögert aus dem Darm."
+    },
+    {
+      "id": "SV_022",
+      "voiceover_text": "Aber Dehnung allein ist ein schwaches Signal. Ein halber Liter Wasser dehnt deinen Magen auch.",
+      "function": "path",
+      "learning_goal": "Dehnung allein ist ein schwaches Sättigungssignal.",
+      "claim_ids": [
+        "C03"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_22",
+      "visual_type": "cutaway",
+      "visible_change": "Water stretches the stomach, but the nerve signal it creates is weak.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat wechseln",
+      "labels": [
+        "Wasser"
+      ],
+      "misconception_to_avoid": "Ein voller Magen allein hält nicht lange satt; die stärkeren Signale kommen zeitverzögert aus dem Darm."
+    },
+    {
+      "id": "SV_023",
+      "voiceover_text": "Trotzdem hält er dich nicht lange satt. Wasser fließt einfach schnell weiter in den Darm.",
+      "function": "path",
+      "learning_goal": "Wasser verlässt den Magen schnell.",
+      "claim_ids": [
+        "C03"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_23",
+      "visual_type": "process_path",
+      "visible_change": "The water leaves the stomach quickly, so the stretch disappears again.",
+      "scene_difference": "zum vorherigen Bild: cat wechseln; zum nächsten Bild: cat, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Ein voller Magen allein hält nicht lange satt; die stärkeren Signale kommen zeitverzögert aus dem Darm."
+    },
+    {
+      "id": "SV_024",
+      "voiceover_text": "Das stärkere Signal kommt eine Etage tiefer.",
+      "function": "path",
+      "learning_goal": "Der Dünndarm liefert stärkere Sattsignale.",
+      "claim_ids": [
+        "C04"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_24",
+      "visual_type": "cutaway",
+      "visible_change": "Attention moves from the stomach down to the small intestine.",
+      "scene_difference": "zum vorherigen Bild: cat, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [
+        "Dünndarm"
+      ],
+      "misconception_to_avoid": "Ein voller Magen allein hält nicht lange satt; die stärkeren Signale kommen zeitverzögert aus dem Darm."
+    },
+    {
+      "id": "SV_025",
+      "voiceover_text": "Sobald Nahrung im Dünndarm ankommt, vor allem Eiweiß und Fett, schütten Zellen der Darmwand eigene Botenstoffe aus.",
+      "function": "path",
+      "learning_goal": "Darmzellen schütten Sättigungshormone aus.",
+      "claim_ids": [
+        "C04"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_25",
+      "visual_type": "macro",
+      "visible_change": "Protein and fat reaching the intestine trigger the release of turquoise messenger particles.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Ein voller Magen allein hält nicht lange satt; die stärkeren Signale kommen zeitverzögert aus dem Darm."
+    },
+    {
+      "id": "SV_026",
+      "voiceover_text": "Einer heißt CCK. Er bremst den Magen, damit er sich langsamer leert.",
+      "function": "path",
+      "learning_goal": "CCK verlangsamt die Magenentleerung.",
+      "claim_ids": [
+        "C04"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_26",
+      "visual_type": "mechanism",
+      "visible_change": "The messenger CCK narrows the stomach exit so the stomach empties more slowly.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [
+        "CCK"
+      ],
+      "misconception_to_avoid": "Ein voller Magen allein hält nicht lange satt; die stärkeren Signale kommen zeitverzögert aus dem Darm."
+    },
+    {
+      "id": "SV_027",
+      "voiceover_text": "Weiter hinten im Darm folgen GLP-1 und PYY.",
+      "function": "path",
+      "learning_goal": "GLP-1 und PYY entstehen weiter hinten im Darm.",
+      "claim_ids": [
+        "C04"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_27",
+      "visual_type": "macro",
+      "visible_change": "Deeper in the intestine two more satiety hormones are released.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [
+        "GLP-1",
+        "PYY"
+      ],
+      "misconception_to_avoid": "Ein voller Magen allein hält nicht lange satt; die stärkeren Signale kommen zeitverzögert aus dem Darm."
+    },
+    {
+      "id": "SV_028",
+      "voiceover_text": "Beide melden dem Gehirn: Es ist genug angekommen.",
+      "function": "path",
+      "learning_goal": "Sättigungshormone dämpfen den Hunger im Gehirn.",
+      "claim_ids": [
+        "C04"
+      ],
+      "scale_level": "Zelle",
+      "new_image_required": true,
+      "image_asset_id": "Bild_28",
+      "visual_type": "mechanism",
+      "visible_change": "Satiety hormones switch on satiety nerve cells and quiet the hunger cells.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Ein voller Magen allein hält nicht lange satt; die stärkeren Signale kommen zeitverzögert aus dem Darm."
+    },
+    {
+      "id": "SV_029",
+      "voiceover_text": "GLP-1 kennst du vielleicht aus den Nachrichten.",
+      "function": "path",
+      "learning_goal": "GLP-1 als bekanntes Sättigungssignal.",
+      "claim_ids": [
+        "C05"
+      ],
+      "scale_level": "Molekül",
+      "new_image_required": true,
+      "image_asset_id": "Bild_29",
+      "visual_type": "macro",
+      "visible_change": "GLP-1 binds to its receptor like a key in a lock.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat wechseln",
+      "labels": [
+        "GLP-1"
+      ],
+      "misconception_to_avoid": "Ein voller Magen allein hält nicht lange satt; die stärkeren Signale kommen zeitverzögert aus dem Darm."
+    },
+    {
+      "id": "SV_030",
+      "voiceover_text": "Die bekannten Abnehmspritzen ahmen genau dieses körpereigene Sattsignal nach, nur viel stärker und länger.",
+      "function": "path",
+      "learning_goal": "Abnehmspritzen imitieren GLP-1.",
+      "claim_ids": [
+        "C05"
+      ],
+      "scale_level": "Molekül",
+      "new_image_required": true,
+      "image_asset_id": "Bild_30",
+      "visual_type": "educational_comparison",
+      "visible_change": "The medication copies the body's own signal but makes it much stronger and longer-lasting.",
+      "scene_difference": "zum vorherigen Bild: cat wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Ein voller Magen allein hält nicht lange satt; die stärkeren Signale kommen zeitverzögert aus dem Darm."
+    },
+    {
+      "id": "SV_031",
+      "voiceover_text": "Dein Körper hat das Werkzeug also schon eingebaut.",
+      "function": "path",
+      "learning_goal": "Der Körper besitzt ein eigenes Sättigungssystem.",
+      "claim_ids": [
+        "C04",
+        "C05"
+      ],
+      "scale_level": "Körper",
+      "new_image_required": true,
+      "image_asset_id": "Bild_31",
+      "visual_type": "process_path",
+      "visible_change": "The satiety signal is a built-in system running from gut to brain.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Ein voller Magen allein hält nicht lange satt; die stärkeren Signale kommen zeitverzögert aus dem Darm."
+    },
+    {
+      "id": "SV_032",
+      "voiceover_text": "Der Haken: Diese Darmsignale brauchen Zeit. Bis sie richtig ansteigen, vergeht oft eine Viertelstunde oder mehr.",
+      "function": "path",
+      "learning_goal": "Sättigungshormone steigen zeitverzögert an.",
+      "claim_ids": [
+        "C04"
+      ],
+      "scale_level": "Molekül",
+      "new_image_required": true,
+      "image_asset_id": "Bild_32",
+      "visual_type": "process_path",
+      "visible_change": "The turquoise satiety signal builds up slowly after the meal starts.",
+      "scene_difference": "zum vorherigen Bild: scale, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Ein voller Magen allein hält nicht lange satt; die stärkeren Signale kommen zeitverzögert aus dem Darm."
+    },
+    {
+      "id": "SV_033",
+      "voiceover_text": "Wenn du in fünf Minuten isst, bist du fertig, bevor die Satt-Meldung im Gehirn ankommt.",
+      "function": "path",
+      "learning_goal": "Schnelles Essen überholt die Sättigungssignale.",
+      "claim_ids": [
+        "C04",
+        "C06"
+      ],
+      "scale_level": "Alltag",
+      "new_image_required": true,
+      "image_asset_id": "Bild_33",
+      "visual_type": "human_action",
+      "visible_change": "The meal is already finished while the satiety signal is still on its way.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Ein voller Magen allein hält nicht lange satt; die stärkeren Signale kommen zeitverzögert aus dem Darm."
+    },
+    {
+      "id": "SV_034",
+      "voiceover_text": "Damit kennst du das Grundprinzip: Ein Hungerhormon gegen mehrere Sattsignale.",
+      "function": "comparison",
+      "learning_goal": "Zusammenfassung des Grundprinzips.",
+      "claim_ids": [
+        "C02",
+        "C04"
+      ],
+      "scale_level": "Molekül",
+      "new_image_required": true,
+      "image_asset_id": "Bild_34",
+      "visual_type": "educational_comparison",
+      "visible_change": "One hunger signal is weighed against several satiety signals.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Getränke sind nicht schlecht; flüssige Kalorien sättigen nur weniger als feste Lebensmittel mit gleichem Energiegehalt."
+    },
+    {
+      "id": "SV_035",
+      "voiceover_text": "Und jetzt verstehst du, warum der Hunger manchmal so schnell zurückkommt. Dafür gibt es typische Gründe.",
+      "function": "comparison",
+      "learning_goal": "Überleitung zu den Gründen für schnellen Hunger.",
+      "claim_ids": [
+        "C04"
+      ],
+      "scale_level": "Molekül",
+      "new_image_required": true,
+      "image_asset_id": "Bild_35",
+      "visual_type": "mechanism",
+      "visible_change": "When satiety signals are weak, the balance tips back toward hunger.",
+      "scene_difference": "zum vorherigen Bild: cat wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Getränke sind nicht schlecht; flüssige Kalorien sättigen nur weniger als feste Lebensmittel mit gleichem Energiegehalt."
+    },
+    {
+      "id": "SV_036",
+      "voiceover_text": "Grund Nummer eins: Du isst zu schnell.",
+      "function": "comparison",
+      "learning_goal": "Grund 1: hohes Esstempo.",
+      "claim_ids": [
+        "C06"
+      ],
+      "scale_level": "Alltag",
+      "new_image_required": true,
+      "image_asset_id": "Bild_36",
+      "visual_type": "human_action",
+      "visible_change": "Fast eating is shown with a hurried fork.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Getränke sind nicht schlecht; flüssige Kalorien sättigen nur weniger als feste Lebensmittel mit gleichem Energiegehalt."
+    },
+    {
+      "id": "SV_037",
+      "voiceover_text": "In einem Versuch aßen Teilnehmer dieselbe Portion Eis einmal in fünf Minuten und einmal in dreißig Minuten.",
+      "function": "comparison",
+      "learning_goal": "Versuchsaufbau: gleiche Portion, unterschiedliches Tempo.",
+      "claim_ids": [
+        "C06"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_37",
+      "visual_type": "educational_comparison",
+      "visible_change": "The same ice cream is eaten once quickly and once slowly.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: scale wechseln",
+      "labels": [
+        "5 Minuten",
+        "30 Minuten"
+      ],
+      "misconception_to_avoid": "Getränke sind nicht schlecht; flüssige Kalorien sättigen nur weniger als feste Lebensmittel mit gleichem Energiegehalt."
+    },
+    {
+      "id": "SV_038",
+      "voiceover_text": "Beim langsamen Essen stiegen die Sättigungshormone im Blut stärker an. Gleiche Portion, stärkeres Signal.",
+      "function": "comparison",
+      "learning_goal": "Langsames Essen verstärkt die Sättigungshormone.",
+      "claim_ids": [
+        "C06"
+      ],
+      "scale_level": "Molekül",
+      "new_image_required": true,
+      "image_asset_id": "Bild_38",
+      "visual_type": "educational_comparison",
+      "visible_change": "After slow eating, far more turquoise satiety hormones are in the blood.",
+      "scene_difference": "zum vorherigen Bild: scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [
+        "schnell",
+        "langsam"
+      ],
+      "misconception_to_avoid": "Getränke sind nicht schlecht; flüssige Kalorien sättigen nur weniger als feste Lebensmittel mit gleichem Energiegehalt."
+    },
+    {
+      "id": "SV_039",
+      "voiceover_text": "Grund Nummer zwei: Du trinkst deine Kalorien.",
+      "function": "comparison",
+      "learning_goal": "Grund 2: flüssige Kalorien.",
+      "claim_ids": [
+        "C07"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_39",
+      "visual_type": "food_structure",
+      "visible_change": "A drink carries a lot of energy that you hardly notice.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Getränke sind nicht schlecht; flüssige Kalorien sättigen nur weniger als feste Lebensmittel mit gleichem Energiegehalt."
+    },
+    {
+      "id": "SV_040",
+      "voiceover_text": "In einer Studie bekamen Erwachsene vor dem Mittagessen einen Apfel, Apfelmus oder Apfelsaft.",
+      "function": "comparison",
+      "learning_goal": "Versuchsaufbau Apfel, Apfelmus, Saft.",
+      "claim_ids": [
+        "C07"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_40",
+      "visual_type": "educational_comparison",
+      "visible_change": "Three forms of the same apple are compared.",
+      "scene_difference": "zum vorherigen Bild: cat wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Getränke sind nicht schlecht; flüssige Kalorien sättigen nur weniger als feste Lebensmittel mit gleichem Energiegehalt."
+    },
+    {
+      "id": "SV_041",
+      "voiceover_text": "Jede Variante hatte gleich viele Kalorien.",
+      "function": "comparison",
+      "learning_goal": "Gleiche Energiemenge in allen drei Varianten.",
+      "claim_ids": [
+        "C07"
+      ],
+      "scale_level": "Molekül",
+      "new_image_required": true,
+      "image_asset_id": "Bild_41",
+      "visual_type": "food_structure",
+      "visible_change": "All three apple forms carry exactly the same amount of energy.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Getränke sind nicht schlecht; flüssige Kalorien sättigen nur weniger als feste Lebensmittel mit gleichem Energiegehalt."
+    },
+    {
+      "id": "SV_042",
+      "voiceover_text": "Nach dem ganzen Apfel aßen sie insgesamt rund fünfzehn Prozent weniger als ganz ohne Vorspeise.",
+      "function": "comparison",
+      "learning_goal": "Ganzer Apfel senkt die Gesamtmenge um etwa 15 Prozent.",
+      "claim_ids": [
+        "C07"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_42",
+      "visual_type": "educational_comparison",
+      "visible_change": "With the whole apple first, the following lunch portion is smaller.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat wechseln",
+      "labels": [
+        "mit Apfel",
+        "ohne Apfel"
+      ],
+      "misconception_to_avoid": "Getränke sind nicht schlecht; flüssige Kalorien sättigen nur weniger als feste Lebensmittel mit gleichem Energiegehalt."
+    },
+    {
+      "id": "SV_043",
+      "voiceover_text": "Mit Saft war der Effekt am kleinsten.",
+      "function": "comparison",
+      "learning_goal": "Saft sättigt am wenigsten.",
+      "claim_ids": [
+        "C07"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_43",
+      "visual_type": "food_structure",
+      "visible_change": "The whole apple contains structure and fiber; the juice has lost it.",
+      "scene_difference": "zum vorherigen Bild: cat wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Getränke sind nicht schlecht; flüssige Kalorien sättigen nur weniger als feste Lebensmittel mit gleichem Energiegehalt."
+    },
+    {
+      "id": "SV_044",
+      "voiceover_text": "Denn beim Trinken kaust du nicht, und Flüssigkeit verlässt den Magen schneller.",
+      "function": "comparison",
+      "learning_goal": "Warum Flüssigkeit weniger sättigt.",
+      "claim_ids": [
+        "C07"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_44",
+      "visual_type": "cutaway",
+      "visible_change": "Chewed apple stays in the stomach longer, juice flows out fast.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [
+        "Apfel",
+        "Saft"
+      ],
+      "misconception_to_avoid": "Getränke sind nicht schlecht; flüssige Kalorien sättigen nur weniger als feste Lebensmittel mit gleichem Energiegehalt."
+    },
+    {
+      "id": "SV_045",
+      "voiceover_text": "Grund Nummer drei: Deinem Essen fehlen die Sattmacher. Erinnerst du dich an das Croissant?",
+      "function": "comparison",
+      "learning_goal": "Grund 3: fehlende Sattmacher, Rückbezug zum Croissant.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_45",
+      "visual_type": "food_structure",
+      "visible_change": "The croissant's inside is mostly air and thin buttery layers.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Croissant oder Kuchen sind nicht verboten; sie liefern nur viel Energie mit wenig Sättigung. Blutzuckerdips betreffen nicht jeden gleich."
+    },
+    {
+      "id": "SV_046",
+      "voiceover_text": "In dem Experiment wurden achtunddreißig Lebensmittel getestet.",
+      "function": "comparison",
+      "learning_goal": "Umfang des Sättigungsindex-Experiments.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_46",
+      "visual_type": "educational_comparison",
+      "visible_change": "Many different foods were tested with the same calories.",
+      "scene_difference": "zum vorherigen Bild: cat wechseln; zum nächsten Bild: cat wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Croissant oder Kuchen sind nicht verboten; sie liefern nur viel Energie mit wenig Sättigung. Blutzuckerdips betreffen nicht jeden gleich."
+    },
+    {
+      "id": "SV_047",
+      "voiceover_text": "Am längsten satt hielten vor allem solche mit viel Eiweiß, Ballaststoffen und Wasser.",
+      "function": "comparison",
+      "learning_goal": "Eiweiß, Ballaststoffe und Wasser sind die Sattmacher.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_47",
+      "visual_type": "food_structure",
+      "visible_change": "Foods rich in protein, fiber and water send strong turquoise satiety signals.",
+      "scene_difference": "zum vorherigen Bild: cat wechseln; zum nächsten Bild: cat wechseln",
+      "labels": [
+        "Eiweiß",
+        "Ballaststoffe"
+      ],
+      "misconception_to_avoid": "Croissant oder Kuchen sind nicht verboten; sie liefern nur viel Energie mit wenig Sättigung. Blutzuckerdips betreffen nicht jeden gleich."
+    },
+    {
+      "id": "SV_048",
+      "voiceover_text": "Sehr fettreiche Lebensmittel schnitten eher schlecht ab.",
+      "function": "comparison",
+      "learning_goal": "Viel Fett pro Kalorie sättigt wenig.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_48",
+      "visual_type": "macro",
+      "visible_change": "Fat-rich pastry layers produce only a weak satiety glow.",
+      "scene_difference": "zum vorherigen Bild: cat wechseln; zum nächsten Bild: cat wechseln",
+      "labels": [
+        "Fett"
+      ],
+      "misconception_to_avoid": "Croissant oder Kuchen sind nicht verboten; sie liefern nur viel Energie mit wenig Sättigung. Blutzuckerdips betreffen nicht jeden gleich."
+    },
+    {
+      "id": "SV_049",
+      "voiceover_text": "Kartoffeln, Fisch, Haferbrei und Orangen lagen weit vorne. Croissant, Kuchen und Schokoriegel ganz hinten.",
+      "function": "comparison",
+      "learning_goal": "Rangliste der sättigendsten Lebensmittel.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_49",
+      "visual_type": "educational_comparison",
+      "visible_change": "Foods are ranked along a ribbon: potatoes, fish, porridge and oranges at the top, pastry and sweets at the bottom.",
+      "scene_difference": "zum vorherigen Bild: cat wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Croissant oder Kuchen sind nicht verboten; sie liefern nur viel Energie mit wenig Sättigung. Blutzuckerdips betreffen nicht jeden gleich."
+    },
+    {
+      "id": "SV_050",
+      "voiceover_text": "Warum? Eiweiß löst besonders kräftige Sattsignale im Darm aus.",
+      "function": "comparison",
+      "learning_goal": "Eiweiß verstärkt Sättigungshormone.",
+      "claim_ids": [
+        "C01",
+        "C04"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_50",
+      "visual_type": "macro",
+      "visible_change": "Protein triggers a particularly strong release of satiety hormones.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [
+        "Eiweiß"
+      ],
+      "misconception_to_avoid": "Croissant oder Kuchen sind nicht verboten; sie liefern nur viel Energie mit wenig Sättigung. Blutzuckerdips betreffen nicht jeden gleich."
+    },
+    {
+      "id": "SV_051",
+      "voiceover_text": "Ballaststoffe und Wasser bringen Volumen, ohne viele Kalorien.",
+      "function": "comparison",
+      "learning_goal": "Volumen ohne viele Kalorien.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_51",
+      "visual_type": "cutaway",
+      "visible_change": "Fiber and water fill the stomach with volume while carrying little energy.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Croissant oder Kuchen sind nicht verboten; sie liefern nur viel Energie mit wenig Sättigung. Blutzuckerdips betreffen nicht jeden gleich."
+    },
+    {
+      "id": "SV_052",
+      "voiceover_text": "Manche Ballaststoffe, etwa aus Hafer, binden Wasser zu einer Art Gel. Das bremst die Verdauung.",
+      "function": "comparison",
+      "learning_goal": "Lösliche Ballaststoffe bilden ein Gel und bremsen die Verdauung.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Molekül",
+      "new_image_required": true,
+      "image_asset_id": "Bild_52",
+      "visual_type": "macro",
+      "visible_change": "Oat fiber forms a gel that holds water and slows the movement of nutrients.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [
+        "Hafer",
+        "Gel"
+      ],
+      "misconception_to_avoid": "Croissant oder Kuchen sind nicht verboten; sie liefern nur viel Energie mit wenig Sättigung. Blutzuckerdips betreffen nicht jeden gleich."
+    },
+    {
+      "id": "SV_053",
+      "voiceover_text": "Ein Croissant dagegen ist vor allem Fett und Weißmehl.",
+      "function": "comparison",
+      "learning_goal": "Zusammensetzung des Croissants.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_53",
+      "visual_type": "food_structure",
+      "visible_change": "The croissant breaks down into mainly fat and refined flour.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat wechseln",
+      "labels": [
+        "Fett",
+        "Weißmehl"
+      ],
+      "misconception_to_avoid": "Croissant oder Kuchen sind nicht verboten; sie liefern nur viel Energie mit wenig Sättigung. Blutzuckerdips betreffen nicht jeden gleich."
+    },
+    {
+      "id": "SV_054",
+      "voiceover_text": "Viel Energie in einem kleinen, luftigen Paket.",
+      "function": "comparison",
+      "learning_goal": "Energiedichte im Vergleich.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_54",
+      "visual_type": "educational_comparison",
+      "visible_change": "The small croissant carries as much energy as a big plate of potatoes.",
+      "scene_difference": "zum vorherigen Bild: cat wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Croissant oder Kuchen sind nicht verboten; sie liefern nur viel Energie mit wenig Sättigung. Blutzuckerdips betreffen nicht jeden gleich."
+    },
+    {
+      "id": "SV_055",
+      "voiceover_text": "Bei manchen Menschen kommt noch etwas dazu.",
+      "function": "comparison",
+      "learning_goal": "Überleitung zum Blutzucker.",
+      "claim_ids": [
+        "C08"
+      ],
+      "scale_level": "Alltag",
+      "new_image_required": true,
+      "image_asset_id": "Bild_55",
+      "visual_type": "everyday_context",
+      "visible_change": "A glucose sensor introduces the blood sugar topic.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Croissant oder Kuchen sind nicht verboten; sie liefern nur viel Energie mit wenig Sättigung. Blutzuckerdips betreffen nicht jeden gleich."
+    },
+    {
+      "id": "SV_056",
+      "voiceover_text": "Ihr Blutzucker fällt zwei bis drei Stunden nach dem Essen unter den Ausgangswert.",
+      "function": "comparison",
+      "learning_goal": "Blutzuckerdip nach dem Essen.",
+      "claim_ids": [
+        "C08"
+      ],
+      "scale_level": "Molekül",
+      "new_image_required": true,
+      "image_asset_id": "Bild_56",
+      "visual_type": "educational_comparison",
+      "visible_change": "Blood sugar rises after eating and then dips below the starting level.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [
+        "Blutzucker"
+      ],
+      "misconception_to_avoid": "Croissant oder Kuchen sind nicht verboten; sie liefern nur viel Energie mit wenig Sättigung. Blutzuckerdips betreffen nicht jeden gleich."
+    },
+    {
+      "id": "SV_057",
+      "voiceover_text": "In einer großen Studie mit über tausend Teilnehmern hatten genau diese Menschen danach mehr Hunger.",
+      "function": "comparison",
+      "learning_goal": "Blutzuckerdips gehen mit mehr Hunger einher.",
+      "claim_ids": [
+        "C08"
+      ],
+      "scale_level": "Zelle",
+      "new_image_required": true,
+      "image_asset_id": "Bild_57",
+      "visual_type": "mechanism",
+      "visible_change": "The blood sugar dip is linked to a stronger hunger signal.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Croissant oder Kuchen sind nicht verboten; sie liefern nur viel Energie mit wenig Sättigung. Blutzuckerdips betreffen nicht jeden gleich."
+    },
+    {
+      "id": "SV_058",
+      "voiceover_text": "Und sie aßen im Laufe des Tages mehr.",
+      "function": "comparison",
+      "learning_goal": "Folge: höhere Tagesaufnahme.",
+      "claim_ids": [
+        "C08"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_58",
+      "visual_type": "educational_comparison",
+      "visible_change": "People with the dip end up eating more over the day.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Croissant oder Kuchen sind nicht verboten; sie liefern nur viel Energie mit wenig Sättigung. Blutzuckerdips betreffen nicht jeden gleich."
+    },
+    {
+      "id": "SV_059",
+      "voiceover_text": "Grund Nummer vier: stark verarbeitetes Essen.",
+      "function": "comparison",
+      "learning_goal": "Grund 4: stark verarbeitete Lebensmittel.",
+      "claim_ids": [
+        "C09"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_59",
+      "visual_type": "food_structure",
+      "visible_change": "Typical highly processed foods are shown.",
+      "scene_difference": "zum vorherigen Bild: cat wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Ein einzelnes verarbeitetes Produkt macht nicht dick; die Studie zeigt einen Effekt der gesamten Ernährungsweise unter Klinikbedingungen."
+    },
+    {
+      "id": "SV_060",
+      "voiceover_text": "In einem Experiment der US-Gesundheitsbehörde NIH lebten Erwachsene vier Wochen in einer Klinik.",
+      "function": "comparison",
+      "learning_goal": "Versuchsaufbau der NIH-Studie.",
+      "claim_ids": [
+        "C09"
+      ],
+      "scale_level": "Alltag",
+      "new_image_required": true,
+      "image_asset_id": "Bild_60",
+      "visual_type": "everyday_context",
+      "visible_change": "The study took place under controlled clinical conditions.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Ein einzelnes verarbeitetes Produkt macht nicht dick; die Studie zeigt einen Effekt der gesamten Ernährungsweise unter Klinikbedingungen."
+    },
+    {
+      "id": "SV_061",
+      "voiceover_text": "Zwei Wochen lang gab es stark verarbeitete Lebensmittel, zwei Wochen lang kaum verarbeitete.",
+      "function": "comparison",
+      "learning_goal": "Zwei Ernährungsphasen im Vergleich.",
+      "claim_ids": [
+        "C09"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_61",
+      "visual_type": "educational_comparison",
+      "visible_change": "Highly processed and minimally processed meals are compared directly.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [
+        "verarbeitet",
+        "kaum verarbeitet"
+      ],
+      "misconception_to_avoid": "Ein einzelnes verarbeitetes Produkt macht nicht dick; die Studie zeigt einen Effekt der gesamten Ernährungsweise unter Klinikbedingungen."
+    },
+    {
+      "id": "SV_062",
+      "voiceover_text": "Sie durften essen, so viel sie wollten.",
+      "function": "comparison",
+      "learning_goal": "Freie Nahrungsaufnahme.",
+      "claim_ids": [
+        "C09"
+      ],
+      "scale_level": "Alltag",
+      "new_image_required": true,
+      "image_asset_id": "Bild_62",
+      "visual_type": "human_action",
+      "visible_change": "Participants could serve themselves freely.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Ein einzelnes verarbeitetes Produkt macht nicht dick; die Studie zeigt einen Effekt der gesamten Ernährungsweise unter Klinikbedingungen."
+    },
+    {
+      "id": "SV_063",
+      "voiceover_text": "Mit dem stark verarbeiteten Essen nahmen sie im Schnitt rund fünfhundert Kilokalorien mehr pro Tag zu sich.",
+      "function": "comparison",
+      "learning_goal": "Ergebnis: etwa 500 kcal mehr pro Tag.",
+      "claim_ids": [
+        "C09"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_63",
+      "visual_type": "educational_comparison",
+      "visible_change": "On the processed diet, people ate an extra meal's worth of energy every day.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat wechseln",
+      "labels": [
+        "500 kcal mehr"
+      ],
+      "misconception_to_avoid": "Ein einzelnes verarbeitetes Produkt macht nicht dick; die Studie zeigt einen Effekt der gesamten Ernährungsweise unter Klinikbedingungen."
+    },
+    {
+      "id": "SV_064",
+      "voiceover_text": "Und sie aßen schneller.",
+      "function": "comparison",
+      "learning_goal": "Verarbeitetes Essen wird schneller gegessen.",
+      "claim_ids": [
+        "C09"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_64",
+      "visual_type": "food_structure",
+      "visible_change": "Soft processed food is eaten quickly, firm whole food needs more chewing.",
+      "scene_difference": "zum vorherigen Bild: cat wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Ein einzelnes verarbeitetes Produkt macht nicht dick; die Studie zeigt einen Effekt der gesamten Ernährungsweise unter Klinikbedingungen."
+    },
+    {
+      "id": "SV_065",
+      "voiceover_text": "Grund Nummer fünf: zu wenig Schlaf. Das ist das Signal aus dem Schlafzimmer.",
+      "function": "comparison",
+      "learning_goal": "Grund 5: Schlafmangel, Auflösung des Schlafzimmer-Hinweises.",
+      "claim_ids": [
+        "C10"
+      ],
+      "scale_level": "Alltag",
+      "new_image_required": true,
+      "image_asset_id": "Bild_65",
+      "visual_type": "everyday_context",
+      "visible_change": "Too little sleep is introduced as a hunger factor.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Eine kurze Nacht ist kein Drama; die Studie zeigt kurzfristige Hormonverschiebungen bei wenigen jungen Männern."
+    },
+    {
+      "id": "SV_066",
+      "voiceover_text": "In einer Studie schliefen junge Männer zwei Nächte lang nur etwa vier Stunden.",
+      "function": "comparison",
+      "learning_goal": "Versuchsaufbau der Schlafstudie.",
+      "claim_ids": [
+        "C10"
+      ],
+      "scale_level": "Alltag",
+      "new_image_required": true,
+      "image_asset_id": "Bild_66",
+      "visual_type": "educational_comparison",
+      "visible_change": "One group sleeps a full night, the other only a short part of it.",
+      "scene_difference": "zum vorherigen Bild: cat wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Eine kurze Nacht ist kein Drama; die Studie zeigt kurzfristige Hormonverschiebungen bei wenigen jungen Männern."
+    },
+    {
+      "id": "SV_067",
+      "voiceover_text": "Danach war ihr Ghrelin um rund achtundzwanzig Prozent höher als nach zwei langen Nächten.",
+      "function": "comparison",
+      "learning_goal": "Schlafmangel erhöht Ghrelin.",
+      "claim_ids": [
+        "C10"
+      ],
+      "scale_level": "Molekül",
+      "new_image_required": true,
+      "image_asset_id": "Bild_67",
+      "visual_type": "mechanism",
+      "visible_change": "After short sleep there are clearly more hunger hormone particles in the blood.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [
+        "Ghrelin"
+      ],
+      "misconception_to_avoid": "Eine kurze Nacht ist kein Drama; die Studie zeigt kurzfristige Hormonverschiebungen bei wenigen jungen Männern."
+    },
+    {
+      "id": "SV_068",
+      "voiceover_text": "Leptin, ein Signal aus dem Fettgewebe, das dem Gehirn volle Reserven meldet, war um achtzehn Prozent niedriger.",
+      "function": "comparison",
+      "learning_goal": "Schlafmangel senkt Leptin.",
+      "claim_ids": [
+        "C10"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_68",
+      "visual_type": "macro",
+      "visible_change": "Fat tissue sends fewer violet 'reserves are full' signals after short sleep.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [
+        "Leptin",
+        "Fettgewebe"
+      ],
+      "misconception_to_avoid": "Eine kurze Nacht ist kein Drama; die Studie zeigt kurzfristige Hormonverschiebungen bei wenigen jungen Männern."
+    },
+    {
+      "id": "SV_069",
+      "voiceover_text": "Ihr Hunger stieg um fast ein Viertel.",
+      "function": "comparison",
+      "learning_goal": "Hunger steigt um etwa ein Viertel.",
+      "claim_ids": [
+        "C10"
+      ],
+      "scale_level": "Molekül",
+      "new_image_required": true,
+      "image_asset_id": "Bild_69",
+      "visual_type": "educational_comparison",
+      "visible_change": "The balance tips strongly toward hunger.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [
+        "Hunger"
+      ],
+      "misconception_to_avoid": "Eine kurze Nacht ist kein Drama; die Studie zeigt kurzfristige Hormonverschiebungen bei wenigen jungen Männern."
+    },
+    {
+      "id": "SV_070",
+      "voiceover_text": "Und besonders stieg ihr Appetit auf kalorienreiche, kohlenhydratreiche Lebensmittel.",
+      "function": "comparison",
+      "learning_goal": "Schlafmangel verstärkt Appetit auf Energiedichtes.",
+      "claim_ids": [
+        "C10"
+      ],
+      "scale_level": "Alltag",
+      "new_image_required": true,
+      "image_asset_id": "Bild_70",
+      "visual_type": "human_action",
+      "visible_change": "Sleep-deprived people especially crave energy-dense carbohydrate snacks.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Eine kurze Nacht ist kein Drama; die Studie zeigt kurzfristige Hormonverschiebungen bei wenigen jungen Männern."
+    },
+    {
+      "id": "SV_071",
+      "voiceover_text": "Grund Nummer sechs ist vielleicht der gemeinste: Appetit ist nicht dasselbe wie Hunger.",
+      "function": "comparison",
+      "learning_goal": "Unterschied zwischen Hunger und Appetit.",
+      "claim_ids": [
+        "C11"
+      ],
+      "scale_level": "Körper",
+      "new_image_required": true,
+      "image_asset_id": "Bild_71",
+      "visual_type": "educational_comparison",
+      "visible_change": "Hunger comes from the body; appetite comes from senses like smell and sight.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [
+        "Hunger",
+        "Appetit"
+      ],
+      "misconception_to_avoid": "Appetit ist kein Charakterfehler; Sinnesreize und Abwechslung steuern die Nahrungsaufnahme biologisch mit."
+    },
+    {
+      "id": "SV_072",
+      "voiceover_text": "Schon der Duft von frischem Gebäck kann deinen Körper auf Essen vorbereiten.",
+      "function": "comparison",
+      "learning_goal": "Duft als Auslöser.",
+      "claim_ids": [
+        "C11"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_72",
+      "visual_type": "food_structure",
+      "visible_change": "The smell of fresh baked goods spreads and acts as a trigger.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Appetit ist kein Charakterfehler; Sinnesreize und Abwechslung steuern die Nahrungsaufnahme biologisch mit."
+    },
+    {
+      "id": "SV_073",
+      "voiceover_text": "Dein Mund produziert Speichel, und dein Verdauungssystem macht sich startklar, bevor du einen Bissen gegessen hast.",
+      "function": "comparison",
+      "learning_goal": "Kopfphase der Verdauung.",
+      "claim_ids": [
+        "C11"
+      ],
+      "scale_level": "Körper",
+      "new_image_required": true,
+      "image_asset_id": "Bild_73",
+      "visual_type": "cutaway",
+      "visible_change": "Smell alone makes saliva flow and prepares the stomach.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [
+        "Speichel"
+      ],
+      "misconception_to_avoid": "Appetit ist kein Charakterfehler; Sinnesreize und Abwechslung steuern die Nahrungsaufnahme biologisch mit."
+    },
+    {
+      "id": "SV_074",
+      "voiceover_text": "Und damit zur Frage vom Anfang: Warum passt der Nachtisch noch rein?",
+      "function": "comparison",
+      "learning_goal": "Auflösung des Open Loops beginnt.",
+      "claim_ids": [
+        "C11"
+      ],
+      "scale_level": "Alltag",
+      "new_image_required": true,
+      "image_asset_id": "Bild_74",
+      "visual_type": "everyday_context",
+      "visible_change": "The dessert question from the beginning returns.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Appetit ist kein Charakterfehler; Sinnesreize und Abwechslung steuern die Nahrungsaufnahme biologisch mit."
+    },
+    {
+      "id": "SV_075",
+      "voiceover_text": "Forschende nennen das sensorisch-spezifische Sättigung.",
+      "function": "comparison",
+      "learning_goal": "Begriff sensorisch-spezifische Sättigung.",
+      "claim_ids": [
+        "C11"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_75",
+      "visual_type": "mechanism",
+      "visible_change": "Only the food already eaten loses its appeal; a different food still attracts.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Appetit ist kein Charakterfehler; Sinnesreize und Abwechslung steuern die Nahrungsaufnahme biologisch mit."
+    },
+    {
+      "id": "SV_076",
+      "voiceover_text": "Je mehr du von einem Essen isst, desto weniger reizt dich genau dieses Essen.",
+      "function": "comparison",
+      "learning_goal": "Der Reiz eines Essens sinkt beim Essen.",
+      "claim_ids": [
+        "C11"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_76",
+      "visual_type": "educational_comparison",
+      "visible_change": "The same food becomes less appealing with every portion.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Appetit ist kein Charakterfehler; Sinnesreize und Abwechslung steuern die Nahrungsaufnahme biologisch mit."
+    },
+    {
+      "id": "SV_077",
+      "voiceover_text": "Nach einem Teller Nudeln mit Tomatensoße lockt dich ein zweiter Teller kaum.",
+      "function": "comparison",
+      "learning_goal": "Gleiches Essen lockt nicht mehr.",
+      "claim_ids": [
+        "C11"
+      ],
+      "scale_level": "Alltag",
+      "new_image_required": true,
+      "image_asset_id": "Bild_77",
+      "visual_type": "human_action",
+      "visible_change": "A second portion of the same dish is refused.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Appetit ist kein Charakterfehler; Sinnesreize und Abwechslung steuern die Nahrungsaufnahme biologisch mit."
+    },
+    {
+      "id": "SV_078",
+      "voiceover_text": "Aber etwas Süßes, Kaltes, völlig anderes? Das wirkt plötzlich wieder spannend.",
+      "function": "comparison",
+      "learning_goal": "Neuer Geschmack weckt neuen Appetit.",
+      "claim_ids": [
+        "C11"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_78",
+      "visual_type": "food_structure",
+      "visible_change": "A completely different food reawakens appetite.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Appetit ist kein Charakterfehler; Sinnesreize und Abwechslung steuern die Nahrungsaufnahme biologisch mit."
+    },
+    {
+      "id": "SV_079",
+      "voiceover_text": "In Versuchen aßen Menschen bei abwechslungsreichen Menüs deutlich mehr als bei einem einzigen Gericht.",
+      "function": "comparison",
+      "learning_goal": "Abwechslung erhöht die Essmenge.",
+      "claim_ids": [
+        "C11"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_79",
+      "visual_type": "educational_comparison",
+      "visible_change": "With more variety, people eat considerably more.",
+      "scene_difference": "zum vorherigen Bild: cat wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Appetit ist kein Charakterfehler; Sinnesreize und Abwechslung steuern die Nahrungsaufnahme biologisch mit."
+    },
+    {
+      "id": "SV_080",
+      "voiceover_text": "Was heißt das jetzt für deinen Alltag? Du kannst die Signale gezielt für dich arbeiten lassen.",
+      "function": "result",
+      "learning_goal": "Überleitung zu den praktischen Tipps.",
+      "claim_ids": [
+        "C04"
+      ],
+      "scale_level": "Körper",
+      "new_image_required": true,
+      "image_asset_id": "Bild_80",
+      "visual_type": "process_path",
+      "visible_change": "All satiety signals can be supported at the same time.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Keine Diät und keine Garantie zum Abnehmen; es geht um Mahlzeiten, die länger angenehm satt halten."
+    },
+    {
+      "id": "SV_081",
+      "voiceover_text": "Erstens: Pack in jede Hauptmahlzeit eine Eiweißquelle, zum Beispiel Joghurt, Eier, Linsen, Fisch oder Tofu.",
+      "function": "result",
+      "learning_goal": "Tipp 1: Eiweißquelle in jede Hauptmahlzeit.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_81",
+      "visual_type": "food_structure",
+      "visible_change": "Five everyday protein sources are offered as options.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, frame wechseln",
+      "labels": [
+        "Eiweiß"
+      ],
+      "misconception_to_avoid": "Keine Diät und keine Garantie zum Abnehmen; es geht um Mahlzeiten, die länger angenehm satt halten."
+    },
+    {
+      "id": "SV_082",
+      "voiceover_text": "Zweitens: Gib Ballaststoffe und Volumen dazu, also Gemüse, Obst, Vollkorn oder Bohnen.",
+      "function": "result",
+      "learning_goal": "Tipp 2: Ballaststoffe und Volumen.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_82",
+      "visual_type": "human_action",
+      "visible_change": "A meal becomes bigger and richer in fiber through vegetables, beans and whole grains.",
+      "scene_difference": "zum vorherigen Bild: cat, frame wechseln; zum nächsten Bild: cat, frame wechseln",
+      "labels": [
+        "Ballaststoffe"
+      ],
+      "misconception_to_avoid": "Keine Diät und keine Garantie zum Abnehmen; es geht um Mahlzeiten, die länger angenehm satt halten."
+    },
+    {
+      "id": "SV_083",
+      "voiceover_text": "Drittens: Iss deine Kalorien, statt sie zu trinken. Ein Apfel statt Saft, Wasser statt Limo.",
+      "function": "result",
+      "learning_goal": "Tipp 3: kauen statt trinken.",
+      "claim_ids": [
+        "C07"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_83",
+      "visual_type": "educational_comparison",
+      "visible_change": "The better choices – whole fruit and water – are highlighted against juice and soda.",
+      "scene_difference": "zum vorherigen Bild: cat, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Keine Diät und keine Garantie zum Abnehmen; es geht um Mahlzeiten, die länger angenehm satt halten."
+    },
+    {
+      "id": "SV_084",
+      "voiceover_text": "Viertens: Gib deinem Darm Zeit, sich zu melden. Leg zwischendurch die Gabel ab.",
+      "function": "result",
+      "learning_goal": "Tipp 4: langsamer essen.",
+      "claim_ids": [
+        "C06"
+      ],
+      "scale_level": "Alltag",
+      "new_image_required": true,
+      "image_asset_id": "Bild_84",
+      "visual_type": "human_action",
+      "visible_change": "A pause during the meal gives the satiety signal time to arrive.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Keine Diät und keine Garantie zum Abnehmen; es geht um Mahlzeiten, die länger angenehm satt halten."
+    },
+    {
+      "id": "SV_085",
+      "voiceover_text": "Und fünftens: Schlaf ist kein Luxus, sondern Teil deiner Hungerregulation.",
+      "function": "result",
+      "learning_goal": "Tipp 5: ausreichend schlafen.",
+      "claim_ids": [
+        "C10"
+      ],
+      "scale_level": "Molekül",
+      "new_image_required": true,
+      "image_asset_id": "Bild_85",
+      "visual_type": "mechanism",
+      "visible_change": "After enough sleep the hunger and satiety signals are balanced again.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Keine Diät und keine Garantie zum Abnehmen; es geht um Mahlzeiten, die länger angenehm satt halten."
+    },
+    {
+      "id": "SV_086",
+      "voiceover_text": "Und wenn du trotz allem plötzlich und anhaltend viel mehr Hunger hast als früher,",
+      "function": "result",
+      "learning_goal": "Warnzeichen: plötzlich stark erhöhter Hunger.",
+      "claim_ids": [
+        "C12"
+      ],
+      "scale_level": "Körper",
+      "new_image_required": true,
+      "image_asset_id": "Bild_86",
+      "visual_type": "mechanism",
+      "visible_change": "An unusually strong and persistent hunger signal is shown.",
+      "scene_difference": "zum vorherigen Bild: scale, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Keine Diät und keine Garantie zum Abnehmen; es geht um Mahlzeiten, die länger angenehm satt halten."
+    },
+    {
+      "id": "SV_087",
+      "voiceover_text": "zusammen mit großem Durst oder ungewolltem Gewichtsverlust, dann lass das ärztlich abklären.",
+      "function": "result",
+      "learning_goal": "Medizinische Abklärung bei Warnzeichen.",
+      "claim_ids": [
+        "C12"
+      ],
+      "scale_level": "Alltag",
+      "new_image_required": true,
+      "image_asset_id": "Bild_87",
+      "visual_type": "everyday_context",
+      "visible_change": "A doctor's visit is the right step for unusual hunger with other symptoms.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Keine Diät und keine Garantie zum Abnehmen; es geht um Mahlzeiten, die länger angenehm satt halten."
+    },
+    {
+      "id": "SV_088",
+      "voiceover_text": "Hunger ist also kein Fehler und kein Zeichen von Schwäche.",
+      "function": "result",
+      "learning_goal": "Hunger ist normale Körperregulation.",
+      "claim_ids": [
+        "C02",
+        "C04"
+      ],
+      "scale_level": "Körper",
+      "new_image_required": true,
+      "image_asset_id": "Bild_88",
+      "visual_type": "process_path",
+      "visible_change": "Hunger is presented as a normal body system, not a flaw.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Hunger ist kein Fehler und kein Zeichen von Schwäche, sondern normale Regulation."
+    },
+    {
+      "id": "SV_089",
+      "voiceover_text": "Er ist ein Gespräch zwischen Magen, Darm, Fettgewebe und Gehirn.",
+      "function": "result",
+      "learning_goal": "Vier Organe kommunizieren über Hunger.",
+      "claim_ids": [
+        "C02",
+        "C04",
+        "C10"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_89",
+      "visual_type": "process_path",
+      "visible_change": "The four organs exchange signals with each other.",
+      "scene_difference": "zum vorherigen Bild: scale, frame wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Hunger ist kein Fehler und kein Zeichen von Schwäche, sondern normale Regulation."
+    },
+    {
+      "id": "SV_090",
+      "voiceover_text": "Ghrelin ruft nach Essen. Dehnung, Darmhormone und Leptin antworten: Es reicht.",
+      "function": "result",
+      "learning_goal": "Zusammenfassung der Signale.",
+      "claim_ids": [
+        "C02",
+        "C04"
+      ],
+      "scale_level": "Molekül",
+      "new_image_required": true,
+      "image_asset_id": "Bild_90",
+      "visual_type": "educational_comparison",
+      "visible_change": "The hunger signal and all satiety signals are weighed against each other.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: scale wechseln",
+      "labels": [
+        "Ghrelin",
+        "Sattsignale"
+      ],
+      "misconception_to_avoid": "Hunger ist kein Fehler und kein Zeichen von Schwäche, sondern normale Regulation."
+    },
+    {
+      "id": "SV_091",
+      "voiceover_text": "Welche Seite gewinnt, hängt davon ab, was du isst, wie schnell du isst und wie gut du schläfst.",
+      "function": "result",
+      "learning_goal": "Drei Stellschrauben im Alltag.",
+      "claim_ids": [
+        "C01",
+        "C06",
+        "C10"
+      ],
+      "scale_level": "Alltag",
+      "new_image_required": true,
+      "image_asset_id": "Bild_91",
+      "visual_type": "educational_comparison",
+      "visible_change": "Food choice, eating speed and sleep decide which side of the balance wins.",
+      "scene_difference": "zum vorherigen Bild: scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Hunger ist kein Fehler und kein Zeichen von Schwäche, sondern normale Regulation."
+    },
+    {
+      "id": "SV_092",
+      "voiceover_text": "Und während dein Gehirn noch über Hunger verhandelt,",
+      "function": "result",
+      "learning_goal": "Überleitung zum Verdauungsvideo.",
+      "claim_ids": [
+        "C04"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_92",
+      "visual_type": "mechanism",
+      "visible_change": "The brain is still weighing hunger and satiety.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Hunger ist kein Fehler und kein Zeichen von Schwäche, sondern normale Regulation."
+    },
+    {
+      "id": "SV_093",
+      "voiceover_text": "ist dein Essen längst auf einer langen Reise durch deinen Körper.",
+      "function": "result",
+      "learning_goal": "Brücke: die Reise des Essens.",
+      "claim_ids": [
+        "C04"
+      ],
+      "scale_level": "Körper",
+      "new_image_required": true,
+      "image_asset_id": "Bild_93",
+      "visual_type": "process_path",
+      "visible_change": "Food continues its journey through the digestive tract.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Hunger ist kein Fehler und kein Zeichen von Schwäche, sondern normale Regulation."
+    },
+    {
+      "id": "SV_094",
+      "voiceover_text": "Was dabei mit jedem Bissen passiert, siehst du in unserem Video über die Reise einer Pizza.",
+      "function": "result",
+      "learning_goal": "Endscreen-Brücke zum Pizza-Video.",
+      "claim_ids": [
+        "C04"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_94",
+      "visual_type": "food_structure",
+      "visible_change": "Teaser for the companion video: the journey of a pizza slice.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Hunger ist kein Fehler und kein Zeichen von Schwäche, sondern normale Regulation."
+    }
+  ]
+}

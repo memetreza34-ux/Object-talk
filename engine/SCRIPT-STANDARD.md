@@ -206,3 +206,31 @@ Vor `PHASE-1-PASS` muessen alle Punkte bestehen:
 - Script ist 1:1 in die Voice-KI kopierbar
 
 Wenn einer dieser Punkte scheitert: Script ueberarbeiten, nicht produzieren.
+
+## 13. Retention-Handwerk – messbar, Pflicht ab Video 011
+
+Ergebnis der Kanal-Analyse 10/2026 (`engine/KANAL-ANALYSE-2026-10.md`): 008–010 waren fachlich sauber, aber zu vorsichtig und zu wenig konkret. Ab 011 gilt zusätzlich zu §1–12, geprüft mit `tools/script_quality.py` (in `validate_planning_v2.py` integriert):
+
+| Regel | Grenze | Warum |
+|---|---|---|
+| Konkrete, belegte Zahlen/Vergleiche | mindestens 6 (Ziel 15+) | Zahlen sind das, was Zuschauer weitererzählen |
+| Fragen an den Zuschauer | mindestens 3 | aktiviert, öffnet Abschnitte |
+| Absicherungswörter (kann, oft, manchmal, eher, bestimmte …) | höchstens 18 pro 1000 Wörter | Dauer-Absicherung klingt unsicher |
+| Disclaimer-Floskeln („Das bedeutet nicht …“, „Aber Vorsicht …“) | höchstens 2 | Einschränkung einmal klar sagen, nicht in jedem Absatz |
+| Open Loop | mindestens 1, Auflösung mindestens 15 Szenen später | hält Zuschauer bis zur Auflösung |
+| Sprechtext pro Bild | höchstens 19 Wörter und geschätzt höchstens 6,3 s | kein Standbild über 7 s |
+
+### Bauplan (umgesetzt in den Musterbeispielen unter `examples/storyboard-v2/`)
+
+1. **Cold Open in 3 Bildern (unter 10 s):** konkretes Objekt + überraschende Konsequenz („Du isst ein Croissant. Kurz darauf knurrt dein Magen schon wieder.“). Keine erfundenen Zeitangaben, auch nicht im Einstieg.
+2. **Paradox oder Experiment sofort:** echte Studie als Mini-Geschichte („In einem Experiment schnitten Kartoffeln fast siebenmal besser ab …“).
+3. **Versprechen + Open Loop:** eine Frage nennen, die erst am Ende beantwortet wird („Und ganz am Ende klären wir, warum der Nachtisch immer noch reinpasst.“). Nicht alle Themen im Intro aufzählen.
+4. **Roter Faden zum Mitzählen:** „Station eins … fünf“, „Grund Nummer eins … sechs“.
+5. **Akteure benennen und sofort übersetzen:** „Ghrelin, das Hungerhormon“, „der Vagusnerv, eine Art Datenkabel zwischen Bauch und Gehirn“.
+6. **Alle 45–75 Sekunden ein Re-Hook:** Mythos-Korrektur („Lange stand in Lehrbüchern … 2014 wurde nachgemessen“), Mitmach-Test („Kau ein Stück Brot sehr lange“), Alltagsbezug („GLP-1 kennst du vielleicht aus den Nachrichten“), Frage („Aber warum verdaut sich der Magen nicht selbst?“).
+7. **Studien richtig erzählen:** „In einem Versuch aßen Teilnehmer …“ + Kernergebnis + bei Bedarf **eine** kurze Einordnung. Zahlen ausgeschrieben (die Voice spricht sie sauber, `tools/text_normalize.py` gleicht Whisper-Ziffern ab).
+8. **Ein Gesundheitshinweis, an der richtigen Stelle:** einmal klar (z. B. ärztliche Abklärung bei Warnzeichen), der allgemeine Bildungshinweis steht in der Beschreibung.
+9. **Schluss:** Open Loop auflösen → Kernkette in 3 kurzen Sätzen → Brücke zu einem bereits veröffentlichten Partnervideo, das als Endscreen verlinkt wird („… siehst du in unserem Video über die Verdauung“). Kein „Danke fürs Zuschauen“.
+
+### Ton
+Neugierig, warm, leicht verschmitzt („Grund Nummer sechs ist vielleicht der gemeinste“, „Ja, auch die gehören zur Verdauung“). Kurze Sätze (Ø unter 14 Wörter), aktive Verben, Du-Ansprache. Wissenschaftlich korrekt heißt nicht vage, sondern präzise.

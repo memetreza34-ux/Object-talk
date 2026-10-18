@@ -1,0 +1,29 @@
+{
+  "rules": {
+    "source_script": "01_script/script.txt",
+    "coverage": "complete-no-gaps-no-overlaps",
+    "timing": "resolved-only-after-final-audio"
+  },
+  "scenes": [
+    {
+      "scene": 1,
+      "image": "Bild_01",
+      "speech_section": "[Exakter erster gesprochener Abschnitt aus script.txt]",
+      "start_anchor": "[Exakter Anfang dieser speech_section]",
+      "end_anchor": "[Exaktes Ende dieser speech_section]",
+      "description": "Cover / Hook",
+      "visual_task": "[Was der Zuschauer verstehen soll]",
+      "motion": "slow-push-in"
+    },
+    {
+      "scene": 2,
+      "image": "Bild_02",
+      "speech_section": "[Exakter naechster gesprochener Abschnitt aus script.txt ohne Luecke]",
+      "start_anchor": "[Exakter Anfang]",
+      "end_anchor": "[Exaktes Ende]",
+      "description": "[Inhalt der Szene]",
+      "visual_task": "[Visuelle Aufgabe]",
+      "motion": "pan-left"
+    }
+  ]
+}

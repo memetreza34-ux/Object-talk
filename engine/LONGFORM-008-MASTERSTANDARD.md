@@ -1,5 +1,7 @@
 # Object-Talk – Video 008 als verbindliche Longform-Produktionsreferenz
 
+> **Ab Video 011:** 008 liefert nur noch Bildwelt, Cover-first-Ablauf und Fünfergruppen. Promptaufbau, Planungsdateien, Antigravity-Auftrag und Dramaturgie kommen ausschließlich aus `.intern/05_info/storyboard-source.json` und `tools/build_phase1_package.py` (`engine/PLANNING-V2.md` §16, `engine/SCRIPT-STANDARD.md` §13); der Export folgt `engine/EXPORT-STANDARD.md`. Die Dramaturgie von 008 gilt laut `engine/KANAL-ANALYSE-2026-10.md` als zu lehrbuchhaft und wird nicht mehr kopiert.
+
 ## Goldstandard
 **Referenzvideo:** `youtube-videos/008-longform-verdauung/`
 **Referenzinhalt:** „Was passiert mit Essen in deinem Körper?“; erster positiv bewerteter 6–7-Minuten-Film.

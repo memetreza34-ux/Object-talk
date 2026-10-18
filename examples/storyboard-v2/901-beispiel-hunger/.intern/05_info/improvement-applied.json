@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "status": "APPLIED",
+  "source_review_video": null,
+  "lessons": [
+    {
+      "id": "BASE-CLARITY",
+      "implemented_as": "94 Einzelszenen mit je einem sichtbaren Vorgang; jede Szene hat Kamera/Maßstab, konkrete Komposition und höchstens 2 kurze Labels; lange Sätze in eigene Bilder geteilt (max. 19 Wörter pro Bild).",
+      "evidence_files": [
+        "examples/storyboard-v2/901-beispiel-hunger/.intern/05_info/storyboard-source.json",
+        "examples/storyboard-v2/901-beispiel-hunger/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt"
+      ],
+      "verification": "tools/build_phase1_package.py validiert Wortzahl, Labels, Kategorien und Bewegungen; Build PASS."
+    },
+    {
+      "id": "BASE-FLOW",
+      "implemented_as": "Ein einziger Textprompt ohne Uploads: drei getrennte Cover, Nutzerwahl-STOP, danach Bild_01 bis Bild_94 in Fünfergruppen; Cover nie Szene oder Stilvorlage.",
+      "evidence_files": [
+        "examples/storyboard-v2/901-beispiel-hunger/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt"
+      ],
+      "verification": "Statische Prüfung des generierten Prompts (WORKFLOW-Abschnitt, Batch-Marker alle fünf Bilder) und validate_planning_v2 PASS."
+    },
+    {
+      "id": "BASE-EXPORT",
+      "implemented_as": "03_export enthält nur Caption-Entwurf und Untertitel-Platzhalter; VIDEO.mp4 und COVER.png folgen erst nach echter Produktion; Antigravity-Auftrag nennt genau vier sichtbare Exportdateien.",
+      "evidence_files": [
+        "examples/storyboard-v2/901-beispiel-hunger/03_export/CAPTION-YOUTUBE.txt",
+        "examples/storyboard-v2/901-beispiel-hunger/.intern/03_pipeline/ANTIGRAVITY-PROMPT-ZUM-KOPIEREN.txt"
+      ],
+      "verification": "Ordnerinhalt geprüft: keine zusätzlichen sichtbaren Dateien, keine erfundenen Zeitstempel."
+    },
+    {
+      "id": "BASE-ILLUSTRATION-FIRST",
+      "implemented_as": "Mechanismus-Bilder statt Alltagsposen: Farbcode und Leitmotive (Signal-Waage bzw. Pizza-Farbcode, Orientierungskarte) im Prompt; Menschen nur als Hände/Ausschnitt, höchstens eine Ganzkörperszene.",
+      "evidence_files": [
+        "examples/storyboard-v2/901-beispiel-hunger/.intern/05_info/phase1-scenes.json",
+        "examples/storyboard-v2/901-beispiel-hunger/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt"
+      ],
+      "verification": "visual_storyboard_gate PASS (Erklärbild-Anteil, Menschen-Anteil, keine Personenserien)."
+    },
+    {
+      "id": "BASE-RETENTION-SCRIPT",
+      "implemented_as": "Neues Skript mit Experiment-Hook, nummerierten Gründen bzw. Stationen, mehreren Open Loops, 25 Zahlenangaben (alle Studien- und Mengenwerte in claim-matrix.md belegt), einem einzigen Gesundheitshinweis und Brücke zum Partnervideo.",
+      "evidence_files": [
+        "examples/storyboard-v2/901-beispiel-hunger/01_script/script.txt",
+        "examples/storyboard-v2/901-beispiel-hunger/.intern/05_info/claim-matrix.md",
+        "examples/storyboard-v2/901-beispiel-hunger/.intern/05_info/storyboard-source.json"
+      ],
+      "verification": "tools/script_quality.py PASS (Zahlen, Fragen, Absicherungsdichte, Disclaimer, Open-Loop-Abstand, Szenendauer)."
+    },
+    {
+      "id": "BASE-STORYBOARD-SOURCE",
+      "implemented_as": "Alle Phase-1-Dateien aus einer Storyboard-Quelle mit 94 handgeplanten Szenen erzeugt; nur erlaubte Bewegungen; Farbcode-Schlüssel im Flow-Prompt.",
+      "evidence_files": [
+        "examples/storyboard-v2/901-beispiel-hunger/.intern/05_info/storyboard-source.json",
+        "examples/storyboard-v2/901-beispiel-hunger/.intern/05_info/phase1-scenes.json",
+        "examples/storyboard-v2/901-beispiel-hunger/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt"
+      ],
+      "verification": "build_phase1_package PASS, validate_phase1 lückenlose Sprachabdeckung PASS, geschätzte Sprechzeit pro Bild max. 5,9 s; unabhängiges Review vor dem PR, 39 bestätigte Punkte behoben."
+    }
+  ],
+  "notes": "Neuauflage auf Nutzerwunsch vom 18.10.2026. Die Bildqualität ist erst nach echten Flow-Bildern prüfbar; hier nur Planungsnachweis."
+}

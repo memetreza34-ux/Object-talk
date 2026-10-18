@@ -22,12 +22,9 @@ from pathlib import Path
 
 from faster_whisper import WhisperModel
 
+from text_normalize import normalize_token  # digits/number words/% share one canonical form
+
 MAX_GROUP = 4
-
-
-def normalize_token(value: str) -> str:
-    value = unicodedata.normalize("NFKC", str(value)).lower().replace("ß", "ss")
-    return "".join(ch for ch in value if ch.isalnum())
 
 
 def tokenize(text: str) -> list[dict]:

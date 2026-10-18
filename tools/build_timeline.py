@@ -22,15 +22,11 @@ from __future__ import annotations
 
 import argparse
 import json
-import unicodedata
 from pathlib import Path
 
+from text_normalize import normalize_token  # same canonical form as transcribe_audio.py
+
 DEFAULT_MAX_SCENE_SECONDS = 7.0
-
-
-def normalize_token(value: str) -> str:
-    value = unicodedata.normalize("NFKC", str(value)).lower().replace("ß", "ss")
-    return "".join(ch for ch in value if ch.isalnum())
 
 
 def normalized_tokens(text: str) -> list[str]:

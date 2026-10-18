@@ -1,6 +1,6 @@
 # Themen-Gehirn
 
-Diese Datei ist das **Gedächtnis für alle langen YouTube-Videos** des Object-Talk-/FoodSpricht-Kanals.
+Diese Datei ist das **Gedächtnis für alle langen YouTube-Videos** des Kanals **Lebenslogik** (technischer Repo-Name Object-Talk).
 
 ## Zweck
 
@@ -39,26 +39,27 @@ Interne `TEST`-Piloten sind davon ausgenommen, wenn sie ausschließlich Pipeline
 
 | Nr. | Status | Hauptbereich | Thema | Kernaussage / Abgrenzung | Überschneidet sich mit |
 |---:|---|---|---|---|---|
-| 001 | IN ARBEIT | Verdauung | Was passiert mit Essen im Körper? | erstes reguläres Longform-Video; kompletter Weg Mund → Speiseröhre → Magen → Dünndarm → Blut/Lymphe → Dickdarm/Enddarm | – |
+| 001 | FERTIG (gerendert, 008) | Verdauung | Was passiert mit Essen im Körper? | erstes reguläres Longform-Video; kompletter Weg Mund → Speiseröhre → Magen → Dünndarm → Blut/Lymphe → Dickdarm/Enddarm | – |
 | 002 | IDEE | Zellbiologie | Was ist eine menschliche Zelle? | Aufbau und wichtigste Zellbestandteile verständlich erklären | – |
 | 003 | IDEE | Gehirn | Wie kommunizieren Nervenzellen? | Neuron, elektrisches Signal, Synapse, Neurotransmitter | – |
 | 004 | IDEE | Ernährung | Was macht Zucker im Körper? | spätere Longform: Aufnahme, Blutzucker, Insulin, Energie und Überschuss deutlich tiefer | Testpiloten 000/002 behandeln nur die Grundkette |
 | 005 | IDEE | Kreislauf | Wie transportiert Blut Sauerstoff? | spätere Longform: Sauerstofftransport deutlich tiefer, ggf. Sättigung, Belastung, Regulation | Testpiloten 001/005 behandeln nur die Grundreise |
 | 006 | IDEE | Immunsystem | Wie bekämpft der Körper Bakterien? | angeborene Immunabwehr vereinfacht erklären | Pilot 006 berührt Immunzellen nur im Kontext Wundheilung |
 | 007 | IDEE | Ernährung | Was passiert nach einer proteinreichen Mahlzeit? | Verdauung von Protein, Aminosäuren und Nutzung im Körper | Testpilot 003 berührt Protein nur als Baustoff für Muskelanpassung |
-| 008 | IN ARBEIT | Schlaf | Was passiert im Körper, während wir schlafen? | Gehirn, Erholung, Gedächtnis, Hormone und Schlafphasen als Überblick | – |
+| 008 | FERTIG (gerendert, 009) | Schlaf | Was passiert im Körper, während wir schlafen? | Gehirn, Erholung, Gedächtnis, Hormone und Schlafphasen als Überblick | – |
 | 009 | IDEE | Muskeln | Wie wächst ein Muskel? | spätere Longform: Training, Hypertrophie, Proteinsynthese, Ernährung, Regeneration und Progression deutlich tiefer | Testpilot 003 behandelt nur vereinfachte Grundkette |
 | 010 | IDEE | Gehirn | Wie entsteht eine Erinnerung? | Verarbeitung, Synapsen und Gedächtnisbildung vereinfacht | 003 teilweise |
 | 011 | IDEE | Haut | Wie heilt eine Wunde? | spätere Longform: Hämostase, Entzündung, Proliferation, Remodeling und Narbenbildung deutlich tiefer | Testpilot 006 behandelt nur die vereinfachte Grundkette |
 | 012 | IDEE | Haut/Nervensystem | Warum bekommen wir Gänsehaut? | spätere Longform könnte Thermoregulation, autonome Reaktionen und emotionale Piloerektion vertiefen | Testpilot 007 behandelt nur die kurze Grundkette |
-
-| 013 | IN ARBEIT | Ernährung / Sättigung | Warum bist du nach dem Essen schnell wieder hungrig? | 010: Magen-Gehirn-Signale, Protein, Ballaststoffe, Getränke, Snacks, Schlaf/Stress und praxistaugliche Mahlzeitideen | 008 erklärt den Verdauungsweg, 010 dagegen Hunger und Sättigung |
+| 013 | FERTIG (gerendert, 010) | Ernährung / Sättigung | Warum bist du nach dem Essen schnell wieder hungrig? | 010: Magen-Gehirn-Signale, Protein, Ballaststoffe, Getränke, Snacks, Schlaf/Stress und praxistaugliche Mahlzeitideen | 008 erklärt den Verdauungsweg, 010 dagegen Hunger und Sättigung |
 
 ## Aktive Longform-Produktion
 
-### 010 – Warum du nach dem Essen so schnell wieder Hunger hast?
+**Aktiv (Stand 18.10.2026):** keine. Das nächste neue Thema wird Projekt 011 (`python tools/create_video.py 011-longform-THEMA`). Die folgenden Abschnitte zu 010, 001 und 009 sind historisch.
 
-Projekt: `youtube-videos/010-longform-hunger/`. **Phase 1 vorbereitet, keine erzeugten Medien:** 1.044 gesprochene Wörter, 72 einfache bildspezifische Szenen, ein Google-Flow-Prompt mit drei separaten Coverentwürfen vor Nutzerwahl. Kein neuer Verdauungsfilm, sondern Hunger-/Sättigungsmechanismen mit alltagstauglichen Tipps. Wissenschaftliche Einschränkungen beachten, keine Abnehmgarantien. Quelle/Planung `010/.intern/05_info/`. Nutzername des Kanals: **Lebenslogik** (GitHub-Projekt weiterhin Object-Talk).
+### 010 – Warum du nach dem Essen so schnell wieder Hunger hast? (historisch, gerendert)
+
+Projekt: `youtube-videos/010-longform-hunger/`. **Damaliger Phase-1-Stand (inzwischen gerendert, 368,9 s):** 1.044 gesprochene Wörter, 72 einfache bildspezifische Szenen, ein Google-Flow-Prompt mit drei separaten Coverentwürfen vor Nutzerwahl. Kein neuer Verdauungsfilm, sondern Hunger-/Sättigungsmechanismen mit alltagstauglichen Tipps. Wissenschaftliche Einschränkungen beachten, keine Abnehmgarantien. Quelle/Planung `010/.intern/05_info/`. Nutzername des Kanals: **Lebenslogik** (GitHub-Projekt weiterhin Object-Talk).
 
 
 ### 001 – Was passiert mit Essen im Körper?
@@ -69,7 +70,7 @@ Projekt:
 youtube-videos/008-longform-verdauung/
 ```
 
-Status: `IN ARBEIT`
+Status: `FERTIG` (gerendert und veröffentlicht)
 
 Ziel:
 - erstes reguläres Longform-Video nach Abschluss der Testphase
@@ -285,9 +286,9 @@ Zusatzkontext:
 
 ## Bereits produzierte normale Videos
 
-Noch keine vollständig fertiggestellten normalen Videos.
-
-Thema 001 ist aktuell `IN ARBEIT`.
+- Thema 001 „Was passiert mit Essen im Körper?“ – Projekt `008-longform-verdauung`, gerendert und veröffentlicht
+- Thema 013 „Warum bist du nach dem Essen schnell wieder hungrig?“ – Projekt `010-longform-hunger`, gerendert und veröffentlicht
+- Thema 008 Schlaf – Projekt `009-longform-schlaf`, laut Repo-Historie vom Nutzer hochgeladen und gesichtet
 
 Der frühere Verdauungs-Pilot wurde auf Nutzerwunsch gelöscht und zählt nicht als produziert oder reserviert.
 
@@ -333,3 +334,14 @@ Interne `TEST`-Videos werden nur als Lern-/Pipelinehistorie geführt und dürfen
 - Lebensmittel und ihre Wirkung im Körper
 
 Die Liste wird laufend erweitert. Normale Kanalvideos bleiben Longform; kurze Projekte sind nur ausdrücklich gekennzeichnete interne Tests.
+
+## Keine Neuauflagen veröffentlichter Videos (18.10.2026)
+
+Bereits veröffentlichte Videos werden nicht neu aufgelegt, außer der Nutzer verlangt das ausdrücklich. Die Storyboards unter `examples/storyboard-v2/` (Hunger, Verdauung) sind nur Musterbeispiele für den neuen Ablauf. Sie reservieren kein Thema und werden nicht produziert. Begründung und Messwerte: `engine/KANAL-ANALYSE-2026-10.md`.
+
+### Themenvorschläge mit starkem Hook (IDEE, vor Auswahl prüfen)
+- Was Kaffee in deinem Körper macht – Minute für Minute (Adenosin)
+- Was passiert, wenn du 24 Stunden nichts isst? (Glykogen → Fettverbrennung)
+- Wie dein Körper Fett verbrennt – und wo es hingeht (größtenteils als CO₂ ausgeatmet)
+- Warum du nach dem Essen müde wirst
+- Was Alkohol in deinem Körper macht

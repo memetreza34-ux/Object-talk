@@ -1,0 +1,1603 @@
+{
+  "status": "READY",
+  "video_id": "901-beispiel-hunger",
+  "title": "Warum du kurz nach dem Essen schon wieder Hunger hast",
+  "generated_from": "storyboard-source.json",
+  "rules": {
+    "source": "01_script/script.txt",
+    "coverage": "complete-no-gaps-no-overlaps",
+    "scene_boundaries": "semantic-visual-beats-from-storyboard",
+    "one_main_idea_per_frame": true,
+    "prefer_more_images_over_overloaded_frame": true,
+    "omit_nonessential_information": true,
+    "max_labels_per_normal_image": 2,
+    "cover_title_only": true,
+    "cover_extra_labels_forbidden": true,
+    "text_contrast_required": true,
+    "remotion_text_overlays_allowed": false,
+    "production_ids_visible_in_images": false,
+    "cover_is_scene": false,
+    "cover_output": "03_export/COVER.png",
+    "visual_mix_v2": true
+  },
+  "scenes": [
+    {
+      "scene": 1,
+      "image": "Bild_01",
+      "chapter": "Das Croissant-Rätsel",
+      "chapter_start": true,
+      "speech_section": "Du isst ein Croissant.",
+      "visual_task": "Extreme close-up of two hands tearing a flaky golden croissant apart above a small white plate, buttery layers and crumbs flying, warm morning light, soft peach-to-cream gradient background; the croissant fills most of the frame.",
+      "explanation_visible": "The croissant is broken open, establishing the food the episode starts with.",
+      "visual_category": "food_structure",
+      "human_framing": "hands_or_crop",
+      "scale_level": "Lebensmittel",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 2,
+      "image": "Bild_02",
+      "chapter": "Das Croissant-Rätsel",
+      "chapter_start": false,
+      "speech_section": "Kurz darauf knurrt dein Magen schon wieder.",
+      "visual_task": "Side-view cutaway of an adult torso silhouette in soft cream; inside, a coral-pink stomach that is almost empty with only a few croissant crumbs; gentle warm-orange ripple rings pulse from the stomach wall like a quiet growl; an empty plate with crumbs rests in the soft-focus foreground.",
+      "explanation_visible": "Shortly after eating, the stomach is nearly empty again and sends a warm-orange hunger ripple.",
+      "visual_category": "cutaway",
+      "human_framing": "partial_person",
+      "scale_level": "Organ",
+      "motion": "slow-pull-out",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 3,
+      "image": "Bild_03",
+      "chapter": "Das Croissant-Rätsel",
+      "chapter_start": false,
+      "speech_section": "Mit gleich vielen Kalorien aus gekochten Kartoffeln wärst du deutlich länger satt geblieben.",
+      "visual_task": "An elegant hand-drawn brass-and-wood balance scale in perfect equilibrium: in the left bowl one small croissant, in the right bowl a generous heap of boiled potato halves that is visibly much larger; soft golden-cream background, warm side light.",
+      "explanation_visible": "Both foods carry the same energy, so the balance is level, yet the potato portion is far bigger.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Lebensmittel",
+      "motion": "pan-right",
+      "labels_de": [
+        "gleiche Kalorien"
+      ],
+      "labels": [
+        "gleiche Kalorien"
+      ]
+    },
+    {
+      "scene": 4,
+      "image": "Bild_04",
+      "chapter": "Das Croissant-Rätsel",
+      "chapter_start": false,
+      "speech_section": "In einem bekannten Experiment schnitten Kartoffeln beim Sättigungsgefühl fast siebenmal besser ab als das Croissant.",
+      "visual_task": "Two simplified coral stomachs side by side on a calm light-teal background: the left stomach, labelled Croissant, holds a few croissant pieces and emits only a tiny turquoise satiety glow; the right stomach, labelled Kartoffeln, holds boiled potato pieces and radiates a large bright turquoise glow upward.",
+      "explanation_visible": "With equal calories the potato stomach sends a much stronger turquoise fullness signal than the croissant stomach.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Croissant",
+        "Kartoffeln"
+      ],
+      "labels": [
+        "Croissant",
+        "Kartoffeln"
+      ]
+    },
+    {
+      "scene": 5,
+      "image": "Bild_05",
+      "chapter": "Das Croissant-Rätsel",
+      "chapter_start": false,
+      "speech_section": "Gleiche Energie, völlig anderes Gefühl. Das zeigt: Hunger ist keine einfache Tankanzeige.",
+      "visual_task": "Clean visual metaphor: a coral stomach drawn like a fuel tank with a simple round gauge on its side; instead of one needle, four thin glowing threads in orange, turquoise, yellow and violet leave the gauge and curve upward out of frame toward an unseen brain; soft cream-to-sky-blue gradient.",
+      "explanation_visible": "The idea of one simple fuel gauge is replaced by several colored signal threads.",
+      "visual_category": "mechanism",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "static",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 6,
+      "image": "Bild_06",
+      "chapter": "Das Croissant-Rätsel",
+      "chapter_start": false,
+      "speech_section": "Er ist eine Nachricht, die dein Körper aus mehreren Signalen zusammensetzt.",
+      "visual_task": "Orientation map: simplified left-facing side silhouette of an adult head and torso in soft cream; the coral stomach, the salmon small intestine and a pale-yellow patch of fat tissue are highlighted; an orange, a turquoise and a violet signal line flow from them and merge at a small almond-shaped glowing spot at the base of the brain.",
+      "explanation_visible": "Signals from stomach, intestine and fat tissue travel upward and converge in one spot in the brain.",
+      "visual_category": "process_path",
+      "human_framing": "partial_person",
+      "scale_level": "Körper",
+      "motion": "pan-left",
+      "labels_de": [
+        "Gehirn"
+      ],
+      "labels": [
+        "Gehirn"
+      ]
+    },
+    {
+      "scene": 7,
+      "image": "Bild_07",
+      "chapter": "Das Croissant-Rätsel",
+      "chapter_start": false,
+      "speech_section": "Manche kommen aus dem Magen, manche aus dem Darm, manche sogar aus deinem Schlafzimmer.",
+      "visual_task": "Wide organic composition on a soft lavender-to-cream gradient: on the left a coral stomach, in the center a coiled salmon small intestine, on the right a cozy bed with a moonlit pillow; one flowing ribbon of light connects all three and rises to a small brain at the top.",
+      "explanation_visible": "Stomach, intestine and sleep are joined to the brain by one glowing ribbon – sleep belongs to hunger control.",
+      "visual_category": "process_path",
+      "human_framing": "none",
+      "scale_level": "Alltag",
+      "motion": "pan-right",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 8,
+      "image": "Bild_08",
+      "chapter": "Das Croissant-Rätsel",
+      "chapter_start": false,
+      "speech_section": "Und ganz am Ende klären wir, warum der Nachtisch immer noch reinpasst, obwohl du eigentlich pappsatt bist.",
+      "visual_task": "Top-down table view: an empty pasta plate pushed aside, a hand pulling a bright bowl of strawberry and vanilla ice cream closer; a faint translucent stomach outline glows turquoise as if full, but a small pink appetite spark lights up next to the ice cream; fresh pink-and-cream palette.",
+      "explanation_visible": "Despite a full turquoise stomach, the dessert sparks a new pink appetite signal – the open question of the video.",
+      "visual_category": "everyday_context",
+      "human_framing": "hands_or_crop",
+      "scale_level": "Alltag",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 9,
+      "image": "Bild_09",
+      "chapter": "Das Hungerhormon Ghrelin",
+      "chapter_start": true,
+      "speech_section": "Fangen wir dort an, wo Hunger beginnt: in deinem Magen.",
+      "visual_task": "Large clean cutaway of an empty coral-pink stomach filling the frame, soft inner folds visible, calm warm-cream background with a subtle teal glow; the composition suggests the camera moving toward the stomach wall.",
+      "explanation_visible": "The empty stomach is introduced as the starting point of the hunger signal.",
+      "visual_category": "cutaway",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Magen"
+      ],
+      "labels": [
+        "Magen"
+      ]
+    },
+    {
+      "scene": 10,
+      "image": "Bild_10",
+      "chapter": "Das Hungerhormon Ghrelin",
+      "chapter_start": false,
+      "speech_section": "Ist er eine Weile leer, schütten Zellen in seiner Wand ein Hormon aus.",
+      "visual_task": "Macro cross-section of the stomach wall: layered pink tissue with a few rounded specialized cells near a small red blood vessel; the cells release tiny warm-orange glowing particles into the vessel; soft coral and peach tones.",
+      "explanation_visible": "Cells in the empty stomach wall begin releasing orange hormone particles into the blood.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Gewebe",
+      "motion": "pan-left",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 11,
+      "image": "Bild_11",
+      "chapter": "Das Hungerhormon Ghrelin",
+      "chapter_start": false,
+      "speech_section": "Es heißt Ghrelin und wird oft Hungerhormon genannt.",
+      "visual_task": "Hero close-up inside a red blood vessel: one larger warm-orange glowing ghrelin particle in sharp focus in the center, red blood cells drifting softly blurred around it; deep coral background with warm light.",
+      "explanation_visible": "The hunger hormone is shown large as an orange particle travelling in the blood.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Molekül",
+      "motion": "static",
+      "labels_de": [
+        "Ghrelin"
+      ],
+      "labels": [
+        "Ghrelin"
+      ]
+    },
+    {
+      "scene": 12,
+      "image": "Bild_12",
+      "chapter": "Das Hungerhormon Ghrelin",
+      "chapter_start": false,
+      "speech_section": "Ghrelin reist mit dem Blut bis in dein Gehirn.",
+      "visual_task": "Orientation map silhouette facing left: a red blood vessel winds upward from the coral stomach through the neck to the base of the brain, carrying a stream of small orange particles; everything else stays muted; pale sky-blue background.",
+      "explanation_visible": "Orange ghrelin particles flow from the stomach through the bloodstream to the brain.",
+      "visual_category": "process_path",
+      "human_framing": "partial_person",
+      "scale_level": "Körper",
+      "motion": "pan-right",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 13,
+      "image": "Bild_13",
+      "chapter": "Das Hungerhormon Ghrelin",
+      "chapter_start": false,
+      "speech_section": "Sein Ziel ist der Hypothalamus, ein Kontrollzentrum ungefähr so groß wie eine Mandel.",
+      "visual_task": "Side cutaway of a brain in soft lilac-pink; the small hypothalamus at its base glows warmly; right next to the brain, drawn at matching scale, a single real almond for size comparison; soft cream background.",
+      "explanation_visible": "The hypothalamus sits deep at the base of the brain and is about as big as an almond.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Hypothalamus"
+      ],
+      "labels": [
+        "Hypothalamus"
+      ]
+    },
+    {
+      "scene": 14,
+      "image": "Bild_14",
+      "chapter": "Das Hungerhormon Ghrelin",
+      "chapter_start": false,
+      "speech_section": "Dort weckt es Nervenzellen, die nur eine Botschaft haben: Such dir etwas zu essen!",
+      "visual_task": "Close-up of a few hypothalamus nerve cells with fine branches on a dark plum background softened by warm glow; orange ghrelin particles dock onto them and the cells light up warm orange, sending bright yellow pulses along their fibers.",
+      "explanation_visible": "Ghrelin switches on hunger nerve cells, which start firing yellow signals.",
+      "visual_category": "mechanism",
+      "human_framing": "none",
+      "scale_level": "Zelle",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 15,
+      "image": "Bild_15",
+      "chapter": "Das Hungerhormon Ghrelin",
+      "chapter_start": false,
+      "speech_section": "Und jetzt wird es seltsam. Ghrelin steigt nicht nur, wenn dein Magen leer ist.",
+      "visual_task": "Cutaway of a coral stomach that is still half full with a mixed meal; nevertheless a few small orange ghrelin particles already appear at its wall under a warm spotlight; soft peach background.",
+      "explanation_visible": "Orange hunger particles appear although the stomach is not empty.",
+      "visual_category": "mechanism",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "pan-left",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 16,
+      "image": "Bild_16",
+      "chapter": "Das Hungerhormon Ghrelin",
+      "chapter_start": false,
+      "speech_section": "Es steigt auch kurz vor den Uhrzeiten, zu denen du normalerweise isst.",
+      "visual_task": "Beautiful horizontal day landscape from sunrise on the left to dusk on the right; above it a flowing warm-orange ribbon rises into a crest right before each of three small meal bowls placed along the path and dips after each bowl; no clock and no numbers.",
+      "explanation_visible": "The orange ghrelin ribbon peaks shortly before each usual mealtime and falls after eating.",
+      "visual_category": "process_path",
+      "human_framing": "none",
+      "scale_level": "Alltag",
+      "motion": "pan-right",
+      "labels_de": [
+        "Ghrelin"
+      ],
+      "labels": [
+        "Ghrelin"
+      ]
+    },
+    {
+      "scene": 17,
+      "image": "Bild_17",
+      "chapter": "Das Hungerhormon Ghrelin",
+      "chapter_start": false,
+      "speech_section": "Wer jeden Tag um zwölf zu Mittag isst, bekommt oft schon kurz vorher Hunger.",
+      "visual_task": "Close crop of a forearm with an analog wristwatch without numerals, its hands near the top, resting beside a closed lunch box on a desk; from the lower edge of the frame a soft orange glow rises as if from the stomach; bright midday light, teal-and-cream palette.",
+      "explanation_visible": "Just before the habitual lunchtime the orange hunger glow is already rising.",
+      "visual_category": "everyday_context",
+      "human_framing": "hands_or_crop",
+      "scale_level": "Alltag",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 18,
+      "image": "Bild_18",
+      "chapter": "Das Hungerhormon Ghrelin",
+      "chapter_start": false,
+      "speech_section": "Dein Hunger führt also eine Art Kalender. Er lernt deine Gewohnheiten.",
+      "visual_task": "Macro of hypothalamus nerve cells where one connection has become a thicker, brighter well-worn pathway, like a footpath trodden by repetition; three faint orange pulses travel along it in rhythm; soft lilac-cream background.",
+      "explanation_visible": "Repeated mealtimes strengthen a hunger pathway, so the signal arrives on schedule.",
+      "visual_category": "mechanism",
+      "human_framing": "none",
+      "scale_level": "Zelle",
+      "motion": "static",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 19,
+      "image": "Bild_19",
+      "chapter": "Die Satt-Signale aus Magen und Darm",
+      "chapter_start": true,
+      "speech_section": "Nach dem Essen sinkt Ghrelin wieder. Gleichzeitig startet die Gegenseite: die Sättigungssignale.",
+      "visual_task": "Recurring signal-balance motif: an elegant organic balance with two shallow bowls on a soft cream background; the orange particles in the left bowl are fading away while turquoise particles pour into the right bowl, which sinks down.",
+      "explanation_visible": "After a meal the orange hunger particles decrease and turquoise satiety particles take over the balance.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Molekül",
+      "motion": "slow-pull-out",
+      "labels_de": [
+        "Hunger",
+        "Sättigung"
+      ],
+      "labels": [
+        "Hunger",
+        "Sättigung"
+      ]
+    },
+    {
+      "scene": 20,
+      "image": "Bild_20",
+      "chapter": "Die Satt-Signale aus Magen und Darm",
+      "chapter_start": false,
+      "speech_section": "Das erste ist simpel. Dein Magen dehnt sich. In seiner Wand sitzen Dehnungsrezeptoren.",
+      "visual_task": "Coral stomach cutaway filling with a colorful meal, its wall visibly stretched; a dashed outline shows its smaller empty size; tiny nerve endings in the stretched wall light up bright yellow; fresh aqua background.",
+      "explanation_visible": "As the stomach fills and stretches, sensors in its wall light up.",
+      "visual_category": "cutaway",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Dehnungsrezeptoren"
+      ],
+      "labels": [
+        "Dehnungsrezeptoren"
+      ]
+    },
+    {
+      "scene": 21,
+      "image": "Bild_21",
+      "chapter": "Die Satt-Signale aus Magen und Darm",
+      "chapter_start": false,
+      "speech_section": "Sie funken über den Vagusnerv, eine Art Datenkabel zwischen Bauch und Gehirn, nach oben.",
+      "visual_task": "Orientation map silhouette facing left: a thin golden-yellow nerve runs from the stomach up through the neck to the brainstem; bright yellow pulses travel along it like data along a cable; soft sky-blue background.",
+      "explanation_visible": "Stretch messages travel as yellow pulses along the vagus nerve to the brain.",
+      "visual_category": "process_path",
+      "human_framing": "partial_person",
+      "scale_level": "Körper",
+      "motion": "pan-right",
+      "labels_de": [
+        "Vagusnerv"
+      ],
+      "labels": [
+        "Vagusnerv"
+      ]
+    },
+    {
+      "scene": 22,
+      "image": "Bild_22",
+      "chapter": "Die Satt-Signale aus Magen und Darm",
+      "chapter_start": false,
+      "speech_section": "Aber Dehnung allein ist ein schwaches Signal. Ein halber Liter Wasser dehnt deinen Magen auch.",
+      "visual_task": "Stomach cutaway filled almost entirely with clear light-blue water, wall stretched; only a few faint pale-yellow pulses leave toward a thin nerve; a tall glass of water stands beside the stomach for scale; cool blue palette.",
+      "explanation_visible": "Water stretches the stomach, but the nerve signal it creates is weak.",
+      "visual_category": "cutaway",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "static",
+      "labels_de": [
+        "Wasser"
+      ],
+      "labels": [
+        "Wasser"
+      ]
+    },
+    {
+      "scene": 23,
+      "image": "Bild_23",
+      "chapter": "Die Satt-Signale aus Magen und Darm",
+      "chapter_start": false,
+      "speech_section": "Trotzdem hält er dich nicht lange satt. Wasser fließt einfach schnell weiter in den Darm.",
+      "visual_task": "Side view of stomach and the first loop of small intestine: the light-blue water streams quickly out through the stomach exit into the intestine, motion swooshes show speed, the stomach shrinking back; blue-and-coral palette.",
+      "explanation_visible": "The water leaves the stomach quickly, so the stretch disappears again.",
+      "visual_category": "process_path",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "pan-left",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 24,
+      "image": "Bild_24",
+      "chapter": "Die Satt-Signale aus Magen und Darm",
+      "chapter_start": false,
+      "speech_section": "Das stärkere Signal kommt eine Etage tiefer.",
+      "visual_task": "Vertical torso cutaway: the stomach above is dimmed while the coiled salmon-pink small intestine below lights up warmly; a gentle downward camera feeling; light cream background.",
+      "explanation_visible": "Attention moves from the stomach down to the small intestine.",
+      "visual_category": "cutaway",
+      "human_framing": "partial_person",
+      "scale_level": "Organ",
+      "motion": "slow-pull-out",
+      "labels_de": [
+        "Dünndarm"
+      ],
+      "labels": [
+        "Dünndarm"
+      ]
+    },
+    {
+      "scene": 25,
+      "image": "Bild_25",
+      "chapter": "Die Satt-Signale aus Magen und Darm",
+      "chapter_start": false,
+      "speech_section": "Sobald Nahrung im Dünndarm ankommt, vor allem Eiweiß und Fett, schütten Zellen der Darmwand eigene Botenstoffe aus.",
+      "visual_task": "Macro of the inner small-intestine wall with velvety folds; coral protein bead chains and amber fat droplets touch the wall; specialized cells answer by releasing small turquoise particles into the tissue; warm salmon background.",
+      "explanation_visible": "Protein and fat reaching the intestine trigger the release of turquoise messenger particles.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Gewebe",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 26,
+      "image": "Bild_26",
+      "chapter": "Die Satt-Signale aus Magen und Darm",
+      "chapter_start": false,
+      "speech_section": "Einer heißt CCK. Er bremst den Magen, damit er sich langsamer leert.",
+      "visual_task": "Close-up of the stomach exit where it meets the intestine: turquoise particles reach the muscular ring, which narrows like a gently closing valve; food in the stomach waits behind it; teal-and-coral palette on a light background.",
+      "explanation_visible": "The messenger CCK narrows the stomach exit so the stomach empties more slowly.",
+      "visual_category": "mechanism",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "pan-right",
+      "labels_de": [
+        "CCK"
+      ],
+      "labels": [
+        "CCK"
+      ]
+    },
+    {
+      "scene": 27,
+      "image": "Bild_27",
+      "chapter": "Die Satt-Signale aus Magen und Darm",
+      "chapter_start": false,
+      "speech_section": "Weiter hinten im Darm folgen GLP-1 und PYY.",
+      "visual_task": "Further along a long salmon-pink intestinal loop running diagonally across the frame, other wall cells release two kinds of turquoise particles, one slightly bluer and one slightly greener; aquamarine background.",
+      "explanation_visible": "Deeper in the intestine two more satiety hormones are released.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Gewebe",
+      "motion": "pan-left",
+      "labels_de": [
+        "GLP-1",
+        "PYY"
+      ],
+      "labels": [
+        "GLP-1",
+        "PYY"
+      ]
+    },
+    {
+      "scene": 28,
+      "image": "Bild_28",
+      "chapter": "Die Satt-Signale aus Magen und Darm",
+      "chapter_start": false,
+      "speech_section": "Beide melden dem Gehirn: Es ist genug angekommen.",
+      "visual_task": "Hypothalamus close-up on a soft lilac background: turquoise particles arrive; turquoise satiety nerve cells light up brightly while the orange hunger nerve cells beside them dim down.",
+      "explanation_visible": "Satiety hormones switch on satiety nerve cells and quiet the hunger cells.",
+      "visual_category": "mechanism",
+      "human_framing": "none",
+      "scale_level": "Zelle",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 29,
+      "image": "Bild_29",
+      "chapter": "Die Satt-Signale aus Magen und Darm",
+      "chapter_start": false,
+      "speech_section": "GLP-1 kennst du vielleicht aus den Nachrichten.",
+      "visual_task": "Molecular hero image: a stylized turquoise GLP-1 particle fits into a matching receptor on the surface of a nerve cell like a key into a lock; clean cream background with a teal glow.",
+      "explanation_visible": "GLP-1 binds to its receptor like a key in a lock.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Molekül",
+      "motion": "static",
+      "labels_de": [
+        "GLP-1"
+      ],
+      "labels": [
+        "GLP-1"
+      ]
+    },
+    {
+      "scene": 30,
+      "image": "Bild_30",
+      "chapter": "Die Satt-Signale aus Magen und Darm",
+      "chapter_start": false,
+      "speech_section": "Die bekannten Abnehmspritzen ahmen genau dieses körpereigene Sattsignal nach, nur viel stärker und länger.",
+      "visual_task": "Two-part comparison on one calm background without panel borders: on the left a natural turquoise GLP-1 particle on its receptor with a small glow that fades quickly; on the right an unbranded plain white injection pen lying beside the same receptor, which glows intensely and steadily.",
+      "explanation_visible": "The medication copies the body's own signal but makes it much stronger and longer-lasting.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Molekül",
+      "motion": "pan-right",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 31,
+      "image": "Bild_31",
+      "chapter": "Die Satt-Signale aus Magen und Darm",
+      "chapter_start": false,
+      "speech_section": "Dein Körper hat das Werkzeug also schon eingebaut.",
+      "visual_task": "Orientation map silhouette facing left with the small intestine glowing turquoise and a turquoise thread rising to the brain; calm, reassuring warm light; mint-to-cream gradient.",
+      "explanation_visible": "The satiety signal is a built-in system running from gut to brain.",
+      "visual_category": "process_path",
+      "human_framing": "partial_person",
+      "scale_level": "Körper",
+      "motion": "slow-pull-out",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 32,
+      "image": "Bild_32",
+      "chapter": "Die Satt-Signale aus Magen und Darm",
+      "chapter_start": false,
+      "speech_section": "Der Haken: Diese Darmsignale brauchen Zeit. Bis sie richtig ansteigen, vergeht oft eine Viertelstunde oder mehr.",
+      "visual_task": "Soft daylight background with a slowly rising turquoise ribbon that starts flat on the left where a meal begins and only climbs gradually toward the right; small turquoise particles travel along a long winding vessel underneath; no numbers.",
+      "explanation_visible": "The turquoise satiety signal builds up slowly after the meal starts.",
+      "visual_category": "process_path",
+      "human_framing": "none",
+      "scale_level": "Molekül",
+      "motion": "pan-right",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 33,
+      "image": "Bild_33",
+      "chapter": "Die Satt-Signale aus Magen und Darm",
+      "chapter_start": false,
+      "speech_section": "Wenn du in fünf Minuten isst, bist du fertig, bevor die Satt-Meldung im Gehirn ankommt.",
+      "visual_task": "Close crop of hands scraping the last bite from an empty bowl with a spoon; behind them a translucent body outline in which a turquoise signal has climbed only halfway up toward the brain; warm amber palette.",
+      "explanation_visible": "The meal is already finished while the satiety signal is still on its way.",
+      "visual_category": "human_action",
+      "human_framing": "hands_or_crop",
+      "scale_level": "Alltag",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 34,
+      "image": "Bild_34",
+      "chapter": "Grund 1 und 2: Tempo und Getränke",
+      "chapter_start": true,
+      "speech_section": "Damit kennst du das Grundprinzip: Ein Hungerhormon gegen mehrere Sattsignale.",
+      "visual_task": "Signal-balance motif, centered: the left bowl holds orange ghrelin particles, the right bowl holds turquoise, violet and yellow particles; both bowls are in balance; elegant warm-cream background.",
+      "explanation_visible": "One hunger signal is weighed against several satiety signals.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Molekül",
+      "motion": "static",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 35,
+      "image": "Bild_35",
+      "chapter": "Grund 1 und 2: Tempo und Getränke",
+      "chapter_start": false,
+      "speech_section": "Und jetzt verstehst du, warum der Hunger manchmal so schnell zurückkommt. Dafür gibt es typische Gründe.",
+      "visual_task": "The same organic balance seen closer: it tips back toward the orange side as more orange particles fall in while the turquoise side rises; slight motion lines; peach background.",
+      "explanation_visible": "When satiety signals are weak, the balance tips back toward hunger.",
+      "visual_category": "mechanism",
+      "human_framing": "none",
+      "scale_level": "Molekül",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 36,
+      "image": "Bild_36",
+      "chapter": "Grund 1 und 2: Tempo und Getränke",
+      "chapter_start": false,
+      "speech_section": "Grund Nummer eins: Du isst zu schnell.",
+      "visual_task": "Dynamic close-up of a fork lifting a big bite of pasta from a full plate with speed lines, the next bite already waiting on the plate; bright energetic coral-and-yellow palette.",
+      "explanation_visible": "Fast eating is shown with a hurried fork.",
+      "visual_category": "human_action",
+      "human_framing": "hands_or_crop",
+      "scale_level": "Alltag",
+      "motion": "pan-left",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 37,
+      "image": "Bild_37",
+      "chapter": "Grund 1 und 2: Tempo und Getränke",
+      "chapter_start": false,
+      "speech_section": "In einem Versuch aßen Teilnehmer dieselbe Portion Eis einmal in fünf Minuten und einmal in dreißig Minuten.",
+      "visual_task": "Two identical bowls of vanilla ice cream side by side; behind the left bowl, labelled 5 Minuten, a short glowing arc; behind the right bowl, labelled 30 Minuten, a long arc that nearly closes into a circle, like simple time rings without numerals; fresh mint-and-cream background.",
+      "explanation_visible": "The same ice cream is eaten once quickly and once slowly.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Lebensmittel",
+      "motion": "static",
+      "labels_de": [
+        "5 Minuten",
+        "30 Minuten"
+      ],
+      "labels": [
+        "5 Minuten",
+        "30 Minuten"
+      ]
+    },
+    {
+      "scene": 38,
+      "image": "Bild_38",
+      "chapter": "Grund 1 und 2: Tempo und Getränke",
+      "chapter_start": false,
+      "speech_section": "Beim langsamen Essen stiegen die Sättigungshormone im Blut stärker an. Gleiche Portion, stärkeres Signal.",
+      "visual_task": "Two blood-vessel cross-sections side by side: the left vessel, labelled schnell, carries only a few turquoise particles; the right vessel, labelled langsam, is full of them; red blood cells softly around; coral background.",
+      "explanation_visible": "After slow eating, far more turquoise satiety hormones are in the blood.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Molekül",
+      "motion": "pan-right",
+      "labels_de": [
+        "schnell",
+        "langsam"
+      ],
+      "labels": [
+        "schnell",
+        "langsam"
+      ]
+    },
+    {
+      "scene": 39,
+      "image": "Bild_39",
+      "chapter": "Grund 1 und 2: Tempo und Getränke",
+      "chapter_start": false,
+      "speech_section": "Grund Nummer zwei: Du trinkst deine Kalorien.",
+      "visual_task": "Close-up of a tall glass of golden apple juice with condensation; inside the liquid tiny golden-yellow sugar beads float like a hidden energy load; bright sky-blue background.",
+      "explanation_visible": "A drink carries a lot of energy that you hardly notice.",
+      "visual_category": "food_structure",
+      "human_framing": "none",
+      "scale_level": "Lebensmittel",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 40,
+      "image": "Bild_40",
+      "chapter": "Grund 1 und 2: Tempo und Getränke",
+      "chapter_start": false,
+      "speech_section": "In einer Studie bekamen Erwachsene vor dem Mittagessen einen Apfel, Apfelmus oder Apfelsaft.",
+      "visual_task": "Three small identical plates in a row on a light wooden table: a whole red apple, a small bowl of applesauce and a glass of apple juice; soft even daylight; leaf-green background.",
+      "explanation_visible": "Three forms of the same apple are compared.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Lebensmittel",
+      "motion": "pan-left",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 41,
+      "image": "Bild_41",
+      "chapter": "Grund 1 und 2: Tempo und Getränke",
+      "chapter_start": false,
+      "speech_section": "Jede Variante hatte gleich viele Kalorien.",
+      "visual_task": "Close top-down view of the same three apple forms, each with an identical small cluster of golden energy beads floating above it, the three clusters exactly the same size; clean cream background with soft green accents.",
+      "explanation_visible": "All three apple forms carry exactly the same amount of energy.",
+      "visual_category": "food_structure",
+      "human_framing": "none",
+      "scale_level": "Molekül",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 42,
+      "image": "Bild_42",
+      "chapter": "Grund 1 und 2: Tempo und Getränke",
+      "chapter_start": false,
+      "speech_section": "Nach dem ganzen Apfel aßen sie insgesamt rund fünfzehn Prozent weniger als ganz ohne Vorspeise.",
+      "visual_task": "Two lunch plates side by side: the left plate, labelled mit Apfel, holds a visibly smaller portion of pasta and vegetables with a whole apple placed next to it; the right plate, labelled ohne Apfel, holds a full portion; warm cream background.",
+      "explanation_visible": "With the whole apple first, the following lunch portion is smaller.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Lebensmittel",
+      "motion": "static",
+      "labels_de": [
+        "mit Apfel",
+        "ohne Apfel"
+      ],
+      "labels": [
+        "mit Apfel",
+        "ohne Apfel"
+      ]
+    },
+    {
+      "scene": 43,
+      "image": "Bild_43",
+      "chapter": "Grund 1 und 2: Tempo und Getränke",
+      "chapter_start": false,
+      "speech_section": "Mit Saft war der Effekt am kleinsten.",
+      "visual_task": "Macro comparison: a halved apple showing crisp cell walls and a fiber network holding the juice, next to a glass of clear apple juice without any structure; green-and-gold palette.",
+      "explanation_visible": "The whole apple contains structure and fiber; the juice has lost it.",
+      "visual_category": "food_structure",
+      "human_framing": "none",
+      "scale_level": "Lebensmittel",
+      "motion": "pan-right",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 44,
+      "image": "Bild_44",
+      "chapter": "Grund 1 und 2: Tempo und Getränke",
+      "chapter_start": false,
+      "speech_section": "Denn beim Trinken kaust du nicht, und Flüssigkeit verlässt den Magen schneller.",
+      "visual_task": "Two stomach cutaways side by side: the left one, labelled Apfel, is filled with chewed apple pieces and green fibers that stay; from the right one, labelled Saft, golden juice streams out quickly through the exit; calm teal background.",
+      "explanation_visible": "Chewed apple stays in the stomach longer, juice flows out fast.",
+      "visual_category": "cutaway",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "pan-left",
+      "labels_de": [
+        "Apfel",
+        "Saft"
+      ],
+      "labels": [
+        "Apfel",
+        "Saft"
+      ]
+    },
+    {
+      "scene": 45,
+      "image": "Bild_45",
+      "chapter": "Grund 3: Die fehlenden Sattmacher",
+      "chapter_start": true,
+      "speech_section": "Grund Nummer drei: Deinem Essen fehlen die Sattmacher. Erinnerst du dich an das Croissant?",
+      "visual_task": "A croissant cut in half lengthwise, its cross-section filling the frame: thin golden layers with large airy pockets in between, shiny with butter; warm golden background.",
+      "explanation_visible": "The croissant's inside is mostly air and thin buttery layers.",
+      "visual_category": "food_structure",
+      "human_framing": "none",
+      "scale_level": "Lebensmittel",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 46,
+      "image": "Bild_46",
+      "chapter": "Grund 3: Die fehlenden Sattmacher",
+      "chapter_start": false,
+      "speech_section": "In dem Experiment wurden achtunddreißig Lebensmittel getestet.",
+      "visual_task": "Top-down view of a long bright table with neat rows of many small identical white plates, each holding a different food portion such as fish, potato, orange, cake, pasta, cheese, beans and popcorn; clean and orderly; no labels.",
+      "explanation_visible": "Many different foods were tested with the same calories.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Lebensmittel",
+      "motion": "pan-right",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 47,
+      "image": "Bild_47",
+      "chapter": "Grund 3: Die fehlenden Sattmacher",
+      "chapter_start": false,
+      "speech_section": "Am längsten satt hielten vor allem solche mit viel Eiweiß, Ballaststoffen und Wasser.",
+      "visual_task": "Three foods shown large in cutaway: a boiled potato cut open, moist and water-rich; a piece of white fish with visible protein flakes; an orange segment with juicy cells and fiber membranes; each glows softly turquoise; fresh aqua background.",
+      "explanation_visible": "Foods rich in protein, fiber and water send strong turquoise satiety signals.",
+      "visual_category": "food_structure",
+      "human_framing": "none",
+      "scale_level": "Lebensmittel",
+      "motion": "slow-pull-out",
+      "labels_de": [
+        "Eiweiß",
+        "Ballaststoffe"
+      ],
+      "labels": [
+        "Eiweiß",
+        "Ballaststoffe"
+      ]
+    },
+    {
+      "scene": 48,
+      "image": "Bild_48",
+      "chapter": "Grund 3: Die fehlenden Sattmacher",
+      "chapter_start": false,
+      "speech_section": "Sehr fettreiche Lebensmittel schnitten eher schlecht ab.",
+      "visual_task": "Macro of croissant layers glistening with tiny amber butter droplets; only a very weak turquoise glow floats above them; warm amber background.",
+      "explanation_visible": "Fat-rich pastry layers produce only a weak satiety glow.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Lebensmittel",
+      "motion": "static",
+      "labels_de": [
+        "Fett"
+      ],
+      "labels": [
+        "Fett"
+      ]
+    },
+    {
+      "scene": 49,
+      "image": "Bild_49",
+      "chapter": "Grund 3: Die fehlenden Sattmacher",
+      "chapter_start": false,
+      "speech_section": "Kartoffeln, Fisch, Haferbrei und Orangen lagen weit vorne. Croissant, Kuchen und Schokoriegel ganz hinten.",
+      "visual_task": "A long gently rising curved ribbon from left to right across a soft gradient: at the low left end sit a croissant, a slice of cake and a chocolate bar; at the high right end sit boiled potatoes, a fish fillet, a bowl of porridge and an orange; no numbers.",
+      "explanation_visible": "Foods are ranked along a ribbon: potatoes, fish, porridge and oranges at the top, pastry and sweets at the bottom.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Lebensmittel",
+      "motion": "pan-right",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 50,
+      "image": "Bild_50",
+      "chapter": "Grund 3: Die fehlenden Sattmacher",
+      "chapter_start": false,
+      "speech_section": "Warum? Eiweiß löst besonders kräftige Sattsignale im Darm aus.",
+      "visual_task": "Macro of the small-intestine wall: coral protein bead chains arrive and the wall cells answer with a strong burst of turquoise particles; salmon-pink tissue on a warm background.",
+      "explanation_visible": "Protein triggers a particularly strong release of satiety hormones.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Gewebe",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Eiweiß"
+      ],
+      "labels": [
+        "Eiweiß"
+      ]
+    },
+    {
+      "scene": 51,
+      "image": "Bild_51",
+      "chapter": "Grund 3: Die fehlenden Sattmacher",
+      "chapter_start": false,
+      "speech_section": "Ballaststoffe und Wasser bringen Volumen, ohne viele Kalorien.",
+      "visual_task": "Stomach cutaway filled with a big volume of leafy greens, beans and water droplets, comfortably stretched, with only a few golden energy beads among them; fresh green-and-blue palette.",
+      "explanation_visible": "Fiber and water fill the stomach with volume while carrying little energy.",
+      "visual_category": "cutaway",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "pan-left",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 52,
+      "image": "Bild_52",
+      "chapter": "Grund 3: Die fehlenden Sattmacher",
+      "chapter_start": false,
+      "speech_section": "Manche Ballaststoffe, etwa aus Hafer, binden Wasser zu einer Art Gel. Das bremst die Verdauung.",
+      "visual_task": "Macro of rolled oat flakes swelling in water; translucent jelly-like strands spread from them and trap many tiny water droplets and nutrient beads, which move slowly inside the gel; soft beige-and-aqua palette.",
+      "explanation_visible": "Oat fiber forms a gel that holds water and slows the movement of nutrients.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Molekül",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Hafer",
+        "Gel"
+      ],
+      "labels": [
+        "Hafer",
+        "Gel"
+      ]
+    },
+    {
+      "scene": 53,
+      "image": "Bild_53",
+      "chapter": "Grund 3: Die fehlenden Sattmacher",
+      "chapter_start": false,
+      "speech_section": "Ein Croissant dagegen ist vor allem Fett und Weißmehl.",
+      "visual_task": "Exploded view of a croissant: the pastry floats apart into its ingredients – amber butter droplets and fine white flour particles – with almost no green fibers and no water droplets; warm golden background.",
+      "explanation_visible": "The croissant breaks down into mainly fat and refined flour.",
+      "visual_category": "food_structure",
+      "human_framing": "none",
+      "scale_level": "Lebensmittel",
+      "motion": "pan-right",
+      "labels_de": [
+        "Fett",
+        "Weißmehl"
+      ],
+      "labels": [
+        "Fett",
+        "Weißmehl"
+      ]
+    },
+    {
+      "scene": 54,
+      "image": "Bild_54",
+      "chapter": "Grund 3: Die fehlenden Sattmacher",
+      "chapter_start": false,
+      "speech_section": "Viel Energie in einem kleinen, luftigen Paket.",
+      "visual_task": "Top-down view of two identical plates: on the left one small croissant, on the right a large mound of boiled potatoes; both portions carry the same energy; soft cream background, crisp shadows.",
+      "explanation_visible": "The small croissant carries as much energy as a big plate of potatoes.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Lebensmittel",
+      "motion": "static",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 55,
+      "image": "Bild_55",
+      "chapter": "Grund 3: Die fehlenden Sattmacher",
+      "chapter_start": false,
+      "speech_section": "Bei manchen Menschen kommt noch etwas dazu.",
+      "visual_task": "Close crop of an upper arm wearing a small round unbranded glucose sensor patch, sleeve rolled up, soft natural light; muted sky-blue background.",
+      "explanation_visible": "A glucose sensor introduces the blood sugar topic.",
+      "visual_category": "everyday_context",
+      "human_framing": "hands_or_crop",
+      "scale_level": "Alltag",
+      "motion": "pan-left",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 56,
+      "image": "Bild_56",
+      "chapter": "Grund 3: Die fehlenden Sattmacher",
+      "chapter_start": false,
+      "speech_section": "Ihr Blutzucker fällt zwei bis drei Stunden nach dem Essen unter den Ausgangswert.",
+      "visual_task": "A single clean golden blood-sugar ribbon over a soft gradient: it rises after a small meal bowl on the left, then sinks below a faint dashed baseline before leveling again; the dip is gently highlighted in orange; no numbers and no axes.",
+      "explanation_visible": "Blood sugar rises after eating and then dips below the starting level.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Molekül",
+      "motion": "pan-right",
+      "labels_de": [
+        "Blutzucker"
+      ],
+      "labels": [
+        "Blutzucker"
+      ]
+    },
+    {
+      "scene": 57,
+      "image": "Bild_57",
+      "chapter": "Grund 3: Die fehlenden Sattmacher",
+      "chapter_start": false,
+      "speech_section": "In einer großen Studie mit über tausend Teilnehmern hatten genau diese Menschen danach mehr Hunger.",
+      "visual_task": "The dip of the golden ribbon is connected by a thin line to hypothalamus hunger cells, which light up orange; soft lilac background.",
+      "explanation_visible": "The blood sugar dip is linked to a stronger hunger signal.",
+      "visual_category": "mechanism",
+      "human_framing": "none",
+      "scale_level": "Zelle",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 58,
+      "image": "Bild_58",
+      "chapter": "Grund 3: Die fehlenden Sattmacher",
+      "chapter_start": false,
+      "speech_section": "Und sie aßen im Laufe des Tages mehr.",
+      "visual_task": "Two daily food trays side by side seen from above: the right tray holds the same meals plus an extra snack bowl and a larger dinner portion; calm warm background; no labels.",
+      "explanation_visible": "People with the dip end up eating more over the day.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Lebensmittel",
+      "motion": "static",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 59,
+      "image": "Bild_59",
+      "chapter": "Grund 4: Stark verarbeitetes Essen",
+      "chapter_start": true,
+      "speech_section": "Grund Nummer vier: stark verarbeitetes Essen.",
+      "visual_task": "Colorful still life of unbranded highly processed foods without any text: potato chips, sugary cereal, a soft white-bun burger, instant noodles and a frosted pastry, all smooth and uniform in texture; bright pop-orange background.",
+      "explanation_visible": "Typical highly processed foods are shown.",
+      "visual_category": "food_structure",
+      "human_framing": "none",
+      "scale_level": "Lebensmittel",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 60,
+      "image": "Bild_60",
+      "chapter": "Grund 4: Stark verarbeitetes Essen",
+      "chapter_start": false,
+      "speech_section": "In einem Experiment der US-Gesundheitsbehörde NIH lebten Erwachsene vier Wochen in einer Klinik.",
+      "visual_task": "Bright friendly research ward seen from the side: a neat bed, a small table with a covered meal tray and a window with daylight; no people; calm blue-and-white palette.",
+      "explanation_visible": "The study took place under controlled clinical conditions.",
+      "visual_category": "everyday_context",
+      "human_framing": "none",
+      "scale_level": "Alltag",
+      "motion": "pan-right",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 61,
+      "image": "Bild_61",
+      "chapter": "Grund 4: Stark verarbeitetes Essen",
+      "chapter_start": false,
+      "speech_section": "Zwei Wochen lang gab es stark verarbeitete Lebensmittel, zwei Wochen lang kaum verarbeitete.",
+      "visual_task": "Two meal trays side by side: the left tray, labelled verarbeitet, with a white-bun burger, chips, a sweet drink and canned soup; the right tray, labelled kaum verarbeitet, with fish, steamed vegetables, a salad, fruit and nuts; clean light background.",
+      "explanation_visible": "Highly processed and minimally processed meals are compared directly.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Lebensmittel",
+      "motion": "static",
+      "labels_de": [
+        "verarbeitet",
+        "kaum verarbeitet"
+      ],
+      "labels": [
+        "verarbeitet",
+        "kaum verarbeitet"
+      ]
+    },
+    {
+      "scene": 62,
+      "image": "Bild_62",
+      "chapter": "Grund 4: Stark verarbeitetes Essen",
+      "chapter_start": false,
+      "speech_section": "Sie durften essen, so viel sie wollten.",
+      "visual_task": "Close crop of hands serving a second helping from generous serving bowls on a buffet table; friendly warm light; amber-and-cream palette.",
+      "explanation_visible": "Participants could serve themselves freely.",
+      "visual_category": "human_action",
+      "human_framing": "hands_or_crop",
+      "scale_level": "Alltag",
+      "motion": "pan-left",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 63,
+      "image": "Bild_63",
+      "chapter": "Grund 4: Stark verarbeitetes Essen",
+      "chapter_start": false,
+      "speech_section": "Mit dem stark verarbeiteten Essen nahmen sie im Schnitt rund fünfhundert Kilokalorien mehr pro Tag zu sich.",
+      "visual_task": "The processed tray now carries an extra stack of food about the size of an additional small meal, highlighted with a warm orange glow; the unprocessed tray beside it is unchanged; soft cream background.",
+      "explanation_visible": "On the processed diet, people ate an extra meal's worth of energy every day.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Lebensmittel",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "500 kcal mehr"
+      ],
+      "labels": [
+        "500 kcal mehr"
+      ]
+    },
+    {
+      "scene": 64,
+      "image": "Bild_64",
+      "chapter": "Grund 4: Stark verarbeitetes Essen",
+      "chapter_start": false,
+      "speech_section": "Und sie aßen schneller.",
+      "visual_task": "Side-by-side macro: a soft white bread bun squashes easily under a fork with almost no chewing needed, next to a crunchy raw carrot stick that shows bite marks and fibers; coral-and-green palette.",
+      "explanation_visible": "Soft processed food is eaten quickly, firm whole food needs more chewing.",
+      "visual_category": "food_structure",
+      "human_framing": "none",
+      "scale_level": "Lebensmittel",
+      "motion": "pan-right",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 65,
+      "image": "Bild_65",
+      "chapter": "Grund 5: Zu wenig Schlaf",
+      "chapter_start": true,
+      "speech_section": "Grund Nummer fünf: zu wenig Schlaf. Das ist das Signal aus dem Schlafzimmer.",
+      "visual_task": "Dim calm bedroom at night: a rumpled bed, a bedside lamp still glowing, deep blue night outside the window; from the pillow a thin violet thread rises softly; restrained night palette with a warm lamp accent, no neon glow.",
+      "explanation_visible": "Too little sleep is introduced as a hunger factor.",
+      "visual_category": "everyday_context",
+      "human_framing": "none",
+      "scale_level": "Alltag",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 66,
+      "image": "Bild_66",
+      "chapter": "Grund 5: Zu wenig Schlaf",
+      "chapter_start": false,
+      "speech_section": "In einer Studie schliefen junge Männer zwei Nächte lang nur etwa vier Stunden.",
+      "visual_task": "Two beds side by side under two night-sky arcs: above the left bed a long deep-blue sleep band spans the whole night from moon to sunrise; above the right bed only a short band near dawn; no numbers and no clocks.",
+      "explanation_visible": "One group sleeps a full night, the other only a short part of it.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Alltag",
+      "motion": "pan-right",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 67,
+      "image": "Bild_67",
+      "chapter": "Grund 5: Zu wenig Schlaf",
+      "chapter_start": false,
+      "speech_section": "Danach war ihr Ghrelin um rund achtundzwanzig Prozent höher als nach zwei langen Nächten.",
+      "visual_task": "Blood vessel cross-section crowded with many more orange ghrelin particles than usual, a faint outline shows the earlier smaller amount for comparison; coral background.",
+      "explanation_visible": "After short sleep there are clearly more hunger hormone particles in the blood.",
+      "visual_category": "mechanism",
+      "human_framing": "none",
+      "scale_level": "Molekül",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Ghrelin"
+      ],
+      "labels": [
+        "Ghrelin"
+      ]
+    },
+    {
+      "scene": 68,
+      "image": "Bild_68",
+      "chapter": "Grund 5: Zu wenig Schlaf",
+      "chapter_start": false,
+      "speech_section": "Leptin, ein Signal aus dem Fettgewebe, das dem Gehirn volle Reserven meldet, war um achtzehn Prozent niedriger.",
+      "visual_task": "Macro of fat tissue: round pale-yellow fat cells release only a few soft violet particles into a nearby small vessel; muted, slightly tired lighting; soft violet-cream background.",
+      "explanation_visible": "Fat tissue sends fewer violet 'reserves are full' signals after short sleep.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Gewebe",
+      "motion": "pan-left",
+      "labels_de": [
+        "Leptin",
+        "Fettgewebe"
+      ],
+      "labels": [
+        "Leptin",
+        "Fettgewebe"
+      ]
+    },
+    {
+      "scene": 69,
+      "image": "Bild_69",
+      "chapter": "Grund 5: Zu wenig Schlaf",
+      "chapter_start": false,
+      "speech_section": "Ihr Hunger stieg um fast ein Viertel.",
+      "visual_task": "Signal-balance motif: the bowl with orange particles sinks clearly, the bowl with turquoise and violet particles rises; clean side light; peach background.",
+      "explanation_visible": "The balance tips strongly toward hunger.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Molekül",
+      "motion": "static",
+      "labels_de": [
+        "Hunger"
+      ],
+      "labels": [
+        "Hunger"
+      ]
+    },
+    {
+      "scene": 70,
+      "image": "Bild_70",
+      "chapter": "Grund 5: Zu wenig Schlaf",
+      "chapter_start": false,
+      "speech_section": "Und besonders stieg ihr Appetit auf kalorienreiche, kohlenhydratreiche Lebensmittel.",
+      "visual_task": "Late-night kitchen counter lit by the warm light of an open fridge: cookies, chips, a sweet pastry and white bread; a hand reaching toward them; deep blue shadows with warm amber highlights.",
+      "explanation_visible": "Sleep-deprived people especially crave energy-dense carbohydrate snacks.",
+      "visual_category": "human_action",
+      "human_framing": "hands_or_crop",
+      "scale_level": "Alltag",
+      "motion": "pan-right",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 71,
+      "image": "Bild_71",
+      "chapter": "Grund 6: Appetit und der Nachtisch",
+      "chapter_start": true,
+      "speech_section": "Grund Nummer sechs ist vielleicht der gemeinste: Appetit ist nicht dasselbe wie Hunger.",
+      "visual_task": "Side silhouette of a head and torso facing left: in the torso the coral stomach glows orange and carries the label Hunger; separately, in front of the face, aroma swirls from a pastry lead into the nose and eyes and glow soft pink, carrying the label Appetit; two clearly separate sources; soft cream background.",
+      "explanation_visible": "Hunger comes from the body; appetite comes from senses like smell and sight.",
+      "visual_category": "educational_comparison",
+      "human_framing": "partial_person",
+      "scale_level": "Körper",
+      "motion": "slow-pull-out",
+      "labels_de": [
+        "Hunger",
+        "Appetit"
+      ],
+      "labels": [
+        "Hunger",
+        "Appetit"
+      ]
+    },
+    {
+      "scene": 72,
+      "image": "Bild_72",
+      "chapter": "Grund 6: Appetit und der Nachtisch",
+      "chapter_start": false,
+      "speech_section": "Schon der Duft von frischem Gebäck kann deinen Körper auf Essen vorbereiten.",
+      "visual_task": "Bakery display with fresh pretzels and crusty rolls, soft visible aroma swirls drifting out of the frame toward the viewer; warm golden-brown palette; no signs and no text.",
+      "explanation_visible": "The smell of fresh baked goods spreads and acts as a trigger.",
+      "visual_category": "food_structure",
+      "human_framing": "none",
+      "scale_level": "Lebensmittel",
+      "motion": "pan-left",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 73,
+      "image": "Bild_73",
+      "chapter": "Grund 6: Appetit und der Nachtisch",
+      "chapter_start": false,
+      "speech_section": "Dein Mund produziert Speichel, und dein Verdauungssystem macht sich startklar, bevor du einen Bissen gegessen hast.",
+      "visual_task": "Side cutaway of head and torso: an aroma swirl enters the nose, the salivary glands near the jaw light up with clear droplets, and the stomach begins to glow softly as if getting ready; mint-and-coral palette.",
+      "explanation_visible": "Smell alone makes saliva flow and prepares the stomach.",
+      "visual_category": "cutaway",
+      "human_framing": "partial_person",
+      "scale_level": "Körper",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Speichel"
+      ],
+      "labels": [
+        "Speichel"
+      ]
+    },
+    {
+      "scene": 74,
+      "image": "Bild_74",
+      "chapter": "Grund 6: Appetit und der Nachtisch",
+      "chapter_start": false,
+      "speech_section": "Und damit zur Frage vom Anfang: Warum passt der Nachtisch noch rein?",
+      "visual_task": "Top-down dining table: a finished pasta plate with a few leftover noodles, next to it a fresh, colorful ice cream sundae in a glass bowl catching the light; clean bright pink-and-cream palette; no people.",
+      "explanation_visible": "The dessert question from the beginning returns.",
+      "visual_category": "everyday_context",
+      "human_framing": "none",
+      "scale_level": "Alltag",
+      "motion": "static",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 75,
+      "image": "Bild_75",
+      "chapter": "Grund 6: Appetit und der Nachtisch",
+      "chapter_start": false,
+      "speech_section": "Forschende nennen das sensorisch-spezifische Sättigung.",
+      "visual_task": "A dulled, desaturated plate of pasta with tomato sauce next to a bright, vivid ice cream sundae; a soft pink appetite glow rises only above the dessert, none above the pasta; lilac background.",
+      "explanation_visible": "Only the food already eaten loses its appeal; a different food still attracts.",
+      "visual_category": "mechanism",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 76,
+      "image": "Bild_76",
+      "chapter": "Grund 6: Appetit und der Nachtisch",
+      "chapter_start": false,
+      "speech_section": "Je mehr du von einem Essen isst, desto weniger reizt dich genau dieses Essen.",
+      "visual_task": "Four identical plates of pasta with tomato sauce in a row from left to right; each successive plate is drawn less saturated and less appealing, the last one almost grey; soft cream background.",
+      "explanation_visible": "The same food becomes less appealing with every portion.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Lebensmittel",
+      "motion": "pan-right",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 77,
+      "image": "Bild_77",
+      "chapter": "Grund 6: Appetit und der Nachtisch",
+      "chapter_start": false,
+      "speech_section": "Nach einem Teller Nudeln mit Tomatensoße lockt dich ein zweiter Teller kaum.",
+      "visual_task": "Close crop of a hand gently pushing away a second full but dull, greyish plate of pasta; warm table light; muted palette around the plate.",
+      "explanation_visible": "A second portion of the same dish is refused.",
+      "visual_category": "human_action",
+      "human_framing": "hands_or_crop",
+      "scale_level": "Alltag",
+      "motion": "pan-left",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 78,
+      "image": "Bild_78",
+      "chapter": "Grund 6: Appetit und der Nachtisch",
+      "chapter_start": false,
+      "speech_section": "Aber etwas Süßes, Kaltes, völlig anderes? Das wirkt plötzlich wieder spannend.",
+      "visual_task": "Vibrant close-up of an ice cream sundae with strawberries, a cold mist and fresh colors popping against a bright pink-and-sky-blue background; a small pink appetite spark beside it.",
+      "explanation_visible": "A completely different food reawakens appetite.",
+      "visual_category": "food_structure",
+      "human_framing": "none",
+      "scale_level": "Lebensmittel",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 79,
+      "image": "Bild_79",
+      "chapter": "Grund 6: Appetit und der Nachtisch",
+      "chapter_start": false,
+      "speech_section": "In Versuchen aßen Menschen bei abwechslungsreichen Menüs deutlich mehr als bei einem einzigen Gericht.",
+      "visual_task": "Two table settings side by side seen from above: on the left four identical bowls of the same dish, mostly still full; on the right four different colorful dishes, mostly eaten empty; clean light background; no labels.",
+      "explanation_visible": "With more variety, people eat considerably more.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Lebensmittel",
+      "motion": "static",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 80,
+      "image": "Bild_80",
+      "chapter": "Was im Alltag wirklich hilft",
+      "chapter_start": true,
+      "speech_section": "Was heißt das jetzt für deinen Alltag? Du kannst die Signale gezielt für dich arbeiten lassen.",
+      "visual_task": "Orientation map silhouette facing left with all satiety signals lighting up in harmony: turquoise from the intestine, yellow along the vagus nerve, violet from fat tissue, all reaching the brain; warm optimistic light; mint-to-cream gradient.",
+      "explanation_visible": "All satiety signals can be supported at the same time.",
+      "visual_category": "process_path",
+      "human_framing": "partial_person",
+      "scale_level": "Körper",
+      "motion": "slow-pull-out",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 81,
+      "image": "Bild_81",
+      "chapter": "Was im Alltag wirklich hilft",
+      "chapter_start": false,
+      "speech_section": "Erstens: Pack in jede Hauptmahlzeit eine Eiweißquelle, zum Beispiel Joghurt, Eier, Linsen, Fisch oder Tofu.",
+      "visual_task": "Top-down view of a wooden board with five small bowls: natural yogurt, two boiled eggs, cooked lentils, a fish fillet and tofu cubes, each with a soft coral glow; fresh natural light; no packaging and no text.",
+      "explanation_visible": "Five everyday protein sources are offered as options.",
+      "visual_category": "food_structure",
+      "human_framing": "none",
+      "scale_level": "Lebensmittel",
+      "motion": "pan-right",
+      "labels_de": [
+        "Eiweiß"
+      ],
+      "labels": [
+        "Eiweiß"
+      ]
+    },
+    {
+      "scene": 82,
+      "image": "Bild_82",
+      "chapter": "Was im Alltag wirklich hilft",
+      "chapter_start": false,
+      "speech_section": "Zweitens: Gib Ballaststoffe und Volumen dazu, also Gemüse, Obst, Vollkorn oder Bohnen.",
+      "visual_task": "Close-up of hands adding roasted vegetables, beans and a handful of berries to a whole-grain bowl, making it fuller and more colorful; bright leaf-green palette.",
+      "explanation_visible": "A meal becomes bigger and richer in fiber through vegetables, beans and whole grains.",
+      "visual_category": "human_action",
+      "human_framing": "hands_or_crop",
+      "scale_level": "Lebensmittel",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Ballaststoffe"
+      ],
+      "labels": [
+        "Ballaststoffe"
+      ]
+    },
+    {
+      "scene": 83,
+      "image": "Bild_83",
+      "chapter": "Was im Alltag wirklich hilft",
+      "chapter_start": false,
+      "speech_section": "Drittens: Iss deine Kalorien, statt sie zu trinken. Ein Apfel statt Saft, Wasser statt Limo.",
+      "visual_task": "Two pairs on a light table: a brightly lit whole apple next to a dimmer glass of juice, and a brightly lit glass of clear water next to a dimmer glass of fizzy lemonade; no brands and no text.",
+      "explanation_visible": "The better choices – whole fruit and water – are highlighted against juice and soda.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Lebensmittel",
+      "motion": "pan-left",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 84,
+      "image": "Bild_84",
+      "chapter": "Was im Alltag wirklich hilft",
+      "chapter_start": false,
+      "speech_section": "Viertens: Gib deinem Darm Zeit, sich zu melden. Leg zwischendurch die Gabel ab.",
+      "visual_task": "Close-up of a fork resting on the edge of a half-eaten plate; behind it a translucent body outline in which a turquoise signal now rises all the way to the brain; calm teal-and-cream palette.",
+      "explanation_visible": "A pause during the meal gives the satiety signal time to arrive.",
+      "visual_category": "human_action",
+      "human_framing": "hands_or_crop",
+      "scale_level": "Alltag",
+      "motion": "static",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 85,
+      "image": "Bild_85",
+      "chapter": "Was im Alltag wirklich hilft",
+      "chapter_start": false,
+      "speech_section": "Und fünftens: Schlaf ist kein Luxus, sondern Teil deiner Hungerregulation.",
+      "visual_task": "Bedroom at sunrise with a neatly made bed; above it the signal balance floats in calm equilibrium with violet and turquoise particles back in place; soft morning gold and lavender palette.",
+      "explanation_visible": "After enough sleep the hunger and satiety signals are balanced again.",
+      "visual_category": "mechanism",
+      "human_framing": "none",
+      "scale_level": "Molekül",
+      "motion": "slow-pull-out",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 86,
+      "image": "Bild_86",
+      "chapter": "Was im Alltag wirklich hilft",
+      "chapter_start": false,
+      "speech_section": "Und wenn du trotz allem plötzlich und anhaltend viel mehr Hunger hast als früher,",
+      "visual_task": "Orientation map silhouette facing left: an unusually strong, persistent orange glow fills the stomach and the base of the brain; the rest of the body is muted; serious but calm tone; light blue background.",
+      "explanation_visible": "An unusually strong and persistent hunger signal is shown.",
+      "visual_category": "mechanism",
+      "human_framing": "partial_person",
+      "scale_level": "Körper",
+      "motion": "pan-right",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 87,
+      "image": "Bild_87",
+      "chapter": "Was im Alltag wirklich hilft",
+      "chapter_start": false,
+      "speech_section": "zusammen mit großem Durst oder ungewolltem Gewichtsverlust, dann lass das ärztlich abklären.",
+      "visual_task": "Bright friendly consultation desk seen from the side: a stethoscope, a glass of water and two pairs of hands in calm conversation across the desk; no text on papers; warm white and teal palette.",
+      "explanation_visible": "A doctor's visit is the right step for unusual hunger with other symptoms.",
+      "visual_category": "everyday_context",
+      "human_framing": "hands_or_crop",
+      "scale_level": "Alltag",
+      "motion": "static",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 88,
+      "image": "Bild_88",
+      "chapter": "Fazit: Hunger ist ein Gespräch",
+      "chapter_start": true,
+      "speech_section": "Hunger ist also kein Fehler und kein Zeichen von Schwäche.",
+      "visual_task": "Friendly full orientation map silhouette facing left, calm and warm: stomach, intestine, fat tissue and brain softly glowing in their signal colors; reassuring golden light; cream background.",
+      "explanation_visible": "Hunger is presented as a normal body system, not a flaw.",
+      "visual_category": "process_path",
+      "human_framing": "partial_person",
+      "scale_level": "Körper",
+      "motion": "slow-pull-out",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 89,
+      "image": "Bild_89",
+      "chapter": "Fazit: Hunger ist ein Gespräch",
+      "chapter_start": false,
+      "speech_section": "Er ist ein Gespräch zwischen Magen, Darm, Fettgewebe und Gehirn.",
+      "visual_task": "Four organs arranged in a gentle circle on a soft gradient – coral stomach, salmon intestine, pale-yellow fat tissue and lilac brain – connected by flowing ribbons in orange, turquoise and violet like a conversation.",
+      "explanation_visible": "The four organs exchange signals with each other.",
+      "visual_category": "process_path",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "pan-left",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 90,
+      "image": "Bild_90",
+      "chapter": "Fazit: Hunger ist ein Gespräch",
+      "chapter_start": false,
+      "speech_section": "Ghrelin ruft nach Essen. Dehnung, Darmhormone und Leptin antworten: Es reicht.",
+      "visual_task": "Signal-balance motif, final hero version: the left bowl with orange ghrelin particles, the right bowl with yellow, turquoise and violet particles together; perfectly balanced; elegant golden light.",
+      "explanation_visible": "The hunger signal and all satiety signals are weighed against each other.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Molekül",
+      "motion": "static",
+      "labels_de": [
+        "Ghrelin",
+        "Sattsignale"
+      ],
+      "labels": [
+        "Ghrelin",
+        "Sattsignale"
+      ]
+    },
+    {
+      "scene": 91,
+      "image": "Bild_91",
+      "chapter": "Fazit: Hunger ist ein Gespräch",
+      "chapter_start": false,
+      "speech_section": "Welche Seite gewinnt, hängt davon ab, was du isst, wie schnell du isst und wie gut du schläfst.",
+      "visual_task": "The balance in the center with three small objects arranged around it on a table: a colorful protein-and-vegetable bowl, a fork resting on a napkin and a soft pillow; clean warm-cream background.",
+      "explanation_visible": "Food choice, eating speed and sleep decide which side of the balance wins.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Alltag",
+      "motion": "pan-right",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 92,
+      "image": "Bild_92",
+      "chapter": "Fazit: Hunger ist ein Gespräch",
+      "chapter_start": false,
+      "speech_section": "Und während dein Gehirn noch über Hunger verhandelt,",
+      "visual_task": "Close-up of the hypothalamus with orange and turquoise nerve cells exchanging flickering signals like a lively negotiation; lilac background.",
+      "explanation_visible": "The brain is still weighing hunger and satiety.",
+      "visual_category": "mechanism",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 93,
+      "image": "Bild_93",
+      "chapter": "Fazit: Hunger ist ein Gespräch",
+      "chapter_start": false,
+      "speech_section": "ist dein Essen längst auf einer langen Reise durch deinen Körper.",
+      "visual_task": "Orientation map silhouette facing left, now showing the entire digestive tract as one continuous glowing route from mouth to large intestine; a small golden bite travels down it; teal background.",
+      "explanation_visible": "Food continues its journey through the digestive tract.",
+      "visual_category": "process_path",
+      "human_framing": "partial_person",
+      "scale_level": "Körper",
+      "motion": "pan-left",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 94,
+      "image": "Bild_94",
+      "chapter": "Fazit: Hunger ist ein Gespräch",
+      "chapter_start": false,
+      "speech_section": "Was dabei mit jedem Bissen passiert, siehst du in unserem Video über die Reise einer Pizza.",
+      "visual_task": "A slice of pizza at the entrance of a glowing winding tunnel shaped like the digestive tract, inviting and warm, teaser mood; soft teal-to-gold gradient; no text.",
+      "explanation_visible": "Teaser for the companion video: the journey of a pizza slice.",
+      "visual_category": "food_structure",
+      "human_framing": "none",
+      "scale_level": "Lebensmittel",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "labels": []
+    }
+  ]
+}

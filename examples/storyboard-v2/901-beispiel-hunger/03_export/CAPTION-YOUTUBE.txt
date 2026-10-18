@@ -1,0 +1,19 @@
+TITEL
+Warum du kurz nach dem Essen schon wieder Hunger hast
+
+BESCHREIBUNG
+Ein Croissant und eine Portion Kartoffeln mit genau gleich vielen Kalorien – trotzdem bist du nach dem Croissant viel schneller wieder hungrig. Warum?
+
+Wir zeigen in klaren Illustrationen, wie das Hungerhormon Ghrelin entsteht und warum es deine Essenszeiten lernt, wie Dehnung, CCK, GLP-1 und PYY Sättigung melden und warum diese Signale Zeit brauchen. Dazu sechs typische Gründe für schnellen Hunger, belegt mit echten Studien: Esstempo, Apfel gegen Saft, die Sattmacher Eiweiß, Ballaststoffe und Wasser, stark verarbeitetes Essen, Schlafmangel und Appetit durch Duft – und warum der Nachtisch immer noch reinpasst.
+
+Am Ende bekommst du fünf einfache Ideen für deinen Alltag.
+
+Quellen (Auswahl): Holt et al. 1995 (Sättigungsindex), Cummings et al. 2001 (Ghrelin), Kokkinos et al. 2010 (Esstempo), Flood-Obbagy & Rolls 2009 (Apfel und Saft), Wyatt et al. 2021 (Blutzucker), Hall et al. 2019 (NIH, verarbeitete Lebensmittel), Spiegel et al. 2004 (Schlaf), Rolls et al. 1981 (Abwechslung).
+
+Allgemeine Bildung, keine medizinische Beratung. Bei plötzlich stark erhöhtem Hunger mit großem Durst oder ungewolltem Gewichtsverlust bitte ärztlich abklären lassen.
+
+KAPITEL
+Die Kapitelzeiten werden nach dem finalen Render aus der echten Timeline eingesetzt (python tools/export_chapters.py VIDEOORDNER). Keine geschätzten Zeiten.
+
+HASHTAGS
+#Hunger #Sättigung #Ernährung #Gesundheit #Lebenslogik

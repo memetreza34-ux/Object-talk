@@ -13,9 +13,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Check improvement and phase-1 validator syntax
-        run: python -m compileall -q tools/improvement_loop.py tools/validate_planning_v2.py tools/create_video.py tools/visual_storyboard_gate.py
-      - name: Run illustration-first storyboard tests
-        run: python -m unittest discover -s tools/tests -p 'test_visual_storyboard_gate.py' -v
-      - name: Run improvement-loop regression tests
-        run: python -m unittest discover -s tools/tests -p 'test_improvement_loop.py' -v
+      - name: Check tool syntax
+        run: python -m compileall -q tools/improvement_loop.py tools/validate_planning_v2.py tools/create_video.py tools/visual_storyboard_gate.py tools/script_quality.py tools/build_phase1_package.py tools/export_chapters.py tools/text_normalize.py
+      - name: Run all tool tests
+        run: python -m unittest discover -s tools/tests -p 'test_*.py' -v
+      - name: Validate storyboard-v2 examples (reference only, not produced)
+        run: |
+          python tools/validate_planning_v2.py examples/storyboard-v2/901-beispiel-hunger
+          python tools/validate_planning_v2.py examples/storyboard-v2/902-beispiel-verdauung

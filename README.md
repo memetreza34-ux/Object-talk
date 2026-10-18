@@ -1,6 +1,6 @@
 # Object-Talk
 
-Produktionssystem fuer den deutschen YouTube-Kanal **Object-Talk / FoodSpricht**.
+Produktionssystem fuer den deutschen YouTube-Kanal **Lebenslogik** (technischer Repo-Name: Object-Talk).
 
 ## Ziel
 
@@ -17,20 +17,12 @@ Standard:
 
 Die interne Testphase `000–007` ist abgeschlossen.
 
-Aktive reguläre Longform-Produktion:
-`youtube-videos/009-longform-schlaf/`
+Aktive Produktion (Stand 18.10.2026): **keine**. Das nächste neue Thema wird Video 011 und entsteht mit dem neuen Ablauf unten. Veröffentlichte Videos (z. B. 008, 010) werden nicht neu aufgelegt.
 
-Thema:
-**Was passiert in deinem Körper, während du schläfst?**
+Musterbeispiele für den neuen Ablauf (nur Vorlage, keine Produktion): `examples/storyboard-v2/901-beispiel-hunger/` und `examples/storyboard-v2/902-beispiel-verdauung/`. Hintergrund und Diagnose: `engine/KANAL-ANALYSE-2026-10.md`. Offen: Die formale Lernrunde zum gerenderten Video 010 ist nicht registriert (MP4 nicht im Repo), siehe `PROJECT_STATE.md`.
 
-Status: **Phase 1 vorbereitet, Medien ausstehend**.
-
-Ziel:
-- 6:00–7:00 Minuten
-- 986 Wörter
-- 77 eindeutige Illustrationen
-- Hook → innere Uhr/Schlafdruck → Schlafphasen/Tiefschlaf → Gedächtnis/Immunsystem → REM → Morgen → Schluss
-- vollständiger Export mit YouTube-Caption, MP4 und externen SRT-Untertiteln
+Ab Video 011 entsteht jede Produktion aus einer einzigen Storyboard-Datei:
+`.intern/05_info/storyboard-source.json` → `python tools/build_phase1_package.py youtube-videos/VIDEO` → `python tools/validate_planning_v2.py youtube-videos/VIDEO`.
 
 ## Verbindliche Bildwelt
 

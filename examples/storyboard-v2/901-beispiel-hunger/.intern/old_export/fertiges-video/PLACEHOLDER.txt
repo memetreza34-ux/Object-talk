@@ -1,0 +1,4 @@
+Hier wird nach Phase 3 ausschließlich die finale YouTube-Masterdatei abgelegt:
+[VIDEO-ID]-YOUTUBE.mp4
+
+Keine Preview-, Draft- oder Testexports in diesem Ordner behalten.

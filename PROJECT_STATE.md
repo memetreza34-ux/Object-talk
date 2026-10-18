@@ -1,22 +1,27 @@
 # Object-Talk / Lebenslogik – Aktueller Projektstand
 
-Letzte Aktualisierung: 14.10.2026
+Letzte Aktualisierung: 18.10.2026
 
-## AKTIVE PRODUKTION – VIDEO 010
+## AKTIVE PRODUKTION – KEINE (Stand 18.10.2026)
 
-`youtube-videos/010-longform-hunger/`
+Das nächste neue Thema wird Video 011 und entsteht mit dem neuen Ablauf (`AGENTS.md`, „Arbeitsweise ab Video 011“). Bereits veröffentlichte Videos (008 Verdauung, 009 Schlaf, 010 Hunger) werden nicht neu aufgelegt, außer der Nutzer verlangt das ausdrücklich.
 
-**Thema:** Warum du nach dem Essen so schnell wieder Hunger hast?
-**YouTube-Kanal:** Lebenslogik (technisches Repo: Object-Talk).
-**Status:** Phase-1-Material erstellt und statisch konsistent, Flow-/Audio-/MP4-Produktion NOCH NICHT durchgeführt. Keine finale Videodauer bestätigt.
+Verbesserungen vom 18.10.2026 (gelten für alle zukünftigen Videos; Diagnose in `engine/KANAL-ANALYSE-2026-10.md`):
+- Skript: `engine/SCRIPT-STANDARD.md` §13 und Gate `tools/script_quality.py` (Zahlen, Fragen, Absicherungen, Open Loops, Sprechzeit pro Bild).
+- Bilder: Farbcode, Leitmotiv und Orientierungskarte (`bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`), Prüfung der Kamerabewegungen.
+- Titel und Cover: `engine/TITEL-THUMBNAIL-STANDARD.md`.
+- Eine Quelle: `.intern/05_info/storyboard-source.json` → `python tools/build_phase1_package.py` erzeugt alle Phase-1-Dateien.
+- Untertitel-Abgleich versteht Zahlen (`tools/text_normalize.py`); YouTube-Kapitel kommen aus der echten Timeline (`tools/export_chapters.py`).
 
-- **1044 Sprecherwörter**, 9 Kapitel, 72 individuelle normale Flow-Videoszenen, 27 davon mit 1–2 sinnvollen deutschen Labels.
-- 3 separate Coverkandidaten; danach Nutzerwahl und erste normale Videoszenen 01–05, anschließend Fünfergruppen.
-- Ein EINZIGER Flow-Prompt unter `02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt` und ein Fließtext-Skript `01_script/script.txt`.
-- 3 sichtbare Ordner; `03_export/` soll final genau Video, separates Cover, YouTube-Beschreibung und echt zeitgestempelte Untertitel enthalten. Bis Medien erstellt sind nur Entwurfstexte; keine falsche MP4.
-- Frühere Fehler aus 008/009 in `.intern/05_info/improvement-applied.json` konkret nachgewiesen: klare biologisch nachvollziehbare Bilder, sicherer Flow-Workflow, schlanker Export.
-- Nächster Schritt: zuerst drei Cover in Google Flow erzeugen, Nutzer wählt 1/2/3, danach 72 Szenen, Voice und Render.
-- `tools/improvement_loop.py` ist in der Phase-1-Prüfung integriert; GitHub Actions waren zuletzt fehlgeschlagen. Ein vollständig ausgeführter Python-Test ist derzeit **nicht bestätigt**. Statische Querverweisprüfungen der 72 Szenen wurden durchgeführt.
+Musterbeispiele (nur Vorlage, keine Produktion, keine Handoff-Links): `examples/storyboard-v2/901-beispiel-hunger/` und `examples/storyboard-v2/902-beispiel-verdauung/`.
+
+**Offen und bewusst benannt:** Die formale Lernrunde für das gerenderte Video 010 (`tools/improvement_loop.py register`) ist nicht registriert, weil die MP4 nicht im Repository liegt und keine vollständige Sichtung stattfand. Die Lehren aus `engine/KANAL-ANALYSE-2026-10.md` (Skript- und Planungsanalyse, 21 Nutzer-Standbilder zu 010) sind als dauerhafte Lessons im Ledger hinterlegt.
+
+Nächster Schritt: neues Thema in `THEMEN-GEHIRN.md` wählen → `python tools/create_video.py 011-longform-THEMA` → Recherche und Storyboard → `build_phase1_package.py` → `validate_planning_v2.py` PASS → zwei Handoff-Links.
+
+## Vorherige Produktion – VIDEO 010 (historisch, unverändert)
+
+`youtube-videos/010-longform-hunger/`, gerendert und vom Nutzer hochgeladen (368,9 s). Bekannte Schwächen siehe `engine/KANAL-ANALYSE-2026-10.md`. Die Planungsdateien enthalten 24 ungültige Kamerabewegungen. Ein erneuter Render oder eine Neuauflage von 010 ist nicht vorgesehen.
 
 ## Bisherige Produktionsnotizen / Video 009
 
@@ -56,7 +61,7 @@ Das freigegebene erste Longform-Video 008 ist für 009 das strukturelle und visu
 
 `youtube-videos/008-longform-verdauung/` ist das vorherige Longform-Thema. Der Nutzer hat einen gerenderten Film zur Besprechung bereitgestellt. Im GitHub-Repo ist die finale Master-MP4 samt echten Zeitdaten noch nicht als geprüftes Exportpaket abgelegt. Nicht fälschlich als repo-seitig YouTube-ready deklarieren.
 
-## Nächster Produktionsschritt
+## Nächster Produktionsschritt (historisch, Video 009 – aktuell gilt der Abschnitt oben)
 
 1. `python tools/validate_planning_v2.py youtube-videos/009-longform-schlaf`
 2. Finale Voice aufnehmen/generieren und Laufzeit prüfen.
@@ -72,7 +77,7 @@ Pilotphase 000–007 abgeschlossen; Bildwelt: **Clean Animated Biology Illustrat
 ## Produktionsentscheidung: keine Bildvorlagen (10.10.2026)
 Wie beim erfolgreichen Verdauungsvideo 008 wird Google Flow **ausschließlich mit einem vollständigen Textprompt** bedient. Keine externen Stilbilder, 008-Frame-ZIP-Dateien oder Cover-als-Referenz. Erst genau drei separate Cover erstellen, Auswahl abwarten, dann Szenen 02–77 in Fünfergruppen. Die bekannte organisch-illustrative Bildwelt ist im Prompt positiv beschrieben. Bild-QA bleibt Pflicht; eine exakte Reproduktion ist mit generativer KI nicht garantiert.
 
-## Tablet-Handoff nach Phase 1 (dauerhaft)
+## Tablet-Handoff nach Phase 1 (dauerhaft; Beispiel-Links unten stammen aus Video 009, beim nächsten Video gibt der Validator die echten Links aus)
 
 Bei jeder abgeschlossenen Phase 1 direkt in der Chat-Antwort zwei anklickbare Dateilinks ausgeben, niemals nur einen Sammellink oder Ordnerpfade:
 
@@ -80,7 +85,7 @@ Bei jeder abgeschlossenen Phase 1 direkt in der Chat-Antwort zwei anklickbare Da
 
 **Voice-over-Skript öffnen:** https://github.com/memetreza34-ux/Object-talk/blob/main/youtube-videos/009-longform-schlaf/01_script/script.txt
 
-Diese URLs gelten NUR für das aktuelle Video 009. Bei späteren Videos immer den zugehörigen Projektordner einsetzen. Als Markdown-Klicklinks oder funktionierende Öffnen-Schaltflächen in der Antwort präsentieren. Die Dateien sind Text zum direkten Kopieren auf Tablet/PC; Login kann erforderlich sein. Details: `AGENTS.md`, `PROJECT_CONTRACT.md`.
+Diese URLs gelten NUR für das damalige Video 009. Bei späteren Videos immer den zugehörigen Projektordner einsetzen. Als Markdown-Klicklinks oder funktionierende Öffnen-Schaltflächen in der Antwort präsentieren. Die Dateien sind Text zum direkten Kopieren auf Tablet/PC; Login kann erforderlich sein. Details: `AGENTS.md`, `PROJECT_CONTRACT.md`.
 
 
 ## Verbindliches neues Bildfeedback (14.10.2026, ab Video 011)

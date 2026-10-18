@@ -1,0 +1,184 @@
+LEBENSLOGIK | 902-beispiel-verdauung | ONE COMPLETE GOOGLE FLOW PROMPT (text only, no uploads)
+
+German YouTube explainer: Die Reise einer Pizza durch deinen Körper
+Generate still images only, 16:9. The file names below (Bild_XX.png) are INTERNAL production metadata for saving only. NEVER render production metadata, file names, image or scene numbers, these instructions or any English words visibly in an image.
+
+WORKFLOW
+1. First create exactly THREE separate cover candidates (three single images, never a collage). Do not ask for uploads, ZIPs, the script or permission first.
+2. Show all three and ask only: "Welches Cover wählst du – 1, 2 oder 3?" Then STOP and wait.
+3. The chosen cover is saved separately as COVER.png (YouTube thumbnail). It is NOT a video scene, not Bild_01, not part of the ZIP and never a style reference.
+4. Right after the choice, without any further question, generate Bild_01–Bild_05 as five separate images, then Bild_06–Bild_10 and so on in batches of five until Bild_99. Never request all scenes in one batch. If a platform limit interrupts you, name the exact resume point and continue when the user writes weiter.
+5. Finally zip ONLY Bild_01.png–Bild_99.png (no cover). Never claim an image or ZIP exists unless it was really generated.
+
+CANONICAL STYLE FOR EVERY IMAGE (inherited from approved video 008)
+Clean Animated Biology Illustration: simplified but recognizable anatomy, smooth organic forms, clean outlines, soft gradients, subtle depth, bright calm backgrounds, clear biological colors, low complexity, one dominant biological idea per frame.
+No photoreal medical imagery, no medical CGI, no glossy 3D, no feature-animation/Pixar look, no toy/kids-book look, no corporate infographic, no clutter, no gore, no random icons, no unnecessary text.
+
+ILLUSTRATION-FIRST ART DIRECTION (Bildregie V2)
+- Show the biology itself: organ cutaways, tissue cross-sections, macro views, food interiors, signal pathways and clear two-state comparisons. People appear only as hands or cropped details unless the scene says otherwise; adults always fully clothed.
+- The main subject fills about two thirds of the frame; one clear focal point; 2–4 key elements; calm negative space.
+- Vary the camera from scene to scene: extreme close-up, medium, wide; subject left, right or centered; cutaway, top view, side view. Neighbouring images must never look alike.
+- Rich harmonious palette (coral, salmon, amber, gold, teal, aquamarine, sky blue, leaf green, restrained violet) on soft gradient backgrounds that change with each scene; never a long row of identical pale mint frames. Soft layered shading, fine warm outlines, gentle depth, no CGI gloss.
+- A chart is allowed only as one clean organic curve or ribbon when a scene asks for it; no dashboards, icon grids or UI cards.
+
+COLOR & CONTINUITY KEY FOR THIS VIDEO (identical in every image)
+Starch / carbohydrates = golden-yellow bead chains that break into single golden beads (glucose). Protein = coral-red bead chains that break into single coral beads (amino acids). Fat = amber-orange droplets that become small amber strands (fatty acids). Fiber = leaf-green strands. Water = small light-blue droplets. Digestive enzymes = small soft-purple rounded molecule shapes (no faces). Bile = golden-green fluid. Gut bacteria = small, diverse rounded and rod-shaped microbes in teal, plum and moss green (no faces, not cartoonish). The pizza = a classic Margherita slice: golden crust, red tomato sauce, melted white cheese, one basil leaf. The swallowed bite = a small round pizza-colored bolus. Recurring orientation map: simplified left-facing side silhouette of an adult head and torso in soft cream with the whole digestive tract drawn as one continuous tube (mouth, esophagus, stomach, small intestine, large intestine); the current station glows, the rest stays muted.
+
+TEXT RULES
+- COVER: exactly one visible text block: the German title Wohin verschwindet sie? in correct spelling, large bold clean sans-serif, nothing else (no subtitle, no labels, no numbers, no logos, no quotation marks).
+- NORMAL SCENES: each scene ends with TEXT: followed by its only allowed German labels (separated by |). Render exactly those words (max 2 labels, correct spelling, no quotation marks), each placed close to the structure it names, thin pointer line only if needed. TEXT: none means no text, letters or numerals at all – also none on clocks, packages, screens or books.
+- Contrast: light background → dark text; dark background → light text. Text sits in calm negative space. Weak contrast, misspelling or extra text = regenerate.
+
+SCIENCE & SAFETY
+Non-fiction educational illustrations, simplified but anatomically plausible. No gore, no wet realistic tissue, no body shaming, no brand logos, no sensational medical claims. Stool and the rectum appear only as clean, simplified, schematic educational shapes in soft colors – never realistic, never disgusting, no toilet scenes. If Flow refuses an image, name it and continue with the next; never try to bypass a policy.
+
+QUALITY CHECK AFTER EVERY BATCH OF FIVE
+Each image matches its scene, shows one main idea, stays in the same visual world, differs in composition from its neighbours, has exactly the listed labels, no leaked metadata or numbers, strong contrast and no AI artefacts (extra fingers, melted text, impossible anatomy). Replace failures before continuing.
+
+THREE COVER OPTIONS (exactly one text block each: Wohin verschwindet sie?)
+COVER 1: A large appetizing Margherita pizza slice on the left entering a glowing transparent side silhouette of a torso, where the digestive route is visible as a bright winding path; the title in very large bold dark sans-serif on a calm pale-cream area on the right. Strong contrast, readable on a phone.
+COVER 2: A pizza slice in the lower half whose tip dissolves into a stream of golden, coral and amber particles flowing into a curving pink intestine; the title in very large bold dark letters across a calm light band at the top.
+COVER 3: Close-up of a hand holding a pizza slice with a long cheese pull; inside a circular magnifying lens over the slice the velvety villi of the small intestine are visible; the title in very large bold dark letters on a soft light-teal area on the left.
+
+SCENE REGISTER – 99 normal video images, generate in batches of five
+
+— Batch Bild_01–Bild_05 —
+Bild_01.png — Hero close-up of a hand lifting a Margherita pizza slice from a plate, long melted cheese strings stretching, golden crust, red tomato sauce, one basil leaf; warm golden-orange background with soft bokeh; the slice fills most of the frame. TEXT: none.
+Bild_02.png — An empty plate with a few crumbs in the foreground; behind it a translucent side silhouette of a torso in which a small pizza-colored bite is just sliding down the throat; soft cream-and-teal palette. TEXT: none.
+Bild_03.png — Orientation map: simplified left-facing side silhouette of an adult head and torso in soft cream with the whole digestive tract drawn as one continuous tube from mouth to the end of the large intestine, softly glowing; a tiny pizza-colored bite sits at the very start; a subtle sun-to-moon arc above the body suggests more than a day. TEXT: none.
+Bild_04.png — Left-to-right transformation sequence on one calm background without panel borders: a pizza piece, then crushed pieces, then a soft blob in bubbling pale-yellow acidic liquid, then a cloud of separated golden, coral and amber beads. TEXT: none.
+Bild_05.png — Macro inside a red blood vessel: single golden beads, coral beads and small amber particles drift among softly lit red blood cells; deep coral background with warm light. TEXT: none.
+
+— Batch Bild_06–Bild_10 —
+Bild_06.png — Close-up of a muscle cell with striped fibers; golden and coral beads enter it and are built into its structure with a soft glow; muscle-red and teal palette. TEXT: none.
+Bild_07.png — Clean schematic magnified circle showing the remaining material at the end of the gut: densely packed with countless tiny diverse microbes in teal, plum and moss green between a few green fiber strands; soft tasteful colors. TEXT: none.
+Bild_08.png — Orientation map: simplified left-facing side silhouette of an adult head and torso in soft cream with the whole digestive tract drawn as one continuous tube; the tube glows gently except the last section of the large intestine, which stays hidden in soft shadow like an unsolved mystery; teal-to-cream gradient. TEXT: none.
+Bild_09.png — Exploded side view of a pizza slice floating apart into four clean layers: golden crust at the bottom, red tomato sauce, white melted cheese and a light drizzle of golden olive oil on top; soft warm-cream background. TEXT: none.
+Bild_10.png — The crust layer releases golden-yellow bead chains and the cheese layer releases coral-red bead chains, both drawn clearly next to their source layers; clean light background. TEXT: Stärke | Eiweiß
+
+— Batch Bild_11–Bild_15 —
+Bild_11.png — The cheese and oil release amber-orange droplets, while the crust and the tomato sauce each release a few leaf-green fiber strands, drawn next to their source layers; clean light background. TEXT: Fett | Ballaststoffe
+Bild_12.png — Four colored streams start together and diverge: golden and coral beads flow into a red blood vessel, amber droplets into a pale cream lymph vessel, green strands continue down a pink intestinal tube; soft teal background. TEXT: none.
+Bild_13.png — Orientation map: simplified left-facing side silhouette of an adult head and torso in soft cream with the whole digestive tract drawn as one continuous tube; the mouth glows warmly at the start of the tube, the rest of the route is muted; soft peach background. TEXT: Mund
+Bild_14.png — Side cutaway of a mouth with clean simplified teeth crushing a pizza bite; the bite splits into many smaller pieces; the tongue is pink and clearly separate; soft coral palette, no gore. TEXT: none.
+Bild_15.png — Before-and-after comparison: on the left one big golden food cube with only a few purple enzyme shapes on its outside; on the right the same cube cut into many small cubes with highlighted surfaces and many enzymes working on them; clean cream background. TEXT: Oberfläche
+
+— Batch Bild_16–Bild_20 —
+Bild_16.png — Mouth cutaway: salivary glands near the jaw release clear droplets; the chewed pieces gather into one soft rounded bolus on the tongue; fresh mint-and-coral palette. TEXT: Speichel
+Bild_17.png — Macro: small soft-purple enzyme shapes approach a long golden starch chain inside the moist bolus; clean pale-blue background. TEXT: Amylase
+Bild_18.png — Macro: purple amylase shapes cut a long golden starch chain into several short golden fragments; a clear cause-and-effect from left to right; soft gold-and-lilac palette. TEXT: Stärke | Zucker
+Bild_19.png — Side cutaway of a head chewing a piece of bread: on the tongue tiny golden sugar fragments light up the taste buds with a sweet pink glow; friendly warm palette. TEXT: none.
+Bild_20.png — Clean throat cutaway in side view: the small epiglottis flap folds down over the windpipe while the bolus slides behind it into the food pipe; airway pale blue, food pipe pink. TEXT: Kehldeckel | Luftröhre
+
+— Batch Bild_21–Bild_25 —
+Bild_21.png — Same throat region seen closer: small blue air particles wait motionless in the windpipe beneath the closed epiglottis while the bolus slides over the lid and behind it into the food pipe; a frozen-moment feeling; cool blue palette. TEXT: none.
+Bild_22.png — Orientation map: simplified left-facing side silhouette of an adult head and torso in soft cream with the whole digestive tract drawn as one continuous tube; the esophagus glows as a vertical tube from throat to stomach with the bolus at its top; the rest of the route is muted; soft sky-blue background. TEXT: Speiseröhre
+Bild_23.png — Vertical esophagus cutaway: the bolus is not falling freely but is gripped by the muscular wall, rings of muscle visible around it; calm teal background. TEXT: none.
+Bild_24.png — Close-up of the esophagus: a ring of muscle squeezes tightly behind the bolus while the section in front relaxes and widens, forming a clear wave that pushes the bite forward; coral muscle on a teal background. TEXT: Peristaltik
+Bild_25.png — A fully clothed adult doing a calm headstand on a yoga mat in a bright room; a translucent esophagus inside the body shows the bolus moving upward toward the stomach against gravity; friendly fresh palette. TEXT: none.
+
+— Batch Bild_26–Bild_30 —
+Bild_26.png — Upper body of an astronaut in a space-station cabin eating from a pouch, small crumbs floating; a translucent throat shows the peristaltic wave moving the bite; Earth visible through a round window; deep blue with warm cabin light. TEXT: none.
+Bild_27.png — Lower end of the esophagus: a muscular ring opens and the bolus slips into the upper stomach; coral stomach, pink esophagus, soft cream background. TEXT: Magen
+Bild_28.png — Orientation map: simplified left-facing side silhouette of an adult head and torso in soft cream with the whole digestive tract drawn as one continuous tube; the stomach glows strongly in coral-orange, the rest is muted; a subtle heat-like shimmer around it; peach background. TEXT: none.
+Bild_29.png — On the left a small plain glass beaker without any markings, labelled Magensaft, holds bubbling pale-yellow gastric fluid with many strong acid bubbles; on the right a halved lemon with a drop of juice, labelled Zitronensaft, shows only a few small bubbles; clean yellow-and-teal palette. TEXT: Magensaft | Zitronensaft
+Bild_30.png — Macro inside the acidic stomach: tightly folded coral protein knots loosen into long open strands; a few small microbes nearby dissolve and fade; pale-yellow acidic bubbles all around. TEXT: none.
+
+— Batch Bild_31–Bild_35 —
+Bild_31.png — Macro: purple pepsin enzyme shapes snip a long coral bead chain into several shorter pieces, the cut points glowing; warm coral background. TEXT: Pepsin
+Bild_32.png — Stomach wall cutaway close-up: acidic bubbles press against the pink wall under dramatic but clean lighting that raises the question; coral and acid-yellow palette. TEXT: none.
+Bild_33.png — Layered cross-section: the acidic lumen at the top, a thick translucent blue-white mucus layer in the middle, healthy pink cells at the bottom; acid bubbles fade out where they touch the mucus; clean layered composition. TEXT: Schleimschicht
+Bild_34.png — Close-up of the stomach lining: old surface cells gently shed into the mucus while fresh cells push up from below, like a renewing cobblestone path; soft pink-and-teal palette. TEXT: none.
+Bild_35.png — Stomach cutaway with visible muscle layers; three soft contraction waves roll across the stomach wall and churn the contents; motion swirls; coral-and-amber palette. TEXT: none.
+
+— Batch Bild_36–Bild_40 —
+Bild_36.png — Macro of a smooth, creamy, thick mixture with golden, coral and amber beads evenly mixed in; soft warm light; caramel-cream palette, appetizing rather than unpleasant. TEXT: Speisebrei
+Bild_37.png — Two stomach cutaways side by side: the left stomach, labelled Pizza, is still full of pizza mixture with many amber fat droplets; the right stomach, labelled Reis, after plain rice, is already half empty; clean teal background. TEXT: Pizza | Reis
+Bild_38.png — Close-up of the stomach exit: amber fat droplets reach the first part of the small intestine, which releases small turquoise signal particles that make the stomach exit narrow; food waits behind it; warm amber palette. TEXT: Fett
+Bild_39.png — Side cutaway: the muscular stomach exit opens just a little and releases a small squirt of creamy mixture into the first loop of the small intestine; the stomach above is still partly filled; coral and salmon palette. TEXT: Magenpförtner
+Bild_40.png — Orientation map: simplified left-facing side silhouette of an adult head and torso in soft cream with the whole digestive tract drawn as one continuous tube; the coiled small intestine glows brightly in salmon-gold as the main stage, the rest is muted; spotlight feeling; soft cream background. TEXT: Dünndarm
+
+— Batch Bild_41–Bild_45 —
+Bild_41.png — Cutaway of the first part of the small intestine with the pancreas beside it; pancreatic juice flows in through a duct; where it mixes, the acidic yellow bubbles disappear and the mixture turns calm and neutral; salmon and soft-blue palette. TEXT: Bauchspeicheldrüse
+Bild_42.png — Three clear lanes from top to bottom: purple enzymes working on a golden starch chain, on a coral protein chain and on an amber fat droplet; tidy, simple, generous spacing; soft lavender background. TEXT: none.
+Bild_43.png — Kitchen analogy: a clear glass of water with a thick layer of golden oil floating on top in big round droplets that refuse to mix; bright clean background. TEXT: none.
+Bild_44.png — Macro in the intestine: a few big amber fat droplets floating in watery fluid, with only a handful of purple enzymes clinging to their edges; most of each droplet's surface is unreachable; amber-and-blue palette. TEXT: none.
+Bild_45.png — Large reddish-brown liver cutaway with fine golden-green bile channels flowing toward a duct; soft warm background. TEXT: Leber | Galle
+
+— Batch Bild_46–Bild_50 —
+Bild_46.png — Close-up of the green pear-shaped gallbladder beneath the liver squeezing and releasing a stream of golden-green bile through a duct into the small intestine; clean composition. TEXT: Gallenblase
+Bild_47.png — Hands with a sponge and a drop of dish soap in a greasy frying pan; the grease breaks up into many tiny droplets around the soap; bright clean kitchen light, no brands. TEXT: none.
+Bild_48.png — Before-and-after macro: on the left one big amber droplet; on the right the same amount split into dozens of tiny droplets coated with golden-green bile, each covered by working purple enzymes. TEXT: none.
+Bild_49.png — A faint outline of the original pizza slice dissolving into a cloud of colorful tiny particles – golden, coral and amber – drifting in a calm salmon-colored fluid. TEXT: none.
+Bild_50.png — Two horizontal lanes: on top a golden starch chain turning into single golden beads; below a coral protein chain turning into single coral beads; clean light background. TEXT: Glukose | Aminosäuren
+
+— Batch Bild_51–Bild_55 —
+Bild_51.png — Macro: a tiny amber droplet splits into small amber strand-shaped fatty acids and little rounded fat pieces; warm amber background with soft light. TEXT: Fettsäuren
+Bild_52.png — Camera view from inside the small-intestine tube toward its velvety inner wall; colorful particles drift toward it; salmon-pink with soft light. TEXT: none.
+Bild_53.png — Opened segment of small intestine showing large circular folds like soft ridges along its inner surface; clean salmon-and-cream palette. TEXT: none.
+Bild_54.png — Macro of one fold covered with countless finger-like velvety villi standing close together like a soft carpet; pink and peach tones on a soft teal background. TEXT: Darmzotten
+Bild_55.png — Extreme zoom into the surface of one villus: the cells carry a dense brush of tiny hair-like microvilli on top; scale-change feeling; soft lilac-pink palette. TEXT: Mikrovilli
+
+— Batch Bild_56–Bild_60 —
+Bild_56.png — Aerial illustration of a tennis court completely covered by an unrolled, velvety pink intestinal lining like a carpet; clean green surroundings; playful but tidy. TEXT: Tennisplatz
+Bild_57.png — Aerial view at the same scale as the tennis court before: a large tennis court beside a much smaller badminton court, and only half of the small badminton court is covered by the velvety pink intestinal lining carpet; the label sits on the covered half; strong size contrast; bright clean palette. TEXT: rund 30 m²
+Bild_58.png — Eye-level cutaway view into a cozy small studio apartment: the whole floor is covered with a soft pink carpet that has the velvety texture of intestinal villi, a bed, a sofa and a lamp stand on it; warm friendly evening palette. TEXT: none.
+Bild_59.png — Cross-section of a single villus: a red-and-blue capillary network, labelled Blutgefäße, and a pale cream central lymph vessel, labelled Lymphgefäß; golden and coral beads head for the capillaries, amber packages for the lymph vessel; clean layout. TEXT: Blutgefäße | Lymphgefäß
+Bild_60.png — Macro: golden and coral beads pass through a row of intestinal cells and enter a fine red capillary on the other side; soft lighting; salmon-and-red palette. TEXT: none.
+
+— Batch Bild_61–Bild_65 —
+Bild_61.png — Orientation map: simplified left-facing side silhouette of an adult head and torso in soft cream with the whole digestive tract drawn as one continuous tube; a highlighted vein carries golden and coral beads from the intestine straight up to the reddish-brown liver; the rest of the body is muted; soft sky-blue background. TEXT: Leber
+Bild_62.png — Liver cutaway as a calm hub: one incoming stream of beads splits into three clear paths – one passing on into the body, one being transformed into new shapes, one being stored as a compact cluster; reddish-brown liver on a warm cream background. TEXT: none.
+Bild_63.png — Inside a liver cell: single golden beads link together into a large branched tree-like cluster; warm golden glow; soft brown-and-cream palette. TEXT: Glykogen
+Bild_64.png — Inside an intestinal cell: amber fatty acids are reassembled and wrapped into round packages with a thin pale coat; several finished spheres leave the cell; amber-and-cream palette. TEXT: Chylomikronen
+Bild_65.png — Comparison inside the villus: a large round amber package bumps against a narrow red capillary that is too small and instead slips into the wider pale cream lymph vessel next to it. TEXT: Lymphgefäß
+
+— Batch Bild_66–Bild_70 —
+Bild_66.png — Orientation map: simplified left-facing side silhouette of an adult head and torso in soft cream with the whole digestive tract drawn as one continuous tube; a pale cream lymph route runs from the intestine up through the chest and joins a large vein near the heart; the heart glows softly; the liver stays muted; soft lavender background. TEXT: Herz
+Bild_67.png — Orientation map: simplified left-facing side silhouette of an adult head and torso in soft cream with the whole digestive tract drawn as one continuous tube; two color-coded routes leave the intestine: a golden route going to the liver and an amber route clearly passing beside the liver upward to the chest; clean and simple. TEXT: none.
+Bild_68.png — Branching red blood vessels spread into a fine network that reaches many different body cells – muscle, skin and nerve cells – each receiving colorful beads; soft coral-and-teal palette. TEXT: none.
+Bild_69.png — Macro of a body cell where golden glucose beads enter small bean-shaped energy centers that glow brightly; warm gold-and-teal palette. TEXT: Energie
+Bild_70.png — Macro: coral amino-acid beads are linked into new protein chains that fold into a muscle fiber strand; coral-and-red palette. TEXT: none.
+
+— Batch Bild_71–Bild_75 —
+Bild_71.png — Three small situations in one flowing composition without panel borders: an amber droplet glowing as it is used for energy in a cell, amber strands built into a cell membrane, and an amber droplet stored inside a round fat cell. TEXT: none.
+Bild_72.png — Full side silhouette facing left with a soft warm glow spreading through muscles and skin; tiny pizza-colored particles shimmer inside the body; gentle golden light. TEXT: none.
+Bild_73.png — Cutaway of the last loop of the small intestine joining the large intestine: most colorful nutrient beads have left through the wall, while a smaller stream of leftover material continues onward into the wider large intestine; salmon-and-teal palette. TEXT: none.
+Bild_74.png — Macro at the end of the small intestine: the remaining mixture contains light-blue water droplets, leaf-green fiber strands and a few pale shed cells, moving onward; clean salmon-and-green palette. TEXT: Ballaststoffe
+Bild_75.png — Orientation map: simplified left-facing side silhouette of an adult head and torso in soft cream with the whole digestive tract drawn as one continuous tube; the large intestine glows as a wide frame around the small intestine with blue water droplets highlighted inside; the rest is muted; soft aqua background. TEXT: Dickdarm
+
+— Batch Bild_76–Bild_80 —
+Bild_76.png — A long row of large clear one-liter bottles lined up next to a simplified digestive tract; bright clean light; no brands, no markings and no numbers on the bottles. TEXT: 9 Liter
+Bild_77.png — Close-up of the bottle row seen from a low side angle: a small group of bottles with clear drinking water, labelled Getränke, stands beside a much larger group of bottles tinted pale yellow, golden-green, light peach and faint milky blue, labelled Verdauungssäfte; no markings on the bottles. TEXT: Getränke | Verdauungssäfte
+Bild_78.png — Cutaway of the small and large intestine with many light-blue water droplets moving out through the walls into surrounding blood vessels; calm blue-and-coral palette. TEXT: none.
+Bild_79.png — Wide view: the long row of large bottles fades into the background on the left, while on the right a single small drinking glass, only partly filled, stands sharp in the foreground; strong size contrast; clean light background. TEXT: none.
+Bild_80.png — Macro inside the large intestine: a lively, dense community of diverse rounded and rod-shaped microbes in teal, plum and moss green along the mucus layer; no faces, scientific but friendly. TEXT: Darmbakterien
+
+— Batch Bild_81–Bild_85 —
+Bild_81.png — Two equally dense, equally large crowds of dots side by side: on the left tiny colorful microbes, on the right human body cells, mostly small red blood cells; both crowds clearly have about the same number of members; cream background. TEXT: none.
+Bild_82.png — Macro: microbes cluster around leaf-green fiber strands and break them into smaller pieces; busy but clear; moss-and-teal palette. TEXT: none.
+Bild_83.png — Macro: from the broken fiber small bright aqua particles emerge and are taken up by the cells of the large-intestine wall, which glow healthy and warm; teal-and-coral palette. TEXT: Butyrat
+Bild_84.png — Macro of the microbe community releasing a few round transparent gas bubbles that drift upward through the intestinal content; light, slightly humorous but clean; aqua-and-plum palette. TEXT: none.
+Bild_85.png — Orientation map: simplified left-facing side silhouette of an adult head and torso in soft cream with the whole digestive tract drawn as one continuous tube; the last section of the large intestine, hidden at the beginning of the video, now lights up with a soft reveal light; teal-to-cream gradient. TEXT: Enddarm
+
+— Batch Bild_86–Bild_90 —
+Bild_86.png — A clean schematic rounded container divided into four equal parts: three parts light-blue water and one part a soft brown solid portion; simple and tasteful, no realistic stool. TEXT: Wasser
+Bild_87.png — Magnifying circle over the brown solid portion: inside, countless tiny microbes in teal, plum and moss green between a few fiber strands; clean and scientific. TEXT: none.
+Bild_88.png — A rounded soft-brown portion of leftover material in which roughly half of the visible surface is speckled with tiny teal, plum and moss-green microbes; clean light background; no numbers. TEXT: Bakterien
+Bild_89.png — Macro of red blood cells in a vessel; one old, slightly wrinkled red blood cell in the center begins to fall apart; deep red-and-coral palette. TEXT: none.
+Bild_90.png — The old red blood cell breaks down and releases small bright yellow pigment particles; a clean red-to-yellow transition from left to right. TEXT: Bilirubin
+
+— Batch Bild_91–Bild_95 —
+Bild_91.png — Liver, gallbladder and small intestine in one clean side view: yellow pigment particles travel with golden-green bile through the duct into the intestine. TEXT: none.
+Bild_92.png — A simple left-to-right color chain: a red blood cell, then yellow pigment particles, then microbes turning them into brown pigment particles; clean light background. TEXT: none.
+Bild_93.png — Orientation map: simplified left-facing side silhouette of an adult head and torso in soft cream with the whole digestive tract drawn as one continuous tube glowing in sequence along the full route; above it a soft arc of three sun-and-moon cycles without numbers; calm gradient from day to night colors. TEXT: none.
+Bild_94.png — Mouth and stomach connected by the esophagus in one clean flowing composition: teeth crushing a bite on the left, the churning coral stomach with acid bubbles on the right; peach-and-coral palette. TEXT: none.
+Bild_95.png — Small-intestine hero image: villi in the foreground absorbing colorful beads, red blood vessels and a pale lymph vessel leading away, the liver softly visible in the background. TEXT: none.
+
+— Batch Bild_96–Bild_99 —
+Bild_96.png — Large-intestine hero image: water droplets returning into the wall, microbes processing green fiber, the content becoming firmer as it moves on; teal-and-plum palette. TEXT: none.
+Bild_97.png — Closing scale transition: a pizza slice on the left dissolves into a stream of golden, coral and amber particles that flow into a glowing side silhouette of a person on the right; warm golden light. TEXT: none.
+Bild_98.png — Side silhouette facing left: the pizza bite is still visible far down in the large intestine, yet the stomach glows with a small warm-orange hunger signal and a thin orange line rises to the brain; peach background. TEXT: none.
+Bild_99.png — Teaser image: an elegant balance with a small croissant in one bowl and a heap of boiled potatoes in the other, softly spotlighted, with an orange and a turquoise glow behind them; no text. TEXT: none.
+
+FINAL CHECK: exactly 99 different accepted normal images Bild_01.png–Bild_99.png (no cover inside), each 16:9. Cover downloaded separately as COVER.png. No MP4, no subtitles, no extra prompt files.

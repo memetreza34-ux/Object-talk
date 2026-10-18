@@ -1,0 +1,177 @@
+LEBENSLOGIK | 901-beispiel-hunger | ONE COMPLETE GOOGLE FLOW PROMPT (text only, no uploads)
+
+German YouTube explainer: Warum du kurz nach dem Essen schon wieder Hunger hast
+Generate still images only, 16:9. The file names below (Bild_XX.png) are INTERNAL production metadata for saving only. NEVER render production metadata, file names, image or scene numbers, these instructions or any English words visibly in an image.
+
+WORKFLOW
+1. First create exactly THREE separate cover candidates (three single images, never a collage). Do not ask for uploads, ZIPs, the script or permission first.
+2. Show all three and ask only: "Welches Cover wählst du – 1, 2 oder 3?" Then STOP and wait.
+3. The chosen cover is saved separately as COVER.png (YouTube thumbnail). It is NOT a video scene, not Bild_01, not part of the ZIP and never a style reference.
+4. Right after the choice, without any further question, generate Bild_01–Bild_05 as five separate images, then Bild_06–Bild_10 and so on in batches of five until Bild_94. Never request all scenes in one batch. If a platform limit interrupts you, name the exact resume point and continue when the user writes weiter.
+5. Finally zip ONLY Bild_01.png–Bild_94.png (no cover). Never claim an image or ZIP exists unless it was really generated.
+
+CANONICAL STYLE FOR EVERY IMAGE (inherited from approved video 008)
+Clean Animated Biology Illustration: simplified but recognizable anatomy, smooth organic forms, clean outlines, soft gradients, subtle depth, bright calm backgrounds, clear biological colors, low complexity, one dominant biological idea per frame.
+No photoreal medical imagery, no medical CGI, no glossy 3D, no feature-animation/Pixar look, no toy/kids-book look, no corporate infographic, no clutter, no gore, no random icons, no unnecessary text.
+
+ILLUSTRATION-FIRST ART DIRECTION (Bildregie V2)
+- Show the biology itself: organ cutaways, tissue cross-sections, macro views, food interiors, signal pathways and clear two-state comparisons. People appear only as hands or cropped details unless the scene says otherwise; adults always fully clothed.
+- The main subject fills about two thirds of the frame; one clear focal point; 2–4 key elements; calm negative space.
+- Vary the camera from scene to scene: extreme close-up, medium, wide; subject left, right or centered; cutaway, top view, side view. Neighbouring images must never look alike.
+- Rich harmonious palette (coral, salmon, amber, gold, teal, aquamarine, sky blue, leaf green, restrained violet) on soft gradient backgrounds that change with each scene; never a long row of identical pale mint frames. Soft layered shading, fine warm outlines, gentle depth, no CGI gloss.
+- A chart is allowed only as one clean organic curve or ribbon when a scene asks for it; no dashboards, icon grids or UI cards.
+
+COLOR & CONTINUITY KEY FOR THIS VIDEO (identical in every image)
+Hunger hormone ghrelin = small warm-orange glowing round particles. Satiety messengers from the gut (CCK, GLP-1, PYY) = turquoise/teal particles. Leptin from fat tissue = soft violet particles. Nerve messages = small bright yellow light pulses along a thin golden-yellow nerve. Blood sugar = golden-yellow beads or one golden ribbon. Stomach = warm coral-pink organ with soft inner folds; small intestine = salmon-pink coiled tube; fat tissue = clusters of round pale-yellow cells; brain = soft lilac-pink with the hypothalamus as a small almond-shaped warm highlight at its base, containing orange hunger nerve cells and turquoise satiety nerve cells. Appetite or craving triggered by smell, sight or a new taste = soft pink glow (never orange, orange is only the hunger hormone). Recurring metaphor 'signal balance': an elegant organic hand-drawn balance with two shallow bowls – orange particles on one side, turquoise (plus violet/yellow) particles on the other; its tilt shows which side wins. Recurring orientation map: simplified left-facing side silhouette of an adult head and torso in soft cream, organs as clean colored shapes, background a soft gradient.
+
+TEXT RULES
+- COVER: exactly one visible text block: the German title Hunger trotz Essen? in correct spelling, large bold clean sans-serif, nothing else (no subtitle, no labels, no numbers, no logos, no quotation marks).
+- NORMAL SCENES: each scene ends with TEXT: followed by its only allowed German labels (separated by |). Render exactly those words (max 2 labels, correct spelling, no quotation marks), each placed close to the structure it names, thin pointer line only if needed. TEXT: none means no text, letters or numerals at all – also none on clocks, packages, screens or books.
+- Contrast: light background → dark text; dark background → light text. Text sits in calm negative space. Weak contrast, misspelling or extra text = regenerate.
+
+SCIENCE & SAFETY
+Non-fiction educational illustrations, simplified but anatomically plausible. No gore, no wet realistic tissue, no body shaming, no brand logos, no sensational medical claims. No weight-loss promises, no scales with numbers, no shaming of bodies or foods; injection pens are unbranded and shown only as neutral objects. If Flow refuses an image, name it and continue with the next; never try to bypass a policy.
+
+QUALITY CHECK AFTER EVERY BATCH OF FIVE
+Each image matches its scene, shows one main idea, stays in the same visual world, differs in composition from its neighbours, has exactly the listed labels, no leaked metadata or numbers, strong contrast and no AI artefacts (extra fingers, melted text, impossible anatomy). Replace failures before continuing.
+
+THREE COVER OPTIONS (exactly one text block each: Hunger trotz Essen?)
+COVER 1: A large, beautifully drawn coral stomach in cutaway on the right two thirds of the frame, containing only a few croissant flakes and radiating a warm-orange hunger glow; on the calm pale-cream left third the title in very large bold dark sans-serif. Strong contrast, readable on a phone.
+COVER 2: Split comparison without a hard border: on the left one small croissant under a weak turquoise glow, on the right a heaping bowl of boiled potatoes under a strong turquoise glow; the title in very large bold dark letters across a calm light band at the top.
+COVER 3: Close crop of a hand holding a half-eaten croissant in the foreground; behind it a translucent side silhouette of a torso with an empty stomach glowing orange; the title in very large bold dark letters on a soft light-blue area on the left.
+
+SCENE REGISTER – 94 normal video images, generate in batches of five
+
+— Batch Bild_01–Bild_05 —
+Bild_01.png — Extreme close-up of two hands tearing a flaky golden croissant apart above a small white plate, buttery layers and crumbs flying, warm morning light, soft peach-to-cream gradient background; the croissant fills most of the frame. TEXT: none.
+Bild_02.png — Side-view cutaway of an adult torso silhouette in soft cream; inside, a coral-pink stomach that is almost empty with only a few croissant crumbs; gentle warm-orange ripple rings pulse from the stomach wall like a quiet growl; an empty plate with crumbs rests in the soft-focus foreground. TEXT: none.
+Bild_03.png — An elegant hand-drawn brass-and-wood balance scale in perfect equilibrium: in the left bowl one small croissant, in the right bowl a generous heap of boiled potato halves that is visibly much larger; soft golden-cream background, warm side light. TEXT: gleiche Kalorien
+Bild_04.png — Two simplified coral stomachs side by side on a calm light-teal background: the left stomach, labelled Croissant, holds a few croissant pieces and emits only a tiny turquoise satiety glow; the right stomach, labelled Kartoffeln, holds boiled potato pieces and radiates a large bright turquoise glow upward. TEXT: Croissant | Kartoffeln
+Bild_05.png — Clean visual metaphor: a coral stomach drawn like a fuel tank with a simple round gauge on its side; instead of one needle, four thin glowing threads in orange, turquoise, yellow and violet leave the gauge and curve upward out of frame toward an unseen brain; soft cream-to-sky-blue gradient. TEXT: none.
+
+— Batch Bild_06–Bild_10 —
+Bild_06.png — Orientation map: simplified left-facing side silhouette of an adult head and torso in soft cream; the coral stomach, the salmon small intestine and a pale-yellow patch of fat tissue are highlighted; an orange, a turquoise and a violet signal line flow from them and merge at a small almond-shaped glowing spot at the base of the brain. TEXT: Gehirn
+Bild_07.png — Wide organic composition on a soft lavender-to-cream gradient: on the left a coral stomach, in the center a coiled salmon small intestine, on the right a cozy bed with a moonlit pillow; one flowing ribbon of light connects all three and rises to a small brain at the top. TEXT: none.
+Bild_08.png — Top-down table view: an empty pasta plate pushed aside, a hand pulling a bright bowl of strawberry and vanilla ice cream closer; a faint translucent stomach outline glows turquoise as if full, but a small pink appetite spark lights up next to the ice cream; fresh pink-and-cream palette. TEXT: none.
+Bild_09.png — Large clean cutaway of an empty coral-pink stomach filling the frame, soft inner folds visible, calm warm-cream background with a subtle teal glow; the composition suggests the camera moving toward the stomach wall. TEXT: Magen
+Bild_10.png — Macro cross-section of the stomach wall: layered pink tissue with a few rounded specialized cells near a small red blood vessel; the cells release tiny warm-orange glowing particles into the vessel; soft coral and peach tones. TEXT: none.
+
+— Batch Bild_11–Bild_15 —
+Bild_11.png — Hero close-up inside a red blood vessel: one larger warm-orange glowing ghrelin particle in sharp focus in the center, red blood cells drifting softly blurred around it; deep coral background with warm light. TEXT: Ghrelin
+Bild_12.png — Orientation map silhouette facing left: a red blood vessel winds upward from the coral stomach through the neck to the base of the brain, carrying a stream of small orange particles; everything else stays muted; pale sky-blue background. TEXT: none.
+Bild_13.png — Side cutaway of a brain in soft lilac-pink; the small hypothalamus at its base glows warmly; right next to the brain, drawn at matching scale, a single real almond for size comparison; soft cream background. TEXT: Hypothalamus
+Bild_14.png — Close-up of a few hypothalamus nerve cells with fine branches on a dark plum background softened by warm glow; orange ghrelin particles dock onto them and the cells light up warm orange, sending bright yellow pulses along their fibers. TEXT: none.
+Bild_15.png — Cutaway of a coral stomach that is still half full with a mixed meal; nevertheless a few small orange ghrelin particles already appear at its wall under a warm spotlight; soft peach background. TEXT: none.
+
+— Batch Bild_16–Bild_20 —
+Bild_16.png — Beautiful horizontal day landscape from sunrise on the left to dusk on the right; above it a flowing warm-orange ribbon rises into a crest right before each of three small meal bowls placed along the path and dips after each bowl; no clock and no numbers. TEXT: Ghrelin
+Bild_17.png — Close crop of a forearm with an analog wristwatch without numerals, its hands near the top, resting beside a closed lunch box on a desk; from the lower edge of the frame a soft orange glow rises as if from the stomach; bright midday light, teal-and-cream palette. TEXT: none.
+Bild_18.png — Macro of hypothalamus nerve cells where one connection has become a thicker, brighter well-worn pathway, like a footpath trodden by repetition; three faint orange pulses travel along it in rhythm; soft lilac-cream background. TEXT: none.
+Bild_19.png — Recurring signal-balance motif: an elegant organic balance with two shallow bowls on a soft cream background; the orange particles in the left bowl are fading away while turquoise particles pour into the right bowl, which sinks down. TEXT: Hunger | Sättigung
+Bild_20.png — Coral stomach cutaway filling with a colorful meal, its wall visibly stretched; a dashed outline shows its smaller empty size; tiny nerve endings in the stretched wall light up bright yellow; fresh aqua background. TEXT: Dehnungsrezeptoren
+
+— Batch Bild_21–Bild_25 —
+Bild_21.png — Orientation map silhouette facing left: a thin golden-yellow nerve runs from the stomach up through the neck to the brainstem; bright yellow pulses travel along it like data along a cable; soft sky-blue background. TEXT: Vagusnerv
+Bild_22.png — Stomach cutaway filled almost entirely with clear light-blue water, wall stretched; only a few faint pale-yellow pulses leave toward a thin nerve; a tall glass of water stands beside the stomach for scale; cool blue palette. TEXT: Wasser
+Bild_23.png — Side view of stomach and the first loop of small intestine: the light-blue water streams quickly out through the stomach exit into the intestine, motion swooshes show speed, the stomach shrinking back; blue-and-coral palette. TEXT: none.
+Bild_24.png — Vertical torso cutaway: the stomach above is dimmed while the coiled salmon-pink small intestine below lights up warmly; a gentle downward camera feeling; light cream background. TEXT: Dünndarm
+Bild_25.png — Macro of the inner small-intestine wall with velvety folds; coral protein bead chains and amber fat droplets touch the wall; specialized cells answer by releasing small turquoise particles into the tissue; warm salmon background. TEXT: none.
+
+— Batch Bild_26–Bild_30 —
+Bild_26.png — Close-up of the stomach exit where it meets the intestine: turquoise particles reach the muscular ring, which narrows like a gently closing valve; food in the stomach waits behind it; teal-and-coral palette on a light background. TEXT: CCK
+Bild_27.png — Further along a long salmon-pink intestinal loop running diagonally across the frame, other wall cells release two kinds of turquoise particles, one slightly bluer and one slightly greener; aquamarine background. TEXT: GLP-1 | PYY
+Bild_28.png — Hypothalamus close-up on a soft lilac background: turquoise particles arrive; turquoise satiety nerve cells light up brightly while the orange hunger nerve cells beside them dim down. TEXT: none.
+Bild_29.png — Molecular hero image: a stylized turquoise GLP-1 particle fits into a matching receptor on the surface of a nerve cell like a key into a lock; clean cream background with a teal glow. TEXT: GLP-1
+Bild_30.png — Two-part comparison on one calm background without panel borders: on the left a natural turquoise GLP-1 particle on its receptor with a small glow that fades quickly; on the right an unbranded plain white injection pen lying beside the same receptor, which glows intensely and steadily. TEXT: none.
+
+— Batch Bild_31–Bild_35 —
+Bild_31.png — Orientation map silhouette facing left with the small intestine glowing turquoise and a turquoise thread rising to the brain; calm, reassuring warm light; mint-to-cream gradient. TEXT: none.
+Bild_32.png — Soft daylight background with a slowly rising turquoise ribbon that starts flat on the left where a meal begins and only climbs gradually toward the right; small turquoise particles travel along a long winding vessel underneath; no numbers. TEXT: none.
+Bild_33.png — Close crop of hands scraping the last bite from an empty bowl with a spoon; behind them a translucent body outline in which a turquoise signal has climbed only halfway up toward the brain; warm amber palette. TEXT: none.
+Bild_34.png — Signal-balance motif, centered: the left bowl holds orange ghrelin particles, the right bowl holds turquoise, violet and yellow particles; both bowls are in balance; elegant warm-cream background. TEXT: none.
+Bild_35.png — The same organic balance seen closer: it tips back toward the orange side as more orange particles fall in while the turquoise side rises; slight motion lines; peach background. TEXT: none.
+
+— Batch Bild_36–Bild_40 —
+Bild_36.png — Dynamic close-up of a fork lifting a big bite of pasta from a full plate with speed lines, the next bite already waiting on the plate; bright energetic coral-and-yellow palette. TEXT: none.
+Bild_37.png — Two identical bowls of vanilla ice cream side by side; behind the left bowl, labelled 5 Minuten, a short glowing arc; behind the right bowl, labelled 30 Minuten, a long arc that nearly closes into a circle, like simple time rings without numerals; fresh mint-and-cream background. TEXT: 5 Minuten | 30 Minuten
+Bild_38.png — Two blood-vessel cross-sections side by side: the left vessel, labelled schnell, carries only a few turquoise particles; the right vessel, labelled langsam, is full of them; red blood cells softly around; coral background. TEXT: schnell | langsam
+Bild_39.png — Close-up of a tall glass of golden apple juice with condensation; inside the liquid tiny golden-yellow sugar beads float like a hidden energy load; bright sky-blue background. TEXT: none.
+Bild_40.png — Three small identical plates in a row on a light wooden table: a whole red apple, a small bowl of applesauce and a glass of apple juice; soft even daylight; leaf-green background. TEXT: none.
+
+— Batch Bild_41–Bild_45 —
+Bild_41.png — Close top-down view of the same three apple forms, each with an identical small cluster of golden energy beads floating above it, the three clusters exactly the same size; clean cream background with soft green accents. TEXT: none.
+Bild_42.png — Two lunch plates side by side: the left plate, labelled mit Apfel, holds a visibly smaller portion of pasta and vegetables with a whole apple placed next to it; the right plate, labelled ohne Apfel, holds a full portion; warm cream background. TEXT: mit Apfel | ohne Apfel
+Bild_43.png — Macro comparison: a halved apple showing crisp cell walls and a fiber network holding the juice, next to a glass of clear apple juice without any structure; green-and-gold palette. TEXT: none.
+Bild_44.png — Two stomach cutaways side by side: the left one, labelled Apfel, is filled with chewed apple pieces and green fibers that stay; from the right one, labelled Saft, golden juice streams out quickly through the exit; calm teal background. TEXT: Apfel | Saft
+Bild_45.png — A croissant cut in half lengthwise, its cross-section filling the frame: thin golden layers with large airy pockets in between, shiny with butter; warm golden background. TEXT: none.
+
+— Batch Bild_46–Bild_50 —
+Bild_46.png — Top-down view of a long bright table with neat rows of many small identical white plates, each holding a different food portion such as fish, potato, orange, cake, pasta, cheese, beans and popcorn; clean and orderly; no labels. TEXT: none.
+Bild_47.png — Three foods shown large in cutaway: a boiled potato cut open, moist and water-rich; a piece of white fish with visible protein flakes; an orange segment with juicy cells and fiber membranes; each glows softly turquoise; fresh aqua background. TEXT: Eiweiß | Ballaststoffe
+Bild_48.png — Macro of croissant layers glistening with tiny amber butter droplets; only a very weak turquoise glow floats above them; warm amber background. TEXT: Fett
+Bild_49.png — A long gently rising curved ribbon from left to right across a soft gradient: at the low left end sit a croissant, a slice of cake and a chocolate bar; at the high right end sit boiled potatoes, a fish fillet, a bowl of porridge and an orange; no numbers. TEXT: none.
+Bild_50.png — Macro of the small-intestine wall: coral protein bead chains arrive and the wall cells answer with a strong burst of turquoise particles; salmon-pink tissue on a warm background. TEXT: Eiweiß
+
+— Batch Bild_51–Bild_55 —
+Bild_51.png — Stomach cutaway filled with a big volume of leafy greens, beans and water droplets, comfortably stretched, with only a few golden energy beads among them; fresh green-and-blue palette. TEXT: none.
+Bild_52.png — Macro of rolled oat flakes swelling in water; translucent jelly-like strands spread from them and trap many tiny water droplets and nutrient beads, which move slowly inside the gel; soft beige-and-aqua palette. TEXT: Hafer | Gel
+Bild_53.png — Exploded view of a croissant: the pastry floats apart into its ingredients – amber butter droplets and fine white flour particles – with almost no green fibers and no water droplets; warm golden background. TEXT: Fett | Weißmehl
+Bild_54.png — Top-down view of two identical plates: on the left one small croissant, on the right a large mound of boiled potatoes; both portions carry the same energy; soft cream background, crisp shadows. TEXT: none.
+Bild_55.png — Close crop of an upper arm wearing a small round unbranded glucose sensor patch, sleeve rolled up, soft natural light; muted sky-blue background. TEXT: none.
+
+— Batch Bild_56–Bild_60 —
+Bild_56.png — A single clean golden blood-sugar ribbon over a soft gradient: it rises after a small meal bowl on the left, then sinks below a faint dashed baseline before leveling again; the dip is gently highlighted in orange; no numbers and no axes. TEXT: Blutzucker
+Bild_57.png — The dip of the golden ribbon is connected by a thin line to hypothalamus hunger cells, which light up orange; soft lilac background. TEXT: none.
+Bild_58.png — Two daily food trays side by side seen from above: the right tray holds the same meals plus an extra snack bowl and a larger dinner portion; calm warm background; no labels. TEXT: none.
+Bild_59.png — Colorful still life of unbranded highly processed foods without any text: potato chips, sugary cereal, a soft white-bun burger, instant noodles and a frosted pastry, all smooth and uniform in texture; bright pop-orange background. TEXT: none.
+Bild_60.png — Bright friendly research ward seen from the side: a neat bed, a small table with a covered meal tray and a window with daylight; no people; calm blue-and-white palette. TEXT: none.
+
+— Batch Bild_61–Bild_65 —
+Bild_61.png — Two meal trays side by side: the left tray, labelled verarbeitet, with a white-bun burger, chips, a sweet drink and canned soup; the right tray, labelled kaum verarbeitet, with fish, steamed vegetables, a salad, fruit and nuts; clean light background. TEXT: verarbeitet | kaum verarbeitet
+Bild_62.png — Close crop of hands serving a second helping from generous serving bowls on a buffet table; friendly warm light; amber-and-cream palette. TEXT: none.
+Bild_63.png — The processed tray now carries an extra stack of food about the size of an additional small meal, highlighted with a warm orange glow; the unprocessed tray beside it is unchanged; soft cream background. TEXT: 500 kcal mehr
+Bild_64.png — Side-by-side macro: a soft white bread bun squashes easily under a fork with almost no chewing needed, next to a crunchy raw carrot stick that shows bite marks and fibers; coral-and-green palette. TEXT: none.
+Bild_65.png — Dim calm bedroom at night: a rumpled bed, a bedside lamp still glowing, deep blue night outside the window; from the pillow a thin violet thread rises softly; restrained night palette with a warm lamp accent, no neon glow. TEXT: none.
+
+— Batch Bild_66–Bild_70 —
+Bild_66.png — Two beds side by side under two night-sky arcs: above the left bed a long deep-blue sleep band spans the whole night from moon to sunrise; above the right bed only a short band near dawn; no numbers and no clocks. TEXT: none.
+Bild_67.png — Blood vessel cross-section crowded with many more orange ghrelin particles than usual, a faint outline shows the earlier smaller amount for comparison; coral background. TEXT: Ghrelin
+Bild_68.png — Macro of fat tissue: round pale-yellow fat cells release only a few soft violet particles into a nearby small vessel; muted, slightly tired lighting; soft violet-cream background. TEXT: Leptin | Fettgewebe
+Bild_69.png — Signal-balance motif: the bowl with orange particles sinks clearly, the bowl with turquoise and violet particles rises; clean side light; peach background. TEXT: Hunger
+Bild_70.png — Late-night kitchen counter lit by the warm light of an open fridge: cookies, chips, a sweet pastry and white bread; a hand reaching toward them; deep blue shadows with warm amber highlights. TEXT: none.
+
+— Batch Bild_71–Bild_75 —
+Bild_71.png — Side silhouette of a head and torso facing left: in the torso the coral stomach glows orange and carries the label Hunger; separately, in front of the face, aroma swirls from a pastry lead into the nose and eyes and glow soft pink, carrying the label Appetit; two clearly separate sources; soft cream background. TEXT: Hunger | Appetit
+Bild_72.png — Bakery display with fresh pretzels and crusty rolls, soft visible aroma swirls drifting out of the frame toward the viewer; warm golden-brown palette; no signs and no text. TEXT: none.
+Bild_73.png — Side cutaway of head and torso: an aroma swirl enters the nose, the salivary glands near the jaw light up with clear droplets, and the stomach begins to glow softly as if getting ready; mint-and-coral palette. TEXT: Speichel
+Bild_74.png — Top-down dining table: a finished pasta plate with a few leftover noodles, next to it a fresh, colorful ice cream sundae in a glass bowl catching the light; clean bright pink-and-cream palette; no people. TEXT: none.
+Bild_75.png — A dulled, desaturated plate of pasta with tomato sauce next to a bright, vivid ice cream sundae; a soft pink appetite glow rises only above the dessert, none above the pasta; lilac background. TEXT: none.
+
+— Batch Bild_76–Bild_80 —
+Bild_76.png — Four identical plates of pasta with tomato sauce in a row from left to right; each successive plate is drawn less saturated and less appealing, the last one almost grey; soft cream background. TEXT: none.
+Bild_77.png — Close crop of a hand gently pushing away a second full but dull, greyish plate of pasta; warm table light; muted palette around the plate. TEXT: none.
+Bild_78.png — Vibrant close-up of an ice cream sundae with strawberries, a cold mist and fresh colors popping against a bright pink-and-sky-blue background; a small pink appetite spark beside it. TEXT: none.
+Bild_79.png — Two table settings side by side seen from above: on the left four identical bowls of the same dish, mostly still full; on the right four different colorful dishes, mostly eaten empty; clean light background; no labels. TEXT: none.
+Bild_80.png — Orientation map silhouette facing left with all satiety signals lighting up in harmony: turquoise from the intestine, yellow along the vagus nerve, violet from fat tissue, all reaching the brain; warm optimistic light; mint-to-cream gradient. TEXT: none.
+
+— Batch Bild_81–Bild_85 —
+Bild_81.png — Top-down view of a wooden board with five small bowls: natural yogurt, two boiled eggs, cooked lentils, a fish fillet and tofu cubes, each with a soft coral glow; fresh natural light; no packaging and no text. TEXT: Eiweiß
+Bild_82.png — Close-up of hands adding roasted vegetables, beans and a handful of berries to a whole-grain bowl, making it fuller and more colorful; bright leaf-green palette. TEXT: Ballaststoffe
+Bild_83.png — Two pairs on a light table: a brightly lit whole apple next to a dimmer glass of juice, and a brightly lit glass of clear water next to a dimmer glass of fizzy lemonade; no brands and no text. TEXT: none.
+Bild_84.png — Close-up of a fork resting on the edge of a half-eaten plate; behind it a translucent body outline in which a turquoise signal now rises all the way to the brain; calm teal-and-cream palette. TEXT: none.
+Bild_85.png — Bedroom at sunrise with a neatly made bed; above it the signal balance floats in calm equilibrium with violet and turquoise particles back in place; soft morning gold and lavender palette. TEXT: none.
+
+— Batch Bild_86–Bild_90 —
+Bild_86.png — Orientation map silhouette facing left: an unusually strong, persistent orange glow fills the stomach and the base of the brain; the rest of the body is muted; serious but calm tone; light blue background. TEXT: none.
+Bild_87.png — Bright friendly consultation desk seen from the side: a stethoscope, a glass of water and two pairs of hands in calm conversation across the desk; no text on papers; warm white and teal palette. TEXT: none.
+Bild_88.png — Friendly full orientation map silhouette facing left, calm and warm: stomach, intestine, fat tissue and brain softly glowing in their signal colors; reassuring golden light; cream background. TEXT: none.
+Bild_89.png — Four organs arranged in a gentle circle on a soft gradient – coral stomach, salmon intestine, pale-yellow fat tissue and lilac brain – connected by flowing ribbons in orange, turquoise and violet like a conversation. TEXT: none.
+Bild_90.png — Signal-balance motif, final hero version: the left bowl with orange ghrelin particles, the right bowl with yellow, turquoise and violet particles together; perfectly balanced; elegant golden light. TEXT: Ghrelin | Sattsignale
+
+— Batch Bild_91–Bild_94 —
+Bild_91.png — The balance in the center with three small objects arranged around it on a table: a colorful protein-and-vegetable bowl, a fork resting on a napkin and a soft pillow; clean warm-cream background. TEXT: none.
+Bild_92.png — Close-up of the hypothalamus with orange and turquoise nerve cells exchanging flickering signals like a lively negotiation; lilac background. TEXT: none.
+Bild_93.png — Orientation map silhouette facing left, now showing the entire digestive tract as one continuous glowing route from mouth to large intestine; a small golden bite travels down it; teal background. TEXT: none.
+Bild_94.png — A slice of pizza at the entrance of a glowing winding tunnel shaped like the digestive tract, inviting and warm, teaser mood; soft teal-to-gold gradient; no text. TEXT: none.
+
+FINAL CHECK: exactly 94 different accepted normal images Bild_01.png–Bild_94.png (no cover inside), each 16:9. Cover downloaded separately as COVER.png. No MP4, no subtitles, no extra prompt files.

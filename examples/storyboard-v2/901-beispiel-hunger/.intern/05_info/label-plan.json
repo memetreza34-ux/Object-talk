@@ -1,0 +1,761 @@
+{
+  "status": "READY",
+  "generated_from": "storyboard-source.json",
+  "rules": {
+    "language": "de",
+    "prompt_language": "en",
+    "max_labels_per_image": 2,
+    "max_words_per_label": 3,
+    "prefer_no_label_when_self_explanatory": true,
+    "labels_generated_in_flow": true,
+    "regenerate_if_label_wrong": true,
+    "cover_title_only": true,
+    "cover_exactly_one_visible_text_block": true,
+    "cover_extra_labels_forbidden": true,
+    "text_contrast_required": true,
+    "light_background_requires_dark_text": true,
+    "dark_background_requires_light_text": true,
+    "no_decorative_quotation_marks": true,
+    "no_asset_ids_visible": true,
+    "no_scene_numbers_visible": true,
+    "no_file_names_visible": true,
+    "remotion_visible_text_allowed": false,
+    "remotion_text_fallback_allowed": false,
+    "cover_is_scene": false,
+    "cover_output": "03_export/COVER.png"
+  },
+  "images": [
+    {
+      "image_asset_id": "Bild_01",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_02",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_03",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "gleiche Kalorien"
+      ],
+      "labels": [
+        "gleiche Kalorien"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_04",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Croissant",
+        "Kartoffeln"
+      ],
+      "labels": [
+        "Croissant",
+        "Kartoffeln"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_05",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_06",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Gehirn"
+      ],
+      "labels": [
+        "Gehirn"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_07",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_08",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_09",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Magen"
+      ],
+      "labels": [
+        "Magen"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_10",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_11",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Ghrelin"
+      ],
+      "labels": [
+        "Ghrelin"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_12",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_13",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Hypothalamus"
+      ],
+      "labels": [
+        "Hypothalamus"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_14",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_15",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_16",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Ghrelin"
+      ],
+      "labels": [
+        "Ghrelin"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_17",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_18",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_19",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Hunger",
+        "Sättigung"
+      ],
+      "labels": [
+        "Hunger",
+        "Sättigung"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_20",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Dehnungsrezeptoren"
+      ],
+      "labels": [
+        "Dehnungsrezeptoren"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_21",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Vagusnerv"
+      ],
+      "labels": [
+        "Vagusnerv"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_22",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Wasser"
+      ],
+      "labels": [
+        "Wasser"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_23",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_24",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Dünndarm"
+      ],
+      "labels": [
+        "Dünndarm"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_25",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_26",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "CCK"
+      ],
+      "labels": [
+        "CCK"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_27",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "GLP-1",
+        "PYY"
+      ],
+      "labels": [
+        "GLP-1",
+        "PYY"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_28",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_29",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "GLP-1"
+      ],
+      "labels": [
+        "GLP-1"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_30",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_31",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_32",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_33",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_34",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_35",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_36",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_37",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "5 Minuten",
+        "30 Minuten"
+      ],
+      "labels": [
+        "5 Minuten",
+        "30 Minuten"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_38",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "schnell",
+        "langsam"
+      ],
+      "labels": [
+        "schnell",
+        "langsam"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_39",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_40",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_41",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_42",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "mit Apfel",
+        "ohne Apfel"
+      ],
+      "labels": [
+        "mit Apfel",
+        "ohne Apfel"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_43",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_44",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Apfel",
+        "Saft"
+      ],
+      "labels": [
+        "Apfel",
+        "Saft"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_45",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_46",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_47",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Eiweiß",
+        "Ballaststoffe"
+      ],
+      "labels": [
+        "Eiweiß",
+        "Ballaststoffe"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_48",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Fett"
+      ],
+      "labels": [
+        "Fett"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_49",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_50",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Eiweiß"
+      ],
+      "labels": [
+        "Eiweiß"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_51",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_52",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Hafer",
+        "Gel"
+      ],
+      "labels": [
+        "Hafer",
+        "Gel"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_53",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Fett",
+        "Weißmehl"
+      ],
+      "labels": [
+        "Fett",
+        "Weißmehl"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_54",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_55",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_56",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Blutzucker"
+      ],
+      "labels": [
+        "Blutzucker"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_57",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_58",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_59",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_60",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_61",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "verarbeitet",
+        "kaum verarbeitet"
+      ],
+      "labels": [
+        "verarbeitet",
+        "kaum verarbeitet"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_62",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_63",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "500 kcal mehr"
+      ],
+      "labels": [
+        "500 kcal mehr"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_64",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_65",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_66",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_67",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Ghrelin"
+      ],
+      "labels": [
+        "Ghrelin"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_68",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Leptin",
+        "Fettgewebe"
+      ],
+      "labels": [
+        "Leptin",
+        "Fettgewebe"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_69",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Hunger"
+      ],
+      "labels": [
+        "Hunger"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_70",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_71",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Hunger",
+        "Appetit"
+      ],
+      "labels": [
+        "Hunger",
+        "Appetit"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_72",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_73",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Speichel"
+      ],
+      "labels": [
+        "Speichel"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_74",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_75",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_76",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_77",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_78",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_79",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_80",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_81",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Eiweiß"
+      ],
+      "labels": [
+        "Eiweiß"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_82",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Ballaststoffe"
+      ],
+      "labels": [
+        "Ballaststoffe"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_83",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_84",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_85",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_86",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_87",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_88",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_89",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_90",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Ghrelin",
+        "Sattsignale"
+      ],
+      "labels": [
+        "Ghrelin",
+        "Sattsignale"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_91",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_92",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_93",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_94",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    }
+  ]
+}

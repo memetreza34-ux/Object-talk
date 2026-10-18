@@ -1,0 +1,31 @@
+ANTIGRAVITY-AUFTRAG – PHASE 3 – 901-beispiel-hunger
+
+Projekt: examples/storyboard-v2/901-beispiel-hunger/
+Ziel: finales YouTube-Video aus Voice + 94 akzeptierten Google-Flow-Bildern. Skript, Bildreihenfolge und Szenengrenzen NICHT kreativ verändern.
+
+VORAUSSETZUNGEN (vom Nutzer abgelegt)
+- Rohe Voice-Datei (mp3/m4a/wav) in 01_script/audio/
+- Genau eine Flow-ZIP mit Bild_01.png bis Bild_94.png in 02_bildprompts/bilder-zip/
+- Gewähltes Cover als 03_export/COVER.png (NICHT Teil des Videos)
+
+ABLAUF
+1. python tools/validate_planning_v2.py examples/storyboard-v2/901-beispiel-hunger
+2. python tools/prepare_phase3.py examples/storyboard-v2/901-beispiel-hunger
+   (Voice 1.10x + Pausenkompression → ZIP-Import → Asset-Check → Whisper-Ausrichtung → timeline.json → Untertitel → Kapitel → Renderer-Runtime)
+3. Bild-QA aller 94 Bilder in .intern/05_info/image-review.json eintragen (nur echte Sichtprüfung), dann
+   python tools/validate_planning_v2.py examples/storyboard-v2/901-beispiel-hunger --phase2
+4. Rendern in renderer/ (1920x1080, 30 fps, h264/aac); danach python tools/qa_final.py <MP4> 01_script/audio/final-voiceover.wav
+5. Video komplett ansehen. Verbesserungsbericht nach engine/CONTINUOUS-IMPROVEMENT.md in .intern/05_info/improvement-review.json.
+
+HARTE REGELN
+- 100 % Vollbild-Illustration. Remotion erzeugt KEINEN sichtbaren Text; .intern/03_pipeline/overlay-plan.json bleibt DISABLED mit scenes: [].
+- Nur erlaubte Bewegungen: static, slow-push-in, slow-pull-out, pan-left, pan-right. Kein Bild länger als 7 Sekunden, kein Bild doppelt.
+- Cover ist nur Thumbnail, nie Anfangsszene. Bild_01 ist die erste Videoszene.
+- Zeitcodes niemals schätzen: Untertitel und Kapitel kommen nur aus der finalen timeline.json.
+
+EXPORT – GENAU VIER SICHTBARE DATEIEN IN 03_export/
+- VIDEO.mp4
+- COVER.png
+- CAPTION-YOUTUBE.txt (Titel, Beschreibung, Kapitel mit echten Zeiten, max. 5 Hashtags)
+- UNTERTITEL-MIT-ZEITEN.txt
+Alles Technische (SRT, Renderbericht, QA, timeline.json) nur unter .intern/.

@@ -1,0 +1,1810 @@
+{
+  "status": "READY",
+  "source_script": "01_script/script.txt",
+  "generated_from": "storyboard-source.json",
+  "rules": {
+    "each_spoken_sentence_or_logical_block_has_visual_plan": true,
+    "image_ids_match_phase1_scenes": true,
+    "no_estimated_final_timestamps_in_phase1": true
+  },
+  "items": [
+    {
+      "id": "SV_001",
+      "voiceover_text": "Dieses Stück Pizza wird gleich verschwinden.",
+      "function": "hook",
+      "learning_goal": "Einstieg: das Stück Pizza, dem wir folgen.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_01",
+      "visual_type": "food_structure",
+      "visible_change": "The pizza slice we will follow is introduced in appetizing detail.",
+      "scene_difference": "zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Essen verschwindet nicht einfach; es wird umgebaut, aufgenommen und nur ein Rest ausgeschieden."
+    },
+    {
+      "id": "SV_002",
+      "voiceover_text": "Zumindest sieht es so aus.",
+      "function": "observation",
+      "learning_goal": "Die Pizza ist nicht weg, sondern im Körper.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Körper",
+      "new_image_required": true,
+      "image_asset_id": "Bild_02",
+      "visual_type": "cutaway",
+      "visible_change": "The slice is gone from the plate but continues inside the body.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Essen verschwindet nicht einfach; es wird umgebaut, aufgenommen und nur ein Rest ausgeschieden."
+    },
+    {
+      "id": "SV_003",
+      "voiceover_text": "In Wahrheit beginnt jetzt eine Reise, die im Schnitt länger als einen Tag dauert.",
+      "function": "observation",
+      "learning_goal": "Die Verdauungsreise dauert im Schnitt über einen Tag.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Körper",
+      "new_image_required": true,
+      "image_asset_id": "Bild_03",
+      "visual_type": "process_path",
+      "visible_change": "The full route ahead is shown, with the bite at its start.",
+      "scene_difference": "zum vorherigen Bild: cat wechseln; zum nächsten Bild: scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Essen verschwindet nicht einfach; es wird umgebaut, aufgenommen und nur ein Rest ausgeschieden."
+    },
+    {
+      "id": "SV_004",
+      "voiceover_text": "Unterwegs wird die Pizza zerdrückt, in Säure gebadet und chemisch zerlegt.",
+      "function": "observation",
+      "learning_goal": "Überblick: mechanisch, sauer, chemisch.",
+      "claim_ids": [
+        "C02",
+        "C04",
+        "C06"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_04",
+      "visual_type": "process_path",
+      "visible_change": "The pizza changes step by step from a solid piece to tiny building blocks.",
+      "scene_difference": "zum vorherigen Bild: scale, frame wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Essen verschwindet nicht einfach; es wird umgebaut, aufgenommen und nur ein Rest ausgeschieden."
+    },
+    {
+      "id": "SV_005",
+      "voiceover_text": "Am Ende werden aus ihr winzige Bausteine, die in deinem Blut landen.",
+      "function": "observation",
+      "learning_goal": "Nährstoffbausteine gelangen ins Blut.",
+      "claim_ids": [
+        "C07",
+        "C09"
+      ],
+      "scale_level": "Molekül",
+      "new_image_required": true,
+      "image_asset_id": "Bild_05",
+      "visual_type": "macro",
+      "visible_change": "The building blocks of the pizza now travel in the blood.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Essen verschwindet nicht einfach; es wird umgebaut, aufgenommen und nur ein Rest ausgeschieden."
+    },
+    {
+      "id": "SV_006",
+      "voiceover_text": "Ein Teil von ihr wird buchstäblich zu dir.",
+      "function": "observation",
+      "learning_goal": "Nährstoffe werden Teil der Körperzellen.",
+      "claim_ids": [
+        "C09"
+      ],
+      "scale_level": "Zelle",
+      "new_image_required": true,
+      "image_asset_id": "Bild_06",
+      "visual_type": "mechanism",
+      "visible_change": "Pizza building blocks become part of a body cell.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Essen verschwindet nicht einfach; es wird umgebaut, aufgenommen und nur ein Rest ausgeschieden."
+    },
+    {
+      "id": "SV_007",
+      "voiceover_text": "Und was am Ende übrig bleibt, besteht zu einem überraschend großen Teil gar nicht mehr aus Pizza.",
+      "function": "observation",
+      "learning_goal": "Teaser: Der Rest besteht stark aus Bakterien (Open Loop).",
+      "claim_ids": [
+        "C13"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_07",
+      "visual_type": "macro",
+      "visible_change": "The leftovers mostly consist of something other than pizza – a hint at bacteria.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Essen verschwindet nicht einfach; es wird umgebaut, aufgenommen und nur ein Rest ausgeschieden."
+    },
+    {
+      "id": "SV_008",
+      "voiceover_text": "Was es stattdessen ist und warum es braun ist, klären wir ganz am Schluss.",
+      "function": "observation",
+      "learning_goal": "Open Loop: Woraus besteht der Rest und warum ist er braun?",
+      "claim_ids": [
+        "C13",
+        "C14"
+      ],
+      "scale_level": "Körper",
+      "new_image_required": true,
+      "image_asset_id": "Bild_08",
+      "visual_type": "transition",
+      "visible_change": "The final part of the journey is left in mystery until the end.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Essen verschwindet nicht einfach; es wird umgebaut, aufgenommen und nur ein Rest ausgeschieden."
+    },
+    {
+      "id": "SV_009",
+      "voiceover_text": "Damit wir die Pizza nicht aus den Augen verlieren, folgen wir ihren vier Hauptzutaten.",
+      "function": "observation",
+      "learning_goal": "Die vier Hauptbestandteile der Pizza.",
+      "claim_ids": [
+        "C07"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_09",
+      "visual_type": "food_structure",
+      "visible_change": "The pizza is separated into its main ingredients.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Essen verschwindet nicht einfach; es wird umgebaut, aufgenommen und nur ein Rest ausgeschieden."
+    },
+    {
+      "id": "SV_010",
+      "voiceover_text": "Stärke aus dem Teig, Eiweiß aus dem Käse,",
+      "function": "observation",
+      "learning_goal": "Farbcode Stärke und Eiweiß.",
+      "claim_ids": [
+        "C07"
+      ],
+      "scale_level": "Molekül",
+      "new_image_required": true,
+      "image_asset_id": "Bild_10",
+      "visual_type": "food_structure",
+      "visible_change": "Starch and protein are introduced with their color code.",
+      "scene_difference": "zum vorherigen Bild: scale wechseln; zum nächsten Bild: neuer Bildinhalt bei gleicher Bildart",
+      "labels": [
+        "Stärke",
+        "Eiweiß"
+      ],
+      "misconception_to_avoid": "Essen verschwindet nicht einfach; es wird umgebaut, aufgenommen und nur ein Rest ausgeschieden."
+    },
+    {
+      "id": "SV_011",
+      "voiceover_text": "Fett aus Käse und Öl und ein paar Ballaststoffe aus Teig und Tomatensoße.",
+      "function": "observation",
+      "learning_goal": "Farbcode Fett und Ballaststoffe.",
+      "claim_ids": [
+        "C07",
+        "C12"
+      ],
+      "scale_level": "Molekül",
+      "new_image_required": true,
+      "image_asset_id": "Bild_11",
+      "visual_type": "food_structure",
+      "visible_change": "Fat and fiber are introduced with their color code.",
+      "scene_difference": "zum vorherigen Bild: neuer Bildinhalt bei gleicher Bildart; zum nächsten Bild: cat, scale wechseln",
+      "labels": [
+        "Fett",
+        "Ballaststoffe"
+      ],
+      "misconception_to_avoid": "Essen verschwindet nicht einfach; es wird umgebaut, aufgenommen und nur ein Rest ausgeschieden."
+    },
+    {
+      "id": "SV_012",
+      "voiceover_text": "Und jede davon nimmt später ihren eigenen Weg.",
+      "function": "observation",
+      "learning_goal": "Open Loop: unterschiedliche Wege der Nährstoffe.",
+      "claim_ids": [
+        "C09",
+        "C10"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_12",
+      "visual_type": "process_path",
+      "visible_change": "The four nutrients split up into different routes.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Essen verschwindet nicht einfach; es wird umgebaut, aufgenommen und nur ein Rest ausgeschieden."
+    },
+    {
+      "id": "SV_013",
+      "voiceover_text": "Station eins: dein Mund.",
+      "function": "path",
+      "learning_goal": "Station 1: Mund.",
+      "claim_ids": [
+        "C02"
+      ],
+      "scale_level": "Körper",
+      "new_image_required": true,
+      "image_asset_id": "Bild_13",
+      "visual_type": "process_path",
+      "visible_change": "The journey starts in the mouth.",
+      "scene_difference": "zum vorherigen Bild: scale, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [
+        "Mund"
+      ],
+      "misconception_to_avoid": "Verdauung beginnt nicht erst im Magen; Kauen und Speichel leisten bereits mechanische und chemische Arbeit."
+    },
+    {
+      "id": "SV_014",
+      "voiceover_text": "Deine Zähne zerkleinern den Bissen in viele kleine Stücke. Das ist wichtiger, als es klingt.",
+      "function": "path",
+      "learning_goal": "Mechanische Zerkleinerung.",
+      "claim_ids": [
+        "C02"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_14",
+      "visual_type": "cutaway",
+      "visible_change": "Teeth break the bite into many small pieces.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Verdauung beginnt nicht erst im Magen; Kauen und Speichel leisten bereits mechanische und chemische Arbeit."
+    },
+    {
+      "id": "SV_015",
+      "voiceover_text": "Je kleiner die Stücke, desto mehr Oberfläche haben Verdauungsenzyme später zum Angreifen.",
+      "function": "path",
+      "learning_goal": "Mehr Oberfläche durch Kauen.",
+      "claim_ids": [
+        "C02"
+      ],
+      "scale_level": "Molekül",
+      "new_image_required": true,
+      "image_asset_id": "Bild_15",
+      "visual_type": "educational_comparison",
+      "visible_change": "Many small pieces offer far more surface for enzymes than one big piece.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [
+        "Oberfläche"
+      ],
+      "misconception_to_avoid": "Verdauung beginnt nicht erst im Magen; Kauen und Speichel leisten bereits mechanische und chemische Arbeit."
+    },
+    {
+      "id": "SV_016",
+      "voiceover_text": "Gleichzeitig mischt Speichel alles zu einem weichen Kloß.",
+      "function": "path",
+      "learning_goal": "Speichel formt den Bissen.",
+      "claim_ids": [
+        "C02"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_16",
+      "visual_type": "cutaway",
+      "visible_change": "Saliva binds the chewed pieces into a soft bolus.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [
+        "Speichel"
+      ],
+      "misconception_to_avoid": "Verdauung beginnt nicht erst im Magen; Kauen und Speichel leisten bereits mechanische und chemische Arbeit."
+    },
+    {
+      "id": "SV_017",
+      "voiceover_text": "Im Speichel steckt schon das erste Enzym: Amylase.",
+      "function": "path",
+      "learning_goal": "Amylase im Speichel.",
+      "claim_ids": [
+        "C02"
+      ],
+      "scale_level": "Molekül",
+      "new_image_required": true,
+      "image_asset_id": "Bild_17",
+      "visual_type": "macro",
+      "visible_change": "The enzyme amylase meets starch in the mouth.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: neuer Bildinhalt bei gleicher Bildart",
+      "labels": [
+        "Amylase"
+      ],
+      "misconception_to_avoid": "Verdauung beginnt nicht erst im Magen; Kauen und Speichel leisten bereits mechanische und chemische Arbeit."
+    },
+    {
+      "id": "SV_018",
+      "voiceover_text": "Sie beginnt, die Stärke aus dem Teig in kleinere Zuckerstücke zu zerlegen.",
+      "function": "path",
+      "learning_goal": "Stärkeabbau beginnt im Mund.",
+      "claim_ids": [
+        "C02"
+      ],
+      "scale_level": "Molekül",
+      "new_image_required": true,
+      "image_asset_id": "Bild_18",
+      "visual_type": "macro",
+      "visible_change": "The long starch chain is cut into shorter sugar pieces.",
+      "scene_difference": "zum vorherigen Bild: neuer Bildinhalt bei gleicher Bildart; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [
+        "Stärke",
+        "Zucker"
+      ],
+      "misconception_to_avoid": "Verdauung beginnt nicht erst im Magen; Kauen und Speichel leisten bereits mechanische und chemische Arbeit."
+    },
+    {
+      "id": "SV_019",
+      "voiceover_text": "Das kannst du sogar testen: Kau ein Stück Brot sehr lange. Irgendwann schmeckt es leicht süß.",
+      "function": "path",
+      "learning_goal": "Mitmach-Test: Brot wird süß.",
+      "claim_ids": [
+        "C02"
+      ],
+      "scale_level": "Körper",
+      "new_image_required": true,
+      "image_asset_id": "Bild_19",
+      "visual_type": "cutaway",
+      "visible_change": "Long chewing releases sugar that the tongue tastes as sweet.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Verdauung beginnt nicht erst im Magen; Kauen und Speichel leisten bereits mechanische und chemische Arbeit."
+    },
+    {
+      "id": "SV_020",
+      "voiceover_text": "Dann schluckst du. Für einen kurzen Moment verschließt ein kleiner Gewebedeckel, der Kehldeckel, deine Luftröhre.",
+      "function": "path",
+      "learning_goal": "Kehldeckel schützt die Luftröhre.",
+      "claim_ids": [
+        "C03"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_20",
+      "visual_type": "cutaway",
+      "visible_change": "The epiglottis closes the airway while the bite passes.",
+      "scene_difference": "zum vorherigen Bild: scale, frame wechseln; zum nächsten Bild: cat wechseln",
+      "labels": [
+        "Kehldeckel",
+        "Luftröhre"
+      ],
+      "misconception_to_avoid": "Essen fällt nicht durch die Speiseröhre; Muskelwellen transportieren es aktiv, unabhängig von der Schwerkraft."
+    },
+    {
+      "id": "SV_021",
+      "voiceover_text": "Deshalb kannst du nicht gleichzeitig schlucken und atmen.",
+      "function": "path",
+      "learning_goal": "Atempause beim Schlucken.",
+      "claim_ids": [
+        "C03"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_21",
+      "visual_type": "mechanism",
+      "visible_change": "Breathing pauses for the moment of swallowing.",
+      "scene_difference": "zum vorherigen Bild: cat wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Essen fällt nicht durch die Speiseröhre; Muskelwellen transportieren es aktiv, unabhängig von der Schwerkraft."
+    },
+    {
+      "id": "SV_022",
+      "voiceover_text": "Der Bissen landet in Station zwei, der Speiseröhre.",
+      "function": "path",
+      "learning_goal": "Station 2: Speiseröhre.",
+      "claim_ids": [
+        "C03"
+      ],
+      "scale_level": "Körper",
+      "new_image_required": true,
+      "image_asset_id": "Bild_22",
+      "visual_type": "process_path",
+      "visible_change": "The bite enters the esophagus, the second station.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [
+        "Speiseröhre"
+      ],
+      "misconception_to_avoid": "Essen fällt nicht durch die Speiseröhre; Muskelwellen transportieren es aktiv, unabhängig von der Schwerkraft."
+    },
+    {
+      "id": "SV_023",
+      "voiceover_text": "Und hier liegen viele falsch: Das Essen fällt nicht einfach nach unten.",
+      "function": "path",
+      "learning_goal": "Mythos: Essen fällt nach unten.",
+      "claim_ids": [
+        "C03"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_23",
+      "visual_type": "mechanism",
+      "visible_change": "The food is held and moved by muscle, not by falling.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Essen fällt nicht durch die Speiseröhre; Muskelwellen transportieren es aktiv, unabhängig von der Schwerkraft."
+    },
+    {
+      "id": "SV_024",
+      "voiceover_text": "Ringförmige Muskeln ziehen sich hinter dem Bissen zusammen und schieben ihn wie eine Welle voran.",
+      "function": "path",
+      "learning_goal": "Peristaltik als Muskelwelle.",
+      "claim_ids": [
+        "C03"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_24",
+      "visual_type": "macro",
+      "visible_change": "A muscle wave squeezes behind the bolus and pushes it on.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [
+        "Peristaltik"
+      ],
+      "misconception_to_avoid": "Essen fällt nicht durch die Speiseröhre; Muskelwellen transportieren es aktiv, unabhängig von der Schwerkraft."
+    },
+    {
+      "id": "SV_025",
+      "voiceover_text": "Diese Bewegung heißt Peristaltik. Sie funktioniert sogar im Kopfstand.",
+      "function": "path",
+      "learning_goal": "Peristaltik arbeitet gegen die Schwerkraft.",
+      "claim_ids": [
+        "C03"
+      ],
+      "scale_level": "Körper",
+      "new_image_required": true,
+      "image_asset_id": "Bild_25",
+      "visual_type": "human_action",
+      "visible_change": "Peristalsis moves food even upside down.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Essen fällt nicht durch die Speiseröhre; Muskelwellen transportieren es aktiv, unabhängig von der Schwerkraft."
+    },
+    {
+      "id": "SV_026",
+      "voiceover_text": "Astronauten schlucken deshalb auch in der Schwerelosigkeit ganz normal.",
+      "function": "path",
+      "learning_goal": "Schlucken in Schwerelosigkeit.",
+      "claim_ids": [
+        "C03"
+      ],
+      "scale_level": "Alltag",
+      "new_image_required": true,
+      "image_asset_id": "Bild_26",
+      "visual_type": "human_action",
+      "visible_change": "Swallowing works in zero gravity thanks to peristalsis.",
+      "scene_difference": "zum vorherigen Bild: scale, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Essen fällt nicht durch die Speiseröhre; Muskelwellen transportieren es aktiv, unabhängig von der Schwerkraft."
+    },
+    {
+      "id": "SV_027",
+      "voiceover_text": "Nach wenigen Sekunden ist der Bissen im Magen.",
+      "function": "path",
+      "learning_goal": "Übergang in den Magen.",
+      "claim_ids": [
+        "C03"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_27",
+      "visual_type": "cutaway",
+      "visible_change": "The bite passes the stomach entrance after a few seconds.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [
+        "Magen"
+      ],
+      "misconception_to_avoid": "Essen fällt nicht durch die Speiseröhre; Muskelwellen transportieren es aktiv, unabhängig von der Schwerkraft."
+    },
+    {
+      "id": "SV_028",
+      "voiceover_text": "Station drei: der Magen. Hier wird es ungemütlich.",
+      "function": "path",
+      "learning_goal": "Station 3: Magen.",
+      "claim_ids": [
+        "C04"
+      ],
+      "scale_level": "Körper",
+      "new_image_required": true,
+      "image_asset_id": "Bild_28",
+      "visual_type": "process_path",
+      "visible_change": "The third station, the stomach, is highlighted.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Der Magen ist nicht der Hauptort der Nährstoffaufnahme; er säuert, mischt und dosiert."
+    },
+    {
+      "id": "SV_029",
+      "voiceover_text": "Der Magensaft ist saurer als Zitronensaft.",
+      "function": "path",
+      "learning_goal": "Säurestärke des Magensafts.",
+      "claim_ids": [
+        "C04"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_29",
+      "visual_type": "educational_comparison",
+      "visible_change": "Gastric juice is even more acidic than lemon juice.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [
+        "Magensaft",
+        "Zitronensaft"
+      ],
+      "misconception_to_avoid": "Der Magen ist nicht der Hauptort der Nährstoffaufnahme; er säuert, mischt und dosiert."
+    },
+    {
+      "id": "SV_030",
+      "voiceover_text": "Er tötet viele Keime ab und lässt Eiweiße aufquellen und sich entfalten.",
+      "function": "path",
+      "learning_goal": "Säure entfaltet Eiweiß und tötet Keime.",
+      "claim_ids": [
+        "C04"
+      ],
+      "scale_level": "Molekül",
+      "new_image_required": true,
+      "image_asset_id": "Bild_30",
+      "visual_type": "macro",
+      "visible_change": "Acid unfolds proteins and kills many germs.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: neuer Bildinhalt bei gleicher Bildart",
+      "labels": [],
+      "misconception_to_avoid": "Der Magen ist nicht der Hauptort der Nährstoffaufnahme; er säuert, mischt und dosiert."
+    },
+    {
+      "id": "SV_031",
+      "voiceover_text": "Dann kommt das Enzym Pepsin und schneidet die langen Eiweißketten in kürzere Stücke.",
+      "function": "path",
+      "learning_goal": "Pepsin spaltet Eiweiß.",
+      "claim_ids": [
+        "C04"
+      ],
+      "scale_level": "Molekül",
+      "new_image_required": true,
+      "image_asset_id": "Bild_31",
+      "visual_type": "macro",
+      "visible_change": "Pepsin cuts protein chains into shorter pieces.",
+      "scene_difference": "zum vorherigen Bild: neuer Bildinhalt bei gleicher Bildart; zum nächsten Bild: cat, scale wechseln",
+      "labels": [
+        "Pepsin"
+      ],
+      "misconception_to_avoid": "Der Magen ist nicht der Hauptort der Nährstoffaufnahme; er säuert, mischt und dosiert."
+    },
+    {
+      "id": "SV_032",
+      "voiceover_text": "Aber warum verdaut sich der Magen nicht selbst?",
+      "function": "path",
+      "learning_goal": "Frage: Warum verdaut sich der Magen nicht selbst?",
+      "claim_ids": [
+        "C04"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_32",
+      "visual_type": "cutaway",
+      "visible_change": "The acid sits right next to the stomach's own wall – raising the question of protection.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Der Magen ist nicht der Hauptort der Nährstoffaufnahme; er säuert, mischt und dosiert."
+    },
+    {
+      "id": "SV_033",
+      "voiceover_text": "Seine Wand ist mit einer dicken Schleimschicht bedeckt, in der Bicarbonat die Säure abpuffert.",
+      "function": "path",
+      "learning_goal": "Schutz durch Schleim und Bicarbonat.",
+      "claim_ids": [
+        "C04"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_33",
+      "visual_type": "macro",
+      "visible_change": "The mucus layer neutralizes acid before it reaches the cells.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: scale wechseln",
+      "labels": [
+        "Schleimschicht"
+      ],
+      "misconception_to_avoid": "Der Magen ist nicht der Hauptort der Nährstoffaufnahme; er säuert, mischt und dosiert."
+    },
+    {
+      "id": "SV_034",
+      "voiceover_text": "Und die oberste Zellschicht wird ständig erneuert, ungefähr alle paar Tage.",
+      "function": "path",
+      "learning_goal": "Ständige Erneuerung der Magenschleimhaut.",
+      "claim_ids": [
+        "C04"
+      ],
+      "scale_level": "Zelle",
+      "new_image_required": true,
+      "image_asset_id": "Bild_34",
+      "visual_type": "macro",
+      "visible_change": "Old surface cells are continuously replaced by new ones.",
+      "scene_difference": "zum vorherigen Bild: scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Der Magen ist nicht der Hauptort der Nährstoffaufnahme; er säuert, mischt und dosiert."
+    },
+    {
+      "id": "SV_035",
+      "voiceover_text": "Gleichzeitig knetet die Magenwand den Inhalt etwa dreimal pro Minute durch.",
+      "function": "path",
+      "learning_goal": "Magenbewegung etwa dreimal pro Minute.",
+      "claim_ids": [
+        "C05"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_35",
+      "visual_type": "cutaway",
+      "visible_change": "Rhythmic muscle waves knead the stomach contents.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Der Magen ist nicht der Hauptort der Nährstoffaufnahme; er säuert, mischt und dosiert."
+    },
+    {
+      "id": "SV_036",
+      "voiceover_text": "Aus dem Bissen wird ein dickflüssiger Brei, der Speisebrei.",
+      "function": "path",
+      "learning_goal": "Entstehung des Speisebreis.",
+      "claim_ids": [
+        "C05"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_36",
+      "visual_type": "macro",
+      "visible_change": "The bite has turned into an even, thick mixture.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [
+        "Speisebrei"
+      ],
+      "misconception_to_avoid": "Der Magen ist nicht der Hauptort der Nährstoffaufnahme; er säuert, mischt und dosiert."
+    },
+    {
+      "id": "SV_037",
+      "voiceover_text": "Und weil Pizza ziemlich viel Fett enthält, bleibt sie länger im Magen als zum Beispiel eine Schüssel Reis.",
+      "function": "path",
+      "learning_goal": "Fett verlängert die Magenverweildauer.",
+      "claim_ids": [
+        "C05"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_37",
+      "visual_type": "educational_comparison",
+      "visible_change": "The fatty pizza stays longer in the stomach than plain rice.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat wechseln",
+      "labels": [
+        "Pizza",
+        "Reis"
+      ],
+      "misconception_to_avoid": "Der Magen ist nicht der Hauptort der Nährstoffaufnahme; er säuert, mischt und dosiert."
+    },
+    {
+      "id": "SV_038",
+      "voiceover_text": "Fett bremst die Magenentleerung. Deshalb liegt eine Pizza auch gefühlt schwer im Magen.",
+      "function": "path",
+      "learning_goal": "Warum Pizza schwer im Magen liegt.",
+      "claim_ids": [
+        "C05"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_38",
+      "visual_type": "mechanism",
+      "visible_change": "Fat in the intestine triggers a signal that slows stomach emptying.",
+      "scene_difference": "zum vorherigen Bild: cat wechseln; zum nächsten Bild: cat wechseln",
+      "labels": [
+        "Fett"
+      ],
+      "misconception_to_avoid": "Der Magen ist nicht der Hauptort der Nährstoffaufnahme; er säuert, mischt und dosiert."
+    },
+    {
+      "id": "SV_039",
+      "voiceover_text": "Portion für Portion lässt der Magenpförtner den Speisebrei in den Dünndarm. Das dauert mehrere Stunden.",
+      "function": "path",
+      "learning_goal": "Dosierte Magenentleerung.",
+      "claim_ids": [
+        "C01",
+        "C05"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_39",
+      "visual_type": "cutaway",
+      "visible_change": "The stomach releases its contents in small portions over hours.",
+      "scene_difference": "zum vorherigen Bild: cat wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [
+        "Magenpförtner"
+      ],
+      "misconception_to_avoid": "Der Magen ist nicht der Hauptort der Nährstoffaufnahme; er säuert, mischt und dosiert."
+    },
+    {
+      "id": "SV_040",
+      "voiceover_text": "Station vier, der Dünndarm, ist die wichtigste. Hier passiert der Großteil der chemischen Verdauung.",
+      "function": "path",
+      "learning_goal": "Station 4: Dünndarm als Hauptort.",
+      "claim_ids": [
+        "C06"
+      ],
+      "scale_level": "Körper",
+      "new_image_required": true,
+      "image_asset_id": "Bild_40",
+      "visual_type": "process_path",
+      "visible_change": "The small intestine is highlighted as the main station.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [
+        "Dünndarm"
+      ],
+      "misconception_to_avoid": "Galle ist kein Enzym; sie verteilt Fett nur in kleine Tröpfchen, die Enzyme dann spalten."
+    },
+    {
+      "id": "SV_041",
+      "voiceover_text": "Zuerst muss die Säure weg. Die Bauchspeicheldrüse schickt dafür einen Saft voller Bicarbonat.",
+      "function": "path",
+      "learning_goal": "Bicarbonat neutralisiert.",
+      "claim_ids": [
+        "C06"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_41",
+      "visual_type": "cutaway",
+      "visible_change": "Pancreatic juice neutralizes the acid from the stomach.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [
+        "Bauchspeicheldrüse"
+      ],
+      "misconception_to_avoid": "Galle ist kein Enzym; sie verteilt Fett nur in kleine Tröpfchen, die Enzyme dann spalten."
+    },
+    {
+      "id": "SV_042",
+      "voiceover_text": "In demselben Saft stecken Enzyme für alle drei großen Nährstoffe: für Stärke, für Eiweiß und für Fett.",
+      "function": "path",
+      "learning_goal": "Enzyme für alle drei Nährstoffe.",
+      "claim_ids": [
+        "C06"
+      ],
+      "scale_level": "Molekül",
+      "new_image_required": true,
+      "image_asset_id": "Bild_42",
+      "visual_type": "macro",
+      "visible_change": "Different enzymes handle starch, protein and fat.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Galle ist kein Enzym; sie verteilt Fett nur in kleine Tröpfchen, die Enzyme dann spalten."
+    },
+    {
+      "id": "SV_043",
+      "voiceover_text": "Beim Fett gibt es allerdings ein Problem: Fett und Wasser mischen sich nicht.",
+      "function": "path",
+      "learning_goal": "Fett und Wasser mischen sich nicht.",
+      "claim_ids": [
+        "C06"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_43",
+      "visual_type": "food_structure",
+      "visible_change": "Oil and water separate instead of mixing.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Galle ist kein Enzym; sie verteilt Fett nur in kleine Tröpfchen, die Enzyme dann spalten."
+    },
+    {
+      "id": "SV_044",
+      "voiceover_text": "Das Käsefett schwimmt in großen Tropfen herum, und die Enzyme kommen kaum heran.",
+      "function": "path",
+      "learning_goal": "Problem der großen Fetttropfen.",
+      "claim_ids": [
+        "C06"
+      ],
+      "scale_level": "Molekül",
+      "new_image_required": true,
+      "image_asset_id": "Bild_44",
+      "visual_type": "macro",
+      "visible_change": "Big fat droplets give enzymes only a small surface to work on.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Galle ist kein Enzym; sie verteilt Fett nur in kleine Tröpfchen, die Enzyme dann spalten."
+    },
+    {
+      "id": "SV_045",
+      "voiceover_text": "Die Lösung kommt aus der Leber: Galle.",
+      "function": "path",
+      "learning_goal": "Die Leber bildet Galle.",
+      "claim_ids": [
+        "C06"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_45",
+      "visual_type": "cutaway",
+      "visible_change": "The liver produces golden-green bile.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: neuer Bildinhalt bei gleicher Bildart",
+      "labels": [
+        "Leber",
+        "Galle"
+      ],
+      "misconception_to_avoid": "Galle ist kein Enzym; sie verteilt Fett nur in kleine Tröpfchen, die Enzyme dann spalten."
+    },
+    {
+      "id": "SV_046",
+      "voiceover_text": "Sie wird in der Gallenblase gespeichert und im richtigen Moment in den Darm gespritzt.",
+      "function": "path",
+      "learning_goal": "Gallenblase gibt Galle ab.",
+      "claim_ids": [
+        "C06"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_46",
+      "visual_type": "cutaway",
+      "visible_change": "The gallbladder squeezes bile into the intestine.",
+      "scene_difference": "zum vorherigen Bild: neuer Bildinhalt bei gleicher Bildart; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [
+        "Gallenblase"
+      ],
+      "misconception_to_avoid": "Galle ist kein Enzym; sie verteilt Fett nur in kleine Tröpfchen, die Enzyme dann spalten."
+    },
+    {
+      "id": "SV_047",
+      "voiceover_text": "Galle wirkt ähnlich wie Spülmittel in einer fettigen Pfanne.",
+      "function": "path",
+      "learning_goal": "Alltagsvergleich Spülmittel.",
+      "claim_ids": [
+        "C06"
+      ],
+      "scale_level": "Alltag",
+      "new_image_required": true,
+      "image_asset_id": "Bild_47",
+      "visual_type": "everyday_context",
+      "visible_change": "Dish soap breaks grease into tiny droplets – just like bile.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Galle ist kein Enzym; sie verteilt Fett nur in kleine Tröpfchen, die Enzyme dann spalten."
+    },
+    {
+      "id": "SV_048",
+      "voiceover_text": "Sie zerteilt große Fetttropfen in viele winzige. Jetzt haben die Fettenzyme genug Angriffsfläche.",
+      "function": "path",
+      "learning_goal": "Emulgieren vergrößert die Oberfläche.",
+      "claim_ids": [
+        "C06"
+      ],
+      "scale_level": "Molekül",
+      "new_image_required": true,
+      "image_asset_id": "Bild_48",
+      "visual_type": "educational_comparison",
+      "visible_change": "Bile splits fat into tiny droplets so enzymes can work everywhere.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Galle ist kein Enzym; sie verteilt Fett nur in kleine Tröpfchen, die Enzyme dann spalten."
+    },
+    {
+      "id": "SV_049",
+      "voiceover_text": "Nach dieser Arbeit ist von der Pizza nichts Erkennbares mehr übrig.",
+      "function": "path",
+      "learning_goal": "Die Pizza ist vollständig zerlegt.",
+      "claim_ids": [
+        "C07"
+      ],
+      "scale_level": "Molekül",
+      "new_image_required": true,
+      "image_asset_id": "Bild_49",
+      "visual_type": "process_path",
+      "visible_change": "The pizza has disappeared into tiny particles.",
+      "scene_difference": "zum vorherigen Bild: cat wechseln; zum nächsten Bild: cat wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Galle ist kein Enzym; sie verteilt Fett nur in kleine Tröpfchen, die Enzyme dann spalten."
+    },
+    {
+      "id": "SV_050",
+      "voiceover_text": "Aus Stärke ist Traubenzucker geworden, also Glukose. Aus Eiweiß wurden Aminosäuren.",
+      "function": "path",
+      "learning_goal": "Endprodukte Glukose und Aminosäuren.",
+      "claim_ids": [
+        "C07"
+      ],
+      "scale_level": "Molekül",
+      "new_image_required": true,
+      "image_asset_id": "Bild_50",
+      "visual_type": "macro",
+      "visible_change": "Starch has become glucose and protein has become amino acids.",
+      "scene_difference": "zum vorherigen Bild: cat wechseln; zum nächsten Bild: neuer Bildinhalt bei gleicher Bildart",
+      "labels": [
+        "Glukose",
+        "Aminosäuren"
+      ],
+      "misconception_to_avoid": "Galle ist kein Enzym; sie verteilt Fett nur in kleine Tröpfchen, die Enzyme dann spalten."
+    },
+    {
+      "id": "SV_051",
+      "voiceover_text": "Und aus Fett wurden Fettsäuren und andere kleine Fettbausteine.",
+      "function": "path",
+      "learning_goal": "Endprodukt Fettsäuren.",
+      "claim_ids": [
+        "C07"
+      ],
+      "scale_level": "Molekül",
+      "new_image_required": true,
+      "image_asset_id": "Bild_51",
+      "visual_type": "macro",
+      "visible_change": "Fat has been broken down into fatty acids.",
+      "scene_difference": "zum vorherigen Bild: neuer Bildinhalt bei gleicher Bildart; zum nächsten Bild: cat, scale wechseln",
+      "labels": [
+        "Fettsäuren"
+      ],
+      "misconception_to_avoid": "Galle ist kein Enzym; sie verteilt Fett nur in kleine Tröpfchen, die Enzyme dann spalten."
+    },
+    {
+      "id": "SV_052",
+      "voiceover_text": "Aber wie kommen diese Bausteine in deinen Körper? Über die Innenwand des Dünndarms.",
+      "function": "comparison",
+      "learning_goal": "Frage nach der Aufnahme.",
+      "claim_ids": [
+        "C08"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_52",
+      "visual_type": "cutaway",
+      "visible_change": "The inner wall of the small intestine is the gateway into the body.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Die Darmoberfläche ist nicht so groß wie ein Tennisplatz; neuere Messungen zeigen rund 30 Quadratmeter."
+    },
+    {
+      "id": "SV_053",
+      "voiceover_text": "Und die ist alles andere als glatt. Sie ist in Falten gelegt.",
+      "function": "comparison",
+      "learning_goal": "Ringfalten des Dünndarms.",
+      "claim_ids": [
+        "C08"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_53",
+      "visual_type": "cutaway",
+      "visible_change": "The intestinal wall is arranged in large folds.",
+      "scene_difference": "zum vorherigen Bild: scale wechseln; zum nächsten Bild: cat wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Die Darmoberfläche ist nicht so groß wie ein Tennisplatz; neuere Messungen zeigen rund 30 Quadratmeter."
+    },
+    {
+      "id": "SV_054",
+      "voiceover_text": "Auf den Falten sitzen Millionen winziger Ausstülpungen, die Darmzotten.",
+      "function": "comparison",
+      "learning_goal": "Darmzotten.",
+      "claim_ids": [
+        "C08"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_54",
+      "visual_type": "macro",
+      "visible_change": "The folds are covered with finger-like villi.",
+      "scene_difference": "zum vorherigen Bild: cat wechseln; zum nächsten Bild: scale wechseln",
+      "labels": [
+        "Darmzotten"
+      ],
+      "misconception_to_avoid": "Die Darmoberfläche ist nicht so groß wie ein Tennisplatz; neuere Messungen zeigen rund 30 Quadratmeter."
+    },
+    {
+      "id": "SV_055",
+      "voiceover_text": "Und auf deren Zellen sitzen nochmal tausende mikroskopisch kleine Härchen, die Mikrovilli.",
+      "function": "comparison",
+      "learning_goal": "Mikrovilli.",
+      "claim_ids": [
+        "C08"
+      ],
+      "scale_level": "Zelle",
+      "new_image_required": true,
+      "image_asset_id": "Bild_55",
+      "visual_type": "macro",
+      "visible_change": "Each cell carries thousands of tiny microvilli.",
+      "scene_difference": "zum vorherigen Bild: scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [
+        "Mikrovilli"
+      ],
+      "misconception_to_avoid": "Die Darmoberfläche ist nicht so groß wie ein Tennisplatz; neuere Messungen zeigen rund 30 Quadratmeter."
+    },
+    {
+      "id": "SV_056",
+      "voiceover_text": "Lange stand in Lehrbüchern, die Darmoberfläche sei so groß wie ein Tennisplatz. 2014 wurde genauer nachgemessen.",
+      "function": "comparison",
+      "learning_goal": "Mythos Tennisplatz.",
+      "claim_ids": [
+        "C08"
+      ],
+      "scale_level": "Alltag",
+      "new_image_required": true,
+      "image_asset_id": "Bild_56",
+      "visual_type": "educational_comparison",
+      "visible_change": "The old textbook claim: the gut lining would cover a tennis court.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: neuer Bildinhalt bei gleicher Bildart",
+      "labels": [
+        "Tennisplatz"
+      ],
+      "misconception_to_avoid": "Die Darmoberfläche ist nicht so groß wie ein Tennisplatz; neuere Messungen zeigen rund 30 Quadratmeter."
+    },
+    {
+      "id": "SV_057",
+      "voiceover_text": "Ergebnis: Es ist eher ein halbes Badmintonfeld, rund dreißig Quadratmeter.",
+      "function": "comparison",
+      "learning_goal": "Korrektur: rund 30 Quadratmeter.",
+      "claim_ids": [
+        "C08"
+      ],
+      "scale_level": "Alltag",
+      "new_image_required": true,
+      "image_asset_id": "Bild_57",
+      "visual_type": "educational_comparison",
+      "visible_change": "The real surface is about half a badminton court.",
+      "scene_difference": "zum vorherigen Bild: neuer Bildinhalt bei gleicher Bildart; zum nächsten Bild: neuer Bildinhalt bei gleicher Bildart",
+      "labels": [
+        "rund 30 m²"
+      ],
+      "misconception_to_avoid": "Die Darmoberfläche ist nicht so groß wie ein Tennisplatz; neuere Messungen zeigen rund 30 Quadratmeter."
+    },
+    {
+      "id": "SV_058",
+      "voiceover_text": "Das ist weniger als gedacht, aber immer noch so viel wie eine kleine Wohnung, in deinem Bauch.",
+      "function": "comparison",
+      "learning_goal": "Größenvergleich Wohnung.",
+      "claim_ids": [
+        "C08"
+      ],
+      "scale_level": "Alltag",
+      "new_image_required": true,
+      "image_asset_id": "Bild_58",
+      "visual_type": "educational_comparison",
+      "visible_change": "The absorption surface is as large as a small apartment.",
+      "scene_difference": "zum vorherigen Bild: neuer Bildinhalt bei gleicher Bildart; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Die Darmoberfläche ist nicht so groß wie ein Tennisplatz; neuere Messungen zeigen rund 30 Quadratmeter."
+    },
+    {
+      "id": "SV_059",
+      "voiceover_text": "Jetzt trennen sich die Wege.",
+      "function": "path",
+      "learning_goal": "Blut- und Lymphweg trennen sich.",
+      "claim_ids": [
+        "C09",
+        "C10"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_59",
+      "visual_type": "process_path",
+      "visible_change": "Inside the villus nutrients choose between blood and lymph.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [
+        "Blutgefäße",
+        "Lymphgefäß"
+      ],
+      "misconception_to_avoid": "Nicht alle Nährstoffe gehen denselben Weg; Fett nimmt zunächst den Lymphweg und umgeht die Leber."
+    },
+    {
+      "id": "SV_060",
+      "voiceover_text": "Glukose und Aminosäuren wandern durch die Darmzellen in feine Blutgefäße.",
+      "function": "path",
+      "learning_goal": "Aufnahme ins Blut.",
+      "claim_ids": [
+        "C09"
+      ],
+      "scale_level": "Zelle",
+      "new_image_required": true,
+      "image_asset_id": "Bild_60",
+      "visual_type": "macro",
+      "visible_change": "Glucose and amino acids cross the gut cells into the blood.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Nicht alle Nährstoffe gehen denselben Weg; Fett nimmt zunächst den Lymphweg und umgeht die Leber."
+    },
+    {
+      "id": "SV_061",
+      "voiceover_text": "Von dort fließt das Blut nicht direkt in den ganzen Körper, sondern zuerst zur Leber.",
+      "function": "path",
+      "learning_goal": "Pfortader zur Leber.",
+      "claim_ids": [
+        "C09"
+      ],
+      "scale_level": "Körper",
+      "new_image_required": true,
+      "image_asset_id": "Bild_61",
+      "visual_type": "process_path",
+      "visible_change": "Nutrient-rich blood goes from the gut to the liver first.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [
+        "Leber"
+      ],
+      "misconception_to_avoid": "Nicht alle Nährstoffe gehen denselben Weg; Fett nimmt zunächst den Lymphweg und umgeht die Leber."
+    },
+    {
+      "id": "SV_062",
+      "voiceover_text": "Die Leber ist so etwas wie die Zollstation deines Körpers. Sie prüft, verarbeitet und speichert.",
+      "function": "path",
+      "learning_goal": "Leber als Kontrollstation.",
+      "claim_ids": [
+        "C09"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_62",
+      "visual_type": "mechanism",
+      "visible_change": "The liver checks, transforms and stores incoming nutrients.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Nicht alle Nährstoffe gehen denselben Weg; Fett nimmt zunächst den Lymphweg und umgeht die Leber."
+    },
+    {
+      "id": "SV_063",
+      "voiceover_text": "Überschüssige Glukose legt sie zum Beispiel als Vorrat an, als Glykogen.",
+      "function": "path",
+      "learning_goal": "Glykogenspeicher.",
+      "claim_ids": [
+        "C09"
+      ],
+      "scale_level": "Zelle",
+      "new_image_required": true,
+      "image_asset_id": "Bild_63",
+      "visual_type": "macro",
+      "visible_change": "Glucose is stored in the liver as branched glycogen.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: neuer Bildinhalt bei gleicher Bildart",
+      "labels": [
+        "Glykogen"
+      ],
+      "misconception_to_avoid": "Nicht alle Nährstoffe gehen denselben Weg; Fett nimmt zunächst den Lymphweg und umgeht die Leber."
+    },
+    {
+      "id": "SV_064",
+      "voiceover_text": "Das Fett nimmt einen anderen Weg. In den Darmzellen wird es zu Transportpaketen verpackt, den Chylomikronen.",
+      "function": "path",
+      "learning_goal": "Chylomikronen.",
+      "claim_ids": [
+        "C10"
+      ],
+      "scale_level": "Zelle",
+      "new_image_required": true,
+      "image_asset_id": "Bild_64",
+      "visual_type": "macro",
+      "visible_change": "Fat is packed into round transport packages inside the gut cells.",
+      "scene_difference": "zum vorherigen Bild: neuer Bildinhalt bei gleicher Bildart; zum nächsten Bild: cat, scale wechseln",
+      "labels": [
+        "Chylomikronen"
+      ],
+      "misconception_to_avoid": "Nicht alle Nährstoffe gehen denselben Weg; Fett nimmt zunächst den Lymphweg und umgeht die Leber."
+    },
+    {
+      "id": "SV_065",
+      "voiceover_text": "Für die feinen Blutgefäße sind sie zu groß. Deshalb gehen sie in die Lymphgefäße.",
+      "function": "path",
+      "learning_goal": "Größe entscheidet den Weg.",
+      "claim_ids": [
+        "C10"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_65",
+      "visual_type": "educational_comparison",
+      "visible_change": "Fat packages are too big for the capillaries and enter the lymph vessel.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [
+        "Lymphgefäß"
+      ],
+      "misconception_to_avoid": "Nicht alle Nährstoffe gehen denselben Weg; Fett nimmt zunächst den Lymphweg und umgeht die Leber."
+    },
+    {
+      "id": "SV_066",
+      "voiceover_text": "Das ist ein zweites Röhrensystem deines Körpers. Erst in der Nähe des Herzens mündet die Lymphe ins Blut.",
+      "function": "path",
+      "learning_goal": "Lymphe mündet nahe dem Herzen.",
+      "claim_ids": [
+        "C10"
+      ],
+      "scale_level": "Körper",
+      "new_image_required": true,
+      "image_asset_id": "Bild_66",
+      "visual_type": "process_path",
+      "visible_change": "The lymph carries fat up to the chest, where it joins the blood near the heart.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat wechseln",
+      "labels": [
+        "Herz"
+      ],
+      "misconception_to_avoid": "Nicht alle Nährstoffe gehen denselben Weg; Fett nimmt zunächst den Lymphweg und umgeht die Leber."
+    },
+    {
+      "id": "SV_067",
+      "voiceover_text": "Das Fett aus deiner Pizza umgeht also zunächst die Leber.",
+      "function": "path",
+      "learning_goal": "Auflösung: Fett umgeht die Leber.",
+      "claim_ids": [
+        "C09",
+        "C10"
+      ],
+      "scale_level": "Körper",
+      "new_image_required": true,
+      "image_asset_id": "Bild_67",
+      "visual_type": "educational_comparison",
+      "visible_change": "Sugar and protein visit the liver first; fat goes around it.",
+      "scene_difference": "zum vorherigen Bild: cat wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Nicht alle Nährstoffe gehen denselben Weg; Fett nimmt zunächst den Lymphweg und umgeht die Leber."
+    },
+    {
+      "id": "SV_068",
+      "voiceover_text": "Über das Blut erreichen die Bausteine schließlich Billionen Zellen.",
+      "function": "path",
+      "learning_goal": "Verteilung an die Zellen.",
+      "claim_ids": [
+        "C09"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_68",
+      "visual_type": "process_path",
+      "visible_change": "Blood distributes the building blocks to cells throughout the body.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Nicht alle Nährstoffe gehen denselben Weg; Fett nimmt zunächst den Lymphweg und umgeht die Leber."
+    },
+    {
+      "id": "SV_069",
+      "voiceover_text": "Glukose liefert deinen Zellen Energie.",
+      "function": "path",
+      "learning_goal": "Glukose als Energie.",
+      "claim_ids": [
+        "C09"
+      ],
+      "scale_level": "Zelle",
+      "new_image_required": true,
+      "image_asset_id": "Bild_69",
+      "visual_type": "macro",
+      "visible_change": "Cells use glucose to produce energy.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: neuer Bildinhalt bei gleicher Bildart",
+      "labels": [
+        "Energie"
+      ],
+      "misconception_to_avoid": "Nicht alle Nährstoffe gehen denselben Weg; Fett nimmt zunächst den Lymphweg und umgeht die Leber."
+    },
+    {
+      "id": "SV_070",
+      "voiceover_text": "Aminosäuren werden zu neuen Proteinen, zum Beispiel für Muskeln, Enzyme oder Haut.",
+      "function": "path",
+      "learning_goal": "Aminosäuren als Baumaterial.",
+      "claim_ids": [
+        "C09"
+      ],
+      "scale_level": "Zelle",
+      "new_image_required": true,
+      "image_asset_id": "Bild_70",
+      "visual_type": "macro",
+      "visible_change": "Amino acids are built into new proteins.",
+      "scene_difference": "zum vorherigen Bild: neuer Bildinhalt bei gleicher Bildart; zum nächsten Bild: cat wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Nicht alle Nährstoffe gehen denselben Weg; Fett nimmt zunächst den Lymphweg und umgeht die Leber."
+    },
+    {
+      "id": "SV_071",
+      "voiceover_text": "Und Fett wird verbrannt, in Zellmembranen eingebaut oder gespeichert.",
+      "function": "path",
+      "learning_goal": "Nutzung von Fett.",
+      "claim_ids": [
+        "C10"
+      ],
+      "scale_level": "Zelle",
+      "new_image_required": true,
+      "image_asset_id": "Bild_71",
+      "visual_type": "educational_comparison",
+      "visible_change": "Fat can be used for energy, membranes or storage.",
+      "scene_difference": "zum vorherigen Bild: cat wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Nicht alle Nährstoffe gehen denselben Weg; Fett nimmt zunächst den Lymphweg und umgeht die Leber."
+    },
+    {
+      "id": "SV_072",
+      "voiceover_text": "Genau hier wird die Pizza ein Teil von dir.",
+      "function": "path",
+      "learning_goal": "Die Pizza wird Teil des Körpers.",
+      "claim_ids": [
+        "C09"
+      ],
+      "scale_level": "Körper",
+      "new_image_required": true,
+      "image_asset_id": "Bild_72",
+      "visual_type": "process_path",
+      "visible_change": "The pizza's building blocks have become part of the body.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Nicht alle Nährstoffe gehen denselben Weg; Fett nimmt zunächst den Lymphweg und umgeht die Leber."
+    },
+    {
+      "id": "SV_073",
+      "voiceover_text": "Doch nicht alles wird aufgenommen.",
+      "function": "path",
+      "learning_goal": "Nicht alles wird im Dünndarm aufgenommen.",
+      "claim_ids": [
+        "C11"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_73",
+      "visual_type": "cutaway",
+      "visible_change": "After absorption, only leftovers continue toward the large intestine.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Darmgase und Bakterien sind normal; der Dickdarm holt vor allem Wasser zurück und beherbergt Mikroorganismen."
+    },
+    {
+      "id": "SV_074",
+      "voiceover_text": "Übrig bleiben Wasser, Ballaststoffe aus Teig und Soße und abgestorbene Zellen aus der Darmwand.",
+      "function": "path",
+      "learning_goal": "Was übrig bleibt.",
+      "claim_ids": [
+        "C11",
+        "C12"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_74",
+      "visual_type": "macro",
+      "visible_change": "Water, fiber and shed cells remain after absorption.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [
+        "Ballaststoffe"
+      ],
+      "misconception_to_avoid": "Darmgase und Bakterien sind normal; der Dickdarm holt vor allem Wasser zurück und beherbergt Mikroorganismen."
+    },
+    {
+      "id": "SV_075",
+      "voiceover_text": "Dieser Rest wandert weiter in Station fünf, den Dickdarm. Hier geht es vor allem um Wasser.",
+      "function": "path",
+      "learning_goal": "Station 5: Dickdarm.",
+      "claim_ids": [
+        "C11"
+      ],
+      "scale_level": "Körper",
+      "new_image_required": true,
+      "image_asset_id": "Bild_75",
+      "visual_type": "process_path",
+      "visible_change": "The leftovers move into the large intestine, where water is the focus.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [
+        "Dickdarm"
+      ],
+      "misconception_to_avoid": "Darmgase und Bakterien sind normal; der Dickdarm holt vor allem Wasser zurück und beherbergt Mikroorganismen."
+    },
+    {
+      "id": "SV_076",
+      "voiceover_text": "Jeden Tag fließen rund neun Liter Flüssigkeit durch deinen Darm.",
+      "function": "path",
+      "learning_goal": "Neun Liter Flüssigkeit pro Tag.",
+      "claim_ids": [
+        "C11"
+      ],
+      "scale_level": "Alltag",
+      "new_image_required": true,
+      "image_asset_id": "Bild_76",
+      "visual_type": "educational_comparison",
+      "visible_change": "About nine liters of fluid pass through the gut each day.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: neuer Bildinhalt bei gleicher Bildart",
+      "labels": [
+        "9 Liter"
+      ],
+      "misconception_to_avoid": "Darmgase und Bakterien sind normal; der Dickdarm holt vor allem Wasser zurück und beherbergt Mikroorganismen."
+    },
+    {
+      "id": "SV_077",
+      "voiceover_text": "Dazu zählen nicht nur Getränke, sondern vor allem Speichel, Magensaft, Galle sowie Bauchspeicheldrüsen- und Darmsaft.",
+      "function": "path",
+      "learning_goal": "Herkunft der Flüssigkeit.",
+      "claim_ids": [
+        "C11"
+      ],
+      "scale_level": "Alltag",
+      "new_image_required": true,
+      "image_asset_id": "Bild_77",
+      "visual_type": "educational_comparison",
+      "visible_change": "Most of the daily gut fluid comes from the body's own digestive juices.",
+      "scene_difference": "zum vorherigen Bild: neuer Bildinhalt bei gleicher Bildart; zum nächsten Bild: cat, scale wechseln",
+      "labels": [
+        "Getränke",
+        "Verdauungssäfte"
+      ],
+      "misconception_to_avoid": "Darmgase und Bakterien sind normal; der Dickdarm holt vor allem Wasser zurück und beherbergt Mikroorganismen."
+    },
+    {
+      "id": "SV_078",
+      "voiceover_text": "Fast alles davon holt sich dein Körper zurück, das meiste schon im Dünndarm.",
+      "function": "path",
+      "learning_goal": "Wasserrückgewinnung.",
+      "claim_ids": [
+        "C11"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_78",
+      "visual_type": "process_path",
+      "visible_change": "Most of the water is reabsorbed through the gut wall.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Darmgase und Bakterien sind normal; der Dickdarm holt vor allem Wasser zurück und beherbergt Mikroorganismen."
+    },
+    {
+      "id": "SV_079",
+      "voiceover_text": "Ausgeschieden werden nur etwa ein bis zwei Deziliter.",
+      "function": "path",
+      "learning_goal": "Nur 1–2 dl gehen verloren.",
+      "claim_ids": [
+        "C11"
+      ],
+      "scale_level": "Alltag",
+      "new_image_required": true,
+      "image_asset_id": "Bild_79",
+      "visual_type": "educational_comparison",
+      "visible_change": "Only a small glass worth of water leaves the body with the stool.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Darmgase und Bakterien sind normal; der Dickdarm holt vor allem Wasser zurück und beherbergt Mikroorganismen."
+    },
+    {
+      "id": "SV_080",
+      "voiceover_text": "Und dann sind da noch die Mitbewohner: etwa achtunddreißig Billionen Bakterien.",
+      "function": "path",
+      "learning_goal": "38 Billionen Darmbakterien.",
+      "claim_ids": [
+        "C12"
+      ],
+      "scale_level": "Zelle",
+      "new_image_required": true,
+      "image_asset_id": "Bild_80",
+      "visual_type": "macro",
+      "visible_change": "The large intestine is home to an enormous number of bacteria.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat wechseln",
+      "labels": [
+        "Darmbakterien"
+      ],
+      "misconception_to_avoid": "Darmgase und Bakterien sind normal; der Dickdarm holt vor allem Wasser zurück und beherbergt Mikroorganismen."
+    },
+    {
+      "id": "SV_081",
+      "voiceover_text": "Das sind ungefähr so viele, wie dein Körper eigene Zellen hat.",
+      "function": "path",
+      "learning_goal": "Bakterien und Körperzellen etwa gleich viele.",
+      "claim_ids": [
+        "C12"
+      ],
+      "scale_level": "Zelle",
+      "new_image_required": true,
+      "image_asset_id": "Bild_81",
+      "visual_type": "educational_comparison",
+      "visible_change": "Bacteria and body cells are roughly equal in number.",
+      "scene_difference": "zum vorherigen Bild: cat wechseln; zum nächsten Bild: cat wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Darmgase und Bakterien sind normal; der Dickdarm holt vor allem Wasser zurück und beherbergt Mikroorganismen."
+    },
+    {
+      "id": "SV_082",
+      "voiceover_text": "Sie machen sich über das her, was deine Enzyme nicht zerlegen konnten: die Ballaststoffe.",
+      "function": "path",
+      "learning_goal": "Bakterien verwerten Ballaststoffe.",
+      "claim_ids": [
+        "C12"
+      ],
+      "scale_level": "Zelle",
+      "new_image_required": true,
+      "image_asset_id": "Bild_82",
+      "visual_type": "macro",
+      "visible_change": "Bacteria digest the fiber that our own enzymes could not.",
+      "scene_difference": "zum vorherigen Bild: cat wechseln; zum nächsten Bild: neuer Bildinhalt bei gleicher Bildart",
+      "labels": [],
+      "misconception_to_avoid": "Darmgase und Bakterien sind normal; der Dickdarm holt vor allem Wasser zurück und beherbergt Mikroorganismen."
+    },
+    {
+      "id": "SV_083",
+      "voiceover_text": "Daraus stellen sie kurzkettige Fettsäuren her. Eine davon, Butyrat, ist die Lieblingsnahrung deiner Dickdarmzellen.",
+      "function": "path",
+      "learning_goal": "Butyrat ernährt Darmzellen.",
+      "claim_ids": [
+        "C12"
+      ],
+      "scale_level": "Zelle",
+      "new_image_required": true,
+      "image_asset_id": "Bild_83",
+      "visual_type": "macro",
+      "visible_change": "Bacteria make short-chain fatty acids such as butyrate that feed the gut cells.",
+      "scene_difference": "zum vorherigen Bild: neuer Bildinhalt bei gleicher Bildart; zum nächsten Bild: scale wechseln",
+      "labels": [
+        "Butyrat"
+      ],
+      "misconception_to_avoid": "Darmgase und Bakterien sind normal; der Dickdarm holt vor allem Wasser zurück und beherbergt Mikroorganismen."
+    },
+    {
+      "id": "SV_084",
+      "voiceover_text": "Als Nebenprodukt entstehen Gase. Ja, auch die gehören zur Verdauung.",
+      "function": "path",
+      "learning_goal": "Gase als normales Nebenprodukt.",
+      "claim_ids": [
+        "C12"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_84",
+      "visual_type": "macro",
+      "visible_change": "Gas bubbles form as a natural by-product of fermentation.",
+      "scene_difference": "zum vorherigen Bild: scale wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Darmgase und Bakterien sind normal; der Dickdarm holt vor allem Wasser zurück und beherbergt Mikroorganismen."
+    },
+    {
+      "id": "SV_085",
+      "voiceover_text": "Bleibt die Frage vom Anfang: Was ist eigentlich das, was am Ende übrig bleibt?",
+      "function": "result",
+      "learning_goal": "Auflösung des Open Loops beginnt.",
+      "claim_ids": [
+        "C13"
+      ],
+      "scale_level": "Körper",
+      "new_image_required": true,
+      "image_asset_id": "Bild_85",
+      "visual_type": "process_path",
+      "visible_change": "The final section of the route is revealed.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [
+        "Enddarm"
+      ],
+      "misconception_to_avoid": "Stuhl ist nicht einfach unverdautes Essen; er besteht großteils aus Wasser und Bakterien, die Farbe stammt aus Blutabbau."
+    },
+    {
+      "id": "SV_086",
+      "voiceover_text": "Es besteht zu etwa drei Vierteln aus Wasser.",
+      "function": "result",
+      "learning_goal": "Drei Viertel Wasser.",
+      "claim_ids": [
+        "C13"
+      ],
+      "scale_level": "Molekül",
+      "new_image_required": true,
+      "image_asset_id": "Bild_86",
+      "visual_type": "educational_comparison",
+      "visible_change": "About three quarters of the leftovers is water.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [
+        "Wasser"
+      ],
+      "misconception_to_avoid": "Stuhl ist nicht einfach unverdautes Essen; er besteht großteils aus Wasser und Bakterien, die Farbe stammt aus Blutabbau."
+    },
+    {
+      "id": "SV_087",
+      "voiceover_text": "Und vom Rest ist ein großer Teil keine Pizza mehr, sondern Bakterien.",
+      "function": "result",
+      "learning_goal": "Großteil der Trockenmasse sind Bakterien.",
+      "claim_ids": [
+        "C13"
+      ],
+      "scale_level": "Zelle",
+      "new_image_required": true,
+      "image_asset_id": "Bild_87",
+      "visual_type": "macro",
+      "visible_change": "The solid part consists largely of bacteria.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Stuhl ist nicht einfach unverdautes Essen; er besteht großteils aus Wasser und Bakterien, die Farbe stammt aus Blutabbau."
+    },
+    {
+      "id": "SV_088",
+      "voiceover_text": "Je nach Studie machen sie ein Viertel bis über die Hälfte der Trockenmasse aus.",
+      "function": "result",
+      "learning_goal": "Spanne 25 bis über 50 Prozent.",
+      "claim_ids": [
+        "C13"
+      ],
+      "scale_level": "Molekül",
+      "new_image_required": true,
+      "image_asset_id": "Bild_88",
+      "visual_type": "educational_comparison",
+      "visible_change": "Bacteria make up a quarter to over half of the dry mass.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [
+        "Bakterien"
+      ],
+      "misconception_to_avoid": "Stuhl ist nicht einfach unverdautes Essen; er besteht großteils aus Wasser und Bakterien, die Farbe stammt aus Blutabbau."
+    },
+    {
+      "id": "SV_089",
+      "voiceover_text": "Und die braune Farbe? Die kommt aus deinem Blut.",
+      "function": "result",
+      "learning_goal": "Farbe beginnt im Blut.",
+      "claim_ids": [
+        "C14"
+      ],
+      "scale_level": "Zelle",
+      "new_image_required": true,
+      "image_asset_id": "Bild_89",
+      "visual_type": "macro",
+      "visible_change": "The brown color starts with old red blood cells.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Stuhl ist nicht einfach unverdautes Essen; er besteht großteils aus Wasser und Bakterien, die Farbe stammt aus Blutabbau."
+    },
+    {
+      "id": "SV_090",
+      "voiceover_text": "Wenn alte rote Blutkörperchen abgebaut werden, entsteht ein gelber Farbstoff, Bilirubin.",
+      "function": "result",
+      "learning_goal": "Bilirubin entsteht.",
+      "claim_ids": [
+        "C14"
+      ],
+      "scale_level": "Molekül",
+      "new_image_required": true,
+      "image_asset_id": "Bild_90",
+      "visual_type": "macro",
+      "visible_change": "Breaking down red blood cells produces the yellow pigment bilirubin.",
+      "scene_difference": "zum vorherigen Bild: scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [
+        "Bilirubin"
+      ],
+      "misconception_to_avoid": "Stuhl ist nicht einfach unverdautes Essen; er besteht großteils aus Wasser und Bakterien, die Farbe stammt aus Blutabbau."
+    },
+    {
+      "id": "SV_091",
+      "voiceover_text": "Die Leber gibt ihn mit der Galle in den Darm.",
+      "function": "result",
+      "learning_goal": "Bilirubin gelangt über die Galle in den Darm.",
+      "claim_ids": [
+        "C14"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_91",
+      "visual_type": "process_path",
+      "visible_change": "Bilirubin travels with bile into the intestine.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Stuhl ist nicht einfach unverdautes Essen; er besteht großteils aus Wasser und Bakterien, die Farbe stammt aus Blutabbau."
+    },
+    {
+      "id": "SV_092",
+      "voiceover_text": "Dort färben Bakterien ihn braun um. Braun ist also ein Abfallprodukt deiner roten Blutkörperchen.",
+      "function": "result",
+      "learning_goal": "Auflösung: Braun durch Bakterien und Bilirubin.",
+      "claim_ids": [
+        "C14"
+      ],
+      "scale_level": "Molekül",
+      "new_image_required": true,
+      "image_asset_id": "Bild_92",
+      "visual_type": "process_path",
+      "visible_change": "Bacteria turn the yellow pigment brown – the color comes from old blood cells.",
+      "scene_difference": "zum vorherigen Bild: scale wechseln; zum nächsten Bild: scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Stuhl ist nicht einfach unverdautes Essen; er besteht großteils aus Wasser und Bakterien, die Farbe stammt aus Blutabbau."
+    },
+    {
+      "id": "SV_093",
+      "voiceover_text": "Im Schnitt dauert die ganze Reise gut einen Tag, bei Gesunden zwischen einem halben und drei Tagen.",
+      "function": "result",
+      "learning_goal": "Gesamtdauer der Verdauung.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Körper",
+      "new_image_required": true,
+      "image_asset_id": "Bild_93",
+      "visual_type": "process_path",
+      "visible_change": "The whole journey takes a little over a day on average, between half a day and three days in healthy people.",
+      "scene_difference": "zum vorherigen Bild: scale, frame wechseln; zum nächsten Bild: scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Stuhl ist nicht einfach unverdautes Essen; er besteht großteils aus Wasser und Bakterien, die Farbe stammt aus Blutabbau."
+    },
+    {
+      "id": "SV_094",
+      "voiceover_text": "Fassen wir zusammen: Im Mund wird zerkleinert, im Magen gemischt und angesäuert.",
+      "function": "result",
+      "learning_goal": "Zusammenfassung Mund und Magen.",
+      "claim_ids": [
+        "C02",
+        "C04"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_94",
+      "visual_type": "process_path",
+      "visible_change": "Summary of the first stations: chewing and stomach mixing.",
+      "scene_difference": "zum vorherigen Bild: scale, frame wechseln; zum nächsten Bild: scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Verdauung ist kein einzelner Vorgang, sondern eine Abfolge spezialisierter Stationen."
+    },
+    {
+      "id": "SV_095",
+      "voiceover_text": "Im Dünndarm wird zerlegt und aufgenommen. Blut, Lymphe und Leber verteilen die Bausteine.",
+      "function": "result",
+      "learning_goal": "Zusammenfassung Dünndarm und Verteilung.",
+      "claim_ids": [
+        "C06",
+        "C08",
+        "C09",
+        "C10"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_95",
+      "visual_type": "process_path",
+      "visible_change": "Summary: absorption in the small intestine and distribution by blood, lymph and liver.",
+      "scene_difference": "zum vorherigen Bild: scale wechseln; zum nächsten Bild: cat, scale wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Verdauung ist kein einzelner Vorgang, sondern eine Abfolge spezialisierter Stationen."
+    },
+    {
+      "id": "SV_096",
+      "voiceover_text": "Und im Dickdarm holen sich Körper und Bakterien den Rest.",
+      "function": "result",
+      "learning_goal": "Zusammenfassung Dickdarm.",
+      "claim_ids": [
+        "C11",
+        "C12"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_96",
+      "visual_type": "cutaway",
+      "visible_change": "Summary: the large intestine recovers water while bacteria use the leftovers.",
+      "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Verdauung ist kein einzelner Vorgang, sondern eine Abfolge spezialisierter Stationen."
+    },
+    {
+      "id": "SV_097",
+      "voiceover_text": "Aus einem Stück Pizza wird so Energie, Baumaterial und ein bisschen von dir selbst.",
+      "function": "result",
+      "learning_goal": "Kernaussage: Essen wird zu Körper.",
+      "claim_ids": [
+        "C09"
+      ],
+      "scale_level": "Körper",
+      "new_image_required": true,
+      "image_asset_id": "Bild_97",
+      "visual_type": "process_path",
+      "visible_change": "The pizza turns into energy, building material and body tissue.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln; zum nächsten Bild: cat wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Verdauung ist kein einzelner Vorgang, sondern eine Abfolge spezialisierter Stationen."
+    },
+    {
+      "id": "SV_098",
+      "voiceover_text": "Bleibt nur eine Frage: Warum hast du oft schon bald wieder Hunger, obwohl die Pizza noch unterwegs ist?",
+      "function": "result",
+      "learning_goal": "Brücke zum Hunger-Video.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Körper",
+      "new_image_required": true,
+      "image_asset_id": "Bild_98",
+      "visual_type": "mechanism",
+      "visible_change": "Hunger returns although food is still in the gut – the bridge to the companion video.",
+      "scene_difference": "zum vorherigen Bild: cat wechseln; zum nächsten Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Verdauung ist kein einzelner Vorgang, sondern eine Abfolge spezialisierter Stationen."
+    },
+    {
+      "id": "SV_099",
+      "voiceover_text": "Genau das klären wir in unserem Video über Hunger.",
+      "function": "result",
+      "learning_goal": "Endscreen-Brücke zum Hunger-Video.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_99",
+      "visual_type": "educational_comparison",
+      "visible_change": "Teaser for the companion hunger video.",
+      "scene_difference": "zum vorherigen Bild: cat, scale, frame wechseln",
+      "labels": [],
+      "misconception_to_avoid": "Verdauung ist kein einzelner Vorgang, sondern eine Abfolge spezialisierter Stationen."
+    }
+  ]
+}

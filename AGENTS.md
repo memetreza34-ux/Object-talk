@@ -5,19 +5,31 @@ Diese Datei ist der Bootstrap fuer ChatGPT, Antigravity, Codex und andere Reposi
 ## Vor jeder Arbeit lesen
 
 1. `PROJECT_CONTRACT.md`
-2. `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
-3. `engine/VISIBLE-TEXT-STANDARD.md`
-4. `engine/CONTINUOUS-IMPROVEMENT.md`
-5. `engine/EXPORT-STANDARD.md`
-5. `PROJECT_STATE.md`
-6. `config/channel.json`
-7. `config/video.json`
-8. `THEMEN-GEHIRN.md`
-9. `engine/README.md`
-10. `engine/SCRIPT-STANDARD.md`
-11. `engine/PLANNING-V2.md`
-12. `engine/PRESENTATION-OVERLAY-SYSTEM.md`
-13. relevante Dateien des aktuellen YouTube-Projekts
+2. `engine/KANAL-ANALYSE-2026-10.md` (warum Skripte/Bilder bis 010 zu schwach waren und was ab 011 gilt)
+3. `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`
+4. `engine/VISIBLE-TEXT-STANDARD.md`
+5. `engine/CONTINUOUS-IMPROVEMENT.md`
+6. `engine/EXPORT-STANDARD.md`
+7. `PROJECT_STATE.md`
+8. `config/channel.json`
+9. `config/video.json`
+10. `THEMEN-GEHIRN.md`
+11. `engine/README.md`
+12. `engine/SCRIPT-STANDARD.md` (inkl. §13 Retention-Handwerk)
+13. `engine/TITEL-THUMBNAIL-STANDARD.md`
+14. `engine/PLANNING-V2.md` (inkl. §16 Storyboard-v2)
+15. `engine/PRESENTATION-OVERLAY-SYSTEM.md`
+16. relevante Dateien des aktuellen YouTube-Projekts
+
+## ARBEITSWEISE AB VIDEO 011 – EINE STORYBOARD-QUELLE (verbindlich)
+
+1. Projekt anlegen: `python tools/create_video.py NNN-longform-thema`
+2. Recherche, `claim-matrix.md`, `mechanism-map.md` in `.intern/05_info/` schreiben (jede Zahl im Skript belegen).
+3. **Nur** `.intern/05_info/storyboard-source.json` (format `storyboard-v2`) schreiben: Sprechtext pro Bild, Bildart, Komposition, Labels, Kapitel, Open Loops, Titel/Cover, Farbcode. Vorbilder (nur Vorlage, nie produzieren): `examples/storyboard-v2/901-beispiel-hunger/`, `examples/storyboard-v2/902-beispiel-verdauung/`.
+4. `python tools/build_phase1_package.py youtube-videos/NNN-...` erzeugt Skript, Flow-Prompt, alle Pläne, Caption-Entwurf und Antigravity-Auftrag. Abgeleitete Dateien nie von Hand ändern.
+5. `python tools/validate_planning_v2.py youtube-videos/NNN-...` muss PASS sein (Bildregie, Kamerabewegungen, Skriptqualität: Zahlen, Fragen, Absicherungen, Open Loops, Szenendauer).
+6. Skripte sind **unterhaltsam und konkret**: Experiment- oder Paradox-Hook, nummerierte Stationen/Gründe, belegte Zahlen, höchstens ein Gesundheitshinweis, Brücke zu einem bereits veröffentlichten Partnervideo. Kanalname für Zuschauer: **Lebenslogik**.
+7. **Keine Neuauflagen:** Bereits veröffentlichte Videos (z. B. 008 Verdauung, 010 Hunger) werden weder neu aufgelegt noch neu gerendert, außer der Nutzer verlangt das ausdrücklich. Bessere Ergebnisse entstehen über neue Themen mit den neuen Regeln.
 
 Aktive Produktion steht in `PROJECT_STATE.md`.
 
@@ -46,6 +58,8 @@ Nicht reaktivieren:
 ## Höchste visuelle Verbesserung seit Video 010
 
 Video 010 wurde vom Nutzer für das Skript gelobt, die Bilder jedoch als zu häufig personenlastig und erklärungsschwach kritisiert. **Ab Video 011 zuerst die sichtbare Wissenschaft gestalten:** dominierende Makro-/Organ-/Gewebe-/Lebensmittel-Innenansichten, Cutaways, Funktionswege und verständliche Vergleiche. Mehr harmonische Farben, klarere bildfüllende Illustrator-Kompositionen. Ganzer Mensch nur mit echtem Lernzweck, keine redundanten Küchen-/Einkaufsposen. Vorgaben und Mixprüfung stehen in `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md` und `engine/PLANNING-V2.md`. Skript deshalb nicht ungefragt umschreiben, nicht bereits gerenderte Videos verändern.
+
+**Update 18.10.2026:** Der Nutzer hat ausdrücklich deutlich bessere, unterhaltsamere Skripte, passendere Bilder und bessere Titel verlangt. Umgesetzt als Regeln und Werkzeuge für **zukünftige** Videos, dazu zwei Musterbeispiele unter `examples/storyboard-v2/`. Der Nutzer hat klargestellt: 008 und 010 sind veröffentlicht und werden nicht neu gemacht. Für neue Skripte gilt `engine/SCRIPT-STANDARD.md` §13.
 
 ## Bildprinzip
 
@@ -240,6 +254,8 @@ STOP bei:
 - geschaetzten statt echten Untertitel-Zeitcodes
 
 ## Longform 008 – bewährter Referenzstandard
+
+**Ab Video 011:** 008 liefert nur noch Bildwelt, Cover-first-Ablauf und Fünfergruppen. Promptaufbau, Planungsdateien, Antigravity-Auftrag und Dramaturgie kommen ausschließlich aus `.intern/05_info/storyboard-source.json` und `tools/build_phase1_package.py` (`engine/PLANNING-V2.md` §16, `engine/SCRIPT-STANDARD.md` §13); der Export folgt `engine/EXPORT-STANDARD.md`. Die Dramaturgie von 008 gilt laut `engine/KANAL-ANALYSE-2026-10.md` als zu lehrbuchhaft und wird nicht mehr kopiert.
 
 Fuer neue 6–7-Minuten-Videos `engine/LONGFORM-008-MASTERSTANDARD.md` verwenden: zuerst die Dateien aus `008-longform-verdauung` auf Prompt-Struktur, wissenschaftliche Abschnittsplanung, Bildwelt, Render und Export abgleichen, danach **nur Thema und fachliche Visuals/Skript anpassen**. Keine neue Bildwelt erfinden. Wie im Verdauungsfilm 008 ohne Bildvorlagen arbeiten: ein Textprompt, drei Cover, Nutzer wählt, danach Fünfergruppen in derselben schriftlichen Bildwelt; kein Cover als Bildreferenz. Dokumentation und Medienstatus sauber unterscheiden.
 
