@@ -11,7 +11,7 @@
       "Dein Hungerhormon kennt deine Uhrzeit",
       "6 Gründe, warum du ständig Hunger hast"
     ],
-    "description": "Ein Croissant und eine Portion Kartoffeln mit genau gleich vielen Kalorien – trotzdem bist du nach dem Croissant viel schneller wieder hungrig. Warum?\n\nWir zeigen in klaren Illustrationen, wie das Hungerhormon Ghrelin entsteht und warum es deine Essenszeiten lernt, wie Dehnung, CCK, GLP-1 und PYY Sättigung melden und warum diese Signale Zeit brauchen. Dazu sechs typische Gründe für schnellen Hunger, belegt mit echten Studien: Esstempo, Apfel gegen Saft, die Sattmacher Eiweiß, Ballaststoffe und Wasser, Blutzucker-Dips, stark verarbeitetes Essen, Schlafmangel – und warum der Nachtisch immer noch reinpasst.\n\nAm Ende bekommst du fünf einfache Ideen für deinen Alltag.\n\nQuellen (Auswahl): Holt et al. 1995 (Sättigungsindex), Cummings et al. 2001 (Ghrelin), Kokkinos et al. 2010 (Esstempo), Flood-Obbagy & Rolls 2009 (Apfel und Saft), Wyatt et al. 2021 (Blutzucker), Hall et al. 2019 (NIH, verarbeitete Lebensmittel), Spiegel et al. 2004 (Schlaf), Rolls et al. 1981 (Abwechslung).\n\nAllgemeine Bildung, keine medizinische Beratung. Bei plötzlich stark erhöhtem Hunger mit Durst oder Gewichtsverlust bitte ärztlich abklären lassen.",
+    "description": "Ein Croissant und eine Portion Kartoffeln mit genau gleich vielen Kalorien – trotzdem bist du nach dem Croissant viel schneller wieder hungrig. Warum?\n\nWir zeigen in klaren Illustrationen, wie das Hungerhormon Ghrelin entsteht und warum es deine Essenszeiten lernt, wie Dehnung, CCK, GLP-1 und PYY Sättigung melden und warum diese Signale Zeit brauchen. Dazu sechs typische Gründe für schnellen Hunger, belegt mit echten Studien: Esstempo, Apfel gegen Saft, die Sattmacher Eiweiß, Ballaststoffe und Wasser, stark verarbeitetes Essen, Schlafmangel und Appetit durch Duft – und warum der Nachtisch immer noch reinpasst.\n\nAm Ende bekommst du fünf einfache Ideen für deinen Alltag.\n\nQuellen (Auswahl): Holt et al. 1995 (Sättigungsindex), Cummings et al. 2001 (Ghrelin), Kokkinos et al. 2010 (Esstempo), Flood-Obbagy & Rolls 2009 (Apfel und Saft), Wyatt et al. 2021 (Blutzucker), Hall et al. 2019 (NIH, verarbeitete Lebensmittel), Spiegel et al. 2004 (Schlaf), Rolls et al. 1981 (Abwechslung).\n\nAllgemeine Bildung, keine medizinische Beratung. Bei plötzlich stark erhöhtem Hunger mit großem Durst oder ungewolltem Gewichtsverlust bitte ärztlich abklären lassen.",
     "hashtags": [
       "#Hunger",
       "#Sättigung",
@@ -29,7 +29,7 @@
     ]
   },
   "flow": {
-    "continuity_key": "Hunger hormone ghrelin = small warm-orange glowing round particles. Satiety messengers from the gut (CCK, GLP-1, PYY) = turquoise/teal particles. Leptin from fat tissue = soft violet particles. Nerve messages = small bright yellow light pulses along a thin golden-yellow nerve. Blood sugar = golden-yellow beads or one golden ribbon. Stomach = warm coral-pink organ with soft inner folds; small intestine = salmon-pink coiled tube; fat tissue = clusters of round pale-yellow cells; brain = soft lilac-pink with the hypothalamus as a small almond-shaped warm highlight at its base, containing orange hunger nerve cells and turquoise satiety nerve cells. Recurring metaphor 'signal balance': an elegant organic hand-drawn balance with two shallow bowls – orange particles on one side, turquoise (plus violet/yellow) particles on the other; its tilt shows which side wins. Recurring orientation map: simplified left-facing side silhouette of an adult head and torso in soft cream, organs as clean colored shapes, background a soft gradient.",
+    "continuity_key": "Hunger hormone ghrelin = small warm-orange glowing round particles. Satiety messengers from the gut (CCK, GLP-1, PYY) = turquoise/teal particles. Leptin from fat tissue = soft violet particles. Nerve messages = small bright yellow light pulses along a thin golden-yellow nerve. Blood sugar = golden-yellow beads or one golden ribbon. Stomach = warm coral-pink organ with soft inner folds; small intestine = salmon-pink coiled tube; fat tissue = clusters of round pale-yellow cells; brain = soft lilac-pink with the hypothalamus as a small almond-shaped warm highlight at its base, containing orange hunger nerve cells and turquoise satiety nerve cells. Appetite or craving triggered by smell, sight or a new taste = soft pink glow (never orange, orange is only the hunger hormone). Recurring metaphor 'signal balance': an elegant organic hand-drawn balance with two shallow bowls – orange particles on one side, turquoise (plus violet/yellow) particles on the other; its tilt shows which side wins. Recurring orientation map: simplified left-facing side silhouette of an adult head and torso in soft cream, organs as clean colored shapes, background a soft gradient.",
     "topic_safety": "No weight-loss promises, no scales with numbers, no shaming of bodies or foods; injection pens are unbranded and shown only as neutral objects."
   },
   "open_loops": [
@@ -66,7 +66,7 @@
           "para": false
         },
         {
-          "speech": "Knapp eine Stunde später knurrt dein Magen schon wieder.",
+          "speech": "Kurz darauf knurrt dein Magen schon wieder.",
           "cat": "cutaway",
           "frame": "partial_person",
           "scale": "Organ",
@@ -107,7 +107,7 @@
             "Croissant",
             "Kartoffeln"
           ],
-          "visual": "Two simplified coral stomachs side by side on a calm light-teal background: the left stomach holds a few croissant pieces and emits only a tiny turquoise satiety glow; the right stomach holds boiled potato pieces and radiates a large bright turquoise glow upward.",
+          "visual": "Two simplified coral stomachs side by side on a calm light-teal background: the left stomach, labelled Croissant, holds a few croissant pieces and emits only a tiny turquoise satiety glow; the right stomach, labelled Kartoffeln, holds boiled potato pieces and radiates a large bright turquoise glow upward.",
           "shows": "With equal calories the potato stomach sends a much stronger turquoise fullness signal than the croissant stomach.",
           "goal": "Sättigungsindex-Experiment: Kartoffel fast siebenmal besser als Croissant.",
           "claims": [
@@ -169,8 +169,8 @@
           "scale": "Alltag",
           "motion": "slow-push-in",
           "labels": [],
-          "visual": "Top-down table view: an empty pasta plate pushed aside, a hand pulling a bright bowl of strawberry and vanilla ice cream closer; a faint translucent stomach outline glows turquoise as if full, but a small orange spark lights up next to the ice cream; fresh pink-and-cream palette.",
-          "shows": "Despite a full turquoise stomach, the dessert sparks a new orange appetite signal – the open question of the video.",
+          "visual": "Top-down table view: an empty pasta plate pushed aside, a hand pulling a bright bowl of strawberry and vanilla ice cream closer; a faint translucent stomach outline glows turquoise as if full, but a small pink appetite spark lights up next to the ice cream; fresh pink-and-cream palette.",
+          "shows": "Despite a full turquoise stomach, the dessert sparks a new pink appetite signal – the open question of the video.",
           "goal": "Open Loop: Warum passt der Nachtisch noch rein?",
           "claims": [
             "C11"
@@ -565,7 +565,7 @@
           "para": false
         },
         {
-          "speech": "Der Haken: Diese Darmsignale brauchen Zeit. Bis sie richtig ansteigen, vergehen oft eine Viertelstunde oder mehr.",
+          "speech": "Der Haken: Diese Darmsignale brauchen Zeit. Bis sie richtig ansteigen, vergeht oft eine Viertelstunde oder mehr.",
           "cat": "process_path",
           "frame": "none",
           "scale": "Molekül",
@@ -603,7 +603,7 @@
       "misconception": "Getränke sind nicht schlecht; flüssige Kalorien sättigen nur weniger als feste Lebensmittel mit gleichem Energiegehalt.",
       "scenes": [
         {
-          "speech": "Damit kennst du das Grundprinzip: Ein Hungersignal gegen mehrere Sattsignale.",
+          "speech": "Damit kennst du das Grundprinzip: Ein Hungerhormon gegen mehrere Sattsignale.",
           "cat": "educational_comparison",
           "frame": "none",
           "scale": "Molekül",
@@ -658,7 +658,7 @@
             "5 Minuten",
             "30 Minuten"
           ],
-          "visual": "Two identical bowls of vanilla ice cream side by side; behind the left bowl a short glowing arc, behind the right bowl a long arc that nearly closes into a circle, like simple time rings without numerals; fresh mint-and-cream background.",
+          "visual": "Two identical bowls of vanilla ice cream side by side; behind the left bowl, labelled 5 Minuten, a short glowing arc; behind the right bowl, labelled 30 Minuten, a long arc that nearly closes into a circle, like simple time rings without numerals; fresh mint-and-cream background.",
           "shows": "The same ice cream is eaten once quickly and once slowly.",
           "goal": "Versuchsaufbau: gleiche Portion, unterschiedliches Tempo.",
           "claims": [
@@ -676,7 +676,7 @@
             "schnell",
             "langsam"
           ],
-          "visual": "Two blood-vessel cross-sections side by side: the left vessel carries only a few turquoise particles, the right vessel is full of them; red blood cells softly around; coral background.",
+          "visual": "Two blood-vessel cross-sections side by side: the left vessel, labelled schnell, carries only a few turquoise particles; the right vessel, labelled langsam, is full of them; red blood cells softly around; coral background.",
           "shows": "After slow eating, far more turquoise satiety hormones are in the blood.",
           "goal": "Langsames Essen verstärkt die Sättigungshormone.",
           "claims": [
@@ -739,7 +739,7 @@
             "mit Apfel",
             "ohne Apfel"
           ],
-          "visual": "Two lunch plates side by side: the right plate shows a full portion of pasta and vegetables, the left plate a visibly smaller portion with a whole apple placed next to it; warm cream background.",
+          "visual": "Two lunch plates side by side: the left plate, labelled mit Apfel, holds a visibly smaller portion of pasta and vegetables with a whole apple placed next to it; the right plate, labelled ohne Apfel, holds a full portion; warm cream background.",
           "shows": "With the whole apple first, the following lunch portion is smaller.",
           "goal": "Ganzer Apfel senkt die Gesamtmenge um etwa 15 Prozent.",
           "claims": [
@@ -772,7 +772,7 @@
             "Apfel",
             "Saft"
           ],
-          "visual": "Two stomach cutaways side by side: in the left one chewed apple pieces with green fibers remain and fill it; in the right one golden juice streams out quickly through the exit; calm teal background.",
+          "visual": "Two stomach cutaways side by side: the left one, labelled Apfel, is filled with chewed apple pieces and green fibers that stay; from the right one, labelled Saft, golden juice streams out quickly through the exit; calm teal background.",
           "shows": "Chewed apple stays in the stomach longer, juice flows out fast.",
           "goal": "Warum Flüssigkeit weniger sättigt.",
           "claims": [
@@ -1058,9 +1058,9 @@
           "motion": "static",
           "labels": [
             "verarbeitet",
-            "unverarbeitet"
+            "kaum verarbeitet"
           ],
-          "visual": "Two meal trays side by side: the left tray with a white-bun burger, chips, a sweet drink and canned soup; the right tray with grilled fish, roasted vegetables, a salad, fruit and nuts; clean light background.",
+          "visual": "Two meal trays side by side: the left tray, labelled verarbeitet, with a white-bun burger, chips, a sweet drink and canned soup; the right tray, labelled kaum verarbeitet, with fish, steamed vegetables, a salad, fruit and nuts; clean light background.",
           "shows": "Highly processed and minimally processed meals are compared directly.",
           "goal": "Zwei Ernährungsphasen im Vergleich.",
           "claims": [
@@ -1153,7 +1153,7 @@
           "para": false
         },
         {
-          "speech": "Danach war ihr Ghrelin um rund achtundzwanzig Prozent höher.",
+          "speech": "Danach war ihr Ghrelin um rund achtundzwanzig Prozent höher als nach zwei langen Nächten.",
           "cat": "mechanism",
           "frame": "none",
           "scale": "Molekül",
@@ -1205,7 +1205,7 @@
           "para": false
         },
         {
-          "speech": "Und am meisten Lust hatten sie auf kalorienreiche, kohlenhydratreiche Snacks.",
+          "speech": "Und besonders stieg ihr Appetit auf kalorienreiche, kohlenhydratreiche Lebensmittel.",
           "cat": "human_action",
           "frame": "hands_or_crop",
           "scale": "Alltag",
@@ -1236,7 +1236,7 @@
             "Hunger",
             "Appetit"
           ],
-          "visual": "Side silhouette of a head and torso facing left: in the torso the coral stomach glows orange (body hunger); in front of the face aroma swirls from a pastry lead into the nose and eyes and glow pink (appetite); two clearly separate sources; soft cream background.",
+          "visual": "Side silhouette of a head and torso facing left: in the torso the coral stomach glows orange and carries the label Hunger; separately, in front of the face, aroma swirls from a pastry lead into the nose and eyes and glow soft pink, carrying the label Appetit; two clearly separate sources; soft cream background.",
           "shows": "Hunger comes from the body; appetite comes from senses like smell and sight.",
           "goal": "Unterschied zwischen Hunger und Appetit.",
           "claims": [
@@ -1297,11 +1297,9 @@
           "frame": "none",
           "scale": "Organ",
           "motion": "slow-push-in",
-          "labels": [
-            "sensorisch-spezifische Sättigung"
-          ],
-          "visual": "Stylized brain taste map on a lilac background: several soft flavor zones in different colors around the hypothalamus; the tomato-red savory zone is dimmed and grey, while a pink sweet zone and a blue cold zone remain bright.",
-          "shows": "Only the satiety for the flavor that was eaten switches off; other flavors stay attractive.",
+          "labels": [],
+          "visual": "A dulled, desaturated plate of pasta with tomato sauce next to a bright, vivid ice cream sundae; a soft pink appetite glow rises only above the dessert, none above the pasta; lilac background.",
+          "shows": "Only the food already eaten loses its appeal; a different food still attracts.",
           "goal": "Begriff sensorisch-spezifische Sättigung.",
           "claims": [
             "C11"
@@ -1345,7 +1343,7 @@
           "scale": "Lebensmittel",
           "motion": "slow-push-in",
           "labels": [],
-          "visual": "Vibrant close-up of an ice cream sundae with strawberries, a cold mist and fresh colors popping against a bright pink-and-sky-blue background; a small orange appetite spark beside it.",
+          "visual": "Vibrant close-up of an ice cream sundae with strawberries, a cold mist and fresh colors popping against a bright pink-and-sky-blue background; a small pink appetite spark beside it.",
           "shows": "A completely different food reawakens appetite.",
           "goal": "Neuer Geschmack weckt neuen Appetit.",
           "claims": [
@@ -1425,7 +1423,7 @@
           "para": false
         },
         {
-          "speech": "Drittens: Iss lieber, statt zu trinken. Ein Apfel statt Saft, Wasser statt Limo.",
+          "speech": "Drittens: Iss deine Kalorien, statt sie zu trinken. Ein Apfel statt Saft, Wasser statt Limo.",
           "cat": "educational_comparison",
           "frame": "none",
           "scale": "Lebensmittel",
@@ -1470,7 +1468,7 @@
           "para": false
         },
         {
-          "speech": "Und wenn du trotz allem ständig und plötzlich viel stärker Hunger hast als früher,",
+          "speech": "Und wenn du trotz allem plötzlich und anhaltend viel mehr Hunger hast als früher,",
           "cat": "mechanism",
           "frame": "partial_person",
           "scale": "Körper",
@@ -1485,7 +1483,7 @@
           "para": false
         },
         {
-          "speech": "vielleicht zusammen mit großem Durst oder Gewichtsverlust, dann lass das ärztlich abklären.",
+          "speech": "zusammen mit großem Durst oder ungewolltem Gewichtsverlust, dann lass das ärztlich abklären.",
           "cat": "everyday_context",
           "frame": "hands_or_crop",
           "scale": "Alltag",

@@ -254,6 +254,8 @@ STOP bei:
 
 ## Longform 008 – bewährter Referenzstandard
 
+**Ab Video 011:** 008 liefert nur noch Bildwelt, Cover-first-Ablauf und Fünfergruppen. Promptaufbau, Planungsdateien, Antigravity-Auftrag und Dramaturgie kommen ausschließlich aus `.intern/05_info/storyboard-source.json` und `tools/build_phase1_package.py` (`engine/PLANNING-V2.md` §16, `engine/SCRIPT-STANDARD.md` §13); der Export folgt `engine/EXPORT-STANDARD.md`. Die Dramaturgie von 008 gilt laut `engine/KANAL-ANALYSE-2026-10.md` als zu lehrbuchhaft und wird nicht mehr kopiert.
+
 Fuer neue 6–7-Minuten-Videos `engine/LONGFORM-008-MASTERSTANDARD.md` verwenden: zuerst die Dateien aus `008-longform-verdauung` auf Prompt-Struktur, wissenschaftliche Abschnittsplanung, Bildwelt, Render und Export abgleichen, danach **nur Thema und fachliche Visuals/Skript anpassen**. Keine neue Bildwelt erfinden. Wie im Verdauungsfilm 008 ohne Bildvorlagen arbeiten: ein Textprompt, drei Cover, Nutzer wählt, danach Fünfergruppen in derselben schriftlichen Bildwelt; kein Cover als Bildreferenz. Dokumentation und Medienstatus sauber unterscheiden.
 
 

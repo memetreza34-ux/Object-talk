@@ -27,7 +27,7 @@
     },
     {
       "id": "SV_002",
-      "voiceover_text": "Knapp eine Stunde später knurrt dein Magen schon wieder.",
+      "voiceover_text": "Kurz darauf knurrt dein Magen schon wieder.",
       "function": "observation",
       "learning_goal": "Das Problem: kurz nach dem Essen meldet sich wieder Hunger.",
       "claim_ids": [
@@ -146,7 +146,7 @@
       "new_image_required": true,
       "image_asset_id": "Bild_08",
       "visual_type": "everyday_context",
-      "visible_change": "Despite a full turquoise stomach, the dessert sparks a new orange appetite signal – the open question of the video.",
+      "visible_change": "Despite a full turquoise stomach, the dessert sparks a new pink appetite signal – the open question of the video.",
       "scene_difference": "zum vorherigen Bild: cat, frame wechseln; zum nächsten Bild: cat, scale, frame wechseln",
       "labels": [],
       "misconception_to_avoid": "Schneller Hunger heißt nicht automatisch, dass zu wenig gegessen wurde; Kalorienmenge allein bestimmt Sättigung nicht."
@@ -572,7 +572,7 @@
     },
     {
       "id": "SV_032",
-      "voiceover_text": "Der Haken: Diese Darmsignale brauchen Zeit. Bis sie richtig ansteigen, vergehen oft eine Viertelstunde oder mehr.",
+      "voiceover_text": "Der Haken: Diese Darmsignale brauchen Zeit. Bis sie richtig ansteigen, vergeht oft eine Viertelstunde oder mehr.",
       "function": "path",
       "learning_goal": "Sättigungshormone steigen zeitverzögert an.",
       "claim_ids": [
@@ -607,7 +607,7 @@
     },
     {
       "id": "SV_034",
-      "voiceover_text": "Damit kennst du das Grundprinzip: Ein Hungersignal gegen mehrere Sattsignale.",
+      "voiceover_text": "Damit kennst du das Grundprinzip: Ein Hungerhormon gegen mehrere Sattsignale.",
       "function": "comparison",
       "learning_goal": "Zusammenfassung des Grundprinzips.",
       "claim_ids": [
@@ -1109,7 +1109,7 @@
       "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale, frame wechseln",
       "labels": [
         "verarbeitet",
-        "unverarbeitet"
+        "kaum verarbeitet"
       ],
       "misconception_to_avoid": "Ein einzelnes verarbeitetes Produkt macht nicht dick; die Studie zeigt einen Effekt der gesamten Ernährungsweise unter Klinikbedingungen."
     },
@@ -1202,7 +1202,7 @@
     },
     {
       "id": "SV_067",
-      "voiceover_text": "Danach war ihr Ghrelin um rund achtundzwanzig Prozent höher.",
+      "voiceover_text": "Danach war ihr Ghrelin um rund achtundzwanzig Prozent höher als nach zwei langen Nächten.",
       "function": "comparison",
       "learning_goal": "Schlafmangel erhöht Ghrelin.",
       "claim_ids": [
@@ -1260,7 +1260,7 @@
     },
     {
       "id": "SV_070",
-      "voiceover_text": "Und am meisten Lust hatten sie auf kalorienreiche, kohlenhydratreiche Snacks.",
+      "voiceover_text": "Und besonders stieg ihr Appetit auf kalorienreiche, kohlenhydratreiche Lebensmittel.",
       "function": "comparison",
       "learning_goal": "Schlafmangel verstärkt Appetit auf Energiedichtes.",
       "claim_ids": [
@@ -1360,11 +1360,9 @@
       "new_image_required": true,
       "image_asset_id": "Bild_75",
       "visual_type": "mechanism",
-      "visible_change": "Only the satiety for the flavor that was eaten switches off; other flavors stay attractive.",
+      "visible_change": "Only the food already eaten loses its appeal; a different food still attracts.",
       "scene_difference": "zum vorherigen Bild: cat, scale wechseln; zum nächsten Bild: cat, scale wechseln",
-      "labels": [
-        "sensorisch-spezifische Sättigung"
-      ],
+      "labels": [],
       "misconception_to_avoid": "Appetit ist kein Charakterfehler; Sinnesreize und Abwechslung steuern die Nahrungsaufnahme biologisch mit."
     },
     {
@@ -1492,7 +1490,7 @@
     },
     {
       "id": "SV_083",
-      "voiceover_text": "Drittens: Iss lieber, statt zu trinken. Ein Apfel statt Saft, Wasser statt Limo.",
+      "voiceover_text": "Drittens: Iss deine Kalorien, statt sie zu trinken. Ein Apfel statt Saft, Wasser statt Limo.",
       "function": "result",
       "learning_goal": "Tipp 3: kauen statt trinken.",
       "claim_ids": [
@@ -1543,7 +1541,7 @@
     },
     {
       "id": "SV_086",
-      "voiceover_text": "Und wenn du trotz allem ständig und plötzlich viel stärker Hunger hast als früher,",
+      "voiceover_text": "Und wenn du trotz allem plötzlich und anhaltend viel mehr Hunger hast als früher,",
       "function": "result",
       "learning_goal": "Warnzeichen: plötzlich stark erhöhter Hunger.",
       "claim_ids": [
@@ -1560,7 +1558,7 @@
     },
     {
       "id": "SV_087",
-      "voiceover_text": "vielleicht zusammen mit großem Durst oder Gewichtsverlust, dann lass das ärztlich abklären.",
+      "voiceover_text": "zusammen mit großem Durst oder ungewolltem Gewichtsverlust, dann lass das ärztlich abklären.",
       "function": "result",
       "learning_goal": "Medizinische Abklärung bei Warnzeichen.",
       "claim_ids": [

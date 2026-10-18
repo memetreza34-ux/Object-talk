@@ -415,8 +415,29 @@ def write(path: Path, text: str) -> None:
     path.write_text(text, encoding="utf-8")
 
 
+def neighbour_warnings(pairs: list[tuple[dict, dict]]) -> list[str]:
+    """PLANNING-V2 §5: neighbours should differ; identical category+scale+framing is only a hint, not a fail."""
+    flat = [scene for _, scene in pairs]
+    return [
+        f"Bild_{i:02d}/Bild_{i + 1:02d}"
+        for i in range(1, len(flat))
+        if all(flat[i - 1].get(k) == flat[i].get(k) for k in ("cat", "scale", "frame"))
+    ]
+
+
+STALE_TEMPLATE_NOTE = (
+    "# Veraltete Vorlage\n\nDiese Datei stammt aus der alten Projektvorlage und gilt nicht. Der gültige Phase-3-Auftrag "
+    "steht in `ANTIGRAVITY-PROMPT-ZUM-KOPIEREN.txt` (erzeugt von `tools/build_phase1_package.py`).\n"
+)
+
+
 def build(project: Path) -> str:
     sb = load_storyboard(project)
+    if sb.get("video_id") != project.name:
+        raise StoryboardError(
+            f"video_id {sb.get('video_id')!r} muss dem Ordnernamen {project.name!r} entsprechen "
+            "(sonst zeigen Antigravity-Befehle und Links auf das falsche Projekt)"
+        )
     pairs = validate(sb)
     script = build_script(pairs)
     info = project / ".intern" / "05_info"
@@ -429,9 +450,14 @@ def build(project: Path) -> str:
     write(info / "label-plan.json", json.dumps(build_label_plan(pairs), ensure_ascii=False, indent=2) + "\n")
     write(info / "TITEL-UND-COVER-OPTIONEN.md", build_options_md(sb))
     write(project / ".intern" / "03_pipeline" / "ANTIGRAVITY-PROMPT-ZUM-KOPIEREN.txt", build_antigravity(sb, len(pairs)))
+    for stale in ("Antigravity-Prompt.md", "pipeline.md"):  # template leftovers that contradict the generated brief
+        if (project / ".intern" / "03_pipeline" / stale).is_file():
+            write(project / ".intern" / "03_pipeline" / stale, STALE_TEMPLATE_NOTE)
     total_words = words(script)
     labelled = sum(1 for _, s in pairs if s.get("labels"))
-    return f"OK: {len(pairs)} Szenen, {total_words} Wörter, {labelled} Bilder mit Labels -> {project.name}"
+    similar = neighbour_warnings(pairs)
+    hint = f"; Hinweis: {len(similar)} Nachbarpaare mit gleicher Bildart/Maßstab/Ausschnitt ({', '.join(similar[:6])}{' …' if len(similar) > 6 else ''}) – Bildbeschreibung deutlich unterscheiden" if similar else ""
+    return f"OK: {len(pairs)} Szenen, {total_words} Wörter, {labelled} Bilder mit Labels -> {project.name}{hint}"
 
 
 def main() -> None:

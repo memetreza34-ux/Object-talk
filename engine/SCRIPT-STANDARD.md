@@ -222,7 +222,7 @@ Ergebnis der Kanal-Analyse 10/2026 (`engine/KANAL-ANALYSE-2026-10.md`): 008–01
 
 ### Bauplan, der bei 011/012 funktioniert hat
 
-1. **Cold Open in 3 Bildern (unter 10 s):** konkretes Objekt + überraschende Konsequenz („Du isst ein Croissant. Eine Stunde später knurrt dein Magen.“).
+1. **Cold Open in 3 Bildern (unter 10 s):** konkretes Objekt + überraschende Konsequenz („Du isst ein Croissant. Kurz darauf knurrt dein Magen schon wieder.“). Keine erfundenen Zeitangaben, auch nicht im Einstieg.
 2. **Paradox oder Experiment sofort:** echte Studie als Mini-Geschichte („In einem Experiment schnitten Kartoffeln fast siebenmal besser ab …“).
 3. **Versprechen + Open Loop:** eine Frage nennen, die erst am Ende beantwortet wird („Und ganz am Ende klären wir, warum der Nachtisch immer noch reinpasst.“). Nicht alle Themen im Intro aufzählen.
 4. **Roter Faden zum Mitzählen:** „Station eins … fünf“, „Grund Nummer eins … sechs“.

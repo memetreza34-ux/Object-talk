@@ -9,10 +9,11 @@ Warum bist du kurz nach dem Essen schon wieder hungrig – obwohl du genug Kalor
 - **Hook mit konkretem Paradox:** Croissant vs. Kartoffel bei gleichen Kalorien (Holt 1995) statt allgemeiner Kühlschrank-Szene.
 - **Benannte Akteure:** Ghrelin, CCK, GLP-1, PYY, Leptin, Hypothalamus. 010 nannte kein einziges Hormon.
 - **Sechs nummerierte Gründe** mit je einem echten Versuch: Esstempo, Getränke, Sattmacher, stark verarbeitet, Schlaf, Appetit.
-- **Zwei Open Loops:** Nachtisch-Frage (Szene 8 → 73), „Signal aus dem Schlafzimmer“ (Szene 7 → 64).
+- **Zwei Open Loops:** Nachtisch-Frage (Szene 8 → 74), „Signal aus dem Schlafzimmer“ (Szene 7 → 65).
 - **Aktueller Alltagsbezug:** Abnehmspritzen ahmen GLP-1 nach.
 - **Korrektur einer 010-Aussage:** 010 stellte schnelle Blutzuckerschwankungen fast als Mythos dar. Wyatt 2021 zeigt: Dips 2–3 h nach dem Essen hängen bei manchen Menschen mit mehr Hunger zusammen. Darum jetzt differenziert erwähnt.
-- **Ein Disclaimer statt sechs:** die medizinische Abklärung einmal klar am Ende der Tipps; die Beschreibung ergänzt den Bildungs-Hinweis.
+- **Ein Disclaimer statt sechs:** die medizinische Abklärung einmal klar am Ende der Tipps (plötzlich und anhaltend mehr Hunger mit großem Durst oder **ungewolltem** Gewichtsverlust); die Beschreibung ergänzt den Bildungs-Hinweis.
+- **Farbcode-Regel nach Review:** Orange steht nur für das Hungerhormon Ghrelin, Appetit durch Sinnesreize ist rosa. So widerspricht das Bild nicht der Aussage „Appetit ist nicht dasselbe wie Hunger“.
 
 ## Begriffe, die im Skript sofort erklärt werden
 Ghrelin („Hungerhormon“), Hypothalamus („Kontrollzentrum, so groß wie eine Mandel“), Vagusnerv („Datenkabel zwischen Bauch und Gehirn“), CCK, GLP-1, PYY (über ihre Wirkung), Leptin („meldet volle Reserven“), sensorisch-spezifische Sättigung (über das Nudel/Eis-Beispiel).

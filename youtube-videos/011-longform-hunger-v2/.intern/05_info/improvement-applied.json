@@ -40,7 +40,7 @@
     },
     {
       "id": "BASE-RETENTION-SCRIPT",
-      "implemented_as": "Neues Skript mit Experiment-Hook, nummerierten Gründen bzw. Stationen, mehreren Open Loops, über 20 belegten Zahlen, einem einzigen Gesundheitshinweis und Brücke zum Partnervideo.",
+      "implemented_as": "Neues Skript mit Experiment-Hook, nummerierten Gründen bzw. Stationen, mehreren Open Loops, 25 Zahlenangaben (alle Studien- und Mengenwerte in claim-matrix.md belegt), einem einzigen Gesundheitshinweis und Brücke zum Partnervideo.",
       "evidence_files": [
         "youtube-videos/011-longform-hunger-v2/01_script/script.txt",
         "youtube-videos/011-longform-hunger-v2/.intern/05_info/claim-matrix.md",
@@ -56,7 +56,7 @@
         "youtube-videos/011-longform-hunger-v2/.intern/05_info/phase1-scenes.json",
         "youtube-videos/011-longform-hunger-v2/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt"
       ],
-      "verification": "build_phase1_package PASS, validate_phase1 lückenlose Sprachabdeckung PASS, simulierte Timeline max. 6,5 s pro Bild auch bei 10 % langsamerer Stimme."
+      "verification": "build_phase1_package PASS, validate_phase1 lückenlose Sprachabdeckung PASS, geschätzte Sprechzeit pro Bild max. 5,9 s; unabhängiges Review vor dem PR, 39 bestätigte Punkte behoben."
     }
   ],
   "notes": "Neuauflage auf Nutzerwunsch vom 18.10.2026. Die Bildqualität ist erst nach echten Flow-Bildern prüfbar; hier nur Planungsnachweis."

@@ -510,11 +510,11 @@
       "mode": "scene",
       "allowed_visible_text": [
         "verarbeitet",
-        "unverarbeitet"
+        "kaum verarbeitet"
       ],
       "labels": [
         "verarbeitet",
-        "unverarbeitet"
+        "kaum verarbeitet"
       ]
     },
     {
@@ -626,12 +626,8 @@
     {
       "image_asset_id": "Bild_75",
       "mode": "scene",
-      "allowed_visible_text": [
-        "sensorisch-spezifische Sättigung"
-      ],
-      "labels": [
-        "sensorisch-spezifische Sättigung"
-      ]
+      "allowed_visible_text": [],
+      "labels": []
     },
     {
       "image_asset_id": "Bild_76",

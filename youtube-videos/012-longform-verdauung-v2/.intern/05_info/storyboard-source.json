@@ -11,7 +11,7 @@
       "Warum dein Magen sich nicht selbst verdaut",
       "Vom ersten Bissen bis zum Ende: So verdaust du eine Pizza"
     ],
-    "description": "Was passiert mit einem Stück Pizza, nachdem du es geschluckt hast? Wir folgen ihm durch deinen ganzen Körper – vom ersten Bissen bis zum Ende.\n\nDu siehst, warum Kauen wichtiger ist, als es klingt, warum Schlucken sogar im Kopfstand funktioniert, warum dein Magen sich nicht selbst verdaut und wie Galle wie Spülmittel das Fett zerlegt. Außerdem: Die Darmoberfläche ist nicht so groß wie ein Tennisplatz, sondern wie ein halbes Badmintonfeld. Zucker und Fett nehmen völlig unterschiedliche Wege, rund 38 Billionen Bakterien warten im Dickdarm – und am Ende klären wir, woraus der Rest wirklich besteht und warum er braun ist.\n\nQuellen (Auswahl): Helander & Fändriks 2014 (Darmoberfläche), Sender, Fuchs & Milo 2016 (Zahl der Bakterien), Rose et al. 2015 (Zusammensetzung von Stuhl), Mayo Clinic (Verdauungsdauer), Lehrbuchphysiologie zu Peristaltik, Magenschutz, Galle und Lymphweg.\n\nAllgemeine Bildung, keine medizinische Beratung.",
+    "description": "Was passiert mit einem Stück Pizza, nachdem du es geschluckt hast? Wir folgen ihm durch deinen ganzen Körper – vom ersten Bissen bis zum Ende.\n\nDu siehst, warum Kauen wichtiger ist, als es klingt, warum Schlucken sogar im Kopfstand funktioniert, warum dein Magen sich nicht selbst verdaut und wie Galle das Fett ähnlich wie Spülmittel in winzige Tröpfchen zerteilt. Außerdem: Die Darmoberfläche ist nicht so groß wie ein Tennisplatz, sondern wie ein halbes Badmintonfeld. Zucker und Fett nehmen völlig unterschiedliche Wege, rund 38 Billionen Bakterien warten im Dickdarm – und am Ende klären wir, woraus der Rest wirklich besteht und warum er braun ist.\n\nQuellen (Auswahl): Helander & Fändriks 2014 (Darmoberfläche), Sender, Fuchs & Milo 2016 (Zahl der Bakterien), Rose et al. 2015 (Zusammensetzung von Stuhl), Lee, Erdogan & Rao 2014 (Verdauungsdauer), Lehrbuchphysiologie zu Peristaltik, Magenschutz, Galle und Lymphweg.\n\nAllgemeine Bildung, keine medizinische Beratung.",
     "hashtags": [
       "#Verdauung",
       "#Biologie",
@@ -86,7 +86,7 @@
           "para": false
         },
         {
-          "speech": "In Wahrheit beginnt jetzt eine Reise, die meistens länger als einen Tag dauert.",
+          "speech": "In Wahrheit beginnt jetzt eine Reise, die im Schnitt länger als einen Tag dauert.",
           "cat": "process_path",
           "frame": "partial_person",
           "scale": "Körper",
@@ -94,7 +94,7 @@
           "labels": [],
           "visual": "Orientation map: simplified left-facing side silhouette of an adult head and torso in soft cream with the whole digestive tract drawn as one continuous tube from mouth to the end of the large intestine, softly glowing; a tiny pizza-colored bite sits at the very start; a subtle sun-to-moon arc above the body suggests more than a day.",
           "shows": "The full route ahead is shown, with the bite at its start.",
-          "goal": "Die Verdauungsreise dauert meist über einen Tag.",
+          "goal": "Die Verdauungsreise dauert im Schnitt über einen Tag.",
           "claims": [
             "C01"
           ],
@@ -213,7 +213,7 @@
           "para": false
         },
         {
-          "speech": "Fett aus Käse und Öl und ein paar Ballaststoffe aus der Tomatensoße.",
+          "speech": "Fett aus Käse und Öl und ein paar Ballaststoffe aus Teig und Tomatensoße.",
           "cat": "food_structure",
           "frame": "none",
           "scale": "Molekül",
@@ -222,7 +222,7 @@
             "Fett",
             "Ballaststoffe"
           ],
-          "visual": "The cheese and oil release amber-orange droplets and the tomato sauce releases a few leaf-green fiber strands, drawn next to their source layers; clean light background.",
+          "visual": "The cheese and oil release amber-orange droplets, while the crust and the tomato sauce each release a few leaf-green fiber strands, drawn next to their source layers; clean light background.",
           "shows": "Fat and fiber are introduced with their color code.",
           "goal": "Farbcode Fett und Ballaststoffe.",
           "claims": [
@@ -402,7 +402,7 @@
           "scale": "Organ",
           "motion": "static",
           "labels": [],
-          "visual": "Same throat region seen closer: small blue air particles wait motionless above the closed epiglottis while the bolus passes below; a frozen-moment feeling; cool blue palette.",
+          "visual": "Same throat region seen closer: small blue air particles wait motionless in the windpipe beneath the closed epiglottis while the bolus slides over the lid and behind it into the food pipe; a frozen-moment feeling; cool blue palette.",
           "shows": "Breathing pauses for the moment of swallowing.",
           "goal": "Atempause beim Schlucken.",
           "claims": [
@@ -538,7 +538,7 @@
             "Magensaft",
             "Zitronensaft"
           ],
-          "visual": "A halved lemon with a drop of juice next to a small glass beaker of bubbling pale-yellow gastric fluid; the gastric fluid fizzes with more and stronger bubbles; clean yellow-and-teal palette.",
+          "visual": "On the left a small plain glass beaker without any markings, labelled Magensaft, holds bubbling pale-yellow gastric fluid with many strong acid bubbles; on the right a halved lemon with a drop of juice, labelled Zitronensaft, shows only a few small bubbles; clean yellow-and-teal palette.",
           "shows": "Gastric juice is even more acidic than lemon juice.",
           "goal": "Säurestärke des Magensafts.",
           "claims": [
@@ -547,7 +547,7 @@
           "para": false
         },
         {
-          "speech": "Er tötet viele Keime ab und lässt das Eiweiß aus dem Käse aufquellen und sich entfalten.",
+          "speech": "Er tötet viele Keime ab und lässt Eiweiße aufquellen und sich entfalten.",
           "cat": "macro",
           "frame": "none",
           "scale": "Molekül",
@@ -667,7 +667,7 @@
             "Pizza",
             "Reis"
           ],
-          "visual": "Two stomach cutaways side by side: the left stomach is still full of pizza mixture with many amber fat droplets; the right stomach, after plain rice, is already half empty; clean teal background.",
+          "visual": "Two stomach cutaways side by side: the left stomach, labelled Pizza, is still full of pizza mixture with many amber fat droplets; the right stomach, labelled Reis, after plain rice, is already half empty; clean teal background.",
           "shows": "The fatty pizza stays longer in the stomach than plain rice.",
           "goal": "Fett verlängert die Magenverweildauer.",
           "claims": [
@@ -1008,7 +1008,7 @@
           "labels": [
             "rund 30 m²"
           ],
-          "visual": "Aerial illustration of a badminton court where exactly half of the court is covered by the velvety pink intestinal lining carpet and the other half is empty; bright clean palette.",
+          "visual": "Aerial view at the same scale as the tennis court before: a large tennis court beside a much smaller badminton court, and only half of the small badminton court is covered by the velvety pink intestinal lining carpet; the label sits on the covered half; strong size contrast; bright clean palette.",
           "shows": "The real surface is about half a badminton court.",
           "goal": "Korrektur: rund 30 Quadratmeter.",
           "claims": [
@@ -1023,7 +1023,7 @@
           "scale": "Alltag",
           "motion": "slow-pull-out",
           "labels": [],
-          "visual": "Top-down cutaway of a cozy small studio apartment whose whole floor is covered with the soft pink intestinal lining texture, a bed and a sofa standing on it; warm friendly palette.",
+          "visual": "Eye-level cutaway view into a cozy small studio apartment: the whole floor is covered with a soft pink carpet that has the velvety texture of intestinal villi, a bed, a sofa and a lamp stand on it; warm friendly evening palette.",
           "shows": "The absorption surface is as large as a small apartment.",
           "goal": "Größenvergleich Wohnung.",
           "claims": [
@@ -1048,7 +1048,7 @@
             "Blutgefäße",
             "Lymphgefäß"
           ],
-          "visual": "Cross-section of a single villus: a red-and-blue capillary network inside and a pale cream central lymph vessel; golden and coral beads head for the capillaries, amber packages for the lymph vessel; clean layout.",
+          "visual": "Cross-section of a single villus: a red-and-blue capillary network, labelled Blutgefäße, and a pale cream central lymph vessel, labelled Lymphgefäß; golden and coral beads head for the capillaries, amber packages for the lymph vessel; clean layout.",
           "shows": "Inside the villus nutrients choose between blood and lymph.",
           "goal": "Blut- und Lymphweg trennen sich.",
           "claims": [
@@ -1236,13 +1236,13 @@
           "para": false
         },
         {
-          "speech": "Und Fett wird verbrannt, in Zellwände eingebaut oder gespeichert.",
+          "speech": "Und Fett wird verbrannt, in Zellmembranen eingebaut oder gespeichert.",
           "cat": "educational_comparison",
           "frame": "none",
           "scale": "Zelle",
           "motion": "static",
           "labels": [],
-          "visual": "Three small situations in one flowing composition without panel borders: an amber droplet burning as energy in a cell, amber strands built into a cell membrane, and an amber droplet stored inside a round fat cell.",
+          "visual": "Three small situations in one flowing composition without panel borders: an amber droplet glowing as it is used for energy in a cell, amber strands built into a cell membrane, and an amber droplet stored inside a round fat cell.",
           "shows": "Fat can be used for energy, membranes or storage.",
           "goal": "Nutzung von Fett.",
           "claims": [
@@ -1288,7 +1288,7 @@
           "para": false
         },
         {
-          "speech": "Übrig bleiben Wasser, Ballaststoffe aus der Tomatensoße und abgestorbene Zellen aus der Darmwand.",
+          "speech": "Übrig bleiben Wasser, Ballaststoffe aus Teig und Soße und abgestorbene Zellen aus der Darmwand.",
           "cat": "macro",
           "frame": "none",
           "scale": "Gewebe",
@@ -1331,7 +1331,7 @@
           "labels": [
             "9 Liter"
           ],
-          "visual": "Nine large clear one-liter water bottles lined up in a row next to a simplified digestive tract; bright clean light; no brands and no numbers on the bottles.",
+          "visual": "A long row of large clear one-liter bottles lined up next to a simplified digestive tract; bright clean light; no brands, no markings and no numbers on the bottles.",
           "shows": "About nine liters of fluid pass through the gut each day.",
           "goal": "Neun Liter Flüssigkeit pro Tag.",
           "claims": [
@@ -1340,7 +1340,7 @@
           "para": false
         },
         {
-          "speech": "Das ist nicht nur das, was du trinkst, sondern vor allem Speichel, Magensaft, Galle und Darmsäfte.",
+          "speech": "Dazu zählen nicht nur Getränke, sondern vor allem Speichel, Magensaft, Galle sowie Bauchspeicheldrüsen- und Darmsaft.",
           "cat": "educational_comparison",
           "frame": "none",
           "scale": "Alltag",
@@ -1349,7 +1349,7 @@
             "Getränke",
             "Verdauungssäfte"
           ],
-          "visual": "The nine bottles again: only two contain clear drinking water, the other seven contain digestive fluids in different soft colors – clear saliva, pale-yellow gastric juice, golden-green bile and light pancreatic and intestinal juice.",
+          "visual": "Close-up of the bottle row seen from a low side angle: a small group of bottles with clear drinking water, labelled Getränke, stands beside a much larger group of bottles tinted pale yellow, golden-green, light peach and faint milky blue, labelled Verdauungssäfte; no markings on the bottles.",
           "shows": "Most of the daily gut fluid comes from the body's own digestive juices.",
           "goal": "Herkunft der Flüssigkeit.",
           "claims": [
@@ -1358,7 +1358,7 @@
           "para": false
         },
         {
-          "speech": "Fast alles davon holt sich dein Körper zurück.",
+          "speech": "Fast alles davon holt sich dein Körper zurück, das meiste schon im Dünndarm.",
           "cat": "process_path",
           "frame": "none",
           "scale": "Organ",
@@ -1379,7 +1379,7 @@
           "scale": "Alltag",
           "motion": "static",
           "labels": [],
-          "visual": "The row of nine large bottles on the left and on the right a single small drinking glass that is only partly filled; strong size contrast; clean light background.",
+          "visual": "Wide view: the long row of large bottles fades into the background on the left, while on the right a single small drinking glass, only partly filled, stands sharp in the foreground; strong size contrast; clean light background.",
           "shows": "Only a small glass worth of water leaves the body with the stool.",
           "goal": "Nur 1–2 dl gehen verloren.",
           "claims": [
@@ -1411,7 +1411,7 @@
           "scale": "Zelle",
           "motion": "static",
           "labels": [],
-          "visual": "Elegant balance with two bowls: one filled with tiny colorful microbes, the other with human body cells, mostly small red blood cells; the balance is nearly level; cream background.",
+          "visual": "Two equally dense, equally large crowds of dots side by side: on the left tiny colorful microbes, on the right human body cells, mostly small red blood cells; both crowds clearly have about the same number of members; cream background.",
           "shows": "Bacteria and body cells are roughly equal in number.",
           "goal": "Bakterien und Körperzellen etwa gleich viele.",
           "claims": [
@@ -1435,7 +1435,7 @@
           "para": false
         },
         {
-          "speech": "Daraus stellen sie kurzkettige Fettsäuren her. Eine davon, Butyrat, ist die Lieblingsnahrung deiner Darmzellen.",
+          "speech": "Daraus stellen sie kurzkettige Fettsäuren her. Eine davon, Butyrat, ist die Lieblingsnahrung deiner Dickdarmzellen.",
           "cat": "macro",
           "frame": "none",
           "scale": "Zelle",
@@ -1531,7 +1531,7 @@
           "labels": [
             "Bakterien"
           ],
-          "visual": "The solid portion shown as a rounded bar divided into segments; a microbe-patterned segment spans between one quarter and more than one half of the bar, shown with a soft range highlight; no numbers.",
+          "visual": "A rounded soft-brown portion of leftover material in which roughly half of the visible surface is speckled with tiny teal, plum and moss-green microbes; clean light background; no numbers.",
           "shows": "Bacteria make up a quarter to over half of the dry mass.",
           "goal": "Spanne 25 bis über 50 Prozent.",
           "claims": [
@@ -1602,14 +1602,14 @@
           "para": false
         },
         {
-          "speech": "Insgesamt dauert die Reise meistens einen bis drei Tage, je nach Mensch und Mahlzeit.",
+          "speech": "Im Schnitt dauert die ganze Reise gut einen Tag, bei Gesunden zwischen einem halben und drei Tagen.",
           "cat": "process_path",
           "frame": "partial_person",
           "scale": "Körper",
           "motion": "slow-pull-out",
           "labels": [],
           "visual": "Orientation map: simplified left-facing side silhouette of an adult head and torso in soft cream with the whole digestive tract drawn as one continuous tube glowing in sequence along the full route; above it a soft arc of three sun-and-moon cycles without numbers; calm gradient from day to night colors.",
-          "shows": "The whole journey takes about one to three days.",
+          "shows": "The whole journey takes a little over a day on average, between half a day and three days in healthy people.",
           "goal": "Gesamtdauer der Verdauung.",
           "claims": [
             "C01"

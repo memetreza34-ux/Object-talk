@@ -202,8 +202,9 @@ Analyse 10/2026: In 010 hatten Hormone und Nährstoffe in jedem Bild andere Farb
 1. **Farbcode-Schlüssel** im Flow-Prompt (`flow.continuity_key` im Storyboard), in jedem Bild identisch. Beispiele:
    - Hunger: Ghrelin = warm-orange Partikel, Sättigungshormone = türkis, Leptin = violett, Nervensignal = gelbe Lichtpulse
    - Verdauung: Stärke/Glukose = goldene Perlen, Eiweiß/Aminosäuren = korallrote Perlen, Fett = bernsteinfarbene Tropfen, Ballaststoffe = grüne Fasern, Wasser = hellblaue Tropfen, Enzyme = violette Formen
-2. **Ein Leitmotiv**, das 3–6 Mal mit veränderter Aussage wiederkehrt, z. B. die „Signal-Waage“ (Hunger gegen Sättigung) oder die Pizza, die sich in Farbperlen auflöst.
-3. **Orientierungskarte:** dieselbe vereinfachte Seitenansicht (Kopf + Rumpf, nach links blickend, cremefarben) mit dem jeweils aktiven Organ hervorgehoben. Sie kommt zu Beginn jeder Station bzw. jedes Kapitels, damit der Zuschauer immer weiß, wo er ist.
-4. **Cold Open schnell schneiden:** die ersten 2–3 Bilder dürfen nur 1,5–3 Sekunden stehen.
-5. **Alltag nur als Hände/Ausschnitt oder als Analogie mit Erklärwert** (Spülmittel in der Pfanne = Galle, Kopfstand = Peristaltik). Keine Person „guckt nachdenklich“ als Füllbild.
-6. **Diagramme** nur als ein einzelnes organisches Band oder eine Kurve (z. B. Ghrelin-Verlauf über den Tag), nie als Dashboard.
+2. **Ein Leitmotiv**, das 3–8 Mal mit jeweils veränderter Aussage wiederkehrt, z. B. die „Signal-Waage“ (Hunger gegen Sättigung) oder die Pizza, die sich in Farbperlen auflöst.
+3. **Orientierungskarte:** dieselbe vereinfachte Seitenansicht (Kopf + Rumpf, nach links blickend, cremefarben) mit dem jeweils aktiven Organ hervorgehoben. Sie kommt in jeder Körperstation bzw. jedem Mechanismus-Kapitel mindestens einmal, bevorzugt am Anfang, damit der Zuschauer immer weiß, wo er ist (bei Gründe- oder Tipp-Kapiteln nicht nötig).
+4. **Cold Open schnell schneiden:** die ersten drei Bilder zusammen unter 10 Sekunden (einzelne Bilder dürfen 1,5–3 Sekunden kurz sein).
+5. **Farben tragen Bedeutung:** Eine Farbe aus dem Farbcode nie für etwas anderes verwenden (z. B. Orange = Hungerhormon, deshalb Appetit durch Duft rosa). Bei zwei Labels in der Bildbeschreibung festlegen, welches Element welches Label trägt.
+6. **Alltag nur als Hände/Ausschnitt oder als Analogie mit Erklärwert** (Spülmittel in der Pfanne = Galle, Kopfstand = Peristaltik). Keine Person „guckt nachdenklich“ als Füllbild.
+7. **Diagramme** nur als ein einzelnes organisches Band oder eine Kurve (z. B. Ghrelin-Verlauf über den Tag), nie als Dashboard.

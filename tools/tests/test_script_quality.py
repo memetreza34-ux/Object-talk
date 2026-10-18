@@ -35,6 +35,15 @@ class ScriptQualityTests(unittest.TestCase):
     def test_concrete_script_passes_text_checks(self):
         self.assertEqual(gate(analyze(CONCRETE), None), [])
 
+    def test_ordinary_adjectives_are_not_numbers(self):
+        text = "Iss regelmäßig und gleichmäßig. Die Zotten sind winzig. Maximal satt, minimal, optimal. Ein Jahrhundert."
+        self.assertEqual(analyze(text)["concrete_numbers"], 0)
+        self.assertEqual(analyze("fünfzehn Prozent und achtzehn Prozent.")["concrete_numbers"], 2)
+        self.assertEqual(analyze("zehnmal und zweitausendvierzehn")["concrete_numbers"], 2)
+
+    def test_common_hedges_are_counted(self):
+        self.assertEqual(analyze("Vielleicht wahrscheinlich, manche gelegentlich.")["hedges"], 4)
+
     def test_open_loop_needs_distance(self):
         self.assertEqual(gate(analyze(CONCRETE), storyboard(2, 30)), [])
         problems = gate(analyze(CONCRETE), storyboard(2, 6))

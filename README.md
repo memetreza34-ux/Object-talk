@@ -21,7 +21,7 @@ Aktive Produktion (Stand 18.10.2026): die Neuauflagen
 - `youtube-videos/011-longform-hunger-v2/` – **Warum du kurz nach dem Essen schon wieder Hunger hast**
 - `youtube-videos/012-longform-verdauung-v2/` – **Die Reise einer Pizza durch deinen Körper**
 
-Status: **Phase 1 PASS, Medien ausstehend**. Hintergrund und Diagnose: `engine/KANAL-ANALYSE-2026-10.md`.
+Status: **Phase 1 PASS, Medien ausstehend**. Hintergrund und Diagnose: `engine/KANAL-ANALYSE-2026-10.md`. Offen: Die formale Lernrunde zum gerenderten Video 010 ist nicht registriert (MP4 nicht im Repo), siehe `PROJECT_STATE.md`.
 
 Ab Video 011 entsteht jede Produktion aus einer einzigen Storyboard-Datei:
 `.intern/05_info/storyboard-source.json` → `python tools/build_phase1_package.py youtube-videos/VIDEO` → `python tools/validate_planning_v2.py youtube-videos/VIDEO`.

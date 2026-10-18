@@ -65,6 +65,13 @@ class BuildPackageTests(unittest.TestCase):
         self.assertIn("motion", str(ctx.exception))
         self.assertIn("Wörter", str(ctx.exception))
 
+    def test_video_id_must_match_folder(self):
+        sb = storyboard([scene(i) for i in range(1, 25)])
+        sb["video_id"] = "011-longform-hunger-v2"
+        with self.assertRaises(StoryboardError) as ctx:
+            build(self.make(sb))
+        self.assertIn("Ordnernamen", str(ctx.exception))
+
 
 class ChapterTests(unittest.TestCase):
     def test_chapters_use_real_times_and_replace_block(self):

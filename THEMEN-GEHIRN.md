@@ -1,6 +1,6 @@
 # Themen-Gehirn
 
-Diese Datei ist das **Gedächtnis für alle langen YouTube-Videos** des Object-Talk-/FoodSpricht-Kanals.
+Diese Datei ist das **Gedächtnis für alle langen YouTube-Videos** des Kanals **Lebenslogik** (technischer Repo-Name Object-Talk).
 
 ## Zweck
 
@@ -52,14 +52,16 @@ Interne `TEST`-Piloten sind davon ausgenommen, wenn sie ausschließlich Pipeline
 | 011 | IDEE | Haut | Wie heilt eine Wunde? | spätere Longform: Hämostase, Entzündung, Proliferation, Remodeling und Narbenbildung deutlich tiefer | Testpilot 006 behandelt nur die vereinfachte Grundkette |
 | 012 | IDEE | Haut/Nervensystem | Warum bekommen wir Gänsehaut? | spätere Longform könnte Thermoregulation, autonome Reaktionen und emotionale Piloerektion vertiefen | Testpilot 007 behandelt nur die kurze Grundkette |
 | 013 | FERTIG (gerendert, 010) | Ernährung / Sättigung | Warum bist du nach dem Essen schnell wieder hungrig? | 010: Magen-Gehirn-Signale, Protein, Ballaststoffe, Getränke, Snacks, Schlaf/Stress und praxistaugliche Mahlzeitideen | 008 erklärt den Verdauungsweg, 010 dagegen Hunger und Sättigung |
-| 014 | IN ARBEIT | Ernährung / Sättigung | Warum du kurz nach dem Essen schon wieder Hunger hast (V2) | Neuauflage von 010 auf Nutzerwunsch: Ghrelin-Kalender, Dehnung vs. Darmhormone (CCK, GLP-1, PYY), sechs Gründe mit Studien (Esstempo, Saft, Sattmacher/Blutzucker-Dips, stark verarbeitet, Schlaf, Appetit/Nachtisch), fünf Tipps; Projekt `011-longform-hunger-v2` | ersetzt 010 als Kanalversion; 012 verlinkt darauf |
-| 015 | IN ARBEIT | Verdauung | Die Reise einer Pizza durch deinen Körper (V2) | Neuauflage von 008 auf Nutzerwunsch: fünf Stationen mit Pizza-Farbcode, Tennisplatz-Mythos, zwei Wege Blut/Lymphe, 9 Liter, 38 Billionen Bakterien, Woraus besteht der Rest und warum braun; Projekt `012-longform-verdauung-v2` | ersetzt 008 als Kanalversion; 011 verlinkt darauf |
+| 014 | IN ARBEIT | Ernährung / Sättigung | Warum du kurz nach dem Essen schon wieder Hunger hast (V2) | Neuauflage von 010 auf Nutzerwunsch: Ghrelin-Kalender, Dehnung vs. Darmhormone (CCK, GLP-1, PYY), sechs Gründe mit Studien (Esstempo, Saft, Sattmacher/Blutzucker-Dips, stark verarbeitet, Schlaf, Appetit/Nachtisch), fünf Tipps; Projekt `011-longform-hunger-v2` | ersetzt Projekt `010-longform-hunger` als Kanalversion; Projekt `012-longform-verdauung-v2` verlinkt darauf |
+| 015 | IN ARBEIT | Verdauung | Die Reise einer Pizza durch deinen Körper (V2) | Neuauflage von 008 auf Nutzerwunsch: fünf Stationen mit Pizza-Farbcode, Tennisplatz-Mythos, zwei Wege Blut/Lymphe, 9 Liter, 38 Billionen Bakterien, Woraus besteht der Rest und warum braun; Projekt `012-longform-verdauung-v2` | ersetzt Projekt `008-longform-verdauung` als Kanalversion; Projekt `011-longform-hunger-v2` verlinkt darauf |
 
 ## Aktive Longform-Produktion
 
-### 010 – Warum du nach dem Essen so schnell wieder Hunger hast?
+**Aktiv (Stand 18.10.2026):** Thema 014 → Projekt `youtube-videos/011-longform-hunger-v2/` und Thema 015 → Projekt `youtube-videos/012-longform-verdauung-v2/`, beide Phase 1 PASS, Medien ausstehend. Die folgenden Abschnitte zu 010, 001 und 009 sind historisch.
 
-Projekt: `youtube-videos/010-longform-hunger/`. **Phase 1 vorbereitet, keine erzeugten Medien:** 1.044 gesprochene Wörter, 72 einfache bildspezifische Szenen, ein Google-Flow-Prompt mit drei separaten Coverentwürfen vor Nutzerwahl. Kein neuer Verdauungsfilm, sondern Hunger-/Sättigungsmechanismen mit alltagstauglichen Tipps. Wissenschaftliche Einschränkungen beachten, keine Abnehmgarantien. Quelle/Planung `010/.intern/05_info/`. Nutzername des Kanals: **Lebenslogik** (GitHub-Projekt weiterhin Object-Talk).
+### 010 – Warum du nach dem Essen so schnell wieder Hunger hast? (historisch, gerendert)
+
+Projekt: `youtube-videos/010-longform-hunger/`. **Damaliger Phase-1-Stand (inzwischen gerendert, 368,9 s):** 1.044 gesprochene Wörter, 72 einfache bildspezifische Szenen, ein Google-Flow-Prompt mit drei separaten Coverentwürfen vor Nutzerwahl. Kein neuer Verdauungsfilm, sondern Hunger-/Sättigungsmechanismen mit alltagstauglichen Tipps. Wissenschaftliche Einschränkungen beachten, keine Abnehmgarantien. Quelle/Planung `010/.intern/05_info/`. Nutzername des Kanals: **Lebenslogik** (GitHub-Projekt weiterhin Object-Talk).
 
 
 ### 001 – Was passiert mit Essen im Körper?
@@ -70,7 +72,7 @@ Projekt:
 youtube-videos/008-longform-verdauung/
 ```
 
-Status: `IN ARBEIT`
+Status: `FERTIG` (gerendert; Neuauflage als Thema 015 / Projekt 012)
 
 Ziel:
 - erstes reguläres Longform-Video nach Abschluss der Testphase
@@ -286,9 +288,9 @@ Zusatzkontext:
 
 ## Bereits produzierte normale Videos
 
-Noch keine vollständig fertiggestellten normalen Videos.
-
-Thema 001 ist aktuell `IN ARBEIT`.
+- Thema 001 „Was passiert mit Essen im Körper?“ – Projekt `008-longform-verdauung`, gerendert (Neuauflage: Thema 015)
+- Thema 013 „Warum bist du nach dem Essen schnell wieder hungrig?“ – Projekt `010-longform-hunger`, gerendert (Neuauflage: Thema 014)
+- Thema 008 Schlaf – Projekt `009-longform-schlaf`, laut Repo-Historie vom Nutzer hochgeladen und gesichtet
 
 Der frühere Verdauungs-Pilot wurde auf Nutzerwunsch gelöscht und zählt nicht als produziert oder reserviert.
 

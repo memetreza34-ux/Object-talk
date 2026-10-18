@@ -6,11 +6,11 @@ Neuauflage von `008-longform-verdauung` auf ausdrücklichen Nutzerwunsch (18.10.
 Was passiert mit einem Stück Pizza, nachdem du es geschluckt hast – und was bleibt am Ende wirklich übrig?
 
 ## Was gegenüber 008 anders ist
-- **Ein konkretes Objekt statt „ein Bissen Essen“:** Wir folgen einer Pizza. Ihre vier Zutaten (Stärke, Eiweiß, Fett, Ballaststoffe) bekommen einen festen Farbcode, der in allen 98 Bildern gleich bleibt.
+- **Ein konkretes Objekt statt „ein Bissen Essen“:** Wir folgen einer Pizza. Ihre vier Hauptbestandteile (Stärke, Eiweiß, Fett, Ballaststoffe) bekommen einen festen Farbcode, der in allen 99 Bildern gleich bleibt.
 - **Stationen-Struktur** (Station eins bis fünf) mit wiederkehrender Orientierungskarte: Der Zuschauer weiß immer, wo er ist.
-- **Drei Open Loops:** „Woraus besteht der Rest?“ (Szene 7 → 86), „Warum braun?“ (8 → 91), „Unterschiedliche Wege“ (12 → 67).
+- **Drei Open Loops:** „Woraus besteht der Rest?“ (Szene 7 → 87), „Warum braun?“ (8 → 92), „Unterschiedliche Wege“ (12 → 67).
 - **Überraschungsmomente statt Lehrbuchsätze:** Brot wird beim Kauen süß (Mitmach-Test), Peristaltik im Kopfstand und im All, Magen verdaut sich nicht selbst, Tennisplatz-Mythos (2014 korrigiert), 9 Liter Flüssigkeit, 38 Billionen Bakterien, Farbe aus dem Blut.
-- **008 hatte genau eine Zahl in 1.111 Wörtern**, 012 hat über 20 belegte Zahlen und Vergleiche.
+- **008 hatte genau eine Zahl in 1.111 Wörtern**, 012 hat 19 Zahlenangaben; alle Studien- und Mengenwerte sind in der Claim-Matrix belegt.
 - **Schluss mit Brücke** zum Hunger-Video (Endscreen), statt reiner Wiederholung.
 
 ## Begriffe, die sofort erklärt werden

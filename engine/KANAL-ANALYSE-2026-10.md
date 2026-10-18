@@ -19,15 +19,15 @@ Stand 18.10.2026. Grundlage: komplettes Repository (Regeln, Engine, Tools, alle 
 
 ## 2. Skripte – Diagnose mit Messwerten
 
-Gemessen mit dem neuen `tools/script_quality.py`:
+Gemessen mit dem neuen `tools/script_quality.py` (Stand nach Review-Korrekturen; gezählt werden nur echte Zahlwörter und Zahlen):
 
 | Video | Wörter | Konkrete Zahlen | Fragen | Absicherungen pro 1000 Wörter | Disclaimer-Floskeln | Open Loops |
 |---|---:|---:|---:|---:|---:|---:|
-| 008 Verdauung | 1111 | **1** | 2 | 20,7 | 0 | 0 |
-| 009 Schlaf | 986 | 6 | 1 | **28,4** | 4 | 0 |
-| 010 Hunger | 1044 | **0** | 5 | **26,8** | **6** | 0 |
-| **011 Hunger V2** | 1091 | **27** | 5 | **7,3** | **0** | **2** |
-| **012 Verdauung V2** | 1138 | **21** | 5 | **3,5** | **0** | **3** |
+| 008 Verdauung | 1111 | **1** | 2 | **20,7** | 0 | 0 |
+| 009 Schlaf | 986 | 4 | 1 | **29,4** | 4 | 0 |
+| 010 Hunger | 1044 | **0** | 5 | **30,7** | **6** | 0 |
+| **011 Hunger V2** | 1095 | **25** | 5 | **12,8** | **0** | **2** |
+| **012 Verdauung V2** | 1144 | **19** | 5 | **1,7** | **0** | **3** |
 
 ### Konkrete Schwächen
 
@@ -80,12 +80,13 @@ Quellen: [onlinemarketing.de – Top-10 deutsche Kanäle](https://onlinemarketin
 ## 6. Was umgesetzt wurde
 
 ### Zwei neue Videos (Phase 1 fertig und validiert)
-- `youtube-videos/011-longform-hunger-v2/` – „Warum du kurz nach dem Essen schon wieder Hunger hast“, Cover „Hunger trotz Essen?“, 94 Bilder, ca. 6:15–6:50.
-- `youtube-videos/012-longform-verdauung-v2/` – „Die Reise einer Pizza durch deinen Körper“, Cover „Wohin verschwindet sie?“, 99 Bilder, ca. 6:25–7:00.
+- `youtube-videos/011-longform-hunger-v2/` – „Warum du kurz nach dem Essen schon wieder Hunger hast“, Cover „Hunger trotz Essen?“, 94 Bilder, ca. 6:15–6:50 (geschätzt).
+- `youtube-videos/012-longform-verdauung-v2/` – „Die Reise einer Pizza durch deinen Körper“, Cover „Wohin verschwindet sie?“, 99 Bilder, ca. 6:25–7:00 (geschätzt).
+- Vor dem Pull Request wurden alle Änderungen unabhängig gegengeprüft (fünf Prüfer, ein skeptischer Gegenprüfer). 39 bestätigte Punkte wurden behoben, darunter „Zellwände“ → „Zellmembranen“, ein anatomisch falsch beschriebenes Schluckbild, ein Warnhinweis ohne „ungewollt“ und zu großzügige Zahlenerkennung im Prüfwerkzeug.
 - Beide verweisen am Ende aufeinander (Endscreen). Die Reihenfolge der Veröffentlichung ist egal.
 
 ### Neue Tools (getestet, in CI)
-- `tools/text_normalize.py`: Zahlen werden beim Whisper-Abgleich automatisch erkannt („15“ = „fünfzehn“, „15 %“ = „fünfzehn Prozent“, „GLP-1“ = „GLP eins“).
+- `tools/text_normalize.py`: Zahlen werden beim Whisper-Abgleich automatisch erkannt („15“ = „fünfzehn“, „15 %“ = „fünfzehn Prozent“, „2-3“ = „zwei bis drei“, „1.500“ = „tausendfünfhundert“, „GLP-1“ = „GLP eins“); `transcribe_audio.py`, `build_timeline.py` und `validate_phase1.py` nutzen dieselbe Normalisierung.
 - `tools/script_quality.py`: misst Zahlen, Fragen, Absicherungen, Disclaimer, Satzlänge, Open Loops und die geschätzte Sprechzeit pro Bild. Pflicht ab Video 011.
 - `tools/build_phase1_package.py`: Eine Storyboard-Datei erzeugt Skript, Flow-Prompt, Szenen-, Satz- und Labelplan, Caption-Entwurf und Antigravity-Auftrag. Damit kann nichts mehr auseinanderlaufen.
 - `tools/export_chapters.py`: setzt nach dem Render YouTube-Kapitel mit echten Zeiten in die Caption (läuft automatisch in `prepare_phase3.py`).

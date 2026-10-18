@@ -19,9 +19,10 @@ import re
 from pathlib import Path
 
 HEDGE_RE = re.compile(
-    r"\b(kann|können|könnte|könnten|manchmal|oft|häufig|meist|meistens|unter anderem|"
-    r"verschiedene|verschiedener|bestimmte|bestimmten|eher|teilweise|normalerweise|"
-    r"möglicherweise|bei manchen|mitunter|gewisse|gewissen|eventuell)\b",
+    r"\b(kann|können|könnte|könnten|manchmal|oft|oftmals|häufig|häufiger|meist|meistens|unter anderem|"
+    r"verschiedene|verschiedener|bestimmte|bestimmten|eher|teilweise|normalerweise|möglicherweise|"
+    r"bei manchen|manche|manchen|mancher|manches|mitunter|gewisse|gewissen|eventuell|vielleicht|"
+    r"wahrscheinlich|gelegentlich|unter umständen|tendenziell)\b",
     re.IGNORECASE,
 )
 DISCLAIMER_RE = re.compile(
@@ -30,15 +31,25 @@ DISCLAIMER_RE = re.compile(
     r"kein wundermittel|keine garantie|ohne falsche versprechen|nicht als schlecht abzustempeln)",
     re.IGNORECASE,
 )
+# Real German numerals only (no -mäßig, winzig, maximal, Jahrhundert ...). "ein"/"eine" alone is an article.
+_UNIT = r"(?:ein|zwei|drei|vier|fünf|sechs|sieben|acht|neun)"
+_BELOW_100 = (
+    r"(?:zwei|drei|vier|fünf|sechs|sieben|acht|neun|zehn|elf|zwölf|(?:drei|vier|fünf|sech|sieb|acht|neun)zehn|"
+    r"(?:" + _UNIT + r"und)?(?:zwanzig|dreißig|vierzig|fünfzig|sechzig|siebzig|achtzig|neunzig))"
+)
+_BELOW_1000 = (
+    r"(?:(?:" + _UNIT + r"|elf|zwölf|(?:drei|vier|fünf|sech|sieb|acht|neun)zehn)?hundert(?:" + _BELOW_100
+    + r"|eins?)?|" + _BELOW_100 + r")"
+)
 NUMBER_WORD_RE = re.compile(
-    r"^(\d[\d.,]*%?|zwei|drei|vier|fünf|sechs|sieben|acht|neun|zehn|elf|zwölf|"
-    r"\w*zehn|\w*zig|\w*ßig|\w*hundert\w*|\w*tausend\w*|millionen?|milliarden?|billionen?|"
-    r"prozent|viertel|vierteln|hälfte|drittel|doppelt|dreimal|siebenmal|\w+mal)$",
+    r"^(?:\d[\d.,]*%?|"
+    r"(?:" + _BELOW_1000 + r")?tausend(?:" + _BELOW_1000 + r")?|" + _BELOW_1000 + r"|"
+    r"(?:" + _BELOW_100 + r"|hundert|tausend)mal|"
+    r"viertel|vierteln|hälfte|drittel|doppelt)$",
     re.IGNORECASE,
 )
-# ordinary words that the loose pattern above would count as numbers
-NUMBER_FALSE_FRIENDS = {"zeichen", "manchmal", "einmal", "nochmal", "mal", "diesmal", "erstmal",
-                        "zehnmal", "nachmal", "zunächst", "normal", "merkmal", "denkmal", "zig"}
+# unit words count only when no numeral stands directly before them ("fünfzehn Prozent" = one number)
+UNIT_WORD_RE = re.compile(r"^(prozent|millionen?|milliarden?|billionen?)$", re.IGNORECASE)
 WEAK_OPENINGS = ("in diesem video", "heute erklären wir", "heute erklaeren wir", "willkommen", "hallo")
 
 THRESHOLDS = {
@@ -77,7 +88,12 @@ def analyze(text: str) -> dict:
     words = text.split()
     sentences = [s for s in re.split(r"(?<=[.!?])\s+", text.strip()) if s.strip()]
     clean = [re.sub(r"[^\wäöüÄÖÜß%-]", "", w) for w in words]
-    numbers = [w for w in clean if w and w.lower() not in NUMBER_FALSE_FRIENDS and NUMBER_WORD_RE.match(w)]
+    numbers = []
+    for index, word in enumerate(clean):
+        if word and NUMBER_WORD_RE.match(word):
+            numbers.append(word)
+        elif word and UNIT_WORD_RE.match(word) and not (index and NUMBER_WORD_RE.match(clean[index - 1] or "")):
+            numbers.append(word)
     hedges = HEDGE_RE.findall(text)
     n_words = max(1, len(words))
     return {

@@ -44,9 +44,9 @@
     },
     {
       "id": "SV_003",
-      "voiceover_text": "In Wahrheit beginnt jetzt eine Reise, die meistens länger als einen Tag dauert.",
+      "voiceover_text": "In Wahrheit beginnt jetzt eine Reise, die im Schnitt länger als einen Tag dauert.",
       "function": "observation",
-      "learning_goal": "Die Verdauungsreise dauert meist über einen Tag.",
+      "learning_goal": "Die Verdauungsreise dauert im Schnitt über einen Tag.",
       "claim_ids": [
         "C01"
       ],
@@ -187,7 +187,7 @@
     },
     {
       "id": "SV_011",
-      "voiceover_text": "Fett aus Käse und Öl und ein paar Ballaststoffe aus der Tomatensoße.",
+      "voiceover_text": "Fett aus Käse und Öl und ein paar Ballaststoffe aus Teig und Tomatensoße.",
       "function": "observation",
       "learning_goal": "Farbcode Fett und Ballaststoffe.",
       "claim_ids": [
@@ -538,7 +538,7 @@
     },
     {
       "id": "SV_030",
-      "voiceover_text": "Er tötet viele Keime ab und lässt das Eiweiß aus dem Käse aufquellen und sich entfalten.",
+      "voiceover_text": "Er tötet viele Keime ab und lässt Eiweiße aufquellen und sich entfalten.",
       "function": "path",
       "learning_goal": "Säure entfaltet Eiweiß und tötet Keime.",
       "claim_ids": [
@@ -1288,7 +1288,7 @@
     },
     {
       "id": "SV_071",
-      "voiceover_text": "Und Fett wird verbrannt, in Zellwände eingebaut oder gespeichert.",
+      "voiceover_text": "Und Fett wird verbrannt, in Zellmembranen eingebaut oder gespeichert.",
       "function": "path",
       "learning_goal": "Nutzung von Fett.",
       "claim_ids": [
@@ -1339,7 +1339,7 @@
     },
     {
       "id": "SV_074",
-      "voiceover_text": "Übrig bleiben Wasser, Ballaststoffe aus der Tomatensoße und abgestorbene Zellen aus der Darmwand.",
+      "voiceover_text": "Übrig bleiben Wasser, Ballaststoffe aus Teig und Soße und abgestorbene Zellen aus der Darmwand.",
       "function": "path",
       "learning_goal": "Was übrig bleibt.",
       "claim_ids": [
@@ -1397,7 +1397,7 @@
     },
     {
       "id": "SV_077",
-      "voiceover_text": "Das ist nicht nur das, was du trinkst, sondern vor allem Speichel, Magensaft, Galle und Darmsäfte.",
+      "voiceover_text": "Dazu zählen nicht nur Getränke, sondern vor allem Speichel, Magensaft, Galle sowie Bauchspeicheldrüsen- und Darmsaft.",
       "function": "path",
       "learning_goal": "Herkunft der Flüssigkeit.",
       "claim_ids": [
@@ -1417,7 +1417,7 @@
     },
     {
       "id": "SV_078",
-      "voiceover_text": "Fast alles davon holt sich dein Körper zurück.",
+      "voiceover_text": "Fast alles davon holt sich dein Körper zurück, das meiste schon im Dünndarm.",
       "function": "path",
       "learning_goal": "Wasserrückgewinnung.",
       "claim_ids": [
@@ -1504,7 +1504,7 @@
     },
     {
       "id": "SV_083",
-      "voiceover_text": "Daraus stellen sie kurzkettige Fettsäuren her. Eine davon, Butyrat, ist die Lieblingsnahrung deiner Darmzellen.",
+      "voiceover_text": "Daraus stellen sie kurzkettige Fettsäuren her. Eine davon, Butyrat, ist die Lieblingsnahrung deiner Dickdarmzellen.",
       "function": "path",
       "learning_goal": "Butyrat ernährt Darmzellen.",
       "claim_ids": [
@@ -1684,7 +1684,7 @@
     },
     {
       "id": "SV_093",
-      "voiceover_text": "Insgesamt dauert die Reise meistens einen bis drei Tage, je nach Mensch und Mahlzeit.",
+      "voiceover_text": "Im Schnitt dauert die ganze Reise gut einen Tag, bei Gesunden zwischen einem halben und drei Tagen.",
       "function": "result",
       "learning_goal": "Gesamtdauer der Verdauung.",
       "claim_ids": [
@@ -1694,7 +1694,7 @@
       "new_image_required": true,
       "image_asset_id": "Bild_93",
       "visual_type": "process_path",
-      "visible_change": "The whole journey takes about one to three days.",
+      "visible_change": "The whole journey takes a little over a day on average, between half a day and three days in healthy people.",
       "scene_difference": "zum vorherigen Bild: scale, frame wechseln; zum nächsten Bild: scale, frame wechseln",
       "labels": [],
       "misconception_to_avoid": "Stuhl ist nicht einfach unverdautes Essen; er besteht großteils aus Wasser und Bakterien, die Farbe stammt aus Blutabbau."

@@ -8,8 +8,10 @@ Der Nutzer wünscht deutlich unterhaltsamere Skripte, passendere Bilder sowie be
 
 | Projekt | Titel | Cover-Text | Bilder | Wörter | Status |
 |---|---|---|---:|---:|---|
-| `youtube-videos/011-longform-hunger-v2/` | Warum du kurz nach dem Essen schon wieder Hunger hast | Hunger trotz Essen? | 94 | 1091 | Phase 1 PASS, Medien ausstehend |
-| `youtube-videos/012-longform-verdauung-v2/` | Die Reise einer Pizza durch deinen Körper | Wohin verschwindet sie? | 99 | 1138 | Phase 1 PASS, Medien ausstehend |
+| `youtube-videos/011-longform-hunger-v2/` | Warum du kurz nach dem Essen schon wieder Hunger hast | Hunger trotz Essen? | 94 | 1095 | Phase 1 PASS, Medien ausstehend |
+| `youtube-videos/012-longform-verdauung-v2/` | Die Reise einer Pizza durch deinen Körper | Wohin verschwindet sie? | 99 | 1144 | Phase 1 PASS, Medien ausstehend |
+
+**Offen und bewusst benannt:** Die formale Lernrunde für das gerenderte Video 010 (`tools/improvement_loop.py register`) ist nicht registriert, weil die MP4 nicht im Repository liegt und keine vollständige Sichtung stattfand. Phase 1 von 011/012 entstand auf ausdrücklichen Nutzerauftrag; die Lehren stammen aus `engine/KANAL-ANALYSE-2026-10.md` (Skript- und Planungsanalyse, 21 Nutzer-Standbilder zu 010) und sind als dauerhafte Lessons im Ledger hinterlegt. Vor der Bilderzeugung wurden beide Pakete unabhängig gegengeprüft; 39 bestätigte Punkte sind behoben.
 
 - Quelle für alles: `.intern/05_info/storyboard-source.json` → `python tools/build_phase1_package.py`.
 - Geschätzte Länge nach 1,10x-Voice: ca. 6:15–7:00 pro Video (an 010 geeicht, nicht gemessen).
@@ -66,7 +68,7 @@ Das freigegebene erste Longform-Video 008 ist für 009 das strukturelle und visu
 
 `youtube-videos/008-longform-verdauung/` ist das vorherige Longform-Thema. Der Nutzer hat einen gerenderten Film zur Besprechung bereitgestellt. Im GitHub-Repo ist die finale Master-MP4 samt echten Zeitdaten noch nicht als geprüftes Exportpaket abgelegt. Nicht fälschlich als repo-seitig YouTube-ready deklarieren.
 
-## Nächster Produktionsschritt
+## Nächster Produktionsschritt (historisch, Video 009 – aktuell gilt die 011/012-Tabelle oben)
 
 1. `python tools/validate_planning_v2.py youtube-videos/009-longform-schlaf`
 2. Finale Voice aufnehmen/generieren und Laufzeit prüfen.
@@ -82,7 +84,7 @@ Pilotphase 000–007 abgeschlossen; Bildwelt: **Clean Animated Biology Illustrat
 ## Produktionsentscheidung: keine Bildvorlagen (10.10.2026)
 Wie beim erfolgreichen Verdauungsvideo 008 wird Google Flow **ausschließlich mit einem vollständigen Textprompt** bedient. Keine externen Stilbilder, 008-Frame-ZIP-Dateien oder Cover-als-Referenz. Erst genau drei separate Cover erstellen, Auswahl abwarten, dann Szenen 02–77 in Fünfergruppen. Die bekannte organisch-illustrative Bildwelt ist im Prompt positiv beschrieben. Bild-QA bleibt Pflicht; eine exakte Reproduktion ist mit generativer KI nicht garantiert.
 
-## Tablet-Handoff nach Phase 1 (dauerhaft)
+## Tablet-Handoff nach Phase 1 (dauerhaft; Beispiel-Links unten stammen aus Video 009, aktuelle Links stehen oben bei 011/012)
 
 Bei jeder abgeschlossenen Phase 1 direkt in der Chat-Antwort zwei anklickbare Dateilinks ausgeben, niemals nur einen Sammellink oder Ordnerpfade:
 
@@ -90,7 +92,7 @@ Bei jeder abgeschlossenen Phase 1 direkt in der Chat-Antwort zwei anklickbare Da
 
 **Voice-over-Skript öffnen:** https://github.com/memetreza34-ux/Object-talk/blob/main/youtube-videos/009-longform-schlaf/01_script/script.txt
 
-Diese URLs gelten NUR für das aktuelle Video 009. Bei späteren Videos immer den zugehörigen Projektordner einsetzen. Als Markdown-Klicklinks oder funktionierende Öffnen-Schaltflächen in der Antwort präsentieren. Die Dateien sind Text zum direkten Kopieren auf Tablet/PC; Login kann erforderlich sein. Details: `AGENTS.md`, `PROJECT_CONTRACT.md`.
+Diese URLs gelten NUR für das damalige Video 009. Bei späteren Videos immer den zugehörigen Projektordner einsetzen. Als Markdown-Klicklinks oder funktionierende Öffnen-Schaltflächen in der Antwort präsentieren. Die Dateien sind Text zum direkten Kopieren auf Tablet/PC; Login kann erforderlich sein. Details: `AGENTS.md`, `PROJECT_CONTRACT.md`.
 
 
 ## Verbindliches neues Bildfeedback (14.10.2026, ab Video 011)
