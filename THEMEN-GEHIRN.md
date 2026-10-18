@@ -53,6 +53,24 @@ Interne `TEST`-Piloten sind davon ausgenommen, wenn sie ausschließlich Pipeline
 | 012 | IDEE | Haut/Nervensystem | Warum bekommen wir Gänsehaut? | spätere Longform könnte Thermoregulation, autonome Reaktionen und emotionale Piloerektion vertiefen | Testpilot 007 behandelt nur die kurze Grundkette |
 
 | 013 | IN ARBEIT | Ernährung / Sättigung | Warum bist du nach dem Essen schnell wieder hungrig? | 010: Magen-Gehirn-Signale, Protein, Ballaststoffe, Getränke, Snacks, Schlaf/Stress und praxistaugliche Mahlzeitideen | 008 erklärt den Verdauungsweg, 010 dagegen Hunger und Sättigung |
+| 014 | IN ARBEIT | Immunsystem / Atemwege | Was passiert bei einer Erkältung? („Wer macht deinen Schnupfen?“) | 011: Rhinoviren, Andocken, Virusvermehrung, Alarm-Botenstoffe, Schnupfen/Niesen/Halsweh/Fieber als Abwehrreaktion, Schleimfarbe, Herbst-Faktoren, Antikörper-Typen, Vitamin C, Händewaschen | 006 (Bakterien/angeborene Abwehr allgemein) bleibt frei; Grippe/COVID nicht im Detail |
+| 015 | IDEE | Nervensystem / Hormone | Was passiert in deinem Körper, wenn du Angst hast? | Amygdala, Sympathikus, Adrenalin, Herz/Atmung/Pupillen, Cortisol; warum Horror Spaß machen kann | Saisonfenster: vor Halloween (Ende Oktober) veröffentlichen; Gänsehaut-Test 007 nur am Rand |
+
+## Themenwahl nach Saison und Trend
+
+Neue Themen gezielt wählen, nicht zufällig: Saison-/Trendsignal + überraschende belegbare Wendung + starke Erklärbilder + keine Doppelung in dieser Tabelle. Begründung und Score im jeweiligen `.intern/05_info/Recherche.md` festhalten.
+
+| Zeitfenster | Signal | Mögliche Themen |
+|---|---|---|
+| Oktober–März | Erkältungs-/Grippesaison (RKI-ARE-Wochenberichte) | Erkältung (014), später Grippe vs. Erkältung, Fieber |
+| Ende Oktober | Halloween | Angst im Körper (015) |
+| Dezember | Festessen | Was macht ein großes Festessen mit dir? (Abgrenzung zu 008/010 nötig) |
+| Januar | Neujahrsvorsätze | Muskelaufbau (009), Zucker (004) |
+| Sommer | Hitze, Sonne | Schwitzen/Hitze, Sonnenbrand und Haut |
+
+### 011 – Wer macht deinen Schnupfen? (Erkältung)
+
+Projekt: `youtube-videos/011-longform-erkaeltung/`. **Phase 1 fertig (18.10.2026), keine Medien.** 1.065 Wörter, 69 Szenen, Bildregie V2. Gewählt wegen laufender Erkältungssaison und starker Wendung „Den Schnupfen macht dein Körper“. Abgrenzung: keine Bakterien-/Allgemein-Immunologie (006), Grippe/COVID nur am Rand.
 
 ## Aktive Longform-Produktion
 

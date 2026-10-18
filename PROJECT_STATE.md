@@ -10,7 +10,19 @@ Letzte Aktualisierung: 18.10.2026
 - Noch nicht bewiesen: gleichbleibende Qualität über alle Szenen eines ganzen Videos – an den echten 011-Bildern prüfen.
 - Offen: vollständiges Postmortem von 010 (`improvement-review.json` noch PENDING, MP4 nicht im Repo; bisher 21 Stichproben-Frames). Blockiert 011 technisch nicht.
 
-## AKTIVE PRODUKTION – VIDEO 010
+## AKTIVE PRODUKTION – VIDEO 011
+
+`youtube-videos/011-longform-erkaeltung/`
+
+**Thema:** Was bei einer Erkältung in deinem Körper passiert – Cover „Wer macht deinen Schnupfen?“
+**Warum jetzt:** Erkältungssaison 2026/27 läuft (RKI: ca. 5,6 Mio. neue Atemwegsinfekte pro Woche Anfang Oktober), hohe Suchnachfrage, überraschende Wendung „Den Schnupfen macht dein Körper“. Score 46/50, Begründung in `.intern/05_info/Recherche.md`.
+**Status:** Phase 1 fertig und lokal validiert (18.10.2026). Noch KEINE Cover, Bilder, Audio, MP4 oder echten Untertitel.
+
+- 1065 Wörter (Hook 31, Einleitung 70, Hauptteil 897, Schluss 67), 69 Szenen, 28 mit 1–2 Labels; 61 Erklärbilder, 7 Menschen-/Alltagsszenen.
+- Ein Flow-Prompt mit 3 Covern, Stilblock + Tiefenzeile in jeder Bildanfrage; 20 Claims mit Quellen.
+- Nächster Schritt: Flow-Prompt in Google Flow → Cover wählen → Bilder in Fünfergruppen → Voice aus `01_script/script.txt`.
+
+## Vorherige Produktion – Video 010
 
 `youtube-videos/010-longform-hunger/`
 

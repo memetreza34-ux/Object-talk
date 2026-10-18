@@ -1,0 +1,991 @@
+{
+  "status": "READY",
+  "rules": {
+    "source": "01_script/script.txt",
+    "coverage": "complete-no-gaps-no-overlaps",
+    "scene_boundaries": "semantic-visual-beats-not-automatic-sentences",
+    "one_main_idea_per_frame": true,
+    "prefer_more_images_over_overloaded_frame": true,
+    "omit_nonessential_information": true,
+    "max_labels_per_normal_image": 2,
+    "cover_title_only": true,
+    "cover_extra_labels_forbidden": true,
+    "text_contrast_required": true,
+    "remotion_text_overlays_allowed": false,
+    "production_ids_visible_in_images": false,
+    "cover_is_scene": false,
+    "cover_output": "03_export/COVER.png",
+    "visual_mix_v2": true,
+    "explanatory_scene_min_share": 0.65,
+    "human_centered_max_share": 0.2,
+    "whole_person_max_share": 0.1
+  },
+  "script_arc": {
+    "hook_frage": "Warum läuft deine Nase bei einer Erkältung wie ein Wasserhahn?",
+    "wendung": "Den Schnupfen macht nicht das Virus selbst, sondern die Abwehrreaktion deines eigenen Körpers.",
+    "payoff": "Wir verfolgen den Weg vom ersten Viruskontakt in der Nase über den Alarm der Abwehr bis zu Schnupfen, Halsweh, Fieber und der Frage, warum es immer wieder passiert.",
+    "schluss_antwort": "Die laufende Nase ist dein Körper bei der Arbeit: Alarm, Abwehrzellen, Schleimstrom und Wärme – bis die Antikörper das Virus besiegt haben."
+  },
+  "scenes": [
+    {
+      "scene": 1,
+      "speech_section": "Hast du dich schon mal gefragt, warum deine Nase bei einer Erkältung läuft wie ein Wasserhahn?",
+      "visual_task": "Side-profile cutaway of a calm clothed adult's head: the inner nasal cavity is opened like a friendly anatomical window, coral-pink lining, a clear stream of translucent aqua fluid running forward toward the nostril. Warm cream background, generous negative space.",
+      "image": "Bild_01",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "notes": "Kapitel 0: Hook und Einleitung. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "cutaway",
+      "human_framing": "partial_person",
+      "explanation_visible": "Die Nase läuft sichtbar: Flüssigkeit strömt aus der Nasenhöhle Richtung Nasenloch.",
+      "script_part": "hook"
+    },
+    {
+      "scene": 2,
+      "speech_section": "Die überraschende Antwort: Den Schnupfen macht nicht das Virus selbst. Den macht dein eigener Körper.",
+      "visual_task": "Split composition: on the left one tiny violet virus particle floating alone in pale sky-blue space; on the right a large swollen coral nasal lining in full defense with widened red vessels, flowing aqua mucus and arriving cream immune cells. The size contrast shows the big reaction belongs to the body.",
+      "image": "Bild_02",
+      "motion": "pan-right",
+      "labels_de": [
+        "Virus",
+        "Abwehr"
+      ],
+      "notes": "Kapitel 0: Hook und Einleitung. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "explanation_visible": "Links ein winziges Virus, rechts die große Abwehrreaktion der Schleimhaut – die Reaktion gehört zum Körper.",
+      "script_part": "hook"
+    },
+    {
+      "scene": 3,
+      "speech_section": "Gerade im Herbst bekommen in Deutschland jede Woche Millionen Menschen eine Atemwegsinfektion – meistens eine ganz normale Erkältung.",
+      "visual_task": "Autumn evening street of German row houses in light rain, many warmly lit windows and falling orange leaves; in a few windows a tissue box and a steaming mug are softly visible. Calm and inviting, no people visible.",
+      "image": "Bild_03",
+      "motion": "slow-pull-out",
+      "labels_de": [],
+      "notes": "Kapitel 0: Hook und Einleitung. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "everyday_context",
+      "human_framing": "none",
+      "explanation_visible": "Viele erleuchtete Fenster im Herbstregen zeigen: Erkältungen betreffen gerade sehr viele Haushalte.",
+      "script_part": "einleitung"
+    },
+    {
+      "scene": 4,
+      "speech_section": "Dahinter steckt fast immer ein Virus. Und ein Virus kann sich nicht selbst vermehren – dafür braucht es deine Zellen.",
+      "visual_task": "Scale-comparison macro: one tiny violet virus particle beside a single large coral-pink nasal lining cell with a visible nucleus; the cell towers over the virus. Pale mint background with soft depth.",
+      "image": "Bild_04",
+      "motion": "pan-left",
+      "labels_de": [
+        "Virus",
+        "Zelle"
+      ],
+      "notes": "Kapitel 0: Hook und Einleitung. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "explanation_visible": "Das winzige Virus neben einer viel größeren Zelle: Ohne diese Zelle kann es sich nicht vermehren.",
+      "script_part": "einleitung"
+    },
+    {
+      "scene": 5,
+      "speech_section": "Wir verfolgen jetzt, was in deinem Körper passiert: vom ersten Kontakt in der Nase bis zum Alarm deiner Abwehr.",
+      "visual_task": "Simplified cutaway of a clothed adult's head in three-quarter view: one glowing dotted route leads from the nostril into the coral nasal lining and on to a gathering of cream immune cells deeper inside. The route reads clearly from left to right.",
+      "image": "Bild_05",
+      "motion": "static",
+      "labels_de": [],
+      "notes": "Kapitel 0: Hook und Einleitung. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "process_path",
+      "human_framing": "partial_person",
+      "explanation_visible": "Ein leuchtender Weg führt vom Nasenloch zur Schleimhaut und weiter zu den Abwehrzellen – die Reise des Videos.",
+      "script_part": "einleitung"
+    },
+    {
+      "scene": 6,
+      "speech_section": "Du erfährst, woher Schnupfen, Halskratzen und Fieber kommen – und warum dich Erkältungen immer wieder erwischen.",
+      "visual_task": "Clean side cutaway of nose and throat without facial details: the nasal lining and the back of the throat glow warm red-coral where inflammation happens, the rest of the airway stays calm pink; a soft warm aura around the airway hints at rising temperature.",
+      "image": "Bild_06",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "notes": "Kapitel 0: Hook und Einleitung. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "cutaway",
+      "human_framing": "none",
+      "explanation_visible": "Nase und Rachen leuchten rot an den Stellen, an denen Schnupfen und Halskratzen entstehen, umgeben von leichter Wärme.",
+      "script_part": "einleitung"
+    },
+    {
+      "scene": 7,
+      "speech_section": "Fangen wir ganz vorne an. Mehr als zweihundert verschiedene Viren können eine Erkältung auslösen.",
+      "visual_task": "A floating group of six clearly different simplified virus shapes (round, faceted, spiky, oval) in different muted colors, suspended in airy pale-blue space; educational and friendly, no faces, no numbers.",
+      "image": "Bild_07",
+      "motion": "pan-right",
+      "labels_de": [],
+      "notes": "Kapitel 1: Ansteckung: Wie das Virus in die Nase kommt. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "explanation_visible": "Viele unterschiedlich geformte Viren nebeneinander zeigen: Es gibt nicht nur einen Erkältungsauslöser.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 8,
+      "speech_section": "Am häufigsten sind Rhinoviren. Rhino kommt aus dem Griechischen und bedeutet Nase.",
+      "visual_task": "Close-up hero portrait of one rhinovirus: a small rounded faceted violet-magenta particle with a subtle surface pattern, beside a softly drawn simple nose outline that hints at its name. Soft coral-to-cream gradient background.",
+      "image": "Bild_08",
+      "motion": "slow-pull-out",
+      "labels_de": [
+        "Rhinovirus"
+      ],
+      "notes": "Kapitel 1: Ansteckung: Wie das Virus in die Nase kommt. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "explanation_visible": "Ein Rhinovirus groß im Bild, daneben ein einfacher Nasenumriss als Namensgeber.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 9,
+      "speech_section": "Sie reisen in winzigen Tröpfchen durch die Luft, wenn jemand niest, hustet oder einfach nur spricht.",
+      "visual_task": "Macro view of a fine cloud of tiny translucent droplets drifting through room air in soft window light; three droplets are magnified and each carries small violet virus particles. Pale sky-blue air.",
+      "image": "Bild_09",
+      "motion": "pan-left",
+      "labels_de": [
+        "Tröpfchen"
+      ],
+      "notes": "Kapitel 1: Ansteckung: Wie das Virus in die Nase kommt. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "explanation_visible": "Vergrößerte Tröpfchen in der Raumluft tragen kleine Viren mit sich.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 10,
+      "speech_section": "Oder sie landen auf Händen und Türgriffen – und gelangen mit deinen Fingern an Nase oder Augen.",
+      "visual_task": "Close crop of a hand on a metal door handle where a few tiny violet virus particles sit; a thin dotted path shows the same fingers moving up to touch the tip of a nose (only hand and nose visible).",
+      "image": "Bild_10",
+      "motion": "static",
+      "labels_de": [],
+      "notes": "Kapitel 1: Ansteckung: Wie das Virus in die Nase kommt. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "process_path",
+      "human_framing": "hands_or_crop",
+      "explanation_visible": "Vom Türgriff über die Finger zur Nase: Der Weg der Viren über die Hände wird als gepunktete Spur sichtbar.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 11,
+      "speech_section": "In der Nase trifft das Virus auf die Schleimhaut. Sie kleidet deine Nase innen aus wie eine feuchte Tapete.",
+      "visual_task": "Side cutaway of the nasal cavity with its curved inner shelves covered by a moist glossy coral-pink lining, like soft damp wallpaper; one violet virus particle arrives with the inhaled air.",
+      "image": "Bild_11",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Schleimhaut"
+      ],
+      "notes": "Kapitel 2: Schleimhaut, Andocken und Virusfabrik. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "cutaway",
+      "human_framing": "partial_person",
+      "explanation_visible": "Die feuchte Schleimhaut kleidet die Nasenhöhle aus, ein Virus kommt mit der Atemluft an.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 12,
+      "speech_section": "Darauf liegt eine dünne Schicht Schleim, die Staub und Erreger festhält wie ein klebriges Netz.",
+      "visual_task": "Tissue cross-section: a neat row of tall lining cells, on top a thin layer of translucent aqua mucus in which dust specks and small violet virus particles are caught as in a sticky net.",
+      "image": "Bild_12",
+      "motion": "pan-right",
+      "labels_de": [
+        "Schleim"
+      ],
+      "notes": "Kapitel 2: Schleimhaut, Andocken und Virusfabrik. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "cutaway",
+      "human_framing": "none",
+      "explanation_visible": "Im Querschnitt hält die Schleimschicht Staubkörnchen und Viren fest.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 13,
+      "speech_section": "Winzige Flimmerhärchen schieben diesen Schleim ständig weiter – Richtung Rachen, wo du ihn unbemerkt schluckst.",
+      "visual_task": "Macro of the cell surface: many fine hair-like cilia beating in a wave, carrying the aqua mucus layer with trapped particles in one direction; a soft flowing current shows the movement toward the throat side.",
+      "image": "Bild_13",
+      "motion": "slow-pull-out",
+      "labels_de": [
+        "Flimmerhärchen"
+      ],
+      "notes": "Kapitel 2: Schleimhaut, Andocken und Virusfabrik. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "mechanism",
+      "human_framing": "none",
+      "explanation_visible": "Flimmerhärchen bewegen sich wellenartig und schieben den Schleim mit den Partikeln in eine Richtung.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 14,
+      "speech_section": "Doch manche Viren schaffen es trotzdem bis zur Zelloberfläche. Dort suchen sie nach einer passenden Andockstelle.",
+      "visual_task": "Close view: one violet virus particle slips through a thin gap in the aqua mucus layer and drifts down toward the coral cell surface, where small teal receptor proteins stick out.",
+      "image": "Bild_14",
+      "motion": "pan-left",
+      "labels_de": [],
+      "notes": "Kapitel 2: Schleimhaut, Andocken und Virusfabrik. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "process_path",
+      "human_framing": "none",
+      "explanation_visible": "Ein Virus schlüpft durch eine Lücke im Schleim bis zur Zelloberfläche mit ihren Andockstellen.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 15,
+      "speech_section": "Bei den meisten Rhinoviren ist das ein bestimmtes Eiweiß. Virus und Eiweiß passen zusammen wie Schlüssel und Schloss.",
+      "visual_task": "Extreme close-up: the faceted violet virus fits precisely onto a matching teal receptor protein on the cell membrane, like a key sliding into a lock; the precise fit is clearly visible.",
+      "image": "Bild_15",
+      "motion": "static",
+      "labels_de": [
+        "Andockstelle"
+      ],
+      "notes": "Kapitel 2: Schleimhaut, Andocken und Virusfabrik. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "mechanism",
+      "human_framing": "none",
+      "explanation_visible": "Virus und Eiweiß-Andockstelle passen exakt ineinander – das Schlüssel-Schloss-Prinzip.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 16,
+      "speech_section": "Ist das Virus angedockt, schleust es seine Bauanleitung in die Zelle ein.",
+      "visual_task": "Cutaway of the cell membrane: the docked violet virus opens and releases a thin glowing magenta strand of genetic material into the cell interior.",
+      "image": "Bild_16",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Virus-Erbgut"
+      ],
+      "notes": "Kapitel 2: Schleimhaut, Andocken und Virusfabrik. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "mechanism",
+      "human_framing": "none",
+      "explanation_visible": "Das angedockte Virus gibt seine Bauanleitung als leuchtenden Strang in die Zelle ab.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 17,
+      "speech_section": "Und jetzt passiert etwas Verrücktes: Die Zelle liest diese Anleitung und baut damit massenhaft neue Viren.",
+      "visual_task": "Inside one coral cell drawn as a busy organic workshop: the magenta genetic strand is read by small cell machinery, and many new violet virus particles are being assembled in rows.",
+      "image": "Bild_17",
+      "motion": "pan-right",
+      "labels_de": [],
+      "notes": "Kapitel 2: Schleimhaut, Andocken und Virusfabrik. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "mechanism",
+      "human_framing": "none",
+      "explanation_visible": "Die Zelle wird zur Virusfabrik und setzt viele neue Viren nach der fremden Anleitung zusammen.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 18,
+      "speech_section": "Die neuen Viren verlassen die Zelle und befallen die Nachbarzellen. So breitet sich die Infektion aus.",
+      "visual_task": "Side view of a row of neighbouring lining cells: new violet virus particles leave the first cell and drift to the next cells, some already docking there; the infection visibly spreads from left to right.",
+      "image": "Bild_18",
+      "motion": "slow-pull-out",
+      "labels_de": [],
+      "notes": "Kapitel 2: Schleimhaut, Andocken und Virusfabrik. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "process_path",
+      "human_framing": "none",
+      "explanation_visible": "Neue Viren verlassen die erste Zelle und befallen die Nachbarzellen von links nach rechts.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 19,
+      "speech_section": "Das Erstaunliche: Rhinoviren richten dabei kaum sichtbaren Schaden an. Unter dem Mikroskop wirkt die Schleimhaut oft fast unversehrt.",
+      "visual_task": "Microscope-style circular magnified view of nasal lining tissue: the cell layer looks neat and almost intact, only a few violet particles visible; clean cool light, round lens frame on a soft dark-teal surround.",
+      "image": "Bild_19",
+      "motion": "pan-left",
+      "labels_de": [],
+      "notes": "Kapitel 2: Schleimhaut, Andocken und Virusfabrik. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "explanation_visible": "Im Mikroskopblick wirkt die Zellschicht trotz Infektion ordentlich und fast unversehrt.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 20,
+      "speech_section": "Warum fühlst du dich dann trotzdem so elend? Genau hier kommt dein Körper ins Spiel.",
+      "visual_task": "The same calm lining tissue, but the first small glowing orange alarm dots appear around one cell like the first sparks of a reaction; the mood shifts from calm to alert.",
+      "image": "Bild_20",
+      "motion": "static",
+      "labels_de": [],
+      "notes": "Kapitel 2: Schleimhaut, Andocken und Virusfabrik. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "transition",
+      "human_framing": "none",
+      "explanation_visible": "Erste orange Alarmfunken tauchen um eine Zelle auf – der Übergang von der stillen Infektion zur Körperreaktion.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 21,
+      "speech_section": "Befallene Zellen schlagen Alarm. Sie schütten Botenstoffe aus – chemische Nachrichten an ihre Umgebung.",
+      "visual_task": "An infected coral cell releases a burst of tiny glowing orange messenger particles in all directions into the surrounding tissue.",
+      "image": "Bild_21",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Botenstoffe"
+      ],
+      "notes": "Kapitel 3: Alarm: Botenstoffe und Abwehrzellen. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "mechanism",
+      "human_framing": "none",
+      "explanation_visible": "Eine befallene Zelle schüttet sichtbar viele orange Botenstoffe in die Umgebung aus.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 22,
+      "speech_section": "Manche Botenstoffe warnen die Nachbarzellen. Die schalten in eine Art Schutzmodus und machen es Viren schwerer.",
+      "visual_task": "Orange messenger particles reach neighbouring cells; those cells develop a soft golden protective glow along their surface, and nearby violet viruses bounce off or slow down.",
+      "image": "Bild_22",
+      "motion": "pan-right",
+      "labels_de": [],
+      "notes": "Kapitel 3: Alarm: Botenstoffe und Abwehrzellen. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "mechanism",
+      "human_framing": "none",
+      "explanation_visible": "Nach dem Signal leuchten die Nachbarzellen geschützt auf, und die Viren prallen ab.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 23,
+      "speech_section": "Andere Botenstoffe rufen Verstärkung. Über das Blut strömen Abwehrzellen herbei, die gegen die Infektion kämpfen.",
+      "visual_task": "Cutaway beneath the lining: from a red blood vessel, round cream-white immune cells squeeze out and move up toward the infected area, following a trail of orange messenger dots.",
+      "image": "Bild_23",
+      "motion": "slow-pull-out",
+      "labels_de": [
+        "Abwehrzellen"
+      ],
+      "notes": "Kapitel 3: Alarm: Botenstoffe und Abwehrzellen. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "process_path",
+      "human_framing": "none",
+      "explanation_visible": "Abwehrzellen verlassen ein Blutgefäß und folgen der Spur der Botenstoffe zum Infektionsort.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 24,
+      "speech_section": "Damit Nachschub schnell ankommt, verändern sich die winzigen Blutgefäße in deiner Nasenschleimhaut.",
+      "visual_task": "Wide cutaway of the nasal lining showing a fine network of tiny red blood vessels running just below the surface, highlighted against the coral tissue.",
+      "image": "Bild_24",
+      "motion": "pan-left",
+      "labels_de": [
+        "Blutgefäße"
+      ],
+      "notes": "Kapitel 3: Alarm: Botenstoffe und Abwehrzellen. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "cutaway",
+      "human_framing": "none",
+      "explanation_visible": "Das feine Netz kleiner Blutgefäße direkt unter der Schleimhaut wird hervorgehoben.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 25,
+      "speech_section": "Sie werden weiter und durchlässiger. Mehr Blut fließt hinein, und Flüssigkeit tritt ins Gewebe aus.",
+      "visual_task": "Side-by-side comparison of one small blood vessel in tissue: left narrow and closed; right clearly wider with more red blood inside and pale fluid droplets seeping out through its wall into the surrounding tissue.",
+      "image": "Bild_25",
+      "motion": "static",
+      "labels_de": [
+        "normal",
+        "erweitert"
+      ],
+      "notes": "Kapitel 4: Symptome: verstopfte Nase, Schnupfen, Niesen, Halsweh. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "explanation_visible": "Links ein enges Gefäß, rechts ein erweitertes, durchlässiges Gefäß, aus dem Flüssigkeit austritt.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 26,
+      "speech_section": "Die Schleimhaut schwillt an. Genau das spürst du als verstopfte Nase.",
+      "visual_task": "Cross-section through the nasal passage: the swollen coral lining bulges inward and almost closes the airway; only a thin pale-blue stream of inhaled air squeezes through.",
+      "image": "Bild_26",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Schwellung"
+      ],
+      "notes": "Kapitel 4: Symptome: verstopfte Nase, Schnupfen, Niesen, Halsweh. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "cutaway",
+      "human_framing": "none",
+      "explanation_visible": "Die geschwollene Schleimhaut wölbt sich nach innen und verengt den Luftweg.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 27,
+      "speech_section": "Gleichzeitig arbeiten die Drüsen in der Schleimhaut auf Hochtouren und bilden viel mehr Schleim als sonst.",
+      "visual_task": "Inside the lining: small grape-like glands pump glistening aqua mucus through tiny ducts onto the surface, clearly much more than usual.",
+      "image": "Bild_27",
+      "motion": "pan-right",
+      "labels_de": [
+        "Drüsen"
+      ],
+      "notes": "Kapitel 4: Symptome: verstopfte Nase, Schnupfen, Niesen, Halsweh. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "mechanism",
+      "human_framing": "none",
+      "explanation_visible": "Kleine Drüsen geben sichtbar große Mengen Schleim an die Oberfläche ab.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 28,
+      "speech_section": "Dazu kommt Flüssigkeit aus den Blutgefäßen. Zusammen läuft das aus deiner Nase – der typische Schnupfen.",
+      "visual_task": "Side cutaway of a clothed adult's nose: mucus from the glands and fluid from the vessels join into one translucent aqua stream that flows forward and out of the nostril toward a tissue held below.",
+      "image": "Bild_28",
+      "motion": "slow-pull-out",
+      "labels_de": [],
+      "notes": "Kapitel 4: Symptome: verstopfte Nase, Schnupfen, Niesen, Halsweh. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "process_path",
+      "human_framing": "partial_person",
+      "explanation_visible": "Schleim und Gefäßflüssigkeit vereinen sich zu einem Strom, der aus der Nase läuft.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 29,
+      "speech_section": "Das ist kein Fehler, sondern Abwehr: Der Schleim fängt Viren ein und spült sie hinaus.",
+      "visual_task": "Macro of the flowing aqua mucus stream: violet virus particles are trapped inside and carried outward with the flow, like leaves in a stream.",
+      "image": "Bild_29",
+      "motion": "pan-left",
+      "labels_de": [],
+      "notes": "Kapitel 4: Symptome: verstopfte Nase, Schnupfen, Niesen, Halsweh. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "explanation_visible": "Im Schleimstrom werden Viren eingefangen und wie Blätter in einem Bach hinausgetragen.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 30,
+      "speech_section": "Auch Niesen hat einen Sinn. Gereizte Nerven in der Nase lösen einen blitzschnellen Reflex aus.",
+      "visual_task": "Nasal lining with fine soft-yellow nerve endings; irritated by swelling and viruses, one nerve sends a bright signal pulse along its fiber toward the back of the head.",
+      "image": "Bild_30",
+      "motion": "static",
+      "labels_de": [
+        "Nerv"
+      ],
+      "notes": "Kapitel 4: Symptome: verstopfte Nase, Schnupfen, Niesen, Halsweh. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "mechanism",
+      "human_framing": "none",
+      "explanation_visible": "Ein gereiztes Nervenende in der Schleimhaut sendet einen hellen Signalimpuls – der Niesreflex startet.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 31,
+      "speech_section": "Ein kräftiger Luftstoß pustet die Nase frei – und schleudert dabei leider auch Viren in die Luft.",
+      "visual_task": "Side profile of a clothed adult sneezing into the crook of the elbow; a burst of fine droplets still partly escapes into the air, drawn as a soft spray; friendly, not gross.",
+      "image": "Bild_31",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "notes": "Kapitel 4: Symptome: verstopfte Nase, Schnupfen, Niesen, Halsweh. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "human_action",
+      "human_framing": "partial_person",
+      "explanation_visible": "Beim Niesen in die Armbeuge entweicht trotzdem ein feiner Tröpfchenstrom in die Luft.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 32,
+      "speech_section": "Und das Kratzen im Hals? Auch die Schleimhaut im Rachen reagiert mit einer Entzündung.",
+      "visual_task": "Side cutaway of the throat: the lining at the back of the throat is reddened and slightly swollen, while the rest of the airway stays calm pink.",
+      "image": "Bild_32",
+      "motion": "pan-right",
+      "labels_de": [
+        "Rachen"
+      ],
+      "notes": "Kapitel 4: Symptome: verstopfte Nase, Schnupfen, Niesen, Halsweh. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "cutaway",
+      "human_framing": "none",
+      "explanation_visible": "Die Rachenschleimhaut ist gerötet und geschwollen, der übrige Atemweg bleibt ruhig rosa.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 33,
+      "speech_section": "Entzündung bedeutet: Das Gewebe ist stärker durchblutet, leicht geschwollen und besonders empfindlich.",
+      "visual_task": "Close tissue view of inflamed throat lining: widened red vessels, slightly puffy tissue and highlighted sensitive yellow nerve endings near the surface, warm red-orange palette.",
+      "image": "Bild_33",
+      "motion": "slow-pull-out",
+      "labels_de": [
+        "Entzündung"
+      ],
+      "notes": "Kapitel 4: Symptome: verstopfte Nase, Schnupfen, Niesen, Halsweh. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "explanation_visible": "Entzündetes Gewebe: erweiterte Gefäße, leichte Schwellung und hervorgehobene empfindliche Nervenenden.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 34,
+      "speech_section": "Bestimmte Botenstoffe machen die Nervenenden dort empfindlicher. Deshalb tut Schlucken plötzlich weh.",
+      "visual_task": "Close-up of one sensitive yellow nerve ending: orange messenger particles attach to it and it lights up brightly, sending a sharp signal along its fiber.",
+      "image": "Bild_34",
+      "motion": "pan-left",
+      "labels_de": [
+        "Nervenende"
+      ],
+      "notes": "Kapitel 4: Symptome: verstopfte Nase, Schnupfen, Niesen, Halsweh. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "mechanism",
+      "human_framing": "none",
+      "explanation_visible": "Botenstoffe docken an ein Nervenende an, das hell aufleuchtet und ein Schmerzsignal weiterleitet.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 35,
+      "speech_section": "Nach ein paar Tagen wird der Schleim oft dicker und manchmal gelblich oder grünlich.",
+      "visual_task": "Three magnified droplets of mucus side by side on a calm cream background: clear and thin, then thicker pale yellow, then thicker light green; a simple progression from left to right.",
+      "image": "Bild_35",
+      "motion": "static",
+      "labels_de": [],
+      "notes": "Kapitel 5: Schleimfarbe und Antibiotika. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "explanation_visible": "Drei Schleimtropfen zeigen den Wandel von klar und dünn zu dicker, gelblich und grünlich.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 36,
+      "speech_section": "Viele denken dann: Jetzt sind Bakterien im Spiel. Doch die Farbe allein verrät das nicht.",
+      "visual_task": "Split scene: on the left a magnified greenish mucus droplet; on the right a group of green rod-shaped bacteria drawn faded and semi-transparent, like a mere assumption that is not confirmed.",
+      "image": "Bild_36",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "notes": "Kapitel 5: Schleimfarbe und Antibiotika. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "explanation_visible": "Grünlicher Schleim links, blass und durchsichtig gezeichnete Bakterien rechts: Die Farbe beweist keine Bakterien.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 37,
+      "speech_section": "Sie stammt vor allem von deinen eigenen Abwehrzellen, die in großer Zahl in den Schleim wandern.",
+      "visual_task": "Magnified view inside a greenish mucus droplet: it is full of round cream immune cells, each containing tiny green granules that tint the whole droplet; only a few violet virus particles remain.",
+      "image": "Bild_37",
+      "motion": "pan-right",
+      "labels_de": [
+        "Abwehrzellen"
+      ],
+      "notes": "Kapitel 5: Schleimfarbe und Antibiotika. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "explanation_visible": "Im grünlichen Schleim stecken vor allem Abwehrzellen mit grünlichen Körnchen, die den Tropfen färben.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 38,
+      "speech_section": "Und Antibiotika helfen gegen Viren gar nicht. Sie wirken nur gegen Bakterien.",
+      "visual_task": "Clean comparison: on the left a green rod-shaped bacterium cracking apart next to a white-and-teal antibiotic capsule; on the right a violet virus particle completely unaffected next to the same capsule.",
+      "image": "Bild_38",
+      "motion": "slow-pull-out",
+      "labels_de": [
+        "Bakterium",
+        "Virus"
+      ],
+      "notes": "Kapitel 5: Schleimfarbe und Antibiotika. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "explanation_visible": "Das Antibiotikum lässt links das Bakterium zerfallen, rechts bleibt das Virus völlig unberührt.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 39,
+      "speech_section": "Manchmal steigt bei einer Erkältung auch die Temperatur. Bei Erwachsenen bleibt sie aber oft normal oder nur leicht erhöht.",
+      "visual_task": "Two simplified upper-body outlines of the same clothed adult side by side: the left one with a cool teal inner glow, the right one with a gentle warm orange glow for slightly raised temperature. No thermometer, no numbers.",
+      "image": "Bild_39",
+      "motion": "pan-left",
+      "labels_de": [],
+      "notes": "Kapitel 6: Fieber: der verstellte Thermostat. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "educational_comparison",
+      "human_framing": "partial_person",
+      "explanation_visible": "Dieselbe Person links mit kühlem, rechts mit leicht warmem Körperglühen zeigt eine leicht erhöhte Temperatur.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 40,
+      "speech_section": "Auch dahinter steckt dein Körper. Botenstoffe der Abwehr erreichen über das Blut dein Gehirn.",
+      "visual_task": "Simplified upper-body cutaway: orange messenger particles travel from the nose through a red blood vessel up the neck to a softly outlined brain.",
+      "image": "Bild_40",
+      "motion": "static",
+      "labels_de": [
+        "Gehirn"
+      ],
+      "notes": "Kapitel 6: Fieber: der verstellte Thermostat. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "process_path",
+      "human_framing": "partial_person",
+      "explanation_visible": "Orange Botenstoffe wandern über ein Blutgefäß von der Nase durch den Hals bis zum Gehirn.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 41,
+      "speech_section": "Dort sitzt eine Art Thermostat, im sogenannten Hypothalamus. Die Botenstoffe stellen ihn etwas höher.",
+      "visual_task": "Cutaway of the brain with a small deep region at its base highlighted; beside it a simple round thermostat dial metaphor without numbers or text, whose pointer turns slightly higher as orange messengers arrive.",
+      "image": "Bild_41",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Hypothalamus"
+      ],
+      "notes": "Kapitel 6: Fieber: der verstellte Thermostat. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "mechanism",
+      "human_framing": "partial_person",
+      "explanation_visible": "Im Hypothalamus wird der Temperatur-Sollwert wie bei einem Thermostat etwas höher gedreht.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 42,
+      "speech_section": "Plötzlich fühlt sich deine normale Temperatur zu kalt an. Du frierst, zitterst – und dein Körper heizt sich auf.",
+      "visual_task": "A clothed adult seen from the shoulders up, wrapped in a thick blanket on a sofa, shivering with small motion lines, both hands around a warm mug; cosy, but clearly feeling cold.",
+      "image": "Bild_42",
+      "motion": "pan-right",
+      "labels_de": [],
+      "notes": "Kapitel 6: Fieber: der verstellte Thermostat. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "human_action",
+      "human_framing": "partial_person",
+      "explanation_visible": "Die Person friert und zittert unter der Decke, obwohl der Körper gerade mehr Wärme erzeugt.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 43,
+      "speech_section": "Die höhere Temperatur kann die Abwehr unterstützen. Fieber gilt deshalb als Teil der Schutzreaktion.",
+      "visual_task": "Warm-tinted tissue scene with a soft orange heat glow: cream immune cells look extra active and quick, while the violet virus particles appear slowed and fewer.",
+      "image": "Bild_43",
+      "motion": "slow-pull-out",
+      "labels_de": [],
+      "notes": "Kapitel 6: Fieber: der verstellte Thermostat. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "mechanism",
+      "human_framing": "none",
+      "explanation_visible": "In warm getöntem Gewebe arbeiten die Abwehrzellen sichtbar aktiver, die Viren wirken gebremst.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 44,
+      "speech_section": "Bleibt die Frage: Warum erwischt es uns ausgerechnet im Herbst und Winter so oft?",
+      "visual_task": "Cozy autumn window seen from inside: rain on the glass, orange leaves outside, a tissue box and a steaming tea mug on the windowsill; no people.",
+      "image": "Bild_44",
+      "motion": "pan-left",
+      "labels_de": [],
+      "notes": "Kapitel 7: Warum im Herbst und Winter. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "everyday_context",
+      "human_framing": "none",
+      "explanation_visible": "Herbststimmung am Fenster mit Taschentüchern und Tee stellt die Frage nach der Erkältungssaison.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 45,
+      "speech_section": "Kälte allein macht dich nicht krank. Ohne Virus gibt es keine Erkältung.",
+      "visual_task": "Two side-by-side nasal-cavity cutaways surrounded by snowflakes and cold blue air: on the left cold air but no virus and a calm pink lining; on the right the same cold air plus violet virus particles and a red swollen lining.",
+      "image": "Bild_45",
+      "motion": "static",
+      "labels_de": [
+        "ohne Virus",
+        "mit Virus"
+      ],
+      "notes": "Kapitel 7: Warum im Herbst und Winter. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "explanation_visible": "Gleiche kalte Luft: Links ohne Virus bleibt die Schleimhaut ruhig, rechts mit Virus entzündet sie sich.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 46,
+      "speech_section": "Aber im Herbst sind wir mehr drinnen und sitzen enger zusammen. So springen Viren leichter von Mensch zu Mensch.",
+      "visual_task": "Warm indoor scene of a crowded autumn bus interior: several small clothed people of different ages sit close together; faint soft droplet trails drift between them, showing how viruses jump from person to person.",
+      "image": "Bild_46",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "notes": "Kapitel 7: Warum im Herbst und Winter. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "everyday_context",
+      "human_framing": "whole_person",
+      "explanation_visible": "Viele Menschen sitzen eng in einem Innenraum, feine Tröpfchenspuren verbinden sie miteinander.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 47,
+      "speech_section": "Kinder bringen aus Kita und Schule ständig neue Viren mit – und teilen sie großzügig mit der Familie.",
+      "visual_task": "Close crop on a family table: a child's small hand and an adult's hand reach for the same toy and the same cup; tiny violet virus particles follow a dotted path from the child's hand to the adult's hand.",
+      "image": "Bild_47",
+      "motion": "pan-right",
+      "labels_de": [],
+      "notes": "Kapitel 7: Warum im Herbst und Winter. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "process_path",
+      "human_framing": "hands_or_crop",
+      "explanation_visible": "Viren wandern über gemeinsam benutzte Gegenstände von der Kinderhand zur Erwachsenenhand.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 48,
+      "speech_section": "Dazu kommt trockene Heizungsluft. Sie kann die Schleimhaut austrocknen, und ihr Schutz arbeitet schlechter.",
+      "visual_task": "Side-by-side tissue comparison: on the left a moist glossy lining with upright active cilia under a smooth aqua mucus layer; on the right a dry, slightly cracked lining with drooping cilia and thin patchy mucus, a warm radiator glow behind it.",
+      "image": "Bild_48",
+      "motion": "slow-pull-out",
+      "labels_de": [
+        "feucht",
+        "trocken"
+      ],
+      "notes": "Kapitel 7: Warum im Herbst und Winter. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "explanation_visible": "Feuchte Schleimhaut mit aufrechten Flimmerhärchen gegen ausgetrocknete Schleimhaut mit schlaffen Härchen.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 49,
+      "speech_section": "Und Laborversuche deuten an: In einer kühleren Nase reagiert die Abwehr langsamer, und Rhinoviren vermehren sich leichter.",
+      "visual_task": "Two groups of nasal lining cells: on the left tinted cool blue with few orange alarm dots and many multiplying violet viruses; on the right tinted warm coral with many orange alarm dots and only a few viruses.",
+      "image": "Bild_49",
+      "motion": "pan-left",
+      "labels_de": [
+        "kühl",
+        "warm"
+      ],
+      "notes": "Kapitel 7: Warum im Herbst und Winter. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "explanation_visible": "Kühle Zellen zeigen wenig Alarm und viele Viren, warme Zellen viel Alarm und wenige Viren.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 50,
+      "speech_section": "Ganz geklärt ist das noch nicht. Aber Kälte könnte dem Virus den Start erleichtern.",
+      "visual_task": "Side profile of a clothed adult with a scarf walking outside in cold autumn wind; a cutaway of the nose shows icy-blue air streaming in and cooling the front part of the coral nasal lining.",
+      "image": "Bild_50",
+      "motion": "static",
+      "labels_de": [],
+      "notes": "Kapitel 7: Warum im Herbst und Winter. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "process_path",
+      "human_framing": "partial_person",
+      "explanation_visible": "Eisblaue Luft strömt in die Nase und kühlt den vorderen Teil der Schleimhaut ab.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 51,
+      "speech_section": "Nach einigen Tagen bekommt deine Abwehr Hilfe von Spezialisten. Sie bildet Antikörper, die genau zu diesem Virus passen.",
+      "visual_task": "A specialised immune cell (round, cream with a lilac nucleus, slightly larger than the others) releases many small golden Y-shaped antibodies into the tissue around it.",
+      "image": "Bild_51",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Antikörper"
+      ],
+      "notes": "Kapitel 8: Antikörper und Verlauf. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "mechanism",
+      "human_framing": "none",
+      "explanation_visible": "Eine spezialisierte Abwehrzelle setzt viele kleine goldene Antikörper frei.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 52,
+      "speech_section": "Die Antikörper heften sich an die Viren und blockieren sie. Die Infektion klingt ab.",
+      "visual_task": "Golden Y-shaped antibodies cover violet virus particles completely, so they can no longer dock onto the teal receptors of the coral cells below.",
+      "image": "Bild_52",
+      "motion": "pan-right",
+      "labels_de": [],
+      "notes": "Kapitel 8: Antikörper und Verlauf. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "mechanism",
+      "human_framing": "none",
+      "explanation_visible": "Goldene Antikörper umhüllen die Viren, sodass sie nicht mehr an die Zellen andocken können.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 53,
+      "speech_section": "Am stärksten sind die Beschwerden meist nach zwei bis drei Tagen.",
+      "visual_task": "A simple soft organic hill-shaped curve drawn like a landscape ridge, without axes, numbers or text: it rises quickly to an early peak and then slowly declines into a long gentle tail, coral fading into calm teal.",
+      "image": "Bild_53",
+      "motion": "slow-pull-out",
+      "labels_de": [],
+      "notes": "Kapitel 8: Antikörper und Verlauf. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "explanation_visible": "Eine weiche Verlaufskurve zeigt einen frühen Höhepunkt der Beschwerden und danach ein langsames Abklingen.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 54,
+      "speech_section": "Schnupfen und Husten können aber bis zu zwei Wochen anhalten. Das ist bei einer Erkältung ganz normal.",
+      "visual_task": "A long horizontal strip of nasal lining that heals from left to right: on the left still slightly red with a little mucus, in the middle calmer, on the right healthy calm pink with clean cilia.",
+      "image": "Bild_54",
+      "motion": "pan-left",
+      "labels_de": [],
+      "notes": "Kapitel 8: Antikörper und Verlauf. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "process_path",
+      "human_framing": "none",
+      "explanation_visible": "Ein Schleimhautstreifen heilt von links nach rechts sichtbar von gerötet zu gesund.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 55,
+      "speech_section": "Aber warum bist du danach nicht für immer geschützt? Weil es nicht das eine Erkältungsvirus gibt.",
+      "visual_task": "A single violet virus particle in sharp focus in the foreground, while behind it a long line of similar particles in slightly different colors and surface patterns fades into the distance.",
+      "image": "Bild_55",
+      "motion": "static",
+      "labels_de": [],
+      "notes": "Kapitel 9: Warum immer wieder. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "explanation_visible": "Hinter einem Virus im Vordergrund reiht sich eine lange Kette ähnlicher, aber verschiedener Varianten.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 56,
+      "speech_section": "Allein von den Rhinoviren kennt man über hundertsechzig Typen. Ihre Oberflächen sehen jeweils etwas anders aus.",
+      "visual_task": "Three large rhinovirus particles side by side with the same basic rounded faceted shape, but each with a clearly different surface pattern and color accent (violet, magenta, plum).",
+      "image": "Bild_56",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "notes": "Kapitel 9: Warum immer wieder. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "explanation_visible": "Drei Rhinoviren mit gleicher Grundform, aber deutlich verschiedenen Oberflächenmustern.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 57,
+      "speech_section": "Deine Antikörper erkennen aber nur den Typ, den sie schon kennen. Beim nächsten Typ beginnt alles von vorne.",
+      "visual_task": "A golden Y-shaped antibody fits perfectly onto the surface pattern of one virus type on the left, but cannot grip a differently patterned virus type on the right, which slips past.",
+      "image": "Bild_57",
+      "motion": "pan-right",
+      "labels_de": [],
+      "notes": "Kapitel 9: Warum immer wieder. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "mechanism",
+      "human_framing": "none",
+      "explanation_visible": "Der Antikörper passt genau auf den bekannten Virustyp, der neue Typ mit anderem Muster rutscht vorbei.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 58,
+      "speech_section": "Deshalb gibt es bis heute keine Impfung gegen Erkältungen. Erwachsene erwischt es etwa ein- bis dreimal pro Jahr.",
+      "visual_task": "A clean circular year wheel divided into four soft seasonal color segments (spring green, summer gold, autumn orange, winter blue), without any text or numbers; small violet virus particles cluster mostly in the autumn and winter segments.",
+      "image": "Bild_58",
+      "motion": "slow-pull-out",
+      "labels_de": [],
+      "notes": "Kapitel 9: Warum immer wieder. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "explanation_visible": "Ein Jahreskreis zeigt, dass sich Erkältungsviren in Herbst und Winter häufen.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 59,
+      "speech_section": "Was kannst du also tun? Gegen das Virus selbst gibt es kein Wundermittel. Die Arbeit erledigt deine Abwehr.",
+      "visual_task": "Calm nasal lining scene where cream immune cells steadily clear away the last violet viruses, unhurried and organised, in warm reassuring light.",
+      "image": "Bild_59",
+      "motion": "pan-left",
+      "labels_de": [],
+      "notes": "Kapitel 10: Was wirklich hilft. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "mechanism",
+      "human_framing": "none",
+      "explanation_visible": "Abwehrzellen räumen ruhig und geordnet die letzten Viren auf der Schleimhaut weg.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 60,
+      "speech_section": "Du kannst es dir aber leichter machen: mit Ruhe, viel Schlaf und genug zu trinken.",
+      "visual_task": "Bedside still life: soft pillow and blanket, a large glass of water, a cup of tea and a box of tissues on a wooden nightstand in warm evening lamp light; no person.",
+      "image": "Bild_60",
+      "motion": "static",
+      "labels_de": [],
+      "notes": "Kapitel 10: Was wirklich hilft. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "everyday_context",
+      "human_framing": "none",
+      "explanation_visible": "Kissen, Decke, Wasser und Tee am Nachttisch stehen für Ruhe, Schlaf und Trinken.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 61,
+      "speech_section": "Und Vitamin C? Bei den meisten Menschen verhindert es keine Erkältung.",
+      "visual_task": "Macro cross-section of a juicy orange slice glowing in warm light, with a few small vitamin molecules drawn as tiny orange-gold hexagon shapes drifting from it.",
+      "image": "Bild_61",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Vitamin C"
+      ],
+      "notes": "Kapitel 10: Was wirklich hilft. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "food_structure",
+      "human_framing": "none",
+      "explanation_visible": "Eine aufgeschnittene Orange mit kleinen Vitaminmolekülen als Sinnbild für Vitamin C.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 62,
+      "speech_section": "Wer es regelmäßig nimmt, ist laut großen Studienauswertungen im Schnitt nur etwas kürzer krank.",
+      "visual_task": "Two winding paths through an autumn landscape that lead toward warm sunlight: they are almost the same length, one only slightly shorter; a simple and clear visual metaphor without text.",
+      "image": "Bild_62",
+      "motion": "pan-right",
+      "labels_de": [],
+      "notes": "Kapitel 10: Was wirklich hilft. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "explanation_visible": "Zwei fast gleich lange Wege: Regelmäßiges Vitamin C verkürzt eine Erkältung nur ein wenig.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 63,
+      "speech_section": "Sinnvoller ist es, Viren gar nicht erst in die Nase zu lassen. Wasch dir regelmäßig gründlich die Hände.",
+      "visual_task": "Close crop of soapy hands under running water: soap foam lifts tiny violet virus particles off the skin and they rinse away with the water.",
+      "image": "Bild_63",
+      "motion": "slow-pull-out",
+      "labels_de": [],
+      "notes": "Kapitel 10: Was wirklich hilft. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "mechanism",
+      "human_framing": "hands_or_crop",
+      "explanation_visible": "Seifenschaum löst die Viren von der Haut, und das Wasser spült sie weg.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 64,
+      "speech_section": "Und lüfte Räume, in denen viele Menschen zusammen sind. Frische Luft verdünnt die Viren in der Raumluft.",
+      "visual_task": "Room interior with a wide-open window: fresh pale-blue outdoor air streams in, while a cloud of tiny droplets with violet particles drifts out and thins; no people.",
+      "image": "Bild_64",
+      "motion": "pan-left",
+      "labels_de": [],
+      "notes": "Kapitel 10: Was wirklich hilft. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "process_path",
+      "human_framing": "none",
+      "explanation_visible": "Frische Luft strömt durchs offene Fenster herein, und die Viruswolke zieht nach draußen und wird dünner.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 65,
+      "speech_section": "Wichtig: Bei hohem Fieber, Atemnot oder wenn es dir nach einer Besserung wieder schlechter geht, lass dich ärztlich untersuchen.",
+      "visual_task": "Close crop: a doctor's hand placing a stethoscope on the back of a clothed adult patient in a calm, bright consultation room; friendly and reassuring.",
+      "image": "Bild_65",
+      "motion": "static",
+      "labels_de": [],
+      "notes": "Kapitel 10: Was wirklich hilft. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "human_action",
+      "human_framing": "hands_or_crop",
+      "explanation_visible": "Eine Ärztin oder ein Arzt hört den Rücken einer Person ab – ärztliche Abklärung bei Warnzeichen.",
+      "script_part": "hauptteil"
+    },
+    {
+      "scene": 66,
+      "speech_section": "Wenn deine Nase das nächste Mal läuft, weißt du also: Das ist nicht einfach das Virus, das dich kaputtmacht.",
+      "visual_task": "Front three-quarter cutaway of a clothed adult's face showing the nasal cavity: aqua mucus flows out, and inside it cream immune cells are at work; calm and not gross.",
+      "image": "Bild_66",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "notes": "Kapitel 11: Schluss. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "cutaway",
+      "human_framing": "partial_person",
+      "explanation_visible": "Die laufende Nase von innen: Im Schleimstrom arbeiten Abwehrzellen.",
+      "script_part": "schluss"
+    },
+    {
+      "scene": 67,
+      "speech_section": "Das ist dein Körper, der Alarm schlägt, Abwehrzellen schickt, Viren hinausspült und sich ein bisschen aufheizt.",
+      "visual_task": "One connected left-to-right scene along the nasal lining: an orange alarm burst, then arriving cream immune cells, then an aqua mucus stream carrying viruses out, all bathed in a gentle warm glow.",
+      "image": "Bild_67",
+      "motion": "pan-right",
+      "labels_de": [],
+      "notes": "Kapitel 11: Schluss. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "process_path",
+      "human_framing": "none",
+      "explanation_visible": "Eine zusammenhängende Abwehrkette entlang der Schleimhaut: Alarm, Abwehrzellen, Schleimstrom, Wärme.",
+      "script_part": "schluss"
+    },
+    {
+      "scene": 68,
+      "speech_section": "Eine Erkältung fühlt sich mies an. Aber sie zeigt dir, dass deine Abwehr genau ihren Job macht.",
+      "visual_task": "Golden antibodies and cream immune cells calmly surround the last few violet virus particles in a peaceful, confident composition with warm golden light.",
+      "image": "Bild_68",
+      "motion": "slow-pull-out",
+      "labels_de": [],
+      "notes": "Kapitel 11: Schluss. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "mechanism",
+      "human_framing": "none",
+      "explanation_visible": "Antikörper und Abwehrzellen umschließen ruhig die letzten Viren.",
+      "script_part": "schluss"
+    },
+    {
+      "scene": 69,
+      "speech_section": "Nach ein paar Tagen hat sie das Virus meist besiegt. Zumindest bis zum nächsten Typ.",
+      "visual_task": "Healthy calm pink nasal lining with clean cilia in soft morning light; far in the background one single new virus particle with a different surface pattern drifts in, a light humorous closing note.",
+      "image": "Bild_69",
+      "motion": "pan-left",
+      "labels_de": [],
+      "notes": "Kapitel 11: Schluss. Eine Hauptidee, 16:9, Tiefenzeile mitsenden, keine Render-Texte.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "explanation_visible": "Gesunde Schleimhaut im Morgenlicht – und im Hintergrund nähert sich schon ein neuer Virustyp.",
+      "script_part": "schluss"
+    }
+  ]
+}
