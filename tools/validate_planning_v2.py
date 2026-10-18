@@ -24,6 +24,7 @@ from pathlib import Path
 from urllib.parse import quote
 from improvement_loop import check_next
 from visual_storyboard_gate import check_visual_mix, VisualMixError
+from phase1_content_gate import check_script_structure, check_flow_register, ContentGateError
 
 IMAGE_ID_RE = re.compile(r"^Bild_\d{2,}$")
 PLACEHOLDER_RE = re.compile(r"\[[^\]]+\]|\b(?:TODO|TBD|PENDING)\b", re.IGNORECASE)
@@ -575,6 +576,16 @@ def main() -> None:
         except (VisualMixError, FileNotFoundError, UnicodeError) as exc:
             fail(f"Neue Bildregie: {exc}")
         print(f"ILLUSTRATION-FIRST: {visual_status}")
+        # New episodes only: the script itself and the one Flow prompt must be complete.
+        try:
+            content_policy = channel_config.get("script_structure_v2", {})
+            script = (project / "01_script" / "script.txt").read_text(encoding="utf-8")
+            script_status = check_script_structure(project, script, load_json(scene_plan), content_policy)
+            flow_status = check_flow_register(project, load_json(scene_plan), prompt, content_policy)
+        except (ContentGateError, FileNotFoundError, UnicodeError) as exc:
+            fail(f"Skript/Flow-Register: {exc}")
+        print(f"SKRIPT-AUFBAU: {script_status}")
+        print(f"FLOW-REGISTER: {flow_status}")
     print_phase1_tablet_links(project)
     if args.phase2:
         validate_phase2(project, expected)

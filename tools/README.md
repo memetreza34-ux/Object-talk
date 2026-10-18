@@ -55,6 +55,7 @@ Geprüft werden unter anderem:
 - Cover title-only
 - Textkontrast-Regeln
 - keine offenen Template-/PENDING-Werte
+- ab Video 011 (`tools/phase1_content_gate.py`): `script.txt` ausgefüllt, 900–1200 Wörter, Hook → Einleitung → Hauptteil → Schluss über `script_part` je Szene und `script_arc`, `speech_section`-Texte decken das Skript 1:1 ab, und der Flow-Prompt enthält jedes geplante `Bild_XX` ohne Vorlagenreste
 
 Nach der finalen Bildauswahl:
 

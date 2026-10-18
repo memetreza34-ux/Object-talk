@@ -21,6 +21,12 @@
     "whole_person_max_share": 0.1,
     "visual_mix_exception_reason": ""
   },
+  "script_arc": {
+    "hook_frage": "[Welche Neugier-Frage stellt Satz 1 dem Zuschauer?]",
+    "wendung": "[Welche ueberraschende Antwort/Korrektur folgt in Satz 2-3?]",
+    "payoff": "[Welche Reise/welchen Mechanismus verspricht die Einleitung bis ca. Sekunde 15?]",
+    "schluss_antwort": "[Wie beantwortet der Schluss die Hook-Frage in einem Satz?]"
+  },
   "scenes": [
     {
       "scene": 1,
@@ -32,7 +38,8 @@
       "notes": "Erste NORMALE Videoszene, kein Cover-Titel oder Bildvorlage; ein klarer biologischer Hook",
       "visual_category": "mechanism",
       "human_framing": "none",
-      "explanation_visible": "[Welche fachlich erkennbare Veränderung soll der Zuschauer sehen?]"
+      "explanation_visible": "[Welche fachlich erkennbare Veränderung soll der Zuschauer sehen?]",
+      "script_part": "hook"
     },
     {
       "scene": 2,
@@ -41,10 +48,11 @@
       "image": "Bild_02",
       "motion": "pan-left",
       "labels_de": [],
-      "notes": "0-2 Labels nur wenn wirklich noetig; hoher Textkontrast; kein Remotion-Text; Bildnummer nur intern",
+      "notes": "0-2 Labels nur wenn wirklich noetig; hoher Textkontrast; kein Remotion-Text; Bildnummer nur intern; script_part laeuft streng hook → einleitung → hauptteil → schluss",
       "visual_category": "cutaway",
       "human_framing": "none",
-      "explanation_visible": "[Ein sichtbarer Zusammenhang, ohne dekorative Person]"
+      "explanation_visible": "[Ein sichtbarer Zusammenhang, ohne dekorative Person]",
+      "script_part": "einleitung"
     }
   ]
 }

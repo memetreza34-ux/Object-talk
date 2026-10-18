@@ -206,3 +206,15 @@ Vor `PHASE-1-PASS` muessen alle Punkte bestehen:
 - Script ist 1:1 in die Voice-KI kopierbar
 
 Wenn einer dieser Punkte scheitert: Script ueberarbeiten, nicht produzieren.
+
+## 13. Technisches Skript-Gate ab Video 011
+
+`python tools/validate_planning_v2.py` liest ab Video 011 auch `01_script/script.txt` selbst (`tools/phase1_content_gate.py`, Grenzen in `config/channel.json` → `script_structure_v2`):
+- Skript ausgefuellt, ohne Vorlagentext, Platzhalter, Regieanweisungen oder Bild-/Szenennummern
+- Longform 900–1200 gesprochene Woerter (ca. 6–7 Minuten bei 1.10x; echte Laufzeit erst nach Voice bestaetigen)
+- jede Szene in `.intern/05_info/phase1-scenes.json` traegt `script_part`: `hook` → `einleitung` → `hauptteil` → `schluss`, streng in dieser Reihenfolge
+- Hook hoechstens ca. 60 Woerter; Hook + Einleitung hoechstens 20 %; Hauptteil mindestens 60 %; Schluss 4–15 %
+- `script_arc` benennt in je einem Satz `hook_frage`, `wendung`, `payoff`, `schluss_antwort`
+- alle `speech_section`-Texte ergeben zusammen exakt `script.txt` (keine Luecke, keine Doppelung)
+
+Referenz: Das vom Nutzer gelobte 010-Skript liegt mit Hook 19, Einleitung 107, Hauptteil 800 und Schluss 117 Woertern innerhalb dieser Grenzen. Das Gate prueft Aufbau und Vollstaendigkeit, nicht ob Hook und Schluss inhaltlich ueberzeugen – das bleibt Teil der Script-QA oben.

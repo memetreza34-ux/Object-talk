@@ -20,6 +20,8 @@ Pflicht fuer den Einstieg:
 - innerhalb der ersten ca. 15 Sekunden ist der Payoff klar
 - keine Schulbuch-Einleitung
 
+Ab Video 011 traegt jede Szene `script_part` (hook/einleitung/hauptteil/schluss) und `phase1-scenes.json` einen `script_arc`; der Validator prueft Aufbau, Laenge und lueckenlose Skriptabdeckung (`engine/SCRIPT-STANDARD.md` §13).
+
 ## 2. Mechanism Map
 
 Jedes neue Video erhaelt `05_info/mechanism-map.md`.

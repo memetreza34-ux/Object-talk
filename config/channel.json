@@ -239,5 +239,34 @@
     "exceptions": "documented topic-specific reason and manual quality approval",
     "no_metadata_text_on_images": true,
     "review_actual_images_after_generation": true
+  },
+  "script_structure_v2": {
+    "effective_from_video": 11,
+    "parts_in_order": [
+      "hook",
+      "einleitung",
+      "hauptteil",
+      "schluss"
+    ],
+    "word_range": [
+      900,
+      1200
+    ],
+    "hook_max_words": 60,
+    "intro_max_share": 0.2,
+    "main_min_share": 0.6,
+    "schluss_share_range": [
+      0.04,
+      0.15
+    ],
+    "scene_field": "script_part",
+    "arc_fields": [
+      "hook_frage",
+      "wendung",
+      "payoff",
+      "schluss_antwort"
+    ],
+    "coverage": "joined phase1-scenes speech_section words must equal script.txt words exactly",
+    "flow_register": "every planned Bild_NN appears in the one Flow prompt; no template placeholders"
   }
 }
