@@ -39,7 +39,7 @@ Interne `TEST`-Piloten sind davon ausgenommen, wenn sie ausschließlich Pipeline
 
 | Nr. | Status | Hauptbereich | Thema | Kernaussage / Abgrenzung | Überschneidet sich mit |
 |---:|---|---|---|---|---|
-| 001 | IN ARBEIT | Verdauung | Was passiert mit Essen im Körper? | erstes reguläres Longform-Video; kompletter Weg Mund → Speiseröhre → Magen → Dünndarm → Blut/Lymphe → Dickdarm/Enddarm | – |
+| 001 | FERTIG (gerendert, 008) | Verdauung | Was passiert mit Essen im Körper? | erstes reguläres Longform-Video; kompletter Weg Mund → Speiseröhre → Magen → Dünndarm → Blut/Lymphe → Dickdarm/Enddarm | – |
 | 002 | IDEE | Zellbiologie | Was ist eine menschliche Zelle? | Aufbau und wichtigste Zellbestandteile verständlich erklären | – |
 | 003 | IDEE | Gehirn | Wie kommunizieren Nervenzellen? | Neuron, elektrisches Signal, Synapse, Neurotransmitter | – |
 | 004 | IDEE | Ernährung | Was macht Zucker im Körper? | spätere Longform: Aufnahme, Blutzucker, Insulin, Energie und Überschuss deutlich tiefer | Testpiloten 000/002 behandeln nur die Grundkette |
@@ -51,8 +51,9 @@ Interne `TEST`-Piloten sind davon ausgenommen, wenn sie ausschließlich Pipeline
 | 010 | IDEE | Gehirn | Wie entsteht eine Erinnerung? | Verarbeitung, Synapsen und Gedächtnisbildung vereinfacht | 003 teilweise |
 | 011 | IDEE | Haut | Wie heilt eine Wunde? | spätere Longform: Hämostase, Entzündung, Proliferation, Remodeling und Narbenbildung deutlich tiefer | Testpilot 006 behandelt nur die vereinfachte Grundkette |
 | 012 | IDEE | Haut/Nervensystem | Warum bekommen wir Gänsehaut? | spätere Longform könnte Thermoregulation, autonome Reaktionen und emotionale Piloerektion vertiefen | Testpilot 007 behandelt nur die kurze Grundkette |
-
-| 013 | IN ARBEIT | Ernährung / Sättigung | Warum bist du nach dem Essen schnell wieder hungrig? | 010: Magen-Gehirn-Signale, Protein, Ballaststoffe, Getränke, Snacks, Schlaf/Stress und praxistaugliche Mahlzeitideen | 008 erklärt den Verdauungsweg, 010 dagegen Hunger und Sättigung |
+| 013 | FERTIG (gerendert, 010) | Ernährung / Sättigung | Warum bist du nach dem Essen schnell wieder hungrig? | 010: Magen-Gehirn-Signale, Protein, Ballaststoffe, Getränke, Snacks, Schlaf/Stress und praxistaugliche Mahlzeitideen | 008 erklärt den Verdauungsweg, 010 dagegen Hunger und Sättigung |
+| 014 | IN ARBEIT | Ernährung / Sättigung | Warum du kurz nach dem Essen schon wieder Hunger hast (V2) | Neuauflage von 010 auf Nutzerwunsch: Ghrelin-Kalender, Dehnung vs. Darmhormone (CCK, GLP-1, PYY), sechs Gründe mit Studien (Esstempo, Saft, Sattmacher/Blutzucker-Dips, stark verarbeitet, Schlaf, Appetit/Nachtisch), fünf Tipps; Projekt `011-longform-hunger-v2` | ersetzt 010 als Kanalversion; 012 verlinkt darauf |
+| 015 | IN ARBEIT | Verdauung | Die Reise einer Pizza durch deinen Körper (V2) | Neuauflage von 008 auf Nutzerwunsch: fünf Stationen mit Pizza-Farbcode, Tennisplatz-Mythos, zwei Wege Blut/Lymphe, 9 Liter, 38 Billionen Bakterien, Woraus besteht der Rest und warum braun; Projekt `012-longform-verdauung-v2` | ersetzt 008 als Kanalversion; 011 verlinkt darauf |
 
 ## Aktive Longform-Produktion
 
@@ -333,3 +334,14 @@ Interne `TEST`-Videos werden nur als Lern-/Pipelinehistorie geführt und dürfen
 - Lebensmittel und ihre Wirkung im Körper
 
 Die Liste wird laufend erweitert. Normale Kanalvideos bleiben Longform; kurze Projekte sind nur ausdrücklich gekennzeichnete interne Tests.
+
+## Neuauflagen auf Nutzerwunsch (18.10.2026)
+
+Eine Neuauflage ist **kein** Duplikat im Sinne der Doppelungsregel, wenn der Nutzer sie ausdrücklich verlangt und das alte Video unverändert bleibt. 011 (Hunger V2) und 012 (Verdauung V2 „Die Reise einer Pizza“) sind die neuen Kanalversionen von 010 und 008. Begründung und Messwerte: `engine/KANAL-ANALYSE-2026-10.md`.
+
+### Themenvorschläge mit starkem Hook (IDEE, vor Auswahl prüfen)
+- Was Kaffee in deinem Körper macht – Minute für Minute (Adenosin)
+- Was passiert, wenn du 24 Stunden nichts isst? (Glykogen → Fettverbrennung)
+- Wie dein Körper Fett verbrennt – und wo es hingeht (größtenteils als CO₂ ausgeatmet)
+- Warum du nach dem Essen müde wirst
+- Was Alkohol in deinem Körper macht

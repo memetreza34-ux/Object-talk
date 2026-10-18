@@ -239,5 +239,14 @@
     "exceptions": "documented topic-specific reason and manual quality approval",
     "no_metadata_text_on_images": true,
     "review_actual_images_after_generation": true
+  },
+  "youtube_channel_name": "Lebenslogik",
+  "script_quality_v2": {
+    "effective_from_video": 11,
+    "gate": "tools/script_quality.py",
+    "standard": "engine/SCRIPT-STANDARD.md#13",
+    "storyboard_source": ".intern/05_info/storyboard-source.json",
+    "builder": "tools/build_phase1_package.py",
+    "titles": "engine/TITEL-THUMBNAIL-STANDARD.md"
   }
 }

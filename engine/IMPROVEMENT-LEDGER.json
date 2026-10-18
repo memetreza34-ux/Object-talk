@@ -22,9 +22,19 @@
       "id": "BASE-ILLUSTRATION-FIRST",
       "rule": "Aus Video-010-Feedback: echte biologische Erklärbilder, Makros, Querschnitte, Funktionswege und anschauliche Vergleiche statt wiederholter Ganzkörper-Menschen, mehr harmonisch kräftige Farben; Bildregie-Quoten bei neuen Gesundheit/Ernährung/Biologie-Longforms prüfen.",
       "source": "Echtes Nutzerfeedback zu fertigem Video 010 und 21 gezielt gesichtete Frames; kein vollständiges Video-Postmortem oder tatsächlicher neuer Flow-Bildtest behauptet."
+    },
+    {
+      "id": "BASE-RETENTION-SCRIPT",
+      "rule": "Skripte unterhaltsam und konkret: Hook mit echtem Paradox/Experiment in den ersten 15 s, mindestens ein Open Loop (Frage früh stellen, spät auflösen), mindestens 6 belegte Zahlen/Vergleiche, höchstens 18 Absicherungswörter pro 1000 Wörter, höchstens 2 Disclaimer-Floskeln, nummerierte Abschnitte/Stationen, Schluss mit Brücke zum nächsten Video. Gate: tools/script_quality.py.",
+      "source": "Nutzerfeedback 18.10.2026 (Skripte nicht unterhaltsam genug) und Messung der Skripte 008-010 (1/6/0 Zahlen, 21-28 Absicherungen pro 1000 Wörter); kein neues Finalvideo-Review behauptet."
+    },
+    {
+      "id": "BASE-STORYBOARD-SOURCE",
+      "rule": "Eine handgeschriebene Storyboard-Quelle (.intern/05_info/storyboard-source.json, format storyboard-v2) pro Video; Skript, Flow-Prompt, Szenen-, Satz- und Labelplan werden nur mit tools/build_phase1_package.py daraus erzeugt. Pro Szene: Sprechtext max. 19 Wörter/ca. 6,3 s, Bildart, Personenausschnitt, Maßstab, erlaubte Bewegung, konkrete Komposition, Labels. Farbcode und Leitmotive pro Video im Prompt.",
+      "source": "Analyse 18.10.2026: 010-Planungsdateien mechanisch befüllt (visual_type rotiert, learning_goal = kopierter Satz), 24 ungültige Kamerabewegungen, Antigravity-Prompt nur Vorlage."
     }
   ],
   "next_video_lessons": [],
   "history": [],
-  "notes": "Bootstrap aus Nutzerfeedback, keine erfundenen Bewertungen. Nur nach realem Finalvideo-Review registrieren."
+  "notes": "Bootstrap aus Nutzerfeedback und Repo-Analyse, keine erfundenen Bewertungen. Nur nach realem Finalvideo-Review registrieren."
 }

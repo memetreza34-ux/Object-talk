@@ -1,0 +1,17 @@
+TITEL
+Die Reise einer Pizza durch deinen Körper
+
+BESCHREIBUNG
+Was passiert mit einem Stück Pizza, nachdem du es geschluckt hast? Wir folgen ihm durch deinen ganzen Körper – vom ersten Bissen bis zum Ende.
+
+Du siehst, warum Kauen wichtiger ist, als es klingt, warum Schlucken sogar im Kopfstand funktioniert, warum dein Magen sich nicht selbst verdaut und wie Galle wie Spülmittel das Fett zerlegt. Außerdem: Die Darmoberfläche ist nicht so groß wie ein Tennisplatz, sondern wie ein halbes Badmintonfeld. Zucker und Fett nehmen völlig unterschiedliche Wege, rund 38 Billionen Bakterien warten im Dickdarm – und am Ende klären wir, woraus der Rest wirklich besteht und warum er braun ist.
+
+Quellen (Auswahl): Helander & Fändriks 2014 (Darmoberfläche), Sender, Fuchs & Milo 2016 (Zahl der Bakterien), Rose et al. 2015 (Zusammensetzung von Stuhl), Mayo Clinic (Verdauungsdauer), Lehrbuchphysiologie zu Peristaltik, Magenschutz, Galle und Lymphweg.
+
+Allgemeine Bildung, keine medizinische Beratung.
+
+KAPITEL
+Die Kapitelzeiten werden nach dem finalen Render aus der echten Timeline eingesetzt (python tools/export_chapters.py VIDEOORDNER). Keine geschätzten Zeiten.
+
+HASHTAGS
+#Verdauung #Biologie #Körper #Ernährung #Lebenslogik

@@ -1,0 +1,823 @@
+{
+  "status": "READY",
+  "generated_from": "storyboard-source.json",
+  "rules": {
+    "language": "de",
+    "prompt_language": "en",
+    "max_labels_per_image": 2,
+    "max_words_per_label": 3,
+    "prefer_no_label_when_self_explanatory": true,
+    "labels_generated_in_flow": true,
+    "regenerate_if_label_wrong": true,
+    "cover_title_only": true,
+    "cover_exactly_one_visible_text_block": true,
+    "cover_extra_labels_forbidden": true,
+    "text_contrast_required": true,
+    "light_background_requires_dark_text": true,
+    "dark_background_requires_light_text": true,
+    "no_decorative_quotation_marks": true,
+    "no_asset_ids_visible": true,
+    "no_scene_numbers_visible": true,
+    "no_file_names_visible": true,
+    "remotion_visible_text_allowed": false,
+    "remotion_text_fallback_allowed": false,
+    "cover_is_scene": false,
+    "cover_output": "03_export/COVER.png"
+  },
+  "images": [
+    {
+      "image_asset_id": "Bild_01",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_02",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_03",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_04",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_05",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_06",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_07",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_08",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_09",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_10",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Stärke",
+        "Eiweiß"
+      ],
+      "labels": [
+        "Stärke",
+        "Eiweiß"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_11",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Fett",
+        "Ballaststoffe"
+      ],
+      "labels": [
+        "Fett",
+        "Ballaststoffe"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_12",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_13",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Mund"
+      ],
+      "labels": [
+        "Mund"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_14",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_15",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Oberfläche"
+      ],
+      "labels": [
+        "Oberfläche"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_16",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Speichel"
+      ],
+      "labels": [
+        "Speichel"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_17",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Amylase"
+      ],
+      "labels": [
+        "Amylase"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_18",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Stärke",
+        "Zucker"
+      ],
+      "labels": [
+        "Stärke",
+        "Zucker"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_19",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_20",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Kehldeckel",
+        "Luftröhre"
+      ],
+      "labels": [
+        "Kehldeckel",
+        "Luftröhre"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_21",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_22",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Speiseröhre"
+      ],
+      "labels": [
+        "Speiseröhre"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_23",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_24",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Peristaltik"
+      ],
+      "labels": [
+        "Peristaltik"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_25",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_26",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_27",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Magen"
+      ],
+      "labels": [
+        "Magen"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_28",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_29",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Magensaft",
+        "Zitronensaft"
+      ],
+      "labels": [
+        "Magensaft",
+        "Zitronensaft"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_30",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_31",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Pepsin"
+      ],
+      "labels": [
+        "Pepsin"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_32",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_33",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Schleimschicht"
+      ],
+      "labels": [
+        "Schleimschicht"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_34",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_35",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_36",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Speisebrei"
+      ],
+      "labels": [
+        "Speisebrei"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_37",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Pizza",
+        "Reis"
+      ],
+      "labels": [
+        "Pizza",
+        "Reis"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_38",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Fett"
+      ],
+      "labels": [
+        "Fett"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_39",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Magenpförtner"
+      ],
+      "labels": [
+        "Magenpförtner"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_40",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Dünndarm"
+      ],
+      "labels": [
+        "Dünndarm"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_41",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Bauchspeicheldrüse"
+      ],
+      "labels": [
+        "Bauchspeicheldrüse"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_42",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_43",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_44",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_45",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Leber",
+        "Galle"
+      ],
+      "labels": [
+        "Leber",
+        "Galle"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_46",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Gallenblase"
+      ],
+      "labels": [
+        "Gallenblase"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_47",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_48",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_49",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_50",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Glukose",
+        "Aminosäuren"
+      ],
+      "labels": [
+        "Glukose",
+        "Aminosäuren"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_51",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Fettsäuren"
+      ],
+      "labels": [
+        "Fettsäuren"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_52",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_53",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_54",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Darmzotten"
+      ],
+      "labels": [
+        "Darmzotten"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_55",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Mikrovilli"
+      ],
+      "labels": [
+        "Mikrovilli"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_56",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Tennisplatz"
+      ],
+      "labels": [
+        "Tennisplatz"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_57",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "rund 30 m²"
+      ],
+      "labels": [
+        "rund 30 m²"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_58",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_59",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Blutgefäße",
+        "Lymphgefäß"
+      ],
+      "labels": [
+        "Blutgefäße",
+        "Lymphgefäß"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_60",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_61",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Leber"
+      ],
+      "labels": [
+        "Leber"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_62",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_63",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Glykogen"
+      ],
+      "labels": [
+        "Glykogen"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_64",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Chylomikronen"
+      ],
+      "labels": [
+        "Chylomikronen"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_65",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Lymphgefäß"
+      ],
+      "labels": [
+        "Lymphgefäß"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_66",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Herz"
+      ],
+      "labels": [
+        "Herz"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_67",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_68",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_69",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Energie"
+      ],
+      "labels": [
+        "Energie"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_70",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_71",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_72",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_73",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_74",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Ballaststoffe"
+      ],
+      "labels": [
+        "Ballaststoffe"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_75",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Dickdarm"
+      ],
+      "labels": [
+        "Dickdarm"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_76",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "9 Liter"
+      ],
+      "labels": [
+        "9 Liter"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_77",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Getränke",
+        "Verdauungssäfte"
+      ],
+      "labels": [
+        "Getränke",
+        "Verdauungssäfte"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_78",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_79",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_80",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Darmbakterien"
+      ],
+      "labels": [
+        "Darmbakterien"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_81",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_82",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_83",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Butyrat"
+      ],
+      "labels": [
+        "Butyrat"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_84",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_85",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Enddarm"
+      ],
+      "labels": [
+        "Enddarm"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_86",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Wasser"
+      ],
+      "labels": [
+        "Wasser"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_87",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_88",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Bakterien"
+      ],
+      "labels": [
+        "Bakterien"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_89",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_90",
+      "mode": "scene",
+      "allowed_visible_text": [
+        "Bilirubin"
+      ],
+      "labels": [
+        "Bilirubin"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_91",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_92",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_93",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_94",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_95",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_96",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_97",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_98",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_99",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    }
+  ]
+}

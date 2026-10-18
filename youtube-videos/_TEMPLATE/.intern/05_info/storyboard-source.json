@@ -1,0 +1,66 @@
+{
+  "format": "storyboard-v2",
+  "status": "TEMPLATE",
+  "video_id": "NNN-longform-thema",
+  "remake_of": null,
+  "working_title": "Arbeitstitel",
+  "youtube": {
+    "title": "40-60 Zeichen, Suchbegriff vorne",
+    "title_alternatives": [
+      "Alternative 1",
+      "Alternative 2",
+      "Alternative 3"
+    ],
+    "description": "Zwei Hook-Zeilen. Was man lernt. Quellen (Auswahl). Ein Satz Bildungshinweis.",
+    "hashtags": [
+      "#Thema",
+      "#Ernährung",
+      "#Gesundheit",
+      "#Lebenslogik"
+    ]
+  },
+  "cover": {
+    "title": "2-4 Wörter, ergänzt den Titel",
+    "options": [
+      "Cover 1 Komposition",
+      "Cover 2 Komposition",
+      "Cover 3 Komposition"
+    ]
+  },
+  "flow": {
+    "continuity_key": "Farbcode und Leitmotiv dieses Videos (englisch), in jedem Bild identisch.",
+    "topic_safety": "Themenspezifische Sicherheitsregeln (englisch)."
+  },
+  "open_loops": [
+    {
+      "setup_scene": 6,
+      "payoff_scene": 70,
+      "question": "Frage, die früh gestellt und spät aufgelöst wird"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Zuschauerfreundlicher Kapitelname (wird YouTube-Kapitel)",
+      "function": "observation",
+      "misconception": "Welche Fehlannahme dieses Kapitel vermeidet",
+      "scenes": [
+        {
+          "speech": "Exakter Sprechtext, höchstens 19 Wörter.",
+          "cat": "food_structure",
+          "frame": "hands_or_crop",
+          "scale": "Lebensmittel",
+          "motion": "slow-push-in",
+          "labels": [],
+          "visual": "Concrete English composition: subject, camera scale, layout, colors from the continuity key, what is emphasized.",
+          "shows": "What changes visibly and what the viewer understands.",
+          "goal": "Deutsches Lernziel",
+          "claims": [
+            "C01"
+          ],
+          "para": false
+        }
+      ]
+    }
+  ],
+  "_hinweis": "Gültige Werte: cat = mechanism|cutaway|macro|educational_comparison|food_structure|process_path|everyday_context|human_action|transition; frame = none|hands_or_crop|partial_person|whole_person; scale = Alltag|Lebensmittel|Körper|Organ|Gewebe|Zelle|Molekül; motion = static|slow-push-in|slow-pull-out|pan-left|pan-right. Danach: python tools/build_phase1_package.py youtube-videos/VIDEO"
+}

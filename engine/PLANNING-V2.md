@@ -248,3 +248,16 @@ Planung/Produktion stoppen bei:
 - internen Assetnamen als sichtbarem Text
 - irgendeinem Remotion-Text
 - alter 2.5D-/Premium-3D-Bildwelt statt der freigegebenen Illustrationswelt
+
+## 16. Storyboard-v2 als einzige Quelle – Pflicht ab Video 011
+
+Analyse 10/2026: Die Planungsdateien von 010 wurden mechanisch befüllt. `visual_type` rotierte durch acht Werte, `learning_goal` war der kopierte Satz, 24 Kamerabewegungen waren ungültig, und der Antigravity-Prompt blieb die Vorlage. Darum gilt:
+
+1. Der Creative Director schreibt **eine** Datei: `.intern/05_info/storyboard-source.json` (`format: storyboard-v2`). Die Vorlage liegt in `youtube-videos/_TEMPLATE/.intern/05_info/storyboard-source.json`.
+2. Pro Szene: `speech` (exakter Sprechtext, max. 19 Wörter / ca. 6,3 s), `cat` (visual category), `frame` (human framing), `scale`, `motion` (nur static, slow-push-in, slow-pull-out, pan-left, pan-right), `visual` (konkrete englische Bildkomposition), `shows` (was sichtbar erklärt wird), `goal` (deutsches Lernziel), `labels` (0–2), `claims`, `para` (Absatz danach).
+3. Pro Kapitel: zuschauerfreundlicher `title` (wird zum YouTube-Kapitel), `function`, `misconception`.
+4. Video-weit: `youtube` (Titel, 3 Alternativen, Beschreibung, Hashtags), `cover` (Text + 3 Optionen), `flow.continuity_key` (Farbcode/Leitmotiv), `open_loops` (setup_scene → payoff_scene).
+5. Danach **nur** `python tools/build_phase1_package.py youtube-videos/VIDEO` ausführen. Skript, Flow-Prompt, phase1-scenes, sentence-visual-plan, label-plan, Caption-Entwurf und Antigravity-Auftrag werden erzeugt. Abgeleitete Dateien nie von Hand ändern.
+6. Danach `python tools/validate_planning_v2.py youtube-videos/VIDEO` (inkl. Bildregie-, Bewegungs- und Skriptqualitäts-Gate).
+
+Referenzbeispiele: `youtube-videos/011-longform-hunger-v2/` und `youtube-videos/012-longform-verdauung-v2/`.

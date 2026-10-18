@@ -1,22 +1,32 @@
 # Object-Talk / Lebenslogik – Aktueller Projektstand
 
-Letzte Aktualisierung: 14.10.2026
+Letzte Aktualisierung: 18.10.2026
 
-## AKTIVE PRODUKTION – VIDEO 010
+## AKTIVE PRODUKTION – NEUAUFLAGEN 011 UND 012 (Nutzerwunsch 18.10.2026)
 
-`youtube-videos/010-longform-hunger/`
+Der Nutzer wünscht deutlich unterhaltsamere Skripte, passendere Bilder sowie bessere Titel und Cover. Die alten Videos 008 und 010 bleiben unverändert. Die Neuauflagen sind eigene Projekte nach den neuen Regeln (`engine/KANAL-ANALYSE-2026-10.md`).
 
-**Thema:** Warum du nach dem Essen so schnell wieder Hunger hast?
-**YouTube-Kanal:** Lebenslogik (technisches Repo: Object-Talk).
-**Status:** Phase-1-Material erstellt und statisch konsistent, Flow-/Audio-/MP4-Produktion NOCH NICHT durchgeführt. Keine finale Videodauer bestätigt.
+| Projekt | Titel | Cover-Text | Bilder | Wörter | Status |
+|---|---|---|---:|---:|---|
+| `youtube-videos/011-longform-hunger-v2/` | Warum du kurz nach dem Essen schon wieder Hunger hast | Hunger trotz Essen? | 94 | 1091 | Phase 1 PASS, Medien ausstehend |
+| `youtube-videos/012-longform-verdauung-v2/` | Die Reise einer Pizza durch deinen Körper | Wohin verschwindet sie? | 99 | 1138 | Phase 1 PASS, Medien ausstehend |
 
-- **1044 Sprecherwörter**, 9 Kapitel, 72 individuelle normale Flow-Videoszenen, 27 davon mit 1–2 sinnvollen deutschen Labels.
-- 3 separate Coverkandidaten; danach Nutzerwahl und erste normale Videoszenen 01–05, anschließend Fünfergruppen.
-- Ein EINZIGER Flow-Prompt unter `02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt` und ein Fließtext-Skript `01_script/script.txt`.
-- 3 sichtbare Ordner; `03_export/` soll final genau Video, separates Cover, YouTube-Beschreibung und echt zeitgestempelte Untertitel enthalten. Bis Medien erstellt sind nur Entwurfstexte; keine falsche MP4.
-- Frühere Fehler aus 008/009 in `.intern/05_info/improvement-applied.json` konkret nachgewiesen: klare biologisch nachvollziehbare Bilder, sicherer Flow-Workflow, schlanker Export.
-- Nächster Schritt: zuerst drei Cover in Google Flow erzeugen, Nutzer wählt 1/2/3, danach 72 Szenen, Voice und Render.
-- `tools/improvement_loop.py` ist in der Phase-1-Prüfung integriert; GitHub Actions waren zuletzt fehlgeschlagen. Ein vollständig ausgeführter Python-Test ist derzeit **nicht bestätigt**. Statische Querverweisprüfungen der 72 Szenen wurden durchgeführt.
+- Quelle für alles: `.intern/05_info/storyboard-source.json` → `python tools/build_phase1_package.py`.
+- Geschätzte Länge nach 1,10x-Voice: ca. 6:15–7:00 pro Video (an 010 geeicht, nicht gemessen).
+- Beide Videos verweisen am Ende aufeinander (Endscreen verlinken).
+- Nächster Schritt je Video: Flow-Prompt einfügen → drei Cover → Wahl → Bilder in Fünfergruppen → Voice → `tools/prepare_phase3.py` → Render → echte Sichtung → `improvement-review.json`.
+
+**Handoff-Links 011:**
+[Google-Flow-Prompt öffnen](https://github.com/memetreza34-ux/Object-talk/blob/main/youtube-videos/011-longform-hunger-v2/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt) · [Voice-over-Skript öffnen](https://github.com/memetreza34-ux/Object-talk/blob/main/youtube-videos/011-longform-hunger-v2/01_script/script.txt)
+
+**Handoff-Links 012:**
+[Google-Flow-Prompt öffnen](https://github.com/memetreza34-ux/Object-talk/blob/main/youtube-videos/012-longform-verdauung-v2/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt) · [Voice-over-Skript öffnen](https://github.com/memetreza34-ux/Object-talk/blob/main/youtube-videos/012-longform-verdauung-v2/01_script/script.txt)
+
+(Die Links funktionieren, sobald der Branch nach `main` übernommen wurde.)
+
+## Vorherige Produktion – VIDEO 010 (historisch, unverändert)
+
+`youtube-videos/010-longform-hunger/`, gerendert und vom Nutzer hochgeladen (368,9 s). Bekannte Schwächen siehe `engine/KANAL-ANALYSE-2026-10.md`. Die Planungsdateien enthalten 24 ungültige Kamerabewegungen. Ein erneuter Render von 010 ist nicht vorgesehen, stattdessen 011.
 
 ## Bisherige Produktionsnotizen / Video 009
 

@@ -1,0 +1,1710 @@
+{
+  "status": "READY",
+  "video_id": "012-longform-verdauung-v2",
+  "title": "Die Reise einer Pizza durch deinen Körper",
+  "generated_from": "storyboard-source.json",
+  "rules": {
+    "source": "01_script/script.txt",
+    "coverage": "complete-no-gaps-no-overlaps",
+    "scene_boundaries": "semantic-visual-beats-from-storyboard",
+    "one_main_idea_per_frame": true,
+    "prefer_more_images_over_overloaded_frame": true,
+    "omit_nonessential_information": true,
+    "max_labels_per_normal_image": 2,
+    "cover_title_only": true,
+    "cover_extra_labels_forbidden": true,
+    "text_contrast_required": true,
+    "remotion_text_overlays_allowed": false,
+    "production_ids_visible_in_images": false,
+    "cover_is_scene": false,
+    "cover_output": "03_export/COVER.png",
+    "visual_mix_v2": true
+  },
+  "scenes": [
+    {
+      "scene": 1,
+      "image": "Bild_01",
+      "chapter": "Wohin verschwindet die Pizza?",
+      "chapter_start": true,
+      "speech_section": "Dieses Stück Pizza wird gleich verschwinden.",
+      "visual_task": "Hero close-up of a hand lifting a Margherita pizza slice from a plate, long melted cheese strings stretching, golden crust, red tomato sauce, one basil leaf; warm golden-orange background with soft bokeh; the slice fills most of the frame.",
+      "explanation_visible": "The pizza slice we will follow is introduced in appetizing detail.",
+      "visual_category": "food_structure",
+      "human_framing": "hands_or_crop",
+      "scale_level": "Lebensmittel",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 2,
+      "image": "Bild_02",
+      "chapter": "Wohin verschwindet die Pizza?",
+      "chapter_start": false,
+      "speech_section": "Zumindest sieht es so aus.",
+      "visual_task": "An empty plate with a few crumbs in the foreground; behind it a translucent side silhouette of a torso in which a small pizza-colored bite is just sliding down the throat; soft cream-and-teal palette.",
+      "explanation_visible": "The slice is gone from the plate but continues inside the body.",
+      "visual_category": "cutaway",
+      "human_framing": "partial_person",
+      "scale_level": "Körper",
+      "motion": "slow-pull-out",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 3,
+      "image": "Bild_03",
+      "chapter": "Wohin verschwindet die Pizza?",
+      "chapter_start": false,
+      "speech_section": "In Wahrheit beginnt jetzt eine Reise, die meistens länger als einen Tag dauert.",
+      "visual_task": "Orientation map: simplified left-facing side silhouette of an adult head and torso in soft cream with the whole digestive tract drawn as one continuous tube from mouth to the end of the large intestine, softly glowing; a tiny pizza-colored bite sits at the very start; a subtle sun-to-moon arc above the body suggests more than a day.",
+      "explanation_visible": "The full route ahead is shown, with the bite at its start.",
+      "visual_category": "process_path",
+      "human_framing": "partial_person",
+      "scale_level": "Körper",
+      "motion": "pan-right",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 4,
+      "image": "Bild_04",
+      "chapter": "Wohin verschwindet die Pizza?",
+      "chapter_start": false,
+      "speech_section": "Unterwegs wird die Pizza zerdrückt, in Säure gebadet und chemisch zerlegt.",
+      "visual_task": "Left-to-right transformation sequence on one calm background without panel borders: a pizza piece, then crushed pieces, then a soft blob in bubbling pale-yellow acidic liquid, then a cloud of separated golden, coral and amber beads.",
+      "explanation_visible": "The pizza changes step by step from a solid piece to tiny building blocks.",
+      "visual_category": "process_path",
+      "human_framing": "none",
+      "scale_level": "Lebensmittel",
+      "motion": "pan-left",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 5,
+      "image": "Bild_05",
+      "chapter": "Wohin verschwindet die Pizza?",
+      "chapter_start": false,
+      "speech_section": "Am Ende werden aus ihr winzige Bausteine, die in deinem Blut landen.",
+      "visual_task": "Macro inside a red blood vessel: single golden beads, coral beads and small amber particles drift among softly lit red blood cells; deep coral background with warm light.",
+      "explanation_visible": "The building blocks of the pizza now travel in the blood.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Molekül",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 6,
+      "image": "Bild_06",
+      "chapter": "Wohin verschwindet die Pizza?",
+      "chapter_start": false,
+      "speech_section": "Ein Teil von ihr wird buchstäblich zu dir.",
+      "visual_task": "Close-up of a muscle cell with striped fibers; golden and coral beads enter it and are built into its structure with a soft glow; muscle-red and teal palette.",
+      "explanation_visible": "Pizza building blocks become part of a body cell.",
+      "visual_category": "mechanism",
+      "human_framing": "none",
+      "scale_level": "Zelle",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 7,
+      "image": "Bild_07",
+      "chapter": "Wohin verschwindet die Pizza?",
+      "chapter_start": false,
+      "speech_section": "Und was am Ende übrig bleibt, besteht zu einem überraschend großen Teil gar nicht mehr aus Pizza.",
+      "visual_task": "Clean schematic magnified circle showing the remaining material at the end of the gut: densely packed with countless tiny diverse microbes in teal, plum and moss green between a few green fiber strands; soft tasteful colors.",
+      "explanation_visible": "The leftovers mostly consist of something other than pizza – a hint at bacteria.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Gewebe",
+      "motion": "pan-right",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 8,
+      "image": "Bild_08",
+      "chapter": "Wohin verschwindet die Pizza?",
+      "chapter_start": false,
+      "speech_section": "Was es stattdessen ist und warum es braun ist, klären wir ganz am Schluss.",
+      "visual_task": "Orientation map: simplified left-facing side silhouette of an adult head and torso in soft cream with the whole digestive tract drawn as one continuous tube; the tube glows gently except the last section of the large intestine, which stays hidden in soft shadow like an unsolved mystery; teal-to-cream gradient.",
+      "explanation_visible": "The final part of the journey is left in mystery until the end.",
+      "visual_category": "transition",
+      "human_framing": "partial_person",
+      "scale_level": "Körper",
+      "motion": "slow-pull-out",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 9,
+      "image": "Bild_09",
+      "chapter": "Wohin verschwindet die Pizza?",
+      "chapter_start": false,
+      "speech_section": "Damit wir die Pizza nicht aus den Augen verlieren, folgen wir ihren vier Hauptzutaten.",
+      "visual_task": "Exploded side view of a pizza slice floating apart into four clean layers: golden crust at the bottom, red tomato sauce, white melted cheese and a light drizzle of golden olive oil on top; soft warm-cream background.",
+      "explanation_visible": "The pizza is separated into its main ingredients.",
+      "visual_category": "food_structure",
+      "human_framing": "none",
+      "scale_level": "Lebensmittel",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 10,
+      "image": "Bild_10",
+      "chapter": "Wohin verschwindet die Pizza?",
+      "chapter_start": false,
+      "speech_section": "Stärke aus dem Teig, Eiweiß aus dem Käse,",
+      "visual_task": "The crust layer releases golden-yellow bead chains and the cheese layer releases coral-red bead chains, both drawn clearly next to their source layers; clean light background.",
+      "explanation_visible": "Starch and protein are introduced with their color code.",
+      "visual_category": "food_structure",
+      "human_framing": "none",
+      "scale_level": "Molekül",
+      "motion": "pan-right",
+      "labels_de": [
+        "Stärke",
+        "Eiweiß"
+      ],
+      "labels": [
+        "Stärke",
+        "Eiweiß"
+      ]
+    },
+    {
+      "scene": 11,
+      "image": "Bild_11",
+      "chapter": "Wohin verschwindet die Pizza?",
+      "chapter_start": false,
+      "speech_section": "Fett aus Käse und Öl und ein paar Ballaststoffe aus der Tomatensoße.",
+      "visual_task": "The cheese and oil release amber-orange droplets and the tomato sauce releases a few leaf-green fiber strands, drawn next to their source layers; clean light background.",
+      "explanation_visible": "Fat and fiber are introduced with their color code.",
+      "visual_category": "food_structure",
+      "human_framing": "none",
+      "scale_level": "Molekül",
+      "motion": "pan-left",
+      "labels_de": [
+        "Fett",
+        "Ballaststoffe"
+      ],
+      "labels": [
+        "Fett",
+        "Ballaststoffe"
+      ]
+    },
+    {
+      "scene": 12,
+      "image": "Bild_12",
+      "chapter": "Wohin verschwindet die Pizza?",
+      "chapter_start": false,
+      "speech_section": "Und jede davon nimmt später ihren eigenen Weg.",
+      "visual_task": "Four colored streams start together and diverge: golden and coral beads flow into a red blood vessel, amber droplets into a pale cream lymph vessel, green strands continue down a pink intestinal tube; soft teal background.",
+      "explanation_visible": "The four nutrients split up into different routes.",
+      "visual_category": "process_path",
+      "human_framing": "none",
+      "scale_level": "Gewebe",
+      "motion": "slow-pull-out",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 13,
+      "image": "Bild_13",
+      "chapter": "Station 1: Der Mund",
+      "chapter_start": true,
+      "speech_section": "Station eins: dein Mund.",
+      "visual_task": "Orientation map: simplified left-facing side silhouette of an adult head and torso in soft cream with the whole digestive tract drawn as one continuous tube; the mouth glows warmly at the start of the tube, the rest of the route is muted; soft peach background.",
+      "explanation_visible": "The journey starts in the mouth.",
+      "visual_category": "process_path",
+      "human_framing": "partial_person",
+      "scale_level": "Körper",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Mund"
+      ],
+      "labels": [
+        "Mund"
+      ]
+    },
+    {
+      "scene": 14,
+      "image": "Bild_14",
+      "chapter": "Station 1: Der Mund",
+      "chapter_start": false,
+      "speech_section": "Deine Zähne zerkleinern den Bissen in viele kleine Stücke. Das ist wichtiger, als es klingt.",
+      "visual_task": "Side cutaway of a mouth with clean simplified teeth crushing a pizza bite; the bite splits into many smaller pieces; the tongue is pink and clearly separate; soft coral palette, no gore.",
+      "explanation_visible": "Teeth break the bite into many small pieces.",
+      "visual_category": "cutaway",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "pan-right",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 15,
+      "image": "Bild_15",
+      "chapter": "Station 1: Der Mund",
+      "chapter_start": false,
+      "speech_section": "Je kleiner die Stücke, desto mehr Oberfläche haben Verdauungsenzyme später zum Angreifen.",
+      "visual_task": "Before-and-after comparison: on the left one big golden food cube with only a few purple enzyme shapes on its outside; on the right the same cube cut into many small cubes with highlighted surfaces and many enzymes working on them; clean cream background.",
+      "explanation_visible": "Many small pieces offer far more surface for enzymes than one big piece.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Molekül",
+      "motion": "static",
+      "labels_de": [
+        "Oberfläche"
+      ],
+      "labels": [
+        "Oberfläche"
+      ]
+    },
+    {
+      "scene": 16,
+      "image": "Bild_16",
+      "chapter": "Station 1: Der Mund",
+      "chapter_start": false,
+      "speech_section": "Gleichzeitig mischt Speichel alles zu einem weichen Kloß.",
+      "visual_task": "Mouth cutaway: salivary glands near the jaw release clear droplets; the chewed pieces gather into one soft rounded bolus on the tongue; fresh mint-and-coral palette.",
+      "explanation_visible": "Saliva binds the chewed pieces into a soft bolus.",
+      "visual_category": "cutaway",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "pan-left",
+      "labels_de": [
+        "Speichel"
+      ],
+      "labels": [
+        "Speichel"
+      ]
+    },
+    {
+      "scene": 17,
+      "image": "Bild_17",
+      "chapter": "Station 1: Der Mund",
+      "chapter_start": false,
+      "speech_section": "Im Speichel steckt schon das erste Enzym: Amylase.",
+      "visual_task": "Macro: small soft-purple enzyme shapes approach a long golden starch chain inside the moist bolus; clean pale-blue background.",
+      "explanation_visible": "The enzyme amylase meets starch in the mouth.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Molekül",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Amylase"
+      ],
+      "labels": [
+        "Amylase"
+      ]
+    },
+    {
+      "scene": 18,
+      "image": "Bild_18",
+      "chapter": "Station 1: Der Mund",
+      "chapter_start": false,
+      "speech_section": "Sie beginnt, die Stärke aus dem Teig in kleinere Zuckerstücke zu zerlegen.",
+      "visual_task": "Macro: purple amylase shapes cut a long golden starch chain into several short golden fragments; a clear cause-and-effect from left to right; soft gold-and-lilac palette.",
+      "explanation_visible": "The long starch chain is cut into shorter sugar pieces.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Molekül",
+      "motion": "pan-right",
+      "labels_de": [
+        "Stärke",
+        "Zucker"
+      ],
+      "labels": [
+        "Stärke",
+        "Zucker"
+      ]
+    },
+    {
+      "scene": 19,
+      "image": "Bild_19",
+      "chapter": "Station 1: Der Mund",
+      "chapter_start": false,
+      "speech_section": "Das kannst du sogar testen: Kau ein Stück Brot sehr lange. Irgendwann schmeckt es leicht süß.",
+      "visual_task": "Side cutaway of a head chewing a piece of bread: on the tongue tiny golden sugar fragments light up the taste buds with a sweet pink glow; friendly warm palette.",
+      "explanation_visible": "Long chewing releases sugar that the tongue tastes as sweet.",
+      "visual_category": "cutaway",
+      "human_framing": "partial_person",
+      "scale_level": "Körper",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 20,
+      "image": "Bild_20",
+      "chapter": "Station 2: Die Speiseröhre",
+      "chapter_start": true,
+      "speech_section": "Dann schluckst du. Für einen kurzen Moment verschließt ein kleiner Gewebedeckel, der Kehldeckel, deine Luftröhre.",
+      "visual_task": "Clean throat cutaway in side view: the small epiglottis flap folds down over the windpipe while the bolus slides behind it into the food pipe; airway pale blue, food pipe pink.",
+      "explanation_visible": "The epiglottis closes the airway while the bite passes.",
+      "visual_category": "cutaway",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "pan-left",
+      "labels_de": [
+        "Kehldeckel",
+        "Luftröhre"
+      ],
+      "labels": [
+        "Kehldeckel",
+        "Luftröhre"
+      ]
+    },
+    {
+      "scene": 21,
+      "image": "Bild_21",
+      "chapter": "Station 2: Die Speiseröhre",
+      "chapter_start": false,
+      "speech_section": "Deshalb kannst du nicht gleichzeitig schlucken und atmen.",
+      "visual_task": "Same throat region seen closer: small blue air particles wait motionless above the closed epiglottis while the bolus passes below; a frozen-moment feeling; cool blue palette.",
+      "explanation_visible": "Breathing pauses for the moment of swallowing.",
+      "visual_category": "mechanism",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "static",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 22,
+      "image": "Bild_22",
+      "chapter": "Station 2: Die Speiseröhre",
+      "chapter_start": false,
+      "speech_section": "Der Bissen landet in Station zwei, der Speiseröhre.",
+      "visual_task": "Orientation map: simplified left-facing side silhouette of an adult head and torso in soft cream with the whole digestive tract drawn as one continuous tube; the esophagus glows as a vertical tube from throat to stomach with the bolus at its top; the rest of the route is muted; soft sky-blue background.",
+      "explanation_visible": "The bite enters the esophagus, the second station.",
+      "visual_category": "process_path",
+      "human_framing": "partial_person",
+      "scale_level": "Körper",
+      "motion": "slow-pull-out",
+      "labels_de": [
+        "Speiseröhre"
+      ],
+      "labels": [
+        "Speiseröhre"
+      ]
+    },
+    {
+      "scene": 23,
+      "image": "Bild_23",
+      "chapter": "Station 2: Die Speiseröhre",
+      "chapter_start": false,
+      "speech_section": "Und hier liegen viele falsch: Das Essen fällt nicht einfach nach unten.",
+      "visual_task": "Vertical esophagus cutaway: the bolus is not falling freely but is gripped by the muscular wall, rings of muscle visible around it; calm teal background.",
+      "explanation_visible": "The food is held and moved by muscle, not by falling.",
+      "visual_category": "mechanism",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 24,
+      "image": "Bild_24",
+      "chapter": "Station 2: Die Speiseröhre",
+      "chapter_start": false,
+      "speech_section": "Ringförmige Muskeln ziehen sich hinter dem Bissen zusammen und schieben ihn wie eine Welle voran.",
+      "visual_task": "Close-up of the esophagus: a ring of muscle squeezes tightly behind the bolus while the section in front relaxes and widens, forming a clear wave that pushes the bite forward; coral muscle on a teal background.",
+      "explanation_visible": "A muscle wave squeezes behind the bolus and pushes it on.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Gewebe",
+      "motion": "pan-right",
+      "labels_de": [
+        "Peristaltik"
+      ],
+      "labels": [
+        "Peristaltik"
+      ]
+    },
+    {
+      "scene": 25,
+      "image": "Bild_25",
+      "chapter": "Station 2: Die Speiseröhre",
+      "chapter_start": false,
+      "speech_section": "Diese Bewegung heißt Peristaltik. Sie funktioniert sogar im Kopfstand.",
+      "visual_task": "A fully clothed adult doing a calm headstand on a yoga mat in a bright room; a translucent esophagus inside the body shows the bolus moving upward toward the stomach against gravity; friendly fresh palette.",
+      "explanation_visible": "Peristalsis moves food even upside down.",
+      "visual_category": "human_action",
+      "human_framing": "whole_person",
+      "scale_level": "Körper",
+      "motion": "static",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 26,
+      "image": "Bild_26",
+      "chapter": "Station 2: Die Speiseröhre",
+      "chapter_start": false,
+      "speech_section": "Astronauten schlucken deshalb auch in der Schwerelosigkeit ganz normal.",
+      "visual_task": "Upper body of an astronaut in a space-station cabin eating from a pouch, small crumbs floating; a translucent throat shows the peristaltic wave moving the bite; Earth visible through a round window; deep blue with warm cabin light.",
+      "explanation_visible": "Swallowing works in zero gravity thanks to peristalsis.",
+      "visual_category": "human_action",
+      "human_framing": "partial_person",
+      "scale_level": "Alltag",
+      "motion": "pan-left",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 27,
+      "image": "Bild_27",
+      "chapter": "Station 2: Die Speiseröhre",
+      "chapter_start": false,
+      "speech_section": "Nach wenigen Sekunden ist der Bissen im Magen.",
+      "visual_task": "Lower end of the esophagus: a muscular ring opens and the bolus slips into the upper stomach; coral stomach, pink esophagus, soft cream background.",
+      "explanation_visible": "The bite passes the stomach entrance after a few seconds.",
+      "visual_category": "cutaway",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Magen"
+      ],
+      "labels": [
+        "Magen"
+      ]
+    },
+    {
+      "scene": 28,
+      "image": "Bild_28",
+      "chapter": "Station 3: Der Magen",
+      "chapter_start": true,
+      "speech_section": "Station drei: der Magen. Hier wird es ungemütlich.",
+      "visual_task": "Orientation map: simplified left-facing side silhouette of an adult head and torso in soft cream with the whole digestive tract drawn as one continuous tube; the stomach glows strongly in coral-orange, the rest is muted; a subtle heat-like shimmer around it; peach background.",
+      "explanation_visible": "The third station, the stomach, is highlighted.",
+      "visual_category": "process_path",
+      "human_framing": "partial_person",
+      "scale_level": "Körper",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 29,
+      "image": "Bild_29",
+      "chapter": "Station 3: Der Magen",
+      "chapter_start": false,
+      "speech_section": "Der Magensaft ist saurer als Zitronensaft.",
+      "visual_task": "A halved lemon with a drop of juice next to a small glass beaker of bubbling pale-yellow gastric fluid; the gastric fluid fizzes with more and stronger bubbles; clean yellow-and-teal palette.",
+      "explanation_visible": "Gastric juice is even more acidic than lemon juice.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Lebensmittel",
+      "motion": "static",
+      "labels_de": [
+        "Magensaft",
+        "Zitronensaft"
+      ],
+      "labels": [
+        "Magensaft",
+        "Zitronensaft"
+      ]
+    },
+    {
+      "scene": 30,
+      "image": "Bild_30",
+      "chapter": "Station 3: Der Magen",
+      "chapter_start": false,
+      "speech_section": "Er tötet viele Keime ab und lässt das Eiweiß aus dem Käse aufquellen und sich entfalten.",
+      "visual_task": "Macro inside the acidic stomach: tightly folded coral protein knots loosen into long open strands; a few small microbes nearby dissolve and fade; pale-yellow acidic bubbles all around.",
+      "explanation_visible": "Acid unfolds proteins and kills many germs.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Molekül",
+      "motion": "pan-right",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 31,
+      "image": "Bild_31",
+      "chapter": "Station 3: Der Magen",
+      "chapter_start": false,
+      "speech_section": "Dann kommt das Enzym Pepsin und schneidet die langen Eiweißketten in kürzere Stücke.",
+      "visual_task": "Macro: purple pepsin enzyme shapes snip a long coral bead chain into several shorter pieces, the cut points glowing; warm coral background.",
+      "explanation_visible": "Pepsin cuts protein chains into shorter pieces.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Molekül",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Pepsin"
+      ],
+      "labels": [
+        "Pepsin"
+      ]
+    },
+    {
+      "scene": 32,
+      "image": "Bild_32",
+      "chapter": "Station 3: Der Magen",
+      "chapter_start": false,
+      "speech_section": "Aber warum verdaut sich der Magen nicht selbst?",
+      "visual_task": "Stomach wall cutaway close-up: acidic bubbles press against the pink wall under dramatic but clean lighting that raises the question; coral and acid-yellow palette.",
+      "explanation_visible": "The acid sits right next to the stomach's own wall – raising the question of protection.",
+      "visual_category": "cutaway",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "pan-left",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 33,
+      "image": "Bild_33",
+      "chapter": "Station 3: Der Magen",
+      "chapter_start": false,
+      "speech_section": "Seine Wand ist mit einer dicken Schleimschicht bedeckt, in der Bicarbonat die Säure abpuffert.",
+      "visual_task": "Layered cross-section: the acidic lumen at the top, a thick translucent blue-white mucus layer in the middle, healthy pink cells at the bottom; acid bubbles fade out where they touch the mucus; clean layered composition.",
+      "explanation_visible": "The mucus layer neutralizes acid before it reaches the cells.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Gewebe",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Schleimschicht"
+      ],
+      "labels": [
+        "Schleimschicht"
+      ]
+    },
+    {
+      "scene": 34,
+      "image": "Bild_34",
+      "chapter": "Station 3: Der Magen",
+      "chapter_start": false,
+      "speech_section": "Und die oberste Zellschicht wird ständig erneuert, ungefähr alle paar Tage.",
+      "visual_task": "Close-up of the stomach lining: old surface cells gently shed into the mucus while fresh cells push up from below, like a renewing cobblestone path; soft pink-and-teal palette.",
+      "explanation_visible": "Old surface cells are continuously replaced by new ones.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Zelle",
+      "motion": "pan-right",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 35,
+      "image": "Bild_35",
+      "chapter": "Station 3: Der Magen",
+      "chapter_start": false,
+      "speech_section": "Gleichzeitig knetet die Magenwand den Inhalt etwa dreimal pro Minute durch.",
+      "visual_task": "Stomach cutaway with visible muscle layers; three soft contraction waves roll across the stomach wall and churn the contents; motion swirls; coral-and-amber palette.",
+      "explanation_visible": "Rhythmic muscle waves knead the stomach contents.",
+      "visual_category": "cutaway",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "pan-left",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 36,
+      "image": "Bild_36",
+      "chapter": "Station 3: Der Magen",
+      "chapter_start": false,
+      "speech_section": "Aus dem Bissen wird ein dickflüssiger Brei, der Speisebrei.",
+      "visual_task": "Macro of a smooth, creamy, thick mixture with golden, coral and amber beads evenly mixed in; soft warm light; caramel-cream palette, appetizing rather than unpleasant.",
+      "explanation_visible": "The bite has turned into an even, thick mixture.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Gewebe",
+      "motion": "static",
+      "labels_de": [
+        "Speisebrei"
+      ],
+      "labels": [
+        "Speisebrei"
+      ]
+    },
+    {
+      "scene": 37,
+      "image": "Bild_37",
+      "chapter": "Station 3: Der Magen",
+      "chapter_start": false,
+      "speech_section": "Und weil Pizza ziemlich viel Fett enthält, bleibt sie länger im Magen als zum Beispiel eine Schüssel Reis.",
+      "visual_task": "Two stomach cutaways side by side: the left stomach is still full of pizza mixture with many amber fat droplets; the right stomach, after plain rice, is already half empty; clean teal background.",
+      "explanation_visible": "The fatty pizza stays longer in the stomach than plain rice.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "pan-right",
+      "labels_de": [
+        "Pizza",
+        "Reis"
+      ],
+      "labels": [
+        "Pizza",
+        "Reis"
+      ]
+    },
+    {
+      "scene": 38,
+      "image": "Bild_38",
+      "chapter": "Station 3: Der Magen",
+      "chapter_start": false,
+      "speech_section": "Fett bremst die Magenentleerung. Deshalb liegt eine Pizza auch gefühlt schwer im Magen.",
+      "visual_task": "Close-up of the stomach exit: amber fat droplets reach the first part of the small intestine, which releases small turquoise signal particles that make the stomach exit narrow; food waits behind it; warm amber palette.",
+      "explanation_visible": "Fat in the intestine triggers a signal that slows stomach emptying.",
+      "visual_category": "mechanism",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Fett"
+      ],
+      "labels": [
+        "Fett"
+      ]
+    },
+    {
+      "scene": 39,
+      "image": "Bild_39",
+      "chapter": "Station 3: Der Magen",
+      "chapter_start": false,
+      "speech_section": "Portion für Portion lässt der Magenpförtner den Speisebrei in den Dünndarm. Das dauert mehrere Stunden.",
+      "visual_task": "Side cutaway: the muscular stomach exit opens just a little and releases a small squirt of creamy mixture into the first loop of the small intestine; the stomach above is still partly filled; coral and salmon palette.",
+      "explanation_visible": "The stomach releases its contents in small portions over hours.",
+      "visual_category": "cutaway",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "pan-left",
+      "labels_de": [
+        "Magenpförtner"
+      ],
+      "labels": [
+        "Magenpförtner"
+      ]
+    },
+    {
+      "scene": 40,
+      "image": "Bild_40",
+      "chapter": "Station 4: Der Dünndarm",
+      "chapter_start": true,
+      "speech_section": "Station vier, der Dünndarm, ist die wichtigste. Hier passiert der Großteil der chemischen Verdauung.",
+      "visual_task": "Orientation map: simplified left-facing side silhouette of an adult head and torso in soft cream with the whole digestive tract drawn as one continuous tube; the coiled small intestine glows brightly in salmon-gold as the main stage, the rest is muted; spotlight feeling; soft cream background.",
+      "explanation_visible": "The small intestine is highlighted as the main station.",
+      "visual_category": "process_path",
+      "human_framing": "partial_person",
+      "scale_level": "Körper",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Dünndarm"
+      ],
+      "labels": [
+        "Dünndarm"
+      ]
+    },
+    {
+      "scene": 41,
+      "image": "Bild_41",
+      "chapter": "Station 4: Der Dünndarm",
+      "chapter_start": false,
+      "speech_section": "Zuerst muss die Säure weg. Die Bauchspeicheldrüse schickt dafür einen Saft voller Bicarbonat.",
+      "visual_task": "Cutaway of the first part of the small intestine with the pancreas beside it; pancreatic juice flows in through a duct; where it mixes, the acidic yellow bubbles disappear and the mixture turns calm and neutral; salmon and soft-blue palette.",
+      "explanation_visible": "Pancreatic juice neutralizes the acid from the stomach.",
+      "visual_category": "cutaway",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "pan-right",
+      "labels_de": [
+        "Bauchspeicheldrüse"
+      ],
+      "labels": [
+        "Bauchspeicheldrüse"
+      ]
+    },
+    {
+      "scene": 42,
+      "image": "Bild_42",
+      "chapter": "Station 4: Der Dünndarm",
+      "chapter_start": false,
+      "speech_section": "In demselben Saft stecken Enzyme für alle drei großen Nährstoffe: für Stärke, für Eiweiß und für Fett.",
+      "visual_task": "Three clear lanes from top to bottom: purple enzymes working on a golden starch chain, on a coral protein chain and on an amber fat droplet; tidy, simple, generous spacing; soft lavender background.",
+      "explanation_visible": "Different enzymes handle starch, protein and fat.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Molekül",
+      "motion": "static",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 43,
+      "image": "Bild_43",
+      "chapter": "Station 4: Der Dünndarm",
+      "chapter_start": false,
+      "speech_section": "Beim Fett gibt es allerdings ein Problem: Fett und Wasser mischen sich nicht.",
+      "visual_task": "Kitchen analogy: a clear glass of water with a thick layer of golden oil floating on top in big round droplets that refuse to mix; bright clean background.",
+      "explanation_visible": "Oil and water separate instead of mixing.",
+      "visual_category": "food_structure",
+      "human_framing": "none",
+      "scale_level": "Lebensmittel",
+      "motion": "pan-left",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 44,
+      "image": "Bild_44",
+      "chapter": "Station 4: Der Dünndarm",
+      "chapter_start": false,
+      "speech_section": "Das Käsefett schwimmt in großen Tropfen herum, und die Enzyme kommen kaum heran.",
+      "visual_task": "Macro in the intestine: a few big amber fat droplets floating in watery fluid, with only a handful of purple enzymes clinging to their edges; most of each droplet's surface is unreachable; amber-and-blue palette.",
+      "explanation_visible": "Big fat droplets give enzymes only a small surface to work on.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Molekül",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 45,
+      "image": "Bild_45",
+      "chapter": "Station 4: Der Dünndarm",
+      "chapter_start": false,
+      "speech_section": "Die Lösung kommt aus der Leber: Galle.",
+      "visual_task": "Large reddish-brown liver cutaway with fine golden-green bile channels flowing toward a duct; soft warm background.",
+      "explanation_visible": "The liver produces golden-green bile.",
+      "visual_category": "cutaway",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "pan-right",
+      "labels_de": [
+        "Leber",
+        "Galle"
+      ],
+      "labels": [
+        "Leber",
+        "Galle"
+      ]
+    },
+    {
+      "scene": 46,
+      "image": "Bild_46",
+      "chapter": "Station 4: Der Dünndarm",
+      "chapter_start": false,
+      "speech_section": "Sie wird in der Gallenblase gespeichert und im richtigen Moment in den Darm gespritzt.",
+      "visual_task": "Close-up of the green pear-shaped gallbladder beneath the liver squeezing and releasing a stream of golden-green bile through a duct into the small intestine; clean composition.",
+      "explanation_visible": "The gallbladder squeezes bile into the intestine.",
+      "visual_category": "cutaway",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Gallenblase"
+      ],
+      "labels": [
+        "Gallenblase"
+      ]
+    },
+    {
+      "scene": 47,
+      "image": "Bild_47",
+      "chapter": "Station 4: Der Dünndarm",
+      "chapter_start": false,
+      "speech_section": "Galle wirkt ähnlich wie Spülmittel in einer fettigen Pfanne.",
+      "visual_task": "Hands with a sponge and a drop of dish soap in a greasy frying pan; the grease breaks up into many tiny droplets around the soap; bright clean kitchen light, no brands.",
+      "explanation_visible": "Dish soap breaks grease into tiny droplets – just like bile.",
+      "visual_category": "everyday_context",
+      "human_framing": "hands_or_crop",
+      "scale_level": "Alltag",
+      "motion": "pan-left",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 48,
+      "image": "Bild_48",
+      "chapter": "Station 4: Der Dünndarm",
+      "chapter_start": false,
+      "speech_section": "Sie zerteilt große Fetttropfen in viele winzige. Jetzt haben die Fettenzyme genug Angriffsfläche.",
+      "visual_task": "Before-and-after macro: on the left one big amber droplet; on the right the same amount split into dozens of tiny droplets coated with golden-green bile, each covered by working purple enzymes.",
+      "explanation_visible": "Bile splits fat into tiny droplets so enzymes can work everywhere.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Molekül",
+      "motion": "static",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 49,
+      "image": "Bild_49",
+      "chapter": "Station 4: Der Dünndarm",
+      "chapter_start": false,
+      "speech_section": "Nach dieser Arbeit ist von der Pizza nichts Erkennbares mehr übrig.",
+      "visual_task": "A faint outline of the original pizza slice dissolving into a cloud of colorful tiny particles – golden, coral and amber – drifting in a calm salmon-colored fluid.",
+      "explanation_visible": "The pizza has disappeared into tiny particles.",
+      "visual_category": "process_path",
+      "human_framing": "none",
+      "scale_level": "Molekül",
+      "motion": "slow-pull-out",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 50,
+      "image": "Bild_50",
+      "chapter": "Station 4: Der Dünndarm",
+      "chapter_start": false,
+      "speech_section": "Aus Stärke ist Traubenzucker geworden, also Glukose. Aus Eiweiß wurden Aminosäuren.",
+      "visual_task": "Two horizontal lanes: on top a golden starch chain turning into single golden beads; below a coral protein chain turning into single coral beads; clean light background.",
+      "explanation_visible": "Starch has become glucose and protein has become amino acids.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Molekül",
+      "motion": "pan-right",
+      "labels_de": [
+        "Glukose",
+        "Aminosäuren"
+      ],
+      "labels": [
+        "Glukose",
+        "Aminosäuren"
+      ]
+    },
+    {
+      "scene": 51,
+      "image": "Bild_51",
+      "chapter": "Station 4: Der Dünndarm",
+      "chapter_start": false,
+      "speech_section": "Und aus Fett wurden Fettsäuren und andere kleine Fettbausteine.",
+      "visual_task": "Macro: a tiny amber droplet splits into small amber strand-shaped fatty acids and little rounded fat pieces; warm amber background with soft light.",
+      "explanation_visible": "Fat has been broken down into fatty acids.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Molekül",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Fettsäuren"
+      ],
+      "labels": [
+        "Fettsäuren"
+      ]
+    },
+    {
+      "scene": 52,
+      "image": "Bild_52",
+      "chapter": "Darmzotten: Die Fläche einer Wohnung",
+      "chapter_start": true,
+      "speech_section": "Aber wie kommen diese Bausteine in deinen Körper? Über die Innenwand des Dünndarms.",
+      "visual_task": "Camera view from inside the small-intestine tube toward its velvety inner wall; colorful particles drift toward it; salmon-pink with soft light.",
+      "explanation_visible": "The inner wall of the small intestine is the gateway into the body.",
+      "visual_category": "cutaway",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 53,
+      "image": "Bild_53",
+      "chapter": "Darmzotten: Die Fläche einer Wohnung",
+      "chapter_start": false,
+      "speech_section": "Und die ist alles andere als glatt. Sie ist in Falten gelegt.",
+      "visual_task": "Opened segment of small intestine showing large circular folds like soft ridges along its inner surface; clean salmon-and-cream palette.",
+      "explanation_visible": "The intestinal wall is arranged in large folds.",
+      "visual_category": "cutaway",
+      "human_framing": "none",
+      "scale_level": "Gewebe",
+      "motion": "pan-right",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 54,
+      "image": "Bild_54",
+      "chapter": "Darmzotten: Die Fläche einer Wohnung",
+      "chapter_start": false,
+      "speech_section": "Auf den Falten sitzen Millionen winziger Ausstülpungen, die Darmzotten.",
+      "visual_task": "Macro of one fold covered with countless finger-like velvety villi standing close together like a soft carpet; pink and peach tones on a soft teal background.",
+      "explanation_visible": "The folds are covered with finger-like villi.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Gewebe",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Darmzotten"
+      ],
+      "labels": [
+        "Darmzotten"
+      ]
+    },
+    {
+      "scene": 55,
+      "image": "Bild_55",
+      "chapter": "Darmzotten: Die Fläche einer Wohnung",
+      "chapter_start": false,
+      "speech_section": "Und auf deren Zellen sitzen nochmal tausende mikroskopisch kleine Härchen, die Mikrovilli.",
+      "visual_task": "Extreme zoom into the surface of one villus: the cells carry a dense brush of tiny hair-like microvilli on top; scale-change feeling; soft lilac-pink palette.",
+      "explanation_visible": "Each cell carries thousands of tiny microvilli.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Zelle",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Mikrovilli"
+      ],
+      "labels": [
+        "Mikrovilli"
+      ]
+    },
+    {
+      "scene": 56,
+      "image": "Bild_56",
+      "chapter": "Darmzotten: Die Fläche einer Wohnung",
+      "chapter_start": false,
+      "speech_section": "Lange stand in Lehrbüchern, die Darmoberfläche sei so groß wie ein Tennisplatz. 2014 wurde genauer nachgemessen.",
+      "visual_task": "Aerial illustration of a tennis court completely covered by an unrolled, velvety pink intestinal lining like a carpet; clean green surroundings; playful but tidy.",
+      "explanation_visible": "The old textbook claim: the gut lining would cover a tennis court.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Alltag",
+      "motion": "pan-right",
+      "labels_de": [
+        "Tennisplatz"
+      ],
+      "labels": [
+        "Tennisplatz"
+      ]
+    },
+    {
+      "scene": 57,
+      "image": "Bild_57",
+      "chapter": "Darmzotten: Die Fläche einer Wohnung",
+      "chapter_start": false,
+      "speech_section": "Ergebnis: Es ist eher ein halbes Badmintonfeld, rund dreißig Quadratmeter.",
+      "visual_task": "Aerial illustration of a badminton court where exactly half of the court is covered by the velvety pink intestinal lining carpet and the other half is empty; bright clean palette.",
+      "explanation_visible": "The real surface is about half a badminton court.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Alltag",
+      "motion": "static",
+      "labels_de": [
+        "rund 30 m²"
+      ],
+      "labels": [
+        "rund 30 m²"
+      ]
+    },
+    {
+      "scene": 58,
+      "image": "Bild_58",
+      "chapter": "Darmzotten: Die Fläche einer Wohnung",
+      "chapter_start": false,
+      "speech_section": "Das ist weniger als gedacht, aber immer noch so viel wie eine kleine Wohnung, in deinem Bauch.",
+      "visual_task": "Top-down cutaway of a cozy small studio apartment whose whole floor is covered with the soft pink intestinal lining texture, a bed and a sofa standing on it; warm friendly palette.",
+      "explanation_visible": "The absorption surface is as large as a small apartment.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Alltag",
+      "motion": "slow-pull-out",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 59,
+      "image": "Bild_59",
+      "chapter": "Zwei Wege: Blut und Lymphe",
+      "chapter_start": true,
+      "speech_section": "Jetzt trennen sich die Wege.",
+      "visual_task": "Cross-section of a single villus: a red-and-blue capillary network inside and a pale cream central lymph vessel; golden and coral beads head for the capillaries, amber packages for the lymph vessel; clean layout.",
+      "explanation_visible": "Inside the villus nutrients choose between blood and lymph.",
+      "visual_category": "process_path",
+      "human_framing": "none",
+      "scale_level": "Gewebe",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Blutgefäße",
+        "Lymphgefäß"
+      ],
+      "labels": [
+        "Blutgefäße",
+        "Lymphgefäß"
+      ]
+    },
+    {
+      "scene": 60,
+      "image": "Bild_60",
+      "chapter": "Zwei Wege: Blut und Lymphe",
+      "chapter_start": false,
+      "speech_section": "Glukose und Aminosäuren wandern durch die Darmzellen in feine Blutgefäße.",
+      "visual_task": "Macro: golden and coral beads pass through a row of intestinal cells and enter a fine red capillary on the other side; soft lighting; salmon-and-red palette.",
+      "explanation_visible": "Glucose and amino acids cross the gut cells into the blood.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Zelle",
+      "motion": "pan-right",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 61,
+      "image": "Bild_61",
+      "chapter": "Zwei Wege: Blut und Lymphe",
+      "chapter_start": false,
+      "speech_section": "Von dort fließt das Blut nicht direkt in den ganzen Körper, sondern zuerst zur Leber.",
+      "visual_task": "Orientation map: simplified left-facing side silhouette of an adult head and torso in soft cream with the whole digestive tract drawn as one continuous tube; a highlighted vein carries golden and coral beads from the intestine straight up to the reddish-brown liver; the rest of the body is muted; soft sky-blue background.",
+      "explanation_visible": "Nutrient-rich blood goes from the gut to the liver first.",
+      "visual_category": "process_path",
+      "human_framing": "partial_person",
+      "scale_level": "Körper",
+      "motion": "pan-left",
+      "labels_de": [
+        "Leber"
+      ],
+      "labels": [
+        "Leber"
+      ]
+    },
+    {
+      "scene": 62,
+      "image": "Bild_62",
+      "chapter": "Zwei Wege: Blut und Lymphe",
+      "chapter_start": false,
+      "speech_section": "Die Leber ist so etwas wie die Zollstation deines Körpers. Sie prüft, verarbeitet und speichert.",
+      "visual_task": "Liver cutaway as a calm hub: one incoming stream of beads splits into three clear paths – one passing on into the body, one being transformed into new shapes, one being stored as a compact cluster; reddish-brown liver on a warm cream background.",
+      "explanation_visible": "The liver checks, transforms and stores incoming nutrients.",
+      "visual_category": "mechanism",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 63,
+      "image": "Bild_63",
+      "chapter": "Zwei Wege: Blut und Lymphe",
+      "chapter_start": false,
+      "speech_section": "Überschüssige Glukose legt sie zum Beispiel als Vorrat an, als Glykogen.",
+      "visual_task": "Inside a liver cell: single golden beads link together into a large branched tree-like cluster; warm golden glow; soft brown-and-cream palette.",
+      "explanation_visible": "Glucose is stored in the liver as branched glycogen.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Zelle",
+      "motion": "pan-right",
+      "labels_de": [
+        "Glykogen"
+      ],
+      "labels": [
+        "Glykogen"
+      ]
+    },
+    {
+      "scene": 64,
+      "image": "Bild_64",
+      "chapter": "Zwei Wege: Blut und Lymphe",
+      "chapter_start": false,
+      "speech_section": "Das Fett nimmt einen anderen Weg. In den Darmzellen wird es zu Transportpaketen verpackt, den Chylomikronen.",
+      "visual_task": "Inside an intestinal cell: amber fatty acids are reassembled and wrapped into round packages with a thin pale coat; several finished spheres leave the cell; amber-and-cream palette.",
+      "explanation_visible": "Fat is packed into round transport packages inside the gut cells.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Zelle",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Chylomikronen"
+      ],
+      "labels": [
+        "Chylomikronen"
+      ]
+    },
+    {
+      "scene": 65,
+      "image": "Bild_65",
+      "chapter": "Zwei Wege: Blut und Lymphe",
+      "chapter_start": false,
+      "speech_section": "Für die feinen Blutgefäße sind sie zu groß. Deshalb gehen sie in die Lymphgefäße.",
+      "visual_task": "Comparison inside the villus: a large round amber package bumps against a narrow red capillary that is too small and instead slips into the wider pale cream lymph vessel next to it.",
+      "explanation_visible": "Fat packages are too big for the capillaries and enter the lymph vessel.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Gewebe",
+      "motion": "pan-left",
+      "labels_de": [
+        "Lymphgefäß"
+      ],
+      "labels": [
+        "Lymphgefäß"
+      ]
+    },
+    {
+      "scene": 66,
+      "image": "Bild_66",
+      "chapter": "Zwei Wege: Blut und Lymphe",
+      "chapter_start": false,
+      "speech_section": "Das ist ein zweites Röhrensystem deines Körpers. Erst in der Nähe des Herzens mündet die Lymphe ins Blut.",
+      "visual_task": "Orientation map: simplified left-facing side silhouette of an adult head and torso in soft cream with the whole digestive tract drawn as one continuous tube; a pale cream lymph route runs from the intestine up through the chest and joins a large vein near the heart; the heart glows softly; the liver stays muted; soft lavender background.",
+      "explanation_visible": "The lymph carries fat up to the chest, where it joins the blood near the heart.",
+      "visual_category": "process_path",
+      "human_framing": "partial_person",
+      "scale_level": "Körper",
+      "motion": "pan-right",
+      "labels_de": [
+        "Herz"
+      ],
+      "labels": [
+        "Herz"
+      ]
+    },
+    {
+      "scene": 67,
+      "image": "Bild_67",
+      "chapter": "Zwei Wege: Blut und Lymphe",
+      "chapter_start": false,
+      "speech_section": "Das Fett aus deiner Pizza umgeht also zunächst die Leber.",
+      "visual_task": "Orientation map: simplified left-facing side silhouette of an adult head and torso in soft cream with the whole digestive tract drawn as one continuous tube; two color-coded routes leave the intestine: a golden route going to the liver and an amber route clearly passing beside the liver upward to the chest; clean and simple.",
+      "explanation_visible": "Sugar and protein visit the liver first; fat goes around it.",
+      "visual_category": "educational_comparison",
+      "human_framing": "partial_person",
+      "scale_level": "Körper",
+      "motion": "static",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 68,
+      "image": "Bild_68",
+      "chapter": "Zwei Wege: Blut und Lymphe",
+      "chapter_start": false,
+      "speech_section": "Über das Blut erreichen die Bausteine schließlich Billionen Zellen.",
+      "visual_task": "Branching red blood vessels spread into a fine network that reaches many different body cells – muscle, skin and nerve cells – each receiving colorful beads; soft coral-and-teal palette.",
+      "explanation_visible": "Blood distributes the building blocks to cells throughout the body.",
+      "visual_category": "process_path",
+      "human_framing": "none",
+      "scale_level": "Gewebe",
+      "motion": "slow-pull-out",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 69,
+      "image": "Bild_69",
+      "chapter": "Zwei Wege: Blut und Lymphe",
+      "chapter_start": false,
+      "speech_section": "Glukose liefert deinen Zellen Energie.",
+      "visual_task": "Macro of a body cell where golden glucose beads enter small bean-shaped energy centers that glow brightly; warm gold-and-teal palette.",
+      "explanation_visible": "Cells use glucose to produce energy.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Zelle",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Energie"
+      ],
+      "labels": [
+        "Energie"
+      ]
+    },
+    {
+      "scene": 70,
+      "image": "Bild_70",
+      "chapter": "Zwei Wege: Blut und Lymphe",
+      "chapter_start": false,
+      "speech_section": "Aminosäuren werden zu neuen Proteinen, zum Beispiel für Muskeln, Enzyme oder Haut.",
+      "visual_task": "Macro: coral amino-acid beads are linked into new protein chains that fold into a muscle fiber strand; coral-and-red palette.",
+      "explanation_visible": "Amino acids are built into new proteins.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Zelle",
+      "motion": "pan-right",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 71,
+      "image": "Bild_71",
+      "chapter": "Zwei Wege: Blut und Lymphe",
+      "chapter_start": false,
+      "speech_section": "Und Fett wird verbrannt, in Zellwände eingebaut oder gespeichert.",
+      "visual_task": "Three small situations in one flowing composition without panel borders: an amber droplet burning as energy in a cell, amber strands built into a cell membrane, and an amber droplet stored inside a round fat cell.",
+      "explanation_visible": "Fat can be used for energy, membranes or storage.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Zelle",
+      "motion": "static",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 72,
+      "image": "Bild_72",
+      "chapter": "Zwei Wege: Blut und Lymphe",
+      "chapter_start": false,
+      "speech_section": "Genau hier wird die Pizza ein Teil von dir.",
+      "visual_task": "Full side silhouette facing left with a soft warm glow spreading through muscles and skin; tiny pizza-colored particles shimmer inside the body; gentle golden light.",
+      "explanation_visible": "The pizza's building blocks have become part of the body.",
+      "visual_category": "process_path",
+      "human_framing": "partial_person",
+      "scale_level": "Körper",
+      "motion": "slow-pull-out",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 73,
+      "image": "Bild_73",
+      "chapter": "Station 5: Der Dickdarm",
+      "chapter_start": true,
+      "speech_section": "Doch nicht alles wird aufgenommen.",
+      "visual_task": "Cutaway of the last loop of the small intestine joining the large intestine: most colorful nutrient beads have left through the wall, while a smaller stream of leftover material continues onward into the wider large intestine; salmon-and-teal palette.",
+      "explanation_visible": "After absorption, only leftovers continue toward the large intestine.",
+      "visual_category": "cutaway",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "slow-pull-out",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 74,
+      "image": "Bild_74",
+      "chapter": "Station 5: Der Dickdarm",
+      "chapter_start": false,
+      "speech_section": "Übrig bleiben Wasser, Ballaststoffe aus der Tomatensoße und abgestorbene Zellen aus der Darmwand.",
+      "visual_task": "Macro at the end of the small intestine: the remaining mixture contains light-blue water droplets, leaf-green fiber strands and a few pale shed cells, moving onward; clean salmon-and-green palette.",
+      "explanation_visible": "Water, fiber and shed cells remain after absorption.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Gewebe",
+      "motion": "pan-left",
+      "labels_de": [
+        "Ballaststoffe"
+      ],
+      "labels": [
+        "Ballaststoffe"
+      ]
+    },
+    {
+      "scene": 75,
+      "image": "Bild_75",
+      "chapter": "Station 5: Der Dickdarm",
+      "chapter_start": false,
+      "speech_section": "Dieser Rest wandert weiter in Station fünf, den Dickdarm. Hier geht es vor allem um Wasser.",
+      "visual_task": "Orientation map: simplified left-facing side silhouette of an adult head and torso in soft cream with the whole digestive tract drawn as one continuous tube; the large intestine glows as a wide frame around the small intestine with blue water droplets highlighted inside; the rest is muted; soft aqua background.",
+      "explanation_visible": "The leftovers move into the large intestine, where water is the focus.",
+      "visual_category": "process_path",
+      "human_framing": "partial_person",
+      "scale_level": "Körper",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Dickdarm"
+      ],
+      "labels": [
+        "Dickdarm"
+      ]
+    },
+    {
+      "scene": 76,
+      "image": "Bild_76",
+      "chapter": "Station 5: Der Dickdarm",
+      "chapter_start": false,
+      "speech_section": "Jeden Tag fließen rund neun Liter Flüssigkeit durch deinen Darm.",
+      "visual_task": "Nine large clear one-liter water bottles lined up in a row next to a simplified digestive tract; bright clean light; no brands and no numbers on the bottles.",
+      "explanation_visible": "About nine liters of fluid pass through the gut each day.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Alltag",
+      "motion": "pan-right",
+      "labels_de": [
+        "9 Liter"
+      ],
+      "labels": [
+        "9 Liter"
+      ]
+    },
+    {
+      "scene": 77,
+      "image": "Bild_77",
+      "chapter": "Station 5: Der Dickdarm",
+      "chapter_start": false,
+      "speech_section": "Das ist nicht nur das, was du trinkst, sondern vor allem Speichel, Magensaft, Galle und Darmsäfte.",
+      "visual_task": "The nine bottles again: only two contain clear drinking water, the other seven contain digestive fluids in different soft colors – clear saliva, pale-yellow gastric juice, golden-green bile and light pancreatic and intestinal juice.",
+      "explanation_visible": "Most of the daily gut fluid comes from the body's own digestive juices.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Alltag",
+      "motion": "static",
+      "labels_de": [
+        "Getränke",
+        "Verdauungssäfte"
+      ],
+      "labels": [
+        "Getränke",
+        "Verdauungssäfte"
+      ]
+    },
+    {
+      "scene": 78,
+      "image": "Bild_78",
+      "chapter": "Station 5: Der Dickdarm",
+      "chapter_start": false,
+      "speech_section": "Fast alles davon holt sich dein Körper zurück.",
+      "visual_task": "Cutaway of the small and large intestine with many light-blue water droplets moving out through the walls into surrounding blood vessels; calm blue-and-coral palette.",
+      "explanation_visible": "Most of the water is reabsorbed through the gut wall.",
+      "visual_category": "process_path",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "pan-left",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 79,
+      "image": "Bild_79",
+      "chapter": "Station 5: Der Dickdarm",
+      "chapter_start": false,
+      "speech_section": "Ausgeschieden werden nur etwa ein bis zwei Deziliter.",
+      "visual_task": "The row of nine large bottles on the left and on the right a single small drinking glass that is only partly filled; strong size contrast; clean light background.",
+      "explanation_visible": "Only a small glass worth of water leaves the body with the stool.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Alltag",
+      "motion": "static",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 80,
+      "image": "Bild_80",
+      "chapter": "Station 5: Der Dickdarm",
+      "chapter_start": false,
+      "speech_section": "Und dann sind da noch die Mitbewohner: etwa achtunddreißig Billionen Bakterien.",
+      "visual_task": "Macro inside the large intestine: a lively, dense community of diverse rounded and rod-shaped microbes in teal, plum and moss green along the mucus layer; no faces, scientific but friendly.",
+      "explanation_visible": "The large intestine is home to an enormous number of bacteria.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Zelle",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Darmbakterien"
+      ],
+      "labels": [
+        "Darmbakterien"
+      ]
+    },
+    {
+      "scene": 81,
+      "image": "Bild_81",
+      "chapter": "Station 5: Der Dickdarm",
+      "chapter_start": false,
+      "speech_section": "Das sind ungefähr so viele, wie dein Körper eigene Zellen hat.",
+      "visual_task": "Elegant balance with two bowls: one filled with tiny colorful microbes, the other with human body cells, mostly small red blood cells; the balance is nearly level; cream background.",
+      "explanation_visible": "Bacteria and body cells are roughly equal in number.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Zelle",
+      "motion": "static",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 82,
+      "image": "Bild_82",
+      "chapter": "Station 5: Der Dickdarm",
+      "chapter_start": false,
+      "speech_section": "Sie machen sich über das her, was deine Enzyme nicht zerlegen konnten: die Ballaststoffe.",
+      "visual_task": "Macro: microbes cluster around leaf-green fiber strands and break them into smaller pieces; busy but clear; moss-and-teal palette.",
+      "explanation_visible": "Bacteria digest the fiber that our own enzymes could not.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Zelle",
+      "motion": "pan-right",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 83,
+      "image": "Bild_83",
+      "chapter": "Station 5: Der Dickdarm",
+      "chapter_start": false,
+      "speech_section": "Daraus stellen sie kurzkettige Fettsäuren her. Eine davon, Butyrat, ist die Lieblingsnahrung deiner Darmzellen.",
+      "visual_task": "Macro: from the broken fiber small bright aqua particles emerge and are taken up by the cells of the large-intestine wall, which glow healthy and warm; teal-and-coral palette.",
+      "explanation_visible": "Bacteria make short-chain fatty acids such as butyrate that feed the gut cells.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Zelle",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Butyrat"
+      ],
+      "labels": [
+        "Butyrat"
+      ]
+    },
+    {
+      "scene": 84,
+      "image": "Bild_84",
+      "chapter": "Station 5: Der Dickdarm",
+      "chapter_start": false,
+      "speech_section": "Als Nebenprodukt entstehen Gase. Ja, auch die gehören zur Verdauung.",
+      "visual_task": "Macro of the microbe community releasing a few round transparent gas bubbles that drift upward through the intestinal content; light, slightly humorous but clean; aqua-and-plum palette.",
+      "explanation_visible": "Gas bubbles form as a natural by-product of fermentation.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Gewebe",
+      "motion": "pan-left",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 85,
+      "image": "Bild_85",
+      "chapter": "Woraus der Rest besteht – und warum er braun ist",
+      "chapter_start": true,
+      "speech_section": "Bleibt die Frage vom Anfang: Was ist eigentlich das, was am Ende übrig bleibt?",
+      "visual_task": "Orientation map: simplified left-facing side silhouette of an adult head and torso in soft cream with the whole digestive tract drawn as one continuous tube; the last section of the large intestine, hidden at the beginning of the video, now lights up with a soft reveal light; teal-to-cream gradient.",
+      "explanation_visible": "The final section of the route is revealed.",
+      "visual_category": "process_path",
+      "human_framing": "partial_person",
+      "scale_level": "Körper",
+      "motion": "slow-push-in",
+      "labels_de": [
+        "Enddarm"
+      ],
+      "labels": [
+        "Enddarm"
+      ]
+    },
+    {
+      "scene": 86,
+      "image": "Bild_86",
+      "chapter": "Woraus der Rest besteht – und warum er braun ist",
+      "chapter_start": false,
+      "speech_section": "Es besteht zu etwa drei Vierteln aus Wasser.",
+      "visual_task": "A clean schematic rounded container divided into four equal parts: three parts light-blue water and one part a soft brown solid portion; simple and tasteful, no realistic stool.",
+      "explanation_visible": "About three quarters of the leftovers is water.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Molekül",
+      "motion": "static",
+      "labels_de": [
+        "Wasser"
+      ],
+      "labels": [
+        "Wasser"
+      ]
+    },
+    {
+      "scene": 87,
+      "image": "Bild_87",
+      "chapter": "Woraus der Rest besteht – und warum er braun ist",
+      "chapter_start": false,
+      "speech_section": "Und vom Rest ist ein großer Teil keine Pizza mehr, sondern Bakterien.",
+      "visual_task": "Magnifying circle over the brown solid portion: inside, countless tiny microbes in teal, plum and moss green between a few fiber strands; clean and scientific.",
+      "explanation_visible": "The solid part consists largely of bacteria.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Zelle",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 88,
+      "image": "Bild_88",
+      "chapter": "Woraus der Rest besteht – und warum er braun ist",
+      "chapter_start": false,
+      "speech_section": "Je nach Studie machen sie ein Viertel bis über die Hälfte der Trockenmasse aus.",
+      "visual_task": "The solid portion shown as a rounded bar divided into segments; a microbe-patterned segment spans between one quarter and more than one half of the bar, shown with a soft range highlight; no numbers.",
+      "explanation_visible": "Bacteria make up a quarter to over half of the dry mass.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Molekül",
+      "motion": "pan-right",
+      "labels_de": [
+        "Bakterien"
+      ],
+      "labels": [
+        "Bakterien"
+      ]
+    },
+    {
+      "scene": 89,
+      "image": "Bild_89",
+      "chapter": "Woraus der Rest besteht – und warum er braun ist",
+      "chapter_start": false,
+      "speech_section": "Und die braune Farbe? Die kommt aus deinem Blut.",
+      "visual_task": "Macro of red blood cells in a vessel; one old, slightly wrinkled red blood cell in the center begins to fall apart; deep red-and-coral palette.",
+      "explanation_visible": "The brown color starts with old red blood cells.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Zelle",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 90,
+      "image": "Bild_90",
+      "chapter": "Woraus der Rest besteht – und warum er braun ist",
+      "chapter_start": false,
+      "speech_section": "Wenn alte rote Blutkörperchen abgebaut werden, entsteht ein gelber Farbstoff, Bilirubin.",
+      "visual_task": "The old red blood cell breaks down and releases small bright yellow pigment particles; a clean red-to-yellow transition from left to right.",
+      "explanation_visible": "Breaking down red blood cells produces the yellow pigment bilirubin.",
+      "visual_category": "macro",
+      "human_framing": "none",
+      "scale_level": "Molekül",
+      "motion": "pan-right",
+      "labels_de": [
+        "Bilirubin"
+      ],
+      "labels": [
+        "Bilirubin"
+      ]
+    },
+    {
+      "scene": 91,
+      "image": "Bild_91",
+      "chapter": "Woraus der Rest besteht – und warum er braun ist",
+      "chapter_start": false,
+      "speech_section": "Die Leber gibt ihn mit der Galle in den Darm.",
+      "visual_task": "Liver, gallbladder and small intestine in one clean side view: yellow pigment particles travel with golden-green bile through the duct into the intestine.",
+      "explanation_visible": "Bilirubin travels with bile into the intestine.",
+      "visual_category": "process_path",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "pan-left",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 92,
+      "image": "Bild_92",
+      "chapter": "Woraus der Rest besteht – und warum er braun ist",
+      "chapter_start": false,
+      "speech_section": "Dort färben Bakterien ihn braun um. Braun ist also ein Abfallprodukt deiner roten Blutkörperchen.",
+      "visual_task": "A simple left-to-right color chain: a red blood cell, then yellow pigment particles, then microbes turning them into brown pigment particles; clean light background.",
+      "explanation_visible": "Bacteria turn the yellow pigment brown – the color comes from old blood cells.",
+      "visual_category": "process_path",
+      "human_framing": "none",
+      "scale_level": "Molekül",
+      "motion": "static",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 93,
+      "image": "Bild_93",
+      "chapter": "Woraus der Rest besteht – und warum er braun ist",
+      "chapter_start": false,
+      "speech_section": "Insgesamt dauert die Reise meistens einen bis drei Tage, je nach Mensch und Mahlzeit.",
+      "visual_task": "Orientation map: simplified left-facing side silhouette of an adult head and torso in soft cream with the whole digestive tract drawn as one continuous tube glowing in sequence along the full route; above it a soft arc of three sun-and-moon cycles without numbers; calm gradient from day to night colors.",
+      "explanation_visible": "The whole journey takes about one to three days.",
+      "visual_category": "process_path",
+      "human_framing": "partial_person",
+      "scale_level": "Körper",
+      "motion": "slow-pull-out",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 94,
+      "image": "Bild_94",
+      "chapter": "Die ganze Reise in 30 Sekunden",
+      "chapter_start": true,
+      "speech_section": "Fassen wir zusammen: Im Mund wird zerkleinert, im Magen gemischt und angesäuert.",
+      "visual_task": "Mouth and stomach connected by the esophagus in one clean flowing composition: teeth crushing a bite on the left, the churning coral stomach with acid bubbles on the right; peach-and-coral palette.",
+      "explanation_visible": "Summary of the first stations: chewing and stomach mixing.",
+      "visual_category": "process_path",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "pan-right",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 95,
+      "image": "Bild_95",
+      "chapter": "Die ganze Reise in 30 Sekunden",
+      "chapter_start": false,
+      "speech_section": "Im Dünndarm wird zerlegt und aufgenommen. Blut, Lymphe und Leber verteilen die Bausteine.",
+      "visual_task": "Small-intestine hero image: villi in the foreground absorbing colorful beads, red blood vessels and a pale lymph vessel leading away, the liver softly visible in the background.",
+      "explanation_visible": "Summary: absorption in the small intestine and distribution by blood, lymph and liver.",
+      "visual_category": "process_path",
+      "human_framing": "none",
+      "scale_level": "Gewebe",
+      "motion": "pan-left",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 96,
+      "image": "Bild_96",
+      "chapter": "Die ganze Reise in 30 Sekunden",
+      "chapter_start": false,
+      "speech_section": "Und im Dickdarm holen sich Körper und Bakterien den Rest.",
+      "visual_task": "Large-intestine hero image: water droplets returning into the wall, microbes processing green fiber, the content becoming firmer as it moves on; teal-and-plum palette.",
+      "explanation_visible": "Summary: the large intestine recovers water while bacteria use the leftovers.",
+      "visual_category": "cutaway",
+      "human_framing": "none",
+      "scale_level": "Organ",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 97,
+      "image": "Bild_97",
+      "chapter": "Die ganze Reise in 30 Sekunden",
+      "chapter_start": false,
+      "speech_section": "Aus einem Stück Pizza wird so Energie, Baumaterial und ein bisschen von dir selbst.",
+      "visual_task": "Closing scale transition: a pizza slice on the left dissolves into a stream of golden, coral and amber particles that flow into a glowing side silhouette of a person on the right; warm golden light.",
+      "explanation_visible": "The pizza turns into energy, building material and body tissue.",
+      "visual_category": "process_path",
+      "human_framing": "partial_person",
+      "scale_level": "Körper",
+      "motion": "slow-pull-out",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 98,
+      "image": "Bild_98",
+      "chapter": "Die ganze Reise in 30 Sekunden",
+      "chapter_start": false,
+      "speech_section": "Bleibt nur eine Frage: Warum hast du oft schon bald wieder Hunger, obwohl die Pizza noch unterwegs ist?",
+      "visual_task": "Side silhouette facing left: the pizza bite is still visible far down in the large intestine, yet the stomach glows with a small warm-orange hunger signal and a thin orange line rises to the brain; peach background.",
+      "explanation_visible": "Hunger returns although food is still in the gut – the bridge to the companion video.",
+      "visual_category": "mechanism",
+      "human_framing": "partial_person",
+      "scale_level": "Körper",
+      "motion": "pan-right",
+      "labels_de": [],
+      "labels": []
+    },
+    {
+      "scene": 99,
+      "image": "Bild_99",
+      "chapter": "Die ganze Reise in 30 Sekunden",
+      "chapter_start": false,
+      "speech_section": "Genau das klären wir in unserem Video über Hunger.",
+      "visual_task": "Teaser image: an elegant balance with a small croissant in one bowl and a heap of boiled potatoes in the other, softly spotlighted, with an orange and a turquoise glow behind them; no text.",
+      "explanation_visible": "Teaser for the companion hunger video.",
+      "visual_category": "educational_comparison",
+      "human_framing": "none",
+      "scale_level": "Lebensmittel",
+      "motion": "slow-push-in",
+      "labels_de": [],
+      "labels": []
+    }
+  ]
+}
