@@ -23,6 +23,7 @@ import re
 from pathlib import Path
 from urllib.parse import quote
 from improvement_loop import check_next
+from script_quality import check_project as check_script_quality, ScriptQualityError
 from visual_storyboard_gate import check_visual_mix, VisualMixError
 
 IMAGE_ID_RE = re.compile(r"^Bild_\d{2,}$")
@@ -39,6 +40,12 @@ WEAK_OPENING_PREFIXES = (
 )
 MAX_NORMAL_LABELS = 2
 MAX_LABEL_WORDS = 3
+ALLOWED_MOTIONS = {"static", "slow-push-in", "slow-pull-out", "pan-left", "pan-right"}
+
+
+def is_new_video(project: Path) -> bool:
+    match = re.match(r"^(\d{3})-", project.name)
+    return bool(match) and int(match.group(1)) >= 11
 
 
 def fail(message: str) -> None:
@@ -575,6 +582,15 @@ def main() -> None:
         except (VisualMixError, FileNotFoundError, UnicodeError) as exc:
             fail(f"Neue Bildregie: {exc}")
         print(f"ILLUSTRATION-FIRST: {visual_status}")
+        if is_new_video(project):
+            # 010 shipped 24 motion names the renderer does not know; catch that in Phase 1, not at render time.
+            bad = sorted({str(s.get("motion")) for s in load_json(scene_plan).get("scenes", []) if s.get("motion") not in ALLOWED_MOTIONS})
+            if bad:
+                fail(f"phase1-scenes.json: unbekannte Kamerabewegungen {bad}; erlaubt sind {sorted(ALLOWED_MOTIONS)}")
+    try:
+        print(f"SKRIPT-QUALITÄT: {check_script_quality(project)}")
+    except (ScriptQualityError, ValueError) as exc:
+        fail(f"Skript-Qualität: {exc}")
     print_phase1_tablet_links(project)
     if args.phase2:
         validate_phase2(project, expected)
