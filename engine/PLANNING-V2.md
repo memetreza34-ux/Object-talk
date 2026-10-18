@@ -260,4 +260,4 @@ Analyse 10/2026: Die Planungsdateien von 010 wurden mechanisch befüllt. `visual
 5. Danach **nur** `python tools/build_phase1_package.py youtube-videos/VIDEO` ausführen. Skript, Flow-Prompt, phase1-scenes, sentence-visual-plan, label-plan, Caption-Entwurf und Antigravity-Auftrag werden erzeugt. Abgeleitete Dateien nie von Hand ändern.
 6. Danach `python tools/validate_planning_v2.py youtube-videos/VIDEO` (inkl. Bildregie-, Bewegungs- und Skriptqualitäts-Gate).
 
-Referenzbeispiele: `youtube-videos/011-longform-hunger-v2/` und `youtube-videos/012-longform-verdauung-v2/`.
+Referenzbeispiele (nur Vorlage, keine Produktion): `examples/storyboard-v2/901-beispiel-hunger/` und `examples/storyboard-v2/902-beispiel-verdauung/`.

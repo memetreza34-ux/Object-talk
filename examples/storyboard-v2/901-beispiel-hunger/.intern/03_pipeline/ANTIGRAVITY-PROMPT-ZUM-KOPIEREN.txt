@@ -1,6 +1,6 @@
-ANTIGRAVITY-AUFTRAG – PHASE 3 – 011-longform-hunger-v2
+ANTIGRAVITY-AUFTRAG – PHASE 3 – 901-beispiel-hunger
 
-Projekt: youtube-videos/011-longform-hunger-v2/
+Projekt: examples/storyboard-v2/901-beispiel-hunger/
 Ziel: finales YouTube-Video aus Voice + 94 akzeptierten Google-Flow-Bildern. Skript, Bildreihenfolge und Szenengrenzen NICHT kreativ verändern.
 
 VORAUSSETZUNGEN (vom Nutzer abgelegt)
@@ -9,11 +9,11 @@ VORAUSSETZUNGEN (vom Nutzer abgelegt)
 - Gewähltes Cover als 03_export/COVER.png (NICHT Teil des Videos)
 
 ABLAUF
-1. python tools/validate_planning_v2.py youtube-videos/011-longform-hunger-v2
-2. python tools/prepare_phase3.py youtube-videos/011-longform-hunger-v2
+1. python tools/validate_planning_v2.py examples/storyboard-v2/901-beispiel-hunger
+2. python tools/prepare_phase3.py examples/storyboard-v2/901-beispiel-hunger
    (Voice 1.10x + Pausenkompression → ZIP-Import → Asset-Check → Whisper-Ausrichtung → timeline.json → Untertitel → Kapitel → Renderer-Runtime)
 3. Bild-QA aller 94 Bilder in .intern/05_info/image-review.json eintragen (nur echte Sichtprüfung), dann
-   python tools/validate_planning_v2.py youtube-videos/011-longform-hunger-v2 --phase2
+   python tools/validate_planning_v2.py examples/storyboard-v2/901-beispiel-hunger --phase2
 4. Rendern in renderer/ (1920x1080, 30 fps, h264/aac); danach python tools/qa_final.py <MP4> 01_script/audio/final-voiceover.wav
 5. Video komplett ansehen. Verbesserungsbericht nach engine/CONTINUOUS-IMPROVEMENT.md in .intern/05_info/improvement-review.json.
 

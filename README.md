@@ -17,11 +17,9 @@ Standard:
 
 Die interne Testphase `000–007` ist abgeschlossen.
 
-Aktive Produktion (Stand 18.10.2026): die Neuauflagen
-- `youtube-videos/011-longform-hunger-v2/` – **Warum du kurz nach dem Essen schon wieder Hunger hast**
-- `youtube-videos/012-longform-verdauung-v2/` – **Die Reise einer Pizza durch deinen Körper**
+Aktive Produktion (Stand 18.10.2026): **keine**. Das nächste neue Thema wird Video 011 und entsteht mit dem neuen Ablauf unten. Veröffentlichte Videos (z. B. 008, 010) werden nicht neu aufgelegt.
 
-Status: **Phase 1 PASS, Medien ausstehend**. Hintergrund und Diagnose: `engine/KANAL-ANALYSE-2026-10.md`. Offen: Die formale Lernrunde zum gerenderten Video 010 ist nicht registriert (MP4 nicht im Repo), siehe `PROJECT_STATE.md`.
+Musterbeispiele für den neuen Ablauf (nur Vorlage, keine Produktion): `examples/storyboard-v2/901-beispiel-hunger/` und `examples/storyboard-v2/902-beispiel-verdauung/`. Hintergrund und Diagnose: `engine/KANAL-ANALYSE-2026-10.md`. Offen: Die formale Lernrunde zum gerenderten Video 010 ist nicht registriert (MP4 nicht im Repo), siehe `PROJECT_STATE.md`.
 
 Ab Video 011 entsteht jede Produktion aus einer einzigen Storyboard-Datei:
 `.intern/05_info/storyboard-source.json` → `python tools/build_phase1_package.py youtube-videos/VIDEO` → `python tools/validate_planning_v2.py youtube-videos/VIDEO`.

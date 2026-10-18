@@ -25,10 +25,11 @@ Diese Datei ist der Bootstrap fuer ChatGPT, Antigravity, Codex und andere Reposi
 
 1. Projekt anlegen: `python tools/create_video.py NNN-longform-thema`
 2. Recherche, `claim-matrix.md`, `mechanism-map.md` in `.intern/05_info/` schreiben (jede Zahl im Skript belegen).
-3. **Nur** `.intern/05_info/storyboard-source.json` (format `storyboard-v2`) schreiben: Sprechtext pro Bild, Bildart, Komposition, Labels, Kapitel, Open Loops, Titel/Cover, Farbcode. Vorbilder: `youtube-videos/011-longform-hunger-v2/`, `youtube-videos/012-longform-verdauung-v2/`.
+3. **Nur** `.intern/05_info/storyboard-source.json` (format `storyboard-v2`) schreiben: Sprechtext pro Bild, Bildart, Komposition, Labels, Kapitel, Open Loops, Titel/Cover, Farbcode. Vorbilder (nur Vorlage, nie produzieren): `examples/storyboard-v2/901-beispiel-hunger/`, `examples/storyboard-v2/902-beispiel-verdauung/`.
 4. `python tools/build_phase1_package.py youtube-videos/NNN-...` erzeugt Skript, Flow-Prompt, alle Pläne, Caption-Entwurf und Antigravity-Auftrag. Abgeleitete Dateien nie von Hand ändern.
 5. `python tools/validate_planning_v2.py youtube-videos/NNN-...` muss PASS sein (Bildregie, Kamerabewegungen, Skriptqualität: Zahlen, Fragen, Absicherungen, Open Loops, Szenendauer).
-6. Skripte sind **unterhaltsam und konkret**: Experiment- oder Paradox-Hook, nummerierte Stationen/Gründe, belegte Zahlen, höchstens ein Gesundheitshinweis, Brücke zum Partnervideo. Kanalname für Zuschauer: **Lebenslogik**.
+6. Skripte sind **unterhaltsam und konkret**: Experiment- oder Paradox-Hook, nummerierte Stationen/Gründe, belegte Zahlen, höchstens ein Gesundheitshinweis, Brücke zu einem bereits veröffentlichten Partnervideo. Kanalname für Zuschauer: **Lebenslogik**.
+7. **Keine Neuauflagen:** Bereits veröffentlichte Videos (z. B. 008 Verdauung, 010 Hunger) werden weder neu aufgelegt noch neu gerendert, außer der Nutzer verlangt das ausdrücklich. Bessere Ergebnisse entstehen über neue Themen mit den neuen Regeln.
 
 Aktive Produktion steht in `PROJECT_STATE.md`.
 
@@ -58,7 +59,7 @@ Nicht reaktivieren:
 
 Video 010 wurde vom Nutzer für das Skript gelobt, die Bilder jedoch als zu häufig personenlastig und erklärungsschwach kritisiert. **Ab Video 011 zuerst die sichtbare Wissenschaft gestalten:** dominierende Makro-/Organ-/Gewebe-/Lebensmittel-Innenansichten, Cutaways, Funktionswege und verständliche Vergleiche. Mehr harmonische Farben, klarere bildfüllende Illustrator-Kompositionen. Ganzer Mensch nur mit echtem Lernzweck, keine redundanten Küchen-/Einkaufsposen. Vorgaben und Mixprüfung stehen in `bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md` und `engine/PLANNING-V2.md`. Skript deshalb nicht ungefragt umschreiben, nicht bereits gerenderte Videos verändern.
 
-**Update 18.10.2026:** Der Nutzer hat ausdrücklich deutlich bessere, unterhaltsamere Skripte, passendere Bilder und bessere Titel verlangt. Umgesetzt als Neuauflagen 011 (Hunger) und 012 (Verdauung/Pizza). Die alten Ordner 008/010 bleiben unverändert. Für neue Skripte gilt `engine/SCRIPT-STANDARD.md` §13.
+**Update 18.10.2026:** Der Nutzer hat ausdrücklich deutlich bessere, unterhaltsamere Skripte, passendere Bilder und bessere Titel verlangt. Umgesetzt als Regeln und Werkzeuge für **zukünftige** Videos, dazu zwei Musterbeispiele unter `examples/storyboard-v2/`. Der Nutzer hat klargestellt: 008 und 010 sind veröffentlicht und werden nicht neu gemacht. Für neue Skripte gilt `engine/SCRIPT-STANDARD.md` §13.
 
 ## Bildprinzip
 

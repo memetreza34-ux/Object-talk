@@ -17,7 +17,7 @@ jobs:
         run: python -m compileall -q tools/improvement_loop.py tools/validate_planning_v2.py tools/create_video.py tools/visual_storyboard_gate.py tools/script_quality.py tools/build_phase1_package.py tools/export_chapters.py tools/text_normalize.py
       - name: Run all tool tests
         run: python -m unittest discover -s tools/tests -p 'test_*.py' -v
-      - name: Validate active Phase-1 packages
+      - name: Validate storyboard-v2 examples (reference only, not produced)
         run: |
-          python tools/validate_planning_v2.py youtube-videos/011-longform-hunger-v2
-          python tools/validate_planning_v2.py youtube-videos/012-longform-verdauung-v2
+          python tools/validate_planning_v2.py examples/storyboard-v2/901-beispiel-hunger
+          python tools/validate_planning_v2.py examples/storyboard-v2/902-beispiel-verdauung

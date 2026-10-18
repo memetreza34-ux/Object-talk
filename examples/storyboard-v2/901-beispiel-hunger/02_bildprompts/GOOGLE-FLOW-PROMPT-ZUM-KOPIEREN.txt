@@ -1,4 +1,4 @@
-LEBENSLOGIK | 011-longform-hunger-v2 | ONE COMPLETE GOOGLE FLOW PROMPT (text only, no uploads)
+LEBENSLOGIK | 901-beispiel-hunger | ONE COMPLETE GOOGLE FLOW PROMPT (text only, no uploads)
 
 German YouTube explainer: Warum du kurz nach dem Essen schon wieder Hunger hast
 Generate still images only, 16:9. The file names below (Bild_XX.png) are INTERNAL production metadata for saving only. NEVER render production metadata, file names, image or scene numbers, these instructions or any English words visibly in an image.

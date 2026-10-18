@@ -2,33 +2,26 @@
 
 Letzte Aktualisierung: 18.10.2026
 
-## AKTIVE PRODUKTION – NEUAUFLAGEN 011 UND 012 (Nutzerwunsch 18.10.2026)
+## AKTIVE PRODUKTION – KEINE (Stand 18.10.2026)
 
-Der Nutzer wünscht deutlich unterhaltsamere Skripte, passendere Bilder sowie bessere Titel und Cover. Die alten Videos 008 und 010 bleiben unverändert. Die Neuauflagen sind eigene Projekte nach den neuen Regeln (`engine/KANAL-ANALYSE-2026-10.md`).
+Das nächste neue Thema wird Video 011 und entsteht mit dem neuen Ablauf (`AGENTS.md`, „Arbeitsweise ab Video 011“). Bereits veröffentlichte Videos (008 Verdauung, 009 Schlaf, 010 Hunger) werden nicht neu aufgelegt, außer der Nutzer verlangt das ausdrücklich.
 
-| Projekt | Titel | Cover-Text | Bilder | Wörter | Status |
-|---|---|---|---:|---:|---|
-| `youtube-videos/011-longform-hunger-v2/` | Warum du kurz nach dem Essen schon wieder Hunger hast | Hunger trotz Essen? | 94 | 1095 | Phase 1 PASS, Medien ausstehend |
-| `youtube-videos/012-longform-verdauung-v2/` | Die Reise einer Pizza durch deinen Körper | Wohin verschwindet sie? | 99 | 1144 | Phase 1 PASS, Medien ausstehend |
+Verbesserungen vom 18.10.2026 (gelten für alle zukünftigen Videos; Diagnose in `engine/KANAL-ANALYSE-2026-10.md`):
+- Skript: `engine/SCRIPT-STANDARD.md` §13 und Gate `tools/script_quality.py` (Zahlen, Fragen, Absicherungen, Open Loops, Sprechzeit pro Bild).
+- Bilder: Farbcode, Leitmotiv und Orientierungskarte (`bildwelt/BIOLOGY-ILLUSTRATION-WORLD.md`), Prüfung der Kamerabewegungen.
+- Titel und Cover: `engine/TITEL-THUMBNAIL-STANDARD.md`.
+- Eine Quelle: `.intern/05_info/storyboard-source.json` → `python tools/build_phase1_package.py` erzeugt alle Phase-1-Dateien.
+- Untertitel-Abgleich versteht Zahlen (`tools/text_normalize.py`); YouTube-Kapitel kommen aus der echten Timeline (`tools/export_chapters.py`).
 
-**Offen und bewusst benannt:** Die formale Lernrunde für das gerenderte Video 010 (`tools/improvement_loop.py register`) ist nicht registriert, weil die MP4 nicht im Repository liegt und keine vollständige Sichtung stattfand. Phase 1 von 011/012 entstand auf ausdrücklichen Nutzerauftrag; die Lehren stammen aus `engine/KANAL-ANALYSE-2026-10.md` (Skript- und Planungsanalyse, 21 Nutzer-Standbilder zu 010) und sind als dauerhafte Lessons im Ledger hinterlegt. Vor der Bilderzeugung wurden beide Pakete unabhängig gegengeprüft; 39 bestätigte Punkte sind behoben.
+Musterbeispiele (nur Vorlage, keine Produktion, keine Handoff-Links): `examples/storyboard-v2/901-beispiel-hunger/` und `examples/storyboard-v2/902-beispiel-verdauung/`.
 
-- Quelle für alles: `.intern/05_info/storyboard-source.json` → `python tools/build_phase1_package.py`.
-- Geschätzte Länge nach 1,10x-Voice: ca. 6:15–7:00 pro Video (an 010 geeicht, nicht gemessen).
-- Beide Videos verweisen am Ende aufeinander (Endscreen verlinken).
-- Nächster Schritt je Video: Flow-Prompt einfügen → drei Cover → Wahl → Bilder in Fünfergruppen → Voice → `tools/prepare_phase3.py` → Render → echte Sichtung → `improvement-review.json`.
+**Offen und bewusst benannt:** Die formale Lernrunde für das gerenderte Video 010 (`tools/improvement_loop.py register`) ist nicht registriert, weil die MP4 nicht im Repository liegt und keine vollständige Sichtung stattfand. Die Lehren aus `engine/KANAL-ANALYSE-2026-10.md` (Skript- und Planungsanalyse, 21 Nutzer-Standbilder zu 010) sind als dauerhafte Lessons im Ledger hinterlegt.
 
-**Handoff-Links 011:**
-[Google-Flow-Prompt öffnen](https://github.com/memetreza34-ux/Object-talk/blob/main/youtube-videos/011-longform-hunger-v2/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt) · [Voice-over-Skript öffnen](https://github.com/memetreza34-ux/Object-talk/blob/main/youtube-videos/011-longform-hunger-v2/01_script/script.txt)
-
-**Handoff-Links 012:**
-[Google-Flow-Prompt öffnen](https://github.com/memetreza34-ux/Object-talk/blob/main/youtube-videos/012-longform-verdauung-v2/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt) · [Voice-over-Skript öffnen](https://github.com/memetreza34-ux/Object-talk/blob/main/youtube-videos/012-longform-verdauung-v2/01_script/script.txt)
-
-(Die Links funktionieren, sobald der Branch nach `main` übernommen wurde.)
+Nächster Schritt: neues Thema in `THEMEN-GEHIRN.md` wählen → `python tools/create_video.py 011-longform-THEMA` → Recherche und Storyboard → `build_phase1_package.py` → `validate_planning_v2.py` PASS → zwei Handoff-Links.
 
 ## Vorherige Produktion – VIDEO 010 (historisch, unverändert)
 
-`youtube-videos/010-longform-hunger/`, gerendert und vom Nutzer hochgeladen (368,9 s). Bekannte Schwächen siehe `engine/KANAL-ANALYSE-2026-10.md`. Die Planungsdateien enthalten 24 ungültige Kamerabewegungen. Ein erneuter Render von 010 ist nicht vorgesehen, stattdessen 011.
+`youtube-videos/010-longform-hunger/`, gerendert und vom Nutzer hochgeladen (368,9 s). Bekannte Schwächen siehe `engine/KANAL-ANALYSE-2026-10.md`. Die Planungsdateien enthalten 24 ungültige Kamerabewegungen. Ein erneuter Render oder eine Neuauflage von 010 ist nicht vorgesehen.
 
 ## Bisherige Produktionsnotizen / Video 009
 
@@ -68,7 +61,7 @@ Das freigegebene erste Longform-Video 008 ist für 009 das strukturelle und visu
 
 `youtube-videos/008-longform-verdauung/` ist das vorherige Longform-Thema. Der Nutzer hat einen gerenderten Film zur Besprechung bereitgestellt. Im GitHub-Repo ist die finale Master-MP4 samt echten Zeitdaten noch nicht als geprüftes Exportpaket abgelegt. Nicht fälschlich als repo-seitig YouTube-ready deklarieren.
 
-## Nächster Produktionsschritt (historisch, Video 009 – aktuell gilt die 011/012-Tabelle oben)
+## Nächster Produktionsschritt (historisch, Video 009 – aktuell gilt der Abschnitt oben)
 
 1. `python tools/validate_planning_v2.py youtube-videos/009-longform-schlaf`
 2. Finale Voice aufnehmen/generieren und Laufzeit prüfen.
@@ -84,7 +77,7 @@ Pilotphase 000–007 abgeschlossen; Bildwelt: **Clean Animated Biology Illustrat
 ## Produktionsentscheidung: keine Bildvorlagen (10.10.2026)
 Wie beim erfolgreichen Verdauungsvideo 008 wird Google Flow **ausschließlich mit einem vollständigen Textprompt** bedient. Keine externen Stilbilder, 008-Frame-ZIP-Dateien oder Cover-als-Referenz. Erst genau drei separate Cover erstellen, Auswahl abwarten, dann Szenen 02–77 in Fünfergruppen. Die bekannte organisch-illustrative Bildwelt ist im Prompt positiv beschrieben. Bild-QA bleibt Pflicht; eine exakte Reproduktion ist mit generativer KI nicht garantiert.
 
-## Tablet-Handoff nach Phase 1 (dauerhaft; Beispiel-Links unten stammen aus Video 009, aktuelle Links stehen oben bei 011/012)
+## Tablet-Handoff nach Phase 1 (dauerhaft; Beispiel-Links unten stammen aus Video 009, beim nächsten Video gibt der Validator die echten Links aus)
 
 Bei jeder abgeschlossenen Phase 1 direkt in der Chat-Antwort zwei anklickbare Dateilinks ausgeben, niemals nur einen Sammellink oder Ordnerpfade:
 

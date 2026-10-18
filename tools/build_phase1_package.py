@@ -31,6 +31,8 @@ from pathlib import Path
 
 from script_quality import THRESHOLDS, estimate_seconds
 
+ROOT = Path(__file__).resolve().parents[1]
+
 MAX_SCENE_SECONDS_ESTIMATE = THRESHOLDS["max_scene_seconds_estimate"]
 CATEGORIES = {
     "mechanism", "cutaway", "macro", "educational_comparison", "food_structure",
@@ -374,11 +376,18 @@ def build_options_md(sb: dict) -> str:
     return "\n".join(out) + "\n"
 
 
-def build_antigravity(sb: dict, n: int) -> str:
+def repo_relative(project: Path) -> str:
+    try:
+        return project.resolve().relative_to(ROOT).as_posix()
+    except ValueError:
+        return project.as_posix()
+
+
+def build_antigravity(sb: dict, n: int, rel: str) -> str:
     vid = sb["video_id"]
     return f"""ANTIGRAVITY-AUFTRAG – PHASE 3 – {vid}
 
-Projekt: youtube-videos/{vid}/
+Projekt: {rel}/
 Ziel: finales YouTube-Video aus Voice + {n} akzeptierten Google-Flow-Bildern. Skript, Bildreihenfolge und Szenengrenzen NICHT kreativ verändern.
 
 VORAUSSETZUNGEN (vom Nutzer abgelegt)
@@ -387,11 +396,11 @@ VORAUSSETZUNGEN (vom Nutzer abgelegt)
 - Gewähltes Cover als 03_export/COVER.png (NICHT Teil des Videos)
 
 ABLAUF
-1. python tools/validate_planning_v2.py youtube-videos/{vid}
-2. python tools/prepare_phase3.py youtube-videos/{vid}
+1. python tools/validate_planning_v2.py {rel}
+2. python tools/prepare_phase3.py {rel}
    (Voice 1.10x + Pausenkompression → ZIP-Import → Asset-Check → Whisper-Ausrichtung → timeline.json → Untertitel → Kapitel → Renderer-Runtime)
 3. Bild-QA aller {n} Bilder in .intern/05_info/image-review.json eintragen (nur echte Sichtprüfung), dann
-   python tools/validate_planning_v2.py youtube-videos/{vid} --phase2
+   python tools/validate_planning_v2.py {rel} --phase2
 4. Rendern in renderer/ (1920x1080, 30 fps, h264/aac); danach python tools/qa_final.py <MP4> 01_script/audio/final-voiceover.wav
 5. Video komplett ansehen. Verbesserungsbericht nach engine/CONTINUOUS-IMPROVEMENT.md in .intern/05_info/improvement-review.json.
 
@@ -449,7 +458,7 @@ def build(project: Path) -> str:
     write(info / "sentence-visual-plan.json", json.dumps(build_sentence_plan(pairs), ensure_ascii=False, indent=2) + "\n")
     write(info / "label-plan.json", json.dumps(build_label_plan(pairs), ensure_ascii=False, indent=2) + "\n")
     write(info / "TITEL-UND-COVER-OPTIONEN.md", build_options_md(sb))
-    write(project / ".intern" / "03_pipeline" / "ANTIGRAVITY-PROMPT-ZUM-KOPIEREN.txt", build_antigravity(sb, len(pairs)))
+    write(project / ".intern" / "03_pipeline" / "ANTIGRAVITY-PROMPT-ZUM-KOPIEREN.txt", build_antigravity(sb, len(pairs), repo_relative(project)))
     for stale in ("Antigravity-Prompt.md", "pipeline.md"):  # template leftovers that contradict the generated brief
         if (project / ".intern" / "03_pipeline" / stale).is_file():
             write(project / ".intern" / "03_pipeline" / stale, STALE_TEMPLATE_NOTE)

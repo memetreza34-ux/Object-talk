@@ -1,4 +1,4 @@
-# Titel- und Coveroptionen – 012-longform-verdauung-v2
+# Titel- und Coveroptionen – 902-beispiel-verdauung
 
 **Empfohlener YouTube-Titel:** Die Reise einer Pizza durch deinen Körper
 

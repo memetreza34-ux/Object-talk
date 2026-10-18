@@ -55,6 +55,8 @@ class BuildPackageTests(unittest.TestCase):
         self.assertIn("Bild_24.png", prompt)
         plan = json.loads((project / ".intern" / "05_info" / "sentence-visual-plan.json").read_text(encoding="utf-8"))
         self.assertEqual(plan["items"][0]["function"], "hook")
+        brief = (project / ".intern" / "03_pipeline" / "ANTIGRAVITY-PROMPT-ZUM-KOPIEREN.txt").read_text(encoding="utf-8")
+        self.assertIn(f"prepare_phase3.py {project.as_posix()}", brief)  # real path, never a guessed youtube-videos/ path
 
     def test_invalid_motion_and_overlong_scene_fail(self):
         scenes = [scene(i) for i in range(1, 25)]
@@ -67,7 +69,7 @@ class BuildPackageTests(unittest.TestCase):
 
     def test_video_id_must_match_folder(self):
         sb = storyboard([scene(i) for i in range(1, 25)])
-        sb["video_id"] = "011-longform-hunger-v2"
+        sb["video_id"] = "098-anderes-video"
         with self.assertRaises(StoryboardError) as ctx:
             build(self.make(sb))
         self.assertIn("Ordnernamen", str(ctx.exception))

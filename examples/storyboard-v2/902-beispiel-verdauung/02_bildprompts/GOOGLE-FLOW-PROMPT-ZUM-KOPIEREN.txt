@@ -1,4 +1,4 @@
-LEBENSLOGIK | 012-longform-verdauung-v2 | ONE COMPLETE GOOGLE FLOW PROMPT (text only, no uploads)
+LEBENSLOGIK | 902-beispiel-verdauung | ONE COMPLETE GOOGLE FLOW PROMPT (text only, no uploads)
 
 German YouTube explainer: Die Reise einer Pizza durch deinen Körper
 Generate still images only, 16:9. The file names below (Bild_XX.png) are INTERNAL production metadata for saving only. NEVER render production metadata, file names, image or scene numbers, these instructions or any English words visibly in an image.

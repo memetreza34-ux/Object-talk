@@ -84,7 +84,7 @@ Für reguläre 6–7-Minuten-Videos gilt `engine/LONGFORM-008-MASTERSTANDARD.md`
 
 ## Aktive Produktion
 
-Siehe `PROJECT_STATE.md`. Stand 18.10.2026: Neuauflagen `youtube-videos/011-longform-hunger-v2/` und `youtube-videos/012-longform-verdauung-v2/` (Phase 1 PASS, Medien ausstehend). Ab Video 011 entsteht jede Produktion aus `.intern/05_info/storyboard-source.json` mit `tools/build_phase1_package.py` (`engine/PLANNING-V2.md` §16). 009 Schlaf ist eine frühere Produktion.
+Siehe `PROJECT_STATE.md`. Stand 18.10.2026: keine aktive Produktion; das nächste neue Thema wird Video 011. Musterbeispiele für den neuen Ablauf: `examples/storyboard-v2/901-beispiel-hunger/` und `examples/storyboard-v2/902-beispiel-verdauung/` (nur Vorlage). Ab Video 011 entsteht jede Produktion aus `.intern/05_info/storyboard-source.json` mit `tools/build_phase1_package.py` (`engine/PLANNING-V2.md` §16). 009 Schlaf ist eine frühere Produktion.
 
 ## Produktionsablauf
 

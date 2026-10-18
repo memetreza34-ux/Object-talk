@@ -220,7 +220,7 @@ Ergebnis der Kanal-Analyse 10/2026 (`engine/KANAL-ANALYSE-2026-10.md`): 008–01
 | Open Loop | mindestens 1, Auflösung mindestens 15 Szenen später | hält Zuschauer bis zur Auflösung |
 | Sprechtext pro Bild | höchstens 19 Wörter und geschätzt höchstens 6,3 s | kein Standbild über 7 s |
 
-### Bauplan, der bei 011/012 funktioniert hat
+### Bauplan (umgesetzt in den Musterbeispielen unter `examples/storyboard-v2/`)
 
 1. **Cold Open in 3 Bildern (unter 10 s):** konkretes Objekt + überraschende Konsequenz („Du isst ein Croissant. Kurz darauf knurrt dein Magen schon wieder.“). Keine erfundenen Zeitangaben, auch nicht im Einstieg.
 2. **Paradox oder Experiment sofort:** echte Studie als Mini-Geschichte („In einem Experiment schnitten Kartoffeln fast siebenmal besser ab …“).
@@ -230,7 +230,7 @@ Ergebnis der Kanal-Analyse 10/2026 (`engine/KANAL-ANALYSE-2026-10.md`): 008–01
 6. **Alle 45–75 Sekunden ein Re-Hook:** Mythos-Korrektur („Lange stand in Lehrbüchern … 2014 wurde nachgemessen“), Mitmach-Test („Kau ein Stück Brot sehr lange“), Alltagsbezug („GLP-1 kennst du vielleicht aus den Nachrichten“), Frage („Aber warum verdaut sich der Magen nicht selbst?“).
 7. **Studien richtig erzählen:** „In einem Versuch aßen Teilnehmer …“ + Kernergebnis + bei Bedarf **eine** kurze Einordnung. Zahlen ausgeschrieben (die Voice spricht sie sauber, `tools/text_normalize.py` gleicht Whisper-Ziffern ab).
 8. **Ein Gesundheitshinweis, an der richtigen Stelle:** einmal klar (z. B. ärztliche Abklärung bei Warnzeichen), der allgemeine Bildungshinweis steht in der Beschreibung.
-9. **Schluss:** Open Loop auflösen → Kernkette in 3 kurzen Sätzen → Brücke zu einem Partnervideo, das als Endscreen verlinkt wird („… siehst du in unserem Video über die Reise einer Pizza“). Kein „Danke fürs Zuschauen“.
+9. **Schluss:** Open Loop auflösen → Kernkette in 3 kurzen Sätzen → Brücke zu einem bereits veröffentlichten Partnervideo, das als Endscreen verlinkt wird („… siehst du in unserem Video über die Verdauung“). Kein „Danke fürs Zuschauen“.
 
 ### Ton
 Neugierig, warm, leicht verschmitzt („Grund Nummer sechs ist vielleicht der gemeinste“, „Ja, auch die gehören zur Verdauung“). Kurze Sätze (Ø unter 14 Wörter), aktive Verben, Du-Ansprache. Wissenschaftlich korrekt heißt nicht vage, sondern präzise.

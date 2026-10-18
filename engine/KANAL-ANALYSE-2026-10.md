@@ -8,7 +8,7 @@ Stand 18.10.2026. Grundlage: komplettes Repository (Regeln, Engine, Tools, alle 
 2. **Die Bilder illustrieren Sätze statt Mechanismen.** In 010 zeigen 34 von 72 Szenen Menschen oder Hände, 32 spielen an Tisch, Küche, Markt oder Café. Nur 21 zeigen Organ, Zelle oder Signalweg.
 3. **Das Regelwerk prüft Format, nicht Wirkung.** Es gibt viele Regeln zu Ordnern, Labels und IDs, aber keine messbare Regel für Unterhaltung oder Zuschauerbindung. Die Planungsdateien von 010 wurden mechanisch befüllt und enthalten Fehler, die das Rendern blockiert hätten.
 4. **Titel und Cover verschenken Neugier.** Der Covertext wiederholt den Titel. 008 und 009 enden auf „… einfach erklärt“. Der Kanalname ist uneinheitlich (Object-Talk, FoodSpricht, Lebenslogik).
-5. **Umgesetzt:** zwei komplett neue Videos (011 Hunger V2, 012 Verdauung V2 „Die Reise einer Pizza“), vier neue Tools mit Tests, neue Pflichtregeln für Skript, Bild und Titel. Die alten Videos bleiben unverändert.
+5. **Umgesetzt:** vier neue Tools mit Tests und neue Pflichtregeln für Skript, Bild und Titel, die für jedes **zukünftige** Video gelten. Dazu kommen zwei vollständige Musterbeispiele (Hunger, Verdauung) unter `examples/storyboard-v2/`. Sie zeigen, wie ein Storyboard nach den neuen Regeln aussieht, und werden nicht produziert. Die veröffentlichten Videos 008 und 010 bleiben unverändert und werden nicht neu aufgelegt.
 
 ## 1. Was gut ist und bleibt
 
@@ -26,8 +26,8 @@ Gemessen mit dem neuen `tools/script_quality.py` (Stand nach Review-Korrekturen;
 | 008 Verdauung | 1111 | **1** | 2 | **20,7** | 0 | 0 |
 | 009 Schlaf | 986 | 4 | 1 | **29,4** | 4 | 0 |
 | 010 Hunger | 1044 | **0** | 5 | **30,7** | **6** | 0 |
-| **011 Hunger V2** | 1095 | **25** | 5 | **12,8** | **0** | **2** |
-| **012 Verdauung V2** | 1144 | **19** | 5 | **1,7** | **0** | **3** |
+| **Musterbeispiel Hunger** | 1095 | **25** | 5 | **12,8** | **0** | **2** |
+| **Musterbeispiel Verdauung** | 1144 | **19** | 5 | **1,7** | **0** | **3** |
 
 ### Konkrete Schwächen
 
@@ -46,7 +46,7 @@ Gemessen mit dem neuen `tools/script_quality.py` (Stand nach Review-Korrekturen;
 
 ## 3. Bilder – Diagnose
 
-- **Personenlastig:** In 010 zeigen 34 von 72 Szenen Menschen oder Hände (47 %) und 32 Szenen Tisch, Küche, Markt, Café oder Schreibtisch. In 011 sind es 14 von 94 Szenen mit Menschen im Alltag, nur als Hände oder Ausschnitt, und null Ganzkörper.
+- **Personenlastig:** In 010 zeigen 34 von 72 Szenen Menschen oder Hände (47 %) und 32 Szenen Tisch, Küche, Markt, Café oder Schreibtisch. Im Musterbeispiel Hunger sind es 14 von 94 Szenen mit Menschen im Alltag, nur als Hände oder Ausschnitt, und null Ganzkörper.
 - **Unpassende oder überladene Motive in 010:**
   - Bild_05 zeigt „Joghurt, Bohnen, Saft, **Schlafkissen**“ auf einer Küchenarbeitsplatte.
   - Bild_16 zeigt zwei Szenen in einem Bild (Hunger und Appetit) und verletzt damit die Regel „eine Idee pro Bild“.
@@ -79,11 +79,11 @@ Quellen: [onlinemarketing.de – Top-10 deutsche Kanäle](https://onlinemarketin
 
 ## 6. Was umgesetzt wurde
 
-### Zwei neue Videos (Phase 1 fertig und validiert)
-- `youtube-videos/011-longform-hunger-v2/` – „Warum du kurz nach dem Essen schon wieder Hunger hast“, Cover „Hunger trotz Essen?“, 94 Bilder, ca. 6:15–6:50 (geschätzt).
-- `youtube-videos/012-longform-verdauung-v2/` – „Die Reise einer Pizza durch deinen Körper“, Cover „Wohin verschwindet sie?“, 99 Bilder, ca. 6:25–7:00 (geschätzt).
+### Zwei Musterbeispiele (validiert, keine Produktion)
+- `examples/storyboard-v2/901-beispiel-hunger/` – Hunger-Thema, 94 Bilder, Titel-/Coverbeispiel „Warum du kurz nach dem Essen schon wieder Hunger hast“ / „Hunger trotz Essen?“.
+- `examples/storyboard-v2/902-beispiel-verdauung/` – Verdauungs-Thema „Die Reise einer Pizza“, 99 Bilder, Coverbeispiel „Wohin verschwindet sie?“.
+- Die Themen sind mit 008 und 010 bereits veröffentlicht, deshalb werden die Beispiele **nicht** produziert. Sie zeigen nur Aufbau, Zahlendichte, Open Loops, Bildregie und Titel nach den neuen Regeln. Der CI-Lauf prüft sie bei jeder Änderung, damit Regeln und Werkzeuge zusammenpassen.
 - Vor dem Pull Request wurden alle Änderungen unabhängig gegengeprüft (fünf Prüfer, ein skeptischer Gegenprüfer). 39 bestätigte Punkte wurden behoben, darunter „Zellwände“ → „Zellmembranen“, ein anatomisch falsch beschriebenes Schluckbild, ein Warnhinweis ohne „ungewollt“ und zu großzügige Zahlenerkennung im Prüfwerkzeug.
-- Beide verweisen am Ende aufeinander (Endscreen). Die Reihenfolge der Veröffentlichung ist egal.
 
 ### Neue Tools (getestet, in CI)
 - `tools/text_normalize.py`: Zahlen werden beim Whisper-Abgleich automatisch erkannt („15“ = „fünfzehn“, „15 %“ = „fünfzehn Prozent“, „2-3“ = „zwei bis drei“, „1.500“ = „tausendfünfhundert“, „GLP-1“ = „GLP eins“); `transcribe_audio.py`, `build_timeline.py` und `validate_phase1.py` nutzen dieselbe Normalisierung.
@@ -101,7 +101,7 @@ Quellen: [onlinemarketing.de – Top-10 deutsche Kanäle](https://onlinemarketin
 
 ## 7. Empfehlungen für die nächsten Schritte
 
-1. **011 und 012 produzieren:** Flow-Prompt einfügen, drei Cover wählen, Voice aufnehmen, Phase 3.
+1. **Nächstes neues Thema mit dem neuen Workflow:** `python tools/create_video.py 011-longform-THEMA`, Storyboard nach dem Vorbild der Musterbeispiele schreiben, `build_phase1_package.py`, Validator PASS, dann Flow, Voice und Phase 3. Am Ende auf ein bereits veröffentlichtes Video (z. B. 008 oder 010) als Endscreen verweisen.
 2. **Cover-Test:** Die zwei nicht gewählten Cover behalten und mit YouTube „Testen und vergleichen“ gegen das Hauptcover laufen lassen, sobald die Funktion im Kanal verfügbar ist.
 3. **Nach 7 Tagen messen:** CTR, durchschnittliche Wiedergabedauer, Retention bei 0:30 und 1:00. Diese Werte zusammen mit einer echten Sichtung in `.intern/05_info/improvement-review.json` eintragen und mit `tools/improvement_loop.py register` registrieren.
 4. **Shorts als Zubringer** (Idee, noch nicht umgesetzt; braucht ein 9:16-Format in der Pipeline): Aus jedem Longform lassen sich 2–3 Shorts schneiden, z. B. „Warum dein Magen sich nicht selbst verdaut“, „Tennisplatz-Mythos“, „Croissant vs. Kartoffel“.

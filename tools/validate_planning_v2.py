@@ -539,6 +539,9 @@ def print_phase1_tablet_links(project: Path) -> None:
     except ValueError:
         print("PHASE-1-HANDOFF: Projekt ausserhalb dieses Repositories; keine GitHub-Links geraten.")
         return
+    if relative_project.startswith("examples/"):
+        print("PHASE-1-HANDOFF: Musterbeispiel, keine Produktion. Keine Direktlinks ausgeben.")
+        return
     script = project / "01_script" / "script.txt"
     flow_prompt = project / "02_bildprompts" / "GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt"
     if not script.is_file() or not flow_prompt.is_file():

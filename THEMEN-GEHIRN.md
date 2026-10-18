@@ -46,18 +46,16 @@ Interne `TEST`-Piloten sind davon ausgenommen, wenn sie ausschließlich Pipeline
 | 005 | IDEE | Kreislauf | Wie transportiert Blut Sauerstoff? | spätere Longform: Sauerstofftransport deutlich tiefer, ggf. Sättigung, Belastung, Regulation | Testpiloten 001/005 behandeln nur die Grundreise |
 | 006 | IDEE | Immunsystem | Wie bekämpft der Körper Bakterien? | angeborene Immunabwehr vereinfacht erklären | Pilot 006 berührt Immunzellen nur im Kontext Wundheilung |
 | 007 | IDEE | Ernährung | Was passiert nach einer proteinreichen Mahlzeit? | Verdauung von Protein, Aminosäuren und Nutzung im Körper | Testpilot 003 berührt Protein nur als Baustoff für Muskelanpassung |
-| 008 | IN ARBEIT | Schlaf | Was passiert im Körper, während wir schlafen? | Gehirn, Erholung, Gedächtnis, Hormone und Schlafphasen als Überblick | – |
+| 008 | FERTIG (gerendert, 009) | Schlaf | Was passiert im Körper, während wir schlafen? | Gehirn, Erholung, Gedächtnis, Hormone und Schlafphasen als Überblick | – |
 | 009 | IDEE | Muskeln | Wie wächst ein Muskel? | spätere Longform: Training, Hypertrophie, Proteinsynthese, Ernährung, Regeneration und Progression deutlich tiefer | Testpilot 003 behandelt nur vereinfachte Grundkette |
 | 010 | IDEE | Gehirn | Wie entsteht eine Erinnerung? | Verarbeitung, Synapsen und Gedächtnisbildung vereinfacht | 003 teilweise |
 | 011 | IDEE | Haut | Wie heilt eine Wunde? | spätere Longform: Hämostase, Entzündung, Proliferation, Remodeling und Narbenbildung deutlich tiefer | Testpilot 006 behandelt nur die vereinfachte Grundkette |
 | 012 | IDEE | Haut/Nervensystem | Warum bekommen wir Gänsehaut? | spätere Longform könnte Thermoregulation, autonome Reaktionen und emotionale Piloerektion vertiefen | Testpilot 007 behandelt nur die kurze Grundkette |
 | 013 | FERTIG (gerendert, 010) | Ernährung / Sättigung | Warum bist du nach dem Essen schnell wieder hungrig? | 010: Magen-Gehirn-Signale, Protein, Ballaststoffe, Getränke, Snacks, Schlaf/Stress und praxistaugliche Mahlzeitideen | 008 erklärt den Verdauungsweg, 010 dagegen Hunger und Sättigung |
-| 014 | IN ARBEIT | Ernährung / Sättigung | Warum du kurz nach dem Essen schon wieder Hunger hast (V2) | Neuauflage von 010 auf Nutzerwunsch: Ghrelin-Kalender, Dehnung vs. Darmhormone (CCK, GLP-1, PYY), sechs Gründe mit Studien (Esstempo, Saft, Sattmacher/Blutzucker-Dips, stark verarbeitet, Schlaf, Appetit/Nachtisch), fünf Tipps; Projekt `011-longform-hunger-v2` | ersetzt Projekt `010-longform-hunger` als Kanalversion; Projekt `012-longform-verdauung-v2` verlinkt darauf |
-| 015 | IN ARBEIT | Verdauung | Die Reise einer Pizza durch deinen Körper (V2) | Neuauflage von 008 auf Nutzerwunsch: fünf Stationen mit Pizza-Farbcode, Tennisplatz-Mythos, zwei Wege Blut/Lymphe, 9 Liter, 38 Billionen Bakterien, Woraus besteht der Rest und warum braun; Projekt `012-longform-verdauung-v2` | ersetzt Projekt `008-longform-verdauung` als Kanalversion; Projekt `011-longform-hunger-v2` verlinkt darauf |
 
 ## Aktive Longform-Produktion
 
-**Aktiv (Stand 18.10.2026):** Thema 014 → Projekt `youtube-videos/011-longform-hunger-v2/` und Thema 015 → Projekt `youtube-videos/012-longform-verdauung-v2/`, beide Phase 1 PASS, Medien ausstehend. Die folgenden Abschnitte zu 010, 001 und 009 sind historisch.
+**Aktiv (Stand 18.10.2026):** keine. Das nächste neue Thema wird Projekt 011 (`python tools/create_video.py 011-longform-THEMA`). Die folgenden Abschnitte zu 010, 001 und 009 sind historisch.
 
 ### 010 – Warum du nach dem Essen so schnell wieder Hunger hast? (historisch, gerendert)
 
@@ -72,7 +70,7 @@ Projekt:
 youtube-videos/008-longform-verdauung/
 ```
 
-Status: `FERTIG` (gerendert; Neuauflage als Thema 015 / Projekt 012)
+Status: `FERTIG` (gerendert und veröffentlicht)
 
 Ziel:
 - erstes reguläres Longform-Video nach Abschluss der Testphase
@@ -288,8 +286,8 @@ Zusatzkontext:
 
 ## Bereits produzierte normale Videos
 
-- Thema 001 „Was passiert mit Essen im Körper?“ – Projekt `008-longform-verdauung`, gerendert (Neuauflage: Thema 015)
-- Thema 013 „Warum bist du nach dem Essen schnell wieder hungrig?“ – Projekt `010-longform-hunger`, gerendert (Neuauflage: Thema 014)
+- Thema 001 „Was passiert mit Essen im Körper?“ – Projekt `008-longform-verdauung`, gerendert und veröffentlicht
+- Thema 013 „Warum bist du nach dem Essen schnell wieder hungrig?“ – Projekt `010-longform-hunger`, gerendert und veröffentlicht
 - Thema 008 Schlaf – Projekt `009-longform-schlaf`, laut Repo-Historie vom Nutzer hochgeladen und gesichtet
 
 Der frühere Verdauungs-Pilot wurde auf Nutzerwunsch gelöscht und zählt nicht als produziert oder reserviert.
@@ -337,9 +335,9 @@ Interne `TEST`-Videos werden nur als Lern-/Pipelinehistorie geführt und dürfen
 
 Die Liste wird laufend erweitert. Normale Kanalvideos bleiben Longform; kurze Projekte sind nur ausdrücklich gekennzeichnete interne Tests.
 
-## Neuauflagen auf Nutzerwunsch (18.10.2026)
+## Keine Neuauflagen veröffentlichter Videos (18.10.2026)
 
-Eine Neuauflage ist **kein** Duplikat im Sinne der Doppelungsregel, wenn der Nutzer sie ausdrücklich verlangt und das alte Video unverändert bleibt. 011 (Hunger V2) und 012 (Verdauung V2 „Die Reise einer Pizza“) sind die neuen Kanalversionen von 010 und 008. Begründung und Messwerte: `engine/KANAL-ANALYSE-2026-10.md`.
+Bereits veröffentlichte Videos werden nicht neu aufgelegt, außer der Nutzer verlangt das ausdrücklich. Die Storyboards unter `examples/storyboard-v2/` (Hunger, Verdauung) sind nur Musterbeispiele für den neuen Ablauf. Sie reservieren kein Thema und werden nicht produziert. Begründung und Messwerte: `engine/KANAL-ANALYSE-2026-10.md`.
 
 ### Themenvorschläge mit starkem Hook (IDEE, vor Auswahl prüfen)
 - Was Kaffee in deinem Körper macht – Minute für Minute (Adenosin)
