@@ -6,6 +6,7 @@
     "image_ids_match_phase1_scenes": true,
     "no_estimated_final_timestamps_in_phase1": true,
     "allowed_functions": [
+      "hook",
       "observation",
       "trigger",
       "path",
@@ -19,7 +20,7 @@
     {
       "id": "SV_001",
       "voiceover_text": "[Exakter Satz oder logisch untrennbarer Satzblock]",
-      "function": "observation",
+      "function": "hook",
       "learning_goal": "[Was der Zuschauer nach diesem Satz verstanden haben soll]",
       "claim_ids": [],
       "scale_level": "[Lebensmittel|Mensch|Organ|Gewebe|Blut|Zelle|Organell|Molekuel]",

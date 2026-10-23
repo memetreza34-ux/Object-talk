@@ -1,0 +1,188 @@
+LEBENSLOGIK | VIDEO 011 | SINGLE COMPLETE GOOGLE FLOW IMAGE AGENT PROMPT
+
+German educational biology / health YouTube video: Was bei einer Erkältung in deinem Körper passiert – „Wer macht deinen Schnupfen?“
+
+Generate still images only. Aspect ratio 16:9. File names, numbers and scene captions are INTERNAL production metadata and must NEVER be visibly drawn in any image. Production IDs such as Bild_01 are for download naming only.
+
+IMPORTANT: Produce THREE distinct separate cover candidates first, then STOP and wait for the user to choose 1, 2 or 3. Do not ask for reference uploads, ZIPs, extra prompts, the script or permission to start. This written prompt is all you need. NEVER create a montage of three covers. Never use a cover or any earlier image as a style reference.
+
+STYLE BLOCK (send verbatim with EVERY single image request):
+Clean Animated Biology Illustration: simplified but recognizable anatomy, smooth organic forms, clean outlines, soft gradients, subtle depth, bright calm backgrounds, clear biological colors, low complexity, one dominant biological idea per frame.
+
+DEPTH LINE (send verbatim with EVERY single image request, directly after the style block):
+Look of a premium hand-drawn educational biology series: soft layered volume, fine warm-colored outlines, gentle painterly shading and subtle texture, large scene-filling organic forms. Not a flat vector diagram, not clip-art.
+
+NEGATIVE LINE (send verbatim with EVERY single image request):
+No photoreal medical imagery, no medical CGI, no glossy 3D, no feature-animation/Pixar look, no toy/kids-book look, no corporate infographic, no clutter, no gore, no random icons, no unnecessary text.
+
+ILLUSTRATION-FIRST / BILDREGIE V2: Show the biology itself – cutaways, tissue cross-sections, macro views, cause-and-effect paths and clear comparisons. People appear only as partial crops when they explain something; no decorative kitchen or table scenes. Harmonious, richer palette (coral, amber, gold, teal, sky blue, leaf green, restrained violet), never all scenes in the same pale mint. Vary scale and camera between neighbouring images. One immediately understandable biological event per image with 2–4 central elements. The action named in each scene must be visible as a change, and cause and effect must be connected by a visible path.
+
+CONSISTENT VISUAL VOCABULARY FOR THIS VIDEO:
+- Cold viruses / rhinoviruses: small rounded faceted particles in violet-magenta with a subtle surface pattern. Never faces, eyes, monsters or horror.
+- Nasal and throat lining: warm coral-pink layered tissue. Mucus: translucent pale aqua gel.
+- Immune cells: round cream-white cells with a soft lilac nucleus.
+- Messenger substances: tiny glowing orange dots. Antibodies: small golden Y-shapes.
+- Blood vessels: rich red. Nerves: soft yellow fibers. Bacteria (only where compared): green rod shapes.
+- People: calm, fully clothed adults or children in everyday clothing, mostly shown as partial crops.
+
+COVER RULE: exactly one visible text block containing EXACTLY „Wer macht deinen Schnupfen?“ in correct German spelling. No subtitle, no labels, no icons with text, no numbers. High contrast: DARK text on a LIGHT area, LIGHT text on a DARK area. Large and readable on a smartphone.
+
+COVER OPTION 1: Clothed adult shown from the shoulders up in three-quarter view, holding a tissue near the nose with a surprised look; a translucent illustrated cutaway of the nose reveals the coral lining, aqua mucus and a few violet virus particles inside. Title in bold dark letters on a calm cream area on the left.
+
+COVER OPTION 2: One large violet rhinovirus particle in the foreground facing a wall of coral nasal lining where many cream immune cells gather and orange messenger dots glow. Title in bold dark letters on a pale sky-blue area across the top.
+
+COVER OPTION 3: Large friendly side cutaway of a head without gore: the nasal cavity glows warm coral, immune cells stream in and an aqua mucus stream flows toward the nostril. Title in bold white letters on a calm deep-teal area on the right.
+
+AFTER THREE REAL COVER IMAGES: show all three and ask ONLY: „Welches Cover wählst du – 1, 2 oder 3?“ Then WAIT. Never claim an image exists before it has really been generated.
+
+AFTER THE USER'S CHOICE: the chosen cover is only the separate YouTube thumbnail COVER.png for 03_export. NEVER call it Bild_01, never put it into the scene ZIP, never place it at the start of the video and never use it as a style reference.
+
+Then immediately generate the NORMAL SCENES without another permission question, as separate 16:9 images in batches of five: Bild_01–Bild_05, Bild_06–Bild_10, Bild_11–Bild_15, Bild_16–Bild_20, Bild_21–Bild_25, Bild_26–Bild_30, Bild_31–Bild_35, Bild_36–Bild_40, Bild_41–Bild_45, Bild_46–Bild_50, Bild_51–Bild_55, Bild_56–Bild_60, Bild_61–Bild_65, Bild_66–Bild_69. For every single image send STYLE BLOCK + DEPTH LINE + the scene description + NEGATIVE LINE. If a real provider limit interrupts you, name the exact resume point instead of pretending completion.
+
+TEXT INSIDE NORMAL SCENES: If a scene lists ONLY VISIBLE GERMAN LABELS, render only those exact short German words, without quotation marks, in a clean sans-serif font, placed in calm empty space next to the structure they describe, each with at most one thin pointer line. Light background = dark text, dark background = light text, always high contrast. If the scene says NO VISIBLE TEXT, show absolutely no text. Never draw Bild_XX, file names, numbers, prompt words, English words or decorative labels. No editor text will be added later.
+
+SAFETY AND SCIENCE: non-fiction educational illustrations; all people fully clothed; no gore, no disgusting close-ups of mucus on faces, no fear imagery, no miracle cures, no medication brands. Anatomy simplified but plausible. If Google Flow refuses an image, report exactly which one and respect its policies; do not try to bypass them.
+
+QUALITY CHECK EVERY BATCH: five real images exist, each matches its scene, same visual world but different composition and scale from its neighbours, depth line visibly applied (layered, painterly, scene-filling – not flat vector), correct German spelling, only allowed labels, no number or file-name leak, low visual complexity. Regenerate failed images before continuing.
+
+NORMAL VIDEO SCENE REGISTER (only after the cover choice; 69 images, no cover among them):
+
+01 / Bild_01.png | Side-profile cutaway of a calm clothed adult's head: the inner nasal cavity is opened like a friendly anatomical window, coral-pink lining, a clear stream of translucent aqua fluid running forward toward the nostril. Warm cream background, generous negative space. NO VISIBLE TEXT.
+
+02 / Bild_02.png | Split composition: on the left one tiny violet virus particle floating alone in pale sky-blue space; on the right a large swollen coral nasal lining in full defense with widened red vessels, flowing aqua mucus and arriving cream immune cells. The size contrast shows the big reaction belongs to the body. ONLY VISIBLE GERMAN LABELS: Virus ; Abwehr.
+
+03 / Bild_03.png | Autumn evening street of German row houses in light rain, many warmly lit windows and falling orange leaves; in a few windows a tissue box and a steaming mug are softly visible. Calm and inviting, no people visible. NO VISIBLE TEXT.
+
+04 / Bild_04.png | Scale-comparison macro: one tiny violet virus particle beside a single large coral-pink nasal lining cell with a visible nucleus; the cell towers over the virus. Pale mint background with soft depth. ONLY VISIBLE GERMAN LABELS: Virus ; Zelle.
+
+05 / Bild_05.png | Simplified cutaway of a clothed adult's head in three-quarter view: one glowing dotted route leads from the nostril into the coral nasal lining and on to a gathering of cream immune cells deeper inside. The route reads clearly from left to right. NO VISIBLE TEXT.
+
+06 / Bild_06.png | Clean side cutaway of nose and throat without facial details: the nasal lining and the back of the throat glow warm red-coral where inflammation happens, the rest of the airway stays calm pink; a soft warm aura around the airway hints at rising temperature. NO VISIBLE TEXT.
+
+07 / Bild_07.png | A floating group of six clearly different simplified virus shapes (round, faceted, spiky, oval) in different muted colors, suspended in airy pale-blue space; educational and friendly, no faces, no numbers. NO VISIBLE TEXT.
+
+08 / Bild_08.png | Close-up hero portrait of one rhinovirus: a small rounded faceted violet-magenta particle with a subtle surface pattern, beside a softly drawn simple nose outline that hints at its name. Soft coral-to-cream gradient background. ONLY VISIBLE GERMAN LABELS: Rhinovirus.
+
+09 / Bild_09.png | Macro view of a fine cloud of tiny translucent droplets drifting through room air in soft window light; three droplets are magnified and each carries small violet virus particles. Pale sky-blue air. ONLY VISIBLE GERMAN LABELS: Tröpfchen.
+
+10 / Bild_10.png | Close crop of a hand on a metal door handle where a few tiny violet virus particles sit; a thin dotted path shows the same fingers moving up to touch the tip of a nose (only hand and nose visible). NO VISIBLE TEXT.
+
+11 / Bild_11.png | Side cutaway of the nasal cavity with its curved inner shelves covered by a moist glossy coral-pink lining, like soft damp wallpaper; one violet virus particle arrives with the inhaled air. ONLY VISIBLE GERMAN LABELS: Schleimhaut.
+
+12 / Bild_12.png | Tissue cross-section: a neat row of tall lining cells, on top a thin layer of translucent aqua mucus in which dust specks and small violet virus particles are caught as in a sticky net. ONLY VISIBLE GERMAN LABELS: Schleim.
+
+13 / Bild_13.png | Macro of the cell surface: many fine hair-like cilia beating in a wave, carrying the aqua mucus layer with trapped particles in one direction; a soft flowing current shows the movement toward the throat side. ONLY VISIBLE GERMAN LABELS: Flimmerhärchen.
+
+14 / Bild_14.png | Close view: one violet virus particle slips through a thin gap in the aqua mucus layer and drifts down toward the coral cell surface, where small teal receptor proteins stick out. NO VISIBLE TEXT.
+
+15 / Bild_15.png | Extreme close-up: the faceted violet virus fits precisely onto a matching teal receptor protein on the cell membrane, like a key sliding into a lock; the precise fit is clearly visible. ONLY VISIBLE GERMAN LABELS: Andockstelle.
+
+16 / Bild_16.png | Cutaway of the cell membrane: the docked violet virus opens and releases a thin glowing magenta strand of genetic material into the cell interior. ONLY VISIBLE GERMAN LABELS: Virus-Erbgut.
+
+17 / Bild_17.png | Inside one coral cell drawn as a busy organic workshop: the magenta genetic strand is read by small cell machinery, and many new violet virus particles are being assembled in rows. NO VISIBLE TEXT.
+
+18 / Bild_18.png | Side view of a row of neighbouring lining cells: new violet virus particles leave the first cell and drift to the next cells, some already docking there; the infection visibly spreads from left to right. NO VISIBLE TEXT.
+
+19 / Bild_19.png | Microscope-style circular magnified view of nasal lining tissue: the cell layer looks neat and almost intact, only a few violet particles visible; clean cool light, round lens frame on a soft dark-teal surround. NO VISIBLE TEXT.
+
+20 / Bild_20.png | The same calm lining tissue, but the first small glowing orange alarm dots appear around one cell like the first sparks of a reaction; the mood shifts from calm to alert. NO VISIBLE TEXT.
+
+21 / Bild_21.png | An infected coral cell releases a burst of tiny glowing orange messenger particles in all directions into the surrounding tissue. ONLY VISIBLE GERMAN LABELS: Botenstoffe.
+
+22 / Bild_22.png | Orange messenger particles reach neighbouring cells; those cells develop a soft golden protective glow along their surface, and nearby violet viruses bounce off or slow down. NO VISIBLE TEXT.
+
+23 / Bild_23.png | Cutaway beneath the lining: from a red blood vessel, round cream-white immune cells squeeze out and move up toward the infected area, following a trail of orange messenger dots. ONLY VISIBLE GERMAN LABELS: Abwehrzellen.
+
+24 / Bild_24.png | Wide cutaway of the nasal lining showing a fine network of tiny red blood vessels running just below the surface, highlighted against the coral tissue. ONLY VISIBLE GERMAN LABELS: Blutgefäße.
+
+25 / Bild_25.png | Side-by-side comparison of one small blood vessel in tissue: left narrow and closed; right clearly wider with more red blood inside and pale fluid droplets seeping out through its wall into the surrounding tissue. ONLY VISIBLE GERMAN LABELS: normal ; erweitert.
+
+26 / Bild_26.png | Cross-section through the nasal passage: the swollen coral lining bulges inward and almost closes the airway; only a thin pale-blue stream of inhaled air squeezes through. ONLY VISIBLE GERMAN LABELS: Schwellung.
+
+27 / Bild_27.png | Inside the lining: small grape-like glands pump glistening aqua mucus through tiny ducts onto the surface, clearly much more than usual. ONLY VISIBLE GERMAN LABELS: Drüsen.
+
+28 / Bild_28.png | Side cutaway of a clothed adult's nose: mucus from the glands and fluid from the vessels join into one translucent aqua stream that flows forward and out of the nostril toward a tissue held below. NO VISIBLE TEXT.
+
+29 / Bild_29.png | Macro of the flowing aqua mucus stream: violet virus particles are trapped inside and carried outward with the flow, like leaves in a stream. NO VISIBLE TEXT.
+
+30 / Bild_30.png | Nasal lining with fine soft-yellow nerve endings; irritated by swelling and viruses, one nerve sends a bright signal pulse along its fiber toward the back of the head. ONLY VISIBLE GERMAN LABELS: Nerv.
+
+31 / Bild_31.png | Side profile of a clothed adult sneezing into the crook of the elbow; a burst of fine droplets still partly escapes into the air, drawn as a soft spray; friendly, not gross. NO VISIBLE TEXT.
+
+32 / Bild_32.png | Side cutaway of the throat: the lining at the back of the throat is reddened and slightly swollen, while the rest of the airway stays calm pink. ONLY VISIBLE GERMAN LABELS: Rachen.
+
+33 / Bild_33.png | Close tissue view of inflamed throat lining: widened red vessels, slightly puffy tissue and highlighted sensitive yellow nerve endings near the surface, warm red-orange palette. ONLY VISIBLE GERMAN LABELS: Entzündung.
+
+34 / Bild_34.png | Close-up of one sensitive yellow nerve ending: orange messenger particles attach to it and it lights up brightly, sending a sharp signal along its fiber. ONLY VISIBLE GERMAN LABELS: Nervenende.
+
+35 / Bild_35.png | Three magnified droplets of mucus side by side on a calm cream background: clear and thin, then thicker pale yellow, then thicker light green; a simple progression from left to right. NO VISIBLE TEXT.
+
+36 / Bild_36.png | Split scene: on the left a magnified greenish mucus droplet; on the right a group of green rod-shaped bacteria drawn faded and semi-transparent, like a mere assumption that is not confirmed. NO VISIBLE TEXT.
+
+37 / Bild_37.png | Magnified view inside a greenish mucus droplet: it is full of round cream immune cells, each containing tiny green granules that tint the whole droplet; only a few violet virus particles remain. ONLY VISIBLE GERMAN LABELS: Abwehrzellen.
+
+38 / Bild_38.png | Clean comparison: on the left a green rod-shaped bacterium cracking apart next to a white-and-teal antibiotic capsule; on the right a violet virus particle completely unaffected next to the same capsule. ONLY VISIBLE GERMAN LABELS: Bakterium ; Virus.
+
+39 / Bild_39.png | Two simplified upper-body outlines of the same clothed adult side by side: the left one with a cool teal inner glow, the right one with a gentle warm orange glow for slightly raised temperature. No thermometer, no numbers. NO VISIBLE TEXT.
+
+40 / Bild_40.png | Simplified upper-body cutaway: orange messenger particles travel from the nose through a red blood vessel up the neck to a softly outlined brain. ONLY VISIBLE GERMAN LABELS: Gehirn.
+
+41 / Bild_41.png | Cutaway of the brain with a small deep region at its base highlighted; beside it a simple round thermostat dial metaphor without numbers or text, whose pointer turns slightly higher as orange messengers arrive. ONLY VISIBLE GERMAN LABELS: Hypothalamus.
+
+42 / Bild_42.png | A clothed adult seen from the shoulders up, wrapped in a thick blanket on a sofa, shivering with small motion lines, both hands around a warm mug; cosy, but clearly feeling cold. NO VISIBLE TEXT.
+
+43 / Bild_43.png | Warm-tinted tissue scene with a soft orange heat glow: cream immune cells look extra active and quick, while the violet virus particles appear slowed and fewer. NO VISIBLE TEXT.
+
+44 / Bild_44.png | Cozy autumn window seen from inside: rain on the glass, orange leaves outside, a tissue box and a steaming tea mug on the windowsill; no people. NO VISIBLE TEXT.
+
+45 / Bild_45.png | Two side-by-side nasal-cavity cutaways surrounded by snowflakes and cold blue air: on the left cold air but no virus and a calm pink lining; on the right the same cold air plus violet virus particles and a red swollen lining. ONLY VISIBLE GERMAN LABELS: ohne Virus ; mit Virus.
+
+46 / Bild_46.png | Warm indoor scene of a crowded autumn bus interior: several small clothed people of different ages sit close together; faint soft droplet trails drift between them, showing how viruses jump from person to person. NO VISIBLE TEXT.
+
+47 / Bild_47.png | Close crop on a family table: a child's small hand and an adult's hand reach for the same toy and the same cup; tiny violet virus particles follow a dotted path from the child's hand to the adult's hand. NO VISIBLE TEXT.
+
+48 / Bild_48.png | Side-by-side tissue comparison: on the left a moist glossy lining with upright active cilia under a smooth aqua mucus layer; on the right a dry, slightly cracked lining with drooping cilia and thin patchy mucus, a warm radiator glow behind it. ONLY VISIBLE GERMAN LABELS: feucht ; trocken.
+
+49 / Bild_49.png | Two groups of nasal lining cells: on the left tinted cool blue with few orange alarm dots and many multiplying violet viruses; on the right tinted warm coral with many orange alarm dots and only a few viruses. ONLY VISIBLE GERMAN LABELS: kühl ; warm.
+
+50 / Bild_50.png | Side profile of a clothed adult with a scarf walking outside in cold autumn wind; a cutaway of the nose shows icy-blue air streaming in and cooling the front part of the coral nasal lining. NO VISIBLE TEXT.
+
+51 / Bild_51.png | A specialised immune cell (round, cream with a lilac nucleus, slightly larger than the others) releases many small golden Y-shaped antibodies into the tissue around it. ONLY VISIBLE GERMAN LABELS: Antikörper.
+
+52 / Bild_52.png | Golden Y-shaped antibodies cover violet virus particles completely, so they can no longer dock onto the teal receptors of the coral cells below. NO VISIBLE TEXT.
+
+53 / Bild_53.png | A simple soft organic hill-shaped curve drawn like a landscape ridge, without axes, numbers or text: it rises quickly to an early peak and then slowly declines into a long gentle tail, coral fading into calm teal. NO VISIBLE TEXT.
+
+54 / Bild_54.png | A long horizontal strip of nasal lining that heals from left to right: on the left still slightly red with a little mucus, in the middle calmer, on the right healthy calm pink with clean cilia. NO VISIBLE TEXT.
+
+55 / Bild_55.png | A single violet virus particle in sharp focus in the foreground, while behind it a long line of similar particles in slightly different colors and surface patterns fades into the distance. NO VISIBLE TEXT.
+
+56 / Bild_56.png | Three large rhinovirus particles side by side with the same basic rounded faceted shape, but each with a clearly different surface pattern and color accent (violet, magenta, plum). NO VISIBLE TEXT.
+
+57 / Bild_57.png | A golden Y-shaped antibody fits perfectly onto the surface pattern of one virus type on the left, but cannot grip a differently patterned virus type on the right, which slips past. NO VISIBLE TEXT.
+
+58 / Bild_58.png | A clean circular year wheel divided into four soft seasonal color segments (spring green, summer gold, autumn orange, winter blue), without any text or numbers; small violet virus particles cluster mostly in the autumn and winter segments. NO VISIBLE TEXT.
+
+59 / Bild_59.png | Calm nasal lining scene where cream immune cells steadily clear away the last violet viruses, unhurried and organised, in warm reassuring light. NO VISIBLE TEXT.
+
+60 / Bild_60.png | Bedside still life: soft pillow and blanket, a large glass of water, a cup of tea and a box of tissues on a wooden nightstand in warm evening lamp light; no person. NO VISIBLE TEXT.
+
+61 / Bild_61.png | Macro cross-section of a juicy orange slice glowing in warm light, with a few small vitamin molecules drawn as tiny orange-gold hexagon shapes drifting from it. ONLY VISIBLE GERMAN LABELS: Vitamin C.
+
+62 / Bild_62.png | Two winding paths through an autumn landscape that lead toward warm sunlight: they are almost the same length, one only slightly shorter; a simple and clear visual metaphor without text. NO VISIBLE TEXT.
+
+63 / Bild_63.png | Close crop of soapy hands under running water: soap foam lifts tiny violet virus particles off the skin and they rinse away with the water. NO VISIBLE TEXT.
+
+64 / Bild_64.png | Room interior with a wide-open window: fresh pale-blue outdoor air streams in, while a cloud of tiny droplets with violet particles drifts out and thins; no people. NO VISIBLE TEXT.
+
+65 / Bild_65.png | Close crop: a doctor's hand placing a stethoscope on the back of a clothed adult patient in a calm, bright consultation room; friendly and reassuring. NO VISIBLE TEXT.
+
+66 / Bild_66.png | Front three-quarter cutaway of a clothed adult's face showing the nasal cavity: aqua mucus flows out, and inside it cream immune cells are at work; calm and not gross. NO VISIBLE TEXT.
+
+67 / Bild_67.png | One connected left-to-right scene along the nasal lining: an orange alarm burst, then arriving cream immune cells, then an aqua mucus stream carrying viruses out, all bathed in a gentle warm glow. NO VISIBLE TEXT.
+
+68 / Bild_68.png | Golden antibodies and cream immune cells calmly surround the last few violet virus particles in a peaceful, confident composition with warm golden light. NO VISIBLE TEXT.
+
+69 / Bild_69.png | Healthy calm pink nasal lining with clean cilia in soft morning light; far in the background one single new virus particle with a different surface pattern drifts in, a light humorous closing note. NO VISIBLE TEXT.
+
+FINAL CHECK: exactly 69 different accepted NORMAL video images Bild_01.png to Bild_69.png (NO COVER), each 16:9. If ZIP export is available, create ONE ZIP with only these 69 images for 02_bildprompts/bilder-zip. Download the chosen cover separately as COVER.png for 03_export. If ZIP export is not available, provide the real downloadable images and never claim a ZIP exists. Do not create an MP4, subtitles, extra prompts or extra visible folders.

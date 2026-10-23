@@ -1,0 +1,585 @@
+{
+  "status": "READY",
+  "rules": {
+    "language": "de",
+    "prompt_language": "en",
+    "preferred_labels_per_image": "0-1",
+    "max_labels_per_image": 2,
+    "max_words_per_label": 3,
+    "prefer_no_label_when_self_explanatory": true,
+    "label_only_important_visible_things": true,
+    "labels_generated_in_flow": true,
+    "fallback_to_overlay_if_ai_text_wrong": false,
+    "regenerate_if_label_wrong": true,
+    "cover_requires_german_hook": true,
+    "cover_hook_words": "3-7",
+    "cover_title_only": true,
+    "cover_exactly_one_visible_text_block": true,
+    "cover_extra_labels_forbidden": true,
+    "text_contrast_required": true,
+    "light_background_requires_dark_text": true,
+    "dark_background_requires_light_text": true,
+    "no_decorative_quotation_marks": true,
+    "no_asset_ids_visible": true,
+    "no_scene_numbers_visible": true,
+    "no_file_names_visible": true,
+    "no_prompt_headings_visible": true,
+    "remotion_visible_text_allowed": false,
+    "remotion_text_fallback_allowed": false,
+    "regenerate_if_internal_id_visible": true,
+    "split_if_information_overloaded": true,
+    "omit_nonessential_information": true,
+    "cover_is_scene": false,
+    "cover_output": "03_export/COVER.png"
+  },
+  "cover": {
+    "mode": "cover",
+    "allowed_visible_text": [
+      "Wer macht deinen Schnupfen?"
+    ],
+    "output": "03_export/COVER.png",
+    "is_scene": false
+  },
+  "images": [
+    {
+      "image_asset_id": "Bild_01",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_02",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Virus",
+        "Abwehr"
+      ],
+      "labels": [
+        "Virus",
+        "Abwehr"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_03",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_04",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Virus",
+        "Zelle"
+      ],
+      "labels": [
+        "Virus",
+        "Zelle"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_05",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_06",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_07",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_08",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Rhinovirus"
+      ],
+      "labels": [
+        "Rhinovirus"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_09",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Tröpfchen"
+      ],
+      "labels": [
+        "Tröpfchen"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_10",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_11",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Schleimhaut"
+      ],
+      "labels": [
+        "Schleimhaut"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_12",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Schleim"
+      ],
+      "labels": [
+        "Schleim"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_13",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Flimmerhärchen"
+      ],
+      "labels": [
+        "Flimmerhärchen"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_14",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_15",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Andockstelle"
+      ],
+      "labels": [
+        "Andockstelle"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_16",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Virus-Erbgut"
+      ],
+      "labels": [
+        "Virus-Erbgut"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_17",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_18",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_19",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_20",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_21",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Botenstoffe"
+      ],
+      "labels": [
+        "Botenstoffe"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_22",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_23",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Abwehrzellen"
+      ],
+      "labels": [
+        "Abwehrzellen"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_24",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Blutgefäße"
+      ],
+      "labels": [
+        "Blutgefäße"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_25",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "normal",
+        "erweitert"
+      ],
+      "labels": [
+        "normal",
+        "erweitert"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_26",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Schwellung"
+      ],
+      "labels": [
+        "Schwellung"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_27",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Drüsen"
+      ],
+      "labels": [
+        "Drüsen"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_28",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_29",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_30",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Nerv"
+      ],
+      "labels": [
+        "Nerv"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_31",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_32",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Rachen"
+      ],
+      "labels": [
+        "Rachen"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_33",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Entzündung"
+      ],
+      "labels": [
+        "Entzündung"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_34",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Nervenende"
+      ],
+      "labels": [
+        "Nervenende"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_35",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_36",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_37",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Abwehrzellen"
+      ],
+      "labels": [
+        "Abwehrzellen"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_38",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Bakterium",
+        "Virus"
+      ],
+      "labels": [
+        "Bakterium",
+        "Virus"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_39",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_40",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Gehirn"
+      ],
+      "labels": [
+        "Gehirn"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_41",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Hypothalamus"
+      ],
+      "labels": [
+        "Hypothalamus"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_42",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_43",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_44",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_45",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "ohne Virus",
+        "mit Virus"
+      ],
+      "labels": [
+        "ohne Virus",
+        "mit Virus"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_46",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_47",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_48",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "feucht",
+        "trocken"
+      ],
+      "labels": [
+        "feucht",
+        "trocken"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_49",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "kühl",
+        "warm"
+      ],
+      "labels": [
+        "kühl",
+        "warm"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_50",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_51",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Antikörper"
+      ],
+      "labels": [
+        "Antikörper"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_52",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_53",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_54",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_55",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_56",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_57",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_58",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_59",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_60",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_61",
+      "mode": "key-labels",
+      "allowed_visible_text": [
+        "Vitamin C"
+      ],
+      "labels": [
+        "Vitamin C"
+      ]
+    },
+    {
+      "image_asset_id": "Bild_62",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_63",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_64",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_65",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_66",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_67",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_68",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    },
+    {
+      "image_asset_id": "Bild_69",
+      "mode": "scene",
+      "allowed_visible_text": [],
+      "labels": []
+    }
+  ]
+}

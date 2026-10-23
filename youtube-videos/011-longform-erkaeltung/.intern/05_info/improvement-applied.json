@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "status": "APPLIED",
+  "source_review_video": null,
+  "lessons": [
+    {
+      "id": "BASE-CLARITY",
+      "implemented_as": "69 Einzelbilder mit je einem sichtbaren Vorgang, 2–4 Elementen und 0–2 Labels (28 Bilder mit Label); überladene Beats aufgeteilt, z. B. Andocken, Erbgut-Einschleusen und Virusfabrik als drei getrennte Bilder.",
+      "evidence_files": [
+        "youtube-videos/011-longform-erkaeltung/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt",
+        "youtube-videos/011-longform-erkaeltung/.intern/05_info/label-plan.json"
+      ],
+      "verification": "validate_planning_v2: max. 2 Labels/Bild und max. 3 Wörter geprüft; jede Szene hat explanation_visible."
+    },
+    {
+      "id": "BASE-FLOW",
+      "implemented_as": "Ein einziger Text-Flow-Prompt ohne Vorlagen-Upload: drei separate Cover, STOP für Wahl 1/2/3, danach Bild_01–Bild_69 in Fünfergruppen; Cover ist kein Bild_01.",
+      "evidence_files": [
+        "youtube-videos/011-longform-erkaeltung/02_bildprompts/GOOGLE-FLOW-PROMPT-ZUM-KOPIEREN.txt"
+      ],
+      "verification": "Flow-Register-Gate: alle 69 Bild-IDs im Prompt, keine Vorlagenreste, Cover-Regel 'exactly one visible text block'."
+    },
+    {
+      "id": "BASE-EXPORT",
+      "implemented_as": "03_export enthält bis zur echten Produktion nur Caption-Entwurf und den offenen Untertitel-Platzhalter; VIDEO.mp4 und COVER.png folgen erst nach echter Erstellung, alles Technische liegt in .intern.",
+      "evidence_files": [
+        "youtube-videos/011-longform-erkaeltung/03_export/CAPTION-YOUTUBE.txt",
+        "youtube-videos/011-longform-erkaeltung/.intern/03_pipeline/ANTIGRAVITY-PROMPT-ZUM-KOPIEREN.txt"
+      ],
+      "verification": "Ordner geprüft: nur 01_script, 02_bildprompts, 03_export sichtbar; keine erfundenen Medien oder Zeitstempel."
+    },
+    {
+      "id": "BASE-ILLUSTRATION-FIRST",
+      "implemented_as": "Bildregie V2: 61 von 69 Szenen erklärend (Cutaway, Makro, Mechanismus, Weg, Vergleich), nur 7 Menschen-/Alltagsszenen, 1 Ganzkörper-Szene; feste Farb-Bildsprache für Viren, Schleim, Abwehrzellen; Tiefenzeile in jeder Bildanfrage.",
+      "evidence_files": [
+        "youtube-videos/011-longform-erkaeltung/.intern/05_info/phase1-scenes.json",
+        "bildwelt/ILLUSTRATION-FIRST-SCENE-EXAMPLES.md"
+      ],
+      "verification": "visual_storyboard_gate PASS (Anteile) und Tiefenzeilen-Pflicht im Flow-Register-Gate."
+    }
+  ],
+  "notes": "Vor Phase 1 des NEUEN Videos nachweisbar ausfüllen, inklusive aktuellster lessons aus engine/IMPROVEMENT-LEDGER.json."
+}

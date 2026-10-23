@@ -20,14 +20,55 @@ import re
 import unicodedata
 from pathlib import Path
 
+from difflib import SequenceMatcher
+
 from faster_whisper import WhisperModel
 
 MAX_GROUP = 4
 
+# Whisper-Hoerfehler wie "Rhinowiren"/"Rhinoviren" werden nur akzeptiert, wenn der
+# Text sehr aehnlich ist und die Zeiten trotzdem aus echten Whisper-Woertern stammen.
+FUZZY_MAX_GROUP = 3
+FUZZY_MIN_RATIO = 0.75
+FUZZY_MAX_SHARE = 0.08
+
 
 def normalize_token(value: str) -> str:
-    value = unicodedata.normalize("NFKC", str(value)).lower().replace("ß", "ss")
-    return "".join(ch for ch in value if ch.isalnum())
+    value = (
+        unicodedata.normalize("NFKC", str(value))
+        .lower()
+        .replace("ß", "ss")
+        .replace("ä", "ae")
+        .replace("ö", "oe")
+        .replace("ü", "ue")
+    )
+    norm = "".join(ch for ch in value if ch.isalnum())
+    return german_number(int(norm)) if norm.isdigit() and len(norm) <= 6 else norm
+
+
+_ONES = ["null", "eins", "zwei", "drei", "vier", "fuenf", "sechs", "sieben", "acht", "neun",
+         "zehn", "elf", "zwoelf", "dreizehn", "vierzehn", "fuenfzehn", "sechzehn", "siebzehn",
+         "achtzehn", "neunzehn"]
+_TENS = ["", "", "zwanzig", "dreissig", "vierzig", "fuenfzig", "sechzig", "siebzig", "achtzig",
+         "neunzig"]
+
+
+def german_number(n: int) -> str:
+    """Whisper schreibt Zahlen als Ziffern, das Script als Wort ("200" -> "zweihundert")."""
+    if n < 20:
+        return _ONES[n]
+    if n < 100:
+        ones, tens = n % 10, n // 10
+        if ones == 0:
+            return _TENS[tens]
+        return ("ein" if ones == 1 else _ONES[ones]) + "und" + _TENS[tens]
+    if n < 1000:
+        hundreds, rest = divmod(n, 100)
+        head = ("ein" if hundreds == 1 else _ONES[hundreds]) + "hundert"
+        return head + (german_number(rest) if rest else "")
+    thousands, rest = divmod(n, 1000)
+    head = ("ein" if thousands == 1 else german_number(thousands)) + "tausend"
+    return head + (german_number(rest) if rest else "")
 
 
 def tokenize(text: str) -> list[dict]:
@@ -72,13 +113,56 @@ def find_exact_grouping(
     return script_count, asr_count
 
 
+def find_fuzzy_grouping(
+    script_tokens: list[dict],
+    asr_words: list[dict],
+    script_index: int,
+    asr_index: int,
+) -> tuple[int, int] | None:
+    """Kleinste sehr aehnliche Gruppe, nach der die exakte Ausrichtung weiterlaeuft."""
+    best: tuple[float, int, int] | None = None
+
+    for script_count in range(1, FUZZY_MAX_GROUP + 1):
+        if script_index + script_count > len(script_tokens):
+            break
+        script_combined = group_text(script_tokens, script_index, script_count)
+
+        for asr_count in range(1, FUZZY_MAX_GROUP + 1):
+            if asr_index + asr_count > len(asr_words):
+                break
+            asr_combined = group_text(asr_words, asr_index, asr_count)
+            ratio = SequenceMatcher(None, script_combined, asr_combined).ratio()
+            if ratio < FUZZY_MIN_RATIO:
+                continue
+
+            next_script = script_index + script_count
+            next_asr = asr_index + asr_count
+            at_end = next_script >= len(script_tokens) or next_asr >= len(asr_words)
+            if not at_end and find_exact_grouping(script_tokens, asr_words, next_script, next_asr) is None:
+                continue
+
+            cost = script_count + asr_count - ratio
+            if best is None or cost < best[0]:
+                best = (cost, script_count, asr_count)
+
+    if best is None:
+        return None
+    return best[1], best[2]
+
+
 def align_script_to_asr(script_tokens: list[dict], asr_words: list[dict]) -> list[dict]:
     aligned: list[dict] = []
     script_index = 0
     asr_index = 0
 
+    fuzzy_words = 0
+
     while script_index < len(script_tokens) and asr_index < len(asr_words):
         grouping = find_exact_grouping(script_tokens, asr_words, script_index, asr_index)
+        fuzzy = False
+        if grouping is None:
+            grouping = find_fuzzy_grouping(script_tokens, asr_words, script_index, asr_index)
+            fuzzy = grouping is not None
         if grouping is None:
             script_context = " ".join(
                 token["text"] for token in script_tokens[script_index : script_index + 8]
@@ -142,12 +226,14 @@ def align_script_to_asr(script_tokens: list[dict], asr_words: list[dict]) -> lis
                     "text": script_token["text"],
                     "start": round(start, 3),
                     "end": round(max(start + 0.001, end), 3),
-                    "alignment": "grouped-exact-text",
+                    "alignment": "fuzzy-text" if fuzzy else "grouped-exact-text",
                 }
                 if probability is not None:
                     item["probability"] = round(probability, 4)
                 aligned.append(item)
 
+        if fuzzy:
+            fuzzy_words += script_count
         script_index += script_count
         asr_index += asr_count
 
@@ -162,6 +248,12 @@ def align_script_to_asr(script_tokens: list[dict], asr_words: list[dict]) -> lis
             "Script/Audio-Laengenabweichung nach strikter Ausrichtung. "
             f"Rest Script: {remaining_script or '<keiner>'!r} | "
             f"Rest Whisper: {remaining_asr or '<keiner>'!r}. Keine Zeiten wurden geraten."
+        )
+
+    if fuzzy_words > len(script_tokens) * FUZZY_MAX_SHARE:
+        raise ValueError(
+            f"Zu viele unscharfe Treffer: {fuzzy_words} von {len(script_tokens)} Script-Woertern "
+            f"(erlaubt {FUZZY_MAX_SHARE:.0%}). Audio passt vermutlich nicht zum Script."
         )
 
     return aligned
@@ -232,14 +324,15 @@ def main() -> None:
     args.output_dir.mkdir(parents=True, exist_ok=True)
 
     model = WhisperModel(args.model, device=args.device, compute_type=args.compute_type)
-    prompt_words = " ".join(token["text"] for token in script_tokens[:180])
+    # Kein Script als initial_prompt: Whisper hat damit bei 011 Text vor dem echten
+    # Audiobeginn erfunden ("das Virus auf die Schleimhaut ...").
     segments_iter, info = model.transcribe(
         str(args.audio),
         language=args.language,
         word_timestamps=True,
         vad_filter=True,
         beam_size=5,
-        initial_prompt=prompt_words,
+        condition_on_previous_text=False,
     )
 
     raw_segments: list[dict] = []
@@ -320,7 +413,7 @@ def main() -> None:
     print(f"OK: {raw_path}")
     print(f"OK: {timings_path}")
     print(f"OK: {srt_path}")
-    print(f"Woerter exakt ausgerichtet: {len(aligned_words)}")
+    print(f"Woerter ausgerichtet: {len(aligned_words)} (unscharf: {sum(1 for w in aligned_words if w['alignment'] == 'fuzzy-text')})")
     print(f"Dauer: {aligned_payload['duration']:.2f} Sekunden")
 
     if aligned_payload["duration"] < 300:

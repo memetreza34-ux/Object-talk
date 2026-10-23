@@ -128,6 +128,7 @@ Muss:
 - Cover exakt title-only planen
 - bei zu hoher Informationsdichte den Beat auf mehr Bilder aufteilen
 - **keine Remotion-Texte oder Text-Overlays planen**
+- ab Video 011 jede Szene mit `script_part` (hook → einleitung → hauptteil → schluss) und `script_arc` markieren; Validator prueft Skriptlaenge, Aufbau, 1:1-Abdeckung durch die Szenen und vollstaendiges Flow-Szenenregister (`engine/SCRIPT-STANDARD.md` §13)
 - `03_export/` als einfachen Nutzerexport vorbereiten; technische QA in `.intern/`
 
 

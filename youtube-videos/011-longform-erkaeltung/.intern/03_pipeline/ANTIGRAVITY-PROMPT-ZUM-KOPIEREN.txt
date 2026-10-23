@@ -1,0 +1,64 @@
+ANTIGRAVITY – 011 LONGFORM „WER MACHT DEINEN SCHNUPFEN?“ (ERKÄLTUNG)
+
+Arbeite ausschließlich nach dem Repository.
+
+PROJEKT
+`youtube-videos/011-longform-erkaeltung/`
+
+ZIEL
+Erzeuge aus finaler Voice + 69 akzeptierten Google-Flow-Bildern das nächste reguläre Lebenslogik-Longform-Video und lege nutzerseitig NUR die vier gewünschten Ausgaben unter `03_export/` ab.
+
+LAUFZEIT
+- Script: 1065 gesprochene Wörter; Video 010 ergab mit 1044 Wörtern 6:09 → Ziel ca. 6:00–7:00.
+- Voice und Script nicht künstlich strecken oder beschleunigen. Standard: 1.10x.
+- Liegt das echte Voiceover deutlich außerhalb 6:00–7:00: STOP und melden.
+
+AUDIO
+- Roh-TTS niemals direkt rendern; `tools/prepare_audio.py --speed 1.10`.
+- Lange unnatürliche TTS-Pausen vor Whisper/Timeline komprimieren.
+- `final-voiceover.wav` ist die einzige Timing-Quelle; Script↔Audio-Ausrichtung muss vollständig bestehen.
+
+BILDER
+- Nutzer legt die geprüfte Bilder-ZIP unter `02_bildprompts/bilder-zip/` ab; `tools/prepare_phase3.py` importiert sie nach `.intern/03_pipeline/images/`.
+- Exakt 69 eindeutige Bilder `Bild_01.png` bis `Bild_69.png`; keine Duplikate; kein Standbild länger als 7,0 Sekunden.
+- COVER.png ist ein separates Thumbnail, KEINE Szene und NICHT Bild_01; es gehört weder in die ZIP noch ins MP4.
+
+BILDWELT
+- Clean Animated Biology Illustration mit Tiefenzeile (geschichtete Tiefe, bildfüllend, kein flacher Vektorlook); 100 % Vollbild.
+- Labels sind Teil der Flow-Bilder; Remotion erzeugt KEINEN sichtbaren Text.
+- `.intern/03_pipeline/overlay-plan.json` bleibt `DISABLED` mit `scenes: []`.
+
+REMOTION DARF NUR: Audio, exaktes Timing, statische Vollbildframes, sanfte Push/Pull (ca. 2–4 %), leichte Pans (ca. 20–30 px), Schnitte, dezente nicht-textliche Übergänge, Render.
+REMOTION DARF NICHT: Überschriften, Kapiteltexte, Key-Facts, eingebrannte Untertitel, Labels, Bild-/Szenennummern, Dateinamen oder sonstige Schrift.
+
+VORBEREITUNG
+```bash
+python -m pip install -r tools/requirements.txt
+python tools/validate_planning_v2.py youtube-videos/011-longform-erkaeltung --phase2
+python tools/prepare_phase3.py youtube-videos/011-longform-erkaeltung
+python tools/export_subtitles.py youtube-videos/011-longform-erkaeltung
+```
+
+RENDER
+```bash
+cd renderer
+npm install
+npm run render -- ../youtube-videos/011-longform-erkaeltung/03_export/VIDEO.mp4
+```
+
+EXPORT – NUR DIESE VIER DATEIEN SICHTBAR
+- `03_export/VIDEO.mp4` – fertiger Film, beginnt mit Bild_01, ohne Cover
+- `03_export/COVER.png` – vom Nutzer gewähltes Thumbnail
+- `03_export/CAPTION-YOUTUBE.txt` – Titel, Beschreibung, Hashtags (gegen den Finalrender prüfen)
+- `03_export/UNTERTITEL-MIT-ZEITEN.txt` – komplettes Script mit ECHTEN Zeitfenstern aus `timeline.json`
+SRT, Renderbericht, Scorecard und QA nur in `.intern/`. Zeitcodes niemals schätzen.
+
+FINAL-QA
+- 1920×1080 / 30 fps, Audio vollständig, 69 Bilder, keine Szene >7 s, keine Duplikate
+- keine Remotion-Schrift, keine sichtbare Bild-/Szenennummer, erster Frame ist Bild_01, kein Cover
+- Labels korrekt geschrieben, kontrastreich, max. 2 pro Bild
+- Viren nie als Monster mit Gesicht; kein Ekel-Schleim im Gesicht
+- Wissenschaft: Symptome als Abwehrreaktion, Virus als Auslöser; Kälte allein macht nicht krank; Schleimfarbe ≠ Bakterienbeweis; Antibiotika wirken nicht gegen Viren; Fieber als Sollwertverstellung im Hypothalamus; Antikörper typspezifisch
+- Kurz-Postmortem nach `engine/CONTINUOUS-IMPROVEMENT.md` vorbereiten (mind. 3 Schwächen mit Zeitstelle und Ursache)
+
+Bei Konflikt, fehlendem Asset oder wissenschaftlichem Zweifel: FAIL statt raten.

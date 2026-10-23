@@ -1,0 +1,147 @@
+KOMPLETTES SCRIPT MIT ZEITABSCHNITTEN
+
+
+
+Quelle: finale timeline.json / finales Voiceover
+
+Zeitcodes sind nicht geschaetzt.
+
+
+
+00:00–00:04  Hast du dich schon mal gefragt, warum deine Nase bei einer Erkältung läuft wie ein Wasserhahn?
+
+00:04–00:09  Die überraschende Antwort: Den Schnupfen macht nicht das Virus selbst. Den macht dein eigener Körper.
+
+00:09–00:15  Gerade im Herbst bekommen in Deutschland jede Woche Millionen Menschen eine Atemwegsinfektion – meistens eine ganz normale Erkältung.
+
+00:15–00:21  Dahinter steckt fast immer ein Virus. Und ein Virus kann sich nicht selbst vermehren – dafür braucht es deine Zellen.
+
+00:21–00:26  Wir verfolgen jetzt, was in deinem Körper passiert: vom ersten Kontakt in der Nase bis zum Alarm deiner Abwehr.
+
+00:26–00:32  Du erfährst, woher Schnupfen, Halskratzen und Fieber kommen – und warum dich Erkältungen immer wieder erwischen.
+
+00:32–00:36  Fangen wir ganz vorne an. Mehr als zweihundert verschiedene Viren können eine Erkältung auslösen.
+
+00:36–00:41  Am häufigsten sind Rhinoviren. Rhino kommt aus dem Griechischen und bedeutet Nase.
+
+00:41–00:45  Sie reisen in winzigen Tröpfchen durch die Luft, wenn jemand niest, hustet oder einfach nur spricht.
+
+00:45–00:50  Oder sie landen auf Händen und Türgriffen – und gelangen mit deinen Fingern an Nase oder Augen.
+
+00:50–00:55  In der Nase trifft das Virus auf die Schleimhaut. Sie kleidet deine Nase innen aus wie eine feuchte Tapete.
+
+00:55–01:00  Darauf liegt eine dünne Schicht Schleim, die Staub und Erreger festhält wie ein klebriges Netz.
+
+01:00–01:05  Winzige Flimmerhärchen schieben diesen Schleim ständig weiter – Richtung Rachen, wo du ihn unbemerkt schluckst.
+
+01:05–01:10  Doch manche Viren schaffen es trotzdem bis zur Zelloberfläche. Dort suchen sie nach einer passenden Andockstelle.
+
+01:10–01:16  Bei den meisten Rhinoviren ist das ein bestimmtes Eiweiß. Virus und Eiweiß passen zusammen wie Schlüssel und Schloss.
+
+01:16–01:19  Ist das Virus angedockt, schleust es seine Bauanleitung in die Zelle ein.
+
+01:19–01:25  Und jetzt passiert etwas Verrücktes: Die Zelle liest diese Anleitung und baut damit massenhaft neue Viren.
+
+01:25–01:29  Die neuen Viren verlassen die Zelle und befallen die Nachbarzellen. So breitet sich die Infektion aus.
+
+01:29–01:36  Das Erstaunliche: Rhinoviren richten dabei kaum sichtbaren Schaden an. Unter dem Mikroskop wirkt die Schleimhaut oft fast unversehrt.
+
+01:36–01:40  Warum fühlst du dich dann trotzdem so elend? Genau hier kommt dein Körper ins Spiel.
+
+01:40–01:46  Befallene Zellen schlagen Alarm. Sie schütten Botenstoffe aus – chemische Nachrichten an ihre Umgebung.
+
+01:46–01:51  Manche Botenstoffe warnen die Nachbarzellen. Die schalten in eine Art Schutzmodus und machen es Viren schwerer.
+
+01:51–01:57  Andere Botenstoffe rufen Verstärkung. Über das Blut strömen Abwehrzellen herbei, die gegen die Infektion kämpfen.
+
+01:57–02:02  Damit Nachschub schnell ankommt, verändern sich die winzigen Blutgefäße in deiner Nasenschleimhaut.
+
+02:02–02:08  Sie werden weiter und durchlässiger. Mehr Blut fließt hinein, und Flüssigkeit tritt ins Gewebe aus.
+
+02:08–02:12  Die Schleimhaut schwillt an. Genau das spürst du als verstopfte Nase.
+
+02:12–02:17  Gleichzeitig arbeiten die Drüsen in der Schleimhaut auf Hochtouren und bilden viel mehr Schleim als sonst.
+
+02:17–02:22  Dazu kommt Flüssigkeit aus den Blutgefäßen. Zusammen läuft das aus deiner Nase – der typische Schnupfen.
+
+02:22–02:27  Das ist kein Fehler, sondern Abwehr: Der Schleim fängt Viren ein und spült sie hinaus.
+
+02:27–02:33  Auch Niesen hat einen Sinn. Gereizte Nerven in der Nase lösen einen blitzschnellen Reflex aus.
+
+02:33–02:38  Ein kräftiger Luftstoß pustet die Nase frei – und schleudert dabei leider auch Viren in die Luft.
+
+02:38–02:42  Und das Kratzen im Hals? Auch die Schleimhaut im Rachen reagiert mit einer Entzündung.
+
+02:42–02:48  Entzündung bedeutet: Das Gewebe ist stärker durchblutet, leicht geschwollen und besonders empfindlich.
+
+02:48–02:52  Bestimmte Botenstoffe machen die Nervenenden dort empfindlicher. Deshalb tut Schlucken plötzlich weh.
+
+02:52–02:56  Nach ein paar Tagen wird der Schleim oft dicker und manchmal gelblich oder grünlich.
+
+02:56–03:01  Viele denken dann: Jetzt sind Bakterien im Spiel. Doch die Farbe allein verrät das nicht.
+
+03:01–03:05  Sie stammt vor allem von deinen eigenen Abwehrzellen, die in großer Zahl in den Schleim wandern.
+
+03:05–03:09  Und Antibiotika helfen gegen Viren gar nicht. Sie wirken nur gegen Bakterien.
+
+03:09–03:15  Manchmal steigt bei einer Erkältung auch die Temperatur. Bei Erwachsenen bleibt sie aber oft normal oder nur leicht erhöht.
+
+03:15–03:19  Auch dahinter steckt dein Körper. Botenstoffe der Abwehr erreichen über das Blut dein Gehirn.
+
+03:19–03:25  Dort sitzt eine Art Thermostat, im sogenannten Hypothalamus. Die Botenstoffe stellen ihn etwas höher.
+
+03:25–03:31  Plötzlich fühlt sich deine normale Temperatur zu kalt an. Du frierst, zitterst – und dein Körper heizt sich auf.
+
+03:31–03:36  Die höhere Temperatur kann die Abwehr unterstützen. Fieber gilt deshalb als Teil der Schutzreaktion.
+
+03:36–03:40  Bleibt die Frage: Warum erwischt es uns ausgerechnet im Herbst und Winter so oft?
+
+03:40–03:44  Kälte allein macht dich nicht krank. Ohne Virus gibt es keine Erkältung.
+
+03:44–03:50  Aber im Herbst sind wir mehr drinnen und sitzen enger zusammen. So springen Viren leichter von Mensch zu Mensch.
+
+03:50–03:56  Kinder bringen aus Kita und Schule ständig neue Viren mit – und teilen sie großzügig mit der Familie.
+
+03:56–04:01  Dazu kommt trockene Heizungsluft. Sie kann die Schleimhaut austrocknen, und ihr Schutz arbeitet schlechter.
+
+04:01–04:08  Und Laborversuche deuten an: In einer kühleren Nase reagiert die Abwehr langsamer, und Rhinoviren vermehren sich leichter.
+
+04:08–04:12  Ganz geklärt ist das noch nicht. Aber Kälte könnte dem Virus den Start erleichtern.
+
+04:12–04:18  Nach einigen Tagen bekommt deine Abwehr Hilfe von Spezialisten. Sie bildet Antikörper, die genau zu diesem Virus passen.
+
+04:18–04:21  Die Antikörper heften sich an die Viren und blockieren sie. Die Infektion klingt ab.
+
+04:21–04:24  Am stärksten sind die Beschwerden meist nach zwei bis drei Tagen.
+
+04:24–04:29  Schnupfen und Husten können aber bis zu zwei Wochen anhalten. Das ist bei einer Erkältung ganz normal.
+
+04:29–04:33  Aber warum bist du danach nicht für immer geschützt? Weil es nicht das eine Erkältungsvirus gibt.
+
+04:33–04:38  Allein von den Rhinoviren kennt man über hundertsechzig Typen. Ihre Oberflächen sehen jeweils etwas anders aus.
+
+04:38–04:44  Deine Antikörper erkennen aber nur den Typ, den sie schon kennen. Beim nächsten Typ beginnt alles von vorne.
+
+04:44–04:49  Deshalb gibt es bis heute keine Impfung gegen Erkältungen. Erwachsene erwischt es etwa ein- bis dreimal pro Jahr.
+
+04:49–04:54  Was kannst du also tun? Gegen das Virus selbst gibt es kein Wundermittel. Die Arbeit erledigt deine Abwehr.
+
+04:54–04:58  Du kannst es dir aber leichter machen: mit Ruhe, viel Schlaf und genug zu trinken.
+
+04:58–05:01  Und Vitamin C? Bei den meisten Menschen verhindert es keine Erkältung.
+
+05:01–05:06  Wer es regelmäßig nimmt, ist laut großen Studienauswertungen im Schnitt nur etwas kürzer krank.
+
+05:06–05:10  Sinnvoller ist es, Viren gar nicht erst in die Nase zu lassen. Wasch dir regelmäßig gründlich die Hände.
+
+05:10–05:15  Und lüfte Räume, in denen viele Menschen zusammen sind. Frische Luft verdünnt die Viren in der Raumluft.
+
+05:15–05:21  Wichtig: Bei hohem Fieber, Atemnot oder wenn es dir nach einer Besserung wieder schlechter geht, lass dich ärztlich untersuchen.
+
+05:21–05:26  Wenn deine Nase das nächste Mal läuft, weißt du also: Das ist nicht einfach das Virus, das dich kaputtmacht.
+
+05:26–05:32  Das ist dein Körper, der Alarm schlägt, Abwehrzellen schickt, Viren hinausspült und sich ein bisschen aufheizt.
+
+05:32–05:37  Eine Erkältung fühlt sich mies an. Aber sie zeigt dir, dass deine Abwehr genau ihren Job macht.
+
+05:37–05:42  Nach ein paar Tagen hat sie das Virus meist besiegt. Zumindest bis zum nächsten Typ.

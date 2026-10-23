@@ -1,15 +1,15 @@
-TITEL DES VIDEOS
-
-[Hier kommt ausschließlich der fertige deutsche Voiceover-Text hinein.]
+[Hier kommt ausschließlich der fertige deutsche Voiceover-Text hinein – ohne Titelzeile, ohne diese Hinweise.]
 
 REGELN:
-- mindestens 5 Minuten Sprechdauer
-- komplett ausformuliert
-- natürlich gesprochenes Deutsch
+- Longform ca. 6–7 Minuten bei 1.10x: etwa 900–1200 gesprochene Wörter
+- Aufbau Hook → Einleitung → Hauptteil → Schluss (engine/SCRIPT-STANDARD.md)
+- Hook: Satz 1 weckt Neugier, Satz 2–3 bringt die Wendung, höchstens ca. 60 Wörter
+- Einleitung: klarer Payoff bis ca. Sekunde 15; Hook + Einleitung höchstens 20 % des Textes
+- Hauptteil: mindestens 60 %, zusammenhängende Ursache-Wirkungs-Kette statt Lexikon
+- Schluss: 4–15 %, beantwortet die Hook-Frage, kein neues Unterthema, kein „Danke fürs Zuschauen“
+- komplett ausformuliert, natürlich gesprochenes Deutsch
 - verständlich für Kinder und Jugendliche
-- keine Regieanweisungen
-- keine Szenennummern im gesprochenen Text
-- keine Hinweise wie [Pause], [Bildwechsel] oder [Musik]
+- keine Regieanweisungen, keine Szenennummern, keine Hinweise wie [Pause], [Bildwechsel] oder [Musik]
 - der Text muss 1:1 in eine Voice-KI kopierbar sein
 - wissenschaftliche Aussagen vorher prüfen
 - schwierige Begriffe direkt einfach erklären

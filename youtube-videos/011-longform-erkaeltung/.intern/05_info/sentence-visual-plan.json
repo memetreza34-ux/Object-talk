@@ -1,0 +1,1263 @@
+{
+  "status": "READY",
+  "source_script": "01_script/script.txt",
+  "rules": {
+    "each_spoken_sentence_or_logical_block_has_visual_plan": true,
+    "image_ids_match_phase1_scenes": true,
+    "no_estimated_final_timestamps_in_phase1": true,
+    "allowed_functions": [
+      "hook",
+      "observation",
+      "trigger",
+      "path",
+      "comparison",
+      "threshold",
+      "wirkung",
+      "result"
+    ]
+  },
+  "items": [
+    {
+      "id": "SV_001",
+      "voiceover_text": "Hast du dich schon mal gefragt, warum deine Nase bei einer Erkältung läuft wie ein Wasserhahn?",
+      "function": "hook",
+      "learning_goal": "Zuschauer versteht: Die Nase läuft sichtbar: Flüssigkeit strömt aus der Nasenhöhle Richtung Nasenloch.",
+      "claim_ids": [
+        "C09"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_01",
+      "visual_type": "cutaway",
+      "visible_change": "Die Nase läuft sichtbar: Flüssigkeit strömt aus der Nasenhöhle Richtung Nasenloch.",
+      "scene_difference": "Erstes normales Bild, kein Cover.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_002",
+      "voiceover_text": "Die überraschende Antwort: Den Schnupfen macht nicht das Virus selbst. Den macht dein eigener Körper.",
+      "function": "hook",
+      "learning_goal": "Zuschauer versteht: Links ein winziges Virus, rechts die große Abwehrreaktion der Schleimhaut – die Reaktion gehört zum Körper.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_02",
+      "visual_type": "educational-comparison",
+      "visible_change": "Links ein winziges Virus, rechts die große Abwehrreaktion der Schleimhaut – die Reaktion gehört zum Körper.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (cutaway); hier educational-comparison auf Ebene Gewebe.",
+      "labels": [
+        "Virus",
+        "Abwehr"
+      ],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_003",
+      "voiceover_text": "Gerade im Herbst bekommen in Deutschland jede Woche Millionen Menschen eine Atemwegsinfektion – meistens eine ganz normale Erkältung.",
+      "function": "observation",
+      "learning_goal": "Zuschauer versteht: Viele erleuchtete Fenster im Herbstregen zeigen: Erkältungen betreffen gerade sehr viele Haushalte.",
+      "claim_ids": [
+        "C02"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_03",
+      "visual_type": "everyday-context",
+      "visible_change": "Viele erleuchtete Fenster im Herbstregen zeigen: Erkältungen betreffen gerade sehr viele Haushalte.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (educational-comparison); hier everyday-context auf Ebene Mensch.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_004",
+      "voiceover_text": "Dahinter steckt fast immer ein Virus. Und ein Virus kann sich nicht selbst vermehren – dafür braucht es deine Zellen.",
+      "function": "comparison",
+      "learning_goal": "Zuschauer versteht: Das winzige Virus neben einer viel größeren Zelle: Ohne diese Zelle kann es sich nicht vermehren.",
+      "claim_ids": [
+        "C07"
+      ],
+      "scale_level": "Zelle",
+      "new_image_required": true,
+      "image_asset_id": "Bild_04",
+      "visual_type": "macro",
+      "visible_change": "Das winzige Virus neben einer viel größeren Zelle: Ohne diese Zelle kann es sich nicht vermehren.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (everyday-context); hier macro auf Ebene Zelle.",
+      "labels": [
+        "Virus",
+        "Zelle"
+      ],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_005",
+      "voiceover_text": "Wir verfolgen jetzt, was in deinem Körper passiert: vom ersten Kontakt in der Nase bis zum Alarm deiner Abwehr.",
+      "function": "path",
+      "learning_goal": "Zuschauer versteht: Ein leuchtender Weg führt vom Nasenloch zur Schleimhaut und weiter zu den Abwehrzellen – die Reise des Videos.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_05",
+      "visual_type": "process-path",
+      "visible_change": "Ein leuchtender Weg führt vom Nasenloch zur Schleimhaut und weiter zu den Abwehrzellen – die Reise des Videos.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (macro); hier process-path auf Ebene Organ.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_006",
+      "voiceover_text": "Du erfährst, woher Schnupfen, Halskratzen und Fieber kommen – und warum dich Erkältungen immer wieder erwischen.",
+      "function": "wirkung",
+      "learning_goal": "Zuschauer versteht: Nase und Rachen leuchten rot an den Stellen, an denen Schnupfen und Halskratzen entstehen, umgeben von leichter Wärme.",
+      "claim_ids": [
+        "C09",
+        "C11"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_06",
+      "visual_type": "cutaway",
+      "visible_change": "Nase und Rachen leuchten rot an den Stellen, an denen Schnupfen und Halskratzen entstehen, umgeben von leichter Wärme.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (process-path); hier cutaway auf Ebene Organ.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_007",
+      "voiceover_text": "Fangen wir ganz vorne an. Mehr als zweihundert verschiedene Viren können eine Erkältung auslösen.",
+      "function": "observation",
+      "learning_goal": "Zuschauer versteht: Viele unterschiedlich geformte Viren nebeneinander zeigen: Es gibt nicht nur einen Erkältungsauslöser.",
+      "claim_ids": [
+        "C03"
+      ],
+      "scale_level": "Molekuel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_07",
+      "visual_type": "macro",
+      "visible_change": "Viele unterschiedlich geformte Viren nebeneinander zeigen: Es gibt nicht nur einen Erkältungsauslöser.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (cutaway); hier macro auf Ebene Molekuel.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_008",
+      "voiceover_text": "Am häufigsten sind Rhinoviren. Rhino kommt aus dem Griechischen und bedeutet Nase.",
+      "function": "observation",
+      "learning_goal": "Zuschauer versteht: Ein Rhinovirus groß im Bild, daneben ein einfacher Nasenumriss als Namensgeber.",
+      "claim_ids": [
+        "C03"
+      ],
+      "scale_level": "Molekuel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_08",
+      "visual_type": "macro",
+      "visible_change": "Ein Rhinovirus groß im Bild, daneben ein einfacher Nasenumriss als Namensgeber.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (macro); hier macro auf Ebene Molekuel.",
+      "labels": [
+        "Rhinovirus"
+      ],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_009",
+      "voiceover_text": "Sie reisen in winzigen Tröpfchen durch die Luft, wenn jemand niest, hustet oder einfach nur spricht.",
+      "function": "trigger",
+      "learning_goal": "Zuschauer versteht: Vergrößerte Tröpfchen in der Raumluft tragen kleine Viren mit sich.",
+      "claim_ids": [
+        "C04"
+      ],
+      "scale_level": "Molekuel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_09",
+      "visual_type": "macro",
+      "visible_change": "Vergrößerte Tröpfchen in der Raumluft tragen kleine Viren mit sich.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (macro); hier macro auf Ebene Molekuel.",
+      "labels": [
+        "Tröpfchen"
+      ],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_010",
+      "voiceover_text": "Oder sie landen auf Händen und Türgriffen – und gelangen mit deinen Fingern an Nase oder Augen.",
+      "function": "trigger",
+      "learning_goal": "Zuschauer versteht: Vom Türgriff über die Finger zur Nase: Der Weg der Viren über die Hände wird als gepunktete Spur sichtbar.",
+      "claim_ids": [
+        "C04"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_10",
+      "visual_type": "process-path",
+      "visible_change": "Vom Türgriff über die Finger zur Nase: Der Weg der Viren über die Hände wird als gepunktete Spur sichtbar.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (macro); hier process-path auf Ebene Mensch.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_011",
+      "voiceover_text": "In der Nase trifft das Virus auf die Schleimhaut. Sie kleidet deine Nase innen aus wie eine feuchte Tapete.",
+      "function": "observation",
+      "learning_goal": "Zuschauer versteht: Die feuchte Schleimhaut kleidet die Nasenhöhle aus, ein Virus kommt mit der Atemluft an.",
+      "claim_ids": [
+        "C05"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_11",
+      "visual_type": "cutaway",
+      "visible_change": "Die feuchte Schleimhaut kleidet die Nasenhöhle aus, ein Virus kommt mit der Atemluft an.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (process-path); hier cutaway auf Ebene Organ.",
+      "labels": [
+        "Schleimhaut"
+      ],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_012",
+      "voiceover_text": "Darauf liegt eine dünne Schicht Schleim, die Staub und Erreger festhält wie ein klebriges Netz.",
+      "function": "observation",
+      "learning_goal": "Zuschauer versteht: Im Querschnitt hält die Schleimschicht Staubkörnchen und Viren fest.",
+      "claim_ids": [
+        "C05"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_12",
+      "visual_type": "cutaway",
+      "visible_change": "Im Querschnitt hält die Schleimschicht Staubkörnchen und Viren fest.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (cutaway); hier cutaway auf Ebene Gewebe.",
+      "labels": [
+        "Schleim"
+      ],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_013",
+      "voiceover_text": "Winzige Flimmerhärchen schieben diesen Schleim ständig weiter – Richtung Rachen, wo du ihn unbemerkt schluckst.",
+      "function": "path",
+      "learning_goal": "Zuschauer versteht: Flimmerhärchen bewegen sich wellenartig und schieben den Schleim mit den Partikeln in eine Richtung.",
+      "claim_ids": [
+        "C05"
+      ],
+      "scale_level": "Zelle",
+      "new_image_required": true,
+      "image_asset_id": "Bild_13",
+      "visual_type": "mechanism",
+      "visible_change": "Flimmerhärchen bewegen sich wellenartig und schieben den Schleim mit den Partikeln in eine Richtung.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (cutaway); hier mechanism auf Ebene Zelle.",
+      "labels": [
+        "Flimmerhärchen"
+      ],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_014",
+      "voiceover_text": "Doch manche Viren schaffen es trotzdem bis zur Zelloberfläche. Dort suchen sie nach einer passenden Andockstelle.",
+      "function": "trigger",
+      "learning_goal": "Zuschauer versteht: Ein Virus schlüpft durch eine Lücke im Schleim bis zur Zelloberfläche mit ihren Andockstellen.",
+      "claim_ids": [
+        "C06"
+      ],
+      "scale_level": "Zelle",
+      "new_image_required": true,
+      "image_asset_id": "Bild_14",
+      "visual_type": "process-path",
+      "visible_change": "Ein Virus schlüpft durch eine Lücke im Schleim bis zur Zelloberfläche mit ihren Andockstellen.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (mechanism); hier process-path auf Ebene Zelle.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_015",
+      "voiceover_text": "Bei den meisten Rhinoviren ist das ein bestimmtes Eiweiß. Virus und Eiweiß passen zusammen wie Schlüssel und Schloss.",
+      "function": "trigger",
+      "learning_goal": "Zuschauer versteht: Virus und Eiweiß-Andockstelle passen exakt ineinander – das Schlüssel-Schloss-Prinzip.",
+      "claim_ids": [
+        "C06"
+      ],
+      "scale_level": "Molekuel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_15",
+      "visual_type": "mechanism",
+      "visible_change": "Virus und Eiweiß-Andockstelle passen exakt ineinander – das Schlüssel-Schloss-Prinzip.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (process-path); hier mechanism auf Ebene Molekuel.",
+      "labels": [
+        "Andockstelle"
+      ],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_016",
+      "voiceover_text": "Ist das Virus angedockt, schleust es seine Bauanleitung in die Zelle ein.",
+      "function": "trigger",
+      "learning_goal": "Zuschauer versteht: Das angedockte Virus gibt seine Bauanleitung als leuchtenden Strang in die Zelle ab.",
+      "claim_ids": [
+        "C07"
+      ],
+      "scale_level": "Zelle",
+      "new_image_required": true,
+      "image_asset_id": "Bild_16",
+      "visual_type": "mechanism",
+      "visible_change": "Das angedockte Virus gibt seine Bauanleitung als leuchtenden Strang in die Zelle ab.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (mechanism); hier mechanism auf Ebene Zelle.",
+      "labels": [
+        "Virus-Erbgut"
+      ],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_017",
+      "voiceover_text": "Und jetzt passiert etwas Verrücktes: Die Zelle liest diese Anleitung und baut damit massenhaft neue Viren.",
+      "function": "wirkung",
+      "learning_goal": "Zuschauer versteht: Die Zelle wird zur Virusfabrik und setzt viele neue Viren nach der fremden Anleitung zusammen.",
+      "claim_ids": [
+        "C07"
+      ],
+      "scale_level": "Zelle",
+      "new_image_required": true,
+      "image_asset_id": "Bild_17",
+      "visual_type": "mechanism",
+      "visible_change": "Die Zelle wird zur Virusfabrik und setzt viele neue Viren nach der fremden Anleitung zusammen.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (mechanism); hier mechanism auf Ebene Zelle.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_018",
+      "voiceover_text": "Die neuen Viren verlassen die Zelle und befallen die Nachbarzellen. So breitet sich die Infektion aus.",
+      "function": "path",
+      "learning_goal": "Zuschauer versteht: Neue Viren verlassen die erste Zelle und befallen die Nachbarzellen von links nach rechts.",
+      "claim_ids": [
+        "C07"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_18",
+      "visual_type": "process-path",
+      "visible_change": "Neue Viren verlassen die erste Zelle und befallen die Nachbarzellen von links nach rechts.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (mechanism); hier process-path auf Ebene Gewebe.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_019",
+      "voiceover_text": "Das Erstaunliche: Rhinoviren richten dabei kaum sichtbaren Schaden an. Unter dem Mikroskop wirkt die Schleimhaut oft fast unversehrt.",
+      "function": "observation",
+      "learning_goal": "Zuschauer versteht: Im Mikroskopblick wirkt die Zellschicht trotz Infektion ordentlich und fast unversehrt.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_19",
+      "visual_type": "macro",
+      "visible_change": "Im Mikroskopblick wirkt die Zellschicht trotz Infektion ordentlich und fast unversehrt.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (process-path); hier macro auf Ebene Gewebe.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_020",
+      "voiceover_text": "Warum fühlst du dich dann trotzdem so elend? Genau hier kommt dein Körper ins Spiel.",
+      "function": "wirkung",
+      "learning_goal": "Zuschauer versteht: Erste orange Alarmfunken tauchen um eine Zelle auf – der Übergang von der stillen Infektion zur Körperreaktion.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_20",
+      "visual_type": "transition",
+      "visible_change": "Erste orange Alarmfunken tauchen um eine Zelle auf – der Übergang von der stillen Infektion zur Körperreaktion.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (macro); hier transition auf Ebene Gewebe.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_021",
+      "voiceover_text": "Befallene Zellen schlagen Alarm. Sie schütten Botenstoffe aus – chemische Nachrichten an ihre Umgebung.",
+      "function": "trigger",
+      "learning_goal": "Zuschauer versteht: Eine befallene Zelle schüttet sichtbar viele orange Botenstoffe in die Umgebung aus.",
+      "claim_ids": [
+        "C08"
+      ],
+      "scale_level": "Zelle",
+      "new_image_required": true,
+      "image_asset_id": "Bild_21",
+      "visual_type": "mechanism",
+      "visible_change": "Eine befallene Zelle schüttet sichtbar viele orange Botenstoffe in die Umgebung aus.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (transition); hier mechanism auf Ebene Zelle.",
+      "labels": [
+        "Botenstoffe"
+      ],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_022",
+      "voiceover_text": "Manche Botenstoffe warnen die Nachbarzellen. Die schalten in eine Art Schutzmodus und machen es Viren schwerer.",
+      "function": "wirkung",
+      "learning_goal": "Zuschauer versteht: Nach dem Signal leuchten die Nachbarzellen geschützt auf, und die Viren prallen ab.",
+      "claim_ids": [
+        "C08"
+      ],
+      "scale_level": "Zelle",
+      "new_image_required": true,
+      "image_asset_id": "Bild_22",
+      "visual_type": "mechanism",
+      "visible_change": "Nach dem Signal leuchten die Nachbarzellen geschützt auf, und die Viren prallen ab.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (mechanism); hier mechanism auf Ebene Zelle.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_023",
+      "voiceover_text": "Andere Botenstoffe rufen Verstärkung. Über das Blut strömen Abwehrzellen herbei, die gegen die Infektion kämpfen.",
+      "function": "path",
+      "learning_goal": "Zuschauer versteht: Abwehrzellen verlassen ein Blutgefäß und folgen der Spur der Botenstoffe zum Infektionsort.",
+      "claim_ids": [
+        "C08"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_23",
+      "visual_type": "process-path",
+      "visible_change": "Abwehrzellen verlassen ein Blutgefäß und folgen der Spur der Botenstoffe zum Infektionsort.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (mechanism); hier process-path auf Ebene Gewebe.",
+      "labels": [
+        "Abwehrzellen"
+      ],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_024",
+      "voiceover_text": "Damit Nachschub schnell ankommt, verändern sich die winzigen Blutgefäße in deiner Nasenschleimhaut.",
+      "function": "observation",
+      "learning_goal": "Zuschauer versteht: Das feine Netz kleiner Blutgefäße direkt unter der Schleimhaut wird hervorgehoben.",
+      "claim_ids": [
+        "C09"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_24",
+      "visual_type": "cutaway",
+      "visible_change": "Das feine Netz kleiner Blutgefäße direkt unter der Schleimhaut wird hervorgehoben.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (process-path); hier cutaway auf Ebene Gewebe.",
+      "labels": [
+        "Blutgefäße"
+      ],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_025",
+      "voiceover_text": "Sie werden weiter und durchlässiger. Mehr Blut fließt hinein, und Flüssigkeit tritt ins Gewebe aus.",
+      "function": "comparison",
+      "learning_goal": "Zuschauer versteht: Links ein enges Gefäß, rechts ein erweitertes, durchlässiges Gefäß, aus dem Flüssigkeit austritt.",
+      "claim_ids": [
+        "C09"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_25",
+      "visual_type": "educational-comparison",
+      "visible_change": "Links ein enges Gefäß, rechts ein erweitertes, durchlässiges Gefäß, aus dem Flüssigkeit austritt.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (cutaway); hier educational-comparison auf Ebene Gewebe.",
+      "labels": [
+        "normal",
+        "erweitert"
+      ],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_026",
+      "voiceover_text": "Die Schleimhaut schwillt an. Genau das spürst du als verstopfte Nase.",
+      "function": "threshold",
+      "learning_goal": "Zuschauer versteht: Die geschwollene Schleimhaut wölbt sich nach innen und verengt den Luftweg.",
+      "claim_ids": [
+        "C09"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_26",
+      "visual_type": "cutaway",
+      "visible_change": "Die geschwollene Schleimhaut wölbt sich nach innen und verengt den Luftweg.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (educational-comparison); hier cutaway auf Ebene Organ.",
+      "labels": [
+        "Schwellung"
+      ],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_027",
+      "voiceover_text": "Gleichzeitig arbeiten die Drüsen in der Schleimhaut auf Hochtouren und bilden viel mehr Schleim als sonst.",
+      "function": "wirkung",
+      "learning_goal": "Zuschauer versteht: Kleine Drüsen geben sichtbar große Mengen Schleim an die Oberfläche ab.",
+      "claim_ids": [
+        "C09"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_27",
+      "visual_type": "mechanism",
+      "visible_change": "Kleine Drüsen geben sichtbar große Mengen Schleim an die Oberfläche ab.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (cutaway); hier mechanism auf Ebene Gewebe.",
+      "labels": [
+        "Drüsen"
+      ],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_028",
+      "voiceover_text": "Dazu kommt Flüssigkeit aus den Blutgefäßen. Zusammen läuft das aus deiner Nase – der typische Schnupfen.",
+      "function": "path",
+      "learning_goal": "Zuschauer versteht: Schleim und Gefäßflüssigkeit vereinen sich zu einem Strom, der aus der Nase läuft.",
+      "claim_ids": [
+        "C09"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_28",
+      "visual_type": "process-path",
+      "visible_change": "Schleim und Gefäßflüssigkeit vereinen sich zu einem Strom, der aus der Nase läuft.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (mechanism); hier process-path auf Ebene Organ.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_029",
+      "voiceover_text": "Das ist kein Fehler, sondern Abwehr: Der Schleim fängt Viren ein und spült sie hinaus.",
+      "function": "wirkung",
+      "learning_goal": "Zuschauer versteht: Im Schleimstrom werden Viren eingefangen und wie Blätter in einem Bach hinausgetragen.",
+      "claim_ids": [
+        "C05",
+        "C09"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_29",
+      "visual_type": "macro",
+      "visible_change": "Im Schleimstrom werden Viren eingefangen und wie Blätter in einem Bach hinausgetragen.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (process-path); hier macro auf Ebene Gewebe.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_030",
+      "voiceover_text": "Auch Niesen hat einen Sinn. Gereizte Nerven in der Nase lösen einen blitzschnellen Reflex aus.",
+      "function": "trigger",
+      "learning_goal": "Zuschauer versteht: Ein gereiztes Nervenende in der Schleimhaut sendet einen hellen Signalimpuls – der Niesreflex startet.",
+      "claim_ids": [
+        "C09"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_30",
+      "visual_type": "mechanism",
+      "visible_change": "Ein gereiztes Nervenende in der Schleimhaut sendet einen hellen Signalimpuls – der Niesreflex startet.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (macro); hier mechanism auf Ebene Gewebe.",
+      "labels": [
+        "Nerv"
+      ],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_031",
+      "voiceover_text": "Ein kräftiger Luftstoß pustet die Nase frei – und schleudert dabei leider auch Viren in die Luft.",
+      "function": "wirkung",
+      "learning_goal": "Zuschauer versteht: Beim Niesen in die Armbeuge entweicht trotzdem ein feiner Tröpfchenstrom in die Luft.",
+      "claim_ids": [
+        "C04",
+        "C09"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_31",
+      "visual_type": "human-action",
+      "visible_change": "Beim Niesen in die Armbeuge entweicht trotzdem ein feiner Tröpfchenstrom in die Luft.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (mechanism); hier human-action auf Ebene Mensch.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_032",
+      "voiceover_text": "Und das Kratzen im Hals? Auch die Schleimhaut im Rachen reagiert mit einer Entzündung.",
+      "function": "observation",
+      "learning_goal": "Zuschauer versteht: Die Rachenschleimhaut ist gerötet und geschwollen, der übrige Atemweg bleibt ruhig rosa.",
+      "claim_ids": [
+        "C09"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_32",
+      "visual_type": "cutaway",
+      "visible_change": "Die Rachenschleimhaut ist gerötet und geschwollen, der übrige Atemweg bleibt ruhig rosa.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (human-action); hier cutaway auf Ebene Organ.",
+      "labels": [
+        "Rachen"
+      ],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_033",
+      "voiceover_text": "Entzündung bedeutet: Das Gewebe ist stärker durchblutet, leicht geschwollen und besonders empfindlich.",
+      "function": "wirkung",
+      "learning_goal": "Zuschauer versteht: Entzündetes Gewebe: erweiterte Gefäße, leichte Schwellung und hervorgehobene empfindliche Nervenenden.",
+      "claim_ids": [
+        "C09"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_33",
+      "visual_type": "macro",
+      "visible_change": "Entzündetes Gewebe: erweiterte Gefäße, leichte Schwellung und hervorgehobene empfindliche Nervenenden.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (cutaway); hier macro auf Ebene Gewebe.",
+      "labels": [
+        "Entzündung"
+      ],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_034",
+      "voiceover_text": "Bestimmte Botenstoffe machen die Nervenenden dort empfindlicher. Deshalb tut Schlucken plötzlich weh.",
+      "function": "wirkung",
+      "learning_goal": "Zuschauer versteht: Botenstoffe docken an ein Nervenende an, das hell aufleuchtet und ein Schmerzsignal weiterleitet.",
+      "claim_ids": [
+        "C09"
+      ],
+      "scale_level": "Zelle",
+      "new_image_required": true,
+      "image_asset_id": "Bild_34",
+      "visual_type": "mechanism",
+      "visible_change": "Botenstoffe docken an ein Nervenende an, das hell aufleuchtet und ein Schmerzsignal weiterleitet.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (macro); hier mechanism auf Ebene Zelle.",
+      "labels": [
+        "Nervenende"
+      ],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_035",
+      "voiceover_text": "Nach ein paar Tagen wird der Schleim oft dicker und manchmal gelblich oder grünlich.",
+      "function": "observation",
+      "learning_goal": "Zuschauer versteht: Drei Schleimtropfen zeigen den Wandel von klar und dünn zu dicker, gelblich und grünlich.",
+      "claim_ids": [
+        "C10"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_35",
+      "visual_type": "educational-comparison",
+      "visible_change": "Drei Schleimtropfen zeigen den Wandel von klar und dünn zu dicker, gelblich und grünlich.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (mechanism); hier educational-comparison auf Ebene Gewebe.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_036",
+      "voiceover_text": "Viele denken dann: Jetzt sind Bakterien im Spiel. Doch die Farbe allein verrät das nicht.",
+      "function": "comparison",
+      "learning_goal": "Zuschauer versteht: Grünlicher Schleim links, blass und durchsichtig gezeichnete Bakterien rechts: Die Farbe beweist keine Bakterien.",
+      "claim_ids": [
+        "C10"
+      ],
+      "scale_level": "Zelle",
+      "new_image_required": true,
+      "image_asset_id": "Bild_36",
+      "visual_type": "educational-comparison",
+      "visible_change": "Grünlicher Schleim links, blass und durchsichtig gezeichnete Bakterien rechts: Die Farbe beweist keine Bakterien.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (educational-comparison); hier educational-comparison auf Ebene Zelle.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_037",
+      "voiceover_text": "Sie stammt vor allem von deinen eigenen Abwehrzellen, die in großer Zahl in den Schleim wandern.",
+      "function": "wirkung",
+      "learning_goal": "Zuschauer versteht: Im grünlichen Schleim stecken vor allem Abwehrzellen mit grünlichen Körnchen, die den Tropfen färben.",
+      "claim_ids": [
+        "C10"
+      ],
+      "scale_level": "Zelle",
+      "new_image_required": true,
+      "image_asset_id": "Bild_37",
+      "visual_type": "macro",
+      "visible_change": "Im grünlichen Schleim stecken vor allem Abwehrzellen mit grünlichen Körnchen, die den Tropfen färben.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (educational-comparison); hier macro auf Ebene Zelle.",
+      "labels": [
+        "Abwehrzellen"
+      ],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_038",
+      "voiceover_text": "Und Antibiotika helfen gegen Viren gar nicht. Sie wirken nur gegen Bakterien.",
+      "function": "comparison",
+      "learning_goal": "Zuschauer versteht: Das Antibiotikum lässt links das Bakterium zerfallen, rechts bleibt das Virus völlig unberührt.",
+      "claim_ids": [
+        "C10"
+      ],
+      "scale_level": "Zelle",
+      "new_image_required": true,
+      "image_asset_id": "Bild_38",
+      "visual_type": "educational-comparison",
+      "visible_change": "Das Antibiotikum lässt links das Bakterium zerfallen, rechts bleibt das Virus völlig unberührt.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (macro); hier educational-comparison auf Ebene Zelle.",
+      "labels": [
+        "Bakterium",
+        "Virus"
+      ],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_039",
+      "voiceover_text": "Manchmal steigt bei einer Erkältung auch die Temperatur. Bei Erwachsenen bleibt sie aber oft normal oder nur leicht erhöht.",
+      "function": "comparison",
+      "learning_goal": "Zuschauer versteht: Dieselbe Person links mit kühlem, rechts mit leicht warmem Körperglühen zeigt eine leicht erhöhte Temperatur.",
+      "claim_ids": [
+        "C11"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_39",
+      "visual_type": "educational-comparison",
+      "visible_change": "Dieselbe Person links mit kühlem, rechts mit leicht warmem Körperglühen zeigt eine leicht erhöhte Temperatur.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (educational-comparison); hier educational-comparison auf Ebene Mensch.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_040",
+      "voiceover_text": "Auch dahinter steckt dein Körper. Botenstoffe der Abwehr erreichen über das Blut dein Gehirn.",
+      "function": "trigger",
+      "learning_goal": "Zuschauer versteht: Orange Botenstoffe wandern über ein Blutgefäß von der Nase durch den Hals bis zum Gehirn.",
+      "claim_ids": [
+        "C11"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_40",
+      "visual_type": "process-path",
+      "visible_change": "Orange Botenstoffe wandern über ein Blutgefäß von der Nase durch den Hals bis zum Gehirn.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (educational-comparison); hier process-path auf Ebene Organ.",
+      "labels": [
+        "Gehirn"
+      ],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_041",
+      "voiceover_text": "Dort sitzt eine Art Thermostat, im sogenannten Hypothalamus. Die Botenstoffe stellen ihn etwas höher.",
+      "function": "threshold",
+      "learning_goal": "Zuschauer versteht: Im Hypothalamus wird der Temperatur-Sollwert wie bei einem Thermostat etwas höher gedreht.",
+      "claim_ids": [
+        "C11"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_41",
+      "visual_type": "mechanism",
+      "visible_change": "Im Hypothalamus wird der Temperatur-Sollwert wie bei einem Thermostat etwas höher gedreht.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (process-path); hier mechanism auf Ebene Organ.",
+      "labels": [
+        "Hypothalamus"
+      ],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_042",
+      "voiceover_text": "Plötzlich fühlt sich deine normale Temperatur zu kalt an. Du frierst, zitterst – und dein Körper heizt sich auf.",
+      "function": "wirkung",
+      "learning_goal": "Zuschauer versteht: Die Person friert und zittert unter der Decke, obwohl der Körper gerade mehr Wärme erzeugt.",
+      "claim_ids": [
+        "C11"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_42",
+      "visual_type": "human-action",
+      "visible_change": "Die Person friert und zittert unter der Decke, obwohl der Körper gerade mehr Wärme erzeugt.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (mechanism); hier human-action auf Ebene Mensch.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_043",
+      "voiceover_text": "Die höhere Temperatur kann die Abwehr unterstützen. Fieber gilt deshalb als Teil der Schutzreaktion.",
+      "function": "wirkung",
+      "learning_goal": "Zuschauer versteht: In warm getöntem Gewebe arbeiten die Abwehrzellen sichtbar aktiver, die Viren wirken gebremst.",
+      "claim_ids": [
+        "C12"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_43",
+      "visual_type": "mechanism",
+      "visible_change": "In warm getöntem Gewebe arbeiten die Abwehrzellen sichtbar aktiver, die Viren wirken gebremst.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (human-action); hier mechanism auf Ebene Gewebe.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_044",
+      "voiceover_text": "Bleibt die Frage: Warum erwischt es uns ausgerechnet im Herbst und Winter so oft?",
+      "function": "observation",
+      "learning_goal": "Zuschauer versteht: Herbststimmung am Fenster mit Taschentüchern und Tee stellt die Frage nach der Erkältungssaison.",
+      "claim_ids": [
+        "C13"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_44",
+      "visual_type": "everyday-context",
+      "visible_change": "Herbststimmung am Fenster mit Taschentüchern und Tee stellt die Frage nach der Erkältungssaison.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (mechanism); hier everyday-context auf Ebene Mensch.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_045",
+      "voiceover_text": "Kälte allein macht dich nicht krank. Ohne Virus gibt es keine Erkältung.",
+      "function": "comparison",
+      "learning_goal": "Zuschauer versteht: Gleiche kalte Luft: Links ohne Virus bleibt die Schleimhaut ruhig, rechts mit Virus entzündet sie sich.",
+      "claim_ids": [
+        "C13"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_45",
+      "visual_type": "educational-comparison",
+      "visible_change": "Gleiche kalte Luft: Links ohne Virus bleibt die Schleimhaut ruhig, rechts mit Virus entzündet sie sich.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (everyday-context); hier educational-comparison auf Ebene Organ.",
+      "labels": [
+        "ohne Virus",
+        "mit Virus"
+      ],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_046",
+      "voiceover_text": "Aber im Herbst sind wir mehr drinnen und sitzen enger zusammen. So springen Viren leichter von Mensch zu Mensch.",
+      "function": "wirkung",
+      "learning_goal": "Zuschauer versteht: Viele Menschen sitzen eng in einem Innenraum, feine Tröpfchenspuren verbinden sie miteinander.",
+      "claim_ids": [
+        "C13"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_46",
+      "visual_type": "everyday-context",
+      "visible_change": "Viele Menschen sitzen eng in einem Innenraum, feine Tröpfchenspuren verbinden sie miteinander.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (educational-comparison); hier everyday-context auf Ebene Mensch.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_047",
+      "voiceover_text": "Kinder bringen aus Kita und Schule ständig neue Viren mit – und teilen sie großzügig mit der Familie.",
+      "function": "path",
+      "learning_goal": "Zuschauer versteht: Viren wandern über gemeinsam benutzte Gegenstände von der Kinderhand zur Erwachsenenhand.",
+      "claim_ids": [
+        "C13"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_47",
+      "visual_type": "process-path",
+      "visible_change": "Viren wandern über gemeinsam benutzte Gegenstände von der Kinderhand zur Erwachsenenhand.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (everyday-context); hier process-path auf Ebene Mensch.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_048",
+      "voiceover_text": "Dazu kommt trockene Heizungsluft. Sie kann die Schleimhaut austrocknen, und ihr Schutz arbeitet schlechter.",
+      "function": "comparison",
+      "learning_goal": "Zuschauer versteht: Feuchte Schleimhaut mit aufrechten Flimmerhärchen gegen ausgetrocknete Schleimhaut mit schlaffen Härchen.",
+      "claim_ids": [
+        "C13"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_48",
+      "visual_type": "educational-comparison",
+      "visible_change": "Feuchte Schleimhaut mit aufrechten Flimmerhärchen gegen ausgetrocknete Schleimhaut mit schlaffen Härchen.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (process-path); hier educational-comparison auf Ebene Gewebe.",
+      "labels": [
+        "feucht",
+        "trocken"
+      ],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_049",
+      "voiceover_text": "Und Laborversuche deuten an: In einer kühleren Nase reagiert die Abwehr langsamer, und Rhinoviren vermehren sich leichter.",
+      "function": "comparison",
+      "learning_goal": "Zuschauer versteht: Kühle Zellen zeigen wenig Alarm und viele Viren, warme Zellen viel Alarm und wenige Viren.",
+      "claim_ids": [
+        "C14"
+      ],
+      "scale_level": "Zelle",
+      "new_image_required": true,
+      "image_asset_id": "Bild_49",
+      "visual_type": "educational-comparison",
+      "visible_change": "Kühle Zellen zeigen wenig Alarm und viele Viren, warme Zellen viel Alarm und wenige Viren.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (educational-comparison); hier educational-comparison auf Ebene Zelle.",
+      "labels": [
+        "kühl",
+        "warm"
+      ],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_050",
+      "voiceover_text": "Ganz geklärt ist das noch nicht. Aber Kälte könnte dem Virus den Start erleichtern.",
+      "function": "path",
+      "learning_goal": "Zuschauer versteht: Eisblaue Luft strömt in die Nase und kühlt den vorderen Teil der Schleimhaut ab.",
+      "claim_ids": [
+        "C14"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_50",
+      "visual_type": "process-path",
+      "visible_change": "Eisblaue Luft strömt in die Nase und kühlt den vorderen Teil der Schleimhaut ab.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (educational-comparison); hier process-path auf Ebene Organ.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_051",
+      "voiceover_text": "Nach einigen Tagen bekommt deine Abwehr Hilfe von Spezialisten. Sie bildet Antikörper, die genau zu diesem Virus passen.",
+      "function": "wirkung",
+      "learning_goal": "Zuschauer versteht: Eine spezialisierte Abwehrzelle setzt viele kleine goldene Antikörper frei.",
+      "claim_ids": [
+        "C15"
+      ],
+      "scale_level": "Zelle",
+      "new_image_required": true,
+      "image_asset_id": "Bild_51",
+      "visual_type": "mechanism",
+      "visible_change": "Eine spezialisierte Abwehrzelle setzt viele kleine goldene Antikörper frei.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (process-path); hier mechanism auf Ebene Zelle.",
+      "labels": [
+        "Antikörper"
+      ],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_052",
+      "voiceover_text": "Die Antikörper heften sich an die Viren und blockieren sie. Die Infektion klingt ab.",
+      "function": "wirkung",
+      "learning_goal": "Zuschauer versteht: Goldene Antikörper umhüllen die Viren, sodass sie nicht mehr an die Zellen andocken können.",
+      "claim_ids": [
+        "C15"
+      ],
+      "scale_level": "Molekuel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_52",
+      "visual_type": "mechanism",
+      "visible_change": "Goldene Antikörper umhüllen die Viren, sodass sie nicht mehr an die Zellen andocken können.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (mechanism); hier mechanism auf Ebene Molekuel.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_053",
+      "voiceover_text": "Am stärksten sind die Beschwerden meist nach zwei bis drei Tagen.",
+      "function": "result",
+      "learning_goal": "Zuschauer versteht: Eine weiche Verlaufskurve zeigt einen frühen Höhepunkt der Beschwerden und danach ein langsames Abklingen.",
+      "claim_ids": [
+        "C16"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_53",
+      "visual_type": "educational-comparison",
+      "visible_change": "Eine weiche Verlaufskurve zeigt einen frühen Höhepunkt der Beschwerden und danach ein langsames Abklingen.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (mechanism); hier educational-comparison auf Ebene Mensch.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_054",
+      "voiceover_text": "Schnupfen und Husten können aber bis zu zwei Wochen anhalten. Das ist bei einer Erkältung ganz normal.",
+      "function": "result",
+      "learning_goal": "Zuschauer versteht: Ein Schleimhautstreifen heilt von links nach rechts sichtbar von gerötet zu gesund.",
+      "claim_ids": [
+        "C16"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_54",
+      "visual_type": "process-path",
+      "visible_change": "Ein Schleimhautstreifen heilt von links nach rechts sichtbar von gerötet zu gesund.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (educational-comparison); hier process-path auf Ebene Gewebe.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_055",
+      "voiceover_text": "Aber warum bist du danach nicht für immer geschützt? Weil es nicht das eine Erkältungsvirus gibt.",
+      "function": "result",
+      "learning_goal": "Zuschauer versteht: Hinter einem Virus im Vordergrund reiht sich eine lange Kette ähnlicher, aber verschiedener Varianten.",
+      "claim_ids": [
+        "C15"
+      ],
+      "scale_level": "Molekuel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_55",
+      "visual_type": "macro",
+      "visible_change": "Hinter einem Virus im Vordergrund reiht sich eine lange Kette ähnlicher, aber verschiedener Varianten.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (process-path); hier macro auf Ebene Molekuel.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_056",
+      "voiceover_text": "Allein von den Rhinoviren kennt man über hundertsechzig Typen. Ihre Oberflächen sehen jeweils etwas anders aus.",
+      "function": "observation",
+      "learning_goal": "Zuschauer versteht: Drei Rhinoviren mit gleicher Grundform, aber deutlich verschiedenen Oberflächenmustern.",
+      "claim_ids": [
+        "C15"
+      ],
+      "scale_level": "Molekuel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_56",
+      "visual_type": "macro",
+      "visible_change": "Drei Rhinoviren mit gleicher Grundform, aber deutlich verschiedenen Oberflächenmustern.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (macro); hier macro auf Ebene Molekuel.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_057",
+      "voiceover_text": "Deine Antikörper erkennen aber nur den Typ, den sie schon kennen. Beim nächsten Typ beginnt alles von vorne.",
+      "function": "comparison",
+      "learning_goal": "Zuschauer versteht: Der Antikörper passt genau auf den bekannten Virustyp, der neue Typ mit anderem Muster rutscht vorbei.",
+      "claim_ids": [
+        "C15"
+      ],
+      "scale_level": "Molekuel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_57",
+      "visual_type": "mechanism",
+      "visible_change": "Der Antikörper passt genau auf den bekannten Virustyp, der neue Typ mit anderem Muster rutscht vorbei.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (macro); hier mechanism auf Ebene Molekuel.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_058",
+      "voiceover_text": "Deshalb gibt es bis heute keine Impfung gegen Erkältungen. Erwachsene erwischt es etwa ein- bis dreimal pro Jahr.",
+      "function": "result",
+      "learning_goal": "Zuschauer versteht: Ein Jahreskreis zeigt, dass sich Erkältungsviren in Herbst und Winter häufen.",
+      "claim_ids": [
+        "C15",
+        "C17"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_58",
+      "visual_type": "educational-comparison",
+      "visible_change": "Ein Jahreskreis zeigt, dass sich Erkältungsviren in Herbst und Winter häufen.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (mechanism); hier educational-comparison auf Ebene Mensch.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_059",
+      "voiceover_text": "Was kannst du also tun? Gegen das Virus selbst gibt es kein Wundermittel. Die Arbeit erledigt deine Abwehr.",
+      "function": "result",
+      "learning_goal": "Zuschauer versteht: Abwehrzellen räumen ruhig und geordnet die letzten Viren auf der Schleimhaut weg.",
+      "claim_ids": [
+        "C01",
+        "C20"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_59",
+      "visual_type": "mechanism",
+      "visible_change": "Abwehrzellen räumen ruhig und geordnet die letzten Viren auf der Schleimhaut weg.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (educational-comparison); hier mechanism auf Ebene Gewebe.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_060",
+      "voiceover_text": "Du kannst es dir aber leichter machen: mit Ruhe, viel Schlaf und genug zu trinken.",
+      "function": "result",
+      "learning_goal": "Zuschauer versteht: Kissen, Decke, Wasser und Tee am Nachttisch stehen für Ruhe, Schlaf und Trinken.",
+      "claim_ids": [
+        "C20"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_60",
+      "visual_type": "everyday-context",
+      "visible_change": "Kissen, Decke, Wasser und Tee am Nachttisch stehen für Ruhe, Schlaf und Trinken.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (mechanism); hier everyday-context auf Ebene Mensch.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_061",
+      "voiceover_text": "Und Vitamin C? Bei den meisten Menschen verhindert es keine Erkältung.",
+      "function": "observation",
+      "learning_goal": "Zuschauer versteht: Eine aufgeschnittene Orange mit kleinen Vitaminmolekülen als Sinnbild für Vitamin C.",
+      "claim_ids": [
+        "C18"
+      ],
+      "scale_level": "Lebensmittel",
+      "new_image_required": true,
+      "image_asset_id": "Bild_61",
+      "visual_type": "food-structure",
+      "visible_change": "Eine aufgeschnittene Orange mit kleinen Vitaminmolekülen als Sinnbild für Vitamin C.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (everyday-context); hier food-structure auf Ebene Lebensmittel.",
+      "labels": [
+        "Vitamin C"
+      ],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_062",
+      "voiceover_text": "Wer es regelmäßig nimmt, ist laut großen Studienauswertungen im Schnitt nur etwas kürzer krank.",
+      "function": "comparison",
+      "learning_goal": "Zuschauer versteht: Zwei fast gleich lange Wege: Regelmäßiges Vitamin C verkürzt eine Erkältung nur ein wenig.",
+      "claim_ids": [
+        "C18"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_62",
+      "visual_type": "educational-comparison",
+      "visible_change": "Zwei fast gleich lange Wege: Regelmäßiges Vitamin C verkürzt eine Erkältung nur ein wenig.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (food-structure); hier educational-comparison auf Ebene Mensch.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_063",
+      "voiceover_text": "Sinnvoller ist es, Viren gar nicht erst in die Nase zu lassen. Wasch dir regelmäßig gründlich die Hände.",
+      "function": "wirkung",
+      "learning_goal": "Zuschauer versteht: Seifenschaum löst die Viren von der Haut, und das Wasser spült sie weg.",
+      "claim_ids": [
+        "C19"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_63",
+      "visual_type": "mechanism",
+      "visible_change": "Seifenschaum löst die Viren von der Haut, und das Wasser spült sie weg.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (educational-comparison); hier mechanism auf Ebene Mensch.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_064",
+      "voiceover_text": "Und lüfte Räume, in denen viele Menschen zusammen sind. Frische Luft verdünnt die Viren in der Raumluft.",
+      "function": "wirkung",
+      "learning_goal": "Zuschauer versteht: Frische Luft strömt durchs offene Fenster herein, und die Viruswolke zieht nach draußen und wird dünner.",
+      "claim_ids": [
+        "C19"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_64",
+      "visual_type": "process-path",
+      "visible_change": "Frische Luft strömt durchs offene Fenster herein, und die Viruswolke zieht nach draußen und wird dünner.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (mechanism); hier process-path auf Ebene Mensch.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_065",
+      "voiceover_text": "Wichtig: Bei hohem Fieber, Atemnot oder wenn es dir nach einer Besserung wieder schlechter geht, lass dich ärztlich untersuchen.",
+      "function": "result",
+      "learning_goal": "Zuschauer versteht: Eine Ärztin oder ein Arzt hört den Rücken einer Person ab – ärztliche Abklärung bei Warnzeichen.",
+      "claim_ids": [
+        "C20"
+      ],
+      "scale_level": "Mensch",
+      "new_image_required": true,
+      "image_asset_id": "Bild_65",
+      "visual_type": "human-action",
+      "visible_change": "Eine Ärztin oder ein Arzt hört den Rücken einer Person ab – ärztliche Abklärung bei Warnzeichen.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (process-path); hier human-action auf Ebene Mensch.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_066",
+      "voiceover_text": "Wenn deine Nase das nächste Mal läuft, weißt du also: Das ist nicht einfach das Virus, das dich kaputtmacht.",
+      "function": "result",
+      "learning_goal": "Zuschauer versteht: Die laufende Nase von innen: Im Schleimstrom arbeiten Abwehrzellen.",
+      "claim_ids": [
+        "C01"
+      ],
+      "scale_level": "Organ",
+      "new_image_required": true,
+      "image_asset_id": "Bild_66",
+      "visual_type": "cutaway",
+      "visible_change": "Die laufende Nase von innen: Im Schleimstrom arbeiten Abwehrzellen.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (human-action); hier cutaway auf Ebene Organ.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_067",
+      "voiceover_text": "Das ist dein Körper, der Alarm schlägt, Abwehrzellen schickt, Viren hinausspült und sich ein bisschen aufheizt.",
+      "function": "result",
+      "learning_goal": "Zuschauer versteht: Eine zusammenhängende Abwehrkette entlang der Schleimhaut: Alarm, Abwehrzellen, Schleimstrom, Wärme.",
+      "claim_ids": [
+        "C01",
+        "C08"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_67",
+      "visual_type": "process-path",
+      "visible_change": "Eine zusammenhängende Abwehrkette entlang der Schleimhaut: Alarm, Abwehrzellen, Schleimstrom, Wärme.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (cutaway); hier process-path auf Ebene Gewebe.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_068",
+      "voiceover_text": "Eine Erkältung fühlt sich mies an. Aber sie zeigt dir, dass deine Abwehr genau ihren Job macht.",
+      "function": "result",
+      "learning_goal": "Zuschauer versteht: Antikörper und Abwehrzellen umschließen ruhig die letzten Viren.",
+      "claim_ids": [
+        "C15"
+      ],
+      "scale_level": "Zelle",
+      "new_image_required": true,
+      "image_asset_id": "Bild_68",
+      "visual_type": "mechanism",
+      "visible_change": "Antikörper und Abwehrzellen umschließen ruhig die letzten Viren.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (process-path); hier mechanism auf Ebene Zelle.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    },
+    {
+      "id": "SV_069",
+      "voiceover_text": "Nach ein paar Tagen hat sie das Virus meist besiegt. Zumindest bis zum nächsten Typ.",
+      "function": "result",
+      "learning_goal": "Zuschauer versteht: Gesunde Schleimhaut im Morgenlicht – und im Hintergrund nähert sich schon ein neuer Virustyp.",
+      "claim_ids": [
+        "C15"
+      ],
+      "scale_level": "Gewebe",
+      "new_image_required": true,
+      "image_asset_id": "Bild_69",
+      "visual_type": "macro",
+      "visible_change": "Gesunde Schleimhaut im Morgenlicht – und im Hintergrund nähert sich schon ein neuer Virustyp.",
+      "scene_difference": "Neues Hauptmotiv gegenüber dem vorherigen Bild (mechanism); hier macro auf Ebene Gewebe.",
+      "labels": [],
+      "misconception_to_avoid": "Vereinfachte Lernillustration; keine Diagnose, kein Heilversprechen, Viren nie als Monster mit Gesicht."
+    }
+  ]
+}

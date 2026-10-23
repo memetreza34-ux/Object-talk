@@ -1,0 +1,27 @@
+{
+  "video": "VIDEO.mp4",
+  "duration_seconds": 342.123,
+  "minimum_required_seconds": 300.0,
+  "voiceover_duration_seconds": 342.061,
+  "expected_voice_speed": 1.1,
+  "max_voice_pause_seconds": 0.5,
+  "detected_long_voice_pauses_seconds": [],
+  "audio_report": {
+    "input": "raw-voiceover.wav",
+    "output": "final-voiceover.wav",
+    "raw_duration_seconds": 416.213,
+    "duration_seconds": 342.061,
+    "sample_rate_hz": 48000,
+    "target_integrated_lufs": -16,
+    "target_true_peak_db": -1.0,
+    "speed_multiplier": 1.1,
+    "internal_silence_compression": true,
+    "silence_threshold_db": -35.0,
+    "long_pause_threshold_seconds": 0.35,
+    "retained_pause_seconds": 0.12,
+    "timing_source_policy": "processed-audio-is-authoritative"
+  },
+  "errors": [],
+  "warnings": [],
+  "status": "PASS"
+}
