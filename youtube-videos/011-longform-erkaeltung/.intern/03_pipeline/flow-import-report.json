@@ -1,0 +1,494 @@
+{
+  "source_zip": "flow-bilder-ohne-cover.zip",
+  "expected_count": 69,
+  "imported_count": 69,
+  "images": [
+    {
+      "scene": 1,
+      "source": "Bild_01_20261023161752.jpg",
+      "target": "Bild_01.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 2,
+      "source": "Bild_02_20261023161752.jpg",
+      "target": "Bild_02.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 3,
+      "source": "Bild_03_20261023161752.jpg",
+      "target": "Bild_03.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 4,
+      "source": "Bild_04_20261023161752.jpg",
+      "target": "Bild_04.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 5,
+      "source": "Bild_05_20261023161752.jpg",
+      "target": "Bild_05.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 6,
+      "source": "Bild_06_20261023161752.jpg",
+      "target": "Bild_06.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 7,
+      "source": "Bild_07_20261023161752.jpg",
+      "target": "Bild_07.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 8,
+      "source": "Bild_08_20261023161752.jpg",
+      "target": "Bild_08.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 9,
+      "source": "Bild_09_20261023161752.jpg",
+      "target": "Bild_09.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 10,
+      "source": "Bild_10_20261023161752.jpg",
+      "target": "Bild_10.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 11,
+      "source": "Bild_11_20261023161752.jpg",
+      "target": "Bild_11.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 12,
+      "source": "Bild_12_20261023161752.jpg",
+      "target": "Bild_12.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 13,
+      "source": "Bild_13_20261023161752.jpg",
+      "target": "Bild_13.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 14,
+      "source": "Bild_14_20261023161752.jpg",
+      "target": "Bild_14.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 15,
+      "source": "Bild_15_20261023161752.jpg",
+      "target": "Bild_15.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 16,
+      "source": "Bild_16_20261023161752.jpg",
+      "target": "Bild_16.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 17,
+      "source": "Bild_17_20261023161752.jpg",
+      "target": "Bild_17.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 18,
+      "source": "Bild_18_20261023161752.jpg",
+      "target": "Bild_18.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 19,
+      "source": "Bild_19_20261023161752.jpg",
+      "target": "Bild_19.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 20,
+      "source": "Bild_20_20261023161752.jpg",
+      "target": "Bild_20.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 21,
+      "source": "Bild_21_20261023161752.jpg",
+      "target": "Bild_21.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 22,
+      "source": "Bild_22_20261023161752.jpg",
+      "target": "Bild_22.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 23,
+      "source": "Bild_23_20261023161752.jpg",
+      "target": "Bild_23.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 24,
+      "source": "Bild_24_20261023161752.jpg",
+      "target": "Bild_24.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 25,
+      "source": "Bild_25_20261023161752.jpg",
+      "target": "Bild_25.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 26,
+      "source": "Bild_26_20261023161752.jpg",
+      "target": "Bild_26.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 27,
+      "source": "Bild_27_20261023161752.jpg",
+      "target": "Bild_27.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 28,
+      "source": "Bild_28_20261023161752.jpg",
+      "target": "Bild_28.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 29,
+      "source": "Bild_29_20261023161752.jpg",
+      "target": "Bild_29.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 30,
+      "source": "Bild_30_20261023161752.jpg",
+      "target": "Bild_30.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 31,
+      "source": "Bild_31_20261023161752.jpg",
+      "target": "Bild_31.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 32,
+      "source": "Bild_32_20261023161752.jpg",
+      "target": "Bild_32.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 33,
+      "source": "Bild_33_20261023161752.jpg",
+      "target": "Bild_33.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 34,
+      "source": "Bild_34_20261023161752.jpg",
+      "target": "Bild_34.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 35,
+      "source": "Bild_35_20261023161752.jpg",
+      "target": "Bild_35.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 36,
+      "source": "Bild_36_20261023161752.jpg",
+      "target": "Bild_36.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 37,
+      "source": "Bild_37_20261023161752.jpg",
+      "target": "Bild_37.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 38,
+      "source": "Bild_38_20261023161752.jpg",
+      "target": "Bild_38.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 39,
+      "source": "Bild_39_20261023161752.jpg",
+      "target": "Bild_39.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 40,
+      "source": "Bild_40_20261023161752.jpg",
+      "target": "Bild_40.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 41,
+      "source": "Bild_41_20261023161752.jpg",
+      "target": "Bild_41.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 42,
+      "source": "Bild_42_20261023161752.jpg",
+      "target": "Bild_42.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 43,
+      "source": "Bild_43_20261023161752.jpg",
+      "target": "Bild_43.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 44,
+      "source": "Bild_44_20261023161752.jpg",
+      "target": "Bild_44.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 45,
+      "source": "Bild_45_20261023161752.jpg",
+      "target": "Bild_45.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 46,
+      "source": "Bild_46_20261023161752.jpg",
+      "target": "Bild_46.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 47,
+      "source": "Bild_47_20261023161752.jpg",
+      "target": "Bild_47.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 48,
+      "source": "Bild_48_20261023161752.jpg",
+      "target": "Bild_48.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 49,
+      "source": "Bild_49_20261023161752.jpg",
+      "target": "Bild_49.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 50,
+      "source": "Bild_50_20261023161752.jpg",
+      "target": "Bild_50.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 51,
+      "source": "Bild_51_20261023161752.jpg",
+      "target": "Bild_51.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 52,
+      "source": "Bild_52_20261023161752.jpg",
+      "target": "Bild_52.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 53,
+      "source": "Bild_53_20261023161752.jpg",
+      "target": "Bild_53.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 54,
+      "source": "Bild_54_20261023161752.jpg",
+      "target": "Bild_54.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 55,
+      "source": "Bild_55_20261023161752.jpg",
+      "target": "Bild_55.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 56,
+      "source": "Bild_56_20261023161752.jpg",
+      "target": "Bild_56.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 57,
+      "source": "Bild_57_20261023161752.jpg",
+      "target": "Bild_57.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 58,
+      "source": "Bild_58_20261023161752.jpg",
+      "target": "Bild_58.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 59,
+      "source": "Bild_59_20261023161752.jpg",
+      "target": "Bild_59.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 60,
+      "source": "Bild_60_20261023161752.jpg",
+      "target": "Bild_60.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 61,
+      "source": "Bild_61_20261023161752.jpg",
+      "target": "Bild_61.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 62,
+      "source": "Bild_62_20261023161752.jpg",
+      "target": "Bild_62.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 63,
+      "source": "Bild_63_20261023161752.jpg",
+      "target": "Bild_63.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 64,
+      "source": "Bild_64_20261023161752.jpg",
+      "target": "Bild_64.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 65,
+      "source": "Bild_65_20261023161752.jpg",
+      "target": "Bild_65.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 66,
+      "source": "Bild_66_20261023161752.jpg",
+      "target": "Bild_66.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 67,
+      "source": "Bild_67_20261023161752.jpg",
+      "target": "Bild_67.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 68,
+      "source": "Bild_68_20261023161752.jpg",
+      "target": "Bild_68.png",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "scene": 69,
+      "source": "Bild_69_20261023161752.jpg",
+      "target": "Bild_69.png",
+      "width": 1376,
+      "height": 768
+    }
+  ],
+  "ignored_non_image_files": [],
+  "unexpected_image_files": [],
+  "assignment_rule": "explicit-number-only-never-zip-order",
+  "final_zip_policy": "exactly-one-image-per-expected-number-no-extra-images"
+}
